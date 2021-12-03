@@ -4,7 +4,7 @@
 
 ### Hugo ###
 # Generated files by hugo
-/public/
+/public/*
 /resources/_gen/
 /cache/
 
@@ -88,3 +88,4 @@ $RECYCLE.BIN/
 # Custom
 .hugo_build.lock
 .sync
+!/public/_headers
