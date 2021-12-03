@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: LeagueSpartan-Bold
+font link: https://www.theleagueofmoveabletype.com/league-spartan
+font author: The League of Moveable Type
+font author site: https://www.theleagueofmoveabletype.com/
+
+
+icon designer: Hea Poh Lin
+icon designer link: /charlenehea
+        
+
+fontColor: {"hex":"#FF0000"}
+bgColor: {"hex":"#FFFFFF"}
+iconColor: {"hex":"#FF0000"}
+
+      

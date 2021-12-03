@@ -1,0 +1,560 @@
+:root {
+    /* 
+        # Base colors
+        #000000
+        #0077b6
+        #FFFFFF
+
+        ## Custom colors
+        
+        # light mode
+        #323232 # off-black
+        #f8f8f8 # off-white
+
+        # dark mode
+        #121212 # off-black
+        #1c1e20
+        #1F2226
+        #26282b
+        #323232
+        #f8f8f8 # off-white
+
+    */
+    --MAIN-BACKGROUND-color: #FFFFFF; /* Color of the body by default */
+    --MAIN-TEXT-color: #323232; /* Color of text by default */
+    --MAIN-TITLES-TEXT-color: #0077b6; /* Color of titles h2-h3-h4-h5 */   
+    --MAIN-LINK-color: #0077b6; /* Color of links */
+    --MAIN-LINK-HOVER-color: #0077b6; /* Color of hovered links */
+    --MAIN-ANCHOR-color: #0077b6; /* color of anchors on titles */
+
+    --DARKMODE-MAIN-TITLES-TEXT-color: #0077b6; /* Color of titles h2-h3-h4-h5 in darkmode */
+    --DARKMODE-MAIN-BACKGROUND-color: #121212; /* Color of the body by default in darkmode*/
+    --DARKMODE-MAIN-TEXT-color: #f8f8f8; /* Color of text by default in darkmode*/
+    --DARKMODE-MAIN-LINK-color: #0077b6; /* Color of links in darkmode */
+    --DARKMODE-MAIN-LINK-HOVER-color: #0077b6; /* Color of hovered links in darkmode */
+    --DARKMODE-MAIN-ANCHOR-color: #0077b6; /* color of anchors on titles in darkmode */
+
+    --CHILD-CARD-color: #000000; /* color of card on children */
+    --CHILD-SPAN-color: #FFFFFF; /* color of span on children */
+    --CHILD-P-color: #0077b6; /* color of p on children */
+
+    --DARKMODE-CHILD-CARD-color: #1c1e20; /* color of card on children in darkmode */    
+    --DARKMODE-CHILD-SPAN-color: #26282b; /* color of span on children in darkmode */
+    --DARKMODE-CHILD-P-color: #0077b6; /* color of p on children in darkmode */
+
+    --COPY-CLIPBOARD-backgroundcolor: #0077b6; /* copy to clipboard icon */
+    --COPY-CLIPBOARD-hover-backgroundcolor: #26282b; /* copy to clipboard icon */
+    
+    --DARKMODE-COPY-CLIPBOARD-backgroundcolor: #0077b6; /* copy to clipboard icon in darkmode */
+    --DARKMODE-COPY-CLIPBOARD-hover-backgroundcolor: #FFFFFF; /* copy to clipboard icon in darkmode */
+
+    --TOP-BAR-backgroundcolor: #f8f8f8; /* top bar menu thingy */
+
+    --DARKMODE-TOP-BAR-backgroundcolor: #1c1e20; /* top bar menu thingy in darkmode */
+
+    --TABLE-bordercolor: #000000; /* border color for tables */
+    --TABLE-TH-textcolor: #FFFFFF; /* header text color */
+    --TABLE-TH-backgroundcolor: #000000; /* header background color for tables */
+    --TABLE-TH-bordercolor: #000000; /* header border color for tables */
+    --TABLE-TD-backgroundcolor: #FFFFFF; /* data cell background color for tables */
+    --TABLE-TD-bordercolor: #000000; /* data cell background color for tables */
+    
+    --DARKMODE-TABLE-bordercolor: #1c1e20; /* border color for tables in darkmode */
+    --DARKMODE-TABLE-TH-textcolor: #0077b6; /* header text color in darkmode */
+    --DARKMODE-TABLE-TH-backgroundcolor: #1c1e20; /* header background color for tables in darkmode */
+    --DARKMODE-TABLE-TH-bordercolor: #1c1e20; /* header border color for tables in darkmode */
+    --DARKMODE-TABLE-TD-backgroundcolor: #26282b; /* data cell background color for tables in darkmode */
+    --DARKMODE-TABLE-TD-bordercolor: #1f2226; /* data cell background color for tables in darkmode */
+
+    --MENU-HEADER-BG-color: #0077b6; /* Background color of menu header */
+    --MENU-HEADER-BORDER-color: #0077b6; /*Color of menu header border */
+
+    --DARKMODE-MENU-HEADER-BG-color: #0077b6; /* Background color of menu header in darkmode */
+    --DARKMODE-MENU-HEADER-BORDER-color: #0077b6; /*Color of menu header border in darkmode */
+
+    --MENU-SEARCH-BG-color: #000000; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BOX-color: #0077b6; /* Override search field border color */
+    --MENU-SEARCH-BOX-ICONS-color: #0077b6; /* Override search field icons color */
+
+    --DARKMODE-MENU-SEARCH-BG-color: #1c1e20; /* Search field background color (by default borders + icons) in darkmode */
+    --DARKMODE-MENU-SEARCH-BOX-color: #0077b6; /* Override search field border color in darkmode */
+    --DARKMODE-MENU-SEARCH-BOX-ICONS-color: #0077b6; /* Override search field icons color in darkmode */
+
+    --MENU-HOME-BORDER-color: #000000; /*Color of menu header border */
+    --MENU-HOME-BG-color: #000000; /* Background color of menu header */
+
+    --DARKMODE-MENU-HOME-BG-color: #1c1e20; /* Background color of menu header in darkmode */
+    --DARKMODE-MENU-HOME-BORDER-color: #1c1e20; /*Color of menu header active section and its childs in darkmode */
+
+    --MENU-SECTIONS-BG-color: #000000; /* Background color of other sections */
+    --MENU-SECTIONS-ACTIVE-BG-color: #000000; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-LINK-color: #FFFFFF; /* Color of links in menu */
+    --MENU-SECTIONS-LINK-HOVER-color: #0077b6; /* Color of links in menu, when hovered */
+    --MENU-SECTION-ACTIVE-CATEGORY-color: #0077b6; /* Color of active category text */
+    --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #FFFFFF; /* Color of background for the active category (only) */
+    --MENU-SECTION-HR-color: #2b2020; /* Color of <hr> separator in menu */
+    --MENU-VISITED-color: #0077b6; /* Color of 'page visited' icons in menu */
+
+    --DARKMODE-MENU-SECTIONS-BG-color: #1c1e20; /* Background color of other sections in darkmode */
+    --DARKMODE-MENU-SECTIONS-ACTIVE-BG-color: #26282b; /* Background color of the active section and its childs in darkmode */
+    --DARKMODE-MENU-SECTIONS-LINK-color: #f8f8f8; /* Color of links in menu in darkmode */
+    --DARKMODE-MENU-SECTIONS-LINK-HOVER-color: #0077b6; /* Color of links in menu, when hovered in darkmode */
+    --DARKMODE-MENU-SECTION-ACTIVE-CATEGORY-color: #0077b6; /* Color of active category text in darkmode */
+    --DARKMODE-MENU-SECTION-ACTIVE-CATEGORY-BG-color: #f8f8f8; /* Color of background for the active category (only) in darkmode */
+    --DARKMODE-MENU-SECTION-HR-color: #26282b; /* Color of <hr> separator in menu in darkmode */
+    --DARKMODE-MENU-VISITED-color: #0077b6; /* Color of 'page visited' icons in menu in darkmode */    
+
+    --COPYRIGHT-color: #FFFFFF; /* Color of copyright in menu */
+    
+    --DARKMODE-COPYRIGHT-color: #f8f8f8; /* Color of copyright in menu */
+
+    --TOGGLE-TRACK-color:#0f1114; /* color of the theme switcher background */
+    --TOGGLE-THUMB-color:#FFFFFF; /* color of the theme switcher circle button */
+    --TOGGLE-ACTIVE-color: #0077b6; /* color of the outer circle glow */
+}
+
+body {
+    color: var(--MAIN-TEXT-color) !important;
+    background-color: var(--MAIN-BACKGROUND-color);
+}
+
+textarea:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+select[multiple="multiple"]:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    color: var(--MAIN-TITLES-TEXT-color) !important;
+}
+
+a {
+    color: var(--MAIN-LINK-color);
+    font-weight: 400;
+}
+
+p {
+    color: var(--MAIN-TEXT-color);
+}
+
+span.copyright {
+    color: var(--COPYRIGHT-color);
+}
+
+.anchor {
+    color: var(--MAIN-ANCHOR-color);
+}
+
+a:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+    font-weight: bold;
+}
+
+#sidebar ul li.visited > a .read-icon {
+    color: var(--MENU-VISITED-color);
+}
+
+#body a.highlight:after {
+    display: block;
+    content: "";
+    height: 5px;
+    width: 0%;
+    -webkit-transition: width 0.5s ease;
+    -moz-transition: width 0.5s ease;
+    -ms-transition: width 0.5s ease;
+    transition: width 0.5s ease;
+    background-color: var(--MAIN-LINK-HOVER-color);
+}
+
+#sidebar {
+    background-color: var(--MENU-SECTIONS-BG-color);
+}
+
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    color: var(--MENU-SEARCH-BOX-color);
+    border-color: var(--MENU-HEADER-BORDER-color);
+}
+
+#sidebar .searchbox {
+    border-color: var(--MENU-SEARCH-BOX-color);
+    background: var(--MENU-SEARCH-BG-color);
+}
+
+#sidebar ul.topics > li.parent,
+#sidebar ul.topics > li.active {
+    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+
+#sidebar .searchbox * {
+    color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar a {
+    color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar ul li.active > a {
+    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar hr {
+    border-color: var(--MENU-SECTION-HR-color);
+}
+
+#body .tags a.tag-link {
+    background-color: var(--MENU-HEADER-BG-color);
+}
+
+#body .tags a.tag-link:before {
+    border-right-color: var(--MENU-HEADER-BG-color);
+}
+
+#homelinks {
+    background: var(--MENU-HOME-BG-color);
+    background-color: var(--MENU-HOME-BORDER-color);
+    border-bottom-color: var(--MENU-HOME-BORDER-color);
+}
+
+/* top bar */
+
+#top-bar {
+    background: var(--TOP-BAR-backgroundcolor);
+}
+
+/* copy to clipboard */
+
+.copy-to-clipboard {
+    background-color: var(--COPY-CLIPBOARD-backgroundcolor);
+}
+
+.copy-to-clipboard:hover {
+    background-color: var(--COPY-CLIPBOARD-hover-backgroundcolor);
+}
+
+/* Children shortcode card style */
+
+#body a.clickablecard {
+    line-height: 1.1;
+    display: block;
+}
+
+p.cardtitletext {
+    font-size: 100%;
+    line-height: 1.1;
+    display: inline-block;
+}
+
+p.cardtitletext,
+p.cardtitletext:hover,
+p.cardtitletext:focus {
+    text-decoration: none;
+    outline: none;
+    outline: 0;
+}
+
+p.cardtitletext {
+    color: var(--MAIN-LINK-color);
+}
+
+p.cardtitletext:hover {
+    color: var(--MAIN-LINK-HOVER-color);
+}
+
+p.cardtext {
+    padding: 0rem 1rem;
+    margin: 1.7rem 0;
+    box-sizing: border-box;
+    color: var(--CHILD-P-color);
+}
+
+ul.children.children-card {
+    flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    line-height: 1.5rem;
+}
+
+ul.children.children-card > span {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    width: 40%;
+    min-width: 250px;
+    margin: 1rem 1rem;
+    background-color: var(--CHILD-SPAN-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+ul.children.children-card > span card {
+    margin: 0px 0px;
+    display: block;
+    padding: 1rem;
+    background-color: var(--CHILD-CARD-color);
+    font-size: 200%;
+}
+
+/* Tables */
+
+table {
+    border: var(--TABLE-bordercolor);
+}
+
+th {
+    color: var(--TABLE-TH-textcolor);
+    border: 1px solid var(--TABLE-TH-bordercolor);
+    background: var(--TABLE-TH-backgroundcolor);
+}
+
+td {
+    border: 1px solid var(--TABLE-TD-bordercolor);
+    background: var(--TABLE-TD-backgroundcolor);
+}
+
+/* logo */
+
+div.bgImg {
+    background-image: url("../images/knowledge-base-lm.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    width: 100%;
+    height: 0;
+    padding-top: 66.64%;
+}
+
+/* theme toggle */
+
+/*
+     * Dark Mode Toggle
+     * Copyright (c) 2015 instructure-react
+     * Forked from Dan Abramov's personal blog
+     * https://github.com/gaearon/overreacted.io/blob/master/src/components/Toggle.css
+     * MIT License
+*/
+
+.js-toggle-wrapper {
+    display: table;
+    margin: 0 auto;
+}
+
+.js-toggle {
+    touch-action: pan-x;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.js-toggle-screenreader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.js-toggle-track {
+    width: 50px;
+    height: 24px;
+    padding: 0;
+    border-radius: 30px;
+    background-color: var(--TOGGLE-TRACK-color);
+    transition: all 0.2s ease;
+}
+
+.js-toggle-track-check {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.js-toggle--checked .js-toggle-track-check {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+}
+
+.js-toggle-track-x {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 5px;
+    top: 0px;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 0;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+}
+
+.js-toggle--checked .js-toggle-track-x {
+    opacity: 0;
+}
+
+.js-toggle-thumb {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: var(--TOGGLE-THUMB-color);
+    box-sizing: border-box;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    transform: translateX(0);
+}
+
+.js-toggle--checked .js-toggle-thumb {
+    transform: translateX(26px);
+    border-color: #19ab27;
+}
+
+.js-toggle--focus .js-toggle-thumb {
+    box-shadow: 0px 0px 2px 3px var(--TOGGLE-ACTIVE-color);
+}
+
+.js-toggle:active .js-toggle-thumb {
+    box-shadow: 0px 0px 5px 5px var(--TOGGLE-ACTIVE-color);
+}
+
+/* Dark mode overwrites */
+
+body.dark-mode {
+    color: var(--DARKMODE-MAIN-TEXT-color) !important;
+    background-color: var(--DARKMODE-MAIN-BACKGROUND-color);
+}
+
+body.dark-mode div.bgImg {
+    background-image: url("../images/knowledge-base-dm.png");
+}
+
+body.dark-mode p.cardtitletext {
+    color: var(--MAIN-LINK-color);
+}
+
+body.dark-mode p {
+    color: var(--DARKMODE-MAIN-TEXT-color);
+}
+
+body.dark-mode #sidebar {
+    background-color: var(--DARKMODE-MENU-SECTIONS-BG-color);
+}
+
+body.dark-mode #sidebar hr {
+    border-color: var(--DARKMODE-MENU-SECTION-HR-color);
+}
+
+body.dark-mode #sidebar a {
+    color: var(--DARKMODE-MENU-SECTIONS-LINK-color);
+}
+
+body.dark-mode #sidebar a:hover {
+    color: var(--DARKMODE-MENU-SECTIONS-LINK-HOVER-color);
+}
+
+
+body.dark-mode #top-bar {
+    background: var(--DARKMODE-TOP-BAR-backgroundcolor);
+}
+
+body.dark-mode #sidebar .searchbox {
+    border-color: var(--DARKMODE-MENU-SEARCH-BOX-color);
+    background: var(--DARKMODE-MENU-SEARCH-BG-color);
+}
+
+body.dark-mode #sidebar ul.topics > li.parent,
+body.dark-mode #sidebar ul.topics > li.active {
+    background: var(--DARKMODE-MENU-SECTIONS-ACTIVE-BG-color);
+}
+
+
+body.dark-mode .copy-to-clipboard:hover {
+    background-color: var(--DARKMODE-COPY-CLIPBOARD-hover-backgroundcolor);
+}
+
+body.dark-mode ul.children.children-card > span {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
+    width: 40%;
+    min-width: 250px;
+    margin: 1rem 1rem;
+    background-color: var(--DARKMODE-CHILD-SPAN-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode ul.children.children-card > span card {
+    margin: 0px 0px;
+    display: block;
+    padding: 1rem;
+    background-color: var(--DARKMODE-CHILD-CARD-color);
+    font-size: 200%;
+}
+
+body.dark-mode table {
+    border: var(--DARKMODE-TABLE-bordercolor);
+}
+
+body.dark-mode th {
+    color: var(--DARKMODE-TABLE-TH-textcolor);
+    border: 1px solid var(--DARKMODE-TABLE-TH-bordercolor);
+    background: var(--DARKMODE-TABLE-TH-backgroundcolor);
+}
+
+body.dark-mode td {
+    border: 1px solid var(--DARKMODE-TABLE-TD-bordercolor);
+    background: var(--DARKMODE-TABLE-TD-backgroundcolor);
+}
+body.dark-mode #homelinks {
+    background: var(--DARKMODE-MENU-HOME-BG-color);
+    background-color: var(--DARKMODE-MENU-HOME-BORDER-color);
+    border-bottom-color: var(--DARKMODE-MENU-HOME-BORDER-color);
+}

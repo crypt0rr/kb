@@ -1,0 +1,21 @@
+---
+  - hosts: all
+    remote_user: root
+    tasks:
+      - name: Ensure packages are updated
+        apt:
+          update_cache: yes
+          upgrade: yes
+        become: yes
+      - name: Ensure that unzip is installed
+        apt:
+          name: unzip
+          state: present
+      - name: Install nginx
+        apt:
+          name: nginx
+          state: latest
+      - name: start nginx
+        service:
+          name: nginx
+          state: started

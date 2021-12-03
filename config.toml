@@ -1,0 +1,41 @@
+baseURL = "https://kb.offsec.nl"
+languageCode = "en-us"
+title = "Knowledge Base (KB)"
+theme = "hugo-learn" # https://github.com/matcornic/hugo-theme-learn/
+copyright = "© 2018-{year} - All rights reserved"
+pluralizelisttitles = false
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  editURL = "https://github.com/crypt0rr/kb/tree/main/content/"
+  author = "crypt0rr"
+  description = "Knowledgde Base (KB)"
+  showVisitedLinks = false
+  disableSearch = false
+  disableAssetsBusting = false
+  disableInlineCopyToClipBoard = false
+  disableShortcutsTitle = false
+  disableLanguageSwitchingButton = false
+  disableLandingPageButton = true
+  disableBreadcrumb = true
+  disableNextPrev = true
+  ordersectionsby = "title"
+  themeVariant = "kb"
+
+# Enables raw html in markdown.
+[markup.goldmark.renderer]
+unsafe = true
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-home'></i> Home"
+identifier = "home"
+url = "/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub"
+identifier = "github"
+url = "https://github.com/crypt0rr/kb"
+weight = 20
