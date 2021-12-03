@@ -20,7 +20,7 @@ hugo new --kind tool content/tools/other/testtool
 hugo list drafts
 ```
 
-## Contribution
+## Contributing
 
 Feel free to open a PR with your content/changes. Some rules:
 
