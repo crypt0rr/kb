@@ -31,17 +31,9 @@ Note that "bridge" mode works perfectly fine if all you need is a DNS server, an
 
 ### Installation
 
-1. Clone this repo and cd into it
+1. Clone this repo and cd into it: `git clone https://github.com/PARC6502/docker-dns-dhcp.git && cd docker-dns-dhcp`
 
-```plain
-git clone https://github.com/PARC6502/docker-dns-dhcp.git && cd docker-dns-dhcp
-```
-
-2. Make copies of example files
-
-```plain
-cp dnsmasq.example.conf dnsmasq.conf && cp static_hosts.example static_hosts && cp ad.example.list ad.list && touch dnsmasq.log
-```
+2. Make copies of example files: `cp dnsmasq.example.conf dnsmasq.conf && cp static_hosts.example static_hosts && cp ad.example.list ad.list && touch dnsmasq.log`
 
 3. Set a static IP for your server machine. You can either do this from the machine itself, setting an IP outside of the DHCP range, or from the `dnsmasq.conf` file
 
@@ -53,21 +45,19 @@ This is the line you want to change
 address=/.local.cloud/192.168.1.3
 ```
 
-5. (Optional) You can set static IPs based on hostname or MAC address in `dnsmasq.conf`
+#### Optional
 
-6. (Optional) Add static hosts to your static_hosts file (could point to different servers, android tv, etc)
+1. (Optional) You can set static IPs based on hostname or MAC address in `dnsmasq.conf`
 
-7. (Optional) You can add sites you'd like to block in `ad.list` in the format shown below, I'm using [this file](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) on my network
+2. (Optional) Add static hosts to your static_hosts file (could point to different servers, android tv, etc)
 
-```plain
-0.0.0.0 facebook.com
-```
+3. (Optional) You can add sites you'd like to block in `ad.list` in the format shown below, I'm using [this file](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) on my network
 
-8. Turn off DHCP in your router
+4. Turn off DHCP in your router
 
    For this container to work it's important that it's not clashing with another DHCP server. You need to access your router, find the DHCP option and turn it off. Take
 
-9. Start up the container
+5. Start up the container
 
 ### Usage
 

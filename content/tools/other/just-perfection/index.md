@@ -15,7 +15,7 @@ Disable and Customize GNOME shell UI Elements.
 
 This extension allows you to do the following:
 
-#### Visibility
+### Visibility
 
 * OSD
 * Search
@@ -33,7 +33,7 @@ This extension allows you to do the following:
 * Applications Button
 * Workspaces in app grid (Only GNOME Shell 40)
 
-#### Icons Visibility
+### Icons Visibility
 
 * App Menu Icon
 * Power Icon
@@ -42,7 +42,7 @@ This extension allows you to do the following:
 * Panel Arrow (Only GNOME Shell 3.36 and 3.38)
 * Activities Button Icon
 
-#### Behavior
+### Behavior
 
 * Disable Type to Search
 * Hot Corner
@@ -51,7 +51,7 @@ This extension allows you to do the following:
 * Always Show Workspace Switcher on Dynamic Workspaces (Only GNOME Shell 40)
 * Startup status (Only GNOME Shell 40)
 
-#### Customize
+### Customize
 
 * Panel Position
 * Panel Round Corner Size
@@ -61,11 +61,11 @@ This extension allows you to do the following:
 * Dash Icon Size
 * Notification Banner Position
 
-#### Override
+### Override
 
 * GNOME shell theme (You don't need to have user-theme-extension)
 
-### Installation
+## Installation
 
 Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/3843/just-perfection/)
 

@@ -4,7 +4,7 @@ title : "Credmaster"
 description : "Refactored & improved CredKing password spraying tool, uses FireProx APIs to rotate IP addresses, stay anonymous, and beat throttling."
 date : 2021-11-29T20:11:46+01:00
 # hidden : true
-# draft : true
+draft : true
 weight : 0
 # tags : ['']
 ---
@@ -19,7 +19,7 @@ See all the full notes on the Wiki, tool released with specifics in this blogpos
 
 For detection tips, see the blogpost and detection section.
 
-**Be careful for account lockouts, know the reset policies of your target**
+**Be careful** for account lockouts, know the reset policies of your target
 
 ### Installation
 

@@ -46,14 +46,14 @@ go get github.com/fatih/color
 go get golang.org/x/net/proxy
 ```
 
-3. Clone the repo.
-4. Navigate to the repo and compile ya dingus.
+* Clone the repo.
+* Navigate to the repo and compile ya dingus.
 
 ```plain
 go build Go365.go
 ```
 
-5. Run the resulting binary and enjoy :)
+Run the resulting binary and enjoy :)
 
 ### Usage
 

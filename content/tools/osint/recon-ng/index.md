@@ -29,8 +29,6 @@ cd recon-ng
 pip3 install -r REQUIREMENTS
 ```
 
-## recon-ng
-
 ### Usage (recon-ng)
 
 ```plain

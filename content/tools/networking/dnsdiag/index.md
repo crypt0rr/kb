@@ -72,9 +72,9 @@ docker run --network host -it --rm farrokhi/dnsdiag dnsping.py
 dnsping pings a DNS resolver by sending an arbitrary DNS query for given number of times.
 A complete explanation of supported command line flags is shown by using `--help`. Here are a few useful flags:
 
-- Using `--tcp`, `--tls` and `--doh` to select transport protocol. Default is UDP.
-- Using `--flags` to display response flags for each response
-- Using `--dnssec` to request DNSSEC if available
+* Using `--tcp`, `--tls` and `--doh` to select transport protocol. Default is UDP.
+* Using `--flags` to display response flags for each response
+* Using `--dnssec` to request DNSSEC if available
 
 In addition to UDP, you can ping using TCP, DoT (DNS over TLS) and DoH (DNS over HTTPS) using `--tcp`, `--tls` and `--doh` respectively.
 
@@ -100,9 +100,9 @@ jitter (stddev) and lost packets.
 
 There are several interesting use cases for dnsping, including:
 
-- Comparing response times using different transport protocols (e.g. UDP vs DoH)
-- Measuring how reliable your DNS server is, by measuring Jitter and packet loss
-- Measuring responses times when DNSSEC is enabled using `--dnssec`
+* Comparing response times using different transport protocols (e.g. UDP vs DoH)
+* Measuring how reliable your DNS server is, by measuring Jitter and packet loss
+* Measuring responses times when DNSSEC is enabled using `--dnssec`
 
 ## dnstraceroute
 
@@ -129,16 +129,13 @@ dnstraceroute.py DNS: 8.8.4.4:53, hostname: facebook.com, rdatatype: A
  [*] public DNS server is next to a private IP address (possible hijacking)
 ```
 
-Using `--expert` will instruct dnstraceroute to print expert hints (such as 
-warnings of possible DNS traffic hijacking).
+Using `--expert` will instruct dnstraceroute to print expert hints (such as warnings of possible DNS traffic hijacking).
 
 ## dnseval
 
-dnseval is a bulk ping utility that sends an arbitrary DNS query to a give list
-of DNS servers. This script is meant for comparing response time of multiple
-DNS servers at once.
+dnseval is a bulk ping utility that sends an arbitrary DNS query to a give list of DNS servers. This script is meant for comparing response time of multiple DNS servers at once.
 
-You can use `dnseval` to compare response times using different transport 
+You can use `dnseval` to compare response times using different transport
 protocols such as UDP (default), TCP, DoT and DoH using `--tcp`, `--tls` and
 `--doh` respectively.
 

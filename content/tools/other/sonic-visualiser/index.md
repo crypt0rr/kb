@@ -20,7 +20,7 @@ Download newest version of [Tony](https://code.soundsoftware.ac.uk/projects/soni
 
 ### Examples
 
-#### Sonic Visualiser
+#### Visualiser
 
 ![Sonic Visualiser](images/example1.png)
 
