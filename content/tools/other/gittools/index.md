@@ -23,7 +23,7 @@ git clone https://github.com/internetwache/GitTools.git
 
 You can use this tool to find websites with their .git repository available to the public
 
-### Usage
+### Usage (finder)
 
 This python script identifies websites with publicly accessible `.git` repositories. It checks if the `.git/HEAD` file contains `refs/heads`.
 
@@ -57,7 +57,7 @@ The input file should contain the targets one per line. The script will output d
 
 This tool can be used to download as much as possible from the found .git repository from webservers which do not have directory listing enabled.
 
-### Usage
+### Usage (dumper)
 
 ```plain
 $ ./gitdumper.sh -h

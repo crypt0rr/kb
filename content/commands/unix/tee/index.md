@@ -59,7 +59,6 @@ $ cat testfile.txt | tee output.txt &>/dev/null
 <nothing-shown>
 ```
 
-
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/tee)
