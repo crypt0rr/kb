@@ -306,6 +306,12 @@ nmap -Pn -p5900 --script vnc-info <target>
 nmap -p443 --script vmware-version <target>
 ```
 
+#### NTP information
+
+```plain
+nmap -sU -p 123 --script ntp-info <target>
+```
+
 #### LDAP anonymous bind
 
 ```plain
