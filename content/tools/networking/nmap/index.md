@@ -312,6 +312,20 @@ nmap -p443 --script vmware-version <target>
 nmap -sU -p 123 --script ntp-info <target>
 ```
 
+#### SMTP
+
+Commands supported.
+
+```plain
+nmap --script smtp-commands.nse [--script-args smtp-commands.domain=<domain>] -pT:25,465,587 <host>
+```
+
+Open Relay checking.
+
+```plain
+nmap --script smtp-open-relay.nse [--script-args smtp-open-relay.domain=<domain>,smtp-open-relay.ip=<address>,...] -p 25,465,587 <host>
+```
+
 #### LDAP anonymous bind
 
 ```plain
