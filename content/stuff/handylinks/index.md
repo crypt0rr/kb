@@ -131,6 +131,14 @@ $ hydra 127.0.0.1 -s 8080 -V -f http-form-post "/j_acegi_security_check:j_userna
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-22 15:04:47
 ```
 
+### Application Security overview and mitigation list
+
+[Applicationsecurity.io - Appsec Findings database list](https://applicationsecurity.io/appsec-findings-database-list/)
+
+### Web Application Firewall (WAF) Evasion Techniques #3
+
+[Secjuice.com - Web Application Firewall (WAF) Evasion Techniques](https://www.secjuice.com/web-application-firewall-waf-evasion/)
+
 ### An A-Z Index of Windows CMD commands
 
 [An A-Z Index of Windows CMD commands.](https://ss64.com/nt/)
