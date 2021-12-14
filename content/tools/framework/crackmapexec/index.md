@@ -245,6 +245,31 @@ SMB         10.10.10.110   445    VMV01     offsec.nl/john.do:$DCC2$10240#john.d
 SMB         10.10.10.110   445    VMV01     offsec.nl/jane.do:$DCC2$10240#jane.do#e12335228dd44cb595e37afb3cb14a0c
 ```
 
+#### Check default (non-authenticated) password policy
+
+```plain
+$ cme smb 10.10.10.10 --pass-pol
+SMB         10.10.10.10     445    DC-01    [*] Windows 10.0 Build 17763 x64 (name:DC-01) (domain:offsec.nl) (signing:False) (SMBv1:False)
+SMB         10.10.10.10     445    DC-01    [+] Dumping password info for domain: OFFSEC
+SMB         10.10.10.10     445    DC-01    Minimum password length: 8
+SMB         10.10.10.10     445    DC-01    Password history length: 15
+SMB         10.10.10.10     445    DC-01    Maximum password age: 
+SMB         10.10.10.10     445    DC-01    
+SMB         10.10.10.10     445    DC-01    Password Complexity Flags: 000001
+SMB         10.10.10.10     445    DC-01        Domain Refuse Password Change: 0
+SMB         10.10.10.10     445    DC-01        Domain Password Store Cleartext: 0
+SMB         10.10.10.10     445    DC-01        Domain Password Lockout Admins: 0
+SMB         10.10.10.10     445    DC-01        Domain Password No Clear Change: 0
+SMB         10.10.10.10     445    DC-01        Domain Password No Anon Change: 0
+SMB         10.10.10.10     445    DC-01        Domain Password Complex: 1
+SMB         10.10.10.10     445    DC-01    
+SMB         10.10.10.10     445    DC-01    Minimum password age: None
+SMB         10.10.10.10     445    DC-01    Reset Account Lockout Counter: 90 minutes 
+SMB         10.10.10.10     445    DC-01    Locked Account Duration: 60 minutes 
+SMB         10.10.10.10     445    DC-01    Account Lockout Threshold: 10
+SMB         10.10.10.10     445    DC-01    Forced Log off Time: Not Set
+```
+
 #### Check password policy for a user
 
 ```plain

