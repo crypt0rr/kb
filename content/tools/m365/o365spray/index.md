@@ -6,7 +6,7 @@ date : 2021-11-03T20:53:22+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['M365', 'Passwordspray']
 ---
 
 ## O365spray

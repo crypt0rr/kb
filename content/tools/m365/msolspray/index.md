@@ -6,7 +6,7 @@ date : 2020-04-02T11:48:31+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['M365', 'Passwordspray']
 ---
 
 ## MSOLSpray
