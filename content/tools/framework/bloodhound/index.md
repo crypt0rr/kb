@@ -100,9 +100,9 @@ Import the .zip file in Bloodhound
 
 #### AzureHound - Run ingestor
 
-Import the module
+Install PowerShell Azure Module `Install-Module -Name Az`
 
-`Import-Module AzureHound.ps1`
+`. .\AzureHound.ps1`
 
 `Connect-AZAccount`
 
