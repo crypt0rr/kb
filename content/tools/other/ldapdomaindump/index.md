@@ -109,7 +109,7 @@ cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3,$12}' O
 For example 'Domain Users'.
 
 ```plain
-grep -w '513' domain_groups.grep | awk -F ';' '{print $3}'
+grep -w 'S-1-5-21*.*513' domain_groups.grep | awk -F ';' '{print $3}'
 ```
 
 #### Oneliners to filter high privilege users
