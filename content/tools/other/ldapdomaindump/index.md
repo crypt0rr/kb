@@ -104,6 +104,14 @@ Requires 'domain_users.grep' file
 cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3,$12}' OFS=" | "  
 ```
 
+#### Filter group memberships of specific SIDs
+
+For example 'Domain Users'.
+
+```plain
+grep -w '513' domain_groups.grep | awk -F ';' '{print $3}'
+```
+
 #### Oneliners to filter high privilege users
 
 ```plain
