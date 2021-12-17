@@ -69,6 +69,31 @@ optional arguments:
 
 ### Examples
 
+### Live on interface
+
+For example you can start this live capture with the following tools all at the same time:
+
+* [Impacket - SMBserver.py]({{< ref "impacket" >}})
+* [Responder]({{< ref "responder" >}})
+
+```plain
+$ sudo python3 Pcredz -i enp0s31f6
+Pcredz 2.0.2
+Author: Laurent Gaffie
+Please send bugs/comments/pcaps to: laurent.gaffie@gmail.com
+This script will extract NTLM (HTTP,LDAP,SMB,MSSQL,RPC, etc), Kerberos,
+FTP, HTTP Basic and credit card data from a given pcap file or from a live interface.
+
+CC number scanning activated
+
+Pcredz live capture started, using:enp0s31f6
+Starting timestamp (1639734999.1870687) corresponds to 12/17/21 10:56:39
+protocol: tcp 10.10.10.102:36188 > 10.10.10.103:445
+NTLMv2 complete hash is: john-do::OFFSEC:aaaaaaaaaaaaaaaa:41DBF91ACAE926FCF1BB4D7580A4BC96:0101000000000000[...SNIP...]
+```
+
+### Analyzing .PCAP(NG) files
+
 Note: first change owner for the input PCAP(NG) file. `sudo chown -R $USER:$USER *.pcap*`
 
 #### HTTP Basic authentication
