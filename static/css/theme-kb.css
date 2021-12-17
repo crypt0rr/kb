@@ -28,7 +28,7 @@
     --MAIN-ANCHOR-color: #0077b6; /* color of anchors on titles */
 
     --DARKMODE-MAIN-TITLES-TEXT-color: #0077b6; /* Color of titles h2-h3-h4-h5 in darkmode */
-    --DARKMODE-MAIN-BACKGROUND-color: #121212; /* Color of the body by default in darkmode*/
+    --DARKMODE-MAIN-BACKGROUND-color: #26282b; /* Color of the body by default in darkmode*/
     --DARKMODE-MAIN-TEXT-color: #f8f8f8; /* Color of text by default in darkmode*/
     --DARKMODE-MAIN-LINK-color: #0077b6; /* Color of links in darkmode */
     --DARKMODE-MAIN-LINK-HOVER-color: #0077b6; /* Color of hovered links in darkmode */
