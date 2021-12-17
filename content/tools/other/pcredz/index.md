@@ -165,6 +165,35 @@ protocol: tcp 10.51.222.19:49254 > 10.51.223.29:80
 NTLMv2 complete hash is: SA-DA::OFFSEC:717b58d1234658b:0CDFE112345678909742C4EBE4:01010000000000007E9CBA2A3E0FD7017720946CFDAC6FB7000000000200060053004D0042000100160053004D0042002D0054004F004F004C004B00490054000400120073006D0062002E006C006F00630061006C000300280073006500720076006500720032003000300033002E007610064000000000000000000
 ```
 
+#### Microsoft SQL
+
+```plain
+$ python3 Pcredz -f capture.pcapng                         
+Pcredz 2.0.2
+Author: Laurent Gaffie
+Please send bugs/comments/pcaps to: laurent.gaffie@gmail.com
+This script will extract NTLM (HTTP,LDAP,SMB,MSSQL,RPC, etc), Kerberos,
+FTP, HTTP Basic and credit card data from a given pcap file or from a live interface.
+
+CC number scanning activated
+
+Unknown format, trying TCPDump format
+
+protocol: tcp 10.10.10.1:445 > 10.10.10.2:58484
+Found a password in an SMB read operation:
+
+[Netwerk]
+Max=0
+0=AD;DC=offsec,DC=nl
+
+[OFFSECMASTERDB]
+Soort=          SQLSERVER
+SQLServerName=  SQLSERVER-PROD.offsec.nl
+SQLDatabaseName=OFFSECMASTERDB
+SQLUserName=    SQLADMIN
+SQLPassWord=    aMEWMj7J?Cz7hU?44KwD3js8KyxXddhG
+```
+
 ### URL list
 
 * [Github.com - PCredz](https://github.com/lgandx/PCredz)
