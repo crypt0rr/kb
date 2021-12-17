@@ -1,7 +1,7 @@
 :root {
     /* 
         # Base colors
-        #000000
+        #1c1e20
         #0077b6
         #FFFFFF
 
@@ -28,13 +28,13 @@
     --MAIN-ANCHOR-color: #0077b6; /* color of anchors on titles */
 
     --DARKMODE-MAIN-TITLES-TEXT-color: #0077b6; /* Color of titles h2-h3-h4-h5 in darkmode */
-    --DARKMODE-MAIN-BACKGROUND-color: #121212; /* Color of the body by default in darkmode*/
+    --DARKMODE-MAIN-BACKGROUND-color: #26282b; /* Color of the body by default in darkmode*/
     --DARKMODE-MAIN-TEXT-color: #f8f8f8; /* Color of text by default in darkmode*/
     --DARKMODE-MAIN-LINK-color: #0077b6; /* Color of links in darkmode */
     --DARKMODE-MAIN-LINK-HOVER-color: #0077b6; /* Color of hovered links in darkmode */
     --DARKMODE-MAIN-ANCHOR-color: #0077b6; /* color of anchors on titles in darkmode */
 
-    --CHILD-CARD-color: #000000; /* color of card on children */
+    --CHILD-CARD-color: #1c1e20; /* color of card on children */
     --CHILD-SPAN-color: #FFFFFF; /* color of span on children */
     --CHILD-P-color: #0077b6; /* color of p on children */
 
@@ -52,12 +52,12 @@
 
     --DARKMODE-TOP-BAR-backgroundcolor: #1c1e20; /* top bar menu thingy in darkmode */
 
-    --TABLE-bordercolor: #000000; /* border color for tables */
+    --TABLE-bordercolor: #1c1e20; /* border color for tables */
     --TABLE-TH-textcolor: #FFFFFF; /* header text color */
-    --TABLE-TH-backgroundcolor: #000000; /* header background color for tables */
-    --TABLE-TH-bordercolor: #000000; /* header border color for tables */
+    --TABLE-TH-backgroundcolor: #1c1e20; /* header background color for tables */
+    --TABLE-TH-bordercolor: #1c1e20; /* header border color for tables */
     --TABLE-TD-backgroundcolor: #FFFFFF; /* data cell background color for tables */
-    --TABLE-TD-bordercolor: #000000; /* data cell background color for tables */
+    --TABLE-TD-bordercolor: #1c1e20; /* data cell background color for tables */
     
     --DARKMODE-TABLE-bordercolor: #1c1e20; /* border color for tables in darkmode */
     --DARKMODE-TABLE-TH-textcolor: #0077b6; /* header text color in darkmode */
@@ -72,7 +72,7 @@
     --DARKMODE-MENU-HEADER-BG-color: #0077b6; /* Background color of menu header in darkmode */
     --DARKMODE-MENU-HEADER-BORDER-color: #0077b6; /*Color of menu header border in darkmode */
 
-    --MENU-SEARCH-BG-color: #000000; /* Search field background color (by default borders + icons) */
+    --MENU-SEARCH-BG-color: #1c1e20; /* Search field background color (by default borders + icons) */
     --MENU-SEARCH-BOX-color: #0077b6; /* Override search field border color */
     --MENU-SEARCH-BOX-ICONS-color: #0077b6; /* Override search field icons color */
 
@@ -80,14 +80,14 @@
     --DARKMODE-MENU-SEARCH-BOX-color: #0077b6; /* Override search field border color in darkmode */
     --DARKMODE-MENU-SEARCH-BOX-ICONS-color: #0077b6; /* Override search field icons color in darkmode */
 
-    --MENU-HOME-BORDER-color: #000000; /*Color of menu header border */
-    --MENU-HOME-BG-color: #000000; /* Background color of menu header */
+    --MENU-HOME-BORDER-color: #1c1e20; /*Color of menu header border */
+    --MENU-HOME-BG-color: #1c1e20; /* Background color of menu header */
 
     --DARKMODE-MENU-HOME-BG-color: #1c1e20; /* Background color of menu header in darkmode */
     --DARKMODE-MENU-HOME-BORDER-color: #1c1e20; /*Color of menu header active section and its childs in darkmode */
 
-    --MENU-SECTIONS-BG-color: #000000; /* Background color of other sections */
-    --MENU-SECTIONS-ACTIVE-BG-color: #000000; /* Background color of the active section and its childs */
+    --MENU-SECTIONS-BG-color: #1c1e20; /* Background color of other sections */
+    --MENU-SECTIONS-ACTIVE-BG-color: #1c1e20; /* Background color of the active section and its childs */
     --MENU-SECTIONS-LINK-color: #FFFFFF; /* Color of links in menu */
     --MENU-SECTIONS-LINK-HOVER-color: #0077b6; /* Color of links in menu, when hovered */
     --MENU-SECTION-ACTIVE-CATEGORY-color: #0077b6; /* Color of active category text */
