@@ -558,3 +558,7 @@ body.dark-mode #homelinks {
     background-color: var(--DARKMODE-MENU-HOME-BORDER-color);
     border-bottom-color: var(--DARKMODE-MENU-HOME-BORDER-color);
 }
+
+body.dark-mode pre {
+    background-color: #323232 !important;
+}
