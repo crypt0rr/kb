@@ -2,6 +2,12 @@
 
 Just some silly notes digitalized, have fun and feel free to open PR.
 
+## Start live server locally
+
+```plain
+hugo server
+```
+
 ## Create new pages
 
 ```plain
