@@ -132,6 +132,12 @@ Filter public group URLs.
 jq '.[] | select(.visibility=="Public")' all_groups.json | jq -r '.sharepoint'
 ```
 
+### Filter displayName, sharepoint URL and members
+
+```plain
+jq '.[] | select(.visibility=="Public")' all_groups.json | jq -r '.displayName, .sharepoint, .members'
+```
+
 ### URL list
 
 * [Github.com - m365_groups_enum](https://github.com/cnotin/m365_groups_enum.git)
