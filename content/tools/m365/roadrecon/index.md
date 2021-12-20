@@ -1,5 +1,5 @@
 ---
-title : "RoadRecon"
+title : "ROADrecon"
 # pre : ' '
 description : "ROADtools is a framework to interact with Azure AD. It currently consists of a library (roadlib) and the ROADrecon Azure AD exploration tool."
 date : 2020-04-17T11:57:13+02:00
@@ -9,7 +9,7 @@ weight : 0
 #tags : ['M365', 'AzureAD']
 ---
 
-## RoadRecon
+## ROADrecon
 
 Rogue Office 365 and Azure AD (active) Directory tools - ROADtools is a framework to interact with Azure AD. It currently consists of a library (roadlib) and the ROADrecon Azure AD exploration tool.
 
