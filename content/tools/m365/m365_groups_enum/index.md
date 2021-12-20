@@ -83,66 +83,53 @@ optional arguments:
 
 ### Examples
 
+#### Gather information without 2FA
+
+```plain
+$ python3 all_groups.py -u johndo@example.com -p 'Welkom1234!'
+Authenticated as johndo@example.com
+Guessing SharePoint default URL... https://example.sharepoint.com
+Getting all groups... 
+Got 1337 groups
+Getting groups details...
+38 %
+76 %
+Bye!
+```
+
+#### Gather when 2FA is implemented
+
 ```plain
 $ python3 all_groups.py --device-code
 To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code 12345678 to authenticate.
 Authenticated as johndo@example.com
 Guessing SharePoint default URL... https://example.sharepoint.com
 Getting all groups... 
-Got 2282 groups
+Got 1337 groups
 Getting groups details...
-4 %
-9 %
-13 %
-18 %
-22 %
-26 %
-31 %
-35 %
-39 %
-44 %
-48 %
-53 %
-57 %
-61 %
-66 %
-70 %
-74 %
-79 %
-83 %
-88 %
-92 %
-96 %
+38 %
+76 %
 Bye!
-```
-
-```plain
-head all_groups.json
-[
-  {
-    "displayName": "1337 LEET Team",
-    "visibility": "Private",
-    "id": "ca61babc-62c2-4321-1337-123456789",
-    "description": "Developing 1337 thingies",
-    "mailEnabled": true,
-    "mail": "1337.team@example.com",
-    "mailNickname": "1337Team",
-    "resourceProvisioningOptions": "['Team']",
-    "sharepoint": "https://example.sharepoint.com/sites/1337Team",
-    "hasTeams": true,
-    "owners": [
-      "johndo-adm@example.com",
-    ],
-    "members": [
-      "janedo@example.com",
 ```
 
 ### Convert JSON output to CSV
 
-Will convert *all_groups.json* to new file *all_groups.csv*
+Will convert data from *all_groups.json* to new file *all_groups.csv* (keeps 'all_groups.json')
 
 ```plain
 python3 reporting.py
+```
+
+### Filter public groups
+
+```plain
+jq '.[] | select(.visibility=="Public")' all_groups.json
+```
+
+Filter public group URLs.
+
+```plain
+jq '.[] | select(.visibility=="Public")' all_groups.json | jq -r '.sharepoint'
 ```
 
 ### URL list
