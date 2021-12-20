@@ -19,7 +19,7 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 {{%attachments title="Executables" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
-{{%attachments title="PowerShell Modules" fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
+{{%attachments title="PowerShell Module" fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
 
 ### Installation
 
@@ -88,25 +88,25 @@ DefaultLimitNOFILE=60000
 
 #### Bloodhound - Run ingestor on target domain joined system
 
-`. .\SharpHound.ps1 / exe`
+```plain
+. .\SharpHound.ps1 / exe
+```
 
-`Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"`
+```plain
+Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"
+```
 
 #### Bloodhound - Remote ingestor
 
-`bloodhound-python -c All -u '<user>@domain' -p '<password>' -d <domain> -v`
+```plain
+bloodhound-python -c All -u '<user>@domain' -p '<password>' -d <domain> -v
+```
 
 Import the .zip file in Bloodhound
 
-#### AzureHound - Run ingestor
+#### AzureHound
 
-Install PowerShell Azure Module `Install-Module -Name Az`
-
-`. .\AzureHound.ps1`
-
-`Connect-AZAccount`
-
-`Invoke-AzureHound -Install`
+Please check [AzureHound]({{< ref "azurehound" >}})
 
 #### Start bloodhound (Kali)
 
