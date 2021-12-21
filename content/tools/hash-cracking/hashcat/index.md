@@ -641,7 +641,7 @@ hashcat -m <hash-number> <fileWithHash> --username --show
 #### Filter password reuse
 
 ```plain
-sort <file-with-passwords>.txt | uniq -c | grep -v "1 " | sort -rn
+sort <file-with-passwords>.txt | uniq -c | sort -rn | head -n10
 ```
 
 #### Match users versus cracked hashes, for example domain admins
