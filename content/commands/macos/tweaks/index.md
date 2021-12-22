@@ -94,3 +94,9 @@ defaults write com.apple.finder QLEnableTextSelection -bool TRUE
 ```plain
 killall Finder
 ```
+
+### URL list
+
+* [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
+* [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)
+* [Github.com - TerminalTweaks](https://github.com/MacTweaks/TerminalTweaks)
