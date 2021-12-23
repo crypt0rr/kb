@@ -13,6 +13,8 @@ tags : ['Framework', 'DNS']
 
 Network-wide ads & trackers blocking DNS server.
 
+When running multiple instances of AdGuardHome you can synchronize the configuration with [AdGuardHome Sync]({{< ref "adguard-home-sync" >}})
+
 ### Installation
 
 Download newest release from [Github.com](https://github.com/AdguardTeam/AdGuardHome/releases)
@@ -56,9 +58,11 @@ Options:
 
 ### Blocklists
 
-```plain
-https://www.reddit.com/r/oisd_blocklist/comments/dwxgld/dbloisdnl_internets_1_domain_blocklist/
-```
+<https://oisd.nl/>
+<https://someonewhocares.org/hosts/>
+<https://github.com/DandelionSprout/adfilt>
+<https://github.com/Perflyst/PiHoleBlocklist>
+<https://gitlab.com/curben/urlhaus-filter>
 
 ### Examples
 
@@ -83,4 +87,3 @@ curl -X POST -H "Content-Type:application/json" -d '{"protection_enabled":true}'
 ### URL list
 
 * [GitHub.com - AdGuardHome](https://github.com/adguardteam/adguardhome)
-* [AdGuard Home Sync - Synchronizing config between multiple instances](https://github.com/bakito/adguardhome-sync)
