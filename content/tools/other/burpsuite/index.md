@@ -6,7 +6,7 @@ date : 2020-03-10T15:32:46+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags: ['Other','Webapplication']
+tags: ['Other','Webapplication', 'macOS', 'Windows', 'Linux']
 ---
 
 ## Burpsuite

@@ -6,7 +6,7 @@ date : 2020-03-13T21:12:55+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
 ## BalenaEtcher
