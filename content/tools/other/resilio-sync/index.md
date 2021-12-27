@@ -6,7 +6,7 @@ date : 2020-03-11T14:59:09+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Other', 'macOS', 'Windows', 'Linux', 'Peer-to-Peer']
 ---
 
 ## Resilio Sync

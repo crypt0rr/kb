@@ -6,7 +6,7 @@ date : 2021-05-27T09:05:20+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'macOS', 'Linux']
 ---
 
 ## Sosumi

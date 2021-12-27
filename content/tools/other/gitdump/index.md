@@ -6,7 +6,7 @@ date : 2021-07-10T15:06:22+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
 ## GitDump
