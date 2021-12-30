@@ -28,6 +28,7 @@ sudo ./burpsuite_pro_*.sh
 Active Scan++
 Additional Scanner Checks
 Asset Discovery
+Autorize
 Bypass WAF
 CSP Auditor
 EsPReSSO
