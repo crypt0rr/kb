@@ -21,6 +21,8 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 {{%attachments title="PowerShell Module" fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
 
+To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
+
 ### Installation
 
 Kali
