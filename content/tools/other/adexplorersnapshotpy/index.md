@@ -58,7 +58,20 @@ The format in which snapshots are stored by AD Explorer is proprietary and led t
 ### Examples
 
 ![Example](images/adexplorer.png)
-![Example](images/adexpsnapshotpy.png)
+
+```plain
+$ python3 ADExplorerSnapshot.py snapshot.dat 
+[*] Server: DC01.offsec.nl
+[*] Time of snapshot: 2021-12-31T09:35:35
+[*] Mapping offset: 0x114c005
+[*] Object count: 9068
+[+] Parsing properties: 3943
+[+] Parsing classes: 583
+[+] Parsing object offsets: 9068
+[+] Preprocessing objects: 170 sids, 10 computers, 1 domains with 2 DCs
+[+] Collecting data: 41 users, 84 groups, 10 computers, 0 trusts
+[+] Output written to DC01.offsec.nl_1640939735_*.json files
+```
 
 ### URL list
 
