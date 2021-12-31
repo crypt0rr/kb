@@ -95,8 +95,33 @@ defaults write com.apple.finder QLEnableTextSelection -bool TRUE
 killall Finder
 ```
 
+### Disable crash reporter (the dialog which appears after an application crashes and prompts to report the problem to Apple)
+
+```plain
+defaults write com.apple.CrashReporter DialogType none
+```
+
+### Disable Bonjour multicast advertisements
+
+Reference: <https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/mdns-telling-the-world-about-you-and-your-device/>
+
+```plain
+sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
+```
+
+### Captive portal
+
+When macOS connects to new networks, it checks for Internet connectivity and may launch a Captive Portal assistant utility application.
+
+An attacker could trigger the utility and direct a Mac to a site with malware without user interaction, so it's best to disable this feature and log in to captive portals using your regular Web browser by navigating to a non-secure HTTP page and accepting a redirect to the captive portal login interface (after disabling any custom proxy or DNS settings).
+
+```plain
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control.plist Active -bool false
+```
+
 ### URL list
 
 * [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
 * [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)
 * [Github.com - TerminalTweaks](https://github.com/MacTweaks/TerminalTweaks)
+* [Github.com - macOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide#)
