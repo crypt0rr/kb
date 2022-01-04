@@ -35,6 +35,13 @@ PowerShell: `Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll 
 Set-ExecutionPolicy -scope process -execution bypass
 ```
 
+### Check 'ms-DS-MachineAccountQuota'
+
+```plain
+Get-ADObject -Identity ((Get-ADDomain).distinguishedname) `
+             -Properties ms-DS-MachineAccountQuota
+```
+
 ### Finding cpassword
 
 ```powershell
