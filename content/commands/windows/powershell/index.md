@@ -42,6 +42,12 @@ Get-ADObject -Identity ((Get-ADDomain).distinguishedname) `
              -Properties ms-DS-MachineAccountQuota
 ```
 
+### List users with 'Store passwords using reversible encryption' enabled
+
+```plain
+Get-ADUser -Filter 'userAccountControl -band 128' -Properties userAccountControl
+```
+
 ### Finding cpassword
 
 ```powershell
