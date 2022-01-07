@@ -13,6 +13,8 @@ weight : 0
 
 Please check [Roadrecon]({{< ref "roadrecon" >}}), [MFASweep]({{< ref "mfasweep" >}}), [AzureHound]({{< ref "bloodhound" >}}) and [Azure Active Directory - Rootsecdev](https://github.com/rootsecdev/Azure-Red-Team)
 
+{{%attachments title="Presentation from Antonio Formato of Cyber Saiyan" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
+
 ### Installation
 
 ```powershell
