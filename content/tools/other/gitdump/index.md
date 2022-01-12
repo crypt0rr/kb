@@ -47,10 +47,6 @@ Please provide website URL with /.git/ directory e.g. example.com/.git/
 * After running above script type: `cd output && git checkout -- .`
 * It will recover all source code.
 
-### Examples
-
-![Example](images/example.png)
-
 ### URL list
 
 * [Github.com - GitDump](https://github.com/Ebryx/GitDump)
