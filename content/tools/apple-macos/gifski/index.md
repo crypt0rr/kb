@@ -40,10 +40,10 @@ Download app from [Apple AppStore](https://apps.apple.com/us/app/gifski/id135163
 
 ### Examples
 
-![example](images/example1.png)
-![example](images/example2.png)
-![example](images/example3.png)
-![example](images/example4.png)
+![example](images/example1.jpeg)
+![example](images/example2.jpeg)
+![example](images/example3.jpeg)
+![example](images/example4.jpeg)
 
 {{%attachments title="Test file" fa_icon_class="far fa-file-video" pattern=".*(mp4)"/%}}
 
