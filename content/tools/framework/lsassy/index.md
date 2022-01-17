@@ -22,41 +22,38 @@ python3 -m pip install lsassy
 ### Usage
 
 ```plain
-usage: lsassy [-h] [-m METHOD] [--dumpname DUMPNAME] [--procdump PROCDUMP] [--dumpert DUMPERT] [--threads THREADS] [--timeout TIMEOUT]
-              [-u USERNAME] [-p PASSWORD] [-d DOMAIN] [-H HASHES] [-k] [-dc-ip ip address] [-aesKey hex key] [-o OUTFILE]
-              [-f {pretty,json,grep,none}] [-r] [-v] [-q] [-V]
-              [target [target ...]]
+lsassy [-h] [-m DUMP_METHOD] [--dump-path DUMP_PATH] [--dump-name DUMP_NAME] [-e EXEC] [--no-powershell] [--copy] [-O OPTIONS] [--timeout TIMEOUT] [--parse-only] [-u USERNAME] [-p PASSWORD] [-d DOMAIN] [--port PORT] [--no-pass] [-H HASHES] [-k] [-dc-ip ip address] [-aesKey hex key] [-K KERBEROS_DIR] [-o OUTFILE] [-f {pretty,json,grep,table}] [--users] [-v] [--threads THREADS] [-q] [-V] [target ...]
 ```
 
 ### Flags
 
 ```plain
-lsassy v2.1.3 - Remote lsass dump reader
+lsassy v3.1.0 - Remote lsass dump reader
 
 positional arguments:
   target                The target IP(s), range(s), CIDR(s), hostname(s), FQDN(s), file(s) containing a list of targets
 
 optional arguments:
   -h, --help            show this help message and exit
-  -r, --raw             No basic result filtering (Display host credentials, duplicates and empty pass)
   -v                    Verbosity level (-v or -vv)
+  --threads THREADS     Threads number
   -q, --quiet           Quiet mode, only display credentials
   -V, --version         show program's version number and exit
 
 dump:
-  -m METHOD, --method METHOD
-                        Dumping method
-                            0: Try all methods (dll then procdump then dumpert) to dump lsass, stop on success (Requires -p if dll method fails, -u if procdump method fails)
-                            1: comsvcs.dll method, stop on success (default)
-                            2: Procdump method, stop on success (Requires -p)
-                            3: comsvcs.dll + Powershell method, stop on success
-                            4: comsvcs.dll + cmd.exe method
-                            5: (unsafe) dumpert method, stop on success (Requires -u)
-  --dumpname DUMPNAME   Name given to lsass dump (Default: Random)
-  --procdump PROCDUMP   Procdump path
-  --dumpert DUMPERT     dumpert path
-  --threads THREADS     Threads number
-  --timeout TIMEOUT     Timeout before considering lsass was not dumped successfully
+  -m DUMP_METHOD, --dump-method DUMP_METHOD
+                        Dumping method (comsvcs, comsvcs_stealth, dllinject, dumpert, dumpertdll, edrsandblast, mirrordump, mirrordump_embedded, nanodump, ppldump, ppldump_embedded, procdump, procdump_embedded, rdrleakdiag, wer)
+  --dump-path DUMP_PATH
+                        Path to store lsass dumpfile (Default: \Windows\Temp)
+  --dump-name DUMP_NAME
+                        Name given to lsass dumpfile (Default: Random)
+  -e EXEC, --exec EXEC  List of execution methods, comma separated (From mmc, smb, smb_stealth, task, wmi)
+  --no-powershell       Disable PowerShell
+  --copy                Copies cmd or powershell with random name before using it
+  -O OPTIONS, --options OPTIONS
+                        Dump module options (Example procdump_path=/opt/procdump.exe,procdump=procdump.exe
+  --timeout TIMEOUT     Max time to wait for lsass dump (Default 5s)
+  --parse-only          Parse dump without dumping
 
 authentication:
   -u USERNAME, --username USERNAME
@@ -65,6 +62,8 @@ authentication:
                         Plaintext password
   -d DOMAIN, --domain DOMAIN
                         Domain name
+  --port PORT           Port (Default: 445)
+  --no-pass             Do not provide password (Default: False)
   -H HASHES, --hashes HASHES
                         [LM:]NT hash
   -k, --kerberos        Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
@@ -72,10 +71,13 @@ authentication:
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
 
 output:
+  -K KERBEROS_DIR, --kerberos-dir KERBEROS_DIR
+                        Save kerberos tickets to a directory
   -o OUTFILE, --outfile OUTFILE
                         Output credentials to file
-  -f {pretty,json,grep,none}, --format {pretty,json,grep,none}
+  -f {pretty,json,grep,table}, --format {pretty,json,grep,table}
                         Output format (Default pretty)
+  --users               Only display user accounts (No computer accounts)
 
 example:
     lsassy -d adsec.local -u pixis -p p4ssw0rd 192.168.1.0/24
