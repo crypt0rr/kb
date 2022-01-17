@@ -92,6 +92,14 @@ $ ldapdomaindump -u '<domain>\<user>' -p '<password>' -d ';' <dc-ip>
 [+] Domain dump finished
 ```
 
+#### Filter all usernames
+
+For example to use with [Kerbrute]({{< ref "kerbrute" >}}) or [CrackMapExec]({{< ref "crackmapexec" >}})
+
+```plain
+cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
+```
+
 #### Script to filter (enabled) high privilege users
 
 Requires 'domain_users.grep' file
