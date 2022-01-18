@@ -232,7 +232,7 @@ Henk:1003:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 
 ### Extract accounts from NTDS.dit
 
-Also check [NTDS.ditExtract]({{< ref "ntds-dump" >}}).
+Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
 
 Required files:
 
