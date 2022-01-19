@@ -50,6 +50,8 @@ cme [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--darrell] [--ver
 ### Flags
 
 ```plain
+usage: cme [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--darrell] [--verbose] {smb,winrm,ldap,ssh,mssql} ...
+
       ______ .______           ___        ______  __  ___ .___  ___.      ___      .______    _______ ___   ___  _______   ______
      /      ||   _  \         /   \      /      ||  |/  / |   \/   |     /   \     |   _  \  |   ____|\  \ /  / |   ____| /      |
     |  ,----'|  |_)  |       /  ^  \    |  ,----'|  '  /  |  \  /  |    /  ^  \    |  |_)  | |  |__    \  V  /  |  |__   |  ,----'
@@ -57,11 +59,13 @@ cme [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--darrell] [--ver
     |  `----.|  |\  \----. /  _____  \  |  `----.|  .  \  |  |  |  |  /  _____  \  |  |      |  |____  /  .  \  |  |____ |  `----.
      \______|| _| `._____|/__/     \__\  \______||__|\__\ |__|  |__| /__/     \__\ | _|      |_______|/__/ \__\ |_______| \______|
 
-                                         A swiss army knife for pentesting networks
-                                    Forged by @byt3bl33d3r using the powah of dank memes
+                                                A swiss army knife for pentesting networks
+                                    Forged by @byt3bl33d3r and @mpgn_x64 using the powah of dank memes
 
-                                                      Version: 5.1.1dev
-                                                     Codename: 3TH@n
+                                           Exclusive release for Porchetta Industries users
+
+                                                   Version : 5.2.2
+                                                   Codename: The Dark Knight
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -74,14 +78,12 @@ optional arguments:
 protocols:
   available protocols
 
-  {smb,ldap,ssh,winrm,mssql}
+  {smb,winrm,ldap,ssh,mssql}
     smb                 own stuff using SMB
-    ldap                own stuff using ldap
-    ssh                 own stuff using SSH
     winrm               own stuff using WINRM
+    ldap                own stuff using LDAP
+    ssh                 own stuff using SSH
     mssql               own stuff using MSSQL
-
-Ya feelin' a bit buggy all of a sudden?
 ```
 
 ### Examples
