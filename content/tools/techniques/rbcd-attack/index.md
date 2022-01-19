@@ -19,6 +19,10 @@ Resource-Based Constrained Delegation - Generic write abuse.
 git clone https://github.com/tothi/rbcd-attack
 ```
 
+### Rubeus.exe
+
+{{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
+
 ### Abusing
 
 #### Create the computer object needed for the operation
