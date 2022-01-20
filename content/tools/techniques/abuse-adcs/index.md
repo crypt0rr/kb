@@ -15,36 +15,7 @@ This is a little guide on abusing Active Directory Certificate Services (AD CS) 
 
 ### Install Certi
 
-Utility to play with ADCS, allows to request tickets and collect information about related objects. Basically, it's the impacket copy of [Certify](https://github.com/GhostPack/Certify). Thanks to [@harmj0y](https://twitter.com/harmj0y) and [@tifkin_](https://twitter.com/tifkin_) for [its great work with ADCS](https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf).
-
-#### Installation
-
-```plain
-git clone https://github.com/zer1t0/certi.git
-```
-
-```plain
-python3 setup.py install
-```
-
-### Usage
-
-```plain
-certi.py [-h] {list,req} ...
-```
-
-### Flags
-
-```plain
-positional arguments:
-  {list,req}
-
-options:
-  -h, --help  show this help message and exit
-usage: certi.py [-h] {list,req} ...
-certi.py: error: the following arguments are required: command
-
-```
+Please install [Certi]({{< ref "certi" >}})
 
 ### Checking vulnerable templates
 
