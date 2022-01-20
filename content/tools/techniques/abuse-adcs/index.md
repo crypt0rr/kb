@@ -19,7 +19,9 @@ Please install [Certi]({{< ref "certi" >}})
 
 ### Checking vulnerable templates
 
-You want to look at a certificate with the `msPKI-Certificate-Name-Flag: (0x1) ENROLLEE_SUPPLIES_SUBJECT` flag set. This gives the option to set an alternative name for the certificate AKA impersonating any user. Also the Enrollment Rights for `Domain Users` must be available.
+You want to look at a certificate with the `msPKI-Certificate-Name-Flag: (0x1) ENROLLEE_SUPPLIES_SUBJECT` flag set. This gives the option to set an alternative name for the certificate AKA impersonating any user. Also the 'Enrollment Rights' for your current user must be available, for example `Domain Users` or the membership of your current user specifically.
+
+**Note:** if your current user has 'Write Property' rights, it is possible to give the 'Enrollment Rights' to yourself.
 
 ```plain
 $ certi.py list 'offsec.nl/johndo-lowpriv' --dc-ip DC01PKI.offsec.nl --vuln --enable
