@@ -58,4 +58,4 @@ Converting ccache => kirbi
 
 ### URL list
 
-* [Github.co - ticket_converter](https://github.com/Zer1t0/ticket_converter)
+* [Github.com - ticket_converter](https://github.com/Zer1t0/ticket_converter)
