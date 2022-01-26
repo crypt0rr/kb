@@ -65,10 +65,10 @@ Use "kerbrute [command] --help" for more information about a command.
 
 #### Validate usernames against domain
 
-After you succesfully enumerated [usernames](https://raw.githubusercontent.com/Sq00ky/attacktive-directory-tools/master/userlist.txt) you can try ASREPRoasting with [Impacket GetNPUsers.py]({{< ref "impacket" >}})
+After you succesfully enumerated [usernames](https://raw.githubusercontent.com/Sq00ky/attacktive-directory-tools/master/userlist.txt) you can try ASREPRoasting with [Impacket GetNPUsers.py]({{< ref "impacket" >}}) or use [CrackMapExec]({{< ref "crackmapexec#domain-password-spray" >}}) to do a password spray.
 
 ```plain
-$ ./kerbrute userenum --dc 10.10.10.10 -d offsec.nl usersnames.txt
+$ ./kerbrute userenum --dc 10.10.10.10 -d offsec.nl usersnames.txt -o userenum-output.txt
 
 Version: v1.0.3 (9dad6e1) - 02/15/21 - Ronnie Flathers @ropnop
 
@@ -80,6 +80,12 @@ Version: v1.0.3 (9dad6e1) - 02/15/21 - Ronnie Flathers @ropnop
 2021/02/15 13:22:24 >  [+] VALID USERNAME:     johndo-adm@offsec.nl
 2021/02/15 13:22:24 >  [+] VALID USERNAME:     janedo-adm@offsec.nl
 2021/02/15 13:22:24 >  Done! Tested 21 usernames (4 valid) in 0.017 seconds
+```
+
+To extract the valid usernames to a separate file you can use the following command.
+
+```plain
+cat userenum-output.txt | awk '{print $7}' | cut -d '@' -f1 > available-users.txt
 ```
 
 #### Password spray
