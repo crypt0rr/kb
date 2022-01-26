@@ -348,6 +348,10 @@ SLINKY      10.10.10.15   445    SRV_FS         [+] Deleted LNK file on the exam
 
 ### Domain password spray
 
+To find valid usernames to spray, have a look at [Kerbrute]({{< ref "kerbrute" >}}).
+
+By default CME will stop when a valid login combination is found. If you want CME to proceed with the whole list you're trying, use the `--continue-on-success` flag.
+
 ```plain
 cme smb <dc-ip> -u <user.txt> -p <password.txt>
 ```
