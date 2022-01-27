@@ -32,7 +32,7 @@ Note 2: Currently OpenCore Legacy Patcher officially supports patching to run ma
 
 ### Running from source
 
-To run the project from source, see here: [Build and run from source](./SOURCE.md)
+To run the project from source, see here: [Build and run from source](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/SOURCE.md)
 
 ### URL list
 
