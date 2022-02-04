@@ -6,7 +6,7 @@ date : 2021-02-15T13:24:03+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'Active Directory']
 ---
 
 ## Kerbrute

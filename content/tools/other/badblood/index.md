@@ -6,7 +6,7 @@ date : 2020-07-06T12:39:58+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'Active Directory']
 ---
 
 ## Badblood
