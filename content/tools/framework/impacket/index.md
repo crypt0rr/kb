@@ -317,6 +317,18 @@ crackmapexec smb 192.168.10.0/24 --gen-relay-list targetlist
 
 Then you can use the `-tf` flag with NTLMrelayx.py to use the targetlist created as input file.
 
+#### SOCKS
+
+As described it is recommended to use `-socks` so if authentication was succesful a socks connection is set up. This way you can use tooling thru for example ProxyChains.
+
+```plain
+ntlmrelayx> socks
+Protocol    Target          Username            AdminStatus     Port
+--------    ------          --------            -----------     ----
+SMB         10.10.10.1      OFFSEC/JOHNDO       TRUE            445
+SMB         10.10.10.2      OFFSEC/JOHNDO       FALSE           445
+```
+
 ### SMBClient - SMB client implementation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="smbclient.mp4"/%}}
