@@ -27,6 +27,12 @@ For a list of free hacking books available for download, go [here](https://githu
 
 [Github.com - Awesome hacking](https://github.com/carpedm20/awesome-hacking)
 
+### IMEI / iCloud Lock Checking
+
+[iFreeiCloud.co.uk](https://ifreeicloud.co.uk/free-check) - Checks Model, Capacity, Colour, Find My iPhone Status, Replaced Status, Activation Status, Service Coverage, Technical Support, Warranty Plan, Warranty Expiry & Loaner Status for Apple devices. You can also check non-Apple devices to find the Model & Manufacturer. Tool to check details of iDevices (iPhone, iPad) for iCloud lock / find my iPhone.
+
+[ImeiCheck.com](https://imeicheck.com/) - offers a variety of IMEI Check Services providing all the information about your device, fast and accessible!
+
 ### MITRE framework
 
 [Github.com - Atomic Red Team](https://github.com/redcanaryco/atomic-red-team)
