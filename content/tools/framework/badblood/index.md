@@ -28,3 +28,4 @@ BadBlood fills a Microsoft Active Directory Domain with a structure and thousand
 ### URL list
 
 * [Github.com - BadBlood](https://github.com/davidprowe/BadBlood)
+* [Secframe.com - BadBlood](https://www.secframe.com/badblood/)
