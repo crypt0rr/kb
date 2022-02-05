@@ -23,6 +23,15 @@ BadBlood fills a Microsoft Active Directory Domain with a structure and thousand
 
 ### BloodHound example set based on BadBlood
 
+Statistics:
+
+* Users: 2492
+* Groups: 551
+* Computers: 102
+* OUS: 223
+* GPOs: 2
+* Domains: 1
+
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### URL list

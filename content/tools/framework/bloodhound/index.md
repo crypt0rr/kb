@@ -163,7 +163,16 @@ Backup Operators
 
 ### Example dataset
 
-Dataset based on [BadBlood]({{< ref "badblood" >}})
+Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
+
+Statistics:
+
+* Users: 2492
+* Groups: 551
+* Computers: 102
+* OUS: 223
+* GPOs: 2
+* Domains: 1
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
