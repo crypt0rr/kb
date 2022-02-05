@@ -161,6 +161,12 @@ Server Operators
 Backup Operators
 ```
 
+### Example dataset
+
+Dataset based on [BadBlood]({{< ref "badblood" >}})
+
+{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+
 ### URL list
 
 * [GitHub.com - Bloodhound](https://github.com/BloodHoundAD/BloodHound/)
