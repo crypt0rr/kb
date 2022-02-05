@@ -22,18 +22,20 @@ git clone https://github.com/crypt0rr/hash-cracker
 ### Usage
 
 ```plain
-./processor.sh
+./hash-cracker.sh
 ```
 
 ### Flags
 
 ```plain
-hash-cracker v2.0 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v2.5 by crypt0rr (https://github.com/crypt0rr)
 
 Checking if requirements are met:
 [+] Hashcat is installed
 [+] common-substr is executable
 [+] Python2 available
+[+] expander is executable
+[+] Potfile "hash-cracker.pot" present
 
 0. Exit
 1. Brute force
@@ -48,6 +50,9 @@ Checking if requirements are met:
 10. Prefix suffix (advise: first run steps above)
 11. Common substring (advise: first run steps above)
 12. PACK rulegen (read option 99)
+13. PACK mask (read option 99)
+14. Fingerprint attack
+15. Directory of wordlists plain and then with OneRuleToRuleThemAll
 99. Show info about modules
 
 Please enter number OR type 'search' to find hashtypes:
