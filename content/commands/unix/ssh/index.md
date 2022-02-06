@@ -37,6 +37,24 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
 
 ### Examples
 
+#### Connect to a server (default port 22)
+
+```plain
+ssh user@server
+```
+
+#### Connect using specific port
+
+```plain
+ssh user@server -p <port>
+```
+
+#### Run script on remote server
+
+```plain
+ssh user@server <scrip_to_run>
+```
+
 #### Create public private keys
 
 ```plain

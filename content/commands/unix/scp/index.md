@@ -51,6 +51,18 @@ scp -i ~/key.pub -P2222 john@10.10.10.10:~/hashes.ntds .
 scp -i ~/key.pub hashes.zip proxy:~/
 ```
 
+#### Copy all files in directory
+
+```plain
+scp <user>@<ip-address>:/directory/* .
+```
+
+#### Copy directory recursively from remote server
+
+```plain
+scp -r <user>@<ip-address>:/directory local_directory
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/scp)
