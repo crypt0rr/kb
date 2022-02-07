@@ -161,3 +161,20 @@ Oracle Application Express management interface
 ```plain
 <url>/apex/gexswe
 ```
+
+### JBOSS
+
+```plain
+:8080/invoker/EJBInvokerServlet
+:8080/invoker/JMXInvokerServlet
+:8080/jmx-console
+:8080/web-console
+:8080/admin-console [with credentials admin:admin]
+:8080/jbpm-console
+```
+
+### Apache TomCat
+
+```plain
+:8080/manager/html [with credentials admin:blank]
+```
