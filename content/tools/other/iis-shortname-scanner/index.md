@@ -13,6 +13,10 @@ weight : 0
 
 Scanner for IIS Tilde vulnerability.
 
+## NOTE
+
+Also check [tilde_enum]({{< ref "tilde-enum" >}}).
+
 ### Installation
 
 ```plain
