@@ -17,6 +17,14 @@ OneDriveExplorer is a command line and GUI based application for reconstructing 
 
 The GUI consists of two panes: the folder structure on the left and details on the right. By clicking on one of the entries in the left pane, the details pane will populate with various data such as name, whether it is a file or folder, UUIDs and the number of children, if any.
 
+### File Location
+
+This may be different on your system / installation.
+
+```plain
+C:\Users\<USERNAME>\AppData\Local\Microsoft\OneDrive\settings\Personal\<UserCid.dat>
+```
+
 ### Installation
 
 ```plain
