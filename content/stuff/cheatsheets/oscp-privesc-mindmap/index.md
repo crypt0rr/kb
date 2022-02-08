@@ -1,6 +1,6 @@
 ---
 title : "OSCP PrivEsc Mindmap"
-# pre : ' '
+pre : '<i class="fas fa-pencil-ruler"></i> '
 description : "OSCP Privilege Escalation Mindmap."
 date : 2022-02-08T14:12:47+01:00
 # hidden : true
