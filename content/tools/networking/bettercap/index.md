@@ -94,6 +94,7 @@ sudo bettercap
 net.probe on
 net.sniff on
 http.proxy on
+set arp.spoof.fullduplex true
 arp.spoof on
 ```
 
