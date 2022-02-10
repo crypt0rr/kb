@@ -70,11 +70,7 @@ Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"
 
 #### Bloodhound - Remote ingestor
 
-```plain
-bloodhound-python -c All -u '<user>@domain' -p '<password>' -d <domain> -v
-```
-
-Import the .zip file in Bloodhound
+Please check [BloodHound.py]({{< ref "bloodhoundpy" >}})
 
 #### AzureHound
 
