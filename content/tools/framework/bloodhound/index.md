@@ -15,29 +15,64 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 ### Collectors
 
-*BordeauxDog.exe* is an obfuscated version of *SharpHound.exe*. All collectors based on version 3.
+{{%attachments title="v3/v4.0" fa_icon_class="far fa-file-code" pattern=".*(v3-4.0)"/%}}
 
-{{%attachments title="Executables" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
-
-{{%attachments title="PowerShell Module" fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
+{{%attachments title="v4.1+" fa_icon_class="far fa-file-code" pattern=".*(v4.1)"/%}}
 
 To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
 
 ### Installation
 
-Kali
+Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodHound/releases)
+
+### Custom Queries
+
+{{%attachments title="Related files" fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
 
 ```plain
-sudo apt install bloodhound
+~/.config/bloodhound/customqueries.json
 ```
 
-Ubuntu
+### Example dataset
+
+Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
+
+Statistics:
+
+* Users: 2492
+* Groups: 551
+* Computers: 102
+* OUS: 223
+* GPOs: 2
+* Domains: 1
+
+{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+
+### Usage
+
+#### Bloodhound - Run ingestor on target domain joined system
 
 ```plain
-pip3 install bloodhound
+. .\SharpHound.ps1 / exe
 ```
 
-### Installation of Neo4j and bloodhound interface on Ubuntu
+```plain
+Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"
+```
+
+#### Bloodhound - Remote ingestor
+
+```plain
+bloodhound-python -c All -u '<user>@domain' -p '<password>' -d <domain> -v
+```
+
+Import the .zip file in Bloodhound
+
+#### AzureHound
+
+Please check [AzureHound]({{< ref "azurehound" >}})
+
+### Installation of Neo4j and BloodHound interface on Ubuntu
 
 ```plain
 sudo wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
@@ -49,7 +84,7 @@ Download newest binary from [Github.com](https://github.com/BloodHoundAD/BloodHo
 
 ```plain
 sudo neo4j console
-sudo ./BloodHound -no-sandbox
+./BloodHound -no-sandbox
 ```
 
 Change default Java JDK to 8
@@ -78,39 +113,7 @@ $ cat /etc/systemd/system.conf
 DefaultLimitNOFILE=60000
 ```
 
-### Custom Queries
-
-{{%attachments title="Related files" fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
-
-```plain
-~/.config/bloodhound/customqueries.json
-```
-
-### Usage
-
-#### Bloodhound - Run ingestor on target domain joined system
-
-```plain
-. .\SharpHound.ps1 / exe
-```
-
-```plain
-Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"
-```
-
-#### Bloodhound - Remote ingestor
-
-```plain
-bloodhound-python -c All -u '<user>@domain' -p '<password>' -d <domain> -v
-```
-
-Import the .zip file in Bloodhound
-
-#### AzureHound
-
-Please check [AzureHound]({{< ref "azurehound" >}})
-
-#### Start bloodhound (Kali)
+#### Start BloodHound (Kali)
 
 Start database
 
@@ -160,21 +163,6 @@ Account Operators
 Server Operators
 Backup Operators
 ```
-
-### Example dataset
-
-Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
-
-Statistics:
-
-* Users: 2492
-* Groups: 551
-* Computers: 102
-* OUS: 223
-* GPOs: 2
-* Domains: 1
-
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### URL list
 
