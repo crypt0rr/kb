@@ -23,6 +23,7 @@ This may be different on your system / installation.
 
 ```plain
 C:\Users\<USERNAME>\AppData\Local\Microsoft\OneDrive\settings\Personal\<UserCid.dat>
+C:\Users\<USERNAME>\AppData\Local\Microsoft\OneDrive\settings\Business1\<UserCid.dat>
 ```
 
 ### Installation
