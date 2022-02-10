@@ -79,7 +79,7 @@ version:
 If ran locally just press 'enter' twice for username/password (leave blank).
 
 ```plain
-trufflehog3 --format json --output report.json`
+trufflehog3 --format json --output report.json
 ```
 
 #### Create report from JSON
