@@ -148,3 +148,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-22 15:04:
 ### An A-Z Index of Windows CMD commands
 
 [An A-Z Index of Windows CMD commands.](https://ss64.com/nt/)
+
+### Pentesting Web checklist
+
+[Pentesting Web checklist](https://pentestbook.six2dez.com/others/web-checklist)
