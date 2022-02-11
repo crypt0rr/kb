@@ -32,18 +32,29 @@ pip3 install --user .
 ### Usage
 
 ```plain
-usage: ADExplorerSnapshot.py [-h] snapshot
+ADExplorerSnapshot.py [-h] [-o OUTPUT] [-m {BloodHound,Objects}] snapshot
+```
 
-ADExplorer snapshot ingestor for BloodHound
+### Flags
 
+```plain
 positional arguments:
-  snapshot
+  snapshot              Path to the snapshot .dat file.
 
-optional arguments:
-  -h, --help  show this help message and exit
+options:
+  -h, --help            show this help message and exit
+  -o OUTPUT, --output OUTPUT
+                        Path to the *.json output folder. Folder will be created if it doesn't
+                        exist. Defaults to the current directory.
+  -m {BloodHound,Objects}, --mode {BloodHound,Objects}
+                        The output mode to use. Besides BloodHound JSON output files, it is
+                        possible to dump all objects with all attributes to NDJSON. Defaults to
+                        BloodHound output mode.
 ```
 
 ### Notes
+
+This library is now supporting the BloodHound v4.1+ output format (JSON format v4). For the old v3 output format, you can use the code in the [v3-format branch](https://github.com/c3c/ADExplorerSnapshot.py/tree/v3-format).
 
 Making snapshots in AD Explorer is more network-intensive than the traditional BloodHound ingestors as it attempts to retrieve all objects it can from the LDAP.
 
