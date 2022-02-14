@@ -141,7 +141,7 @@ Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
 For relaying have a look at
 
 * [Impacket - NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}})
-* [CrackMapExec - Generate target list where targets do not require signing (SMB)]({{< ref "crackmapexec#examples" >}})
+* [CrackMapExec - Generate target list where targets do not require signing (SMB)]({{< ref "cme-smb" >}})
 
 ### URL list
 
