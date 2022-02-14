@@ -4,7 +4,7 @@ title : "CrackMapExec_old"
 description : "A swiss army knife for pentesting networks."
 date : 2020-05-16T15:25:03+02:00
 # hidden : true
-# draft : true
+draft : true
 weight : 0
 # tags : ['']
 ---
