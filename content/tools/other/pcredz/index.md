@@ -73,7 +73,7 @@ optional arguments:
 
 For example you can start this live capture with the following tools all at the same time:
 
-* [Impacket - SMBserver.py]({{< ref "impacket" >}})
+* [Impacket - SMBserver.py]({{< ref "smbserver-py" >}})
 * [Responder]({{< ref "responder" >}})
 
 ```plain

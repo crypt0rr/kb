@@ -26,7 +26,7 @@ Results are way more clean than the previous version and organized in the SQL DB
 Requirements
 
 * [Ldapsearch](https://docs.ldap.com/ldap-sdk/docs/tool-usages/ldapsearch.html) | `sudo apt install ldapscripts`
-* [Impacket](https://github.com/SecureAuthCorp/impacket) | [KB - impacket]({{< ref "impacket" >}})
+* [KB - impacket]({{< ref "tools/framework/impacket/" >}})
 * [Sqlite](https://www.sqlite.org/index.html) `sudo apt install sqlite3`
 
 ```plain
