@@ -6,7 +6,7 @@ date : 2022-02-14T15:18:21+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : [""]
+tags : ["Framework"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
     tags: ['Framework', 'CrackMapExec']
