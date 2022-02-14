@@ -71,7 +71,7 @@ watch -n1 sudo sysctl -w net.ipv4.ip_forward=1
 
 #### Use tool to route whole network
 
-Tip: use [Responder]({{< ref "responder" >}}) to capture hashes or [NTLMrelayx.py]({{< ref "impacket" >}}) to relay hashes.
+Tip: use [Responder]({{< ref "responder" >}}) to capture hashes or [NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}}) to relay hashes.
 
 ```plain
 $ sudo mitm6
