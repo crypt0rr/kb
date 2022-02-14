@@ -199,7 +199,7 @@ Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9e
 
 #### Generate targetlist and attack
 
-To use NTLMrelayx.py with a list of targets you want to relay to, first generate a list with [CrackMapExec]({{< ref "crackmapexec" >}}) by using the command below.
+To use NTLMrelayx.py with a list of targets you want to relay to, first generate a list with [CrackMapExec]({{< ref "tools/framework/crackmapexec" >}}) by using the command below.
 
 ```plain
 crackmapexec smb 192.168.10.0/24 --gen-relay-list targetlist

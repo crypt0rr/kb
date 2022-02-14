@@ -94,7 +94,7 @@ $ ldapdomaindump -u '<domain>\<user>' -p '<password>' -d ';' <dc-ip>
 
 #### Filter all usernames
 
-For example to use with [Kerbrute]({{< ref "kerbrute" >}}) or [CrackMapExec]({{< ref "crackmapexec" >}})
+For example to use with [Kerbrute]({{< ref "kerbrute" >}}) or [CrackMapExec]({{< ref "tools/framework/crackmapexec" >}})
 
 ```plain
 cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
