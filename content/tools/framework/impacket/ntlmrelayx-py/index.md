@@ -1,5 +1,5 @@
 ---
-title : "NTLMRelayX.py"
+title : "ntlmrelayx.py"
 # pre : ' '
 description : "For every connection received, this module will try to relay that connection to specified target(s) system or the original client."
 date : 2022-02-14T11:56:40+01:00
@@ -9,7 +9,7 @@ weight : 0
 # tags : ['']
 ---
 
-## NTLMRelayX.py
+## ntlmrelayx.py
 
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client.
 
