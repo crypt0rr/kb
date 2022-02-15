@@ -86,6 +86,36 @@ Powershell Obfuscation:
   --clear-obfscripts    Clear all cached obfuscated PowerShell scripts
 ```
 
+### Modules
+
+The modules below can be used with the `-M` option.
+
+```plain
+[*] Get-ComputerDetails       Enumerates sysinfo
+[*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
+[*] enum_chrome               Decrypts saved Chrome passwords using Get-ChromeDump
+[*] get_keystrokes            Logs keys pressed, time and the active window
+[*] get_netdomaincontroller   Enumerates all domain controllers
+[*] get_netrdpsession         Enumerates all active RDP sessions
+[*] get_timedscreenshot       Takes screenshots at a regular interval
+[*] invoke_sessiongopher      Digs up saved session information for PuTTY, WinSCP, FileZilla, SuperPuTTY, and RDP using SessionGopher
+[*] invoke_vnc                Injects a VNC client in memory
+[*] met_inject                Downloads the Meterpreter stager and injects it into memory
+[*] mimikatz                  Dumps all logon credentials from memory
+[*] mimikatz_enum_chrome      Decrypts saved Chrome passwords using Mimikatz
+[*] mimikatz_enum_vault_creds Decrypts saved credentials in Windows Vault/Credential Manager
+[*] mimikittenz               Executes Mimikittenz
+[*] mssql_priv                Enumerate and exploit MSSQL privileges
+[*] multirdp                  Patches terminal services in memory to allow multiple RDP users
+[*] netripper                 Capture's credentials by using API hooking
+[*] pe_inject                 Downloads the specified DLL/EXE and injects it into memory
+[*] rid_hijack                Executes the RID hijacking persistence hook.
+[*] shellcode_inject          Downloads the specified raw shellcode and injects it into memory
+[*] test_connection           Pings a host
+[*] tokens                    Enumerates available tokens
+[*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
+```
+
 ### Examples
 
 ```plain

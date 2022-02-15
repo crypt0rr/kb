@@ -89,13 +89,24 @@ Retrieve useful information on the domain:
   --groups              Enumerate domain groups
 ```
 
-### Examples
+### Modules
 
-#### Signing check
+The modules below can be used with the `-M` option.
 
 ```plain
-$ cme ldap 10.10.10.10 -u john.do -p 'Welkom1234'
-LDAP        10.10.10.10    389    DC2016         [*] Windows Server 2016 Datacenter 14393 x64 (name:DC2016) (domain:offsec.nl) (signing:False) (SMBv1:True)
+[*] MAQ                       Retrieves the MachineAccountQuota domain-level attribute
+[*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
+[*] get-desc-users            Get description of the users. May contained password
+[*] laps                      Retrieves the LAPS passwords
+[*] ldap-signing              Check whether LDAP signing is required
+[*] subnets                   Retrieves the different Sites and Subnets of an Active Directory
+[*] user-desc                 Get user descriptions stored in Active Directory
+```
+
+### Examples
+
+```plain
+
 ```
 
 ### URL list
