@@ -72,10 +72,21 @@ Command Execution:
   -x COMMAND            execute the specified command
 ```
 
-### Examples
+### Modules
+
+The modules below can be used with the `-M` option.
 
 ```plain
+[*] mimipenguin               Dumps cleartext credentials in memory
+```
 
+### Examples
+
+#### Checking SSH available
+
+```plain
+$ cme ssh 10.10.10.1
+SSH         10.10.10.1      22     10.10.10.1       [*] SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
 ```
 
 ### URL list
