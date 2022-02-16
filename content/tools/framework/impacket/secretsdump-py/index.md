@@ -175,6 +175,10 @@ SA_LOCAL_SERVICE@INFOSEC.NL.local:ThisIsAStrongPassword?
 [*] Cleaning up... 
 ```
 
+The file below is a example of the full output of the command above.
+
+{{%attachments title="Secretsdump example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
+
 #### Example dump all hashes NTLM format
 
 ```plain
