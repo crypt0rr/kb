@@ -332,6 +332,10 @@ SMB         10.10.10.10     445    DC2016           offsec.nl\johndo:1107:aad3b4
 SMB         10.10.10.10     445    DC2016           offsec.nl\adm_johndo:1108:aad3b435b51404eeaad3b435b51404ee:caec1e1d755119a15bfb6cd3d5994305:::
 ```
 
+The file below is a example of the full output of the command above.
+
+{{%attachments title="CME NTDS" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
+
 ### Dump LSASS (remote)
 
 ```plain
