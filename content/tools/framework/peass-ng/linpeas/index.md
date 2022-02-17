@@ -1,27 +1,23 @@
 ---
-title : "PEASS"
+title : "LinPEAS"
 # pre : ' '
-description : "Privilege Escalation Awesome Scripts SUITE."
-date : 2020-05-07T13:51:08+02:00
+description : "Linux Privilege Escalation Awesome Script."
+date : 2022-02-17T09:34:38+01:00
 # hidden : true
 # draft : true
 weight : 0
 # tags : ['']
 ---
 
-## PEASS
+## LinPEAS
 
-Privilege Escalation Awesome Scripts SUITE.
-
-### WinPEAS - Windows Privilege Escalation Awesome Scripts
-
-[Github.com](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
-
-Download .exe or .bat from [Github.com](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
-
-### LinPEAS
+Linux Privilege Escalation Awesome Script.
 
 [Github.com - LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
+
+### Installation
+
+Download `.sh` or binary from [Github.com](https://github.com/carlospolop/PEASS-ng/releases)
 
 ```plain
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
@@ -30,6 +26,10 @@ wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 ```plain
 curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh > linpeas.sh
 ```
+
+### Usage
+
+Check the checklist on [book.hacktricks.xyz](https://book.hacktricks.xyz/linux-unix/privilege-escalation)
 
 ### URL list
 
