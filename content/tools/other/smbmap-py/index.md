@@ -6,7 +6,7 @@ date : 2021-08-03T09:48:12+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'SMB']
 ---
 
 ## SMBmap.py
