@@ -55,13 +55,13 @@ options:
 #### SMB server share without password
 
 ```plain
-sudo smbserver.py -ip <ip-to-bind> <share-name> <local-folder-to-share>
+sudo smbserver.py -smb2support -ip <ip-to-bind> <share-name> <local-folder-to-share>
 ```
 
 #### SMB server share with password
 
 ```plain
-sudo smbserver.py -username <username> -password <password> -ip <ip-to-bind> <share-name> <local-folder-to-share>
+sudo smbserver.py -smb2support -username <username> -password <password> -ip <ip-to-bind> <share-name> <local-folder-to-share>
 ```
 
 #### SMB server during assessment to catch hashes
