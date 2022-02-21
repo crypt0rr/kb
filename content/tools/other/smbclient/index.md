@@ -6,7 +6,7 @@ date : 2020-04-13T13:23:38+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'SMB']
 ---
 
 ## SMBclient

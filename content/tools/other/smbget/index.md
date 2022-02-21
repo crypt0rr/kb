@@ -6,7 +6,7 @@ date : 2021-06-21T10:57:08+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'SMB']
 ---
 
 ## SMBget

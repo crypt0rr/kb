@@ -6,7 +6,7 @@ date : 2022-02-14T15:22:48+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Framework', 'SMB']
 ---
 
 ## CrackMapExec - SMB
