@@ -1,6 +1,6 @@
 ---
 title : "hcxtools"
-# pre : ' '
+pre : '<i class="far fa-window-restore"></i> '
 description : "Small set of tools convert packets from captures (h = hash, c = capture, convert and calculate candidates, x = different hashtypes) for the use with latest hashcat or John the Ripper."
 date : 2022-02-23T12:00:34+01:00
 # hidden : true
