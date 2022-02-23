@@ -251,15 +251,27 @@ REPLAYCOUNT...............: 64387
 ANONCE....................: 2d27c84b6a739c47f0f42e5e038712d1c3add44a516b5972d144b424e3346035
 SNONCE....................: 8eeedb3d57ab1b059ffa4da4c07bb43f790cf83f3d6d32c9e77fa3b82b768624
 
-11:59:17   1 ffffffffffff c8b5adf8d7e0 OFFSEC [BEACON]
-11:59:17   1 e80410d52f0c c8b5adf8d7e0 OFFSEC [PMKIDROGUE:2e48084[REDACTED]48b418e6e5 KDV:2]
-11:59:18   1 ffffffffffff c8b5adf8d7e1 OFFSEC-G [BEACON]
-11:59:19   1 e80410d52f0c c8b5adf8d7e1 OFFSEC-G [PMKIDROGUE:576f36[REDACTED]cedfef KDV:2]
-11:59:24  11 ffffffffffff c8b5adf92be0 OFFSEC [BEACON]
-11:59:24  11 ffffffffffff c8b5adf92be1 OFFSEC-G [BEACON]
-11:59:25  11 e80410d52f0c c8b5adf92be1 OFFSEC-G [PMKIDROGUE:61fa5d[REDACTED]2585f44 KDV:2]
+11:59:17   1 ffffffffffff c8[REDACTED]e0 OFFSEC [BEACON]
+11:59:17   1 e80410d52f0c c8[REDACTED]e0 OFFSEC [PMKIDROGUE:2e48084[REDACTED]48b418e6e5 KDV:2]
+11:59:18   1 ffffffffffff c8[REDACTED]e1 OFFSEC-G [BEACON]
+11:59:19   1 e80410d52f0c c8[REDACTED]e1 OFFSEC-G [PMKIDROGUE:576f36[REDACTED]cedfef KDV:2]
+11:59:24  11 ffffffffffff c8[REDACTED]e0 OFFSEC [BEACON]
+11:59:24  11 ffffffffffff c8[REDACTED]e1 OFFSEC-G [BEACON]
+11:59:25  11 e80410d52f0c c8[REDACTED]e1 OFFSEC-G [PMKIDROGUE:61fa5d[REDACTED]2585f44 KDV:2]
 ^C
 terminating...
 ```
 
 Use [hcxpcapngtool]({{< ref "hcxpcapngtool" >}}) to convert the `.pcap` to crackable hashes.
+
+### Scan Wi-Fi networks in range
+
+```plain
+$ sudo hcxdumptool -i wlp4s0 --do_rcascan
+
+ BSSID         CH COUNT   HIT ESSID                 [16:00:50]
+---------------------------------------------------------------
+ c8[REDACTED]e1  11    67     7 OFFSEC-G
+ c8[REDACTED]e0  11    64     6 OFFSEC
+ c8[REDACTED]e1   1    17     3 OFFSEC-G
+```
