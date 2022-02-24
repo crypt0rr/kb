@@ -139,6 +139,16 @@ git rm --cached file1.txt
 git commit -m "remove file1.txt"
 ```
 
+#### Overview of contribution on repo
+
+```plain
+$ git shortlog -s -n
+    74  crypt0rr
+    34  johndo
+     7  janedo
+     5  anonymous
+```
+
 ### URL list
 
 * [Meziantou.net - Hide your email address on Github](https://www.meziantou.net/2018/04/23/hide-your-email-address-on-github)
