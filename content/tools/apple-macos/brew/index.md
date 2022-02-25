@@ -60,6 +60,18 @@ brew install [FORMULA]
 brew uninstall [FORMULA]
 ```
 
+#### Fetch latest version of homebrew and formula
+
+```plain
+brew update
+```
+
+#### Upgrade all outdated and unpinned brews
+
+```plain
+brew upgrade
+```
+
 #### List installed formulas
 
 ```plain
