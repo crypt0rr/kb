@@ -119,6 +119,12 @@ An attacker could trigger the utility and direct a Mac to a site with malware wi
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control.plist Active -bool false
 ```
 
+### New tabs for all links in Safari
+
+```plain
+defaults write com.apple.Safari TargetedClicksCreateTabs -bool TRUE
+```
+
 ### URL list
 
 * [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
