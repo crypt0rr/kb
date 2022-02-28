@@ -33,6 +33,13 @@ Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodH
 ~/.config/bloodhound/customqueries.json
 ```
 
+Some other custom queries:
+
+* [Github.com - ly4k - Certipy](https://raw.githubusercontent.com/ly4k/Certipy/main/customqueries.json)
+* [Github.com - ZephrFish - Bloodhound-CustomQueries](https://raw.githubusercontent.com/ZephrFish/Bloodhound-CustomQueries/main/customqueries.json)
+* [Github.com - CompassSecurity - BloodHoundQueries](https://raw.githubusercontent.com/CompassSecurity/BloodHoundQueries/master/customqueries.json)
+* [Github.com - Shutdownrepo - Exegol](https://raw.githubusercontent.com/ShutdownRepo/Exegol/master/sources/bloodhound/customqueries.json)
+
 ### Example dataset
 
 Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
