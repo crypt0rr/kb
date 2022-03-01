@@ -21,7 +21,7 @@ A swiss army knife for pentesting networks.
 
 ```plain
 python3 -m pip install pipx
-pipx ensurepath
+python3 -m pipx ensurepath
 pipx install crackmapexec
 ```
 
