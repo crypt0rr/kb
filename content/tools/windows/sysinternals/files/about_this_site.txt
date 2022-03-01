@@ -1,0 +1,13 @@
+What is this?
+
+This is a file share allowing access to all Sysinternals utilities. We have developed this to test an alternate distribution mechanism for our utilities.
+
+This will allow you to run these tools from any computer connected to the Internet without having to navigate to a webpage, download and extract the zip file.
+
+If you are unfamiliar with Microsoft Windows Sysinternals, it is highly recommended that you visit the website at http://technet.microsoft.com/sysinternals before using these tools.
+
+If you have any questions or comments on this file share, please email syssite@microsoft.com
+
+Regards,
+
+The Microsoft Windows Sysinternals Team
