@@ -29,8 +29,16 @@ Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodH
 
 {{%attachments title="Related files" fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
 
+Linux
+
 ```plain
 ~/.config/bloodhound/customqueries.json
+```
+
+macOS
+
+```plain
+~/Library/Application Support/bloodhound
 ```
 
 Some other custom queries:
