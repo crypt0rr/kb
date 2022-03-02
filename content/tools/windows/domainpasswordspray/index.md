@@ -18,7 +18,7 @@ Powershell script to perform password spray attack in Active Directory.
 ### Installation
 
 ```plain
-iex (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/dafthack/DomainPasswordSpray/master/DomainPasswordSpray.ps1")
+iex (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/crypt0rr/DomainPasswordSpray/master/DomainPasswordSpray.ps1")
 ```
 
 ### Usage
