@@ -19,6 +19,12 @@ Simple script to get some hash cracking done effectively.
 git clone https://github.com/crypt0rr/hash-cracker
 ```
 
+For use with Apple Silicon systems, please use the following repo.
+
+```plain
+git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
+```
+
 ### Usage
 
 ```plain
@@ -28,7 +34,7 @@ git clone https://github.com/crypt0rr/hash-cracker
 ### Flags
 
 ```plain
-hash-cracker v2.5 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v2.6 by crypt0rr (https://github.com/crypt0rr)
 
 Checking if requirements are met:
 [+] Hashcat is installed
