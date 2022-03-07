@@ -15,9 +15,18 @@ Password Analysis and Cracking Kit (PACK).
 
 ### Installation
 
+#### Python2 based
+
 ```plain
 git clone https://github.com/iphelix/pack
 pip install pyenchant==3.0.0a1
+```
+
+#### Python3 based
+
+```plain
+git clone https://github.com/Hydraze/pack
+pip3 install pyenchant
 ```
 
 ### Examples
