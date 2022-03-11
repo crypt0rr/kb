@@ -40,12 +40,6 @@ Path: `C:\Windows\System32\config\SYSTEM`
 
 ![example](images/example2.png)
 
-### Remove the created VSS Shadow Copy
-
-```plain
-vssadmin.= delete shadows /for=c: /shadow=<ShadowID>
-```
-
 ### Extract hashes
 
 ```plain
