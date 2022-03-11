@@ -32,6 +32,7 @@ Feel free to open a PR with your content/changes. Some rules:
 
 - Markdown styling as used in other content;
 - Content is UTF-8;
+- Single file size limit 25MB;
 - PR naming describes content.
 
 ## License
