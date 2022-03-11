@@ -276,9 +276,9 @@ john_do:19530:aad3b435b51404eeaad3b435b51404ee:6ed6a61234567898f78076f844::: (st
 john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee::: (status=Disabled)
 ```
 
-Example `NTDS.dit` and `SYSTEM` files below.
+Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(dit|SYSTEM)"/%}}
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ### URL list
 
