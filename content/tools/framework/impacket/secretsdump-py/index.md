@@ -278,7 +278,7 @@ john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee
 
 Example `NTDS.dit` and `SYSTEM` files below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(dit|SYSTEM)"/%}}
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(dit|SYSTEM)"/%}}
 
 ### URL list
 
