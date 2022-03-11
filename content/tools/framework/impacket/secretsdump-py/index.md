@@ -254,6 +254,12 @@ Henk:1003:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 [*] Cleaning up... 
 ```
 
+#### Example files SAM/SYSTEM
+
+Example `SAM` and `SYSTEM` files zipped below.
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(SAM-SYSTEM)"/%}}
+
 ### Extract accounts from NTDS.dit
 
 Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
@@ -275,6 +281,8 @@ Impacket v0.9.24.dev1+20210814.5640.358fc7c6 - Copyright 2021 SecureAuth Corpora
 john_do:19530:aad3b435b51404eeaad3b435b51404ee:6ed6a61234567898f78076f844::: (status=Enabled)
 john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee::: (status=Disabled)
 ```
+
+#### Example files NTDS.dit/SYSTEM
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
