@@ -30,16 +30,26 @@ To make it easy for yourself and extract the `ntds.dit` and `SYSTEM` file from t
 
 ### Copy NTDS.dit
 
+Path: `C:\Windows\NTDS\ntds.dit`
+
 ![example](images/example1.png)
 
 ### Copy SYSTEM
 
+Path: `C:\Windows\System32\config\SYSTEM`
+
 ![example](images/example2.png)
+
+### Remove the created VSS Shadow Copy
+
+```plain
+vssadmin.= delete shadows /for=c: /shadow=<ShadowID>
+```
 
 ### Extract hashes
 
 ```plain
-secretsdump.py -system SYSTEM -NTDS ntds.dit -hashes lmhash:nthash LOCAL -outputfile extracted-hashes -just-dc-ntlm -user-status -history
+secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile extracted-hashes -just-dc-ntlm -user-status -history
 ```
 
 ### URL list
