@@ -52,6 +52,10 @@ vssadmin.= delete shadows /for=c: /shadow=<ShadowID>
 secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile extracted-hashes -just-dc-ntlm -user-status -history
 ```
 
+Example `NTDS.dit` and `SYSTEM` files below.
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(dit|SYSTEM)"/%}}
+
 ### URL list
 
 * [Stealthbits.com - Extracting Password Hashes from the Ntds.dit File](https://stealthbits.com/blog/extracting-password-hashes-from-the-ntds-dit-file/)
