@@ -52,9 +52,9 @@ vssadmin.= delete shadows /for=c: /shadow=<ShadowID>
 secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile extracted-hashes -just-dc-ntlm -user-status -history
 ```
 
-Example `NTDS.dit` and `SYSTEM` files below.
+Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(dit|SYSTEM)"/%}}
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ### URL list
 
