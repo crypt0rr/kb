@@ -24,7 +24,7 @@ git clone https://github.com/SecureAuthCorp/impacket.git
 ```
 
 ```plain
-sudo pip3 install .
+sudo python3 -m pip install .
 ```
 
 ### URL list

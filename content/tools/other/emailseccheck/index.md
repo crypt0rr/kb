@@ -29,7 +29,7 @@ Email spoofing is identified under the following conditions:
 
 ```plain
 git clone https://github.com/MarkoH17/EmailSecCheck.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

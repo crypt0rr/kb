@@ -18,7 +18,7 @@ Domain name permutation engine for detecting homograph phishing attacks, typosqu
 ```plain
 git clone https://github.com/elceef/dnstwist.git
 cd dnstwist
-pip3 install .
+python3 -m pip install .
 ```
 
 ### Usage

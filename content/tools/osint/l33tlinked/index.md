@@ -20,7 +20,7 @@ Welcome to my modification of CrossLinked (Can be found [here](https://github.co
 ```plain
 git clone https://github.com/Sq00ky/L33tLinked.git
 cd L33tLinked
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

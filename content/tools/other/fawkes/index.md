@@ -18,7 +18,7 @@ Tool to search for targets vulnerable to SQL Injection. Performs the search usin
 ```plain
 git clone https://github.com/0xdutra/fawkes
 cd fawkes
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

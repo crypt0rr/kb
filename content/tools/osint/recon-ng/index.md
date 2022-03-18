@@ -26,7 +26,7 @@ sudo apt install recon-ng
 ```plain
 git clone https://github.com/lanmaster53/recon-ng.git
 cd recon-ng
-pip3 install -r REQUIREMENTS
+python3 -m pip install -r REQUIREMENTS
 ```
 
 ### Usage (recon-ng)

@@ -16,7 +16,7 @@ Simple, agentless IT automation that anyone can use - Define and run a single ta
 ### Installation
 
 ```plain
-pip3 install ansible
+python3 -m pip install ansible
 ```
 
 ### Usage

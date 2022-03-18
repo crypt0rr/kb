@@ -16,7 +16,7 @@ Mimikatz implementation in pure Python. At least a part of it :)
 ### Installation
 
 ```plain
-pip3 install pypykatz
+python3 -m pip install pypykatz
 ```
 
 ### Usage

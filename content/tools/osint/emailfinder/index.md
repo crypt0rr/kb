@@ -16,7 +16,7 @@ Search emails through Search Engines.
 ### Installation
 
 ```plain
-pip3 install emailfinder
+python3 -m pip install emailfinder
 ```
 
 ### Usage

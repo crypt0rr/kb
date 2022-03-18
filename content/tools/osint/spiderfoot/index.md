@@ -73,7 +73,7 @@ SpiderFoot's 200+ modules feed each other in a publisher/subscriber model to ens
 wget https://github.com/smicallef/spiderfoot/archive/v3.3.tar.gz
 tar zxvf v3.3.tar.gz
 cd spiderfoot
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 python3 ./sf.py -l 127.0.0.1:5001
 ```
 
@@ -82,7 +82,7 @@ python3 ./sf.py -l 127.0.0.1:5001
 ```plain
 git clone https://github.com/smicallef/spiderfoot.git
 cd spiderfoot
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 python3 ./sf.py -l 127.0.0.1:5001
 ```
 

@@ -16,7 +16,7 @@ Tired of going to every website to crack your hash? Search-That-Hash automates t
 ### Installation
 
 ```plain
-pip3 install search-that-hash && sth
+python3 -m pip install search-that-hash && sth
 ```
 
 ### Usage

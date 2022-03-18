@@ -38,7 +38,7 @@ Read more about how to use Dirhunt [in the documentation](http://docs.nekmo.org/
 ### Installation
 
 ```plain
-pip3 install dirhunt
+python3 -m pip install dirhunt
 ```
 
 There are other [installation methods](http://docs.nekmo.org/dirhunt/installation.html) available.

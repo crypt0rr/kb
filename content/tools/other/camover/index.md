@@ -24,7 +24,7 @@ Tool effectively looks for `http://{address}/system.ini?loginuse&loginpas` and r
 ### Installation
 
 ```plain
-pip3 install git+https://github.com/EntySec/CamOver
+python3 -m pip install git+https://github.com/EntySec/CamOver
 ```
 
 ### Usage

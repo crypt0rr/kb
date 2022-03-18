@@ -16,7 +16,7 @@ Rogue Office 365 and Azure AD (active) Directory tools - ROADtools is a framewor
 ### Installation
 
 ```plain
-pip3 install roadrecon
+python3 -m pip install roadrecon
 ```
 
 ### Usage

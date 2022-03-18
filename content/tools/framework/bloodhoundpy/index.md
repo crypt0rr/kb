@@ -16,13 +16,13 @@ tags : ['Framework', 'Active Directory']
 ```plain
 git clone https://github.com/fox-it/BloodHound.py.git
 cd BloodHound.py
-pip3 install .
+python3 -m pip install .
 ```
 
 Or via Python-PIP.
 
 ```plain
-pip3 install bloodhound
+python3 -m pip install bloodhound
 ```
 
 ### Usage

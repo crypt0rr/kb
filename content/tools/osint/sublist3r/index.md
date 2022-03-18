@@ -17,7 +17,7 @@ Python tool designed to enumerate subdomains of websites using OSINT.
 
 ```plain
 git clone https://github.com/aboul3la/Sublist3r.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

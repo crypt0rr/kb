@@ -19,7 +19,7 @@ o365spray a username enumeration and password spraying tool aimed at Microsoft O
 
 ```plain
 git clone https://github.com/0xZDH/o365spray
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

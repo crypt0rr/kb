@@ -20,7 +20,7 @@ Well, with `what` all you have to do is ask what "0x52908400098527886E0F70300698
 ### Installation
 
 ```plain
-pip3 install pywhat
+python3 -m pip install pywhat
 ```
 
 For macOS you can also install using HomeBrew.

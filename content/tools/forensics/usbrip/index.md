@@ -16,7 +16,7 @@ A simple forensics tool with command line interface that lets you keep track of 
 ### Installation
 
 ```plain
-pip3 install usbrip
+python3 -m pip install usbrip
 ```
 
 ### Usage

@@ -18,7 +18,7 @@ Active Directory information dumper via LDAP.
 Dependencies
 
 ```plain
-pip3 install ldap3 dnspython
+python3 -m pip install ldap3 dnspython
 ```
 
 ```plain

@@ -44,7 +44,7 @@ Check out the [git repository](https://github.com/farrokhi/dnsdiag) and install 
 ```plain
 git clone https://github.com/farrokhi/dnsdiag.git
 cd dnsdiag
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 #### pip3
@@ -52,7 +52,7 @@ pip3 install -r requirements.txt
 You can alternatively install the package using pip:
 
 ```plain
-pip3 install dnsdiag
+python3 -m pip install dnsdiag
 ```
 
 #### Binary Package

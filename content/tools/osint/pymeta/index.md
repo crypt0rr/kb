@@ -22,7 +22,7 @@ sudo python3 setup.py install
 ```
 
 ```plain
-pip3 install pymetadata
+python3 -m pip install pymetadata
 ```
 
 ### Usage

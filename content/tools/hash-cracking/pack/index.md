@@ -26,7 +26,7 @@ pip install pyenchant==3.0.0a1
 
 ```plain
 git clone https://github.com/Hydraze/pack
-pip3 install pyenchant
+python3 -m pip install pyenchant
 ```
 
 ### Examples
