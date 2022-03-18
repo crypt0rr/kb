@@ -37,7 +37,7 @@ This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Ker
 #### Requirements
 
 ```plain
-apt install python3-pip && sudo apt-get install libpcap-dev && pip3 install Cython && pip3 install python-libpcap
+apt install python3-pip && sudo apt-get install libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap
 ```
 
 #### Download tool

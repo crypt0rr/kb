@@ -18,7 +18,7 @@ Please use [Stegeek]({{< ref "stegseek" >}}), newer and quicker.
 ### Installation
 
 ```plain
-pip3 install stegcracker
+python3 -m pip install stegcracker
 ```
 
 ### Usage

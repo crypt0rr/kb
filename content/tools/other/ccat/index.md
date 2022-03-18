@@ -18,7 +18,7 @@ This tool is designed to analyze the configuration files of Cisco devices. The [
 
 ```plain
 git clone https://github.com/frostbits-security/ccat.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

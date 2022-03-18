@@ -18,7 +18,7 @@ RSA multi attacks tool : uncipher data from weak public key and try to recover p
 ```plain
 git clone https://github.com/Ganapati/RsaCtfTool.git
 sudo apt-get install libgmp3-dev libmpc-dev
-pip3 install -r "requirements.txt"
+python3 -m pip install -r "requirements.txt"
 python3 RsaCtfTool.py
 ```
 

@@ -17,7 +17,7 @@ Python tool to brute force against an AzureAD SSO endpoint.
 
 ```plain
 git clone https://github.com/thijsvos/aad_sso_brute.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

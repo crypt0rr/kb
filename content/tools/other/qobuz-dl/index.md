@@ -30,7 +30,7 @@ Search, explore and download Lossless and Hi-Res music from Qobuz - The ultimate
 ### Installation
 
 ```plain
-pip3 install --upgrade qobuz-dl
+python3 -m pip install --upgrade qobuz-dl
 ```
 
 ### Usage

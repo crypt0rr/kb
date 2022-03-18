@@ -16,7 +16,7 @@ An email OSINT and breach hunting tool using different breach and reconnaissance
 ### Installation
 
 ```plain
-pip3 install h8mail
+python3 -m pip install h8mail
 ```
 
 ### Usage

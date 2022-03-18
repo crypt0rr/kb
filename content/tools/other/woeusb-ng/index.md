@@ -22,7 +22,7 @@ sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
 ```
 
 ```plain
-sudo pip3 install WoeUSB-ng
+sudo python3 -m pip install WoeUSB-ng
 ```
 
 ### Examples

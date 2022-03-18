@@ -16,7 +16,7 @@ Validates and parses SPF amd DMARC DNS records.
 ### Installation
 
 ```plain
-pip3 install checkdmarc
+python3 -m pip install checkdmarc
 ```
 
 ### Usage

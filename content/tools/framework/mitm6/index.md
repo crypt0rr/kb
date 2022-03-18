@@ -16,7 +16,7 @@ weight : 0
 ### Installation
 
 ```plain
-sudo pip3 install mitm6
+sudo python3 -m pip install mitm6
 ```
 
 ### Usage

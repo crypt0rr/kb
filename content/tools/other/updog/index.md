@@ -18,7 +18,7 @@ Local file sharing made easy.
 ### Installation
 
 ```plain
-pip3 install updog
+python3 -m pip install updog
 ```
 
 ### Usage

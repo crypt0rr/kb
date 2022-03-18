@@ -16,7 +16,7 @@ A tool to dump a git repository from a website.
 ### Installation
 
 ```plain
-pip3 install git-dumper
+python3 -m pip install git-dumper
 ```
 
 ### Usage

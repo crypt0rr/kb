@@ -20,7 +20,7 @@ Is a python tool to perform password spray attack in a Microsoft domain environm
 ```plain
 git clone https://github.com/xFreed0m/RDPassSpray.git
 cd RDPassSpray
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 sudo apt install freerdp2-x11
 ```
 

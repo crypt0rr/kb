@@ -22,7 +22,7 @@ git clone https://github.com/m8r0wn/CrossLinked.git
 Install requirements
 
 ```plain
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

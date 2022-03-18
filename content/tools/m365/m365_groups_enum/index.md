@@ -17,7 +17,7 @@ Enumerate Microsoft 365 Groups in a tenant with their metadata.
 
 ```plain
 git clone https://github.com/cnotin/m365_groups_enum.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

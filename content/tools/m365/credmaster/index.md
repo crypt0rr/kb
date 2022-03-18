@@ -47,7 +47,7 @@ For detection tips, see the blogpost and detection section.
 
 ```plain
 git clone https://github.com/knavesec/CredMaster.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 #### Requirements

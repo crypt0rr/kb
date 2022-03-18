@@ -59,7 +59,7 @@ With a user password, or the domain PVK we can unprotect the user's DPAPI secret
 
 ```plain
 git clone https://github.com/login-securite/DonPAPI.git
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 ### Usage

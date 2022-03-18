@@ -22,7 +22,7 @@ Is a router exploitation tool that allows to disclosure network router admin pas
 ### Installation
 
 ```plain
-pip3 install git+https://github.com/EntySec/RomBuster
+python3 -m pip install git+https://github.com/EntySec/RomBuster
 ```
 
 ### Usage

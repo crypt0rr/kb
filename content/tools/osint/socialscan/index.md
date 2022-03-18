@@ -16,7 +16,7 @@ Command-line interface for checking email address and username usage on online p
 ### Installation
 
 ```plain
-pip3 install socialscan
+python3 -m pip install socialscan
 ```
 
 ### Usage

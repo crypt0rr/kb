@@ -26,7 +26,7 @@ The ingestor only supports offline information collection from the snapshot file
 ```plain
 git clone https://github.com/c3c/ADExplorerSnapshot.py.git
 cd ADExplorerSnapshot.py
-pip3 install --user .
+python3 -m pip install --user .
 ```
 
 ### Usage
