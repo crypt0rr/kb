@@ -192,6 +192,21 @@ Administrator 07/09/20 12:31:41
 
 ![Example](images/ldapdomaindump-1.png)
 
+### Example dataset
+
+Below a sample dataset is available. Created with the following code.
+
+```plain
+$ python3 ldapdomaindump.py -u 'offsec.nl\johndo' -p 'Welkom1234' -d ';' 10.20.30.10
+[*] Connecting to host...
+[*] Binding to host
+[+] Bind OK
+[*] Starting domain dump
+[+] Domain dump finished
+```
+
+{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+
 ### URL list
 
 * [Github.com - LDAPdomaindump](https://github.com/dirkjanm/ldapdomaindump)
