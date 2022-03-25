@@ -64,7 +64,7 @@ optional arguments:
 ### Examples
 
 ```plain
-$  ./tilde_enum.py -u http://offsec.nl /pentest/fuzzdb/discovery/predictableres/raft-small-words-lowercase.txt -d /pentest/fuzzdb/discovery/predictableres/raft-small-directories-lowercase.txt
+$  python2 tilde_enum.py -u http://offsec.nl -w raft-small-directories-lowercase.txt
 [-]  Testing with dummy file request http://offsec.nl/mhxWjUz25u.htm
 [-] URLNotThere -> HTTP Code: 404, Response Length: 1635
 [-]  Testing with user-submitted http://offsec.nl
