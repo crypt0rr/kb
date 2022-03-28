@@ -34,6 +34,12 @@ sudo make install
 sudo ike-scan <target-ip> -M -A --id=groupnamedoesnotexist -P
 ```
 
+To directly save the hash in crackable format.
+
+```plain
+sudo ike-scan <target-ip> -M -A --id=groupnamedoesnotexist -P --pskcrack=hash.txt
+```
+
 ### Examples
 
 ```plain
