@@ -80,13 +80,13 @@ Options:
 #### Analyse mode
 
 ```plain
-sudo ./Responder.py -I <interface> -A -f -v
+sudo ./Responder.py -I <interface> -A -v
 ```
 
 #### Full mode
 
 ```plain
-sudo ./Responder.py -I <interface> -f -w -F --lm -v
+sudo ./Responder.py -I <interface> -w -F --lm -v
 ```
 
 ### Evil website
