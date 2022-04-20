@@ -20,20 +20,19 @@ Install the [Impacket Framework]({{< ref "../" >}})
 ### Usage
 
 ```plain
-ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip INTERFACE_IP] [--no-smb-server] [--no-http-server] [--no-wcf-server] [--no-raw-server] [--smb-port SMB_PORT]
-                     [--http-port HTTP_PORT] [--wcf-port WCF_PORT] [--raw-port RAW_PORT] [-ra] [-r SMBSERVER] [-l LOOTDIR] [-of OUTPUT_FILE] [-codec CODEC] [-smb2support] [-ntlmchallenge NTLMCHALLENGE]
-                     [-socks] [-wh WPAD_HOST] [-wa WPAD_AUTH_NUM] [-6] [--remove-mic] [--serve-image SERVE_IMAGE] [-c COMMAND] [-e FILE] [--enum-local-admins] [-rpc-mode {TSCH}] [-rpc-use-smb]
-                     [-auth-smb [domain/]username[:password]] [-hashes-smb LMHASH:NTHASH] [-rpc-smb-port {139,445}] [-q QUERY] [-machine-account MACHINE_ACCOUNT] [-machine-hashes LMHASH:NTHASH]
-                     [-domain DOMAIN] [-remove-target] [--no-dump] [--no-da] [--no-acl] [--no-validate-privs] [--escalate-user ESCALATE_USER] [--add-computer [COMPUTERNAME]] [--delegate-access] [--sid]
-                     [--dump-laps] [--dump-gmsa] [-k KEYWORD] [-m MAILBOX] [-a] [-im IMAP_MAX] [--adcs] [--template TEMPLATE]
+ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip INTERFACE_IP] [--no-smb-server] [--no-http-server] [--no-wcf-server] [--no-raw-server] [--smb-port SMB_PORT] [--http-port HTTP_PORT]
+                     [--wcf-port WCF_PORT] [--raw-port RAW_PORT] [--no-multirelay] [-ra] [-r SMBSERVER] [-l LOOTDIR] [-of OUTPUT_FILE] [-codec CODEC] [-smb2support] [-ntlmchallenge NTLMCHALLENGE] [-socks]
+                     [-wh WPAD_HOST] [-wa WPAD_AUTH_NUM] [-6] [--remove-mic] [--serve-image SERVE_IMAGE] [-c COMMAND] [-e FILE] [--enum-local-admins] [-rpc-mode {TSCH}] [-rpc-use-smb]
+                     [-auth-smb [domain/]username[:password]] [-hashes-smb LMHASH:NTHASH] [-rpc-smb-port {139,445}] [-q QUERY] [-machine-account MACHINE_ACCOUNT] [-machine-hashes LMHASH:NTHASH] [-domain DOMAIN]
+                     [-remove-target] [--no-dump] [--no-da] [--no-acl] [--no-validate-privs] [--escalate-user ESCALATE_USER] [--add-computer [COMPUTERNAME [PASSWORD ...]]] [--delegate-access] [--sid] [--dump-laps]
+                     [--dump-gmsa] [--dump-adcs] [-k KEYWORD] [-m MAILBOX] [-a] [-im IMAP_MAX] [--adcs] [--template TEMPLATE] [--altname ALTNAME] [--shadow-credentials] [--shadow-target SHADOW_TARGET]
+                     [--pfx-password PFX_PASSWORD] [--export-type {PEM, PFX}] [--cert-outfile-path CERT_OUTFILE_PATH]
 ```
 
 ### Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
-
-usage: 
+Impacket v0.9.25.dev1+20220418.154327.0ca97c1f - Copyright 2021 SecureAuth Corporation
 
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client
 
@@ -42,19 +41,19 @@ Main options:
   -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
   -t TARGET, --target TARGET
-                        Target to relay the credentials to, can be an IP, hostname or URL like domain\username@host:port (domain\username and port are optional, and don't forget to escape the '\'). If
-                        unspecified, it will relay back to the client')
+                        Target to relay the credentials to, can be an IP, hostname or URL like domain\username@host:port (domain\username and port are optional, and don't forget to escape the '\'). If unspecified, it
+                        will relay back to the client')
   -tf TARGETSFILE       File that contains targets by hostname or full URL, one per line
   -w                    Watch the target file for changes and update target list automatically (only valid with -tf)
-  -i, --interactive     Launch an smbclient or LDAP console insteadof executing a command after a successful relay. This console will listen locally on a tcp port and can be reached with for example
-                        netcat.
+  -i, --interactive     Launch an smbclient or LDAP console insteadof executing a command after a successful relay. This console will listen locally on a tcp port and can be reached with for example netcat.
   -ip INTERFACE_IP, --interface-ip INTERFACE_IP
                         IP address of interface to bind SMB and HTTP servers
   --smb-port SMB_PORT   Port to listen on smb server
   --http-port HTTP_PORT
-                        Port to listen on http server
+                        Port(s) to listen on HTTP server. Can specify multiple ports by separating them with `,`, and ranges with `-`. Ex: `80,8000-8010`
   --wcf-port WCF_PORT   Port to listen on wcf server
   --raw-port RAW_PORT   Port to listen on raw server
+  --no-multirelay       If set, disable multi-host relay (SMB and HTTP servers)
   -ra, --random         Randomize target selection
   -r SMBSERVER          Redirect HTTP requests to a file:// path on SMBSERVER
   -l LOOTDIR, --lootdir LOOTDIR
@@ -75,8 +74,7 @@ Main options:
   --remove-mic          Remove MIC (exploit CVE-2019-1040)
   --serve-image SERVE_IMAGE
                         local path of the image that will we returned to clients
-  -c COMMAND            Command to execute on target system (for SMB and RPC). If not specified for SMB, hashes will be dumped (secretsdump.py must be in the same directory). For RPC no output will be
-                        provided.
+  -c COMMAND            Command to execute on target system (for SMB and RPC). If not specified for SMB, hashes will be dumped (secretsdump.py must be in the same directory). For RPC no output will be provided.
 
   --no-smb-server       Disables the SMB server
   --no-http-server      Disables the HTTP server
@@ -115,12 +113,13 @@ LDAP client options:
   --no-validate-privs   Do not attempt to enumerate privileges, assume permissions are granted to escalate a user via ACL attacks
   --escalate-user ESCALATE_USER
                         Escalate privileges of this user instead of creating a new one
-  --add-computer [COMPUTERNAME]
+  --add-computer [COMPUTERNAME [PASSWORD ...]]
                         Attempt to add a new computer account
   --delegate-access     Delegate access on relayed computer account to the specified account
   --sid                 Use a SID to delegate access rather than an account name
   --dump-laps           Attempt to dump any LAPS passwords readable by the user
   --dump-gmsa           Attempt to dump any gMSA passwords readable by the user
+  --dump-adcs           Attempt to dump ADCS enrollment services and certificate templates info
 
 IMAP client options:
   -k KEYWORD, --keyword KEYWORD
@@ -133,7 +132,19 @@ IMAP client options:
 
 AD CS attack options:
   --adcs                Enable AD CS relay attack
-  --template TEMPLATE   AD CS template. If you are attacking Domain Controller or other windows server machine, default value should be suitable.
+  --template TEMPLATE   AD CS template. Defaults to Machine or User whether relayed account name ends with `$`. Relaying a DC should require specifying `DomainController`
+  --altname ALTNAME     Subject Alternative Name to use when performing ESC1 or ESC6 attacks.
+
+Shadow Credentials attack options:
+  --shadow-credentials  Enable Shadow Credentials relay attack (msDS-KeyCredentialLink manipulation for PKINIT pre-authentication)
+  --shadow-target SHADOW_TARGET
+                        target account (user or computer$) to populate msDS-KeyCredentialLink from
+  --pfx-password PFX_PASSWORD
+                        password for the PFX stored self-signed certificate (will be random if not set, not needed when exporting to PEM)
+  --export-type {PEM, PFX}
+                        choose to export cert+private key in PEM or PFX (i.e. #PKCS12) (default: PFX))
+  --cert-outfile-path CERT_OUTFILE_PATH
+                        filename to store the generated self-signed PEM or PFX certificate and key
 ```
 
 ### Examples
