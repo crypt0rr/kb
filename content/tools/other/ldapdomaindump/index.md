@@ -120,6 +120,14 @@ For example 'Domain Users'.
 grep -w 'S-1-5-21*.*513' domain_groups.grep | awk -F ';' '{print $3}'
 ```
 
+#### Filter all SAM account names
+
+For example to use with [Kerbrute]({{< ref "kerbrute" >}}) to perform a password spray.
+
+```plain
+cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
+```
+
 #### Oneliners to filter high privilege users
 
 ```plain
