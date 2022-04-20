@@ -38,6 +38,11 @@ Path: `C:\Windows\NTDS\ntds.dit`
 
 Path: `C:\Windows\System32\config\SYSTEM`
 
+Preferably you want to also make a copy of:
+
+* SECURITY - `C:\Windows\System32\config\SECURITY`
+* SAM - `C:\Windows\System32\config\SAM`
+
 ![example](images/example2.png)
 
 ### Extract hashes
