@@ -17,7 +17,7 @@ A list of common used AD usernames can be downloaded [here](https://github.com/c
 
 ### Installation
 
-Download latest library from [Github.com](https://github.com/ropnop/kerbrute/releases/latest)
+Download latest binary from [Github.com](https://github.com/ropnop/kerbrute/releases/latest)
 
 ### Usage
 
