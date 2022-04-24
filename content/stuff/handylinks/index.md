@@ -152,3 +152,9 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-22 15:04:
 ### Pentesting Web checklist
 
 [Pentesting Web checklist](https://pentestbook.six2dez.com/others/web-checklist)
+
+### Grabify IP LOGGER
+
+Create an URL that will log the IP of visitor(s).
+
+[Grabify IP LOGGER](https://grabify.link/)
