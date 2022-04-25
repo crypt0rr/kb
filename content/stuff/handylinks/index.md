@@ -158,3 +158,12 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-22 15:04:
 Create an URL that will log the IP of visitor(s).
 
 [Grabify IP LOGGER](https://grabify.link/)
+
+### Microsoft Portals Overview
+
+Microsoft has a lot of portals.
+
+After not remembering all the Microsoft Portal URLs so many times, Adam decided to make a list and with a help from a few others, have gotten to this stage. You can read more about the details on the [About page](https://github.com/adamfowlerit/msportals.io/blob/master/about.md).
+
+[msportals.io - Microsoft Administrator Sites](https://msportals.io/)
+[Github.com - msportals.io - Microsoft Portals](https://github.com/adamfowlerit/msportals.io)
