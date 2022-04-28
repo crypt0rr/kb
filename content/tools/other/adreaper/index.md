@@ -117,6 +117,31 @@ $ ./ADReaper -command computers -dc SRV2019.offsec.nl -password Welkom1234 -user
 [...SNIP...]
 ```
 
+#### List all users
+
+```plain
+$ ./ADReaper -command users -dc SRV2019.offsec.nl -password Welkom1234 -user johndo@offsec.nl
++-------------------------+
+| USERS                   |
++-------------------------+
+|  - Administrator        |
+|  - Guest                |
+|  - SRV2019$             |
+|  - krbtgt               |
+|  - MARSHALL_FRANKS      |
+|  - JAMES_VAUGHAN        |
+|  - WARD_CONTRERAS       |
+|  - EDDY_MILES           |
+|  - ANDREW_VASQUEZ       |
+|  - ULYSSES_COTE         |
+|  - RICKIE_WEAVER        |
+|  - SALLIE_SHANNON       |
+|  - AUBREY_WISE          |
+|  - MARCY_TANNER         |
+|  - CHARLEY_KLEIN        |
+[...SNIP...]
+```
+
 ### URL list
 
 * [Github.com - ADReaper](https://github.com/AidenPearce369/ADReaper)
