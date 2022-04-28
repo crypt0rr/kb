@@ -20,7 +20,7 @@ Build the binary yourself or use the pre-compiled binary below.
 ### Usage
 
 ```plain
-KrbRelayUp.exe relay -d FQDN -cn CUMPUTERNAME [-c] [-cp PASSWORD | -ch NTHASH]
+KrbRelayUp.exe relay -d FQDN -cn COMPUTER [-c] [-cp PASSWORD | -ch NTHASH]
 ```
 
 ### Flags
@@ -29,7 +29,7 @@ KrbRelayUp.exe relay -d FQDN -cn CUMPUTERNAME [-c] [-cp PASSWORD | -ch NTHASH]
 KrbRelayUp - Relaying you to SYSTEM
 
 RELAY:
-Usage: KrbRelayUp.exe relay -d FQDN -cn CUMPUTERNAME [-c] [-cp PASSWORD | -ch NTHASH]
+Usage: KrbRelayUp.exe relay -d FQDN -cn COMPUTERNAME [-c] [-cp PASSWORD | -ch NTHASH]
 
     -d  (--Domain)                   FQDN of domain.
     -c  (--CreateNewComputerAccount)    Create new computer account for RBCD. Will use the current authenticated user.
