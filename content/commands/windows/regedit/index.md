@@ -27,6 +27,15 @@ If you want to change the value via CMD/PowerShell:
 reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1
 ```
 
+In case remote access is mitigated thru **User Rights Assignment** you can use the following to disable this.
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern="ntrights.(exe)"/%}}
+
+```plain
+C:\temp>ntrights.exe -r SeDenyNetworkLogonRight -u "Local Account"
+Revoking SeDenyNetworkLogonRight from Local Account   ... successful
+```
+
 ### URL list
 
 * [Support.accessdata.com - Disable Remote UAC](https://support.accessdata.com/hc/en-us/articles/204150405-Disable-Remote-UAC)
