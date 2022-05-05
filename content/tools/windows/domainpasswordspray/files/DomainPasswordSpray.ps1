@@ -562,11 +562,15 @@ function Invoke-SpraySinglePassword
 
 }
 
-function Get-ObservationWindow($DomainEntry)
+function Get-ObservationWindow()
 {
     # Get account lockout observation window to avoid running more than 1
     # password spray per observation window.
-    $lockObservationWindow_attr = $DomainEntry.Properties['lockoutObservationWindow']
-    $observation_window = $DomainEntry.ConvertLargeIntegerToInt64($lockObservationWindow_attr.Value) / -600000000
+    $command = "cmd.exe /C net accounts /domain"
+    $net_accounts_results = Invoke-Expression -Command:$command
+    $stripped_policy = ($net_accounts_results | Where-Object {$_ -like "*Lockout Observation Window*"})
+    $stripped_split_a, $stripped_split_b = $stripped_policy.split(':',2)
+    $observation_window_no_spaces = $stripped_split_b -Replace '\s+',""
+    [int]$observation_window = [convert]::ToInt32($observation_window_no_spaces, 10)
     return $observation_window
 }
