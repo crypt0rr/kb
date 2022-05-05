@@ -21,6 +21,12 @@ weight : 0
 6. Type 1 into the "Value data" entry and click OK
 7. Reboot the computer
 
+If you want to change the value via CMD/PowerShell:
+
+```plain
+reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1
+```
+
 ### URL list
 
 * [Support.accessdata.com - Disable Remote UAC](https://support.accessdata.com/hc/en-us/articles/204150405-Disable-Remote-UAC)
