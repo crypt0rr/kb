@@ -24,12 +24,14 @@ smbclient.py [-h] [-file FILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] 
 ### Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
+Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
+
+SMB client implementation.
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
 
-options:
+optional arguments:
   -h, --help            show this help message and exit
   -file FILE            input file with commands to execute in the mini shell
   -debug                Turn DEBUG output ON
@@ -38,8 +40,7 @@ authentication:
   -hashes LMHASH:NTHASH
                         NTLM hashes, format is LMHASH:NTHASH
   -no-pass              don't ask for password (useful for -k)
-  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in
-                        the command line
+  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
 
 connection:
