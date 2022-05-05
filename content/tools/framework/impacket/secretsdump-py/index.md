@@ -29,7 +29,7 @@ secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-securit
 ### Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220427.114416.76ec43e7 - Copyright 2021 SecureAuth Corporation
+Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
 
 Performs various techniques to dump secrets from the remote machine without executing any agent there.
 

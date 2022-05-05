@@ -32,7 +32,7 @@ ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip I
 ### Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220418.154327.0ca97c1f - Copyright 2021 SecureAuth Corporation
+Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
 
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client
 
