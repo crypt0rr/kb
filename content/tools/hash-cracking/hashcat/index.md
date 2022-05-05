@@ -686,6 +686,14 @@ Please see [NThasher]({{< ref "nthasher" >}})
 
 [PACK - Password Analysis and Cracking Kit]({{< ref "pack" >}})
 
+### Create custom wordlist
+
+To create a custom wordlist from a input-wordlist combined with rule(s).
+
+```plain
+hashcat --force words-input -r scripts/rules/10krules.rule  --stdout > customwordlist
+```
+
 ### Wordlists
 
 * [Github.com - FlameOfIgnis Pwdb-Public](https://github.com/FlameOfIgnis/Pwdb-Public.git)
