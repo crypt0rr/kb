@@ -15,6 +15,12 @@ ADExplorerSnapshot.py is an AD Explorer snapshot ingestor for [BloodHound](https
 
 AD Explorer allows you to connect to a DC and browse LDAP data. It can also create snapshots of the server you are currently attached to. This tool allows you to convert those snapshots to BloodHound-compatible JSON files.
 
+You can use the `.exe` below or try to run it directly from Command Prompt.
+
+```plain
+\\live.sysinternals.com\tools\ADExplorer.exe -accepteula -snapshot "" out.snapshot
+```
+
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ### Limitations
