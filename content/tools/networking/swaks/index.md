@@ -6,7 +6,7 @@ date : 2022-04-08T12:09:03+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Networking', 'SMTP']
 ---
 
 ## Swaks
@@ -32,7 +32,9 @@ Download newest release from [Github.com](https://github.com/jetmore/swaks/relea
 
 ### Flags
 
-Please run `./swaks --help`.
+Please run `./swaks --help` or check the help file below.
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern="ref.*(txt)"/%}}
 
 ### Examples
 
