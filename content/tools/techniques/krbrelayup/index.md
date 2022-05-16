@@ -13,7 +13,7 @@ weight : 0
 
 ### Installation
 
-Build the binary yourself or use the pre-compiled binary below.
+Build the binary from [source](https://github.com/Dec0ne/KrbRelayUp) or use the pre-compiled binary below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
@@ -32,9 +32,10 @@ RELAY:
 Usage: KrbRelayUp.exe relay -d FQDN -cn COMPUTERNAME [-c] [-cp PASSWORD | -ch NTHASH]
 
     -d  (--Domain)                   FQDN of domain.
+    -d  (--DomainController)         FQDN/IP of domain controller. (Optional)
     -c  (--CreateNewComputerAccount)    Create new computer account for RBCD. Will use the current authenticated user.
-    -cn (--ComputerName)             Name of attacker owned computer account for RBCD. (deafult=KRBRELAYUP$ [if -c is enabled])
-    -cp (--ComputerPassword)         Password of computer account for RBCD. (deafult=RANDOM [if -c is enabled])
+    -cn (--ComputerName)             Name of attacker owned computer account for RBCD. (default=KRBRELAYUP$ [if -c is enabled])
+    -cp (--ComputerPassword)         Password of computer account for RBCD. (default=RANDOM [if -c is enabled])
     -ch (--ComputerPasswordHash)     Password NT hash of computer account for RBCD. (Optional)
     -p  (--Port)                     Port for Com Server (default=12345)
 
@@ -42,10 +43,11 @@ SPAWN:
 Usage: KrbRelayUp.exe spawn -d FQDN -cn COMPUTERNAME [-cp PASSWORD | -ch NTHASH] <-i USERTOIMPERSONATE>
 
     -d  (--Domain)                   FQDN of domain.
-    -cn (--ComputerName)             Name of attacker owned computer account for RBCD. (deafult=KRBRELAYUP$ [if -c is enabled])
-    -cp (--ComputerPassword)         Password of computer account for RBCD. (deafult=RANDOM [if -c is enabled])
+    -d  (--DomainController)         FQDN/IP of domain controller. (Optional)
+    -cn (--ComputerName)             Name of attacker owned computer account for RBCD. (default=KRBRELAYUP$ [if -c is enabled])
+    -cp (--ComputerPassword)         Password of computer account for RBCD. (default=RANDOM [if -c is enabled])
     -ch (--ComputerPasswordHash)     Password NT hash of computer account for RBCD. (Optional)
-    -i  (--Impersonate)              User to impersonate. should be a local admininstrator in the target computer. (default=Administrator)
+    -i  (--Impersonate)              User to impersonate. should be a local administrator in the target computer. (default=Administrator)
     -s  (--ServiceName)              Name of the service to be created. (default=KrbSCM)
     -sc (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTEM
 
@@ -53,7 +55,7 @@ KRBSCM:
 Usage: KrbRelayUp.exe krbscm <-s SERVICENAME> <-sc SERVICECOMMANDLINE>
 
     -s  (--ServiceName)              Name of the service to be created. (default=KrbSCM)
-    -sc (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTE
+    -sc (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTEM
 ```
 
 ### Examples
