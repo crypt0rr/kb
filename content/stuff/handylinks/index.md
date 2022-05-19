@@ -167,3 +167,7 @@ After not remembering all the Microsoft Portal URLs so many times, Adam decided 
 
 [msportals.io - Microsoft Administrator Sites](https://msportals.io/)
 [Github.com - msportals.io - Microsoft Portals](https://github.com/adamfowlerit/msportals.io)
+
+### List of Github repositories and articles with list of dorks for different search engines
+
+[Github.com - Dorks collections list](https://github.com/cipher387/Dorks-collections-list)
