@@ -152,3 +152,9 @@ Install-Module $ModuleName -scope CurrentUser
 $ses = New-PSSession -ComputerName DC01 -Credentials $(Get-Credential)
 Copy-Item -FromSession $ses C:\Users\adm-johndo\DC01\secrets.txt Z:\localdisk\secrets.txt
 ```
+
+### Open Relay
+
+```plain
+Send-MailMessage -From 'Not John Do <finance@offsec.nl>' -To 'supplier@offsec.nl' -Subject 'Please send money' -SmtpServer 'openrelay.offsec.nl'
+```
