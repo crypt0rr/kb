@@ -171,6 +171,12 @@ grep -w -v -Ff file1.txt file2.txt
 grep -E "^.{3}$" file.txt
 ```
 
+### Escape special characters
+
+```plain
+grep -v '\$' file.txt
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/grep)
