@@ -13,6 +13,8 @@ weight : 0
 
 Please go to [BloodHound]({{< ref "bloodhound" >}}) after gathering information with AzureHound.
 
+Custom queries for finding interesting stuff <https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/>.
+
 ### Prerequisites
 
 Install PowerShell Azure Module `Install-Module -Name Az`
