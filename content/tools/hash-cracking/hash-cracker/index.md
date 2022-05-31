@@ -34,7 +34,7 @@ git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ### Flags
 
 ```plain
-hash-cracker v2.6 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v2.9 by crypt0rr (https://github.com/crypt0rr)
 
 Checking if requirements are met:
 [+] Hashcat is installed
@@ -59,6 +59,7 @@ Checking if requirements are met:
 13. PACK mask (read option 99)
 14. Fingerprint attack
 15. Directory of wordlists plain and then with OneRuleToRuleThemAll
+16. Username iteration (read option 99, only NTLM)
 99. Show info about modules
 
 Please enter number OR type 'search' to find hashtypes:
