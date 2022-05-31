@@ -13,6 +13,8 @@ weight : 0
 
 Please go to [BloodHound]({{< ref "bloodhound" >}}) after gathering information with AzureHound.
 
+Custom queries for finding interesting stuff <https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/>.
+
 ### Prerequisites
 
 Install PowerShell Azure Module `Install-Module -Name Az`
@@ -78,3 +80,4 @@ johndo@example.com     AzureCloud       1cd4303[...SNIP...]2d6530         1cd430
 
 * [Github.com - BloodHound](https://github.com/BloodHoundAD/BloodHound/)
 * [Github.com - AzureHound Collector](https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/AzureHound.ps1)
+* [Github.com - Bloodhound-CustomQueries - Azure](https://github.com/ZephrFish/Bloodhound-CustomQueries/blob/main/customqueries.json)
