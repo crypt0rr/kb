@@ -9,7 +9,7 @@ weight : 0
 # tags : ['']
 ---
 
-## Certificate Ripper
+## Certificate Ripper  🔐
 
 A CLI tool to extract server certificates.
 
