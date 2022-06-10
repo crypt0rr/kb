@@ -1,7 +1,7 @@
 ---
 title : "Microsoft 365"
 pre : '<i class="fas fa-cloud"></i> '
-description : "m365 description."
+description : "Tools related to Microsoft 365 platform."
 date : 2021-12-01T11:04:17+01:00
 # hidden : true
 # draft : true
