@@ -1,0 +1,909 @@
+---
+title : "stress-ng"
+# pre : ' '
+description : "stress-ng will stress test a computer system in various selectable ways."
+date : 2022-06-28T11:28:49+02:00
+# hidden : true
+# draft : true
+weight : 0
+# tags : ['']
+---
+
+## stress-ng
+
+stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces. stress-ng also has a wide range of CPU specific stress tests that exercise floating point, integer, bit manipulation and control flow.
+
+stress-ng was originally intended to make a machine work hard and trip hardware issues such as thermal overruns as well as operating system bugs that only occur when a system is being thrashed hard. Use stress-ng with caution as some of the tests can make a system run hot on poorly designed hardware and also can cause excessive system thrashing which may be difficult to stop.
+
+The tool has a wide range of different stress mechanisms (known as "stressors") and a full description of these is included in the man page. This document is a quick-start reference guide and covers some of the more typical use cases for stress-ng.
+
+### Installation
+
+```plain
+sudo apt install stress-ng
+```
+
+```plain
+brew install stress-ng
+```
+
+### Usage
+
+```plain
+stress-ng [OPTION [ARG]]
+```
+
+### Flags
+
+```plain
+General control options:
+      --abort               abort all stressors if any stressor fails
+      --aggressive          enable all aggressive options
+-a N, --all N               start N workers of each stress test
+-b N, --backoff N           wait of N microseconds before work starts
+      --class name          specify a class of stressors, use with --sequential
+-n,   --dry-run             do not run
+      --ftrace              enable kernel function call tracing
+-h,   --help                show help
+      --ignite-cpu          alter kernel controls to make CPU run hot
+      --ionice-class C      specify ionice class (idle, besteffort, realtime)
+      --ionice-level L      specify ionice level (0 max, 7 min)
+-j,   --job jobfile         run the named jobfile
+-k,   --keep-name           keep stress worker names to be 'stress-ng'
+      --keep-files          do not remove files or directories
+      --klog-check          check kernel message log for errors
+      --log-brief           less verbose log messages
+      --log-file filename   log messages to a log file
+      --maximize            enable maximum stress options
+      --max-fd              set maximum file descriptor limit
+-M,   --metrics             print pseudo metrics of activity
+      --metrics-brief       enable metrics and only show non-zero results
+      --minimize            enable minimal stress options
+      --no-madvise          don't use random madvise options for each mmap
+      --no-rand-seed        seed random numbers with the same constant
+      --oomable             Do not respawn a stressor if it gets OOM'd
+      --page-in             touch allocated pages that are not in core
+      --parallel N          synonym for 'all N'
+      --pathological        enable stressors that are known to hang a machine
+-q,   --quiet               quiet output
+-r,   --random N            start N random workers
+      --sched type          set scheduler type
+      --sched-prio N        set scheduler priority level N
+      --sched-period N      set period for SCHED_DEADLINE to N nanosecs (Linux only)
+      --sched-runtime N     set runtime for SCHED_DEADLINE to N nanosecs (Linux only)
+      --sched-deadline N    set deadline for SCHED_DEADLINE to N nanosecs (Linux only)
+      --sched-reclaim       set reclaim cpu bandwidth for deadline scheduler (Linux only)
+      --seed N              set the random number generator seed with a 64 bit value
+      --sequential N        run all stressors one by one, invoking N of them
+      --skip-silent         silently skip unimplemented stressors
+      --stressors           show available stress tests
+      --smart               show changes in S.M.A.R.T. data
+      --syslog              log messages to the syslog
+      --taskset             use specific CPUs (set CPU affinity)
+      --temp-path path      specify path for temporary directories and files
+      --thrash              force all pages in causing swap thrashing
+-t N, --timeout T           timeout after T seconds
+      --timer-slack         enable timer slack mode
+      --times               show run time summary at end of the run
+      --timestamp           timestamp log output 
+      --tz                  collect temperatures from thermal zones (Linux only)
+-v,   --verbose             verbose output
+      --verify              verify results (not available on all tests)
+      --verifiable          show stressors that enable verification via --verify
+-V,   --version             show version
+-Y,   --yaml file           output results to YAML formatted file
+-x,   --exclude             list of stressors to exclude (not run)
+
+Stressor specific options:
+      --access N            start N workers that stress file access permissions
+      --access-ops N        stop after N file access bogo operations
+      --af-alg N            start N workers that stress AF_ALG socket domain
+      --af-alg-ops N        stop after N af-alg bogo operations
+      --af-alg-dump         dump internal list from /proc/crypto to stdout
+      --affinity N          start N workers that rapidly change CPU affinity
+      --affinity-ops N      stop after N affinity bogo operations
+      --affinity-rand       change affinity randomly rather than sequentially
+      --affinity-delay      delay in nanoseconds between affinity changes
+      --affinity-pin        keep per stressor threads pinned to same CPU
+      --affinity-sleep      sleep in nanoseconds between affinity changes
+      --aio N               start N workers that issue async I/O requests
+      --aio-ops N           stop after N bogo async I/O requests
+      --aio-requests N      number of async I/O requests per worker
+      --aiol N              start N workers that exercise Linux async I/O
+      --aiol-ops N          stop after N bogo Linux aio async I/O requests
+      --aiol-requests N     number of Linux aio async I/O requests per worker
+      --apparmor            start N workers exercising AppArmor interfaces
+      --apparmor-ops N      stop after N bogo AppArmor worker bogo operations
+      --alarm N             start N workers exercising alarm timers
+      --alarm-ops N         stop after N alarm bogo operations
+      --atomic              start N workers exercising GCC atomic operations
+      --atomic-ops          stop after N bogo atomic bogo operations
+      --bad-altstack N      start N workers exercising bad signal stacks
+      --bad-altstack-ops N  stop after N bogo signal stack SIGSEGVs
+      --bad-ioctl N         start N stressors that perform illegal read ioctls on devices
+      --bad-ioctl-ops  N    stop after N bad ioctl bogo operations
+-B N, --bigheap N           start N workers that grow the heap using calloc()
+      --bigheap-ops N       stop after N bogo bigheap operations
+      --bigheap-growth N    grow heap by N bytes per iteration
+      --bind-mount N        start N workers exercising bind mounts
+      --bind-mount-ops N    stop after N bogo bind mount operations
+      --binderfs N          start N workers exercising binderfs
+      --binderfs-ops N      stop after N bogo binderfs operations
+      --branch N            start N workers that force branch misprediction
+      --branch-ops N        stop after N branch misprediction branches
+      --brk N               start N workers performing rapid brk calls
+      --brk-ops N           stop after N brk bogo operations
+      --brk-mlock           attempt to mlock newly mapped brk pages
+      --brk-notouch         don't touch (page in) new data segment page
+      --bsearch N           start N workers that exercise a binary search
+      --bsearch-ops N       stop after N binary search bogo operations
+      --bsearch-size N      number of 32 bit integers to bsearch
+-C N, --cache N             start N CPU cache thrashing workers
+      --cache-ops N         stop after N cache bogo operations
+      --cache-enable-all    enable all cache options (fence,flush,sfence,etc..)
+      --cache-fence         serialize stores
+      --cache-level N       only exercise specified cache
+      --cache-no-affinity   do not change CPU affinity
+      --cache-prefetch      prefetch on memory reads/writes
+      --cache-ways N        only fill specified number of cache ways
+      --cache-wb            cache line writeback (x86 only)
+      --cap N               start N workers exercising capget
+      --cap-ops N           stop cap workers after N bogo capget operations
+      --chattr N            start N workers thrashing chattr file mode bits 
+      --chattr-ops N        stop chattr workers after N bogo operations
+      --chdir N             start N workers thrashing chdir on many paths
+      --chdir-ops N         stop chdir workers after N bogo chdir operations
+      --chdir-dirs N        select number of directories to exercise chdir on
+      --chmod N             start N workers thrashing chmod file mode bits 
+      --chmod-ops N         stop chmod workers after N bogo operations
+      --chown N             start N workers thrashing chown file ownership
+      --chown-ops N         stop chown workers after N bogo operations
+      --chroot N            start N workers thrashing chroot
+      --chroot-ops N        stop chroot workers after N bogo operations
+      --clock N             start N workers thrashing clocks and POSIX timers
+      --clock-ops N         stop clock workers after N bogo operations
+      --clone N             start N workers that rapidly create and reap clones
+      --clone-ops N         stop after N bogo clone operations
+      --clone-max N         set upper limit of N clones per worker
+      --close N             start N workers that exercise races on close
+      --close-ops N         stop after N bogo close operations
+      --context N           start N workers exercising user context
+      --context-ops N       stop context workers after N bogo operations
+      --copy-file N         start N workers that copy file data
+      --copy-file-ops N     stop after N copy bogo operations
+      --copy-file-bytes N   specify size of file to be copied
+-c N, --cpu N               start N workers that perform CPU only loading
+      --cpu-ops N           stop after N cpu bogo operations
+-l P, --cpu-load P          load CPU by P %, 0=sleep, 100=full load (see -c)
+      --cpu-load-slice S    specify time slice during busy load
+      --cpu-method M        specify stress cpu method M, default is all
+      --cpu-old-metrics     use old CPU metrics instead of normalized metrics
+      --cpu-online N        start N workers offlining/onlining the CPUs
+      --cpu-online-ops N    stop after N offline/online operations
+      --crypt N             start N workers performing password encryption
+      --crypt-ops N         stop after N bogo crypt operations
+      --cyclic N            start N cyclic real time benchmark stressors
+      --cyclic-ops N        stop after N cyclic timing cycles
+      --cyclic-method M     specify cyclic method M, default is clock_ns
+      --cyclic-dist N       calculate distribution of interval N nanosecs
+      --cyclic-policy P     used rr or fifo scheduling policy
+      --cyclic-prio N       real time scheduling priority 1..100
+      --cyclic-sleep N      sleep time of real time timer in nanosecs
+      --daemon N            start N workers creating multiple daemons
+      --daemon-ops N        stop when N daemons have been created
+      --dccp N              start N workers exercising network DCCP I/O
+      --dccp-domain D       specify DCCP domain, default is ipv4
+      --dccp-if I           use network interface I, e.g. lo, eth0, etc.
+      --dccp-ops N          stop after N DCCP  bogo operations
+      --dccp-opts option    DCCP data send options [send|sendmsg|sendmmsg]
+      --dccp-port P         use DCCP ports P to P + number of workers - 1
+      --dekker N            start N workers that exercise ther Dekker algorithm
+      --dekker-ops N        stop after N dekker mutex bogo operations
+-D N, --dentry N            start N dentry thrashing stressors
+      --dentry-ops N        stop after N dentry bogo operations
+      --dentry-order O      specify unlink order (reverse, forward, stride)
+      --dentries N          create N dentries per iteration
+      --dev N               start N device entry thrashing stressors
+      --dev-ops N           stop after N device thrashing bogo ops
+      --dev-file name       specify the /dev/ file to exercise
+      --dev-shm N           start N /dev/shm file and mmap stressors
+      --dev-shm-ops N       stop after N /dev/shm bogo ops
+      --dir N               start N directory thrashing stressors
+      --dir-ops N           stop after N directory bogo operations
+      --dir-dirs N          select number of directories to exercise dir on
+      --dirdeep N           start N directory depth stressors
+      --dirdeep-ops N       stop after N directory depth bogo operations
+      --dirdeep-bytes N     size of files to create per level (see --dirdeep-files)
+      --dirdeep-dirs N      create N directories per level
+      --dirdeep-files N     create N files per level (see --dirdeep-bytes) 
+      --dirdeep-inodes N    create a maximum N inodes (N can also be %)
+      --dirmany N           start N directory file populating stressors
+      --dirmany-ops N       stop after N directory file bogo operations
+      --dirmany-filsize     specify size of files (default 0
+      --dnotify N           start N workers exercising dnotify events
+      --dnotify-ops N       stop dnotify workers after N bogo operations
+      --dup N               start N workers exercising dup/close
+      --dup-ops N           stop after N dup/close bogo operations
+      --dynlib N            start N workers exercising dlopen/dlclose
+      --dynlib-ops N        stop after N dlopen/dlclose bogo operations
+      --efivar N            start N workers that read EFI variables
+      --efivar-ops N        stop after N EFI variable bogo read operations
+      --enosys N            start N workers that call non-existent system calls
+      --enosys-ops N        stop after N enosys bogo operations
+      --env N               start N workers setting environment vars
+      --env-ops N           stop after N env bogo operations
+      --epoll N             start N workers doing epoll handled socket activity
+      --epoll-ops N         stop after N epoll bogo operations
+      --epoll-port P        use socket ports P upwards
+      --epoll-domain D      specify socket domain, default is unix
+      --eventfd N           start N workers stressing eventfd read/writes
+      --eventfd-ops N       stop eventfd workers after N bogo operations
+      --eventfs-nonblock    poll with non-blocking I/O on eventfd fd
+      --exec N              start N workers spinning on fork() and exec()
+      --exec-ops N          stop after N exec bogo operations
+      --exec-max P          create P workers per iteration, default is 1
+      --exit-group N        start N workers that exercise exit_group
+      --exit-group-ops N    stop exit_group workers after N bogo exit_group loops
+      --fallocate N         start N workers fallocating 16MB files
+      --fallocate-ops N     stop after N fallocate bogo operations
+      --fallocate-bytes N   specify size of file to allocate
+      --fanotify N          start N workers exercising fanotify events
+      --fanotify-ops N      stop fanotify workers after N bogo operations
+      --fault N             start N workers producing page faults
+      --fault-ops N         stop after N page fault bogo operations
+      --fcntl N             start N workers exercising fcntl commands
+      --fcntl-ops N         stop after N fcntl bogo operations
+      --fiemap N            start N workers exercising the FIEMAP ioctl
+      --fiemap-ops N        stop after N FIEMAP ioctl bogo operations
+      --fiemap-bytes N      specify size of file to fiemap
+      --fifo N              start N workers exercising fifo I/O
+      --fifo-ops N          stop after N fifo bogo operations
+      --fifo-readers N      number of fifo reader stressors to start
+      --file-ioctl N        start N workers exercising file specific ioctls
+      --file-ioctl-ops N    stop after N file ioctl bogo operations
+      --filename N          start N workers exercising filenames
+      --filename-ops N      stop after N filename bogo operations
+      --filename-opts opt   specify allowed filename options
+      --flock N             start N workers locking a single file
+      --flock-ops N         stop after N flock bogo operations
+-f N, --fork N              start N workers spinning on fork() and exit()
+      --fork-ops N          stop after N fork bogo operations
+      --fork-max P          create P workers per iteration, default is 1
+      --fork-vm             enable extra virtual memory pressure
+      --fp-error N          start N workers exercising floating point errors
+      --fp-error-ops N      stop after N fp-error bogo operations
+      --fpunch N            start N workers punching holes in a 16MB file
+      --fpunch-ops N        stop after N punch bogo operations
+      --fstat N             start N workers exercising fstat on files
+      --fstat-ops N         stop after N fstat bogo operations
+      --fstat-dir path      fstat files in the specified directory
+      --full N              start N workers exercising /dev/full
+      --full-ops N          stop after N /dev/full bogo I/O operations
+      --funccall N          start N workers exercising 1 to 9 arg functions
+      --funccall-ops N      stop after N function call bogo operations
+      --funccall-method M   select function call method M
+      --funcret N           start N workers exercising function return copying
+      --funcret-ops N       stop after N function return bogo operations
+      --funcret-method M    select method of exercising a function return type
+      --futex N             start N workers exercising a fast mutex
+      --futex-ops N         stop after N fast mutex bogo operations
+      --get N               start N workers exercising the get*() system calls
+      --get-ops N           stop after N get bogo operations
+      --getdent N           start N workers reading directories using getdents
+      --getdent-ops N       stop after N getdents bogo operations
+      --getrandom N         start N workers fetching random data via getrandom()
+      --getrandom-ops N     stop after N getrandom bogo operations
+      --goto N              start N workers that exercise heavy branching
+      --goto-ops N          stop after 1024 x N goto bogo operations
+      --goto-direction D    select goto direction forward, backward, random
+      --gpu N               start N GPU worker
+      --gpu-ops N           stop after N gpu render bogo operations
+      --gpu-frag N          specify shader core usage per pixel
+      --gpu-tex-size N      specify upload texture NxN
+      --gpu-upload N        specify upload texture N times per frame
+      --gpu-xsize X         specify framebuffer size x
+      --gpu-ysize Y         specify framebuffer size y
+      --handle N            start N workers exercising name_to_handle_at
+      --handle-ops N        stop after N handle bogo operations
+      --hash N              start N workers that exercise various hash functions
+      --hash-ops N          stop after N hash bogo operations
+      --hash-method M       specify stress hash method M, default is all
+-d N, --hdd N               start N workers spinning on write()/unlink()
+      --hdd-ops N           stop after N hdd bogo operations
+      --hdd-bytes N         write N bytes per hdd worker (default is 1GB)
+      --hdd-opts list       specify list of various stressor options
+      --hdd-write-size N    set the default write size to N bytes
+      --heapsort N          start N workers heap sorting 32 bit random integers
+      --heapsort-ops N      stop after N heap sort bogo operations
+      --heapsort-size N     number of 32 bit integers to sort
+      --hrtimers N          start N workers that exercise high resolution timers
+      --hrtimers-ops N      stop after N bogo high-res timer bogo operations
+      --hrtimers-adjust     adjust rate to try and maximum timer rate
+      --hsearch N           start N workers that exercise a hash table search
+      --hsearch-ops N       stop after N hash search bogo operations
+      --hsearch-size N      number of integers to insert into hash table
+      --icache N            start N CPU instruction cache thrashing workers
+      --icache-ops N        stop after N icache bogo operations
+      --icmp-flood N        start N ICMP packet flood workers
+      --icmp-flood-ops N    stop after N ICMP bogo operations (ICMP packets)
+      --idle-page N         start N idle page scanning workers
+      --idle-page-ops N     stop after N idle page scan bogo operations
+      --inode-flags N       start N workers exercising various inode flags
+      --inode-flags-ops N   stop inode-flags workers after N bogo operations
+      --inotify N           start N workers exercising inotify events
+      --inotify-ops N       stop inotify workers after N bogo operations
+-i N, --io N                start N workers spinning on sync()
+      --io-ops N            stop sync I/O after N io bogo operations
+      --iomix N             start N workers that have a mix of I/O operations
+      --iomix-bytes N       write N bytes per iomix worker (default is 1GB)
+      --iomix-ops N         stop iomix workers after N iomix bogo operations
+      --ioport N            start N workers exercising port I/O
+      --ioport-ops N        stop ioport workers after N port bogo operations
+      --ioprio N            start N workers exercising set/get iopriority
+      --ioprio-ops N        stop after N io bogo iopriority operations
+      --io-uring N          start N workers that issue io-uring I/O requests
+      --io-uring-ops N      stop after N bogo io-uring I/O requests
+      --ipsec-mb N          start N workers exercising the IPSec MB encoding
+      --ipsec-mb-ops N      stop after N ipsec bogo encoding operations
+      --ipsec-mb-feature F  specify CPU feature F
+      --itimer N            start N workers exercising interval timers
+      --itimer-ops N        stop after N interval timer bogo operations
+      --itimer-rand         enable random interval timer frequency
+      --jpeg N              start N workers that burn cycles with no-ops
+      --jpeg-ops N          stop after N jpeg bogo no-op operations
+      --jpeg-height N       image height in pixels 
+      --jpeg-image type     image type: one of brown, flat, gradient, noise, plasma or xstripes
+      --jpeg-width N        image width  in pixels 
+      --jpeg-quality Q      compression quality 1 (low) .. 100 (high)
+      --judy N              start N workers that exercise a judy array search
+      --judy-ops N          stop after N judy array search bogo operations
+      --judy-size N         number of 32 bit integers to insert into judy array
+      --kcmp N              start N workers exercising kcmp
+      --kcmp-ops N          stop after N kcmp bogo operations
+      --key N               start N workers exercising key operations
+      --key-ops N           stop after N key bogo operations
+      --kill N              start N workers killing with SIGUSR1
+      --kill-ops N          stop after N kill bogo operations
+      --klog N              start N workers exercising kernel syslog interface
+      --klog-ops N          stop after N klog bogo operations
+      --kvm N               start N workers exercising /dev/kvm
+      --kvm-ops N           stop after N kvm create/run/destroy operations
+      --l1cache N           start N CPU level 1 cache thrashing workers
+      --l1cache-line-size N specify level 1 cache line size
+      --l1cache-sets N      specify level 1 cache sets
+      --l1cache-size N      specify level 1 cache size
+      --l1cache-ways N      only fill specified number of cache ways
+      --landlock N          start N workers stressing landlock file operations
+      --landlock-ops N      stop after N landlock bogo operations
+      --lease N             start N workers holding and breaking a lease
+      --lease-ops N         stop after N lease bogo operations
+      --lease-breakers N    number of lease breaking workers to start
+      --link N              start N workers creating hard links
+      --link-ops N          stop after N link bogo operations
+      --list N              start N workers that exercise list structures
+      --list-ops N          stop after N bogo list operations
+      --list-method M       select tlistmethod, all, circleq, insque, list, slist, stailq, tailq
+      --list-size N         N is the number of items in the list
+      --loadavg N           start N workers that create a large load average
+      --loadavg-ops N       stop load average workers after N bogo operations
+      --locka N             start N workers locking a file via advisory locks
+      --locka-ops N         stop after N locka bogo operations
+      --lockbus N           start N workers locking a memory increment
+      --lockbus-ops N       stop after N lockbus bogo operations
+      --lockf N             start N workers locking a single file via lockf
+      --lockf-ops N         stop after N lockf bogo operations
+      --lockf-nonblock      don't block if lock cannot be obtained, re-try
+      --lockofd N           start N workers using open file description locking
+      --lockofd-ops N       stop after N lockofd bogo operations
+      --longjmp N           start N workers exercising setjmp/longjmp
+      --longjmp-ops N       stop after N longjmp bogo operations
+      --loop N              start N workers exercising loopback devices
+      --loop-ops N          stop after N bogo loopback operations
+      --lsearch N           start N workers that exercise a linear search
+      --lsearch-ops N       stop after N linear search bogo operations
+      --lsearch-size N      number of 32 bit integers to lsearch
+      --madvise N           start N workers exercising madvise on memory
+      --madvise-ops N       stop after N bogo madvise operations
+      --malloc N            start N workers exercising malloc/realloc/free
+      --malloc-bytes N      allocate up to N bytes per allocation
+      --malloc-max N        keep up to N allocations at a time
+      --malloc-ops N        stop after N malloc bogo operations
+      --malloc-thresh N     threshold where malloc uses mmap instead of sbrk
+      --malloc-pthreads N   number of pthreads to run concurrently
+      --malloc-touch        touch pages force pages to be populated
+      --matrix N            start N workers exercising matrix operations
+      --matrix-ops N        stop after N maxtrix bogo operations
+      --matrix-method M     specify matrix stress method M, default is all
+      --matrix-size N       specify the size of the N x N matrix
+      --matrix-yx           matrix operation is y by x instead of x by y
+      --matrix-3d N         start N workers exercising 3D matrix operations
+      --matrix-3d-ops N     stop after N 3D maxtrix bogo operations
+      --matrix-3d-method M  specify 3D matrix stress method M, default is all
+      --matrix-3d-size N    specify the size of the N x N x N matrix
+      --matrix-3d-zyx       matrix operation is z by y by x instead of x by y by z
+      --mcontend N          start N workers that produce memory contention
+      --mcontend-ops N      stop memory contention workers after N bogo-ops
+      --membarrier N        start N workers performing membarrier system calls
+      --membarrier-ops N    stop after N membarrier bogo operations
+      --memcpy N            start N workers performing memory copies
+      --memcpy-ops N        stop after N memcpy bogo operations
+      --memcpy-method M     set memcpy method (M = all, libc, builtin, naive)
+      --memfd N             start N workers allocating memory with memfd_create
+      --memfd-bytes N       allocate N bytes for each stress iteration
+      --memfd-fds N         number of memory fds to open per stressors
+      --memfd-ops N         stop after N memfd bogo operations
+      --memhotplug N        start N workers that exercise memory hotplug
+      --memhotplug-ops N    stop after N memory hotplug operations
+      --memrate N           start N workers exercised memory read/writes
+      --memrate-ops N       stop after N memrate bogo operations
+      --memrate-bytes N     size of memory buffer being exercised
+      --memrate-rd-mbs N    read rate from buffer in megabytes per second
+      --memrate-wr-mbs N    write rate to buffer in megabytes per second
+      --memthrash N         start N workers thrashing a 16MB memory buffer
+      --memthrash-ops N     stop after N memthrash bogo operations
+      --memthrash-method M  specify memthrash method M, default is all
+      --mergesort N         start N workers merge sorting 32 bit random integers
+      --mergesort-ops N     stop after N merge sort bogo operations
+      --mergesort-size N    number of 32 bit integers to sort
+      --mincore N           start N workers exercising mincore
+      --mincore-ops N       stop after N mincore bogo operations
+      --mincore-random      randomly select pages rather than linear scan
+      --misaligned N        start N workers performing misaligned read/writes
+      --misaligned-ops N    stop after N misaligned bogo operations
+      --misaligned-method M use misaligned memory read/write method
+      --mknod N             start N workers that exercise mknod
+      --mknod-ops N         stop after N mknod bogo operations
+      --mlock N             start N workers exercising mlock/munlock
+      --mlock-ops N         stop after N mlock bogo operations
+      --mlockmany N         start N workers exercising many mlock/munlock processes
+      --mlockmany-ops N     stop after N mlockmany bogo operations
+      --mlockmany-procs N   use N child processes to mlock regions
+      --mmap N              start N workers stressing mmap and munmap
+      --mmap-ops N          stop after N mmap bogo operations
+      --mmap-async          using asynchronous msyncs for file based mmap
+      --mmap-bytes N        mmap and munmap N bytes for each stress iteration
+      --mmap-file           mmap onto a file using synchronous msyncs
+      --mmap-mprotect       enable mmap mprotect stressing
+      --mmap-osync          enable O_SYNC on file
+      --mmap-odirect        enable O_DIRECT on file
+      --mmapaddr N          start N workers stressing mmap with random addresses
+      --mmapaddr-ops N      stop after N mmapaddr bogo operations
+      --mmapfixed N         start N workers stressing mmap with fixed mappings
+      --mmapfixed-ops N     stop after N mmapfixed bogo operations
+      --mmapfork N          start N workers stressing many forked mmaps/munmaps
+      --mmapfork-ops N      stop after N mmapfork bogo operations
+      --mmaphuge N          start N workers stressing mmap with huge mappings
+      --mmaphuge-ops N      stop after N mmaphuge bogo operations
+      --mmaphuge-mmaps N    select number of memory mappings per iteration
+      --mmapmany N          start N workers stressing many mmaps and munmaps
+      --mmapmany-ops N      stop after N mmapmany bogo operations
+      --mprotect N          start N workers exercising mprotect on memory
+      --mprotect-ops N      stop after N bogo mprotect operations
+      --mq N                start N workers passing messages using POSIX messages
+      --mq-ops N            stop mq workers after N bogo messages
+      --mq-size N           specify the size of the POSIX message queue
+      --mremap N            start N workers stressing mremap
+      --mremap-ops N        stop after N mremap bogo operations
+      --mremap-bytes N      mremap N bytes maximum for each stress iteration
+      --mremap-lock         mlock remap pages, force pages to be unswappable
+      --msg N               start N workers stressing System V messages
+      --msg-ops N           stop msg workers after N bogo messages
+      --msg-types N         enable N different message types
+      --msync N             start N workers syncing mmap'd data with msync
+      --msync-ops N         stop msync workers after N bogo msyncs
+      --msync-bytes N       size of file and memory mapped region to msync
+      --msyncmany N         start N workers stressing msync on many mapped pages
+      --msyncmany-ops N     stop after N msyncmany bogo operations
+      --munmap N            start N workers stressing munmap
+      --munmap-ops N        stop after N munmap bogo operations
+      --mutex N             start N workers exercising mutex operations
+      --mutex-ops N         stop after N mutex bogo operations
+      --mutex-affinity      change CPU affinity randomly across locks
+      --mutex-procs N       select the number of concurrent processes
+      --nanosleep N         start N workers performing short sleeps
+      --nanosleep-ops N     stop after N bogo sleep operations
+      --netdev N            start N workers exercising netdevice ioctls
+      --netdev-ops N        stop netdev workers after N bogo operations
+      --netlink-proc N      start N workers exercising netlink process events
+      --netlink-proc-ops N  stop netlink-proc workers after N bogo events
+      --netlink-task N      start N workers exercising netlink tasks events
+      --netlink-task-ops N  stop netlink-task workers after N bogo events
+      --nice N              start N workers that randomly re-adjust nice levels
+      --nice-ops N          stop after N nice bogo operations
+      --nop N               start N workers that burn cycles with no-ops
+      --nop-ops N           stop after N nop bogo no-op operations
+      --nop-instr INSTR     specify nop instruction to use
+      --null N              start N workers writing to /dev/null
+      --null-ops N          stop after N /dev/null bogo write operations
+      --numa N              start N workers stressing NUMA interfaces
+      --numa-ops N          stop after N NUMA bogo operations
+      --oom-pipe N          start N workers exercising large pipes
+      --oom-pipe-ops N      stop after N oom-pipe bogo operations
+      --opcode N            start N workers exercising random opcodes
+      --opcode-ops N        stop after N opcode bogo operations
+      --opcode-method M     set opcode stress method (M = random, inc, mixed, text)
+-o N, --open N              start N workers exercising open/close
+      --open-ops N          stop after N open/close bogo operations
+      --open-fd             open files in /proc/$pid/fd
+      --pageswap N          start N workers that swap pages out and in
+      --pageswap-ops N      stop after N page swap bogo operations
+      --pci N               start N workers that read and mmap PCI regions
+      --pci-ops N           stop after N PCI bogo operations
+      --personality N       start N workers that change their personality
+      --personality-ops N   stop after N bogo personality calls
+      --peterson N          start N workers that exercise Peterson's algorithm
+      --peterson-ops N      stop after N peterson mutex bogo operations
+      --physpage N          start N workers performing physical page lookup
+      --physpage-ops N      stop after N physical page bogo operations
+      --pidfd N             start N workers exercising pidfd system call
+      --pidfd-ops N         stop after N pidfd bogo operations
+      --ping-sock N         start N workers that exercises a ping socket
+      --ping-sock-ops N     stop after N ping sendto messages
+-p N, --pipe N              start N workers exercising pipe I/O
+      --pipe-ops N          stop after N pipe I/O bogo operations
+      --pipe-data-size N    set pipe size of each pipe write to N bytes
+-p N, --pipeherd N          start N multi-process workers exercising pipes I/O
+      --pipeherd-ops N      stop after N pipeherd I/O bogo operations
+      --pipeherd-yield      force processes to yield after each write
+      --pkey N              start N workers exercising pkey_mprotect
+      --pkey-ops N          stop after N bogo pkey_mprotect bogo operations
+-P N, --poll N              start N workers exercising zero timeout polling
+      --poll-ops N          stop after N poll bogo operations
+      --poll-fds N          use N file descriptors
+      --procfs N            start N workers reading portions of /proc
+      --procfs-ops N        stop procfs workers after N bogo read operations
+      --prefetch N          start N workers exercising memory prefetching 
+      --prefetch-ops N      stop after N bogo prefetching operations
+      --prefetch-l3-size N  specify the L3 cache size of the CPU
+      --procfs N            start N workers reading portions of /proc
+      --procfs-ops N        stop procfs workers after N bogo read operations
+      --pthread N           start N workers that create multiple threads
+      --pthread-ops N       stop pthread workers after N bogo threads created
+      --pthread-max P       create P threads at a time by each worker
+      --ptrace N            start N workers that trace a child using ptrace
+      --ptrace-ops N        stop ptrace workers after N system calls are traced
+      --pty N               start N workers that exercise pseudoterminals
+      --pty-ops N           stop pty workers after N pty bogo operations
+      --pty-max N           attempt to open a maximum of N ptys
+-Q N, --qsort N             start N workers qsorting 32 bit random integers
+      --qsort-ops N         stop after N qsort bogo operations
+      --qsort-size N        number of 32 bit integers to sort
+      --quota N             start N workers exercising quotactl commands
+      --quota-ops N         stop after N quotactl bogo operations
+      --radixsort N         start N workers radix sorting random strings
+      --radixsort-ops N     stop after N radixsort bogo operations
+      --radixsort-size N    number of strings to sort
+      --randlist N          start N workers that exercise random ordered list
+      --randlist-ops N      stop after N randlist bogo no-op operations
+      --randlist-compact    reduce mmap and malloc overheads
+      --randlist-items      number of items in the random ordered list
+      --randlist-size       size of data in each item in the list
+      --ramfs N             start N workers exercising ramfs mounts
+      --ramfs-ops N         stop after N bogo ramfs mount operations
+      --ramfs-bytes N       set the ramfs size in bytes, e.g. 2M is 2MB
+      --rawdev N            start N workers that read a raw device
+      --rawdev-ops N        stop after N rawdev read operations
+      --rawdev-method M     specify the rawdev read method to use
+      --rawpkt N            start N workers exercising raw packets
+      --rawpkt-ops N        stop after N raw packet bogo operations
+      --rawpkt-port P       use raw packet ports P to P + number of workers - 1
+      --rawsock N           start N workers performing raw socket send/receives 
+      --rawsock-ops N       stop after N raw socket bogo operations
+      --rawudp N            start N workers exercising raw UDP socket I/O
+      --rawudp-ops N        stop after N raw socket UDP bogo operations
+      --rawudp-if I         use network interface I, e.g. lo, eth0, etc.
+      --rawudp-port P       use raw socket ports P to P + number of workers - 1
+      --rdrand N            start N workers exercising rdrand (x86 only)
+      --rdrand-ops N        stop after N rdrand bogo operations
+      --rdrand-seed         use rdseed instead of rdrand
+      --readahead N         start N workers exercising file readahead
+      --readahead-bytes N   size of file to readahead on (default is 1GB)
+      --readahead-ops N     stop after N readahead bogo operations
+      --reboot N            start N workers that exercise bad reboot calls
+      --reboot-ops N        stop after N bogo reboot operations
+      --remap N             start N workers exercising page remappings
+      --remap-ops N         stop after N remapping bogo operations
+-R,   --rename N            start N workers exercising file renames
+      --rename-ops N        stop after N rename bogo operations
+      --resched N           start N workers that spawn renicing child processes
+      --resched-ops N       stop after N nice bogo nice'd yield operations
+      --resources N         start N workers consuming system resources
+      --resources-ops N     stop after N resource bogo operations
+      --revio N             start N workers performing reverse I/O
+      --revio-ops N         stop after N revio bogo operations
+      --rmap N              start N workers that stress reverse mappings
+      --rmap-ops N          stop after N rmap bogo operations
+      --rmap N              start N workers that stress reverse mappings
+      --rmap-ops N          stop after N rmap bogo operations
+      --rseq N              start N workers that exercise restartable sequences
+      --rseq-ops N          stop after N bogo restartable sequence operations
+      --rtc N               start N workers that exercise the RTC interfaces
+      --rtc-ops N           stop after N RTC bogo operations
+      --schedpolicy N       start N workers that exercise scheduling policy
+      --schedpolicy-ops N   stop after N scheduling policy bogo operations
+      --sctp N              start N workers performing SCTP send/receives 
+      --sctp-ops N          stop after N SCTP bogo operations
+      --sctp-if I           use network interface I, e.g. lo, eth0, etc.
+      --sctp-domain D       specify sctp domain, default is ipv4
+      --sctp-port P         use SCTP ports P to P + number of workers - 1
+      --sctp-sched S        specify sctp scheduler
+      --seal N              start N workers performing fcntl SEAL commands
+      --seal-ops N          stop after N SEAL bogo operations
+      --seccomp N           start N workers performing seccomp call filtering
+      --seccomp-ops N       stop after N seccomp bogo operations
+      --secretmem N         start N workers that use secretmem mappings
+      --secretmem-ops N     stop after N secretmem bogo operations
+      --seek N              start N workers performing random seek r/w IO
+      --seek-ops N          stop after N seek bogo operations
+      --seek-punch          punch random holes in file to stress extents
+      --seek-size N         length of file to do random I/O upon
+      --sem N               start N workers doing semaphore operations
+      --sem-ops N           stop after N semaphore bogo operations
+      --sem-procs N         number of processes to start per worker
+      --sem-sysv N          start N workers doing System V semaphore operations
+      --sem-sysv-ops N      stop after N System V sem bogo operations
+      --sem-sysv-procs N    number of processes to start per worker
+      --sendfile N          start N workers exercising sendfile
+      --sendfile-ops N      stop after N bogo sendfile operations
+      --sendfile-size N     size of data to be sent with sendfile
+-f N, --session N           start N workers that exercise new sessions
+      --session-ops N       stop after N session bogo operations
+      --set N               start N workers exercising the set*() system calls
+      --set-ops N           stop after N set bogo operations
+      --shellsort N         start N workers shell sorting 32 bit random integers
+      --shellsort-ops N     stop after N shell sort bogo operations
+      --shellsort-size N    number of 32 bit integers to sort
+      --shm N               start N workers that exercise POSIX shared memory
+      --shm-ops N           stop after N POSIX shared memory bogo operations
+      --shm-bytes N         allocate/free N bytes of POSIX shared memory
+      --shm-segs N          allocate N POSIX shared memory segments per iteration
+      --shm-sysv N          start N workers that exercise System V shared memory
+      --shm-sysv-ops N      stop after N shared memory bogo operations
+      --shm-sysv-bytes N    allocate and free N bytes of shared memory per loop
+      --shm-sysv-segs N     allocate N shared memory segments per iteration
+      --sigabrt N           start N workers generating segmentation faults
+      --sigabrt-ops N       stop after N bogo segmentation faults
+      --sigchld N           start N workers that handle SIGCHLD
+      --sigchld-ops N       stop after N bogo SIGCHLD signals
+      --sigfd N             start N workers reading signals via signalfd reads 
+      --sigfd-ops N         stop after N bogo signalfd reads
+      --sigfpe N            start N workers generating floating point math faults
+      --sigfpe-ops N        stop after N bogo floating point math faults
+      --sigio N             start N workers that exercise SIGIO signals
+      --sigio-ops N         stop after N bogo sigio signals
+      --signal N            start N workers that exercise signal
+      --signal-ops N        stop after N bogo signals
+      --signest N           start N workers generating nested signals
+      --signest-ops N       stop after N bogo nested signals
+      --sigpending N        start N workers exercising sigpending
+      --sigpending-ops N    stop after N sigpending bogo operations
+      --sigpipe N           start N workers exercising SIGPIPE
+      --sigpipe-ops N       stop after N SIGPIPE bogo operations
+      --sigq N              start N workers sending sigqueue signals
+      --sigq-ops N          stop after N sigqueue bogo operations
+      --sigrt N             start N workers sending real time signals
+      --sigrt-ops N         stop after N real time signal bogo operations
+      --sigsegv N           start N workers generating segmentation faults
+      --sigsegv-ops N       stop after N bogo segmentation faults
+      --sigsuspend N        start N workers exercising sigsuspend
+      --sigsuspend-ops N    stop after N bogo sigsuspend wakes
+      --sigtrap N           start N workers generating segmentation faults
+      --sigtrap-ops N       stop after N bogo segmentation faults
+      --skiplist N          start N workers that exercise a skiplist search
+      --skiplist-ops N      stop after N skiplist search bogo operations
+      --skiplist-size N     number of 32 bit integers to add to skiplist
+      --sleep N             start N workers performing various duration sleeps
+      --sleep-ops N         stop after N bogo sleep operations
+      --sleep-max P         create P threads at a time by each worker
+      --smi N               start N workers that trigger SMIs
+      --smi-ops N           stop after N SMIs have been triggered
+-S N, --sock N              start N workers exercising socket I/O
+      --sock-domain D       specify socket domain, default is ipv4
+      --sock-if I           use network interface I, e.g. lo, eth0, etc.
+      --sock-nodelay        disable Nagle algorithm, send data immediately
+      --sock-ops N          stop after N socket bogo operations
+      --sock-opts option    socket options [send|sendmsg|sendmmsg]
+      --sock-port P         use socket ports P to P + number of workers - 1
+      --sock-protocol       use socket protocol P, default is tcp, can be mptcp
+      --sock-type T         socket type (stream, seqpacket)
+      --sock-zerocopy       enable zero copy sends
+      --sockabuse N         start N workers abusing socket I/O
+      --sockabuse-ops N     stop after N socket abusing bogo operations
+      --sockdiag N          start N workers exercising sockdiag netlink
+      --sockdiag-ops N      stop sockdiag workers after N bogo messages
+      --sockfd N            start N workers sending file descriptors over sockets
+      --sockfd-ops N        stop after N sockfd bogo operations
+      --sockfd-port P       use socket fd ports P to P + number of workers - 1
+      --sockpair N          start N workers exercising socket pair I/O activity
+      --sockpair-ops N      stop after N socket pair bogo operations
+      --sockmany N          start N workers exercising many socket connections
+      --sockmany-ops N      stop after N sockmany bogo operations
+      --sockmany-if I       use network interface I, e.g. lo, eth0, etc.
+      --softlockup N        start N workers that cause softlockups
+      --softlockup-ops N    stop after N softlockup bogo operations
+      --spawn N             start N workers spawning stress-ng using posix_spawn
+      --spawn-ops N         stop after N spawn bogo operations
+      --sparsematrix N      start N workers that exercise a sparse matrix
+      --sparsematrix-ops N  stop after N bogo sparse matrix operations
+      --sparsematrix-method Mselect storage method: all, hash, judy, list or rb
+      --sparsematrix-items NN is the number of items in the spare matrix
+      --sparsematrix-size N M is the width and height X x Y of the matrix
+      --splice N            start N workers reading/writing using splice
+      --splice-ops N        stop after N bogo splice operations
+      --splice-bytes N      number of bytes to transfer per splice call
+      --stack N             start N workers generating stack overflows
+      --stack-ops N         stop after N bogo stack overflows
+      --stack-fill          fill stack, touches all new pages 
+      --stack-mlock         mlock stack, force pages to be unswappable
+      --stackmmap N         start N workers exercising a filebacked stack
+      --stackmmap-ops N     stop after N bogo stackmmap operations
+      --str N               start N workers exercising lib C string functions
+      --str-method func     specify the string function to stress
+      --str-ops N           stop after N bogo string operations
+      --stream N            start N workers exercising memory bandwidth
+      --stream-ops N        stop after N bogo stream operations
+      --stream-index        specify number of indices into the data (0..3)
+      --stream-l3-size N    specify the L3 cache size of the CPU
+      --stream-madvise M    specify mmap'd stream buffer madvise advice
+      --swap N              start N workers exercising swapon/swapoff
+      --swap-ops N          stop after N swapon/swapoff operations
+-s N, --switch N            start N workers doing rapid context switches
+      --switch-ops N        stop after N context switch bogo operations
+      --switch-freq N       set frequency of context switches
+      --switch-method M     mq | pipe | sem-sysv
+      --symlink N           start N workers creating symbolic links
+      --symlink-ops N       stop after N symbolic link bogo operations
+      --sync-file N         start N workers exercise sync_file_range
+      --sync-file-ops N     stop after N sync_file_range bogo operations
+      --sync-file-bytes N   size of file to be sync'd
+      --syncload N          start N workers that synchronize load spikes
+      --syncload-ops N      stop after N syncload bogo operations
+      --syncload-msbusy M   maximum busy duration in milliseconds
+      --syncload-mssleep M  maximum sleep duration in milliseconds
+      --sysbadaddr N        start N workers that pass bad addresses to syscalls
+      --sysbadaddr-ops N    stop after N sysbadaddr bogo syscalls
+      --sysinfo N           start N workers reading system information
+      --sysinfo-ops N       stop after sysinfo bogo operations
+      --sysinval N          start N workers that pass invalid args to syscalls
+      --sysinval-ops N      stop after N sysinval bogo syscalls
+      --sysfs N             start N workers reading files from /sys
+      --sysfs-ops N         stop after sysfs bogo operations
+      --tee N               start N workers exercising the tee system call
+      --tee-ops N           stop after N tee bogo operations
+-T N, --timer N             start N workers producing timer events
+      --timer-ops N         stop after N timer bogo events
+      --timer-freq F        run timer(s) at F Hz, range 1 to 1000000000
+      --timer-rand          enable random timer frequency
+      --timerfd N           start N workers producing timerfd events
+      --timerfd-ops N       stop after N timerfd bogo events
+      --timerfd-fds N       number of timerfd file descriptors to open
+      --timerfd-freq F      run timer(s) at F Hz, range 1 to 1000000000
+      --timerfd-rand        enable random timerfd frequency
+      --tlb-shootdown N     start N workers that force TLB shootdowns
+      --tlb-shootdown-ops N stop after N TLB shootdown bogo ops
+      --tmpfs N             start N workers mmap'ing a file on tmpfs
+      --tmpfs-ops N         stop after N tmpfs bogo ops
+      --tmpfs-mmap-async    using asynchronous msyncs for tmpfs file based mmap
+      --tmpfs-mmap-file     mmap onto a tmpfs file using synchronous msyncs
+      --touch N             start N stressors that touch and remove files
+      --touch-ops N         stop after N touch bogo operations
+      --touch-opts          touch open options all,direct,dsync,excl,noatime,sync,trunc
+      --touch-method        specify method to touch tile file, open | create
+      --tree N              start N workers that exercise tree structures
+      --tree-ops N          stop after N bogo tree operations
+      --tree-method M       select tree method: all,avl,binary,btree,rb,splay
+      --tree-size N         N is the number of items in the tree
+      --tsc N               start N workers reading the time stamp counter
+      --tsc-ops N           stop after N TSC bogo operations
+      --tsearch N           start N workers that exercise a tree search
+      --tsearch-ops N       stop after N tree search bogo operations
+      --tsearch-size N      number of 32 bit integers to tsearch
+      --tun N               start N workers exercising tun interface
+      --tun-ops N           stop after N tun bogo operations
+      --tun-tap             use TAP interface instead of TUN
+      --udp N               start N workers performing UDP send/receives 
+      --udp-ops N           stop after N udp bogo operations
+      --udp-domain D        specify domain, default is ipv4
+      --udp-gro             enable UDP-GRO
+      --udp-lite            use the UDP-Lite (RFC 3828) protocol
+      --udp-port P          use ports P to P + number of workers - 1
+      --udp-if I            use network interface I, e.g. lo, eth0, etc.
+      --udp-flood N         start N workers that performs a UDP flood attack
+      --udp-flood-ops N     stop after N udp flood bogo operations
+      --udp-flood-domain D  specify domain, default is ipv4
+      --udp-flood-if I      use network interface I, e.g. lo, eth0, etc.
+      --unshare N           start N workers exercising resource unsharing
+      --unshare-ops N       stop after N bogo unshare operations
+      --uprobe N            start N workers that generate uprobe events
+      --uprobe-ops N        stop after N uprobe events
+-u N, --urandom N           start N workers reading /dev/urandom
+      --urandom-ops N       stop after N urandom bogo read operations
+      --userfaultfd N       start N page faulting workers with userspace handling
+      --userfaultfd-ops N   stop after N page faults have been handled
+      --sigsusr N           start N workers exercising a userspace system call handler
+      --sigsusr-ops N       stop after N successful SIGSYS system callls
+      --utime N             start N workers updating file timestamps
+      --utime-ops N         stop after N utime bogo operations
+      --utime-fsync         force utime meta data sync to the file system
+      --vdso N              start N workers exercising functions in the VDSO
+      --vdso-ops N          stop after N vDSO function calls
+      --vdso-func F         use just vDSO function F
+      --vecmath N           start N workers performing vector math ops
+      --vecmath-ops N       stop after N vector math bogo operations
+      --vecwide N           start N workers performing vector math ops
+      --vecwide-ops N       stop after N vector math bogo operations
+      --verity N            start N workers exercising file verity ioctls
+      --verity-ops N        stop after N file verity bogo operations
+      --vfork N             start N workers spinning on vfork() and exit()
+      --vfork-ops N         stop after N vfork bogo operations
+      --vfork-max P         create P processes per iteration, default is 1
+      --vfork-vm            enable extra virtual memory pressure
+      --vforkmany N         start N workers spawning many vfork children
+      --vforkmany-ops N     stop after spawning N vfork children
+      --vforkmany-vm        enable extra virtual memory pressure
+-m N, --vm N                start N workers spinning on anonymous mmap
+      --vm-bytes N          allocate N bytes per vm worker (default 256MB)
+      --vm-hang N           sleep N seconds before freeing memory
+      --vm-keep             redirty memory instead of reallocating
+      --vm-ops N            stop after N vm bogo operations
+      --vm-madvise M        specify mmap'd vm buffer madvise advice
+      --vm-method M         specify stress vm method M, default is all
+      --vm-addr N           start N vm address exercising workers
+      --vm-addr-ops N       stop after N vm address bogo operations
+      --vm-rw N             start N vm read/write process_vm* copy workers
+      --vm-rw-bytes N       transfer N bytes of memory per bogo operation
+      --vm-rw-ops N         stop after N vm process_vm* copy bogo operations
+      --vm-segv N           start N workers that unmap their address space
+      --vm-segv-ops N       stop after N vm-segv unmap'd SEGV faults
+      --vm-splice N         start N workers reading/writing using vmsplice
+      --vm-splice-ops N     stop after N bogo splice operations
+      --vm-splice-bytes N   number of bytes to transfer per vmsplice call
+      --wait N              start N workers waiting on child being stop/resumed
+      --wait-ops N          stop after N bogo wait operations
+      --watchdog N          start N workers that exercise /dev/watchdog
+      --watchdog-ops N      stop after N bogo watchdog operations
+      --wcs N               start N workers on lib C wide char string functions
+      --wcs-method func     specify the wide character string function to stress
+      --wcs-ops N           stop after N bogo wide character string operations
+      --x86syscall N        start N workers exercising functions using syscall
+      --x86syscall-ops N    stop after N syscall function calls
+      --x86syscall-func F   use just syscall function F
+      --xattr N             start N workers stressing file extended attributes
+      --xattr-ops N         stop after N bogo xattr operations
+-y N, --yield N             start N workers doing sched_yield() calls
+      --yield-ops N         stop after N bogo yield operations
+      --zero N              start N workers reading /dev/zero
+      --zero-ops N          stop after N /dev/zero bogo read operations
+      --zlib N              start N workers compressing data with zlib
+      --zlib-level L        specify zlib compression level 0=fast, 9=best
+      --zlib-mem-level L    specify zlib compression state memory usage 1=minimum, 9=maximum
+      --zlib-method M       specify zlib random data generation method M
+      --zlib-ops N          stop after N zlib bogo compression operations
+      --zlib-strategy S     specify zlib strategy 0=default, 1=filtered, 2=huffman only, 3=rle, 4=fixed
+      --zlib-stream-bytes S specify the number of bytes to deflate until the current stream will be closed
+      --zlib-window-bits W  specify zlib window bits -8-(-15) | 8-15 | 24-31 | 40-47
+      --zombie N            start N workers that rapidly create and reap zombies
+      --zombie-ops N        stop after N bogo zombie fork operations
+      --zombie-max N        set upper limit of N zombies per worker
+
+Example: stress-ng --cpu 8 --io 4 --vm 2 --vm-bytes 128M --fork 4 --timeout 10s
+
+Note: Sizes can be suffixed with B,K,M,G and times with s,m,h,d,y
+```
+
+### Examples
+
+This example stressed the most out of my system. Change the `--cpu` parameter according to your CPU cores.
+
+```plain
+$ stress-ng --cpu 8 --cpu-method idct --matrix 20 --matrix-method mean --maximize          
+stress-ng: info:  [40671] defaulting to a 86400 second (1 day, 0.00 secs) run per stressor
+stress-ng: info:  [40671] dispatching hogs: 8 cpu, 20 matrix
+
+^Cstress-ng: info:  [40671] successful run completed in 145.56s (2 mins, 25.56 secs)
+```
+
+### URL list
+
+* [Wiki.ubuntu.com - stress-ng](https://wiki.ubuntu.com/Kernel/Reference/stress-ng)
+* [Formulae.brew.sh - stress-ng](https://formulae.brew.sh/formula/stress-ng)
