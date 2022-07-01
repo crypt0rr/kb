@@ -66,9 +66,9 @@ Downloading https://mesu.apple.com/assets/macos/com_apple_macOSIPSW/com_apple_ma
 Choose a product to download (1-18): 
 ```
 
-#### installinstallmacos.py
+#### installinstallmacos.py (Create .DMG installer)
 
-This script can create disk images containing macOS Installer applications available via Apple's softwareupdate catalogs.
+This script can create disk images containing macOS Installer applications available via Apple's softwareupdate catalogs. Please check [support.apple.com](https://support.apple.com/en-us/HT201372) for the commands to create a bootable USB stick.
 
 Run `python ./installinstallmacos.py --help` to see the available options.
 
