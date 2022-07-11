@@ -71,6 +71,11 @@ test1.php
 ./gobuster dir -u <url> -w <directory-lits>.txt -k --statuscodes 200 --proxy http://127.0.0.1:8080
 ```
 
+### Wordlists
+
+* [Github.com - Bo0om - fuzz.txt](https://github.com/Bo0oM/fuzz.txt/blob/master/fuzz.txt)
+* [Github.com - daviddias - lists](https://github.com/daviddias/node-dirbuster/tree/master/lists)
+
 ### URL list
 
 * [GitHub.com - gobuster](https://github.com/OJ/gobuster)
