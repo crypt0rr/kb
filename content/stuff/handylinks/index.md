@@ -171,3 +171,7 @@ After not remembering all the Microsoft Portal URLs so many times, Adam decided 
 ### List of Github repositories and articles with list of dorks for different search engines
 
 [Github.com - Dorks collections list](https://github.com/cipher387/Dorks-collections-list)
+
+### Microsoft AppLocker ByPass Lists
+
+[Github.com - Ultimate AppLocker ByPass List](https://github.com/api0cradle/UltimateAppLockerByPassList)
