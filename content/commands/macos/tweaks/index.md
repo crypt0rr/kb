@@ -125,6 +125,34 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 defaults write com.apple.Safari TargetedClicksCreateTabs -bool TRUE
 ```
 
+### View and hide dock quicker
+
+You can change the times to other settings to speed up or delay.
+
+```plain
+defaults write com.apple.dock autohide-delay -float 0.1; defaults write com.apple.dock autohide-time-modifier -int 0.3; killall Dock
+```
+
+### Add spacer to Dock
+
+Full height.
+
+```plain
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}' && killall Dock
+```
+
+Half-height.
+
+```plain
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}' && killall Dock
+```
+
+### Make hidden apps transparent in dock
+
+```plain
+defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
+```
+
 ### URL list
 
 * [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
