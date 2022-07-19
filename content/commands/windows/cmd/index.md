@@ -27,6 +27,10 @@ Use the `/profile` flag for running the CMD in the context of the user explicitl
 
 `runas /profile /user:<DOMAIN>\<USER> cmd.exe`
 
+Or start an elevated prompt using CMD / PowerShell
+
+`powershell -Command "Start-Process cmd -Verb RunAs"`
+
 ### Enable access to C-drive in Explorer
 
 `subst z: c:\`
