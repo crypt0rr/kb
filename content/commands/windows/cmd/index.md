@@ -107,12 +107,16 @@ Disable
 
 ### Add Local Admin via CMD
 
-Creation of the user 'NewLaForMe' - `net user NewLAForMe 'NotThatStrongPassword@' /add /Y`
+Creation of the user 'NewLaForMe' - `net user NewLAForMe "NotThatStrongPassword@" /add /Y`
 
 Adding the user to the group - `net localgroup Administrators NewLAForMe /add`
 
-### Add Domain Admin via CMD
+### Add Domain Admin / Enterprise Admin via CMD
 
 Creation of the user 'NewDAForMe' - `net user NewDAForMe "NotThatStrongPassword@" /add /domain /Y`
 
-Adding the user to the group - `net group "Domain Admins" NewDAForMe /add /domain`
+Adding the user to the group - `net group "Domain Admins" NewDAForMe /add /domain` / `net group "Enterprise Admins" NewDAForMe /add /domain`
+
+Set user status to Active - `net user NewDAForMe /active:yes /domain`
+
+Set user expire date - `net user NewDAForMe /expires:07/19/23 /domain`
