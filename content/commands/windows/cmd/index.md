@@ -23,6 +23,10 @@ weight : 0
 
 `runas /netonly /user:<DOMAIN>\<USER> cmd.exe`
 
+Use the `/profile` flag for running the CMD in the context of the user explicitly on a domain joined system.
+
+`runas /profile /user:<DOMAIN>\<USER> cmd.exe`
+
 ### Enable access to C-drive in Explorer
 
 `subst z: c:\`
