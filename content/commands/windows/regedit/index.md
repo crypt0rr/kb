@@ -36,6 +36,16 @@ C:\temp>ntrights.exe -r SeDenyNetworkLogonRight -u "Local Account"
 Revoking SeDenyNetworkLogonRight from Local Account   ... successful
 ```
 
+### Extract SAM/SYSTEM/SECURITY from registry
+
+You need an elevated command prompt.
+
+```plain
+reg save hklm\system system
+reg save hklm\sam sam
+reg save hklm\security security
+```
+
 ### URL list
 
 * [Support.accessdata.com - Disable Remote UAC](https://support.accessdata.com/hc/en-us/articles/204150405-Disable-Remote-UAC)
