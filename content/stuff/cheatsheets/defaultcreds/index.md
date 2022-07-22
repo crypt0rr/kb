@@ -1,6 +1,6 @@
 ---
 title : "Default Credentials Cheat Sheet"
-# pre : ' '
+pre : '<i class="far fa-file-spreadsheet"></i> '
 description : "One place for all the default credentials to assist the Blue/Red teamers activities on finding devices with default password."
 date : 2022-07-22T14:52:55+02:00
 # hidden : true
