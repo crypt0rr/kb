@@ -3374,7 +3374,6 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Zyxel (ssh)                                          | zyfwp                      | PrOw!aN_fXp                                                     |
 | Zyxel                                                | webadmin                   | 1234                                                            |
 
-
 ### URL list
 
 * [Github.com - Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet)
