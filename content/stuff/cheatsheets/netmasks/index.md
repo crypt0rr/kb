@@ -6,7 +6,7 @@ date : 2020-11-26T15:39:37+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Stuff', 'CIDR', 'Netmask']
 ---
 
 ## Netmasks
