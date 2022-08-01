@@ -38,3 +38,7 @@ weight : 0
 ### Common network ports
 
 [Vmaxx.net - ports](http://www.vmaxx.net/techinfo/ports.htm)
+
+### Bug Bounty Checklist and Cheatsheets
+
+[Bug Bounty Checklist and Cheatsheets](https://gist.github.com/OTaKuHP/b7748a04caa8145f6795b498302cec4e)
