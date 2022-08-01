@@ -48,18 +48,17 @@ python3 subnetcalc.py
 ### Examples
 
 ```plain
-$ python3 subnetcalc.py       
+$ python3 subnetcalc.py
 Enter an IP address: 192.168.0.0
 Enter a subnet mask: 255.255.255.0
 --------------------------------------------------
-IP address: 192.168.0.0
-Subnet mask: 255.255.255.0   /24
-Network address: 192.168.0.0
-Broadcast address: 192.168.0.255
-First IP in the subnet: 192.168.0.1
-Last IP in the subnet: 192.168.0.254
-Usable hosts per subnet: 254
-Wildcard mask: 0.0.0.255
+CIDR notation:       /24 (255.255.255.0)
+First usable IP:     192.168.0.1
+Last usable IP:      192.168.0.254
+Broadcast:           192.168.0.255
+Usable hosts:        254
+Network:             192.168.0.0
+Wildcard mask:       0.0.0.255
 ```
 
 ### URL list
