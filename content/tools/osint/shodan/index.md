@@ -94,6 +94,10 @@ http.favicon.hash:-1922044295
 easy_install shodan
 ```
 
+```plain
+python3 -m pip install shodan
+```
+
 ### Usage
 
 ```plain
