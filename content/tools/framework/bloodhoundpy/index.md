@@ -28,7 +28,7 @@ python3 -m pip install bloodhound
 ### Usage
 
 ```plain
-bloodhound-python [-h] [-c COLLECTIONMETHOD] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-d DOMAIN] [-dc HOST] [-gc HOST] [-w WORKERS] [-v] [--disable-pooling] [--disable-autogc] [--zip]
+bloodhound-python [-h] [-c COLLECTIONMETHOD] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-d DOMAIN] [-dc HOST] [-gc HOST] [-w WORKERS] [-v] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE]
 ```
 
 ### Flags
@@ -40,8 +40,8 @@ For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py
 optional arguments:
   -h, --help            show this help message and exit
   -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD
-                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default (all previous), DCOnly (no computer connections), DCOM, RDP,PSRemote, LoggedOn, ObjectProps, ACL, All (all except LoggedOn). You can specify more than one by separating them with a comma. (default:
-                        Default)
+                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default (all previous), DCOnly (no computer connections), DCOM, RDP,PSRemote, LoggedOn, ObjectProps, ACL, All (all except LoggedOn).
+                        You can specify more than one by separating them with a comma. (default: Default)
   -u USERNAME, --username USERNAME
                         Username. Format: username[@domain]; If the domain is unspecified, the current domain is used.
   -p PASSWORD, --password PASSWORD
@@ -65,6 +65,10 @@ optional arguments:
   --disable-pooling     Don't use subprocesses for ACL parsing (only for debugging purposes)
   --disable-autogc      Don't automatically select a Global Catalog (use only if it gives errors)
   --zip                 Compress the JSON output files into a zip archive
+  --computerfile COMPUTERFILE
+                        File containing computer FQDNs to use as allowlist for any computer based methods
+  --cachefile CACHEFILE
+                        Cache file (experimental)
 ```
 
 ### Examples
