@@ -42,3 +42,7 @@ weight : 0
 ### Bug Bounty Checklist and Cheatsheets
 
 [Bug Bounty Checklist and Cheatsheets](https://gist.github.com/OTaKuHP/b7748a04caa8145f6795b498302cec4e)
+
+### Pentest Pivoting
+
+[Pentest Pivoting](https://github.com/t3l3machus/pentest-pivoting)
