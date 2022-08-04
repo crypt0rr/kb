@@ -39,3 +39,9 @@ name = "<i class='fab fa-github'></i> GitHub"
 identifier = "github"
 url = "https://github.com/crypt0rr/kb"
 weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-twitter'></i> Twitter"
+identifier = "twitter"
+url = "https://twitter.com/crypt0rr_"
+weight = 30
