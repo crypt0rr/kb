@@ -17,7 +17,6 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 
 | Vendor                                               | Username                   | Password                                                        |
 | ---------------------------------------------------- | -------------------------- | --------------------------------------------------------------- |
-| 360 Systems                                          | factory                    | factory                                                         |
 | 3COM                                                 | 3comcso                    | RIP000                                                          |
 | 3COM                                                 | adm                        | <blank>                                                         |
 | 3COM                                                 | admin                      | 1234admin                                                       |
@@ -318,6 +317,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | asus (ssh)                                           | admin                      | password                                                        |
 | asus (ssh)                                           | root                       | root                                                            |
 | Atlantis                                             | admin                      | atlantis                                                        |
+| Atlassian Confluence                                 | disabledsystemuser         | disabled1system1user6708                                        |
 | Atlassian                                            | crowd-openid-server        | password                                                        |
 | Atlassian                                            | Crowd                      | password                                                        |
 | Atlassian                                            | Demo                       | password                                                        |
@@ -463,8 +463,8 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Aztech                                               | isp                        | isp                                                             |
 | Aztech                                               | root                       | admin                                                           |
 | backtrack                                            | root                       | toor                                                            |
-| "Barco                                               | Inc."                      | admin                                                           | admin      |
-| "Barco                                               | Inc."                      | <blank>                                                         | clickshare |
+| Barco,Inc.                                           | admin                      | admin                                                           |
+| Barco,Inc.                                           | <blank>                    | clickshare                                                      |
 | Barracuda                                            | admin                      | admin                                                           |
 | Barracuda                                            | ssladmin                   | ssladmin                                                        |
 | Barracuda (web)                                      | admin                      | admin                                                           |
@@ -651,8 +651,8 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Cisco                                                | wlse                       | wlsedb                                                          |
 | Citel                                                | <blank>                    | citel                                                           |
 | Citel                                                | citel                      | password                                                        |
-| "Citrix Systems                                      | Inc."                      | nsroot                                                          | nsroot     |
-| "Citrix Systems                                      | Inc."                      | root                                                            | rootadmin  |
+| Citrix Systems,Inc.                                  | nsroot                     | nsroot                                                          |
+| Citrix Systems,Inc.                                  | root                       | rootadmin                                                       |
 | Citrix Systems (web)                                 | nsroot                     | nsroot                                                          |
 | Citrix Systems (web)                                 | root                       | rootadmin                                                       |
 | Claris                                               | <blank>                    | familymacintosh                                                 |
@@ -671,7 +671,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Comcast SMC                                          | cusadmin                   | CantTouchThis                                                   |
 | Comcast SMC                                          | cusadmin                   | highspeed                                                       |
 | Comersus                                             | admin                      | dmr99                                                           |
-| "Comodo Group                                        | Inc"                       | mydlp                                                           | mydlp      |
+| Comodo Group,Inc                                     | mydlp                      | mydlp                                                           |
 | Compaq                                               | administrator              | administrator                                                   |
 | Compaq                                               | anonymous                  | <blank>                                                         |
 | Compaq                                               | <blank>                    | <blank>                                                         |
@@ -865,7 +865,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Digital Equipment                                    | USER                       | USER                                                            |
 | Digital Equipment                                    | VAX                        | VAX                                                             |
 | Digital Equipment                                    | VMS                        | VMS                                                             |
-| "Digium                                              | Inc."                      | admin                                                           | password   |
+| Digium,Inc.                                          | admin                      | password                                                        |
 | Divar                                                | admin                      | <blank>                                                         |
 | Divar                                                | viewer                     | <blank>                                                         |
 | Dlink                                                | admin                      | admin                                                           |
@@ -935,8 +935,8 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Efficient Networks                                   | login                      | admin                                                           |
 | Efficient                                            | superuser                  | admin                                                           |
 | Efficinet Networks                                   | login                      | admin                                                           |
-| "Ektron                                              | Inc."                      | builtin                                                         | builtin    |
-| "Ektron                                              | Inc."                      | sa                                                              | Ektron     |
+| Ektron,Inc.                                          | builtin                    | builtin                                                         |
+| Ektron,Inc.                                          | sa                         | Ektron                                                          |
 | Elasticsearch (web)                                  | <blank>                    | <blank>                                                         |
 | elasticsearch (web)                                  | elastic                    | changeme                                                        |
 | Elron                                                | (hostname/ipaddress)       | sysadmin                                                        |
@@ -1042,7 +1042,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | GeoNetwork (mssql)                                   | admin                      | gnos                                                            |
 | geovision (web)                                      | admin                      | admin                                                           |
 | Gericom                                              | Administrator              | <blank>                                                         |
-| "GE Security                                         | Inc."                      | install                                                         | install    |
+| GE Security,Inc.                                     | install                    | install                                                         |
 | giga                                                 | Administrator              | admin                                                           |
 | Gigabyte                                             | admin                      | admin                                                           |
 | GigaFiber                                            | admin                      | jiocentrum                                                      |
@@ -1063,12 +1063,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | GrandStream                                          | Administrator              | admin                                                           |
 | GrandStream                                          | <blank>                    | admin                                                           |
 | GrandStream                                          | End User                   | 123 (or blank)                                                  |
-| "Grandstream Networks                                | Inc"                       | admin                                                           | admin      |
-| "Grandstream Networks                                | Inc"                       | End User                                                        | 123        |
+| Grandstream Networks,Inc                             | admin                      | admin                                                           |
+| Grandstream Networks,Inc                             | End User                   | 123                                                             |
 | grandstream (web)                                    | admin                      | admin                                                           |
 | Greatspeed                                           | admin                      | broadband                                                       |
 | greatspeed                                           | netadmin                   | nimdaten                                                        |
-| "Groupee                                             | Inc."                      | Admin5                                                          | 4tugboat   |
+| Groupee,Inc.                                         | Admin5                     | 4tugboat                                                        |
 | GuardOne                                             | <blank>                    | guardone                                                        |
 | GuardOne                                             | n.a                        | guardone                                                        |
 | Guru                                                 | admin                      | admin                                                           |
@@ -1188,7 +1188,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Huawei Technologies Co                               | admin                      | admin                                                           |
 | Huawei Technologies Co                               | TMAR#HWMT8007079           | <blank>                                                         |
 | Huawei                                               | TMAR#HWMT8007079           | <blank>                                                         |
-| "Hyperic                                             | Inc."                      | hqadmin                                                         | hqadmin    |
+| Hyperic,Inc.                                         | hqadmin                    | hqadmin                                                         |
 | i2b2 Workbench (mssql)                               | I2b2demodata2              | i2b2demodata2                                                   |
 | i2b2 Workbench (mssql)                               | I2b2demodata               | i2b2demodata                                                    |
 | i2b2 Workbench (mssql)                               | I2b2hive                   | i2b2hive                                                        |
@@ -1447,6 +1447,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Jenkins (web)                                        | <blank>                    | <blank>                                                         |
 | Jetform                                              | Jetform                    | <blank>                                                         |
 | JetWay                                               | <blank>                    | spooml                                                          |
+| JFrog                                                | admin                      | password                                                        |
 | JioFi                                                | administrator              | administrator                                                   |
 | JioFiber                                             | admin                      | jiocentrum                                                      |
 | Johnson Controls                                     | johnson                    | control                                                         |
@@ -1563,7 +1564,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Linux                                                | root                       | uClinux                                                         |
 | Linux                                                | satan                      | <blank>                                                         |
 | Linux                                                | snake                      | <blank>                                                         |
-| "Liquidware Labs                                     | Inc."                      | ssadmin                                                         | sspassword |
+| Liquidware Labs,Inc.                                 | ssadmin                    | sspassword                                                      |
 | Livingstone                                          | root                       | <blank>                                                         |
 | Livingston                                           | !root                      | <blank>                                                         |
 | Lockdown                                             | setup                      | changeme!                                                       |
@@ -2229,7 +2230,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Oracle                                               | WWW                        | WWW                                                             |
 | Oracle                                               | XPRT                       | XPRT                                                            |
 | Orange                                               | admin                      | admin                                                           |
-| orange livebox4  (web)                               | admin                      | <blank>                                                         |
+| orange livebox4 (web)                                | admin                      | <blank>                                                         |
 | Orange                                               | root                       | 1234                                                            |
 | Osicom                                               | debug                      | d.e.b.u.g                                                       |
 | Osicom                                               | d.e.b.u.g                  | User                                                            |
@@ -2285,7 +2286,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Pirelli                                              | admin                      | mu                                                              |
 | Pirelli                                              | admin                      | smallbusiness                                                   |
 | Pirelli                                              | user                       | password                                                        |
-| "Pivotal Software                                    | Inc. "                     | guest                                                           | guest      |
+| Pivotal Software,Inc.                                | guest                      | guest                                                           |
 | PlainTree                                            | <blank>                    | default.password                                                |
 | Planet                                               | admin                      | 1234                                                            |
 | planet                                               | admin                      | admin                                                           |
@@ -2345,7 +2346,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Proliphix Thermostat (iot)                           | admin                      | admin                                                           |
 | Promise                                              | admin                      | admin                                                           |
 | Promise                                              | engmode                    | hawk201                                                         |
-| "Promise Technology                                  | Inc."                      | administrator                                                   | password   |
+| Promise Technology,Inc.                              | administrator              | password                                                        |
 | Prostar                                              | <blank>                    | 4321                                                            |
 | Protocraft                                           | musi1921                   | Musi%1921                                                       |
 | Proxicast                                            | <blank>                    | 1234                                                            |
@@ -2395,11 +2396,11 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | RCA                                                  | <blank>                    | admin                                                           |
 | Redcreek Communications                              | <blank>                    | 1234                                                            |
 | Redcreek Communications                              | <blank>                    | private                                                         |
-| "Red Hat                                             | Inc"                       | admin                                                           | admin      |
-| "Red Hat                                             | Inc"                       | <blank>                                                         | AMIAMI     |
-| "Red Hat                                             | Inc"                       | <blank>                                                         | AMIDECOD   |
-| "Red Hat                                             | Inc"                       | piranha                                                         | piranha    |
-| "Red Hat                                             | Inc"                       | piranha                                                         | q          |
+| Red Hat,Inc                                          | admin                      | admin                                                           |
+| Red Hat,Inc                                          | <blank>                    | AMIAMI                                                          |
+| Red Hat,Inc                                          | <blank>                    | AMIDECOD                                                        |
+| Red Hat,Inc                                          | piranha                    | piranha                                                         |
+| Red Hat,Inc                                          | piranha                    | q                                                               |
 | RedHat                                               | piranha                    | piranha                                                         |
 | RedHat                                               | piranha                    | q                                                               |
 | RedHat (ssh)                                         | admin                      | admin                                                           |
@@ -2543,7 +2544,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Server Technology                                    | ADMN                       | admn                                                            |
 | Server Technology                                    | GEN1                       | gen1                                                            |
 | Server Technology                                    | GEN2                       | gen2                                                            |
-| "Seyeon Technology Co.                               | Ltd"                       | root                                                            | root       |
+| Seyeon Technology Co.,Ltd                            | root                       | root                                                            |
 | Sharp                                                | admin                      | admin                                                           |
 | Sharp                                                | Administrator              | admin                                                           |
 | Sharp                                                | admin                      | Sharp                                                           |
@@ -2601,6 +2602,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Sigma                                                | admin                      | admin                                                           |
 | Signamax                                             | admin                      | admin                                                           |
 | Siips                                                | Administrator              | ganteng                                                         |
+| Silex Technology                                     | access                     | <blank>                                                         |
 | Silex Technology                                     | root                       | <blank>                                                         |
 | Silicon Graphics                                     | 4Dgifts                    | 4Dgifts                                                         |
 | Silicon Graphics                                     | 4Dgifts                    | <blank>                                                         |
@@ -2816,7 +2818,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Supercook                                            | super                      | super                                                           |
 | Supermicro                                           | ADMIN                      | admin                                                           |
 | SuperMicro                                           | <blank>                    | ksdjfg934t                                                      |
-| "Super Micro Computer                                | Inc."                      | ADMIN                                                           | ADMIN      |
+| Super Micro Computer,Inc.                            | ADMIN                      | ADMIN                                                           |
 | Supermicro (web)                                     | ADMIN                      | ADMIN                                                           |
 | Surecom                                              | admin                      | admin                                                           |
 | Surecom                                              | admin                      | surecom                                                         |
@@ -2845,7 +2847,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Symbol                                               | admin                      | symbol                                                          |
 | Symbol                                               | <blank>                    | Symbol                                                          |
 | Symbol                                               | Symbol                     | Symbol                                                          |
-| "Symbol Technologies                                 | Inc"                       | admin                                                           | superuser  |
+| Symbol Technologies,Inc                              | admin                      | superuser                                                       |
 | Symmetricom                                          | guest                      | truetime                                                        |
 | Symmetricom                                          | operator                   | mercury                                                         |
 | Synology Inc                                         | admin                      | <blank>                                                         |
@@ -3214,10 +3216,10 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | VxWorks                                              | guest                      | guest                                                           |
 | WAAV                                                 | admin                      | waav                                                            |
 | Wanadoo                                              | admin                      | admin                                                           |
-| "Wanco                                               | Inc."                      | <blank>                                                         | ABCD       |
-| "Wanco                                               | Inc."                      | <blank>                                                         | Guest      |
-| "Wanco                                               | Inc."                      | <blank>                                                         | NTCIP      |
-| "Wanco                                               | Inc."                      | <blank>                                                         | Public     |
+| Wanco,Inc.                                           | <blank>                    | ABCD                                                            |
+| Wanco,Inc.                                           | <blank>                    | Guest                                                           |
+| Wanco,Inc.                                           | <blank>                    | NTCIP                                                           |
+| Wanco,Inc.                                           | <blank>                    | Public                                                          |
 | Wang                                                 | CSG                        | SESAME                                                          |
 | warraCorp                                            | pepino                     | pepino                                                          |
 | WatchGuard                                           | admin                      | admin                                                           |
@@ -3280,7 +3282,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | windows (RDP)                                        | vagrant                    | vagrant                                                         |
 | windows (RDP)                                        | wasadmin                   | wasadmin                                                        |
 | winwork                                              | operator                   | <blank>                                                         |
-| "Wireless                                            | Inc."                      | root                                                            | rootpass   |
+| Wireless,Inc.                                        | root                       | rootpass                                                        |
 | WLAN_3D                                              | Administrator              | admin                                                           |
 | wline                                                | admin                      | 1234                                                            |
 | Wonderware Historian (mssql)                         | aaAdmin                    | pwAdmin                                                         |
