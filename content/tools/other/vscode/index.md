@@ -116,14 +116,19 @@ code .
 ### Plugins
 
 ```plain
-autoclosetag
-auto rename tag
 Andromeda (theme, https://marketplace.visualstudio.com/items?itemName=EliverLara.andromeda)
+ANSI Colors
+auto rename tag
+autoclosetag
 better comments
 better toml
 code spell checker
 color highlight
+docker
+Draw.io Integration
 EditorConfig for VS Code
+Electron Color Theme
+GitLens
 Hugo Helper
 Hugo Language and Syntax Support
 Hugo Shortcode Syntax Highlighting
@@ -137,15 +142,11 @@ material icon theme
 path intellisense
 Prettier - Code formatter
 python
+Remote Development
+Settings Sync
 VS Color Picker
 XML
 YAML
-Settings Sync
-GitLens
-docker
-Electron Color Theme
-Draw.io Integration
-Remote Development
 ```
 
 ### URL list
