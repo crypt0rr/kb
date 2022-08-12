@@ -705,6 +705,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Corecess                                             | Administrator              | admin                                                           |
 | Corecess                                             | corecess                   | corecess                                                        |
 | CoronaMatrix                                         | admin                      | admin                                                           |
+| Couchdb                                              | admin                      | password                                                        |
 | Covertix                                             | Admin                      | Admin                                                           |
 | Creative                                             | <blank>                    | <blank>                                                         |
 | Crossbeam                                            | <blank>                    | x40rocks                                                        |
