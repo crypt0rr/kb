@@ -11,11 +11,14 @@ tags : ['Other', 'macOS', 'Linux', 'Downloader']
 
 ## Axel
 
-Axel tries to accelerate the download process by using multiple connections per file, and can also balance the load between different servers.
+Axel tries to accelerate the download process by using multiple connections per file, and can also balance the load between different servers. Axel tries to be as light as possible, so it might be useful on byte-critical systems.
 
-Axel tries to be as light as possible, so it might be useful on byte-critical systems.
+Axel supports:
 
-Axel supports HTTP, HTTPS, FTP and FTPS protocols.
+* HTTP
+* HTTPS
+* FTP
+* FTPS
 
 ### Installation
 
