@@ -6,7 +6,7 @@ date : 2021-07-02T09:34:48+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'macOS', 'Linux']
+tags : ['Other', 'macOS', 'Linux', 'Downloader', 'Torrent', 'P2P']
 ---
 
 ## Aria2
