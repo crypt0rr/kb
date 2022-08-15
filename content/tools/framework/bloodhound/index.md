@@ -6,7 +6,7 @@ date : 2020-03-10T15:32:33+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Framework', 'Active Directory']
+tags : ['Framework', 'Active Directory', 'AzureAD']
 ---
 
 ## BloodHound
@@ -15,9 +15,7 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 ### Collectors
 
-{{%attachments title="Collectors for v3/v4.0" fa_icon_class="far fa-file-code" pattern="SharpHound_v3.*"/%}}
-
-{{%attachments title="Collectors for v4.1+" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.1.*"/%}}
+{{%attachments title="Collector for v4.1+" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.1.*"/%}}
 
 {{%attachments title="Collectors for v4.2+ (newest)" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.2.*"/%}}
 
@@ -26,6 +24,52 @@ To gather additional information directly from ADExplorer for BloodHound, check 
 ### Installation
 
 Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodHound/releases)
+
+### Usage
+
+#### Bloodhound - Run ingestor on target domain joined system
+
+```plain
+.\SharpHound.exe CollectionMethod All
+```
+
+Or:
+
+```plain
+. .\SharpHound.ps1 /exe
+```
+
+```plain
+Invoke-BloodHound -CollectionMethod All
+```
+
+#### Bloodhound - Remote ingestor
+
+Please check [BloodHound.py]({{< ref "bloodhoundpy" >}})
+
+#### AzureHound
+
+Please check [AzureHound]({{< ref "azurehound" >}})
+
+### Examples
+
+![Example](images/example1.png)
+![Example](images/example2.png)
+
+### Example dataset
+
+Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
+
+Statistics:
+
+* Users: 2497
+* Groups: 551
+* Computers: 103
+* OUS: 223
+* GPOs: 2
+* Domains: 1
+
+{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### Custom Queries
 
@@ -51,50 +95,43 @@ Some other custom queries:
 * [Github.com - CompassSecurity - BloodHoundQueries](https://raw.githubusercontent.com/CompassSecurity/BloodHoundQueries/master/customqueries.json)
 * [Github.com - Shutdownrepo - Exegol](https://raw.githubusercontent.com/ShutdownRepo/Exegol/master/sources/bloodhound/customqueries.json)
 
-### Example dataset
+#### Filter users from json export Bloodhound
 
-Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
-
-Statistics:
-
-* Users: 2492
-* Groups: 551
-* Computers: 102
-* OUS: 223
-* GPOs: 2
-* Domains: 1
-
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
-
-### Usage
-
-#### Bloodhound - Run ingestor on target domain joined system
-
-##### v3/v4.0
+Filter domain admins
 
 ```plain
-. .\SharpHound.ps1 /exe
+grep -E '"name":' da-export-bloodhound.json | cut -d '"' -f 4 | cut -d '@' -f1
 ```
+
+### Excessive privileges allowing for shadow Domain Admins
 
 ```plain
-Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"
+ForceChangePassword – Ability to reset password of another user
+GenericAll          – Full control over an object (read/write)
+GenericWrite        – Update of any attributes of an object
+WriteOwner          – Assume ownership of an object
+WriteDacl           – Modify the DACL of an object
+Self                – Arbitrarily modify self
 ```
 
-##### v4.1+
+* [Infosecmatter.com - Top 16 Active Directory vulnerabilities](https://www.infosecmatter.com/top-16-active-directory-vulnerabilities/#5-excessive-privileges-allowing-for-shadow-domain-admins)
+* [iRed.team - Active Directory Kerberos Abuse](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/abusing-active-directory-acls-aces)
+
+### High privilege user groups
 
 ```plain
-.\SharpHound.exe --CollectionMethods All
+Administrators
+Domain Admins
+Enterprise Admins
+Schema Admins
+Account Operators
+Server Operators
+Backup Operators
 ```
 
-#### Bloodhound - Remote ingestor
+### Troubleshooting
 
-Please check [BloodHound.py]({{< ref "bloodhoundpy" >}})
-
-#### AzureHound
-
-Please check [AzureHound]({{< ref "azurehound" >}})
-
-### Installation of Neo4j and BloodHound interface on Ubuntu
+#### Installation of Neo4j and BloodHound interface on Ubuntu
 
 ```plain
 sudo wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
@@ -133,57 +170,6 @@ DefaultLimitNOFILE=60000
 
 $ cat /etc/systemd/system.conf 
 DefaultLimitNOFILE=60000
-```
-
-#### Start BloodHound (Kali)
-
-Start database
-
-```plain
-neo4j console
-```
-
-Start bloodhound
-
-```plain
-bloodhound
-```
-
-![Example](images/example.png)
-![Example](images/example1.png)
-
-#### Filter users from json export Bloodhound
-
-Filter domain admins
-
-```plain
-grep -E '"name":' da-export-bloodhound.json | cut -d '"' -f 4 | cut -d '@' -f1
-```
-
-### Excessive privileges allowing for shadow Domain Admins
-
-```plain
-ForceChangePassword – Ability to reset password of another user
-GenericAll          – Full control over an object (read/write)
-GenericWrite        – Update of any attributes of an object
-WriteOwner          – Assume ownership of an object
-WriteDacl           – Modify the DACL of an object
-Self                – Arbitrarily modify self
-```
-
-* [Infosecmatter.com - Top 16 Active Directory vulnerabilities](https://www.infosecmatter.com/top-16-active-directory-vulnerabilities/#5-excessive-privileges-allowing-for-shadow-domain-admins)
-* [iRed.team - Active Directory Kerberos Abuse](https://ired.team/offensive-security-experiments/active-directory-kerberos-abuse/abusing-active-directory-acls-aces)
-
-### High privilege user groups
-
-```plain
-Administrators
-Domain Admins
-Enterprise Admins
-Schema Admins
-Account Operators
-Server Operators
-Backup Operators
 ```
 
 ### URL list
