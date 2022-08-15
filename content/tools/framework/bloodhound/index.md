@@ -55,9 +55,9 @@ Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
 
 Statistics:
 
-* Users: 2492
+* Users: 2497
 * Groups: 551
-* Computers: 102
+* Computers: 103
 * OUS: 223
 * GPOs: 2
 * Domains: 1
@@ -145,9 +145,6 @@ Start bloodhound
 bloodhound
 ```
 
-![Example](images/example.png)
-![Example](images/example1.png)
-
 #### Filter users from json export Bloodhound
 
 Filter domain admins
@@ -181,6 +178,11 @@ Account Operators
 Server Operators
 Backup Operators
 ```
+
+### Examples
+
+![Example](images/example1.png)
+![Example](images/example2.png)
 
 ### URL list
 
