@@ -2450,6 +2450,8 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | RObiGVqUbQt                                          | wVQxyQec                   | eomjbOBLLwbZeiKV                                                |
 | Rodopi                                               | Rodopi                     | Rodopi                                                          |
 | Roxy-wi                                              | admin                      | admin                                                           |
+| Roxy-wi                                              | editor                     | editor                                                          |
+| Roxy-wi                                              | guest                      | guest                                                           |
 | rPath                                                | admin                      | password                                                        |
 | RSA                                                  | admin                      | admin1234                                                       |
 | RSA                                                  | administrator              | RSAAppliance                                                    |
