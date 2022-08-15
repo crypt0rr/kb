@@ -70,20 +70,18 @@ Statistics:
 
 #### Bloodhound - Run ingestor on target domain joined system
 
-##### v3/v4.0
+```plain
+.\SharpHound.exe CollectionMethod All
+```
+
+Or:
 
 ```plain
 . .\SharpHound.ps1 /exe
 ```
 
 ```plain
-Invoke-BloodHound -CollectionMethod All -JSONFolder "OUTPUT-FOLDER"
-```
-
-##### v4.1+
-
-```plain
-.\SharpHound.exe --CollectionMethods All
+Invoke-BloodHound -CollectionMethod All
 ```
 
 #### Bloodhound - Remote ingestor
