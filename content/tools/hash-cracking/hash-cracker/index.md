@@ -9,7 +9,7 @@ weight : 0
 # tags : ['']
 ---
 
-## Hash-Cracker
+## hash-Cracker
 
 Simple script to get some hash cracking done effectively.
 
@@ -19,7 +19,7 @@ Simple script to get some hash cracking done effectively.
 git clone https://github.com/crypt0rr/hash-cracker
 ```
 
-For use with Apple Silicon systems, please use the following repo.
+For use with Apple Silicon (M1/M2) systems, please use the following repo.
 
 ```plain
 git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
@@ -34,7 +34,7 @@ git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ### Flags
 
 ```plain
-hash-cracker v2.9 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v2.9.3 by crypt0rr (https://github.com/crypt0rr)
 
 Checking if requirements are met:
 [+] Hashcat is installed
@@ -106,4 +106,5 @@ hashcat (v6.2.4-131-ga9cdd4cef) starting
 ### URL list
 
 * [Github.com - hash-cracker](https://github.com/crypt0rr/hash-cracker)
+* [Github.com - hash-cracker Apple Silicon Edition](https://github.com/crypt0rr/hash-cracker-apple-silicon)
 * [Google Docs - Wordlist test](https://docs.google.com/spreadsheets/d/1qQNwggWIWtL-m0EYrRg_vdwHOrZCY-SnWcYTwQN0fMk/edit)
