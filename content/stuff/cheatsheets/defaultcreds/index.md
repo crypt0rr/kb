@@ -115,6 +115,7 @@ A '**-**' means the field should be left blank.
 | Akkadian Console Server                              | admin                      | admin                                                           |
 | Akkadian Contact Manager                             | gdadmin                    | admin                                                           |
 | Akkadian Provisioning Manager                        | PMEAdmin                   | PMEAdmin                                                        |
+| Akkadian Provisioning Manager                        | akkadianuser               | akkadianpassword                                                |
 | Akkadian Site Builder                                | SBAdmin                    | SBAdmin123                                                      |
 | Aladdin                                              | root                       | kn1TG7psLu                                                      |
 | Alcatel                                              | adfexc                     | adfexc                                                          |
@@ -896,6 +897,13 @@ A '**-**' means the field should be left blank.
 | Dlink (web)                                          | admin                      | admin                                                           |
 | Dlink (web)                                          | root                       | 12345                                                           |
 | Dlink (web)                                          | root                       | root                                                            |
+| DMP V-4022C                                          | admin                      | -                                                               |
+| DMP V-4052D                                          | admin                      | -                                                               |
+| DMP V-4072MD                                         | admin                      | -                                                               |
+| DMP V-5012B*                                         | scwuser                    | scw12345user                                                    |
+| DMP V-5014B*                                         | scwuser                    | scw12345user                                                    |
+| DMP V-5052D*                                         | scwuser                    | scw12345user                                                    |
+| DMP V-5054D*                                         | scwuser                    | scw12345user                                                    |
 | DotNetNuke Corporation                               | admin                      | dnnadmin                                                        |
 | DotNetNuke Corporation                               | host                       | dnnhost                                                         |
 | Draytek                                              | admin                      | admin                                                           |
@@ -2452,6 +2460,7 @@ A '**-**' means the field should be left blank.
 | RM                                                   | topicres                   | password                                                        |
 | RNN                                                  | admin                      | demo                                                            |
 | RoamAbout                                            | admin                      | password                                                        |
+| ROB-EX                                               | Admin                      | Admin                                                           |
 | RObiGVqUbQt                                          | wVQxyQec                   | eomjbOBLLwbZeiKV                                                |
 | Rodopi                                               | Rodopi                     | Rodopi                                                          |
 | Roxy-wi                                              | admin                      | admin                                                           |
