@@ -21,7 +21,7 @@ tcpdump is the world’s premier network analysis tool—combining both power an
 sudo apt install tcpdump
 ```
 
-#### macOS
+#### Apple macOS
 
 ```plain
 brew install tcpdump
