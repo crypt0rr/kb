@@ -2395,6 +2395,7 @@ A '**-**' means the field should be left blank.
 | raspberry Pi (ssh)                                   | pi                         | raspberry                                                       |
 | RayTalk                                              | root                       | root                                                            |
 | RCA                                                  | -                          | admin                                                           |
+| ReCrystallize (Server)                               | admin                      | pw                                                              |
 | Redcreek Communications                              | -                          | 1234                                                            |
 | Redcreek Communications                              | -                          | private                                                         |
 | Red Hat,Inc                                          | admin                      | admin                                                           |
