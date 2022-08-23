@@ -694,6 +694,24 @@ To create a custom wordlist from a input-wordlist combined with rule(s).
 hashcat --force words-input -r scripts/rules/10krules.rule  --stdout > customwordlist
 ```
 
+Also, this can be used for other attack methods. For example creating a list with 3 numbers is done as shown below.
+
+```plain
+$ hashcat -a3 '?d?d?d' --stdout -o output.txt
+
+$ head output.txt                            
+123
+023
+223
+323
+923
+423
+523
+823
+723
+623
+```
+
 ### Wordlists
 
 * [Github.com - FlameOfIgnis Pwdb-Public](https://github.com/FlameOfIgnis/Pwdb-Public.git)
