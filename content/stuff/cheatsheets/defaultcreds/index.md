@@ -13,30 +13,30 @@ tags : ['Cheatsheets' , 'Credentials']
 
 One place for all the default credentials to assist the Blue/Red teamers activities on finding devices with default password.
 
-[Source and up-to-date file](https://github.com/ihebski/DefaultCreds-cheat-sheet/blob/main/DefaultCreds-Cheat-Sheet.csv).
+A '**-**' means the field should be left blank.
 
 | Vendor                                               | Username                   | Password                                                        |
 | ---------------------------------------------------- | -------------------------- | --------------------------------------------------------------- |
 | 3COM                                                 | 3comcso                    | RIP000                                                          |
-| 3COM                                                 | adm                        | <blank>                                                         |
+| 3COM                                                 | adm                        | -                                                               |
 | 3COM                                                 | admin                      | 1234admin                                                       |
 | 3COM                                                 | admin                      | admin                                                           |
 | 3COM                                                 | Admin                      | Admin                                                           |
-| 3COM                                                 | admin                      | <blank>                                                         |
+| 3COM                                                 | admin                      | -                                                               |
 | 3COM                                                 | admin                      | comcomcom                                                       |
 | 3COM                                                 | Administrator              | admin                                                           |
-| 3COM                                                 | Administrator              | <blank>                                                         |
+| 3COM                                                 | Administrator              | -                                                               |
 | 3COM                                                 | admin                      | password                                                        |
 | 3COM                                                 | admin                      | synnet                                                          |
 | 3COM                                                 | adminttd                   | adminttd                                                        |
-| 3COM                                                 | <blank>                    | 12345                                                           |
-| 3COM                                                 | <blank>                    | 1234admin                                                       |
-| 3COM                                                 | <blank>                    | admin                                                           |
-| 3COM                                                 | <blank>                    | ANYCOM                                                          |
-| 3COM                                                 | <blank>                    | <blank>                                                         |
-| 3COM                                                 | <blank>                    | comcomcom                                                       |
-| 3COM                                                 | <blank>                    | ILMI                                                            |
-| 3COM                                                 | <blank>                    | PASSWORD                                                        |
+| 3COM                                                 | -                          | 12345                                                           |
+| 3COM                                                 | -                          | 1234admin                                                       |
+| 3COM                                                 | -                          | admin                                                           |
+| 3COM                                                 | -                          | ANYCOM                                                          |
+| 3COM                                                 | -                          | -                                                               |
+| 3COM                                                 | -                          | comcomcom                                                       |
+| 3COM                                                 | -                          | ILMI                                                            |
+| 3COM                                                 | -                          | PASSWORD                                                        |
 | 3COM                                                 | debug                      | synnet                                                          |
 | 3COM                                                 | defug                      | synnet                                                          |
 | 3COM                                                 | manager                    | manager                                                         |
@@ -47,37 +47,37 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | 3COM                                                 | root                       | !root                                                           |
 | 3COM                                                 | security                   | security                                                        |
 | 3com (ssh)                                           | admin                      | admin                                                           |
-| 3COM                                                 | tech                       | <blank>                                                         |
+| 3COM                                                 | tech                       | -                                                               |
 | 3COM                                                 | tech                       | tech                                                            |
-| 3COM                                                 | Type User: FORCE           | <blank>                                                         |
+| 3COM                                                 | Type User: FORCE           | -                                                               |
 | 3COM                                                 | User                       | Password                                                        |
 | 3COM                                                 | write                      | synnet                                                          |
-| 3M                                                   | VOL-0215                   | <blank>                                                         |
-| 3M                                                   | volition                   | <blank>                                                         |
+| 3M                                                   | VOL-0215                   | -                                                               |
+| 3M                                                   | volition                   | -                                                               |
 | 3M                                                   | volition                   | volition                                                        |
 | 3ware                                                | Administrator              | 3ware                                                           |
 | Accelerated Networks                                 | sysadm                     | anicust                                                         |
-| ACCTON                                               | admin                      | <blank>                                                         |
-| ACCTON                                               | <blank>                    | 0                                                               |
-| ACCTON                                               | <blank>                    | 0000                                                            |
+| ACCTON                                               | admin                      | -                                                               |
+| ACCTON                                               | -                          | 0                                                               |
+| ACCTON                                               | -                          | 0000                                                            |
 | ACCTON                                               | manager                    | manager                                                         |
 | ACCTON                                               | monitor                    | monitor                                                         |
 | ACCTON                                               | __super                    | (caclulated)                                                    |
-| accton t-online                                      | <blank>                    | 0                                                               |
-| Aceex                                                | admin                      | <blank>                                                         |
+| accton t-online                                      | -                          | 0                                                               |
+| Aceex                                                | admin                      | -                                                               |
 | acer                                                 | acer                       | acer                                                            |
-| Acer                                                 | <blank>                    | <blank>                                                         |
+| Acer                                                 | -                          | -                                                               |
 | actiontec                                            | admin                      | admin                                                           |
 | Actiontec                                            | admin                      | password                                                        |
-| Actiontec                                            | <blank>                    | <blank>                                                         |
+| Actiontec                                            | -                          | -                                                               |
 | ActiveMQ (general)                                   | admin                      | admin                                                           |
-| ActiveMQ (general)                                   | <blank>                    | <blank>                                                         |
+| ActiveMQ (general)                                   | -                          | -                                                               |
 | acti (web)                                           | admin                      | 12345                                                           |
 | acti (web)                                           | Admin                      | 12345                                                           |
 | acti (web)                                           | admin                      | 123456                                                          |
 | acti (web)                                           | Admin                      | 123456                                                          |
 | Adaptec                                              | Administrator              | adaptec                                                         |
-| ADC Kentrox                                          | <blank>                    | secret                                                          |
+| ADC Kentrox                                          | -                          | secret                                                          |
 | AdComplete.com                                       | Admin1                     | Admin1                                                          |
 | Addon                                                | admin                      | admin                                                           |
 | AddPac Technology                                    | root                       | router                                                          |
@@ -91,34 +91,34 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Adobe                                                | aparker@geometrixx.info    | aparker                                                         |
 | Adobe                                                | author                     | author                                                          |
 | Adobe                                                | jdoe@geometrixx.info       | jdoe                                                            |
-| Adobe                                                | replication-receiver       | <blank>                                                         |
+| Adobe                                                | replication-receiver       | -                                                               |
 | Adobe                                                | replication-receiver       | replication-receiver                                            |
 | Adobe                                                | vgnadmin                   | vgnadmin                                                        |
 | ADP                                                  | sysadmin                   | master                                                          |
-| ADT                                                  | <blank>                    | 2580                                                            |
+| ADT                                                  | -                          | 2580                                                            |
 | Adtech                                               | root                       | ax400                                                           |
 | Adtran                                               | admin                      | password                                                        |
 | ADTRAN                                               | admin                      | password                                                        |
-| adtran                                               | <blank>                    | adtran                                                          |
-| Adtran                                               | <blank>                    | adtran                                                          |
-| adtran                                               | <blank>                    | <blank>                                                         |
-| adtran                                               | <blank>                    | Password                                                        |
-| Advanced Integration                                 | <blank>                    | Advance                                                         |
-| Advantek Networks                                    | admin                      | <blank>                                                         |
+| adtran                                               | -                          | adtran                                                          |
+| Adtran                                               | -                          | adtran                                                          |
+| adtran                                               | -                          | -                                                               |
+| adtran                                               | -                          | Password                                                        |
+| Advanced Integration                                 | -                          | Advance                                                         |
+| Advantek Networks                                    | admin                      | -                                                               |
 | Aethra                                               | admin                      | password                                                        |
 | AIRAYA Corp                                          | Airaya                     | Airaya                                                          |
-| Airlink                                              | <blank>                    | admin                                                           |
-| AirLink Plus                                         | <blank>                    | admin                                                           |
-| Aironet                                              | <blank>                    | <blank>                                                         |
+| Airlink                                              | -                          | admin                                                           |
+| AirLink Plus                                         | -                          | admin                                                           |
+| Aironet                                              | -                          | -                                                               |
 | AirTies RT-210                                       | admin                      | admin                                                           |
-| Airway                                               | <blank>                    | 0000                                                            |
+| Airway                                               | -                          | 0000                                                            |
 | Aladdin                                              | root                       | kn1TG7psLu                                                      |
 | Alcatel                                              | adfexc                     | adfexc                                                          |
 | Alcatel                                              | admin                      | switch                                                          |
 | Alcatel                                              | at4400                     | at4400                                                          |
-| Alcatel                                              | <blank>                    | 1064                                                            |
-| Alcatel                                              | <blank>                    | admin                                                           |
-| Alcatel                                              | <blank>                    | <blank>                                                         |
+| Alcatel                                              | -                          | 1064                                                            |
+| Alcatel                                              | -                          | admin                                                           |
+| Alcatel                                              | -                          | -                                                               |
 | Alcatel                                              | client                     | client                                                          |
 | Alcatel                                              | dhs3mt                     | dhs3mt                                                          |
 | Alcatel                                              | dhs3pms                    | dhs3pms                                                         |
@@ -131,7 +131,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Alcatel                                              | install                    | llatsni                                                         |
 | Alcatel                                              | kermit                     | kermit                                                          |
 | Alcatel                                              | mtch                       | mtch                                                            |
-| Alcatel                                              | mtcl                       | <blank>                                                         |
+| Alcatel                                              | mtcl                       | -                                                               |
 | Alcatel                                              | mtcl                       | mtcl                                                            |
 | Alcatel                                              | root                       | letacla                                                         |
 | Alcatel                                              | root                       | permit                                                          |
@@ -140,74 +140,74 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Alcatel Thomson                                      | admin                      | admin                                                           |
 | Alien Technology                                     | alien                      | alien                                                           |
 | Alien Technology                                     | root                       | alien                                                           |
-| allied                                               | <blank>                    | <blank>                                                         |
-| Allied Telesyn                                       | admin                      | <blank>                                                         |
-| Allied Telesyn                                       | <blank>                    | admin                                                           |
-| Allied Telesyn                                       | <blank>                    | manager                                                         |
+| allied                                               | -                          | -                                                               |
+| Allied Telesyn                                       | admin                      | -                                                               |
+| Allied Telesyn                                       | -                          | admin                                                           |
+| Allied Telesyn                                       | -                          | manager                                                         |
 | Allied Telesyn                                       | manager                    | admin                                                           |
 | Allied Telesyn                                       | manager                    | friend                                                          |
 | Allied Telesyn                                       | manager                    | manager                                                         |
-| Allied Telesyn                                       | root                       | <blank>                                                         |
+| Allied Telesyn                                       | root                       | -                                                               |
 | Allied Telesyn                                       | secoff                     | secoff                                                          |
 | Allnet                                               | admin                      | admin                                                           |
 | ALLNET                                               | admin                      | admin                                                           |
 | ALLNET                                               | admin                      | password                                                        |
-| ALLNET                                               | <blank>                    | admin                                                           |
+| ALLNET                                               | -                          | admin                                                           |
 | Allot                                                | admin                      | allot                                                           |
 | Allot                                                | root                       | bagabu                                                          |
 | Alteon                                               | admin                      | admin                                                           |
-| Alteon                                               | admin                      | <blank>                                                         |
+| Alteon                                               | admin                      | -                                                               |
 | Alteon                                               | admin                      | linga                                                           |
-| Ambit                                                | root                       | <blank>                                                         |
+| Ambit                                                | root                       | -                                                               |
 | Ambit                                                | root                       | root                                                            |
 | Ambit                                                | user                       | user                                                            |
 | American Dynamics EDVR (telnet)                      | admin                      | 9999                                                            |
 | american_dynamics (web)                              | admin                      | 9999                                                            |
 | american_dynamics (web)                              | admin                      | admin                                                           |
-| AMI                                                  | <blank>                    | aammii                                                          |
-| AMI                                                  | <blank>                    | AM                                                              |
-| AMI                                                  | <blank>                    | A.M.I                                                           |
-| AMI                                                  | <blank>                    | AMI                                                             |
-| AMI                                                  | <blank>                    | AMI~                                                            |
-| AMI                                                  | <blank>                    | AMIAMI                                                          |
-| AMI                                                  | <blank>                    | AMIDECOD                                                        |
-| AMI                                                  | <blank>                    | AMI.KEY                                                         |
-| AMI                                                  | <blank>                    | AMI.KEZ                                                         |
-| AMI                                                  | <blank>                    | AMIPSWD                                                         |
-| AMI                                                  | <blank>                    | AMISETUP                                                        |
-| AMI                                                  | <blank>                    | AMI!SW                                                          |
-| AMI                                                  | <blank>                    | AMI?SW                                                          |
-| AMI                                                  | <blank>                    | AMI_SW                                                          |
-| AMI                                                  | <blank>                    | BIOSPASS                                                        |
-| AMI                                                  | <blank>                    | CMOSPWD                                                         |
-| AMI                                                  | <blank>                    | HEWITT RAND                                                     |
+| AMI                                                  | -                          | aammii                                                          |
+| AMI                                                  | -                          | AM                                                              |
+| AMI                                                  | -                          | A.M.I                                                           |
+| AMI                                                  | -                          | AMI                                                             |
+| AMI                                                  | -                          | AMI~                                                            |
+| AMI                                                  | -                          | AMIAMI                                                          |
+| AMI                                                  | -                          | AMIDECOD                                                        |
+| AMI                                                  | -                          | AMI.KEY                                                         |
+| AMI                                                  | -                          | AMI.KEZ                                                         |
+| AMI                                                  | -                          | AMIPSWD                                                         |
+| AMI                                                  | -                          | AMISETUP                                                        |
+| AMI                                                  | -                          | AMI!SW                                                          |
+| AMI                                                  | -                          | AMI?SW                                                          |
+| AMI                                                  | -                          | AMI_SW                                                          |
+| AMI                                                  | -                          | BIOSPASS                                                        |
+| AMI                                                  | -                          | CMOSPWD                                                         |
+| AMI                                                  | -                          | HEWITT RAND                                                     |
 | Amigo                                                | admin                      | epicrouter                                                      |
-| Amino                                                | <blank>                    | leaves                                                          |
-| Amino                                                | <blank>                    | snake                                                           |
+| Amino                                                | -                          | leaves                                                          |
+| Amino                                                | -                          | snake                                                           |
 | Amitech                                              | admin                      | admin                                                           |
 | AmpJuke                                              | admin                      | pass                                                            |
-| Amptron                                              | <blank>                    | Polrty                                                          |
+| Amptron                                              | -                          | Polrty                                                          |
 | AMX                                                  | admin                      | 1988                                                            |
 | AMX                                                  | Admin                      | 1988                                                            |
 | AMX                                                  | admin                      | admin                                                           |
 | AMX                                                  | administrator              | password                                                        |
 | AMX                                                  | Administrator              | vision2                                                         |
-| AMX                                                  | <blank>                    | 1988                                                            |
-| AMX                                                  | <blank>                    | admin                                                           |
-| AMX                                                  | <blank>                    | <blank>                                                         |
+| AMX                                                  | -                          | 1988                                                            |
+| AMX                                                  | -                          | admin                                                           |
+| AMX                                                  | -                          | -                                                               |
 | AMX                                                  | guest                      | guest                                                           |
 | AMX                                                  | NetLinx                    | password                                                        |
 | AMX                                                  | root                       | mozart                                                          |
 | Andover Controls                                     | acc                        | acc                                                             |
 | antsle (ssh)                                         | root                       | antsle                                                          |
-| AOC                                                  | <blank>                    | admin                                                           |
+| AOC                                                  | -                          | admin                                                           |
 | Apache                                               | admin                      | admin                                                           |
-| Apache                                               | admin                      | <blank>                                                         |
+| Apache                                               | admin                      | -                                                               |
 | Apache                                               | admin                      | j5Brn9                                                          |
 | APACHE                                               | admin                      | jboss4                                                          |
 | Apache                                               | admin                      | tomcat                                                          |
 | Apache                                               | both                       | tomcat                                                          |
-| Apache Project                                       | jj                         | <blank>                                                         |
+| Apache Project                                       | jj                         | -                                                               |
 | Apache                                               | role1                      | role1                                                           |
 | Apache                                               | role1                      | tomcat                                                          |
 | Apache                                               | role                       | changethis                                                      |
@@ -216,7 +216,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Apache                                               | tomcat                     | changethis                                                      |
 | Apache Tomcat Host Manager (web)                     | admin                      | admin                                                           |
 | Apache Tomcat Host Manager (web)                     | ADMIN                      | ADMIN                                                           |
-| Apache Tomcat Host Manager (web)                     | admin                      | <blank>                                                         |
+| Apache Tomcat Host Manager (web)                     | admin                      | -                                                               |
 | Apache Tomcat Host Manager (web)                     | admin                      | j5Brn9                                                          |
 | Apache Tomcat Host Manager (web)                     | admin                      | tomcat                                                          |
 | Apache Tomcat Host Manager (web)                     | cxsdk                      | kdsxc                                                           |
@@ -234,7 +234,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Apache                                               | tomcat                     | tomcat                                                          |
 | Apache Tomcat (web)                                  | admin                      | admin                                                           |
 | Apache Tomcat (web)                                  | ADMIN                      | ADMIN                                                           |
-| Apache Tomcat (web)                                  | admin                      | <blank>                                                         |
+| Apache Tomcat (web)                                  | admin                      | -                                                               |
 | Apache Tomcat (web)                                  | admin                      | j5Brn9                                                          |
 | Apache Tomcat (web)                                  | admin                      | tomcat                                                          |
 | Apache Tomcat (web)                                  | cxsdk                      | kdsxc                                                           |
@@ -251,10 +251,10 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Apache Tomcat (web)                                  | xampp                      | xampp                                                           |
 | APC                                                  | (any)                      | TENmanUFactOryPOWER                                             |
 | APC                                                  | apc                        | apc                                                             |
-| APC                                                  | <blank>                    | backdoor                                                        |
-| APC                                                  | <blank>                    | serial number of the Call-UPS                                   |
-| APC                                                  | <blank>                    | serial number of the Share-UPS                                  |
-| APC                                                  | <blank>                    | TENmanUFactOryPOWER                                             |
+| APC                                                  | -                          | backdoor                                                        |
+| APC                                                  | -                          | serial number of the Call-UPS                                   |
+| APC                                                  | -                          | serial number of the Share-UPS                                  |
+| APC                                                  | -                          | TENmanUFactOryPOWER                                             |
 | APC                                                  | device                     | apc                                                             |
 | APC                                                  | device                     | device                                                          |
 | APC Network Management Card (web)                    | apc                        | apc                                                             |
@@ -262,15 +262,15 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | APC Network Management Card (web)                    | readonly                   | apc                                                             |
 | APC                                                  | POWERCHUTE                 | APC                                                             |
 | APC                                                  | readonly                   | apc                                                             |
-| APC SmartSlot (snmp)                                 | <blank>                    | TENmanUFactOryPOWER                                             |
+| APC SmartSlot (snmp)                                 | -                          | TENmanUFactOryPOWER                                             |
 | APC UPS (web)                                        | apc                        | apc                                                             |
 | Apple                                                | admin                      | public                                                          |
-| Apple                                                | <blank>                    | admin                                                           |
-| Apple                                                | <blank>                    | password                                                        |
-| Apple                                                | <blank>                    | public                                                          |
-| Apple                                                | <blank>                    | xyzzy                                                           |
-| Apple Computer                                       | <blank>                    | public                                                          |
-| Apple Computer                                       | <blank>                    | xyzzy                                                           |
+| Apple                                                | -                          | admin                                                           |
+| Apple                                                | -                          | password                                                        |
+| Apple                                                | -                          | public                                                          |
+| Apple                                                | -                          | xyzzy                                                           |
+| Apple Computer                                       | -                          | public                                                          |
+| Apple Computer                                       | -                          | xyzzy                                                           |
 | Apple Jailbroken Device (ssh)                        | root                       | alpine                                                          |
 | Apple Jailbroken Device (ssh)                        | root                       | dottie                                                          |
 | Apple                                                | mobile                     | dottie                                                          |
@@ -278,15 +278,15 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Apple                                                | root                       | alpine                                                          |
 | Applied Innovations                                  | scout                      | scout                                                           |
 | Areca                                                | admin                      | 0                                                               |
-| arecont (web)                                        | admin                      | <blank>                                                         |
-| arecont (web)                                        | <blank>                    | <blank>                                                         |
-| Arescom                                              | <blank>                    | atc123                                                          |
+| arecont (web)                                        | admin                      | -                                                               |
+| arecont (web)                                        | -                          | -                                                               |
+| Arescom                                              | -                          | atc123                                                          |
 | Aris (mssql)                                         | ARIS9                      | *ARIS!1dm9n#                                                    |
 | Arlotto                                              | admin                      | 123456                                                          |
 | Arris                                                | admin                      | password                                                        |
 | Arrowpoint                                           | admin                      | system                                                          |
-| Arrowpoint                                           | <blank>                    | <blank>                                                         |
-| ARtem                                                | <blank>                    | admin                                                           |
+| Arrowpoint                                           | -                          | -                                                               |
+| ARtem                                                | -                          | admin                                                           |
 | Aruba                                                | admin                      | admin                                                           |
 | Aruba (web)                                          | admin                      | admin                                                           |
 | Arun                                                 | 123                        | 234                                                             |
@@ -294,24 +294,24 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Asante                                               | IntraStack                 | Asante                                                          |
 | Asante                                               | IntraSwitch                | Asante                                                          |
 | Asante                                               | superuser                  | asante                                                          |
-| Asante                                               | superuser                  | <blank>                                                         |
-| Ascend                                               | <blank>                    | ascend                                                          |
+| Asante                                               | superuser                  | -                                                               |
+| Ascend                                               | -                          | ascend                                                          |
 | Ascend                                               | readonly                   | lucenttech2                                                     |
 | Ascend                                               | readwrite                  | lucenttech1                                                     |
 | Ascend                                               | root                       | ascend                                                          |
-| Ascom                                                | <blank>                    | 3ascotel                                                        |
+| Ascom                                                | -                          | 3ascotel                                                        |
 | ASMAX                                                | admin                      | epicrouter                                                      |
 | asmax (ssh)                                          | admin                      | admin                                                           |
 | asmax (ssh)                                          | support                    | support                                                         |
 | asmax (ssh)                                          | user                       | user                                                            |
-| Aspect                                               | customer                   | <blank>                                                         |
+| Aspect                                               | customer                   | -                                                               |
 | Aspect                                               | DTA                        | TJM                                                             |
-| ast                                                  | <blank>                    | <blank>                                                         |
-| AST                                                  | <blank>                    | SnuFG5                                                          |
+| ast                                                  | -                          | -                                                               |
+| AST                                                  | -                          | SnuFG5                                                          |
 | Asterisk                                             | Admin                      | admin                                                           |
 | Asus                                                 | admin                      | admin                                                           |
 | Asus                                                 | adsl                       | adsl1234                                                        |
-| Asus                                                 | <blank>                    | admin                                                           |
+| Asus                                                 | -                          | admin                                                           |
 | asus (ssh)                                           | admin                      | admin                                                           |
 | asus (ssh)                                           | Admin                      | Admin                                                           |
 | asus (ssh)                                           | admin                      | password                                                        |
@@ -324,10 +324,10 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Atlassian                                            | Username                   | password                                                        |
 | ATL                                                  | operator                   | 1234                                                            |
 | ATL                                                  | Service                    | 5678                                                            |
-| Attachmate                                           | <blank>                    | PASSWORD                                                        |
+| Attachmate                                           | -                          | PASSWORD                                                        |
 | AT&T Arris NVG589 & NVG599 (SharknAT&To) (ssh)       | remotessh                  | 5SaP9I26                                                        |
-| AT&T                                                 | <blank>                    | mcp                                                             |
-| Audioactive                                          | <blank>                    | telos                                                           |
+| AT&T                                                 | -                          | mcp                                                             |
+| Audioactive                                          | -                          | telos                                                           |
 | AudioCodes Mediant 1000 (web)                        | Admin                      | Admin                                                           |
 | Autodesk                                             | autocad                    | autocad                                                         |
 | Avaya                                                | admin                      | admin                                                           |
@@ -335,11 +335,11 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Avaya                                                | admin                      | barney                                                          |
 | Avaya                                                | Administrator              | ggdaseuaimhrke                                                  |
 | Avaya                                                | admin                      | password                                                        |
-| Avaya                                                | <blank>                    | admin                                                           |
-| Avaya                                                | <blank>                    | <blank>                                                         |
-| Avaya                                                | <blank>                    | Craftr4                                                         |
+| Avaya                                                | -                          | admin                                                           |
+| Avaya                                                | -                          | -                                                               |
+| Avaya                                                | -                          | Craftr4                                                         |
 | Avaya Contact Center (web)                           | webadmin                   | webadmin                                                        |
-| Avaya                                                | craft                      | <blank>                                                         |
+| Avaya                                                | craft                      | -                                                               |
 | Avaya                                                | craft                      | crftpw                                                          |
 | Avaya                                                | Craft                      | crftpw                                                          |
 | Avaya                                                | dadmin                     | dadmin                                                          |
@@ -350,156 +350,156 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Avaya                                                | root                       | ggdaseuaimhrke                                                  |
 | Avaya                                                | root                       | root                                                            |
 | Avaya                                                | root                       | ROOT500                                                         |
-| Avenger News System (ANS)                            | <blank>                    | Administrative                                                  |
+| Avenger News System (ANS)                            | -                          | Administrative                                                  |
 | avigilon (web)                                       | admin                      | admin                                                           |
-| avigilon (web)                                       | Administrator              | <blank>                                                         |
-| AVM                                                  | <blank>                    | 0                                                               |
-| AVM                                                  | <blank>                    | <blank>                                                         |
+| avigilon (web)                                       | Administrator              | -                                                               |
+| AVM                                                  | -                          | 0                                                               |
+| AVM                                                  | -                          | -                                                               |
 | Avocent                                              | root                       | tslinux                                                         |
 | avtech (web)                                         | admin                      | admin                                                           |
-| Award                                                | <blank>                    | 1322222                                                         |
-| AWARD                                                | <blank>                    | 1322222                                                         |
-| Award                                                | <blank>                    | 256256                                                          |
-| AWARD                                                | <blank>                    | 256256                                                          |
-| AWARD                                                | <blank>                    | 589589                                                          |
-| AWARD                                                | <blank>                    | 589721                                                          |
-| Award                                                | <blank>                    | admin                                                           |
-| AWARD                                                | <blank>                    | admin                                                           |
-| Award                                                | <blank>                    | alfarome                                                        |
-| AWARD                                                | <blank>                    | alfarome                                                        |
-| Award                                                | <blank>                    | aLLy                                                            |
-| AWARD                                                | <blank>                    | aLLy                                                            |
-| Award                                                | <blank>                    | aPAf                                                            |
-| AWARD                                                | <blank>                    | aPAf                                                            |
-| Award                                                | <blank>                    | ?award                                                          |
-| Award                                                | <blank>                    | award                                                           |
-| AWARD                                                | <blank>                    | ?award                                                          |
-| AWARD                                                | <blank>                    | award_?                                                         |
-| AWARD                                                | <blank>                    | Award                                                           |
-| AWARD                                                | <blank>                    | award_ps                                                        |
-| AWARD                                                | <blank>                    | AWARD_PW                                                        |
-| Award                                                | <blank>                    | AWARD_SW                                                        |
-| AWARD                                                | <blank>                    | award.sw                                                        |
-| AWARD                                                | <blank>                    | AWARD SW                                                        |
-| AWARD                                                | <blank>                    | AWARD?SW                                                        |
-| AWARD                                                | <blank>                    | AWARD_SW                                                        |
-| Award                                                | <blank>                    | awkward                                                         |
-| AWARD                                                | <blank>                    | awkward                                                         |
-| Award                                                | <blank>                    | BIOS                                                            |
-| AWARD                                                | <blank>                    | BIOS                                                            |
-| Award                                                | <blank>                    | biosstar                                                        |
-| AWARD                                                | <blank>                    | biosstar                                                        |
-| Award                                                | <blank>                    | biostar                                                         |
-| AWARD                                                | <blank>                    | biostar                                                         |
-| AWARD                                                | <blank>                    | <blank>                                                         |
-| Award                                                | <blank>                    | CONCAT                                                          |
-| AWARD                                                | <blank>                    | CONCAT                                                          |
-| Award                                                | <blank>                    | CONDO                                                           |
-| AWARD                                                | <blank>                    | condo                                                           |
-| AWARD                                                | <blank>                    | djonet                                                          |
-| AWARD                                                | <blank>                    | efmukl                                                          |
-| Award                                                | <blank>                    | g6PJ                                                            |
-| AWARD                                                | <blank>                    | g6PJ                                                            |
-| Award                                                | <blank>                    | h6BB                                                            |
-| AWARD                                                | <blank>                    | h6BB                                                            |
-| Award                                                | <blank>                    | HELGA-S                                                         |
-| AWARD                                                | <blank>                    | HELGA-S                                                         |
-| Award                                                | <blank>                    | HEWITT RAND                                                     |
-| AWARD                                                | <blank>                    | HEWITT RAND                                                     |
-| Award                                                | <blank>                    | HLT                                                             |
-| AWARD                                                | <blank>                    | HLT                                                             |
-| Award                                                | <blank>                    | j09F                                                            |
-| AWARD                                                | <blank>                    | j09F                                                            |
-| Award                                                | <blank>                    | j256                                                            |
-| AWARD                                                | <blank>                    | j256                                                            |
-| Award                                                | <blank>                    | j262                                                            |
-| AWARD                                                | <blank>                    | j262                                                            |
-| Award                                                | <blank>                    | j322                                                            |
-| AWARD                                                | <blank>                    | j322                                                            |
-| Award                                                | <blank>                    | j64                                                             |
-| AWARD                                                | <blank>                    | j64                                                             |
-| Award                                                | <blank>                    | lkw peter                                                       |
-| Award                                                | <blank>                    | lkwpeter                                                        |
-| AWARD                                                | <blank>                    | lkw peter                                                       |
-| AWARD                                                | <blank>                    | lkwpeter                                                        |
-| Award                                                | <blank>                    | PASSWORD                                                        |
-| AWARD                                                | <blank>                    | PASSWORD                                                        |
-| Award                                                | <blank>                    | SER                                                             |
-| AWARD                                                | <blank>                    | SER                                                             |
-| Award                                                | <blank>                    | setup                                                           |
-| AWARD                                                | <blank>                    | setup                                                           |
-| Award                                                | <blank>                    | SKY_FOX                                                         |
-| AWARD                                                | <blank>                    | SKY_FOX                                                         |
-| AWARD                                                | <blank>                    | SW_AWARD                                                        |
-| Award                                                | <blank>                    | SWITCHES_SW                                                     |
-| AWARD                                                | <blank>                    | SWITCHES_SW                                                     |
-| Award                                                | <blank>                    | Sxyz                                                            |
-| AWARD                                                | <blank>                    | Sxyz                                                            |
-| Award                                                | <blank>                    | SY_MB                                                           |
-| Award                                                | <blank>                    | SZYX                                                            |
-| AWARD                                                | <blank>                    | SZYX                                                            |
-| Award                                                | <blank>                    | t0ch20x                                                         |
-| AWARD                                                | <blank>                    | t0ch20x                                                         |
-| Award                                                | <blank>                    | t0ch88                                                          |
-| AWARD                                                | <blank>                    | t0ch88                                                          |
-| Award                                                | <blank>                    | TTPTHA                                                          |
-| AWARD                                                | <blank>                    | TTPTHA                                                          |
-| Award                                                | <blank>                    | TzqF                                                            |
-| AWARD                                                | <blank>                    | TzqF                                                            |
-| Award                                                | <blank>                    | wodj                                                            |
-| AWARD                                                | <blank>                    | wodj                                                            |
-| AWARD                                                | <blank>                    | ZAAADA                                                          |
-| Award                                                | <blank>                    | zbaaaca                                                         |
-| AWARD                                                | <blank>                    | zbaaaca                                                         |
-| AWARD                                                | <blank>                    | zjaaadc                                                         |
-| Axis                                                 | <blank>                    | <blank>                                                         |
+| Award                                                | -                          | 1322222                                                         |
+| AWARD                                                | -                          | 1322222                                                         |
+| Award                                                | -                          | 256256                                                          |
+| AWARD                                                | -                          | 256256                                                          |
+| AWARD                                                | -                          | 589589                                                          |
+| AWARD                                                | -                          | 589721                                                          |
+| Award                                                | -                          | admin                                                           |
+| AWARD                                                | -                          | admin                                                           |
+| Award                                                | -                          | alfarome                                                        |
+| AWARD                                                | -                          | alfarome                                                        |
+| Award                                                | -                          | aLLy                                                            |
+| AWARD                                                | -                          | aLLy                                                            |
+| Award                                                | -                          | aPAf                                                            |
+| AWARD                                                | -                          | aPAf                                                            |
+| Award                                                | -                          | ?award                                                          |
+| Award                                                | -                          | award                                                           |
+| AWARD                                                | -                          | ?award                                                          |
+| AWARD                                                | -                          | award_?                                                         |
+| AWARD                                                | -                          | Award                                                           |
+| AWARD                                                | -                          | award_ps                                                        |
+| AWARD                                                | -                          | AWARD_PW                                                        |
+| Award                                                | -                          | AWARD_SW                                                        |
+| AWARD                                                | -                          | award.sw                                                        |
+| AWARD                                                | -                          | AWARD SW                                                        |
+| AWARD                                                | -                          | AWARD?SW                                                        |
+| AWARD                                                | -                          | AWARD_SW                                                        |
+| Award                                                | -                          | awkward                                                         |
+| AWARD                                                | -                          | awkward                                                         |
+| Award                                                | -                          | BIOS                                                            |
+| AWARD                                                | -                          | BIOS                                                            |
+| Award                                                | -                          | biosstar                                                        |
+| AWARD                                                | -                          | biosstar                                                        |
+| Award                                                | -                          | biostar                                                         |
+| AWARD                                                | -                          | biostar                                                         |
+| AWARD                                                | -                          | -                                                               |
+| Award                                                | -                          | CONCAT                                                          |
+| AWARD                                                | -                          | CONCAT                                                          |
+| Award                                                | -                          | CONDO                                                           |
+| AWARD                                                | -                          | condo                                                           |
+| AWARD                                                | -                          | djonet                                                          |
+| AWARD                                                | -                          | efmukl                                                          |
+| Award                                                | -                          | g6PJ                                                            |
+| AWARD                                                | -                          | g6PJ                                                            |
+| Award                                                | -                          | h6BB                                                            |
+| AWARD                                                | -                          | h6BB                                                            |
+| Award                                                | -                          | HELGA-S                                                         |
+| AWARD                                                | -                          | HELGA-S                                                         |
+| Award                                                | -                          | HEWITT RAND                                                     |
+| AWARD                                                | -                          | HEWITT RAND                                                     |
+| Award                                                | -                          | HLT                                                             |
+| AWARD                                                | -                          | HLT                                                             |
+| Award                                                | -                          | j09F                                                            |
+| AWARD                                                | -                          | j09F                                                            |
+| Award                                                | -                          | j256                                                            |
+| AWARD                                                | -                          | j256                                                            |
+| Award                                                | -                          | j262                                                            |
+| AWARD                                                | -                          | j262                                                            |
+| Award                                                | -                          | j322                                                            |
+| AWARD                                                | -                          | j322                                                            |
+| Award                                                | -                          | j64                                                             |
+| AWARD                                                | -                          | j64                                                             |
+| Award                                                | -                          | lkw peter                                                       |
+| Award                                                | -                          | lkwpeter                                                        |
+| AWARD                                                | -                          | lkw peter                                                       |
+| AWARD                                                | -                          | lkwpeter                                                        |
+| Award                                                | -                          | PASSWORD                                                        |
+| AWARD                                                | -                          | PASSWORD                                                        |
+| Award                                                | -                          | SER                                                             |
+| AWARD                                                | -                          | SER                                                             |
+| Award                                                | -                          | setup                                                           |
+| AWARD                                                | -                          | setup                                                           |
+| Award                                                | -                          | SKY_FOX                                                         |
+| AWARD                                                | -                          | SKY_FOX                                                         |
+| AWARD                                                | -                          | SW_AWARD                                                        |
+| Award                                                | -                          | SWITCHES_SW                                                     |
+| AWARD                                                | -                          | SWITCHES_SW                                                     |
+| Award                                                | -                          | Sxyz                                                            |
+| AWARD                                                | -                          | Sxyz                                                            |
+| Award                                                | -                          | SY_MB                                                           |
+| Award                                                | -                          | SZYX                                                            |
+| AWARD                                                | -                          | SZYX                                                            |
+| Award                                                | -                          | t0ch20x                                                         |
+| AWARD                                                | -                          | t0ch20x                                                         |
+| Award                                                | -                          | t0ch88                                                          |
+| AWARD                                                | -                          | t0ch88                                                          |
+| Award                                                | -                          | TTPTHA                                                          |
+| AWARD                                                | -                          | TTPTHA                                                          |
+| Award                                                | -                          | TzqF                                                            |
+| AWARD                                                | -                          | TzqF                                                            |
+| Award                                                | -                          | wodj                                                            |
+| AWARD                                                | -                          | wodj                                                            |
+| AWARD                                                | -                          | ZAAADA                                                          |
+| Award                                                | -                          | zbaaaca                                                         |
+| AWARD                                                | -                          | zbaaaca                                                         |
+| AWARD                                                | -                          | zjaaadc                                                         |
+| Axis                                                 | -                          | -                                                               |
 | Axis Communications                                  | root                       | pass                                                            |
 | Axis                                                 | root                       | pass                                                            |
 | axis (web)                                           | root                       | admin                                                           |
 | axis (web)                                           | root                       | pass                                                            |
-| AXUS                                                 | <blank>                    | 0                                                               |
+| AXUS                                                 | -                          | 0                                                               |
 | Axway                                                | setup                      | setup                                                           |
 | Aztech                                               | admin                      | admin                                                           |
 | Aztech                                               | isp                        | isp                                                             |
 | Aztech                                               | root                       | admin                                                           |
 | backtrack                                            | root                       | toor                                                            |
 | Barco,Inc.                                           | admin                      | admin                                                           |
-| Barco,Inc.                                           | <blank>                    | clickshare                                                      |
+| Barco,Inc.                                           | -                          | clickshare                                                      |
 | Barracuda                                            | admin                      | admin                                                           |
 | Barracuda                                            | ssladmin                   | ssladmin                                                        |
 | Barracuda (web)                                      | admin                      | admin                                                           |
 | Barracuda (web)                                      | ssladmin                   | ssladmin                                                        |
 | basler (web)                                         | admin                      | admin                                                           |
 | Bausch Datacom                                       | admin                      | epicrouter                                                      |
-| Bay Networks                                         | <blank>                    | NetICs                                                          |
-| Bay Networks                                         | Manager                    | <blank>                                                         |
+| Bay Networks                                         | -                          | NetICs                                                          |
+| Bay Networks                                         | Manager                    | -                                                               |
 | Bay Networks                                         | security                   | security                                                        |
-| Bay Networks                                         | User                       | <blank>                                                         |
-| BBR-4MG and                                          | root                       | <blank>                                                         |
+| Bay Networks                                         | User                       | -                                                               |
+| BBR-4MG and                                          | root                       | -                                                               |
 | BEA                                                  | system                     | weblogic                                                        |
 | BECU                                                 | musi1921                   | Musii%1921                                                      |
 | Beetel                                               | admin                      | admin                                                           |
 | Beetel                                               | admin                      | password                                                        |
-| Belkin                                               | admin                      | <blank>                                                         |
-| Belkin                                               | <blank>                    | admin                                                           |
-| Belkin                                               | <blank>                    | MiniAP                                                          |
+| Belkin                                               | admin                      | -                                                               |
+| Belkin                                               | -                          | admin                                                           |
+| Belkin                                               | -                          | MiniAP                                                          |
 | Benq                                                 | admin                      | admin                                                           |
 | BestPractical                                        | root                       | password                                                        |
 | Best Practical Solutions                             | root                       | password                                                        |
 | Bewan                                                | bewan                      | bewan                                                           |
 | bhu (ssh)                                            | admin                      | admin                                                           |
 | Billion                                              | admin                      | admin                                                           |
-| Billion                                              | <blank>                    | <blank>                                                         |
+| Billion                                              | -                          | -                                                               |
 | billion (ssh)                                        | admin                      | admin                                                           |
 | Bintec                                               | admin                      | bintec                                                          |
 | BinTec                                               | admin                      | bintec                                                          |
 | Bintec                                               | admin                      | funkwerk                                                        |
 | BinTec                                               | Admin                      | No                                                              |
-| BinTec                                               | <blank>                    | snmp-Trap                                                       |
-| Biodata                                              | <blank>                    | Babylon                                                         |
+| BinTec                                               | -                          | snmp-Trap                                                       |
+| Biodata                                              | -                          | Babylon                                                         |
 | Biodata                                              | config                     | biodata                                                         |
-| Biostar                                              | <blank>                    | Biostar                                                         |
-| Biostar                                              | <blank>                    | Q54arwms                                                        |
+| Biostar                                              | -                          | Biostar                                                         |
+| Biostar                                              | -                          | Q54arwms                                                        |
 | Biscom                                               | admin                      | admin                                                           |
 | BizDesign                                            | Admin                      | ImageFolio                                                      |
 | BLACKBOX                                             | Administrator              | public                                                          |
@@ -513,18 +513,18 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | BMC Software                                         | Best1_User                 | BackupU$r                                                       |
 | BNI                                                  | USER                       | USER                                                            |
 | Bomgar                                               | admin                      | password                                                        |
-| Borland                                              | <blank>                    | <blank>                                                         |
+| Borland                                              | -                          | -                                                               |
 | Borland                                              | politically                | correct                                                         |
 | Bosch                                                | live                       | live                                                            |
 | Bosch RPS (mssql)                                    | sa                         | RPSsql12345                                                     |
 | Bosch                                                | service                    | service                                                         |
 | Bosch                                                | user                       | user                                                            |
-| boson                                                | <blank>                    | <blank>                                                         |
-| Breezecom                                            | <blank>                    | <blank>                                                         |
-| Breezecom                                            | <blank>                    | Helpdesk                                                        |
-| Breezecom                                            | <blank>                    | laflaf                                                          |
-| Breezecom                                            | <blank>                    | Master                                                          |
-| Breezecom                                            | <blank>                    | Super                                                           |
+| boson                                                | -                          | -                                                               |
+| Breezecom                                            | -                          | -                                                               |
+| Breezecom                                            | -                          | Helpdesk                                                        |
+| Breezecom                                            | -                          | laflaf                                                          |
+| Breezecom                                            | -                          | Master                                                          |
+| Breezecom                                            | -                          | Super                                                           |
 | brickcom (web)                                       | admin                      | admin                                                           |
 | Broadlogic                                           | admin                      | admin                                                           |
 | Broadlogic                                           | installer                  | installer                                                       |
@@ -537,45 +537,45 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Brocade                                              | root                       | Serv4EMC                                                        |
 | Brocade                                              | user                       | password                                                        |
 | Brother                                              | admin                      | access                                                          |
-| Brother                                              | <blank>                    | access                                                          |
+| Brother                                              | -                          | access                                                          |
 | Brother HL Series (printer)                          | admin                      | access                                                          |
 | Brother Industries Ltd.                              | admin                      | access                                                          |
-| Brother Industries Ltd.                              | <blank>                    | 00000000                                                        |
-| Brother Industries Ltd.                              | <blank>                    | 12345678                                                        |
+| Brother Industries Ltd.                              | -                          | 00000000                                                        |
+| Brother Industries Ltd.                              | -                          | 12345678                                                        |
 | BT                                                   | admin                      | admin                                                           |
-| Buffalo/MELCO                                        | root                       | <blank>                                                         |
-| Buffalo                                              | root                       | <blank>                                                         |
+| Buffalo/MELCO                                        | root                       | -                                                               |
+| Buffalo                                              | root                       | -                                                               |
 | Buffalo Technology                                   | admin                      | password                                                        |
 | Busybox                                              | admin                      | admin                                                           |
-| CA APM Team Center (web)                             | Admin                      | <blank>                                                         |
+| CA APM Team Center (web)                             | Admin                      | -                                                               |
 | CA APM Team Center (web)                             | Guest                      | Guest                                                           |
 | Cable And Wireless                                   | admin                      | 1234                                                            |
-| Cabletron                                            | <blank>                    | <blank>                                                         |
-| Cabletron                                            | netman                     | <blank>                                                         |
+| Cabletron                                            | -                          | -                                                               |
+| Cabletron                                            | netman                     | -                                                               |
 | caldera                                              | admin                      | admin                                                           |
 | CA NetQoS (web)                                      | nqadmin                    | nq                                                              |
 | CA NetQoS (web)                                      | nquser                     | nq                                                              |
-| Canon                                                | <blank>                    | 0                                                               |
+| Canon                                                | -                          | 0                                                               |
 | Canon/Brother                                        | 7654321                    | 7654321                                                         |
 | canon (web)                                          | root                       | camera                                                          |
 | canyon                                               | Administrator              | admin                                                           |
-| Capricorn Infotech India                             | <blank>                    | 1234567890                                                      |
+| Capricorn Infotech India                             | -                          | 1234567890                                                      |
 | CA Process Automation                                | pamadmin                   | pamadmin                                                        |
 | CareStream Health                                    | KeyOperator                | DV5800                                                          |
 | CareStream Health                                    | LocalService               | DV5800                                                          |
 | Carsten Schmitz                                      | admin                      | password                                                        |
-| Cayman                                               | admin                      | <blank>                                                         |
+| Cayman                                               | admin                      | -                                                               |
 | Cayman                                               | admin                      | (serial number)                                                 |
-| Cayman                                               | }                          | <blank>                                                         |
-| Cayman                                               | <blank>                    | <blank>                                                         |
+| Cayman                                               | }                          | -                                                               |
+| Cayman                                               | -                          | -                                                               |
 | CCH (mssql)                                          | sa                         | PracticeUser1                                                   |
 | Celerity                                             | mediator                   | mediator                                                        |
 | Celerity                                             | root                       | Mua'dib                                                         |
 | Cellit                                               | cellit                     | cellit                                                          |
 | Centreon WebUI                                       | admin                      | centreon                                                        |
 | Ceragon Networks                                     | root                       | tooridu                                                         |
-| CGI World                                            | <blank>                    | protection                                                      |
-| Chase Research                                       | <blank>                    | iolan                                                           |
+| CGI World                                            | -                          | protection                                                      |
+| Chase Research                                       | -                          | iolan                                                           |
 | Checkpoint                                           | admin                      | abc123                                                          |
 | Checkpoint                                           | admin                      | admin                                                           |
 | Check Point                                          | admin                      | admin                                                           |
@@ -586,7 +586,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Ciphertrust                                          | admin                      | password                                                        |
 | CipherTrust                                          | admin                      | password                                                        |
 | Cisco                                                | admin                      | admin                                                           |
-| Cisco                                                | admin                      | <blank>                                                         |
+| Cisco                                                | admin                      | -                                                               |
 | Cisco                                                | admin                      | changeme                                                        |
 | Cisco                                                | admin                      | cisco                                                           |
 | Cisco                                                | admin                      | default                                                         |
@@ -596,66 +596,66 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Cisco                                                | admin                      | tsunami                                                         |
 | Cisco Aironet (ssh)                                  | Cisco                      | Cisco                                                           |
 | Cisco-Arrowpoint                                     | admin                      | system                                                          |
-| Cisco                                                | bbsd-client                | <blank>                                                         |
+| Cisco                                                | bbsd-client                | -                                                               |
 | Cisco                                                | bbsd-client                | changeme2                                                       |
-| Cisco                                                | <blank>                    | <blank>                                                         |
-| Cisco                                                | <blank>                    | c                                                               |
-| Cisco                                                | <blank>                    | cable-docsis                                                    |
-| Cisco                                                | <blank>                    | cc                                                              |
-| Cisco                                                | <blank>                    | changeit                                                        |
-| Cisco                                                | <blank>                    | cisco                                                           |
-| Cisco                                                | <blank>                    | _Cisco                                                          |
-| Cisco                                                | <blank>                    | Cisco                                                           |
-| Cisco                                                | <blank>                    | Cisco router                                                    |
-| Cisco                                                | <blank>                    | ILMI                                                            |
-| Cisco                                                | <blank>                    | letmein                                                         |
-| Cisco                                                | <blank>                    | public/private/secret                                           |
-| Cisco                                                | <blank>                    | riverhead                                                       |
+| Cisco                                                | -                          | -                                                               |
+| Cisco                                                | -                          | c                                                               |
+| Cisco                                                | -                          | cable-docsis                                                    |
+| Cisco                                                | -                          | cc                                                              |
+| Cisco                                                | -                          | changeit                                                        |
+| Cisco                                                | -                          | cisco                                                           |
+| Cisco                                                | -                          | _Cisco                                                          |
+| Cisco                                                | -                          | Cisco                                                           |
+| Cisco                                                | -                          | Cisco router                                                    |
+| Cisco                                                | -                          | ILMI                                                            |
+| Cisco                                                | -                          | letmein                                                         |
+| Cisco                                                | -                          | public/private/secret                                           |
+| Cisco                                                | -                          | riverhead                                                       |
 | Cisco                                                | bubba                      | (unknown)                                                       |
 | Cisco                                                | CISCO15                    | otbu+1                                                          |
-| Cisco                                                | cisco                      | <blank>                                                         |
+| Cisco                                                | cisco                      | -                                                               |
 | Cisco                                                | cisco                      | cisco                                                           |
 | Cisco                                                | Cisco                      | Cisco                                                           |
 | Cisco                                                | cmaker                     | cmaker                                                          |
 | Cisco Collaboration Endpoint (general)               | cisco                      | admin                                                           |
-| Cisco                                                | EAdmin                     | <blank>                                                         |
-| Cisco                                                | enable                     | <blank>                                                         |
+| Cisco                                                | EAdmin                     | -                                                               |
+| Cisco                                                | enable                     | -                                                               |
 | Cisco                                                | enable                     | cisco                                                           |
 | Cisco                                                | End User                   | 7936                                                            |
-| Cisco                                                | ESubscriber                | <blank>                                                         |
-| Cisco Guard (snmp)                                   | <blank>                    | riverhead                                                       |
-| Cisco                                                | guest                      | <blank>                                                         |
+| Cisco                                                | ESubscriber                | -                                                               |
+| Cisco Guard (snmp)                                   | -                          | riverhead                                                       |
+| Cisco                                                | guest                      | -                                                               |
 | Cisco                                                | hsa                        | hsadb                                                           |
 | Cisco                                                | netrangr                   | attack                                                          |
 | Cisco                                                | pnadmin                    | pnadmin                                                         |
 | Cisco                                                | praisenetwork              | perfectpraise                                                   |
 | Cisco                                                | private ReadWrite access   | secret                                                          |
 | Cisco                                                | public ReadOnly access     | secret                                                          |
-| Cisco                                                | ripeop                     | <blank>                                                         |
+| Cisco                                                | ripeop                     | -                                                               |
 | Cisco                                                | root                       | attack                                                          |
 | Cisco                                                | root                       | blender                                                         |
 | Cisco                                                | root                       | Cisco                                                           |
 | Cisco                                                | root                       | password                                                        |
 | Cisco                                                | root                       | secur4u                                                         |
-| Cisco                                                | sa                         | <blank>                                                         |
+| Cisco                                                | sa                         | -                                                               |
 | Cisco (ssh)                                          | cisco                      | cisco                                                           |
 | Cisco (ssh)                                          | pix                        | cisco                                                           |
 | Cisco Systems (general)                              | cisco                      | cisco                                                           |
 | Cisco                                                | technician                 | 2 + last 4 of Audio                                             |
-| Cisco                                                | UAMIS_                     | <blank>                                                         |
-| Cisco                                                | UNITY_                     | <blank>                                                         |
-| Cisco                                                | UOMNI_                     | <blank>                                                         |
-| Cisco                                                | UVPIM_                     | <blank>                                                         |
+| Cisco                                                | UAMIS_                     | -                                                               |
+| Cisco                                                | UNITY_                     | -                                                               |
+| Cisco                                                | UOMNI_                     | -                                                               |
+| Cisco                                                | UVPIM_                     | -                                                               |
 | Cisco                                                | uwmadmin                   | password                                                        |
 | Cisco                                                | wlseuser                   | wlsepassword                                                    |
 | Cisco                                                | wlse                       | wlsedb                                                          |
-| Citel                                                | <blank>                    | citel                                                           |
+| Citel                                                | -                          | citel                                                           |
 | Citel                                                | citel                      | password                                                        |
 | Citrix Systems,Inc.                                  | nsroot                     | nsroot                                                          |
 | Citrix Systems,Inc.                                  | root                       | rootadmin                                                       |
 | Citrix Systems (web)                                 | nsroot                     | nsroot                                                          |
 | Citrix Systems (web)                                 | root                       | rootadmin                                                       |
-| Claris                                               | <blank>                    | familymacintosh                                                 |
+| Claris                                               | -                          | familymacintosh                                                 |
 | ClearOne Communications                              | clearone                   | converge                                                        |
 | ClearOne Communications                              | ClearOne                   | RAV                                                             |
 | ClearPass (general)                                  | admin                      | eTIPS123                                                        |
@@ -667,15 +667,15 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Colubris                                             | admin                      | admin                                                           |
 | Colubris Networks                                    | admin                      | admin                                                           |
 | COM3                                                 | admin                      | admin                                                           |
-| Comcast Home Networking                              | comcast                    | <blank>                                                         |
+| Comcast Home Networking                              | comcast                    | -                                                               |
 | Comcast SMC                                          | cusadmin                   | CantTouchThis                                                   |
 | Comcast SMC                                          | cusadmin                   | highspeed                                                       |
 | Comersus                                             | admin                      | dmr99                                                           |
 | Comodo Group,Inc                                     | mydlp                      | mydlp                                                           |
 | Compaq                                               | administrator              | administrator                                                   |
-| Compaq                                               | anonymous                  | <blank>                                                         |
-| Compaq                                               | <blank>                    | <blank>                                                         |
-| Compaq                                               | <blank>                    | Compaq                                                          |
+| Compaq                                               | anonymous                  | -                                                               |
+| Compaq                                               | -                          | -                                                               |
+| Compaq                                               | -                          | Compaq                                                          |
 | Compaq                                               | operator                   | operator                                                        |
 | Compaq                                               | PFCUser                    | 240653C9467E45                                                  |
 | Compaq                                               | root                       | manager                                                         |
@@ -685,48 +685,48 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Compualynx                                           | administrator              | asecret                                                         |
 | Comtrend                                             | admin                      | 1234                                                            |
 | Comtrend                                             | admin                      | admin                                                           |
-| Comtrend                                             | admin                      | <blank>                                                         |
+| Comtrend                                             | admin                      | -                                                               |
 | comtrend (ssh)                                       | admin                      | admin                                                           |
 | Conceptronic                                         | admin                      | 1234                                                            |
 | Conceptronic                                         | admin                      | password                                                        |
 | Conceptronic                                         | anonymous                  | password                                                        |
-| Concord                                              | <blank>                    | last                                                            |
+| Concord                                              | -                          | last                                                            |
 | Conexant                                             | admin                      | amigosw1                                                        |
 | Conexant                                             | admin                      | conexant                                                        |
 | Conexant                                             | admin                      | epicrouter                                                      |
 | Conexant                                             | Administrator              | admin                                                           |
 | Conexant                                             | admin                      | password                                                        |
-| Conexant                                             | <blank>                    | admin                                                           |
-| Conexant                                             | <blank>                    | epicrouter                                                      |
+| Conexant                                             | -                          | admin                                                           |
+| Conexant                                             | -                          | epicrouter                                                      |
 | Conitec                                              | Adam                       | 29111991                                                        |
-| Control4                                             | <blank>                    | ducati900ss                                                     |
+| Control4                                             | -                          | ducati900ss                                                     |
 | Control4                                             | root                       | t0talc0ntr0l4!                                                  |
-| Corecess                                             | admin                      | <blank>                                                         |
+| Corecess                                             | admin                      | -                                                               |
 | Corecess                                             | Administrator              | admin                                                           |
 | Corecess                                             | corecess                   | corecess                                                        |
 | CoronaMatrix                                         | admin                      | admin                                                           |
 | Couchdb                                              | admin                      | password                                                        |
 | Covertix                                             | Admin                      | Admin                                                           |
-| Creative                                             | <blank>                    | <blank>                                                         |
-| Crossbeam                                            | <blank>                    | x40rocks                                                        |
+| Creative                                             | -                          | -                                                               |
+| Crossbeam                                            | -                          | x40rocks                                                        |
 | crt                                                  | egcr                       | ergc                                                            |
-| Crystalview                                          | <blank>                    | Crystal                                                         |
-| CTX International                                    | <blank>                    | CTX_123                                                         |
-| cuproplus                                            | <blank>                    | <blank>                                                         |
+| Crystalview                                          | -                          | Crystal                                                         |
+| CTX International                                    | -                          | CTX_123                                                         |
+| cuproplus                                            | -                          | -                                                               |
 | cyberguard                                           | cgadmin                    | cgadmin                                                         |
 | Cyberguard                                           | cgadmin                    | cgadmin                                                         |
-| CyberMax                                             | <blank>                    | Congress                                                        |
+| CyberMax                                             | -                          | Congress                                                        |
 | CyberPower                                           | cyber                      | cyber                                                           |
 | CyberPower                                           | device                     | cyber                                                           |
-| Cyclades                                             | root                       | <blank>                                                         |
+| Cyclades                                             | root                       | -                                                               |
 | Cyclades                                             | root                       | tslinux                                                         |
 | Cyclades                                             | super                      | surt                                                            |
-| D9287ar                                              | Clarissa                   | <blank>                                                         |
-| Daewoo                                               | <blank>                    | Daewuu                                                          |
+| D9287ar                                              | Clarissa                   | -                                                               |
+| Daewoo                                               | -                          | Daewuu                                                          |
 | Dallas Semiconductors                                | root                       | tini                                                            |
 | darkman                                              | ioFTPD                     | ioFTPD                                                          |
-| Dassault Systemes                                    | Test Everything            | <blank>                                                         |
-| Datacom                                              | <blank>                    | letmein                                                         |
+| Dassault Systemes                                    | Test Everything            | -                                                               |
+| Datacom                                              | -                          | letmein                                                         |
 | Datacom                                              | sysadm                     | sysadm                                                          |
 | Data General                                         | operator                   | operator                                                        |
 | Data General                                         | op                         | op                                                              |
@@ -734,14 +734,14 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | DataStax OpsCenter 6.0.x (web)                       | admin                      | admin                                                           |
 | Datawizard.net                                       | anonymous                  | any                                                             |
 | Datawizard.net                                       | anonymous                  | any@                                                            |
-| DataWizard Technologies Inc.                         | anonymous                  | <blank>                                                         |
+| DataWizard Technologies Inc.                         | anonymous                  | -                                                               |
 | DataWizard Technologies Inc.                         | test                       | test                                                            |
 | Davolink                                             | user                       | user                                                            |
 | Davox                                                | admin                      | admin                                                           |
 | Davox                                                | davox                      | davox                                                           |
 | Davox                                                | root                       | davox                                                           |
-| Davox                                                | sa                         | <blank>                                                         |
-| Daytek                                               | <blank>                    | Daytec                                                          |
+| Davox                                                | sa                         | -                                                               |
+| Daytek                                               | -                          | Daytec                                                          |
 | db2 (db2)                                            | ADONIS                     | BPMS                                                            |
 | db2 (db2)                                            | dasusr1                    | dasusr1                                                         |
 | db2 (db2)                                            | db2admin                   | db2admin                                                        |
@@ -750,18 +750,18 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | db2 (db2)                                            | db2inst1                   | db2pass                                                         |
 | db2 (db2)                                            | db2inst1                   | db2password                                                     |
 | db2 (db2)                                            | db2inst1                   | db2pw                                                           |
-| Debian                                               | <blank>                    | tatercounter2000                                                |
+| Debian                                               | -                          | tatercounter2000                                                |
 | decnet                                               | operator                   | admin                                                           |
 | Deerfield                                            | MDaemon                    | MServer                                                         |
 | Dell                                                 | admin                      | admin                                                           |
-| Dell                                                 | Admin                      | <blank>                                                         |
+| Dell                                                 | Admin                      | -                                                               |
 | Dell                                                 | Administrator              | storageserver                                                   |
 | Dell                                                 | admin                      | password                                                        |
-| Dell                                                 | <blank>                    | 1RRWTTOOI                                                       |
-| Dell                                                 | <blank>                    | admin                                                           |
-| Dell                                                 | <blank>                    | Dell                                                            |
-| Dell                                                 | <blank>                    | Fireport                                                        |
-| Dell                                                 | <blank>                    | nz0u4bbe                                                        |
+| Dell                                                 | -                          | 1RRWTTOOI                                                       |
+| Dell                                                 | -                          | admin                                                           |
+| Dell                                                 | -                          | Dell                                                            |
+| Dell                                                 | -                          | Fireport                                                        |
+| Dell                                                 | -                          | nz0u4bbe                                                        |
 | DELL IDARC (web)                                     | root                       | calvin                                                          |
 | Dell iDRAC (web)                                     | root                       | calvin                                                          |
 | Dell                                                 | rapport                    | r@p8p0r+                                                        |
@@ -769,19 +769,19 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Dell                                                 | root                       | wyse                                                            |
 | Dell                                                 | VNC                        | winterm                                                         |
 | Demarc                                               | admin                      | my_DEMARC                                                       |
-| Deutsche Telekom                                     | admin                      | <blank>                                                         |
-| Deutsche Telekom                                     | <blank>                    | 0                                                               |
-| Develcon                                             | <blank>                    | BRIDGE                                                          |
-| Develcon                                             | <blank>                    | password                                                        |
-| Dictaphone                                           | NETOP                      | <blank>                                                         |
+| Deutsche Telekom                                     | admin                      | -                                                               |
+| Deutsche Telekom                                     | -                          | 0                                                               |
+| Develcon                                             | -                          | BRIDGE                                                          |
+| Develcon                                             | -                          | password                                                        |
+| Dictaphone                                           | NETOP                      | -                                                               |
 | Dictaphone                                           | NETWORK                    | NETWORK                                                         |
 | Dictaphone                                           | PBX                        | PBX                                                             |
-| digicom                                              | Admin                      | <blank>                                                         |
+| digicom                                              | Admin                      | -                                                               |
 | Digicom                                              | admin                      | michelangelo                                                    |
 | DIGICOM                                              | root                       | admin                                                           |
 | Digicom                                              | user                       | password                                                        |
-| Digicorp                                             | <blank>                    | BRIDGE                                                          |
-| Digicorp                                             | <blank>                    | password                                                        |
+| Digicorp                                             | -                          | BRIDGE                                                          |
+| Digicorp                                             | -                          | password                                                        |
 | Digicraft Software                                   | Yak                        | asd123                                                          |
 | Digital Equipment                                    | 1.1                        | SYSTEM                                                          |
 | Digital Equipment                                    | 1                          | manager                                                         |
@@ -800,12 +800,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Digital Equipment                                    | ALLINONE                   | ALLINONE                                                        |
 | Digital Equipment                                    | BACKUP                     | BACKUP                                                          |
 | Digital Equipment                                    | BATCH                      | BATCH                                                           |
-| Digital Equipment                                    | <blank>                    | 1                                                               |
-| Digital Equipment                                    | <blank>                    | access                                                          |
-| Digital Equipment                                    | <blank>                    | ACCESS                                                          |
-| Digital Equipment                                    | <blank>                    | komprie                                                         |
-| Digital Equipment                                    | <blank>                    | system                                                          |
-| Digital Equipment                                    | <blank>                    | SYSTEM                                                          |
+| Digital Equipment                                    | -                          | 1                                                               |
+| Digital Equipment                                    | -                          | access                                                          |
+| Digital Equipment                                    | -                          | ACCESS                                                          |
+| Digital Equipment                                    | -                          | komprie                                                         |
+| Digital Equipment                                    | -                          | system                                                          |
+| Digital Equipment                                    | -                          | SYSTEM                                                          |
 | Digital Equipment                                    | boss                       | boss                                                            |
 | Digital Equipment                                    | DCL                        | DCL                                                             |
 | Digital Equipment                                    | DECMAIL                    | DECMAIL                                                         |
@@ -867,27 +867,27 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Digital Equipment                                    | VAX                        | VAX                                                             |
 | Digital Equipment                                    | VMS                        | VMS                                                             |
 | Digium,Inc.                                          | admin                      | password                                                        |
-| Divar                                                | admin                      | <blank>                                                         |
-| Divar                                                | viewer                     | <blank>                                                         |
+| Divar                                                | admin                      | -                                                               |
+| Divar                                                | viewer                     | -                                                               |
 | Dlink                                                | admin                      | admin                                                           |
 | D-Link                                               | admin                      | admin                                                           |
-| Dlink                                                | admin                      | <blank>                                                         |
-| D-Link                                               | admin                      | <blank>                                                         |
-| D-Link                                               | Admin                      | <blank>                                                         |
+| Dlink                                                | admin                      | -                                                               |
+| D-Link                                               | admin                      | -                                                               |
+| D-Link                                               | Admin                      | -                                                               |
 | D-Link                                               | admin                      | gvt12345                                                        |
 | D-Link                                               | admin                      | password                                                        |
 | Dlink                                                | admin                      | public                                                          |
 | D-Link                                               | admin                      | public                                                          |
 | D-Link                                               | admin                      | year2000                                                        |
 | D-Link                                               | Alphanetworks              | wrgg15_di524                                                    |
-| D-Link                                               | <blank>                    | admin                                                           |
-| D-Link                                               | <blank>                    | <blank>                                                         |
-| D-Link                                               | <blank>                    | private                                                         |
-| D-Link                                               | <blank>                    | public                                                          |
+| D-Link                                               | -                          | admin                                                           |
+| D-Link                                               | -                          | -                                                               |
+| D-Link                                               | -                          | private                                                         |
+| D-Link                                               | -                          | public                                                          |
 | D-Link                                               | D-Link                     | D-Link                                                          |
 | D-Link                                               | dont need one              | admin                                                           |
 | D-Link                                               | root                       | admin                                                           |
-| D-Link                                               | user                       | <blank>                                                         |
+| D-Link                                               | user                       | -                                                               |
 | Dlink (web)                                          | 1234                       | 1234                                                            |
 | Dlink (web)                                          | admin                      | admin                                                           |
 | Dlink (web)                                          | root                       | 12345                                                           |
@@ -895,12 +895,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | DotNetNuke Corporation                               | admin                      | dnnadmin                                                        |
 | DotNetNuke Corporation                               | host                       | dnnhost                                                         |
 | Draytek                                              | admin                      | admin                                                           |
-| Draytek                                              | admin                      | <blank>                                                         |
-| Draytek Corp                                         | admin                      | <blank>                                                         |
+| Draytek                                              | admin                      | -                                                               |
+| Draytek Corp                                         | admin                      | -                                                               |
 | Draytek                                              | draytek                    | 1234                                                            |
 | Draytek                                              | Draytek                    | 1234                                                            |
 | drupal.org                                           | admin                      | admin                                                           |
-| Ducati Motor Holding                                 | <blank>                    | Last 4 digits of VIN                                            |
+| Ducati Motor Holding                                 | -                          | Last 4 digits of VIN                                            |
 | Duhua (telnet)                                       | admin                      | 7ujMko0admin                                                    |
 | Duhua (telnet)                                       | root                       | 7ujMko0admin                                                    |
 | Duhua (telnet)                                       | root                       | vizxv                                                           |
@@ -911,40 +911,40 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Dynalink                                             | admin                      | private                                                         |
 | Dynalink                                             | userNotUsed                | userNotU                                                        |
 | Dynatrace (web)                                      | admin                      | admin                                                           |
-| Dynix Library Systems                                | circ                       | <blank>                                                         |
-| Dynix Library Systems                                | LIBRARY                    | <blank>                                                         |
-| Dynix Library Systems                                | SETUP                      | <blank>                                                         |
+| Dynix Library Systems                                | circ                       | -                                                               |
+| Dynix Library Systems                                | LIBRARY                    | -                                                               |
+| Dynix Library Systems                                | SETUP                      | -                                                               |
 | easyWinArt (mssql)                                   | sa                         | $easyWinArt4                                                    |
 | Eaton                                                | admin                      | admin                                                           |
 | Echelon Corporation                                  | ilon                       | ilon                                                            |
 | E-Con                                                | admin                      | epicrouter                                                      |
 | Edimax                                               | admin                      | 123                                                             |
 | Edimax                                               | admin                      | 1234                                                            |
-| Edimax                                               | admin                      | <blank>                                                         |
+| Edimax                                               | admin                      | -                                                               |
 | Edimax                                               | admin                      | epicrouter                                                      |
 | Edimax                                               | admin                      | password                                                        |
 | Edimax                                               | admin                      | su@psir                                                         |
 | Edimax                                               | edimax                     | software01                                                      |
 | Edimax                                               | guest                      | 1234                                                            |
-| Edimax                                               | guest                      | <blank>                                                         |
-| Efficient                                            | <blank>                    | admin                                                           |
-| Efficient                                            | <blank>                    | <blank>                                                         |
+| Edimax                                               | guest                      | -                                                               |
+| Efficient                                            | -                          | admin                                                           |
+| Efficient                                            | -                          | -                                                               |
 | Efficient                                            | login                      | admin                                                           |
 | Efficient                                            | login                      | password                                                        |
-| Efficient Networks                                   | <blank>                    | 4getme2                                                         |
-| Efficient Networks                                   | <blank>                    | hs7mwxkk                                                        |
+| Efficient Networks                                   | -                          | 4getme2                                                         |
+| Efficient Networks                                   | -                          | hs7mwxkk                                                        |
 | Efficient Networks                                   | login                      | admin                                                           |
 | Efficient                                            | superuser                  | admin                                                           |
 | Efficinet Networks                                   | login                      | admin                                                           |
 | Ektron,Inc.                                          | builtin                    | builtin                                                         |
 | Ektron,Inc.                                          | sa                         | Ektron                                                          |
-| Elasticsearch (web)                                  | <blank>                    | <blank>                                                         |
+| Elasticsearch (web)                                  | -                          | -                                                               |
 | elasticsearch (web)                                  | elastic                    | changeme                                                        |
 | Elron                                                | (hostname/ipaddress)       | sysadmin                                                        |
-| Elsa                                                 | <blank>                    | <blank>                                                         |
-| Elsa                                                 | <blank>                    | cisco                                                           |
+| Elsa                                                 | -                          | -                                                               |
+| Elsa                                                 | -                          | cisco                                                           |
 | eMachines                                            | emaq                       | 4133                                                            |
-| EMC                                                  | admin                      | <blank>                                                         |
+| EMC                                                  | admin                      | -                                                               |
 | EMC                                                  | admin                      | changeme                                                        |
 | EMC                                                  | backuponly                 | backuponly1                                                     |
 | EMC                                                  | backuprestore              | backuprestore1                                                  |
@@ -957,32 +957,32 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Emerson                                              | Admin                      | Emerson1                                                        |
 | Emerson AMS (mssql)                                  | sa                         | 42Emerson42Eme                                                  |
 | Eminent                                              | admin                      | admin                                                           |
-| enCAD                                                | <blank>                    | <blank>                                                         |
+| enCAD                                                | -                          | -                                                               |
 | Endpoint Protector (general)                         | root                       | epp2011                                                         |
 | EnGenius                                             | admin                      | admin                                                           |
 | Enhydra                                              | admin                      | enhydra                                                         |
-| Enox                                                 | <blank>                    | xo11nE                                                          |
-| Enterasys                                            | admin                      | <blank>                                                         |
+| Enox                                                 | -                          | xo11nE                                                          |
+| Enterasys                                            | admin                      | -                                                               |
 | Enterasys                                            | admin                      | netadmin                                                        |
-| Enterasys                                            | <blank>                    | netadmin                                                        |
+| Enterasys                                            | -                          | netadmin                                                        |
 | Enterasys                                            | tiger                      | tiger123                                                        |
 | Entrust                                              | admin                      | admin                                                           |
 | Entrust                                              | websecadm                  | changeme                                                        |
 | EPISD                                                | computer                   | repair                                                          |
 | EPiServer AB                                         | admin                      | store                                                           |
-| Epox                                                 | <blank>                    | central                                                         |
+| Epox                                                 | -                          | central                                                         |
 | eQ-3                                                 | root                       | MuZhlo9n%8!G                                                    |
-| Ericsson ACC                                         | public                     | <blank>                                                         |
+| Ericsson ACC                                         | public                     | -                                                               |
 | Ericsson                                             | admin                      | default                                                         |
-| ericsson                                             | <blank>                    | <blank>                                                         |
-| ericsson                                             | <blank>                    | help                                                            |
+| ericsson                                             | -                          | -                                                               |
+| ericsson                                             | -                          | help                                                            |
 | Ericsson                                             | expert                     | expert                                                          |
 | Ericsson                                             | MD110                      | help                                                            |
 | Ericsson                                             | netman                     | netman                                                          |
 | eSeSIX Computer GmbH                                 | root                       | jstwo                                                           |
 | E-Tech                                               | admin                      | epicrouter                                                      |
 | E-Tech                                               | admin                      | password                                                        |
-| E-Tech                                               | <blank>                    | admin                                                           |
+| E-Tech                                               | -                          | admin                                                           |
 | EverFocus                                            | admin                      | admin                                                           |
 | EverFocus                                            | operator                   | operator                                                        |
 | EverFocus                                            | supervisor                 | supervisor                                                      |
@@ -992,49 +992,49 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Exinda Networks                                      | admin                      | exinda                                                          |
 | Extended Systems                                     | admin                      | admin                                                           |
 | Extended Systems                                     | admin                      | extendnet                                                       |
-| Extreme Networks                                     | admin                      | <blank>                                                         |
-| EyesOfNetwork (snmp)                                 | <blank>                    | EyesOfNetwork                                                   |
+| Extreme Networks                                     | admin                      | -                                                               |
+| EyesOfNetwork (snmp)                                 | -                          | EyesOfNetwork                                                   |
 | EZPhotoSales                                         | admin                      | admin                                                           |
 | eZ Systems                                           | admin                      | publish                                                         |
 | F5                                                   | admin                      | admin                                                           |
-| F5-Networks                                          | <blank>                    | <blank>                                                         |
+| F5-Networks                                          | -                          | -                                                               |
 | F5                                                   | root                       | default                                                         |
-| F5                                                   | support                    | <blank>                                                         |
-| Fastream Technologies                                | root                       | <blank>                                                         |
+| F5                                                   | support                    | -                                                               |
+| Fastream Technologies                                | root                       | -                                                               |
 | Fastwire                                             | fastwire                   | fw                                                              |
 | FatWire                                              | firstsite                  | firstsite                                                       |
 | FatWire                                              | fwadmin                    | xceladmin                                                       |
 | Firebird Project                                     | SYSDBA                     | masterkey                                                       |
 | Firebird                                             | SYSDBA                     | masterkey                                                       |
 | Flowpoint                                            | admin                      | admin                                                           |
-| Flowpoint                                            | <blank>                    | <blank>                                                         |
-| Flowpoint                                            | <blank>                    | password                                                        |
+| Flowpoint                                            | -                          | -                                                               |
+| Flowpoint                                            | -                          | password                                                        |
 | fon                                                  | admin                      | admin                                                           |
-| Fortigate                                            | admin                      | <blank>                                                         |
-| Fortinet                                             | admin                      | <blank>                                                         |
-| Fortinet                                             | <blank>                    | bcpb(serial number of the firewall)                             |
+| Fortigate                                            | admin                      | -                                                               |
+| Fortinet                                             | admin                      | -                                                               |
+| Fortinet                                             | -                          | bcpb(serial number of the firewall)                             |
 | Fortinet                                             | maintainer                 | admin                                                           |
 | Fortinet                                             | maintainer                 | bcpb[SERIAL NO.]                                                |
 | Fortinet                                             | maintainer                 | pbcpbn(add-serial-number)                                       |
-| fortinet (web)                                       | admin                      | <blank>                                                         |
+| fortinet (web)                                       | admin                      | -                                                               |
 | fortinet (web)                                       | maintainer                 | admin                                                           |
 | fortinet (web)                                       | maintainer                 | bcpb+serial#                                                    |
-| Foscam                                               | admin                      | <blank>                                                         |
+| Foscam                                               | admin                      | -                                                               |
 | Foundry Networks                                     | admin                      | admin                                                           |
-| Foundry Networks                                     | <blank>                    | <blank>                                                         |
-| Freetech                                             | <blank>                    | Posterie                                                        |
+| Foundry Networks                                     | -                          | -                                                               |
+| Freetech                                             | -                          | Posterie                                                        |
 | FrontRange Solutions                                 | master                     | access                                                          |
-| ftp (ftp)                                            | anonymous                  | <blank>                                                         |
+| ftp (ftp)                                            | anonymous                  | -                                                               |
 | ftp (ftp)                                            | ftp                        | ftp                                                             |
 | ftp (ftp)                                            | guest                      | guest                                                           |
-| Fujitsu Siemens                                      | <blank>                    | connect                                                         |
+| Fujitsu Siemens                                      | -                          | connect                                                         |
 | Fujitsu Siemens                                      | manage                     | !manage                                                         |
 | Funk Software                                        | admin                      | radius                                                          |
 | Galacticomm                                          | Sysop                      | Sysop                                                           |
-| Gandalf                                              | <blank>                    | console                                                         |
-| Gandalf                                              | <blank>                    | gandalf                                                         |
-| Gandalf                                              | <blank>                    | system                                                          |
-| Gandalf                                              | <blank>                    | xmux                                                            |
+| Gandalf                                              | -                          | console                                                         |
+| Gandalf                                              | -                          | gandalf                                                         |
+| Gandalf                                              | -                          | system                                                          |
+| Gandalf                                              | -                          | xmux                                                            |
 | GarrettCom Magnum Switch(Web)                        | manager                    | manager                                                         |
 | Gateway                                              | admin                      | admin                                                           |
 | Geeklog                                              | username                   | password                                                        |
@@ -1042,7 +1042,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | General Instruments                                  | test                       | test                                                            |
 | GeoNetwork (mssql)                                   | admin                      | gnos                                                            |
 | geovision (web)                                      | admin                      | admin                                                           |
-| Gericom                                              | Administrator              | <blank>                                                         |
+| Gericom                                              | Administrator              | -                                                               |
 | GE Security,Inc.                                     | install                    | install                                                         |
 | giga                                                 | Administrator              | admin                                                           |
 | Gigabyte                                             | admin                      | admin                                                           |
@@ -1062,7 +1062,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Grandstream                                          | admin                      | 1234                                                            |
 | Grandstream                                          | admin                      | admin                                                           |
 | GrandStream                                          | Administrator              | admin                                                           |
-| GrandStream                                          | <blank>                    | admin                                                           |
+| GrandStream                                          | -                          | admin                                                           |
 | GrandStream                                          | End User                   | 123 (or blank)                                                  |
 | Grandstream Networks,Inc                             | admin                      | admin                                                           |
 | Grandstream Networks,Inc                             | End User                   | 123                                                             |
@@ -1070,7 +1070,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Greatspeed                                           | admin                      | broadband                                                       |
 | greatspeed                                           | netadmin                   | nimdaten                                                        |
 | Groupee,Inc.                                         | Admin5                     | 4tugboat                                                        |
-| GuardOne                                             | <blank>                    | guardone                                                        |
+| GuardOne                                             | -                          | guardone                                                        |
 | GuardOne                                             | n.a                        | guardone                                                        |
 | Guru                                                 | admin                      | admin                                                           |
 | GVC                                                  | Administrator              | admin                                                           |
@@ -1086,13 +1086,13 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Hewlett-Packard                                      | admin                      | hp.com                                                          |
 | Hewlett-Packard                                      | admin                      | isee                                                            |
 | Hewlett-Packard                                      | Administrator              | The last eight digits of the serial number                      |
-| Hewlett-Packard                                      | ADVMAIL                    | <blank>                                                         |
+| Hewlett-Packard                                      | ADVMAIL                    | -                                                               |
 | Hewlett-Packard                                      | ADVMAIL                    | HP                                                              |
 | Hewlett-Packard                                      | ADVMAIL                    | HPOFFICE DATA                                                   |
-| Hewlett-Packard                                      | Anonymous                  | <blank>                                                         |
-| Hewlett-Packard                                      | <blank>                    | <blank>                                                         |
-| Hewlett-Packard                                      | <blank>                    | hewlpack                                                        |
-| Hewlett-Packard                                      | FIELD                      | <blank>                                                         |
+| Hewlett-Packard                                      | Anonymous                  | -                                                               |
+| Hewlett-Packard                                      | -                          | -                                                               |
+| Hewlett-Packard                                      | -                          | hewlpack                                                        |
+| Hewlett-Packard                                      | FIELD                      | -                                                               |
 | Hewlett-Packard                                      | FIELD                      | HPONLY                                                          |
 | Hewlett-Packard                                      | FIELD                      | HPP187 SYS                                                      |
 | Hewlett-Packard                                      | FIELD                      | HPWORD PUB                                                      |
@@ -1161,34 +1161,34 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | honeywell (ssh)                                      | admin                      | 12345                                                           |
 | Honeywell                                            | TPSLocalServer             | TLS pwd 03                                                      |
 | honeywell (web)                                      | admin                      | 1234                                                            |
-| Horizon DataSys                                      | <blank>                    | foolproof                                                       |
+| Horizon DataSys                                      | -                          | foolproof                                                       |
 | Hosting Controller                                   | AdvWebadmin                | advcomm500349                                                   |
 | HP                                                   | admin                      | !admin                                                          |
 | HP                                                   | admin                      | admin                                                           |
-| HP                                                   | admin                      | <blank>                                                         |
+| HP                                                   | admin                      | -                                                               |
 | HP                                                   | admin                      | isee                                                            |
 | HP                                                   | Administrator              | admin                                                           |
-| HP                                                   | <blank>                    | AUTORAID                                                        |
-| HP                                                   | <blank>                    | <blank>                                                         |
+| HP                                                   | -                          | AUTORAID                                                        |
+| HP                                                   | -                          | -                                                               |
 | HP                                                   | Factory                    | 56789                                                           |
-| HP LaserJet 600 (printer)                            | <blank>                    | <blank>                                                         |
-| HP LaserJet No Password Legacy (printer)             | <blank>                    | <blank>                                                         |
-| HP LaserJet No Password (printer)                    | <blank>                    | <blank>                                                         |
+| HP LaserJet 600 (printer)                            | -                          | -                                                               |
+| HP LaserJet No Password Legacy (printer)             | -                          | -                                                               |
+| HP LaserJet No Password (printer)                    | -                          | -                                                               |
 | HP                                                   | root                       | password                                                        |
 | HP Server Automation (web)                           | Administrator              | admin                                                           |
 | HP Server Automation (web)                           | admin                      | opsware_admin                                                   |
 | Huawei                                               | admin                      | admin                                                           |
 | huawei (ssh)                                         | admin                      | admin                                                           |
 | huawei (ssh)                                         | Admin                      | admin                                                           |
-| huawei (ssh)                                         | admin                      | <blank>                                                         |
+| huawei (ssh)                                         | admin                      | -                                                               |
 | huawei (ssh)                                         | digicel                    | digicel                                                         |
 | huawei (ssh)                                         | telecomadmin               | admintelecom                                                    |
 | huawei (ssh)                                         | user                       | HuaweiUser                                                      |
 | huawei (ssh)                                         | user                       | user                                                            |
 | huawei (ssh)                                         | vodafone                   | vodafone                                                        |
 | Huawei Technologies Co                               | admin                      | admin                                                           |
-| Huawei Technologies Co                               | TMAR#HWMT8007079           | <blank>                                                         |
-| Huawei                                               | TMAR#HWMT8007079           | <blank>                                                         |
+| Huawei Technologies Co                               | TMAR#HWMT8007079           | -                                                               |
+| Huawei                                               | TMAR#HWMT8007079           | -                                                               |
 | Hyperic,Inc.                                         | hqadmin                    | hqadmin                                                         |
 | i2b2 Workbench (mssql)                               | I2b2demodata2              | i2b2demodata2                                                   |
 | i2b2 Workbench (mssql)                               | I2b2demodata               | i2b2demodata                                                    |
@@ -1198,99 +1198,99 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | i2b2 Workbench (mssql)                               | I2b2workdata2              | i2b2workdata2                                                   |
 | i2b2 Workbench (mssql)                               | I2b2workdata               | i2b2workdata                                                    |
 | iblitzz                                              | admin                      | admin                                                           |
-| IBM                                                  | $ALOC$                     | <blank>                                                         |
+| IBM                                                  | $ALOC$                     | -                                                               |
 | IBM                                                  | $SRV                       | $SRV                                                            |
 | IBM                                                  | 11111111                   | 11111111                                                        |
 | IBM                                                  | 22222222                   | 22222222                                                        |
 | IBM                                                  | admin                      | admin                                                           |
-| IBM                                                  | admin                      | <blank>                                                         |
-| IBM                                                  | ADMIN                      | <blank>                                                         |
+| IBM                                                  | admin                      | -                                                               |
+| IBM                                                  | ADMIN                      | -                                                               |
 | IBM                                                  | Administrator              | admin                                                           |
 | IBM                                                  | admin                      | password                                                        |
 | IBM                                                  | admin                      | secure                                                          |
-| IBM                                                  | AP2SVP                     | <blank>                                                         |
-| IBM                                                  | APL2PP                     | <blank>                                                         |
-| IBM                                                  | AUTOLOG1                   | <blank>                                                         |
-| IBM                                                  | BATCH1                     | <blank>                                                         |
-| IBM                                                  | BATCH2                     | <blank>                                                         |
-| IBM                                                  | BATCH                      | <blank>                                                         |
-| IBM                                                  | <blank>                    | admin                                                           |
-| IBM                                                  | <blank>                    | ascend                                                          |
-| IBM                                                  | <blank>                    | <blank>                                                         |
-| IBM                                                  | <blank>                    | IBM                                                             |
-| IBM                                                  | <blank>                    | MBIU0                                                           |
-| IBM                                                  | <blank>                    | R1QTPS                                                          |
-| IBM                                                  | <blank>                    | sertafu                                                         |
-| IBM                                                  | CCC                        | <blank>                                                         |
+| IBM                                                  | AP2SVP                     | -                                                               |
+| IBM                                                  | APL2PP                     | -                                                               |
+| IBM                                                  | AUTOLOG1                   | -                                                               |
+| IBM                                                  | BATCH1                     | -                                                               |
+| IBM                                                  | BATCH2                     | -                                                               |
+| IBM                                                  | BATCH                      | -                                                               |
+| IBM                                                  | -                          | admin                                                           |
+| IBM                                                  | -                          | ascend                                                          |
+| IBM                                                  | -                          | -                                                               |
+| IBM                                                  | -                          | IBM                                                             |
+| IBM                                                  | -                          | MBIU0                                                           |
+| IBM                                                  | -                          | R1QTPS                                                          |
+| IBM                                                  | -                          | sertafu                                                         |
+| IBM                                                  | CCC                        | -                                                               |
 | IBM                                                  | CICSUSER                   | CISSUS                                                          |
-| IBM                                                  | CMSBATCH                   | <blank>                                                         |
+| IBM                                                  | CMSBATCH                   | -                                                               |
 | IBM                                                  | CMSBATCH                   | CMSBATCH                                                        |
-| IBM                                                  | CMSUSER                    | <blank>                                                         |
-| IBM                                                  | CPNUC                      | <blank>                                                         |
-| IBM                                                  | CPRM                       | <blank>                                                         |
-| IBM                                                  | CSPUSER                    | <blank>                                                         |
-| IBM                                                  | CVIEW                      | <blank>                                                         |
-| IBM                                                  | DATAMOVE                   | <blank>                                                         |
+| IBM                                                  | CMSUSER                    | -                                                               |
+| IBM                                                  | CPNUC                      | -                                                               |
+| IBM                                                  | CPRM                       | -                                                               |
+| IBM                                                  | CSPUSER                    | -                                                               |
+| IBM                                                  | CVIEW                      | -                                                               |
+| IBM                                                  | DATAMOVE                   | -                                                               |
 | IBM                                                  | db2fenc1                   | db2fenc1                                                        |
 | IBM                                                  | db2inst1                   | db2inst1                                                        |
 | IBM                                                  | DBDCCICS                   | DBDCCIC                                                         |
-| IBM                                                  | DEMO1                      | <blank>                                                         |
-| IBM                                                  | DEMO2                      | <blank>                                                         |
-| IBM                                                  | DEMO3                      | <blank>                                                         |
-| IBM                                                  | DEMO4                      | <blank>                                                         |
-| IBM                                                  | DIRECT                     | <blank>                                                         |
-| IBM                                                  | DIRMAINT                   | <blank>                                                         |
-| IBM                                                  | DISKCNT                    | <blank>                                                         |
-| IBM                                                  | EREP                       | <blank>                                                         |
-| IBM                                                  | ESSEX                      | <blank>                                                         |
+| IBM                                                  | DEMO1                      | -                                                               |
+| IBM                                                  | DEMO2                      | -                                                               |
+| IBM                                                  | DEMO3                      | -                                                               |
+| IBM                                                  | DEMO4                      | -                                                               |
+| IBM                                                  | DIRECT                     | -                                                               |
+| IBM                                                  | DIRMAINT                   | -                                                               |
+| IBM                                                  | DISKCNT                    | -                                                               |
+| IBM                                                  | EREP                       | -                                                               |
+| IBM                                                  | ESSEX                      | -                                                               |
 | IBM                                                  | fg_sysadmin                | password                                                        |
 | IBM                                                  | FORSE                      | FORSE                                                           |
-| IBM                                                  | FSFADMIN                   | <blank>                                                         |
-| IBM                                                  | FSFTASK1                   | <blank>                                                         |
-| IBM                                                  | FSFTASK2                   | <blank>                                                         |
-| IBM                                                  | GCS                        | <blank>                                                         |
-| IBM                                                  | guest                      | <blank>                                                         |
+| IBM                                                  | FSFADMIN                   | -                                                               |
+| IBM                                                  | FSFTASK1                   | -                                                               |
+| IBM                                                  | FSFTASK2                   | -                                                               |
+| IBM                                                  | GCS                        | -                                                               |
+| IBM                                                  | guest                      | -                                                               |
 | IBM                                                  | guest                      | guest                                                           |
 | IBM                                                  | hscroot                    | abc123                                                          |
 | IBM                                                  | ibm                        | 2222                                                            |
 | IBM                                                  | ibm                        | password                                                        |
 | IBM                                                  | ibm                        | service                                                         |
 | IBM                                                  | IBMUSER                    | SYS1                                                            |
-| IBM                                                  | IDMS                       | <blank>                                                         |
-| IBM                                                  | IDMSSE                     | <blank>                                                         |
-| IBM                                                  | IIPS                       | <blank>                                                         |
+| IBM                                                  | IDMS                       | -                                                               |
+| IBM                                                  | IDMSSE                     | -                                                               |
+| IBM                                                  | IIPS                       | -                                                               |
 | IBM IMM (web)                                        | USERID                     | PASSW0RD                                                        |
-| IBM                                                  | IPC                        | <blank>                                                         |
-| IBM                                                  | IPFSERV                    | <blank>                                                         |
-| IBM                                                  | ISPVM                      | <blank>                                                         |
-| IBM                                                  | IVPM1                      | <blank>                                                         |
-| IBM                                                  | IVPM2                      | <blank>                                                         |
-| IBM                                                  | MAINT                      | <blank>                                                         |
+| IBM                                                  | IPC                        | -                                                               |
+| IBM                                                  | IPFSERV                    | -                                                               |
+| IBM                                                  | ISPVM                      | -                                                               |
+| IBM                                                  | IVPM1                      | -                                                               |
+| IBM                                                  | IVPM2                      | -                                                               |
+| IBM                                                  | MAINT                      | -                                                               |
 | IBM                                                  | MAINT                      | MAINT                                                           |
 | IBM Maximo (mssql)                                   | maxadmin                   | maxadmin                                                        |
 | IBM Maximo (mssql)                                   | maxreg                     | maxreg                                                          |
 | IBM Maximo (mssql)                                   | mxintadm                   | mxintadm                                                        |
-| IBM                                                  | MOESERV                    | <blank>                                                         |
+| IBM                                                  | MOESERV                    | -                                                               |
 | IBM Netezza (web)                                    | admin                      | password                                                        |
-| IBM                                                  | NEVIEW                     | <blank>                                                         |
-| IBM                                                  | OLTSEP                     | <blank>                                                         |
-| IBM                                                  | OP1                        | <blank>                                                         |
+| IBM                                                  | NEVIEW                     | -                                                               |
+| IBM                                                  | OLTSEP                     | -                                                               |
+| IBM                                                  | OP1                        | -                                                               |
 | IBM                                                  | OPERATIONS                 | OPERATIONS                                                      |
-| IBM                                                  | OPERATNS                   | <blank>                                                         |
+| IBM                                                  | OPERATNS                   | -                                                               |
 | IBM                                                  | OPERATNS                   | OPERATNS                                                        |
-| IBM                                                  | OPERATOR                   | <blank>                                                         |
+| IBM                                                  | OPERATOR                   | -                                                               |
 | IBM                                                  | Operator                   | Operator                                                        |
 | IBM                                                  | OPER                       | OPER                                                            |
-| IBM                                                  | PDMREMI                    | <blank>                                                         |
-| IBM                                                  | PENG                       | <blank>                                                         |
+| IBM                                                  | PDMREMI                    | -                                                               |
+| IBM                                                  | PENG                       | -                                                               |
 | IBM                                                  | POST                       | BASE                                                            |
-| IBM                                                  | PROCAL                     | <blank>                                                         |
-| IBM                                                  | PRODBM                     | <blank>                                                         |
+| IBM                                                  | PROCAL                     | -                                                               |
+| IBM                                                  | PRODBM                     | -                                                               |
 | IBM                                                  | PRODCICS                   | PRODCICS                                                        |
 | IBM                                                  | PROG                       | PROG                                                            |
-| IBM                                                  | PROMAIL                    | <blank>                                                         |
-| IBM                                                  | PSFMAINT                   | <blank>                                                         |
-| IBM                                                  | PVM                        | <blank>                                                         |
+| IBM                                                  | PROMAIL                    | -                                                               |
+| IBM                                                  | PSFMAINT                   | -                                                               |
+| IBM                                                  | PVM                        | -                                                               |
 | IBM                                                  | qpgmr                      | qpgmr                                                           |
 | IBM                                                  | qsecofr                    | 11111111                                                        |
 | IBM                                                  | qsecofr                    | 22222222                                                        |
@@ -1305,58 +1305,58 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | IBM                                                  | qsvr                       | qsvr                                                            |
 | IBM                                                  | qsysopr                    | qsysopr                                                         |
 | IBM                                                  | quser                      | quser                                                           |
-| IBM                                                  | RDM470                     | <blank>                                                         |
-| IBM                                                  | root                       | <blank>                                                         |
+| IBM                                                  | RDM470                     | -                                                               |
+| IBM                                                  | root                       | -                                                               |
 | IBM                                                  | root                       | passw0rd                                                        |
-| IBM                                                  | ROUTER                     | <blank>                                                         |
-| IBM                                                  | RSCS                       | <blank>                                                         |
-| IBM                                                  | RSCSV2                     | <blank>                                                         |
-| IBM                                                  | SAVSYS                     | <blank>                                                         |
+| IBM                                                  | ROUTER                     | -                                                               |
+| IBM                                                  | RSCS                       | -                                                               |
+| IBM                                                  | RSCSV2                     | -                                                               |
+| IBM                                                  | SAVSYS                     | -                                                               |
 | IBM                                                  | secofr                     | secofr                                                          |
 | IBM                                                  | sedacm                     | secacm                                                          |
-| IBM                                                  | SFCMI                      | <blank>                                                         |
-| IBM                                                  | SFCNTRL                    | <blank>                                                         |
-| IBM                                                  | SMART                      | <blank>                                                         |
-| IBM                                                  | SQLDBA                     | <blank>                                                         |
-| IBM                                                  | SQLUSER                    | <blank>                                                         |
+| IBM                                                  | SFCMI                      | -                                                               |
+| IBM                                                  | SFCNTRL                    | -                                                               |
+| IBM                                                  | SMART                      | -                                                               |
+| IBM                                                  | SQLDBA                     | -                                                               |
+| IBM                                                  | SQLUSER                    | -                                                               |
 | IBM                                                  | storwatch                  | specialist                                                      |
 | IBM Storwize V7000 Unified (ssh)                     | admin                      | admin0001                                                       |
 | IBM Storwize V7000 Unified (ssh)                     | root                       | Passw0rd                                                        |
 | IBM Storwize V7000 Unified (ssh)                     | superuser                  | passw0rd                                                        |
 | IBM                                                  | superadmin                 | secret                                                          |
-| IBM                                                  | SYSADMIN                   | <blank>                                                         |
+| IBM                                                  | SYSADMIN                   | -                                                               |
 | IBM                                                  | SYSA                       | SYSA                                                            |
-| IBM                                                  | SYSCKP                     | <blank>                                                         |
-| IBM                                                  | SYSDUMP1                   | <blank>                                                         |
-| IBM                                                  | SYSERR                     | <blank>                                                         |
+| IBM                                                  | SYSCKP                     | -                                                               |
+| IBM                                                  | SYSDUMP1                   | -                                                               |
+| IBM                                                  | SYSERR                     | -                                                               |
 | IBM                                                  | sysopr                     | sysopr                                                          |
-| IBM                                                  | SYSWRM                     | <blank>                                                         |
-| IBM                                                  | TDISK                      | <blank>                                                         |
-| IBM                                                  | TEMP                       | <blank>                                                         |
-| IBM                                                  | TSAFVM                     | <blank>                                                         |
+| IBM                                                  | SYSWRM                     | -                                                               |
+| IBM                                                  | TDISK                      | -                                                               |
+| IBM                                                  | TEMP                       | -                                                               |
+| IBM                                                  | TSAFVM                     | -                                                               |
 | IBM UrbanCode Deploy (web)                           | admin                      | admin                                                           |
 | IBM UrbanCode Deploy (web)                           | ucdpadmin                  | ucdpadmin                                                       |
 | IBM                                                  | USERID                     | PASSW0RD                                                        |
 | IBM                                                  | USERID                     | PASSWORD                                                        |
 | IBM                                                  | user                       | USERP                                                           |
-| IBM                                                  | VASTEST                    | <blank>                                                         |
+| IBM                                                  | VASTEST                    | -                                                               |
 | IBM                                                  | VCSRV                      | VCSRV                                                           |
-| IBM                                                  | VM3812                     | <blank>                                                         |
-| IBM                                                  | VMARCH                     | <blank>                                                         |
-| IBM                                                  | VMASMON                    | <blank>                                                         |
-| IBM                                                  | VMASSYS                    | <blank>                                                         |
-| IBM                                                  | VMBACKUP                   | <blank>                                                         |
-| IBM                                                  | VMBSYSAD                   | <blank>                                                         |
-| IBM                                                  | VMMAP                      | <blank>                                                         |
-| IBM                                                  | VMTAPE                     | <blank>                                                         |
-| IBM                                                  | VMTLIBR                    | <blank>                                                         |
-| IBM                                                  | VMUTIL                     | <blank>                                                         |
-| IBM                                                  | VSEIPO                     | <blank>                                                         |
-| IBM                                                  | VSEMAINT                   | <blank>                                                         |
-| IBM                                                  | VSEMAN                     | <blank>                                                         |
+| IBM                                                  | VM3812                     | -                                                               |
+| IBM                                                  | VMARCH                     | -                                                               |
+| IBM                                                  | VMASMON                    | -                                                               |
+| IBM                                                  | VMASSYS                    | -                                                               |
+| IBM                                                  | VMBACKUP                   | -                                                               |
+| IBM                                                  | VMBSYSAD                   | -                                                               |
+| IBM                                                  | VMMAP                      | -                                                               |
+| IBM                                                  | VMTAPE                     | -                                                               |
+| IBM                                                  | VMTLIBR                    | -                                                               |
+| IBM                                                  | VMUTIL                     | -                                                               |
+| IBM                                                  | VSEIPO                     | -                                                               |
+| IBM                                                  | VSEMAINT                   | -                                                               |
+| IBM                                                  | VSEMAN                     | -                                                               |
 | IBM                                                  | vt100                      | public                                                          |
-| IBM                                                  | VTAM                       | <blank>                                                         |
-| IBM                                                  | VTAMUSER                   | <blank>                                                         |
+| IBM                                                  | VTAM                       | -                                                               |
+| IBM                                                  | VTAMUSER                   | -                                                               |
 | IBM                                                  | VTAM                       | VTAM                                                            |
 | IBM WAS (mssql)                                      | wasadmin                   | wasadmin                                                        |
 | IBM                                                  | webadmin                   | webibm                                                          |
@@ -1368,8 +1368,8 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | IHS Kingdom (mssql)                                  | sa                         | $ei$micMicro                                                    |
 | inchon                                               | admin                      | admin                                                           |
 | Inedo                                                | Admin                      | Admin                                                           |
-| infacta                                              | Administrator              | <blank>                                                         |
-| Infoblox                                             | admin                      | <blank>                                                         |
+| infacta                                              | Administrator              | -                                                               |
+| Infoblox                                             | admin                      | -                                                               |
 | Informix                                             | informix                   | informix                                                        |
 | Infosmart                                            | admin                      | 0                                                               |
 | Infrant                                              | admin                      | infrant1                                                        |
@@ -1384,47 +1384,47 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Integrated Networks                                  | Administrator              | 1234                                                            |
 | Integrated Networks                                  | Administrator              | 12345678                                                        |
 | Integrated Networks                                  | Administrator              | 19750407                                                        |
-| intel                                                | admin                      | <blank>                                                         |
-| intel                                                | <blank>                    | <blank>                                                         |
-| Intel                                                | <blank>                    | Intel                                                           |
-| Intel                                                | <blank>                    | isolation                                                       |
-| Intel                                                | <blank>                    | shiva                                                           |
-| Intel                                                | Guest                      | <blank>                                                         |
+| intel                                                | admin                      | -                                                               |
+| intel                                                | -                          | -                                                               |
+| Intel                                                | -                          | Intel                                                           |
+| Intel                                                | -                          | isolation                                                       |
+| Intel                                                | -                          | shiva                                                           |
+| Intel                                                | Guest                      | -                                                               |
 | Intel                                                | intel                      | intel                                                           |
 | intel                                                | khan                       | kahn                                                            |
 | IntelliTouch                                         | administrator              | 1234                                                            |
 | Intel                                                | NICONEX                    | NICONEX                                                         |
 | intel                                                | root                       | admin                                                           |
-| Intel                                                | root                       | <blank>                                                         |
+| Intel                                                | root                       | -                                                               |
 | Intel                                                | setup                      | setup                                                           |
 | Intel/Shiva                                          | admin                      | hello                                                           |
 | Interbase                                            | SYSDBA                     | masterkey                                                       |
 | iNTERFACEWARE Inc.                                   | admn                       | password                                                        |
-| Intermec                                             | <blank>                    | intermec                                                        |
+| Intermec                                             | -                          | intermec                                                        |
 | Intermec                                             | intermec                   | intermec                                                        |
 | Internet Archive                                     | admin                      | letmein                                                         |
 | Intershop                                            | operator                   | $chwarzepumpe                                                   |
 | Intersystems                                         | system                     | sys                                                             |
-| intex                                                | <blank>                    | <blank>                                                         |
+| intex                                                | -                          | -                                                               |
 | Intracom                                             | admin                      | admin                                                           |
 | Inventel                                             | admin                      | admin                                                           |
 | Inventel Wanadoo                                     | Admin                      | Admin                                                           |
 | ion                                                  | Administrator              | admin                                                           |
-| ion                                                  | <blank>                    | admin                                                           |
+| ion                                                  | -                          | admin                                                           |
 | ipfire (ssh)                                         | admin                      | admin                                                           |
-| ipfire (ssh)                                         | admin                      | <blank>                                                         |
+| ipfire (ssh)                                         | admin                      | -                                                               |
 | ipfire (ssh)                                         | root                       | admin                                                           |
 | iPSTAR                                               | admin                      | operator                                                        |
 | Ipswitch                                             | admin                      | admin                                                           |
-| Ipswitch                                             | guest                      | <blank>                                                         |
+| Ipswitch                                             | guest                      | -                                                               |
 | Ipswitch                                             | XXSESS_MGRYY               | X#1833                                                          |
 | IQinVision                                           | root                       | system                                                          |
 | iqinvision (web)                                     | root                       | system                                                          |
-| IRC                                                  | <blank>                    | FOOBAR                                                          |
+| IRC                                                  | -                          | FOOBAR                                                          |
 | Irongate                                             | admin                      | NetSurvibox                                                     |
 | IronPort                                             | admin                      | ironport                                                        |
-| iso sistemi                                          | <blank>                    | <blank>                                                         |
-| Iwill                                                | <blank>                    | iwill                                                           |
+| iso sistemi                                          | -                          | -                                                               |
+| Iwill                                                | -                          | iwill                                                           |
 | JAHT                                                 | admin                      | epicrouter                                                      |
 | JAMF Software                                        | jamfsoftware               | jamfsw03                                                        |
 | Janitza                                              | admin                      | Janitza                                                         |
@@ -1441,19 +1441,19 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | JBoss AS 6 (web)                                     | admin                      | admin                                                           |
 | JD Edwards                                           | JDE                        | JDE                                                             |
 | JDE                                                  | PRODDTA                    | PRODDTA                                                         |
-| JDS                                                  | hydrasna                   | <blank>                                                         |
-| JDS Microprocessing                                  | hydrasna                   | <blank>                                                         |
+| JDS                                                  | hydrasna                   | -                                                               |
+| JDS Microprocessing                                  | hydrasna                   | -                                                               |
 | Jean-Philippe Lang                                   | admin                      | admin                                                           |
-| Jeebles Technology                                   | <blank>                    | admin                                                           |
-| Jenkins (web)                                        | <blank>                    | <blank>                                                         |
-| Jetform                                              | Jetform                    | <blank>                                                         |
-| JetWay                                               | <blank>                    | spooml                                                          |
+| Jeebles Technology                                   | -                          | admin                                                           |
+| Jenkins (web)                                        | -                          | -                                                               |
+| Jetform                                              | Jetform                    | -                                                               |
+| JetWay                                               | -                          | spooml                                                          |
 | JFrog                                                | admin                      | password                                                        |
 | JioFi                                                | administrator              | administrator                                                   |
 | JioFiber                                             | admin                      | jiocentrum                                                      |
 | Johnson Controls                                     | johnson                    | control                                                         |
-| Joss Technology                                      | <blank>                    | 57gbzb                                                          |
-| Joss Technology                                      | <blank>                    | technolgi                                                       |
+| Joss Technology                                      | -                          | 57gbzb                                                          |
+| Joss Technology                                      | -                          | technolgi                                                       |
 | Juniper                                              | admin                      | abc123                                                          |
 | Juniper                                              | admin                      | netscreen                                                       |
 | Juniper                                              | admin                      | peribit                                                         |
@@ -1474,14 +1474,14 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Justin Hagstrom                                      | admin                      | admin                                                           |
 | Justin Hagstrom                                      | test                       | test                                                            |
 | jvc (web)                                            | admin                      | jvc                                                             |
-| Kalatel                                              | <blank>                    | 3477                                                            |
-| Kalatel                                              | <blank>                    | 8111                                                            |
+| Kalatel                                              | -                          | 3477                                                            |
+| Kalatel                                              | -                          | 8111                                                            |
 | Kali linux (OS)                                      | kali                       | kali                                                            |
 | Kali linux (OS)                                      | root                       | toor                                                            |
 | Kanboard (web)                                       | admin                      | admin                                                           |
-| kaptest                                              | admin                      | <blank>                                                         |
+| kaptest                                              | admin                      | -                                                               |
 | KASDA                                                | admin                      | adslroot                                                        |
-| Kentico Software                                     | administrator              | <blank>                                                         |
+| Kentico Software                                     | administrator              | -                                                               |
 | Kethinov                                             | root                       | password                                                        |
 | Keyscan                                              | keyscan                    | KEYSCAN                                                         |
 | Kodak                                                | PACSLinkIP                 | NetServer                                                       |
@@ -1491,101 +1491,101 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Kodak                                                | Service                    | Service                                                         |
 | Kodi                                                 | kodi                       | kodi                                                            |
 | Konica Minolta                                       | admin                      | administrator                                                   |
-| Konica Minolta                                       | <blank>                    | 0                                                               |
-| Konica Minolta                                       | <blank>                    | 0000                                                            |
-| Konica Minolta                                       | <blank>                    | 1234                                                            |
-| Konica Minolta                                       | <blank>                    | <blank>                                                         |
-| Konica Minolta                                       | <blank>                    | MagiMFP                                                         |
-| Konica Minolta                                       | <blank>                    | sysadm                                                          |
-| Konica Minolta                                       | <blank>                    | sysAdmin                                                        |
+| Konica Minolta                                       | -                          | 0                                                               |
+| Konica Minolta                                       | -                          | 0000                                                            |
+| Konica Minolta                                       | -                          | 1234                                                            |
+| Konica Minolta                                       | -                          | -                                                               |
+| Konica Minolta                                       | -                          | MagiMFP                                                         |
+| Konica Minolta                                       | -                          | sysadm                                                          |
+| Konica Minolta                                       | -                          | sysAdmin                                                        |
 | Konica Minolta (web)                                 | admin                      | administrator                                                   |
-| Konica Minolta (web)                                 | <blank>                    | 0                                                               |
-| Konica Minolta (web)                                 | <blank>                    | 0000                                                            |
-| Konica Minolta (web)                                 | <blank>                    | 1234                                                            |
-| Konica Minolta (web)                                 | <blank>                    | <blank>                                                         |
-| Konica Minolta (web)                                 | <blank>                    | MagiMFP                                                         |
-| Konica Minolta (web)                                 | <blank>                    | sysadm                                                          |
-| Konica Minolta (web)                                 | <blank>                    | sysAdmin                                                        |
+| Konica Minolta (web)                                 | -                          | 0                                                               |
+| Konica Minolta (web)                                 | -                          | 0000                                                            |
+| Konica Minolta (web)                                 | -                          | 1234                                                            |
+| Konica Minolta (web)                                 | -                          | -                                                               |
+| Konica Minolta (web)                                 | -                          | MagiMFP                                                         |
+| Konica Minolta (web)                                 | -                          | sysadm                                                          |
+| Konica Minolta (web)                                 | -                          | sysAdmin                                                        |
 | Kronos                                               | SuperUser                  | kronites                                                        |
 | KTI                                                  | admin                      | 123                                                             |
 | KTI                                                  | admin                      | 123456                                                          |
 | KTI                                                  | superuser                  | 123456                                                          |
 | Kyocera                                              | 2800                       | 2800                                                            |
 | Kyocera                                              | admin                      | admin                                                           |
-| Kyocera                                              | admin                      | <blank>                                                         |
-| Kyocera                                              | <blank>                    | admin00                                                         |
-| Kyocera                                              | <blank>                    | PASSWORD                                                        |
+| Kyocera                                              | admin                      | -                                                               |
+| Kyocera                                              | -                          | admin00                                                         |
+| Kyocera                                              | -                          | PASSWORD                                                        |
 | Kyocera                                              | root                       | root                                                            |
 | LaCie                                                | admin                      | admin                                                           |
-| LANCOM                                               | <blank>                    | <blank>                                                         |
-| Lanier                                               | admin                      | <blank>                                                         |
-| Lanier                                               | <blank>                    | sysadm                                                          |
-| Lanier                                               | supervisor                 | <blank>                                                         |
+| LANCOM                                               | -                          | -                                                               |
+| Lanier                                               | admin                      | -                                                               |
+| Lanier                                               | -                          | sysadm                                                          |
+| Lanier                                               | supervisor                 | -                                                               |
 | LANSA                                                | admin                      | admin                                                           |
 | LANSA                                                | dev                        | dev                                                             |
 | LANSA                                                | WEBADM                     | password                                                        |
-| Lantronix                                            | <blank>                    | access                                                          |
-| Lantronix                                            | <blank>                    | admin                                                           |
-| Lantronix                                            | <blank>                    | <blank>                                                         |
-| Lantronix                                            | <blank>                    | lantronix                                                       |
-| Lantronix                                            | <blank>                    | system                                                          |
+| Lantronix                                            | -                          | access                                                          |
+| Lantronix                                            | -                          | admin                                                           |
+| Lantronix                                            | -                          | -                                                               |
+| Lantronix                                            | -                          | lantronix                                                       |
+| Lantronix                                            | -                          | system                                                          |
 | Lantronix                                            | login                      | access                                                          |
 | Lantronix                                            | sysadmin                   | PASS                                                            |
 | Lasa AIMS (mssql)                                    | ADMIN                      | AIMS                                                            |
 | Lasa AIMS (mssql)                                    | FB                         | AIMS                                                            |
-| latis network                                        | <blank>                    | <blank>                                                         |
+| latis network                                        | -                          | -                                                               |
 | LAXO                                                 | admin                      | admin                                                           |
 | ldap account manager(lam)                            | lam                        | lam                                                             |
-| Leading Edge                                         | <blank>                    | MASTER                                                          |
+| Leading Edge                                         | -                          | MASTER                                                          |
 | Lenel                                                | admin                      | admin                                                           |
 | Lenel OnGuard (mssql)                                | LENEL                      | MULTIMEDIA                                                      |
 | Level1                                               | admin                      | admin                                                           |
 | Leviton                                              | admin                      | leviton                                                         |
 | LG                                                   | admin                      | epicrouter                                                      |
-| LG                                                   | <blank>                    | jannie                                                          |
+| LG                                                   | -                          | jannie                                                          |
 | LGIC                                                 | LR-ISDN                    | LR-ISDN                                                         |
 | LG                                                   | vikram                     | singh                                                           |
 | Liebert                                              | Liebert                    | Liebert                                                         |
 | Lindsay Electronics                                  | ADMINISTRATOR              | SENTINEL                                                        |
 | Lindsay Electronics                                  | SENTINEL                   | SENTINEL                                                        |
 | Linksys                                              | admin                      | admin                                                           |
-| Linksys                                              | admin                      | <blank>                                                         |
+| Linksys                                              | admin                      | -                                                               |
 | Linksys                                              | Administrator              | admin                                                           |
-| Linksys                                              | <blank>                    | admin                                                           |
-| Linksys                                              | <blank>                    | <blank>                                                         |
-| Linksys                                              | <blank>                    | epicrouter                                                      |
+| Linksys                                              | -                          | admin                                                           |
+| Linksys                                              | -                          | -                                                               |
+| Linksys                                              | -                          | epicrouter                                                      |
 | Linksys                                              | comcast                    | 1234                                                            |
 | Linksys                                              | root                       | orion99                                                         |
 | linksys (ssh)                                        | admin                      | admin                                                           |
 | linksys (ssh)                                        | admin                      | password                                                        |
-| linksys (ssh)                                        | linksys                    | <blank>                                                         |
+| linksys (ssh)                                        | linksys                    | -                                                               |
 | linksys (ssh)                                        | root                       | admin                                                           |
 | Linksys                                              | user                       | tivonpw                                                         |
-| Linux                                                | gonzo                      | <blank>                                                         |
+| Linux                                                | gonzo                      | -                                                               |
 | Linux                                                | root                       | uClinux                                                         |
-| Linux                                                | satan                      | <blank>                                                         |
-| Linux                                                | snake                      | <blank>                                                         |
+| Linux                                                | satan                      | -                                                               |
+| Linux                                                | snake                      | -                                                               |
 | Liquidware Labs,Inc.                                 | ssadmin                    | sspassword                                                      |
-| Livingstone                                          | root                       | <blank>                                                         |
-| Livingston                                           | !root                      | <blank>                                                         |
+| Livingstone                                          | root                       | -                                                               |
+| Livingston                                           | !root                      | -                                                               |
 | Lockdown                                             | setup                      | changeme!                                                       |
 | LogiLink                                             | admin                      | 1234                                                            |
-| Logitech                                             | <blank>                    | 0                                                               |
+| Logitech                                             | -                          | 0                                                               |
 | Loglogic                                             | root                       | logapp                                                          |
 | Loglogic                                             | toor                       | logapp                                                          |
 | longshine                                            | admin                      | 0                                                               |
 | Longshine                                            | admin                      | 0                                                               |
 | Lucent                                               | admin                      | AitbISP4eCiG                                                    |
 | Lucent                                               | admin                      | Ascend                                                          |
-| Lucent                                               | Administrator              | <blank>                                                         |
+| Lucent                                               | Administrator              | -                                                               |
 | Lucent                                               | (any 3 characters)         | cascade                                                         |
 | Lucent                                               | (any 3 chars)              | cascade                                                         |
 | Lucent                                               | bciim                      | bciimpw                                                         |
 | Lucent                                               | bcim                       | bcimpw                                                          |
 | Lucent                                               | bcms                       | bcmspw                                                          |
 | Lucent                                               | bcnas                      | bcnaspw                                                         |
-| Lucent                                               | <blank>                    | admin                                                           |
-| Lucent                                               | <blank>                    | cascade                                                         |
+| Lucent                                               | -                          | admin                                                           |
+| Lucent                                               | -                          | cascade                                                         |
 | Lucent                                               | blue                       | bluepw                                                          |
 | Lucent                                               | browse                     | browsepw                                                        |
 | Lucent                                               | browse                     | looker                                                          |
@@ -1616,19 +1616,19 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Lucent                                               | tech                       | field                                                           |
 | Luxon Communications                                 | administrator              | 19750407                                                        |
 | m0n0wall                                             | admin                      | mono                                                            |
-| MachSpeed                                            | <blank>                    | sp99dd                                                          |
-| Macromedia                                           | <blank>                    | admin                                                           |
+| MachSpeed                                            | -                          | sp99dd                                                          |
+| Macromedia                                           | -                          | admin                                                           |
 | Macsense                                             | admin                      | admin                                                           |
 | Magento                                              | admin                      | 123123                                                          |
-| Magic-Pro                                            | <blank>                    | prost                                                           |
+| Magic-Pro                                            | -                          | prost                                                           |
 | Main Street Softworks                                | MCVEADMIN                  | password                                                        |
 | Makito Decoder (web)                                 | admin                      | %89%F0%01%8F%D0%01%80%F0%01%85%D0%01%83%F0%01%83%E0%01%84%F0%01 |
 | Mambo                                                | admin                      | admin                                                           |
 | ManageEngine                                         | admin                      | admin                                                           |
 | Mandarin Library Automation                          | admin                      | boca raton                                                      |
 | Mantis                                               | administrator              | root                                                            |
-| Marconi                                              | ami                        | <blank>                                                         |
-| maxdata                                              | <blank>                    | <blank>                                                         |
+| Marconi                                              | ami                        | -                                                               |
+| maxdata                                              | -                          | -                                                               |
 | MayGion Camera (webcam)                              | admin                      | admin                                                           |
 | McAfee                                               | admin                      | admin123                                                        |
 | McAfee                                               | scmadmin                   | scmchangeme                                                     |
@@ -1637,10 +1637,10 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | McData                                               | McdataSE                   | redips                                                          |
 | MediaPortal (mssql)                                  | sa                         | M3d!aP0rtal                                                     |
 | Mediatrix                                            | admin                      | 1234                                                            |
-| Mediatrix                                            | administrator              | <blank>                                                         |
-| medion                                               | <blank>                    | medion                                                          |
+| Mediatrix                                            | administrator              | -                                                               |
+| medion                                               | -                          | medion                                                          |
 | medo.check (mssql)                                   | mcUser                     | medocheck123                                                    |
-| Megastar                                             | <blank>                    | star                                                            |
+| Megastar                                             | -                          | star                                                            |
 | meinberg                                             | root                       | timeserver                                                      |
 | Memotec                                              | memotec                    | supervisor                                                      |
 | Mentec                                               | MICRO                      | RSX                                                             |
@@ -1655,38 +1655,38 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Microcom                                             | admin                      | superuser                                                       |
 | Microcom                                             | user                       | password                                                        |
 | Micro Focus Silk Central (mssql)                     | sa                         | SilkCentral12!34                                                |
-| Micron                                               | <blank>                    | sldkj754                                                        |
-| Micron                                               | <blank>                    | xyzall                                                          |
+| Micron                                               | -                          | sldkj754                                                        |
+| Micron                                               | -                          | xyzall                                                          |
 | Micronet                                             | admin                      | admin                                                           |
 | Micronet                                             | admin                      | epicrouter                                                      |
-| Micronet                                             | mac                        | <blank>                                                         |
+| Micronet                                             | mac                        | -                                                               |
 | Micronet                                             | root                       | default                                                         |
-| Micronics                                            | <blank>                    | dn_04rjc                                                        |
+| Micronics                                            | -                          | dn_04rjc                                                        |
 | Microplex                                            | root                       | root                                                            |
-| microRouter                                          | <blank>                    | letmein                                                         |
+| microRouter                                          | -                          | letmein                                                         |
 | Microsoft                                            | Administrator              | Administrator                                                   |
-| Microsoft                                            | Administrator              | <blank>                                                         |
-| Microsoft                                            | <blank>                    | admin                                                           |
-| Microsoft                                            | <blank>                    | <blank>                                                         |
-| Microsoft                                            | <blank>                    | sa                                                              |
-| Microsoft                                            | Guest                      | <blank>                                                         |
+| Microsoft                                            | Administrator              | -                                                               |
+| Microsoft                                            | -                          | admin                                                           |
+| Microsoft                                            | -                          | -                                                               |
+| Microsoft                                            | -                          | sa                                                              |
+| Microsoft                                            | Guest                      | -                                                               |
 | Microsoft                                            | Guest                      | Guest                                                           |
 | Microsoft                                            | IS_$hostname               | IS_$hostname                                                    |
 | Microsoft                                            | LDAP_Anonymous             | LdapPassword_1                                                  |
-| Microsoft                                            | LessonUser1                | <blank>                                                         |
-| Microsoft                                            | LessonUser2                | <blank>                                                         |
+| Microsoft                                            | LessonUser1                | -                                                               |
+| Microsoft                                            | LessonUser2                | -                                                               |
 | Microsoft                                            | MSHOME                     | MSHOME                                                          |
-| Microsoft                                            | sa                         | <blank>                                                         |
+| Microsoft                                            | sa                         | -                                                               |
 | Microsoft                                            | User                       | User                                                            |
 | Mike Peters                                          | bsxuser                    | bsxpass                                                         |
-| Mikrotik                                             | admin                      | <blank>                                                         |
-| MikroTik                                             | admin                      | <blank>                                                         |
+| Mikrotik                                             | admin                      | -                                                               |
+| MikroTik                                             | admin                      | -                                                               |
 | Milan                                                | root                       | root                                                            |
-| Minolta PagrPro                                      | <blank>                    | sysadm                                                          |
-| Minolta QMS                                          | admin                      | <blank>                                                         |
-| Minolta QMS                                          | operator                   | <blank>                                                         |
-| Mintel                                               | <blank>                    | SYSTEM                                                          |
-| Mitel                                                | <blank>                    | <blank>                                                         |
+| Minolta PagrPro                                      | -                          | sysadm                                                          |
+| Minolta QMS                                          | admin                      | -                                                               |
+| Minolta QMS                                          | operator                   | -                                                               |
+| Mintel                                               | -                          | SYSTEM                                                          |
+| Mitel                                                | -                          | -                                                               |
 | Mitel                                                | installer                  | 1000                                                            |
 | Mitel Networks                                       | 1nstaller                  | 5X2000                                                          |
 | Mitel Networks                                       | installer                  | sx2000                                                          |
@@ -1701,15 +1701,15 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | mobotix (web)                                        | admin                      | meinsm                                                          |
 | modern.ie (ssh)                                      | IEUser                     | D@rj33l1ng                                                      |
 | Mole                                                 | admin                      | admin                                                           |
-| Mongodb noauth (mongodb)                             | <blank>                    | <blank>                                                         |
+| Mongodb noauth (mongodb)                             | -                          | -                                                               |
 | Motive                                               | admin                      | isee                                                            |
 | Motorola                                             | admin                      | motorola                                                        |
 | Motorola                                             | admin                      | password                                                        |
-| Motorola                                             | <blank>                    | 0000                                                            |
-| motorola                                             | <blank>                    | <blank>                                                         |
+| Motorola                                             | -                          | 0000                                                            |
+| motorola                                             | -                          | -                                                               |
 | Motorola                                             | cablecom                   | router                                                          |
 | Motorola                                             | service                    | smile                                                           |
-| Motorola                                             | setup                      | <blank>                                                         |
+| Motorola                                             | setup                      | -                                                               |
 | Motorola                                             | technician                 | yZgO8Bvj                                                        |
 | movistar (ssh)                                       | 1234                       | 1234                                                            |
 | movistar (ssh)                                       | admin                      | admin                                                           |
@@ -1717,18 +1717,18 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | mro software                                         | SYSADM                     | sysadm                                                          |
 | MRV                                                  | admin                      | admin                                                           |
 | MSSQL (mssql)                                        | ADONI                      | BPMS                                                            |
-| MSSQL (mssql)                                        | sa                         | <blank>                                                         |
+| MSSQL (mssql)                                        | sa                         | -                                                               |
 | MSSQL (mssql)                                        | sa                         | password                                                        |
 | MSSQL (mssql)                                        | sa                         | Password123                                                     |
 | MSSQL (mssql)                                        | sa                         | sa                                                              |
 | MSSQL (mssql)                                        | sa                         | sqlserver                                                       |
-| M Technology                                         | <blank>                    | mMmM                                                            |
+| M Technology                                         | -                          | mMmM                                                            |
 | MTNL                                                 | admin                      | admin                                                           |
-| Mutare                                               | <blank>                    | admin                                                           |
+| Mutare                                               | -                          | admin                                                           |
 | Muze                                                 | admin                      | muze                                                            |
 | MyioSoft                                             | demo                       | demo                                                            |
 | MySQL                                                | admin@example.com          | admin                                                           |
-| MySQL                                                | root                       | <blank>                                                         |
+| MySQL                                                | root                       | -                                                               |
 | MySQL (ssh)                                          | root                       | root                                                            |
 | MySQL                                                | superdba                   | admin                                                           |
 | NAI                                                  | admin                      | admin123                                                        |
@@ -1743,33 +1743,33 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | nCircle                                              | root                       | ciwuxe                                                          |
 | NCR                                                  | ncrm                       | ncrm                                                            |
 | NEC                                                  | admin                      | password                                                        |
-| NEC                                                  | <blank>                    | <blank>                                                         |
+| NEC                                                  | -                          | -                                                               |
 | NetApp                                               | admin                      | admin123                                                        |
 | NetApp                                               | admin                      | NetCache                                                        |
 | Netasq                                               | admin                      | admin                                                           |
 | NetBackup OpsCenter Analytics (web)                  | admin                      | password                                                        |
 | NetBotz                                              | netbotz                    | netbotz                                                         |
 | Netcomm                                              | admin                      | password                                                        |
-| Netcomm                                              | <blank>                    | admin                                                           |
+| Netcomm                                              | -                          | admin                                                           |
 | Netcomm                                              | user                       | password                                                        |
 | Netcordia                                            | admin                      | admin                                                           |
 | netcore (ssh)                                        | admin                      | admin                                                           |
 | netcore (ssh)                                        | guest                      | guest                                                           |
 | Netgear                                              | admin                      | 1234                                                            |
 | Netgear                                              | admin                      | admin                                                           |
-| Netgear                                              | admin                      | <blank>                                                         |
+| Netgear                                              | admin                      | -                                                               |
 | Netgear                                              | admin                      | draadloos                                                       |
 | Netgear                                              | admin                      | infrant1                                                        |
 | Netgear                                              | admin                      | netgear1                                                        |
 | Netgear                                              | admin                      | password                                                        |
 | Netgear                                              | Admin                      | password                                                        |
 | Netgear                                              | admin                      | setup                                                           |
-| Netgear                                              | <blank>                    | 1234                                                            |
-| Netgear                                              | <blank>                    | admin                                                           |
-| Netgear                                              | <blank>                    | <blank>                                                         |
-| Netgear                                              | <blank>                    | password                                                        |
-| Netgear                                              | <blank>                    | private                                                         |
-| Netgear                                              | <blank>                    | zebra                                                           |
+| Netgear                                              | -                          | 1234                                                            |
+| Netgear                                              | -                          | admin                                                           |
+| Netgear                                              | -                          | -                                                               |
+| Netgear                                              | -                          | password                                                        |
+| Netgear                                              | -                          | private                                                         |
+| Netgear                                              | -                          | zebra                                                           |
 | Netgear                                              | comcast                    | 1234                                                            |
 | Netgear                                              | cusadmin                   | highspeed                                                       |
 | Netgear                                              | Gearguy                    | Geardog                                                         |
@@ -1777,45 +1777,45 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Netgear                                              | superman                   | 21241036                                                        |
 | NetGenesis                                           | naadmin                    | naadmin                                                         |
 | NETIO 4All PowerPDU                                  | admin                      | admin                                                           |
-| Netopia                                              | admin                      | <blank>                                                         |
+| Netopia                                              | admin                      | -                                                               |
 | Netopia                                              | admin                      | noway                                                           |
-| Netopia                                              | <blank>                    | <blank>                                                         |
+| Netopia                                              | -                          | -                                                               |
 | Netopia                                              | factory                    | (see note)                                                      |
 | Netopia                                              | netopia                    | netopia                                                         |
 | Netport                                              | setup                      | setup                                                           |
 | Netscape                                             | admin                      | admin                                                           |
-| Netscreen                                            | admin                      | <blank>                                                         |
-| Netscreen                                            | Administrator              | <blank>                                                         |
+| Netscreen                                            | admin                      | -                                                               |
+| Netscreen                                            | Administrator              | -                                                               |
 | Netscreen                                            | admin                      | netscreen                                                       |
-| Netscreen                                            | <blank>                    | <blank>                                                         |
+| Netscreen                                            | -                          | -                                                               |
 | Netscreen                                            | netscreen                  | netscreen                                                       |
-| Netscreen                                            | operator                   | <blank>                                                         |
+| Netscreen                                            | operator                   | -                                                               |
 | Netstar                                              | admin                      | password                                                        |
 | netsys (ssh)                                         | admin                      | admin                                                           |
 | Network Appliance                                    | admin                      | NetCache                                                        |
 | Network Associates                                   | e250                       | e250changeme                                                    |
 | Network Associates                                   | e500                       | e500changeme                                                    |
-| Network Everywhere                                   | <blank>                    | admin                                                           |
-| NetworkICE                                           | iceman                     | <blank>                                                         |
+| Network Everywhere                                   | -                          | admin                                                           |
+| NetworkICE                                           | iceman                     | -                                                               |
 | NetXMS (mssql)                                       | admin                      | netxms                                                          |
 | NevisIDM                                             | bootstrap                  | generated                                                       |
 | NewMedia-NET GmbH                                    | root                       | admin                                                           |
 | Nexsan                                               | ADMIN                      | PASSWORD                                                        |
-| NeXT                                                 | me                         | <blank>                                                         |
+| NeXT                                                 | me                         | -                                                               |
 | NeXT                                                 | root                       | NeXT                                                            |
 | NeXT                                                 | signa                      | signa                                                           |
 | Nexus Repository Manager (web)                       | admin                      | admin123                                                        |
 | NGSec                                                | admin                      | asd                                                             |
-| NGSec                                                | admin                      | <blank>                                                         |
+| NGSec                                                | admin                      | -                                                               |
 | NGSEcure                                             | admin                      | admin                                                           |
 | NICE Systems Ltd.                                    | Administrator              | nicecti                                                         |
 | NICE Systems Ltd.                                    | Nice-admin                 | nicecti                                                         |
 | Niksun                                               | vcr                        | NetVCR                                                          |
-| Nimble                                               | <blank>                    | xdfk9874t3                                                      |
-| Nokia                                                | <blank>                    | 9999                                                            |
-| Nokia                                                | <blank>                    | nokai                                                           |
-| Nokia                                                | <blank>                    | nokia                                                           |
-| Nokia                                                | <blank>                    | Telecom                                                         |
+| Nimble                                               | -                          | xdfk9874t3                                                      |
+| Nokia                                                | -                          | 9999                                                            |
+| Nokia                                                | -                          | nokai                                                           |
+| Nokia                                                | -                          | nokia                                                           |
+| Nokia                                                | -                          | Telecom                                                         |
 | Nokia                                                | client                     | client                                                          |
 | Nokia                                                | m1122                      | m1122                                                           |
 | Nokia                                                | nop                        | 12345                                                           |
@@ -1825,26 +1825,26 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Nokia                                                | Security Code              | 12345                                                           |
 | Nokia                                                | telecom                    | telecom                                                         |
 | Nokia                                                | Telecom                    | Telecom                                                         |
-| NOMADIX                                              | admin                      | <blank>                                                         |
+| NOMADIX                                              | admin                      | -                                                               |
 | Norstar                                              | **23646                    | 23646                                                           |
 | Norstar                                              | **266344                   | 266344                                                          |
 | Nortel                                               | 266344                     | 266344                                                          |
 | Nortel                                               | admin                      | 000000                                                          |
 | Nortel                                               | admin                      | admin                                                           |
 | Nortel                                               | admin                      | admin000                                                        |
-| Nortel                                               | admin                      | <blank>                                                         |
+| Nortel                                               | admin                      | -                                                               |
 | Nortel                                               | administrator              | PlsChgMe!                                                       |
 | Nortel                                               | admin                      | root                                                            |
 | Nortel                                               | admin                      | setup                                                           |
-| Nortel                                               | <blank>                    | 0                                                               |
-| Nortel                                               | <blank>                    | 266344                                                          |
-| Nortel                                               | <blank>                    | <blank>                                                         |
-| Nortel                                               | <blank>                    | l1                                                              |
-| Nortel                                               | <blank>                    | l2                                                              |
-| Nortel                                               | <blank>                    | ro                                                              |
-| Nortel                                               | <blank>                    | rw                                                              |
-| Nortel                                               | <blank>                    | rwa                                                             |
-| Nortel                                               | <blank>                    | secure                                                          |
+| Nortel                                               | -                          | 0                                                               |
+| Nortel                                               | -                          | 266344                                                          |
+| Nortel                                               | -                          | -                                                               |
+| Nortel                                               | -                          | l1                                                              |
+| Nortel                                               | -                          | l2                                                              |
+| Nortel                                               | -                          | ro                                                              |
+| Nortel                                               | -                          | rw                                                              |
+| Nortel                                               | -                          | rwa                                                             |
+| Nortel                                               | -                          | secure                                                          |
 | Nortel                                               | ccrusr                     | ccrusr                                                          |
 | Nortel                                               | conferencing               | admin                                                           |
 | Nortel                                               | debug                      | gubed                                                           |
@@ -1861,7 +1861,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Nortel                                               | login                      | 8429                                                            |
 | Nortel                                               | maint                      | maint                                                           |
 | Nortel                                               | maint                      | ntacdmax                                                        |
-| Nortel                                               | Manager                    | <blank>                                                         |
+| Nortel                                               | Manager                    | -                                                               |
 | Nortel                                               | mlusr                      | mlusr                                                           |
 | Nortel                                               | root                       | 3ep5w2u                                                         |
 | Nortel                                               | ro                         | ro                                                              |
@@ -1876,79 +1876,79 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Nortel                                               | system                     | adminpwd                                                        |
 | Nortel                                               | tasman                     | tasmannet                                                       |
 | Nortel                                               | trmcnfg                    | trmcnfg                                                         |
-| Nortel                                               | user                       | <blank>                                                         |
+| Nortel                                               | user                       | -                                                               |
 | Nortel                                               | user                       | user                                                            |
 | Nortel                                               | user                       | user0000                                                        |
 | Novell                                               | admin                      | admin                                                           |
 | Novell                                               | ADMIN                      | admin                                                           |
 | Novell                                               | ADMIN                      | ADMIN                                                           |
-| Novell                                               | ADMIN                      | <blank>                                                         |
+| Novell                                               | ADMIN                      | -                                                               |
 | Novell                                               | admin                      | novell                                                          |
 | Novell                                               | ARCHIVIST                  | ARCHIVIST                                                       |
-| Novell                                               | ARCHIVIST                  | <blank>                                                         |
+| Novell                                               | ARCHIVIST                  | -                                                               |
 | Novell                                               | BACKUP                     | BACKUP                                                          |
-| Novell                                               | BACKUP                     | <blank>                                                         |
-| Novell                                               | <blank>                    | cr0wmt 911                                                      |
-| Novell                                               | <blank>                    | root                                                            |
-| Novell                                               | <blank>                    | san fran 8                                                      |
-| Novell                                               | CHEY_ARCHSVR               | <blank>                                                         |
+| Novell                                               | BACKUP                     | -                                                               |
+| Novell                                               | -                          | cr0wmt 911                                                      |
+| Novell                                               | -                          | root                                                            |
+| Novell                                               | -                          | san fran 8                                                      |
+| Novell                                               | CHEY_ARCHSVR               | -                                                               |
 | Novell                                               | CHEY_ARCHSVR               | CHEY_ARCHSVR                                                    |
-| Novell                                               | FAX                        | <blank>                                                         |
+| Novell                                               | FAX                        | -                                                               |
 | Novell                                               | FAX                        | FAX                                                             |
-| Novell                                               | FAXUSER                    | <blank>                                                         |
+| Novell                                               | FAXUSER                    | -                                                               |
 | Novell                                               | FAXUSER                    | FAXUSER                                                         |
-| Novell                                               | FAXWORKS                   | <blank>                                                         |
+| Novell                                               | FAXWORKS                   | -                                                               |
 | Novell                                               | FAXWORKS                   | FAXWORKS                                                        |
-| Novell                                               | GATEWAY                    | <blank>                                                         |
+| Novell                                               | GATEWAY                    | -                                                               |
 | Novell                                               | GATEWAY                    | GATEWAY                                                         |
-| Novell                                               | GUEST                      | <blank>                                                         |
+| Novell                                               | GUEST                      | -                                                               |
 | Novell                                               | GUEST                      | GUEST                                                           |
 | Novell                                               | GUEST                      | GUESTGUE                                                        |
 | Novell                                               | GUEST                      | GUESTGUEST                                                      |
 | Novell                                               | GUEST                      | TSEUG                                                           |
-| Novell                                               | HPLASER                    | <blank>                                                         |
+| Novell                                               | HPLASER                    | -                                                               |
 | Novell                                               | HPLASER                    | HPLASER                                                         |
-| Novell                                               | LASER                      | <blank>                                                         |
+| Novell                                               | LASER                      | -                                                               |
 | Novell                                               | LASER                      | LASER                                                           |
-| Novell                                               | LASERWRITER                | <blank>                                                         |
+| Novell                                               | LASERWRITER                | -                                                               |
 | Novell                                               | LASERWRITER                | LASERWRITER                                                     |
-| Novell                                               | MAIL                       | <blank>                                                         |
+| Novell                                               | MAIL                       | -                                                               |
 | Novell                                               | MAIL                       | MAIL                                                            |
-| Novell                                               | POST                       | <blank>                                                         |
+| Novell                                               | POST                       | -                                                               |
 | Novell                                               | POST                       | POST                                                            |
-| Novell                                               | PRINT                      | <blank>                                                         |
-| Novell                                               | PRINTER                    | <blank>                                                         |
+| Novell                                               | PRINT                      | -                                                               |
+| Novell                                               | PRINTER                    | -                                                               |
 | Novell                                               | PRINTER                    | PRINTER                                                         |
 | Novell                                               | PRINT                      | PRINT                                                           |
-| Novell                                               | ROOT                       | <blank>                                                         |
+| Novell                                               | ROOT                       | -                                                               |
 | Novell                                               | ROOT                       | ROOT                                                            |
-| Novell                                               | ROUTER                     | <blank>                                                         |
-| Novell                                               | SABRE                      | <blank>                                                         |
-| Novell                                               | sadmin                     | <blank>                                                         |
+| Novell                                               | ROUTER                     | -                                                               |
+| Novell                                               | SABRE                      | -                                                               |
+| Novell                                               | sadmin                     | -                                                               |
 | Novell                                               | servlet                    | manager                                                         |
-| Novell                                               | SUPERVISOR                 | <blank>                                                         |
+| Novell                                               | SUPERVISOR                 | -                                                               |
 | Novell                                               | SUPERVISOR                 | HARRIS                                                          |
 | Novell                                               | SUPERVISOR                 | NETFRAME                                                        |
 | Novell                                               | SUPERVISOR                 | NF                                                              |
 | Novell                                               | SUPERVISOR                 | NFI                                                             |
 | Novell                                               | SUPERVISOR                 | SUPERVISOR                                                      |
 | Novell                                               | SUPERVISOR                 | SYSTEM                                                          |
-| Novell                                               | TEST                       | <blank>                                                         |
+| Novell                                               | TEST                       | -                                                               |
 | Novell                                               | TEST                       | TEST                                                            |
-| Novell                                               | USER_TEMPLATE              | <blank>                                                         |
+| Novell                                               | USER_TEMPLATE              | -                                                               |
 | Novell                                               | USER_TEMPLATE              | USER_TEMPLATE                                                   |
-| Novell                                               | WANGTEK                    | <blank>                                                         |
+| Novell                                               | WANGTEK                    | -                                                               |
 | Novell                                               | WANGTEK                    | WANGTEK                                                         |
-| Novell                                               | WINDOWS_PASSTHRU           | <blank>                                                         |
+| Novell                                               | WINDOWS_PASSTHRU           | -                                                               |
 | Novell                                               | WINDOWS_PASSTHRU           | WINDOWS_PASSTHRU                                                |
 | Novell                                               | WINSABRE                   | SABRE                                                           |
 | Novell                                               | WINSABRE                   | WINSABRE                                                        |
-| NRG or RICOH                                         | <blank>                    | password                                                        |
+| NRG or RICOH                                         | -                          | password                                                        |
 | NSI                                                  | root                       | nsi                                                             |
 | Nullsoft                                             | admin                      | changeme                                                        |
-| Nurit                                                | $system                    | <blank>                                                         |
+| Nurit                                                | $system                    | -                                                               |
 | Nuxeo Server (general)                               | Administrator              | Administrator                                                   |
-| OCE                                                  | <blank>                    | 0 and the number of OCE printer                                 |
+| OCE                                                  | -                          | 0 and the number of OCE printer                                 |
 | OCS Inventory                                        | admin                      | admin                                                           |
 | Odoo (general)                                       | admin                      | admin                                                           |
 | Odoo (general)                                       | demo                       | demo                                                            |
@@ -1957,12 +1957,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Oki                                                  | admin                      | <SEE COMMENT>                                                   |
 | Oki                                                  | root                       | <SEE COMMENT>                                                   |
 | Oleg Khabarov                                        | username                   | password                                                        |
-| Olicom                                               | <blank>                    | AaBbCcDd                                                        |
+| Olicom                                               | -                          | AaBbCcDd                                                        |
 | olitec                                               | admin                      | adslolitec                                                      |
 | olitec (Trendchip)                                   | admin                      | admin                                                           |
-| Omnitronix                                           | <blank>                    | SMDR                                                            |
-| Omnitronix                                           | <blank>                    | SUPER                                                           |
-| OMRON                                                | <blank>                    | <blank>                                                         |
+| Omnitronix                                           | -                          | SMDR                                                            |
+| Omnitronix                                           | -                          | SUPER                                                           |
+| OMRON                                                | -                          | -                                                               |
 | oodie.com                                            | admin                      | admin                                                           |
 | OpenConnect                                          | admin                      | OCS                                                             |
 | OpenConnect                                          | adminstat                  | OCS                                                             |
@@ -2015,12 +2015,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Oracle                                               | AQJAVA                     | AQJAVA                                                          |
 | Oracle                                               | AQUSER                     | AQUSER                                                          |
 | Oracle                                               | AUDIOUSER                  | AUDIOUSER                                                       |
-| Oracle                                               | AURORA$JIS$UTILITY$        | <blank>                                                         |
+| Oracle                                               | AURORA$JIS$UTILITY$        | -                                                               |
 | Oracle                                               | AURORA$ORB$UNAUTHENTICATED | INVALID                                                         |
 | Oracle                                               | AURORA@ORB@UNAUTHENTICATED | INVALID                                                         |
 | Oracle                                               | BC4J                       | BC4J                                                            |
 | Oracle                                               | BLAKE                      | PAPER                                                           |
-| Oracle                                               | <blank>                    | <blank>                                                         |
+| Oracle                                               | -                          | -                                                               |
 | Oracle                                               | bpel                       | bpel                                                            |
 | Oracle                                               | BRIO_ADMIN                 | BRIO_ADMIN                                                      |
 | Oracle                                               | CATALOG                    | CATALOG                                                         |
@@ -2039,7 +2039,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Oracle                                               | CQSCHEMAUSER               | PASSWORD                                                        |
 | Oracle                                               | CSMIG                      | CSMIG                                                           |
 | Oracle                                               | CTXDEMO                    | CTXDEMO                                                         |
-| Oracle                                               | CTXSYS                     | <blank>                                                         |
+| Oracle                                               | CTXSYS                     | -                                                               |
 | Oracle                                               | CTXSYS                     | CTXSYS                                                          |
 | Oracle                                               | DBI                        | MUMBLEFRATZ                                                     |
 | Oracle                                               | DBSNMP                     | DBSNMP                                                          |
@@ -2062,7 +2062,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Oracle                                               | FND                        | FND                                                             |
 | Oracle                                               | FROSTY                     | SNOWMAN                                                         |
 | Oracle Glassfish (web)                               | admin                      | admin                                                           |
-| Oracle Glassfish (web)                               | admin                      | <blank>                                                         |
+| Oracle Glassfish (web)                               | admin                      | -                                                               |
 | Oracle                                               | GL                         | GL                                                              |
 | Oracle                                               | GPFD                       | GPFD                                                            |
 | Oracle                                               | GPLD                       | GPLD                                                            |
@@ -2231,7 +2231,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Oracle                                               | WWW                        | WWW                                                             |
 | Oracle                                               | XPRT                       | XPRT                                                            |
 | Orange                                               | admin                      | admin                                                           |
-| orange livebox4 (web)                                | admin                      | <blank>                                                         |
+| orange livebox4 (web)                                | admin                      | -                                                               |
 | Orange                                               | root                       | 1234                                                            |
 | Osicom                                               | debug                      | d.e.b.u.g                                                       |
 | Osicom                                               | d.e.b.u.g                  | User                                                            |
@@ -2250,34 +2250,34 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Overland Storage                                     | root                       | Password                                                        |
 | OvisLink Canada Inc.                                 | root                       | root                                                            |
 | OvisLink Canada Inc.                                 | user                       | user                                                            |
-| ovislink                                             | root                       | <blank>                                                         |
-| Pacific Micro Data                                   | pmd                        | <blank>                                                         |
-| Packard Bell                                         | <blank>                    | bell9                                                           |
-| Packeteer                                            | <blank>                    | touchpwd=                                                       |
+| ovislink                                             | root                       | -                                                               |
+| Pacific Micro Data                                   | pmd                        | -                                                               |
+| Packard Bell                                         | -                          | bell9                                                           |
+| Packeteer                                            | -                          | touchpwd=                                                       |
 | Palo Alto GlobalProtect Gateway                      | admin                      | admin                                                           |
 | Panasonic                                            | admin                      | 1234                                                            |
 | Panasonic                                            | admin                      | 12345                                                           |
-| Panasonic                                            | <blank>                    | 1234                                                            |
-| Panasonic                                            | <blank>                    | <blank>                                                         |
+| Panasonic                                            | -                          | 1234                                                            |
+| Panasonic                                            | -                          | -                                                               |
 | Pandatel                                             | admin                      | admin                                                           |
 | Parallels                                            | admin                      | setup                                                           |
-| Parrot                                               | <blank>                    | 0000                                                            |
+| Parrot                                               | -                          | 0000                                                            |
 | patrowl                                              | admin                      | Bonjour1!                                                       |
 | Patton                                               | monitor                    | monitor                                                         |
 | Patton                                               | superuser                  | superuser                                                       |
 | PBX                                                  | tech                       | nician                                                          |
-| penril datability                                    | <blank>                    | system                                                          |
+| penril datability                                    | -                          | system                                                          |
 | Pentagram                                            | admin                      | password                                                        |
-| Pentaoffice                                          | <blank>                    | pento                                                           |
+| Pentaoffice                                          | -                          | pento                                                           |
 | PentaSafe                                            | PSEAdmin                   | $secure$                                                        |
 | Perle                                                | admin                      | superuser                                                       |
 | pfSense                                              | admin                      | pfsense                                                         |
 | Pfsense (web)                                        | admin                      | pfsense                                                         |
 | Philips                                              | admin                      | admin                                                           |
-| phoenix                                              | <blank>                    | admin                                                           |
+| phoenix                                              | -                          | admin                                                           |
 | Phoenix v1.14                                        | Administrator              | admin                                                           |
-| phpLiteAdmin                                         | <blank>                    | admin                                                           |
-| phpMyAdmin                                           | root                       | <blank>                                                         |
+| phpLiteAdmin                                         | -                          | admin                                                           |
+| phpMyAdmin                                           | root                       | -                                                               |
 | PHPReactor                                           | core                       | phpreactor                                                      |
 | phpTest                                              | admin                      | 1234                                                            |
 | phpTest                                              | guest                      | guest                                                           |
@@ -2288,11 +2288,11 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Pirelli                                              | admin                      | smallbusiness                                                   |
 | Pirelli                                              | user                       | password                                                        |
 | Pivotal Software,Inc.                                | guest                      | guest                                                           |
-| PlainTree                                            | <blank>                    | default.password                                                |
+| PlainTree                                            | -                          | default.password                                                |
 | Planet                                               | admin                      | 1234                                                            |
 | planet                                               | admin                      | admin                                                           |
 | Planet                                               | admin                      | epicrouter                                                      |
-| Planet                                               | <blank>                    | default                                                         |
+| Planet                                               | -                          | default                                                         |
 | PLANET Technology Corp.                              | admin                      | [^_^]                                                           |
 | PLANET Technology Corp.                              | admin                      | ISPMODE                                                         |
 | Planex                                               | admin                      | 0                                                               |
@@ -2300,10 +2300,10 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | PokerTracker Software                                | postgres                   | svcPASS83                                                       |
 | Pollsafe                                             | SMDR                       | SECONDARY                                                       |
 | Polycom                                              | administrator              | `* * #`                                                         |
-| Polycom                                              | <blank>                    | ACCORD                                                          |
-| Polycom                                              | <blank>                    | admin                                                           |
-| Polycom                                              | <blank>                    | <blank>                                                         |
-| Polycom                                              | <blank>                    | x6zynd56                                                        |
+| Polycom                                              | -                          | ACCORD                                                          |
+| Polycom                                              | -                          | admin                                                           |
+| Polycom                                              | -                          | -                                                               |
+| Polycom                                              | -                          | x6zynd56                                                        |
 | Polycom                                              | Polycom                    | 456                                                             |
 | Polycom                                              | Polycom                    | SpIp                                                            |
 | Polycom VVX 500 (phone)                              | Admin                      | 456                                                             |
@@ -2316,12 +2316,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | postgres (postgres)                                  | postgres                   | amber                                                           |
 | postgres (postgres)                                  | postgres                   | password                                                        |
 | postgres (postgres)                                  | postgres                   | postgres                                                        |
-| PostgreSQL                                           | postgres                   | <blank>                                                         |
+| PostgreSQL                                           | postgres                   | -                                                               |
 | Powerchute                                           | pwrchute                   | pwrchute                                                        |
 | POWERLOGIC                                           | Administrator              | Gateway                                                         |
 | Prestige                                             | admin                      | 1234                                                            |
-| Prestigio                                            | <blank>                    | <blank>                                                         |
-| PrimeBase                                            | Administrator              | <blank>                                                         |
+| Prestigio                                            | -                          | -                                                               |
+| PrimeBase                                            | Administrator              | -                                                               |
 | Prime                                                | dos                        | dos                                                             |
 | Prime                                                | fam                        | fam                                                             |
 | Prime                                                | guest1                     | guest                                                           |
@@ -2348,81 +2348,81 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Promise                                              | admin                      | admin                                                           |
 | Promise                                              | engmode                    | hawk201                                                         |
 | Promise Technology,Inc.                              | administrator              | password                                                        |
-| Prostar                                              | <blank>                    | 4321                                                            |
+| Prostar                                              | -                          | 4321                                                            |
 | Protocraft                                           | musi1921                   | Musi%1921                                                       |
-| Proxicast                                            | <blank>                    | 1234                                                            |
-| Proxim                                               | <blank>                    | <blank>                                                         |
-| Proxim                                               | <blank>                    | public                                                          |
+| Proxicast                                            | -                          | 1234                                                            |
+| Proxim                                               | -                          | -                                                               |
+| Proxim                                               | -                          | public                                                          |
 | PRTG                                                 | prtgadmin                  | prtgadmin                                                       |
 | Psionteklogix                                        | admin                      | admin                                                           |
 | Psionteklogix                                        | support                    | h179350                                                         |
 | ptcl                                                 | admin                      | admin                                                           |
-| publicprivate (snmp)                                 | <blank>                    | private                                                         |
-| publicprivate (snmp)                                 | <blank>                    | public                                                          |
+| publicprivate (snmp)                                 | -                          | private                                                         |
+| publicprivate (snmp)                                 | -                          | public                                                          |
 | Pyramid Computer                                     | admin                      | admin                                                           |
 | Pyramid Computer                                     | admin                      | gnumpf                                                          |
 | qBittorrent Web UI                                   | admin                      | adminadmin                                                      |
-| QDI                                                  | <blank>                    | lesarotl                                                        |
-| QDI                                                  | <blank>                    | password                                                        |
-| QDI                                                  | <blank>                    | QDI                                                             |
+| QDI                                                  | -                          | lesarotl                                                        |
+| QDI                                                  | -                          | password                                                        |
+| QDI                                                  | -                          | QDI                                                             |
 | QLogic                                               | admin                      | password                                                        |
 | QLogic                                               | images                     | images                                                          |
-| Q-Tec                                                | Admin                      | <blank>                                                         |
+| Q-Tec                                                | Admin                      | -                                                               |
 | QualiTeam                                            | master                     | master                                                          |
-| Quantex                                              | <blank>                    | teX1                                                            |
-| Quantex                                              | <blank>                    | xljlbj                                                          |
-| Quantum                                              | <blank>                    | <blank>                                                         |
+| Quantex                                              | -                          | teX1                                                            |
+| Quantex                                              | -                          | xljlbj                                                          |
+| Quantum                                              | -                          | -                                                               |
 | Questra Corporation                                  | guest                      | guest                                                           |
 | Questra Corporation                                  | questra                    | questra                                                         |
 | Quest Software                                       | TOAD                       | TOAD                                                            |
 | Quintum Technologies Inc.                            | admin                      | admin                                                           |
 | RabbitMQ                                             | guest                      | guest                                                           |
-| Radio Shack                                          | <blank>                    | 744                                                             |
+| Radio Shack                                          | -                          | 744                                                             |
 | Radio Shack                                          | [MULTIPLE]                 | 744                                                             |
-| Radvision                                            | admin                      | <blank>                                                         |
-| Radvision                                            | <blank>                    | MCUrv                                                           |
+| Radvision                                            | admin                      | -                                                               |
+| Radvision                                            | -                          | MCUrv                                                           |
 | Radware                                              | lp                         | lp                                                              |
 | Radware                                              | radware                    | radware                                                         |
-| Raidzone                                             | <blank>                    | raidzone                                                        |
-| Rainbow                                              | <blank>                    | PASSWORD                                                        |
-| Rainbow                                              | <blank>                    | rainbow                                                         |
+| Raidzone                                             | -                          | raidzone                                                        |
+| Rainbow                                              | -                          | PASSWORD                                                        |
+| Rainbow                                              | -                          | rainbow                                                         |
 | Ramp Networks                                        | wradmin                    | trancell                                                        |
-| RapidStream                                          | rsadmin                    | <blank>                                                         |
+| RapidStream                                          | rsadmin                    | -                                                               |
 | Raritan                                              | admin                      | raritan                                                         |
 | Raritan Inc.                                         | admin                      | raritan                                                         |
 | Raritan Inc.                                         | epiq_api                   | raritan                                                         |
 | Raritan Inc.                                         | web_api                    | sl33p30F00dumass!                                               |
 | raspberry Pi (ssh)                                   | pi                         | raspberry                                                       |
 | RayTalk                                              | root                       | root                                                            |
-| RCA                                                  | <blank>                    | admin                                                           |
-| Redcreek Communications                              | <blank>                    | 1234                                                            |
-| Redcreek Communications                              | <blank>                    | private                                                         |
+| RCA                                                  | -                          | admin                                                           |
+| Redcreek Communications                              | -                          | 1234                                                            |
+| Redcreek Communications                              | -                          | private                                                         |
 | Red Hat,Inc                                          | admin                      | admin                                                           |
-| Red Hat,Inc                                          | <blank>                    | AMIAMI                                                          |
-| Red Hat,Inc                                          | <blank>                    | AMIDECOD                                                        |
+| Red Hat,Inc                                          | -                          | AMIAMI                                                          |
+| Red Hat,Inc                                          | -                          | AMIDECOD                                                        |
 | Red Hat,Inc                                          | piranha                    | piranha                                                         |
 | Red Hat,Inc                                          | piranha                    | q                                                               |
 | RedHat                                               | piranha                    | piranha                                                         |
 | RedHat                                               | piranha                    | q                                                               |
 | RedHat (ssh)                                         | admin                      | admin                                                           |
-| RedHat (ssh)                                         | <blank>                    | AMIAMI                                                          |
-| RedHat (ssh)                                         | <blank>                    | AMIDECOD                                                        |
+| RedHat (ssh)                                         | -                          | AMIAMI                                                          |
+| RedHat (ssh)                                         | -                          | AMIDECOD                                                        |
 | RedHat (ssh)                                         | piranha                    | piranha                                                         |
 | RedHat (ssh)                                         | piranha                    | q                                                               |
-| Redis (redis)                                        | <blank>                    | <blank>                                                         |
+| Redis (redis)                                        | -                          | -                                                               |
 | redline                                              | admin                      | admin                                                           |
 | reg.pnu.ac.ir                                        | 880175445                  | 11223344                                                        |
 | Remedy                                               | ARAdmin                    | AR#Admin#                                                       |
-| Remedy                                               | Demo                       | <blank>                                                         |
+| Remedy                                               | Demo                       | -                                                               |
 | remote-exploit                                       | root                       | toor                                                            |
-| Research                                             | <blank>                    | Col2ogro2                                                       |
+| Research                                             | -                          | Col2ogro2                                                       |
 | Research Machines                                    | manager                    | changeme                                                        |
 | Resumix                                              | root                       | resumix                                                         |
-| Ricoh                                                | admin                      | <blank>                                                         |
+| Ricoh                                                | admin                      | -                                                               |
 | Ricoh                                                | admin                      | password                                                        |
-| Ricoh                                                | <blank>                    | password                                                        |
-| Ricoh                                                | <blank>                    | sysadm                                                          |
-| Ricoh MP (printer)                                   | supervisor                 | <blank>                                                         |
+| Ricoh                                                | -                          | password                                                        |
+| Ricoh                                                | -                          | sysadm                                                          |
+| Ricoh MP (printer)                                   | supervisor                 | -                                                               |
 | Ricoh                                                | sysadmin                   | password                                                        |
 | Ricoh                                                | sysadm                     | sysadm                                                          |
 | Riverbed                                             | Admin                      | password                                                        |
@@ -2431,12 +2431,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | rm                                                   | administrator              | password/changeme or secret                                     |
 | RM                                                   | admin                      | rmnetlm                                                         |
 | RM                                                   | adminstrator               | changeme                                                        |
-| RM                                                   | <blank>                    | RM                                                              |
+| RM                                                   | -                          | RM                                                              |
 | RM                                                   | deskalt                    | password                                                        |
 | RM                                                   | deskman                    | changeme                                                        |
 | RM                                                   | desknorm                   | password                                                        |
 | RM                                                   | deskres                    | password                                                        |
-| RM                                                   | guest                      | <blank>                                                         |
+| RM                                                   | guest                      | -                                                               |
 | RM                                                   | replicator                 | replicator                                                      |
 | RM                                                   | RMUser1                    | password                                                        |
 | RM                                                   | setup                      | changeme                                                        |
@@ -2469,14 +2469,14 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Sagem                                                | Menara                     | Menara                                                          |
 | Sagem                                                | root                       | 1234                                                            |
 | Samba                                                | Any                        | Any                                                             |
-| Sambar Technologies                                  | admin                      | <blank>                                                         |
-| Sambar Technologies                                  | anonymous                  | <blank>                                                         |
-| Sambar Technologies                                  | billy-bob                  | <blank>                                                         |
-| Sambar Technologies                                  | ftp                        | <blank>                                                         |
+| Sambar Technologies                                  | admin                      | -                                                               |
+| Sambar Technologies                                  | anonymous                  | -                                                               |
+| Sambar Technologies                                  | billy-bob                  | -                                                               |
+| Sambar Technologies                                  | ftp                        | -                                                               |
 | Sambar Technologies                                  | guest                      | guest                                                           |
 | Samsung                                              | admin                      | password                                                        |
-| Samsung                                              | <blank>                    | <blank>                                                         |
-| Samsung                                              | <blank>                    | s!a@m#n$p%c                                                     |
+| Samsung                                              | -                          | -                                                               |
+| Samsung                                              | -                          | s!a@m#n$p%c                                                     |
 | Samsung                                              | public                     | public                                                          |
 | samsung (web)                                        | admin                      | 1111111                                                         |
 | samsung (web)                                        | admin                      | 4321                                                            |
@@ -2497,7 +2497,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | SAP                                                  | SAPCPIC                    | ADMIN                                                           |
 | SAP                                                  | SAP*                       | PASS                                                            |
 | SAP                                                  | SAPR3                      | SAP                                                             |
-| SAP                                                  | TMSADM                     | <blank>                                                         |
+| SAP                                                  | TMSADM                     | -                                                               |
 | SAP (web)                                            | admin                      | axis2                                                           |
 | SAP (web)                                            | Administrator              | manage                                                          |
 | SAP (web) client EARLYWATCH                          | admin                      | Support                                                         |
@@ -2513,12 +2513,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | SAP (web)                                            | SAPCPIC                    | ADMIN                                                           |
 | SAP (web)                                            | SAP*                       | PASS                                                            |
 | SAP (web)                                            | SAPR3                      | SAP                                                             |
-| SAP (web)                                            | TMSADM                     | <blank>                                                         |
+| SAP (web)                                            | TMSADM                     | -                                                               |
 | SAP (web)                                            | xmi_demo                   | sap123                                                          |
 | SAP                                                  | xmi_demo                   | sap123                                                          |
 | Schlage SMS (mssql)                                  | sa                         | SECAdmin1                                                       |
 | Schlage SMS (mssql)                                  | SMSAdmin                   | SECAdmin1                                                       |
-| Schneider Electric                                   | <blank>                    | admin                                                           |
+| Schneider Electric                                   | -                          | admin                                                           |
 | Schneider Electric                                   | ntpupdate                  | ntpupdate                                                       |
 | Schneider Electric                                   | USER                       | USER                                                            |
 | Schneider M340(FTP)                                  | sysdiag                    | factorycast@schneider                                           |
@@ -2532,15 +2532,15 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Seagull Scientific                                   | USER                       | USER                                                            |
 | Seclore                                              | root                       | changeonfirstlogin                                              |
 | Seclore                                              | sa                         | changeonfirstlogin                                              |
-| Secure Computing                                     | admin                      | <blank>                                                         |
+| Secure Computing                                     | admin                      | -                                                               |
 | Securicor3NET                                        | manager                    | friend                                                          |
 | securstar                                            | admin                      | rainbow                                                         |
-| Semaphore                                            | DESQUETOP                  | <blank>                                                         |
-| Semaphore                                            | DSA                        | <blank>                                                         |
-| Semaphore                                            | DS                         | <blank>                                                         |
-| Semaphore                                            | PHANTOM                    | <blank>                                                         |
+| Semaphore                                            | DESQUETOP                  | -                                                               |
+| Semaphore                                            | DSA                        | -                                                               |
+| Semaphore                                            | DS                         | -                                                               |
+| Semaphore                                            | PHANTOM                    | -                                                               |
 | Sempre                                               | admin                      | admin                                                           |
-| Senao                                                | admin                      | <blank>                                                         |
+| Senao                                                | admin                      | -                                                               |
 | seninleyimben                                        | admin                      | admin                                                           |
 | sentry360 (web)                                      | admin                      | 1234                                                            |
 | Sercom                                               | admin                      | admin                                                           |
@@ -2551,33 +2551,33 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Sharp                                                | admin                      | admin                                                           |
 | Sharp                                                | Administrator              | admin                                                           |
 | Sharp                                                | admin                      | Sharp                                                           |
-| sharp                                                | <blank>                    | <blank>                                                         |
-| Sharp                                                | <blank>                    | sysadm                                                          |
+| sharp                                                | -                          | -                                                               |
+| Sharp                                                | -                          | sysadm                                                          |
 | Shiva                                                | admin                      | hello                                                           |
-| Shiva                                                | guest                      | <blank>                                                         |
+| Shiva                                                | guest                      | -                                                               |
 | Shiva                                                | hello                      | hello                                                           |
-| Shiva                                                | root                       | <blank>                                                         |
+| Shiva                                                | root                       | -                                                               |
 | ShoreTel                                             | Admin                      | admin1                                                          |
 | Shoretel                                             | admin                      | changeme                                                        |
-| Shuttle                                              | <blank>                    | Spacve                                                          |
+| Shuttle                                              | -                          | Spacve                                                          |
 | Siemens                                              | 31994                      | 31994                                                           |
 | Siemens                                              | admin                      | admin                                                           |
-| Siemens                                              | admin                      | <blank>                                                         |
+| Siemens                                              | admin                      | -                                                               |
 | Siemens                                              | admin                      | hagpolm1                                                        |
 | Siemens                                              | admin                      | pwp                                                             |
 | Siemens                                              | basisk                     | basisk                                                          |
-| Siemens                                              | <blank>                    | 0                                                               |
-| Siemens                                              | <blank>                    | 123456                                                          |
-| Siemens                                              | <blank>                    | admin                                                           |
-| Siemens                                              | <blank>                    | <blank>                                                         |
-| Siemens                                              | <blank>                    | gubed                                                           |
-| Siemens                                              | <blank>                    | SKY_FOX                                                         |
+| Siemens                                              | -                          | 0                                                               |
+| Siemens                                              | -                          | 123456                                                          |
+| Siemens                                              | -                          | admin                                                           |
+| Siemens                                              | -                          | -                                                               |
+| Siemens                                              | -                          | gubed                                                           |
+| Siemens                                              | -                          | SKY_FOX                                                         |
 | Siemens Corp                                         | 18140815                   | 18140815                                                        |
 | Siemens Corp                                         | 31994                      | 31994                                                           |
-| Siemens Corp                                         | admin                      | <blank>                                                         |
+| Siemens Corp                                         | admin                      | -                                                               |
 | Siemens Corp                                         | admin                      | pwp                                                             |
-| Siemens Corp                                         | <blank>                    | SKY_FOX                                                         |
-| Siemens Corp                                         | <blank>                    | uboot                                                           |
+| Siemens Corp                                         | -                          | SKY_FOX                                                         |
+| Siemens Corp                                         | -                          | uboot                                                           |
 | Siemens Corp                                         | eng                        | engineer                                                        |
 | Siemens Corp                                         | op                         | op                                                              |
 | Siemens Corp                                         | op                         | operator                                                        |
@@ -2594,7 +2594,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Siemens                                              | op                         | op                                                              |
 | Siemens                                              | op                         | operator                                                        |
 | Siemens                                              | poll                       | tech                                                            |
-| Siemens S7-1200(Web)                                 | admin                      | <blank>                                                         |
+| Siemens S7-1200(Web)                                 | admin                      | -                                                               |
 | Siemens                                              | superuser                  | admin                                                           |
 | Siemens                                              | su                         | super                                                           |
 | Siemens                                              | sysadmin                   | sysadmin                                                        |
@@ -2605,26 +2605,26 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Sigma                                                | admin                      | admin                                                           |
 | Signamax                                             | admin                      | admin                                                           |
 | Siips                                                | Administrator              | ganteng                                                         |
-| Silex Technology                                     | access                     | <blank>                                                         |
-| Silex Technology                                     | root                       | <blank>                                                         |
+| Silex Technology                                     | access                     | -                                                               |
+| Silex Technology                                     | root                       | -                                                               |
 | Silicon Graphics                                     | 4Dgifts                    | 4Dgifts                                                         |
-| Silicon Graphics                                     | 4Dgifts                    | <blank>                                                         |
-| Silicon Graphics                                     | 6.x                        | <blank>                                                         |
-| Silicon Graphics                                     | demos                      | <blank>                                                         |
-| Silicon Graphics                                     | Ezsetup                    | <blank>                                                         |
+| Silicon Graphics                                     | 4Dgifts                    | -                                                               |
+| Silicon Graphics                                     | 6.x                        | -                                                               |
+| Silicon Graphics                                     | demos                      | -                                                               |
+| Silicon Graphics                                     | Ezsetup                    | -                                                               |
 | Silicon Graphics                                     | field                      | field                                                           |
-| Silicon Graphics                                     | guest                      | <blank>                                                         |
-| Silicon Graphics                                     | lp                         | <blank>                                                         |
-| Silicon Graphics                                     | OutOfBox                   | <blank>                                                         |
+| Silicon Graphics                                     | guest                      | -                                                               |
+| Silicon Graphics                                     | lp                         | -                                                               |
+| Silicon Graphics                                     | OutOfBox                   | -                                                               |
 | Silicon Graphics                                     | tour                       | tour                                                            |
-| Silicon Graphics                                     | tutor                      | <blank>                                                         |
+| Silicon Graphics                                     | tutor                      | -                                                               |
 | Silicon Graphics                                     | tutor                      | tutor                                                           |
 | Silvercrest                                          | admin                      | admin                                                           |
-| sitara                                               | root                       | <blank>                                                         |
+| sitara                                               | root                       | -                                                               |
 | Sitecom                                              | admin                      | admin                                                           |
 | Sitecom                                              | admin                      | password                                                        |
-| Sitecom                                              | <blank>                    | damin                                                           |
-| Sitecom                                              | <blank>                    | sitecom                                                         |
+| Sitecom                                              | -                          | damin                                                           |
+| Sitecom                                              | -                          | sitecom                                                         |
 | Sitecore Corporation                                 | admin                      | b                                                               |
 | Sitecore Corporation                                 | Audrey                     | a                                                               |
 | Sitecore Corporation                                 | Bill                       | b                                                               |
@@ -2633,18 +2633,18 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Sitecore Corporation                                 | Minnie                     | m                                                               |
 | Site Interactive                                     | admin                      | pass                                                            |
 | SKF @ptitude Analyst (mssql)                         | sa                         | skf_admin1                                                      |
-| SMA America                                          | <blank>                    | sma                                                             |
+| SMA America                                          | -                          | sma                                                             |
 | smartBridges                                         | admin                      | public                                                          |
-| SmartSwitch                                          | admin                      | <blank>                                                         |
+| SmartSwitch                                          | admin                      | -                                                               |
 | SMC                                                  | admin                      | admin                                                           |
 | SMC                                                  | admin                      | barricade                                                       |
 | SMC                                                  | Admin                      | Barricade                                                       |
-| SMC                                                  | admin                      | <blank>                                                         |
+| SMC                                                  | admin                      | -                                                               |
 | SMC                                                  | Administrator              | smcadmin                                                        |
 | SMC                                                  | admin                      | smcadmin                                                        |
-| SMC                                                  | <blank>                    | 0000                                                            |
-| SMC                                                  | <blank>                    | <blank>                                                         |
-| SMC                                                  | <blank>                    | smcadmin                                                        |
+| SMC                                                  | -                          | 0000                                                            |
+| SMC                                                  | -                          | -                                                               |
+| SMC                                                  | -                          | smcadmin                                                        |
 | SMC                                                  | cusadmin                   | highspeed                                                       |
 | SMC                                                  | default                    | WLAN_AP                                                         |
 | SMC                                                  | mso                        | w0rkplac3rul3s                                                  |
@@ -2652,120 +2652,120 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Snap Appliance                                       | admin                      | admin                                                           |
 | Snapgear                                             | root                       | admin                                                           |
 | SnapGear                                             | root                       | default                                                         |
-| SNMP (snmp)                                          | <blank>                    | 0                                                               |
-| SNMP (snmp)                                          | <blank>                    | 0392a0                                                          |
-| SNMP (snmp)                                          | <blank>                    | 1234                                                            |
-| SNMP (snmp)                                          | <blank>                    | 2read                                                           |
-| SNMP (snmp)                                          | <blank>                    | 4changes                                                        |
-| SNMP (snmp)                                          | <blank>                    | access                                                          |
-| SNMP (snmp)                                          | <blank>                    | adm                                                             |
-| SNMP (snmp)                                          | <blank>                    | admin                                                           |
-| SNMP (snmp)                                          | <blank>                    | Admin                                                           |
-| SNMP (snmp)                                          | <blank>                    | agent                                                           |
-| SNMP (snmp)                                          | <blank>                    | agent_steal                                                     |
-| SNMP (snmp)                                          | <blank>                    | all                                                             |
-| SNMP (snmp)                                          | <blank>                    | ANYCOM                                                          |
-| SNMP (snmp)                                          | <blank>                    | apc                                                             |
-| SNMP (snmp)                                          | <blank>                    | bintec                                                          |
-| SNMP (snmp)                                          | <blank>                    | <blank>                                                         |
-| SNMP (snmp)                                          | <blank>                    | blue                                                            |
-| SNMP (snmp)                                          | <blank>                    | c                                                               |
-| SNMP (snmp)                                          | <blank>                    | C0de                                                            |
-| SNMP (snmp)                                          | <blank>                    | cable                                                           |
-| SNMP (snmp)                                          | <blank>                    | canon_admin                                                     |
-| SNMP (snmp)                                          | <blank>                    | cc                                                              |
-| SNMP (snmp)                                          | <blank>                    | cisco                                                           |
-| SNMP (snmp)                                          | <blank>                    | CISCO                                                           |
-| SNMP (snmp)                                          | <blank>                    | community                                                       |
-| SNMP (snmp)                                          | <blank>                    | core                                                            |
-| SNMP (snmp)                                          | <blank>                    | CR52401                                                         |
-| SNMP (snmp)                                          | <blank>                    | debug                                                           |
-| SNMP (snmp)                                          | <blank>                    | default                                                         |
-| SNMP (snmp)                                          | <blank>                    | dilbert                                                         |
-| SNMP (snmp)                                          | <blank>                    | enable                                                          |
-| SNMP (snmp)                                          | <blank>                    | field                                                           |
-| SNMP (snmp)                                          | <blank>                    | freekevin                                                       |
-| SNMP (snmp)                                          | <blank>                    | fubar                                                           |
-| SNMP (snmp)                                          | <blank>                    | guest                                                           |
-| SNMP (snmp)                                          | <blank>                    | hello                                                           |
-| SNMP (snmp)                                          | <blank>                    | hp_admin                                                        |
-| SNMP (snmp)                                          | <blank>                    | ibm                                                             |
-| SNMP (snmp)                                          | <blank>                    | IBM                                                             |
-| SNMP (snmp)                                          | <blank>                    | ilmi                                                            |
-| SNMP (snmp)                                          | <blank>                    | ILMI                                                            |
-| SNMP (snmp)                                          | <blank>                    | intermec                                                        |
-| SNMP (snmp)                                          | <blank>                    | Intermec                                                        |
-| SNMP (snmp)                                          | <blank>                    | internal                                                        |
-| SNMP (snmp)                                          | <blank>                    | l2                                                              |
-| SNMP (snmp)                                          | <blank>                    | l3                                                              |
-| SNMP (snmp)                                          | <blank>                    | manager                                                         |
-| SNMP (snmp)                                          | <blank>                    | mngt                                                            |
-| SNMP (snmp)                                          | <blank>                    | monitor                                                         |
-| SNMP (snmp)                                          | <blank>                    | netman                                                          |
-| SNMP (snmp)                                          | <blank>                    | network                                                         |
-| SNMP (snmp)                                          | <blank>                    | NoGaH$@!                                                        |
-| SNMP (snmp)                                          | <blank>                    | openview                                                        |
-| SNMP (snmp)                                          | <blank>                    | OrigEquipMfr                                                    |
-| SNMP (snmp)                                          | <blank>                    | pass                                                            |
-| SNMP (snmp)                                          | <blank>                    | password                                                        |
-| SNMP (snmp)                                          | <blank>                    | pr1v4t3                                                         |
-| SNMP (snmp)                                          | <blank>                    | private                                                         |
-| SNMP (snmp)                                          | <blank>                    | Private                                                         |
-| SNMP (snmp)                                          | <blank>                    | PRIVATE                                                         |
-| SNMP (snmp)                                          | <blank>                    | proxy                                                           |
-| SNMP (snmp)                                          | <blank>                    | publ1c                                                          |
-| SNMP (snmp)                                          | <blank>                    | public                                                          |
-| SNMP (snmp)                                          | <blank>                    | Public                                                          |
-| SNMP (snmp)                                          | <blank>                    | PUBLIC                                                          |
-| SNMP (snmp)                                          | <blank>                    | read                                                            |
-| SNMP (snmp)                                          | <blank>                    | readwrite                                                       |
-| SNMP (snmp)                                          | <blank>                    | red                                                             |
-| SNMP (snmp)                                          | <blank>                    | regional                                                        |
-| SNMP (snmp)                                          | <blank>                    | rmon                                                            |
-| SNMP (snmp)                                          | <blank>                    | rmon_admin                                                      |
-| SNMP (snmp)                                          | <blank>                    | ro                                                              |
-| SNMP (snmp)                                          | <blank>                    | root                                                            |
-| SNMP (snmp)                                          | <blank>                    | router                                                          |
-| SNMP (snmp)                                          | <blank>                    | rw                                                              |
-| SNMP (snmp)                                          | <blank>                    | rwa                                                             |
-| SNMP (snmp)                                          | <blank>                    | s!a@m#n$p%c                                                     |
-| SNMP (snmp)                                          | <blank>                    | san                                                             |
-| SNMP (snmp)                                          | <blank>                    | sanfran                                                         |
-| SNMP (snmp)                                          | <blank>                    | scotty                                                          |
-| SNMP (snmp)                                          | <blank>                    | secret                                                          |
-| SNMP (snmp)                                          | <blank>                    | Secret                                                          |
-| SNMP (snmp)                                          | <blank>                    | SECRET                                                          |
-| SNMP (snmp)                                          | <blank>                    | security                                                        |
-| SNMP (snmp)                                          | <blank>                    | Security                                                        |
-| SNMP (snmp)                                          | <blank>                    | SECURITY                                                        |
-| SNMP (snmp)                                          | <blank>                    | seri                                                            |
-| SNMP (snmp)                                          | <blank>                    | snmp                                                            |
-| SNMP (snmp)                                          | <blank>                    | SNMP                                                            |
-| SNMP (snmp)                                          | <blank>                    | snmpd                                                           |
-| SNMP (snmp)                                          | <blank>                    | snmptrap                                                        |
-| SNMP (snmp)                                          | <blank>                    | SNMP_trap                                                       |
-| SNMP (snmp)                                          | <blank>                    | solaris                                                         |
-| SNMP (snmp)                                          | <blank>                    | sun                                                             |
-| SNMP (snmp)                                          | <blank>                    | SUN                                                             |
-| SNMP (snmp)                                          | <blank>                    | superuser                                                       |
-| SNMP (snmp)                                          | <blank>                    | switch                                                          |
-| SNMP (snmp)                                          | <blank>                    | Switch                                                          |
-| SNMP (snmp)                                          | <blank>                    | SWITCH                                                          |
-| SNMP (snmp)                                          | <blank>                    | system                                                          |
-| SNMP (snmp)                                          | <blank>                    | System                                                          |
-| SNMP (snmp)                                          | <blank>                    | SYSTEM                                                          |
-| SNMP (snmp)                                          | <blank>                    | tech                                                            |
-| SNMP (snmp)                                          | <blank>                    | test                                                            |
-| SNMP (snmp)                                          | <blank>                    | TEST                                                            |
-| SNMP (snmp)                                          | <blank>                    | test2                                                           |
-| SNMP (snmp)                                          | <blank>                    | tiv0li                                                          |
-| SNMP (snmp)                                          | <blank>                    | tivoli                                                          |
-| SNMP (snmp)                                          | <blank>                    | trap                                                            |
-| SNMP (snmp)                                          | <blank>                    | world                                                           |
-| SNMP (snmp)                                          | <blank>                    | write                                                           |
-| SNMP (snmp)                                          | <blank>                    | xyzzy                                                           |
-| SNMP (snmp)                                          | <blank>                    | yellow                                                          |
-| Snom                                                 | admi                       | <blank>                                                         |
+| SNMP (snmp)                                          | -                          | 0                                                               |
+| SNMP (snmp)                                          | -                          | 0392a0                                                          |
+| SNMP (snmp)                                          | -                          | 1234                                                            |
+| SNMP (snmp)                                          | -                          | 2read                                                           |
+| SNMP (snmp)                                          | -                          | 4changes                                                        |
+| SNMP (snmp)                                          | -                          | access                                                          |
+| SNMP (snmp)                                          | -                          | adm                                                             |
+| SNMP (snmp)                                          | -                          | admin                                                           |
+| SNMP (snmp)                                          | -                          | Admin                                                           |
+| SNMP (snmp)                                          | -                          | agent                                                           |
+| SNMP (snmp)                                          | -                          | agent_steal                                                     |
+| SNMP (snmp)                                          | -                          | all                                                             |
+| SNMP (snmp)                                          | -                          | ANYCOM                                                          |
+| SNMP (snmp)                                          | -                          | apc                                                             |
+| SNMP (snmp)                                          | -                          | bintec                                                          |
+| SNMP (snmp)                                          | -                          | -                                                               |
+| SNMP (snmp)                                          | -                          | blue                                                            |
+| SNMP (snmp)                                          | -                          | c                                                               |
+| SNMP (snmp)                                          | -                          | C0de                                                            |
+| SNMP (snmp)                                          | -                          | cable                                                           |
+| SNMP (snmp)                                          | -                          | canon_admin                                                     |
+| SNMP (snmp)                                          | -                          | cc                                                              |
+| SNMP (snmp)                                          | -                          | cisco                                                           |
+| SNMP (snmp)                                          | -                          | CISCO                                                           |
+| SNMP (snmp)                                          | -                          | community                                                       |
+| SNMP (snmp)                                          | -                          | core                                                            |
+| SNMP (snmp)                                          | -                          | CR52401                                                         |
+| SNMP (snmp)                                          | -                          | debug                                                           |
+| SNMP (snmp)                                          | -                          | default                                                         |
+| SNMP (snmp)                                          | -                          | dilbert                                                         |
+| SNMP (snmp)                                          | -                          | enable                                                          |
+| SNMP (snmp)                                          | -                          | field                                                           |
+| SNMP (snmp)                                          | -                          | freekevin                                                       |
+| SNMP (snmp)                                          | -                          | fubar                                                           |
+| SNMP (snmp)                                          | -                          | guest                                                           |
+| SNMP (snmp)                                          | -                          | hello                                                           |
+| SNMP (snmp)                                          | -                          | hp_admin                                                        |
+| SNMP (snmp)                                          | -                          | ibm                                                             |
+| SNMP (snmp)                                          | -                          | IBM                                                             |
+| SNMP (snmp)                                          | -                          | ilmi                                                            |
+| SNMP (snmp)                                          | -                          | ILMI                                                            |
+| SNMP (snmp)                                          | -                          | intermec                                                        |
+| SNMP (snmp)                                          | -                          | Intermec                                                        |
+| SNMP (snmp)                                          | -                          | internal                                                        |
+| SNMP (snmp)                                          | -                          | l2                                                              |
+| SNMP (snmp)                                          | -                          | l3                                                              |
+| SNMP (snmp)                                          | -                          | manager                                                         |
+| SNMP (snmp)                                          | -                          | mngt                                                            |
+| SNMP (snmp)                                          | -                          | monitor                                                         |
+| SNMP (snmp)                                          | -                          | netman                                                          |
+| SNMP (snmp)                                          | -                          | network                                                         |
+| SNMP (snmp)                                          | -                          | NoGaH$@!                                                        |
+| SNMP (snmp)                                          | -                          | openview                                                        |
+| SNMP (snmp)                                          | -                          | OrigEquipMfr                                                    |
+| SNMP (snmp)                                          | -                          | pass                                                            |
+| SNMP (snmp)                                          | -                          | password                                                        |
+| SNMP (snmp)                                          | -                          | pr1v4t3                                                         |
+| SNMP (snmp)                                          | -                          | private                                                         |
+| SNMP (snmp)                                          | -                          | Private                                                         |
+| SNMP (snmp)                                          | -                          | PRIVATE                                                         |
+| SNMP (snmp)                                          | -                          | proxy                                                           |
+| SNMP (snmp)                                          | -                          | publ1c                                                          |
+| SNMP (snmp)                                          | -                          | public                                                          |
+| SNMP (snmp)                                          | -                          | Public                                                          |
+| SNMP (snmp)                                          | -                          | PUBLIC                                                          |
+| SNMP (snmp)                                          | -                          | read                                                            |
+| SNMP (snmp)                                          | -                          | readwrite                                                       |
+| SNMP (snmp)                                          | -                          | red                                                             |
+| SNMP (snmp)                                          | -                          | regional                                                        |
+| SNMP (snmp)                                          | -                          | rmon                                                            |
+| SNMP (snmp)                                          | -                          | rmon_admin                                                      |
+| SNMP (snmp)                                          | -                          | ro                                                              |
+| SNMP (snmp)                                          | -                          | root                                                            |
+| SNMP (snmp)                                          | -                          | router                                                          |
+| SNMP (snmp)                                          | -                          | rw                                                              |
+| SNMP (snmp)                                          | -                          | rwa                                                             |
+| SNMP (snmp)                                          | -                          | s!a@m#n$p%c                                                     |
+| SNMP (snmp)                                          | -                          | san                                                             |
+| SNMP (snmp)                                          | -                          | sanfran                                                         |
+| SNMP (snmp)                                          | -                          | scotty                                                          |
+| SNMP (snmp)                                          | -                          | secret                                                          |
+| SNMP (snmp)                                          | -                          | Secret                                                          |
+| SNMP (snmp)                                          | -                          | SECRET                                                          |
+| SNMP (snmp)                                          | -                          | security                                                        |
+| SNMP (snmp)                                          | -                          | Security                                                        |
+| SNMP (snmp)                                          | -                          | SECURITY                                                        |
+| SNMP (snmp)                                          | -                          | seri                                                            |
+| SNMP (snmp)                                          | -                          | snmp                                                            |
+| SNMP (snmp)                                          | -                          | SNMP                                                            |
+| SNMP (snmp)                                          | -                          | snmpd                                                           |
+| SNMP (snmp)                                          | -                          | snmptrap                                                        |
+| SNMP (snmp)                                          | -                          | SNMP_trap                                                       |
+| SNMP (snmp)                                          | -                          | solaris                                                         |
+| SNMP (snmp)                                          | -                          | sun                                                             |
+| SNMP (snmp)                                          | -                          | SUN                                                             |
+| SNMP (snmp)                                          | -                          | superuser                                                       |
+| SNMP (snmp)                                          | -                          | switch                                                          |
+| SNMP (snmp)                                          | -                          | Switch                                                          |
+| SNMP (snmp)                                          | -                          | SWITCH                                                          |
+| SNMP (snmp)                                          | -                          | system                                                          |
+| SNMP (snmp)                                          | -                          | System                                                          |
+| SNMP (snmp)                                          | -                          | SYSTEM                                                          |
+| SNMP (snmp)                                          | -                          | tech                                                            |
+| SNMP (snmp)                                          | -                          | test                                                            |
+| SNMP (snmp)                                          | -                          | TEST                                                            |
+| SNMP (snmp)                                          | -                          | test2                                                           |
+| SNMP (snmp)                                          | -                          | tiv0li                                                          |
+| SNMP (snmp)                                          | -                          | tivoli                                                          |
+| SNMP (snmp)                                          | -                          | trap                                                            |
+| SNMP (snmp)                                          | -                          | world                                                           |
+| SNMP (snmp)                                          | -                          | write                                                           |
+| SNMP (snmp)                                          | -                          | xyzzy                                                           |
+| SNMP (snmp)                                          | -                          | yellow                                                          |
+| Snom                                                 | admi                       | -                                                               |
 | Snom                                                 | Administrator              | 0000                                                            |
 | Software AG                                          | Administrator              | manage                                                          |
 | Softwarehouse                                        | manager                    | manager                                                         |
@@ -2778,35 +2778,35 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Sonic-X                                              | root                       | admin                                                           |
 | Sonus                                                | admin                      | Sonus12345                                                      |
 | Sony                                                 | admin                      | admin                                                           |
-| Sony Ericsson                                        | <blank>                    | 0000                                                            |
+| Sony Ericsson                                        | -                          | 0000                                                            |
 | SOPHIA (Schweiz)                                     | admin                      | Protector                                                       |
 | SOPHIA (Schweiz)                                     | root                       | root                                                            |
-| Sorenson                                             | <blank>                    | admin                                                           |
+| Sorenson                                             | -                          | admin                                                           |
 | Sourcefire                                           | admin                      | password                                                        |
 | Sourcefire                                           | root                       | password                                                        |
 | Sovereign Hill                                       | Admin                      | shs                                                             |
 | Sparklan                                             | admin                      | admin                                                           |
 | Speco Technologies IP Camera (camera)                | admin                      | 1234                                                            |
 | speco (web)                                          | admin                      | 1234                                                            |
-| Spectra Logic                                        | administrator              | <blank>                                                         |
-| Spectra Logic                                        | operator                   | <blank>                                                         |
+| Spectra Logic                                        | administrator              | -                                                               |
+| Spectra Logic                                        | operator                   | -                                                               |
 | SpeedStream                                          | admin                      | admin                                                           |
 | SpeedStream                                          | Administrator              | admin                                                           |
-| SpeedStream                                          | <blank>                    | admin                                                           |
-| SpeedStream                                          | <blank>                    | adminttd                                                        |
-| SpeedXess                                            | <blank>                    | speedxess                                                       |
+| SpeedStream                                          | -                          | admin                                                           |
+| SpeedStream                                          | -                          | adminttd                                                        |
+| SpeedXess                                            | -                          | speedxess                                                       |
 | Sphairon                                             | admin                      | passwort                                                        |
-| Spider Systems                                       | <blank>                    | hello                                                           |
-| Spike                                                | enable                     | <blank>                                                         |
+| Spider Systems                                       | -                          | hello                                                           |
+| Spike                                                | enable                     | -                                                               |
 | SplendidCRM (mssql)                                  | sa                         | splendidcrm2005                                                 |
 | Splunk                                               | admin                      | changeme                                                        |
 | sprint                                               | self                       | system                                                          |
-| Ssangyoung                                           | <blank>                    | 2501                                                            |
+| Ssangyoung                                           | -                          | 2501                                                            |
 | SSA                                                  | SSA                        | SSA                                                             |
 | ssh (ssh)                                            | nasadmin                   | nasadmin                                                        |
 | ssh (ssh)                                            | root                       | 7ujMko0admin                                                    |
 | ssh (ssh)                                            | root                       | ascend                                                          |
-| Stan Ozier                                           | admin                      | <blank>                                                         |
+| Stan Ozier                                           | admin                      | -                                                               |
 | stardot (web)                                        | admin                      | admin                                                           |
 | stratacom                                            | stratacom                  | stratauser                                                      |
 | Stratitec                                            | root                       | ahetzip8                                                        |
@@ -2820,7 +2820,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Supercook                                            | admin                      | AlpheusDigital1010                                              |
 | Supercook                                            | super                      | super                                                           |
 | Supermicro                                           | ADMIN                      | admin                                                           |
-| SuperMicro                                           | <blank>                    | ksdjfg934t                                                      |
+| SuperMicro                                           | -                          | ksdjfg934t                                                      |
 | Super Micro Computer,Inc.                            | ADMIN                      | ADMIN                                                           |
 | Supermicro (web)                                     | ADMIN                      | ADMIN                                                           |
 | Surecom                                              | admin                      | admin                                                           |
@@ -2828,60 +2828,60 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | SuSE GmbH                                            | root                       | root                                                            |
 | Sweex                                                | admin                      | 1234                                                            |
 | Sweex                                                | admin                      | epicrouter                                                      |
-| Sweex                                                | <blank>                    | admin                                                           |
-| Sweex                                                | <blank>                    | <blank>                                                         |
-| Sweex                                                | <blank>                    | blank                                                           |
-| Sweex                                                | <blank>                    | mysweex                                                         |
+| Sweex                                                | -                          | admin                                                           |
+| Sweex                                                | -                          | -                                                               |
+| Sweex                                                | -                          | blank                                                           |
+| Sweex                                                | -                          | mysweex                                                         |
 | Sweex                                                | rdc123                     | rdc123                                                          |
 | Sweex                                                | sweex                      | mysweex                                                         |
 | SWEEX                                                | sweex                      | mysweex                                                         |
 | Swissvoice                                           | target                     | password                                                        |
 | Syabas Technology                                    | ftpuser                    | 1234                                                            |
 | Syabas Technology                                    | nmt                        | 1234                                                            |
-| Sybase                                               | 12.x                       | <blank>                                                         |
+| Sybase                                               | 12.x                       | -                                                               |
 | Sybase                                               | DBA                        | SQL                                                             |
-| Sybase                                               | jagadmin                   | <blank>                                                         |
-| Sybase                                               | sa                         | <blank>                                                         |
+| Sybase                                               | jagadmin                   | -                                                               |
+| Sybase                                               | sa                         | -                                                               |
 | Sybase                                               | sa                         | sasasa                                                          |
-| Symantec                                             | admin                      | <blank>                                                         |
+| Symantec                                             | admin                      | -                                                               |
 | Symantec                                             | admin                      | symantec                                                        |
-| Symantec                                             | <blank>                    | symantec                                                        |
+| Symantec                                             | -                          | symantec                                                        |
 | Symantec                                             | root                       | brightmail                                                      |
 | Symbol                                               | admin                      | symbol                                                          |
-| Symbol                                               | <blank>                    | Symbol                                                          |
+| Symbol                                               | -                          | Symbol                                                          |
 | Symbol                                               | Symbol                     | Symbol                                                          |
 | Symbol Technologies,Inc                              | admin                      | superuser                                                       |
 | Symmetricom                                          | guest                      | truetime                                                        |
 | Symmetricom                                          | operator                   | mercury                                                         |
-| Synology Inc                                         | admin                      | <blank>                                                         |
-| SysKonnect                                           | default.password           | <blank>                                                         |
+| Synology Inc                                         | admin                      | -                                                               |
+| SysKonnect                                           | default.password           | -                                                               |
 | SysMaster                                            | admin                      | 12345                                                           |
 | System/32                                            | install                    | secret                                                          |
-| Tandberg                                             | admin                      | <blank>                                                         |
-| Tandberg                                             | Admin                      | <blank>                                                         |
+| Tandberg                                             | admin                      | -                                                               |
+| Tandberg                                             | Admin                      | -                                                               |
 | Tandberg                                             | admin                      | TANDBERG                                                        |
-| Tandberg                                             | <blank>                    | 10023                                                           |
-| Tandberg                                             | <blank>                    | GWrv                                                            |
-| Tandberg                                             | <blank>                    | TANDBERG                                                        |
+| Tandberg                                             | -                          | 10023                                                           |
+| Tandberg                                             | -                          | GWrv                                                            |
+| Tandberg                                             | -                          | TANDBERG                                                        |
 | Tandberg                                             | root                       | TANDBERG                                                        |
-| Tandem                                               | super.super                | <blank>                                                         |
+| Tandem                                               | super.super                | -                                                               |
 | Tandem                                               | super.super                | master                                                          |
 | Tasman                                               | Tasman                     | Tasmannet                                                       |
-| T-Com                                                | <blank>                    | 0                                                               |
-| T-Com                                                | <blank>                    | 123456                                                          |
-| T-Comfort                                            | Administrator              | <blank>                                                         |
+| T-Com                                                | -                          | 0                                                               |
+| T-Com                                                | -                          | 123456                                                          |
+| T-Comfort                                            | Administrator              | -                                                               |
 | T-com                                                | veda                       | 12871                                                           |
-| TeamCity 9 Guest (web)                               | <blank>                    | <blank>                                                         |
+| TeamCity 9 Guest (web)                               | -                          | -                                                               |
 | Team Xodus                                           | xbox                       | xbox                                                            |
 | technicolor (ssh)                                    | admin                      | admin                                                           |
-| technology                                           | root                       | <blank>                                                         |
+| technology                                           | root                       | -                                                               |
 | Tegile                                               | admin                      | tegile                                                          |
-| Teklogix                                             | Administrator              | <blank>                                                         |
+| Teklogix                                             | Administrator              | -                                                               |
 | Telappliant                                          | admin                      | 1234                                                            |
 | Telco Systems                                        | telco                      | telco                                                           |
 | Telebit                                              | setup                      | setup                                                           |
 | Telebit                                              | snmp                       | nopasswd                                                        |
-| telecom                                              | operator                   | <blank>                                                         |
+| telecom                                              | operator                   | -                                                               |
 | Teledat                                              | admin                      | 1234                                                            |
 | Telelec                                              | eagle                      | eagle                                                           |
 | Teleopti WFM (web)                                   | admin@company.com          | admin                                                           |
@@ -2890,7 +2890,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Telewell                                             | admin                      | admin                                                           |
 | Telewell                                             | admin                      | password                                                        |
 | Telindus                                             | admin                      | admin                                                           |
-| Telindus                                             | <blank>                    | <blank>                                                         |
+| Telindus                                             | -                          | -                                                               |
 | Tellabs                                              | root                       | admin_1                                                         |
 | Tellabs                                              | tellabs                    | tellabs#1                                                       |
 | telnet (telnet)                                      | 666666                     | 666666                                                          |
@@ -2905,7 +2905,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | telnet (telnet)                                      | admin                      | 7ujMko0admin                                                    |
 | telnet (telnet)                                      | admin                      | admin                                                           |
 | telnet (telnet)                                      | admin                      | admin1234                                                       |
-| telnet (telnet)                                      | admin                      | <blank>                                                         |
+| telnet (telnet)                                      | admin                      | -                                                               |
 | telnet (telnet)                                      | administrator              | 1234                                                            |
 | telnet (telnet)                                      | Administrator              | admin                                                           |
 | telnet (telnet)                                      | admin                      | meinsm                                                          |
@@ -2927,7 +2927,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | telnet (telnet)                                      | root                       | 888888                                                          |
 | telnet (telnet)                                      | root                       | admin                                                           |
 | telnet (telnet)                                      | root                       | anko                                                            |
-| telnet (telnet)                                      | root                       | <blank>                                                         |
+| telnet (telnet)                                      | root                       | -                                                               |
 | telnet (telnet)                                      | root                       | default                                                         |
 | telnet (telnet)                                      | root                       | dreambox                                                        |
 | telnet (telnet)                                      | root                       | hi3518                                                          |
@@ -2957,18 +2957,18 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Telus                                                | (created)                  | telus00                                                         |
 | Telus                                                | (created)                  | telus99                                                         |
 | Terayon                                              | admin                      | password                                                        |
-| Terayon                                              | <blank>                    | <blank>                                                         |
+| Terayon                                              | -                          | -                                                               |
 | tert                                                 | james                      | james                                                           |
-| TexBox                                               | <blank>                    | 123                                                             |
+| TexBox                                               | -                          | 123                                                             |
 | TextPortal                                           | god1                       | 12345                                                           |
 | TextPortal                                           | god2                       | 12345                                                           |
 | Thecus Tech                                          | admin                      | admin                                                           |
 | Thomson                                              | admin                      | admin                                                           |
 | Thomson                                              | admin                      | password                                                        |
-| Thomson                                              | <blank>                    | admin                                                           |
+| Thomson                                              | -                          | admin                                                           |
 | thomson (ssh)                                        | admin                      | admin                                                           |
 | thomson (ssh)                                        | admin                      | password                                                        |
-| Tiara Networks                                       | <blank>                    | tiara                                                           |
+| Tiara Networks                                       | -                          | tiara                                                           |
 | Tiara                                                | tiara                      | tiaranet                                                        |
 | TIBCO                                                | admin                      | admin                                                           |
 | TIBCO                                                | admin                      | changeit                                                        |
@@ -2976,20 +2976,20 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | TimeForce (mssql)                                    | sa                         | Dr8gedog                                                        |
 | TimeTools                                            | admin                      | admin                                                           |
 | Tim Schaab                                           | theman                     | changeit                                                        |
-| Tiny                                                 | <blank>                    | Tiny                                                            |
-| Tinys                                                | <blank>                    | tiny                                                            |
-| Tinys                                                | <blank>                    | Tiny                                                            |
-| TMC                                                  | <blank>                    | BIGO                                                            |
+| Tiny                                                 | -                          | Tiny                                                            |
+| Tinys                                                | -                          | tiny                                                            |
+| Tinys                                                | -                          | Tiny                                                            |
+| TMC                                                  | -                          | BIGO                                                            |
 | Topcom                                               | admin                      | admin                                                           |
 | TopLayer                                             | siteadmin                  | toplayer                                                        |
 | topnet (web)                                         | topadmin                   | topadmin                                                        |
 | topsec                                               | superman                   | talent                                                          |
 | Toshiba                                              | admin                      | 123456                                                          |
 | Toshiba                                              | Admin                      | 123456                                                          |
-| Toshiba                                              | <blank>                    | 24Banc81                                                        |
-| Toshiba                                              | <blank>                    | <blank>                                                         |
-| Toshiba                                              | <blank>                    | Toshiba                                                         |
-| Toshiba                                              | <blank>                    | toshy99                                                         |
+| Toshiba                                              | -                          | 24Banc81                                                        |
+| Toshiba                                              | -                          | -                                                               |
+| Toshiba                                              | -                          | Toshiba                                                         |
+| Toshiba                                              | -                          | toshy99                                                         |
 | Toshiba                                              | super                      | superpass                                                       |
 | TOTOLINK                                             | onlime_r                   | 12345                                                           |
 | TOTOLINK                                             | root                       | 12345                                                           |
@@ -3006,99 +3006,99 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Troy                                                 | admin                      | extendnet                                                       |
 | Tsunami                                              | managers                   | managers                                                        |
 | Tumbleweed                                           | Admin                      | SECRET123                                                       |
-| TVT System                                           | <blank>                    | enter                                                           |
-| TVT System                                           | craft                      | <blank>                                                         |
+| TVT System                                           | -                          | enter                                                           |
+| TVT System                                           | craft                      | -                                                               |
 | TYPO3                                                | admin                      | password                                                        |
 | Typo3 Association                                    | admin                      | password                                                        |
-| TYPO3                                                | <blank>                    | joh316                                                          |
+| TYPO3                                                | -                          | joh316                                                          |
 | Ubiquiti EdgeOS (web)                                | ubnt                       | ubnt                                                            |
 | ubiquiti (ssh)                                       | admin                      | admin                                                           |
 | ubiquiti (ssh)                                       | root                       | ubnt                                                            |
 | ubiquiti (ssh)                                       | ubnt                       | ubnt                                                            |
-| Unex                                                 | <blank>                    | password                                                        |
-| UNEX                                                 | <blank>                    | password                                                        |
+| Unex                                                 | -                          | password                                                        |
+| UNEX                                                 | -                          | password                                                        |
 | Unidesk                                              | Administrator              | Unidesk1                                                        |
-| Unify                                                | <blank>                    | 123456                                                          |
+| Unify                                                | -                          | 123456                                                          |
 | Union                                                | root                       | root                                                            |
 | Unisys                                               | ADMINISTRATOR              | ADMINISTRATOR                                                   |
 | Unisys                                               | HTTP                       | HTTP                                                            |
 | Unisys                                               | NAU                        | NAU                                                             |
 | United Technologies Corporation                      | admin                      | 1234                                                            |
 | UNIX                                                 | adm                        | adm                                                             |
-| UNIX                                                 | adm                        | <blank>                                                         |
+| UNIX                                                 | adm                        | -                                                               |
 | UNIX                                                 | admin                      | admin                                                           |
 | UNIX                                                 | administrator              | administrator                                                   |
-| UNIX                                                 | administrator              | <blank>                                                         |
+| UNIX                                                 | administrator              | -                                                               |
 | UNIX                                                 | anon                       | anon                                                            |
 | UNIX                                                 | bbs                        | bbs                                                             |
-| UNIX                                                 | bbs                        | <blank>                                                         |
+| UNIX                                                 | bbs                        | -                                                               |
 | UNIX                                                 | bin                        | sys                                                             |
 | UNIX                                                 | checkfs                    | checkfs                                                         |
 | UNIX                                                 | checkfsys                  | checkfsys                                                       |
 | UNIX                                                 | checksys                   | checksys                                                        |
-| UNIX                                                 | daemon                     | <blank>                                                         |
+| UNIX                                                 | daemon                     | -                                                               |
 | UNIX                                                 | daemon                     | daemon                                                          |
-| UNIX                                                 | demo                       | <blank>                                                         |
+| UNIX                                                 | demo                       | -                                                               |
 | UNIX                                                 | demo                       | demo                                                            |
-| UNIX                                                 | demos                      | <blank>                                                         |
+| UNIX                                                 | demos                      | -                                                               |
 | UNIX                                                 | demos                      | demos                                                           |
-| UNIX                                                 | dni                        | <blank>                                                         |
+| UNIX                                                 | dni                        | -                                                               |
 | UNIX                                                 | dni                        | dni                                                             |
-| UNIX                                                 | fal                        | <blank>                                                         |
+| UNIX                                                 | fal                        | -                                                               |
 | UNIX                                                 | fal                        | fal                                                             |
-| UNIX                                                 | fax                        | <blank>                                                         |
+| UNIX                                                 | fax                        | -                                                               |
 | UNIX                                                 | fax                        | fax                                                             |
-| UNIX                                                 | ftp                        | <blank>                                                         |
+| UNIX                                                 | ftp                        | -                                                               |
 | UNIX                                                 | ftp                        | ftp                                                             |
-| UNIX                                                 | games                      | <blank>                                                         |
+| UNIX                                                 | games                      | -                                                               |
 | UNIX                                                 | games                      | games                                                           |
 | UNIX                                                 | gopher                     | gopher                                                          |
-| UNIX                                                 | gropher                    | <blank>                                                         |
-| UNIX                                                 | guest                      | <blank>                                                         |
+| UNIX                                                 | gropher                    | -                                                               |
+| UNIX                                                 | guest                      | -                                                               |
 | UNIX                                                 | guest                      | guest                                                           |
 | UNIX                                                 | guest                      | guestgue                                                        |
-| UNIX                                                 | halt                       | <blank>                                                         |
+| UNIX                                                 | halt                       | -                                                               |
 | UNIX                                                 | halt                       | halt                                                            |
 | UNIX                                                 | informix                   | informix                                                        |
 | UNIX                                                 | install                    | install                                                         |
 | UNIX                                                 | lpadmin                    | lpadmin                                                         |
 | UNIX                                                 | lpadm                      | lpadm                                                           |
 | UNIX                                                 | lp                         | bin                                                             |
-| UNIX                                                 | lp                         | <blank>                                                         |
+| UNIX                                                 | lp                         | -                                                               |
 | UNIX                                                 | lp                         | lineprin                                                        |
 | UNIX                                                 | lp                         | lp                                                              |
-| UNIX                                                 | lynx                       | <blank>                                                         |
+| UNIX                                                 | lynx                       | -                                                               |
 | UNIX                                                 | lynx                       | lynx                                                            |
-| UNIX                                                 | mail                       | <blank>                                                         |
+| UNIX                                                 | mail                       | -                                                               |
 | UNIX                                                 | mail                       | mail                                                            |
-| UNIX                                                 | man                        | <blank>                                                         |
+| UNIX                                                 | man                        | -                                                               |
 | UNIX                                                 | man                        | man                                                             |
-| UNIX                                                 | me                         | <blank>                                                         |
+| UNIX                                                 | me                         | -                                                               |
 | UNIX                                                 | me                         | me                                                              |
 | UNIX                                                 | mountfs                    | mountfs                                                         |
 | UNIX                                                 | mountfsys                  | mountfsys                                                       |
 | UNIX                                                 | mountsys                   | mountsys                                                        |
-| UNIX                                                 | news                       | <blank>                                                         |
+| UNIX                                                 | news                       | -                                                               |
 | UNIX                                                 | news                       | news                                                            |
-| UNIX                                                 | nobody                     | <blank>                                                         |
+| UNIX                                                 | nobody                     | -                                                               |
 | UNIX                                                 | nobody                     | nobody                                                          |
-| UNIX                                                 | nuucp                      | <blank>                                                         |
-| UNIX                                                 | operator                   | <blank>                                                         |
+| UNIX                                                 | nuucp                      | -                                                               |
+| UNIX                                                 | operator                   | -                                                               |
 | UNIX                                                 | operator                   | operator                                                        |
-| UNIX                                                 | oracle                     | <blank>                                                         |
-| UNIX                                                 | postmaster                 | <blank>                                                         |
+| UNIX                                                 | oracle                     | -                                                               |
+| UNIX                                                 | postmaster                 | -                                                               |
 | UNIX                                                 | postmaster                 | postmast                                                        |
 | UNIX                                                 | powerdown                  | powerdown                                                       |
 | UNIX                                                 | rje                        | rje                                                             |
-| UNIX                                                 | root                       | <blank>                                                         |
+| UNIX                                                 | root                       | -                                                               |
 | UNIX                                                 | root                       | hp                                                              |
 | UNIX                                                 | root                       | root                                                            |
 | UNIX                                                 | service                    | smile                                                           |
-| UNIX                                                 | setup                      | <blank>                                                         |
+| UNIX                                                 | setup                      | -                                                               |
 | UNIX                                                 | setup                      | setup                                                           |
-| UNIX                                                 | shutdown                   | <blank>                                                         |
+| UNIX                                                 | shutdown                   | -                                                               |
 | UNIX                                                 | shutdown                   | shutdown                                                        |
-| UNIX                                                 | sync                       | <blank>                                                         |
+| UNIX                                                 | sync                       | -                                                               |
 | UNIX                                                 | sync                       | sync                                                            |
 | UNIX                                                 | sysadm                     | admin                                                           |
 | UNIX                                                 | sysadmin                   | sysadmin                                                        |
@@ -3107,7 +3107,7 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | UNIX                                                 | sysbin                     | sysbin                                                          |
 | UNIX                                                 | sys                        | sys                                                             |
 | UNIX                                                 | sys                        | system                                                          |
-| UNIX                                                 | system_admin               | <blank>                                                         |
+| UNIX                                                 | system_admin               | -                                                               |
 | UNIX                                                 | system_admin               | system_admin                                                    |
 | UNIX                                                 | trouble                    | trouble                                                         |
 | UNIX                                                 | umountfs                   | umountfs                                                        |
@@ -3117,29 +3117,29 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | UNIX                                                 | user                       | user                                                            |
 | UNIX                                                 | uucpadm                    | uucpadm                                                         |
 | UNIX                                                 | uucp                       | uucp                                                            |
-| UNIX                                                 | web                        | <blank>                                                         |
-| UNIX                                                 | webmaster                  | <blank>                                                         |
+| UNIX                                                 | web                        | -                                                               |
+| UNIX                                                 | webmaster                  | -                                                               |
 | UNIX                                                 | webmaster                  | webmaster                                                       |
 | UNIX                                                 | web                        | web                                                             |
-| UNIX                                                 | www                        | <blank>                                                         |
+| UNIX                                                 | www                        | -                                                               |
 | UNIX                                                 | www                        | www                                                             |
-| Unknown                                              | <blank>                    | password                                                        |
+| Unknown                                              | -                          | password                                                        |
 | Unknown                                              | operator                   | operator                                                        |
 | Unknown                                              | overseer                   | overseer                                                        |
 | Unknown                                              | test                       | test                                                            |
 | U.S. Robotics                                        | admin                      | admin                                                           |
 | USRobotics                                           | admin                      | admin                                                           |
-| U.S. Robotics                                        | admin                      | <blank>                                                         |
+| U.S. Robotics                                        | admin                      | -                                                               |
 | UsRobotics                                           | Any                        | 12345                                                           |
 | U.S. Robotics                                        | Any                        | 12345                                                           |
-| U.S. Robotics                                        | <blank>                    | 12345                                                           |
-| U.S. Robotics                                        | <blank>                    | admin                                                           |
-| U.S. Robotics                                        | <blank>                    | amber                                                           |
+| U.S. Robotics                                        | -                          | 12345                                                           |
+| U.S. Robotics                                        | -                          | admin                                                           |
+| U.S. Robotics                                        | -                          | amber                                                           |
 | U.S. Robotics                                        | root                       | 12345                                                           |
 | U.S. Robotics                                        | root                       | admin                                                           |
 | U.S. Robotics                                        | support                    | support                                                         |
 | UTC FCWnx (mssql)                                    | sa                         | SecurityMaster08                                                |
-| UT Lexar                                             | lexar                      | <blank>                                                         |
+| UT Lexar                                             | lexar                      | -                                                               |
 | Utstar                                               | admin                      | utstar                                                          |
 | UTStarcom                                            | dbase                      | dbase                                                           |
 | UTStarcom                                            | field                      | field                                                           |
@@ -3147,69 +3147,69 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | UTStarcom                                            | snmp                       | snmp                                                            |
 | vacron (web)                                         | admin                      | admin                                                           |
 | Various                                              | root                       | admin                                                           |
-| VASCO                                                | admin                      | <blank>                                                         |
+| VASCO                                                | admin                      | -                                                               |
 | VBrick Systems                                       | admin                      | admin                                                           |
 | vectr                                                | admin                      | 11_ThisIsTheFirstPassword_11                                    |
 | Veramark                                             | admin                      | password                                                        |
-| Verifone                                             | <blank>                    | 166816                                                          |
-| Verilink                                             | <blank>                    | <blank>                                                         |
+| Verifone                                             | -                          | 166816                                                          |
+| Verilink                                             | -                          | -                                                               |
 | Veritas                                              | admin                      | password                                                        |
 | Verity                                               | admin                      | admin                                                           |
 | Verizon                                              | admin                      | password                                                        |
 | vertex                                               | root                       | vertex25                                                        |
-| Vextrec Technology                                   | <blank>                    | Vextrex                                                         |
+| Vextrec Technology                                   | -                          | Vextrex                                                         |
 | Video Insight (mssql)                                | sa                         | V4in$ight                                                       |
 | videoiq (web)                                        | supervisor                 | supervisor                                                      |
 | Video Web Server (webcam)                            | admin                      | admin                                                           |
 | VieNuke                                              | admin                      | admin                                                           |
-| Vina Technologies                                    | <blank>                    | <blank>                                                         |
+| Vina Technologies                                    | -                          | -                                                               |
 | Virtual Programming                                  | admin                      | admin                                                           |
 | Virtual Programming                                  | vpasp                      | vpasp                                                           |
 | Visa VAP                                             | root                       | QNX                                                             |
 | Visual Networks                                      | admin                      | visual                                                          |
-| vnc (vnc)                                            | <blank>                    | 1234                                                            |
-| vnc (vnc)                                            | <blank>                    | 123456                                                          |
-| vnc (vnc)                                            | <blank>                    | 1988                                                            |
-| vnc (vnc)                                            | <blank>                    | admin                                                           |
-| vnc (vnc)                                            | <blank>                    | ADMIN                                                           |
-| vnc (vnc)                                            | <blank>                    | Admin#1                                                         |
-| vnc (vnc)                                            | <blank>                    | Administrator                                                   |
-| vnc (vnc)                                            | <blank>                    | Amx1234!                                                        |
-| vnc (vnc)                                            | <blank>                    | AVStumpfl                                                       |
-| vnc (vnc)                                            | <blank>                    | beijer                                                          |
-| vnc (vnc)                                            | <blank>                    | default                                                         |
-| vnc (vnc)                                            | <blank>                    | EltakoFVS                                                       |
-| vnc (vnc)                                            | <blank>                    | elux                                                            |
-| vnc (vnc)                                            | <blank>                    | eyevis                                                          |
-| vnc (vnc)                                            | <blank>                    | FELDTECH_VNC                                                    |
-| vnc (vnc)                                            | <blank>                    | fidel123                                                        |
-| vnc (vnc)                                            | <blank>                    | hapero                                                          |
-| vnc (vnc)                                            | <blank>                    | instrument                                                      |
-| vnc (vnc)                                            | <blank>                    | m9ff.QW                                                         |
-| vnc (vnc)                                            | <blank>                    | maryland-dstar                                                  |
-| vnc (vnc)                                            | <blank>                    | muster                                                          |
-| vnc (vnc)                                            | <blank>                    | pass                                                            |
-| vnc (vnc)                                            | <blank>                    | pass1                                                           |
-| vnc (vnc)                                            | <blank>                    | pass2                                                           |
-| vnc (vnc)                                            | <blank>                    | passwd11                                                        |
-| vnc (vnc)                                            | <blank>                    | password                                                        |
-| vnc (vnc)                                            | <blank>                    | Passwort                                                        |
-| vnc (vnc)                                            | <blank>                    | protech                                                         |
-| vnc (vnc)                                            | <blank>                    | qwasyx21                                                        |
-| vnc (vnc)                                            | <blank>                    | raspberry                                                       |
-| vnc (vnc)                                            | <blank>                    | ripnas                                                          |
-| vnc (vnc)                                            | <blank>                    | sigmatek                                                        |
-| vnc (vnc)                                            | <blank>                    | solarfocus                                                      |
-| vnc (vnc)                                            | <blank>                    | TOUCHLON                                                        |
-| vnc (vnc)                                            | <blank>                    | user                                                            |
-| vnc (vnc)                                            | <blank>                    | visam                                                           |
-| vnc (vnc)                                            | <blank>                    | Vision2                                                         |
-| vnc (vnc)                                            | <blank>                    | vnc                                                             |
-| vnc (vnc)                                            | <blank>                    | vnc_pcc                                                         |
-| vnc (vnc)                                            | <blank>                    | Wyse                                                            |
-| vnc (vnc)                                            | <blank>                    | Wyse#123                                                        |
-| vnc (vnc)                                            | <blank>                    | yesco                                                           |
-| Vobis                                                | <blank>                    | merlin                                                          |
+| vnc (vnc)                                            | -                          | 1234                                                            |
+| vnc (vnc)                                            | -                          | 123456                                                          |
+| vnc (vnc)                                            | -                          | 1988                                                            |
+| vnc (vnc)                                            | -                          | admin                                                           |
+| vnc (vnc)                                            | -                          | ADMIN                                                           |
+| vnc (vnc)                                            | -                          | Admin#1                                                         |
+| vnc (vnc)                                            | -                          | Administrator                                                   |
+| vnc (vnc)                                            | -                          | Amx1234!                                                        |
+| vnc (vnc)                                            | -                          | AVStumpfl                                                       |
+| vnc (vnc)                                            | -                          | beijer                                                          |
+| vnc (vnc)                                            | -                          | default                                                         |
+| vnc (vnc)                                            | -                          | EltakoFVS                                                       |
+| vnc (vnc)                                            | -                          | elux                                                            |
+| vnc (vnc)                                            | -                          | eyevis                                                          |
+| vnc (vnc)                                            | -                          | FELDTECH_VNC                                                    |
+| vnc (vnc)                                            | -                          | fidel123                                                        |
+| vnc (vnc)                                            | -                          | hapero                                                          |
+| vnc (vnc)                                            | -                          | instrument                                                      |
+| vnc (vnc)                                            | -                          | m9ff.QW                                                         |
+| vnc (vnc)                                            | -                          | maryland-dstar                                                  |
+| vnc (vnc)                                            | -                          | muster                                                          |
+| vnc (vnc)                                            | -                          | pass                                                            |
+| vnc (vnc)                                            | -                          | pass1                                                           |
+| vnc (vnc)                                            | -                          | pass2                                                           |
+| vnc (vnc)                                            | -                          | passwd11                                                        |
+| vnc (vnc)                                            | -                          | password                                                        |
+| vnc (vnc)                                            | -                          | Passwort                                                        |
+| vnc (vnc)                                            | -                          | protech                                                         |
+| vnc (vnc)                                            | -                          | qwasyx21                                                        |
+| vnc (vnc)                                            | -                          | raspberry                                                       |
+| vnc (vnc)                                            | -                          | ripnas                                                          |
+| vnc (vnc)                                            | -                          | sigmatek                                                        |
+| vnc (vnc)                                            | -                          | solarfocus                                                      |
+| vnc (vnc)                                            | -                          | TOUCHLON                                                        |
+| vnc (vnc)                                            | -                          | user                                                            |
+| vnc (vnc)                                            | -                          | visam                                                           |
+| vnc (vnc)                                            | -                          | Vision2                                                         |
+| vnc (vnc)                                            | -                          | vnc                                                             |
+| vnc (vnc)                                            | -                          | vnc_pcc                                                         |
+| vnc (vnc)                                            | -                          | Wyse                                                            |
+| vnc (vnc)                                            | -                          | Wyse#123                                                        |
+| vnc (vnc)                                            | -                          | yesco                                                           |
+| Vobis                                                | -                          | merlin                                                          |
 | VoiceGenie Technologies                              | pw                         | pw                                                              |
 | VoiceObjects Germany                                 | voadmin                    | manager                                                         |
 | Vonage                                               | user                       | user                                                            |
@@ -3219,17 +3219,17 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | VxWorks                                              | guest                      | guest                                                           |
 | WAAV                                                 | admin                      | waav                                                            |
 | Wanadoo                                              | admin                      | admin                                                           |
-| Wanco,Inc.                                           | <blank>                    | ABCD                                                            |
-| Wanco,Inc.                                           | <blank>                    | Guest                                                           |
-| Wanco,Inc.                                           | <blank>                    | NTCIP                                                           |
-| Wanco,Inc.                                           | <blank>                    | Public                                                          |
+| Wanco,Inc.                                           | -                          | ABCD                                                            |
+| Wanco,Inc.                                           | -                          | Guest                                                           |
+| Wanco,Inc.                                           | -                          | NTCIP                                                           |
+| Wanco,Inc.                                           | -                          | Public                                                          |
 | Wang                                                 | CSG                        | SESAME                                                          |
 | warraCorp                                            | pepino                     | pepino                                                          |
 | WatchGuard                                           | admin                      | admin                                                           |
-| Watchguard                                           | admin                      | <blank>                                                         |
+| Watchguard                                           | admin                      | -                                                               |
 | WatchGuard                                           | admin                      | readwrite                                                       |
-| Watchguard                                           | <blank>                    | wg                                                              |
-| WatchGuard                                           | <blank>                    | wg                                                              |
+| Watchguard                                           | -                          | wg                                                              |
+| WatchGuard                                           | -                          | wg                                                              |
 | WatchGuard                                           | status                     | readonly                                                        |
 | Watchguard                                           | user                       | pass                                                            |
 | weblogic                                             | system                     | weblogic                                                        |
@@ -3252,17 +3252,17 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Web Wiz                                              | Administrator              | letmein                                                         |
 | Weidmüller                                           | admin                      | detmond                                                         |
 | WelchAllyn CardioPerfect (mssql)                     | sa                         | Cardio.Perfect                                                  |
-| Westell                                              | admin                      | <blank>                                                         |
+| Westell                                              | admin                      | -                                                               |
 | Westell                                              | admin                      | password                                                        |
 | Westell                                              | admin                      | password1                                                       |
 | Westell                                              | admin                      | sysAdmin                                                        |
 | Westell                                              | CSG                        | SESAME                                                          |
-| Wim Bervoets                                         | <blank>                    | Compleri                                                        |
+| Wim Bervoets                                         | -                          | Compleri                                                        |
 | windows (RDP)                                        | admin                      | 1234                                                            |
 | windows (RDP)                                        | admin                      | 12345                                                           |
 | windows (RDP)                                        | admin                      | 123456                                                          |
 | windows (RDP)                                        | admin                      | admin                                                           |
-| windows (RDP)                                        | admin                      | <blank>                                                         |
+| windows (RDP)                                        | admin                      | -                                                               |
 | windows (RDP)                                        | Administrator              | Administrator                                                   |
 | windows (RDP)                                        | Administrator              | FELDTECH                                                        |
 | windows (RDP)                                        | Administrator              | vagrant                                                         |
@@ -3278,13 +3278,13 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | windows (RDP)                                        | mxintadm                   | mxintadm                                                        |
 | windows (RDP)                                        | nmt                        | 1234                                                            |
 | windows (RDP)                                        | openhabian                 | openhabian                                                      |
-| windows (RDP)                                        | root                       | <blank>                                                         |
+| windows (RDP)                                        | root                       | -                                                               |
 | windows (RDP)                                        | secure                     | SecurityMaster08                                                |
 | windows (RDP)                                        | sonos                      | sonos                                                           |
 | windows (RDP)                                        | user                       | Wyse#123                                                        |
 | windows (RDP)                                        | vagrant                    | vagrant                                                         |
 | windows (RDP)                                        | wasadmin                   | wasadmin                                                        |
-| winwork                                              | operator                   | <blank>                                                         |
+| winwork                                              | operator                   | -                                                               |
 | Wireless,Inc.                                        | root                       | rootpass                                                        |
 | WLAN_3D                                              | Administrator              | admin                                                           |
 | wline                                                | admin                      | 1234                                                            |
@@ -3298,17 +3298,17 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Wonderware Historian (mssql)                         | wwUser                     | wwUser                                                          |
 | WorldClient                                          | WebAdmin                   | Admin                                                           |
 | WWWBoard                                             | WebAdmin                   | WebBoard                                                        |
-| Wyse                                                 | <blank>                    | Fireport                                                        |
-| Wyse                                                 | <blank>                    | password                                                        |
+| Wyse                                                 | -                          | Fireport                                                        |
+| Wyse                                                 | -                          | password                                                        |
 | Wyse                                                 | rapport                    | r@p8p0r+                                                        |
-| Wyse                                                 | root                       | <blank>                                                         |
+| Wyse                                                 | root                       | -                                                               |
 | Wyse                                                 | root                       | wyse                                                            |
 | Wyse                                                 | VNC                        | winterm                                                         |
 | XAMPP                                                | newuser                    | wampp                                                           |
 | XAMPP (web)                                          | newuser                    | wampp                                                           |
 | xavi                                                 | admin                      | admin                                                           |
 | Xavi                                                 | admin                      | admin                                                           |
-| Xavi                                                 | <blank>                    | <blank>                                                         |
+| Xavi                                                 | -                          | -                                                               |
 | xd                                                   | xd                         | xd                                                              |
 | Xerox                                                | 11111                      | x-admin                                                         |
 | xerox                                                | admin                      | 1111                                                            |
@@ -3316,29 +3316,29 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Xerox                                                | admin                      | 2222                                                            |
 | Xerox                                                | admin                      | 22222                                                           |
 | Xerox                                                | admin                      | admin                                                           |
-| Xerox                                                | admin                      | <blank>                                                         |
+| Xerox                                                | admin                      | -                                                               |
 | Xerox                                                | Administrator              | Fiery.1                                                         |
 | Xerox                                                | admin                      | x-admin                                                         |
-| Xerox                                                | <blank>                    | 0                                                               |
-| Xerox                                                | <blank>                    | 11111                                                           |
-| xerox                                                | <blank>                    | admin                                                           |
+| Xerox                                                | -                          | 0                                                               |
+| Xerox                                                | -                          | 11111                                                           |
+| xerox                                                | -                          | admin                                                           |
 | Xerox                                                | NSA                        | nsa                                                             |
 | XEROX Phaser 6700 (printer)                          | admin                      | 1111                                                            |
 | Xerox                                                | savelogs                   | crash                                                           |
-| Xerox WorkCentre 5020/DN (printer)                   | 11111                      | <blank>                                                         |
+| Xerox WorkCentre 5020/DN (printer)                   | 11111                      | -                                                               |
 | Xinit Systems Ltd.                                   | openfiler                  | password                                                        |
 | X-Micro                                              | 1502                       | 1502                                                            |
 | X-Micro                                              | super                      | super                                                           |
 | Xylan                                                | admin                      | switch                                                          |
 | Xylan                                                | diag                       | switch                                                          |
-| Xyplex                                               | <blank>                    | access                                                          |
-| Xyplex                                               | <blank>                    | <blank>                                                         |
-| Xyplex                                               | <blank>                    | system                                                          |
+| Xyplex                                               | -                          | access                                                          |
+| Xyplex                                               | -                          | -                                                               |
+| Xyplex                                               | -                          | system                                                          |
 | Xyplex                                               | setpriv                    | system                                                          |
 | Yakumo                                               | admin                      | admin                                                           |
 | Yealink                                              | admin                      | admin                                                           |
 | Yokogawa                                             | admin                      | !admin                                                          |
-| Yokogawa                                             | <blank>                    | 727                                                             |
+| Yokogawa                                             | -                          | 727                                                             |
 | Yuxin                                                | User                       | 1234                                                            |
 | Yuxin                                                | User                       | 19750407                                                        |
 | Zabbix (web)                                         | Admin                      | zabbix                                                          |
@@ -3348,12 +3348,12 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | Zebra Technologies                                   | admin                      | 1234                                                            |
 | zenitel                                              | admin                      | alphaadmin                                                      |
 | zenitel                                              | ADMIN                      | alphacom                                                        |
-| zenitel                                              | <blank>                    | 1234                                                            |
-| zenitel                                              | <blank>                    | 1851                                                            |
-| Zenith                                               | <blank>                    | 3098z                                                           |
-| Zenith                                               | <blank>                    | Zenith                                                          |
-| ZEOS                                                 | <blank>                    | zeosx                                                           |
-| Zeus                                                 | admin                      | <blank>                                                         |
+| zenitel                                              | -                          | 1234                                                            |
+| zenitel                                              | -                          | 1851                                                            |
+| Zenith                                               | -                          | 3098z                                                           |
+| Zenith                                               | -                          | Zenith                                                          |
+| ZEOS                                                 | -                          | zeosx                                                           |
+| Zeus                                                 | admin                      | -                                                               |
 | zoom                                                 | admin                      | zoomadsl                                                        |
 | Zoom                                                 | admin                      | zoomadsl                                                        |
 | ZTE                                                  | ADSL                       | expert03                                                        |
@@ -3363,17 +3363,17 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 | zte (ssh)                                            | root                       | Zte521                                                          |
 | zte (ssh)                                            | user                       | user                                                            |
 | zte (ssh)                                            | ZXDSL                      | ZXDSL                                                           |
-| ZyWALL Series                                        | <blank>                    | admin                                                           |
+| ZyWALL Series                                        | -                          | admin                                                           |
 | Zyxel                                                | 1234                       | 1234                                                            |
 | Zyxel                                                | 192.168.1.1 60020          | @dsl_xilno                                                      |
 | Zyxel                                                | admin                      | 0000                                                            |
 | Zyxel                                                | admin                      | 1234                                                            |
 | Zyxel                                                | admin                      | admin                                                           |
 | Zyxel                                                | Admin                      | atc456                                                          |
-| Zyxel                                                | admin                      | <blank>                                                         |
-| Zyxel                                                | <blank>                    | 1234                                                            |
-| Zyxel                                                | <blank>                    | admin                                                           |
-| Zyxel                                                | <blank>                    | <blank>                                                         |
+| Zyxel                                                | admin                      | -                                                               |
+| Zyxel                                                | -                          | 1234                                                            |
+| Zyxel                                                | -                          | admin                                                           |
+| Zyxel                                                | -                          | -                                                               |
 | Zyxel NWA/NAP/WAC wireless access point series (ftp) | devicehaecived             | 1234                                                            |
 | Zyxel                                                | root                       | 1234                                                            |
 | Zyxel (ssh)                                          | zyfwp                      | PrOw!aN_fXp                                                     |
