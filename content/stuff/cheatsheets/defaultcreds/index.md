@@ -112,6 +112,10 @@ A '**-**' means the field should be left blank.
 | Aironet                                              | -                          | -                                                               |
 | AirTies RT-210                                       | admin                      | admin                                                           |
 | Airway                                               | -                          | 0000                                                            |
+| Akkadian Console Server                              | admin                      | admin                                                           |
+| Akkadian Contact Manager                             | gdadmin                    | admin                                                           |
+| Akkadian Provisioning Manager                        | PMEAdmin                   | PMEAdmin                                                        |
+| Akkadian Site Builder                                | SBAdmin                    | SBAdmin123                                                      |
 | Aladdin                                              | root                       | kn1TG7psLu                                                      |
 | Alcatel                                              | adfexc                     | adfexc                                                          |
 | Alcatel                                              | admin                      | switch                                                          |
