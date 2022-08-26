@@ -118,6 +118,7 @@ A '**-**' means the field should be left blank.
 | Akkadian Provisioning Manager                        | akkadianuser               | akkadianpassword                                                |
 | Akkadian Site Builder                                | SBAdmin                    | SBAdmin123                                                      |
 | Aladdin                                              | root                       | kn1TG7psLu                                                      |
+| Alcatel                                              | -                          | 151515                                                          |
 | Alcatel                                              | adfexc                     | adfexc                                                          |
 | Alcatel                                              | admin                      | switch                                                          |
 | Alcatel                                              | at4400                     | at4400                                                          |
@@ -166,6 +167,7 @@ A '**-**' means the field should be left blank.
 | Ambit                                                | root                       | -                                                               |
 | Ambit                                                | root                       | root                                                            |
 | Ambit                                                | user                       | user                                                            |
+| Amcrest                                              | admin                      | admin                                                           |
 | American Dynamics EDVR (telnet)                      | admin                      | 9999                                                            |
 | american_dynamics (web)                              | admin                      | 9999                                                            |
 | american_dynamics (web)                              | admin                      | admin                                                           |
@@ -204,6 +206,8 @@ A '**-**' means the field should be left blank.
 | AMX                                                  | NetLinx                    | password                                                        |
 | AMX                                                  | root                       | mozart                                                          |
 | Andover Controls                                     | acc                        | acc                                                             |
+| Anevia                                               | monitor                    | anevia                                                          |
+| Anevia                                               | admin                      | paris                                                           |
 | antsle (ssh)                                         | root                       | antsle                                                          |
 | AOC                                                  | -                          | admin                                                           |
 | Apache                                               | admin                      | admin                                                           |
@@ -314,6 +318,7 @@ A '**-**' means the field should be left blank.
 | ast                                                  | -                          | -                                                               |
 | AST                                                  | -                          | SnuFG5                                                          |
 | Asterisk                                             | Admin                      | admin                                                           |
+| Aastra                                               | admin                      | 33aastra                                                        |
 | Asus                                                 | admin                      | admin                                                           |
 | Asus                                                 | adsl                       | adsl1234                                                        |
 | Asus                                                 | -                          | admin                                                           |
@@ -321,6 +326,9 @@ A '**-**' means the field should be left blank.
 | asus (ssh)                                           | Admin                      | Admin                                                           |
 | asus (ssh)                                           | admin                      | password                                                        |
 | asus (ssh)                                           | root                       | root                                                            |
+| ATCOM                                                | admin                      | admin                                                           |
+| ATCOM                                                | user                       | -                                                               |
+| ATCOM                                                | admin                      | -                                                               |
 | Atlantis                                             | admin                      | atlantis                                                        |
 | Atlassian Confluence                                 | disabledsystemuser         | disabled1system1user6708                                        |
 | Atlassian                                            | crowd-openid-server        | password                                                        |
@@ -329,7 +337,9 @@ A '**-**' means the field should be left blank.
 | Atlassian                                            | Username                   | password                                                        |
 | ATL                                                  | operator                   | 1234                                                            |
 | ATL                                                  | Service                    | 5678                                                            |
+| Atrie                                                | admin                      | password                                                        |
 | Attachmate                                           | -                          | PASSWORD                                                        |
+| ATX                                                  | atx                        | atx                                                             |
 | AT&T Arris NVG589 & NVG599 (SharknAT&To) (ssh)       | remotessh                  | 5SaP9I26                                                        |
 | AT&T                                                 | -                          | mcp                                                             |
 | Audioactive                                          | -                          | telos                                                           |
@@ -468,8 +478,8 @@ A '**-**' means the field should be left blank.
 | Aztech                                               | isp                        | isp                                                             |
 | Aztech                                               | root                       | admin                                                           |
 | backtrack                                            | root                       | toor                                                            |
-| Barco,Inc.                                           | admin                      | admin                                                           |
-| Barco,Inc.                                           | -                          | clickshare                                                      |
+| Barco Inc.                                           | admin                      | admin                                                           |
+| Barco Inc.                                           | -                          | clickshare                                                      |
 | Barracuda                                            | admin                      | admin                                                           |
 | Barracuda                                            | ssladmin                   | ssladmin                                                        |
 | Barracuda (web)                                      | admin                      | admin                                                           |
@@ -587,6 +597,7 @@ A '**-**' means the field should be left blank.
 | Check Point                                          | admin                      | adminadmin                                                      |
 | Checkpoint (web)                                     | admin                      | abc123                                                          |
 | Checkpoint (web)                                     | admin                      | admin                                                           |
+| Christie                                             | admin                      | admin                                                           |
 | Chuming Chen                                         | administrator              | adminpass                                                       |
 | Ciphertrust                                          | admin                      | password                                                        |
 | CipherTrust                                          | admin                      | password                                                        |
@@ -596,6 +607,7 @@ A '**-**' means the field should be left blank.
 | Cisco                                                | admin                      | cisco                                                           |
 | Cisco                                                | admin                      | default                                                         |
 | Cisco                                                | admin                      | diamond                                                         |
+| Cisco                                                | admin                      | localadmin                                                      |
 | Cisco                                                | Administrator              | admin                                                           |
 | Cisco                                                | Administrator              | changeme                                                        |
 | Cisco                                                | admin                      | tsunami                                                         |
@@ -656,8 +668,8 @@ A '**-**' means the field should be left blank.
 | Cisco                                                | wlse                       | wlsedb                                                          |
 | Citel                                                | -                          | citel                                                           |
 | Citel                                                | citel                      | password                                                        |
-| Citrix Systems,Inc.                                  | nsroot                     | nsroot                                                          |
-| Citrix Systems,Inc.                                  | root                       | rootadmin                                                       |
+| Citrix Systems Inc.                                  | nsroot                     | nsroot                                                          |
+| Citrix Systems Inc.                                  | root                       | rootadmin                                                       |
 | Citrix Systems (web)                                 | nsroot                     | nsroot                                                          |
 | Citrix Systems (web)                                 | root                       | rootadmin                                                       |
 | Claris                                               | -                          | familymacintosh                                                 |
@@ -676,7 +688,7 @@ A '**-**' means the field should be left blank.
 | Comcast SMC                                          | cusadmin                   | CantTouchThis                                                   |
 | Comcast SMC                                          | cusadmin                   | highspeed                                                       |
 | Comersus                                             | admin                      | dmr99                                                           |
-| Comodo Group,Inc                                     | mydlp                      | mydlp                                                           |
+| Comodo Group Inc                                     | mydlp                      | mydlp                                                           |
 | Compaq                                               | administrator              | administrator                                                   |
 | Compaq                                               | anonymous                  | -                                                               |
 | Compaq                                               | -                          | -                                                               |
@@ -723,6 +735,7 @@ A '**-**' means the field should be left blank.
 | CyberMax                                             | -                          | Congress                                                        |
 | CyberPower                                           | cyber                      | cyber                                                           |
 | CyberPower                                           | device                     | cyber                                                           |
+| CyberSentry                                          | Administrator              | ChangeMe1#                                                      |
 | Cyclades                                             | root                       | -                                                               |
 | Cyclades                                             | root                       | tslinux                                                         |
 | Cyclades                                             | super                      | surt                                                            |
@@ -758,6 +771,7 @@ A '**-**' means the field should be left blank.
 | Debian                                               | -                          | tatercounter2000                                                |
 | decnet                                               | operator                   | admin                                                           |
 | Deerfield                                            | MDaemon                    | MServer                                                         |
+| DEFENDER®                                            | admin                      | 123456                                                          |
 | Dell                                                 | admin                      | admin                                                           |
 | Dell                                                 | Admin                      | -                                                               |
 | Dell                                                 | Administrator              | storageserver                                                   |
@@ -871,7 +885,8 @@ A '**-**' means the field should be left blank.
 | Digital Equipment                                    | USER                       | USER                                                            |
 | Digital Equipment                                    | VAX                        | VAX                                                             |
 | Digital Equipment                                    | VMS                        | VMS                                                             |
-| Digium,Inc.                                          | admin                      | password                                                        |
+| Digitus                                              | admin                      | 1234                                                            |
+| Digium Inc.                                          | admin                      | password                                                        |
 | Divar                                                | admin                      | -                                                               |
 | Divar                                                | viewer                     | -                                                               |
 | Dlink                                                | admin                      | admin                                                           |
@@ -900,10 +915,10 @@ A '**-**' means the field should be left blank.
 | DMP V-4022C                                          | admin                      | -                                                               |
 | DMP V-4052D                                          | admin                      | -                                                               |
 | DMP V-4072MD                                         | admin                      | -                                                               |
-| DMP V-5012B*                                         | scwuser                    | scw12345user                                                    |
-| DMP V-5014B*                                         | scwuser                    | scw12345user                                                    |
-| DMP V-5052D*                                         | scwuser                    | scw12345user                                                    |
-| DMP V-5054D*                                         | scwuser                    | scw12345user                                                    |
+| DMP V-5012B                                          | scwuser                    | scw12345user                                                    |
+| DMP V-5014B                                          | scwuser                    | scw12345user                                                    |
+| DMP V-5052D                                          | scwuser                    | scw12345user                                                    |
+| DMP V-5054D                                          | scwuser                    | scw12345user                                                    |
 | DotNetNuke Corporation                               | admin                      | dnnadmin                                                        |
 | DotNetNuke Corporation                               | host                       | dnnhost                                                         |
 | Draytek                                              | admin                      | admin                                                           |
@@ -927,6 +942,7 @@ A '**-**' means the field should be left blank.
 | Dynix Library Systems                                | LIBRARY                    | -                                                               |
 | Dynix Library Systems                                | SETUP                      | -                                                               |
 | easyWinArt (mssql)                                   | sa                         | $easyWinArt4                                                    |
+| Easyone Connect                                      | admin                      | 8005                                                            |
 | Eaton                                                | admin                      | admin                                                           |
 | Echelon Corporation                                  | ilon                       | ilon                                                            |
 | E-Con                                                | admin                      | epicrouter                                                      |
@@ -948,13 +964,15 @@ A '**-**' means the field should be left blank.
 | Efficient Networks                                   | login                      | admin                                                           |
 | Efficient                                            | superuser                  | admin                                                           |
 | Efficinet Networks                                   | login                      | admin                                                           |
-| Ektron,Inc.                                          | builtin                    | builtin                                                         |
-| Ektron,Inc.                                          | sa                         | Ektron                                                          |
+| Ektron Inc.                                          | builtin                    | builtin                                                         |
+| Ektron Inc.                                          | sa                         | Ektron                                                          |
 | Elasticsearch (web)                                  | -                          | -                                                               |
 | elasticsearch (web)                                  | elastic                    | changeme                                                        |
 | Elron                                                | (hostname/ipaddress)       | sysadmin                                                        |
 | Elsa                                                 | -                          | -                                                               |
 | Elsa                                                 | -                          | cisco                                                           |
+| Eltek                                                | admin                      | admin                                                           |
+| Eltek                                                | user                       | user                                                            |
 | eMachines                                            | emaq                       | 4133                                                            |
 | EMC                                                  | admin                      | -                                                               |
 | EMC                                                  | admin                      | changeme                                                        |
@@ -991,6 +1009,7 @@ A '**-**' means the field should be left blank.
 | Ericsson                                             | expert                     | expert                                                          |
 | Ericsson                                             | MD110                      | help                                                            |
 | Ericsson                                             | netman                     | netman                                                          |
+| ERNITEC                                              | Admin                      | 1234                                                            |
 | eSeSIX Computer GmbH                                 | root                       | jstwo                                                           |
 | E-Tech                                               | admin                      | epicrouter                                                      |
 | E-Tech                                               | admin                      | password                                                        |
@@ -1016,6 +1035,7 @@ A '**-**' means the field should be left blank.
 | Fastwire                                             | fastwire                   | fw                                                              |
 | FatWire                                              | firstsite                  | firstsite                                                       |
 | FatWire                                              | fwadmin                    | xceladmin                                                       |
+| Fibaro                                               | admin                      | admin                                                           |
 | Firebird Project                                     | SYSDBA                     | masterkey                                                       |
 | Firebird                                             | SYSDBA                     | masterkey                                                       |
 | Flowpoint                                            | admin                      | admin                                                           |
@@ -1055,10 +1075,11 @@ A '**-**' means the field should be left blank.
 | GeoNetwork (mssql)                                   | admin                      | gnos                                                            |
 | geovision (web)                                      | admin                      | admin                                                           |
 | Gericom                                              | Administrator              | -                                                               |
-| GE Security,Inc.                                     | install                    | install                                                         |
+| GE Security Inc.                                     | install                    | install                                                         |
 | giga                                                 | Administrator              | admin                                                           |
 | Gigabyte                                             | admin                      | admin                                                           |
 | GigaFiber                                            | admin                      | jiocentrum                                                      |
+| Gill Instruments                                     | admin                      | password                                                        |
 | Gitlab                                               | admin                      | 5iveL!fe                                                        |
 | Gitlab                                               | admin@local.host           | 5iveL!fe                                                        |
 | Gitlab                                               | root                       | 5iveL!fe                                                        |
@@ -1076,12 +1097,12 @@ A '**-**' means the field should be left blank.
 | GrandStream                                          | Administrator              | admin                                                           |
 | GrandStream                                          | -                          | admin                                                           |
 | GrandStream                                          | End User                   | 123 (or blank)                                                  |
-| Grandstream Networks,Inc                             | admin                      | admin                                                           |
-| Grandstream Networks,Inc                             | End User                   | 123                                                             |
+| Grandstream Networks Inc.                            | admin                      | admin                                                           |
+| Grandstream Networks Inc.                            | End User                   | 123                                                             |
 | grandstream (web)                                    | admin                      | admin                                                           |
 | Greatspeed                                           | admin                      | broadband                                                       |
 | greatspeed                                           | netadmin                   | nimdaten                                                        |
-| Groupee,Inc.                                         | Admin5                     | 4tugboat                                                        |
+| Groupee Inc.                                         | Admin5                     | 4tugboat                                                        |
 | GuardOne                                             | -                          | guardone                                                        |
 | GuardOne                                             | n.a                        | guardone                                                        |
 | Guru                                                 | admin                      | admin                                                           |
@@ -1189,6 +1210,8 @@ A '**-**' means the field should be left blank.
 | HP                                                   | root                       | password                                                        |
 | HP Server Automation (web)                           | Administrator              | admin                                                           |
 | HP Server Automation (web)                           | admin                      | opsware_admin                                                   |
+| HP StoreAll (GUI)                                    | ibrix                      | ibrix                                                           |
+| HP StoreAll (Root)                                   | root                       | hpinvent                                                        |
 | Huawei                                               | admin                      | admin                                                           |
 | huawei (ssh)                                         | admin                      | admin                                                           |
 | huawei (ssh)                                         | Admin                      | admin                                                           |
@@ -1201,7 +1224,7 @@ A '**-**' means the field should be left blank.
 | Huawei Technologies Co                               | admin                      | admin                                                           |
 | Huawei Technologies Co                               | TMAR#HWMT8007079           | -                                                               |
 | Huawei                                               | TMAR#HWMT8007079           | -                                                               |
-| Hyperic,Inc.                                         | hqadmin                    | hqadmin                                                         |
+| Hyperic Inc.                                         | hqadmin                    | hqadmin                                                         |
 | i2b2 Workbench (mssql)                               | I2b2demodata2              | i2b2demodata2                                                   |
 | i2b2 Workbench (mssql)                               | I2b2demodata               | i2b2demodata                                                    |
 | i2b2 Workbench (mssql)                               | I2b2hive                   | i2b2hive                                                        |
@@ -1378,6 +1401,7 @@ A '**-**' means the field should be left blank.
 | iDirect                                              | admin                      | P@55w0rd!                                                       |
 | iDirect                                              | root                       | iDirect                                                         |
 | IHS Kingdom (mssql)                                  | sa                         | $ei$micMicro                                                    |
+| IMC Networks                                         | admin                      | admin                                                           |
 | inchon                                               | admin                      | admin                                                           |
 | Inedo                                                | Admin                      | Admin                                                           |
 | infacta                                              | Administrator              | -                                                               |
@@ -1466,6 +1490,7 @@ A '**-**' means the field should be left blank.
 | Johnson Controls                                     | johnson                    | control                                                         |
 | Joss Technology                                      | -                          | 57gbzb                                                          |
 | Joss Technology                                      | -                          | technolgi                                                       |
+| Jovision                                             | admin                      | -                                                               |
 | Juniper                                              | admin                      | abc123                                                          |
 | Juniper                                              | admin                      | netscreen                                                       |
 | Juniper                                              | admin                      | peribit                                                         |
@@ -1485,7 +1510,8 @@ A '**-**' means the field should be left blank.
 | Juniper                                              | super                      | juniper123                                                      |
 | Justin Hagstrom                                      | admin                      | admin                                                           |
 | Justin Hagstrom                                      | test                       | test                                                            |
-| jvc (web)                                            | admin                      | jvc                                                             |
+| JVC (web)                                            | admin                      | jvc                                                             |
+| JVC                                                  | jvc                        | skaarhoj                                                        |
 | Kalatel                                              | -                          | 3477                                                            |
 | Kalatel                                              | -                          | 8111                                                            |
 | Kali linux (OS)                                      | kali                       | kali                                                            |
@@ -1518,6 +1544,7 @@ A '**-**' means the field should be left blank.
 | Konica Minolta (web)                                 | -                          | MagiMFP                                                         |
 | Konica Minolta (web)                                 | -                          | sysadm                                                          |
 | Konica Minolta (web)                                 | -                          | sysAdmin                                                        |
+| Kramer                                               | Admin                      | adminpw                                                         |
 | Kronos                                               | SuperUser                  | kronites                                                        |
 | KTI                                                  | admin                      | 123                                                             |
 | KTI                                                  | admin                      | 123456                                                          |
@@ -1533,6 +1560,7 @@ A '**-**' means the field should be left blank.
 | Lanier                                               | admin                      | -                                                               |
 | Lanier                                               | -                          | sysadm                                                          |
 | Lanier                                               | supervisor                 | -                                                               |
+| Lanner                                               | admin                      | admin                                                           |
 | LANSA                                                | admin                      | admin                                                           |
 | LANSA                                                | dev                        | dev                                                             |
 | LANSA                                                | WEBADM                     | password                                                        |
@@ -1558,6 +1586,9 @@ A '**-**' means the field should be left blank.
 | LGIC                                                 | LR-ISDN                    | LR-ISDN                                                         |
 | LG                                                   | vikram                     | singh                                                           |
 | Liebert                                              | Liebert                    | Liebert                                                         |
+| LifeSize                                             | admin                      | admin                                                           |
+| LifeSize                                             | -                          | 1234                                                            |
+| LifeSize                                             | support                    | support                                                         |
 | Lindsay Electronics                                  | ADMINISTRATOR              | SENTINEL                                                        |
 | Lindsay Electronics                                  | SENTINEL                   | SENTINEL                                                        |
 | Linksys                                              | admin                      | admin                                                           |
@@ -1577,7 +1608,7 @@ A '**-**' means the field should be left blank.
 | Linux                                                | root                       | uClinux                                                         |
 | Linux                                                | satan                      | -                                                               |
 | Linux                                                | snake                      | -                                                               |
-| Liquidware Labs,Inc.                                 | ssadmin                    | sspassword                                                      |
+| Liquidware Labs Inc.                                 | ssadmin                    | sspassword                                                      |
 | Livingstone                                          | root                       | -                                                               |
 | Livingston                                           | !root                      | -                                                               |
 | Lockdown                                             | setup                      | changeme!                                                       |
@@ -2260,6 +2291,8 @@ A '**-**' means the field should be left blank.
 | OTRS Inc.                                            | root@localhost             | root                                                            |
 | Overland                                             | Factory                    | 56789                                                           |
 | Overland Storage                                     | root                       | Password                                                        |
+| Overland Tandberg                                    | Admin                      | adm001                                                          |
+| Overland Tandberg                                    | Guest                      | std001                                                          |
 | OvisLink Canada Inc.                                 | root                       | root                                                            |
 | OvisLink Canada Inc.                                 | user                       | user                                                            |
 | ovislink                                             | root                       | -                                                               |
@@ -2285,6 +2318,9 @@ A '**-**' means the field should be left blank.
 | Perle                                                | admin                      | superuser                                                       |
 | pfSense                                              | admin                      | pfsense                                                         |
 | Pfsense (web)                                        | admin                      | pfsense                                                         |
+| PheeNet                                              | root                       | default                                                         |
+| PheeNet                                              | admin                      | admin                                                           |
+| PheeNet                                              | operator                   | 1234                                                            |
 | Philips                                              | admin                      | admin                                                           |
 | phoenix                                              | -                          | admin                                                           |
 | Phoenix v1.14                                        | Administrator              | admin                                                           |
@@ -2299,7 +2335,7 @@ A '**-**' means the field should be left blank.
 | Pirelli                                              | admin                      | mu                                                              |
 | Pirelli                                              | admin                      | smallbusiness                                                   |
 | Pirelli                                              | user                       | password                                                        |
-| Pivotal Software,Inc.                                | guest                      | guest                                                           |
+| Pivotal Software Inc.                                | guest                      | guest                                                           |
 | PlainTree                                            | -                          | default.password                                                |
 | Planet                                               | admin                      | 1234                                                            |
 | planet                                               | admin                      | admin                                                           |
@@ -2356,12 +2392,16 @@ A '**-**' means the field should be left blank.
 | Prime                                                | tele                       | tele                                                            |
 | Prime                                                | test                       | test                                                            |
 | Prolink                                              | admin                      | password                                                        |
+| Prolynx (Outdoor Station)                            | admin                      | admin                                                           |
+| Prolynx (Indoor Monitor)                             | -                          | 002236                                                          |
 | Proliphix Thermostat (iot)                           | admin                      | admin                                                           |
 | Promise                                              | admin                      | admin                                                           |
 | Promise                                              | engmode                    | hawk201                                                         |
-| Promise Technology,Inc.                              | administrator              | password                                                        |
+| Promise Technology Inc.                              | administrator              | password                                                        |
 | Prostar                                              | -                          | 4321                                                            |
+| ProSoft Technology                                   | -                          | password                                                        |
 | Protocraft                                           | musi1921                   | Musi%1921                                                       |
+| Provision ISR                                        | admin                      | 123456                                                          |
 | Proxicast                                            | -                          | 1234                                                            |
 | Proxim                                               | -                          | -                                                               |
 | Proxim                                               | -                          | public                                                          |
@@ -2407,14 +2447,14 @@ A '**-**' means the field should be left blank.
 | raspberry Pi (ssh)                                   | pi                         | raspberry                                                       |
 | RayTalk                                              | root                       | root                                                            |
 | RCA                                                  | -                          | admin                                                           |
-| ReCrystallize (Server)                               | admin                      | pw                                                              |
+| ReCrystallize (server)                               | admin                      | pw                                                              |
 | Redcreek Communications                              | -                          | 1234                                                            |
 | Redcreek Communications                              | -                          | private                                                         |
-| Red Hat,Inc                                          | admin                      | admin                                                           |
-| Red Hat,Inc                                          | -                          | AMIAMI                                                          |
-| Red Hat,Inc                                          | -                          | AMIDECOD                                                        |
-| Red Hat,Inc                                          | piranha                    | piranha                                                         |
-| Red Hat,Inc                                          | piranha                    | q                                                               |
+| Red Hat Inc.                                         | admin                      | admin                                                           |
+| Red Hat Inc.                                         | -                          | AMIAMI                                                          |
+| Red Hat Inc.                                         | -                          | AMIDECOD                                                        |
+| Red Hat Inc.                                         | piranha                    | piranha                                                         |
+| Red Hat Inc.                                         | piranha                    | q                                                               |
 | RedHat                                               | piranha                    | piranha                                                         |
 | RedHat                                               | piranha                    | q                                                               |
 | RedHat (ssh)                                         | admin                      | admin                                                           |
@@ -2438,6 +2478,7 @@ A '**-**' means the field should be left blank.
 | Ricoh MP (printer)                                   | supervisor                 | -                                                               |
 | Ricoh                                                | sysadmin                   | password                                                        |
 | Ricoh                                                | sysadm                     | sysadm                                                          |
+| RidgeWave                                            | admin                      | admin                                                           |
 | Riverbed                                             | Admin                      | password                                                        |
 | Rizen                                                | Admin                      | 123qwe                                                          |
 | RM                                                   | admin2                     | changeme                                                        |
@@ -2471,6 +2512,7 @@ A '**-**' means the field should be left blank.
 | RSA                                                  | administrator              | RSAAppliance                                                    |
 | RSA                                                  | master                     | themaster01                                                     |
 | RuggedCom                                            | Admin                      | admin                                                           |
+| Ruijie                                               | admin                      | admin                                                           |
 | Saba                                                 | admin                      | admin                                                           |
 | Safecom                                              | admin                      | epicrouter                                                      |
 | SafeNet Sentinel EMS (mssql)                         | sa                         | DBA!sa@EMSDB123                                                 |
@@ -2561,12 +2603,13 @@ A '**-**' means the field should be left blank.
 | Server Technology                                    | ADMN                       | admn                                                            |
 | Server Technology                                    | GEN1                       | gen1                                                            |
 | Server Technology                                    | GEN2                       | gen2                                                            |
-| Seyeon Technology Co.,Ltd                            | root                       | root                                                            |
+| Seyeon Technology Co. Ltd                            | root                       | root                                                            |
 | Sharp                                                | admin                      | admin                                                           |
 | Sharp                                                | Administrator              | admin                                                           |
 | Sharp                                                | admin                      | Sharp                                                           |
 | sharp                                                | -                          | -                                                               |
 | Sharp                                                | -                          | sysadm                                                          |
+| SHIELDeye                                            | admin                      | 123456                                                          |
 | Shiva                                                | admin                      | hello                                                           |
 | Shiva                                                | guest                      | -                                                               |
 | Shiva                                                | hello                      | hello                                                           |
@@ -2574,6 +2617,7 @@ A '**-**' means the field should be left blank.
 | ShoreTel                                             | Admin                      | admin1                                                          |
 | Shoretel                                             | admin                      | changeme                                                        |
 | Shuttle                                              | -                          | Spacve                                                          |
+| Shuttle                                              | admin                      | -                                                               |
 | Siemens                                              | 31994                      | 31994                                                           |
 | Siemens                                              | admin                      | admin                                                           |
 | Siemens                                              | admin                      | -                                                               |
@@ -2618,6 +2662,7 @@ A '**-**' means the field should be left blank.
 | Sierra Wireless                                      | user                       | 12345                                                           |
 | Sigma                                                | admin                      | admin                                                           |
 | Signamax                                             | admin                      | admin                                                           |
+| Siqura                                               | Admin                      | 1234                                                            |
 | Siips                                                | Administrator              | ganteng                                                         |
 | Silex Technology                                     | access                     | -                                                               |
 | Silex Technology                                     | root                       | -                                                               |
@@ -2835,7 +2880,7 @@ A '**-**' means the field should be left blank.
 | Supercook                                            | super                      | super                                                           |
 | Supermicro                                           | ADMIN                      | admin                                                           |
 | SuperMicro                                           | -                          | ksdjfg934t                                                      |
-| Super Micro Computer,Inc.                            | ADMIN                      | ADMIN                                                           |
+| Super Micro Computer Inc.                            | ADMIN                      | ADMIN                                                           |
 | Supermicro (web)                                     | ADMIN                      | ADMIN                                                           |
 | Surecom                                              | admin                      | admin                                                           |
 | Surecom                                              | admin                      | surecom                                                         |
@@ -2864,7 +2909,7 @@ A '**-**' means the field should be left blank.
 | Symbol                                               | admin                      | symbol                                                          |
 | Symbol                                               | -                          | Symbol                                                          |
 | Symbol                                               | Symbol                     | Symbol                                                          |
-| Symbol Technologies,Inc                              | admin                      | superuser                                                       |
+| Symbol Technologies Inc.                             | admin                      | superuser                                                       |
 | Symmetricom                                          | guest                      | truetime                                                        |
 | Symmetricom                                          | operator                   | mercury                                                         |
 | Synology Inc                                         | admin                      | -                                                               |
@@ -2994,6 +3039,8 @@ A '**-**' means the field should be left blank.
 | Tinys                                                | -                          | tiny                                                            |
 | Tinys                                                | -                          | Tiny                                                            |
 | TMC                                                  | -                          | BIGO                                                            |
+| Tiptel (IP Phones)                                   | admin                      | admin                                                           |
+| Tiptel (IP Phones)                                   | user                       | user                                                            |
 | Topcom                                               | admin                      | admin                                                           |
 | TopLayer                                             | siteadmin                  | toplayer                                                        |
 | topnet (web)                                         | topadmin                   | topadmin                                                        |
@@ -3038,6 +3085,7 @@ A '**-**' means the field should be left blank.
 | Unisys                                               | HTTP                       | HTTP                                                            |
 | Unisys                                               | NAU                        | NAU                                                             |
 | United Technologies Corporation                      | admin                      | 1234                                                            |
+| UNIVIEW                                              | admin                      | 123456                                                          |
 | UNIX                                                 | adm                        | adm                                                             |
 | UNIX                                                 | adm                        | -                                                               |
 | UNIX                                                 | admin                      | admin                                                           |
@@ -3233,10 +3281,10 @@ A '**-**' means the field should be left blank.
 | VxWorks                                              | guest                      | guest                                                           |
 | WAAV                                                 | admin                      | waav                                                            |
 | Wanadoo                                              | admin                      | admin                                                           |
-| Wanco,Inc.                                           | -                          | ABCD                                                            |
-| Wanco,Inc.                                           | -                          | Guest                                                           |
-| Wanco,Inc.                                           | -                          | NTCIP                                                           |
-| Wanco,Inc.                                           | -                          | Public                                                          |
+| Wanco Inc.                                           | -                          | ABCD                                                            |
+| Wanco Inc.                                           | -                          | Guest                                                           |
+| Wanco Inc.                                           | -                          | NTCIP                                                           |
+| Wanco Inc.                                           | -                          | Public                                                          |
 | Wang                                                 | CSG                        | SESAME                                                          |
 | warraCorp                                            | pepino                     | pepino                                                          |
 | WatchGuard                                           | admin                      | admin                                                           |
@@ -3265,6 +3313,7 @@ A '**-**' means the field should be left blank.
 | WebSphere (web)                                      | system                     | manager                                                         |
 | Web Wiz                                              | Administrator              | letmein                                                         |
 | Weidmüller                                           | admin                      | detmond                                                         |
+| Weidmüller                                           | admin                      | Detmold                                                         |
 | WelchAllyn CardioPerfect (mssql)                     | sa                         | Cardio.Perfect                                                  |
 | Westell                                              | admin                      | -                                                               |
 | Westell                                              | admin                      | password                                                        |
@@ -3299,7 +3348,7 @@ A '**-**' means the field should be left blank.
 | windows (RDP)                                        | vagrant                    | vagrant                                                         |
 | windows (RDP)                                        | wasadmin                   | wasadmin                                                        |
 | winwork                                              | operator                   | -                                                               |
-| Wireless,Inc.                                        | root                       | rootpass                                                        |
+| Wireless Inc.                                        | root                       | rootpass                                                        |
 | WLAN_3D                                              | Administrator              | admin                                                           |
 | wline                                                | admin                      | 1234                                                            |
 | Wonderware Historian (mssql)                         | aaAdmin                    | pwAdmin                                                         |
@@ -3351,6 +3400,7 @@ A '**-**' means the field should be left blank.
 | Xyplex                                               | setpriv                    | system                                                          |
 | Yakumo                                               | admin                      | admin                                                           |
 | Yealink                                              | admin                      | admin                                                           |
+| YeaStar Technology                                   | root                       | ys123456                                                        |
 | Yokogawa                                             | admin                      | !admin                                                          |
 | Yokogawa                                             | -                          | 727                                                             |
 | Yuxin                                                | User                       | 1234                                                            |
@@ -3360,6 +3410,7 @@ A '**-**' means the field should be left blank.
 | Zcom                                                 | root                       | admin                                                           |
 | Zebra                                                | admin                      | 1234                                                            |
 | Zebra Technologies                                   | admin                      | 1234                                                            |
+| Zed-3                                                | admin                      | 0000                                                            |
 | zenitel                                              | admin                      | alphaadmin                                                      |
 | zenitel                                              | ADMIN                      | alphacom                                                        |
 | zenitel                                              | -                          | 1234                                                            |
