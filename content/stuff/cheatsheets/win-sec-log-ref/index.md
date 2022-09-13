@@ -1,6 +1,6 @@
 ---
 title : "Windows Security Log References"
-# pre : ' '
+pre : '<i class="fab fa-elementor"></i> '
 description : "Most handy Windows Security Log Event ID's"
 date : 2022-09-13T12:43:46+02:00
 # hidden : true
