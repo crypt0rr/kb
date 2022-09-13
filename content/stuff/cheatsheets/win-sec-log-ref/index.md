@@ -109,4 +109,4 @@ For both `4771` and `4772` see the following Kerberos Failure Codes
 
 ### URL list
 
-* [Statis.spiceworks.com](https://static.spiceworks.com/attachments/post/0014/9751/quickref.pdf)
+* [Static.spiceworks.com](https://static.spiceworks.com/attachments/post/0014/9751/quickref.pdf)
