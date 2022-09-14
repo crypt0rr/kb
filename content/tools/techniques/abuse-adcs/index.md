@@ -13,6 +13,8 @@ weight : 0
 
 This is a little guide on abusing Active Directory Certificate Services (AD CS) with practical examples.
 
+[Cheatsheet about the different AD-CS's ESC presented by SpecterOps](https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services)
+
 ### Install Certi
 
 Please install [Certi]({{< ref "certi" >}})
