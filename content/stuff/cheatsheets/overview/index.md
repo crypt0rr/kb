@@ -58,3 +58,7 @@ A cheat sheet that contains common enumeration and attack methods for Windows Ac
 This document was designed to be a useful, informational asset for those looking to understand the specific tactics, techniques, and procedures (TTPs) attackers are leveraging to compromise active directory and guidance to mitigation, detection, and prevention. And understand Active Directory Kill Chain Attack and Modern Post Exploitation Adversary Tradecraft Activity.
 
 [Active Directory Kill Chain Attack & Defense](https://github.com/infosecn1nja/AD-Attack-Defense)
+
+### Active Directory Certificate Services Attacks
+
+[A cheatsheet about the different AD-CS's ESC presented by SpecterOps](https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services)
