@@ -13,6 +13,6 @@ cascade:
     pre : '<i class="fas fa-search-plus"></i> '
 ---
 
-## Osint
+## OSINT
 
 {{< children style="card" depth="1" description="true" sort="Name"  >}}
