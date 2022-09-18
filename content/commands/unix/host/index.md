@@ -79,18 +79,29 @@ example.com descriptive text "v=spf1 -all"
 ```plain
 $ host 50.7.67.155
 
-155.67.7.50.in-addr.arpa domain name pointer mail.megacorpone.com.
+155.67.7.50.in-addr.arpa domain name pointer mail.offsec.nl.
 ```
 
 #### DNS zone transfer
 
-```plain
-$ host -l megacorpone.com ns1.megacorpone.com
+A zone transfer is basically a database replication between related DNS servers in which the zone file is copied from a primary DNS server to a secondary server. The zone file contains a list of all the DNS names configured for that zone. Zone transfers should only be allowed to authorized secondary DNS servers but many administrators misconfigure their DNS servers, and in these cases, anyone asking for a copy of the DNS server zone will usually receive one.
 
-; Transfer failed.
+```plain
+$ host -1 offsec.nl ns2.offsec.nl
 Using domain server:
-Name: ns1.megacorpone.com
-Address: 50.7.67.186#53
+Name: ns2.offsec.nl
+Address: 38.100.193.80#53
+Aliases:
+offsec.nl name server nsl.offsec.nl.
+offsec.nl name server ns2.offsec.nl.
+offsec.nl name server ns3.offsec.nl.
+admin.offsec.nl has address 38.100.193.83
+beta.offsec.nl has address 38.100.193.88
+fsl.offsec.nl has address 38.100.193.82
+intranet.offsec.nl has address 38.100.193.87
+mail.offsec.nl has address 38.100.193.84
+mail2.offsec.nl has address 38.100.193.73
+nsl.offsec.nl has address 38.100.193.70
 ```
 
 ### URL list
