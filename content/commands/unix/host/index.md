@@ -87,21 +87,31 @@ $ host 50.7.67.155
 A zone transfer is basically a database replication between related DNS servers in which the zone file is copied from a primary DNS server to a secondary server. The zone file contains a list of all the DNS names configured for that zone. Zone transfers should only be allowed to authorized secondary DNS servers but many administrators misconfigure their DNS servers, and in these cases, anyone asking for a copy of the DNS server zone will usually receive one.
 
 ```plain
-$ host -1 offsec.nl ns2.offsec.nl
+$ host -l megacorpone.com ns2.megacorpone.com
 Using domain server:
-Name: ns2.offsec.nl
-Address: 38.100.193.80#53
-Aliases:
-offsec.nl name server nsl.offsec.nl.
-offsec.nl name server ns2.offsec.nl.
-offsec.nl name server ns3.offsec.nl.
-admin.offsec.nl has address 38.100.193.83
-beta.offsec.nl has address 38.100.193.88
-fsl.offsec.nl has address 38.100.193.82
-intranet.offsec.nl has address 38.100.193.87
-mail.offsec.nl has address 38.100.193.84
-mail2.offsec.nl has address 38.100.193.73
-nsl.offsec.nl has address 38.100.193.70
+Name: ns2.megacorpone.com
+Address: 51.222.39.63#53
+Aliases: 
+
+megacorpone.com name server ns1.megacorpone.com.
+megacorpone.com name server ns2.megacorpone.com.
+megacorpone.com name server ns3.megacorpone.com.
+admin.megacorpone.com has address 51.222.169.208
+beta.megacorpone.com has address 51.222.169.209
+[...SNIP...]
+```
+
+To automate this process a script is made available below.
+
+{{%attachments title="Related files" fa_icon_class="fas fa-code" pattern=".*(sh)"/%}}
+
+```plain
+./dns-axfr.sh megacorpone.com
+admin.megacorpone.com has address 51.222.169.208
+beta.megacorpone.com has address 51.222.169.209
+fs1.megacorpone.com has address 51.222.169.210
+intranet.megacorpone.com has address 51.222.169.211
+[...SNIP...]
 ```
 
 ### URL list
