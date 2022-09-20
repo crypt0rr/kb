@@ -242,6 +242,12 @@ systemctl enable --user <service>
 sudo systemctl list-units --type service --all
 ```
 
+#### Show all available services
+
+```plain
+sudo systemctl list-unit-files
+```
+
 #### Show all dependencies a service relies on
 
 ```plain
