@@ -6,7 +6,7 @@ date : 2022-03-18T15:06:07+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'Active Directory']
+tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
 ## ldapsearch-ad.py

@@ -6,7 +6,7 @@ date : 2022-01-19T09:39:19+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
 ## LDAP Relay Scan
