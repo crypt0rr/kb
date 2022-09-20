@@ -11,7 +11,13 @@ tags: ['Other','LinkedIn']
 
 ## Crosslinked
 
-Simplifies the processes of searching LinkedIn to collect valid employee names.
+CrossLinked is a LinkedIn enumeration tool that uses search engine scraping to collect valid employee names from an organization. This technique provides accurate results without the use of API keys, credentials, or accessing LinkedIn directly!
+
+In the latest version CrossLinked now includes a names.csv output file, which stores all scraping data including: first name, last name, job title, and url. This can be ingested and parsed to reformat user accounts as needed.
+
+### Prerequisite
+
+CrossLinked assumes the organization's account naming convention has already been identified. This is required for execution and should be added to the CMD args based on your expected output. See the [Naming Format](https://github.com/m8sec/CrossLinked#naming-format) and [Example Usage](https://github.com/m8sec/CrossLinked#example-usage-1) sections.
 
 ### Installation
 
@@ -35,16 +41,23 @@ python3 crosslinked.py [OPTIONS]
 
 ```plain
 positional arguments:
-  company_name  Target company name
+  company_name        Target company name
 
-optional arguments:
-  -h, --help    show this help message and exit
-  -t TIMEOUT    Timeout [seconds] for search threads (Default: 25)
-  -j JITTER     Jitter for scraping evasion (Default: 0)
-  -o OUTFILE    Change name of output file (default: names.txt
-  -f NFORMAT    Format names, ex: 'domain\{f}{last}', '{first}.{last}@domain.com'
-  -s, --safe    Only parse names with company in title (Reduces false positives)
-  -v            Show names and titles recovered after enumeration
+options:
+  -h, --help          show this help message and exit
+  -t TIMEOUT          Max timeout per search (Default=15)
+  -j JITTER           Jitter between requests (Default=1)
+
+Search arguments:
+  --search ENGINE     Search Engine (Default='google,bing')
+
+Output arguments:
+  -f NFORMAT          Format names, ex: 'domain\{f}{last}', '{first}.{last}@domain.com'
+  -o OUTFILE          Change name of output file (omit_extension)
+
+Proxy arguments:
+  --proxy PROXY       Proxy requests (IP:Port)
+  --proxy-file PROXY  Load proxies from file for rotation
 ```
 
 ### Examples
