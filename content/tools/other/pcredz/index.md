@@ -40,6 +40,13 @@ This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Ker
 apt install python3-pip && sudo apt-get install libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap
 ```
 
+When running Python3.10 it can happen that Pcredz states `libpcap` is not installed. This is a [known issue](https://github.com/lgandx/PCredz/issues/48). The fix for this is cloning `python-libpcap` from source and installing it.
+
+```plain
+git clone https://github.com/caizhengxin/python-libpcap.git
+python3 setup.py install
+```
+
 #### Download tool
 
 ```plain
