@@ -85,7 +85,7 @@ For more look [here](http://www.rexegg.com/regex-quickstart.html#ref).
 | ---------- | -------------------------------- | -------- | -------------- |
 | +          | The + (one or more) is "greedy"  | \d+      | 12345          |
 | ?          | Makes quantifiers "lazy"         | \d+?     | 1 in **1**2345 |
-| \*          | The * (zero or more) is "greedy" | A*       | AAA            |
+| \*          | The \* (zero or more) is "greedy" | A*       | AAA            |
 | ?          | Makes quantifiers "lazy"         | A*?      | empty in AAA   |
 | {2,4}      | Two to four times, "greedy"      | \w{2,4}  | abcd           |
 | ?          | Makes quantifiers "lazy"         | \w{2,4}? | ab in **ab**cd |
