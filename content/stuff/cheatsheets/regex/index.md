@@ -65,3 +65,5 @@ $ nmcli | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 * [Regex-generator.olafneumann.org](https://regex-generator.olafneumann.org)
 * [Regexone.com](https://regexone.com)
 * [Regexr.com](https://regexr.com/)
+* [Rexegg.com - Regex tutorial, one of the most detailed on the web](http://www.rexegg.com/)
+* [Regular-expressions.info](https://www.regular-expressions.info/)
