@@ -57,7 +57,7 @@ For more look [here](http://www.rexegg.com/regex-quickstart.html#ref).
 
 | Logic   | Legend                   | Example               | Sample Match            |
 | ------- | ------------------------ | --------------------- | ----------------------- |
-|         | Alternation / OR operand | 22\|33                | 33                      |
+| \|        | Alternation / OR operand | 22\|33                | 33                      |
 | ( … )   | Capturing group          | A(nt\|pple)           | Apple (captures "pple") |
 | \1      | Contents of Group 1      | r(\w)g\1x             | regex                   |
 | \2      | Contents of Group 2      | (\d\d)\+(\d\d)=\2\+\1 | 12+65=65+12             |
