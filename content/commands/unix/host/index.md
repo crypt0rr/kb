@@ -79,18 +79,39 @@ example.com descriptive text "v=spf1 -all"
 ```plain
 $ host 50.7.67.155
 
-155.67.7.50.in-addr.arpa domain name pointer mail.megacorpone.com.
+155.67.7.50.in-addr.arpa domain name pointer mail.offsec.nl.
 ```
 
 #### DNS zone transfer
 
-```plain
-$ host -l megacorpone.com ns1.megacorpone.com
+A zone transfer is basically a database replication between related DNS servers in which the zone file is copied from a primary DNS server to a secondary server. The zone file contains a list of all the DNS names configured for that zone. Zone transfers should only be allowed to authorized secondary DNS servers but many administrators misconfigure their DNS servers, and in these cases, anyone asking for a copy of the DNS server zone will usually receive one.
 
-; Transfer failed.
+```plain
+$ host -l megacorpone.com ns2.megacorpone.com
 Using domain server:
-Name: ns1.megacorpone.com
-Address: 50.7.67.186#53
+Name: ns2.megacorpone.com
+Address: 51.222.39.63#53
+Aliases: 
+
+megacorpone.com name server ns1.megacorpone.com.
+megacorpone.com name server ns2.megacorpone.com.
+megacorpone.com name server ns3.megacorpone.com.
+admin.megacorpone.com has address 51.222.169.208
+beta.megacorpone.com has address 51.222.169.209
+[...SNIP...]
+```
+
+To automate this process a script is made available below.
+
+{{%attachments title="Related files" fa_icon_class="fas fa-code" pattern=".*(sh)"/%}}
+
+```plain
+./dns-axfr.sh megacorpone.com
+admin.megacorpone.com has address 51.222.169.208
+beta.megacorpone.com has address 51.222.169.209
+fs1.megacorpone.com has address 51.222.169.210
+intranet.megacorpone.com has address 51.222.169.211
+[...SNIP...]
 ```
 
 ### URL list
