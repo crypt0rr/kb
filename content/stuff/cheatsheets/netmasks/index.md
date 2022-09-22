@@ -1,20 +1,30 @@
 ---
-title : "Netmasks"
+title : "Netmasks / Subnetting"
 pre : '<i class="fas fa-network-wired"></i> '
 description : "Overview of network CIDR, Addresses, Hosts, Netmask and amount of clients."
 date : 2020-11-26T15:39:37+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Stuff', 'CIDR', 'Netmask']
+tags : ['Stuff', 'CIDR', 'Netmask', 'Subnetting']
 ---
 
-## Netmasks
+## Network classes (private ranges)
+
+| Class | Short noted | Address Range                 | Default Subnet Mask | Available Hosts |
+| ----- | ----------- | ----------------------------- | ------------------- | --------------- |
+| A     | 10/8        | 10.0.0.0 - 10.255.255.255     | 255.0.0.0 (/8)      | 16.777.214      |
+| B     | 172.16/12   | 172.16.0.0 - 172.31.255.255   | 255.240.0.0 (/12)   | 1.048.574       |
+| C     | 192.168/16  | 192.168.0.0 - 192.168.255.255 | 255.255.0.0 (/16)   | 65.534          |
+
+## Netmasks / Subnetting
 
 Overview of network CIDR, Addresses, Hosts, Netmask and amount of clients
 
 | CIDR | Addresses |  Hosts   |     Netmask     | Amount of a Class C |
 | :--- | :-------: | :------: | :-------------: | ------------------: |
+| /32  |     1     |    1     | 255.255.255.255 |                   - |
+| /31  |     2     |    2     | 255.255.255.254 |                   - |
 | /30  |     4     |    2     | 255.255.255.252 |                1/64 |
 | /29  |     8     |    6     | 255.255.255.248 |                1/32 |
 | /28  |    16     |    14    | 255.255.255.240 |                1/16 |
@@ -38,11 +48,3 @@ Overview of network CIDR, Addresses, Hosts, Netmask and amount of clients
 | /10  |  4194304  | 4194302  |   255.192.0.0   |               16384 |
 | /9   |  8388608  | 8388606  |   255.128.0.0   |               32768 |
 | /8   | 16777216  | 16777214 |    255.0.0.0    |               65536 |
-
-## Network classes
-
-| Class | Short noted | Address Range                 | Default Subnet Mask | Available Hosts |
-| ----- | ----------- | ----------------------------- | ------------------- | --------------- |
-| A     | 10/8        | 10.0.0.0 - 10.255.255.255     | 255.0.0.0 (/8)      | 16.777.214      |
-| B     | 172.16/12   | 172.16.0.0 - 172.31.255.255   | 255.255.0.0 (/16)   | 65.534          |
-| C     | 192.168/16  | 192.168.0.0 - 192.168.255.255 | 255.255.255.0 (/24) | 254             |
