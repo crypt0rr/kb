@@ -54,21 +54,88 @@ optional arguments:
 
 ### Examples (recon-ng)
 
-#### Install modules
+#### Search modules
 
 ```plain
-$ recon-ng
-[...SNIP...]
-[*] No modules enabled/installed.
+[recon-ng][default] > marketplace search github
+[*] Searching module index for 'github'...
 
-[recon-ng][default] > marketplace install all
-[*] Module installed: discovery/info_disclosure/cache_snoop
-[*] Module installed: discovery/info_disclosure/interesting_files
-[*] Module installed: exploitation/injection/command_injector
-[*] Module installed: exploitation/injection/xpath_bruter
-[*] Module installed: import/csv_file
-[*] Module installed: import/list
-[...SNIP...]
+  +------------------------------------------------------------------------------------------------+
+  |                       Path                      | Version |     Status    |  Updated   | D | K |
+  +------------------------------------------------------------------------------------------------+
+  | recon/companies-multi/github_miner              | 1.1     | not installed | 2020-05-15 |   | * |
+  | recon/profiles-contacts/github_users            | 1.0     | not installed | 2019-06-24 |   | * |
+  | recon/profiles-profiles/profiler                | 1.0     | not installed | 2019-06-24 |   |   |
+  | recon/profiles-repositories/github_repos        | 1.1     | not installed | 2020-05-15 |   | * |
+  | recon/repositories-profiles/github_commits      | 1.0     | not installed | 2019-06-24 |   | * |
+  | recon/repositories-vulnerabilities/github_dorks | 1.0     | not installed | 2019-06-24 |   | * |
+  +------------------------------------------------------------------------------------------------+
+
+  D = Has dependencies. See info for details.
+  K = Requires keys. See info for details.
+```
+
+#### Show info about modules
+
+```plain
+[recon-ng][default] > marketplace info recon/domains-hosts/google_site_web
+
+  +---------------------------------------------------------------------------------------------------------------------------------+
+  | path          | recon/domains-hosts/google_site_web                                                                             |
+  | name          | Google Hostname Enumerator                                                                                      |
+  | author        | Tim Tomes (@lanmaster53)                                                                                        |
+  | version       | 1.0                                                                                                             |
+  | last_updated  | 2019-06-24                                                                                                      |
+  | description   | Harvests hosts from Google.com by using the 'site' search operator. Updates the 'hosts' table with the results. |
+  | required_keys | []                                                                                                              |
+  | dependencies  | []                                                                                                              |
+  | files         | []                                                                                                              |
+  | status        | not installed                                                                                                   |
+  +---------------------------------------------------------------------------------------------------------------------------------+
+```
+
+#### Install module(s)
+
+```plain
+[recon-ng][default] > marketplace install recon/domains-hosts/google_site_web
+[*] Module installed: recon/domains-hosts/google_site_web
+[*] Reloading modules...
+```
+
+#### Use installed module
+
+```plain
+[recon-ng][default] > modules load recon/domains-hosts/google_site_web
+[recon-ng][default][google_site_web] > info
+
+      Name: Google Hostname Enumerator
+    Author: Tim Tomes (@lanmaster53)
+   Version: 1.0
+
+Description:
+  Harvests hosts from Google.com by using the 'site' search operator. Updates the 'hosts' table with
+  the results.
+
+Options:
+  Name    Current Value  Required  Description
+  ------  -------------  --------  -----------
+  SOURCE  default        yes       source of input (see 'info' for details)
+
+Source Options:
+  default        SELECT DISTINCT domain FROM domains WHERE domain IS NOT NULL
+  <string>       string representing a single input
+  <path>         path to a file containing a list of inputs
+  query <sql>    database query returning one column of inputs
+
+[recon-ng][default][google_site_web] > options set SOURCE offsec.nl
+SOURCE => offsec.nl
+[recon-ng][default][google_site_web] > run
+
+---------
+OFFSEC.NL
+---------
+[*] Searching Google for: site:offsec.nl
+[!] Google CAPTCHA triggered. No bypass available.  
 ```
 
 ## recon-cli
