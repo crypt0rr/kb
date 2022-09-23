@@ -6,7 +6,7 @@ date : 2020-04-21T13:59:19+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'Active Directory']
+tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
 ## LDAPDomainDump

@@ -6,7 +6,7 @@ date : 2021-11-06T13:24:44+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
 ## LDAP Password Hunter
