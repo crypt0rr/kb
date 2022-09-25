@@ -53,40 +53,40 @@ or available locally via: info '(coreutils) comm invocation'
 
 ### Examples
 
+It outputs three space-offset columns:
+
+* The first contains lines that are unique to the first file or argument
+* The second contains lines that are unique to the second file or argument
+* The third column contains lines that are shared by both files
+
 #### Compare normally
 
 Content file 1 and 2
 
 ```plain
-$ cat file1 file2
-abcd
-efgh
-jilk
-mnop
-qrst
-uvwx
-yz
+$ cat file1
+192.168.1.1
+192.168.1.2
+192.168.1.3
+192.168.1.4
+192.168.1.5
 
 $ cat file2
-abcd
-efgh
-ijkl
-mnop
-qrst
-uvwx
-yz
+192.168.1.1
+192.168.1.3
+192.168.1.4
+192.168.1.5
+192.168.1.6
 ```
 
 ```plain
-$ comm file1 file2
-        abcd
-        efgh
-    ijkl
-jilk
-        mnop
-        qrst
-        uvwx
-        yz
+$ comm file1 file2                
+                192.168.1.1
+192.168.1.2
+                192.168.1.3
+                192.168.1.4
+                192.168.1.5
+        192.168.1.6
 ```
 
 #### Compare where content of lines do not directly match but are matched at other lines in file
