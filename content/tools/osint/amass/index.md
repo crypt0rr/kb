@@ -82,7 +82,7 @@ rikarich.com
 appsecasiapacific.com
 appsecna.org
 appsecnorthamerica.org
-[...SNIP...]
+[...]
 ```
 
 #### SSL Certificate Grabbing
@@ -101,7 +101,7 @@ paypal.co.nz
 paypalobjects.com
 paypal.ca
 paypal.at
-[...SNIP...]
+[...]
 ```
 
 #### Using ASNs (Autonomous System Number)
@@ -135,7 +135,7 @@ baterias-tesla.com
 darsonval-tesla.com
 mc-tesla.com
 tesla.com
-[...SNIP...]
+[...]
 ```
 
 ### Amass Enum

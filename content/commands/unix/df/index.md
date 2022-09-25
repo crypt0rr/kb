@@ -73,7 +73,7 @@ tmpfs                  1.6G  2.3M  1.6G   1% /run
 tmpfs                  7.8G  140M  7.6G   2% /dev/shm
 tmpfs                  5.0M     0  5.0M   0% /run/lock
 tmpfs                  7.8G     0  7.8G   0% /sys/fs/cgroup
-[...SNIP...]
+[...]
 ```
 
 #### Show specific folder, usage and mountpoint

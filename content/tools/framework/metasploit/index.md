@@ -77,7 +77,7 @@ krbtgt:502:aad3b435b51404eeaad3b435b51404ee:102277341d6c113a28017200e1dfafe9:::
 johndo:1107:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 adm_johndo:1108:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
-[...SNIP...]
+[...]
 ```
 
 ### Examples
@@ -113,7 +113,7 @@ krbtgt:502:aad3b435b51404eeaad3b435b51404ee:102277341d6c113a28017200e1dfafe9:::
 johndo:1107:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 adm_johndo:1108:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
-[...SNIP...]
+[...]
 
 meterpreter > load kiwi
 Loading extension kiwi...
@@ -138,7 +138,7 @@ Username       Domain   Password
 --------       ------   --------
 (null)         (null)   (null)
 Administrator  OFFSEC   Welkom1234
-[...SNIP...]
+[...]
 ```
 
 ### URL list

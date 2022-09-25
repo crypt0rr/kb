@@ -76,7 +76,7 @@ sudo lspci -mm
 
 00:00.0 "Host bridge" "Intel Corporation" "Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers" -r05 "Lenovo" "Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers"
 00:01.0 "PCI bridge" "Intel Corporation" "Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)" -r05 "" ""
-00:08.0 "System peripheral" "Intel Corporation" "Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model" "Lenovo" "Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model"[...SNIP...]
+00:08.0 "System peripheral" "Intel Corporation" "Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model" "Lenovo" "Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model"[...]
 ```
 
 #### Show specific device information

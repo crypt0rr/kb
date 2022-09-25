@@ -35,7 +35,7 @@ vboxpci                24576  0
 vboxnetadp             28672  0
 vboxnetflt             28672  0
 vboxdrv               487424  3 vboxpci,vboxnetadp,vboxnetflt
-[...SNIP...]
+[...]
 ```
 
 ### URL list

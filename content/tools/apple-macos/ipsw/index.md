@@ -109,7 +109,7 @@ ipsw download macos
         1.90 KiB / 1.90 KiB [==========================================================| ✅  ] 
    • Getting Package           destName=InstallESDDmg.pkg size=5.5 GB
         343.16 MiB / 5.16 GiB [===>------------------------------------------------------| 4m3s ] 20.50 MiB/s
-        [...SNIP...]
+        [...]
 ```
 
 ### URL list

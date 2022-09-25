@@ -96,7 +96,7 @@ Use a compatible Mac or select a different build compatible with your current ha
 ```plain
 $ sudo python3 installinstallmacos.py
 Downloading https://swscan.apple.com/content/catalogs/others/index-12-10.16-10.15-10.14-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog...
-[...SNIP...]
+[...]
  #      ProductID    Version    Build   Post Date  Title
  1      061-26578    10.14.5  18F2059  2019-10-14  macOS Mojave
  2      061-26589    10.14.6   18G103  2019-10-14  macOS Mojave

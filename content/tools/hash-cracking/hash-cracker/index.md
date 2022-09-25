@@ -100,7 +100,7 @@ Enter full path to wordlist: wordlist/ignis-1M.txt
 Wordlist wordlist/ignis-1M.txt selected.
 hashcat (v6.2.4-131-ga9cdd4cef) starting
 
-[...SNIP...]
+[...]
 ```
 
 ### URL list

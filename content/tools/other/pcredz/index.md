@@ -96,7 +96,7 @@ CC number scanning activated
 Pcredz live capture started, using:enp0s31f6
 Starting timestamp (1639734999.1870687) corresponds to 12/17/21 10:56:39
 protocol: tcp 10.10.10.102:36188 > 10.10.10.103:445
-NTLMv2 complete hash is: john-do::OFFSEC:aaaaaaaaaaaaaaaa:41DBF91ACAE926FCF1BB4D7580A4BC96:0101000000000000[...SNIP...]
+NTLMv2 complete hash is: john-do::OFFSEC:aaaaaaaaaaaaaaaa:41DBF91ACAE926FCF1BB4D7580A4BC96:0101000000000000[...]
 ```
 
 ### Analyzing .PCAP(NG) files

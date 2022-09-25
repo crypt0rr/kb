@@ -675,7 +675,7 @@ You need to use -m13400 and --username for hashcat
 $ ./keepass2john keepass_database.kdbx > keepassdb.hash
 
 $ cat keepassdb.hash
-keepassdb:$keepass$*2*6000*0*2fff26de592b5a4b46b7d34f189c203c2b7af9ad9fb67ccc4a7cfa610bdc8b12*d999503fcf704ff552[...SNIP...]392dbb91a7cc*595dc8b80fd152d8dd1d5da9c6b0a91f*226abde9df48c4c9ae84caa8e91d29a41ffea7ae828b87e3c12efc6fddfde567*062a5db59aafdeee2e1fcc4cd93dc4d6723cb143cefa36f6eee548d2d14e07e7
+keepassdb:$keepass$*2*6000*0*2fff26de592b5a4b46b7d34f189c203c2b7af9ad9fb67ccc4a7cfa610bdc8b12*d999503fcf704ff552[...]392dbb91a7cc*595dc8b80fd152d8dd1d5da9c6b0a91f*226abde9df48c4c9ae84caa8e91d29a41ffea7ae828b87e3c12efc6fddfde567*062a5db59aafdeee2e1fcc4cd93dc4d6723cb143cefa36f6eee548d2d14e07e7
 ```
 
 ### Calculate your own NTLM hash

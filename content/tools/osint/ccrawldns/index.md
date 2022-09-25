@@ -44,7 +44,7 @@ $ python3 CCrawlDNS.py -d example.com
 Processing CC-MAIN-2021-25
 Processing CC-MAIN-2021-21
 Processing CC-MAIN-2021-17
-[...SNIP...]
+[...]
 Processing CC-MAIN-2014-35
 CC-MAIN-2015-11 Processed
 CC-MAIN-2017-39 Processed

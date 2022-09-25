@@ -60,14 +60,14 @@ Sitemap: https://example.com/wp-sitemap.xml
 
 --------------------------------------------------------------------------
 
-[...SNIP...]
+[...]
   [-] http://example.com/websvn/
   [-] http://example.com/wizmysqladmin/
   [+] Admin panel found: http://example.com/wp-admin/
   [-] http://example.com/wp-login/
   [-] http://example.com/wplogin/
   [+] Admin panel found: http://example.com/wp-login.php
-[...SNIP...]
+[...]
 ```
 
 ### URL list

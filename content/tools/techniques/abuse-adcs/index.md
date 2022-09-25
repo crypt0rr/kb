@@ -35,28 +35,28 @@ Schema Version: 1
 Enroll Services: offsec-DC01PKI-CA
 Vulnerabilities: ESC3.2 - Use Agent Certificate
 msPKI-Certificate-Name-Flag: (0x-5a000000) SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
-[...SNIP...]
+[...]
 
 Name: Administrator
 Schema Version: 1
 Enroll Services: offsec-DC01PKI-CA
 Vulnerabilities: ESC3.2 - Use Agent Certificate
 msPKI-Certificate-Name-Flag: (0x-5a000000) SUBJECT_ALT_REQUIRE_UPN, SUBJECT_ALT_REQUIRE_EMAIL, SUBJECT_REQUIRE_EMAIL, SUBJECT_REQUIRE_DIRECTORY_PATH
-[...SNIP...]
+[...]
 
 Name: Machine
 Schema Version: 1
 Enroll Services: offsec-DC01PKI-CA
 Vulnerabilities: ESC3.2 - Use Agent Certificate
 msPKI-Certificate-Name-Flag: (0x18000000) SUBJECT_ALT_REQUIRE_DNS, SUBJECT_REQUIRE_DNS_AS_CN
-[...SNIP...]
+[...]
 
 Name: SubCA
 Schema Version: 1
 Enroll Services: offsec-DC01PKI-CA
 Vulnerabilities: ESC1 - SAN Impersonation, ESC2 - Any Purpose, ESC3.2 - Use Agent Certificate
 msPKI-Certificate-Name-Flag: (0x1) ENROLLEE_SUPPLIES_SUBJECT
-[...SNIP...]
+[...]
 
 Name: UsersOffsecAD
 Schema Version: 2

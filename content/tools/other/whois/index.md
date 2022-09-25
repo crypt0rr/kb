@@ -90,7 +90,7 @@ whois google.com
    Name Server: NS4.GOOGLE.COM
    DNSSEC: unsigned
    URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/
-[...SNIP...]
+[...]
 ```
 
 ### URL list

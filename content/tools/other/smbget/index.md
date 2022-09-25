@@ -76,7 +76,7 @@ smb://10.10.196.36/johndo/Natural Language Processing-Building Sequence Models.p
 smb://10.10.196.36/johndo/Convolutional Neural Networks-CNN.pdf
 smb://10.10.196.36/johndo/notes/3.01 Search.md
 smb://10.10.196.36/johndo/notes/4.01 Agent-Based Models.md
-[...SNIP...]
+[...]
 Downloaded 45.07MB in 53 seconds
 ```
 

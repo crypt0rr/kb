@@ -114,7 +114,7 @@ $ ./ADReaper -command computers -dc SRV2019.offsec.nl -password Welkom1234 -user
 | Distinguished Name (DN) : CN=FINWDBAS1000000,OU=OGC,OU=Stage,DC=offsec,DC=nl                     |
 | SAM Account Name : FINWDBAS1000000$                                                              |
 | Common Name (CN) : FINWDBAS1000000                                                               |
-[...SNIP...]
+[...]
 ```
 
 #### List all users
@@ -139,7 +139,7 @@ $ ./ADReaper -command users -dc SRV2019.offsec.nl -password Welkom1234 -user joh
 |  - AUBREY_WISE          |
 |  - MARCY_TANNER         |
 |  - CHARLEY_KLEIN        |
-[...SNIP...]
+[...]
 ```
 
 ### URL list

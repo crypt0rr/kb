@@ -48,7 +48,7 @@ Please be sure impacket and ldapsearch are installed and your /etc/krb5.conf fil
 Database exist already, Starting analysis on Sat Nov  6 01:45:25 PM CET 2021
 ****LDAP PASSWORD ENUM****
 Creating a TGT ticket for the user
-[...SNIP...]
+[...]
 ```
 
 ### URL list

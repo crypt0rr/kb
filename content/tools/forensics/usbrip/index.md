@@ -87,7 +87,7 @@ Manufacturer:   Linux 5.4.0-7634-generic xhci-hcd
 Serial Number:  0000:00:14.0
 Bus-Port:       usb2
 Disconnected:   ∅
-[...SNIP...]
+[...]
 ```
 
 ### URL list

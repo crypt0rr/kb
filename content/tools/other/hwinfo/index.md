@@ -125,7 +125,7 @@ network interface:
 disk:
   /dev/nvme0n1         Samsung Electronics NVMe SSD Controller SM981/PM981
   /dev/nvme1n1         Samsung Electronics NVMe SSD Controller SM961/PM961
-[...SNIP...]
+[...]
 ```
 
 #### Show specific device info

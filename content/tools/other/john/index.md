@@ -111,7 +111,7 @@ Raw:    261 c/s real, 33.4 c/s virtual
 
 Benchmarking: LM [DES 256/256 AVX2]... (8xOMP) DONE
 Raw:    87687K c/s real, 11141K c/s virtual
-[...SNIP...]
+[...]
 ```
 
 ### Crack NTLM
@@ -125,7 +125,7 @@ Press 'q' or Ctrl-C to abort, almost any other key for status
 123456           (?)
 12345            (?)
 password         (?)
-[...SNIP...]
+[...]
 527g 0:00:00:00 DONE (2020-12-01 20:42) 13175g/s 88650p/s 88650c/s 8312MC/s !@#$%..sss
 Warning: passwords printed above might not be all those cracked
 Use the "--show --format=NT" options to display all of the cracked passwords reliably

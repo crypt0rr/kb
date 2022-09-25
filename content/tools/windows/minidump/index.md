@@ -80,7 +80,7 @@ Dpapi failed: Object reference not set to an instance of an object.
     UserName: WIN10$
     Password: 82 b5 45 75 ad 5b 36 d1 3e 3a cf 7b fb ea 0a ca 48 63 92 25 71 53 0b f4 2d f8 80 48 28 7f fc 96 43 5b 30 19 ba 4c 88 be 53 7b 7b 11 a9 d8 c1 23 88 e2 24 01 64 45 31 08 08 af c6 97 bb 88 6e 0f 86 05 dd 43 12 d2 81 f3 ab e1 c3 11 1e cc 42 13 d2 e4 24 fa 2f 8e 6f eb 02 70 2e d4 92 30 42 01 a9 bd f9 cc 34 63 b2 78 41 c2 f4 94 73 8a 24 9c 3d cf 1d cf d5 5a dc 8b 47 0a c6 20 62 f8 8f 70 2c 16 92 ed f6 0a 4e 59 fe d4 7d d2 94 77 11 8a 4c c2 ce 3e 45 d4 53 e4 e7 e5 96 23 99 03 29 5e 2d 85 76 66 59 39 cc 33 1a cc 7a ac e5 c9 36 1d f2 18 0a fe 8b e3 41 ae 4c bd 0c fc 1a 5b a6 1b f2 c8 00 b7 19 5c 28 90 10 4b 32 a5 38 e0 44 1d b2 72 db c9 e5 ad 86 0f 7c 34 d1 82 40 24 83 0f 2f 60 3c 28 78 dc ef 82 03 de 4a 13 33 62 c3 5f
     NT: B5FB60BC5EB9092F9F96B89FCF0FEE45
-[...SNIP...]
+[...]
 ```
 
 ### URL list

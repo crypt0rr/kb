@@ -94,7 +94,7 @@ BIOS Information
     Runtime Size: 128 kB
     ROM Size: 16 MB
     Characteristics:
-[...SNIP...]
+[...]
     BIOS Revision: 1.60
     Firmware Revision: 1.34
 ```

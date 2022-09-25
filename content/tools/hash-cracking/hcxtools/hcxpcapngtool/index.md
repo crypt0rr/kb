@@ -171,7 +171,7 @@ Cracking is done with [hashcat]({{< ref "hashcat" >}}) (`-m22000`)
 ```plain
 $ hashcat -m22000 hash.hc22000 wordlist        
 hashcat (v6.2.4-131-ga9cdd4cef) starting
-[...SNIP...]
+[...]
 7bff708[REDACTED]31e5ed1:c8b5adf92be0:e80410d52f0c:OFFSEC:CompanyNetworkPassword
 2e48084[REDACTED]418e6e5:c8b5adf8d7e0:e80410d52f0c:OFFSEC:CompanyNetworkPassword
 ec42192[REDACTED]4d32ad18:8ce7481dfb9a:ac49dbada3b8:OFFSEC:CompanyNetworkPassword
@@ -181,7 +181,7 @@ ec42192[REDACTED]4d32ad18:8ce7481dfb9a:ac49dbada3b8:OFFSEC:CompanyNetworkPasswor
                                                           
 Session..........: hashcat
 Status...........: Cracked
-[...SNIP...]
+[...]
 ```
 
 ### Bettercap

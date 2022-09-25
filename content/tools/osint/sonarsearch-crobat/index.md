@@ -46,7 +46,7 @@ example.com
 example.edu
 example.net
 example.org
-[...SNIP...]
+[...]
 ```
 
 #### Subdomain search
@@ -67,7 +67,7 @@ $ crobat -s google.com
 10.docs.google.com
 10.drive.google.com
 100.docs.google.com
-[...SNIP...]
+[...]
 ```
 
 #### TLD (Top Level Domain) search
@@ -92,7 +92,7 @@ example.co.kr
 example.co.nz
 example.co.uk
 example.com
-[...SNIP...]
+[...]
 ```
 
 ### URL list

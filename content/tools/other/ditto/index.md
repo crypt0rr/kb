@@ -89,7 +89,7 @@ checking 280 variations for 'facebook.com', please wait ...
 Ｆacebook.com (xn--acebook-uz93b.com) : available
 ｆacebook.com (xn--acebook-5693b.com) : available
 fácebook.com (xn--fcebook-hwa.com) registered : ips=165.160.15.20,165.160.13.20
-[...SNIP...]
+[...]
 ```
 
 ### URL list

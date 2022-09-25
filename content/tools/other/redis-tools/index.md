@@ -120,7 +120,7 @@ redis-cli -h <target>
 <target>:6379> info
 # Server
 redis_version:3.0.503
-[...SNIP...]
+[...]
 ```
 
 #### Unauthenticated Redis-server check #2

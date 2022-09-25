@@ -238,7 +238,7 @@ Examples:
 
 ```plain
  .\Seatbelt.exe Antivirus
-[...SNIP...]
+[...]
 ====== AntiVirus ======
 
   Engine                         : Windows Defender
@@ -252,7 +252,7 @@ Examples:
 
 ```plain
  .\Seatbelt.exe "LogonEvents 30"
-[...SNIP...]
+[...]
 ====== LogonEvents ======
 
 Listing 4624 Account Logon Events for the last 30 days.
@@ -272,7 +272,7 @@ Listing 4624 Account Logon Events for the last 30 days.
 
 ```plain
 .\Seatbelt.exe -group=all -outputfile="C:\Path\file.txt"
-[...SNIP...]
+[...]
 ====== AMSIProviders ======
 
   GUID                           : {2781761E-28E0-4109-99FE-B9D127C57AFE}

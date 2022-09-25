@@ -82,7 +82,7 @@ addition       examplei.com    NS:ns1626.ztomy.com
 addition       examplej.com    156.243.243.187 NS:f1g1ns1.dnspod.net
 addition       examplek.com    -
 addition       examplel.com    138.201.138.240 2a01:4f8:172:35ec::2 NS:b.ns14.net MX:mail.examplel.com
-[...SNIP...]
+[...]
 ```
 
 ### URL list

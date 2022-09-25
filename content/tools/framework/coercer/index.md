@@ -104,7 +104,7 @@ Responder in analyze mode capturing the authentication attempt from the computer
 
 ```plain
 $ sudo ./Responder.py -I eth0 --analyze             
-[...SNIP...]]
+[...]]
 [+] Generic Options:
     Responder NIC              [eth0]
     Responder IP               [10.0.0.103]
