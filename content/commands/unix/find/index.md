@@ -131,6 +131,18 @@ Find all files with permisson 777
 find / -perm -777 2> /dev/null
 ```
 
+Find all files modified in the last 7 days
+
+```plain
+find . -mtime -7 -ls
+```
+
+To find all files modified longer than 7 days ago, use the `+7` instead of `-7` switch.
+
+```plain
+find . -mtime +7 -ls
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/find)
