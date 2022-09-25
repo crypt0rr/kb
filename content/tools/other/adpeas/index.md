@@ -89,7 +89,7 @@ DC Host Name  : SRV2019.offsec.nl
 DC IP Address : 10.20.30.10
 Site Name     : Default-First-Site-Name
 Domain        : offsec.nl
-[...SNIP...]
+[...]
 ```
 
 {{%attachments title="Example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}

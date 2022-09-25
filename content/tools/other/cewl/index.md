@@ -86,7 +86,7 @@ Banners Banners Banners
 
 Offsite link, not following: http://hy.lipsum.com/
 Offsite link, not following: http://sq.lipsum.com/
-[...SNIP...]
+[...]
 Offsite link, not following: http://sk.lipsum.com/
 Offsite link, not following: http://vi.lipsum.com/
 Visiting: https://www.lipsum.com:443/privacy.pdf referred from https://www.lipsum.com/, got response code 200
@@ -133,7 +133,7 @@ Visiting: https://sq.lipsum.com/ referred from http://sq.lipsum.com/, got respon
 Attribute text found:
 Banners Banners Banners 
 
-[...SNIP...]
+[...]
 
 Writing words to file
 ```

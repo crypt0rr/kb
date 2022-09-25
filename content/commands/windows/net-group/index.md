@@ -69,7 +69,7 @@ Group Accounts for \\example.local
 *Domain Controllers
 *Domain Guests
 *Domain Users
-[...SNIP...]
+[...]
 ```
 
 ### URL list

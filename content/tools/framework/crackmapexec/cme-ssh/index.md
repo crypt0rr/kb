@@ -105,7 +105,7 @@ SSH         10.10.10.1     22     10.10.10.1      [-] 11111:root Authentication 
 SSH         10.10.10.1     22     10.10.10.1      [-] 11111:Admin Authentication failed.
 SSH         10.10.10.1     22     10.10.10.1      [-] 11111:Admin Authentication failed.
 SSH         10.10.10.1     22     10.10.10.1      [-] 11111:x-admin Authentication failed.
-[...SNIP...]
+[...]
 SSH         10.10.10.1     22     10.10.10.1      [-] administrator:administrator Authentication failed.
 SSH         10.10.10.1     22     10.10.10.1      [-] administrator:welkom1234 Authentication failed.
 SSH         10.10.10.1     22     10.10.10.1      [+] administrator:x-admin 

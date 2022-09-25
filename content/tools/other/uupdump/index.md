@@ -53,13 +53,13 @@ $ bash uup_download_linux.sh
 Retrieving aria2 script...
 
 07/02 10:01:57 [NOTICE] Downloading 1 item(s)
-[...SNIP...]
+[...]
 Status Legend:
 (OK):download completed.
 
 UUP Converter v0.6.4
 
-[...SNIP...]
+[...]
  99.99% done, estimate finish Fri Jul  2 10:12:36 2021
 Total translation table size: 2048
 Total rockridge attributes bytes: 0

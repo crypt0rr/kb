@@ -70,7 +70,7 @@ sudo lshw
           physical id: 3
           slot: System board or motherboard
           size: 32GiB
-[...SNIP...]
+[...]
 ```
 
 ### URL list

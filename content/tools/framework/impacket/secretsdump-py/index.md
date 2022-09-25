@@ -166,7 +166,7 @@ Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 serverlocaladmins:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 [*] Dumping cached domain logon information (domain/username:hash)
 [*] Dumping LSA Secrets
-[...SNIP...]
+[...]
 [*] DPAPI_SYSTEM 
 dpapi_machinekey:0x3e54c484e6abd41234263bc70b11d540f1d0
 dpapi_userkey:0x10ab5aed123456789c3870d64008f56836183e
@@ -196,7 +196,7 @@ krbtgt:502:aad3b435b51404eeaad3b435b51404ee:102277341d6c113a28017200e1dfafe9:::
 offsec.nl\johndo:1107:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 offsec.nl\adm_johndo:1108:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 offsec.nl\janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
-[...SNIP...]
+[...]
 [*] Cleaning up...
 ```
 

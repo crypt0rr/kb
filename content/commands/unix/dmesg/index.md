@@ -89,7 +89,7 @@ For more details see dmesg(1).
 [    0.000000]   Centaur CentaurHauls
 [    0.000000]   zhaoxin   Shanghai  
 [    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
-[...SNIP...]
+[...]
 ```
 
 ### URL list

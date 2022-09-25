@@ -70,7 +70,7 @@ nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
 $ nc -nv 10.10.10.1 25
 
 Connection to 10.10.10.1 25 port [tcp/*] succeeded!
-[...SNIP...]
+[...]
 ```
 
 #### Create a Netcat listener

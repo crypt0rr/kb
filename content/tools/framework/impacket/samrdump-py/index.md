@@ -86,7 +86,7 @@ Administrator (500)/PasswordLastSet: 2020-03-18 10:55:43.427441
 Administrator (500)/PasswordDoesNotExpire: False
 Administrator (500)/AccountIsDisabled: False
 Administrator (500)/ScriptPath
-[...SNIP...]
+[...]
 ```
 
 ### URL list

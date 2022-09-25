@@ -66,7 +66,7 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
   Host IP address               : 192.168.1.2
   Hostname                      : ...retracted...
   Description                   : ...retracted...
-[...SNIP...]
+[...]
 ```
 
 ### URL list

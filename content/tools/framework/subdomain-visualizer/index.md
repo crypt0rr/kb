@@ -52,7 +52,7 @@ Total subdomains found by crobat: 2
 Running nmap agains found subdomains
 Starting Nmap 7.80 ( https://nmap.org ) at 2021-03-09 15:15 CET
 
-[...SNIP...]
+[...]
 ```
 
 ### URL list

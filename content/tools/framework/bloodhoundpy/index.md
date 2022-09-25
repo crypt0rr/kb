@@ -89,7 +89,7 @@ INFO: Invalid computer object without hostname: TSTWAPPS1000001$
 INFO: Querying computer: WIN10-2.offsec.nl
 INFO: Querying computer: WIN10.offsec.nl
 INFO: Querying computer: SRV2022.offsec.nl
-[...SNIP...]
+[...]
 INFO: Querying computer: 
 INFO: Querying computer: 
 INFO: Querying computer: SRV2019.offsec.nl

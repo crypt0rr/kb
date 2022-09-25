@@ -116,7 +116,7 @@ msPKI-Enrollment-Flag: (0x29) INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_
 msPKI-RA-Signature: 0
 pKIExtendedKeyUsage: Encrypting File System, Secure Email, Client Authentication
 SD Owner: S-1-5-21-497837788-612300594-3587273769-519 offsec\Enterprise Admins
-[...SNIP...]
+[...]
 
 Name: Administrator
 Schema Version: 1
@@ -127,7 +127,7 @@ msPKI-Enrollment-Flag: (0x29) INCLUDE_SYMMETRIC_ALGORITHMS, PUBLISH_TO_DS, AUTO_
 msPKI-RA-Signature: 0
 pKIExtendedKeyUsage: Microsoft Trust List Signing, Encrypting File System, Secure Email, Client Authentication
 SD Owner: S-1-5-21-497837788-612300594-3587273769-519 offsec\Enterprise Admins
-[...SNIP...]
+[...]
 
 Name: UsersOffsecAD
 Schema Version: 2

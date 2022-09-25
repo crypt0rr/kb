@@ -122,7 +122,7 @@ Default password policy:
     cn: GENA_FLYNN
     sAMAccountName: GENA_FLYNN
     servicePrincipalName: MSSQL/SECWLPT1000000
-[...SNIP...]
+[...]
 
 ### Result of "asreqroast" command ###
 [*] DN: CN=EDDY_MILES,OU=Groups,OU=ITS,OU=Stage,DC=offsec,DC=nl - STATUS: Read - READ TIME: 2022-03-18T15:16:14.453337
@@ -132,7 +132,7 @@ Default password policy:
 [*] DN: CN=MARCIA_HOLCOMB,OU=Groups,OU=HRE,OU=Tier 2,DC=offsec,DC=nl - STATUS: Read - READ TIME: 2022-03-18T15:16:14.453406
     cn: MARCIA_HOLCOMB
     sAMAccountName: MARCIA_HOLCOMB
-[...SNIP...]
+[...]
 
 ### Result of "goldenticket" command ###
 [+] [DN: CN=krbtgt,CN=Users,DC=offsec,DC=nl - STATUS: Read - READ TIME: 2022-03-18T15:16:14.468006

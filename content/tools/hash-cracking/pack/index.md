@@ -56,7 +56,7 @@ $ python statsgen.py rockyou.txt
 [+]                        10: 14% (2013695)
 [+]                         6: 13% (1947798)
 [+]                        11: 06% (866035)
-[...SNIP...]
+[...]
 ```
 
 #### Generate rule from found passwords
@@ -85,7 +85,7 @@ $ python rulegen.py rockyou.txt
 [*] Processed 20000 passwords in 8.15 seconds at the rate of 1908.91 p/sec
 [*] Processed 25000 passwords in 10.77 seconds at the rate of 1831.58 p/sec
 [*] Processed 30000 passwords in 13.50 seconds at the rate of 1947.98 p/sec
-[...SNIP...]
+[...]
 ```
 
 ### URL list

@@ -95,7 +95,7 @@ CN=PERRY_MILES,OU=Test,OU=ESM,OU=Tier 2,DC=offsec,DC=nl
 CN=MARGRET_LEONARD,OU=FIN,OU=People,DC=offsec,DC=nl
 CN=MOHAMMAD_HANSEN,OU=Devices,OU=AWS,OU=Tier 1,DC=offsec,DC=nl
 CN=SEYMOUR_VEGA,OU=Devices,OU=ESM,OU=Tier 1,DC=offsec,DC=nl
-[...SNIP...]
+[...]
 ```
 
 #### Get AD functional level

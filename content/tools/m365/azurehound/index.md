@@ -49,7 +49,7 @@ PS C:\Users\ops > Connect-AZAccount
 
 Account                        SubscriptionName    TenantId                             Environment
 -------                        ----------------    --------                             -----------
-johndo@example.com             example-prd         1cd4303[...SNIP...]2d6530b           AzureCloud
+johndo@example.com             example-prd         1cd4303[...]2d6530b           AzureCloud
 
 PS C:\Users\ops > Invoke-AzureHound -Install
 
@@ -57,7 +57,7 @@ Untrusted repository
 You are installing the modules from an untrusted repository. If you trust this repository, change its InstallationPolicy value by running the Set-PSRepository cmdlet. Are you sure you want to install the modules from 'PSGallery'?
 [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 
-[...SNIP...]
+[...]
 Writing JSON chunk 1/1
 Done processing application to service principal relations
 Processing Application Admins
@@ -73,7 +73,7 @@ Zip file created: C:\Users\ops\2021112345634-azurecollection.zip
 Done! Drag and drop the zip into the BloodHound GUI to import data.
 Account                Environment      TenantId                          TenantDomain                      AccountType
 -------                -----------      --------                          ------------                      -----------
-johndo@example.com     AzureCloud       1cd4303[...SNIP...]2d6530         1cd4303[...SNIP...]2d6530         AccessToken
+johndo@example.com     AzureCloud       1cd4303[...]2d6530         1cd4303[...]2d6530         AccessToken
 ```
 
 ### URL list

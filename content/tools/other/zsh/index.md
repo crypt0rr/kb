@@ -42,7 +42,7 @@ Normal options are named.  An option may be turned on by
 option may be turned off by `-o no_OPTION', `--no-OPTION',
 `+o OPTION' or `+-OPTION'.  Options are listed below only in
 `--OPTION' or `--no-OPTION' form.
-[...SNIP...]
+[...]
 ```
 
 ### Oh My ZSH

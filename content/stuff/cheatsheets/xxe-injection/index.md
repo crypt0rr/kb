@@ -104,7 +104,7 @@ Content-Length: 1339
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
 sys:x:3:3:sys:/dev:/usr/sbin/nologin
-[...SNIP...]
+[...]
 ```
 
 ### Blind XXE by repurposing a local DTD
@@ -141,7 +141,7 @@ Content-Length: 1278
 "Invalid product ID: root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
-[...SNIP...]
+[...]
 ```
 
 ## XXE via file upload

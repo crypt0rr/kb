@@ -96,7 +96,7 @@ Device Descriptor:
   iManufacturer           1 SanDisk
   iProduct                2 Ultra
   iSerial                 3 040156557d5110d1f
-[...SNIP...]
+[...]
 ```
 
 ### URL list

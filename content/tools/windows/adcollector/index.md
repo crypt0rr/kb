@@ -158,7 +158,7 @@ PS > .\ADCollector_new.exe
     operatingsystemversion :   10.0 (14393)
     name :                     DC02
     dnshostname :              DC02.OFFSEC.NL
-[...SNIP...]
+[...]
 ```
 
 ### URL list

@@ -98,7 +98,7 @@ megacorpone.com name server ns2.megacorpone.com.
 megacorpone.com name server ns3.megacorpone.com.
 admin.megacorpone.com has address 51.222.169.208
 beta.megacorpone.com has address 51.222.169.209
-[...SNIP...]
+[...]
 ```
 
 To automate this process a script is made available below.
@@ -111,7 +111,7 @@ admin.megacorpone.com has address 51.222.169.208
 beta.megacorpone.com has address 51.222.169.209
 fs1.megacorpone.com has address 51.222.169.210
 intranet.megacorpone.com has address 51.222.169.211
-[...SNIP...]
+[...]
 ```
 
 ### URL list
