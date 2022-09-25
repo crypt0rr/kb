@@ -89,6 +89,16 @@ $ comm file1 file2
         192.168.1.6
 ```
 
+When only the matching lines are at interest, use the `-n` switch, where `n` is the field number(s).
+
+```plain
+$ comm -12 file1 file2
+192.168.1.1
+192.168.1.3
+192.168.1.4
+192.168.1.5
+```
+
 #### Compare where content of lines do not directly match but are matched at other lines in file
 
 ```plain
