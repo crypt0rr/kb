@@ -9,7 +9,15 @@ weight : 0
 # tags : ['']
 ---
 
-## Wget - A non-interactive network retriever
+## wget
+
+A non-interactive network retriever
+
+### Binary for Windows
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+
+* SHA256 'wget.exe' - `3d28e43da1d24dc517b4d570f7a8851fa2766caaad330001795b51191f2cc2f8`
 
 ### Usage
 
