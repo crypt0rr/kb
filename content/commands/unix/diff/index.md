@@ -121,6 +121,47 @@ GNU diffutils home page: <https://www.gnu.org/software/diffutils/>
 General help using GNU software: <https://www.gnu.org/gethelp/>
 ```
 
+### Examples
+
+The `-` for the first file says the line is not present in the second file. The `+` at the second file says the line is present in the second file but not in the first.
+
+#### Context format
+
+```plain
+diff -c file1 file2 
+*** file1       2022-09-25 15:40:59.000000000 +0200
+--- file2       2022-09-25 15:40:39.000000000 +0200
+***************
+*** 1,5 ****
+  192.168.1.1
+- 192.168.1.2
+  192.168.1.3
+  192.168.1.4
+  192.168.1.5
+--- 1,6 ----
+  192.168.1.1
+  192.168.1.3
+  192.168.1.4
+  192.168.1.5
++ 192.168.1.6
++ 
+```
+
+#### Unified format
+
+```plain
+diff -u file1 file2
+--- file1       2022-09-25 15:40:59.000000000 +0200
++++ file2       2022-09-25 15:40:39.000000000 +0200
+@@ -1,5 +1,6 @@
+ 192.168.1.1
+-192.168.1.2
+ 192.168.1.3
+ 192.168.1.4
+ 192.168.1.5
++192.168.1.6
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/diff)
