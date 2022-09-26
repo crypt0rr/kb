@@ -107,6 +107,45 @@ svc_lmt
 svc_curium
 ```
 
+#### Delete newlines from current output/file
+
+```plain
+$ diff file1 file2
+369a370
+> c
+698d698
+< r
+1075a1076
+> y
+1400d1400
+< p
+1722a1723
+> t
+2127d2127
+< 0
+2483a2484
+> r
+2829d2829
+< r
+3224a3225
+> o
+3586d3586
+< f
+3988a3989
+> f
+4332d4332
+< s
+4731a4732
+> e
+5096d5096
+< c
+```
+
+```plain
+$ diff file1 file2 | grep -v "^[0-9c0-9]" | cut -d ' ' -f2 | tr --delete '\n'
+crypt0rroffsec
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/tr)
