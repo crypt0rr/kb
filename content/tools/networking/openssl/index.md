@@ -59,11 +59,31 @@ rc4-40
 
 ### Examples
 
-Create hash(es) from input, for example SHA256.
+#### Calculate digest
 
 ```plain
-echo -n "foobar" | openssl dgst -sha256
+$ echo -n "foobar" | openssl dgst -sha256
+c3ab8ff13720e8ad9047dd39466b3c8974e592c2fa383d4a3960714caef0c4f2
 ```
+
+#### Create certificate
+
+* `req`: initiate a new certificate signing request
+* `-newkey`: generate a new private key
+* `rsa:4096`: use RSA encryption with a 4,096-bit key length.
+* `-nodes`: store the private key without passphrase protection
+* `-keyout`: save the key to a file
+* `-x509`: output a self-signed certificate instead of a certificate request
+* `-days`: set validity period in days
+* `-out`: save the certificate to a file
+
+```plain
+openssl req -newkey rsa:4096 -nodes -keyout newcert.key -x509 -days 100 -out newcert.crt
+```
+
+To create a `.PEM` file you can `cat` the `.key` and `.crt` into a `.pem`.
+
+`cat yourcert.key yourcert.crt > yourcert.pem`
 
 ### URL list
 
