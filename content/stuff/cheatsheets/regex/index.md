@@ -122,6 +122,12 @@ $ nmcli | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 169.254.0.0
 ```
 
+### Subdomains
+
+```plain
+grep -o '[^/]*\.<domain>\.com'
+```
+
 ### E-mail addresses
 
 ```plain
