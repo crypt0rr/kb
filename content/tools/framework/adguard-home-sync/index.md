@@ -1,7 +1,7 @@
 ---
 title : "AdGuardHome Sync"
 # pre : ' '
-description : "Synchronize AdGuard Home config to replicas."
+description : "Synchronize config from one AdGuardHome instance to another."
 date : 2021-12-23T10:48:23+01:00
 # hidden : true
 # draft : true
@@ -10,6 +10,8 @@ tags : ['Framework', 'DNS']
 ---
 
 ## AdGuardHome Sync
+
+Synchronize config from one AdGuardHome instance to another.
 
 ### Current sync features
 
@@ -21,10 +23,12 @@ tags : ['Framework', 'DNS']
 * DNS Config
 * DHCP Config
 
+By default, all features are enabled. Single features can be disabled in the config.
+
 ### Installation
 
 ```plain
-go get -u github.com/bakito/adguardhome-sync
+go install github.com/bakito/adguardhome-sync@latest
 ```
 
 ### Usage
@@ -45,6 +49,7 @@ Flags:
       --config string   config file (default is $HOME/.adguardhome-sync.yaml)
   -h, --help            help for adguardhome-sync
   -t, --toggle          Help message for toggle
+  -v, --version         version for adguardhome-sync
 
 Use "adguardhome-sync [command] --help" for more information about a command.
 ```
