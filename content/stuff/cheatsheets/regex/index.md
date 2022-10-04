@@ -128,6 +128,12 @@ $ nmcli | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b"
 grep -o '[^/]*\.<domain>\.com'
 ```
 
+### File extensions
+
+```plain
+grep -o '[^/]*\.js'
+```
+
 ### E-mail addresses
 
 ```plain
