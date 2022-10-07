@@ -6,7 +6,7 @@ date : 2021-12-19T20:16:22+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['macOS', 'Battery']
 ---
 
 ## AlDente
