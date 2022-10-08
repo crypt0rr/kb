@@ -128,6 +128,14 @@ nc -nlvp 4444 -e cmd.exe
 nc -nv <ip> 4444
 ```
 
+### Port Scanning
+
+**Note:** NetCat port scanning is based on the three-way handshake.
+
+```plain
+nc -nvv -w 1 -z 10.10.10.20 3380-3390
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/1/nc)
