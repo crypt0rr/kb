@@ -155,6 +155,21 @@ $ python3 dnsrecon.py -d megacorpone.com -t axfr
 [-] Zone Transfer Failed (Zone transfer error: REFUSED)
 ```
 
+#### DNS BruteForce
+
+Discovery of subdomains via brute force.
+
+Download your desired list to use as input, for example at [Github.com - SecLists](https://github.com/danielmiessler/SecLists/tree/master/Discovery/DNS)
+
+```plain
+$ dnsrecon -d megacorpone.com -D ~/list.txt -t brt
+[*] Performing host and subdomain brute force against megacorpone.com
+[*]     A www.megacorpone.com 38.100.193.76
+[*]     A mail.megacorpone.com 38.100.193.84
+[*]     A router.megacorpone.com 38.100.193.71
+[+] 3 Records Found
+```
+
 ### URL list
 
 * [GitHub.com - DNSrecon](https://github.com/darkoperator/dnsrecon)
