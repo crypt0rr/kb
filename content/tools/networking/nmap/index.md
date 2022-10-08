@@ -9,9 +9,11 @@ weight: 0
 # tags : [""]
 ---
 
-## Nmap
+## nmap
 
 Network exploration tool and security / port scanner.
+
+**NOTE:** The preferred way of using nmap should be SYN mode. This is stealth mode, since this mode (TCP) will not complete the three-way handshake, the port scan is not passed to the application layer. (`sudo nmap -sS`)
 
 ### Installation
 
@@ -35,8 +37,7 @@ nmap [Scan Type(s)] [Options] {target specification}
 ### Flags
 
 ```plain
-Nmap 7.80SVN ( https://nmap.org )
-Usage: nmap [Scan Type(s)] [Options] {target specification}
+Nmap 7.93 ( https://nmap.org )
 TARGET SPECIFICATION:
   Can pass hostnames, IP addresses, networks, etc.
   Ex: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
@@ -69,7 +70,7 @@ PORT SPECIFICATION AND SCAN ORDER:
     Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
   --exclude-ports <port ranges>: Exclude the specified ports from scanning
   -F: Fast mode - Scan fewer ports than the default scan
-  -r: Scan ports consecutively - don't randomize
+  -r: Scan ports sequentially - don't randomize
   --top-ports <number>: Scan <number> most common ports
   --port-ratio <ratio>: Scan ports more common than <ratio>
 SERVICE/VERSION DETECTION:
@@ -132,6 +133,7 @@ OUTPUT:
   --iflist: Print host interfaces and routes (for debugging)
   --append-output: Append to rather than clobber specified output files
   --resume <filename>: Resume an aborted scan
+  --noninteractive: Disable runtime interactions via keyboard
   --stylesheet <path/URL>: XSL stylesheet to transform XML output to HTML
   --webxml: Reference stylesheet from Nmap.Org for more portable XML
   --no-stylesheet: Prevent associating of XSL stylesheet w/XML output
