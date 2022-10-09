@@ -105,6 +105,14 @@ sudo mkdir /mnt/local_share
 sudo mount -t cifs -o user=john //10.10.10.10/aiff /mnt/local_share
 ```
 
+#### Mount NFS
+
+* `nolock` - prevents file locking
+
+```plain
+sudo mount -o nolock 10.10.10.10:/crypt0rr /mnt/local_share
+```
+
 ### URL list
 
 * [Linux.die.net](https://linux.die.net/man/2/mount)
