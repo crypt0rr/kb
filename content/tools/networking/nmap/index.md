@@ -181,7 +181,7 @@ nmap -p- <target>
 sudo nmap -sU -p 53 --script=dns-update --script-args=dns-update.hostname=<subdomain>.<client-domain>,dns-update.ip=192.0.2.1 <target>
 ```
 
-To manualy validate with dig use
+To manually validate with dig use
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
 
@@ -217,17 +217,6 @@ nmap -p3389 --script rdp-enum-encryption <target>
 
 ```plain
 nmap -p873 --script rsync-list-modules <target>
-```
-
-```plain
-nmap -p873 --script rsync-list-modules <target>
-
-PORT    STATE SERVICE
-873/tcp open  rsync
-| rsync-list-modules:
-|   www            www directory
-|   log            log directory
-|_  etc            etc directory
 ```
 
 #### SMB signing
