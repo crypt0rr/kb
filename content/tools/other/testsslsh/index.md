@@ -6,7 +6,7 @@ date : 2020-03-13T14:09:06+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Other', 'SSL/TLS', 'Certificates']
 ---
 
 ## Testssl.sh
