@@ -22,7 +22,8 @@ A swiss army knife for pentesting networks.
 ```plain
 python3 -m pip install pipx
 python3 -m pipx ensurepath
-pipx install crackmapexec
+git clone https://github.com/Porchetta-Industries/CrackMapExec
+pipx install .
 ```
 
 On error uninstall `pipx python3 -m pip uninstall` pipx and remove local folder `sudo rm .local/pipx`. Then reinstall as listed above.
