@@ -6,12 +6,14 @@ date : 2022-01-20T09:05:59+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Techniques', 'Active Directory', 'ADCS']
 ---
 
 ## Abuse Active Directory Certificate Services (AD CS)
 
 This is a little guide on abusing Active Directory Certificate Services (AD CS) with practical examples.
+
+**PLEASE NOTE:** Check if [Certipy]({{< ref "certipy" >}}) is an option for you since this is easier to use in general.
 
 [Cheatsheet about the different AD-CS's ESC presented by SpecterOps](https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services)
 

@@ -6,7 +6,7 @@ date : 2022-01-19T21:26:13+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'Active Directory', 'ADCS']
 ---
 
 ## Certify
