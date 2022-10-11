@@ -113,5 +113,5 @@ SSH         10.10.10.1     22     10.10.10.1      [+] administrator:x-admin
 
 ### URL list
 
-* [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec/)
+* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
 * [Github.com - Default-Credentials-List](https://raw.githubusercontent.com/eset/malware-research/master/moose/targeted-vendors/default-credentials-list.txt)

@@ -1,15 +1,15 @@
 ---
-title : "WinRM"
+title : "FTP"
 # pre : ' '
-description : "Own stuff using WinRM."
-date : 2022-02-14T15:22:55+01:00
+description : "Own stuff using FTP."
+date : 2022-10-11T09:53:15+02:00
 # hidden : true
 # draft : true
 weight : 0
 # tags : ['']
 ---
 
-## CrackMapExec - WinRM
+## CrackMapExec - FTP
 
 ### Installation
 
@@ -18,11 +18,10 @@ Install the [CrackMapExec]({{< ref "../" >}})
 ### Usage
 
 ```plain
-cme winrm [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
-                 [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
-                 [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--no-bruteforce] [--continue-on-success] [--port PORT] [-d DOMAIN | --local-auth] [--no-output] [-x COMMAND]
-                 [-X PS_COMMAND]
-                 [target ...]
+cme ftp [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
+               [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST] [--server-port PORT]
+               [--connectback-host CHOST] [--no-bruteforce] [--port PORT] [--continue-on-success]
+               [target ...]
 ```
 
 ### Flags
@@ -60,27 +59,20 @@ options:
   --server-port PORT    start the server on the specified port
   --connectback-host CHOST
                         IP for the remote system to connect back to (default: same as server-host)
-  -H HASH [HASH ...], --hash HASH [HASH ...]
-                        NTLM hash(es) or file(s) containing NTLM hashes
   --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --port PORT           FTP port (default: 21)
   --continue-on-success
                         continues authentication attempts even after successes
-  --port PORT           Custom WinRM port
-  -d DOMAIN             domain to authenticate to
-  --local-auth          authenticate locally to each target
-
-Command Execution:
-  Options for executing commands
-
-  --no-output           do not retrieve command output
-  -x COMMAND            execute the specified command
-  -X PS_COMMAND         execute the specified PowerShell command
 ```
 
 ### Examples
 
-```plain
+#### Validation of anonymous login
 
+```plain
+$ cme ftp 194.244.111.113 -u anonymous -p anonymous
+FTP         194.244.111.113 21     194.244.111.113  [*] Banner: 194.244.111.113 FTP server ready
+FTP         194.244.111.113 21     194.244.111.113  [+] anonymous:anonymous
 ```
 
 ### URL list
