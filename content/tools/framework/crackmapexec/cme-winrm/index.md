@@ -85,4 +85,4 @@ Command Execution:
 
 ### URL list
 
-* [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec/)
+* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
