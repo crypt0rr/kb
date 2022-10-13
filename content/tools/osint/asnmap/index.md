@@ -1,7 +1,7 @@
 ---
 title : "ASNmap"
 # pre : ' '
-description : "Go CLI and Library for quickly mapping organization network ranges using [ASN](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) information."
+description : "Go CLI and Library for quickly mapping organization network ranges using ASN information."
 date : 2022-10-13T09:07:56+02:00
 # hidden : true
 # draft : true
