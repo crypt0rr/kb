@@ -6,7 +6,7 @@ date : 2021-01-27T12:57:59+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS']
 ---
 
 ## Sublist3r

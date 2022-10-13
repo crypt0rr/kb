@@ -6,7 +6,7 @@ date : 2021-08-04T15:10:35+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS']
 ---
 
 ## CCrawlDNS

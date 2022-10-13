@@ -6,7 +6,7 @@ date : 2020-07-06T15:34:48+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS', 'Certificates']
 ---
 
 ## crt.sh
