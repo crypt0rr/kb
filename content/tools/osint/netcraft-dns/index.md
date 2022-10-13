@@ -6,7 +6,7 @@ date : 2020-04-14T11:59:28+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS']
 ---
 
 ## Netcraft DNS

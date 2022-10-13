@@ -6,7 +6,7 @@ date : 2020-03-13T16:08:59+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'SNMP']
 ---
 
 ## SNMP

@@ -6,7 +6,7 @@ date : 2020-06-05T13:52:51+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS', 'Subdomain']
 ---
 
 ## DNSdumpster - subdomain checker

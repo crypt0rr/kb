@@ -6,7 +6,7 @@ date : 2020-03-14T19:48:31+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS']
 ---
 
 ## theHarvester

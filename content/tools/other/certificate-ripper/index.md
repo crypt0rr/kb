@@ -6,7 +6,7 @@ date : 2022-06-05T16:19:13+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'SSL/TLS', 'Certificates']
 ---
 
 ## Certificate Ripper  🔐
