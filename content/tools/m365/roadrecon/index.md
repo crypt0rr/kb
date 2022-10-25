@@ -98,6 +98,23 @@ $ roadrecon gui
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
+#### Export to XLS
+
+```plain
+$ roadrecon plugin xlsexport -d roadrecon.db -v
+Export Users info
+Export Devices info
+Export Groups info
+Export MemberOf info
+Export Directory roles info
+Export Applications info
+Export Service principals info
+Export Applications roles info
+Export Oauth2 permissions info
+Export MFA info
+Data have been exported to the data.xls file
+```
+
 ![Example](images/example1.png)
 
 ### URL list
