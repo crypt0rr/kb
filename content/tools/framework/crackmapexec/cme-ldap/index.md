@@ -96,17 +96,27 @@ The modules below can be used with the `-M` option.
 ```plain
 [*] MAQ                       Retrieves the MachineAccountQuota domain-level attribute
 [*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
+[*] daclread                  Read and backup the Discretionary Access Control List of objects. Based on the work of @_nwodtuhs and @BlWasp_. Be carefull, this module cannot read the DACLS recursively, more explains in the options.
 [*] get-desc-users            Get description of the users. May contained password
+[*] get-network               
 [*] laps                      Retrieves the LAPS passwords
+[*] ldap-checker              Checks whether LDAP signing and binding are required and / or enforced
 [*] ldap-signing              Check whether LDAP signing is required
 [*] subnets                   Retrieves the different Sites and Subnets of an Active Directory
 [*] user-desc                 Get user descriptions stored in Active Directory
+[*] whoami                    Get details of provided user
 ```
 
-### Examples
+### Active Directory Certificate Services (ADCS)
+
+Finding ADCS-server(s) in the environment.
 
 ```plain
-
+$ cme ldap 10.10.10.8 -u ron -p October2022 -M adcs
+SMB         10.10.10.8     445     DC01        [*] Windows 10.0 Build 20348 x64 (name:DC01) (domain:offsec.nl) (signing:False) (SMBv1:False)
+LDAP        10.10.10.8     389     DC01        [+] offsec.nl\john:Welkom1234!
+ADCS                                           Found PKI Enrollment Server: ADCS01.offsec.nl
+ADCS                                           Found CN: offsec-ADCS01-CA
 ```
 
 ### URL list

