@@ -56,22 +56,23 @@ git clone https://github.com/lgandx/PCredz.git
 ### Usage
 
 ```plain
-python3 ./Pcredz [-h] [-f FNAME | -d DIR_PATH | -i INTERFACE] [-c] [-t] [-v]
+python3 Pcredz [-h] [-f FNAME | -d DIR_PATH | -i INTERFACE] [-c] [-t] [-v] [-o OUTPUT_PATH]
 ```
 
 ### Flags
 
 ```plain
-Pcredz 1.0.0 Author: Laurent Gaffie
+Pcredz 2.0.2 Author: Laurent Gaffie
 
-optional arguments:
-  -h, --help    show this help message and exit
-  -f FNAME      Pcap file to parse
-  -d DIR_PATH   Pcap directory to parse recursivly
-  -i INTERFACE  interface for live capture
-  -c            deactivate CC number scanning (Can gives false positives!)
-  -t            Include a timestamp in all generated messages (useful for correlation)
-  -v            More verbose.
+options:
+  -h, --help      show this help message and exit
+  -f FNAME        Pcap file to parse
+  -d DIR_PATH     Pcap directory to parse recursivly
+  -i INTERFACE    interface for live capture
+  -c              deactivate CC number scanning (Can gives false positives!)
+  -t              Include a timestamp in all generated messages (useful for correlation)
+  -v              More verbose.
+  -o OUTPUT_PATH  output directory
 ```
 
 ### Examples
