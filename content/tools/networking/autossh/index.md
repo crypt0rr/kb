@@ -87,7 +87,7 @@ ExecStart=/usr/bin/autossh -N -i /home/<USER>/.ssh/id_ed25519 -M 0 -o "ServerAli
 WantedBy=multi-user.target
 ```
 
-After the configuration is set, test it and enable it with `systemctl enable autossh-tunnel.service`.
+After the configuration is set, test it by manually connecting the SSH tunnel and accepting the SSH signature of the server. Next enable AutoSSH it with `systemctl enable autossh-tunnel.service` and reboot to test again.
 
 ### URL list
 
