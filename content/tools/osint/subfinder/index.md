@@ -6,7 +6,7 @@ date : 2021-10-20T10:54:24+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'DNS']
+tags : ['OSINT', 'DNS', 'Subdomain', 'Nameserver']
 ---
 
 ## Subfinder
