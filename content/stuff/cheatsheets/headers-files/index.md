@@ -1,5 +1,5 @@
 ---
-title : "Headers & Files"
+title : "Headers / Files"
 pre : '<i class="far fa-file"></i> '
 description : "Interesting headers and files in relation to webservers."
 date : 2021-12-10T14:08:20+01:00
@@ -39,6 +39,18 @@ X-Frame-Options: Allow
 X-Forwarded-For: 127.0.0.1
 X-Client-IP: 127.0.0.1
 Client-IP: 127.0.0.1
+
+X-Originating-IP: 127.0.0.1
+X-Forwarded-For: 127.0.0.1
+X-Remote-IP: 127.0.0.1
+X-Remote-Addr: 127.0.0.1
+X-Client-IP: 127.0.0.1
+X-Host: 127.0.0.1
+X-Forwared-Host: 127.0.0.1
+X-Originating-IP:127.0.0.4
+X-Forwarded-For:127.0.0.4
+X-Remote-IP:127.0.0.4
+X-Remote-Addr:127.0.0.4
 ```
 
 ### Basic NTLM auth header
