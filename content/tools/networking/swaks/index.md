@@ -69,6 +69,12 @@ $ ./swaks --to john.do@offsec.nl --from karel@example.com –-server 10.10.10.10
 === Connection closed with remote host.
 ```
 
+To for example insert own body text, use the `--body` flag.
+
+```plain
+swaks -t john.do@offsec.nl --server 10.10.10.10 --body "This is test body text, you can put whatever you want in here."
+```
+
 ### URL list
 
 * [Github.com - Swaks](https://github.com/jetmore/swaks)
