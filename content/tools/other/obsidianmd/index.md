@@ -25,11 +25,8 @@ brew install --cask obsidian
 
 * [Advanced Tables - Add improved navigation, formatting, and manipulation to markdown tables](https://github.com/tgrosinger/advanced-tables-obsidian)
 * [Icon Shortcodes - Insert emoji and custom icons with shortcodes](https://github.com/aidenlx/obsidian-icon-shortcodes)
-<<<<<<< HEAD
-* [cMenu - An Obsidian.md plugin that adds a minimal text editor modal for a smoother writing/editing experience](https://github.com/chetachiezikeuzor/cMenu-Plugin)
-=======
 * [Obsidian Linter - An Obsidian plugin that formats and styles your notes with a focus on configurability and extensibility](https://github.com/platers/obsidian-linter)
->>>>>>> main
+* [cMenu - An Obsidian.md plugin that adds a minimal text editor modal for a smoother writing/editing experience](https://github.com/chetachiezikeuzor/cMenu-Plugin)
 
 ### Themes
 
