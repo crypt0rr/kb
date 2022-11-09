@@ -138,6 +138,12 @@ Banners Banners Banners
 Writing words to file
 ```
 
+### Scrape words using specific User Agent
+
+```plain
+cewl -m 3 https://kb.offsec.nl/ -u "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36" -d 0 -w offsec.txt
+```
+
 ### URL list
 
 * [Digi.ninja - cewl](https://digi.ninja/projects/cewl.php)
