@@ -13,6 +13,8 @@ weight : 0
 
 ## Examples
 
+For TFTP-server check [atftp]({{< ref "atftp" >}})
+
 ### Test for TFTP
 
 If error occurs this means the server is running TFTP.
