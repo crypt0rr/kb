@@ -11,7 +11,7 @@ tags : ['Framework', 'Active Directory']
 
 ## BloodHound.py
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/fox-it/BloodHound.py.git
@@ -25,13 +25,13 @@ Or via Python-PIP.
 python3 -m pip install bloodhound
 ```
 
-### Usage
+## Usage
 
 ```plain
 bloodhound-python [-h] [-c COLLECTIONMETHOD] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-ns NAMESERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-d DOMAIN] [-dc HOST] [-gc HOST] [-w WORKERS] [-v] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Python based ingestor for BloodHound
@@ -71,7 +71,7 @@ optional arguments:
                         Cache file (experimental)
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ bloodhound-python -c All -u johndo -p 'Welkom1234' -d offsec.nl -dc SRV2019.offsec.nl --zip
@@ -99,6 +99,6 @@ INFO: Compressing output into 20220210132706_bloodhound.zip
 
 {{%attachments title="Example dataset" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - BloodHound.py](https://github.com/fox-it/BloodHound.py)

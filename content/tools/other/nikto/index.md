@@ -23,19 +23,19 @@ Features:
 * Proxy support (with authentication)
 * Cookies support
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install nikto
 ```
 
-### Usage
+## Usage
 
 ```plain
 nikto [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
     -config+            Use this config file
@@ -63,7 +63,7 @@ nikto [OPTIONS]
 Note: This is the short help output. Use -H for full help text.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ nikto -host=https://kb.offsec.nl -maxtime=30s
@@ -92,6 +92,6 @@ $ nikto -host=https://kb.offsec.nl -maxtime=30s
 + 1 host(s) tested
 ```
 
-### URL list
+## URL List
 
 * [Kali.org - nikto](https://www.kali.org/tools/nikto/)

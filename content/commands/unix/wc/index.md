@@ -11,14 +11,14 @@ weight : 0
 
 ## wc - wordcount
 
-### Usage
+## Usage
 
 ```plain
 Usage: wc [OPTION]... [FILE]...
   or:  wc [OPTION]... --files0-from=F
 ```
 
-### Flags
+## Flags
 
 ```plain
 Print newline, word, and byte counts for each FILE, and a total line if
@@ -45,9 +45,9 @@ Full documentation at: <https://www.gnu.org/software/coreutils/wc>
 or available locally via: info '(coreutils) wc invocation'
 ```
 
-### Examples
+## Examples
 
-#### Count amount of lines in a file
+### Count amount of lines in a file
 
 ```plain
 $ wc -l hostlist.txt
@@ -55,6 +55,6 @@ $ wc -l hostlist.txt
 35 hostlist.txt
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/wc)

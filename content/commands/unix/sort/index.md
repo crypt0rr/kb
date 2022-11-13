@@ -11,13 +11,13 @@ weight : 0
 
 ## Sort
 
-### Usage
+## Usage
 
 ```plain
 sort [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: sort [OPTION]... [FILE]...
@@ -94,38 +94,38 @@ Full documentation at: <https://www.gnu.org/software/coreutils/sort>
 or available locally via: info '(coreutils) sort invocation'
 ```
 
-### Examples
+## Examples
 
-#### Sort file contents
+### Sort file contents
 
 ```plain
 sort <file>
 ```
 
-#### Sort file contents and output to other file
+### Sort file contents and output to other file
 
 ```plain
 sort <input-file> -o <output-file>
 ```
 
-#### Reverse sorting
+### Reverse sorting
 
 ```plain
 sort -r <file>
 ```
 
-#### Sort numeric
+### Sort numeric
 
 ```plain
 sort -n <file>
 ```
 
-#### Sort numeric reverse
+### Sort numeric reverse
 
 ```plain
 sort -nr <file>
 ```
 
-### URL list
+## URL List
 
 * [Gnu.org](https://www.gnu.org/software/coreutils/sort)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Tail
 
-### Usage
+## Usage
 
 ```plain
 tail [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Print the last 10 lines of each FILE to standard output.
@@ -68,9 +68,9 @@ Full documentation at: <https://www.gnu.org/software/coreutils/tail>
 or available locally via: info '(coreutils) tail invocation'
 ```
 
-### Examples
+## Examples
 
-#### Default tail usage
+### Default tail usage
 
 ```plain
 $ tail input.txt
@@ -87,7 +87,7 @@ line253
 line254
 ```
 
-#### Set specific amount of lines
+### Set specific amount of lines
 
 ```plain
 $ tail -n 7 input.txt
@@ -101,7 +101,7 @@ line253
 line254
 ```
 
-#### Follow the end of a file when it is dynamically filled
+### Follow the end of a file when it is dynamically filled
 
 ```plain
 $ tail -n 7 input.txt
@@ -118,6 +118,6 @@ line254
 ...
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/tail)

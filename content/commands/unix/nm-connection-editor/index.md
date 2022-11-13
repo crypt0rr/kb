@@ -11,13 +11,13 @@ weight : 0
 
 ## Nm-Connection-Editor - Allows users to view and edit network connection settings
 
-### Usage
+## Usage
 
 ```plain
 nm-connection-editor [OPTION…]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Allows users to view and edit network connection settings
@@ -34,10 +34,10 @@ Application Options:
 
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/artful/en/man1/nm-connection-editor.1.html)

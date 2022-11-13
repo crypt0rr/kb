@@ -13,17 +13,17 @@ weight : 0
 
 Is a combination of Msfpayload and Msfencode, putting both of these tools into a single Framework instance. msfvenom replaced both msfpayload and msfencode as of June 8th, 2015.
 
-### Installation
+## Installation
 
 Install the [MetaSploit framework]({{< ref "metasploit/" >}}).
 
-### Usage
+## Usage
 
 ```plain
 msfvenom [options] <var=val>
 ```
 
-### Flags
+## Flags
 
 ```plain
 MsfVenom - a Metasploit standalone payload generator.
@@ -59,7 +59,7 @@ Options:
     -h, --help                       Show this message
 ```
 
-### Examples
+## Examples
 
 Simple non-meterpreter staged payload for Windows.
 
@@ -72,7 +72,7 @@ Payload size: 510 bytes
 Final size of exe file: 7168 bytes
 ```
 
-### URL list
+## URL List
 
 * [Offensive-Security.com - MSFvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/)
 * [Infinitelogins.com - MSFVenom Reverse Shell Payload Cheatsheet (with & without Meterpreter)](https://infinitelogins.com/2020/01/25/msfvenom-reverse-shell-payload-cheatsheet/)

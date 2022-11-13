@@ -13,19 +13,19 @@ weight : 0
 
 Tool for dumping a computer's DMI (some say SMBIOS) table contents in a human-readable format.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install dmidecode
 ```
 
-### Usage
+## Usage
 
 ```plain
 dmidecode [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options are:
@@ -58,9 +58,9 @@ Valid type keywords are:
   slot
 ```
 
-### Examples
+## Examples
 
-#### Display critical hardware information
+### Display critical hardware information
 
 ```plain
 $ sudo dmidecode -t system
@@ -81,7 +81,7 @@ System Information
     Family: ThinkPad T470
 ```
 
-#### BIOS information
+### BIOS information
 
 ```plain
 $ sudo dmidecode -t bios -q
@@ -99,7 +99,7 @@ BIOS Information
     Firmware Revision: 1.34
 ```
 
-#### Find serial number
+### Find serial number
 
 ```plain
 $ sudo dmidecode -t chassis -q
@@ -112,7 +112,7 @@ Chassis Information
     Serial Number: SN12345
 ```
 
-#### Memory information
+### Memory information
 
 ```plain
 $ sudo dmidecode -t memory
@@ -131,6 +131,6 @@ Physical Memory Array
     Number Of Devices: 2
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - dmidecode](https://linux.die.net/man/8/dmidecode)

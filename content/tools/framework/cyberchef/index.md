@@ -17,11 +17,11 @@ CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" 
 
 The tool is designed to enable both technical and non-technical analysts to manipulate data in complex ways without having to deal with complex tools or algorithms. It was conceived, designed, built and incrementally improved by an analyst in their 10% innovation time over several years.
 
-### Installation
+## Installation
 
 Download latest release from [Github](https://github.com/gchq/CyberChef/releases).
 
-### Usage
+## Usage
 
 ```plain
 wget https://github.com/gchq/CyberChef/releases/download/v9.28.0/CyberChef_v9.28.0.zip
@@ -31,12 +31,12 @@ $ python3 -m http.server
 Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 ![Example](images/example1.png)
 ![Example](images/example2.png)
 
-### URL list
+## URL List
 
 * [Github.com - CyberChef](https://github.com/gchq/CyberChef)

@@ -11,13 +11,13 @@ weight: 0
 
 ## Awk
 
-### Usage
+## Usage
 
 ```plain
 awk OPTIONS PROGRAM FILE
 ```
 
-### Flags
+## Flags
 
 ```plain
 OFS=""                      Add seperator between ""
@@ -25,7 +25,7 @@ $NF                         End of file
 'BEGIN {print "SomeText"}'  Start with text
 ```
 
-### Examples
+## Examples
 
 Pipe who command to awk and print the first and third object in a line
 
@@ -66,6 +66,6 @@ Or file.
 Where cats.
 ```
 
-### URL list
+## URL List
 
 - [Linux.die.net](https://linux.die.net/man/1/awk)

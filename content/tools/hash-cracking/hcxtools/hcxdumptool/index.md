@@ -11,17 +11,17 @@ weight : 0
 
 ## hcxdumptool
 
-### Installation
+## Installation
 
 Install the [hcxtools]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 hcxdumptool <options>
 ```
 
-### Flags
+## Flags
 
 ```plain
 hcxdumptool 6.0.5  (C) 2020 ZeroBeat
@@ -204,7 +204,7 @@ If hcxdumptool captured your password from WiFi traffic, you should check all yo
 If you use GPS, make sure GPS device is inserted and has a GPS FIX, before you start hcxdumptool!
 ```
 
-### Examples
+## Examples
 
 To start you have to stop both 'NetworkManager' and 'wpa_supplicant' service. After you're done, reverse this process by starting the services.
 
@@ -222,7 +222,7 @@ sudo systemctl start NetworkManager.service
 sudo systemctl start wpa_supplicant.service
 ```
 
-#### Capture of PMKID (all networks around)
+### Capture of PMKID (all networks around)
 
 ```plain
 $ sudo hcxdumptool -i wlp4s0 -o dumpfile.pcapng --active_beacon --enable_status=15

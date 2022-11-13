@@ -13,24 +13,24 @@ weight : 0
 
 Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
 
-### Installation
+## Installation
 
 ```plain
 docker pull vaultwarden/server:latest
 docker run -d --name vaultwarden -v /vw-data/:/data/ -p 80:80 vaultwarden/server:latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 docker start vaultwarden
 docker stop vaultwarden
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - Vaultwarden](https://github.com/dani-garcia/vaultwarden)

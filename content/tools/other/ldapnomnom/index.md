@@ -26,19 +26,19 @@ Anonymously bruteforce Active Directory usernames from Domain Controllers by abu
 * [Common-AD-Usernames](https://github.com/crypt0rr/common-ad-usernames)
 * [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Usernames)
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/lkarlslund/ldapnomnom@latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 ldapnomnom [--server ipaddress] [--port number] [--tlsmode notls|tls|starttls] [--input filename] [--output filename [--progressbar]] [--parallel number-of-connections]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -dnsdomain string
@@ -59,12 +59,12 @@ ldapnomnom [--server ipaddress] [--port number] [--tlsmode notls|tls|starttls] [
         Transport mode (TLS, StartTLS, NoTLS) (default "NoTLS")
 ```
 
-### Examples
+## Examples
 
 ```plain
 ldapnomnom --input 10m_usernames.txt --output results.txt --server 192.168.0.11 --parallel 16
 ```
 
-### URL list
+## URL List
 
 * [Github.com * LDAP Nom Nom](https://github.com/lkarlslund/ldapnomnom)

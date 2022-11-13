@@ -13,20 +13,20 @@ weight : 0
 
 Script that visualizes subdomains for the domain you want.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/crypt0rr/subdomain-visualizer.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 chmod +x subdomain-visualizer.sh
 ./subdomain-visualizer.sh
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./subdomain-visualizer.sh 
@@ -55,6 +55,6 @@ Starting Nmap 7.80 ( https://nmap.org ) at 2021-03-09 15:15 CET
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Subdomain Visualizer](https://github.com/crypt0rr/subdomain-visualizer)

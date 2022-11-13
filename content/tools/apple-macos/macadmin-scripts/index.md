@@ -18,13 +18,13 @@ These are currently only supported using Apple's Python on macOS. There is no su
 
 In macOS 12.3, Apple will be removing its Python 2.7 install. You'll need to provide your own Python to use these scripts. You may also need to install additional Python modules.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/munki/macadmin-scripts.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 getmacosipsws.py
@@ -34,9 +34,9 @@ python3 getmacosipsws.py
 sudo python3 installinstallmacos.py
 ```
 
-### Examples
+## Examples
 
-#### getmacosipsws.py
+### getmacosipsws.py
 
 Quick-and-dirty tool to download the macOS IPSW files currently advertised by Apple in the <https://mesu.apple.com/assets/macos/com_apple_macOSIPSW/com_apple_macOSIPSW.xml> feed.
 
@@ -66,7 +66,7 @@ Downloading https://mesu.apple.com/assets/macos/com_apple_macOSIPSW/com_apple_ma
 Choose a product to download (1-18): 
 ```
 
-#### installinstallmacos.py (Create .DMG installer)
+### installinstallmacos.py (Create .DMG installer)
 
 This script can create disk images containing macOS Installer applications available via Apple's softwareupdate catalogs. Please check [support.apple.com](https://support.apple.com/en-us/HT201372) for the commands to create a bootable USB stick.
 
@@ -122,16 +122,16 @@ Downloading https://swscan.apple.com/content/catalogs/others/index-12-10.16-10.1
 Choose a product to download (1-20):
 ```
 
-##### Important note for Catalina+
+#### Important note for Catalina+
 
 Catalina privacy protections might interfere with the operation of this tool if you run it from ~/Desktop, ~/Documents, ~/Downloads or other directories protected in Catalina. Consider using /Users/Shared (or subdirectory) as the "working space" for this tool.
 
-##### Alternate implementations
+#### Alternate implementations
 
 Graham Pugh has a fork with a lot more features and bells and whistles. Check it out if your needs aren't met by this tool.
 <https://github.com/grahampugh/macadmin-scripts>
 
-### URL list
+## URL List
 
 * [Github.com - macadmin-scripts](https://github.com/munki/macadmin-scripts/)
 * [Github.com - grahampugh - macadmin-scripts (fork)](https://github.com/grahampugh/macadmin-scripts)

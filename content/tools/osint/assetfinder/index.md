@@ -28,19 +28,19 @@ Implemented Sources
 - findsubdomains
   - Needs SPYSE_API_TOKEN environment variable set (the free version always gives the first response page, and you also get "25 unlimited requests") — (<https://spyse.com/apidocs>)
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/tomnomnom/assetfinder@latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 assetfinder [--subs-only] <domain>
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ assetfinder offsec.nl
@@ -53,6 +53,6 @@ test.offsec.nl
 offsec.nl
 ```
 
-### URL list
+## URL List
 
 - [Github.com - assetfinder](https://github.com/tomnomnom/assetfinder)

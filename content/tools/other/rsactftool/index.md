@@ -13,7 +13,7 @@ weight : 0
 
 RSA multi attacks tool : uncipher data from weak public key and try to recover private key Automatic selection of best attack for the given public key.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Ganapati/RsaCtfTool.git
@@ -22,7 +22,7 @@ python3 -m pip install -r "requirements.txt"
 python3 RsaCtfTool.py
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: RsaCtfTool.py [-h] [--publickey PUBLICKEY] [--timeout TIMEOUT]
@@ -51,44 +51,44 @@ Mode 3 : Dump the public and/or private numbers (optionally including CRT parame
 - key : the public or private key in PEM or DER format
 ```
 
-### Examples
+## Examples
 
-#### Uncipher file
+### Uncipher file
 
 ```plain
 ./RsaCtfTool.py --publickey ./key.pub --uncipherfile ./ciphered\_file
 ```
 
-#### Print private key
+### Print private key
 
 ```plain
 ./RsaCtfTool.py --publickey ./key.pub --private
 ```
 
-#### Attempt to break multiple public keys with common factor attacks or individually- use quotes around wildcards to stop bash expansion
+### Attempt to break multiple public keys with common factor attacks or individually- use quotes around wildcards to stop bash expansion
 
 ```plain
 ./RsaCtfTool.py --publickey "*.pub" --private
 ```
 
-#### Generate a public key
+### Generate a public key
 
 ```plain
 ./RsaCtfTool.py --createpub -n 7828374823761928712873129873981723...12837182 -e 65537
 ```
 
-#### Dump the parameters from a key
+### Dump the parameters from a key
 
 ```plain
 ./RsaCtfTool.py --dumpkey --key ./key.pub
 ```
 
-#### Factor with ECM when you know the approximate length in digits of a prime
+### Factor with ECM when you know the approximate length in digits of a prime
 
 ```plain
 ./RsaCtfTool.py --publickey key.pub --ecmdigits 25 --verbose --private`
 ```
 
-### URL list
+## URL List
 
 * [Github.com - RSACtfTool](https://github.com/Ganapati/RsaCtfTool)

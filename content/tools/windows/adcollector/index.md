@@ -46,17 +46,17 @@ Is a lightweight tool that enumerates the Active Directory environment to identi
 * Machine Owner
 * ACL Scan
 
-### Installation
+## Installation
 
 {{%attachments title="Related Files" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 ADCollector.exe [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
       _    ____   ____      _ _             _
@@ -112,7 +112,7 @@ Interactive Menu:
     ===================================
 ```
 
-### Examples
+## Examples
 
 ```plain
 PS > .\ADCollector_new.exe
@@ -161,6 +161,6 @@ PS > .\ADCollector_new.exe
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ADCollector](https://github.com/dev-2null/ADCollector)

@@ -11,19 +11,19 @@ weight : 0
 
 ## Printer Exploitation Toolkit (PRET)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/RUB-NDS/PRET.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python pret.py [-h] [-s] [-q] [-d] [-i file] [-o file] target {ps,pjl,pcl}
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: pret.py [-h] [-s] [-q] [-d] [-i file] [-o file] target {ps,pjl,pcl}
@@ -45,7 +45,7 @@ optional arguments:
 
 ### Example
 
-#### Discovering local printers
+### Discovering local printers
 
 ```plain
 ./pret.py
@@ -59,7 +59,7 @@ address          device                       uptime    status
 192.168.1.28     Brother MFC-7860DW           16:31:17   Sleep mode            
 ```
 
-#### Connecting and running commands
+### Connecting and running commands
 
 ```plain
 $ ./pret.py laserjet.lan pjl
@@ -104,7 +104,7 @@ d        -   tmp
 laserjet.lan:/> exit
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - PRET](https://github.com/RUB-NDS/PRET.git)
 * [Hacking-Printers.net](http://hacking-printers.net/wiki/index.php/)

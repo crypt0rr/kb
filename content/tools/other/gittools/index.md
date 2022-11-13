@@ -13,7 +13,7 @@ tags : ['Other', 'Git']
 
 This repository contains three small python/bash scripts used for the Git research.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/internetwache/GitTools.git
@@ -23,21 +23,21 @@ git clone https://github.com/internetwache/GitTools.git
 
 You can use this tool to find websites with their .git repository available to the public
 
-### Usage (finder)
+## Usage (finder)
 
 This python script identifies websites with publicly accessible `.git` repositories. It checks if the `.git/HEAD` file contains `refs/heads`.
 
 ```plain
 $ ./gitfinder.py -h
 
-###########
+#########
 # Finder is part of https://github.com/internetwache/GitTools
 #
 # Developed and maintained by @gehaxelt from @internetwache
 #
 # Use at your own risk. Usage might be illegal in certain circumstances.
 # Only for educational purposes!
-###########
+#########
 
 usage: gitfinder.py [-h] [-i INPUTFILE] [-o OUTPUTFILE] [-t THREADS]
 
@@ -57,7 +57,7 @@ The input file should contain the targets one per line. The script will output d
 
 This tool can be used to download as much as possible from the found .git repository from webservers which do not have directory listing enabled.
 
-### Usage (dumper)
+## Usage (dumper)
 
 ```plain
 $ ./gitdumper.sh -h
@@ -78,7 +78,7 @@ This script tries to recover incomplete git repositories:
 * Try to restore the contents of the commit
 * Commits are not sorted by date
 
-### Usage
+## Usage
 
 ```plain
 ./extractor.sh /tmp/mygitrepo /tmp/mygitrepodump
@@ -95,6 +95,6 @@ This can be used in combination with the Git Dumper in case the downloaded repos
 
 [Asciinema.org](https://asciinema.org/a/24072)
 
-### URL list
+## URL List
 
 * [Github.com - GitTools](https://github.com/internetwache/GitTools)

@@ -13,11 +13,11 @@ weight : 0
 
 Given a password, hash or aesKey, it will request a Service Ticket and save it as ccache.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 getST.py [-h] -spn SPN [-impersonate IMPERSONATE] [-additional-ticket ticket.ccache] [-ts] [-debug] [-force-forwardable] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]
@@ -25,7 +25,7 @@ getST.py [-h] -spn SPN [-impersonate IMPERSONATE] [-additional-ticket ticket.cca
                 identity
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -63,7 +63,7 @@ Examples:
         it will use the lm:nt hashes for authentication. If you don't specify them, a password will be asked
 ```
 
-### Examples
+## Examples
 
 [Using tickets](https://swarm.ptsecurity.com/kerberoasting-without-spns/).
 
@@ -80,6 +80,6 @@ Impacket v0.9.22.dev1+20200611.111621.760cb1ea - Copyright 2020 SecureAuth Corpo
 [*] Saving ticket in Administrator.ccache
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

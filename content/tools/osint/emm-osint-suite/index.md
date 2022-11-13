@@ -11,6 +11,6 @@ weight : 0
 
 ## EMM Open Source Intelligence Suite
 
-### Installation
+## Installation
 
 Download newest release from [emm4u.eu](https://repository.emm4u.eu/osint/)

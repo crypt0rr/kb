@@ -17,7 +17,7 @@ cascade:
 
 A swiss army knife for pentesting networks.
 
-### Installation via pipx
+## Installation via pipx
 
 ```plain
 python3 -m pip install pipx
@@ -28,13 +28,13 @@ pipx install .
 
 On error uninstall `pipx python3 -m pip uninstall` pipx and remove local folder `sudo rm .local/pipx`. Then reinstall as listed above.
 
-#### Upgrading current installation
+### Upgrading current installation
 
 ```plain
 pipx upgrade crackmapexec
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec/)
 * [PtestMethod.readthedocs.io - CME](https://ptestmethod.readthedocs.io/en/latest/cme.html)

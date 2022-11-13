@@ -13,7 +13,7 @@ weight : 0
 
 Is a lightning fast steghide cracker that can be used to extract hidden data from files. It is built as a fork of the original steghide project and, as a result, it is thousands of times faster than other crackers and can run through the entirety of rockyou.txt* in under 2 seconds
 
-### Installation
+## Installation
 
 Download newest release at [Github.com](https://github.com/RickdeJager/stegseek/releases).
 
@@ -21,13 +21,13 @@ Download newest release at [Github.com](https://github.com/RickdeJager/stegseek/
 sudo dpkg -i stegseek*
 ```
 
-### Usage
+## Usage
 
 ```plain
 stegseek [stegofile.jpg] [wordlist.txt]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands:
@@ -57,9 +57,9 @@ Keyword arguments:
 Use "stegseek --help -v" to include steghide's help.
 ```
 
-### Examples
+## Examples
 
-#### Cracking
+### Cracking
 
 The most important feature of stegseek is wordlist cracking:
 
@@ -69,7 +69,7 @@ stegseek [stegofile.jpg] [wordlist.txt]
 
 This mode will simply try all passwords in the provided wordlist against the provided stegofile.
 
-#### Detection and passwordless extraction (CVE-2021-27211)
+### Detection and passwordless extraction (CVE-2021-27211)
 
 Stegseek can also be used to detect and extract any unencrypted (meta) data from a steghide image. This exploits the fact that the random number generator used in steghide only has 2^32 possible seeds, which can be bruteforced in a matter of minutes.
 
@@ -89,6 +89,6 @@ The below demo features a challenge from X-MAS CTF 2020. A flag was hidden using
 
 ![Example](images/seed.gif)
 
-### URL list
+## URL List
 
 * [Github.com - Stegseek](https://github.com/RickdeJager/stegseek)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Find
 
-### Usage
+## Usage
 
 ```plain
 find [-H] [-L] [-P] [-Olevel] [-D debugopts] [path...] [expression]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: find [-H] [-L] [-P] [-Olevel] [-D debugopts] [path...] [expression]
@@ -57,7 +57,7 @@ https://savannah.gnu.org/bugs/?group=findutils or, if
 you have no web access, by sending email to <bug-findutils@gnu.org>.
 ```
 
-### Examples
+## Examples
 
 Find all files in the current path and underlying folders
 
@@ -143,6 +143,6 @@ To find all files modified longer than 7 days ago, use the `+7` instead of `-7` 
 find . -mtime +7 -ls
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/find)

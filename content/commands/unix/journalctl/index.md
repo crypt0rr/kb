@@ -11,13 +11,13 @@ weight : 0
 
 ## Journalctl - Query the journal
 
-### Usage
+## Usage
 
 ```plain
 journalctl [OPTIONS...] [MATCHES...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -91,9 +91,9 @@ Commands:
 See the journalctl(1) man page for details.
 ```
 
-### Examples
+## Examples
 
-#### Show journal of today
+### Show journal of today
 
 ```plain
 $ journalctl -S today
@@ -110,6 +110,6 @@ Sep 28 09:36:55 laptop kernel: ACPI: Preparing to enter system sleep state S3
 Sep 28 09:36:55 laptop kernel: ACPI: EC: event blocked
 ```
 
-### URL list
+## URL List
 
 * [HowToGeek.com](https://www.howtogeek.com/499623/how-to-use-journalctl-to-read-linux-system-logs/)

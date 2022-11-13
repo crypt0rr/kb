@@ -13,7 +13,7 @@ tags : ['Other', 'LDAP', 'Active Directory']
 
 Active Directory information dumper via LDAP.
 
-### Installation
+## Installation
 
 Dependencies
 
@@ -27,7 +27,7 @@ cd ldapdomaindump
 sudo python3 setup.py install
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: ldapdomaindump [-h] [-u USERNAME] [-p PASSWORD] [-at {NTLM,SIMPLE}]
@@ -37,7 +37,7 @@ usage: ldapdomaindump [-h] [-u USERNAME] [-p PASSWORD] [-at {NTLM,SIMPLE}]
                       HOSTNAME
 ```
 
-### Flags
+## Flags
 
 ```plain
 Domain information dumper via LDAP. Dumps users/computers/groups and
@@ -79,9 +79,9 @@ Misc options:
                         usage
 ```
 
-### Examples
+## Examples
 
-#### Dump domain information (normal user)
+### Dump domain information (normal user)
 
 ```plain
 $ ldapdomaindump -u '<domain>\<user>' -p '<password>' -d ';' <dc-ip>
@@ -92,7 +92,7 @@ $ ldapdomaindump -u '<domain>\<user>' -p '<password>' -d ';' <dc-ip>
 [+] Domain dump finished
 ```
 
-#### Filter all usernames
+### Filter all usernames
 
 For example to use with [Kerbrute]({{< ref "kerbrute" >}}) or [CrackMapExec]({{< ref "tools/framework/crackmapexec" >}})
 
@@ -100,19 +100,19 @@ For example to use with [Kerbrute]({{< ref "kerbrute" >}}) or [CrackMapExec]({{<
 cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
 ```
 
-#### Script to filter (enabled) high privilege users
+### Script to filter (enabled) high privilege users
 
 Requires 'domain_users.grep' file
 
 {{< gist crypt0rr 29ed56a74c73f95f2ba0b99f1b675c1c >}}
 
-#### Filter Description field
+### Filter Description field
 
 ```plain
 cat domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3,$12}' OFS=" | "  
 ```
 
-#### Filter group memberships of specific SIDs
+### Filter group memberships of specific SIDs
 
 For example 'Domain Users'.
 
@@ -120,7 +120,7 @@ For example 'Domain Users'.
 grep -w 'S-1-5-21*.*513' domain_groups.grep | awk -F ';' '{print $3}'
 ```
 
-#### Oneliners to filter high privilege users
+### Oneliners to filter high privilege users
 
 ```plain
 grep -w 'Domain Admins' domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
@@ -154,7 +154,7 @@ grep -w 'DNS Admins' domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '
 grep PASSWD_NOTREQD domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
 ```
 
-#### Filter accounts that have 'Password Never Expire' set
+### Filter accounts that have 'Password Never Expire' set
 
 From all users enabled and disabled.
 
@@ -180,7 +180,7 @@ From specific group only enabled accounts.
 grep -w 'Domain Admins' domain_users.grep | grep DONT_EXPIRE_PASSWD | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3}'
 ```
 
-#### Filter accounts that have not loggedin for a while
+### Filter accounts that have not loggedin for a while
 
 ```plain
 $ sort -t ';' -k 8 domain_users.grep | grep -v ACCOUNT_DISABLED | awk -F ';' '{print $3, $8}'
@@ -207,6 +207,6 @@ $ python3 ldapdomaindump.py -u 'offsec.nl\johndo' -p 'Welkom1234' -d ';' 10.20.3
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - LDAPdomaindump](https://github.com/dirkjanm/ldapdomaindump)

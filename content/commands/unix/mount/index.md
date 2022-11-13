@@ -11,13 +11,13 @@ weight : 0
 
 ## Mount
 
-### Usage
+## Usage
 
 ```plain
 mount [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -84,28 +84,28 @@ Operations:
 For more details see mount(8).
 ```
 
-### Examples
+## Examples
 
-#### Mount device
+### Mount device
 
 ```plain
 sudo mount /dev/<partition> <mount-point>
 ```
 
-#### Unmount device
+### Unmount device
 
 ```plain
 sudo umount /dev/<partition>
 ```
 
-#### Mount SMB shares (SAMBA)
+### Mount SMB shares (SAMBA)
 
 ```plain
 sudo mkdir /mnt/local_share
 sudo mount -t cifs -o user=john //10.10.10.10/aiff /mnt/local_share
 ```
 
-#### Mount NFS
+### Mount NFS
 
 * `nolock` - prevents file locking
 
@@ -113,6 +113,6 @@ sudo mount -t cifs -o user=john //10.10.10.10/aiff /mnt/local_share
 sudo mount -o nolock 10.10.10.10:/crypt0rr /mnt/local_share
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/2/mount)

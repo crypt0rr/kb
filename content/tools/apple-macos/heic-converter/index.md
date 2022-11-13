@@ -20,17 +20,17 @@ If you don't have any HEIC images, you can try the app out with [this one](https
 * Does it support other HEIF variants like .heif or .hif?
   * No. Only .heic is supported at the moment as macOS support for other variants is buggy.
 
-### Installation
+## Installation
 
 Download HEIC Converter from [macOS App Store](https://apps.apple.com/app/id1294126402)
 
-### Examples
+## Examples
 
 ![Example](images/screenshot1.jpeg)
 ![Example](images/screenshot2.jpeg)
 ![Example](images/screenshot3.jpeg)
 
-### URL list
+## URL List
 
 * [Sindresorhus.com - HIEC Converter](https://sindresorhus.com/heic-converter)
 * [Apps.apple.com - HEIC Converter](https://apps.apple.com/app/id1294126402)

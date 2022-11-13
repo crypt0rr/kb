@@ -13,17 +13,17 @@ tags : ['macOS', 'iOS', 'watchOS', 'tvOS', 'IPSW', 'DMG']
 
 Download and Parse IPSWs (and SO much more)
 
-### Installation
+## Installation
 
 Check [documentation](https://blacktop.github.io/ipsw/docs/install/) for latest installation methods.
 
-### Usage
+## Usage
 
 ```plain
 ipsw [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Available Commands:
@@ -55,9 +55,9 @@ Flags:
 Use "ipsw [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
-#### Download macOS
+### Download macOS
 
 Also see [documentation](https://blacktop.github.io/ipsw/docs/commands/download/#download-macos).
 
@@ -112,7 +112,7 @@ ipsw download macos
         [...]
 ```
 
-### URL list
+## URL List
 
 * [Blacktop.github.io - Documentation IPSW](https://blacktop.github.io/ipsw/)
 * [Github.com - IPSW](https://github.com/blacktop/ipsw)

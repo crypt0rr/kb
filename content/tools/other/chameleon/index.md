@@ -15,20 +15,20 @@ A tool which assists red teams in categorizing their infrastructure under arbitr
 
 Currently, the tool supports arbitrary categorization for Bluecoat, McAfee Trustedsource and IBM X-Force. However, the tool is designed in such a way that additional proxies can be added with ease.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/mdsecactivebreach/Chameleon
 ```
 
-### Usage
+## Usage
 
 ```plain
 chameleon.py [-h] [--proxy <proxy>] [--check] [--submit]
                [--domain <domain>]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -40,9 +40,9 @@ optional arguments:
   --domain <domain>  Domain to validate
 ```
 
-### Examples
+## Examples
 
-#### Checking the category of your website against all supported proxies
+### Checking the category of your website against all supported proxies
 
 ```plain
 $ python chameleon.py --proxy a --check --domain google.com
@@ -70,7 +70,7 @@ $ python chameleon.py --proxy a --check --domain google.com
 [-] Domain categorised as Search Engines / Web Catalogues / Portals
 ```
 
-#### Submitting your domain for the financial category for McAfee proxy only
+### Submitting your domain for the financial category for McAfee proxy only
 
 ```plain
 $ python chameleon.py --proxy m --submit --domain foobar.com
@@ -94,6 +94,6 @@ $ python chameleon.py --proxy m --submit --domain foobar.com
 [-] URL submitted, please wait up to 6 hours for categorization
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Chameleon](https://github.com/mdsecactivebreach/Chameleon)

@@ -13,13 +13,13 @@ tags : ['Other', 'RDP']
 
 The GTK Remote Desktop Client.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install remmina
 ```
 
-### Usage
+## Usage
 
 Use Remmina GUI
 
@@ -27,7 +27,7 @@ Use Remmina GUI
 remmina [OPTION…] FILE
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -56,11 +56,11 @@ Application Options:
   --display=DISPLAY           X display to use
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - Remmina](https://github.com/FreeRDP/Remmina)
 * [Remmina.org](https://remmina.org/)

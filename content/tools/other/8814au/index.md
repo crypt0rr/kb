@@ -51,9 +51,9 @@ Please check [repo](https://github.com/morrownr/8814au) for more information and
 * Edimax EW-7833 UAC AC1750 Dual-Band Wi-Fi USB 3.0 Adapter
 * Numerous products that are based on the supported chipset
 
-### Installation
+## Installation
 
-#### Debian (Ubuntu , Kali, Linux Mint etc.)
+### Debian (Ubuntu , Kali, Linux Mint etc.)
 
 ```plain
 sudo apt update
@@ -93,6 +93,6 @@ sudo ./edit-options.sh
 
 Documentation for Driver Options is included in the file `8814au.conf`.
 
-### URL list
+## URL List
 
 * [Github.com - 8814au](https://github.com/morrownr/8814au)

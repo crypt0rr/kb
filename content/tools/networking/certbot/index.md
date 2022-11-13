@@ -13,7 +13,7 @@ weight : 0
 
 Certbot can obtain and install HTTPS/TLS/SSL certificates thru LetsEncrypt.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install certbot
@@ -25,13 +25,13 @@ Plugin for nginx
 sudo apt install python3-certbot-nginx
 ```
 
-### Usage
+## Usage
 
 ```plain
 certbot [SUBCOMMAND] [options] [-d DOMAIN] [-d DOMAIN] ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Certbot can obtain and install HTTPS/TLS/SSL certificates.  By default,
@@ -83,9 +83,9 @@ More detailed help:
 
 ```
 
-### Examples
+## Examples
 
-#### Requesting certificate (with nginx plugin)
+### Requesting certificate (with nginx plugin)
 
 ```plain
 $ sudo certbot
@@ -101,30 +101,30 @@ Select the appropriate numbers separated by commas and/or spaces, or leave input
 blank to select all options shown (Enter 'c' to cancel):
 ```
 
-#### Certificate via DNS-challenge specific sub-domain
+### Certificate via DNS-challenge specific sub-domain
 
 ```plain
 sudo certbot certonly -d test.example.com --preferred-challenges=dns --manual
 ```
 
-#### Certificate via DNS-challenge wildcard
+### Certificate via DNS-challenge wildcard
 
 ```plain
 sudo certbot certonly --preferred-challenges=dns --manual
 ```
 
-#### List certificates on server managed by Certbot
+### List certificates on server managed by Certbot
 
 ```plain
 sudo certbot certificates
 ```
 
-#### Remove certificate managed by Certbot
+### Remove certificate managed by Certbot
 
 ```plain
 sudo certbot delete --cert-name <certificate>
 ```
 
-### URL list
+## URL List
 
 * [Certbot.eff.org](https://certbot.eff.org/)

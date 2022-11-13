@@ -11,13 +11,13 @@ tags : ['Unix', 'Hashing']
 
 ## Sha1sum
 
-### Usage
+## Usage
 
 ```plain
 sha1sum [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: sha1sum [OPTION]... [FILE]...
@@ -52,7 +52,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/sha1sum>
 or available locally via: info '(coreutils) sha1sum invocation'
 ```
 
-### Examples
+## Examples
 
 Create sha1sum of a file
 
@@ -69,7 +69,7 @@ $ sha1sum -c testfile.hash
 testfile.txt: OK
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/sha1sum)
 * [GNU.org](https://www.gnu.org/software/coreutils/sha1sum)

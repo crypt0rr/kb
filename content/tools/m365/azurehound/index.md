@@ -21,7 +21,7 @@ Install PowerShell Azure Module `Install-Module -Name Az`
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
 
-### Usage
+## Usage
 
 Import the `.ps1`
 
@@ -41,7 +41,7 @@ Run AzureHound
 Invoke-AzureHound -Install
 ```
 
-### Examples
+## Examples
 
 ```plain
 PS C:\Users\ops > . .\AzureHound.ps1
@@ -76,7 +76,7 @@ Account                Environment      TenantId                          Tenant
 johndo@example.com     AzureCloud       1cd4303[...]2d6530         1cd4303[...]2d6530         AccessToken
 ```
 
-### URL list
+## URL List
 
 * [Github.com - BloodHound](https://github.com/BloodHoundAD/BloodHound/)
 * [Github.com - AzureHound Collector](https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/AzureHound.ps1)

@@ -11,15 +11,15 @@ weight: 0
 
 ## Nslookup
 
-### Usage
+## Usage
 
 ```plain
 nslookup [-option] [name | -] [server]
 ```
 
-### Examples
+## Examples
 
-#### A-record lookup
+### A-record lookup
 
 ```plain
 $ nslookup example.com
@@ -34,7 +34,7 @@ Name:       example.com
 Address:    2606:2800:220:1:248:1893:25c8:1946
 ```
 
-#### Reverse DNS lookup
+### Reverse DNS lookup
 
 ```plain
 $ nslookup 209.132.183.181
@@ -42,7 +42,7 @@ $ nslookup 209.132.183.181
 181.183.132.209.in-addr.arpa    name = origin-www2.redhat.com.
 ```
 
-#### Lookup CAA-record
+### Lookup CAA-record
 
 ```plain
 $ nslookup -type=caa google.com
@@ -54,7 +54,7 @@ Non-authoritative answer:
 google.com  rdata_257 = 0 issue "pki.goog"
 ```
 
-#### Lookup NS-record (nameserver)
+### Lookup NS-record (nameserver)
 
 ```plain
 $ nslookup -type=ns google.com
@@ -68,7 +68,7 @@ google.com  nameserver = ns4.google.com.
 google.com  nameserver = ns2.google.com.
 ```
 
-#### Lookup using other DNS-server
+### Lookup using other DNS-server
 
 ```plain
 $ nslookup example.com 1.1.1.1
@@ -83,7 +83,7 @@ Name:   example.com
 Address: 2606:2800:220:1:248:1893:25c8:1946
 ```
 
-#### Lookup all records for a domain
+### Lookup all records for a domain
 
 ```plain
 $ nslookup -type=any example.com
@@ -110,6 +110,6 @@ example.com rdata_43 = 43547 8 2 615A64233543F66F44D68933625B17497C89A70E858ED76
 example.com rdata_46 = DS 8 2 86400 20200414042324 20200407031324 56311 com. XYGro5Yso+qUMpnVVa9iyybt6JHpAD9dK2vOibAtiC8uEHNDRlcXigH/ XJu9aOsnobe18IYfR5tv+LBnQrdlatxsGOAIf1qkPmSVnqZTEk+oz3aQ mADvnbnlJaiFuMIJp2DLs0/T0slbZHG77p04fNNVikuBYgK+/juOaPHU D0Cav+zpkSBFPSRI6TMKxqUsApOIqm7PxQD9QVHYXqd2uA==
 ```
 
-### URL list
+## URL List
 
 - [Linux.die.net](https://linux.die.net/man/1/nslookup)

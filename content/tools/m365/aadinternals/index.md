@@ -15,7 +15,7 @@ AADInternals is PowerShell module for administering Azure AD and Office 365
 
 For details, please visit <http://o365blog.com/aadinternals>
 
-### Installation
+## Installation
 
 ```plain
 # Install the module
@@ -25,11 +25,11 @@ Install-Module AADInternals
 Import-Module AADInternals
 ```
 
-### Usage
+## Usage
 
 Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) on how to use and available commands.
 
-### URL list
+## URL List
 
 * [O365blog.com - AADInternals](https://o365blog.com/aadinternals/)
 * [Github.co - AADInternals](https://github.com/Gerenios/AADInternals)

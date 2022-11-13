@@ -13,10 +13,10 @@ weight : 0
 
 OSINT framework focused on gathering information from free tools or resources.
 
-### Usage
+## Usage
 
 Open url in browser [OSINT framework](https://osintframework.com/)
 
-### URL list
+## URL List
 
 * [Github.com - OSINT framework](https://github.com/lockfale/osint-framework)

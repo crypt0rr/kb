@@ -13,11 +13,11 @@ weight : 0
 
 Is a tool I've made to learn C and make somes experiments with Windows security.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/gentilkiwi/mimikatz/releases)
 
-### Usage
+## Usage
 
 ```plain
 mimikatz.py [-h] [-file FILE] [-debug] [-hashes LMHASH:NTHASH]
@@ -26,7 +26,7 @@ mimikatz.py [-h] [-file FILE] [-debug] [-hashes LMHASH:NTHASH]
             target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.23.dev1+20210315.121412.a16198c3 - Copyright 2020 SecureAuth Corporation
@@ -63,15 +63,15 @@ connection:
                         it
 ```
 
-### Examples
+## Examples
 
-#### Dump all user hashes (on client system)
+### Dump all user hashes (on client system)
 
 ```plain
 lsadump::dcsync /domain:example.local /all /csv
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Mimikatz](https://github.com/gentilkiwi/mimikatz)
 * [GitHub.com - Impacket](https://github.com/SecureAuthCorp/impacket/releases)

@@ -15,20 +15,20 @@ The ultimate speed test tool for TCP, UDP and SCTP.
 
 For Wi-Fi analyse use with [Wavemon.]({{< ref "wavemon" >}})
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install iperf3
 ```
 
-### Usage
+## Usage
 
 ```plain
 iperf3 [-s|-c host] [options]
 iperf3 [-h|--help] [-v|--version]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Server or Client:
@@ -108,9 +108,9 @@ iperf3 homepage at: https://software.es.net/iperf/
 Report bugs to:     https://github.com/esnet/iperf
 ```
 
-### Examples
+## Examples
 
-#### Server side (receiver)
+### Server side (receiver)
 
 ```plain
 $ iperf3 -s
@@ -144,7 +144,7 @@ Accepted connection from 10.10.20.107, port 58080
 [  5]   0.00-18.00  sec   785 MBytes   366 Mbits/sec              receiver
 ```
 
-#### Client side (sender)
+### Client side (sender)
 
 ```plain
 $ iperf3 -t200 -c 10.10.20.250
@@ -176,7 +176,7 @@ Connecting to host 10.10.20.250, port 5201
 [  5]   0.00-18.06  sec  0.00 Bytes  0.00 bits/sec                  receiver
 ```
 
-### URL list
+## URL List
 
 * [iperf.fr - iperf](https://iperf.fr/)
 * [iperf.fr - Docs](https://iperf.fr/iperf-doc.php)

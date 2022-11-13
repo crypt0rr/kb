@@ -13,7 +13,7 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 Dumps the source code from .git when the directory traversal is disabled.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Ebryx/GitDump.git
@@ -35,7 +35,7 @@ How it works:
 * Download idx and pack files.
 * Now you can run git checkout -- . to retrieve source code.
 
-### Usage
+## Usage
 
 ```plain
 $ python3 git-dump.py   
@@ -47,6 +47,6 @@ Please provide website URL with /.git/ directory e.g. example.com/.git/
 * After running above script type: `cd output && git checkout -- .`
 * It will recover all source code.
 
-### URL list
+## URL List
 
 * [Github.com - GitDump](https://github.com/Ebryx/GitDump)

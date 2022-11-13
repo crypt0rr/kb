@@ -13,19 +13,19 @@ weight : 0
 
 SSH method scanner. Reports password and publickey authentication.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/crypt0rr/ssh-method-scanner.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./ssh-method-scanner.sh
 ```
 
-### Examples
+## Examples
 
 ```plain
 ./ssh-method-scanner.sh
@@ -36,6 +36,6 @@ Give port to scan: 22
 [+] INFO: supports publickey authentication.
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - ssh-method-scanner](https://github.com/crypt0rr/ssh-method-scanner)

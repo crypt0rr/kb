@@ -13,15 +13,15 @@ weight : 0
 
 Windows local Privilege Escalation Awesome Script.
 
-### Installation
+## Installation
 
 Download `.exe` or `.bat` from [Github.com](https://github.com/carlospolop/PEASS-ng/releases)
 
-### Usage
+## Usage
 
 Check the checklist on [book.hacktricks.xyz](https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation)
 
-### URL List
+## URL List
 
 * [Github.com - PEASS-ng](https://github.com/carlospolop/PEASS-ng/)
 * [book.hacktricks.xyz - Checklist - Local Windows Privilege Escalation](https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation)

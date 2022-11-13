@@ -13,19 +13,19 @@ tags : ['Framework', 'DNS']
 
 A black hole for Internet advertisements. Network-wide (DNS-based) Ad Blocking.
 
-### Installation
+## Installation
 
 ```plain
 curl -sSL https://install.pi-hole.net | bash
 ```
 
-### Usage
+## Usage
 
 ```plain
 pihole [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Add '-h' after specific commands for more information on usage
@@ -69,9 +69,9 @@ Options:
                         Add '-h' for more info on checkout usage
 ```
 
-### Examples
+## Examples
 
-#### Change Admin interface options
+### Change Admin interface options
 
 ```plain
 $ pihole -a -h
@@ -89,7 +89,7 @@ Options:
   -l, privacylevel    Set privacy level (0 = lowest, 4 = highest)
 ```
 
-#### Pi-Hole Chronometer
+### Pi-Hole Chronometer
 
 ```plain
 $ pihole -c
@@ -116,7 +116,7 @@ Top Client: 10.10.10.40
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Pi-hole.net](https://pi-hole.net/)
 * [GitHub.com - Pi-Hole](https://github.com/pi-hole/pi-hole)

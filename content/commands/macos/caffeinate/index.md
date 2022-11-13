@@ -13,13 +13,13 @@ weight : 0
 
 Prevent the system from sleeping on behalf of a utility.
 
-### Usage
+## Usage
 
 ```plain
 caffeinate [-disu] [-t timeout] [-w pid] [utility arguments...]
 ```
 
-### Flags
+## Flags
 
 ```plain
    -d      Create an assertion to prevent the display from sleeping.
@@ -44,20 +44,20 @@ caffeinate [-disu] [-t timeout] [-w pid] [utility arguments...]
            assertion is also released.  This option is ignored when used with utility option.
 ```
 
-### Examples
+## Examples
 
-#### Prevent sleep for 1 hour (3600 seconds)
+### Prevent sleep for 1 hour (3600 seconds)
 
 ```plain
 caffeinate -u -t 3600
 ```
 
-#### Make caffeinate fork a process, exec "make" in it, and hold an assertion that prevents idle sleep as long as that process is running
+### Make caffeinate fork a process, exec "make" in it, and hold an assertion that prevents idle sleep as long as that process is running
 
 ```plain
 caffeinate -i make
 ```
 
-### URL list
+## URL List
 
 * [ss64.com - Caffeinate](https://ss64.com/osx/caffeinate.html)

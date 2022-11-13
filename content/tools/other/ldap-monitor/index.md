@@ -31,7 +31,7 @@ With this tool you can quickly see if your attack worked and if it changed LDAP 
 | Authenticate with kerberos tickets               | :heavy_check_mark: | :x: | :x: |
 | Option to ignore user logon events               | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
 
@@ -39,21 +39,21 @@ With this tool you can quickly see if your attack worked and if it changed LDAP 
 git clone https://github.com/p0dalirius/LDAPmonitor.git
 ```
 
-### Usage
+## Usage
 
-#### Python
+### Python
 
 ```plain
 ./ldapmonitor.py -d 'LAB.local' -u 'user1' -p 'Welkom1234!' --dc-ip 10.10.10.10
 ```
 
-#### PowerShell
+### PowerShell
 
 ```plain
 ldapmonitor.exe /dcip:10.10.10.10 /user:LAB\user1 /pass:Welkom1234!
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./pyLDAPmonitor.py -d 'offsec.nl' -u 'JOHNDO' -p 'Welkom1234!' --dc-ip 10.10.10.10
@@ -79,7 +79,7 @@ $ ./pyLDAPmonitor.py -d 'offsec.nl' -u 'JOHNDO' -p 'Welkom1234!' --dc-ip 10.10.1
  | Attribute "uSNChanged" changed from '238359212' to '238360709'
 ```
 
-### URL list
+## URL List
 
 * [Github.com - LDAPmonitor](https://github.com/p0dalirius/LDAPmonitor)
 * [Podalirius.net](https://podalirius.net/)

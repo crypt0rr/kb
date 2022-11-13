@@ -13,7 +13,7 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 Flash OS images to SD cards & USB drives, safely and easily.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/balena-io/etcher/releases)
 
@@ -26,11 +26,11 @@ sudo apt-get update
 sudo apt-get install balena-etcher-electron
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Balena.io - Etcher](https://www.balena.io/etcher/)
 * [GitHub.com - Etcher](https://github.com/balena-io/etcher)

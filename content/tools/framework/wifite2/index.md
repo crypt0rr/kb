@@ -25,31 +25,31 @@ Wifite is designed to use all known methods for retrieving the password of a wir
 
 Run wifite, select your targets, and Wifite will automatically start trying to capture or crack the password.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/derv82/wifite2.git
 ```
 
-#### Requirements
+### Requirements
 
 ```plain
 sudo apt install aircrack-ng reaver bully tshark hcxtools
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo ./Wifite.py
 ```
 
-#### Reset after use
+### Reset after use
 
 ```plain
 sudo airmon-ng stop <device>mon
 ```
 
-### Flags
+## Flags
 
 ```plain
    .               .    
@@ -97,7 +97,7 @@ COMMANDS:
   --crack                Show commands to crack a captured handshake
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ sudo ./Wifite.py             
@@ -140,6 +140,6 @@ $ sudo ./Wifite.py
  [!] To disable Monitor Mode when finished: airmon-ng stop wlp4s0mon
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Wifite2](https://github.com/derv82/wifite2)

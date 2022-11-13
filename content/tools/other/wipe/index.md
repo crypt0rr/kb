@@ -13,19 +13,19 @@ tags : ['Other', 'Harddisk']
 
 The wipe command can be used to securely erase files from magnetic media.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install wipe
 ```
 
-### Usage
+## Usage
 
 ```plain
 wipe [options] <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: wipe [options] files...
@@ -69,7 +69,7 @@ Options:
     -x <pass1,pass2,...> Define pass order
 ```
 
-### Examples
+## Examples
 
 ```plain
 wipe -r /media/b/1GB-USB
@@ -77,6 +77,6 @@ Okay to WIPE 1 directory ? (Yes/No) yes
 Wiping 1.h2w, pass 0  (0 )  4305 /    60718]  ETA 3h08m
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - wipe](https://linux.die.net/man/1/wipe)

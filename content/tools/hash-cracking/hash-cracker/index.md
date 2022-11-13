@@ -13,7 +13,7 @@ weight : 0
 
 Simple script to get some hash cracking done effectively.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/crypt0rr/hash-cracker
@@ -25,13 +25,13 @@ For use with Apple Silicon (M1/M2) systems, please use the following repo.
 git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./hash-cracker.sh
 ```
 
-### Flags
+## Flags
 
 ```plain
 hash-cracker v2.9.3 by crypt0rr (https://github.com/crypt0rr)
@@ -65,7 +65,7 @@ Checking if requirements are met:
 Please enter number OR type 'search' to find hashtypes:
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./hash-cracker.sh       
@@ -103,7 +103,7 @@ hashcat (v6.2.4-131-ga9cdd4cef) starting
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - hash-cracker](https://github.com/crypt0rr/hash-cracker)
 * [Github.com - hash-cracker Apple Silicon Edition](https://github.com/crypt0rr/hash-cracker-apple-silicon)

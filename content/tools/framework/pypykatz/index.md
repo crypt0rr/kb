@@ -13,19 +13,19 @@ weight : 0
 
 Mimikatz implementation in pure Python. At least a part of it :)
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install pypykatz
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: pypykatz [-h] [-v] {live,lsa,registry,nt,lm,dcc,dcc2,gppass,dpapi,sake,version,banner} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Pure Python implementation of Mimikatz --and more--
@@ -51,14 +51,14 @@ optional arguments:
   -v, --verbose
 ```
 
-### Examples
+## Examples
 
-#### Read lsass dump
+### Read lsass dump
 
 ```plain
 pypykatz lsa minidump lsass_dump.DMP
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - pypykatz](https://github.com/skelsec/pypykatz)

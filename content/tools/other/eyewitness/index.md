@@ -13,7 +13,7 @@ weight : 0
 
 Is a tool used to capture screenshots from a list of URLs.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/FortyNorthSecurity/EyeWitness.git
@@ -26,13 +26,13 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 EyeWitness.py [OPTION]
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: EyeWitness.py [--web] [-f Filename] [-x Filename.xml]
@@ -108,7 +108,7 @@ RDP Options:
   --ocr                 Use OCR to determine RDP usernames
 ```
 
-### Examples
+## Examples
 
 Parse [Nessus](https://www.tenable.com/products/nessus) file
 
@@ -116,6 +116,6 @@ Parse [Nessus](https://www.tenable.com/products/nessus) file
 python3 EyeWitness.py --web -x <file>.nessus
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)

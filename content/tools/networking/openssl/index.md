@@ -13,13 +13,13 @@ weight : 0
 
 The OpenSSL Project develops and maintains the OpenSSL software - a robust, commercial-grade, full-featured toolkit for general-purpose cryptography and secure communication. The project's technical decision making is managed by the [OpenSSL Technical Committee](https://www.openssl.org/community/otc.html) (OTC) and the project governance is managed by the [OpenSSL Management Committee](https://www.openssl.org/community/omc.html) (OMC). The project operates under formal [Bylaws](https://www.openssl.org/policies/omc-bylaws.html).
 
-### Usage
+## Usage
 
 ```plain
 openssl [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Standard commands
@@ -57,16 +57,16 @@ rc2-cfb           rc2-ecb           rc2-ofb           rc4
 rc4-40            
 ```
 
-### Examples
+## Examples
 
-#### Calculate digest
+### Calculate digest
 
 ```plain
 $ echo -n "foobar" | openssl dgst -sha256
 c3ab8ff13720e8ad9047dd39466b3c8974e592c2fa383d4a3960714caef0c4f2
 ```
 
-#### Create certificate
+### Create certificate
 
 * `req`: initiate a new certificate signing request
 * `-newkey`: generate a new private key
@@ -85,6 +85,6 @@ To create a `.PEM` file you can `cat` the `.key` and `.crt` into a `.pem`.
 
 `cat yourcert.key yourcert.crt > yourcert.pem`
 
-### URL list
+## URL List
 
 * [OpenSSL.org](https://www.openssl.org/)

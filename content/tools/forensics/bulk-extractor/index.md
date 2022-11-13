@@ -13,17 +13,17 @@ weight : 0
 
 Program that extracts features such as email addresses, credit card numbers, URLs, and other types of information from digital evidence files.
 
-### Installation
+## Installation
 
 Download newest release from [Digitalcorpora.org](http://downloads.digitalcorpora.org/downloads/bulk_extractor/)
 
-### Usage
+## Usage
 
 ```plain
 bulk_extractor [options] imagefile
 ```
 
-### Flags
+## Flags
 
 ```plain
 Required parameters:
@@ -167,7 +167,7 @@ These scanners enabled by default; disable with -x:
    -x zip - disable scanner zip
 ```
 
-### Examples
+## Examples
 
 ```plain
 bulk_extractor -o bulk-out xp-laptop-2005-07-04-1430.img
@@ -231,7 +231,7 @@ Overall performance: 1.418 MBytes/sec.
 Total email features found: 899
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - bulk_extractor](https://github.com/simsong/bulk_extractor)
 * [Tools.kali.org](https://tools.kali.org/forensics/bulk-extractor)

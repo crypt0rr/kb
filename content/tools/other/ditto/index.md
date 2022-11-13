@@ -13,19 +13,19 @@ weight : 0
 
 A small tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are available and which are already registered.
 
-### Installation
+## Installation
 
 ```plain
 GO111MODULE=on go get github.com/evilsocket/ditto/cmd/ditto
 ```
 
-### Usage
+## Usage
 
 ```plain
 ditto [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -available
@@ -53,9 +53,9 @@ ditto [options]
 
 ```
 
-### Examples
+## Examples
 
-#### Transform a string
+### Transform a string
 
 ```plain
 $ ditto -string google
@@ -71,7 +71,7 @@ $ ditto -string google
 google (xn--oogle-dq33a)
 ```
 
-#### Transform a domain
+### Transform a domain
 
 ```plain
 $ ditto -domain facebook.com
@@ -92,6 +92,6 @@ fácebook.com (xn--fcebook-hwa.com) registered : ips=165.160.15.20,165.160.13.20
 [...]
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Ditto](https://github.com/evilsocket/ditto)

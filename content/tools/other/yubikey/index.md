@@ -15,27 +15,27 @@ The #1 security key, offering strong two factor authentication from industry lea
 
 ### Ubuntu 2FA
 
-#### Install requirements
+### Install requirements
 
 ```plain
 sudo add-apt-repository ppa:yubico/stable && sudo apt-get update
 sudo apt-get install libu2f-udev libpam-u2f
 ```
 
-#### Initial configuration
+### Initial configuration
 
 ```plain
 mkdir ~/.config/Yubico
 pamu2fcfg > ~/.config/yubico/u2f_keys
 ```
 
-#### Adding extra key
+### Adding extra key
 
 ```plain
 pamu2fcfg -n >> ~/.config/yubico/u2f_keys
 ```
 
-#### Testing configuration
+### Testing configuration
 
 To prompt the user to touch the key, set 'cue' at the end of the 'auth required' line
 
@@ -88,7 +88,7 @@ Last login: Wed May 12 08:29:50 2021 from 10.10.20.107
 johndo@example:~$
 ```
 
-### URL list
+## URL List
 
 * [Askubuntu.com - How to configure a U2F key such as Yubikey for system wide 2-factor authentication](https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic)
 * [Support.yubico.com - Ubuntu Linux Login Guide U2F](https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F)

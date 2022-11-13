@@ -13,7 +13,7 @@ weight : 0
 
 Tool to search for targets vulnerable to SQL Injection. Performs the search using Google search engine.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/0xdutra/fawkes
@@ -21,13 +21,13 @@ cd fawkes
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 fawkes.py [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 ███████╗ █████╗ ██╗    ██╗██╗  ██╗███████╗███████╗
@@ -55,7 +55,7 @@ Examples:
 
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 fawkes.py --query 'noticias.php?id=10' --timeout 3 --verbose
@@ -84,6 +84,6 @@ Number of targets: 93
 [ERROR] - https://esevidasinu.gov.co/noticias.php?id=18'
 ```
 
-### URL list
+## URL List
 
 * [Github.com - fawkes](https://github.com/0xdutra/fawkes)

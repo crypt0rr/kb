@@ -13,19 +13,19 @@ tags : ['Other', 'SMB']
 
 FTP-like client to access SMB/CIFS resources on servers.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install smbclient
 ```
 
-### Usage
+## Usage
 
 ```plain
 smbclient service <password>
 ```
 
-### Flags
+## Flags
 
 ```plain
   -R, --name-resolve=NAME-RESOLVE-ORDER     Use these name resolution services only
@@ -73,15 +73,15 @@ Authentication options:
       --pw-nt-hash                          The supplied password is the NT hash
 ```
 
-### Examples
+## Examples
 
-#### List SMB-shares on target without passwords
+### List SMB-shares on target without passwords
 
 ```plain
 smbclient -L //<target-ip> -N
 ```
 
-#### SMB NULL-sessions
+### SMB NULL-sessions
 
 ```plain
 smbclient //<victim_ip>/IPC$ -N
@@ -89,7 +89,7 @@ smbclient //<victim_ip>/IPC$ -N
 Success #:/smb>
 ```
 
-#### Connect to SMB-share
+### Connect to SMB-share
 
 ```plain
 $ smbclient \\\\10.10.10.10\\c$ -U administrator -W offsec
@@ -115,7 +115,7 @@ smb: \> ls
 smb: \>
 ```
 
-#### Download file(s)
+### Download file(s)
 
 ```plain
 # smbclient //10.10.10.10/nt4wrksv -U guest
@@ -132,6 +132,6 @@ getting file \passwords.txt of size 98 as passwords.txt (0.2 KiloBytes/sec) (ave
 smb: \>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - smbclient](https://linux.die.net/man/1/smbclient)

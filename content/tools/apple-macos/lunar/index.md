@@ -63,18 +63,18 @@ It works well along Night Shift and True Tone (and f.lux if Gamma dimming is not
 | Manual Mode              | 100 adjustments per day      | Unlimited adjustments        |
 | Pricing                  | Free                         | $23                          |
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/alin23/Lunar/releases)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 ![example](images/example2.png)
 ![example](images/example3.png)
 ![example](images/example4.png)
 
-### URL list
+## URL List
 
 * [Lunar.fyi](https://lunar.fyi)
 * [Github.com - Lunar](https://github.com/alin23/Lunar)

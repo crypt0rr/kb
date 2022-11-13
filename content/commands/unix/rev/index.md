@@ -11,13 +11,13 @@ weight : 0
 
 ## Rev - reverse lines characterwise
 
-### Usage
+## Usage
 
 ```plain
 rev [options] [file ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Reverse lines characterwise.
@@ -29,13 +29,13 @@ Options:
 For more details see rev(1).
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ echo 'example-string' | rev
 gnirts-elpmaxe
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/rev)

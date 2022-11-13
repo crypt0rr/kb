@@ -11,7 +11,7 @@ weight : 0
 
 ## Netstat
 
-### Usage
+## Usage
 
 ```plain
 netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
@@ -19,7 +19,7 @@ netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
        netstat { [-vWeenNac] -i | [-cnNe] -M | -s [-6tuw] }
 ```
 
-### Flags
+## Flags
 
 ```plain
 -r, --route              display routing table
@@ -55,9 +55,9 @@ netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
     x25 (CCITT X.25)
 ```
 
-### Examples
+## Examples
 
-#### Show routing table
+### Show routing table
 
 ```plain
 $ netstat -r
@@ -69,7 +69,7 @@ link-local     0.0.0.0         255.255.0.0     U         0 0          0 enp0
 10.10.10.0     0.0.0.0         255.255.255.0   U         0 0          0 enp0
 ```
 
-#### Show ports that are listened on (TCP)
+### Show ports that are listened on (TCP)
 
 ```plain
 $ netstat -nlvpt
@@ -98,6 +98,6 @@ tcp6       0      0 127.0.0.1:41401         :::*                    LISTEN      
 [...REDACTED...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/netstat)

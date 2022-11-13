@@ -18,17 +18,17 @@ The Most Efficient iOS Files & Data Management Tool
 
 Fully view iOS device's different statuses, including activation, jailbreak, battery and iCloud lock statuses, as well as detailed iOS & iDevice information.
 
-### Installation
+## Installation
 
 Download the newest version from [3u.com](https://www.3u.com/)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 ![Example](images/example4.png)
 
-### URL list
+## URL List
 
 * [3u.com](http://www.3u.com/)

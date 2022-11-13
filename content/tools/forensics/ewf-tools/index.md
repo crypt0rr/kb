@@ -13,7 +13,7 @@ weight : 0
 
 Collection of tools for reading and writing EWF files.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install ewf-tools
@@ -26,12 +26,12 @@ ewfacquire        ewfdebug          ewfinfo           ewfrecover
 ewfacquirestream  ewfexport         ewfmount          ewfverify
 ```
 
-### Examples
+## Examples
 
 ```plain
 ewfmount image.E01 <folder>
 ```
 
-### URL list
+## URL List
 
 * [Github.com - FATX](https://github.com/mborgerson/fatx)

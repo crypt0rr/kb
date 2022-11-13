@@ -13,7 +13,7 @@ weight : 0
 
 Domain name permutation engine for detecting homograph phishing attacks, typosquatting, fraud and brand impersonation.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/elceef/dnstwist.git
@@ -21,13 +21,13 @@ cd dnstwist
 python3 -m pip install .
 ```
 
-### Usage
+## Usage
 
 ```plain
 dnstwist [OPTION]... DOMAIN
 ```
 
-### Flags
+## Flags
 
 ```plain
 dnstwist 20200521 by <marcin@ulikowski.pl>
@@ -57,7 +57,7 @@ optional arguments:
   --useragent STRING          User-Agent STRING to send with HTTP requests (default: Mozilla/5.0 dnstwist/20200521)
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ dnstwist example.com
@@ -85,6 +85,6 @@ addition       examplel.com    138.201.138.240 2a01:4f8:172:35ec::2 NS:b.ns14.ne
 [...]
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - DNStwist](https://github.com/elceef/dnstwist)

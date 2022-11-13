@@ -17,25 +17,25 @@ Other scripts can call this script to do a silent mount - and receive a 0 on suc
 
 For example: If another script calls MountEFI.command disk0 then my script would mount without user interaction, and return a 0 on success, or a 1 on failure. This can also take multiple EFIs to mount - MountEFI.command disk0 / disk3 would mount the EFIs connected to disk0, the boot drive (/), and disk3 if they exist.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/corpnewt/MountEFI.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./MountEFI.command
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./MountEFI.command
-  #######################################################
+  ##########################################
  #                     MountEFI                        #
-#######################################################
+##########################################
  
 1. Macintosh HD (disk1s1s1)
 
@@ -52,6 +52,6 @@ Q. Quit
 Pick the drive containing your EFI:
 ```
 
-### URL list
+## URL List
 
 * [Github.com - MountEFI](https://github.com/corpnewt/MountEFI)

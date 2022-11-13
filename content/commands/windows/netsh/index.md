@@ -11,13 +11,13 @@ weight : 0
 
 ## Network Shell (netsh)
 
-### Usage
+## Usage
 
 ```cmd
 netsh [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands in this context:
@@ -68,15 +68,15 @@ The following sub-contexts are available:
  advfirewall branchcache bridge dhcpclient dnsclient firewall http interface ipsec lan mbn namespace netio p2p ras rpc trace wcn wfp winhttp winsock wlan
 ```
 
-### Examples
+## Examples
 
-#### Show known Wi-Fi networks
+### Show known Wi-Fi networks
 
 ```cmd
 netsh wlan show profile
 ```
 
-#### Show passwords from known networks (admin required)
+### Show passwords from known networks (admin required)
 
 {{%attachments title="Script for showing all known network passwords" fa_icon_class="fas fa-terminal" pattern=".*(ps1)"/%}}
 
@@ -84,7 +84,7 @@ netsh wlan show profile
 netsh wlan show profile "<profilename>" key=clear
 ```
 
-#### Show current IP configuration
+### Show current IP configuration
 
 ```plain
 $ netsh interface ip show config
@@ -101,12 +101,12 @@ Configuration for interface "Ethernet"
     WINS servers configured through DHCP: None
 ```
 
-#### Create Mobile Hotspot
+### Create Mobile Hotspot
 
 `netsh wlan set hostednetwork mode=allow ssid=Test key=12345678`
 
 Start the Mobile hotspot with `netsh wlan start hostednetwork`
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/nl-nl/windows-server/networking/technologies/netsh/netsh)

@@ -11,19 +11,19 @@ tags: ["Unix", "Harddisk"]
 
 ## Fdisk
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install fdisk
 ```
 
-### Usage
+## Usage
 
 ```plain
 fdisk [options] <disk>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -65,7 +65,7 @@ Available output columns:
 For more details see fdisk(8).
 ```
 
-### Examples
+## Examples
 
 List all disks
 
@@ -83,7 +83,7 @@ Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 ```
 
-### URL list
+## URL List
 
 - [man7.org](http://man7.org/linux/man-pages/man8/fdisk.8.html)
 - [Wikipedia.org](https://en.wikipedia.org/wiki/Fdisk)

@@ -13,22 +13,22 @@ tags: ["Other", "Bruteforce"]
 
 Is a SSH, FTP, Telnet, PostgreSQL, RDP, VNC brute forcing tool with Hydra, Medusa and Ncrack.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/GitHackTools/BruteDum.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 brutedum.py
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 - [GitHub.com - BruteDum](https://github.com/GitHackTools/BruteDum)

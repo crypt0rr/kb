@@ -11,7 +11,7 @@ weight : 0
 
 ## IP -  show / manipulate routing, network devices, interfaces and tunnels
 
-### Usage
+## Usage
 
 ```plain
 Usage: ip [ OPTIONS ] OBJECT { COMMAND | help }
@@ -22,7 +22,7 @@ where  OBJECT := { link | address | addrlabel | route | rule | neigh | ntable |
                    vrf | sr | nexthop }
 ```
 
-### Flags
+## Flags
 
 ```plain
 OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
@@ -35,9 +35,9 @@ OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
             -c[olor]}
 ```
 
-### Examples
+## Examples
 
-#### Show IPv4 addresses
+### Show IPv4 addresses
 
 ```plain
 $ ip -4 a
@@ -50,7 +50,7 @@ $ ip -4 a
        valid_lft 85828sec preferred_lft 85828sec
 ```
 
-#### Show IPv6 addresses
+### Show IPv6 addresses
 
 ```plain
 $ ip -6 addr
@@ -63,7 +63,7 @@ $ ip -6 addr
        valid_lft forever preferred_lft forever
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/ip)
 * [HowToGeek.com](https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/)

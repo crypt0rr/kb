@@ -13,19 +13,19 @@ weight : 0
 
 Recover files using their headers, footers, and data structures.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install foremost
 ```
 
-### Usage
+## Usage
 
 ```plain
 foremost [-v|-V|-h|-T|-Q|-q|-a|-w-d] [-t <type>] [-s <blocks>] [-k <size>] [-b <size>] [-c <file>] [-o <dir>] [-i <file]
 ```
 
-### Flags
+## Flags
 
 ```plain
 foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus.
@@ -44,7 +44,7 @@ $ foremost [-v|-V|-h|-T|-Q|-q|-a|-w-d] [-t <type>] [-s <blocks>] [-k <size>] [-b
 -v  - verbose mode. Logs all messages to screen
 ```
 
-### URL list
+## URL List
 
 * [Sourceforge.net - foremost](http://foremost.sourceforge.net/)
 * [Kali.org - foremost](https://tools.kali.org/forensics/foremost)

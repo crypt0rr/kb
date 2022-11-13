@@ -11,13 +11,13 @@ weight : 0
 
 ## Timedatectl
 
-### Usage
+## Usage
 
 ```plain
 timedatectl [OPTIONS...] COMMAND ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Query or change system time and date settings.
@@ -50,9 +50,9 @@ systemd-timesyncd Commands:
 See the timedatectl(1) man page for details.
 ```
 
-### Examples
+## Examples
 
-#### Show current time and date configuration
+### Show current time and date configuration
 
 ```plain
 $ timedatectl
@@ -66,7 +66,7 @@ System clock synchronized: yes
           RTC in local TZ: yes
 ```
 
-#### List available timezones
+### List available timezones
 
 ```plain
 $ timedatectl list-timezones
@@ -76,13 +76,13 @@ Africa/Accra
 Africa/Algiers
 ```
 
-#### Set specific timezone
+### Set specific timezone
 
 ```plain
 sudo timedatectl set-timezone Europe/Amsterdam
 ```
 
-#### Enable/disable automatic time synchronization
+### Enable/disable automatic time synchronization
 
 Disable
 
@@ -96,13 +96,13 @@ Enable
 sudo timedatectl set-ntp 1
 ```
 
-#### Set specific time and date
+### Set specific time and date
 
 ```plain
 sudo timedatectl set-time '2021-08-31 14:25'
 ```
 
-### URL list
+## URL List
 
 * [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/xenial/man1/timedatectl.1.html)
 * [Man7.org](http://man7.org/linux/man-pages/man1/timedatectl.1.html)

@@ -13,17 +13,17 @@ weight : 0
 
 CutyCapt is a small cross-platform command-line utility to capture WebKit’s rendering of a web page into a variety of vector and bitmap formats, including SVG, PDF, PS, PNG, JPEG, TIFF, GIF, and BMP.
 
-### Installation
+## Installation
 
 Please use within [Kali](https://www.kali.org/).
 
-### Usage
+## Usage
 
 ```plain
 CutyCapt --url=http://www.example.org/ --out=localfile.png
 ```
 
-### Flags
+## Flags
 
 ```plain
   --help                         Print this help page and exit                
@@ -62,7 +62,7 @@ CutyCapt --url=http://www.example.org/ --out=localfile.png
  http://cutycapt.sf.net - (c) 2003-2013 Bjoern Hoehrmann - bjoern@hoehrmann.de
 ```
 
-### Examples
+## Examples
 
 ```plain
 cutycapt --url=https://kali.org --out=kali.png
@@ -70,7 +70,7 @@ cutycapt --url=https://kali.org --out=kali.png
 
 ![example](images/kali.png)
 
-### URL list
+## URL List
 
 * [Cutycapt.sf.net](http://cutycapt.sf.net)
 * [Cutycapt.sourceforge.net](http://cutycapt.sourceforge.net/)

@@ -13,14 +13,14 @@ weight : 0
 
 Another utility to investigate sockets.
 
-### Usage
+## Usage
 
 ```plain
 ss [ OPTIONS ]
 ss [ OPTIONS ] [ FILTER ]
 ```
 
-### Flags
+## Flags
 
 ```plain
    -h, --help          this message
@@ -78,7 +78,7 @@ ss [ OPTIONS ] [ FILTER ]
                 big := {established|syn-sent|fin-wait-{1,2}|closed|close-wait|last-ack|listening|closing}
 ```
 
-### Examples
+## Examples
 
 Showing all sockets, numeric that are listening on TCP and show the process that is using the socket.
 
@@ -96,6 +96,6 @@ LISTEN       0         10                 0.0.0.0:44641            0.0.0.0:*    
 LISTEN       0         10                    [::]:44641               [::]:*                 users:(("rslsync",pid=3597,fd=9)) 
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - ss](https://linux.die.net/man/8/ss)

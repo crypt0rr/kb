@@ -13,17 +13,17 @@ weight : 0
 
 Queries target domain for delegation relationships.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 findDelegation.py [-h] [-target-domain TARGET_DOMAIN] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -49,7 +49,7 @@ authentication:
   -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter. Ignoredif -target-domain is specified.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ findDelegation.py offsec.nl/normal-user:'Welkom1234'
@@ -60,6 +60,6 @@ AccountName     AccountType     DelegationType                  DelegationRights
 janedo          Person          Resource-Based Constrained      SRV01$
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

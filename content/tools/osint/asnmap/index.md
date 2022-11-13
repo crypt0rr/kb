@@ -21,7 +21,7 @@ Go CLI and Library for quickly mapping organization network ranges using [ASN](h
 * JSON/CSV/TEXT output
 * STD IN/OUT support
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
@@ -29,13 +29,13 @@ go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
 
 Or download newest pre-compiled binary from [Github.com](https://github.com/projectdiscovery/asnmap/releases).
 
-### Usage
+## Usage
 
 ```plain
 asnmap [flags]
 ```
 
-### Flags
+## Flags
 
 ```plain
 INPUT:
@@ -58,7 +58,7 @@ OUTPUT:
    -version            show version of the project
 ```
 
-### Examples
+## Examples
 
 Example input for asnmap:
 
@@ -67,7 +67,7 @@ Example input for asnmap:
 * `asnmap -d hackerone.com -silent`
 * `asnmap -o GOOGLE -silent`
 
-#### ASN Look-up by name
+### ASN Look-up by name
 
 ```plain
 $ echo GOOGLE | asnmap -silent  
@@ -88,7 +88,7 @@ $ echo GOOGLE | asnmap -silent
 34.104.30.0/23
 ```
 
-#### Look-up by ASN
+### Look-up by ASN
 
 ```plain
 asnmap -a AS45596 -silent
@@ -96,7 +96,7 @@ asnmap -a AS45596 -silent
 203.176.112.0/23
 ```
 
-#### Look-up to JSON
+### Look-up to JSON
 
 ```plain
 echo hackerone.com | asnmap -json -silent | jq
@@ -124,7 +124,7 @@ echo hackerone.com | asnmap -json -silent | jq
 }
 ```
 
-#### Look-up to CSV
+### Look-up to CSV
 
 ```plain
 echo hackerone.com | asnmap -csv -silent 
@@ -133,6 +133,6 @@ timestamp|input|as_number|as_name|as_country|as_range
 2022-10-13 09:15:59.239025 +0200 CEST|hackerone.com|AS13335|CLOUDFLARENET|US|2606:4700::/47
 ```
 
-### URL list
+## URL List
 
 * [Github.com - asnmap](https://github.com/projectdiscovery/asnmap)

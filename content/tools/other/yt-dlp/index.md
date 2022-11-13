@@ -13,7 +13,7 @@ weight : 0
 
 yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
 
-### Installation
+## Installation
 
 ```plain
 brew install yt-dlp
@@ -21,13 +21,13 @@ brew install yt-dlp
 
 Download newest release from [Github.com](https://github.com/yt-dlp/yt-dlp#release-files)
 
-### Usage
+## Usage
 
 ```plain
 yt-dlp [OPTIONS] URL [URL...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -386,7 +386,7 @@ Options:
 See full documentation at  https://github.com/yt-dlp/yt-dlp#readme
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ yt-dlp https://www.youtube.com/watch\?v\=uVQx6Frqfx8 
@@ -397,7 +397,7 @@ $ yt-dlp https://www.youtube.com/watch\?v\=uVQx6Frqfx8
 [download] 100% of 36.13MiB in 00:02 at 17.15MiB/s
 ```
 
-### URL list
+## URL List
 
 * [Github.com - yt-dlp](https://github.com/yt-dlp/yt-dlp)
 * [Formulae.brew.sh - yt-dlp](https://formulae.brew.sh/formula/yt-dlp#default)

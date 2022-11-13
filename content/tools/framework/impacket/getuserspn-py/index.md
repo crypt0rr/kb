@@ -13,17 +13,17 @@ tags : ['Kerberoasting']
 
 "Queries target domain for SPNs that are running under a user account (kerberoasting).
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 GetUserSPNs.py [-h] [-target-domain TARGET_DOMAIN] [-usersfile USERSFILE] [-request] [-request-user username] [-save] [-outputfile OUTPUTFILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
@@ -55,7 +55,7 @@ authentication:
   -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter. Ignoredif -target-domain is specified.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ GetUserSPNs.py -target-domain offsec.nl -request -outputfile out.log -dc-ip 10.10.10.10 offsec.nl/normal-user
@@ -70,6 +70,6 @@ $ cat out.log
 $krb5tgs$23$*[REDACTED]
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

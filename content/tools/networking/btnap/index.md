@@ -13,7 +13,7 @@ tags : ['Networking', 'Bluetooth']
 
 Bluetooth Network Access Point for Raspberry Pi.
 
-### Installation
+## Installation
 
 Dependencies
 
@@ -31,7 +31,7 @@ git clone https://github.com/bablokb/pi-btnap.git
 ./pi-btnap/tools/install-btnap server
 ```
 
-### Examples
+## Examples
 
 Bluetooth startup configuration
 
@@ -109,6 +109,6 @@ systemctl enable bluetooth
 systemctl start bluetooth
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - pi-btnap](https://github.com/bablokb/pi-btnap)

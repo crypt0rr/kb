@@ -15,13 +15,13 @@ Administration tool for IPv4 packet filtering and NAT. Is used to set up, mainta
 
 Each chain is a list of rules which can match a set of packets. Each rule specifies what to do with a packet that matches. This is called a 'target', which may be a jump to a user-defined chain in the same table.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install iptables
 ```
 
-### Usage
+## Usage
 
 ```plain
 iptables -[ACD] chain rule-specification [options]
@@ -36,7 +36,7 @@ iptables -P chain target [options]
 iptables -h (print this help information)
 ```
 
-### Flags
+## Flags
 
 ```plain
 iptables v1.8.8 (nf_tables)
@@ -98,9 +98,9 @@ Options:
 [!] --version   -V              print package version.
 ```
 
-### Examples
+## Examples
 
-#### List default/current policy
+### List default/current policy
 
 ```plain
 sudo iptables -L
@@ -115,7 +115,7 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination 
 ```
 
-#### Accept traffic from specific IP Address
+### Accept traffic from specific IP Address
 
 ```plain
 $ sudo iptables -A INPUT -s 10.10.20.241 -j ACCEPT
@@ -133,7 +133,7 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination   
 ```
 
-#### Drop traffic to a specific DNS destination
+### Drop traffic to a specific DNS destination
 
 **Note** iptables will do a DNS lookup only at the time of the creation of the rule. If the IP address changes, the rule will become ineffective. For this reason, it is preferable to use the IP address of the domain.
 
@@ -155,14 +155,14 @@ DROP       tcp  --  anywhere             s3-console-us-standard.console.aws.amaz
 DROP       tcp  --  anywhere             54.239.28.85 
 ```
 
-#### Block / Accept traffic on specific port(s)
+### Block / Accept traffic on specific port(s)
 
 ```plain
 sudo iptables -A OUTPUT -p tcp --dport 80 -j DROP
 sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - iptables](https://linux.die.net/man/8/iptables)
 * [Wikipedia.org - iptables](https://en.wikipedia.org/wiki/Iptables)

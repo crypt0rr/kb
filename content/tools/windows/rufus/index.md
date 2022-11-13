@@ -13,14 +13,14 @@ weight : 0
 
 Create bootable USB drives the easy way.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/pbatard/rufus/releases/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Rufus.ie](https://rufus.ie/)

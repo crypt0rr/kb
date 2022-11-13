@@ -13,11 +13,11 @@ weight : 0
 
 World's Most Trusted Open Source Firewall.
 
-### Installation
+## Installation
 
 Download newest release from [pfSense.com](https://www.pfsense.org/download/)
 
-### URL list
+## URL List
 
 * [pfSense.org](https://www.pfsense.org/)
 * [GitHub.com - pfSense](https://github.com/pfsense/pfsense)

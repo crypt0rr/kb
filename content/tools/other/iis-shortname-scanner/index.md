@@ -17,19 +17,19 @@ Scanner for IIS Tilde vulnerability.
 
 Also check [tilde_enum]({{< ref "tilde-enum" >}}).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/irsdl/IIS-ShortName-Scanner.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 java -jar iis_shortname_scanner.jar 2 20 <url>
 ```
 
-### Flags
+## Flags
 
 ```plain
 USAGE 1 (To verify if the target is vulnerable with the default config file):
@@ -73,7 +73,7 @@ DETAILS:
  java -jar IIS_shortname_scanner.jar 2 20 http://example.com/folder/ newconfig.xml
 ```
 
-### Examples
+## Examples
 
 ```plain
 java -jar iis_shortname_scanner.jar 2 20 <target>
@@ -149,7 +149,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\NtfsDisable8dot3N
 Change value from 0 to 1
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - IIS Shortname Scanner](https://github.com/irsdl/IIS-ShortName-Scanner)
 * [Microsoft.com - How to disable 8.3 file name creation on NTFS partitions](https://support.microsoft.com/en-us/help/121007/how-to-disable-8-3-file-name-creation-on-ntfs-partitions)

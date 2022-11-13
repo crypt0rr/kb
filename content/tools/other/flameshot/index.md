@@ -13,19 +13,19 @@ weight : 0
 
 Powerful yet simple-to-use screenshot software.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install flameshot
 ```
 
-### Usage
+## Usage
 
 ```plain
 flameshot [flameshot-options] [arguments]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: flameshot [flameshot-options] [arguments]
@@ -42,12 +42,12 @@ Arguments:
   config         Configure flameshot.
 ```
 
-### Examples
+## Examples
 
-#### Bind flameshot under 'prtcs' button
+### Bind flameshot under 'prtcs' button
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - Flameshot](https://github.com/flameshot-org/flameshot)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Ls
 
-### Usage
+## Usage
 
 ```plain
 ls [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -137,9 +137,9 @@ Full documentation at: <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'
 ```
 
-### Examples
+## Examples
 
-#### Show items in current directory
+### Show items in current directory
 
 ```plain
 $ ls
@@ -147,7 +147,7 @@ $ ls
 ls1  ls2  ls3  lsfile1  lsfile2  lsfile3
 ```
 
-#### List all items in current directory, human readable format
+### List all items in current directory, human readable format
 
 ```plain
 $ ls -lh
@@ -161,7 +161,7 @@ drwxr-xr-x 2 b b 4,0K apr  7 14:49 ls3
 -rw-r--r-- 1 b b   20 apr  7 14:49 lsfile3
 ```
 
-#### List only files starting with prefix in human readable format
+### List only files starting with prefix in human readable format
 
 ```plain
 $ ls -lh lsfile*
@@ -170,7 +170,7 @@ $ ls -lh lsfile*
 -rw-r--r-- 1 b b 20 apr  7 14:49 lsfile3
 ```
 
-#### Count amount of files in directory
+### Count amount of files in directory
 
 ```plain
 $ ls -l Desktop | egrep -c '^-'
@@ -178,6 +178,6 @@ $ ls -l Desktop | egrep -c '^-'
 10
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/ls)

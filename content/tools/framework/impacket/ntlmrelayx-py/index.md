@@ -13,11 +13,11 @@ weight : 0
 
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip INTERFACE_IP] [--no-smb-server] [--no-http-server] [--no-wcf-server] [--no-raw-server] [--smb-port SMB_PORT] [--http-port HTTP_PORT]
@@ -29,7 +29,7 @@ ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip I
                      [--pfx-password PFX_PASSWORD] [--export-type {PEM, PFX}] [--cert-outfile-path CERT_OUTFILE_PATH]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
@@ -147,7 +147,7 @@ Shadow Credentials attack options:
                         filename to store the generated self-signed PEM or PFX certificate and key
 ```
 
-### Examples
+## Examples
 
 For every connection received, this module will try to relay that connection
 to specified target(s) system or (by default) the original client
@@ -171,7 +171,7 @@ $ sudo python3 Responder.py -I enp0s31f6
 [...]
 ```
 
-#### Default config
+### Default config
 
 By default NTLMrelayx.py relays to the client who sends the hash, dumping SAM. It's recommended to use `-socks` so if authentication was succesful a socks connection is set up. This way you can use tooling thru for example ProxyChains.
 
@@ -188,7 +188,7 @@ Impacket v0.9.22.dev1+20200924.183326.65cf657f - Copyright 2020 SecureAuth Corpo
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 ```
 
-#### Targeted SMB
+### Targeted SMB
 
 Start ntlmrelayx.py with the target system in place.
 
@@ -208,7 +208,7 @@ Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9e
 [...]
 ```
 
-#### Generate targetlist and attack
+### Generate targetlist and attack
 
 To use NTLMrelayx.py with a list of targets you want to relay to, first generate a list with [CrackMapExec]({{< ref "tools/framework/crackmapexec" >}}) by using the command below.
 
@@ -218,7 +218,7 @@ crackmapexec smb 192.168.10.0/24 --gen-relay-list targetlist
 
 Then you can use the `-tf` flag with NTLMrelayx.py to use the targetlist created as input file.
 
-#### SOCKS
+### SOCKS
 
 As described it is recommended to use `-socks` so if authentication was successful a socks connection is set up. This way you can use tooling thru for example ProxyChains.
 
@@ -230,6 +230,6 @@ SMB         10.10.10.1      OFFSEC/JOHNDO       TRUE            445
 SMB         10.10.10.2      OFFSEC/JOHNDO       FALSE           445
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

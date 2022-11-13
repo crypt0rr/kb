@@ -13,19 +13,19 @@ weight : 0
 
 Tired of going to every website to crack your hash? Search-That-Hash automates this process in less than 2 seconds. Search-That-Hash searches the most popular hash cracking sites and automatically inputs your hash(s) for cracking.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install search-that-hash && sth
 ```
 
-### Usage
+## Usage
 
 ```plain
 sth [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   Search-That-Hash - The fastest way to crack any hash.
@@ -57,9 +57,9 @@ Options:
 
 ```
 
-### Examples
+## Examples
 
-#### Searching NTLM hash
+### Searching NTLM hash
 
 ```plain
 $ sth -t 'b6adc1c00024a2e4456de1e3d065af41'
@@ -81,6 +81,6 @@ b6adc1c00024a2e4456de1e3d065af41
 Text : Welcome0
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Search That Hash](https://github.com/HashPals/Search-That-Hash)

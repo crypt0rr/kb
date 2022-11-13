@@ -15,19 +15,19 @@ Enum4linux is a tool for enumerating information from Windows and Samba systems.
 
 It is written in PERL and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup. The samba package is therefore a dependency.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install enum4linux
 ```
 
-### Usage
+## Usage
 
 ```plain
 enum4linux [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 enum4linux v0.9.1 (http://labs.portcullis.co.uk/application/enum4linux/)
@@ -84,7 +84,7 @@ smbclient.  Polenum from http://labs.portcullis.co.uk/application/polenum/
 is required to get Password Policy info.
 ```
 
-### Examples
+## Examples
 
 ```plain
 root@kali:~# enum4linux -U -o 192.168.1.200
@@ -106,7 +106,7 @@ Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
 [+] Got domain/workgroup name: KALI
 ```
 
-### URL list
+## URL List
 
 * [Kali.org - enum4linux](https://www.kali.org/tools/enum4linux/)
 * [Gitlab.com - enum4linux](https://gitlab.com/kalilinux/packages/enum4linux)

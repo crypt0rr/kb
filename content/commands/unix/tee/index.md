@@ -11,13 +11,13 @@ weight : 0
 
 ## Tee
 
-### Usage
+## Usage
 
 ```plain
 tee [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: tee [OPTION]... [FILE]...
@@ -45,7 +45,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/tee>
 or available locally via: info '(coreutils) tee invocation'
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ cat testfile.txt | tee output.txt
@@ -59,7 +59,7 @@ $ cat testfile.txt | tee output.txt &>/dev/null
 <nothing-shown>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/tee)
 * [GNU.org](https://www.gnu.org/software/coreutils/tee)

@@ -13,19 +13,19 @@ weight : 0
 
 Scan and decode bar codes (QR) from one or more image files.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt-get install zbar-tools
 ```
 
-### Usage
+## Usage
 
 ```plain
 zbarimg [options] <image>...
 ```
 
-### Flags
+## Flags
 
 ```plain
 scan and decode bar codes from one or more image files
@@ -47,15 +47,15 @@ options:
     --nodbus        disable dbus message
 ```
 
-### Examples
+## Examples
 
-#### Read QR code from file
+### Read QR code from file
 
 ```plain
 $ zbarimg QRCTF.png 
 QR-Code:https://soundcloud.com/user-86667759/thm-ctf-vol1
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - zbarimg](https://linux.die.net/man/1/zbarimg)

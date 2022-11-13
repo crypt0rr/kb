@@ -17,7 +17,7 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 
 ### Features
 
-#### Authentication
+### Authentication
 
 * Username & Password
 * Public Key Infrastructure (PKI) & PKCS#12
@@ -27,7 +27,7 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 * One Time Password (OTP)
 * Dynamic & Static Two Factor
 
-#### Network
+### Network
 
 * Simultaneous Connections
 * Full & Split DNS Modes
@@ -39,7 +39,7 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 * Powerful Traffic Routing Options
 * Intelligent Server Selection & Fallback
 
-#### Interface
+### Interface
 
 * Powerful Connection Editor
 * Traffic Graph & Statistics
@@ -49,7 +49,7 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 * Connection Folders & Shared Credentials
 * OpenVPN Version Selection
 
-#### Performance & Integration
+### Performance & Integration
 
 * Native Implementation for Each Platform
 * Low CPU & Memory Usage
@@ -59,21 +59,21 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 * Automatically Reconnect on Network Availability
 * Automatically Disable Time Machine Backups
 
-#### Security
+### Security
 
 * Latest Cipher & Digest Support
 * Sandboxed OpenVPN & Scripts
 * Keychain & Windows Password Store Integration
 * IPv6 Leak Protection
 
-#### Enterprise
+### Enterprise
 
 * Bundling Connections & Preferences
 * GPO Group Policy Deployment
 * Connection Importing & Exporting
 * Admin Rights Not Required for User Operation
 
-#### Advanced
+### Advanced
 
 * Conditional Connections
 * Control Viscosity using AppleScript
@@ -81,11 +81,11 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 * Run Scripts on Connection Events
 * Advanced Configuration Commands
 
-### Installation
+## Installation
 
 Download newest release from [sparklabs.com](https://www.sparklabs.com/viscosity/)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -93,7 +93,7 @@ Download newest release from [sparklabs.com](https://www.sparklabs.com/viscosity
 ![Example](images/example4.png)
 ![Example](images/example5.png)
 
-#### Powerful Connections
+### Powerful Connections
 
 Viscosity is a first class VPN client, providing everything you need to establish fast and secure OpenVPN connections on both macOS and Windows.
 
@@ -101,7 +101,7 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 
 ![Example](images/menu.png)
 
-#### Stay Informed
+### Stay Informed
 
 Viscosity has a clear and intuitive interface for monitoring your VPN connections. Whether you simply want a quick overview of your OpenVPN connections, or want to drill down to the technical network and encryption details, Viscosity has you covered.
 
@@ -109,7 +109,7 @@ Viscosity's unobtrusive main menu provides an instant overview of your VPN conne
 
 ![Example](images/details.png)
 
-#### Intuitive Editor
+### Intuitive Editor
 
 Viscosity takes the complexity out of editing VPN connections, while also adding a lot of power at your fingertips. Viscosity's connection editor makes it easy to configure new VPN connections from scratch or edit existing ones. All without needing to know complex commands.
 
@@ -117,6 +117,6 @@ Easily configure everything from network settings to complex multi-factor authen
 
 ![Example](images/editor.png)
 
-### URL list
+## URL List
 
 * [Sparklabs.com - Viscosity](https://www.sparklabs.com/viscosity/)

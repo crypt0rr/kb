@@ -15,7 +15,7 @@ DalFox is an powerful open source XSS scanning tool and parameter analyzer and u
 
 I talk about naming. Dal([달](https://en.wiktionary.org/wiki/%EB%8B%AC)) is the Korean pronunciation of moon, and Fox are made to mean "Finder Of XSS" or 🦊
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/hahwul/dalfox
@@ -23,14 +23,14 @@ go install
 ~/go/bin/dalfox
 ```
 
-### Usage
+## Usage
 
 ```plain
 dalfox [flags]
 dalfox [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Available Commands:
@@ -114,7 +114,7 @@ Flags:
 Use "dalfox [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ dalfox url http://testphp.vulnweb.com/listproducts.php\?cat\=123\&artist\=123\&asdf\=ff
@@ -147,6 +147,6 @@ Finder Of XSS and Dal is the Korean pronunciation of moon. @hahwul
 [*] Finish :D
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - dalfox](https://github.com/hahwul/dalfox)

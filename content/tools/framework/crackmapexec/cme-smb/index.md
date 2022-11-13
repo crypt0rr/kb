@@ -11,11 +11,11 @@ tags : ['Framework', 'SMB']
 
 ## CrackMapExec - SMB
 
-### Installation
+## Installation
 
 Install the [CrackMapExec]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 cme smb [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
@@ -29,7 +29,7 @@ cme smb [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWO
                [target ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -205,7 +205,7 @@ For local authentication, add the `--local-auth` flag to the command.
 cme smb <target> -u <user> -p <password> --ntds
 ```
 
-#### Dump NTDS history
+### Dump NTDS history
 
 ```plain
 cme smb <target> -u <user> -p <password> --ntds-history
@@ -474,6 +474,6 @@ MASKY   10.10.10.8  445     ADCS01          offsec\administrator 97f2592347d8fbe
 MASKY   10.10.10.8  445     ADCS01          [+] 2 NT hash(es) successfully collected
 ```
 
-### URL list
+## URL List
 
 * [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)

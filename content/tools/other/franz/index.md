@@ -13,15 +13,15 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 Messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/meetfranz/franz/releases)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Meetfranz.com](https://meetfranz.com/)
 * [GitHub.com - franz](https://github.com/meetfranz/franz)

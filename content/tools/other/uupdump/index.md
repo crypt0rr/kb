@@ -15,9 +15,9 @@ Download UUP files from Windows Update servers with ease - Create Windows ISO as
 
 [UUPdump.net](https://uupdump.net/)
 
-### Installation
+## Installation
 
-#### Linux (Debian)
+### Linux (Debian)
 
 Please install [Aria2]({{< ref "aria2" >}}).
 
@@ -25,14 +25,14 @@ Please install [Aria2]({{< ref "aria2" >}}).
 sudo apt-get install cabextract wimtools chntpw genisoimage
 ```
 
-#### Apple Silicon
+### Apple Silicon
 
 ```plain
 brew tap minacle/chntpw
 brew install aria2 cabextract wimlib cdrtools minacle/chntpw/chntpw
 ```
 
-### Usage
+## Usage
 
 Select the right package you want to download on [UUPdump.net](https://uupdump.net/known.php)
 
@@ -42,9 +42,9 @@ Select the right package you want to download on [UUPdump.net](https://uupdump.n
 ![Example](images/example4.png)
 ![Example](images/example5.png)
 
-### Examples
+## Examples
 
-#### Linux
+### Linux
 
 Extract the package just downloaded with the options you want.
 
@@ -70,7 +70,7 @@ Max brk space used d5000
 Done.
 ```
 
-#### macOS
+### macOS
 
 Extract the package just downloaded with the options you want.
 
@@ -97,7 +97,7 @@ Max brk space used 0
 Done.
 ```
 
-### URL list
+## URL List
 
 * [UUPdump.net](https://uupdump.net/)
 * [Github.com - UUP dump](https://github.com/uup-dump)

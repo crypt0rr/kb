@@ -11,13 +11,13 @@ weight: 0
 
 ## Chage
 
-### Usage
+## Usage
 
 ```plain
 chage [options] LOGIN
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -35,9 +35,9 @@ Options:
   -W, --warndays WARN_DAYS      set expiration warning days to WARN_DAYS
 ```
 
-### Examples
+## Examples
 
-#### Show password information
+### Show password information
 
 ```plain
 $ chage -l b
@@ -50,7 +50,7 @@ Maximum number of days between password change    : 99999
 Number of days of warning before password expires : 7
 ```
 
-### URL list
+## URL List
 
 - [Linux.die.net](https://linux.die.net/man/1/chage)
 - [Man7.org](http://man7.org/linux/man-pages/man1/chage.1.html)

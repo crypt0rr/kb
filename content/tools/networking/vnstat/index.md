@@ -13,19 +13,19 @@ weight : 0
 
 A console-based network traffic monitor.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install vnstat
 ```
 
-### Usage
+## Usage
 
 Default configuration will enable service and log all network interfaces.
 
 Check for configuration and usage [Cyberciti.biz](https://www.cyberciti.biz/faq/ubuntu-install-vnstat-console-network-traffic-monitor/)
 
-### Flags
+## Flags
 
 ```plain
 vnStat 2.6 by Teemu Toivola <tst at iki dot fi>
@@ -72,7 +72,7 @@ Misc:
 See also "man vnstat" for longer descriptions of each option.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ vnstat
@@ -109,6 +109,6 @@ Database updated: 2020-09-06 14:35:00
 
 ```
 
-### URL list
+## URL List
 
 * [Cyberciti.biz - Ubuntu install vnstat console network traffic monitor](https://www.cyberciti.biz/faq/ubuntu-install-vnstat-console-network-traffic-monitor/)

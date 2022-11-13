@@ -13,19 +13,19 @@ weight : 0
 
 Probe for hardware.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install hwinfo
 ```
 
-### Usage
+## Usage
 
 ```plain
 hwinfo [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -79,9 +79,9 @@ Options:
         Print usage.
 ```
 
-### Examples
+## Examples
 
-#### Short overview of hardware
+### Short overview of hardware
 
 ```plain
 $ hwinfo --short
@@ -128,7 +128,7 @@ disk:
 [...]
 ```
 
-#### Show specific device info
+### Show specific device info
 
 ```plain
 $ hwinfo --cpu --short
@@ -144,6 +144,6 @@ cpu:
                        Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz, 3080 MHz
 ```
 
-### URL list
+## URL List
 
 * [Linuxintro.org - hwinfo](http://www.linuxintro.org/wiki/Hwinfo)

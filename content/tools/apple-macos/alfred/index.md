@@ -13,11 +13,11 @@ weight : 0
 
 Boosts your efficiency with hotkeys, keywords, text expansion and more.
 
-### Installation
+## Installation
 
 Download newest release from [alfredapp.com](https://www.alfredapp.com/)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)

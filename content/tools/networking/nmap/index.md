@@ -15,7 +15,7 @@ Network exploration tool and security / port scanner.
 
 **NOTE:** The preferred way of using nmap should be SYN mode. This is stealth mode, since this mode (TCP) will not complete the three-way handshake, the port scan is not passed to the application layer. (`sudo nmap -sS`)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/nmap/nmap.git
@@ -28,13 +28,13 @@ sudo make
 sudo make install
 ```
 
-### Usage
+## Usage
 
 ```plain
 nmap [Scan Type(s)] [Options] {target specification}
 ```
 
-### Flags
+## Flags
 
 ```plain
 Nmap 7.93 ( https://nmap.org )
@@ -153,7 +153,7 @@ EXAMPLES:
 SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
 ```
 
-### Examples
+## Examples
 
 Scan ports on target system
 
@@ -175,7 +175,7 @@ nmap -p- <target>
 
 ### Specific scan scripts
 
-#### Dynamic DNS server record injection
+### Dynamic DNS server record injection
 
 ```plain
 sudo nmap -sU -p 53 --script=dns-update --script-args=dns-update.hostname=<subdomain>.<client-domain>,dns-update.ip=192.0.2.1 <target>
@@ -195,115 +195,115 @@ Delete record
     sudo nmap -sU -p 53 --script=dns-update-delete --script-args=dns-update.hostname=<subdomain>.<client-domain>,dns-update.ip=192.0.2.1 <target>
 ```
 
-#### FTP Anonymous login
+### FTP Anonymous login
 
 ```plain
 nmap -p21 -oA ftp_test --script ftp-anon <target>
 ```
 
-#### MS17-010 Eternalblue
+### MS17-010 Eternalblue
 
 ```plain
 nmap -p445 --script smb-vuln-ms17-010 --open -Pn <target>
 ```
 
-#### RDP Security
+### RDP Security
 
 ```plain
 nmap -p3389 --script rdp-enum-encryption <target>
 ```
 
-#### rsync list modules
+### rsync list modules
 
 ```plain
 nmap -p873 --script rsync-list-modules <target>
 ```
 
-#### SMB signing
+### SMB signing
 
 ```plain
 nmap -p445 --script smb-security-mode <target>
 ```
 
-#### SMBv2 signing
+### SMBv2 signing
 
 ```plain
 nmap -p445 --script smb2-security-mode <target>
 ```
 
-#### SMB security + protocols
+### SMB security + protocols
 
 ```plain
 nmap -p445 --script smb-security-mode,smb-protocols <target>
 ```
 
-#### SMB OS Discovery
+### SMB OS Discovery
 
 ```plain
 nmap -p445 --script smb-os-discovery <target>
 ```
 
-#### SMB share enumeration
+### SMB share enumeration
 
 ```plain
 nmap -p445 --script=smb-enum-shares.nse,smb-enum-users.nse <target>
 ```
 
-#### IIS Tilde
+### IIS Tilde
 
 ```plain
 nmap -p80,443 --script http-iis-short-name-brute <target>
 ```
 
-#### NTLM challenger
+### NTLM challenger
 
 ```plain
 nmap --script http-ntlm-info <target>
 ```
 
-#### SSH hostkey reuse
+### SSH hostkey reuse
 
 ```plain
 nmap -p22 --script ssh-hostkey <target>
 ```
 
-#### MS-SQL version
+### MS-SQL version
 
 ```plain
 nmap -p1433 --script ms-sql-info,ms-sql-ntlm-info <target>
 ```
 
-#### SSH authentication methods
+### SSH authentication methods
 
 ```plain
 nmap -p22 --script ssh-auth-methods <target>
 ```
 
-#### TFTP enum
+### TFTP enum
 
 ```plain
 sudo nmap -p69 -sU -Pn --script tftp-enum <target>
 ```
 
-#### VNC authentication
+### VNC authentication
 
 ```plain
 nmap -Pn -p5900 --script vnc-info <target>
 ```
 
-#### Vmware ESXi version
+### Vmware ESXi version
 
 ```plain
 nmap -p443 --script vmware-version <target>
 ```
 
-#### NTP information
+### NTP information
 
 ```plain
 nmap -sU -p 123 --script ntp-info <target>
 ```
 
-#### SMTP
+### SMTP
 
 Commands supported.
 
@@ -317,31 +317,31 @@ Open Relay checking.
 nmap --script smtp-open-relay.nse [--script-args smtp-open-relay.domain=<domain>,smtp-open-relay.ip=<address>,...] -p 25,465,587 <host>
 ```
 
-#### LDAP anonymous bind
+### LDAP anonymous bind
 
 ```plain
 nmap -p 389 --script ldap-search --script-args 'ldap.qfilter=users,ldap.attrib=sAMAccountName' <target>
 ```
 
-#### Modbus protocol
+### Modbus protocol
 
 ```plain
 nmap -p502 --script modbus-discover <target>
 ```
 
-#### XMPP
+### XMPP
 
 ```plain
 nmap -p5222 --script xmpp-info <target>
 ```
 
-#### AMQP
+### AMQP
 
 ```plain
 nmap -p5672 --script amqp-info <target>
 ```
 
-#### WinRM detection
+### WinRM detection
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(nse)"/%}}
 [Github.com - winRM.nse](https://github.com/RicterZ/My-NSE-Scripts/blob/master/scripts/winrm.nse)
@@ -350,13 +350,13 @@ nmap -p5672 --script amqp-info <target>
 nmap -p5985 -Pn -n -sV -v --script=winrm.nse <target>
 ```
 
-#### MSRPC
+### MSRPC
 
 ```plain
 nmap -Pn --script=msrpc-enum
 ```
 
-#### Elasticsearch NSE
+### Elasticsearch NSE
 
 NSE script for enumerating indices, plugins and cluster nodes on an elasticsearch target
 
@@ -371,19 +371,19 @@ cp nmap-elasticsearch-nse/elasticsearch.nse /usr/share/nmap/scripts/
 nmap --script=elasticsearch <target>
 ```
 
-#### X11 access check
+### X11 access check
 
 ```plain
 nmap -p6000 --script x11-access <target>
 ```
 
-#### DNS Server Zone Transfer Information Disclosure (AXFR)
+### DNS Server Zone Transfer Information Disclosure (AXFR)
 
 ```plain
 nmap -p53 --script dns-zone-transfer <target>
 ```
 
-#### Check for vulnerabilities
+### Check for vulnerabilities
 
 ```plain
 nmap --script vuln <target>
@@ -395,7 +395,7 @@ nmap --script vuln <target>
 /usr/share/nmap/scripts
 ```
 
-### URL list
+## URL List
 
 * [Nmap.org](https://nmap.org/)
 * [Github.com - nmap](https://github.com/nmap/nmap)

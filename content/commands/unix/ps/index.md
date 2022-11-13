@@ -13,19 +13,19 @@ weight : 0
 
 Displays information about a selection of the active processes.
 
-### Usage
+## Usage
 
 ```plain
 ps [options]
 ```
 
-### Flags
+## Flags
 
 Please check [linux.die.net - ps](https://linux.die.net/man/1/ps)
 
-### Examples
+## Examples
 
-#### List all processes running in full format
+### List all processes running in full format
 
 The `-ef` options we used above stand for:
 
@@ -52,7 +52,7 @@ root          14       2  0 17:05 ?        00:00:00 [migration/0]
 [...]
 ```
 
-#### Search specific process by  name
+### Search specific process by  name
 
 `e` is replaced by `C` so the command name can be searched instead of all processes.
 
@@ -64,7 +64,7 @@ UID          PID    PPID  C STIME TTY          TIME CMD
 crypt0rr    2228     934  2 17:07 ?        00:00:00 /usr/bin/gedit --gapplication-service
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - ps](https://linux.die.net/man/1/ps)
 * [Askubuntu.com - What is the difference between standard syntax and BSD syntax?](https://askubuntu.com/questions/484982/what-is-the-difference-between-standard-syntax-and-bsd-syntax)

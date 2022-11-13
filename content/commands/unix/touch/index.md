@@ -11,13 +11,13 @@ weight : 0
 
 ## Touch
 
-### Usage
+## Usage
 
 ```plain
 touch [OPTION]... FILE...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Update the access and modification times of each FILE to the current time.
@@ -52,26 +52,26 @@ Full documentation at: <https://www.gnu.org/software/coreutils/touch>
 or available locally via: info '(coreutils) touch invocation'
 ```
 
-### Examples
+## Examples
 
-#### Create non-existing file
+### Create non-existing file
 
 ```plain
 touch <filename>
 ```
 
-#### Change complete timestamp of file
+### Change complete timestamp of file
 
 ```plain
 touch -d '1 January 1970 00:01' <filename>
 ```
 
-#### Change time of timestamp of file
+### Change time of timestamp of file
 
 ```plain
 touch -d '13:37' <filename>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/touch)

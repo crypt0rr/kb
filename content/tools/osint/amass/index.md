@@ -13,7 +13,7 @@ tags : ['OSINT', 'DNS', 'WhoIS']
 
 In-depth Attack Surface Mapping and Asset Discovery.
 
-### Installation
+## Installation
 
 Snapcraft
 
@@ -27,13 +27,13 @@ Docker
 docker build -t amass https://github.com/OWASP/Amass.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 amass intel|enum|viz|track|db [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: amass intel|enum|viz|track|db [options]
@@ -62,7 +62,7 @@ https://github.com/OWASP/Amass/blob/master/examples/config.ini
 
 ### Amass Intel
 
-#### Reverse whois
+### Reverse whois
 
 This method is invoked using the -whois flag. Essentially it takes the details from the specified domain's whois records, and then tries to find other domains with similar whois records.
 
@@ -85,7 +85,7 @@ appsecnorthamerica.org
 [...]
 ```
 
-#### SSL Certificate Grabbing
+### SSL Certificate Grabbing
 
 If you feed IP addresses to Amass and give it the -active flag, it pulls the SSL certificate from every IP address within the IP range and then spits back the domain that the SSL cert is associated with. For example, running it on a well known Paypal-owned CIDR range:
 
@@ -104,7 +104,7 @@ paypal.at
 [...]
 ```
 
-#### Using ASNs (Autonomous System Number)
+### Using ASNs (Autonomous System Number)
 
 ```plain
 $ amass intel -org "Tesla"
@@ -125,7 +125,7 @@ solarcity.com
 
 I'm not sure about zip.zayo.com, but the other domains look like they're probably owned by Tesla. So now we have 4 root domains to investigate. Nice!
 
-#### Putting Amass intel techniques together recursively
+### Putting Amass intel techniques together recursively
 
 Amass works recursively. It will take the results that it gets from one method, and feed it into the other method. It will continue to do this until no new results are returned. So, for example, we can do this:
 
@@ -185,7 +185,7 @@ ASN: 15133 - EDGECAST - MCI Communications Services, Inc. d/b/a Verizon Business
       93.184.216.0/24         2    Subdomain Name(s)
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Amass](https://github.com/OWASP/Amass)
 * [Medium.com - Guide to amass how to use amass more effectively](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)

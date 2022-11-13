@@ -11,7 +11,7 @@ weight : 0
 
 ## Ln - make links between files
 
-### Usage
+## Usage
 
 ```plain
 Usage: ln [OPTION]... [-T] TARGET LINK_NAME
@@ -24,7 +24,7 @@ In the 2nd form, create a link to TARGET in the current directory.
 In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.
 ```
 
-### Flags
+## Flags
 
 ```plain
 Create hard links by default, symbolic links with --symbolic.
@@ -72,9 +72,9 @@ Full documentation at: <https://www.gnu.org/software/coreutils/ln>
 or available locally via: info '(coreutils) ln invocation'
 ```
 
-### Examples
+## Examples
 
-#### Make symbolic link
+### Make symbolic link
 
 Symbolic links are essentially shortcuts that reference to a file instead of its inode value. This method can be applied to directories and can reference across different hard disks/volumes. Since the symbolic link is referring to the original file and not its inode value, then replacing the original file into a different folder will break the symbolic link, or create a dangling link.
 
@@ -93,7 +93,7 @@ $ ll sym-link-test
 lrwxrwxrwx 1 johndo johndo 5 Mar 17 11:47 sym-link-test -> file1
 ```
 
-#### Hardlink
+### Hardlink
 
 A hard link is a direct reference to a file via its inode. You can also only hardlink files and not directories. By using a hardlink, you can change the original file's contents or location and the hardlink will still point to the original file because its inode is still pointing to that file. There is no referencing to the original file. In addition, hardlinks can only refer to files within the same volume otherwise symbolic links will be needed.
 
@@ -112,7 +112,7 @@ $ ll hardlink-test
 -rw-rw-r-- 2 b b 10 Mar 17 11:39 hardlink-test
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - ln](https://linux.die.net/man/1/ln)
 * [Medium.com - Hard links and Symbolic links — A comparison](https://medium.com/@307/hard-links-and-symbolic-links-a-comparison-7f2b56864cdd)

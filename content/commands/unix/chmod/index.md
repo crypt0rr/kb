@@ -11,13 +11,13 @@ weight: 0
 
 ## Chmod
 
-### Usage
+## Usage
 
 ```plain
 chmod [OPTION]... MODE[,MODE]... FILE...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: chmod [OPTION]... MODE[,MODE]... FILE...
@@ -43,7 +43,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/chmod>
 or available locally via: info '(coreutils) chmod invocation'
 ```
 
-### Examples
+## Examples
 
 Change permissions of 'testfile.txt'
 
@@ -81,6 +81,6 @@ $ ll testfile.txt
 -r-x------ 1 b b 72 mrt  9 20:53 testfile.txt
 ```
 
-### URL list
+## URL List
 
 - [GNU.org](https://www.gnu.org/software/coreutils/chmod)

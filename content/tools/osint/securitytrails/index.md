@@ -15,7 +15,7 @@ Search Internet Assets Accurately & Instantly.
 
 [Securitytrails.com](https://securitytrails.com/)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
@@ -24,7 +24,7 @@ Search Internet Assets Accurately & Instantly.
 
 Read the docs <https://docs.securitytrails.com/>
 
-#### Gather subdomains
+### Gather subdomains
 
 ```plain
 curl --request GET \
@@ -33,6 +33,6 @@ curl --request GET \
   --header 'Accept: application/json'
 ```
 
-### URL list
+## URL List
 
 * [Securitytrails.com](https://securitytrails.com/)

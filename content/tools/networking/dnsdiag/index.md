@@ -35,9 +35,9 @@ choose the best DNS forwarder for your network, `dnseval` lets you compare
 different DNS servers from performance (latency) and reliability (loss) point
 of view.
 
-### Installation
+## Installation
 
-#### Source Code
+### Source Code
 
 Check out the [git repository](https://github.com/farrokhi/dnsdiag) and install dependencies:
 
@@ -47,7 +47,7 @@ cd dnsdiag
 python3 -m pip install -r requirements.txt
 ```
 
-#### pip3
+### pip3
 
 You can alternatively install the package using pip:
 
@@ -55,11 +55,11 @@ You can alternatively install the package using pip:
 python3 -m pip install dnsdiag
 ```
 
-#### Binary Package
+### Binary Package
 
 From time to time, binary packages will be released for Windows, Mac OS X and Linux. You can grab the latest release from [releases page](https://github.com/farrokhi/dnsdiag/releases).
 
-#### Docker
+### Docker
 
 If you don't want to install dnsdiags on your local machine, you may use the docker image and run programs in a container. For example:
 
@@ -175,6 +175,6 @@ server                   avg(ms)     min(ms)     max(ms)     stddev(ms)  lost(%)
 2620:fe::fe              21.177      6.723       80.046      30.062      %0       300        QR -- -- RD RA AD --   NOERROR
 ```
 
-### URL list
+## URL List
 
 * [Github.com - dnsdiag](https://github.com/farrokhi/dnsdiag)

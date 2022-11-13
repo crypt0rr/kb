@@ -15,7 +15,7 @@ WebProxy for analysis.
 
 Download newest release from [Portswigger.net](https://portswigger.net/burp/releases)
 
-### Installation
+## Installation
 
 ```plain
 chmod +x burpsuite_pro_*
@@ -46,7 +46,7 @@ Upload Scanner
 Wsdler
 ```
 
-### URL list
+## URL List
 
 * [PortSwigger.net](https://portswigger.net/)
 * [PortSwigger.net - Pentesting docs](https://portswigger.net/testers/penetration-testing-tools)

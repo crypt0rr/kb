@@ -27,19 +27,19 @@ A free utility designed to copy files faster and more secure. It can verify copi
 | Manage favorite folders                   |          | check        |
 | Export reports in HTML and CSV formats    |          | check        |
 
-### Installation
+## Installation
 
-#### Windows
+### Windows
 
 Download newest version from [codesector.com](https://www.codesector.com/teracopy)
 
-#### macOS
+### macOS
 
 Download newest version from [codesector.com](https://www.codesector.com/teracopy-for-mac)
 
-### Examples
+## Examples
 
-#### Be in control
+### Be in control
 
 In case of a copy error TeraCopy will try to recover. If unable to recover in the worst case scenario it will simply skip the problematic file, not terminating the entire transfer. It can also wait for network or device reconnection.
 
@@ -47,7 +47,7 @@ Unnecessary files can be skipped to reduce the transfer time. During the process
 
 ![Example](images/example1.png)
 
-#### File verification
+### File verification
 
 TeraCopy can verify files after they have been copied to ensure that they are identical. This is done by comparing hashes of source and target files.
 
@@ -55,18 +55,18 @@ Supported algorithms: CRC32, MD5, SHA-1, SHA-256, SHA-512, Panama, Tiger, RipeMD
 
 ![Example](images/example2.png)
 
-#### Confirm drag'n'drop
+### Confirm drag'n'drop
 
 TeraCopy can optionally show a confirmation dialog on every drag and drop operation. It can prevent you from moving folders accidentally from one location to another.
 
 ![Example](images/example3.png)
 
-#### Faster workflow
+### Faster workflow
 
 TeraCopy can keep history of recently used directories, as well as show folders which are open in Explorer and other file managers.
 
 ![Example](images/example4.png)
 
-### URL list
+## URL List
 
 * [Codesector.com - TeraCopy](https://www.codesector.com/teracopy)

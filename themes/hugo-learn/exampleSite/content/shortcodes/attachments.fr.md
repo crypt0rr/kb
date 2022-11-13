@@ -48,7 +48,7 @@ Par exemple:
 
 ### Exemples
 
-#### Lister les pièces jointes de type pdf ou mp4
+### Lister les pièces jointes de type pdf ou mp4
 
 
     {{%/*attachments title="Fichiers associés" pattern=".*\.(pdf|mp4)$"/*/%}}
@@ -57,7 +57,7 @@ s'affiche comme
 
 {{%attachments title="Fichiers associés" pattern=".*\.(pdf|mp4)$"/%}}
 
-#### Modifier le style
+### Modifier le style
 
     {{%/*attachments style="orange" /*/%}}
 

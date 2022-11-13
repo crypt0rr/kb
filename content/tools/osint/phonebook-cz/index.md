@@ -15,10 +15,10 @@ Phonebook lists all domains, email addresses, or URLs for the given input domain
 
 [Phonebook.cz](https://phonebook.cz/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Phonebook.cz](https://phonebook.cz/)

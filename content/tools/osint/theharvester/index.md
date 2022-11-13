@@ -13,7 +13,7 @@ tags : ['OSINT', 'DNS']
 
 theHarvester is used to gather open source intelligence (OSINT) on a company or domain.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/laramies/theHarvester.git
@@ -23,13 +23,13 @@ git clone https://github.com/laramies/theHarvester.git
 pip3 -r install requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 theHarvester [-h] -d DOMAIN [-l LIMIT] [-S START] [-p] [-s] [--screenshot SCREENSHOT] [-v] [-e DNS_SERVER] [-r] [-n] [-c] [-f FILENAME] [-b SOURCE]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -h, --help            show this help message and exit
@@ -57,7 +57,7 @@ theHarvester [-h] -d DOMAIN [-l LIMIT] [-S START] [-p] [-s] [--screenshot SCREEN
                         virustotal, yahoo, zoomeye
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ theHarvester -d example.com -b duckduckgo
@@ -88,7 +88,7 @@ $ theHarvester -d example.com -b duckduckgo
 www.example.com:93.184.216.34
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - theHarvester](https://github.com/laramies/theHarvester)
 * [Kali.org - theHarvester](https://tools.kali.org/information-gathering/theharvester)

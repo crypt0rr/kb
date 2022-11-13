@@ -13,7 +13,7 @@ weight : 0
 
 MASSCAN is a fast port scanner. The primary input parameters are the IP addresses/ranges you want to scan, and the port numbers. The program auto-detects network interface/adapter settings. If this fails, you'll have to set these manually. Parameters can be set either via the command-line or config-file. The names are the same for both. All single-dash parameters have a spelled out double-dash equivalent, so `-p80` is the same as `--ports 80` (or `ports = 80` in config file). To generate a config-file from the current settings, use the `--echo` option. This stops the program from actually running, and just echoes the current configuration instead. This is a useful way to generate your first config file, or see a list of parameters you didn't know about.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/robertdavidgraham/masscan
@@ -24,13 +24,13 @@ make
 brew install masscan
 ```
 
-### Usage
+## Usage
 
 ```plain
 masscan [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 masscan -p80,8000-8100 10.0.0.0/8 --rate=10000
@@ -43,7 +43,7 @@ masscan --open --banners --readscan <filename> -oX <savefile>
  read binary scan results in <filename> and save them as xml in <savefile>
 ```
 
-### Examples
+## Examples
 
 Scanning port 80 with a rate limit of 1000 packets/second. Default rate limit is 100.
 
@@ -55,7 +55,7 @@ Scanning 256 hosts [1 port/host]
 Discovered open port 80/tcp on 10.10.10.3 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - MASSCAN](https://github.com/robertdavidgraham/masscan)
 * [Kali.org - MASSCAN](https://www.kali.org/tools/masscan/)

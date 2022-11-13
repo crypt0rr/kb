@@ -15,7 +15,7 @@ Is a python tool to perform password spray attack in a Microsoft domain environm
 
 **RECOMMENDED** Use ldapdomaindump for creating a list of users
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/xFreed0m/RDPassSpray.git
@@ -24,14 +24,14 @@ python3 -m pip install -r requirements.txt
 sudo apt install freerdp2-x11
 ```
 
-### Usage
+## Usage
 
 ```plain
 RDPassSpray.py [-h] (-U USERLIST | -u USER  -p PASSWORD | -P PASSWORDLIST) (-T TARGETLIST | -t TARGET)
                [-s SLEEP | -r minimum_sleep maximum_sleep] [-d DOMAIN] [-n NAMES] [-o OUTPUT] [-V]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -61,9 +61,9 @@ optional arguments:
   -V, --verbose         Turn on verbosity to show failed attempts
 ```
 
-### Examples
+## Examples
 
-#### Single user password spray
+### Single user password spray
 
 ```plain
 $ python3 RDPassSpray.py -u johndo -p Welkom1234 -t 10.10.10.10
@@ -76,7 +76,7 @@ $ python3 RDPassSpray.py -u johndo -p Welkom1234 -t 10.10.10.10
 [06-08-2020 08:50] - [*] Finished running at: 06-08-2020 08:50:48
 ```
 
-#### Multiple targets password spray
+### Multiple targets password spray
 
 **RECOMMENDED** Use output to CSV, otherwise target IP is not shown afterwards
 
@@ -98,7 +98,7 @@ $ python3 RDPassSpray.py -u johndo -p Welkom1234 -T targetlist.txt -o ouptut.txt
 
 ![Example](images/example-1.png)
 
-#### Multiple users password spray
+### Multiple users password spray
 
 **Note** list of users can be easily created with ldapdomaindump tool
 
@@ -140,6 +140,6 @@ $ python3 RDPassSpray.py -U userlist.txt -p Welkom1234 -T targetlist.txt -o outp
 
 ![Example](images/example-2.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - RDPassSpray](https://github.com/xFreed0m/RDPassSpray)

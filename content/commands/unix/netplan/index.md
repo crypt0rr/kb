@@ -11,13 +11,13 @@ tags : ['Unix','Networking']
 
 ## Netplan
 
-### Usage
+## Usage
 
 ```plain
 usage: /usr/sbin/netplan  [-h] [--debug]  ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: /usr/sbin/netplan  [-h] [--debug]  ...
@@ -40,9 +40,9 @@ Available commands:
               automatic rollback
 ```
 
-### Examples
+## Examples
 
-#### Example config static IP
+### Example config static IP
 
 ```yaml
 network:
@@ -58,7 +58,7 @@ network:
                 - 9.9.9.9
 ```
 
-#### DHCP
+### DHCP
 
 ```yaml
 network:
@@ -69,7 +69,7 @@ network:
       dhcp4: true
 ```
 
-### URL list
+## URL List
 
 * [Netplan.io](https://netplan.io/)
 * [Netplan.io Examples](https://netplan.io/examples)

@@ -11,14 +11,14 @@ weight : 0
 
 ## Nbtstat - Displays protocol statistics and current TCP/IP connections using NBT (NetBIOS over TCP/IP)
 
-### Usage
+## Usage
 
 ```plain
 NBTSTAT [ [-a RemoteName] [-A IP address] [-c] [-n]
         [-r] [-R] [-RR] [-s] [-S] [interval] ]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -a   (adapter status) Lists the remote machine's name table given its name
@@ -42,7 +42,7 @@ NBTSTAT [ [-a RemoteName] [-A IP address] [-c] [-n]
 
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ nbtstat -A 10.10.10.11
@@ -61,6 +61,6 @@ Node IpAddress: [10.10.10.10] Scope Id: []
     MAC Address = 68-AA-CC-DD-EE-12
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat)

@@ -13,19 +13,19 @@ weight : 0
 
 Interactive process viewer.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install htop
 ```
 
-### Usage
+## Usage
 
 ```plain
 htop
 ```
 
-### Flags
+## Flags
 
 ```plain
 htop 2.2.0 - (C) 2004-2019 Hisham Muhammad
@@ -46,10 +46,10 @@ Press F1 inside htop for online help.
 See 'man htop' for more information.
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - htop](https://github.com/hishamhm/htop)

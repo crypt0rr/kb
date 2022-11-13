@@ -21,7 +21,7 @@ LDAP Password Hunter is a tool which wraps features of getTGT.py (Impacket) and 
 
 Results are way more clean than the previous version and organized in the SQL DB. The output shows the entries found only if they are not in DB, so new entries pop up but the overall outcome of the analysis is still saved in a file with a timestamp.
 
-### Installation
+## Installation
 
 Requirements
 
@@ -33,13 +33,13 @@ Requirements
 git clone https://github.com/oldboy21/LDAP-Password-Hunter.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./run.sh
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./run.sh       
@@ -51,6 +51,6 @@ Creating a TGT ticket for the user
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - LDAP Password Hunter](https://github.com/oldboy21/LDAP-Password-Hunter)

@@ -13,19 +13,19 @@ tags : ['Other', 'Git']
 
 Searches through git repositories for secrets, digging deep into commit history and branches. This is effective at finding secrets accidentally committed.
 
-### Installation
+## Installation
 
 ```plain
 pip install trufflehog3
 ```
 
-### Usage
+## Usage
 
 ```plain
 trufflehog3 [arguments] targets
 ```
 
-### Flags
+## Flags
 
 ```plain
 Find secrets in your codebase
@@ -74,7 +74,7 @@ version:
   3.0.3
 ```
 
-### Examples
+## Examples
 
 If ran locally just press 'enter' twice for username/password (leave blank).
 
@@ -82,12 +82,12 @@ If ran locally just press 'enter' twice for username/password (leave blank).
 trufflehog3 --format json --output report.json
 ```
 
-#### Create report from JSON
+### Create report from JSON
 
 ```plain
 trufflehog3 -R report.json > report.html
 ```
 
-### URL list
+## URL List
 
 * [Github.com - TruffleHog3](https://github.com/feeltheajf/truffleHog3)

@@ -107,6 +107,6 @@ For both `4771` and `4772` see the following Kerberos Failure Codes
 | OxC0000225  | Evidently a bug in Windows and not a risk                                                |
 | 0x000015b   | The user has not been granted the requested logon type (aka logon right) at this machine |
 
-### URL list
+## URL List
 
 * [Static.spiceworks.com](https://static.spiceworks.com/attachments/post/0014/9751/quickref.pdf)

@@ -19,13 +19,13 @@ A non-interactive network retriever
 
 * SHA256 'wget.exe' - `3d28e43da1d24dc517b4d570f7a8851fa2766caaad330001795b51191f2cc2f8`
 
-### Usage
+## Usage
 
 ```plain
 wget [OPTION]... [URL]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Mandatory arguments to long options are mandatory for short options too.
@@ -232,9 +232,9 @@ Email bug reports, questions, discussions to <bug-wget@gnu.org>
 and/or open issues at https://savannah.gnu.org/bugs/?func=additem&group=wget.
 ```
 
-### Examples
+## Examples
 
-#### Copy full website
+### Copy full website
 
 ```plain
 $ wget -r https://www.example.com/
@@ -254,6 +254,6 @@ Total wall clock time: 6m 29s
 Downloaded: 22284 files, 1.6G in 1m 38s (16.4 MB/s)
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/wget)

@@ -13,15 +13,15 @@ weight : 0
 
 Create the DIRECTORY(ies), if they do not already exist.
 
-### Usage
+## Usage
 
 ```plain
 mkdir [OPTION] directory
 ```
 
-### Examples
+## Examples
 
-#### Create two separate directories
+### Create two separate directories
 
 ```plain
 $ mkdir one two
@@ -30,7 +30,7 @@ $ ls
 one two
 ```
 
-#### Create directories in a directory
+### Create directories in a directory
 
 ```plain
 $ mkdir -p test/{one,two,three}
@@ -42,6 +42,6 @@ $ ls test
 one   three two
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - mkdir](https://linux.die.net/man/1/mkdir)

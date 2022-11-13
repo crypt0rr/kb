@@ -19,7 +19,7 @@ A second option, suggested by [@pentest4dummies](https://www.twitter.com/pentest
 
 **NOTE:** Requires Twitter API key, you can do this at [apps.twitter.com](https://apps.twitter.com/)
 
-### Installation
+## Installation
 
 Download newest release from [digi.ninja](https://digi.ninja/projects/twofi.php). Or use the downloads below.
 
@@ -30,13 +30,13 @@ bundle install
 ruby twofi.rb
 ```
 
-### Usage
+## Usage
 
 ```plain
 twofi [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 --help, -h: show help
@@ -52,11 +52,11 @@ twofi [OPTIONS]
 --verbose, -v: verbose
 ```
 
-### Examples
+## Examples
 
 *Nothing here yet.*
 
-### URL list
+## URL List
 
 * [Digi.ninja - twofi](https://digi.ninja/projects/twofi.php)
 * [Github.com - twofi](https://github.com/digininja/twofi)

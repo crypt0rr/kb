@@ -13,19 +13,19 @@ weight : 0
 
 A testing tool that enumerates SSH Ciphers. Using SSHScan, weak ciphers can be easily detected.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/evict/SSHScan.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python sshscan.py [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: usage sshscan.py [options]
@@ -41,7 +41,7 @@ Options:
                         File with targets: 'target' or 'target:port' seperated by a newline (port 22 is default)
 ```
 
-### Examples
+## Examples
 
 ```plain
 python sshscan.py -t <target>:22
@@ -87,6 +87,6 @@ python sshscan.py -t <target>:22
             ecdsa-sha2-nistp256
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - SSHscan](https://github.com/evict/SSHScan)

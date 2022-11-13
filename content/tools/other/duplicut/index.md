@@ -13,20 +13,20 @@ weight : 0
 
 Quickly dedupe massive wordlists, without changing the order.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/nil0x42/duplicut.git
 cd duplicut/ && make
 ```
 
-### Usage
+## Usage
 
 ```plain
 duplicut [OPTION]... [INFILE] -o [OUTFILE]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -43,7 +43,7 @@ Options:
 Example: duplicut wordlist.txt -o new-wordlist.txt
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./duplicut wordlist.txt -o clean-wordlist.txt -l 255
@@ -53,6 +53,6 @@ $ wc -l wordlist.txt clean-wordlist.txt
  7487676 clean-wordlist.txt
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - duplicut](https://github.com/nil0x42/duplicut)

@@ -24,11 +24,11 @@ There is no perfect way of sharing secrets online and there is a trade off in ev
 * Custom password option
 * Limited file upload functionality
 
-### Installation
+## Installation
 
 Please check [Github.com](https://github.com/jhaals/yopass) repository.
 
-### Flags - CLI
+## Flags - CLI
 
 ```plain
 Yopass - Secure sharing for secrets, passwords and files
@@ -60,7 +60,7 @@ Examples:
       yopass --decrypt https://yopass.se/#/...
 ```
 
-### Flags - Server
+## Flags - Server
 
 ```plain
 yopass-server -h
@@ -75,11 +75,11 @@ yopass-server -h
       --tls-key string     path to TLS key
 ```
 
-### Examples
+## Examples
 
 ![example](images/example.gif)
 
-### URL list
+## URL List
 
 * [Yopass.se](https://yopass.se/)
 * [Github.com - yopass](https://github.com/jhaals/yopass)

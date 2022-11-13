@@ -15,7 +15,7 @@ NetCraft DNS lookup, includes sub-domains.
 
 [Netcraft DNS](https://searchdns.netcraft.com/)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)

@@ -200,6 +200,6 @@ john.doe@[127.0.0.1]
 victim&email=attacker@example.com
 ```
 
-### URL list
+## URL List
 
 * [Portswigger.net Cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)

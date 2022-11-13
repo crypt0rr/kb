@@ -11,7 +11,7 @@ weight : 0
 
 ## Firefox Developer Edition
 
-### Installation
+## Installation
 
 Download newest release from [Mozilla.org](https://www.mozilla.org/nl/firefox/developer/)
 
@@ -46,6 +46,6 @@ Comment=Firefox Developer Edition Web Browser.
 ![Example](images/density.png)
 ![Example](images/pocket.png)
 
-### URL list
+## URL List
 
 * [Mozilla.org - FireFox Developer Edition](https://www.mozilla.org/nl/firefox/developer)

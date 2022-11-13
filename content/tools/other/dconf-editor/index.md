@@ -13,19 +13,19 @@ tags : ['Other', 'Gnome Extensions']
 
 Graphical interface for editing other applications settings.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install dconf-editor
 ```
 
-### Usage
+## Usage
 
 ```plain
 dconf-editor [OPTION…] [ PATH | [FIXED_SCHEMA|RELOC_SCHEMA:DIR] [KEY] ]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Uses the gsettings API of the glib library, among others.
@@ -60,10 +60,10 @@ Arguments description:
     example: “bookmarks”
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Wiki.gnome.org - DconfEditor](https://wiki.gnome.org/Apps/DconfEditor)

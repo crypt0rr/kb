@@ -13,19 +13,19 @@ weight : 0
 
 Is the fastest terminal emulator in existence. Using the GPU for rendering enables optimizations that simply aren't possible without it.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install alacritty
 ```
 
-### Usage
+## Usage
 
 ```plain
 alacrity
 ```
 
-### Flags
+## Flags
 
 ```plain
 alacritty 0.4.1
@@ -66,6 +66,6 @@ OPTIONS:
         --working-directory <working-directory>    Start the shell in the specified working directory
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - alacritty](https://github.com/alacritty/alacritty)

@@ -21,18 +21,18 @@ Removes bloated metadata. Saves disk space & bandwidth by compressing images wit
 * **Removes invisible junk**: private EXIF metadata from digital cameras, embedded thumbnails, comments, and unnecessary color profiles.
 * Seamlessly combines all the best image optimization tools: MozJPEG, pngquant, Pngcrush, 7zip, SVGO and Google Zopfli. **All Free and Open-Source**.
 
-### Installation
+## Installation
 
 Download newest release from [imageoptim.com](https://imageoptim.com/mac)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 ![example](images/example2.png)
 ![example](images/example3.png)
 ![example](images/example4.png)
 
-### URL list
+## URL List
 
 * [Imageoptim.com](https://imageoptim.com/mac)
 * [Github.com - ImageOptim](https://github.com/ImageOptim/ImageOptim)

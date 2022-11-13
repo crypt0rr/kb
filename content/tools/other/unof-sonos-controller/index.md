@@ -11,7 +11,7 @@ weight : 0
 
 ## Unofficial Sonos Controller for Linux
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/pascalopitz/unoffical-sonos-controller-for-linux/releases)
 
@@ -21,6 +21,6 @@ sudo dpkg -i sonos-controller-unofficial-amd64.deb
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - Unofficial Sonos Controller for Linux](https://github.com/pascalopitz/unoffical-sonos-controller-for-linux)

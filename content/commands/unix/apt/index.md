@@ -11,13 +11,13 @@ weight : 0
 
 ## Apt
 
-### Usage
+## Usage
 
 ```plain
 apt [options] command
 ```
 
-### Flags
+## Flags
 
 ```plain
 apt is a commandline package manager and provides commands for
@@ -48,9 +48,9 @@ Security details are available in apt-secure(8).
                                         This APT has Super Cow Powers.
 ```
 
-### Examples
+## Examples
 
-#### Update local repositories with online mirrors
+### Update local repositories with online mirrors
 
 ```plain
 $ sudo apt update
@@ -84,37 +84,37 @@ Reading state information... Done
 92 packages can be upgraded. Run 'apt list --upgradable' to see them.
 ```
 
-#### Install all available upgrades
+### Install all available upgrades
 
 ```plain
 sudo apt upgrade
 ```
 
-#### Fix broken dependencies
+### Fix broken dependencies
 
 ```plain
 sudo apt --fix-broken install
 ```
 
-#### Install .deb file with apt and fix dependency issues
+### Install .deb file with apt and fix dependency issues
 
 ```plain
 sudo apt install -f <file>.deb
 ```
 
-#### Fully remove program with dependencies
+### Fully remove program with dependencies
 
 ```plain
 sudo apt purge <package>
 ```
 
-#### Upgrade specific package
+### Upgrade specific package
 
 ```plain
 sudo apt --only-upgrade install <package>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/apt-get)
 * [Ubuntu.com](https://help.ubuntu.com/lts/serverguide/apt.html)

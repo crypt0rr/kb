@@ -11,17 +11,17 @@ weight : 0
 
 ## smbclient.py
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 smbclient.py [-h] [-file FILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]] target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
@@ -51,7 +51,7 @@ connection:
                         Destination port to connect to SMB Server
 ```
 
-### Examples
+## Examples
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="smbclient.mp4"/%}}
 
@@ -85,6 +85,6 @@ drw-rw-rw-          0  Tue Mar 17 16:12:50 2020 Windows
 -rw-rw-rw-          8  Wed Mar 18 13:10:48 2020 __output
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

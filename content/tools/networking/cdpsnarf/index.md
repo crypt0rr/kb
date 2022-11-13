@@ -13,17 +13,17 @@ weight : 0
 
 A network sniffer exclusively written to extract information from CDP packets.
 
-### Installation
+## Installation
 
 Default installed in [Kali Linux](https://www.kali.org/)
 
-### Usage
+## Usage
 
 ```plain
 cdpsnarf -i <dev> [-h] [-w savefile] [-r dumpfile] [-d]
 ```
 
-### Flags
+## Flags
 
 ```plain
 CDPSnarf v0.1.6 [$Rev: 797 $] initiated.
@@ -41,7 +41,7 @@ cdpsnarf -i <dev> [-h] [-w savefile] [-r dumpfile] [-d]
    -h      show help message and exit
 ```
 
-### Examples
+## Examples
 
 Sniffer with output in CLI
 
@@ -55,6 +55,6 @@ Sniffer output to PCAP
 cdpsnarf -i <interface> -w <output>.pcap
 ```
 
-### URL list
+## URL List
 
 * [Kali.org - CDPsnarf](https://tools.kali.org/information-gathering/cdpsnarf)

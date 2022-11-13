@@ -13,25 +13,25 @@ tags : ['Other', 'Coding']
 
 Code editing. Redefined.
 
-### Installation
+## Installation
 
-#### Snapcraft
+### Snapcraft
 
 ```plain
 sudo snap install code --classic
 ```
 
-#### Other platforms
+### Other platforms
 
 Download newest release: <https://code.visualstudio.com/>
 
-### Usage
+## Usage
 
 ```plain
 code [options][paths...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Visual Studio Code 1.43.0
@@ -105,9 +105,9 @@ Troubleshooting
   --max-memory                       Max memory size for a window (in Mbytes).
 ```
 
-### Examples
+## Examples
 
-#### Start VSCode from current directory
+### Start VSCode from current directory
 
 ```plain
 code .
@@ -149,7 +149,7 @@ XML
 YAML
 ```
 
-### URL list
+## URL List
 
 * [Code.visualstudio.com](https://code.visualstudio.com/)
 * [Snapcraft.io - Code](https://snapcraft.io/code)

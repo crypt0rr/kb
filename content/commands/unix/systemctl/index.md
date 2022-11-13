@@ -11,13 +11,13 @@ weight : 0
 
 ## Systemctl
 
-### Usage
+## Usage
 
 ```plain
 systemctl [OPTIONS...] {COMMAND} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 systemctl [OPTIONS...] {COMMAND} ...
@@ -198,81 +198,81 @@ System Commands:
 See the systemctl(1) man page for details.
 ```
 
-### Examples
+## Examples
 
-#### Show available services
+### Show available services
 
 ```plain
 sudo systemctl
 ```
 
-#### Show service status
+### Show service status
 
 ```plain
 sudo systemctl status <service>
 ```
 
-#### Start service
+### Start service
 
 ```plain
 sudo systemctl start <service>
 ```
 
-#### Stop service
+### Stop service
 
 ```plain
 sudo systemctl stop <service>
 ```
 
-#### Enable on startup (under root)
+### Enable on startup (under root)
 
 ```plain
 sudo systemctl enable <service>
 ```
 
-#### Enable on startup (under current user)
+### Enable on startup (under current user)
 
 ```plain
 systemctl enable --user <service>
 ```
 
-#### Show status of all services
+### Show status of all services
 
 ```plain
 sudo systemctl list-units --type service --all
 ```
 
-#### Show all available services
+### Show all available services
 
 ```plain
 sudo systemctl list-unit-files
 ```
 
-#### Show all dependencies a service relies on
+### Show all dependencies a service relies on
 
 ```plain
 sudo systemctl list-dependencies <service>
 ```
 
-#### Show default run level
+### Show default run level
 
 ```plain
 sudo systemctl get-default
 ```
 
-#### Change the current run level (temporarily)
+### Change the current run level (temporarily)
 
 ```plain
 sudo systemctl isolate <target>
 ```
 
-#### Change the current run level (permanently)
+### Change the current run level (permanently)
 
 ```plain
 sudo systemctl set-default <target>
 ```
 
-#### Create startup task / service
+### Create startup task / service
 
 ```plain
 sudo nano /etc/systemd/system/YOUR_SERVICE_NAME.service
@@ -308,6 +308,6 @@ sudo systemctl enable YOUR_SERVICE_NAME
 sudo systemctl start YOUR_SERVICE_NAME
 ```
 
-### URL list
+## URL List
 
 * [Debian.org](https://manpages.debian.org/stretch/systemd/systemctl.1.en.html)

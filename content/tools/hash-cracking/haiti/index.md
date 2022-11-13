@@ -49,13 +49,13 @@ Legend:
 * \# correct modern hashes support
 * 🔢 number of hash types supported
 
-### Installation
+## Installation
 
 ```plain
 gem install haiti-hash
 ```
 
-### Usage
+## Usage
 
 ```plain
 haiti [options] <hash>
@@ -64,7 +64,7 @@ haiti -h | --help
 haiti --version
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands:
@@ -92,7 +92,7 @@ Examples:
   haiti samples crc32
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ haiti 786a02f742015903c6c6fd852552d272912f4740e15847618a86e217f71f5419d25e1031afee585313896444934eb04b903a685b1448b755d56f701afe9be2ce
@@ -109,7 +109,7 @@ Salsa20
 Skein-512 [JtR: skein-512]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Noraj - HAITI](https://github.com/noraj/haiti)
 * [Noraj.github.com - Documentation](https://noraj.github.io/haiti/#/)

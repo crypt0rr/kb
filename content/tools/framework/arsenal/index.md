@@ -13,7 +13,7 @@ weight : 0
 
 Is just a quick inventory, reminder and launcher for pentest commands.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Orange-Cyberdefense/arsenal.git
@@ -21,26 +21,26 @@ cd arsenal
 ./run
 ```
 
-### Examples
+## Examples
 
 ![Example](images/arsenal.gif)
 
-#### Pentesting Active Directory
+### Pentesting Active Directory
 
 [Source](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/pentest_ad.png)
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern="Pentesting_ActiveDirectory.*(png)"/%}}
 
-#### Pentesting Microsoft Exchange on the Perimeter
+### Pentesting Microsoft Exchange on the Perimeter
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern="Pentesting_MS.*(png)"/%}}
 
 [Github.com - Arsenal - Pentesting Microsoft Exchange on the Perimeter](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/Pentesting_MS_Exchange_Server_on_the_Perimeter.png)
 
-#### Active directory ACE mindmap
+### Active directory ACE mindmap
 
 [Github.com - Arsenal - Active directory ACE mindmap](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/ACEs_xmind.png)
 
-### URL list
+## URL List
 
 * [Github.com - Arsenal](https://github.com/Orange-Cyberdefense/arsenal)

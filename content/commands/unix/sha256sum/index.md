@@ -11,13 +11,13 @@ tags : ['Unix', 'Hashing']
 
 ## Sha256sum
 
-### Usage
+## Usage
 
 ```plain
 sha256sum [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: sha256sum [OPTION]... [FILE]...
@@ -52,7 +52,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/sha256sum>
 or available locally via: info '(coreutils) sha2 utilities'
 ```
 
-### Examples
+## Examples
 
 Create sha256sum of a file
 
@@ -69,6 +69,6 @@ $ sha256sum -c testfile.hash
 testfile.txt: OK
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/sha256sum)

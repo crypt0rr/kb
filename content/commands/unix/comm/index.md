@@ -11,13 +11,13 @@ weight : 0
 
 ## Comm - Compare sorted files FILE1 and FILE2 line by line
 
-### Usage
+## Usage
 
 ```plain
 comm [OPTION]... FILE1 FILE2
 ```
 
-### Flags
+## Flags
 
 ```plain
 When FILE1 or FILE2 (not both) is -, read standard input.
@@ -51,7 +51,7 @@ or available locally via: info '(coreutils) comm invocation'
 
 ```
 
-### Examples
+## Examples
 
 It outputs three space-offset columns:
 
@@ -59,7 +59,7 @@ It outputs three space-offset columns:
 * The second contains lines that are unique to the second file or argument
 * The third column contains lines that are shared by both files
 
-#### Compare normally
+### Compare normally
 
 Content file 1 and 2
 
@@ -99,7 +99,7 @@ $ comm -12 file1 file2
 192.168.1.5
 ```
 
-#### Compare where content of lines do not directly match but are matched at other lines in file
+### Compare where content of lines do not directly match but are matched at other lines in file
 
 ```plain
 $ cat file1      
@@ -119,7 +119,7 @@ $ comm file1 file2
         efgh
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - comm](https://linux.die.net/man/1/comm)
 * [Geeksforgeeks.org - Comm command in Linux with examples](https://www.geeksforgeeks.org/comm-command-in-linux-with-examples/)

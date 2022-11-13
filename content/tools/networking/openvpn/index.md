@@ -13,19 +13,19 @@ weight : 0
 
 Provides flexible VPN solutions for businesses to secure all data communications and extend private network services while maintaining security.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install openvpn
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo openvpn --config <file>.ovpn
 ```
 
-### Flags
+## Flags
 
 ```plain
 General Options:
@@ -544,7 +544,7 @@ General Standalone Options:
 --show-gateway : Show info about default gateway.
 ```
 
-### Examples
+## Examples
 
 ```plain
 sudo openvpn --config <file>.ovpn
@@ -552,7 +552,7 @@ sudo openvpn --config <file>.ovpn
 
 ### Extensions
 
-#### Network-manager OpenVPN for Gnome
+### Network-manager OpenVPN for Gnome
 
 Manager that can be used to enable GUI support for OpenVPN. It also enables Gnome to build a full tunnel to prevent DNS-leak.
 
@@ -560,6 +560,6 @@ Manager that can be used to enable GUI support for OpenVPN. It also enables Gnom
 sudo apt install network-manager-openvpn-gnome
 ```
 
-### URL list
+## URL List
 
 * [OpenVPN.net](https://openvpn.net/)

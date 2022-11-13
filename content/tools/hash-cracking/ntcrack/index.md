@@ -15,7 +15,7 @@ Left To My Own Devices - NT cracker
 
 A full writeup of how it works is available at [the SensePost blog](https://sensepost.com/blog/2022/left-to-my-own-devices-fast-ntcracking-in-rust/)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/sensepost/ntcrack.git
@@ -23,7 +23,7 @@ cd ntcrack
 cargo build --release
 ```
 
-### Usage
+## Usage
 
 It expects the hashes to be NT hashes one per line, with nothing else. So strip out hashcat or john mode information.
 
@@ -31,7 +31,7 @@ It expects the hashes to be NT hashes one per line, with nothing else. So strip 
 ./ntcrack <input hashlist> <wordlist>
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./ntcrack crackme.hashes rockyou.txt 
@@ -87,7 +87,7 @@ e45a314c664d40a227f9540121d1a29d:Admin123
   Thread Waits: 28 Wait Speed: 99.87 w/s
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ntcrack](https://github.com/sensepost/ntcrack)
 * [Sensepost.com - Left To My Own Devices – Fast NTCracking in Rust](https://sensepost.com/blog/2022/left-to-my-own-devices-fast-ntcracking-in-rust/)

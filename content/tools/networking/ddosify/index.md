@@ -15,23 +15,23 @@ High-performance load testing tool, written in Golang. For distributed and Geo-t
 
 **Please read [Github](https://github.com/ddosify/ddosify) repo before use**
 
-### Installation
+## Installation
 
 `ddosify` is available via [Docker](https://hub.docker.com/r/ddosify/ddosify), [Homebrew Tap](#homebrew-tap-macos-and-linux), and downloadable pre-compiled binaries from the [releases page](https://github.com/ddosify/ddosify/releases/latest) for macOS, Linux and Windows.
 
-#### Docker
+### Docker
 
 ```bash
 docker run -it --rm ddosify/ddosify
 ```
 
-#### Homebrew Tap (macOS and Linux)
+### Homebrew Tap (macOS and Linux)
 
 ```bash
 brew install ddosify/tap/ddosify
 ```
 
-#### apk, deb, rpm, Arch Linux packages
+### apk, deb, rpm, Arch Linux packages
 
 * For arm architectures change `ddosify_amd64` to `ddosify_arm64` or `ddosify_armv6`.
 * Superuser privilege is required.
@@ -54,7 +54,7 @@ cd ddosify
 makepkg -sri
 ```
 
-#### Windows exe from the [releases page](https://github.com/ddosify/ddosify/releases/latest)
+### Windows exe from the [releases page](https://github.com/ddosify/ddosify/releases/latest)
 
 * Download *.zip file for your architecture. For example download ddosify version vx.x.x with amd64 architecture: ddosify_x.x.x.zip_windows_amd64
 * Unzip `ddosify_x.x.x_windows_amd64.zip`
@@ -65,17 +65,17 @@ makepkg -sri
 .\ddosify.exe -t target_site.com
 ```
 
-### Usage
+## Usage
 
 You can configure your load test by the CLI options or a config file. Config file supports more features than the CLI. For example, you can't create a scenario-based load test with CLI options.
 
-#### CLI Flags
+### CLI Flags
 
 ```plain
 ddosify [FLAG]
 ```
 
-### Flags
+## Flags
 
 | Flag       | Description                                                                                                                                                         | Type     | Default  | Required? |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- | --------- |
@@ -94,11 +94,11 @@ ddosify [FLAG]
 | `-config`  | [Config File](#config-file) of the load test.                                                                                                                       | `string` | -        | No        |
 | `-version` | Prints version, git commit, built date (utc), go information and quit                                                                                               | -        | -        | No        |
 
-### Examples
+## Examples
 
 ![Example](images/ddosify-quick-start.gif)
 
-### URL list
+## URL List
 
-* [](https://ddosify.com/)
+* [Ddosify.com](https://ddosify.com/)
 * [Github.com - ddosify](https://github.com/ddosify/ddosify)

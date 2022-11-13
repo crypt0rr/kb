@@ -11,13 +11,13 @@ tags : ['Unix', 'Hashing']
 
 ## Md5sum
 
-### Usage
+## Usage
 
 ```plain
 md5sum [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: md5sum [OPTION]... [FILE]...
@@ -52,7 +52,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/md5sum>
 or available locally via: info '(coreutils) md5sum invocation'
 ```
 
-### Examples
+## Examples
 
 Create md5sum of a file
 
@@ -69,7 +69,7 @@ $ md5sum -c testfile.hash
 testfile.txt: OK
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/md5sum)
 * [GNU.org](https://www.gnu.org/software/coreutils/md5sum)

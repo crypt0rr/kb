@@ -17,7 +17,7 @@ When started as gvimdiff the GUI will be started, if available.
 
 In each window the 'diff' option will be set, which causes the differences to be highlighted. The 'wrap' and 'scrollbind' options are set to make the text look good. The 'foldmethod' option is set to "diff", which puts ranges of lines without changes in a fold.  'foldcolumn' is set to two to make it easy to spot the folds and open or close them.
 
-### Usage
+## Usage
 
 ```plain
 vim [arguments] [file ..]       edit specified file(s)
@@ -26,7 +26,7 @@ vim [arguments] -t tag          edit file where tag is defined
 vim [arguments] -q [errorfile]  edit file with first error
 ```
 
-### Flags
+## Flags
 
 ```plain
 Arguments:
@@ -76,11 +76,11 @@ Arguments:
    --version            Print version information and exit
 ```
 
-### Examples
+## Examples
 
 ![example](images/example.png)
 
-### URL list
+## URL List
 
 * [Vim.org](http://www.vim.org/)
 * [Git-scm.com - vimdiff](https://git-scm.com/docs/vimdiff/en)

@@ -16,7 +16,7 @@ Find all open ports fast with RustScan, automatically pipe them into Nmap.
 Fast Port Scanner built in Rust. WARNING Do not use this program against sensitive infrastructure since the specified
 server may not be able to handle this many socket connections at once. - [Discord](https://discord.gg/GFrQsGy) - [GitHub](https://github.com/RustScan/RustScan)
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/brandonskerritt/RustScan/releases)
 
@@ -24,13 +24,13 @@ Download newest release from [Github.com](https://github.com/brandonskerritt/Rus
 sudo dpkg -i rustscan_x.x.x_amd64.deb
 ```
 
-### Usage
+## Usage
 
 ```plain
 rustscan [FLAGS] [OPTIONS] <ips-or-hosts>... [-- <command>...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 FLAGS:
@@ -60,7 +60,7 @@ ARGS:
 
 ```
 
-### Examples
+## Examples
 
 Normal run with extra NMAP flag (-Pn)
 
@@ -83,6 +83,6 @@ Read data files from: /usr/bin/../share/nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 ```
 
-### URL list
+## URL List
 
 * [Github.com - RustScan](https://github.com/RustScan/RustScan)

@@ -27,19 +27,19 @@ Search, explore and download Lossless and Hi-Res music from Qobuz - The ultimate
 * Extended tags
 * And more
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install --upgrade qobuz-dl
 ```
 
-### Usage
+## Usage
 
 ```plain
 qobuz-dl [-h] [-r] [-p] {fun,dl,lucky} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 The ultimate Qobuz music downloader.
@@ -60,20 +60,20 @@ commands:
     lucky         lucky mode
 ```
 
-### Examples
+## Examples
 
-#### Download specific album
+### Download specific album
 
 ```plain
 qobuz-dl dl https://play.qobuz.com/album/qxjbxh1dc3xyb
 ```
 
-#### Download multiple URLs from text file
+### Download multiple URLs from text file
 
 ```plain
 qobuz-dl dl this_txt_file_has_urls.txt
 ```
 
-### URL list
+## URL List
 
 * [Github.com - qobuz-dl](https://github.com/vitiko98/qobuz-dl)

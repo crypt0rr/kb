@@ -13,19 +13,19 @@ tags : ['Other', 'RDP']
 
 A Remote Desktop Protocol client.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install rdesktop
 ```
 
-### Usage
+## Usage
 
 ```plain
 rdesktop [options] server[:port]
 ```
 
-### Flags
+## Flags
 
 ```plain
 rdesktop: A Remote Desktop Protocol client.
@@ -101,15 +101,15 @@ Usage: rdesktop [options] server[:port]
            sc-card-name       Specifies the card name of the smartcard to use
 ```
 
-### Examples
+## Examples
 
-#### Check for NLA
+### Check for NLA
 
 ```plain
 rdesktop -u '' <target>
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - rdesktop](https://github.com/rdesktop/rdesktop)
 * [rdesktop.org](https://www.rdesktop.org/)

@@ -39,19 +39,19 @@ $ awk '/Aug.*21.*2019/ {print $1}' version-table.txt
 
 This scanner automates the process described above, suggesting an exact (or approximate) underlying PAN-OS version for a remote GlobalProtect portal or management interface. When multiple versions are associated with a given date, this tool will display all version matches as a comma-separated list; e.g, `7.1.24-h1,8.0.19-h1,8.1.9-h4` for `2019-08-15`.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/noperator/panos-scanner
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 panos-scanner.py [-h] [-v] [-s] -t TARGET
 ```
 
-### Flags
+## Flags
 
 ```plain
 Determine the software version of a remote PAN-OS target. Requires version-table.txt in the same directory. See https://security.paloaltonetworks.com/?product=PAN-OS for security advisories for specific PAN-OS
@@ -64,7 +64,7 @@ optional arguments:
   -t TARGET   https://example.com
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 panos-scanner.py -s -t https://example.com | jq '.match'
@@ -78,6 +78,6 @@ $ python3 panos-scanner.py -s -t https://example.com | jq '.match'
 }
 ```
 
-### URL list
+## URL List
 
 * [Github.com - PAN-OS GlobalProtect Portal Scanner](https://github.com/noperator/panos-scanner)

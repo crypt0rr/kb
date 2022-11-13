@@ -69,13 +69,13 @@ This extension allows you to do the following:
 
 Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/3843/just-perfection/)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 
-### URL list
+## URL List
 
 * [Gitlab.gnome.org - Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
 * [Extensions.gnome.org - Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)

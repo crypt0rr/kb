@@ -13,19 +13,19 @@ weight : 0
 
 Is the world's foremost and widely-used network protocol analyzer.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install wireshark
 ```
 
-### Usage
+## Usage
 
 ```plain
 wireshark [options] ... [ <infile> ]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Capture interface:
@@ -203,9 +203,9 @@ Miscellaneous:
 | Ctrl+.           | Move to the next packet of the conversation (TCP, UDP or IP).                                 | Backspace        | In the packet detail, jumps to the parent node.                              |
 | Ctrl+,           | Move to the previous packet of the conversation (TCP, UDP or IP).                             | Return or Enter  | In the packet detail, toggles the selected tree item.                        |
 
-### Examples
+## Examples
 
-#### Filter IPs from PCAP
+### Filter IPs from PCAP
 
 Command to extract IPs from captured PCAP-file.
 
@@ -221,7 +221,7 @@ reading from file capture.pcapng, link-type EN10MB (Ethernet)
 140.82.121.4
 ```
 
-### URL list
+## URL List
 
 * [Wireshark.org](https://www.wireshark.org/)
 * [Github.com - wireshark](https://github.com/wireshark/wireshark)

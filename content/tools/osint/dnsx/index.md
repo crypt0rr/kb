@@ -15,19 +15,19 @@ dnsx is a fast and multi-purpose DNS toolkit allow to run multiple probes using 
 
 Combine with [subfinder]({{< ref "subfinder" >}}).
 
-### Installation
+## Installation
 
 ```plain
 go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 dnsx [flags]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Flags:
@@ -86,11 +86,11 @@ CONFIGURATIONS:
    -wd, -wildcard-domain string  domain name for wildcard filtering (other flags will be ignored)
 ```
 
-### Examples
+## Examples
 
 For more examples see [Github.com](https://github.com/projectdiscovery/dnsx#running-dnsx)
 
-#### Print A records for the given list of subdomains
+### Print A records for the given list of subdomains
 
 ```plain
 $ subfinder -silent -d hackerone.com | dnsx -silent -a -resp
@@ -130,7 +130,7 @@ resources.hackerone.com [52.60.160.16]
 resources.hackerone.com [52.60.165.183]
 ```
 
-#### Extract A records for the given list of subdomains
+### Extract A records for the given list of subdomains
 
 ```plain
 $ subfinder -silent -d hackerone.com | dnsx -silent -a -resp-only
@@ -154,7 +154,7 @@ $ subfinder -silent -d hackerone.com | dnsx -silent -a -resp-only
 185.199.111.153
 ```
 
-#### Extract CNAME records for the given list of subdomains
+### Extract CNAME records for the given list of subdomains
 
 ```plain
 subfinder -silent -d hackerone.com | dnsx -silent -cname -resp
@@ -166,6 +166,6 @@ mta-sts.forwarding.hackerone.com [hacker0x01.github.io]
 events.hackerone.com [whitelabel.bigmarker.com]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - dnsx](https://github.com/projectdiscovery/dnsx)

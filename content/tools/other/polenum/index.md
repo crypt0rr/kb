@@ -13,19 +13,19 @@ weight : 0
 
 Request the password policy for a user(s).
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install polenum
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: polenum [-h] [--username USERNAME] [--password PASSWORD] [--domain DOMAIN] [--protocols [PROTOCOLS [PROTOCOLS ...]]] [enum4linux]
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -43,7 +43,7 @@ optional arguments:
                         ['139/SMB', '445/SMB']
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ polenum --username johndo --password Welkom1234 --domain 10.10.10.10
@@ -83,6 +83,6 @@ $ polenum --username johndo --password Welkom1234 --domain 10.10.10.10
     [+] Forced Log off Time: Not Set
 ```
 
-### URL list
+## URL List
 
 * [Tools.kali.org - polenum](https://tools.kali.org/password-attacks/polenum)

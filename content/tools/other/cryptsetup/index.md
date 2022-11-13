@@ -13,13 +13,13 @@ weight : 0
 
 Manage plain dm-crypt and LUKS encrypted volumes.
 
-### Usage
+## Usage
 
 ```plain
 cryptsetup [OPTION...] <action> <action-specific>
 ```
 
-### Flags
+## Flags
 
 ```plain
       --version                         Print package version
@@ -209,9 +209,9 @@ Default compiled-in device cipher parameters:
     LUKS: Default keysize with XTS mode (two internal keys) will be doubled.
 ```
 
-### Examples
+## Examples
 
-#### Check for encrypted partitions
+### Check for encrypted partitions
 
 Find partitions on the system.
 
@@ -245,13 +245,13 @@ $ sudo cryptsetup -v isLuks /dev/sda3
 Command successful.
 ```
 
-#### Change current LUSK passphrase
+### Change current LUSK passphrase
 
 ```plain
 sudo cryptsetup luksChangeKey <device>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - Cryptsetup](https://linux.die.net/man/8/cryptsetup)
 * [Johnpili.com - How to change full disk encryption LUKS password on Ubuntu](https://johnpili.com/how-to-change-full-disk-encryption-luks-password-on-ubuntu-18-04/)

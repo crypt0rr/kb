@@ -13,17 +13,17 @@ tags : ['Other', 'O365', 'Passwordspray']
 
 A tool to abuse Exchange Services.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/sensepost/ruler/releases)
 
-### Usage
+## Usage
 
 ```plain
 ./ruler-linux64 [global options] command [command options] [arguments...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 NAME:
@@ -88,15 +88,15 @@ GLOBAL OPTIONS:
    --version, -v                  print the version
 ```
 
-### Examples
+## Examples
 
-#### Office365 password spray
+### Office365 password spray
 
 ```plain
 ./ruler --o365 b --userpass <file> --verbose
 ```
 
-### URL list
+## URL List
 
 * [GitHub](https://github.com/sensepost/ruler/)
 * [ired.team](https://www.ired.team/offensive-security/initial-access/password-spraying-outlook-web-access-remote-shell)

@@ -13,7 +13,7 @@ weight : 0
 
 Next generation web scanner.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/urbanadventurer/WhatWeb.git
@@ -21,13 +21,13 @@ cd WhatWeb
 make install
 ```
 
-### Usage
+## Usage
 
 ```plain
 whatweb [options] <URLs>
 ```
 
-### Flags
+## Flags
 
 ```plain
 .$$$     $.                                   .$$$     $.
@@ -177,14 +177,14 @@ EXAMPLE USAGE:
   --url-suffix /crossdomain.xml -p crossdomain_xml
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./whatweb example.com
 http://example.com [200 OK] Country[EUROPEAN UNION][EU], HTML5, HTTPServer[ECS (dcb/7F60)], IP[93.184.216.34], Title[Example Domain]
 ```
 
-### URL list
+## URL List
 
 * [Morningstarsecurity - Whatweb](https://www.morningstarsecurity.com/research/whatweb)
 * [Github.com - WhatWeb](https://github.com/urbanadventurer/WhatWeb/)

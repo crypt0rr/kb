@@ -13,19 +13,19 @@ weight : 0
 
 A fast, highly customizable system info script.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install neofetch
 ```
 
-### Usage
+## Usage
 
 ```plain
 neofetch
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: neofetch func_name --option "value" --option "value"
@@ -252,7 +252,7 @@ DEVELOPER:
 Report bugs to https://github.com/dylanaraps/neofetch/issues
 ```
 
-### Examples
+## Examples
 
 ```plain
              /////////////
@@ -277,6 +277,6 @@ Report bugs to https://github.com/dylanaraps/neofetch/issues
              /////////////
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - neofetch](https://github.com/dylanaraps/neofetch)

@@ -176,6 +176,6 @@ Content-Length: 52
 <?xml version="1.0" encoding="UTF-8"?><foo>bar</foo>
 ```
 
-### URL list
+## URL List
 
 * [Portswigger.net academy - XXE injection](https://portswigger.net/web-security/xxe)

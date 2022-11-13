@@ -13,11 +13,11 @@ weight : 0
 
 Microsoft Exchange DKIM-signer
 
-### Installation
+## Installation
 
 [Github.com](https://github.com/Pro/dkim-exchange/wiki/Installation)
 
-### Examples
+## Examples
 
 ![DebugHelper](images/DebugHelper.png)
 ![DKIMSettings](images/DKIMSettings.png)
@@ -25,7 +25,7 @@ Microsoft Exchange DKIM-signer
 ![EventLogViewer](images/EventLogViewer.png)
 ![Information](images/Information.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - DKIM-Exchange](https://github.com/Pro/dkim-exchange)
 * [GitHub.com - DKIM-Exchange Wiki](https://github.com/Pro/dkim-exchange/wiki)

@@ -13,7 +13,7 @@ tags : ['Other', 'macOS', 'Linux']
 
 Download and install macOS in a VM / macOS on Linux in one command.
 
-### Installation
+## Installation
 
 Clean install of macOS will take **30.6 GiB** of disk space.
 
@@ -27,7 +27,7 @@ Run initial setup and install macOS.
 sosumi
 ```
 
-### Usage
+## Usage
 
 After installation you can just run the command of the snap module to start the macOS environment.
 
@@ -101,7 +101,7 @@ OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
 
 ### USB passthrough
 
-#### Check if permissions are present for raw-usb
+### Check if permissions are present for raw-usb
 
 ```plain
 $ snap interfaces sosumi
@@ -122,7 +122,7 @@ Slot                     Plug
 -                        sosumi:raw-usb
 ```
 
-#### Give permissions for raw-usb
+### Give permissions for raw-usb
 
 ```plain
 sudo snap connect sosumi:raw-usb
@@ -149,7 +149,7 @@ Slot                     Plug
 
 {{< youtube QWZ_LjzT39k >}}
 
-### URL list
+## URL List
 
 * [Snapcraft.io - Sosumi Ubuntu](https://snapcraft.io/install/sosumi/ubuntu)
 * [Github.com - Popey - sosumi-snap](https://github.com/popey/sosumi-snap)

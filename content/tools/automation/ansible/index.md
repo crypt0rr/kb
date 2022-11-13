@@ -13,13 +13,13 @@ weight : 0
 
 Simple, agentless IT automation that anyone can use - Define and run a single task 'playbook' against a set of hosts
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install ansible
 ```
 
-### Usage
+## Usage
 
 ```plain
 ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts] [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k]
@@ -29,7 +29,7 @@ ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-use
                pattern
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -105,9 +105,9 @@ Connection Options:
 Some modules do not make sense in Ad-Hoc (include, meta, etc)
 ```
 
-### Examples
+## Examples
 
-#### Inventory - A list of hosts that are managed by Ansible
+### Inventory - A list of hosts that are managed by Ansible
 
 Default path that will be used by Ansible is */etc/ansible/hosts*
 Optionally you can specify your own hostfile with *--inventory PATH* or *-i PATH*
@@ -121,13 +121,13 @@ $ cat /etc/ansible/hosts
 10.10.10.12
 ```
 
-#### Modules - Programs that perform the actual work of the task of a play
+### Modules - Programs that perform the actual work of the task of a play
 
 List of all modules can be found [here.](https://docs.ansible.com/ansible/2.5/modules/list_of_all_modules.html)
 
-#### Tasks - Set of instructions that can be performed by using modules
+### Tasks - Set of instructions that can be performed by using modules
 
-#### Example playbook
+### Example playbook
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(yml)"/%}}
 
@@ -157,6 +157,6 @@ PLAY RECAP *********************************************************************
 188.166.70.130             : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-### URL list
+## URL List
 
 * [Ansible.com](https://www.ansible.com/)
