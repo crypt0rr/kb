@@ -42,7 +42,7 @@ optional arguments:
 
 ## Examples
 
-#### Run with password and share folder temp over HTTP
+### Run with password and share folder temp over HTTP
 
 ```plain
 $ updog -d temp --password 'JoeJoe'
@@ -50,7 +50,7 @@ $ updog -d temp --password 'JoeJoe'
  * Running on http://0.0.0.0:9090/ (Press CTRL+C to quit)
 ```
 
-#### Run with password and share folder temp over HTTPS
+### Run with password and share folder temp over HTTPS
 
 ```plain
 $ updog -d temp --ssl --password 'JoeJoe'

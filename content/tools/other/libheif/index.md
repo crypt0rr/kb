@@ -27,7 +27,7 @@ heif-convert [-q QUALITY] filename output[.jpg|.png|.y4m]
 
 ## Examples
 
-#### HEIC to JPG
+### HEIC to JPG
 
 ```plain
 heif-convert infile.HEIC outfile.jpg

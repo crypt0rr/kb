@@ -15,13 +15,13 @@ Code editing. Redefined.
 
 ## Installation
 
-#### Snapcraft
+### Snapcraft
 
 ```plain
 sudo snap install code --classic
 ```
 
-#### Other platforms
+### Other platforms
 
 Download newest release: <https://code.visualstudio.com/>
 
@@ -107,7 +107,7 @@ Troubleshooting
 
 ## Examples
 
-#### Start VSCode from current directory
+### Start VSCode from current directory
 
 ```plain
 code .

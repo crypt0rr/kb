@@ -22,13 +22,13 @@ Axel supports:
 
 ## Installation
 
-#### Debian
+### Debian
 
 ```plain
 sudo apt install axel
 ```
 
-#### macOS
+### macOS
 
 ```plain
 brew install axel

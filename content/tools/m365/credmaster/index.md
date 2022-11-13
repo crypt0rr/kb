@@ -50,7 +50,7 @@ git clone https://github.com/knavesec/CredMaster.git
 python3 -m pip install -r requirements.txt
 ```
 
-#### Requirements
+### Requirements
 
 This tool requires AWS API access keys, a walkthrough on how to acquire these keys can be found here: <https://bond-o.medium.com/aws-pass-through-proxy-84f1f7fa4b4b>
 

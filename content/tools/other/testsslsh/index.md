@@ -148,20 +148,20 @@ Options requiring a value can also be called with '=' e.g. testssl.sh -t=smtp --
 
 ## Examples
 
-#### Display the server's default picks and certificate info
+### Display the server's default picks and certificate info
 
 ```plain
 ./testssl.sh -S <target>
 ```
 
-#### Only show protocols
+### Only show protocols
 
 ```plain
 ./testssl.sh --protocols <target>
 
 No engine or GOST support via engine with your /usr/bin/openssl
 
-###########################################################
+#############################################
     testssl.sh       3.0 from https://testssl.sh/
     (4601670 2020-03-07 12:15:55 -- )
 
@@ -171,7 +171,7 @@ No engine or GOST support via engine with your /usr/bin/openssl
 
        Please file bugs @ https://testssl.sh/bugs/
 
-###########################################################
+#############################################
 
  Using "OpenSSL 1.1.1c  28 May 2019" [~79 ciphers]
  on lo:/usr/bin/openssl

@@ -67,25 +67,25 @@ General Options:
 
 ## Examples
 
-#### Show modules that can be loaded
+### Show modules that can be loaded
 
 ```plain
 modprobe <tab-tab>
 ```
 
-#### Show information about module
+### Show information about module
 
 ```plain
 modinfo <module>
 ```
 
-#### Remove module
+### Remove module
 
 ```plain
 sudo modprobe -r <module>
 ```
 
-#### Install module
+### Install module
 
 ```plain
 sudo modprobe <module>

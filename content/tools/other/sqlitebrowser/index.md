@@ -15,13 +15,13 @@ DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to crea
 
 ## Installation
 
-#### APT
+### APT
 
 ```plain
 sudo apt install sqlitebrowser
 ```
 
-#### Snap
+### Snap
 
 ```plain
 sudo snap install sqlitebrowser

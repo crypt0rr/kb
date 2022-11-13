@@ -67,7 +67,7 @@ authentication:
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="smbexec.mp4"/%}}
 
-#### Start RCE via SMB
+### Start RCE via SMB
 
 ```plain
 smbexec.py <domain>/<domain-or-local-admin-or-user>:<password>@<domain-controller-ip>

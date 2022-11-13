@@ -252,7 +252,7 @@ go get -v github.com/jpillora/chisel
 
 ## Examples
 
-#### Chisel server
+### Chisel server
 
 Chisel server listening on port 80 for reverse connections.
 
@@ -264,7 +264,7 @@ $ ./chisel server --port 80 --reverse
 2020/10/06 09:56:47 server: session#1: tun: proxy#R:910=>22: Listening
 ```
 
-#### Chisel client
+### Chisel client
 
 Chisel client starting reverse connection, forwarding local port 22 to port 910 on server all through port 80 over internet.
 

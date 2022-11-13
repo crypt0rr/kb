@@ -73,7 +73,7 @@ optional arguments:
 
 ## Examples
 
-#### Validate domain
+### Validate domain
 
 ```plain
 $ python3 o365spray.py -d offsec.nl --validate
@@ -95,7 +95,7 @@ $ python3 o365spray.py -d offsec.nl --validate
         [!] --> ADFS AuthURL: https://offsec.okta-emea.com/app/office365/
 ```
 
-#### Passwordspray over ActiveSync
+### Passwordspray over ActiveSync
 
 ```plain
 $ python3 o365spray.py -d offsec.nl -u john.do --paired usercreds.txt --spray-module activesync --spray

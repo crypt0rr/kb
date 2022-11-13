@@ -29,31 +29,31 @@ net user
 
 ## Examples
 
-#### Show users on local system
+### Show users on local system
 
 ```plain
 net user
 ```
 
-#### Show users available in domain
+### Show users available in domain
 
 ```plain
 net user /DOMAIN
 ```
 
-#### Show specific domain user information
+### Show specific domain user information
 
 ```plain
 net user JohnDo /domain
 ```
 
-#### Add user to domain
+### Add user to domain
 
 ```plain
 net user JohnDo /ADD
 ```
 
-#### Add user to group
+### Add user to group
 
 ```plain
 net group "Domain Admins" JohnDo /ADD /DOMAIN

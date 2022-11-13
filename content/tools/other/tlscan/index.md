@@ -52,7 +52,7 @@ optional arguments:
 
 ## Examples
 
-#### Scan SSL/TLS, CipherSuites and certificate
+### Scan SSL/TLS, CipherSuites and certificate
 
 ```plain
 python3 TLScan3.py offsec.nl:443
@@ -83,7 +83,7 @@ Subject certificate details
             Public-Key: 2048 bit
 ```
 
-#### Scan target using specific SNI name
+### Scan target using specific SNI name
 
 ```plain
 python3 TLScan3.py 10.10.10.10 --sni example.com

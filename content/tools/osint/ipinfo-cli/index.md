@@ -23,7 +23,7 @@ This is the official CLI for the [IPinfo.io](https://ipinfo.io/) IP address API,
 
 ## Installation
 
-#### Ubuntu
+### Ubuntu
 
 PPA:
 
@@ -39,7 +39,7 @@ Source:
 curl -Ls https://github.com/ipinfo/cli/releases/download/ipinfo-2.8.1/deb.sh | sh
 ```
 
-#### Brew
+### Brew
 
 ```plain
 brew install ipinfo-cli

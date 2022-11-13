@@ -254,7 +254,7 @@ Usage: curl [options...] <url>
 
 ## Examples
 
-#### curl header of target
+### curl header of target
 
 ```plain
 curl --head https://www.google.com
@@ -275,38 +275,38 @@ accept-ranges: none
 vary: Accept-Encoding
 ```
 
-#### curl site content
+### curl site content
 
 ```plain
 curl https://www.google.com
 <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="nl"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title>
 ```
 
-#### Insecure SSL/TLS site
+### Insecure SSL/TLS site
 
 ```plain
 curl -k https://<target>
 ```
 
-#### Follow redirections to endpoint
+### Follow redirections to endpoint
 
 ```plain
 curl -L https://<target>
 ```
 
-#### Show headers only
+### Show headers only
 
 ```plain
 curl -I https://<target>
 ```
 
-#### Don't show progress
+### Don't show progress
 
 ```plain
 curl -s https://<target>
 ```
 
-#### Using Basic Auth
+### Using Basic Auth
 
 ```plain
 $ curl -I -H "Authorization: Basic <base64-string>"  https://example.com

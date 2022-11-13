@@ -48,7 +48,7 @@ For example:
 
 ### Examples
 
-#### List of attachments ending in pdf or mp4
+### List of attachments ending in pdf or mp4
 
 
     {{%/*attachments title="Related files" pattern=".*\.(pdf|mp4)$"/*/%}}
@@ -57,7 +57,7 @@ renders as
 
 {{%attachments title="Related files" pattern=".*\.(pdf|mp4)$"/%}}
 
-#### Colored styled box
+### Colored styled box
 
     {{%/*attachments style="orange" /*/%}}
 

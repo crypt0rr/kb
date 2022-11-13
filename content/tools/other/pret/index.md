@@ -45,7 +45,7 @@ optional arguments:
 
 ### Example
 
-#### Discovering local printers
+### Discovering local printers
 
 ```plain
 ./pret.py
@@ -59,7 +59,7 @@ address          device                       uptime    status
 192.168.1.28     Brother MFC-7860DW           16:31:17   Sleep mode            
 ```
 
-#### Connecting and running commands
+### Connecting and running commands
 
 ```plain
 $ ./pret.py laserjet.lan pjl

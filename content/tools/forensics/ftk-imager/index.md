@@ -24,7 +24,7 @@ Download newest release from [accessdata.com](https://accessdata.com/product-dow
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
 
-#### Memory capture
+### Memory capture
 
 ![Example](images/example-3.png)
 

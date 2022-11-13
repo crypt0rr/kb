@@ -29,7 +29,7 @@ Use "dig -h" (or "dig -h | more") for complete list of options
 
 ## Examples
 
-#### Generic information
+### Generic information
 
 ```plain
 dig google.com
@@ -54,7 +54,7 @@ google.com.     49  IN  A   216.58.208.110
 ;; MSG SIZE  rcvd: 55
 ```
 
-#### CAA-record
+### CAA-record
 
 ```plain
 dig caa google.com
@@ -79,7 +79,7 @@ google.com.     7189    IN  CAA 0 issue "pki.goog"
 ;; MSG SIZE  rcvd: 66
 ```
 
-#### TXT-record
+### TXT-record
 
 ```plain
 dig txt google.com
@@ -108,7 +108,7 @@ google.com.     300 IN  TXT "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289"
 ;; MSG SIZE  rcvd: 352
 ```
 
-#### Use external DNS resolver
+### Use external DNS resolver
 
 ```plain
 dig @1.1.1.1 google.com

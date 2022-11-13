@@ -73,7 +73,7 @@ or available locally via: info '(coreutils) tr invocation'
 
 ## Examples
 
-#### Remove every char you don't want in output
+### Remove every char you don't want in output
 
 ```plain
 cat example.json
@@ -97,7 +97,7 @@ edelivery
 labs
 ```
 
-#### All lines in file to upper/lower case
+### All lines in file to upper/lower case
 
 ```plain
 $ cat da.txt | tr '[:upper:]' '[:lower:]'       
@@ -107,7 +107,7 @@ svc_lmt
 svc_curium
 ```
 
-#### Delete newlines from current output/file
+### Delete newlines from current output/file
 
 ```plain
 $ diff file1 file2

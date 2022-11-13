@@ -60,7 +60,7 @@ Valid type keywords are:
 
 ## Examples
 
-#### Display critical hardware information
+### Display critical hardware information
 
 ```plain
 $ sudo dmidecode -t system
@@ -81,7 +81,7 @@ System Information
     Family: ThinkPad T470
 ```
 
-#### BIOS information
+### BIOS information
 
 ```plain
 $ sudo dmidecode -t bios -q
@@ -99,7 +99,7 @@ BIOS Information
     Firmware Revision: 1.34
 ```
 
-#### Find serial number
+### Find serial number
 
 ```plain
 $ sudo dmidecode -t chassis -q
@@ -112,7 +112,7 @@ Chassis Information
     Serial Number: SN12345
 ```
 
-#### Memory information
+### Memory information
 
 ```plain
 $ sudo dmidecode -t memory

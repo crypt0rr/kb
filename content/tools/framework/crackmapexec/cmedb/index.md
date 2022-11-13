@@ -19,14 +19,14 @@ cmedb is default installed with your installation of [CrackMapExec]({{< ref "../
 cmedb
 ```
 
-#### Switch protocols
+### Switch protocols
 
 ```plain
 proto smb
 proto ldap
 ```
 
-#### Dump captured passwords plaintext
+### Dump captured passwords plaintext
 
 ```plain
 cmedb (default)(smb) > export creds plaintext plain.txt

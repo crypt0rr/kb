@@ -26,7 +26,7 @@ It converts videos to animated GIFs that use thousands of colors per frame. This
 * Optionally produce smaller lower quality GIFs
 * Generate up to 50 FPS GIFs (for showing off design work on Dribbble)
 
-#### To convert, either
+### To convert, either
 
 * Drag and drop your HEIC images onto the window or the Dock icon.
 * Click the “Open” button in the window (macOS 10.15 and later) or in the “File” menu and then choose your HEIC images.

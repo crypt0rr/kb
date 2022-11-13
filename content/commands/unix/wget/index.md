@@ -234,7 +234,7 @@ and/or open issues at https://savannah.gnu.org/bugs/?func=additem&group=wget.
 
 ## Examples
 
-#### Copy full website
+### Copy full website
 
 ```plain
 $ wget -r https://www.example.com/

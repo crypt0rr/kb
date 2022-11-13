@@ -81,7 +81,7 @@ options:
 
 ## Examples
 
-#### Standard DNS recon
+### Standard DNS recon
 
 ```plain
 $ python3 dnsrecon.py -d example.com -t std
@@ -101,7 +101,7 @@ $ python3 dnsrecon.py -d example.com -t std
 [+] 0 Records Found
 ```
 
-#### DNS Zone Transfer
+### DNS Zone Transfer
 
 ```plain
 $ python3 dnsrecon.py -d megacorpone.com -t axfr
@@ -155,7 +155,7 @@ $ python3 dnsrecon.py -d megacorpone.com -t axfr
 [-] Zone Transfer Failed (Zone transfer error: REFUSED)
 ```
 
-#### DNS BruteForce
+### DNS BruteForce
 
 Discovery of subdomains via brute force.
 

@@ -21,7 +21,7 @@ So, what are you waiting for Go! Go! Go! boom
 
 ### Features
 
-#### OSINT
+### OSINT
 
 * Domain information parser ([domainbigdata](https://domainbigdata.com/))
 * Emails addresses and users ([theHarvester](https://github.com/laramies/theHarvester), [emailfinder](https://github.com/Josue87/EmailFinder))
@@ -30,7 +30,7 @@ So, what are you waiting for Go! Go! Go! boom
 * Google Dorks ([uDork](https://github.com/m3n0sd0n4ld/uDork))
 * Github Dorks ([GitDorker](https://github.com/obheda12/GitDorker))
 
-#### Subdomains
+### Subdomains
 
 * Passive ([subfinder](https://github.com/projectdiscovery/subfinder), [assetfinder](https://github.com/tomnomnom/assetfinder), [amass](https://github.com/OWASP/Amass), [findomain](https://github.com/Findomain/Findomain), [crobat](https://github.com/cgboal/sonarsearch), [waybackurls](https://github.com/tomnomnom/waybackurls), [github-subdomains](https://github.com/gwen001/github-subdomains), [Anubis](https://jldc.me), [gauplus](https://github.com/bp0lr/gauplus))
 * Certificate transparency ([ctfr](https://github.com/UnaPibaGeek/ctfr), [tls.bufferover](tls.bufferover.run) and [dns.bufferover](dns.bufferover.run)))
@@ -44,7 +44,7 @@ So, what are you waiting for Go! Go! Go! boom
 * DNS takeover ([dnstake](https://github.com/pwnesia/dnstake))
 * DNS Zone Transfer ([dnsrecon](https://github.com/darkoperator/dnsrecon))
 
-#### Hosts
+### Hosts
 
 * IP and subdomains WAF checker ([cf-check](https://github.com/dwisiswant0/cf-check) and [wafw00f](https://github.com/EnableSecurity/wafw00f))
 * Port Scanner (Active with [nmap](https://github.com/nmap/nmap) and passive with [shodan-cli](https://cli.shodan.io/), Subdomains IP resolution with[resolveDomains](https://github.com/Josue87/resolveDomains))
@@ -52,7 +52,7 @@ So, what are you waiting for Go! Go! Go! boom
 * Password spraying ([brutespray](https://github.com/x90skysn3k/brutespray))
 * Cloud providers check ([clouddetect](https://github.com/99designs/clouddetect))
 
-#### Webs
+### Webs
 
 * Web Prober ([httpx](https://github.com/projectdiscovery/httpx) and [unimap](https://github.com/Edu4rdSHL/unimap))
 * Web screenshot ([webscreenshot](https://github.com/maaaaz/webscreenshot) or [gowitness](https://github.com/sensepost/gowitness))
@@ -79,7 +79,7 @@ So, what are you waiting for Go! Go! Go! boom
 * Wordlist generation
 * Passwords dictionary creation ([pydictor](https://github.com/LandGrey/pydictor))
 
-#### Extras
+### Extras
 
 * Multithread ([Interlace](https://github.com/codingo/Interlace))
 * Custom resolvers generated list ([dnsvalidator](https://github.com/vortexau/dnsvalidator))
@@ -123,7 +123,7 @@ cd reconftw/
 
 ## Flags
 
-#### Target Options
+### Target Options
 
 * Your Target could be a root domain or a subdomain.
 * It's mandatory to specify a target for a scan.
@@ -137,7 +137,7 @@ cd reconftw/
 | -i         | Force include subdomain list (in.txt)                                                  | `./reconftw.sh -d target.com -i in.txt -r`  |
 | -x         | Out of scope subdomain list (oos.txt)                                                  | `./reconftw.sh -d target.com -x oos.txt -r` |
 
-#### Mode Options
+### Mode Options
 
 * reconFTW supports several mode options. It's best preferred to use -r. But depending on your needs you can select the required mode.
 * Changes in the mode options results in varying execution time of the script.
@@ -152,7 +152,7 @@ cd reconftw/
 | -n         | Osint - Just checks for public intel info                | `./reconftw.sh -d target.com -n`     |
 | -h         | Help - Show this help                                    | `./reconftw.sh -h`                   |
 
-#### General Options
+### General Options
 
 * Some checks/tasks of reconFTW take a longer time and generate a lot of web traffic.
 * You can enable these tasks by using the following options.
@@ -164,7 +164,7 @@ cd reconftw/
 | -v              | VPS - Run reconftw with Axiom distributed VPS fleet  | `./reconftw.sh -d target.com [mode] -v`             |
 | -f confile_file | Alternate reconftw.cfg file                          | `./reconftw.sh -d target.com [mode] -f config_file` |
 
-#### Output Options
+### Output Options
 
 * Supports option for user-defined output directory of the results.
 

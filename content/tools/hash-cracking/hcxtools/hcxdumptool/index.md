@@ -222,7 +222,7 @@ sudo systemctl start NetworkManager.service
 sudo systemctl start wpa_supplicant.service
 ```
 
-#### Capture of PMKID (all networks around)
+### Capture of PMKID (all networks around)
 
 ```plain
 $ sudo hcxdumptool -i wlp4s0 -o dumpfile.pcapng --active_beacon --enable_status=15

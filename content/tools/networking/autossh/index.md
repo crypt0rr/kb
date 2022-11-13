@@ -58,7 +58,7 @@ Environment variables are:
 
 ## Examples
 
-#### Generate a keypair on client
+### Generate a keypair on client
 
 ```plain
 ssh-keygen -o -a 100 -t ed25519 -C "NAME-FOR-YOUR-CLIENT"
@@ -66,7 +66,7 @@ ssh-keygen -o -a 100 -t ed25519 -C "NAME-FOR-YOUR-CLIENT"
 
 Upload the public key to the server.
 
-#### Configuration
+### Configuration
 
 Open the following file with your preferred editor `/etc/systemd/system/autossh-tunnel.service`
 

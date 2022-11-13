@@ -117,7 +117,7 @@ and the following sampler groups are supported by --samplers:
 
 ## Examples
 
-#### Monitor CPU temperature
+### Monitor CPU temperature
 
 Change the `-i` parameter to adjust the interval. 2000 = 2 seconds.
 
@@ -125,13 +125,13 @@ Change the `-i` parameter to adjust the interval. 2000 = 2 seconds.
 sudo powermetrics -i 2000 --samplers smc | grep 'CPU die temperature'
 ```
 
-#### Monitor GPU temperature
+### Monitor GPU temperature
 
 ```plain
 sudo powermetrics -i 2000 --samplers smc | grep 'GPU die temperature'
 ```
 
-#### Monitor fan speed
+### Monitor fan speed
 
 ```plain
 sudo powermetrics -i 2000 --samplers smc | grep 'Fan:'

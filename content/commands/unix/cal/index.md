@@ -30,7 +30,7 @@ General options: [-31] [-A months] [-B months] [-d yyyy-mm]
 
 ## Examples
 
-#### Current month and date
+### Current month and date
 
 ```plain
 $ cal        
@@ -43,7 +43,7 @@ Su Mo Tu We Th Fr Sa
 28 29 30 31           
 ```
 
-#### Calendar for specific year
+### Calendar for specific year
 
 ```plain
 $ cal 1970

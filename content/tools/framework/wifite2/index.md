@@ -31,7 +31,7 @@ Run wifite, select your targets, and Wifite will automatically start trying to c
 git clone https://github.com/derv82/wifite2.git
 ```
 
-#### Requirements
+### Requirements
 
 ```plain
 sudo apt install aircrack-ng reaver bully tshark hcxtools
@@ -43,7 +43,7 @@ sudo apt install aircrack-ng reaver bully tshark hcxtools
 sudo ./Wifite.py
 ```
 
-#### Reset after use
+### Reset after use
 
 ```plain
 sudo airmon-ng stop <device>mon

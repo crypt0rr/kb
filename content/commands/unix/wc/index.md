@@ -47,7 +47,7 @@ or available locally via: info '(coreutils) wc invocation'
 
 ## Examples
 
-#### Count amount of lines in a file
+### Count amount of lines in a file
 
 ```plain
 $ wc -l hostlist.txt

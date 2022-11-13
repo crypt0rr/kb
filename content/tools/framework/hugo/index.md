@@ -34,14 +34,14 @@ hugo [command]
 
 Hugo supports a list of [shortcodes](https://gohugo.io/content-management/shortcodes/) to embed for example YouTube video's
 
-#### YouTube
+### YouTube
 
 ```plain
 The spaces after {{ should not be used in working situation
 {{ < youtube 2xkNJL4gJ9E >}}
 ```
 
-#### Github Gist
+### Github Gist
 
 ```plain
 {{ < gist spf13 7896402 >}}
@@ -66,7 +66,7 @@ cascade:
 
 ### Menu Shortcuts
 
-#### Add items to config.toml
+### Add items to config.toml
 
 ```plain
 [[menu.shortcuts]]
@@ -158,7 +158,7 @@ Use "hugo [command] --help" for more information about a command.
 
 ## Examples
 
-#### File attachments
+### File attachments
 
 ```plain
 { {%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
@@ -170,7 +170,7 @@ Multiple filetypes
 { {%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
 ```
 
-#### Enable target blank for links
+### Enable target blank for links
 
 ```plain
 Create layouts/_default/_markup/render-link.html
@@ -178,25 +178,25 @@ Add content:
 <a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
 ```
 
-#### Picture inline
+### Picture inline
 
 ```plain
 ![Example](images/example.png)
 ```
 
-#### Reference other pages
+### Reference other pages
 
 ```plain
 [Amass]({{ < ref "amass" > }})
 ```
 
-#### Start Hugo server on other port
+### Start Hugo server on other port
 
 ```plain
 hugo server --port 1337 --bind 0.0.0.0
 ```
 
-#### Server headers
+### Server headers
 
 ```plain
 [server]

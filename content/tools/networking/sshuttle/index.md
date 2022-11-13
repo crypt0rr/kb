@@ -31,7 +31,7 @@ cd sshuttle
 sudo ./setup.py install
 ```
 
-#### Brew
+### Brew
 
 ```plain
 brew install sshuttle

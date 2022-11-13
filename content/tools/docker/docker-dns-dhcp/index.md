@@ -45,7 +45,7 @@ This is the line you want to change
 address=/.local.cloud/192.168.1.3
 ```
 
-#### Optional
+### Optional
 
 1. (Optional) You can set static IPs based on hostname or MAC address in `dnsmasq.conf`
 
@@ -79,7 +79,7 @@ On error for port binding (53), stop local DNS resolver - `sudo systemctl stop s
 
 ## Examples
 
-#### Configuration DNS / DHCP
+### Configuration DNS / DHCP
 
 Assuming the local ethernet adapter is set to static IP `192.168.1.15/24`
 

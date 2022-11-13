@@ -40,7 +40,7 @@ optional arguments:
 
 ## Examples
 
-#### Challenge NTLM HTTPS endpoint
+### Challenge NTLM HTTPS endpoint
 
 ```plain
 $ python3 ntlm_challenger.py 'https://ntlm.example.com/'
@@ -67,7 +67,7 @@ Negotiate Flags:
   NTLMSSP_NEGOTIATE_VERSION
 ```
 
-#### Challenge SMB
+### Challenge SMB
 
 ```plain
 $ python3 ntlm_challenger.py 'smb://10.10.10.10' 

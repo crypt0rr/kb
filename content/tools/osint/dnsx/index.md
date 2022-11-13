@@ -90,7 +90,7 @@ CONFIGURATIONS:
 
 For more examples see [Github.com](https://github.com/projectdiscovery/dnsx#running-dnsx)
 
-#### Print A records for the given list of subdomains
+### Print A records for the given list of subdomains
 
 ```plain
 $ subfinder -silent -d hackerone.com | dnsx -silent -a -resp
@@ -130,7 +130,7 @@ resources.hackerone.com [52.60.160.16]
 resources.hackerone.com [52.60.165.183]
 ```
 
-#### Extract A records for the given list of subdomains
+### Extract A records for the given list of subdomains
 
 ```plain
 $ subfinder -silent -d hackerone.com | dnsx -silent -a -resp-only
@@ -154,7 +154,7 @@ $ subfinder -silent -d hackerone.com | dnsx -silent -a -resp-only
 185.199.111.153
 ```
 
-#### Extract CNAME records for the given list of subdomains
+### Extract CNAME records for the given list of subdomains
 
 ```plain
 subfinder -silent -d hackerone.com | dnsx -silent -cname -resp

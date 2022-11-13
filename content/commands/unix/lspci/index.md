@@ -63,13 +63,13 @@ PCI access options:
 
 ## Examples
 
-#### Show connected devices
+### Show connected devices
 
 ```plain
 sudo lspci
 ```
 
-#### Show connected devices human readable
+### Show connected devices human readable
 
 ```plain
 sudo lspci -mm
@@ -79,7 +79,7 @@ sudo lspci -mm
 00:08.0 "System peripheral" "Intel Corporation" "Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model" "Lenovo" "Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model"[...]
 ```
 
-#### Show specific device information
+### Show specific device information
 
 ```plain
 $ sudo lspci -s 3e:00.0 -v

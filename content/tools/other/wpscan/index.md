@@ -15,7 +15,7 @@ WordPress Vulnerability Scanner.
 
 ## Installation
 
-#### Requirements
+### Requirements
 
 ```plain
 sudo apt install gem zlib1g-dev ruby2.5-dev
@@ -25,7 +25,7 @@ sudo apt install gem zlib1g-dev ruby2.5-dev
 sudo gem install wpscan
 ```
 
-#### On failure of installation
+### On failure of installation
 
 ```plain
 sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
@@ -122,25 +122,25 @@ Usage: wpscan [options]
 
 ## Examples
 
-#### Normal scan
+### Normal scan
 
 ```plain
 wpscan --update --url <target>
 ```
 
-#### Normal scan and scan specific plugins
+### Normal scan and scan specific plugins
 
 ```plain
 wpscan --update --force --enumerate p,t,u,tt --url <target>
 ```
 
-#### Normal scan and force enumerate all plugins
+### Normal scan and force enumerate all plugins
 
 ```plain
 wpscan --update --force --enumerate plugins --url <target>
 ```
 
-#### Use proxy
+### Use proxy
 
 ```plain
 wpscan --proxy http://127.0.0.1:8080 --disable-tls-checks --url <target>

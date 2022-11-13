@@ -27,14 +27,14 @@ where <command> is one of waitall, getifaddr, ifcount, getoption, getiflist, get
 
 ## Examples
 
-#### Get list of interfaces
+### Get list of interfaces
 
 ```plain
 ipconfig getiflist                                     
 en4 en5 en6 en0 bridge0 en7
 ```
 
-#### Get address of specific interface
+### Get address of specific interface
 
 ```plain
 ipconfig getifaddr en7   

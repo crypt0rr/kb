@@ -52,7 +52,7 @@ Help options:
 
 ## Examples
 
-#### Recursively get with `anonymous` user
+### Recursively get with `anonymous` user
 
 ```plain
 # smbget -R smb://10.10.196.36/anonymous
@@ -65,7 +65,7 @@ smb://10.10.196.36/anonymous/logs/log3.txt
 Downloaded 634b in 2 seconds
 ```
 
-#### Recursively get with authentication
+### Recursively get with authentication
 
 ```plain
 # smbget -R smb://10.10.196.36/johndo -U johndo

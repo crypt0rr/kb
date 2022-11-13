@@ -45,7 +45,7 @@ optional arguments:
 
 ## Examples
 
-#### Check single email
+### Check single email
 
 ```plain
 $ python o365creeper.py -e john.do@example.com

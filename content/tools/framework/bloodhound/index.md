@@ -27,7 +27,7 @@ Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodH
 
 ## Usage
 
-#### Bloodhound - Run ingestor on target domain joined system
+### Bloodhound - Run ingestor on target domain joined system
 
 ```plain
 .\SharpHound.exe CollectionMethod All
@@ -43,11 +43,11 @@ Or:
 Invoke-BloodHound -CollectionMethod All
 ```
 
-#### Bloodhound - Remote ingestor
+### Bloodhound - Remote ingestor
 
 Please check [BloodHound.py]({{< ref "bloodhoundpy" >}})
 
-#### AzureHound
+### AzureHound
 
 Please check [AzureHound]({{< ref "azurehound" >}})
 
@@ -95,7 +95,7 @@ Some other custom queries:
 * [Github.com - CompassSecurity - BloodHoundQueries](https://raw.githubusercontent.com/CompassSecurity/BloodHoundQueries/master/customqueries.json)
 * [Github.com - Shutdownrepo - Exegol](https://raw.githubusercontent.com/ShutdownRepo/Exegol/master/sources/bloodhound/customqueries.json)
 
-#### Filter users from json export Bloodhound
+### Filter users from json export Bloodhound
 
 Filter domain admins
 

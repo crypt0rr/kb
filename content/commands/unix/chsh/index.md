@@ -28,7 +28,7 @@ Options:
 
 ## Examples
 
-#### Change default shell
+### Change default shell
 
 ```plain
 $ chsh -s /bin/zsh

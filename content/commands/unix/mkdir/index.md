@@ -21,7 +21,7 @@ mkdir [OPTION] directory
 
 ## Examples
 
-#### Create two separate directories
+### Create two separate directories
 
 ```plain
 $ mkdir one two
@@ -30,7 +30,7 @@ $ ls
 one two
 ```
 
-#### Create directories in a directory
+### Create directories in a directory
 
 ```plain
 $ mkdir -p test/{one,two,three}

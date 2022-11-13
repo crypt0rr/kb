@@ -125,7 +125,7 @@ General help using GNU software: <https://www.gnu.org/gethelp/>
 
 The `-` for the first file says the line is not present in the second file. The `+` at the second file says the line is present in the second file but not in the first.
 
-#### Context format
+### Context format
 
 ```plain
 diff -c file1 file2 
@@ -147,7 +147,7 @@ diff -c file1 file2
 + 
 ```
 
-#### Unified format
+### Unified format
 
 ```plain
 diff -u file1 file2

@@ -56,7 +56,7 @@ optional arguments:
 
 ## Examples
 
-#### Authentication username / password based
+### Authentication username / password based
 
 ```plain
 $ roadrecon auth -u john.do@offsec.nl
@@ -65,7 +65,7 @@ Password:
 Tokens were written to .roadtools_auth
 ```
 
-#### Authentication with device code (when MFA required)
+### Authentication with device code (when MFA required)
 
 ```plain
 $ roadrecon auth --device-code
@@ -73,7 +73,7 @@ To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 Tokens were written to .roadtools_auth
 ```
 
-#### Gather information
+### Gather information
 
 ```plain
 $ roadrecon gather -f .roadtools_auth
@@ -83,7 +83,7 @@ Starting data gathering phase 2 of 2 (collecting properties and relationships)
 ROADrecon gather executed in 82.96 seconds and issued 4148 HTTP requests.
 ```
 
-#### Start analysis tool
+### Start analysis tool
 
 Requirement: roadrecon.db needs to be in the same folder as the GUI is started
 
@@ -98,7 +98,7 @@ $ roadrecon gui
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-#### Export to XLS
+### Export to XLS
 
 ```plain
 $ roadrecon plugin xlsexport -d roadrecon.db -v

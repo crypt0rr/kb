@@ -54,19 +54,19 @@ or available locally via: info '(coreutils) touch invocation'
 
 ## Examples
 
-#### Create non-existing file
+### Create non-existing file
 
 ```plain
 touch <filename>
 ```
 
-#### Change complete timestamp of file
+### Change complete timestamp of file
 
 ```plain
 touch -d '1 January 1970 00:01' <filename>
 ```
 
-#### Change time of timestamp of file
+### Change time of timestamp of file
 
 ```plain
 touch -d '13:37' <filename>

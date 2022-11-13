@@ -81,7 +81,7 @@ Options:
 
 ## Examples
 
-#### Short overview of hardware
+### Short overview of hardware
 
 ```plain
 $ hwinfo --short
@@ -128,7 +128,7 @@ disk:
 [...]
 ```
 
-#### Show specific device info
+### Show specific device info
 
 ```plain
 $ hwinfo --cpu --short

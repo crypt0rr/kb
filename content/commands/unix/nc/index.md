@@ -72,7 +72,7 @@ nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
 
 ## Examples
 
-#### Create a Netcat listener
+### Create a Netcat listener
 
 This listener will listen on specific IP and port. IP can be removed if any interface is needed.
 
@@ -80,7 +80,7 @@ This listener will listen on specific IP and port. IP can be removed if any inte
 nc -lvp 10.10.10.2 80
 ```
 
-#### Transferring files
+### Transferring files
 
 Receiver
 

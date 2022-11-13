@@ -59,7 +59,7 @@ Options:
 
 ## Examples
 
-#### Default output
+### Default output
 
 ```plain
 $ ngxtop
@@ -85,7 +85,7 @@ Detailed:
 | /xxxxx/xxxx.json                         |    1840 |          800.542 |  1839 |     0 |     1 |     0 |
 ```
 
-#### View top source IPs of clients
+### View top source IPs of clients
 
 ```plain
 $ ngxtop top remote_addr
@@ -106,7 +106,7 @@ top remote_addr
 | 125.26.213.203  |      15 |
 ```
 
-#### List 4xx or 5xx responses together with HTTP referer
+### List 4xx or 5xx responses together with HTTP referer
 
 ```plain
 $ ngxtop -i 'status >= 400' print request status http_referer
@@ -118,7 +118,7 @@ request, status, http_referer:
 | -         |      400 | -              |
 ```
 
-#### Parse apache log from remote server with common format
+### Parse apache log from remote server with common format
 
 ```plain
 $ ssh user@remote_server tail -f /var/log/apache2/access.log | ngxtop -f common

@@ -82,7 +82,7 @@ The modules below can be used with the `-M` option.
 
 ## Examples
 
-#### Checking SSH available
+### Checking SSH available
 
 ```plain
 $ cme ssh 10.10.10.0/24
@@ -91,7 +91,7 @@ SSH         10.10.10.1      22     10.10.10.1       [*] SSH-2.0-OpenSSH_8.2p1 Ub
 SSH         10.10.10.3      22     10.10.10.3       [*] SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.4
 ```
 
-#### Brute force SSH
+### Brute force SSH
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 

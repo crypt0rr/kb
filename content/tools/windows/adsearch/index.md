@@ -81,7 +81,7 @@ Query Active Directory remotely or locally:
 
 ## Examples
 
-#### Enumerate Domain Admins
+### Enumerate Domain Admins
 
 ```plain
 .\ADSearch.exe --domain-admins -d offsec.nl

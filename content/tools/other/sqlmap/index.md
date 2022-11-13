@@ -193,13 +193,13 @@ available databases [3]:
 [*] ending @ 10:44:47 /2020-03-11/
 ```
 
-#### To run all without questions
+### To run all without questions
 
 ```plain
 --level 4 --risk 3 --batch
 ```
 
-#### Bypass WAF option
+### Bypass WAF option
 
 ```plain
 --tamper="between,randomcase"

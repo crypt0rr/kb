@@ -45,7 +45,7 @@ Options:
 
 ## Examples
 
-#### Set/reset password of current user
+### Set/reset password of current user
 
 ```plain
 passwd
@@ -57,7 +57,7 @@ Retype new password:
 Password changed successfully
 ```
 
-#### Set/reset password of other user
+### Set/reset password of other user
 
 ```plain
 sudo passwd <user>

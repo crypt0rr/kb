@@ -64,7 +64,7 @@ Use "mattermost [command] --help" for more information about a command.
 
 ## Examples
 
-#### Upgrade server
+### Upgrade server
 
 - [Docs.mattermost.com - Upgrading to the latest version](https://docs.mattermost.com/administration/upgrade.html?src=dl#upgrading-to-the-latest-version)
 
@@ -112,7 +112,7 @@ sudo systemctl start nginx.service
 sudo systemctl start mattermost.service
 ```
 
-#### Change user password
+### Change user password
 
 ```plain
 sudo ./mattermost user password 'user@example.com' 'new-password'

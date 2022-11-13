@@ -28,7 +28,7 @@ pipx install .
 
 On error uninstall `pipx python3 -m pip uninstall` pipx and remove local folder `sudo rm .local/pipx`. Then reinstall as listed above.
 
-#### Upgrading current installation
+### Upgrading current installation
 
 ```plain
 pipx upgrade crackmapexec

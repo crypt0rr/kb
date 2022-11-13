@@ -25,7 +25,7 @@ iex((iwr https://raw.githubusercontent.com/S3cur3Th1sSh1t/PowerSharpPack/master/
 
 ## Examples
 
-#### Identify vulnerable PKIs
+### Identify vulnerable PKIs
 
 ```plain
 PS Z:\> Invoke-Certify -Command 'find /vulnerable'

@@ -28,7 +28,7 @@ $ ./ARRAffinity.py -s 127.0.0.0/30
 127.0.0.3 98772e14388daf29e289ee5494c09b5086209d0e6c8ea32f6a8e35c8a14377e3
 ```
 
-#### Cookie and/or subnet check
+### Cookie and/or subnet check
 
 ```plain
 $ ./ARRAffinity.py -c c4a2a70106b7cf78b28c0ef7da0327960c3fc7fa76363fb9c937f01b04c6276f -s 10.20.30.0/24

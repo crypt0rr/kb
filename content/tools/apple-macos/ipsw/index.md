@@ -57,7 +57,7 @@ Use "ipsw [command] --help" for more information about a command.
 
 ## Examples
 
-#### Download macOS
+### Download macOS
 
 Also see [documentation](https://blacktop.github.io/ipsw/docs/commands/download/#download-macos).
 

@@ -44,7 +44,7 @@ Options :
 
 ## Examples
 
-#### Convert .IMG to .ISO
+### Convert .IMG to .ISO
 
 ```plain
 $ iat testfile.img outfile.iso

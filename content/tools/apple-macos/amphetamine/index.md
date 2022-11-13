@@ -15,7 +15,7 @@ Welcome to Amphetamine, the most awesome keep-awake app ever created for macOS. 
 
 ### Features
 
-#### Click to Keep Your Mac Awake
+### Click to Keep Your Mac Awake
 
 Quickly start a keep-awake session from Amphetamine's menu to keep your Mac awake.
 
@@ -31,7 +31,7 @@ During a keep-awake session, choose to allow or prevent:
 * Automated mouse cursor movement
 * Locking of the screen
 
-#### Advanced Automation
+### Advanced Automation
 
 Create a Trigger to automatically keep your Mac awake.
 
@@ -51,7 +51,7 @@ Create a Trigger to automatically keep your Mac awake.
 * While your Mac's CPU is being utilized to a specific threshold
 * When your Mac has been idle for a specific threshold
 
-#### What Else Does Amphetamine Do?
+### What Else Does Amphetamine Do?
 
 Amphetamine is the most powerful and customizable keep-awake utility ever created for macOS. Some other notable features are:
 

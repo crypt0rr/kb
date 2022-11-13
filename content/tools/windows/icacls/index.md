@@ -161,7 +161,7 @@ Examples:
 
 ## Examples
 
-#### Check rights on folder
+### Check rights on folder
 
 ```plain
 icacls Desktop

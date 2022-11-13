@@ -74,7 +74,7 @@ or available locally via: info '(coreutils) ln invocation'
 
 ## Examples
 
-#### Make symbolic link
+### Make symbolic link
 
 Symbolic links are essentially shortcuts that reference to a file instead of its inode value. This method can be applied to directories and can reference across different hard disks/volumes. Since the symbolic link is referring to the original file and not its inode value, then replacing the original file into a different folder will break the symbolic link, or create a dangling link.
 
@@ -93,7 +93,7 @@ $ ll sym-link-test
 lrwxrwxrwx 1 johndo johndo 5 Mar 17 11:47 sym-link-test -> file1
 ```
 
-#### Hardlink
+### Hardlink
 
 A hard link is a direct reference to a file via its inode. You can also only hardlink files and not directories. By using a hardlink, you can change the original file's contents or location and the hardlink will still point to the original file because its inode is still pointing to that file. There is no referencing to the original file. In addition, hardlinks can only refer to files within the same volume otherwise symbolic links will be needed.
 

@@ -19,7 +19,7 @@ Download newest release from [Virtualbox.org](https://www.virtualbox.org/wiki/Do
 
 ### Troubleshooting
 
-#### When no USB-device is reported to send to vm
+### When no USB-device is reported to send to vm
 
 ```plain
 sudo adduser $USER vboxusers

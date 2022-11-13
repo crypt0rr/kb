@@ -51,19 +51,19 @@ optional arguments:
 
 ## Examples
 
-#### SMB server share without password
+### SMB server share without password
 
 ```plain
 sudo smbserver.py -smb2support -ip <ip-to-bind> <share-name> <local-folder-to-share>
 ```
 
-#### SMB server share with password
+### SMB server share with password
 
 ```plain
 sudo smbserver.py -smb2support -username <username> -password <password> -ip <ip-to-bind> <share-name> <local-folder-to-share>
 ```
 
-#### SMB server during assessment to catch hashes
+### SMB server during assessment to catch hashes
 
 ```plain
 sudo smbserver.py -smb2support share $PWD

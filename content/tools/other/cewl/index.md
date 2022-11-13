@@ -74,7 +74,7 @@ Headers
 
 ## Examples
 
-#### Basic wordlist creation from URL
+### Basic wordlist creation from URL
 
 ```plain
 $ cewl -v -w loremipsum https://www.lipsum.com/
@@ -106,7 +106,7 @@ who
 pleasure
 ```
 
-#### Follow links on pages
+### Follow links on pages
 
 ```plain
 $ cewl -v -o -w loremipsum https://www.lipsum.com/

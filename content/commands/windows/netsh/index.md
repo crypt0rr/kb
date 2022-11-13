@@ -70,13 +70,13 @@ The following sub-contexts are available:
 
 ## Examples
 
-#### Show known Wi-Fi networks
+### Show known Wi-Fi networks
 
 ```cmd
 netsh wlan show profile
 ```
 
-#### Show passwords from known networks (admin required)
+### Show passwords from known networks (admin required)
 
 {{%attachments title="Script for showing all known network passwords" fa_icon_class="fas fa-terminal" pattern=".*(ps1)"/%}}
 
@@ -84,7 +84,7 @@ netsh wlan show profile
 netsh wlan show profile "<profilename>" key=clear
 ```
 
-#### Show current IP configuration
+### Show current IP configuration
 
 ```plain
 $ netsh interface ip show config
@@ -101,7 +101,7 @@ Configuration for interface "Ethernet"
     WINS servers configured through DHCP: None
 ```
 
-#### Create Mobile Hotspot
+### Create Mobile Hotspot
 
 `netsh wlan set hostednetwork mode=allow ssid=Test key=12345678`
 

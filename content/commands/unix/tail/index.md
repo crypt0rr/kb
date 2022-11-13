@@ -70,7 +70,7 @@ or available locally via: info '(coreutils) tail invocation'
 
 ## Examples
 
-#### Default tail usage
+### Default tail usage
 
 ```plain
 $ tail input.txt
@@ -87,7 +87,7 @@ line253
 line254
 ```
 
-#### Set specific amount of lines
+### Set specific amount of lines
 
 ```plain
 $ tail -n 7 input.txt
@@ -101,7 +101,7 @@ line253
 line254
 ```
 
-#### Follow the end of a file when it is dynamically filled
+### Follow the end of a file when it is dynamically filled
 
 ```plain
 $ tail -n 7 input.txt

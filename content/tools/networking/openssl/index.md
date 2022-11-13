@@ -59,14 +59,14 @@ rc4-40
 
 ## Examples
 
-#### Calculate digest
+### Calculate digest
 
 ```plain
 $ echo -n "foobar" | openssl dgst -sha256
 c3ab8ff13720e8ad9047dd39466b3c8974e592c2fa383d4a3960714caef0c4f2
 ```
 
-#### Create certificate
+### Create certificate
 
 * `req`: initiate a new certificate signing request
 * `-newkey`: generate a new private key

@@ -61,7 +61,7 @@ Main options:
 
 ## Examples
 
-#### Check amount of records
+### Check amount of records
 
 ```plain
 $ adidnsdump -u offsec\\janedo  10.10.10.10
@@ -73,7 +73,7 @@ Password:
 [+] Found 20 records
 ```
 
-#### View records found
+### View records found
 
 ```plain
 $ adidnsdump -u offsec\\janedo -v 10.10.10.10
@@ -108,7 +108,7 @@ Password:
 [+] Found 20 records
 ```
 
-#### Print DNS zones
+### Print DNS zones
 
 ```plain
 $ adidnsdump -u offsec\\janedo 10.10.10.10 --print-zones

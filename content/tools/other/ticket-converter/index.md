@@ -42,14 +42,14 @@ optional arguments:
 
 ## Examples
 
-#### kirbi to ccache
+### kirbi to ccache
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache
 Converting kirbi => ccache
 ```
 
-#### ccache to kirbi
+### ccache to kirbi
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.ccache johnDomainAdmin.kirbi

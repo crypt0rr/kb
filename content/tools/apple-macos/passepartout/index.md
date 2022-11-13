@@ -41,7 +41,7 @@ Passepartout does not engage any unrequested background activity other than the 
 
 ## Installation
 
-#### macOS / iOS
+### macOS / iOS
 
 Download from [Apple AppStore](https://apps.apple.com/us/app/passepartout-openvpn-client/id1433648537?mt=8)
 

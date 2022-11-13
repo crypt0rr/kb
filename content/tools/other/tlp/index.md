@@ -33,7 +33,7 @@ tlp start|true|bat|false|ac|usb|bayoff|chargeonce|discharge|setcharge|fullcharge
 
 ## Examples
 
-#### Set threshold
+### Set threshold
 
 ```plain
 sudo tlp setcharge 75 80 BAT0
@@ -45,7 +45,7 @@ Check statistics
 sudo tlp-stat -b
 ```
 
-#### Recalibrate cycle
+### Recalibrate cycle
 
 ```plain
 $ sudo tlp recalibrate
@@ -61,7 +61,7 @@ force discharge    = 1
 Press Ctrl+C to cancel.
 ```
 
-#### Temporarily fully charge
+### Temporarily fully charge
 
 ```plain
 $ sudo tlp fullcharge

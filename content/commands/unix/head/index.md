@@ -49,7 +49,7 @@ or available locally via: info '(coreutils) head invocation'
 
 ## Examples
 
-#### Default head usage
+### Default head usage
 
 ```plain
 $ head input.txt
@@ -66,7 +66,7 @@ line9
 line10
 ```
 
-#### Set specific line amount
+### Set specific line amount
 
 ```plain
 $ head -n7 input.txt

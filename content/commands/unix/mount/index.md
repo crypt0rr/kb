@@ -86,26 +86,26 @@ For more details see mount(8).
 
 ## Examples
 
-#### Mount device
+### Mount device
 
 ```plain
 sudo mount /dev/<partition> <mount-point>
 ```
 
-#### Unmount device
+### Unmount device
 
 ```plain
 sudo umount /dev/<partition>
 ```
 
-#### Mount SMB shares (SAMBA)
+### Mount SMB shares (SAMBA)
 
 ```plain
 sudo mkdir /mnt/local_share
 sudo mount -t cifs -o user=john //10.10.10.10/aiff /mnt/local_share
 ```
 
-#### Mount NFS
+### Mount NFS
 
 * `nolock` - prevents file locking
 

@@ -42,7 +42,7 @@ Report bugs to <md+whois@linux.it>.
 
 ## Examples
 
-#### Password 'test'
+### Password 'test'
 
 ```plain
 $ mkpasswd
@@ -50,7 +50,7 @@ Password:
 eph5h94RsO71E
 ```
 
-#### Password 'test' using SHA-512
+### Password 'test' using SHA-512
 
 ```plain
 $ mkpasswd --method=sha-512

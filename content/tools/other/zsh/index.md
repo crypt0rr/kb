@@ -53,27 +53,27 @@ option may be turned off by `-o no_OPTION', `--no-OPTION',
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-#### Plugins
+### Plugins
 
-##### Autocompletion
+#### Autocompletion
 
 ```plain
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-##### sudo - implements double tap esc for sudo
+#### sudo - implements double tap esc for sudo
 
 ```plain
 Add 'sudo' to plugins
 ```
 
-##### Auto highlighting
+#### Auto highlighting
 
 ```plain
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
-#### Theme
+### Theme
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-alt" pattern=".*(txt)"/%}}
 

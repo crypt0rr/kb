@@ -67,7 +67,7 @@ options:
 
 ## Examples
 
-#### Validation of anonymous login
+### Validation of anonymous login
 
 ```plain
 $ cme ftp 194.244.111.113 -u anonymous -p anonymous

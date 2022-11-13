@@ -19,13 +19,13 @@ net view [options]
 
 ## Examples
 
-#### List all shares including hidden
+### List all shares including hidden
 
 ```plain
 net view \\<DNS-or-IP> /All
 ```
 
-#### List all shares on different domain
+### List all shares on different domain
 
 ```plain
 net view /DOMAIN:domainname

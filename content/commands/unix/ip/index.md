@@ -37,7 +37,7 @@ OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
 
 ## Examples
 
-#### Show IPv4 addresses
+### Show IPv4 addresses
 
 ```plain
 $ ip -4 a
@@ -50,7 +50,7 @@ $ ip -4 a
        valid_lft 85828sec preferred_lft 85828sec
 ```
 
-#### Show IPv6 addresses
+### Show IPv6 addresses
 
 ```plain
 $ ip -6 addr

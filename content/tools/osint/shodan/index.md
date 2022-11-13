@@ -17,37 +17,37 @@ Shodan is the world's first search engine for Internet-connected devices.
 
 ## Examples
 
-#### Find devices in a particular city
+### Find devices in a particular city
 
 ```plain
 city:"<city>"
 ```
 
-#### Find devices in a particular country
+### Find devices in a particular country
 
 ```plain
 country:"<country-short>"
 ```
 
-#### Find specific title
+### Find specific title
 
 ```plain
 title:"<title>"
 ```
 
-#### Search for specific organisation
+### Search for specific organisation
 
 ```plain
 org:"<name>"
 ```
 
-#### Chromecasts / Smart TVs
+### Chromecasts / Smart TVs
 
 ```plain
 "Chromecast:" port:8008
 ```
 
-#### Microsoft RDP
+### Microsoft RDP
 
 ```plain
 "\x03\x00\x00\x0b\x06\xd0\x00\x00\x124\x00"
@@ -57,26 +57,26 @@ org:"<name>"
 \x03\x00\x00\x13\x0e\xd0\x00\x00\x124\x00\x03\x00\x08\x00\x02\x00\x00\x00
 ```
 
-#### Open surveilance cameras (user: admin without password)
+### Open surveilance cameras (user: admin without password)
 
 ```plain  
 NETSurveillance uc-httpd
 ```
 
-#### VNC-servers
+### VNC-servers
 
 ```plain
 "authentication disabled" "RFB 003.008"
 "authentication disabled" port:5900,5901
 ```
 
-#### Find certificate properties
+### Find certificate properties
 
 ```plain
 "ssl.cert.subject.cn:<name> country:nl"
 ```
 
-#### Find based on favicon
+### Find based on favicon
 
 Get the favicon and create a hash with the following script.
 

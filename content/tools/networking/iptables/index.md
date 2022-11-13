@@ -100,7 +100,7 @@ Options:
 
 ## Examples
 
-#### List default/current policy
+### List default/current policy
 
 ```plain
 sudo iptables -L
@@ -115,7 +115,7 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination 
 ```
 
-#### Accept traffic from specific IP Address
+### Accept traffic from specific IP Address
 
 ```plain
 $ sudo iptables -A INPUT -s 10.10.20.241 -j ACCEPT
@@ -133,7 +133,7 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination   
 ```
 
-#### Drop traffic to a specific DNS destination
+### Drop traffic to a specific DNS destination
 
 **Note** iptables will do a DNS lookup only at the time of the creation of the rule. If the IP address changes, the rule will become ineffective. For this reason, it is preferable to use the IP address of the domain.
 
@@ -155,7 +155,7 @@ DROP       tcp  --  anywhere             s3-console-us-standard.console.aws.amaz
 DROP       tcp  --  anywhere             54.239.28.85 
 ```
 
-#### Block / Accept traffic on specific port(s)
+### Block / Accept traffic on specific port(s)
 
 ```plain
 sudo iptables -A OUTPUT -p tcp --dport 80 -j DROP

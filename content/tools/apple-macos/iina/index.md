@@ -32,7 +32,7 @@ IINA is born to be a modern macOS application, from its framework to the user in
 * Command line tool and browser extensions provided
 * In active development
 
-#### Plays anything
+### Plays anything
 
 Powered by the open source media player mpv, IINA can play almost every media file you have. With the support of youtube-dl and our browser extensions, you can also play a variety of online streams in IINA via one click.
 
@@ -52,19 +52,19 @@ brew install --cask iina
 
 ## Examples
 
-#### Dark Mode
+### Dark Mode
 
 IINA ships with a carefully crafted user interface for the macOS Mojave dark mode, which includes adjusted colors, icons and textures, providing a sleek and unified look.
 
 ![example](images/example2.png)
 
-#### Picture-in-Picture
+### Picture-in-Picture
 
 IINA supports the native Picture-in-Picture mode, enables you to enjoy either local or online videos without being distracted.
 
 ![example](images/example3.png)
 
-#### Settings
+### Settings
 
 ![example](images/example4.png)
 

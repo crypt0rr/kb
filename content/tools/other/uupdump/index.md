@@ -17,7 +17,7 @@ Download UUP files from Windows Update servers with ease - Create Windows ISO as
 
 ## Installation
 
-#### Linux (Debian)
+### Linux (Debian)
 
 Please install [Aria2]({{< ref "aria2" >}}).
 
@@ -25,7 +25,7 @@ Please install [Aria2]({{< ref "aria2" >}}).
 sudo apt-get install cabextract wimtools chntpw genisoimage
 ```
 
-#### Apple Silicon
+### Apple Silicon
 
 ```plain
 brew tap minacle/chntpw
@@ -44,7 +44,7 @@ Select the right package you want to download on [UUPdump.net](https://uupdump.n
 
 ## Examples
 
-#### Linux
+### Linux
 
 Extract the package just downloaded with the options you want.
 
@@ -70,7 +70,7 @@ Max brk space used d5000
 Done.
 ```
 
-#### macOS
+### macOS
 
 Extract the package just downloaded with the options you want.
 

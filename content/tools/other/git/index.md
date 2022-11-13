@@ -72,7 +72,7 @@ to read about a specific subcommand or concept.
 
 ## Examples
 
-#### Initial setup
+### Initial setup
 
 Get noreply e-mail for your account from <https://github.com/settings/emails>
 
@@ -81,7 +81,7 @@ git config --global user.email example@users.noreply.github.com
 git config --global user.name example
 ```
 
-#### Steps for commit
+### Steps for commit
 
 ```plain
 git add <file>
@@ -89,7 +89,7 @@ git commit -m '<description>'
 git push
 ```
 
-#### SSH use
+### SSH use
 
 ```plain
 Host github.com
@@ -99,7 +99,7 @@ Host github.com
         IdentityFile private_key
 ```
 
-#### New repo from existing files folder
+### New repo from existing files folder
 
 ```plain
 git init
@@ -110,7 +110,7 @@ git branch -M master
 git push -u origin master
 ```
 
-#### Submodule (repo in the repo)
+### Submodule (repo in the repo)
 
 Create the file .gitmodules in root of repo and add something like:
 
@@ -125,21 +125,21 @@ git submodule init
 git submodule update
 ```
 
-#### Remove file from git AND locally
+### Remove file from git AND locally
 
 ```plain
 git rm file1.txt
 git commit -m "remove file1.txt"
 ```
 
-#### Remove file from git but NOT locally
+### Remove file from git but NOT locally
 
 ```plain
 git rm --cached file1.txt
 git commit -m "remove file1.txt"
 ```
 
-#### Overview of contribution on repo
+### Overview of contribution on repo
 
 ```plain
 $ git shortlog -s -n

@@ -13,13 +13,13 @@ weight : 0
 
 ## Usage
 
-#### Kill by PID
+### Kill by PID
 
 ```plain
 kill <pid>
 ```
 
-#### Kill by name
+### Kill by name
 
 ```plain
 pkill <name>

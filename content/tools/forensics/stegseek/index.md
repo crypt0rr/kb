@@ -59,7 +59,7 @@ Use "stegseek --help -v" to include steghide's help.
 
 ## Examples
 
-#### Cracking
+### Cracking
 
 The most important feature of stegseek is wordlist cracking:
 
@@ -69,7 +69,7 @@ stegseek [stegofile.jpg] [wordlist.txt]
 
 This mode will simply try all passwords in the provided wordlist against the provided stegofile.
 
-#### Detection and passwordless extraction (CVE-2021-27211)
+### Detection and passwordless extraction (CVE-2021-27211)
 
 Stegseek can also be used to detect and extract any unencrypted (meta) data from a steghide image. This exploits the fact that the random number generator used in steghide only has 2^32 possible seeds, which can be bruteforced in a matter of minutes.
 

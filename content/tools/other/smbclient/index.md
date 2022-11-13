@@ -75,13 +75,13 @@ Authentication options:
 
 ## Examples
 
-#### List SMB-shares on target without passwords
+### List SMB-shares on target without passwords
 
 ```plain
 smbclient -L //<target-ip> -N
 ```
 
-#### SMB NULL-sessions
+### SMB NULL-sessions
 
 ```plain
 smbclient //<victim_ip>/IPC$ -N
@@ -89,7 +89,7 @@ smbclient //<victim_ip>/IPC$ -N
 Success #:/smb>
 ```
 
-#### Connect to SMB-share
+### Connect to SMB-share
 
 ```plain
 $ smbclient \\\\10.10.10.10\\c$ -U administrator -W offsec
@@ -115,7 +115,7 @@ smb: \> ls
 smb: \>
 ```
 
-#### Download file(s)
+### Download file(s)
 
 ```plain
 # smbclient //10.10.10.10/nt4wrksv -U guest

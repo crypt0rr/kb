@@ -56,7 +56,7 @@ Usage:
 
 ## Examples
 
-#### Network adapter overview
+### Network adapter overview
 
 ```plain
 ifconfig
@@ -71,7 +71,7 @@ wlp4s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
 
-#### Change MAC address
+### Change MAC address
 
 ```plain
 sudo ifconfig eth0 down

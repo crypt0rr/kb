@@ -59,7 +59,7 @@ Options:
 
 ## Examples
 
-#### Searching NTLM hash
+### Searching NTLM hash
 
 ```plain
 $ sth -t 'b6adc1c00024a2e4456de1e3d065af41'

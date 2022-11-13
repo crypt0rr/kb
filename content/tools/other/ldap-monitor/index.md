@@ -41,13 +41,13 @@ git clone https://github.com/p0dalirius/LDAPmonitor.git
 
 ## Usage
 
-#### Python
+### Python
 
 ```plain
 ./ldapmonitor.py -d 'LAB.local' -u 'user1' -p 'Welkom1234!' --dc-ip 10.10.10.10
 ```
 
-#### PowerShell
+### PowerShell
 
 ```plain
 ldapmonitor.exe /dcip:10.10.10.10 /user:LAB\user1 /pass:Welkom1234!

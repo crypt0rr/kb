@@ -37,7 +37,7 @@ Options:
 
 ## Examples
 
-#### Show password information
+### Show password information
 
 ```plain
 $ chage -l b

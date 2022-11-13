@@ -32,7 +32,7 @@ Connect-AzureAD -Credential $AzureAdCred
 
 ## Examples
 
-#### Get-AzureADUser
+### Get-AzureADUser
 
 ```powershell
 PS C:\Users\Commando-B > Get-AzureADUser
@@ -44,7 +44,7 @@ b4e1ee94-0ad8-[REDACTED]             Jane DO                   jane.do@offsec.nl
 d2a782cb-838e-[REDACTED]             Administrator             admin@offsec.nl.onmicrosoft.com           Member
 ```
 
-#### Get-AzureADGroup
+### Get-AzureADGroup
 
 ```powershell
 PS C:\Users\Commando-B > Get-AzureADGroup

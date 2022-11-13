@@ -33,7 +33,7 @@ Options:
 
 ## Examples
 
-#### Show distribution specific info
+### Show distribution specific info
 
 ```plain
 $ lsb_release -a

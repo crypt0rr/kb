@@ -83,7 +83,7 @@ optional arguments:
 
 ## Examples
 
-#### Gather information without 2FA
+### Gather information without 2FA
 
 ```plain
 $ python3 all_groups.py -u johndo@example.com -p 'Welkom1234!'
@@ -97,7 +97,7 @@ Getting groups details...
 Bye!
 ```
 
-#### Gather when 2FA is implemented
+### Gather when 2FA is implemented
 
 ```plain
 $ python3 all_groups.py --device-code

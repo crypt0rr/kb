@@ -65,7 +65,7 @@ Use "gowitness [command] --help" for more information about a command.
 
 ## Examples
 
-#### Single page screenshot
+### Single page screenshot
 
 ```plain
 $ gowitness single https://www.google.com/
@@ -74,7 +74,7 @@ $ gowitness single https://www.google.com/
 
 ![Example](images/example-1.png)
 
-#### Screenshot nmap XML output
+### Screenshot nmap XML output
 
 ```plain
 $ gowitness nmap --file out.xml                       
@@ -93,7 +93,7 @@ $ gowitness nmap --file out.xml
 21 Jun 2022 21:14:59 INF processing complete
 ```
 
-#### View results in web browser
+### View results in web browser
 
 ```plain
 $ gowitness server                        

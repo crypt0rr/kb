@@ -56,7 +56,7 @@ Or download newest binary from the [releases](https://github.com/sensepost/go-ou
 
 ## Examples
 
-#### Checking on HTTP protocol on port range from 80 to 100
+### Checking on HTTP protocol on port range from 80 to 100
 
 ```plain
 $ ./go-out -start=80 -end=100 -https=false
@@ -80,7 +80,7 @@ Random Ports:   false
 Done in 6.32565113s
 ```
 
-#### Checking on HTTPS protocol on port range from 80 to 443
+### Checking on HTTPS protocol on port range from 80 to 443
 
 ```plain
 $ ./go-out -start=80 -end=443             

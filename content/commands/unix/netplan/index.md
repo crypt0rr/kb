@@ -42,7 +42,7 @@ Available commands:
 
 ## Examples
 
-#### Example config static IP
+### Example config static IP
 
 ```yaml
 network:
@@ -58,7 +58,7 @@ network:
                 - 9.9.9.9
 ```
 
-#### DHCP
+### DHCP
 
 ```yaml
 network:

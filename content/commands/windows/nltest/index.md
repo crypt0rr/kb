@@ -76,7 +76,7 @@ nltest [/OPTIONS]
 
 ## Examples
 
-#### list Domain Controllers
+### list Domain Controllers
 
 ```plain
 $ nltest /dclist:offsec.nl
@@ -86,7 +86,7 @@ Get list of DCs in domain 'offsec.nl' from '\\SRV2022.offsec.nl'.
 The command completed successfully
 ```
 
-#### List domain trusts
+### List domain trusts
 
 ```plain
 $ nltest /domain_trusts

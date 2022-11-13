@@ -64,12 +64,12 @@ Examples:
 
 ## Examples
 
-#### Setting up connection
+### Setting up connection
 
 * Username/password authentication: `./ldapper -dc 10.0.0.20 -u crypt0rr@offsec.nl -p Welkom1234`
 * NTLM Authentication: `./ldapper -dc 10.0.0.20 -u crypt0rr@offsec.nl -H 97f2592347d8fbe42be381726ff9ea83`
 
-#### Starting LDAP-shell session running 'net user'
+### Starting LDAP-shell session running 'net user'
 
 ```plain
 > net user administrator
@@ -91,14 +91,14 @@ Mail:
 SPN(s): 
 ```
 
-#### Retrieve ms-DS-MachineAccountQuota
+### Retrieve ms-DS-MachineAccountQuota
 
 ```plain
 > mquota
 Machine Account Quota: 10
 ```
 
-#### Checking password policy
+### Checking password policy
 
 ```plain
 > passpol
@@ -114,7 +114,7 @@ Maximum Password Age:           42      day(s)
 Password Complexity:            DOMAIN_PASSWORD_COMPLEX
 ```
 
-#### Retrieve group members 'net group'
+### Retrieve group members 'net group'
 
 ```plain
 > net group Domain Admins
@@ -136,7 +136,7 @@ crypt0rr        KIMBERLEY_CONTRERAS     LORENE_CLINE
 1060184468SA
 ```
 
-#### Get list of SPNs and perform kerberoasting
+### Get list of SPNs and perform kerberoasting
 
 ```plain
 > getspns

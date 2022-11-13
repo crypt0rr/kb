@@ -23,7 +23,7 @@ This tool can be easily combined with [dnsx]({{< ref "dnsx" >}}).
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 ```
 
-#### Post Installation Instructions
+### Post Installation Instructions
 
 Subfinder will work after using the installation instructions however to configure Subfinder to work with certain services, you will need to have setup API keys. The following services do not work without an API key:
 

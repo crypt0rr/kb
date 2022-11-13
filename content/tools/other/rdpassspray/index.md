@@ -63,7 +63,7 @@ optional arguments:
 
 ## Examples
 
-#### Single user password spray
+### Single user password spray
 
 ```plain
 $ python3 RDPassSpray.py -u johndo -p Welkom1234 -t 10.10.10.10
@@ -76,7 +76,7 @@ $ python3 RDPassSpray.py -u johndo -p Welkom1234 -t 10.10.10.10
 [06-08-2020 08:50] - [*] Finished running at: 06-08-2020 08:50:48
 ```
 
-#### Multiple targets password spray
+### Multiple targets password spray
 
 **RECOMMENDED** Use output to CSV, otherwise target IP is not shown afterwards
 
@@ -98,7 +98,7 @@ $ python3 RDPassSpray.py -u johndo -p Welkom1234 -T targetlist.txt -o ouptut.txt
 
 ![Example](images/example-1.png)
 
-#### Multiple users password spray
+### Multiple users password spray
 
 **Note** list of users can be easily created with ldapdomaindump tool
 

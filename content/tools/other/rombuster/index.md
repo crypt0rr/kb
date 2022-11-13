@@ -52,7 +52,7 @@ optional arguments:
 
 ## Examples
 
-#### Exploiting single router
+### Exploiting single router
 
 Let's hack my router just for fun.
 
@@ -60,7 +60,7 @@ Let's hack my router just for fun.
 rombuster -a 192.168.99.1
 ```
 
-#### Exploiting routers from Internet
+### Exploiting routers from Internet
 
 Let's try to use Shodan search engine to exploit routers over Internet.
 
@@ -77,7 +77,7 @@ $ rombuster --shodan [REDACTED]
 [*] Exploiting...
 ```
 
-#### Exploiting routers from input file
+### Exploiting routers from input file
 
 Let's try to use opened database of routers.
 

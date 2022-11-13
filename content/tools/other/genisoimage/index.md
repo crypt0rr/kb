@@ -27,7 +27,7 @@ genisoimage [options] [-o filename] pathspec [pathspec ...]
 
 ## Examples
 
-#### Lenovo BIOS update
+### Lenovo BIOS update
 
 Download newest BIOS from <https://support.lenovo.com/nl/en/>
 

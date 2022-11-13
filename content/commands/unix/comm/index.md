@@ -59,7 +59,7 @@ It outputs three space-offset columns:
 * The second contains lines that are unique to the second file or argument
 * The third column contains lines that are shared by both files
 
-#### Compare normally
+### Compare normally
 
 Content file 1 and 2
 
@@ -99,7 +99,7 @@ $ comm -12 file1 file2
 192.168.1.5
 ```
 
-#### Compare where content of lines do not directly match but are matched at other lines in file
+### Compare where content of lines do not directly match but are matched at other lines in file
 
 ```plain
 $ cat file1      

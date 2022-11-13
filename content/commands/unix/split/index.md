@@ -65,13 +65,13 @@ or available locally via: info '(coreutils) split invocation'
 
 ## Examples
 
-#### Split files default 1000 lines per file
+### Split files default 1000 lines per file
 
 ```plain
 split <file>
 ```
 
-#### Split files with customize line numbers (-l)
+### Split files with customize line numbers (-l)
 
 Split a file with 200 lines per file
 

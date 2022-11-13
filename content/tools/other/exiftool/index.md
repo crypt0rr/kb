@@ -15,13 +15,13 @@ Read and write meta information in files.
 
 ## Installation
 
-#### APT Repo
+### APT Repo
 
 ```plain
 sudo apt install exiftool
 ```
 
-#### GitHub Repo
+### GitHub Repo
 
 ```plain
 git clone https://github.com/exiftool/exiftool.git

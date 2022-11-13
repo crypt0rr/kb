@@ -48,13 +48,13 @@ Max number of communities:  16384
 
 ## Examples
 
-#### Basic whole subnet scan
+### Basic whole subnet scan
 
 ```plain
 onesixtyone 192.168.4.0/24 public
 ```
 
-#### Using list to check multiple community strings
+### Using list to check multiple community strings
 
 ```plain
 $ onesixtyone -c communitylist -i targets

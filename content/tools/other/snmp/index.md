@@ -19,13 +19,13 @@ Simple Network Management Protocol.
 sudo apt install snmp
 ```
 
-#### snmpbulkget
+### snmpbulkget
 
 ```plain
 snmpbulkget -v 2c -c public <ip> iso.3.6.1.2.1.1.9
 ```
 
-#### snmp-check (Kali)
+### snmp-check (Kali)
 
 ```plain
 snmp-check -w <ip>

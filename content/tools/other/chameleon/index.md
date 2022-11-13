@@ -42,7 +42,7 @@ optional arguments:
 
 ## Examples
 
-#### Checking the category of your website against all supported proxies
+### Checking the category of your website against all supported proxies
 
 ```plain
 $ python chameleon.py --proxy a --check --domain google.com
@@ -70,7 +70,7 @@ $ python chameleon.py --proxy a --check --domain google.com
 [-] Domain categorised as Search Engines / Web Catalogues / Portals
 ```
 
-#### Submitting your domain for the financial category for McAfee proxy only
+### Submitting your domain for the financial category for McAfee proxy only
 
 ```plain
 $ python chameleon.py --proxy m --submit --domain foobar.com

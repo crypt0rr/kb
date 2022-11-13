@@ -73,11 +73,11 @@ Current AD Domain is: offsec.nl
 Targeting SYSVOL at: \\offsec.nl\sysvol\offsec.nl\
 
 I found all these directories in SYSVOL...
-#########################################
+###############################
 \\offsec.nl\sysvol\offsec.nl\DfsrPrivate
 \\offsec.nl\sysvol\offsec.nl\Policies
 \\offsec.nl\sysvol\offsec.nl\scripts
-#########################################
+###############################
 ... and I'm going to find all the goodies I can in all of them.
 
 230 GPOs to process.

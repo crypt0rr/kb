@@ -43,13 +43,13 @@ locate [OPTION]... PATTERN...
 
 ## Examples
 
-#### Update Locate database
+### Update Locate database
 
 ```plain
 sudo updatedb
 ```
 
-#### Using Locate to find python3 related items
+### Using Locate to find python3 related items
 
 ```plain
 $ locate python3 | head

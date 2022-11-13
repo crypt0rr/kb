@@ -70,55 +70,55 @@ Options:
 
 ## Examples
 
-#### Start screen session
+### Start screen session
 
 ```plain
 screen
 ```
 
-#### Start screen with specified name
+### Start screen with specified name
 
 ```plain
 screen -S <name>
 ```
 
-#### Detach connected screen
+### Detach connected screen
 
 ```plain
 ctrl + a; d
 ```
 
-#### List running screen sessions
+### List running screen sessions
 
 ```plain
 screen -ls
 ```
 
-#### Reattach to running screen
+### Reattach to running screen
 
 ```plain
 screen -r <pid>
 ```
 
-#### Reattach to running screen by name
+### Reattach to running screen by name
 
 ```plain
 screen -r <name>
 ```
 
-#### Lock screen session
+### Lock screen session
 
 ```plain
 ctrl + a; x
 ```
 
-#### Kill detached screen
+### Kill detached screen
 
 ```plain
 screen -S <name-or-pid> -X kill
 ```
 
-#### Quit detached screen
+### Quit detached screen
 
 ```plain
 screen -S <name-or-pid> -X quit

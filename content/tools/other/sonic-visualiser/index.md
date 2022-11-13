@@ -20,11 +20,11 @@ Download newest version of [Tony](https://code.soundsoftware.ac.uk/projects/soni
 
 ## Examples
 
-#### Visualiser
+### Visualiser
 
 ![Sonic Visualiser](images/example1.png)
 
-#### Tony
+### Tony
 
 ![Tony](images/example2.png)
 

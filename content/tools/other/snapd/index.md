@@ -53,19 +53,19 @@ For a short summary of all commands, run 'snap help --all'.
 
 ## Examples
 
-#### Install snap package
+### Install snap package
 
 ```plain
 sudo snap install <package>
 ```
 
-#### Remove snap package
+### Remove snap package
 
 ```plain
 sudo snap remove <package>
 ```
 
-#### Find snap package
+### Find snap package
 
 ```plain
 snap search <package>

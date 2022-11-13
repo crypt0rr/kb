@@ -110,7 +110,7 @@ VERBOSE: [10:29:48:848] [Select-AzSecSubscription] - No valid subscription were 
 [Exception][Main][661]:Unable to retrieve resource groups....
 ```
 
-#### Reporting
+### Reporting
 
 Support for exporting data to popular formats like CSV, XML or JSON.
 

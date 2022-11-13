@@ -25,7 +25,7 @@ Please check [linux.die.net - ps](https://linux.die.net/man/1/ps)
 
 ## Examples
 
-#### List all processes running in full format
+### List all processes running in full format
 
 The `-ef` options we used above stand for:
 
@@ -52,7 +52,7 @@ root          14       2  0 17:05 ?        00:00:00 [migration/0]
 [...]
 ```
 
-#### Search specific process by  name
+### Search specific process by  name
 
 `e` is replaced by `C` so the command name can be searched instead of all processes.
 

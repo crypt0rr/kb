@@ -67,7 +67,7 @@ The firmware password can also be managed with the firmwarepasswd utility while 
 sudo firmwarepasswd -setpasswd -setmode command
 ```
 
-#### Verifying password
+### Verifying password
 
 ```plain
 $ sudo firmwarepasswd -verify

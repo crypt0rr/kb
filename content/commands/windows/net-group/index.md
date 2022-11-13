@@ -27,7 +27,7 @@ net group [<GroupName> <UserName>[ ...] {/add | /delete} [/domain]]
 
 ## Examples
 
-#### Show all members of a specific group
+### Show all members of a specific group
 
 ```cmd
 net group "Domain Admins" /DOMAIN
@@ -46,7 +46,7 @@ JohnDO
 The command completed successfully.
 ```
 
-#### List all domain groups
+### List all domain groups
 
 ```cmd
 net group /DOMAIN

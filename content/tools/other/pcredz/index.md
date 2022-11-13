@@ -34,7 +34,7 @@ This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Ker
 
 ## Installation
 
-#### Requirements
+### Requirements
 
 ```plain
 apt install python3-pip && sudo apt-get install libpcap-dev && python3 -m pip install Cython && python3 -m pip install python-libpcap
@@ -47,7 +47,7 @@ git clone https://github.com/caizhengxin/python-libpcap.git
 python3 setup.py install
 ```
 
-#### Download tool
+### Download tool
 
 ```plain
 git clone https://github.com/lgandx/PCredz.git
@@ -104,7 +104,7 @@ NTLMv2 complete hash is: john-do::OFFSEC:aaaaaaaaaaaaaaaa:41DBF91ACAE926FCF1BB4D
 
 Note: first change owner for the input PCAP(NG) file. `sudo chown -R $USER:$USER *.pcap*`
 
-#### HTTP Basic authentication
+### HTTP Basic authentication
 
 ```plain
 $ python3 ./Pcredz -f capture.pcapng
@@ -124,7 +124,7 @@ Found  HTTP Basic authentication: johndo:johndo
 capture.pcapng parsed in: 0.32 seconds (File size 1.94 Mo).
 ```
 
-#### SNMP(v1-v2)
+### SNMP(v1-v2)
 
 ```plain
 $ python3 ./Pcredz -f capture.pcapng
@@ -153,7 +153,7 @@ protocol: udp 172.17.1.70:58808 > 172.17.210.117:161
 Found SNMPv2 Community string: public
 ```
 
-#### NTLMv2
+### NTLMv2
 
 ```plain
 $ python3 ./Pcredz -f capture.pcapng
@@ -173,7 +173,7 @@ protocol: tcp 10.51.222.19:49254 > 10.51.223.29:80
 NTLMv2 complete hash is: SA-DA::OFFSEC:717b58d1234658b:0CDFE112345678909742C4EBE4:01010000000000007E9CBA2A3E0FD7017720946CFDAC6FB7000000000200060053004D0042000100160053004D0042002D0054004F004F004C004B00490054000400120073006D0062002E006C006F00630061006C000300280073006500720076006500720032003000300033002E007610064000000000000000000
 ```
 
-#### Microsoft SQL
+### Microsoft SQL
 
 ```plain
 $ python3 Pcredz -f capture.pcapng                         

@@ -53,7 +53,7 @@ If -r, -l or -p are not enabled, netdiscover will scan for common LAN addresses.
 
 ## Examples
 
-#### Scan whole network
+### Scan whole network
 
 ```plain
 sudo netdiscover -r 10.20.30.0/24

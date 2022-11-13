@@ -54,7 +54,7 @@ Application Options:
 
 ## Examples
 
-#### Edit default terminal
+### Edit default terminal
 
 ```plain
 sudo update-alternatives --config x-terminal-emulator

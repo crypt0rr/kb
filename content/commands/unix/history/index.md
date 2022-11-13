@@ -51,7 +51,7 @@ history -ps arg
 
 ## Examples
 
-#### Clear history
+### Clear history
 
 ```plain
 history -c

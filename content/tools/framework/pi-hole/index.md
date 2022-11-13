@@ -71,7 +71,7 @@ Options:
 
 ## Examples
 
-#### Change Admin interface options
+### Change Admin interface options
 
 ```plain
 $ pihole -a -h
@@ -89,7 +89,7 @@ Options:
   -l, privacylevel    Set privacy level (0 = lowest, 4 = highest)
 ```
 
-#### Pi-Hole Chronometer
+### Pi-Hole Chronometer
 
 ```plain
 $ pihole -c

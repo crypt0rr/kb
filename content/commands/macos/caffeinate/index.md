@@ -46,13 +46,13 @@ caffeinate [-disu] [-t timeout] [-w pid] [utility arguments...]
 
 ## Examples
 
-#### Prevent sleep for 1 hour (3600 seconds)
+### Prevent sleep for 1 hour (3600 seconds)
 
 ```plain
 caffeinate -u -t 3600
 ```
 
-#### Make caffeinate fork a process, exec "make" in it, and hold an assertion that prevents idle sleep as long as that process is running
+### Make caffeinate fork a process, exec "make" in it, and hold an assertion that prevents idle sleep as long as that process is running
 
 ```plain
 caffeinate -i make

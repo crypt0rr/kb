@@ -95,7 +95,7 @@ General help using GNU software: <https://www.gnu.org/gethelp/>
 
 ## Examples
 
-#### Compare content of files to find matches
+### Compare content of files to find matches
 
 ```plain
 $ grep -f 1 2
@@ -105,7 +105,7 @@ This is the second centence.
 This is the third centence.
 ```
 
-#### Find lines that contain specific string
+### Find lines that contain specific string
 
 Number in front of the centences are the file names
 
@@ -123,7 +123,7 @@ $ grep 'the' *
 3:This is the third centence.
 ```
 
-#### Ignore case
+### Ignore case
 
 ```plain
 $ grep -i 'centence' *

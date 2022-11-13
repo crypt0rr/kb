@@ -205,7 +205,7 @@ For local authentication, add the `--local-auth` flag to the command.
 cme smb <target> -u <user> -p <password> --ntds
 ```
 
-#### Dump NTDS history
+### Dump NTDS history
 
 ```plain
 cme smb <target> -u <user> -p <password> --ntds-history

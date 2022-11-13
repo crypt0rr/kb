@@ -21,37 +21,37 @@ Download newest release from [fireball.studio](https://fireball.studio/oneswitch
 
 ## Examples
 
-#### Hide Desktop Icons
+### Hide Desktop Icons
 
 Hide your messy desktop with one click.
 
 ![Example](images/example2.gif)
 
-#### Dark Mode
+### Dark Mode
 
 Toggle Dark Mode at any time.
 
 ![Example](images/example3.gif)
 
-#### Keep Awake
+### Keep Awake
 
 Prevent your Mac from sleeping or displaying the screen saver.
 
 ![Example](images/example4.gif)
 
-#### Screen Saver
+### Screen Saver
 
 Sometimes you will like to turn it on manually.
 
 ![Example](images/example5.gif)
 
-#### AirPods
+### AirPods
 
 Connect AirPods with your Mac in just a second.
 
 ![Example](images/example6.gif)
 
-#### Designed for macOS
+### Designed for macOS
 
 Perfect for both dark mode and light mode.
 

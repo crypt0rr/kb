@@ -15,11 +15,11 @@ osslsigncode is a small tool that implements part of the functionality of the Mi
 
 ## Installation
 
-#### Linux
+### Linux
 
 Check [github.com](https://github.com/mtrojnar/osslsigncode) for installation instructions.
 
-#### macOS
+### macOS
 
 ```plain
 brew install osslsigncode

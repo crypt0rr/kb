@@ -29,7 +29,7 @@ Usage: figlet [ -cklnoprstvxDELNRSWX ] [ -d fontdirectory ]
 
 ## Examples
 
-#### Default usage and font
+### Default usage and font
 
 ```plain
 $ figlet yourtexthere          
@@ -41,7 +41,7 @@ $ figlet yourtexthere
  |___/      
 ```
 
-#### Use another font
+### Use another font
 
 Fonts are located in `/usr/share/figlet`
 

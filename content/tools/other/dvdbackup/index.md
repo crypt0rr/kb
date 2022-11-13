@@ -59,7 +59,7 @@ Report bugs on Launchpad: https://bugs.launchpad.net/dvdbackup
 
 ## Examples
 
-#### Backup full DVD
+### Backup full DVD
 
 ```plain
 $ dvdbackup -i /dev/sr0 -o ~ -M

@@ -53,7 +53,7 @@ Please check [repo](https://github.com/morrownr/8814au) for more information and
 
 ## Installation
 
-#### Debian (Ubuntu , Kali, Linux Mint etc.)
+### Debian (Ubuntu , Kali, Linux Mint etc.)
 
 ```plain
 sudo apt update

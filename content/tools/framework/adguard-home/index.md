@@ -70,7 +70,7 @@ Options:
 
 ### API usage
 
-#### Enable / disable AdGuard protection
+### Enable / disable AdGuard protection
 
 Disable
 

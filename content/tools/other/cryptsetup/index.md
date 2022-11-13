@@ -211,7 +211,7 @@ Default compiled-in device cipher parameters:
 
 ## Examples
 
-#### Check for encrypted partitions
+### Check for encrypted partitions
 
 Find partitions on the system.
 
@@ -245,7 +245,7 @@ $ sudo cryptsetup -v isLuks /dev/sda3
 Command successful.
 ```
 
-#### Change current LUSK passphrase
+### Change current LUSK passphrase
 
 ```plain
 sudo cryptsetup luksChangeKey <device>

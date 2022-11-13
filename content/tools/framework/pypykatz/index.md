@@ -53,7 +53,7 @@ optional arguments:
 
 ## Examples
 
-#### Read lsass dump
+### Read lsass dump
 
 ```plain
 pypykatz lsa minidump lsass_dump.DMP

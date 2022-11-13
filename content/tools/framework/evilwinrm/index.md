@@ -48,7 +48,7 @@ Evil-WinRM shell v2.3
 
 ## Examples
 
-#### Connect to remote system
+### Connect to remote system
 
 ```plain
 $ evil-winrm -i 10.10.10.10 -u administrator -p Welkom1234
@@ -79,7 +79,7 @@ _".,_,.__).,) (.._( ._),     )  , (._..( '.._"._, . '._)_(..,_(_".) _( _')
 [+] Invoke-Binary
 ```
 
-#### Use folder with scripts as PowerUp.ps1
+### Use folder with scripts as PowerUp.ps1
 
 ```plain
 $ evil-winrm -i 10.10.10.10 -u administrator -p Welkom1234 -s ~/PowerSploit/Privesc/

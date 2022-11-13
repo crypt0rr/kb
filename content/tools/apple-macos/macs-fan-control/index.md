@@ -32,19 +32,19 @@ For convenience the app features [fan presets](https://crystalidea.com/macs-fan-
 
 ## Examples
 
-#### Simple and efficient user interface
+### Simple and efficient user interface
 
 Two tables layout: with list of fans and list of temperature sensors.
 
 ![Example](images/carousel1.png)
 
-#### Change fan speed
+### Change fan speed
 
 Set custom RPM value or control fan speed in relation to a temperature sensor.
 
 ![Example](images/carousel2.png)
 
-#### Configurable menu bar display
+### Configurable menu bar display
 
 Options to display fan speed and sensor temperature (displayed in the tray icon under Windows).
 

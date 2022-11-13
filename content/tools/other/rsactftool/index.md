@@ -53,37 +53,37 @@ Mode 3 : Dump the public and/or private numbers (optionally including CRT parame
 
 ## Examples
 
-#### Uncipher file
+### Uncipher file
 
 ```plain
 ./RsaCtfTool.py --publickey ./key.pub --uncipherfile ./ciphered\_file
 ```
 
-#### Print private key
+### Print private key
 
 ```plain
 ./RsaCtfTool.py --publickey ./key.pub --private
 ```
 
-#### Attempt to break multiple public keys with common factor attacks or individually- use quotes around wildcards to stop bash expansion
+### Attempt to break multiple public keys with common factor attacks or individually- use quotes around wildcards to stop bash expansion
 
 ```plain
 ./RsaCtfTool.py --publickey "*.pub" --private
 ```
 
-#### Generate a public key
+### Generate a public key
 
 ```plain
 ./RsaCtfTool.py --createpub -n 7828374823761928712873129873981723...12837182 -e 65537
 ```
 
-#### Dump the parameters from a key
+### Dump the parameters from a key
 
 ```plain
 ./RsaCtfTool.py --dumpkey --key ./key.pub
 ```
 
-#### Factor with ECM when you know the approximate length in digits of a prime
+### Factor with ECM when you know the approximate length in digits of a prime
 
 ```plain
 ./RsaCtfTool.py --publickey key.pub --ecmdigits 25 --verbose --private`

@@ -61,7 +61,7 @@ Filtering options:
 
 ## Examples
 
-#### ATTENTION
+### ATTENTION
 
 To run mitm6 without interrupting the use of internet from the clients, you need to forward packets do this by running the following besides mitm6.
 
@@ -69,7 +69,7 @@ To run mitm6 without interrupting the use of internet from the clients, you need
 watch -n1 sudo sysctl -w net.ipv4.ip_forward=1
 ```
 
-#### Use tool to route whole network
+### Use tool to route whole network
 
 Tip: use [Responder]({{< ref "responder" >}}) to capture hashes or [NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}}) to relay hashes.
 
@@ -91,7 +91,7 @@ Sent spoofed reply for client.wns.windows.com. to fe80::4865:1
 Sent spoofed reply for v10.events.data.microsoft.com. to fe80::4865:1
 ```
 
-#### Specific target
+### Specific target
 
 ```plain
 sudo mitm6 -i eth0 -hw DC2016.offsec.nl

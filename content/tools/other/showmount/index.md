@@ -54,7 +54,7 @@ OPTIONS
 
 ## Examples
 
-#### List shares available
+### List shares available
 
 ```plain
 showmount -e <target>
@@ -64,7 +64,7 @@ Export list for <target>:
 /Private
 ```
 
-#### Mount available share
+### Mount available share
 
 ```plain
 sudo mount -t nfs <ip>:/share temp

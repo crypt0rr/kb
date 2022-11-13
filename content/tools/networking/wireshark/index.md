@@ -205,7 +205,7 @@ Miscellaneous:
 
 ## Examples
 
-#### Filter IPs from PCAP
+### Filter IPs from PCAP
 
 Command to extract IPs from captured PCAP-file.
 

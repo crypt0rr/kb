@@ -63,7 +63,7 @@ Use "kerbrute [command] --help" for more information about a command.
 
 ## Examples
 
-#### Validate usernames against domain
+### Validate usernames against domain
 
 After you succesfully enumerated [usernames](https://raw.githubusercontent.com/Sq00ky/attacktive-directory-tools/master/userlist.txt) you can try ASREPRoasting with [Impacket GetNPUsers.py]({{< ref "getnpusers-py" >}}) or use [CrackMapExec]({{< ref "tools/framework/crackmapexec" >}}) to do a password spray.
 
@@ -88,7 +88,7 @@ To extract the valid usernames to a separate file you can use the following comm
 cat userenum-output.txt | awk '{print $7}' | cut -d '@' -f1 > available-users.txt
 ```
 
-#### Password spray
+### Password spray
 
 It can be helpfull to use [LDAPDomainDump]({{< ref "ldapdomaindump" >}}) to gather all user accountnames, filter them and use as input for the spray.
 
@@ -104,7 +104,7 @@ $ ./kerbrute passwordspray --dc 10.10.10.10 -d offsec.nl users.txt Welkom01!
 Version: v1.0.3 (9dad6e1) - 02/15/21 - Ronnie Flathers @ropnop
 ```
 
-#### Username as password
+### Username as password
 
 It can be helpfull to use [LDAPDomainDump]({{< ref "ldapdomaindump" >}}) to gather all user accountnames and use them as input for the 'user-as-pass' spray.
 

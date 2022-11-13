@@ -51,7 +51,7 @@ python3.9 LdapRelayScan.py -method BOTH -dc-ip 10.0.0.20 -u domainuser1 -nthash 
 
 ## Examples
 
-#### Checking LDAPS Channel Binding
+### Checking LDAPS Channel Binding
 
 ```plain
 $ python3 LdapRelayScan.py -dc-ip 10.10.10.10
@@ -73,7 +73,7 @@ $ python3 LdapRelayScan.py -dc-ip 10.10.10.10
       [+] (LDAPS) CHANNEL BINDING NOT REQUIRED! PARTY TIME!
 ```
 
-#### Checking both LDAP and LDAPS
+### Checking both LDAP and LDAPS
 
 ```plain
 $ python3 LdapRelayScan.py -method BOTH -dc-ip 10.10.10.10 -u johndo

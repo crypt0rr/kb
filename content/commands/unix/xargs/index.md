@@ -70,7 +70,7 @@ you have no web access, by sending email to <bug-findutils@gnu.org>.
 
 ## Examples
 
-#### Find files and copy them to folder
+### Find files and copy them to folder
 
 ```plain
 find . -name "*.txt" | xargs -I{} cp -u {} ~/Desktop/temp

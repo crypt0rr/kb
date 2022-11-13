@@ -47,7 +47,7 @@ Kernel Extension User Consent Usage:
 
 ## Examples
 
-#### Check app signing
+### Check app signing
 
 ```plain
 crypt0rr@mba /Applications % spctl -a -vv Numbers.app 

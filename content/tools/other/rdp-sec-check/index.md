@@ -52,7 +52,7 @@ Example:
 
 ## Examples
 
-#### Scan RDP security
+### Scan RDP security
 
 ```plain
 perl rdp-sec-check.pl 10.10.10.16

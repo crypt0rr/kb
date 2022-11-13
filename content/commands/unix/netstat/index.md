@@ -57,7 +57,7 @@ netstat [-vWeenNcCF] [<Af>] -r         netstat {-V|--version|-h|--help}
 
 ## Examples
 
-#### Show routing table
+### Show routing table
 
 ```plain
 $ netstat -r
@@ -69,7 +69,7 @@ link-local     0.0.0.0         255.255.0.0     U         0 0          0 enp0
 10.10.10.0     0.0.0.0         255.255.255.0   U         0 0          0 enp0
 ```
 
-#### Show ports that are listened on (TCP)
+### Show ports that are listened on (TCP)
 
 ```plain
 $ netstat -nlvpt

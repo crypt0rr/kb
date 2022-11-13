@@ -68,7 +68,7 @@ for any corresponding short options.
 
 ## Examples
 
-#### F3 Write
+### F3 Write
 
 ```plain
 f3write /media/b/1GB-USB
@@ -83,7 +83,7 @@ Free space: 0.00 Byte
 Average writing speed: 15.97 MB/s
 ```
 
-#### F3 Read
+### F3 Read
 
 ```plain
 f3read /media/b/1GB-USB
@@ -103,7 +103,7 @@ Data LOST: 0.00 Byte (0 sectors)
 Average reading speed: 835.91 MB/s
 ```
 
-#### F3 custom write amount
+### F3 custom write amount
 
 ```plain
 $ f3write -e 3 /media/b/DISK
@@ -123,7 +123,7 @@ Free space: 430.51 GB
 Average writing speed: 60.21 MB/s
 ```
 
-#### F3 custom read amount
+### F3 custom read amount
 
 ```plain
 $ f3read -e 3 /media/b/DISK

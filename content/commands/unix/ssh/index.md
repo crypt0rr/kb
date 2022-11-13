@@ -37,37 +37,37 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
 
 ## Examples
 
-#### Connect to a server (default port 22)
+### Connect to a server (default port 22)
 
 ```plain
 ssh user@server
 ```
 
-#### Connect using specific port
+### Connect using specific port
 
 ```plain
 ssh user@server -p <port>
 ```
 
-#### Run script on remote server
+### Run script on remote server
 
 ```plain
 ssh user@server <scrip_to_run>
 ```
 
-#### Create public private keys
+### Create public private keys
 
 ```plain
 ssh-keygen -f <filename> -t rsa -b 4096
 ```
 
-#### Upload SSH key to target host
+### Upload SSH key to target host
 
 ```plain
 ssh-copy-id -f -i <filename>.pub <user>@<target>
 ```
 
-#### Disable password authentication
+### Disable password authentication
 
 ```plain
 sudo vi /etc/ssh/sshd_config
@@ -82,7 +82,7 @@ PermitRootLogin no
 sudo systemctl reload ssh
 ```
 
-#### FIDO U2F over SSH
+### FIDO U2F over SSH
 
 ```plain
 $ ssh-keygen -t ecdsa-sk -f ~/.ssh/id_ecdsa_sk
@@ -108,7 +108,7 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-#### SSH port forward to local
+### SSH port forward to local
 
 ```plain
 ssh -L 10000:localhost:10000 <username>@<ip>

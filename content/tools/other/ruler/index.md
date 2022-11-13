@@ -90,7 +90,7 @@ GLOBAL OPTIONS:
 
 ## Examples
 
-#### Office365 password spray
+### Office365 password spray
 
 ```plain
 ./ruler --o365 b --userpass <file> --verbose

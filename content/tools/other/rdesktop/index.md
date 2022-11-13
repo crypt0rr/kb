@@ -103,7 +103,7 @@ Usage: rdesktop [options] server[:port]
 
 ## Examples
 
-#### Check for NLA
+### Check for NLA
 
 ```plain
 rdesktop -u '' <target>

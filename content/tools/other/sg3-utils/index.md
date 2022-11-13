@@ -15,13 +15,13 @@ Apple's SuperDrive on Linux.
 
 ## Installation
 
-#### Debian/linux only - Linux SCSI generic driver
+### Debian/linux only - Linux SCSI generic driver
 
 ```plain
 sudo apt install sg3-utils -y
 ```
 
-#### RHEL/Fedora only - Linux SCSI generic driver
+### RHEL/Fedora only - Linux SCSI generic driver
 
 ```plain
 sudo dnf install sg3_utils -y
@@ -29,7 +29,7 @@ sudo dnf install sg3_utils -y
 
 ## Usage
 
-#### Tell the external DVD player/burner to turn on
+### Tell the external DVD player/burner to turn on
 
 ```plain
 sudo sg_raw /dev/sr0 EA 00 00 00 00 00 01

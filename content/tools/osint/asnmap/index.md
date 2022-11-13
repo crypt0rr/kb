@@ -67,7 +67,7 @@ Example input for asnmap:
 * `asnmap -d hackerone.com -silent`
 * `asnmap -o GOOGLE -silent`
 
-#### ASN Look-up by name
+### ASN Look-up by name
 
 ```plain
 $ echo GOOGLE | asnmap -silent  
@@ -88,7 +88,7 @@ $ echo GOOGLE | asnmap -silent
 34.104.30.0/23
 ```
 
-#### Look-up by ASN
+### Look-up by ASN
 
 ```plain
 asnmap -a AS45596 -silent
@@ -96,7 +96,7 @@ asnmap -a AS45596 -silent
 203.176.112.0/23
 ```
 
-#### Look-up to JSON
+### Look-up to JSON
 
 ```plain
 echo hackerone.com | asnmap -json -silent | jq
@@ -124,7 +124,7 @@ echo hackerone.com | asnmap -json -silent | jq
 }
 ```
 
-#### Look-up to CSV
+### Look-up to CSV
 
 ```plain
 echo hackerone.com | asnmap -csv -silent 

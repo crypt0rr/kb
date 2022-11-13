@@ -112,7 +112,7 @@ and settings.
 
 ## Examples
 
-#### Unauthenticated Redis-server check
+### Unauthenticated Redis-server check
 
 ```plain
 redis-cli -h <target>  
@@ -123,7 +123,7 @@ redis_version:3.0.503
 [...]
 ```
 
-#### Unauthenticated Redis-server check #2
+### Unauthenticated Redis-server check #2
 
 ```plain
 telnet <target> 6379

@@ -43,14 +43,14 @@ or available locally via: info '(coreutils) base64 invocation'
 
 ## Examples
 
-#### Encode data
+### Encode data
 
 ```plain
 echo 'test-content' | base64
 dGVzdC1jb250ZW50Cg==
 ```
 
-#### Decode data
+### Decode data
 
 ```plain
 echo 'dGVzdC1jb250ZW50Cg==' | base64 -d

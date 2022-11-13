@@ -58,7 +58,7 @@ optional arguments:
 ./403fuzzer.py -u http://example.com/test1/test2/test3/forbidden.html
 ```
 
-#### Use Burp Proxy
+### Use Burp Proxy
 
 ```plain
 ./403fuzzer.py -u https://example.com --proxy http://127.0.0.1:8080

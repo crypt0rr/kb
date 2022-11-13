@@ -60,7 +60,7 @@ go build
 
 ## Examples
 
-#### List domain controllers
+### List domain controllers
 
 ```plain
 $ ./ADReaper -command dc -dc SRV2019.offsec.nl -password Welkom1234 -user johndo@offsec.nl
@@ -93,7 +93,7 @@ $ ./ADReaper -command dc -dc SRV2019.offsec.nl -password Welkom1234 -user johndo
 +--------------------------------------------------------------------------------------------+
 ```
 
-#### List all Computers
+### List all Computers
 
 ```plain
 $ ./ADReaper -command computers -dc SRV2019.offsec.nl -password Welkom1234 -user johndo@offsec.nl
@@ -117,7 +117,7 @@ $ ./ADReaper -command computers -dc SRV2019.offsec.nl -password Welkom1234 -user
 [...]
 ```
 
-#### List all users
+### List all users
 
 ```plain
 $ ./ADReaper -command users -dc SRV2019.offsec.nl -password Welkom1234 -user johndo@offsec.nl

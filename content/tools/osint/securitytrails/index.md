@@ -24,7 +24,7 @@ Search Internet Assets Accurately & Instantly.
 
 Read the docs <https://docs.securitytrails.com/>
 
-#### Gather subdomains
+### Gather subdomains
 
 ```plain
 curl --request GET \

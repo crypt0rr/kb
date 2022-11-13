@@ -34,31 +34,31 @@ usage: tmux [-2CluvV] [-c shell-command] [-f file] [-L socket-name]
 
 ## Examples
 
-#### Start tmux
+### Start tmux
 
 ```plain
 tmux
 ```
 
-#### Detach tmux session
+### Detach tmux session
 
 ```plain
 ctrl + b; d
 ```
 
-#### Attach tmux session
+### Attach tmux session
 
 ```plain
 tmux attach -t <name-or-id>
 ```
 
-#### List running tmux
+### List running tmux
 
 ```plain
 tmux ls
 ```
 
-#### Run command without entering tmux session
+### Run command without entering tmux session
 
 ```plain
 tmux new-session -d -s "<session-name>" "command-to-run"

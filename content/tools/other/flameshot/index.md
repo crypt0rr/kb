@@ -44,7 +44,7 @@ Arguments:
 
 ## Examples
 
-#### Bind flameshot under 'prtcs' button
+### Bind flameshot under 'prtcs' button
 
 ![Example](images/example.png)
 

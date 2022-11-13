@@ -96,31 +96,31 @@ or available locally via: info '(coreutils) sort invocation'
 
 ## Examples
 
-#### Sort file contents
+### Sort file contents
 
 ```plain
 sort <file>
 ```
 
-#### Sort file contents and output to other file
+### Sort file contents and output to other file
 
 ```plain
 sort <input-file> -o <output-file>
 ```
 
-#### Reverse sorting
+### Reverse sorting
 
 ```plain
 sort -r <file>
 ```
 
-#### Sort numeric
+### Sort numeric
 
 ```plain
 sort -n <file>
 ```
 
-#### Sort numeric reverse
+### Sort numeric reverse
 
 ```plain
 sort -nr <file>

@@ -155,25 +155,25 @@ Note that this can make your system less secure!
 
 ## Examples
 
-#### Start tshark output to CLI
+### Start tshark output to CLI
 
 ```plain
 sudo tshark -i <interface>
 ```
 
-#### Start tshark output to file
+### Start tshark output to file
 
 ```plain
 sudo tshark -i <interface> -w <output-file>.pcap
 ```
 
-#### Start tshark output to file for x time
+### Start tshark output to file for x time
 
 ```plain
 sudo tshark -i <interface> -a duration:<timeInSeconds> -w <output-file>.pcap
 ```
 
-#### Troubleshooting
+### Troubleshooting
 
 Error message: tshark: The file to which the capture would be saved ("output.pcap") could not be opened: Permission denied.
 

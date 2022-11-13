@@ -61,61 +61,61 @@ Application profile commands:
 
 ## Examples
 
-#### Enable/disable UFW
+### Enable/disable UFW
 
 ```plain
 sudo ufw enable/disable
 ```
 
-#### Check current UFW status
+### Check current UFW status
 
 ```plain
 sudo ufw status verbose
 ```
 
-#### Allow/deny incomming tcp/udp traffic
+### Allow/deny incomming tcp/udp traffic
 
 ```plain
 sudo ufw allow/deny <port>
 ```
 
-#### Allow/deny incomming TCP traffic
+### Allow/deny incomming TCP traffic
 
 ```plain
 sudo ufw allow/deny <port>/tcp
 ```
 
-#### Allow/deny incomming UDP traffic
+### Allow/deny incomming UDP traffic
 
 ```plain
 sudo ufw allow/deny <port>/udp
 ```
 
-#### Allow/deny from specific ip
+### Allow/deny from specific ip
 
 ```plain
 sudo ufw allow/deny from <ip-address>
 ```
 
-#### Allow/deny from specific subnet
+### Allow/deny from specific subnet
 
 ```plain
 sudo ufw allow/deny from 192.168.0.0/24
 ```
 
-#### Allow/deny from specific IP to specific port
+### Allow/deny from specific IP to specific port
 
 ```plain
 sudo ufw allow/deny from <ip> to any port <port>
 ```
 
-#### Delete existing rule
+### Delete existing rule
 
 ```plain
 sudo ufw delete allow/deny <port>/udp-or-tcp
 ```
 
-#### Easy delete rules
+### Easy delete rules
 
 ```plain
 $ sudo ufw status numbered

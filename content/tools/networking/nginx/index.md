@@ -49,7 +49,7 @@ Options:
 
 ## Examples
 
-#### Strong TLS-config (nginx.conf)
+### Strong TLS-config (nginx.conf)
 
 This config is used server wide as default, individual sites can use other settings if preferred
 
@@ -59,25 +59,25 @@ ssl_prefer_server_ciphers on;
 ssl_ciphers TLS13-CHACHA20-POLY1305-SHA256:TLS13-AES-256-GCM-SHA384:EECDH+CHACHA20:ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:!aNULL:!eNULL:!LOW:!RC4:!3DES:!MD5:!EXP:!PSK:!SRP:!DSS;
 ```
 
-#### Disable nginx version in error response (nginx.conf)
+### Disable nginx version in error response (nginx.conf)
 
 ```plain
 server_tokens off;
 ```
 
-#### Replace server header (nginx.conf)
+### Replace server header (nginx.conf)
 
 ```plain
 more_set_headers 'Server: Apache/1.3.37';
 ```
 
-#### Disable HTTP-compression (nginx.conf)
+### Disable HTTP-compression (nginx.conf)
 
 ```plain
 gzip off;
 ```
 
-#### Redirect HTTP to HTTPS
+### Redirect HTTP to HTTPS
 
 ```plain
 if ($scheme = http) {
@@ -85,7 +85,7 @@ return 301 https://$server_name$request_uri;
 }
 ```
 
-#### Config reverse proxy
+### Config reverse proxy
 
 This example includes TLS certificates and redirection of HTTP to HTTPS
 
@@ -109,7 +109,7 @@ server {
 }
 ```
 
-#### Security headers
+### Security headers
 
 The 'always' parameter ensures that the header is set for all responses, including internally generated error responses.
 
@@ -153,7 +153,7 @@ OR add_header Content-Security-Policy "frame-ancestors 'self' https://mail.examp
 add_header Expect-CT "max-age=0";
 ```
 
-#### Passing headers thru proxy
+### Passing headers thru proxy
 
 For example IP-addresses of clients coming thru the proxy.
 
@@ -166,7 +166,7 @@ proxy_set_header   X-Forwarded-Proto  $scheme;
 proxy_set_header   X-Forwarded-For    $proxy_add_x_forwarded_for;
 ```
 
-#### Passing real client IP from Cloudflare proxy
+### Passing real client IP from Cloudflare proxy
 
 Add to vhost config in nginx.
 
@@ -197,13 +197,13 @@ set_real_ip_from 2a06:98c0::/29;
 real_ip_header CF-Connecting-IP;
 ```
 
-#### Removing headers from response server
+### Removing headers from response server
 
 ```plain
 proxy_hide_header Strict-Transport-Security;
 ```
 
-#### Wordpress hosting
+### Wordpress hosting
 
 ```plain
 sudo apt install php7.2-common php7.2-fpm php7.2-mysql mysql-server php7.2-gd
@@ -236,7 +236,7 @@ server {
 }
 ```
 
-#### HTTP-basic authentication
+### HTTP-basic authentication
 
 ```plain
 sudo apt install apache2-utils
@@ -252,7 +252,7 @@ auth_basic "Password required";
 auth_basic_user_file /etc/nginx/.htpasswd;
 ```
 
-#### Rate Limiting
+### Rate Limiting
 
 Edit nginx.conf and make zones with name and limit as needed.
 
@@ -266,7 +266,7 @@ Edit vhost config and name the limiter
 limit_req zone=mylimit;
 ```
 
-#### Disable unwanted HTTP-methods
+### Disable unwanted HTTP-methods
 
 Edit vhost config
 
@@ -276,7 +276,7 @@ limit_except GET HEAD POST { deny all; }
 }
 ```
 
-#### Reverse proxy Microsoft Exchange
+### Reverse proxy Microsoft Exchange
 
 ```plain
 geo $access_allowed {

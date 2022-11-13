@@ -62,7 +62,7 @@ or available locally via: info '(coreutils) df invocation'
 
 ## Examples
 
-#### Show all devices human readable
+### Show all devices human readable
 
 ```plain
 $ df -h
@@ -76,7 +76,7 @@ tmpfs                  7.8G     0  7.8G   0% /sys/fs/cgroup
 [...]
 ```
 
-#### Show specific folder, usage and mountpoint
+### Show specific folder, usage and mountpoint
 
 ```plain
 $ df -h /home

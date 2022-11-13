@@ -74,7 +74,7 @@ optional arguments:
 
 ## Examples
 
-#### Check specific email
+### Check specific email
 
 ```plain
 $ h8mail -t john.smith@example.com
@@ -127,7 +127,7 @@ ________________________________________________________________________________
 Execution time (seconds):   4.0695648193359375
 ```
 
-#### Use list with emails
+### Use list with emails
 
 ```plain
 ─$ h8mail -t valid_emails.txt
@@ -156,7 +156,7 @@ hector@offsec.nl
 james@offsec.nl
 ```
 
-#### Crawl site for e-mails
+### Crawl site for e-mails
 
 ```plain
 $ h8mail -u 'https://example.com'

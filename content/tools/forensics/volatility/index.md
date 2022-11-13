@@ -191,7 +191,7 @@ Options:
 
 ## Examples
 
-#### Finding dump profile type
+### Finding dump profile type
 
 ```plain
 $ volatility -f dump.raw imageinfo
@@ -212,7 +212,7 @@ INFO    : volatility.debug    : Determining profile based on KDBG search...
      Image local date and time : 2016-02-24 13:55:34 +0100
 ```
 
-#### Overview of running processes
+### Overview of running processes
 
 ```plain
 $ volatility -f dump.raw --profile=WinXPSP2x86 pstree
@@ -226,7 +226,7 @@ Name                                                  Pid   PPid   Thds   Hnds T
 ... 0x87521020:services.exe                           948    904     15    278 2016-02-24 09:51:21 UTC+0000
 ```
 
-#### Starting proces command history
+### Starting proces command history
 
 ```plain
 $ volatility -f dump.raw --profile=WinXPSP2x86 cmdline
@@ -242,7 +242,7 @@ avgrsx.exe pid:    616
 Command line : c:\PROGRA~1\AVG\AVG2014\avgrsx.exe /boot
 ```
 
-#### Command history
+### Command history
 
 ```plain
 $ volatility -f dump.raw --profile=WinXPSP2x86 cmdscan
@@ -261,7 +261,7 @@ Cmd #3 @ 0x10b8008: dir
 Cmd #4 @ 0x10c0960: cd "Documents and Settings"
 ```
 
-#### Show active connections
+### Show active connections
 
 ```plain
 $ volatility -f dump.raw --profile=WinXPSP2x86 connections
@@ -272,7 +272,7 @@ Offset(V)  Local Address             Remote Address            Pid
 0x872f1e68 192.168.87.153:1180       192.168.87.141:8080       3992
 ```
 
-#### Dump files to folder
+### Dump files to folder
 
 ```plain
 $ volatility -f dump.raw --profile=WinXPSP2x86 dumpfiles --dump-dir output
@@ -282,7 +282,7 @@ SharedCacheMap 0x875d10d0   4      \Device\HarddiskVolume1\WINDOWS\system32\conf
 DataSectionObject 0x8732cef0   4      \Device\HarddiskVolume1\WINDOWS\system32\config\systemprofile\Local Settings\Application Data\Avg2014\log\avgtdi.log
 ```
 
-#### Dump all living processes to file
+### Dump all living processes to file
 
 ```plain
 $ volatility -f dump.raw --profile=WinXPSP2x86 procdump --dump-dir output  

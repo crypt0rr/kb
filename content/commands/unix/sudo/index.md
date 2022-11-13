@@ -61,7 +61,7 @@ Options:
 
 ## Examples
 
-#### List privileges
+### List privileges
 
 Shown in the following example, the user `crypt0rr` can only run `/usr/bin/bash` with sudo privileges, no password is required furthermore.
 

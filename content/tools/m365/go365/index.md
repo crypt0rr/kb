@@ -29,11 +29,11 @@ Read these three bullets!
 go get -u github.com/optiv/Go365
 ```
 
-#### Option 2
+### Option 2
 
 Download a pre-compiled binary for your OS [HERE](https://github.com/optiv/Go365/releases).
 
-#### Option 3
+### Option 3
 
 Download the source and compile locally.
 

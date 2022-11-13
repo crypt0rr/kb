@@ -60,25 +60,25 @@ sudo softwareupdate <cmd> [<args> ...]
 
 ## Examples
 
-#### List available software updates
+### List available software updates
 
 ```plain
 sudo softwareupdate -l
 ```
 
-#### Install all available software updates
+### Install all available software updates
 
 ```plain
 sudo softwareupdate -ia
 ```
 
-#### Install Rosetta2
+### Install Rosetta2
 
 ```plain
 sudo softwareupdate --install-rosetta
 ```
 
-#### Show update history
+### Show update history
 
 ```plain
 % sudo softwareupdate --history
@@ -89,7 +89,7 @@ Command Line Tools beta 4 for Xcode                13.0       12/08/2021, 19:13:
 Command Line Tools for Xcode                       13.1       12/08/2021, 19:13:14
 ```
 
-#### Download specific version of macOS
+### Download specific version of macOS
 
 ```plain
 sudo softwareupdate --fetch-full-installer --full-installer-version 10.15.4

@@ -314,7 +314,7 @@ About the number of connections
 
 ## Examples
 
-#### HTTP/HTTPS
+### HTTP/HTTPS
 
 ```plain
 aria2c https://example.com/linux-distro.iso
@@ -354,7 +354,7 @@ Status Legend:
 (OK):download completed.
 ```
 
-#### Torrents
+### Torrents
 
 ```plain
 aria2c linux-distro.torrent
@@ -364,13 +364,13 @@ aria2c linux-distro.torrent
 aria2c https://example.com/linux-distro.torrent
 ```
 
-#### Magnet Links
+### Magnet Links
 
 ```plain
 aria2c magnet:?xt=urn:btih:1e99d95f1764644a86a8e99bfd80c ...
 ```
 
-#### (S)FTP
+### (S)FTP
 
 ```plain
 aria2c ftp://example.com/linux-distro.iso

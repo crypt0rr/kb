@@ -62,13 +62,13 @@ commands:
 
 ## Examples
 
-#### Download specific album
+### Download specific album
 
 ```plain
 qobuz-dl dl https://play.qobuz.com/album/qxjbxh1dc3xyb
 ```
 
-#### Download multiple URLs from text file
+### Download multiple URLs from text file
 
 ```plain
 qobuz-dl dl this_txt_file_has_urls.txt

@@ -93,7 +93,7 @@ See the journalctl(1) man page for details.
 
 ## Examples
 
-#### Show journal of today
+### Show journal of today
 
 ```plain
 $ journalctl -S today

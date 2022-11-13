@@ -120,19 +120,19 @@ Higher DPI (default 72): -d <number>
 Higher size (default 3): -s <number>
 ```
 
-#### Embed URL
+### Embed URL
 
 ```plain
 qrencode -o <output>.png <URL>
 ```
 
-#### Embed text
+### Embed text
 
 ```plain
 qrencode -o <output.png>
 ```
 
-#### Embed WiFi connection
+### Embed WiFi connection
 
 ```plain
 qrencode -o <output>.png "WIFI:T:WPA;S:<SSID>;P:<PASSWORD>;;"

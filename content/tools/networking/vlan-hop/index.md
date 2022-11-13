@@ -38,11 +38,11 @@ git clone https://github.com/nccgroup/vlan-hopping.git
 ```
 
 ```plain
-########################################################
+##########################################
 ***   Frogger - The VLAN Hopper Version 1.9  ***
 
 ***   Auto enumerates VLANs and device discovery ***
-########################################################
+##########################################
 
 For usage information refer to the Wiki
 

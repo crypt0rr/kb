@@ -52,7 +52,7 @@ git clone https://github.com/Matty9191/ssl-cert-check
 
 ## Examples
 
-#### Check single domain
+### Check single domain
 
 ```plain
 $ ./ssl-cert-check -s offsec.nl 443
@@ -62,7 +62,7 @@ Host                                            Status       Expires      Days
 offsec.nl:443                                   Valid        Aug 11, 2021   58
 ```
 
-#### Check multiple domains
+### Check multiple domains
 
 ```plain
 $ cat domain.txt                       

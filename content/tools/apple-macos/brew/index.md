@@ -48,43 +48,43 @@ Further help:
 
 ## Examples
 
-#### Install formula
+### Install formula
 
 ```plain
 brew install [FORMULA]
 ```
 
-#### Uninstall formula
+### Uninstall formula
 
 ```plain
 brew uninstall [FORMULA]
 ```
 
-#### Fetch latest version of homebrew and formula
+### Fetch latest version of homebrew and formula
 
 ```plain
 brew update
 ```
 
-#### Upgrade all outdated and unpinned brews
+### Upgrade all outdated and unpinned brews
 
 ```plain
 brew upgrade
 ```
 
-#### List installed formulas
+### List installed formulas
 
 ```plain
 brew list
 ```
 
-#### Search formulas
+### Search formulas
 
 ```plain
 brew search [text|/text/]
 ```
 
-#### Change analytic settings
+### Change analytic settings
 
 ```plain
 crypt0rr@mba ~ % brew analytics

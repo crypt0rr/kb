@@ -110,7 +110,7 @@ Report bugs to:     https://github.com/esnet/iperf
 
 ## Examples
 
-#### Server side (receiver)
+### Server side (receiver)
 
 ```plain
 $ iperf3 -s
@@ -144,7 +144,7 @@ Accepted connection from 10.10.20.107, port 58080
 [  5]   0.00-18.00  sec   785 MBytes   366 Mbits/sec              receiver
 ```
 
-#### Client side (sender)
+### Client side (sender)
 
 ```plain
 $ iperf3 -t200 -c 10.10.20.250

@@ -113,7 +113,7 @@ $ python smbmap.py -u 'apadmin' -p 'asdf1234!' -d ACME -Hh 10.1.3.30 -x 'net gro
 
 ## Examples
 
-#### Enumerate authenticated shares
+### Enumerate authenticated shares
 
 ```plain
 $ python3 smbmap.py -u johndo -p 'Welkom1234' -H 10.10.10.10
@@ -140,13 +140,13 @@ $ python3 smbmap.py -u johndo -p 'Welkom1234' -H 10.10.10.10
     M$                                                  NO ACCESS    Standaardshare
 ```
 
-#### SMB NULL sessions
+### SMB NULL sessions
 
 ```plain
 smbmap -H <target>
 ```
 
-#### Multiple hosts
+### Multiple hosts
 
 ```plain
 for i in {1..254}; do smbmap.py -H 192.168.1.$i; done
@@ -156,7 +156,7 @@ for i in {1..254}; do smbmap.py -H 192.168.1.$i; done
 for i in $(cat iplist.txt); do smbmap.py -H $i; done
 ```
 
-#### Recursively enumerate shares
+### Recursively enumerate shares
 
 ```plain
 $ smbmap.py -u johndo -p Welkom1234 -H 10.10.20.251 -R aiff

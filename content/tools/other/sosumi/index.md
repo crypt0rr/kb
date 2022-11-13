@@ -101,7 +101,7 @@ OSK="ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"
 
 ### USB passthrough
 
-#### Check if permissions are present for raw-usb
+### Check if permissions are present for raw-usb
 
 ```plain
 $ snap interfaces sosumi
@@ -122,7 +122,7 @@ Slot                     Plug
 -                        sosumi:raw-usb
 ```
 
-#### Give permissions for raw-usb
+### Give permissions for raw-usb
 
 ```plain
 sudo snap connect sosumi:raw-usb

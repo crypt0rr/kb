@@ -80,7 +80,7 @@ Homepage: https://www.openwall.com/john/
 
 ## Examples
 
-#### Run benchmark
+### Run benchmark
 
 ```plain
 $ ./john --test  

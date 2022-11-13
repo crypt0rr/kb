@@ -37,7 +37,7 @@ of view.
 
 ## Installation
 
-#### Source Code
+### Source Code
 
 Check out the [git repository](https://github.com/farrokhi/dnsdiag) and install dependencies:
 
@@ -47,7 +47,7 @@ cd dnsdiag
 python3 -m pip install -r requirements.txt
 ```
 
-#### pip3
+### pip3
 
 You can alternatively install the package using pip:
 
@@ -55,11 +55,11 @@ You can alternatively install the package using pip:
 python3 -m pip install dnsdiag
 ```
 
-#### Binary Package
+### Binary Package
 
 From time to time, binary packages will be released for Windows, Mac OS X and Linux. You can grab the latest release from [releases page](https://github.com/farrokhi/dnsdiag/releases).
 
-#### Docker
+### Docker
 
 If you don't want to install dnsdiags on your local machine, you may use the docker image and run programs in a container. For example:
 

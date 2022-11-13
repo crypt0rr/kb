@@ -75,7 +75,7 @@ Examples:
 
 ## Examples
 
-#### Show current network configuration (basic)
+### Show current network configuration (basic)
 
 ```cmd
 ipconfig
@@ -90,7 +90,7 @@ Ethernet adapter Ethernet:
    Default Gateway . . . . . . . . . : 10.0.2.2
 ```
 
-#### Show current network configuration (extended)
+### Show current network configuration (extended)
 
 ```cmd
 ipconfig /all
@@ -116,19 +116,19 @@ Ethernet adapter Ethernet:
    NetBIOS over Tcpip. . . . . . . . : Enabled
 ```
 
-#### Release current configuration
+### Release current configuration
 
 ```cmd
 ipconfig /release
 ```
 
-#### Request new configuration (DHCP)
+### Request new configuration (DHCP)
 
 ```cmd
 ipconfig /renew
 ```
 
-#### Clear DNS-cache
+### Clear DNS-cache
 
 ```cmd
 ipconfig /flushdns

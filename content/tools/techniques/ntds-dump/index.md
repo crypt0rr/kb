@@ -49,13 +49,13 @@ Preferably you want to also make a copy of:
 
 It can happen that [secretsdump.py]({{< ref"secretsdump-py" >}}) keeps looping and throwing out hashes. In this case, or maybe even preferably, use [Gosecretsdump]({{< ref "gosecretsdump" >}}).
 
-#### Secretsdump.py
+### Secretsdump.py
 
 ```plain
 secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile extracted-hashes -just-dc-ntlm -user-status -history
 ```
 
-#### Gosecretsdump
+### Gosecretsdump
 
 ```plain
 ./gosecretsdump -system SYSTEM -ntds NTDS.DIT -history -status -out hashes.log

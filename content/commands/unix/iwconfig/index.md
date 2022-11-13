@@ -45,7 +45,7 @@ Check man pages for more details.
 
 ## Examples
 
-#### Connect to specific (hidden) SSID
+### Connect to specific (hidden) SSID
 
 ```plain
 sudo iwconfig [INTERFACE] essid [(HIDDEN)SSID]

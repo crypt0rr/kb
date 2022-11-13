@@ -60,7 +60,7 @@ optional arguments:
 
 ## Examples
 
-#### Get basic information (unauthenticated)
+### Get basic information (unauthenticated)
 
 ```plain
 $ ./ldapsearch-ad.py -l 10.20.30.10 -t info
@@ -74,7 +74,7 @@ $ ./ldapsearch-ad.py -l 10.20.30.10 -t info
 [+] naming_contexts = ['DC=offsec,DC=nl', 'CN=Configuration,DC=offsec,DC=nl', 'CN=Schema,CN=Configuration,DC=offsec,DC=nl', 'DC=DomainDnsZones,DC=offsec,DC=nl', 'DC=ForestDnsZones,DC=offsec,DC=nl']
 ```
 
-#### Get all information (authenticated)
+### Get all information (authenticated)
 
 ```plain
 $ ./ldapsearch-ad.py -l 10.20.30.10 -d offsec -u johndo -p Welkom1234 -t all    

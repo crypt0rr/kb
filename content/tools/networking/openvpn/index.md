@@ -552,7 +552,7 @@ sudo openvpn --config <file>.ovpn
 
 ### Extensions
 
-#### Network-manager OpenVPN for Gnome
+### Network-manager OpenVPN for Gnome
 
 Manager that can be used to enable GUI support for OpenVPN. It also enables Gnome to build a full tunnel to prevent DNS-leak.
 

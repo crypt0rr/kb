@@ -17,7 +17,7 @@ A CLI tool to extract server certificates.
 
 ## Installation
 
-#### Mac OS X - Homebrew 🍺
+### Mac OS X - Homebrew 🍺
 
 ```plain
 brew tap hakky54/crip
@@ -25,14 +25,14 @@ brew install crip
 crip print --url=https://stackoverflow.com/
 ```
 
-#### Windows
+### Windows
 
 1. Download the latest binary here: [Releases](https://github.com/Hakky54/certificate-ripper/releases)
 2. Extract the compressed file
 3. Start cmd and `cd` to the extracted file
 4. Run `start /b "" "crip.exe" print --url=https://stackoverflow.com/`
 
-#### Linux
+### Linux
 
 1. Download the latest binary here: [Releases](https://github.com/Hakky54/certificate-ripper/releases)
 2. Extract the compressed file

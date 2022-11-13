@@ -45,7 +45,7 @@ host [-aCdilrTvVw] [-c class] [-N ndots] [-t type] [-W time]
 
 ## Examples
 
-#### Get simple record overview
+### Get simple record overview
 
 ```plain
 $ host example.com
@@ -55,7 +55,7 @@ example.com has IPv6 address 2606:2800:220:1:248:1893:25c8:1946
 example.com mail is handled by 0 .
 ```
 
-#### Get specific record
+### Get specific record
 
 NS-record
 
@@ -74,7 +74,7 @@ $ host -t txt example.com
 example.com descriptive text "v=spf1 -all"
 ```
 
-#### Reverse DNS lookup
+### Reverse DNS lookup
 
 ```plain
 $ host 50.7.67.155
@@ -82,7 +82,7 @@ $ host 50.7.67.155
 155.67.7.50.in-addr.arpa domain name pointer mail.offsec.nl.
 ```
 
-#### DNS zone transfer
+### DNS zone transfer
 
 A zone transfer is basically a database replication between related DNS servers in which the zone file is copied from a primary DNS server to a secondary server. The zone file contains a list of all the DNS names configured for that zone. Zone transfers should only be allowed to authorized secondary DNS servers but many administrators misconfigure their DNS servers, and in these cases, anyone asking for a copy of the DNS server zone will usually receive one.
 

@@ -164,7 +164,7 @@ PMKID ROGUE..............................: 4
 PMKID written to combi hash file.........: 4
 ```
 
-#### Cracking the hashes
+### Cracking the hashes
 
 Cracking is done with [hashcat]({{< ref "hashcat" >}}) (`-m22000`)
 

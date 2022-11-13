@@ -107,7 +107,7 @@ Some modules do not make sense in Ad-Hoc (include, meta, etc)
 
 ## Examples
 
-#### Inventory - A list of hosts that are managed by Ansible
+### Inventory - A list of hosts that are managed by Ansible
 
 Default path that will be used by Ansible is */etc/ansible/hosts*
 Optionally you can specify your own hostfile with *--inventory PATH* or *-i PATH*
@@ -121,13 +121,13 @@ $ cat /etc/ansible/hosts
 10.10.10.12
 ```
 
-#### Modules - Programs that perform the actual work of the task of a play
+### Modules - Programs that perform the actual work of the task of a play
 
 List of all modules can be found [here.](https://docs.ansible.com/ansible/2.5/modules/list_of_all_modules.html)
 
-#### Tasks - Set of instructions that can be performed by using modules
+### Tasks - Set of instructions that can be performed by using modules
 
-#### Example playbook
+### Example playbook
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(yml)"/%}}
 

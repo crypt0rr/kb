@@ -115,7 +115,7 @@ Type 'help' to view more functions
 
 ## Examples
 
-#### Scan available networks
+### Scan available networks
 
 ```plain
 ██╗    ██╗███████╗███████╗
@@ -154,7 +154,7 @@ CC:32:43:56:CB:E9    2  -42  2.0  No   AtherosC  Guests
 [+] Scan completed
 ```
 
-#### PMKID Attack
+### PMKID Attack
 
 ```plain
 

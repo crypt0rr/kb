@@ -13,7 +13,7 @@ weight : 0
 
 ## Examples
 
-#### NTP-mode 6
+### NTP-mode 6
 
 ```plain
 $ ntpq -c rv 10.10.10.1
@@ -27,7 +27,7 @@ mintc=3, offset=+2.729, frequency=+10.297, sys_jitter=14.127,
 clk_jitter=1.646, clk_wander=0.021
 ```
 
-#### Simply synchronize time
+### Simply synchronize time
 
 ```plain
 sudo service ntp stop

@@ -19,7 +19,7 @@ nslookup [-option] [name | -] [server]
 
 ## Examples
 
-#### A-record lookup
+### A-record lookup
 
 ```plain
 $ nslookup example.com
@@ -34,7 +34,7 @@ Name:       example.com
 Address:    2606:2800:220:1:248:1893:25c8:1946
 ```
 
-#### Reverse DNS lookup
+### Reverse DNS lookup
 
 ```plain
 $ nslookup 209.132.183.181
@@ -42,7 +42,7 @@ $ nslookup 209.132.183.181
 181.183.132.209.in-addr.arpa    name = origin-www2.redhat.com.
 ```
 
-#### Lookup CAA-record
+### Lookup CAA-record
 
 ```plain
 $ nslookup -type=caa google.com
@@ -54,7 +54,7 @@ Non-authoritative answer:
 google.com  rdata_257 = 0 issue "pki.goog"
 ```
 
-#### Lookup NS-record (nameserver)
+### Lookup NS-record (nameserver)
 
 ```plain
 $ nslookup -type=ns google.com
@@ -68,7 +68,7 @@ google.com  nameserver = ns4.google.com.
 google.com  nameserver = ns2.google.com.
 ```
 
-#### Lookup using other DNS-server
+### Lookup using other DNS-server
 
 ```plain
 $ nslookup example.com 1.1.1.1
@@ -83,7 +83,7 @@ Name:   example.com
 Address: 2606:2800:220:1:248:1893:25c8:1946
 ```
 
-#### Lookup all records for a domain
+### Lookup all records for a domain
 
 ```plain
 $ nslookup -type=any example.com

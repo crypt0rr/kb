@@ -15,13 +15,13 @@ A full-featured reconnaissance framework designed with the goal of providing a p
 
 ## Installation
 
-#### APT
+### APT
 
 ```plain
 sudo apt install recon-ng
 ```
 
-#### Github
+### Github
 
 ```plain
 git clone https://github.com/lanmaster53/recon-ng.git
@@ -54,7 +54,7 @@ optional arguments:
 
 ## Examples (recon-ng)
 
-#### Search modules
+### Search modules
 
 ```plain
 [recon-ng][default] > marketplace search github
@@ -75,7 +75,7 @@ optional arguments:
   K = Requires keys. See info for details.
 ```
 
-#### Show info about modules
+### Show info about modules
 
 ```plain
 [recon-ng][default] > marketplace info recon/domains-hosts/google_site_web
@@ -94,7 +94,7 @@ optional arguments:
   +---------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-#### Install module(s)
+### Install module(s)
 
 ```plain
 [recon-ng][default] > marketplace install recon/domains-hosts/google_site_web
@@ -102,7 +102,7 @@ optional arguments:
 [*] Reloading modules...
 ```
 
-#### Use installed module
+### Use installed module
 
 ```plain
 [recon-ng][default] > modules load recon/domains-hosts/google_site_web

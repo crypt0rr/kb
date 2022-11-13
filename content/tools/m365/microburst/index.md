@@ -30,7 +30,7 @@ If you haven't configured the use of PowerShell Gallery, please look at [PowerSh
 
 ## Examples
 
-#### EnumerateAzureSubDomains
+### EnumerateAzureSubDomains
 
 Enumeration script for Azure subdomains.
 

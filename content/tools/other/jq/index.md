@@ -75,7 +75,7 @@ See the manpage for more options.
 
 ## Examples
 
-#### Filter specific fields from json file
+### Filter specific fields from json file
 
 Input file for query:
 

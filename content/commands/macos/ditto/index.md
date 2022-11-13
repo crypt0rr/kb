@@ -52,13 +52,13 @@ ditto [ <options> ] src [ ... src ] dst
 
 ## Examples
 
-#### Using Ditto to Copy Files / Folders
+### Using Ditto to Copy Files / Folders
 
 ```plain
 ditto source destination
 ```
 
-#### Copy without metadata
+### Copy without metadata
 
 ```plain
 ditto -V --norsrc ~/Sample/Folder /Volumes/NoMetadataBackups

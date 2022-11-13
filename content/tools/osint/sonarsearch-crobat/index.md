@@ -38,7 +38,7 @@ crobat [OPTIONS]
 
 ## Examples
 
-#### Reverse DNS lookup
+### Reverse DNS lookup
 
 ```plain
 $ crobat -r 93.184.216.34
@@ -49,7 +49,7 @@ example.org
 [...]
 ```
 
-#### Subdomain search
+### Subdomain search
 
 ```plain
 $ crobat -s google.com
@@ -70,7 +70,7 @@ $ crobat -s google.com
 [...]
 ```
 
-#### TLD (Top Level Domain) search
+### TLD (Top Level Domain) search
 
 ```plain
 $ crobat -t example

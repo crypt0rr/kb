@@ -29,7 +29,7 @@ weight : 0
 * [MateriaYaru Orange](https://www.gnome-look.org/p/1376746/)
 * [McMojave](https://www.gnome-look.org/p/1275087/)
 
-#### Disable Cups
+### Disable Cups
 
 ```plain
 sudo systemctl disable cups.service
@@ -39,7 +39,7 @@ sudo systemctl disable cups.service
 sudo systemctl disable cups-browsed.service
 ```
 
-#### Python pip 2
+### Python pip 2
 
 ```plain
 curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py

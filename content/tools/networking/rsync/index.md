@@ -195,7 +195,7 @@ See http://rsync.samba.org/ for updates, bug reports, and answers
 
 ## Examples
 
-#### Anonymous connect rsync
+### Anonymous connect rsync
 
 ```plain
 rsync rsync://<ip-or-domain>/<folder-module>

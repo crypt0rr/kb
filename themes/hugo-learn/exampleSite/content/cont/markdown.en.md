@@ -43,9 +43,9 @@ Headings from `h1` through `h6` are constructed with a `#` for each level:
 # h1 Heading
 ## h2 Heading
 ### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+### h4 Heading
+#### h5 Heading
+##### h6 Heading
 ```
 
 Renders to:
@@ -57,11 +57,11 @@ Renders to:
 
 ### h3 Heading
 
-#### h4 Heading
+### h4 Heading
 
-##### h5 Heading
+#### h5 Heading
 
-###### h6 Heading
+##### h6 Heading
 
 HTML:
 

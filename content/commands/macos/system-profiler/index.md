@@ -60,19 +60,19 @@ Examples:
 
 ## Examples
 
-#### Generate a short report containing no personal information
+### Generate a short report containing no personal information
 
 ```plain
 system_profiler -detailLevel mini
 ```
 
-#### Show a list of the available data types
+### Show a list of the available data types
 
 ```plain
 system_profiler -listDataTypes
 ```
 
-#### Create an XML file which can be opened by System Profiler.app
+### Create an XML file which can be opened by System Profiler.app
 
 ```plain
 system_profiler -xml > MyReport.spx

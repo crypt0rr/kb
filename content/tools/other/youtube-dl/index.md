@@ -273,7 +273,7 @@ Options:
 
 ## Examples
 
-#### Download directly without options
+### Download directly without options
 
 By default youtube-dl tries to download the best available quality.
 
@@ -284,7 +284,7 @@ $ youtube-dl https://www.youtube.com/watch\?v\=dQw4w9WgXcQ
 [download] 100% of 15.19MiB in 00:00
 ```
 
-#### List formats and download specific one
+### List formats and download specific one
 
 ```plain
 $ youtube-dl --list-formats https://www.youtube.com/watch\?v\=dQw4w9WgXcQ

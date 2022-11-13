@@ -85,7 +85,7 @@ More detailed help:
 
 ## Examples
 
-#### Requesting certificate (with nginx plugin)
+### Requesting certificate (with nginx plugin)
 
 ```plain
 $ sudo certbot
@@ -101,25 +101,25 @@ Select the appropriate numbers separated by commas and/or spaces, or leave input
 blank to select all options shown (Enter 'c' to cancel):
 ```
 
-#### Certificate via DNS-challenge specific sub-domain
+### Certificate via DNS-challenge specific sub-domain
 
 ```plain
 sudo certbot certonly -d test.example.com --preferred-challenges=dns --manual
 ```
 
-#### Certificate via DNS-challenge wildcard
+### Certificate via DNS-challenge wildcard
 
 ```plain
 sudo certbot certonly --preferred-challenges=dns --manual
 ```
 
-#### List certificates on server managed by Certbot
+### List certificates on server managed by Certbot
 
 ```plain
 sudo certbot certificates
 ```
 
-#### Remove certificate managed by Certbot
+### Remove certificate managed by Certbot
 
 ```plain
 sudo certbot delete --cert-name <certificate>

