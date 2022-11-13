@@ -13,19 +13,19 @@ tags : ['Networking', 'TFTP']
 
 Can be used interactively or in batch mode to retrieve files from TFTP servers. When used interactively, a summary of the commands can be printed by typing 'help'. This TFTP client support all basic feature from RFC1350, RFC2347, RFC2348 and RFC2349. It also support multicast implementation of RFC2090 and mtftp as defined in the PXE specification.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install atftp
 ```
 
-### Usage
+## Usage
 
 ```plain
 atftp [options] [host [port]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 -g, --get
@@ -56,9 +56,9 @@ atftp [options] [host [port]]
     Print a summary of command line arguments.
 ```
 
-### Examples
+## Examples
 
-#### Running as Daemon
+### Running as Daemon
 
 ```plain
 sudo mkdir /tftp
@@ -73,6 +73,6 @@ $ tftp -i 10.10.10.10 put secrets.txt
 Transfer successful: 1337420 bytes in 69 second(s), 1337 bytes/s
 ```
 
-### URL list
+## URL list
 
 * [Linux.die.net - atftp](https://linux.die.net/man/1/atftp)
