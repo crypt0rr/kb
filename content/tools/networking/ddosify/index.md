@@ -100,5 +100,5 @@ ddosify [FLAG]
 
 ## URL List
 
-* [](https://ddosify.com/)
+* [Ddosify.com](https://ddosify.com/)
 * [Github.com - ddosify](https://github.com/ddosify/ddosify)
