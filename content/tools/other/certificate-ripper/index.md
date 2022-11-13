@@ -15,7 +15,7 @@ A CLI tool to extract server certificates.
 
 ![Example](images/demo.gif)
 
-### Installation
+## Installation
 
 #### Mac OS X - Homebrew 🍺
 
@@ -39,13 +39,13 @@ crip print --url=https://stackoverflow.com/
 3. Add the reference to your environment variables: `export CRIP_HOME=/path/to/crip/binary`
 4. Run `crip print --url=https://stackoverflow.com/`
 
-### Usage
+## Usage
 
 ```plain
 crip [COMMAND]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands:
@@ -64,7 +64,7 @@ Export the extracted certificate to a PKCS12/p12 type truststore
   -d, --destination         Destination of the to be stored truststore file. Default is current directory if none is provided.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ crip print --url=https://kb.offsec.nl/      
@@ -362,6 +362,6 @@ KeyIdentifier [
 ]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Certificate Ripper](https://github.com/Hakky54/certificate-ripper)

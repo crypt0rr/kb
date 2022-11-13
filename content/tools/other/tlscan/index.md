@@ -13,19 +13,19 @@ tags : ['Other', 'SSL/TLS', 'Certificates']
 
 Scanner to enumerate SSL/TLS encryption protocol support.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/mjol/TLScan.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 TLScan3.py [OPTIONS] target
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: TLScan3 [-h] [--version]
@@ -50,7 +50,7 @@ optional arguments:
   --sni SNI   SNI name to use in the handshake
 ```
 
-### Examples
+## Examples
 
 #### Scan SSL/TLS, CipherSuites and certificate
 
@@ -92,7 +92,7 @@ Starting enumeration at: 23-03-2020 16:52:56
   [*] Using SNI: 'example.com'
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - TLScan](https://github.com/mjol/TLScan)
 * [Ciphersuite.info](https://ciphersuite.info/)

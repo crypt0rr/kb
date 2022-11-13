@@ -13,26 +13,26 @@ weight : 0
 
 Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up
 
-### Installation
+## Installation
 
 Download newest release from [Checkra.in](https://checkra.in/#release)
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*()"/%}}
 
-### Usage
+## Usage
 
 ```plain
 chmod +x checkra1n
 sudo ./checkra1n
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
 ![Example](images/example-3.png)
 ![Example](images/example-4.png)
 
-### URL list
+## URL List
 
 * [Checkra.in](https://checkra.in/)

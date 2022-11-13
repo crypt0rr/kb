@@ -13,7 +13,7 @@ tags : ['Other', 'SNMP']
 
 Like to snmpwalk, snmpcheck allows you to enumerate the SNMP devices and places the output in a very human readable friendly format. It could be useful for penetration testing or systems monitoring.
 
-### Installation
+## Installation
 
 By default installed in [Kali Linux](https://www.kali.org/).
 
@@ -21,13 +21,13 @@ By default installed in [Kali Linux](https://www.kali.org/).
 sudo apt install snmp-check
 ```
 
-### Usage
+## Usage
 
 ```plain
 snmp-check [OPTIONS] <target IP address>
 ```
 
-### Flags
+## Flags
 
 ```plain
 snmp-check v1.9 - SNMP enumerator
@@ -46,7 +46,7 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
   -h --help        : show help menu;
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ snmp-check -c public 10.10.10.10
@@ -74,6 +74,6 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Kali.org - snmp-check](https://www.kali.org/tools/snmpcheck/)

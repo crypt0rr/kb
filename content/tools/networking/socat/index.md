@@ -21,7 +21,7 @@ More capabilities, like daemon mode with forking, client address check, "tail -f
 
 In fact, many of these features already exist in specialized tools; but until now, there does not seem to exists another tool that provides such a generic, flexible, simple and almost comprehensive (UNIX) byte stream connector.
 
-### Installation
+## Installation
 
 #### Debian
 
@@ -35,13 +35,13 @@ sudo apt install socat
 brew install socat
 ```
 
-### Usage
+## Usage
 
 ```plain
 socat [options] <bi-address> <bi-address>
 ```
 
-### Flags
+## Flags
 
 ```plain
 options:
@@ -156,7 +156,7 @@ address-head:
     unix-sendto:<filename>    groups=FD,SOCKET,NAMED,RETRY,UNIX
 ```
 
-### Examples
+## Examples
 
 #### Basic client/server
 
@@ -271,7 +271,7 @@ Windows machine starting the connection to server routing `cmd.exe` in the shell
 socat -d -d OPENSSL:192.168.189.44:443,verify=0 EXEC:'cmd.exe',pipes
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - socat](https://linux.die.net/man/1/socat)
 * [Formulae.brew.sh - socat](https://formulae.brew.sh/formula/socat)

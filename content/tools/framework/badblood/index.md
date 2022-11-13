@@ -15,7 +15,7 @@ BadBlood fills a Microsoft Active Directory Domain with a structure and thousand
 
 [Github.com](https://github.com/davidprowe/BadBlood)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -34,7 +34,7 @@ Statistics:
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - BadBlood](https://github.com/davidprowe/BadBlood)
 * [Secframe.com - BadBlood](https://www.secframe.com/badblood/)

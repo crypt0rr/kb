@@ -17,17 +17,17 @@ weight : 0
 
 PowerShell toolkit for auditing Active Directory Certificate Services (AD CS).
 
-### Installation
+## Installation
 
 Download PowerShell script from [Github.com](https://github.com/GhostPack/PSPKIAudit/blob/main/Code/Invoke-PKIAudit.ps1)
 
-### Usage
+## Usage
 
 ```plain
 Invoke-PKIAudit -CAName <CA-DNS>
 ```
 
-### Examples
+## Examples
 
 ```plain
 PS > Invoke-PKIAudit -CAName offsec-CA-2019
@@ -70,6 +70,6 @@ Misconfigurations       : ESC8
 [*] NOTE: this is not a guarantee that this CA environment is secure!
 ```
 
-### URL list
+## URL List
 
 * [Github.com - PSPKIAudit](https://github.com/GhostPack/PSPKIAudit)

@@ -15,19 +15,19 @@ Steganography brute-force utility to uncover hidden data inside files.
 
 Please use [Stegeek]({{< ref "stegseek" >}}), newer and quicker.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install stegcracker
 ```
 
-### Usage
+## Usage
 
 ```plain
 stegcracker <file> [<wordlist>]
 ```
 
-### Flags
+## Flags
 
 ```plain
 StegCracker 2.1.0 - (https://github.com/Paradoxis/StegCracker)
@@ -72,10 +72,10 @@ optional arguments:
 
 ```
 
-### Examples
+## Examples
 
 ![Example](images/stegcracker.gif)
 
-### URL list
+## URL List
 
 * [Github.com - StegCracker](https://github.com/Paradoxis/StegCracker)

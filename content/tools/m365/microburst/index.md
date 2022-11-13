@@ -13,7 +13,7 @@ weight : 0
 
 MicroBurst includes functions and scripts that support Azure Services discovery, weak configuration auditing, and post exploitation actions such as credential dumping. It is intended to be used during penetration tests where Azure is in use.
 
-### Installation
+## Installation
 
 ```plain
 Import-Module .\MicroBurst.psm1
@@ -28,7 +28,7 @@ Recommended Modules to install:
 
 If you haven't configured the use of PowerShell Gallery, please look at [PowerShell - Enable repository use]({{< ref "powershell#enable-repository-use" >}})
 
-### Examples
+## Examples
 
 #### EnumerateAzureSubDomains
 
@@ -53,7 +53,7 @@ offsec.onmicrosoft.com                          Microsoft Hosted Domain
 offsec.sharepoint.com                           SharePoint
 ```
 
-### URL list
+## URL List
 
 * [Github.com - MicroBurst](https://github.com/NetSPI/MicroBurst)
 * [Github.com - Invoke-EnumerateAzureSubDomains.ps1](https://github.com/NetSPI/MicroBurst/blob/master/Misc/Invoke-EnumerateAzureSubDomains.ps1)

@@ -13,19 +13,19 @@ tags : ['Forensics','Harddisk']
 
 Recover lost files from harddisk, digital camera and cdrom.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install testdisk
 ```
 
-### Usage
+## Usage
 
 ```plain
 photorec [/log] [/debug] [/d recup_dir] [file.dd|file.e01|device]
 ```
 
-### Flags
+## Flags
 
 ```plain
 PhotoRec 7.1, Data Recovery Utility, July 2019
@@ -42,7 +42,7 @@ PhotoRec searches for various file formats (JPEG, Office...). It stores files
 in the recup_dir directory.
 ```
 
-### Examples
+## Examples
 
 ```plain
 sudo photorec /dev/sda1
@@ -50,6 +50,6 @@ sudo photorec /dev/sda1
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [CGSecurity.org - photorec](https://www.cgsecurity.org/wiki/PhotoRec)

@@ -13,20 +13,20 @@ weight : 0
 
 An email OSINT and breach hunting tool using different breach and reconnaissance services, or local breaches such as Troy Hunt's Collection1 and the infamous Breach Compilation torrent.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install h8mail
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: h8mail [-h] [-t USER_TARGETS [USER_TARGETS ...]] [-u USER_URLS [USER_URLS ...]] [-q USER_QUERY] [--loose] [-c CONFIG_FILE [CONFIG_FILE ...]] [-o OUTPUT_FILE] [-bc BC_PATH] [-sk] [-k CLI_APIKEYS [CLI_APIKEYS ...]] [-lb LOCAL_BREACH_SRC [LOCAL_BREACH_SRC ...]]
               [-gz LOCAL_GZIP_SRC [LOCAL_GZIP_SRC ...]] [-sf] [-ch [CHASE_LIMIT]] [--power-chase] [--hide] [--debug] [--gen-config]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Version 2.5.2 - "ROCKSMASSON.2"  
@@ -72,7 +72,7 @@ optional arguments:
   --gen-config, -g      Generates a configuration file template in the current working directory & exits. Will overwrite existing h8mail_config.ini file
 ```
 
-### Examples
+## Examples
 
 #### Check specific email
 
@@ -184,7 +184,7 @@ Status code: 200
 [!] No targets found in URLs. Quitting
 ```
 
-### URL list
+## URL List
 
 * [Github.com - h8mail](https://github.com/khast3x/h8mail)
 * [Github.com - Wiki](https://github.com/khast3x/h8mail/wiki)

@@ -19,7 +19,7 @@ In the latest version CrossLinked now includes a names.csv output file, which st
 
 CrossLinked assumes the organization's account naming convention has already been identified. This is required for execution and should be added to the CMD args based on your expected output. See the [Naming Format](https://github.com/m8sec/CrossLinked#naming-format) and [Example Usage](https://github.com/m8sec/CrossLinked#example-usage-1) sections.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/m8r0wn/CrossLinked.git
@@ -31,13 +31,13 @@ Install requirements
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 crosslinked.py [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -60,7 +60,7 @@ Proxy arguments:
   --proxy-file PROXY  Load proxies from file for rotation
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 crosslinked.py -f '{first}.{last}@example.com' example.com
@@ -101,6 +101,6 @@ biglove.zaza@example.com
 jim.bob@example.com
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Crosslinked](https://github.com/m8r0wn/CrossLinked)

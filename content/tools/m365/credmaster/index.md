@@ -43,7 +43,7 @@ For detection tips, see the blogpost and detection section.
 * [ADFS](https://github.com/knavesec/CredMaster/wiki/ADFS) - Active Directory Federation Services
 * [AzureSSO](https://github.com/knavesec/CredMaster/wiki/AzureSSO) - Azure AD Seamless SSO Endpoint
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/knavesec/CredMaster.git
@@ -56,14 +56,14 @@ This tool requires AWS API access keys, a walkthrough on how to acquire these ke
 
 All other usage details can be found [here](https://github.com/knavesec/CredMaster/wiki/Usage)
 
-### Usage
+## Usage
 
 ```plain
 credmaster.py [-h] [--plugin PLUGIN] [-u USERFILE] [-p PASSWORDFILE] [-f USERPASSFILE] [-a USERAGENTFILE] [-o OUTFILE] [-t THREADS] [-j JITTER] [-m JITTER_MIN] [-d DELAY] [--passwordsperdelay PASSWORDSPERDELAY] [--profile_name PROFILE_NAME] [--access_key ACCESS_KEY]
                      [--secret_access_key SECRET_ACCESS_KEY] [--session_token SESSION_TOKEN] [--config CONFIG] [--clean] [--api_destroy API_DESTROY] [--api_list]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -104,7 +104,7 @@ optional arguments:
   --api_list            List all fireprox APIs
 ```
 
-### Examples
+## Examples
 
 ```plain
 python3 credmaster.py --plugin {pluginname} --access_key {key} --secret_access_key {key} -u userfile -p passwordfile -a useragentfile {otherargs}
@@ -112,6 +112,6 @@ python3 credmaster.py --plugin {pluginname} --access_key {key} --secret_access_k
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - CredMaster](https://github.com/knavesec/CredMaster)

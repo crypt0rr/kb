@@ -13,7 +13,7 @@ tags : ['Other', 'LDAP', 'Active Directory']
 
 Active Directory information dumper via LDAP.
 
-### Installation
+## Installation
 
 Dependencies
 
@@ -27,7 +27,7 @@ cd ldapdomaindump
 sudo python3 setup.py install
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: ldapdomaindump [-h] [-u USERNAME] [-p PASSWORD] [-at {NTLM,SIMPLE}]
@@ -37,7 +37,7 @@ usage: ldapdomaindump [-h] [-u USERNAME] [-p PASSWORD] [-at {NTLM,SIMPLE}]
                       HOSTNAME
 ```
 
-### Flags
+## Flags
 
 ```plain
 Domain information dumper via LDAP. Dumps users/computers/groups and
@@ -79,7 +79,7 @@ Misc options:
                         usage
 ```
 
-### Examples
+## Examples
 
 #### Dump domain information (normal user)
 
@@ -207,6 +207,6 @@ $ python3 ldapdomaindump.py -u 'offsec.nl\johndo' -p 'Welkom1234' -d ';' 10.20.3
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - LDAPdomaindump](https://github.com/dirkjanm/ldapdomaindump)

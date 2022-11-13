@@ -17,17 +17,17 @@ By default, CeWL sticks to just the site you have specified and will go to a dep
 
 CeWL also has an associated command line app, FAB (Files Already Bagged) which uses the same meta data extraction techniques to create author/creator lists from already downloaded.
 
-### Installation
+## Installation
 
 Please use Kali.
 
-### Usage
+## Usage
 
 ```plain
 cewl [OPTIONS] ... <url>
 ```
 
-### Flags
+## Flags
 
 ```plain
 CeWL 5.5.2 (Grouping) Robin Wood (robin@digi.ninja) (https://digi.ninja/)
@@ -72,7 +72,7 @@ Headers
 <url>: The site to spider.
 ```
 
-### Examples
+## Examples
 
 #### Basic wordlist creation from URL
 
@@ -144,7 +144,7 @@ Writing words to file
 cewl -m 3 https://kb.offsec.nl/ -u "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36" -d 0 -w offsec.txt
 ```
 
-### URL list
+## URL List
 
 * [Digi.ninja - cewl](https://digi.ninja/projects/cewl.php)
 * [Github.com - cewl](https://github.com/digininja/CeWL/)

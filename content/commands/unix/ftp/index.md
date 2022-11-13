@@ -11,19 +11,19 @@ weight : 0
 
 ## Ftp
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install ftp
 ```
 
-### Usage
+## Usage
 
 ```plain
 ftp [OPTIONS] [hostname]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: { ftp | pftp } [-46pinegvtd] [hostname]
@@ -39,7 +39,7 @@ Usage: { ftp | pftp } [-46pinegvtd] [hostname]
    -d: enable debugging
 ```
 
-### Examples
+## Examples
 
 #### Connect to FTP-server
 
@@ -89,6 +89,6 @@ mget Notes to do.txt?
 186 bytes received in 0.02 secs (10.9481 kB/s)
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/ftp)

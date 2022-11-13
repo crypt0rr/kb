@@ -67,6 +67,6 @@ Example `NTDS.dit` and `SYSTEM` files zipped below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
-### URL list
+## URL List
 
 * [Stealthbits.com - Extracting Password Hashes from the Ntds.dit File](https://stealthbits.com/blog/extracting-password-hashes-from-the-ntds-dit-file/)

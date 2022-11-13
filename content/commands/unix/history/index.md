@@ -11,7 +11,7 @@ weight : 0
 
 ## History
 
-### Usage
+## Usage
 
 ```plain
 history
@@ -22,7 +22,7 @@ history [-anrw] [filename]
 history -ps arg
 ```
 
-### Flags
+## Flags
 
 ```plain
    -c   Clear the history list. This can be combined with the other
@@ -49,7 +49,7 @@ history -ps arg
    -s   The args are added to the end of the history list as a single entry.
 ```
 
-### Examples
+## Examples
 
 #### Clear history
 
@@ -57,7 +57,7 @@ history -ps arg
 history -c
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/Linux-CLI/x1712.htm)
 * [Linux.die.net](https://linux.die.net/man/3/history)

@@ -13,14 +13,14 @@ weight : 0
 
 E2B - the USB multiboot solution for professionals.
 
-### Installation
+## Installation
 
 Download newest release from [easy2boot.xyz](https://easy2boot.xyz/download/)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 
-### URL list
+## URL List
 
 * [Easy2boot.xyz](https://easy2boot.xyz/)

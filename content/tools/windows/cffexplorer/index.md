@@ -13,7 +13,7 @@ weight : 0
 
 CFF Explorer was designed to make PE editing as easy as possible, but without losing sight on the portable executable's internal structure. This application includes a series of tools which might help not only reverse engineers but also programmers. It offers a multi-file environment and a switchable interface.
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
@@ -21,11 +21,11 @@ CFF Explorer was designed to make PE editing as easy as possible, but without lo
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 
-### Examples
+## Examples
 
 ![Example](images/cff1.jpg)
 ![Example](images/cff2.jpg)
 
-### URL list
+## URL List
 
 * [ntcore.com - explorer suite](https://ntcore.com/?page_id=388)

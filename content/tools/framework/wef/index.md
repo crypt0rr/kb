@@ -51,7 +51,7 @@ Tested and supported in **Kali Linux**, **Parrot OS**, **Arch Linux** and **Ubun
 * Auto detect requirements
 * Bluetooth support (Jamming, Reading, Writing)
 
-### Installation
+## Installation
 
 As root.
 
@@ -61,7 +61,7 @@ cd WEF
 bash setup.sh
 ```
 
-### Usage
+## Usage
 
 ```plain
 wef -i [INTERFACE]
@@ -113,7 +113,7 @@ Type 'help' to view more functions
   clear/cls           - Clear the screen without exiting
 ```
 
-### Examples
+## Examples
 
 #### Scan available networks
 
@@ -210,6 +210,6 @@ CC:32:43:56:CB:E9    2  -42  2.0  No   AtherosC  Guests
 [*] Do you want to crack the handshake? [y/n]: n
 ```
 
-### URL list
+## URL List
 
 * [Github.com - WEF](https://github.com/D3Ext/WEF)

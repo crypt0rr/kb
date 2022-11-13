@@ -13,7 +13,7 @@ tags : ['Networking', 'Wi-Fi', 'LAN']
 
 The Swiss Army knife for WiFi, Bluetooth Low Energy, wireless HID hijacking and Ethernet networks reconnaissance and MITM attacks.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/bettercap/bettercap/releases)
 
@@ -35,13 +35,13 @@ Install caplet updates and UI, default credentials user:pass
 sudo bettercap -eval "caplets.update; ui.update; quit"
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo bettercap [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage of bettercap:
@@ -73,7 +73,7 @@ Usage of bettercap:
         Print the version and exit.
 ```
 
-### Examples
+## Examples
 
 #### Start on active network interface
 
@@ -170,7 +170,7 @@ unzip ui.zip -d /usr/share/bettercap/
 grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" bettercap.log | sort -u > ip.txt
 ```
 
-### URL list
+## URL List
 
 * [Bettercap.org](https://www.bettercap.org/)
 * [GitHub.com - Bettercap](https://github.com/bettercap/bettercap/)

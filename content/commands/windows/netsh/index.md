@@ -11,13 +11,13 @@ weight : 0
 
 ## Network Shell (netsh)
 
-### Usage
+## Usage
 
 ```cmd
 netsh [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands in this context:
@@ -68,7 +68,7 @@ The following sub-contexts are available:
  advfirewall branchcache bridge dhcpclient dnsclient firewall http interface ipsec lan mbn namespace netio p2p ras rpc trace wcn wfp winhttp winsock wlan
 ```
 
-### Examples
+## Examples
 
 #### Show known Wi-Fi networks
 
@@ -107,6 +107,6 @@ Configuration for interface "Ethernet"
 
 Start the Mobile hotspot with `netsh wlan start hostednetwork`
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/nl-nl/windows-server/networking/technologies/netsh/netsh)

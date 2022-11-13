@@ -153,7 +153,7 @@ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-sp
 defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 ```
 
-### URL list
+## URL List
 
 * [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
 * [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Lspci
 
-### Usage
+## Usage
 
 ```plain
 lspci [<switches>]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: lspci [<switches>]
@@ -61,7 +61,7 @@ PCI access options:
 -F <file>   Read PCI configuration dump from a given file
 ```
 
-### Examples
+## Examples
 
 #### Show connected devices
 
@@ -101,6 +101,6 @@ $ sudo lspci -s 3e:00.0 -v
     Kernel modules: nvme
 ```
 
-### URL list
+## URL List
 
 * [Google](https://www.google.com)

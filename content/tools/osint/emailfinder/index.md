@@ -13,19 +13,19 @@ weight : 0
 
 Search emails through Search Engines.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install emailfinder
 ```
 
-### Usage
+## Usage
 
 ```plain
 emailfinder [-h] -d DOMAIN [-v]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -35,7 +35,7 @@ optional arguments:
   -v, --version         Show Emailfinder version
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ emailfinder -d example.com
@@ -84,6 +84,6 @@ jsmith@example.com
 admin@example.com
 ```
 
-### URL list
+## URL List
 
 * [Github.com - EmailFinder](https://github.com/Josue87/EmailFinder)

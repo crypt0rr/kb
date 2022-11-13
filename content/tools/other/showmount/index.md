@@ -13,19 +13,19 @@ tags : ['Other', 'Tools']
 
 Show mount information for an NFS server.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install nfs-common
 ```
 
-### Usage
+## Usage
 
 ```plain
 showmount
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: showmount [-adehv]
@@ -52,7 +52,7 @@ OPTIONS
               Suppress the descriptive headings from the output.
 ```
 
-### Examples
+## Examples
 
 #### List shares available
 
@@ -70,6 +70,6 @@ Export list for <target>:
 sudo mount -t nfs <ip>:/share temp
 ```
 
-### URL list
+## URL List
 
 - [Linux.die.net - showmount](https://linux.die.net/man/8/showmount)

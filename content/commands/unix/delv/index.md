@@ -11,13 +11,13 @@ weight : 0
 
 ## Delv
 
-### Usage
+## Usage
 
 ```plain
 delv [@server] {q-opt} {d-opt} [domain] [q-type] [q-class]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:  delv [@server] {q-opt} {d-opt} [domain] [q-type] [q-class]
@@ -62,7 +62,7 @@ Where:  domain    is in the Domain Name System
         -v                           (print version and exit)
 ```
 
-### Examples
+## Examples
 
 #### DNSSEC enabled
 
@@ -84,6 +84,6 @@ delv @1.1.1.1 google.com
 google.com.     3200171710 IN   A   172.217.17.46
 ```
 
-### URL list
+## URL List
 
 * [Google](https://www.google.com)

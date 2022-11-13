@@ -11,13 +11,13 @@ weight: 0
 
 ## Nslookup
 
-### Usage
+## Usage
 
 ```plain
 nslookup [-option] [name | -] [server]
 ```
 
-### Examples
+## Examples
 
 #### A-record lookup
 
@@ -110,6 +110,6 @@ example.com rdata_43 = 43547 8 2 615A64233543F66F44D68933625B17497C89A70E858ED76
 example.com rdata_46 = DS 8 2 86400 20200414042324 20200407031324 56311 com. XYGro5Yso+qUMpnVVa9iyybt6JHpAD9dK2vOibAtiC8uEHNDRlcXigH/ XJu9aOsnobe18IYfR5tv+LBnQrdlatxsGOAIf1qkPmSVnqZTEk+oz3aQ mADvnbnlJaiFuMIJp2DLs0/T0slbZHG77p04fNNVikuBYgK+/juOaPHU D0Cav+zpkSBFPSRI6TMKxqUsApOIqm7PxQD9QVHYXqd2uA==
 ```
 
-### URL list
+## URL List
 
 - [Linux.die.net](https://linux.die.net/man/1/nslookup)

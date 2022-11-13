@@ -13,7 +13,7 @@ weight : 0
 
 Is just a quick inventory, reminder and launcher for pentest commands.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Orange-Cyberdefense/arsenal.git
@@ -21,7 +21,7 @@ cd arsenal
 ./run
 ```
 
-### Examples
+## Examples
 
 ![Example](images/arsenal.gif)
 
@@ -41,6 +41,6 @@ cd arsenal
 
 [Github.com - Arsenal - Active directory ACE mindmap](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/ACEs_xmind.png)
 
-### URL list
+## URL List
 
 * [Github.com - Arsenal](https://github.com/Orange-Cyberdefense/arsenal)

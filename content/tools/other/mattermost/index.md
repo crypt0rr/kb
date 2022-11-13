@@ -13,12 +13,12 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 A messaging and collaboration platform. With Mattermost, you can integrate the tools you use every day into one place and never miss a notification or task.
 
-### Installation
+## Installation
 
 Download from [Mattermost.com](https://mattermost.com/download/)
 Follow the [installation guide](https://docs.mattermost.com/help/getting-started/light-install.html)
 
-### Usage
+## Usage
 
 ```plain
 Usage:
@@ -26,7 +26,7 @@ Usage:
   mattermost [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Available Commands:
@@ -62,7 +62,7 @@ Flags:
 Use "mattermost [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 #### Upgrade server
 
@@ -118,7 +118,7 @@ sudo systemctl start mattermost.service
 sudo ./mattermost user password 'user@example.com' 'new-password'
 ```
 
-### URL list
+## URL List
 
 - [Mattermost.com](https://mattermost.com/)
 - [Docs.mattermost.com - Wiki](https://docs.mattermost.com/)

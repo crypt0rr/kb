@@ -11,13 +11,13 @@ weight : 0
 
 ## Diff - Compare FILES line by line
 
-### Usage
+## Usage
 
 ```plain
 diff [OPTION]... FILES
 ```
 
-### Flags
+## Flags
 
 ```plain
 Compare FILES line by line.
@@ -121,7 +121,7 @@ GNU diffutils home page: <https://www.gnu.org/software/diffutils/>
 General help using GNU software: <https://www.gnu.org/gethelp/>
 ```
 
-### Examples
+## Examples
 
 The `-` for the first file says the line is not present in the second file. The `+` at the second file says the line is present in the second file but not in the first.
 
@@ -162,6 +162,6 @@ diff -u file1 file2
 +192.168.1.6
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/diff)

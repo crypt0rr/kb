@@ -13,19 +13,19 @@ weight : 0
 
 A commandline web screenshot and information gathering tool by @leonjza.
 
-### Installation
+## Installation
 
 ```plain
 go get -u github.com/sensepost/gowitness
 ```
 
-### Usage
+## Usage
 
 ```plain
 gowitness [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Available Commands:
@@ -63,7 +63,7 @@ Flags:
 Use "gowitness [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 #### Single page screenshot
 
@@ -105,6 +105,6 @@ $ gowitness server
 ![Example](images/example-2.png)
 ![Example](images/example-3.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - gowitness](https://github.com/sensepost/gowitness)

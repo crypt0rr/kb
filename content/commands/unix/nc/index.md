@@ -19,13 +19,13 @@ Netcat, arbitrary TCP and UDP connections and listens.
 
 * SHA256 'nc.exe' - `be4211fe5c1a19ff393a2bcfa21dad8d0a687663263a63789552bda446d9421b`
 
-### Usage
+## Usage
 
 ```plain
 nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
 ```
 
-### Flags
+## Flags
 
 ```plain
       [-m minttl] [-O length] [-P proxy_username] [-p source_port]
@@ -70,7 +70,7 @@ nc [-46CDdFhklNnrStUuvZz] [-I length] [-i interval] [-M ttl]
     Port numbers can be individual or ranges: lo-hi [inclusive]
 ```
 
-### Examples
+## Examples
 
 #### Create a Netcat listener
 
@@ -142,6 +142,6 @@ nc -nvv -w 1 -z 10.10.10.20 3380-3390
 nc -nv -u -z -w 1 10.10.10.20 160-162
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/nc)

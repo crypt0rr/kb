@@ -13,7 +13,7 @@ weight : 0
 
 Read and write meta information in files.
 
-### Installation
+## Installation
 
 #### APT Repo
 
@@ -27,17 +27,17 @@ sudo apt install exiftool
 git clone https://github.com/exiftool/exiftool.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./exiftool
 ```
 
-### Flags
+## Flags
 
 See documentation <https://github.com/exiftool/exiftool>
 
-### Examples
+## Examples
 
 Remove all EXIF-data from image
 
@@ -51,7 +51,7 @@ Remove all EXIF-data from all images in folder
 exiftool -all= *
 ```
 
-### URL list
+## URL List
 
 * [ExifTool.org](https://exiftool.org/)
 * [ExifTool.org Flag creator](https://exiftool.org/examples.html)

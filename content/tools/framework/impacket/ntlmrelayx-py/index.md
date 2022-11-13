@@ -13,11 +13,11 @@ weight : 0
 
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip INTERFACE_IP] [--no-smb-server] [--no-http-server] [--no-wcf-server] [--no-raw-server] [--smb-port SMB_PORT] [--http-port HTTP_PORT]
@@ -29,7 +29,7 @@ ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip I
                      [--pfx-password PFX_PASSWORD] [--export-type {PEM, PFX}] [--cert-outfile-path CERT_OUTFILE_PATH]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
@@ -147,7 +147,7 @@ Shadow Credentials attack options:
                         filename to store the generated self-signed PEM or PFX certificate and key
 ```
 
-### Examples
+## Examples
 
 For every connection received, this module will try to relay that connection
 to specified target(s) system or (by default) the original client
@@ -230,6 +230,6 @@ SMB         10.10.10.1      OFFSEC/JOHNDO       TRUE            445
 SMB         10.10.10.2      OFFSEC/JOHNDO       FALSE           445
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

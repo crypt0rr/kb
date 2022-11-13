@@ -13,19 +13,19 @@ weight : 0
 
 "pwning IPv4 via IPv6" - mitm6 is a pentesting tool that exploits the default configuration of Windows to take over the default DNS server.
 
-### Installation
+## Installation
 
 ```plain
 sudo python3 -m pip install mitm6
 ```
 
-### Usage
+## Usage
 
 ```plain
 mitm6 [-h] [-i INTERFACE] [-l LOCALDOMAIN] [-4 ADDRESS] [-6 ADDRESS] [-m ADDRESS] [-a] [-v] [--debug] [-d DOMAIN] [-b DOMAIN] [-hw DOMAIN] [-hb DOMAIN] [--ignore-nofqdn]
 ```
 
-### Flags
+## Flags
 
 ```plain
 mitm6 - pwning IPv4 via IPv6
@@ -59,7 +59,7 @@ Filtering options:
   --ignore-nofqdn       Ignore DHCPv6 queries that do not contain the Fully Qualified Domain Name (FQDN) option.
 ```
 
-### Examples
+## Examples
 
 #### ATTENTION
 
@@ -98,6 +98,6 @@ sudo mitm6 -i eth0 -hw DC2016.offsec.nl
 IPv6 address fe80::4865:2 is now assigned to mac=00:00:00:00:00:26 host=DC2016.offsec.nl. ipv4=
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - mitm6](https://github.com/fox-it/mitm6)

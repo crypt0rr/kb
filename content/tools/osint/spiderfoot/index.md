@@ -65,7 +65,7 @@ SpiderFoot's 200+ modules feed each other in a publisher/subscriber model to ens
 * [Data breach searches](https://asciinema.org/a/296145)
 * So much more...
 
-### Installation
+## Installation
 
 #### Stable build (packaged release)
 
@@ -308,7 +308,7 @@ SpiderFoot has over 200 modules, most of which *don't require API keys*, and man
 | Zetalytics                   | Query the Zetalytics database for hosts on your target domain(s).                                                               | [https://zetalytics.com/](https://zetalytics.com/)                                                                     | Tiered API     |
 | Zone-H Defacement Check      | Check if a hostname/domain appears on the zone-h.org 'special defacements' RSS feed.                                            | [https://zone-h.org/](https://zone-h.org/)                                                                             | Free API       |
 
-### Usage
+## Usage
 
 ```plain
 sf.py [-h] [-d] [-l IP:port] [-m mod1,mod2,...] [-M] [-s TARGET]
@@ -317,7 +317,7 @@ sf.py [-h] [-d] [-l IP:port] [-m mod1,mod2,...] [-M] [-s TARGET]
         [-V]
 ```
 
-### Flags
+## Flags
 
 ```plain
 SpiderFoot 3.3.0: Open Source Intelligence Automation.
@@ -350,7 +350,7 @@ optional arguments:
   -V, --version       Display the version of SpiderFoot and exit.
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 ![Example](images/example1.png)
@@ -364,7 +364,7 @@ Read more at the [project website](https://www.spiderfoot.net/r.php?u=aHR0cHM6Ly
 
 Latest updates announced on [Twitter](https://twitter.com/spiderfoot).
 
-### URL list
+## URL List
 
 * [SpiderFoot.net](https://www.spiderfoot.net/)
 * [Github.com - SpiderFoot](https://github.com/smicallef/spiderfoot)

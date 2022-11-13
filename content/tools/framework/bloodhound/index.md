@@ -21,11 +21,11 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodHound/releases)
 
-### Usage
+## Usage
 
 #### Bloodhound - Run ingestor on target domain joined system
 
@@ -51,7 +51,7 @@ Please check [BloodHound.py]({{< ref "bloodhoundpy" >}})
 
 Please check [AzureHound]({{< ref "azurehound" >}})
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -131,7 +131,7 @@ Backup Operators
 
 ### Troubleshooting
 
-#### Installation of Neo4j and BloodHound interface on Ubuntu
+### Installation of Neo4j and BloodHound interface on Ubuntu
 
 ```plain
 sudo wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
@@ -172,7 +172,7 @@ $ cat /etc/systemd/system.conf
 DefaultLimitNOFILE=60000
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Bloodhound](https://github.com/BloodHoundAD/BloodHound/)
 * [Github.com - Bloodhound - Pre-compiled binaries](https://github.com/BloodHoundAD/BloodHound/releases)

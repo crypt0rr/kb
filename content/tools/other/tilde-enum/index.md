@@ -23,7 +23,7 @@ This is not a directory enumerator (i.e., tries all words in a list against a we
 
 Just as a note: on Windows computers you can view 8.3 names in the command prompt window by using the `dir /x` command. One of the columns will be the 8.3 name (if there is one).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/WebBreacher/tilde_enum
@@ -33,7 +33,7 @@ Find wordlists to use at [this GitHub repo](https://github.com/tennc/fuzzdb/tree
 
 {{%attachments title="Wordlists" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 tilde_enum.py [-h] [-c COOKIES] [-d DIRWORDLIST] [-f] [-p PROXY]
@@ -41,7 +41,7 @@ tilde_enum.py [-h] [-c COOKIES] [-d DIRWORDLIST] [-f] [-p PROXY]
                      [--no-check-certificate]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Exploits and expands the file names found from the tilde enumeration vuln
@@ -61,7 +61,7 @@ optional arguments:
                         don't verify the SSL certificate
 ```
 
-### Examples
+## Examples
 
 ```plain
 $  python2 tilde_enum.py -u http://offsec.nl -w raft-small-directories-lowercase.txt
@@ -141,7 +141,7 @@ $  python2 tilde_enum.py -u http://offsec.nl -w raft-small-directories-lowercase
 [?]      HTTP Resp 403 - http://offsec.nl/aspnet_client/  - Size 218
 ```
 
-### URL list
+## URL List
 
 * [Github.com - tilde_enum](https://github.com/WebBreacher/tilde_enum)
 * [Github.com - Wordlists to use](https://github.com/tennc/fuzzdb/tree/master/Discovery/PredictableRes)

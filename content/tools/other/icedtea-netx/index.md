@@ -15,22 +15,22 @@ NetX provides a drop-in replacement for javaws (Java Web Start). Since upstream 
 
 Tool to open and view **.jnlp** files.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt-get install icedtea-netx
 ```
 
-### Usage
+## Usage
 
 ```plain
 javaws viewer.jnlp
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Packages.debian.org - icedtea-netx](https://packages.debian.org/nl/sid/icedtea-netx)

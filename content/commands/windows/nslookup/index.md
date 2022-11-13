@@ -11,7 +11,7 @@ weight : 0
 
 ## Nslookup - Displays information that you can use to diagnose Domain Name System (DNS) infrastructure
 
-### Usage
+## Usage
 
 ```plain
 nslookup [-opt ...]             # interactive mode using default server
@@ -20,7 +20,7 @@ nslookup [-opt ...] host        # just look up 'host' using default server
 nslookup [-opt ...] host server # just look up 'host' using 'server'
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands:   (identifiers are shown in uppercase, [] means optional)
@@ -56,7 +56,7 @@ view FILE           - sort an 'ls' output file and view it with pg
 exit            - exit the program
 ```
 
-### Examples
+## Examples
 
 ```plain
 nslookup example.com
@@ -69,6 +69,6 @@ Addresses:  2606:2800:220:1:248:1893:25c8:1946
           93.184.216.34
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup)

@@ -13,15 +13,15 @@ weight : 0
 
 Numi is a handy calculator app for macOS. It allows to describe tasks the natural way and instantly get an accurate answer. For example, $20 in euro - 5% discount or today + 2 weeks.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/nikolaeu/numi/releases)
 
-### Examples
+## Examples
 
 ![example](images/example1.gif)
 
-### URL list
+## URL List
 
 * [Numi.app](https://numi.app/)
 * [Github.com - Numi](https://github.com/nikolaeu/numi)

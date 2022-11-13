@@ -11,7 +11,7 @@ weight : 0
 
 ## System Profiler
 
-### Usage
+## Usage
 
 ```plain
 system_profiler [-listDataTypes]
@@ -19,7 +19,7 @@ system_profiler [-xml | -json] [-timeout n] [-detailLevel n]
 system_profiler [-xml | -json] [-timeout n] [dataType1 ... dataTypeN]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -detailLevel n    specifies the level of detail for the report
@@ -58,7 +58,7 @@ Examples:
      Creates a XML file which can be opened by System Profiler.app
 ```
 
-### Examples
+## Examples
 
 #### Generate a short report containing no personal information
 
@@ -78,6 +78,6 @@ system_profiler -listDataTypes
 system_profiler -xml > MyReport.spx
 ```
 
-### URL list
+## URL List
 
 * [ss64.com - system_profiler](https://ss64.com/osx/system_profiler.html)

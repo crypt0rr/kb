@@ -13,15 +13,15 @@ weight : 0
 
 CalHash is a utility that you can use to calculate and compare the checksum (also known as a message-digest-fingerprint) for a file.
 
-### Installation
+## Installation
 
 Download newest release from [titanium-software.fr](https://www.titanium-software.fr/en/calhash.html)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
 
-### URL list
+## URL List
 
 * [titanium-software.fr - CalHash](https://www.titanium-software.fr/en/calhash.html)

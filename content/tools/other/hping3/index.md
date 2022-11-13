@@ -15,19 +15,19 @@ Send (almost) arbitrary TCP/IP packets to network hosts.
 
 hping is a command-line oriented TCP/IP packet assembler/analyzer. The interface is inspired to the ping(8) unix command, but hping isn't only able to send ICMP echo requests. It supports TCP, UDP, ICMP and RAW-IP protocols, has a traceroute mode, the ability to send files between a covered channel, and many other features.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install hping3
 ```
 
-### Usage
+## Usage
 
 ```plain
 hping3 host [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -h  --help      show this help
@@ -118,7 +118,7 @@ ARS packet description (new, unstable)
   --apd-send       Send the packet described with APD (see docs/APD.txt)
 ```
 
-### Examples
+## Examples
 
 #### Send file via ICMP (ping)
 
@@ -152,7 +152,7 @@ uuidd:x:122:129::/run/uuidd:/usr/sbin/nologin
 round-trip min/avg/max = 0.0/0.0/0.0 ms
 ```
 
-### URL list
+## URL List
 
 * [Tools.kali.org - hping3](https://tools.kali.org/information-gathering/hping3)
 * [Linux.die.net - hping3](https://linux.die.net/man/8/hping3)

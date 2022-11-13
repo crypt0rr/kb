@@ -24,7 +24,7 @@ Smap is a replica of Nmap which uses shodan.io's free API for port scanning. It 
 * Makes no contact to the targets
 * Doesn't require any account/api key
 
-### Installation
+## Installation
 
 ```plain
 go install -v github.com/s0md3v/smap/cmd/smap@latest
@@ -63,7 +63,7 @@ Since Smap simply fetches existent port data from shodan.io, it is super fast bu
 * results being up to 7 days old
 * a few false negatives
 
-### Examples
+## Examples
 
 ```plain
 $ smap kb.offsec.nl           
@@ -88,6 +88,6 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 0.38 seconds
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Smap](https://github.com/s0md3v/Smap)

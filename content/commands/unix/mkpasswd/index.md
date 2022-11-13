@@ -11,13 +11,13 @@ weight : 0
 
 ## mkpasswd - Crypts the PASSWORD using crypt(3)
 
-### Usage
+## Usage
 
 ```plain
 mkpasswd [OPTIONS]... [PASSWORD [SALT]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Crypts the PASSWORD using crypt(3).
@@ -40,7 +40,7 @@ Report bugs to <md+whois@linux.it>.
 
 ```
 
-### Examples
+## Examples
 
 #### Password 'test'
 
@@ -58,6 +58,6 @@ Password:
 $6$ONAmo76fZnYT4hQD$tAhBUefxumKisUGH87kRmOChJ7fVdVMGpYTGxNFwSwn7bOVEXs9qIHY8TVqtAudc4xm3zOh5sIGloiQK/zWcZ1
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/mkpasswd)

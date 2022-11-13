@@ -40,7 +40,7 @@ Powered by the open source media player mpv, IINA can play almost every media fi
 * Online streams
 * YouTube playlists
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/iina/iina/releases)
 
@@ -50,7 +50,7 @@ Or install via HomeBrew.
 brew install --cask iina
 ```
 
-### Examples
+## Examples
 
 #### Dark Mode
 
@@ -68,7 +68,7 @@ IINA supports the native Picture-in-Picture mode, enables you to enjoy either lo
 
 ![example](images/example4.png)
 
-### URL list
+## URL List
 
 * [IINA.io](https://iina.io/)
 * [Github.com - iina](https://github.com/iina/iina)

@@ -29,7 +29,7 @@ Program will accept IPv4 address from class A, B, C except:
 * 127.0.0.0/ 8 - used for loopback addresses
 * 169.254.0.0/16 - used for link-local addresses
 
-### Installation
+## Installation
 
 You need Python version 3.6 or later to run the program.
 
@@ -37,7 +37,7 @@ You need Python version 3.6 or later to run the program.
 git clone https://github.com/crypt0rr/subnetcalc.git
 ```
 
-### Usage
+## Usage
 
 **Note**: Subnet mask should be entered in dotted decimal format e.g. 255.255.255.0. Program will accept subnet mask from 255.0.0.0.0 to 255.255.255.255. If you use subnet mask 255.255.255.254 (/31) or 255.255.255.255 (/32) program returns None for: network and broadcast address, first and last IP address, usable hosts per subnet.
 
@@ -45,7 +45,7 @@ git clone https://github.com/crypt0rr/subnetcalc.git
 python3 subnetcalc.py
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 subnetcalc.py
@@ -61,6 +61,6 @@ Network:             192.168.0.0
 Wildcard mask:       0.0.0.255
 ```
 
-### URL list
+## URL List
 
 * [Github.com - subnetcalc](https://github.com/crypt0rr/subnetcalc)

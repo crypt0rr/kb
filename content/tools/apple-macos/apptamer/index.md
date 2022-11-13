@@ -17,14 +17,14 @@ Some applications, particularly web browsers and older apps, continue running ta
 * Increased heat and fan noise
 * Reduced battery run-time
 
-### Installation
+## Installation
 
 Download newest version from [Vendor site](https://stclairsoft.com/AppTamer/index.html)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 
-### URL list
+## URL List
 
 * [StClairSoft.com - AppTamer](https://stclairsoft.com/AppTamer/index.html)

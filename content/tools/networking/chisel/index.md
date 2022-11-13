@@ -13,7 +13,7 @@ weight : 0
 
 Chisel is a fast TCP tunnel, transported over HTTP, secured via SSH.
 
-### Installation
+## Installation
 
 Docker
 
@@ -27,7 +27,7 @@ From source
 go get -v github.com/jpillora/chisel
 ```
 
-### Usage Server
+## Usage Server
 
 ```plain
   Usage: chisel server [options]
@@ -118,7 +118,7 @@ go get -v github.com/jpillora/chisel
     https://github.com/jpillora/chisel
 ```
 
-### Usage Client
+## Usage Client
 
 ```plain
   Usage: chisel client [options] <server> <remote> [remote] [remote] ...
@@ -250,7 +250,7 @@ go get -v github.com/jpillora/chisel
     https://github.com/jpillora/chisel
 ```
 
-### Examples
+## Examples
 
 #### Chisel server
 
@@ -287,7 +287,7 @@ $ ./chisel client 188.166.27.194:80 R:910:127.0.0.1:22
 2020/10/06 06:00:08 client: Disconnected
 ```
 
-#### Usage after connection received
+### Usage after connection received
 
 On Chisel server side we can now find the port available.
 
@@ -301,6 +301,6 @@ $ ssh root@127.0.0.1 -p 1337
 root@127.0.0.1's password:
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Chisel](https://github.com/jpillora/chisel)

@@ -13,20 +13,20 @@ weight : 0
 
 A program that reads HTML and Markdown source files or web pages and generates corresponding EPUB, HTML, PostScript, or PDF files with an optional table of contents.
 
-### Installation
+## Installation
 
 ```plain
 sudo snap install htmldoc
 ```
 
-### Usage
+## Usage
 
 ```plain
 htmldoc [options] filename1.html [ ... filenameN.html ]
 htmldoc filename.book
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -153,11 +153,11 @@ Options:
         u = current file/URL
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Snapcraft.io - htmldoc](https://snapcraft.io/htmldoc)
 * [Msweet.org - htmldoc](https://www.msweet.org/htmldoc/)

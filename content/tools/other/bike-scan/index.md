@@ -13,7 +13,7 @@ weight : 0
 
 bike-scan is a wrapper to turn [ike-scan]({{< ref "ike-scan" >}}) into a brute-force tool. It does this by testing a remote host with every possible combination of transforms, in the chosen order of 'rarity'. Eg. all DES, 3DES, AES, MD5, SHA1, PSK, MOD1 types before testing less common combinations. By default, bike-scan will try and brute-force transforms in main mode first, then move onto aggressive mode.
 
-### Installation
+## Installation
 
 bike-scan requires a working installation of [ike-scan]({{< ref "ike-scan" >}}).
 
@@ -22,13 +22,13 @@ git clone https://github.com/yaap7/bike-scan
 chmod +x bike-scan.sh
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./bike-scan.sh [options] [host]
 ```
 
-### Flags
+## Flags
 
 ```plain
 _     _ _                                 
@@ -65,7 +65,7 @@ Options:
                           in Aggressive mode, then Main mode.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./bike-scan.sh vpn.offsec.nl
@@ -148,6 +148,6 @@ vpn.offsec.nl   Main Mode Handshake returned
    VID=1234567898525e712345678900000 (IKE Fragmentation)
 ```
 
-### URL list
+## URL List
 
 * [Github.com - bike-scan](https://github.com/yaap7/bike-scan)

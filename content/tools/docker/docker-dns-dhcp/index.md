@@ -29,7 +29,7 @@ Currently this is running in "host" network mode, so it's not really as isolated
 
 Note that "bridge" mode works perfectly fine if all you need is a DNS server, and is preferable in that case. You also don't need NET_ADMIN capability if you're just running DNS.
 
-### Installation
+## Installation
 
 1. Clone this repo and cd into it: `git clone https://github.com/PARC6502/docker-dns-dhcp.git && cd docker-dns-dhcp`
 
@@ -59,7 +59,7 @@ address=/.local.cloud/192.168.1.3
 
 5. Start up the container
 
-### Usage
+## Usage
 
 ```plain
 sudo docker-compose up -d
@@ -77,7 +77,7 @@ sudo docker-compose restart dnsmasq
 
 On error for port binding (53), stop local DNS resolver - `sudo systemctl stop systemd-resolved.service`
 
-### Examples
+## Examples
 
 #### Configuration DNS / DHCP
 
@@ -135,6 +135,6 @@ $ cat ad.list
 
 ![Example](images/dnsmasq.png)
 
-### URL list
+## URL List
 
 * [Github.com - Docker DNS and DHCP server](https://github.com/PARC6502/docker-dns-dhcp)

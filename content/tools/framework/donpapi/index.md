@@ -55,14 +55,14 @@ With local admin account on a host, we can:
 
 With a user password, or the domain PVK we can unprotect the user's DPAPI secrets.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/login-securite/DonPAPI.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 DonPAPI.py [-h] [-credz CREDZ] [-pvk PVK] [-d] [-t number of threads] [-o OUTPUT_DIRECTORY] [-H LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-local_auth] [-laps] [-dc-ip ip address]
@@ -71,7 +71,7 @@ DonPAPI.py [-h] [-credz CREDZ] [-pvk PVK] [-d] [-t number of threads] [-o OUTPUT
                   [target]
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: 
@@ -245,6 +245,6 @@ drwxr-xr-x  7 crypt0rr  staff   224B Feb 21 11:25 Users
 drwxr-xr-x  3 crypt0rr  staff    96B Feb 21 11:25 Windows
 ```
 
-### URL list
+## URL List
 
 * [Github.com - DonPAPI](https://github.com/login-securite/DonPAPI)

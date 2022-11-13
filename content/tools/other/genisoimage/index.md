@@ -13,19 +13,19 @@ weight : 0
 
 Create ISO9660/Joliet/HFS filesystem with optional Rock Ridge attributes.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install genisoimage
 ```
 
-### Usage
+## Usage
 
 ```plain
 genisoimage [options] [-o filename] pathspec [pathspec ...]
 ```
 
-### Examples
+## Examples
 
 #### Lenovo BIOS update
 
@@ -41,6 +41,6 @@ sudo dd if=bios.img of=/dev/<usb> bs=1M
 
 Boot from USB
 
-### URL list
+## URL List
 
 * [Linux.die.net - genisoimage](https://linux.die.net/man/1/genisoimage)

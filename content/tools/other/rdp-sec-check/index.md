@@ -13,19 +13,19 @@ weight : 0
 
 Is a Perl script to enumerate security settings of an RDP Service (AKA Terminal Services).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/portcullislabs/rdp-sec-check.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 perl rdp-sec-check.pl [OPTIONS] <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Starting rdp-sec-check v0.9-beta ( http://labs.portcullis.co.uk/application/rdp-sec-check/ )
@@ -50,7 +50,7 @@ Example:
          rdp-sec-check.pl --file hosts.txt --outfile rdp.log --verbose
 ```
 
-### Examples
+## Examples
 
 #### Scan RDP security
 
@@ -104,6 +104,6 @@ Port:      3389
 rdp-sec-check v0.9-beta completed at Wed Mar 18 11:08:15 2020
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - RDP-sec-check](https://github.com/portcullislabs/rdp-sec-check)

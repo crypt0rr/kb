@@ -13,18 +13,18 @@ weight : 0
 
 PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches.
 
-### Installation
+## Installation
 
 Download from [Github.com](https://github.com/dafthack/PowerMeta)
 
-### Usage
+## Usage
 
 ```powershell
 C:\> powershell.exe -exec bypass
 PS C:\> Import-Module .\PowerMeta.ps1
 ```
 
-### Flags
+## Flags
 
 ```plain
 TargetDomain        - The target domain to search for files.
@@ -39,7 +39,7 @@ UserAgent           - Change the default User Agent used by PowerMeta.
 MaxSearchPages      - The maximum number of pages to search on each search engine.
 ```
 
-### Examples
+## Examples
 
 ```plain
 > Invoke-PowerMeta -TargetDomain offsec.nl
@@ -77,6 +77,6 @@ Download Files?
 Would you like to download all of the files discovered?
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - PowerMeta](https://github.com/dafthack/PowerMeta)

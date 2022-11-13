@@ -15,7 +15,7 @@ Is a Linux utility for flashing multiple USB devices in parallel, written in Rus
 
 Popsicle can be used both CLI and/or GTK.
 
-### Installation
+## Installation
 
 A makefile is included for simply building and installing all required files into the system. You may either build both the CLI and GTK workspace, just the CLI workspace, or just the GTK workspace.
 
@@ -27,13 +27,13 @@ git clone https://github.com/pop-os/popsicle.git
 * `make gtk && sudo make install-gtk` will build and install just the GTK workspace
 * `make && sudo make install` will build and install both the CLI and GTK workspaces
 
-### Usage
+## Usage
 
 ```plain
 popsicle [FLAGS] <IMAGE> [DISKS]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 popsicle_cli 1.3.0
@@ -52,7 +52,7 @@ ARGS:
     <DISKS>...    Output disk devices
 ```
 
-### Examples
+## Examples
 
 ![Example](images/screenshot-01.png)
 ![Example](images/screenshot-02.png)
@@ -64,6 +64,6 @@ Also supports active device monitoring when a drive is getting plugged-in or unp
 
 ![Example](images/device-monitoring.gif)
 
-### URL list
+## URL List
 
 * [Github.com - Popsicle](https://github.com/pop-os/popsicle)

@@ -13,7 +13,7 @@ weight : 0
 
 A PowerShell ADIDNS/LLMNR/NBNS/mDNS/DNS spoofer and man-in-the-middle tool designed to assist penetration testers/red teamers that find themselves limited to a Windows system.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/Kevin-Robertson/Inveigh)
 
@@ -29,7 +29,7 @@ pupy - https://github.com/n1nj4sec/pupy
 Merlin - https://github.com/Ne0nd0g/merlin
 ```
 
-### Usage
+## Usage
 
 ```powershell
 Set-ExecutionPolicy -scope process -execution bypass
@@ -37,7 +37,7 @@ Import-Module .\Inveigh.psd1
 Invoke-Inveigh -ConsoleOutput Y
 ```
 
-### Flags
+## Flags
 
 ```plain
 NAME
@@ -74,7 +74,7 @@ REMARKS
     For online help, type: "get-help Invoke-Inveigh -online"
 ```
 
-### Examples
+## Examples
 
 ```powershell
 PS C:\Users\JOHNDO\Inveigh> Set-ExecutionPolicy -scope process -execution bypass
@@ -121,7 +121,7 @@ WARNING: [!] Run Stop-Inveigh to stop
 [+] [2020-07-24T13:24:11] LLMNR request for DC2008R2 received from 10.10.10.16 [response sent]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 * [Github.com - Inveigh - Wiki](https://github.com/Kevin-Robertson/Inveigh/wiki)

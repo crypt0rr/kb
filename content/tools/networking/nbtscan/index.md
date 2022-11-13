@@ -15,19 +15,19 @@ NBTscan is a program for scanning IP networks for NetBIOS name information. It s
 
 See <http://www.inetcat.org/software/nbtscan.html> for NBTscan homepage.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install nbtscan
 ```
 
-### Usage
+## Usage
 
 ```plain
 nbtscan [-v] [-d] [-e] [-l] [-t timeout] [-b bandwidth] [-r] [-q] [-s separator] [-m retransmits] (-f filename)|(<scan_range>) 
 ```
 
-### Flags
+## Flags
 
 ```plain
         -v              verbose output. Print all names received
@@ -75,7 +75,7 @@ Examples:
                 Scans IP addresses specified in file iplist.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ sudo nbtscan -r 10.10.10.0/24
@@ -90,6 +90,6 @@ IP address       NetBIOS Name     Server    User             MAC address
 10.10.10.254     pfsense          <server>  <unknown>        a4:bb:[REDACTED]
 ```
 
-### URL list
+## URL List
 
 * [Sectools.org - NBTscan](https://sectools.org/tool/nbtscan/)

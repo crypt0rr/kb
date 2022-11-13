@@ -13,7 +13,7 @@ tags : ['Other', 'macOS', 'Windows', 'Linux', 'Peer-to-Peer']
 
 A fast, reliable, and simple file sync and share solution, powered by P2P technology.
 
-### Installation
+## Installation
 
 #### Windows
 
@@ -27,7 +27,7 @@ Download newest release from [Resilio.com](https://help.resilio.com/hc/en-us/art
 sudo dpkg -i <resilio-sync.deb>
 ```
 
-### Usage
+## Usage
 
 ```plain
 http://localhost:8888
@@ -67,7 +67,7 @@ sudo rm /var/lib/resilio-sync/settings.dat
 sudo rm /var/lib/resilio-sync/settings.dat.old
 ```
 
-### URL list
+## URL List
 
 * [Resilio.com](https://www.resilio.com)
 * [Resilio.com - Help Center](https://help.resilio.com/hc/en-us)

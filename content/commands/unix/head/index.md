@@ -11,13 +11,13 @@ weight : 0
 
 ## Head
 
-### Usage
+## Usage
 
 ```plain
 head [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Print the first 10 lines of each FILE to standard output.
@@ -47,7 +47,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/head>
 or available locally via: info '(coreutils) head invocation'
 ```
 
-### Examples
+## Examples
 
 #### Default head usage
 
@@ -80,6 +80,6 @@ line6
 line7
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/head)

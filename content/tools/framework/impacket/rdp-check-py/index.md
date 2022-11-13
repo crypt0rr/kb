@@ -13,17 +13,17 @@ weight : 0
 
 Test whether an account is valid on the target host using the RDP protocol.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 rdp_check.py [-h] [-hashes LMHASH:NTHASH] target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -41,7 +41,7 @@ authentication:
                         NTLM hashes, format is LMHASH:NTHASH
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ rdp_check.py offsec/johndo:Welkom1234@10.10.10.10
@@ -50,6 +50,6 @@ Impacket v0.9.21 - Copyright 2020 SecureAuth Corporation
 [*] Access Granted
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

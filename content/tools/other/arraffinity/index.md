@@ -11,7 +11,7 @@ weight : 0
 
 ## ARRAffinity - Information Disclosure?
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/0x454b/ARRAffinity.git
@@ -35,7 +35,7 @@ $ ./ARRAffinity.py -c c4a2a70106b7cf78b28c0ef7da0327960c3fc7fa76363fb9c937f01b04
 ARRAffinity match! IP: 10.20.30.40
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ARRAffinity](https://github.com/0x454b/ARRAffinity)
 * [Blog.msdn.microsoft.com - Azure ARRAffinity Makes AFFinity cookies](https://blogs.msdn.microsoft.com/devschool/2015/06/19/azure-arraffinity-makes-affinity-cookies/)

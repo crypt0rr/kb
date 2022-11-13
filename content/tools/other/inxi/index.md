@@ -13,19 +13,19 @@ weight : 0
 
 Command line system information script for console and IRC.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install inxi
 ```
 
-### Usage
+## Usage
 
 ```plain
 inxi [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 inxi supports the following options. For more detailed information, see man inxi. If you start inxi with no arguments, it will 
@@ -323,7 +323,7 @@ Debugging Options:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 
-### Examples
+## Examples
 
 #### Basic information CPU/MEM
 
@@ -412,7 +412,7 @@ Info:      Processes: 368 Uptime: 2h 29m wakeups: 5 Memory: 31.16 GiB used: 8.41
            Compilers: gcc: 10.3.0 alt: 10/9 Packages: 2534 apt: 2514 snap: 20 Shell: Zsh v: 5.8 running in: tilix inxi: 3.3.01 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - inxi](https://github.com/smxi/inxi)
 * [Smxi.org - inxi](https://smxi.org/docs/inxi.htm)

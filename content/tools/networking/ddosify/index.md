@@ -15,7 +15,7 @@ High-performance load testing tool, written in Golang. For distributed and Geo-t
 
 **Please read [Github](https://github.com/ddosify/ddosify) repo before use**
 
-### Installation
+## Installation
 
 `ddosify` is available via [Docker](https://hub.docker.com/r/ddosify/ddosify), [Homebrew Tap](#homebrew-tap-macos-and-linux), and downloadable pre-compiled binaries from the [releases page](https://github.com/ddosify/ddosify/releases/latest) for macOS, Linux and Windows.
 
@@ -65,7 +65,7 @@ makepkg -sri
 .\ddosify.exe -t target_site.com
 ```
 
-### Usage
+## Usage
 
 You can configure your load test by the CLI options or a config file. Config file supports more features than the CLI. For example, you can't create a scenario-based load test with CLI options.
 
@@ -75,7 +75,7 @@ You can configure your load test by the CLI options or a config file. Config fil
 ddosify [FLAG]
 ```
 
-### Flags
+## Flags
 
 | Flag       | Description                                                                                                                                                         | Type     | Default  | Required? |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------- | --------- |
@@ -94,11 +94,11 @@ ddosify [FLAG]
 | `-config`  | [Config File](#config-file) of the load test.                                                                                                                       | `string` | -        | No        |
 | `-version` | Prints version, git commit, built date (utc), go information and quit                                                                                               | -        | -        | No        |
 
-### Examples
+## Examples
 
 ![Example](images/ddosify-quick-start.gif)
 
-### URL list
+## URL List
 
 * [](https://ddosify.com/)
 * [Github.com - ddosify](https://github.com/ddosify/ddosify)

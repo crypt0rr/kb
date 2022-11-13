@@ -11,13 +11,13 @@ weight : 0
 
 ## Nltest
 
-### Usage
+## Usage
 
 ```plain
 nltest [/OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
     /SERVER:<ServerName> - Specify <ServerName>
@@ -74,7 +74,7 @@ nltest [/OPTIONS]
     /SHUTDOWN_ABORT - Abort a system shutdown
 ```
 
-### Examples
+## Examples
 
 #### list Domain Controllers
 
@@ -95,6 +95,6 @@ List of domain trusts:
 The command completed successfully
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com - Nltest](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731935(v=ws.11))

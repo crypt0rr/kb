@@ -19,11 +19,11 @@ To use Tunnelblick you need access to a VPN server: your computer is one end of 
 
 Tunnelblick is licensed under the GNU General Public License, version 2 and may be distributed only in accordance with the terms of that license.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com - release](https://github.com/Tunnelblick/Tunnelblick/releases)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -31,7 +31,7 @@ Download newest release from [Github.com - release](https://github.com/Tunnelbli
 ![Example](images/example4.png)
 ![Example](images/example5.png)
 
-### URL list
+## URL List
 
 * [Tunnelblick.net](https://tunnelblick.net/)
 * [Github.com - Tunnelblick](https://github.com/Tunnelblick/Tunnelblick)

@@ -24,7 +24,7 @@ This is a conversion of the impacket secretsdump module into golang. It's not ve
 * Can dump local SAM/SYSTEM (must be run as the machine account/SYSTEM)
 * A somewhat usable interface for integration other other tooling (See lib example below)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/C-Sto/gosecretsdump.git
@@ -32,13 +32,13 @@ cd gosecretsdump
 go build
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./gosecretsdump [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 gosecretsdump vDEV (@C__Sto)
@@ -67,7 +67,7 @@ gosecretsdump vDEV (@C__Sto)
         Print version and exit
 ```
 
-### Examples
+## Examples
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
@@ -95,6 +95,6 @@ offsec.nl\MARSHALL_FRANKS:aes128-cts-hmac-sha1-96:e3f7f74334a4629e8b0dddd948349b
 offsec.nl\MARSHALL_FRANKS:des-cbc-md5:0df19bf71a6d9245
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Gosecretsdump](https://github.com/C-Sto/gosecretsdump)

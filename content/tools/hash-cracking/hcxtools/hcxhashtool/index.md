@@ -11,17 +11,17 @@ weight : 0
 
 ## hcxhashtool
 
-### Installation
+## Installation
 
 Install the [hcxtools]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 hcxhashtool <options>
 ```
 
-### Flags
+## Flags
 
 ```plain
 hcxhashtool 6.0.2 (C) 2020 ZeroBeat
@@ -84,7 +84,7 @@ options:
 --version                    : show version
 ```
 
-### Examples
+## Examples
 
 This example uses the 'hash.hc22000' that is converted with [hcxpcapngtool]({{< ref "hcxpcapngtool" >}}) and captured with [hcxdumptool]({{< ref "hcxdumptool" >}}).
 

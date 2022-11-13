@@ -13,7 +13,7 @@ weight : 0
 
 Apple's SuperDrive on Linux.
 
-### Installation
+## Installation
 
 #### Debian/linux only - Linux SCSI generic driver
 
@@ -27,7 +27,7 @@ sudo apt install sg3-utils -y
 sudo dnf install sg3_utils -y
 ```
 
-### Usage
+## Usage
 
 #### Tell the external DVD player/burner to turn on
 
@@ -35,7 +35,7 @@ sudo dnf install sg3_utils -y
 sudo sg_raw /dev/sr0 EA 00 00 00 00 00 01
 ```
 
-### URL list
+## URL List
 
 * [Jeltsch.org - SuperDrive](https://jeltsch.org/SuperDrive)
 * [Gist.github.com - AnnoyingTechnology - Apple's SuperDrive tweak for use with Linux](https://gist.github.com/AnnoyingTechnology/dbaae864822cf08372f0aafe64a63477)

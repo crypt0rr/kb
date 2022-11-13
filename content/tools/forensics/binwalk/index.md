@@ -13,19 +13,19 @@ weight : 0
 
 Tool for analyzing, reverse engineering and extracting firmware images.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install binwalk
 ```
 
-### Usage
+## Usage
 
 ```plain
 binwalk <file>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Signature Scan Options:
@@ -89,7 +89,7 @@ General Options:
     -s, --status=<int>           Enable the status server on the specified port
 ```
 
-### Examples
+## Examples
 
 ```plain
 binwalk example.pdf
@@ -100,6 +100,6 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 9417548       0x8FB34C        Zlib compressed data, default compression
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - binwalk](https://github.com/ReFirmLabs/binwalk)

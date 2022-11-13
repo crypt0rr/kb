@@ -17,13 +17,13 @@ If --regex is not specified, PATTERNs can contain globbing characters. If any PA
 
 By default, locate does not check whether files found in database still exist. locate can never report files created after the most recent update of the relevant database.
 
-### Usage
+## Usage
 
 ```plain
 locate [OPTION]... PATTERN...
 ```
 
-### Flags
+## Flags
 
 ```plain
   -b, --basename         search only the file name portion of path names
@@ -41,7 +41,7 @@ locate [OPTION]... PATTERN...
       --version          print version information
 ```
 
-### Examples
+## Examples
 
 #### Update Locate database
 
@@ -65,6 +65,6 @@ $ locate python3 | head
 /usr/bin/python3
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - locate](https://linux.die.net/man/1/locate)

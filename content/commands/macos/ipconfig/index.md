@@ -13,19 +13,19 @@ weight : 0
 
 View and control IP configuration state.
 
-### Usage
+## Usage
 
 ```plain
 ipconfig <command> <args>
 ```
 
-### Flags
+## Flags
 
 ```plain
 where <command> is one of waitall, getifaddr, ifcount, getoption, getiflist, getsummary, getpacket, getv6packet, getra, set, setverbose
 ```
 
-### Examples
+## Examples
 
 #### Get list of interfaces
 

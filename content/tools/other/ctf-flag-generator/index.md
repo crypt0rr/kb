@@ -13,19 +13,19 @@ weight : 0
 
 A CTF leet flag generator.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/ss8651twtw/CTF-flag-generator.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./genflag.py '<TEXT-HERE>'
 ```
 
-### Examples
+## Examples
 
 ```plain
 ./genflag.py 'this_is_your_flag'
@@ -33,6 +33,6 @@ TH1S_i5_yOUr_fL@6
 Added entropy: 8.75 bits
 ```
 
-### URL list
+## URL List
 
 * [Github.com - CTF Flag Generator](https://github.com/ss8651twtw/CTF-flag-generator)

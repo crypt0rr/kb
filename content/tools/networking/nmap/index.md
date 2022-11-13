@@ -15,7 +15,7 @@ Network exploration tool and security / port scanner.
 
 **NOTE:** The preferred way of using nmap should be SYN mode. This is stealth mode, since this mode (TCP) will not complete the three-way handshake, the port scan is not passed to the application layer. (`sudo nmap -sS`)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/nmap/nmap.git
@@ -28,13 +28,13 @@ sudo make
 sudo make install
 ```
 
-### Usage
+## Usage
 
 ```plain
 nmap [Scan Type(s)] [Options] {target specification}
 ```
 
-### Flags
+## Flags
 
 ```plain
 Nmap 7.93 ( https://nmap.org )
@@ -153,7 +153,7 @@ EXAMPLES:
 SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
 ```
 
-### Examples
+## Examples
 
 Scan ports on target system
 
@@ -395,7 +395,7 @@ nmap --script vuln <target>
 /usr/share/nmap/scripts
 ```
 
-### URL list
+## URL List
 
 * [Nmap.org](https://nmap.org/)
 * [Github.com - nmap](https://github.com/nmap/nmap)

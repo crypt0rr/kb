@@ -11,13 +11,13 @@ weight : 0
 
 ## File - determine file type
 
-### Usage
+## Usage
 
 ```plain
 file [OPTION...] [FILE...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -68,7 +68,7 @@ Options:
 Report bugs to https://bugs.astron.com/
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ file index.md
@@ -80,6 +80,6 @@ $ file picture.JPG
 picture.JPG: JPEG image data
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/file)

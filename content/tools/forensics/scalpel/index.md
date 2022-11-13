@@ -13,19 +13,19 @@ weight : 0
 
 Recover files using a header/footer database.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install scalpel
 ```
 
-### Usage
+## Usage
 
 ```plain
 scalpel [OPTIONS] <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Scalpel version 1.60
@@ -69,7 +69,7 @@ Usage: scalpel [-b] [-c <config file>] [-d] [-h|V] [-i <file>]
 
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - scalpel](https://linux.die.net/man/1/scalpel)
 * [GitHub.com - scalpel](https://github.com/sleuthkit/scalpel)

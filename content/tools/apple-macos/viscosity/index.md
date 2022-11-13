@@ -81,11 +81,11 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 * Run Scripts on Connection Events
 * Advanced Configuration Commands
 
-### Installation
+## Installation
 
 Download newest release from [sparklabs.com](https://www.sparklabs.com/viscosity/)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -117,6 +117,6 @@ Easily configure everything from network settings to complex multi-factor authen
 
 ![Example](images/editor.png)
 
-### URL list
+## URL List
 
 * [Sparklabs.com - Viscosity](https://www.sparklabs.com/viscosity/)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Lsmod
 
-### Usage
+## Usage
 
 ```plain
 lsmod
 ```
 
-### Examples
+## Examples
 
 ```plain
 lsmod
@@ -38,6 +38,6 @@ vboxdrv               487424  3 vboxpci,vboxnetadp,vboxnetflt
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/lsmod)

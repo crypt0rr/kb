@@ -17,7 +17,7 @@ DIRB comes with a set of pre-configured attack word lists for easy usage but you
 
 DIRB main purpose is to help in professional web application auditing. Specially in security related testing. It covers some holes not covered by classic web vulnerability scanners. DIRB looks for specific web objects that other generic CGI scanners can't look for. It doesn't search vulnerabilities nor does it look for web contents that can be vulnerables.
 
-### Installation
+## Installation
 
 By default installed in [Kali Linux](https://www.kali.org/).
 
@@ -25,13 +25,13 @@ By default installed in [Kali Linux](https://www.kali.org/).
 sudo apt install dirb
 ```
 
-### Usage
+## Usage
 
 ```plain
 dirb <url_base> [<wordlist_file(s)>] [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 ========================= NOTES =========================
@@ -67,7 +67,7 @@ dirb <url_base> [<wordlist_file(s)>] [options]
  -z <millisecs> : Add a milliseconds delay to not cause excessive Flood.
 ```
 
-### Examples
+## Examples
 
 ```plain
  dirb http://url/directory/ (Simple Test)
@@ -109,7 +109,7 @@ END_TIME: Sun Oct  9 17:38:35 2022
 DOWNLOADED: 4612 - FOUND: 4
 ```
 
-### URL list
+## URL List
 
 * [Kali.org - dirb](https://www.kali.org/tools/dirb/)
 * [Github.com - dirb](https://github.com/Seabreg/dirb)

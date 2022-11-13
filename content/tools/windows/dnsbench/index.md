@@ -13,16 +13,16 @@ weight : 0
 
 A unique, comprehensive, accurate & free Windows (and Linux/Wine) utility to determine the exact performance of local and remote DNS nameservers
 
-### Installation
+## Installation
 
 Download newest executable from [grc.com](https://www.grc.com/dns/benchmark.htm) and run locally on any Windows system.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GRC.com - DNS Benchmark](https://www.grc.com/dns/benchmark.htm)

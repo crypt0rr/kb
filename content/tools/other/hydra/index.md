@@ -15,7 +15,7 @@ A tool to guess/crack valid login/password pairs.
 
 {{%attachments title="List with default credentials" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
-### Installation
+## Installation
 
 Requirements:
 
@@ -31,13 +31,13 @@ make
 make install
 ```
 
-### Usage
+## Usage
 
 ```plain
 hydra [[[-l LOGIN|-L FILE] [-p PASS|-P FILE]] | [-C FILE]] [-e nsr] [-o FILE] [-t TASKS] [-M FILE [-T TASKS]] [-w TIME] [-W TIME] [-f] [-s PORT] [-x MIN:MAX:CHARSET] [-c TIME] [-ISOuvVd46] [-m MODULE_OPT] [service://server[:PORT][/OPT]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -97,7 +97,7 @@ Examples:
   hydra -L logins.txt -P pws.txt -M targets.txt ssh
 ```
 
-### Examples
+## Examples
 
 ```plain
 hydra -l [USERNAME] -P [PWLIST] -s [PORT] -f [URL] [METHOD] [PATH]
@@ -146,7 +146,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-06-11 15:16:
 Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-11 15:16:27
 ```
 
-### URL list
+## URL List
 
 * [Github.com - THC-Hydra](https://github.com/vanhauser-thc/thc-hydra)
 * [Github.com - Default-Credentials-List](https://raw.githubusercontent.com/eset/malware-research/master/moose/targeted-vendors/default-credentials-list.txt)

@@ -13,7 +13,7 @@ tags : ['Other', 'Active Directory']
 
 `ADReaper` is a tool written in Golang which enumerate a Active Directory environment with LDAP queries within few seconds
 
-### Installation
+## Installation
 
 You can download precompiled executable binaries for Windows/Linux from [latest releases](https://github.com/AidenPearce369/ADReaper/releases/tag/ADReaper).
 
@@ -25,13 +25,13 @@ cd ADReaper/
 go build
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./ADReaper
 ```
 
-### Flags
+## Flags
 
 ```plain
   -command string
@@ -58,7 +58,7 @@ go build
         Enter the Username
 ```
 
-### Examples
+## Examples
 
 #### List domain controllers
 
@@ -142,6 +142,6 @@ $ ./ADReaper -command users -dc SRV2019.offsec.nl -password Welkom1234 -user joh
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ADReaper](https://github.com/AidenPearce369/ADReaper)

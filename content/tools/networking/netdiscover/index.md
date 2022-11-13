@@ -13,19 +13,19 @@ weight : 0
 
 Active/passive ARP reconnaissance tool.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install netdiscover
 ```
 
-### Usage
+## Usage
 
 ```plain
 netdiscover [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Netdiscover 0.5.1 [Active/passive ARP reconnaissance tool]
@@ -51,7 +51,7 @@ Usage: netdiscover [-i device] [-r range | -l file | -p] [-m file] [-F filter] [
 If -r, -l or -p are not enabled, netdiscover will scan for common LAN addresses.
 ```
 
-### Examples
+## Examples
 
 #### Scan whole network
 
@@ -59,7 +59,7 @@ If -r, -l or -p are not enabled, netdiscover will scan for common LAN addresses.
 sudo netdiscover -r 10.20.30.0/24
 ```
 
-### URL list
+## URL List
 
 * [Debian.org](https://manpages.debian.org/unstable/netdiscover/netdiscover.8.en.html)
 * [Github.com - netdiscover](https://github.com/netdiscover-scanner/netdiscover)

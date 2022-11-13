@@ -11,13 +11,13 @@ weight : 0
 
 ## Timedatectl
 
-### Usage
+## Usage
 
 ```plain
 timedatectl [OPTIONS...] COMMAND ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Query or change system time and date settings.
@@ -50,7 +50,7 @@ systemd-timesyncd Commands:
 See the timedatectl(1) man page for details.
 ```
 
-### Examples
+## Examples
 
 #### Show current time and date configuration
 
@@ -102,7 +102,7 @@ sudo timedatectl set-ntp 1
 sudo timedatectl set-time '2021-08-31 14:25'
 ```
 
-### URL list
+## URL List
 
 * [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/xenial/man1/timedatectl.1.html)
 * [Man7.org](http://man7.org/linux/man-pages/man1/timedatectl.1.html)

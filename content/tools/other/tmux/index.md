@@ -13,26 +13,26 @@ weight : 0
 
 Lets you switch easily between several programs in one terminal.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install tmux
 ```
 
-### Usage
+## Usage
 
 ```plain
 tmux
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: tmux [-2CluvV] [-c shell-command] [-f file] [-L socket-name]
             [-S socket-path] [command [flags]]
 ```
 
-### Examples
+## Examples
 
 #### Start tmux
 
@@ -66,7 +66,7 @@ tmux new-session -d -s "<session-name>" "command-to-run"
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - TMUX](https://github.com/tmux/tmux)
 * [Openbsd.org - TMUX](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)

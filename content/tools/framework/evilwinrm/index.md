@@ -13,19 +13,19 @@ weight : 0
 
 This shell is the ultimate WinRM shell for hacking/pentesting.
 
-### Installation (kali)
+## Installation (kali)
 
 ```plain
 gem install evil-winrm
 ```
 
-### Usage
+## Usage
 
 ```plain
 evil-winrm -i IP -u USER [-s SCRIPTS_PATH] [-e EXES_PATH] [-P PORT] [-p PASS] [-H HASH] [-U URL] [-S] [-c PUBLIC_KEY_PATH ] [-k PRIVATE_KEY_PATH ] [-r REALM]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Evil-WinRM shell v2.3
@@ -46,7 +46,7 @@ Evil-WinRM shell v2.3
     -h, --help                       Display this help message
 ```
 
-### Examples
+## Examples
 
 #### Connect to remote system
 
@@ -159,6 +159,6 @@ _".,_,.__).,) (.._( ._),     )  , (._..( '.._"._, . '._)_(..,_(_".) _( _')
 [+] Write-UserAddMSI
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - evil-winrm](https://github.com/Hackplayers/evil-winrm)

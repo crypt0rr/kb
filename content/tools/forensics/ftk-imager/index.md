@@ -15,11 +15,11 @@ FTK® Imager is a data preview and imaging tool that lets you quickly assess ele
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### Installation
+## Installation
 
 Download newest release from [accessdata.com](https://accessdata.com/product-download)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
@@ -28,6 +28,6 @@ Download newest release from [accessdata.com](https://accessdata.com/product-dow
 
 ![Example](images/example-3.png)
 
-### URL list
+## URL List
 
 * [Accessdata.com](https://accessdata.com)

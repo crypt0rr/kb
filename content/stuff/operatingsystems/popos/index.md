@@ -46,7 +46,7 @@ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py
 sudo python2 get-pip.py
 ```
 
-### URL list
+## URL List
 
 * [System76.com](https://system76.com/pop)
 * [GitHub](https://github.com/pop-os)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Modprobe
 
-### Usage
+## Usage
 
 ```plain
 modprobe [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -65,7 +65,7 @@ General Options:
     -h, --help                  show this help
 ```
 
-### Examples
+## Examples
 
 #### Show modules that can be loaded
 
@@ -91,6 +91,6 @@ sudo modprobe -r <module>
 sudo modprobe <module>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/modprobe)

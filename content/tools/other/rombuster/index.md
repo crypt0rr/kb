@@ -19,19 +19,19 @@ Is a router exploitation tool that allows to disclosure network router admin pas
 * Optimized to exploit multiple routers at one time from list.
 * Simple CLI and API usage.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install git+https://github.com/EntySec/RomBuster
 ```
 
-### Usage
+## Usage
 
 ```plain
 rombuster [-h] [-o OUTPUT] [-i INPUT] [-a ADDRESS] [--shodan SHODAN] [--zoomeye ZOOMEYE] [-p PAGES]
 ```
 
-### Flags
+## Flags
 
 ```plain
 RomBuster is a router exploitation tool that allows to disclosure network router admin password.
@@ -50,7 +50,7 @@ optional arguments:
                         Number of pages you want to get from ZoomEye.
 ```
 
-### Examples
+## Examples
 
 #### Exploiting single router
 
@@ -87,6 +87,6 @@ rombuster -i routers.txt -o passwords.txt
 
 NOTE: It will exploit all routers in `routers.txt` list by their addresses and save all obtained passwords to `passwords.txt`.
 
-### URL list
+## URL List
 
 * [Github.com - RomBuster](https://github.com/EntySec/RomBuster)

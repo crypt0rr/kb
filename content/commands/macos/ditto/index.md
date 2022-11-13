@@ -13,13 +13,13 @@ weight : 0
 
 Copy directory hierarchies, create and extract archives. Ditto can preserve ownership / permissions, resource forks and file / folder metadata. Ditto will automatically create the destination folder if it doesn’t yet exist, if the destination does exist and contains files, then ditto will merge them.
 
-### Usage
+## Usage
 
 ```plain
 ditto [ <options> ] src [ ... src ] dst
 ```
 
-### Flags
+## Flags
 
 ```plain
 <options> are any of:
@@ -50,7 +50,7 @@ ditto [ <options> ] src [ ... src ] dst
 --password                 request password for reading from encrypted PKZip archive
 ```
 
-### Examples
+## Examples
 
 #### Using Ditto to Copy Files / Folders
 
@@ -64,7 +64,7 @@ ditto source destination
 ditto -V --norsrc ~/Sample/Folder /Volumes/NoMetadataBackups
 ```
 
-### URL list
+## URL List
 
 * [ss64.com - ditto](https://ss64.com/osx/ditto.html)
 * [OSXdaily.com - Use ditto to Copy Files & Directories Intelligently from the Mac Terminal](https://osxdaily.com/2014/06/11/use-ditto-copy-files-directories-mac-command-line/)

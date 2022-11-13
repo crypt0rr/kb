@@ -15,7 +15,7 @@ Network-wide ads & trackers blocking DNS server.
 
 When running multiple instances of AdGuardHome you can synchronize the configuration with [AdGuardHome Sync]({{< ref "adguard-home-sync" >}})
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/AdguardTeam/AdGuardHome/releases)
 
@@ -24,7 +24,7 @@ chmod +x AdGuardHome
 ./AdGuardHome --service install
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./AdGuardHome [options]
@@ -38,7 +38,7 @@ chmod +x AdGuardHome
 http://standard-block.dns.adguard.com/
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -64,7 +64,7 @@ Options:
 <https://github.com/Perflyst/PiHoleBlocklist>
 <https://gitlab.com/curben/urlhaus-filter>
 
-### Examples
+## Examples
 
 ![Example](images/example.gif)
 
@@ -84,6 +84,6 @@ Enable
 curl -X POST -H "Content-Type:application/json" -d '{"protection_enabled":true}' http://<ip>/control/dns_config
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - AdGuardHome](https://github.com/adguardteam/adguardhome)

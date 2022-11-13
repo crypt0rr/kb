@@ -11,13 +11,13 @@ weight : 0
 
 ## Free
 
-### Usage
+## Usage
 
 ```plain
 free [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -49,7 +49,7 @@ Options:
 For more details see free(1).
 ```
 
-### Examples
+## Examples
 
 ```plain
 free -h
@@ -58,7 +58,7 @@ Mem:           31Gi       5,9Gi        20Gi       588Mi       4,3Gi        24Gi
 Swap:         4,0Gi          0B       4,0Gi
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/free)
 * [man7.org](http://man7.org/linux/man-pages/man1/free.1.html)

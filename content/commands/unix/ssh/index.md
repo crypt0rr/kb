@@ -11,19 +11,19 @@ weight : 0
 
 ## Secure Shell
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install openssh-client
 ```
 
-### Usage
+## Usage
 
 ```plain
 ssh [OPTIONS] <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
@@ -35,7 +35,7 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
            [-w local_tun[:remote_tun]] destination [command]
 ```
 
-### Examples
+## Examples
 
 #### Connect to a server (default port 22)
 
@@ -114,6 +114,6 @@ The key's randomart image is:
 ssh -L 10000:localhost:10000 <username>@<ip>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/ssh)

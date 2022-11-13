@@ -11,13 +11,13 @@ weight : 0
 
 ## Mount
 
-### Usage
+## Usage
 
 ```plain
 mount [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -84,7 +84,7 @@ Operations:
 For more details see mount(8).
 ```
 
-### Examples
+## Examples
 
 #### Mount device
 
@@ -113,6 +113,6 @@ sudo mount -t cifs -o user=john //10.10.10.10/aiff /mnt/local_share
 sudo mount -o nolock 10.10.10.10:/crypt0rr /mnt/local_share
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/2/mount)

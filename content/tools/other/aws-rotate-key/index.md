@@ -15,19 +15,19 @@ As a security best practice, AWS recommends that users periodically regenerate t
 
 When run, the program will list the current access keys associated with your IAM user, and print the steps it has to perform to rotate them. It will then wait for your confirmation before continuing.
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/stefansundin/aws-rotate-key@latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 aws-rotate-key [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -auth-profile string
@@ -42,7 +42,7 @@ aws-rotate-key [OPTIONS]
   -y    Automatic "yes" to prompts.
 ```
 
-### Examples
+## Examples
 
 You can check your current and/or new identity with `aws sts get-caller-identity`.
 
@@ -62,6 +62,6 @@ Please make sure this key is not used elsewhere.
 Please note that it may take a minute for your new access key to propagate in the AWS control plane.
 ```
 
-### URL list
+## URL List
 
 * [Github.com - aws-rotate-key](https://github.com/stefansundin/aws-rotate-key)

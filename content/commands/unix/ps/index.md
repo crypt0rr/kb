@@ -13,17 +13,17 @@ weight : 0
 
 Displays information about a selection of the active processes.
 
-### Usage
+## Usage
 
 ```plain
 ps [options]
 ```
 
-### Flags
+## Flags
 
 Please check [linux.die.net - ps](https://linux.die.net/man/1/ps)
 
-### Examples
+## Examples
 
 #### List all processes running in full format
 
@@ -64,7 +64,7 @@ UID          PID    PPID  C STIME TTY          TIME CMD
 crypt0rr    2228     934  2 17:07 ?        00:00:00 /usr/bin/gedit --gapplication-service
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - ps](https://linux.die.net/man/1/ps)
 * [Askubuntu.com - What is the difference between standard syntax and BSD syntax?](https://askubuntu.com/questions/484982/what-is-the-difference-between-standard-syntax-and-bsd-syntax)

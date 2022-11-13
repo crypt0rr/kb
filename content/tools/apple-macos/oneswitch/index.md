@@ -15,11 +15,11 @@ One Switch is a tiny app designed to improve your efficiency by providing quick 
 
 ![Example](images/example1.png)
 
-### Installation
+## Installation
 
 Download newest release from [fireball.studio](https://fireball.studio/oneswitch).
 
-### Examples
+## Examples
 
 #### Hide Desktop Icons
 
@@ -58,6 +58,6 @@ Perfect for both dark mode and light mode.
 ![Example](images/example7.jpg)
 ![Example](images/example8.jpg)
 
-### URL list
+## URL List
 
 * [Fireball.studio - One Switch](https://fireball.studio/oneswitch/)

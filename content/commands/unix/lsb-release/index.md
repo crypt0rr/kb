@@ -11,13 +11,13 @@ weight : 0
 
 ## Lsb_Release
 
-### Usage
+## Usage
 
 ```plain
 lsb_release [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -31,7 +31,7 @@ Options:
   -s, --short        show requested information in short format
 ```
 
-### Examples
+## Examples
 
 #### Show distribution specific info
 
@@ -55,6 +55,6 @@ Release:    20.04
 Codename:   focal
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/lsb_release)

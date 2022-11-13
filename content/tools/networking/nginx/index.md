@@ -13,7 +13,7 @@ weight : 0
 
 HTTP and reverse proxy server, mail proxy server.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install nginx
@@ -25,13 +25,13 @@ To support custom headers et cetra
 sudo apt install nginx-extras
 ```
 
-### Usage
+## Usage
 
 ```plain
 nginx [-?hvVtTq] [-s signal] [-c filename] [-p prefix] [-g directives]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -47,7 +47,7 @@ Options:
   -g directives : set global directives out of configuration file
 ```
 
-### Examples
+## Examples
 
 #### Strong TLS-config (nginx.conf)
 
@@ -373,7 +373,7 @@ location = /444.html {
 }
 ```
 
-### URL list
+## URL List
 
 * [Nginx.org](https://nginx.org/)
 * [Nginx.org - Basic Authenticaton](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/)

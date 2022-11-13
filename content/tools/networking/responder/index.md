@@ -13,13 +13,13 @@ weight : 0
 
 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/lgandx/Responder.git
 ```
 
-### Usage
+## Usage
 
 Disable UFW before using.
 
@@ -27,7 +27,7 @@ Disable UFW before using.
 python3 Responder.py -I eth0 -w -r -f
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: python ./Responder.py -I eth0 -w -r -f
@@ -73,7 +73,7 @@ Options:
   -v, --verbose         Increase verbosity.
 ```
 
-### Examples
+## Examples
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="responder.mp4"/%}}
 
@@ -169,7 +169,7 @@ total 22M
 
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Responder](https://github.com/lgandx/Responder)
 * [Original DEPRECATED GitHub](https://github.com/SpiderLabs/Responder)

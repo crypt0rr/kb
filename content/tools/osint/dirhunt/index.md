@@ -35,7 +35,7 @@ Read more about how to use Dirhunt [in the documentation](http://docs.nekmo.org/
 * Save the results to a JSON file (NEW!)
 * Resume the aborted scans (NEW!)
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install dirhunt
@@ -43,7 +43,7 @@ python3 -m pip install dirhunt
 
 There are other [installation methods](http://docs.nekmo.org/dirhunt/installation.html) available.
 
-### Usage
+## Usage
 
 ```plain
 dirhunt [OPTIONS] [URLS]...
@@ -51,7 +51,7 @@ dirhunt [OPTIONS] [URLS]...
     ./relative/path.
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -103,7 +103,7 @@ Options:
   --help                          Show this message and exit.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ dirhunt https://offsec.nl       
@@ -122,6 +122,6 @@ No interesting files detected ¯\_(ツ)_/¯
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - Dirhunt](https://github.com/Nekmo/dirhunt)

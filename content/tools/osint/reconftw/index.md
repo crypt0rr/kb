@@ -95,7 +95,7 @@ So, what are you waiting for Go! Go! Go! boom
 * Out of Scope Support
 * Notification system with Slack, Discord and Telegram ([notify](https://github.com/projectdiscovery/notify)) and sending zipped results support
 
-### Installation
+## Installation
 
 > You can check out our wiki for the installation guide [Installation Guide](https://github.com/six2dez/reconftw/wiki/0.-Installation-Guide).
 
@@ -115,13 +115,13 @@ cd reconftw/
 * Through ```reconftw.cfg``` file the whole execution of the tool can be controlled.
 * Hunters can set various scanning modes, execution preferences, tools, config files, APIs/TOKENS, personalized wordlists and much more.
 
-### Usage
+## Usage
 
 ```plain
 ./reconftw.sh -d <domain> -p
 ```
 
-### Flags
+## Flags
 
 #### Target Options
 
@@ -172,7 +172,7 @@ cd reconftw/
 | ---------- | ------------------------ | ------------------------------------------------------ |
 | -o         | Define the output folder | `./reconftw.sh -d target.com -r -o /output/directory/` |
 
-### Examples
+## Examples
 
 To perform a full recon on single target
 
@@ -216,6 +216,6 @@ Show help section
 ./reconftw.sh -h
 ```
 
-### URL list
+## URL List
 
 * [Github.com - reconFTW](https://github.com/six2dez/reconftw/)

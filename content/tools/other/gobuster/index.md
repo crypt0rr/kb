@@ -13,17 +13,17 @@ weight : 0
 
 Directory/File, DNS and VHost busting tool written in Go.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/OJ/gobuster/releases)
 
-### Usage
+## Usage
 
 ```plain
 gobuster [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -47,7 +47,7 @@ Flags:
 Use "gobuster [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 #### Start gobuster with directory list only showing status code 200 OK
 
@@ -76,6 +76,6 @@ test1.php
 * [Github.com - Bo0om - fuzz.txt](https://github.com/Bo0oM/fuzz.txt/blob/master/fuzz.txt)
 * [Github.com - daviddias - lists](https://github.com/daviddias/node-dirbuster/tree/master/lists)
 
-### URL list
+## URL List
 
 * [GitHub.com - gobuster](https://github.com/OJ/gobuster)

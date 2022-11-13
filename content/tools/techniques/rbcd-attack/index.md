@@ -13,7 +13,7 @@ weight : 0
 
 Resource-Based Constrained Delegation - Generic write abuse.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/tothi/rbcd-attack
@@ -178,7 +178,7 @@ C:\WINDOWS\system32>whoami
 offsec.nl\JOHNDO-ADM
 ```
 
-### URL list
+## URL List
 
 * [iRED.team - Kerberos Resource-based Constrained Delegation: Computer Object Take Over](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/resource-based-constrained-delegation-ad-computer-object-take-over-and-privilged-code-execution)
 * [Github.com - Abusing Kerberos Resource-Based Constrained Delegation](https://github.com/tothi/rbcd-attack)

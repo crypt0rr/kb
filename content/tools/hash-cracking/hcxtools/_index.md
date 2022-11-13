@@ -29,7 +29,7 @@ Small set of tools convert packets from captures (h = hash, c = capture, convert
 
 Main purpose is to detect weak points within own WiFi networks by analyzing the hashes. Therefore convert the dump file to WPA-PBKDF2-PMKID+EAPOL hash file and check if wlan-key or plainmasterkey was transmitted unencrypted. Or upload the "uncleaned" dump file (pcapng, pcap, cap) here <https://wpa-sec.stanev.org/?submit> to find out if your ap or the client is vulnerable by using common wordlists or a weak password generation algorithm.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install hcxtools
@@ -43,7 +43,7 @@ make
 make install
 ```
 
-### URL list
+## URL List
 
 * [Github.com - hcxtools](https://github.com/ZerBea/hcxtools)
 * [Kali.org - hcxtools](https://www.kali.org/tools/hcxtools/)

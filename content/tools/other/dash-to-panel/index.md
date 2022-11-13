@@ -17,11 +17,11 @@ Is an icon taskbar for Gnome Shell. This extension moves the dash into the gnome
 
 Works nice in combination with [ArcMenu]({{< ref "arcmenu" >}})
 
-### Installation
+## Installation
 
 Install via [extensions.gnome.org](https://extensions.gnome.org/extension/1160/dash-to-panel/) or check [wiki.](https://github.com/jderose9/dash-to-panel/wiki/Installation)
 
-### Examples
+## Examples
 
 ![Example](images/dtp-main-p2.png)
 ![Example](images/customizable.gif)
@@ -38,6 +38,6 @@ Metro | Ciliora/Dashes
 
 ![Example](images/previews.gif)
 
-### URL list
+## URL List
 
 * [Github.com - Dash-To-Panel](https://github.com/home-sweet-gnome/dash-to-panel)

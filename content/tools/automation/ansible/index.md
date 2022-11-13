@@ -13,13 +13,13 @@ weight : 0
 
 Simple, agentless IT automation that anyone can use - Define and run a single task 'playbook' against a set of hosts
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install ansible
 ```
 
-### Usage
+## Usage
 
 ```plain
 ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts] [-l SUBSET] [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k]
@@ -29,7 +29,7 @@ ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-use
                pattern
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -105,7 +105,7 @@ Connection Options:
 Some modules do not make sense in Ad-Hoc (include, meta, etc)
 ```
 
-### Examples
+## Examples
 
 #### Inventory - A list of hosts that are managed by Ansible
 
@@ -157,6 +157,6 @@ PLAY RECAP *********************************************************************
 188.166.70.130             : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
-### URL list
+## URL List
 
 * [Ansible.com](https://www.ansible.com/)

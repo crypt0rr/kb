@@ -20,20 +20,20 @@ Samba Share Enumerator.
 * Distrubted file content searching (beta!)
 * File name matching (with an auto downoad capability)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/ShawnDEvans/smbmap.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 smbmap.py [-h] (-H HOST | --host-file FILE) [-u USERNAME] [-p PASSWORD | --prompt] [-s SHARE] [-d DOMAIN] [-P PORT] [-v] [--admin] [--no-banner] [--no-color] [--no-update] [-x COMMAND] [--mode CMDMODE] [-L | -R [PATH] | -r [PATH]] [-A PATTERN | -g FILE | --csv FILE] [--dir-only] [--no-write-check] [-q] [--depth DEPTH] [--exclude SHARE [SHARE ...]] [-F PATTERN] [--search-path PATH] [--search-timeout TIMEOUT] [--download PATH] [--upload SRC DST] [--delete PATH TO FILE] [--skip]
 ```
 
-### Flags
+## Flags
 
 ```plain
     ________  ___      ___  _______   ___      ___       __         _______
@@ -111,7 +111,7 @@ $ python smbmap.py -u jsmith -p 'aad3b435b51404eeaad3b435b51404ee:da76f2c4c96028
 $ python smbmap.py -u 'apadmin' -p 'asdf1234!' -d ACME -Hh 10.1.3.30 -x 'net group "Domain Admins" /domain'
 ```
 
-### Examples
+## Examples
 
 #### Enumerate authenticated shares
 
@@ -184,6 +184,6 @@ $ smbmap.py -u johndo -p Welkom1234 -H 10.10.20.251 -R aiff
     dr--r--r--                0 Sat May 29 09:45:24 2021    Secrets
 ```
 
-### URL list
+## URL List
 
 * [Github.com - smbmap.py](https://github.com/ShawnDEvans/smbmap)

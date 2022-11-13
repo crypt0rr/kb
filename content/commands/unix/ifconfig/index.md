@@ -11,13 +11,13 @@ tags : ['Unix','Networking']
 
 ## Ifconfig
 
-### Usage
+## Usage
 
 ```plain
 ifconfig [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -54,7 +54,7 @@ Usage:
     ash (Ash) x25 (CCITT X.25)
 ```
 
-### Examples
+## Examples
 
 #### Network adapter overview
 
@@ -79,6 +79,6 @@ sudo ifconfig eth0 hw ether <new-MAC-address>
 sudo ifconfig eth0 up
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/ifconfig)

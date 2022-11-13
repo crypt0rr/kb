@@ -13,7 +13,7 @@ weight : 0
 
 Execute a command as another user.
 
-### Usage
+## Usage
 
 ```plain
 sudo -h | -K | -k | -V
@@ -23,7 +23,7 @@ sudo [-ABbEHknPS] [-r role] [-t type] [-C num] [-D directory] [-g group] [-h hos
 sudo -e [-ABknS] [-r role] [-t type] [-C num] [-D directory] [-g group] [-h host] [-p prompt] [-R directory] [-T timeout] [-u user] file ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -59,7 +59,7 @@ Options:
   --                            stop processing command line arguments
 ```
 
-### Examples
+## Examples
 
 #### List privileges
 
@@ -86,6 +86,6 @@ User crypt0rr may run the following commands on kali:
     (ALL : ALL) ALL
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - sudo](https://linux.die.net/man/8/sudo)

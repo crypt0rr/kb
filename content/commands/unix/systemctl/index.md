@@ -11,13 +11,13 @@ weight : 0
 
 ## Systemctl
 
-### Usage
+## Usage
 
 ```plain
 systemctl [OPTIONS...] {COMMAND} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 systemctl [OPTIONS...] {COMMAND} ...
@@ -198,7 +198,7 @@ System Commands:
 See the systemctl(1) man page for details.
 ```
 
-### Examples
+## Examples
 
 #### Show available services
 
@@ -308,6 +308,6 @@ sudo systemctl enable YOUR_SERVICE_NAME
 sudo systemctl start YOUR_SERVICE_NAME
 ```
 
-### URL list
+## URL List
 
 * [Debian.org](https://manpages.debian.org/stretch/systemd/systemctl.1.en.html)

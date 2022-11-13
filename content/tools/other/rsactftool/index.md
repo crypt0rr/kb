@@ -13,7 +13,7 @@ weight : 0
 
 RSA multi attacks tool : uncipher data from weak public key and try to recover private key Automatic selection of best attack for the given public key.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Ganapati/RsaCtfTool.git
@@ -22,7 +22,7 @@ python3 -m pip install -r "requirements.txt"
 python3 RsaCtfTool.py
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: RsaCtfTool.py [-h] [--publickey PUBLICKEY] [--timeout TIMEOUT]
@@ -51,7 +51,7 @@ Mode 3 : Dump the public and/or private numbers (optionally including CRT parame
 - key : the public or private key in PEM or DER format
 ```
 
-### Examples
+## Examples
 
 #### Uncipher file
 
@@ -89,6 +89,6 @@ Mode 3 : Dump the public and/or private numbers (optionally including CRT parame
 ./RsaCtfTool.py --publickey key.pub --ecmdigits 25 --verbose --private`
 ```
 
-### URL list
+## URL List
 
 * [Github.com - RSACtfTool](https://github.com/Ganapati/RsaCtfTool)

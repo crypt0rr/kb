@@ -45,15 +45,15 @@ With The Unarchiver you can extract files from the following archive formats.
 |                         |           | Squeeze       | Full           |
 |                         |           | Crunch        | Full           |
 
-### Installation
+## Installation
 
 Download newest release from [Apple AppStore](https://apps.apple.com/nl/app/the-unarchiver/id425424353) or developer website [TheUnarchiver.com](https://theunarchiver.com/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [TheUnarchiver.com](https://theunarchiver.com/)
 * [Apps.apple.com](https://apps.apple.com/nl/app/the-unarchiver/id425424353)

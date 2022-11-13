@@ -34,11 +34,11 @@ It converts videos to animated GIFs that use thousands of colors per frame. This
 
 Gifski supports all the video formats that macOS supports (.mp4 or .mov with H264, HEVC, ProRes, etc). The QuickTime Animation format is not supported. Use ProRes 4444 XQ instead. It's more efficient, more widely supported, and like QuickTime Animation, it also supports alpha channel.
 
-### Installation
+## Installation
 
 Download app from [Apple AppStore](https://apps.apple.com/us/app/gifski/id1351639930?l=en&mt=12)
 
-### Examples
+## Examples
 
 ![example](images/example1.jpeg)
 ![example](images/example2.jpeg)
@@ -47,7 +47,7 @@ Download app from [Apple AppStore](https://apps.apple.com/us/app/gifski/id135163
 
 {{%attachments title="Test file" fa_icon_class="far fa-file-video" pattern=".*(mp4)"/%}}
 
-### URL list
+## URL List
 
 * [Sindresorhus.com - Gifski](https://sindresorhus.com/gifski)
 * [Github.com - Gifski](https://github.com/sindresorhus/Gifski)

@@ -13,19 +13,19 @@ weight : 0
 
 Rogue Office 365 and Azure AD (active) Directory tools - ROADtools is a framework to interact with Azure AD. It currently consists of a library (roadlib) and the ROADrecon Azure AD exploration tool.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install roadrecon
 ```
 
-### Usage
+## Usage
 
 ```plain
 roadrecon [-h] {auth,gather,dump,gui,plugin} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 ROADrecon - The Azure AD exploration tool.
@@ -54,7 +54,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-### Examples
+## Examples
 
 #### Authentication username / password based
 
@@ -117,7 +117,7 @@ Data have been exported to the data.xls file
 
 ![Example](images/example1.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - ROADtools](https://github.com/dirkjanm/ROADtools)
 * [Dirkjanm.io - Introducing ROADtools - The Azure AD exploration framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)

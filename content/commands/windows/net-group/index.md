@@ -11,13 +11,13 @@ weight : 0
 
 ## net group
 
-### Usage
+## Usage
 
 ```plain
 net group [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 net group [<GroupName> [/comment:"<Text>"]] [/domain]
@@ -25,7 +25,7 @@ net group [<GroupName>{/add [/comment:"<Text>"] | /delete} [/domain]]
 net group [<GroupName> <UserName>[ ...] {/add | /delete} [/domain]]
 ```
 
-### Examples
+## Examples
 
 #### Show all members of a specific group
 
@@ -72,6 +72,6 @@ Group Accounts for \\example.local
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc754051(v=ws.11))

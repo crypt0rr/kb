@@ -11,13 +11,13 @@ weight: 0
 
 ## Crontab
 
-### Usage
+## Usage
 
 ```plain
 crontab [-u user] file
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: crontab [-u user] file
@@ -29,7 +29,7 @@ crontab [ -u user ][ -i ] { -e | -l | -r }
 -i (prompt before deleting users crontab)
 ```
 
-### Examples
+## Examples
 
 List tasks for current user
 
@@ -66,6 +66,6 @@ Fourth  * : month (1-12)
 Fifth   * : day of the week (0-6 or 1-7)
 ```
 
-### URL list
+## URL List
 
 - [Crontab.guru](https://crontab.guru/)

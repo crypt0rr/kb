@@ -11,13 +11,13 @@ tags : ['Unix','Harddisk']
 
 ## Dd
 
-### Usage
+## Usage
 
 ```plain
 dd [OPERAND]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: dd [OPERAND]...
@@ -96,7 +96,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/dd>
 or available locally via: info '(coreutils) dd invocation'
 ```
 
-### Examples
+## Examples
 
 Normal a to b copy (default 512 bytes a time)
 
@@ -116,6 +116,6 @@ Show status progress
 dd if=/dev/urandom of=/dev/sda1 status=progress
 ```
 
-### URL list
+## URL List
 
 - [GNU.org](https://www.gnu.org/software/coreutils/dd)

@@ -11,13 +11,13 @@ tags : ['Unix','Harddisk']
 
 ## Hdparm
 
-### Usage
+## Usage
 
 ```plain
 hdparm  [options] [device ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -105,7 +105,7 @@ Options:
  --write-sector              Repair/overwrite a (possibly bad) sector directly on the media (VERY DANGEROUS)
 ```
 
-### Examples
+## Examples
 
 #### Measure hard disk transfer speed
 
@@ -125,6 +125,6 @@ sudo hdparm -I /dev/sda | grep -i speed
 dmesg | grep -i sata | grep 'link up'
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/hdparm)

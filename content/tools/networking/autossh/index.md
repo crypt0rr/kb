@@ -13,19 +13,19 @@ weight : 0
 
 AutoSSH is a program to start a copy of ssh and monitor it, restarting it as necessary should it die or stop passing traffic.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install autossh
 ```
 
-### Usage
+## Usage
 
 ```plain
 autossh [-V] [-M monitor_port[:echo_port]] [-f] [SSH_OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
     -M specifies monitor port. Overrides the environment
@@ -56,7 +56,7 @@ Environment variables are:
                           stderr
 ```
 
-### Examples
+## Examples
 
 #### Generate a keypair on client
 
@@ -89,7 +89,7 @@ WantedBy=multi-user.target
 
 After the configuration is set, test it by manually connecting the SSH tunnel and accepting the SSH signature of the server. Next enable AutoSSH it with `systemctl enable autossh-tunnel.service` and reboot to test again.
 
-### URL list
+## URL List
 
 * [Linux.die.net - AutoSSH](https://linux.die.net/man/1/autossh)
 * [everythingcli.org - SSH TUNNELLING FOR FUN AND PROFIT: AUTOSSH](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/)

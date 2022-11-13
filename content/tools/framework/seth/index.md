@@ -13,7 +13,7 @@ weight : 0
 
 RDP credential sniffer - Man in the Middle RDP
 
-### Installation
+## Installation
 
 Requirements:
 
@@ -25,7 +25,7 @@ sudo apt install dsniff tcpdump
 git clone https://github.com/SySS-Research/Seth.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 seth.py [-h] [-d] [-f] [-p LISTEN_PORT] [-b BIND_IP] [-g {0,1,3,11}]
@@ -33,7 +33,7 @@ seth.py [-h] [-d] [-f] [-p LISTEN_PORT] [-b BIND_IP] [-g {0,1,3,11}]
                target_host [target_port]
 ```
 
-### Flags
+## Flags
 
 ```plain
 RDP credential sniffer -- Adrian Vollmer, SySS GmbH 2017
@@ -61,7 +61,7 @@ optional arguments:
                         path to the key file
 ```
 
-### Examples
+## Examples
 
 #### Start MiTM attack
 
@@ -130,6 +130,6 @@ Hiding forged protocol request from client
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - Seth](https://github.com/SySS-Research/Seth)

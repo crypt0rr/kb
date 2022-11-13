@@ -11,13 +11,13 @@ weight: 0
 
 ## Cut
 
-### Usage
+## Usage
 
 ```plain
 cut OPTION... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: cut OPTION... [FILE]...
@@ -57,7 +57,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/cut>
 or available locally via: info '(coreutils) cut invocation'
 ```
 
-### Examples
+## Examples
 
 Cut one or specific bytes
 
@@ -100,6 +100,6 @@ E.g. with tab after each field
 cut -d '<delimter>' -f <field> --output-delimiter=$'\t' <file>
 ```
 
-### URL list
+## URL List
 
 - [GNU.org](https://www.gnu.org/software/coreutils/cut)

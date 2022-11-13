@@ -13,13 +13,13 @@ weight : 0
 
 Command-line interface for checking email address and username usage on online platforms: GitHub, GitLab, Instagram, Lastfm, Pinterest, Reddit, Snapchat, /.Spotify, Twitter, Tumblr, Yahoo, Firefox.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install socialscan
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: socialscan [-h] [--platforms [platform [platform ...]]] [--view-by {platform,query}] [--available-only] [--cache-tokens]
@@ -27,7 +27,7 @@ usage: socialscan [-h] [--platforms [platform [platform ...]]] [--view-by {platf
                   [query [query ...]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Command-line interface for checking email address and username usage on online platforms: GitHub, GitLab, Instagram, Lastfm, Pinterest,
@@ -58,7 +58,7 @@ optional arguments:
   --version             show program's version number and exit
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ socialscan twitter@offsec.nl  
@@ -78,7 +78,7 @@ Available, Taken/Reserved, Invalid, Error
 Completed 12 queries in 1.75s
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - socialscan](https://github.com/iojw/socialscan)
 * [Pypi.org - socialscan](https://pypi.org/project/socialscan/)

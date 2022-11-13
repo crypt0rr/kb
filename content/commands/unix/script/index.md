@@ -11,13 +11,13 @@ weight : 0
 
 ## Script - Make a typescript of a terminal session
 
-### Usage
+## Usage
 
 ```plain
 script [options] [file]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -35,7 +35,7 @@ Options:
 For more details see script(1).
 ```
 
-### Examples
+## Examples
 
 #### Start terminal logging to file
 
@@ -43,6 +43,6 @@ For more details see script(1).
 script logfile.txt
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/script)

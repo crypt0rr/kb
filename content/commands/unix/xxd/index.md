@@ -11,13 +11,13 @@ weight : 0
 
 ## Xxd - make a hexdump or do the reverse
 
-### Usage
+## Usage
 
 ```plain
 xxd [options] [infile [outfile]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 or
@@ -42,7 +42,7 @@ Options:
     -v          show version: "xxd V1.10 27oct98 by Juergen Weigert".
 ```
 
-### Examples
+## Examples
 
 ```plain
 xxd test.txt
@@ -59,6 +59,6 @@ xxd test.txt
 00000090: 647c 590a                                d|Y.
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/xxd)

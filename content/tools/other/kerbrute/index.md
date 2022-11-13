@@ -15,17 +15,17 @@ This tool is designed to assist in quickly bruteforcing valid Active Directory a
 
 A list of common used AD usernames can be downloaded [here](https://github.com/crypt0rr/common-ad-usernames).
 
-### Installation
+## Installation
 
 Download latest binary from [Github.com](https://github.com/ropnop/kerbrute/releases/latest)
 
-### Usage
+## Usage
 
 ```plain
 kerbrute [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
     __             __               __     
@@ -61,7 +61,7 @@ Flags:
 Use "kerbrute [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 #### Validate usernames against domain
 
@@ -125,6 +125,6 @@ Version: v1.0.3 (9dad6e1) - 01/17/22 - Ronnie Flathers @ropnop
 2022/01/17 15:35:38 >  Done! Tested 4393 logins (1 successes) in 9.460 seconds
 ```
 
-### URL list
+## URL List
 
 * [Github.com - kerbrute](https://github.com/ropnop/kerbrute)

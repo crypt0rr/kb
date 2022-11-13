@@ -13,19 +13,19 @@ tags : ['Other', 'LDAP', 'Active Directory']
 
 Dump LAPS (Microsoft Local Administrator Password Solution) Passwords.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/n00py/LAPSDumper
 ```
 
-### Usage
+## Usage
 
 ```plain
 laps.py [-h] -u USERNAME -p PASSWORD [-l LDAPSERVER] -d DOMAIN
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -40,7 +40,7 @@ optional arguments:
                         Domain
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 laps.py -u user -p password -d domain.local
@@ -62,7 +62,7 @@ COMPUTER09$:P2(VSN4%49!%fI8
 python3 laps.py -u user -p e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06bdd830b7586c -d domain.local -l dc01.domain.local
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - LAPSDumper](https://github.com/n00py/LAPSDumper)
 * [n00py.io - Dumping LAPS passwords from Linux](https://www.n00py.io/2020/12/dumping-laps-passwords-from-linux/)

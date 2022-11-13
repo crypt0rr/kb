@@ -13,20 +13,20 @@ weight : 0
 
 Fuzz 403ing endpoints for bypasses - use this script to fuzz endpoints that return a 401/403.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/intrudir/403fuzzer.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./403fuzzer.py [-h] [-u URL] [-m {GET,POST,PUT,PATCH}] [-d DATA_PARAMS] [-c COOKIES] [-H HEADER] [-p PROXY] [-hc HC] [-hl HL] [-sf]
              [--save SAVE] [-sh] [-su]
 ```
 
-### Flags
+## Flags
 
 ```plain
 use this script to fuzz endpoints that return a 401/403
@@ -52,7 +52,7 @@ optional arguments:
   -su, --skip-urls      Skip testing path payloads
 ```
 
-### Examples
+## Examples
 
 ```plain
 ./403fuzzer.py -u http://example.com/test1/test2/test3/forbidden.html
@@ -64,6 +64,6 @@ optional arguments:
 ./403fuzzer.py -u https://example.com --proxy http://127.0.0.1:8080
 ```
 
-### URL list
+## URL List
 
 * [Github.com - 403fuzzer](https://github.com/intrudir/403fuzzer)

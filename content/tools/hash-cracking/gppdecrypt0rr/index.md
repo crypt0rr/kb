@@ -13,25 +13,25 @@ weight : 0
 
 Simple decryption script for Group Policy Preferences (GPP) passwords. (cpassword)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/crypt0rr/gppdecrypt0rr
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./decrypt0rr.sh 'cpassword-here'
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./decrypt0rr.sh 'Pe81R/eXjjPtd5oJw6D0hifqz78ezVt7tD0ViS9eTg+z2dKIvfwMRbD5JPFEA26i'
 Decrypted password: WhatAGreatPassword123!
 ```
 
-### URL list
+## URL List
 
 * [Github.com - gppdecrypt0rr](https://github.com/crypt0rr/gppdecrypt0rr)

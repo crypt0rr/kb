@@ -13,7 +13,7 @@ tags : ['Other', 'Active Directory']
 
 Tool for pentesters to help find security-related misconfigurations in Active Directory Group Policy.
 
-### Installation
+## Installation
 
 Download newest release from [GitHub.com](https://github.com/l0ss/Grouper2/releases)
 
@@ -22,13 +22,13 @@ Download newest release from [GitHub.com](https://github.com/l0ss/Grouper2/relea
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(exe)"/%}}
 {{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 Grouper2.exe
 ```
 
-### Flags
+## Flags
 
 ```plain
 -u username - Username to use for LDAP operations.
@@ -48,7 +48,7 @@ Grouper2.exe
 -q quiet - Enables quiet mode. Turns off progress counter.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ Grouper2.exe -u johndo -p Welkom1234 -f output.html
@@ -94,6 +94,6 @@ Errors in processing GPOs:
 Grouper2 took 0:1:1:418 to run.
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Grouper2](https://github.com/l0ss/Grouper2)

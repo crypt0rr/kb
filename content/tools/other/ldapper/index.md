@@ -22,7 +22,7 @@ Add/Remove Arbitrary SPNs
 Kerberoast
 This tool should be considered in its beta stages. Please report any bugs, issues, or functionality ideas for future releases.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Synzack/ldapper
@@ -30,13 +30,13 @@ go mod tidy
 go build
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./ldapper [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -H string
@@ -62,7 +62,7 @@ Examples:
         With Hash:      ./ldapper -u <username@domain> -H <hash> -dc <ip/FQDN> -s
 ```
 
-### Examples
+## Examples
 
 #### Setting up connection
 
@@ -158,6 +158,6 @@ ftp/GOOWLPT1000001      ABE_MASON               2022-07-04 15:23:37 +0200 CEST  
 $krb5tgs$23$*HAL_MURRAY$OFFSEC.NL$HAL_MURRAY*$0d2768f9c9cb33b22e338cd4e732f3dd$6e47d8cb3701126a966d0c7697b[...]091b8b73a9a1dba92d661a
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ldapper](https://github.com/Synzack/ldapper)

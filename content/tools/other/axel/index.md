@@ -20,7 +20,7 @@ Axel supports:
 * FTP
 * FTPS
 
-### Installation
+## Installation
 
 #### Debian
 
@@ -34,13 +34,13 @@ sudo apt install axel
 brew install axel
 ```
 
-### Usage
+## Usage
 
 ```plain
 axel [options] url1 [url2] [url...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 --max-speed=x           -s x    Specify maximum speed (bytes per second)
@@ -66,7 +66,7 @@ axel [options] url1 [url2] [url...]
 Visit  to report bugs
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ axel https://mirror.nl.datapacket.com/ubuntu-releases/22.04.1/ubuntu-22.04.1-desktop-amd64.iso
@@ -86,6 +86,6 @@ Connection 1 finished
 Downloaded 3.56401 Gigabyte(s) in 18:49 minute(s). (3309.93 KB/s)
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Axel](https://github.com/axel-download-accelerator/axel)

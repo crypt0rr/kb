@@ -11,13 +11,13 @@ weight : 0
 
 ## Groupadd
 
-### Usage
+## Usage
 
 ```plain
 groupadd [options] GROUP
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: groupadd [options] GROUP
@@ -35,6 +35,6 @@ Options:
       --extrausers              Use the extra users database
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/groupadd)

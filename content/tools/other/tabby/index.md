@@ -39,7 +39,7 @@ Tabby (formerly Terminus) is a highly configurable terminal emulator, SSH and se
 * Custom shell profiles
 * Optional RMB paste and copy-on select (PuTTY style)
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/Eugeny/tabby/releases)
 
@@ -49,11 +49,11 @@ Download newest release from [Github.com](https://github.com/Eugeny/tabby/releas
 * clickable-links
 * save-output
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Tabby.sh](https://tabby.sh/)
 * [Github.com - tabby](https://github.com/Eugeny/tabby)

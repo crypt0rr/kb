@@ -13,20 +13,20 @@ tags : ['Other', 'LDAP', 'Active Directory']
 
 Python3 script to quickly get various information from a domain controller through his LDAP service.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/yaap7/ldapsearch-ad.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 ldapsearch-ad.py [-h] -l LDAP_SERVER [-ssl] -t REQUEST_TYPE [-d DOMAIN] [-u USERNAME] [-p PASSWORD] [-H HASHES] [-s SEARCH_FILTER] [-z SIZE_LIMIT] [-o OUTPUT_FILE] [-v] [search_attributes ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Active Directory LDAP Enumerator
@@ -58,7 +58,7 @@ optional arguments:
   -v, --verbose         Turn on debug mode
 ```
 
-### Examples
+## Examples
 
 #### Get basic information (unauthenticated)
 
@@ -150,6 +150,6 @@ Default password policy:
 ### Result of "creatorsid" command ###
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ldapsearch-ad](https://github.com/yaap7/ldapsearch-ad)

@@ -14,14 +14,14 @@ weight : 0
 [![Blackhat Arsenal 2018](https://rawgit.com/toolswatch/badges/master/arsenal/europe/2018.svg)](http://www.toolswatch.org/2018/09/black-hat-arsenal-europe-2018-lineup-announced/)  
 This tool is designed to analyze the configuration files of Cisco devices. The [list of checks](https://github.com/cisco-config-analysis-tool/ccat/wiki/List-of-the-checks) is based on the [Cisco Guide to Harden Cisco IOS Devices](https://www.cisco.com/c/en/us/support/docs/ip/access-lists/13608-21.html).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/frostbits-security/ccat.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 ccat.py [-h] [-vlanmap VLANMAP] [-output OUTPUT] [--no-console-display] [--no-ipv6] [--disabled-interfaces] [--storm_level STORM_LEVEL]
@@ -29,7 +29,7 @@ ccat.py [-h] [-vlanmap VLANMAP] [-output OUTPUT] [--no-console-display] [--no-ip
                [configs]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Cisco Configuration Analysis Tool
@@ -59,7 +59,7 @@ Usage example:
   ccat  smth/config_folder -vlanmap smth/vlanmap_file
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 ccat.py sample-cisco.config
@@ -270,6 +270,6 @@ $ python3 ccat.py sample-cisco.config
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(config)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - ccat](https://github.com/frostbits-security/ccat)

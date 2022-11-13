@@ -15,7 +15,7 @@ Shodan is the world's first search engine for Internet-connected devices.
 
 [Shodan.io](https://www.shodan.io)
 
-### Examples
+## Examples
 
 #### Find devices in a particular city
 
@@ -88,7 +88,7 @@ http.favicon.hash:-1922044295
 
 ## Shodan CLI
 
-### Installation
+## Installation
 
 ```plain
 easy_install shodan
@@ -98,13 +98,13 @@ easy_install shodan
 python3 -m pip install shodan
 ```
 
-### Usage
+## Usage
 
 ```plain
 shodan [OPTIONS] COMMAND [ARGS]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -215,7 +215,7 @@ shodan search country:"DE" port:"445"
 | **telnet.will**   | The server supports these options                           | string   |
 | **telnet.wont**   | The server doesnt support these options                     | string   |
 
-### URL list
+## URL List
 
 * [Shodan.io](https://www.shodan.io/)
 * [cli.shodan.io](https://cli.shodan.io/)

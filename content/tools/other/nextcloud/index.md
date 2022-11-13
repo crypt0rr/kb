@@ -13,11 +13,11 @@ weight : 0
 
 The self-hosted productivity platform that keeps you in control.
 
-### Installation
+## Installation
 
 [Nextcloud.com](https://nextcloud.com/install/)
 
-### URL list
+## URL List
 
 * [Nextcloud.com](https://nextcloud.com/)
 * [Snapcraft.io](https://snapcraft.io/nextcloud)

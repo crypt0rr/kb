@@ -13,13 +13,13 @@ weight : 0
 
 Check for new and updated versions of your software based on information about your computer and current software.
 
-### Usage
+## Usage
 
 ```plain
 sudo softwareupdate <cmd> [<args> ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 ** Manage Updates:
@@ -58,7 +58,7 @@ sudo softwareupdate <cmd> [<args> ...]
         --help                  Print this help
 ```
 
-### Examples
+## Examples
 
 #### List available software updates
 
@@ -95,6 +95,6 @@ Command Line Tools for Xcode                       13.1       12/08/2021, 19:13:
 sudo softwareupdate --fetch-full-installer --full-installer-version 10.15.4
 ```
 
-### URL list
+## URL List
 
 * [ss64.com - softwareupdate](https://ss64.com/osx/softwareupdate.html)

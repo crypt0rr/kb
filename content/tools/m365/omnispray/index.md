@@ -15,21 +15,21 @@ Omnispray aims to replace tools such as [o365spray](https://github.com/0xZDH/o36
 
 The primary goal is to provide a framework to allow for the easy development and implementation of user enumeration and password spraying techniques for a variety of targets/applications. While there are currently several prebuilt modules included, this tool provides module templates to give users the tools needed to extend the tools usage for non-standard cases. The goal is also to provide a central tool to handle all enumeration and spraying.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/0xZDH/Omnispray.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 omnispray.py [-h] [-m MODULE] [-d DOMAIN] [-tenant TENANT] [-t {enum,spray}] [--url URL] [-u USER | -us USERS [USERS ...] | -uf USERFILE] [-p PASSWORD | -ps PASSWORDS [PASSWORDS ...] | -pf PASSWORDFILE] [-c COUNT] [-l LOCKOUT] [-s SPLIT] [-w WAIT] [--timeout TIMEOUT] [--proxy PROXY]
                     [--proxy-url PROXY_URL] [--proxy-headers PROXY_HEADERS [PROXY_HEADERS ...]] [--outdir OUTDIR] [--logdir LOGDIR] [--pause PAUSE] [--rate RATE] [--version] [--debug]
 ```
 
-### Flags
+## Flags
 
 ```plain
 options:
@@ -75,7 +75,7 @@ options:
   --debug               Debug output
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ cat users.txt
@@ -117,6 +117,6 @@ $ python3 omnispray.py --type enum -uf users.txt  --module o365_enum_office --pr
 [2022-09-19 16:23:13,157] INFO : Valid user accounts: 1
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Omnispray](https://github.com/0xZDH/Omnispray)

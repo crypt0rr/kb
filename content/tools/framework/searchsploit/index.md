@@ -13,19 +13,19 @@ weight : 0
 
 Gives you the power to perform detailed off-line searches through your locally checked-out copy of the repository
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install searchsploit
 ```
 
-### Usage
+## Usage
 
 ```plain
 searchsploit [options] term1 [term2] ... [termN]
 ```
 
-### Flags
+## Flags
 
 ```plain
 ==========
@@ -89,7 +89,7 @@ searchsploit [options] term1 [term2] ... [termN]
  * When updating or displaying help, search terms will be ignored
 ```
 
-### Examples
+## Examples
 
 #### Search for exploits
 
@@ -122,7 +122,7 @@ File Type: Python script, ASCII text executable, with CRLF line terminators
 Copied to: /root/40698.py
 ```
 
-### URL list
+## URL List
 
 * [Exploit-db.com - Searchsploit](https://www.exploit-db.com/searchsploit)
 * [Exploit-db.com - Offsec-Searchsploit.pdf](https://www.exploit-db.com/documentation/Offsec-SearchSploit.pdf)

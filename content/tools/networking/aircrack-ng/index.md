@@ -13,7 +13,7 @@ tags : ['Networking', 'Wi-Fi']
 
 Is an 802.11 WEP, 802.11i WPA/WPA2, and 802.11w WPA2 key cracking program.
 
-### Installation
+## Installation
 
 Debian requirements
 
@@ -25,13 +25,13 @@ sudo apt install build-essential autoconf automake libtool pkg-config libnl-3-de
 sudo apt install aircrack-ng
 ```
 
-### Usage
+## Usage
 
 ```plain
 aircrack-ng [options] <input file(s)>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Aircrack-ng 1.5.2  - (C) 2006-2018 Thomas d'Otreppe
@@ -116,7 +116,7 @@ Other options:
     --help     : Displays this usage screen
 ```
 
-### Examples
+## Examples
 
 Show compatible devices
 
@@ -154,7 +154,7 @@ Crack handshake
 sudo aircrack-ng <input-file>.cap -w <wordlist>
 ```
 
-### URL list
+## URL List
 
 * [Aircrack-ng.org](https://www.aircrack-ng.org/)
 * [Github.com - Aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)

@@ -13,19 +13,19 @@ weight : 0
 
 A script to find admin login pages and EAR vulnerabilities.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/crypt0rr/Breacher.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 breacher.py [-h] [-u TARGET] [--path PREFIX] [--type TYPE] [--fast]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -36,7 +36,7 @@ optional arguments:
   --fast         uses multithreading
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 breacher.py -u https://example.com/
@@ -70,6 +70,6 @@ Sitemap: https://example.com/wp-sitemap.xml
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - breacher](https://github.com/crypt0rr/Breacher.git)

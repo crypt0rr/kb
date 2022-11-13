@@ -13,14 +13,14 @@ weight : 0
 
 Displays or modifies discretionary access control lists (DACLs) on specified files, and applies stored DACLs to files in specified directories
 
-### Usage
+## Usage
 
 ```plain
 icacls <filename> [/grant[:r] <sid>:<perm>[...]] [/deny <sid>:<perm>[...]] [/remove[:g|:d]] <sid>[...]] [/t] [/c] [/l] [/q] [/setintegritylevel <Level>:<policy>[...]]
 icacls <directory> [/substitute <sidold> <sidnew> [...]] [/restore <aclfile> [/c] [/l] [/q]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 ICACLS name /save aclfile [/T] [/C] [/L] [/Q]
@@ -159,7 +159,7 @@ Examples:
           Write DAC permissions to file.
 ```
 
-### Examples
+## Examples
 
 #### Check rights on folder
 
@@ -172,6 +172,6 @@ Desktop NT AUTHORITY\SYSTEM:(I)(OI)(CI)(F)
 Successfully processed 1 files; Failed processing 0 files
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com - icacls](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/icacls)

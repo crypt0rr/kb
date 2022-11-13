@@ -13,13 +13,13 @@ weight : 0
 
 Creating ASCII text banners or large letters out of ordinary text.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install figlet
 ```
 
-### Usage
+## Usage
 
 ```plain
 Usage: figlet [ -cklnoprstvxDELNRSWX ] [ -d fontdirectory ]
@@ -27,7 +27,7 @@ Usage: figlet [ -cklnoprstvxDELNRSWX ] [ -d fontdirectory ]
               [ -C controlfile ] [ -I infocode ] [ message ]
 ```
 
-### Examples
+## Examples
 
 #### Default usage and font
 
@@ -56,6 +56,6 @@ $ figlet -f script yourtexthere
    \|         
 ```
 
-### URL list
+## URL List
 
 * [Linux.com - Fun With the Figlet And Toilet Commands](https://www.linux.com/training-tutorials/linux-tips-fun-figlet-and-toilet-commands/)

@@ -13,19 +13,19 @@ weight : 0
 
 Is  a tool to transfer data from or to a server, using one of the supported protocols. The command is designed to work  without user interaction.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install curl
 ```
 
-### Usage
+## Usage
 
 ```plain
 curl [options...] <url>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: curl [options...] <url>
@@ -252,7 +252,7 @@ Usage: curl [options...] <url>
      --xattr         Store metadata in extended file attributes
 ```
 
-### Examples
+## Examples
 
 #### curl header of target
 
@@ -331,7 +331,7 @@ cf-ray: 687e271faff40132-AMS
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
 ```
 
-### URL list
+## URL List
 
 * [curl.haxx.se](https://curl.haxx.se/)
 * [GitHub.com - curl](https://github.com/curl/curl)

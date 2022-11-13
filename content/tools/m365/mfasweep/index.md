@@ -27,7 +27,7 @@ Currently MFASweep has the ability to login to the following services:
 
 For more information check out the blog post here: [Exploiting MFA Inconsistencies on Microsoft Services.](https://www.blackhillsinfosec.com/exploiting-mfa-inconsistencies-on-microsoft-services/)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/dafthack/MFASweep.git
@@ -39,7 +39,7 @@ git clone https://github.com/dafthack/MFASweep.git
 python3 -m pip install MFASweep.py
 ```
 
-### Usage
+## Usage
 
 This command will use the provided credentials and attempt to authenticate to the Microsoft Graph API, Azure Service Management API, Microsoft 365 Exchange Web Services, Microsoft 365 Web Portal with both a desktop browser and mobile, and Microsoft 365 Active Sync.
 
@@ -105,7 +105,7 @@ ADFS
 Invoke-ADFSAuth -Username targetuser@targetdomain.com -Password Winter2020 
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 -m mfasweep john.do example.com
@@ -127,7 +127,7 @@ $ python3 -m mfasweep john.do example.com
 
 ![Example](images/example1.jpg)
 
-### URL list
+## URL List
 
 * [Github.com - MFASweep](https://github.com/dafthack/MFASweep)
 * [Github.com - Python port of MFASweep by @dafthack](https://github.com/CasperGN/MFASweep.py)

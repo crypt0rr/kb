@@ -11,19 +11,19 @@ tags : ['Unix','Networking']
 
 ## Nmcli
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install network-manager
 ```
 
-### Usage
+## Usage
 
 ```plain
 nmcli [OPTIONS] OBJECT { COMMAND | help }
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: nmcli [OPTIONS] OBJECT { COMMAND | help }
@@ -53,7 +53,7 @@ OBJECT
   m[onitor]       monitor NetworkManager changes
 ```
 
-### Examples
+## Examples
 
 #### Show current interface status (standard)
 
@@ -116,7 +116,7 @@ IN-USE  BSSID              SSID                   MODE   CHAN  RATE        SIGNA
         AB:CD:EF:G8:D7:E1  Cordless-G                   Infra  1     130 Mbit/s  59      ▂▄▆_  WPA2 WPA3   
 ```
 
-### URL list
+## URL List
 
 * [Linux.man.die](https://linux.die.net/man/1/nmcli)
 * [Developer.gnome.org](https://developer.gnome.org/NetworkManager/stable/nmcli.html)

@@ -15,13 +15,13 @@ Administration tool for IPv4 packet filtering and NAT. Is used to set up, mainta
 
 Each chain is a list of rules which can match a set of packets. Each rule specifies what to do with a packet that matches. This is called a 'target', which may be a jump to a user-defined chain in the same table.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install iptables
 ```
 
-### Usage
+## Usage
 
 ```plain
 iptables -[ACD] chain rule-specification [options]
@@ -36,7 +36,7 @@ iptables -P chain target [options]
 iptables -h (print this help information)
 ```
 
-### Flags
+## Flags
 
 ```plain
 iptables v1.8.8 (nf_tables)
@@ -98,7 +98,7 @@ Options:
 [!] --version   -V              print package version.
 ```
 
-### Examples
+## Examples
 
 #### List default/current policy
 
@@ -162,7 +162,7 @@ sudo iptables -A OUTPUT -p tcp --dport 80 -j DROP
 sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - iptables](https://linux.die.net/man/8/iptables)
 * [Wikipedia.org - iptables](https://en.wikipedia.org/wiki/Iptables)

@@ -13,13 +13,13 @@ weight : 0
 
 ProxyChains is a UNIX program, that hooks network-related libc functions in dynamically linked programs via a preloaded DLL and redirects the connections through SOCKS4a/5 or HTTP proxies.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt-get install -y proxychains
 ```
 
-### Usage
+## Usage
 
 ```plain
 proxychains4 -q -f config_file program_name [arguments]
@@ -28,7 +28,7 @@ proxychains4 -q -f config_file program_name [arguments]
     for example : proxychains telnet somehost.com
 ```
 
-### Examples
+## Examples
 
 Default location of the config file is `/etc/proxychains4.conf`
 
@@ -39,7 +39,7 @@ Default location of the config file is `/etc/proxychains4.conf`
 socks4      127.0.0.1 1080
 ```
 
-### URL list
+## URL List
 
 * [Linuxhint.com - Proxychains Tutorial](https://linuxhint.com/proxychains-tutorial/)
 * [Github.com - Proxychains](https://github.com/haad/proxychains)

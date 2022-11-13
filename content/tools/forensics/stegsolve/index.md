@@ -25,7 +25,7 @@ It provides these main functions:
 Copy/Cut and paste is available from most text using CTRL-C to copy, CTRL-V to paste and CTRL-X for cut.
 If an image fails to load, for example because it is corrupt, then file analysis will still open the file that you just tried to view. It may, however, crash out before reporting the information that you want to know. This will work though on images where the PNG has corrupted CRC values for example.
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(jar)"/%}}
 
@@ -34,16 +34,16 @@ wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 chmod +x stegsolve.jar
 ```
 
-### Usage
+## Usage
 
 ```plain
 java -jar stegsolve.jar
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - StegSolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install)

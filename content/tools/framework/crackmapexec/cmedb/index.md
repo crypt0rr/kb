@@ -13,7 +13,7 @@ weight : 0
 
 cmedb is default installed with your installation of [CrackMapExec]({{< ref "../" >}}).
 
-### Usage
+## Usage
 
 ```plain
 cmedb

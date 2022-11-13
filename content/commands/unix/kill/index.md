@@ -11,7 +11,7 @@ weight : 0
 
 ## Kill
 
-### Usage
+## Usage
 
 #### Kill by PID
 
@@ -25,7 +25,7 @@ kill <pid>
 pkill <name>
 ```
 
-### Flags
+## Flags
 
 ```plain
 -1  SIGHUP
@@ -34,6 +34,6 @@ pkill <name>
 -15 SIGTERM
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/3/kill)

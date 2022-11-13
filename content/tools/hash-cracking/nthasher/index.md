@@ -13,7 +13,7 @@ weight : 0
 
 A fast wordlist to nthash converter
 
-### Installation
+## Installation
 
 It's a vanilla rust cargo program that can be compiled with:
 
@@ -23,7 +23,7 @@ cargo build --release
 
 You'll need rust and cargo. The easiest way to get it is from <https://rustup.rs>
 
-### Usage
+## Usage
 
 Pass it a UTF8 encoded wordlist on stdin, and write the output to a file.
 
@@ -39,7 +39,7 @@ You can use `iconv`
 iconv -t utf8 -c <wordlist.in> > <wordlist.out>
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./nthasher < input > output
@@ -64,6 +64,6 @@ cb30eb57a626946c7e70f4232f677bb2
 2a32ece59b41943e4c641a9388b74fb3
 ```
 
-### URL list
+## URL List
 
 * [Github.com - nthasher](https://github.com/singe/nthasher)

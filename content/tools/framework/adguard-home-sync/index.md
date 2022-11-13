@@ -25,19 +25,19 @@ Synchronize config from one AdGuardHome instance to another.
 
 By default, all features are enabled. Single features can be disabled in the config.
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/bakito/adguardhome-sync@latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 adguardhome-sync [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Available Commands:
@@ -54,7 +54,7 @@ Flags:
 Use "adguardhome-sync [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 Simple configuration to synchronize two AdGuardHome instances. This configuration uses a NGINX reverse proxy for the frontend, therefor a simple change in the `/etc/hosts` file is needed.
 
@@ -91,6 +91,6 @@ $ cat /etc/hosts
 10.10.10.3 ns2.offsec.nl # 10.10.10.3 == NGINX proxy
 ```
 
-### URL list
+## URL List
 
 * [Github.com - AdGuard Home Sync](https://github.com/bakito/adguardhome-sync)

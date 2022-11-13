@@ -13,7 +13,7 @@ tags : ['Other', 'Active Directory', 'ADCS']
 
 Utility to play with ADCS, allows to request tickets and collect information about related objects. Basically, it's the impacket copy of [Certify](https://github.com/GhostPack/Certify). Thanks to [@harmj0y](https://twitter.com/harmj0y) and [@tifkin_](https://twitter.com/tifkin_) for [its great work with ADCS](https://www.specterops.io/assets/resources/Certified_Pre-Owned.pdf).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/zer1t0/certi
@@ -23,7 +23,7 @@ python3 setup.py install
 
 ### List
 
-#### Usage list
+### Usage list
 
 ```plain
 certi.py list [-h] [--dc-ip IP] [-k] [-n] [--class [{template,ca,service,ntauth} ...]] [--aes hex key] [--enabled] [--vuln] [--temp-name TEMP_NAME [TEMP_NAME ...]] [--temp-filter TEMP_FILTER]
@@ -31,7 +31,7 @@ certi.py list [-h] [--dc-ip IP] [-k] [-n] [--class [{template,ca,service,ntauth}
                      target
 ```
 
-#### Flags list
+### Flags list
 
 ```plain
 positional arguments:
@@ -98,7 +98,7 @@ options:
   -2, --version2        Use WCCE version 2
 ```
 
-### Examples
+## Examples
 
 #### Listing vulnerable templates
 
@@ -195,6 +195,6 @@ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI
 
 For further steps on how to abuse AD CS, checkout [Abuse AD CS]({{< ref "abuse-adcs" >}})
 
-### URL list
+## URL List
 
 * [Github.com - Certi](https://github.com/zer1t0/certi)

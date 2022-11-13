@@ -11,7 +11,7 @@ weight : 0
 
 ## Cal - displays a calendar and the date of Easter
 
-### Usage
+## Usage
 
 ```plain
 cal [general options] [-jy] [[month] year]
@@ -22,13 +22,13 @@ cal [general options] [-jy] [[month] year]
     ncal [general options] [-bhJeoSM] [year]
 ```
 
-### Flags
+## Flags
 
 ```plain
 General options: [-31] [-A months] [-B months] [-d yyyy-mm]
 ```
 
-### Examples
+## Examples
 
 #### Current month and date
 
@@ -84,6 +84,6 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 25 26 27 28 29 30 31  29 30                 27 28 29 30 31
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - cal](https://linux.die.net/man/1/cal)

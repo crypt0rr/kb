@@ -13,19 +13,19 @@ weight : 0
 
 The world's most used penetration testing framework.
 
-### Installation
+## Installation
 
 Please use [Kali Linux](https://www.kali.org/)
 
 Download newest release from [Github.com](https://github.com/rapid7/metasploit-framework/releases)
 
-### Usage
+## Usage
 
 ```plain
 msfconsole [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: msfconsole [options]
@@ -80,7 +80,7 @@ janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
 [...]
 ```
 
-### Examples
+## Examples
 
 ### MS17-010 - Eternalblue
 
@@ -141,7 +141,7 @@ Administrator  OFFSEC   Welkom1234
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Metasploit.com](https://www.metasploit.com/)
 * [Offensive-security.com Meterpreter](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)

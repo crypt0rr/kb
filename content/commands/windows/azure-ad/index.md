@@ -15,13 +15,13 @@ Please check [Roadrecon]({{< ref "roadrecon" >}}), [MFASweep]({{< ref "mfasweep"
 
 {{%attachments title="Presentation from Antonio Formato of Cyber Saiyan" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 
-### Installation
+## Installation
 
 ```powershell
 Install-Module AzureAD
 ```
 
-### Usage
+## Usage
 
 First authenticate
 
@@ -30,7 +30,7 @@ $AzureAdCred = Get-Credential
 Connect-AzureAD -Credential $AzureAdCred
 ```
 
-### Examples
+## Examples
 
 #### Get-AzureADUser
 
@@ -55,7 +55,7 @@ ObjectId                             DisplayName                        Descript
 00ad7bf9-f06d-[REDACTED]             Testgroup 2                        Just another test group
 ```
 
-### URL list
+## URL List
 
 * [posts.specterops.io](https://posts.specterops.io/requesting-azure-ad-request-tokens-on-azure-ad-joined-machines-for-browser-sso-2b0409caad30?gi=7d52b34697d0)
 * [DirkJanM.io PrivEsc](https://dirkjanm.io/azure-ad-privilege-escalation-application-admin/)

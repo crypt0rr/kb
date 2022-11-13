@@ -13,15 +13,15 @@ weight : 0
 
 A continuous file synchronization program.
 
-### Installation
+## Installation
 
 Download latest release from [Syncthing.net](https://syncthing.net/downloads/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Syncthing.net](https://syncthing.net/)
 * [GitHub.com - Syncthing](https://github.com/syncthing/)

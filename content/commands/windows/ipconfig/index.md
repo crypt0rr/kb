@@ -11,13 +11,13 @@ weight : 0
 
 ## Ipconfig
 
-### Usage
+## Usage
 
 ```cmd
 ipconfig [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 USAGE:
@@ -73,7 +73,7 @@ Examples:
                                          compartments
 ```
 
-### Examples
+## Examples
 
 #### Show current network configuration (basic)
 
@@ -134,6 +134,6 @@ ipconfig /renew
 ipconfig /flushdns
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig)

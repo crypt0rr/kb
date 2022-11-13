@@ -13,13 +13,13 @@ weight : 0
 
 Gather and display CPU usage statistics (divided into time spent in user mode and supervisor mode), timer and interrupt wakeup frequency (total and, for near-idle workloads, those that resulted in package C-state exits), and on supported platforms, interrupt frequencies (categorized by CPU number), package C-state statistics (an indication of the time the core complex + integrated graphics, if any, were in low-power idle states), as well as the average execution frequency for each CPU when not idle.
 
-### Usage
+## Usage
 
 ```plain
 powermetrics [-i sample_interval] [-r order] [-t wakeup_cost]
 ```
 
-### Flags
+## Flags
 
 ```plain
 
@@ -115,7 +115,7 @@ and the following sampler groups are supported by --samplers:
     default       tasks,battery,network,disk,interrupts,cpu_power,gpu_power,gpu_agpm_stats,smc,gpu_dcc_stats
 ```
 
-### Examples
+## Examples
 
 #### Monitor CPU temperature
 
@@ -137,6 +137,6 @@ sudo powermetrics -i 2000 --samplers smc | grep 'GPU die temperature'
 sudo powermetrics -i 2000 --samplers smc | grep 'Fan:'
 ```
 
-### URL list
+## URL List
 
 * [Unix.com - Powermetrics](https://www.unix.com/man-page/osx/1/powermetrics/)

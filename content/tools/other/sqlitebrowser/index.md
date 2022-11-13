@@ -13,7 +13,7 @@ weight : 0
 
 DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
 
-### Installation
+## Installation
 
 #### APT
 
@@ -27,13 +27,13 @@ sudo apt install sqlitebrowser
 sudo snap install sqlitebrowser
 ```
 
-### Usage
+## Usage
 
 ```plain
 sqlitebrowser [options] [db]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Possible command line arguments:
@@ -47,11 +47,11 @@ Possible command line arguments:
   [file]        Open this SQLite database
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Sqlitebrowser.org](https://sqlitebrowser.org/)
 * [Github.com - sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser)

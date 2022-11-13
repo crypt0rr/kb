@@ -13,7 +13,7 @@ weight: 0
 
 The world's fastest framework for building websites.
 
-### Installation
+## Installation
 
 Install from SnapCraft
 
@@ -23,7 +23,7 @@ sudo snap install hugo --channel=extended
 
 Or download newest release from [Github.com](https://github.com/gohugoio/hugo/releases)
 
-### Usage
+## Usage
 
 ```plain
 hugo [flags]
@@ -82,7 +82,7 @@ url = "https://gohugo.io/"
 weight = 20
 ```
 
-### Flags
+## Flags
 
 ```plain
 hugo is the main command, used to build your Hugo site.
@@ -156,7 +156,7 @@ Additional help topics:
 Use "hugo [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
 #### File attachments
 
@@ -211,7 +211,7 @@ hugo server --port 1337 --bind 0.0.0.0
     X-Referrer-Policy = 'no-referrer'
 ```
 
-### URL list
+## URL List
 
 - [GoHugo.io](https://gohugo.io/)
 - [Github.com - Hugo](https://github.com/gohugoio/hugo/)

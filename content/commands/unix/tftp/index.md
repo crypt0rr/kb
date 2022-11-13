@@ -11,7 +11,7 @@ weight : 0
 
 ## TFTP
 
-### Examples
+## Examples
 
 #### Test for TFTP
 
@@ -24,6 +24,6 @@ tftp> get nonexistingfile.txt
 Error code 4: Transfer mode not supported.
 ```
 
-### URL list
+## URL List
 
 * [Scan.shadowserver.org](https://scan.shadowserver.org/tftp/)

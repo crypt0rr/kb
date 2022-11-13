@@ -11,13 +11,13 @@ weight : 0
 
 ## Lsusb
 
-### Usage
+## Usage
 
 ```plain
 lsusb [options]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: lsusb [options]...
@@ -40,7 +40,7 @@ List USB devices
       Show usage and help
 ```
 
-### Examples
+## Examples
 
 #### List connected USB devices
 
@@ -99,6 +99,6 @@ Device Descriptor:
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/lsusb)

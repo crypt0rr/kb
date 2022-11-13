@@ -13,11 +13,11 @@ weight : 0
 
 OnyX is a multifunction utility that you can use to verify the structure of the system files; run miscellaneous maintenance and cleaning tasks; configure parameters in the Finder, Dock, Safari, and some Apple applications; delete caches; remove certain problematic folders and files; rebuild various databases and indexes; and more.
 
-### Installation
+## Installation
 
 Download newest release from [titanium-software.fr](https://www.titanium-software.fr/en/onyx.html)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
@@ -25,6 +25,6 @@ Download newest release from [titanium-software.fr](https://www.titanium-softwar
 ![Example](images/example-4.png)
 ![Example](images/example-5.png)
 
-### URL list
+## URL List
 
 * [Titanium-software.fr - OnyX](https://www.titanium-software.fr/en/onyx.html)

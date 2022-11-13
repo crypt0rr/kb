@@ -13,19 +13,19 @@ tags : ['Networking', 'CIDR', 'Netmask']
 
 This program converts IPv4 CIDR blocks into their constituent IP addresses.
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/crypt0rr/cidr2ip@latest
 ```
 
-### Usage
+## Usage
 
 ```plain
 cidr2ip [-f <filename>] <list of cidrs> 
 ```
 
-### Examples
+## Examples
 
 #### Command line arguments
 
@@ -59,6 +59,6 @@ $ cidr2ip -f cidrs.txt
 192.168.0.102
 ```
 
-### URL list
+## URL List
 
 * [Github.com - cidr2ip](https://github.com/crypt0rr/cidr2ip)

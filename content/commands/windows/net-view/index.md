@@ -11,13 +11,13 @@ weight : 0
 
 ## net view
 
-### Usage
+## Usage
 
 ```plain
 net view [options]
 ```
 
-### Examples
+## Examples
 
 #### List all shares including hidden
 
@@ -31,6 +31,6 @@ net view \\<DNS-or-IP> /All
 net view /DOMAIN:domainname
 ```
 
-### URL list
+## URL List
 
 * [ss64.com](https://ss64.com/nt/net-view.html)

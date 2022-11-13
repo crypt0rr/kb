@@ -26,13 +26,13 @@ However, to determine if the server-side protection of standard LDAP is enforced
 
 **TL;DR - LDAPS can be checked unauthenticated, but checking LDAP requires authentication.**
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/zyn3rgy/LdapRelayScan.git
 ```
 
-### Usage
+## Usage
 
 The tool has two methods, LDAPS (the default), and BOTH. LDAPS only requires a domain controller IP address, because this check can be preformed unauthenticated. The BOTH method will require a username and password or NT hash. The Active Directory domain is not required, it will be determine via anonymous LDAP bind.
 
@@ -43,13 +43,13 @@ python3.9 LdapRelayScan.py -method BOTH -dc-ip 10.0.0.20 -u domainuser1 -p badpa
 python3.9 LdapRelayScan.py -method BOTH -dc-ip 10.0.0.20 -u domainuser1 -nthash e6ee750a1feb2c7ee50d46819a6e4d25
 ```
 
-### Flags
+## Flags
 
 ```plain
 [-h] [-method method] -dc-ip DC_IP [-u username] [-p password] [-nthash nthash]
 ```
 
-### Examples
+## Examples
 
 #### Checking LDAPS Channel Binding
 
@@ -100,6 +100,6 @@ Password:
       [+] (LDAPS) CHANNEL BINDING NOT REQUIRED! PARTY TIME!
 ```
 
-### URL list
+## URL List
 
 * [Github.com - LdapRelayScan](https://github.com/zyn3rgy/LdapRelayScan)

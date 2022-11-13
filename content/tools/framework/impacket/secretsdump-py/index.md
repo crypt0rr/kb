@@ -13,11 +13,11 @@ weight : 0
 
 Performs various techniques to dump secrets from the remote machine without executing any agent there.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-security SECURITY] [-sam SAM] [-ntds NTDS] [-resumefile RESUMEFILE] [-outputfile OUTPUTFILE] [-use-vss] [-rodcNo RODCNO]
@@ -26,7 +26,7 @@ secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-securit
                       target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
@@ -290,6 +290,6 @@ Example `NTDS.dit` and `SYSTEM` files zipped below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

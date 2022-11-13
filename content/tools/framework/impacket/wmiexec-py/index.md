@@ -13,11 +13,11 @@ weight : 0
 
 Executes a semi-interactive shell using Windows Management Instrumentation.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH]
@@ -25,7 +25,7 @@ wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-cod
                   target [command ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -60,7 +60,7 @@ authentication:
   -keytab KEYTAB        Read keys for SPN from keytab file
 ```
 
-### Examples
+## Examples
 
 #### Enter as the user, not SYSTEM
 
@@ -124,6 +124,6 @@ C:\>get 20201105105903_BloodHound.zip
 [*] Downloading C:\\20201105105903_BloodHound.zip
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

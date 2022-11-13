@@ -11,13 +11,13 @@ weight : 0
 
 ## Xargs
 
-### Usage
+## Usage
 
 ```plain
 xargs [OPTION]... COMMAND [INITIAL-ARGS]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Run COMMAND with arguments INITIAL-ARGS and more arguments read from input.
@@ -68,7 +68,7 @@ https://savannah.gnu.org/bugs/?group=findutils or, if
 you have no web access, by sending email to <bug-findutils@gnu.org>.
 ```
 
-### Examples
+## Examples
 
 #### Find files and copy them to folder
 
@@ -76,6 +76,6 @@ you have no web access, by sending email to <bug-findutils@gnu.org>.
 find . -name "*.txt" | xargs -I{} cp -u {} ~/Desktop/temp
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/xargs)

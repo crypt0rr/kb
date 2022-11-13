@@ -18,19 +18,19 @@ Where to get your Docker images:
 * [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
 * [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install docker.io
 ```
 
-### Usage
+## Usage
 
 ```plain
 docker [OPTIONS] COMMAND
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -111,7 +111,7 @@ Run 'docker COMMAND --help' for more information on a command.
 To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
 ```
 
-### Examples
+## Examples
 
 #### Installing Vaultwarden
 
@@ -172,7 +172,7 @@ sudo docker stop <name>
 sudo docker rm <name>
 ```
 
-### URL list
+## URL List
 
 * [Docker.com](https://www.docker.com/)
 * [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)

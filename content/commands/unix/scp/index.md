@@ -11,13 +11,13 @@ weight : 0
 
 ## SCP / Secure copy (remote file copy program)
 
-### Usage
+## Usage
 
 ```plain
 scp [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
@@ -25,7 +25,7 @@ usage: scp [-346BCpqrTv] [-c cipher] [-F ssh_config] [-i identity_file]
             [-S program] source ... target
 ```
 
-### Examples
+## Examples
 
 #### Transfer file to target (SSH)
 
@@ -63,6 +63,6 @@ scp <user>@<ip-address>:/directory/* .
 scp -r <user>@<ip-address>:/directory local_directory
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/scp)

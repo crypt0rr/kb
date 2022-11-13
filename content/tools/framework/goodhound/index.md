@@ -15,7 +15,7 @@ Attackers think in graphs, defenders think in actions, management think in chart
 
 GoodHound operationalises Bloodhound by determining the busiest paths to high value targets and creating actionable output to prioritise remediation of attack paths.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/idnahacks/GoodHound.git
@@ -23,7 +23,7 @@ cd GoodHound
 pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 For a very quick start with most of the default options, make sure you have your neo4j server running and loaded with SharpHound data and run:
 
@@ -37,7 +37,7 @@ goodhound.py [-h] [-u USERNAME] [-p PASSWORD] [-s SERVER] [-o {stdout,csv,md,mar
                 [-sch SCHEMA] [--db-skip] [-sqlpath SQL_PATH]
 ```
 
-### Flags
+## Flags
 
 ```plain
 BloodHound Wrapper to determine the Busiest Attack Paths to High Value targets.
@@ -92,7 +92,7 @@ SQLite Database:
 Attackers think in graphs, Defenders think in actions, Management think in charts.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 goodhound.py -p neo4jpassword -o csv -f out
@@ -122,6 +122,6 @@ $ ll out*
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 
-### URL list
+## URL List
 
 * [Github.com - GoodHound](https://github.com/idnahacks/GoodHound)

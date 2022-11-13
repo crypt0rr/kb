@@ -13,19 +13,19 @@ tags : ['Other', 'SNMP']
 
 Retrieve a subtree of management values using SNMP GETNEXT requests
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install snmpwalk
 ```
 
-### Usage
+## Usage
 
 ```plain
 snmpwalk [OPTIONS] AGENT [OID]
 ```
 
-### Flags
+## Flags
 
 ```plain
   Web:      http://www.net-snmp.org/
@@ -118,7 +118,7 @@ General options
      E {OID}:  End the walk at the specified OID
 ```
 
-### Examples
+## Examples
 
 #### Gather full MIB tree
 
@@ -154,6 +154,6 @@ iso.3.6.1.4.1.77.1.2.25.1.1.16.83.85.80.80.79.82.84.95.51.56.56.57.52.53.97.48 =
 * Open TCP Ports - `1.3.6.1.2.1.6.13.1.3`
 * Installed Software - `1.3.6.1.2.1.25.6.3.1.2`
 
-### URL list
+## URL List
 
 * [Kali.org - snmpwalk](https://www.kali.org/tools/net-snmp/#snmpwalk)

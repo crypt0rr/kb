@@ -16,11 +16,11 @@ weight : 0
 * Solve noise problems such as those caused by iMac HDD replacement
 * Works on all Macs, both Intel & Apple Silicon
 
-### Installation
+## Installation
 
 Download newest release from [crystalidea.com](https://crystalidea.com/macs-fan-control/download)
 
-### Usage
+## Usage
 
 Fan control and presets
 Fan control for your fan(s) on your Apple computer can be either
@@ -30,7 +30,7 @@ Fan control for your fan(s) on your Apple computer can be either
 
 For convenience the app features [fan presets](https://crystalidea.com/macs-fan-control/fan-presets) that let you quickly put your fan(s) to either **Auto** or some **Custom** mode depending on your activity. You can read more about fan presets [here](https://crystalidea.com/macs-fan-control/fan-presets).
 
-### Examples
+## Examples
 
 #### Simple and efficient user interface
 
@@ -50,6 +50,6 @@ Options to display fan speed and sensor temperature (displayed in the tray icon 
 
 ![Example](images/carousel3.png)
 
-### URL list
+## URL List
 
 * [Crystalidea.com - Macs Fan Control](https://crystalidea.com/macs-fan-control)

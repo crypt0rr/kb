@@ -15,11 +15,11 @@ Deeper is a personalization utility for macOS that you can use to enable and dis
 
 Deeper is a reliable application which provides a clean interface to many tasks that would otherwise require complex commands to be typed using a command-line interface.
 
-### Installation
+## Installation
 
 Download newest release from [titanium-software.fr](https://www.titanium-software.fr/en/deeper.html)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -29,6 +29,6 @@ Download newest release from [titanium-software.fr](https://www.titanium-softwar
 ![Example](images/example6.png)
 ![Example](images/example7.png)
 
-### URL list
+## URL List
 
 * [titanium-software.fr - Deeper](https://www.titanium-software.fr/en/deeper.html)

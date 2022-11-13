@@ -11,13 +11,13 @@ weight : 0
 
 ## Apt
 
-### Usage
+## Usage
 
 ```plain
 apt [options] command
 ```
 
-### Flags
+## Flags
 
 ```plain
 apt is a commandline package manager and provides commands for
@@ -48,7 +48,7 @@ Security details are available in apt-secure(8).
                                         This APT has Super Cow Powers.
 ```
 
-### Examples
+## Examples
 
 #### Update local repositories with online mirrors
 
@@ -114,7 +114,7 @@ sudo apt purge <package>
 sudo apt --only-upgrade install <package>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/apt-get)
 * [Ubuntu.com](https://help.ubuntu.com/lts/serverguide/apt.html)

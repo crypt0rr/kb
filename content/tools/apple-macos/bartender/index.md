@@ -13,11 +13,11 @@ weight : 0
 
 Bartender is an award-winning app for macOS that superpowers your menu bar, giving you total control over your menu bar items, what's displayed, and when, with menu bar items only showing when you need them. Bartender improves your workflow with quick reveal, search, custom hotkeys and triggers, and lots more.
 
-### Installation
+## Installation
 
 Download newest release from [MacBartender.com](https://www.macbartender.com/)
 
-### Examples
+## Examples
 
 #### Quick Reveal
 
@@ -54,6 +54,6 @@ With the power of the new Triggers in Show for Updates, you now have options whe
 
 ![Example](images/sfu2x.jpeg)
 
-### URL list
+## URL List
 
 * [Macbartender.com](https://www.macbartender.com/)

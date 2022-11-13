@@ -35,7 +35,7 @@ choose the best DNS forwarder for your network, `dnseval` lets you compare
 different DNS servers from performance (latency) and reliability (loss) point
 of view.
 
-### Installation
+## Installation
 
 #### Source Code
 
@@ -175,6 +175,6 @@ server                   avg(ms)     min(ms)     max(ms)     stddev(ms)  lost(%)
 2620:fe::fe              21.177      6.723       80.046      30.062      %0       300        QR -- -- RD RA AD --   NOERROR
 ```
 
-### URL list
+## URL List
 
 * [Github.com - dnsdiag](https://github.com/farrokhi/dnsdiag)

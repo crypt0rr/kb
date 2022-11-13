@@ -20,19 +20,19 @@ This Python script can be used to bypass IP source restrictions using HTTP heade
 * JSON export with --json outputfile.json.
 * Autodetecting most successfull bypasses.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/p0dalirius/ipsourcebypass.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 ipsourcebypass.py [-h] [-v] -i IP [-t THREADS] [-x PROXY] [-k] [-L] [-j JSONFILE] url
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -52,12 +52,12 @@ optional arguments:
                         Save results to specified JSON file.
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 
-### URL list
+## URL List
 
 * [Github.com - ipsourcebypass](https://github.com/p0dalirius/ipsourcebypass)

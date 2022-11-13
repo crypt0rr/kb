@@ -11,13 +11,13 @@ weight : 0
 
 ## Base64
 
-### Usage
+## Usage
 
 ```plain
 base64 [OPTION]... [FILE]
 ```
 
-### Flags
+## Flags
 
 ```plain
 With no FILE, or when FILE is -, read standard input.
@@ -41,7 +41,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/base64>
 or available locally via: info '(coreutils) base64 invocation'
 ```
 
-### Examples
+## Examples
 
 #### Encode data
 
@@ -57,6 +57,6 @@ echo 'dGVzdC1jb250ZW50Cg==' | base64 -d
 test-content
 ```
 
-### URL list
+## URL List
 
 * [Gnu.org](https://www.gnu.org/software/coreutils/base64)

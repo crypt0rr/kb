@@ -11,11 +11,11 @@ weight : 0
 
 ## hcxpcapngtool
 
-### Installation
+## Installation
 
 Install the [hcxtools]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 hcxpcapngtool <options>
@@ -26,7 +26,7 @@ hcxpcapngtool <options> *.cap
 hcxpcapngtool <options> *.*
 ```
 
-### Flags
+## Flags
 
 ```plain
 hcxpcapngtool 6.0.2 (C) 2020 ZeroBeat
@@ -101,7 +101,7 @@ Do not use hcxpcapngtool in combination with third party cap/pcap/pcapng cleanin
 It is much better to run gzip to compress the files. Wireshark, tshark and hcxpcapngtool will understand this.
 ```
 
-### Examples
+## Examples
 
 This example uses the 'dumpfile.pcapng' that is captured with [hcxdumptool]({{< ref "hcxdumptool" >}}).
 

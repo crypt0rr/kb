@@ -27,7 +27,7 @@ A free utility designed to copy files faster and more secure. It can verify copi
 | Manage favorite folders                   |          | check        |
 | Export reports in HTML and CSV formats    |          | check        |
 
-### Installation
+## Installation
 
 #### Windows
 
@@ -37,7 +37,7 @@ Download newest version from [codesector.com](https://www.codesector.com/teracop
 
 Download newest version from [codesector.com](https://www.codesector.com/teracopy-for-mac)
 
-### Examples
+## Examples
 
 #### Be in control
 
@@ -67,6 +67,6 @@ TeraCopy can keep history of recently used directories, as well as show folders 
 
 ![Example](images/example4.png)
 
-### URL list
+## URL List
 
 * [Codesector.com - TeraCopy](https://www.codesector.com/teracopy)

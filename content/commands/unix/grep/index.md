@@ -11,13 +11,13 @@ weight : 0
 
 ## Grep
 
-### Usage
+## Usage
 
 ```plain
 grep [OPTION]... PATTERNS [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Search for PATTERNS in each FILE.
@@ -93,7 +93,7 @@ GNU grep home page: <http://www.gnu.org/software/grep/>
 General help using GNU software: <https://www.gnu.org/gethelp/>
 ```
 
-### Examples
+## Examples
 
 #### Compare content of files to find matches
 
@@ -177,6 +177,6 @@ grep -E "^.{3}$" file.txt
 grep -v '\$' file.txt
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/grep)

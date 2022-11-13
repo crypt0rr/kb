@@ -11,7 +11,7 @@ weight : 0
 
 ## NTP - Network Time Protocol
 
-### Examples
+## Examples
 
 #### NTP-mode 6
 
@@ -35,6 +35,6 @@ sudo ntpd -gq
 sudo service ntp start
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/ntpd)

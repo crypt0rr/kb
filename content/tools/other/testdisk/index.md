@@ -13,19 +13,19 @@ tags : ['Other','Harddisk']
 
 Checks the partition and boot sectors of your disks. It is very useful in recovering lost partitions.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install testdisk
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo testdisk [OPTIONS] <device>
 ```
 
-### Flags
+## Flags
 
 ```plain
 TestDisk 7.1, Data Recovery Utility, July 2019
@@ -56,7 +56,7 @@ It works with :
 - Sun ZFS
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ sudo testdisk
@@ -82,6 +82,6 @@ Select a media (use Arrow keys, then press Enter):
  [Previous]  [  Next  ] >[Proceed ]  [  Quit  ]
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Testdisk](https://github.com/cgsecurity/testdisk)

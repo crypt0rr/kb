@@ -11,13 +11,13 @@ weight : 0
 
 ## Dig
 
-### Usage
+## Usage
 
 ```plain
 dig [OPTIONS] <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:  dig [@global-server] [domain] [q-type] [q-class] {q-opt}
@@ -27,7 +27,7 @@ Usage:  dig [@global-server] [domain] [q-type] [q-class] {q-opt}
 Use "dig -h" (or "dig -h | more") for complete list of options
 ```
 
-### Examples
+## Examples
 
 #### Generic information
 
@@ -144,6 +144,6 @@ $ dig axfr @1.1.1.1 offsec.nl
 ; Transfer failed.
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/dig)

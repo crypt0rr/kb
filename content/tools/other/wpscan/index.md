@@ -13,7 +13,7 @@ weight : 0
 
 WordPress Vulnerability Scanner.
 
-### Installation
+## Installation
 
 #### Requirements
 
@@ -31,13 +31,13 @@ sudo gem install wpscan
 sudo apt-get install ruby`ruby -e 'puts RUBY_VERSION[/\d+\.\d+/]'`-dev
 ```
 
-### Usage
+## Usage
 
 ```plain
 wpscan [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: wpscan [options]
@@ -120,7 +120,7 @@ Usage: wpscan [options]
         --stealthy                                Alias for --random-user-agent --detection-mode passive --plugins-version-detection passive
 ```
 
-### Examples
+## Examples
 
 #### Normal scan
 
@@ -168,7 +168,7 @@ $ wpscan --url 10.10.10.10/wordpress/ --passwords /usr/share/wordlists/rockyou.t
 
 <https://the-bilal-rizwan.medium.com/wordpress-xmlrpc-php-common-vulnerabilites-how-to-exploit-them-d8d3c8600b32>
 
-### URL list
+## URL List
 
 * [WPscan.org](https://wpscan.org/)
 * [GitHub.com - wpscan](https://github.com/wpscanteam/wpscan)

@@ -13,7 +13,7 @@ tags : ['OSINT', 'DNS', 'WhoIS']
 
 In-depth Attack Surface Mapping and Asset Discovery.
 
-### Installation
+## Installation
 
 Snapcraft
 
@@ -27,13 +27,13 @@ Docker
 docker build -t amass https://github.com/OWASP/Amass.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 amass intel|enum|viz|track|db [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: amass intel|enum|viz|track|db [options]
@@ -185,7 +185,7 @@ ASN: 15133 - EDGECAST - MCI Communications Services, Inc. d/b/a Verizon Business
       93.184.216.0/24         2    Subdomain Name(s)
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Amass](https://github.com/OWASP/Amass)
 * [Medium.com - Guide to amass how to use amass more effectively](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)

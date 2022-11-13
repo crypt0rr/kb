@@ -13,19 +13,19 @@ tags : ['Other', 'Git']
 
 Text-mode interface for Git.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install tig
 ```
 
-### Usage
+## Usage
 
 ```plain
 tig [options] [revs] [--] [paths]
 ```
 
-### Flags
+## Flags
 
 ```plain
 tig 2.4.1
@@ -46,10 +46,10 @@ Options:
   -h, --help      Show help message and exit
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - tig](https://github.com/jonas/tig)

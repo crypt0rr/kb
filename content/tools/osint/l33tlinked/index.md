@@ -15,7 +15,7 @@ Modified version of CrossLinked.
 
 Welcome to my modification of CrossLinked (Can be found [here](https://github.com/m8r0wn/CrossLinked)). Crosslink/L33tLinked is a LinkedIn scraping tool that utilizes both Google and Bing to grab LinkedIn profiles. Whats the use for this? Well, collecting all known employees in a comapny can be used on a red-team op for searching for employees that are involved in Data Breaches. It's simple enough to take the info you'll recieve here and run the info through the Dehashed/Have I Been Pwned API to determine if the user was affected by a data breach!
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Sq00ky/L33tLinked.git
@@ -23,13 +23,13 @@ cd L33tLinked
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 ./leetlinked.py [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -47,7 +47,7 @@ optional arguments:
                         Generates emails based on various formats, 1=jsmith 2=johnsmith 3=johns 4=smithj 5=john.smith 6=smith.john 7=smith
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 leetlinked.py example -e example.lcom -f 5  
@@ -72,6 +72,6 @@ Scrape Complete! Results saved to /L33tLinked/exaScraped.xls
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - LeetLinked](https://github.com/Sq00ky/LeetLinked)

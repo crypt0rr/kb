@@ -11,13 +11,13 @@ weight : 0
 
 ## Biosdecode
 
-### Usage
+## Usage
 
 ```plain
 Usage: biosdecode [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options are:
@@ -27,7 +27,7 @@ Options are:
  -V, --version          Display the version and exit
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ sudo biosdecode
@@ -67,6 +67,6 @@ PCI Interrupt Routing 1.0 present.
     Device: 3e:00, slot 62
 ```
 
-### URL list
+## URL List
 
 * [Google](https://www.google.com)

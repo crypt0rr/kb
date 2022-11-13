@@ -11,14 +11,14 @@ tags : ['Unix', 'DNS', 'Reverse DNS', 'Nameserver', 'DNS Zone Transfer']
 
 ## Host
 
-### Usage
+## Usage
 
 ```plain
 host [-aCdilrTvVw] [-c class] [-N ndots] [-t type] [-W time]
             [-R number] [-m flag] hostname [server]
 ```
 
-### Flags
+## Flags
 
 ```plain
 -a is equivalent to -v -t ANY
@@ -43,7 +43,7 @@ host [-aCdilrTvVw] [-c class] [-N ndots] [-t type] [-W time]
 -6 use IPv6 query transport only
 ```
 
-### Examples
+## Examples
 
 #### Get simple record overview
 
@@ -114,6 +114,6 @@ intranet.megacorpone.com has address 51.222.169.211
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/host)

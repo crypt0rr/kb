@@ -13,19 +13,19 @@ weight : 0
 
 Lets you background programs and run them when closing terminal.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install screen
 ```
 
-### Usage
+## Usage
 
 ```plain
 screen [-opts] [cmd [args]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Use: screen [-opts] [cmd [args]]
@@ -68,7 +68,7 @@ Options:
 -X            Execute <cmd> as a screen command in the specified session.
 ```
 
-### Examples
+## Examples
 
 #### Start screen session
 
@@ -124,6 +124,6 @@ screen -S <name-or-pid> -X kill
 screen -S <name-or-pid> -X quit
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - screen](https://linux.die.net/man/1/screen)

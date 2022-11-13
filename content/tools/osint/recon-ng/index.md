@@ -13,7 +13,7 @@ weight : 0
 
 A full-featured reconnaissance framework designed with the goal of providing a powerful environment to conduct open source web-based reconnaissance quickly and thoroughly
 
-### Installation
+## Installation
 
 #### APT
 
@@ -29,13 +29,13 @@ cd recon-ng
 python3 -m pip install -r REQUIREMENTS
 ```
 
-### Usage (recon-ng)
+## Usage (recon-ng)
 
 ```plain
 recon-ng [-h] [-w workspace] [-r filename] [--no-version] [--no-analytics] [--no-marketplace] [--stealth] [--accessible] [--version]
 ```
 
-### Flags (recon-ng)
+## Flags (recon-ng)
 
 ```plain
 recon-ng - Tim Tomes (@lanmaster53)
@@ -52,7 +52,7 @@ optional arguments:
   --version         displays the current version
 ```
 
-### Examples (recon-ng)
+## Examples (recon-ng)
 
 #### Search modules
 
@@ -140,13 +140,13 @@ OFFSEC.NL
 
 ## recon-cli
 
-### Usage (recon-cli)
+## Usage (recon-cli)
 
 ```plain
 recon-cli [-h] [-w workspace] [-C command] [-c command] [-G] [-g name=value] [-M] [-m module] [-O] [-o name=value] [-x] [--no-version] [--no-analytics] [--no-marketplace] [--stealth] [--version] [--analytics]
 ```
 
-### Flags (recon-cli)
+## Flags (recon-cli)
 
 ```plain
 recon-cli - Tim Tomes (@lanmaster53)
@@ -173,13 +173,13 @@ optional arguments:
 
 ## recon-web
 
-### Usage (recon-web)
+## Usage (recon-web)
 
 ```plain
 recon-web [-h] [--host HOST] [--port PORT]
 ```
 
-### Flags (recon-web)
+## Flags (recon-web)
 
 ```plain
   -h, --help   show this help message and exit
@@ -187,7 +187,7 @@ recon-web [-h] [--host HOST] [--port PORT]
   --port PORT  port to bind the web server to
 ```
 
-### URL list
+## URL List
 
 * [Github.com - recon-ng](https://github.com/lanmaster53/recon-ng)
 * [Github.com - Wiki](https://github.com/lanmaster53/recon-ng/wiki)

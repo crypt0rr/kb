@@ -13,13 +13,13 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install git
 ```
 
-### Usage
+## Usage
 
 ```plain
 git [--version] [--help] [-C <path>] [-c <name>=<value>]
@@ -29,7 +29,7 @@ git [--version] [--help] [-C <path>] [-c <name>=<value>]
            <command> [<args>]
 ```
 
-### Flags
+## Flags
 
 ```plain
 These are common Git commands used in various situations:
@@ -70,7 +70,7 @@ concept guides. See 'git help <command>' or 'git help <concept>'
 to read about a specific subcommand or concept.
 ```
 
-### Examples
+## Examples
 
 #### Initial setup
 
@@ -149,6 +149,6 @@ $ git shortlog -s -n
      5  anonymous
 ```
 
-### URL list
+## URL List
 
 * [Meziantou.net - Hide your email address on Github](https://www.meziantou.net/2018/04/23/hide-your-email-address-on-github)

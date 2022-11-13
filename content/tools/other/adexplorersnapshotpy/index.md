@@ -27,7 +27,7 @@ You can use the `.exe` below or try to run it directly from Command Prompt.
 
 The ingestor only supports offline information collection from the snapshot file and won't interact with systems on the network. That means features like session and localadmin collection are not available. GPO/OU collection is missing. The ingestor processes all data it possibly can from the snapshot (including ACLs). You will only have the data available of the LDAP/DC that you ran the snapshot against.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/c3c/ADExplorerSnapshot.py.git
@@ -35,13 +35,13 @@ cd ADExplorerSnapshot.py
 python3 -m pip install --user .
 ```
 
-### Usage
+## Usage
 
 ```plain
 ADExplorerSnapshot.py [-h] [-o OUTPUT] [-m {BloodHound,Objects}] snapshot
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -72,7 +72,7 @@ The AD Explorer snapshot parser is implemented as its own module, which could al
 
 The format in which snapshots are stored by AD Explorer is proprietary and led to a fun reverse engineering journey. A 010 editor template is included in this repository, which I used for iteratively mapping out the contents of the snapshot into structs.
 
-### Examples
+## Examples
 
 ![Example](images/adexplorer.png)
 
@@ -90,6 +90,6 @@ $ python3 ADExplorerSnapshot.py snapshot.dat
 [+] Output written to DC01.offsec.nl_1640939735_*.json files
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ADExplorerSnapshot.py](https://github.com/c3c/ADExplorerSnapshot.py)

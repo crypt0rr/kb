@@ -17,7 +17,7 @@ cascade:
 
 Is a collection of Python classes for working with network protocols.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/SecureAuthCorp/impacket.git
@@ -27,7 +27,7 @@ git clone https://github.com/SecureAuthCorp/impacket.git
 sudo python3 -m pip install .
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - Impacket](https://github.com/SecureAuthCorp/impacket/)
 * [Hackingarticles.in - Beginners guide to impacket toolkit](https://www.hackingarticles.in/beginners-guide-to-impacket-tool-kit-part-1/)

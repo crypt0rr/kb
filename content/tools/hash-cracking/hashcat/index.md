@@ -13,7 +13,7 @@ weight : 0
 
 World's fastest and most advanced password recovery utility.
 
-### Installation
+## Installation
 
 For automation of hash-cracking process use [hash-cracker]({{< ref "hash-cracker" >}})
 
@@ -39,7 +39,7 @@ For devices running a NVIDIA card with CUDA support.
 sudo apt install nvidia-cuda-toolkit
 ```
 
-### Usage
+## Usage
 
 ```plain
 hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
@@ -58,7 +58,7 @@ hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
 ?b = 0x00 - 0xff
 ```
 
-### Flags
+## Flags
 
 ```plain
 hashcat (v6.0.0) starting...
@@ -590,7 +590,7 @@ If you still have no idea what just happened, try the following pages:
 
 Please check [hash-cracker - rules](https://github.com/crypt0rr/hash-cracker/tree/master/scripts/rules)
 
-### Examples
+## Examples
 
 #### Start hashcat with session
 
@@ -721,7 +721,7 @@ $ head output.txt
 * [Github.com - Wikiraider](https://github.com/NorthwaveSecurity/wikiraider)
 * [En.wikipedia.org - RockYou](https://en.wikipedia.org/wiki/RockYou#Data_breach)
 
-### URL list
+## URL List
 
 * [Hashcat.net](https://hashcat.net/hashcat/)
 * [Hashcat.net Example Hashlist](https://hashcat.net/wiki/doku.php?id=example_hashes)

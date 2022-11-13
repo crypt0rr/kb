@@ -11,13 +11,13 @@ weight : 0
 
 ## Ls
 
-### Usage
+## Usage
 
 ```plain
 ls [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
@@ -137,7 +137,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'
 ```
 
-### Examples
+## Examples
 
 #### Show items in current directory
 
@@ -178,6 +178,6 @@ $ ls -l Desktop | egrep -c '^-'
 10
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/ls)

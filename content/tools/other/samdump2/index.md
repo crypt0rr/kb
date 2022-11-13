@@ -15,19 +15,19 @@ Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista SAM.
 
 **NOTE** Please check [secretsdump.py - SAM dump]({{< ref "secretsdump-py" >}}) if you are getting empty hashes (`31d6cfe0d16ae931b73c59d7e0c089c0`).
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install samdump2
 ```
 
-### Usage
+## Usage
 
 ```plain
 samdump2 [OPTION]... SYSTEM_FILE SAM_FILE
 ```
 
-### Flags
+## Flags
 
 ```plain
 Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista SAM
@@ -37,7 +37,7 @@ Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista SAM
   -o file   write output to file
 ```
 
-### Examples
+## Examples
 
 ```plain
 samdump2 -o out /mnt/ntfs/WINDOWS/system32/config/SYSTEM /mnt/ntfs/WINDOWS/system32/config/sam
@@ -54,7 +54,7 @@ Admin1:1000:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 Admin2:1001:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - samdump2](https://linux.die.net/man/1/samdump2)
 * [Traviswhitney - Using samdump2](https://traviswhitney.com/2016/12/30/using-samdump2/)

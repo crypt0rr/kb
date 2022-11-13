@@ -68,11 +68,11 @@ Amphetamine is the most powerful and customizable keep-awake utility ever create
 * Auto-end session if your Mac's battery is low
 * Hot key support for starting/ending sessions, enabling disabling display sleep, and more
 
-### Installation
+## Installation
 
 Download newest release from [apps.apple.com](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
@@ -81,6 +81,6 @@ Download newest release from [apps.apple.com](https://apps.apple.com/us/app/amph
 ![Example](images/example5.png)
 ![Example](images/example6.png)
 
-### URL list
+## URL List
 
 * [Apps.apple.com - Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)

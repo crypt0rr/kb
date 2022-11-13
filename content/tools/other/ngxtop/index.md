@@ -13,7 +13,7 @@ weight : 0
 
 Ngxtop parses your nginx access log and outputs useful, top-like, metrics of your nginx server. So you can tell what is happening with your server in real-time.
 
-### Installation
+## Installation
 
 ```plain
 pip install ngxtop
@@ -21,7 +21,7 @@ pip install ngxtop
 
 Note: ngxtop is primarily developed and tested with python2 but also supports python3.
 
-### Usage
+## Usage
 
 ```plain
 ngxtop [options]
@@ -29,7 +29,7 @@ ngxtop [options] (print|top|avg|sum) <var>
 ngxtop info
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -57,7 +57,7 @@ Options:
     -p <filter-expression>, --pre-filter <filter-expression> in-filter expression to check in pre-parsing phase.
 ```
 
-### Examples
+## Examples
 
 #### Default output
 
@@ -145,6 +145,6 @@ Detailed:
 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ngxtop](https://github.com/lebinh/ngxtop)

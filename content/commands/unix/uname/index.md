@@ -11,13 +11,13 @@ weight : 0
 
 ## Uname - Print certain system information
 
-### Usage
+## Usage
 
 ```plain
 uname [OPTION]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 With no OPTION, same as -s.
@@ -40,13 +40,13 @@ Full documentation at: <https://www.gnu.org/software/coreutils/uname>
 or available locally via: info '(coreutils) uname invocation'
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ uname -a
 Linux testsystem 5.8.0-7642-generic #47~1614007149~20.04~82fb226-Ubuntu SMP Tue Feb 23 02:56:27 UTC  x86_64 x86_64 x86_64 GNU/Linux
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - uname](https://linux.die.net/man/1/uname)

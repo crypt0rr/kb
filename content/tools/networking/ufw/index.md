@@ -13,19 +13,19 @@ weight : 0
 
 This program is for managing a Linux firewall and aims to provide an easy to use interface for the user.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install ufw
 ```
 
-### Usage
+## Usage
 
 ```plain
 ufw COMMAND
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: ufw COMMAND
@@ -59,7 +59,7 @@ Application profile commands:
  app default ARG                 set default application policy
 ```
 
-### Examples
+## Examples
 
 #### Enable/disable UFW
 
@@ -137,6 +137,6 @@ Proceed with operation (y|n)? y
 Rule deleted
 ```
 
-### URL list
+## URL List
 
 * [Ubuntu.com - UFW](https://help.ubuntu.com/community/UFW)

@@ -13,20 +13,20 @@ weight : 0
 
 SSL Certification Expiration Checker.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Matty9191/ssl-cert-check
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./ssl-cert-check [ -e email address ] [-E sender email address] [ -x days ] [-q] [-a] [-b] [-h] [-i] [-n] [-N] [-v]
        { [ -s common_name ] && [ -p port] } || { [ -f cert_file ] } || { [ -c cert file ] } || { [ -d cert dir ] }
 ```
 
-### Flags
+## Flags
 
 ```plain
 -a                : Send a warning message through E-mail
@@ -50,7 +50,7 @@ git clone https://github.com/Matty9191/ssl-cert-check
 -x days           : Certificate expiration interval (eg. if cert_date < days)
 ```
 
-### Examples
+## Examples
 
 #### Check single domain
 
@@ -83,6 +83,6 @@ facebook.com:443                                Valid        Jan 30, 2021   45
 linkedin.com:443                                Valid        Apr  2, 2021  107
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ssl-cert-check](https://github.com/Matty9191/ssl-cert-check)

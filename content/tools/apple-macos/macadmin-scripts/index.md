@@ -18,13 +18,13 @@ These are currently only supported using Apple's Python on macOS. There is no su
 
 In macOS 12.3, Apple will be removing its Python 2.7 install. You'll need to provide your own Python to use these scripts. You may also need to install additional Python modules.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/munki/macadmin-scripts.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 getmacosipsws.py
@@ -34,7 +34,7 @@ python3 getmacosipsws.py
 sudo python3 installinstallmacos.py
 ```
 
-### Examples
+## Examples
 
 #### getmacosipsws.py
 
@@ -131,7 +131,7 @@ Catalina privacy protections might interfere with the operation of this tool if 
 Graham Pugh has a fork with a lot more features and bells and whistles. Check it out if your needs aren't met by this tool.
 <https://github.com/grahampugh/macadmin-scripts>
 
-### URL list
+## URL List
 
 * [Github.com - macadmin-scripts](https://github.com/munki/macadmin-scripts/)
 * [Github.com - grahampugh - macadmin-scripts (fork)](https://github.com/grahampugh/macadmin-scripts)

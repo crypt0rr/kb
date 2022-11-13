@@ -13,14 +13,14 @@ weight : 0
 
 A free tool that gives administrators the ability to enable or disable protocols, ciphers, hashes and key exchange algorithms on Windows Server 2008, 2012, 2016 and 2019.
 
-### Installation
+## Installation
 
 Download newest release from [nartac.com](https://www.nartac.com/Products/IISCrypto/Download)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Nartac.com - IISCrypto](https://www.nartac.com/Products/IISCrypto/)

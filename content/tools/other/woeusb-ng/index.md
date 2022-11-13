@@ -13,7 +13,7 @@ weight : 0
 
 A Linux program to create a Windows USB stick installer from a real Windows DVD or image.
 
-### Installation
+## Installation
 
 Requirements
 
@@ -25,12 +25,12 @@ sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common
 sudo python3 -m pip install WoeUSB-ng
 ```
 
-### Examples
+## Examples
 
 ![Example](images/Screenshot-20210818094652-420x618.png)
 ![Example](images/Screenshot-20210818094815-420x618.png)
 ![Example](images/Screenshot-20210818094843-401x599.png)
 
-### URL list
+## URL List
 
 * [Github.com - WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng)

@@ -11,7 +11,7 @@ weight : 0
 
 ## Ln - make links between files
 
-### Usage
+## Usage
 
 ```plain
 Usage: ln [OPTION]... [-T] TARGET LINK_NAME
@@ -24,7 +24,7 @@ In the 2nd form, create a link to TARGET in the current directory.
 In the 3rd and 4th forms, create links to each TARGET in DIRECTORY.
 ```
 
-### Flags
+## Flags
 
 ```plain
 Create hard links by default, symbolic links with --symbolic.
@@ -72,7 +72,7 @@ Full documentation at: <https://www.gnu.org/software/coreutils/ln>
 or available locally via: info '(coreutils) ln invocation'
 ```
 
-### Examples
+## Examples
 
 #### Make symbolic link
 
@@ -112,7 +112,7 @@ $ ll hardlink-test
 -rw-rw-r-- 2 b b 10 Mar 17 11:39 hardlink-test
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - ln](https://linux.die.net/man/1/ln)
 * [Medium.com - Hard links and Symbolic links — A comparison](https://medium.com/@307/hard-links-and-symbolic-links-a-comparison-7f2b56864cdd)

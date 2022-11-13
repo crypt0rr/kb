@@ -38,22 +38,22 @@ adPEAS consists of the following enumeration modules:
 * Computer - Enumerating Domain Controllers, CA and Exchange server, with the switch -Vulns it checks the systems for EternalBlue, BlueKeep, ZeroLogon and critical Exchange vulnerabilities
 * Bloodhound - Enumerating Active Directory with BloodHound
 
-### Installation
+## Installation
 
 Download newest `.zip` file from [Github.com](https://github.com/61106960/adPEAS/archive/refs/heads/main.zip).
 
-### Usage
+## Usage
 
 ```plain
 Import-Module .\adPEAS.ps1
 Invoke-adPEAS -Domain 'contoso.com' | Out-File output.txt
 ```
 
-### Flags
+## Flags
 
 Check the [Github repo](https://github.com/61106960/adPEAS).
 
-### Examples
+## Examples
 
 ```plain
 PS > Invoke-adPEAS -Domain 'contoso.com' | Out-File output.txt
@@ -94,6 +94,6 @@ Domain        : offsec.nl
 
 {{%attachments title="Example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - adPEAS](https://github.com/61106960/adPEAS)

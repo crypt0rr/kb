@@ -13,7 +13,7 @@ weight : 0
 
 Discover and fingerprint IKE hosts (IPsec VPN Servers).
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/royhills/ike-scan.git
@@ -28,7 +28,7 @@ make check
 sudo make install
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo ike-scan <target-ip> -M -A --id=groupnamedoesnotexist -P
@@ -40,7 +40,7 @@ To directly save the hash in crackable format.
 sudo ike-scan <target-ip> -M -A --id=groupnamedoesnotexist -P --pskcrack=hash.txt
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ sudo ike-scan 10.10.10.10 -M -A --id=CISCO-DELETE-REASON -P
@@ -63,6 +63,6 @@ IKE PSK parameters (g_xr:g_xi:cky_r:cky_i:sai_b:idir_b:ni_b:nr_b:hash_r):
 Ending ike-scan 1.9.4: 1 hosts scanned in 0.024 seconds (40.93 hosts/sec).  1 returned handshake; 0 returned notify
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - IKE-scan](https://github.com/royhills/ike-scan)

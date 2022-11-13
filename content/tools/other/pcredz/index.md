@@ -32,7 +32,7 @@ This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Ker
 
 * Log credentials in the logs/ folder. MSKerb.txt, NTLMv1.txt and NTLMv2.txt can be directly fed to hashcat.
 
-### Installation
+## Installation
 
 #### Requirements
 
@@ -53,13 +53,13 @@ python3 setup.py install
 git clone https://github.com/lgandx/PCredz.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 Pcredz [-h] [-f FNAME | -d DIR_PATH | -i INTERFACE] [-c] [-t] [-v] [-o OUTPUT_PATH]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Pcredz 2.0.2 Author: Laurent Gaffie
@@ -75,7 +75,7 @@ options:
   -o OUTPUT_PATH  output directory
 ```
 
-### Examples
+## Examples
 
 ### Live on interface
 
@@ -202,7 +202,7 @@ SQLUserName=    SQLADMIN
 SQLPassWord=    aMEWMj7J?Cz7hU?44KwD3js8KyxXddhG
 ```
 
-### URL list
+## URL List
 
 * [Github.com - PCredz](https://github.com/lgandx/PCredz)
 * [HTTPbin.org - HTTP Basic Auth testing page](http://httpbin.org/basic-auth/user/passwd)

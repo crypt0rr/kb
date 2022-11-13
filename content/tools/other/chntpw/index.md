@@ -13,7 +13,7 @@ tags: ["Other", "Windows", "Password"]
 
 Change password of a user in a Windows SAM file.
 
-### Installation
+## Installation
 
 {{%attachments title="Bootable CD image. (md5sum: f274127bf8be9a7ed48b563fd951ae9e)" fa_icon_class="far fa-file-archive" pattern="cd.*(zip)"/%}}
 {{%attachments title="Files for USB install (md5sum: a60dbb91016d93ec5f11e64650394afb)" fa_icon_class="far fa-file-archive" pattern="usb.*(zip)"/%}}
@@ -24,7 +24,7 @@ Or install from repo.
 sudo apt install chntpw
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo chntpw -i <device>/Windows/System32/Config/SAM
@@ -36,7 +36,7 @@ Or cd to folder /Windows/System32/Config
 sudo chntpw -i SAM
 ```
 
-### Flags
+## Flags
 
 ```plain
 chntpw version 1.00 140201, (c) Petter N Hagen
@@ -62,6 +62,6 @@ Source/binary freely distributable under GPL v2 license. See README for details.
 NOTE: This program is somewhat hackish! You are on your own!
 ```
 
-### URL list
+## URL List
 
 - [chntpw.com](http://www.chntpw.com/download/)

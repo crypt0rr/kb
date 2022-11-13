@@ -11,13 +11,13 @@ weight : 0
 
 ## Chsh
 
-### Usage
+## Usage
 
 ```plain
 chsh [options] [LOGIN]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -26,7 +26,7 @@ Options:
   -s, --shell SHELL             new login shell for the user account
 ```
 
-### Examples
+## Examples
 
 #### Change default shell
 
@@ -37,6 +37,6 @@ Password:
 Changing the login shell for <user>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/chsh)

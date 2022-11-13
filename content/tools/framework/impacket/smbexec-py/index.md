@@ -13,11 +13,11 @@ weight : 0
 
 PSEXEC over SMB.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 smbexec.py [-h] [-share SHARE] [-mode {SHARE,SERVER}] [-ts] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]]
@@ -25,7 +25,7 @@ smbexec.py [-h] [-share SHARE] [-mode {SHARE,SERVER}] [-ts] [-debug] [-codec COD
                   target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
@@ -63,7 +63,7 @@ authentication:
   -keytab KEYTAB        Read keys for SPN from keytab file
 ```
 
-### Examples
+## Examples
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="smbexec.mp4"/%}}
 
@@ -85,6 +85,6 @@ nt authority\system
 C:\Windows\system32>
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

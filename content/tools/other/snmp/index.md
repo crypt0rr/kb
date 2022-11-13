@@ -13,7 +13,7 @@ tags : ['Other', 'SNMP']
 
 Simple Network Management Protocol.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install snmp
@@ -31,7 +31,7 @@ snmpbulkget -v 2c -c public <ip> iso.3.6.1.2.1.1.9
 snmp-check -w <ip>
 ```
 
-### Flags
+## Flags
 
 ```plain
 snmp-check v1.9 - SNMP enumerator
@@ -52,7 +52,7 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
   -h --help        : show help menu;
 ```
 
-### Examples
+## Examples
 
 ```plain
 snmp-check 192.168.1.2 -c public
@@ -81,6 +81,6 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
 | 1.3.6.1.4.1.77.1.2.25  | User Accounts    |
 | 1.3.6.1.2.1.6.13.1.3   | TCP Local Ports  |
 
-### URL list
+## URL List
 
 * [Kali.org - snmp-check](https://tools.kali.org/information-gathering/snmp-check)

@@ -13,19 +13,19 @@ weight : 0
 
 Tool to backup DVDs.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install dvdbackup
 ```
 
-### Usage
+## Usage
 
 ```plain
 dvdbackup [OPTION]...
 ```
 
-### Flags
+## Flags
 
 ```plain
   -h, --help         display this help and exit
@@ -57,7 +57,7 @@ dvdbackup [OPTION]...
 Report bugs on Launchpad: https://bugs.launchpad.net/dvdbackup
 ```
 
-### Examples
+## Examples
 
 #### Backup full DVD
 
@@ -72,7 +72,7 @@ libdvdread: Encrypted DVD support unavailable.**********************************
 ************************************************
 ```
 
-### URL list
+## URL List
 
 * [Manpages.ubuntu.com - dvdbackup](https://manpages.ubuntu.com/manpages/bionic/man1/dvdbackup.1.html)
 * [Wiki.archlinux.org - dvdbackup](https://wiki.archlinux.org/title/Dvdbackup)

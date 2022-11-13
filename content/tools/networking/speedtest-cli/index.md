@@ -13,7 +13,7 @@ weight : 0
 
 Command line interface for testing internet bandwidth using speedtest.net
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install speedtest-cli
@@ -27,13 +27,13 @@ cd speedtest-cli
 python setup.py install
 ```
 
-### Usage
+## Usage
 
 ```plain
 speedtest-cli [-h] [--no-download] [--no-upload] [--single] [--bytes] [--share] [--simple] [--csv] [--csv-delimiter CSV_DELIMITER] [--csv-header] [--json] [--list] [--server SERVER] [--exclude EXCLUDE] [--mini MINI] [--source SOURCE] [--timeout TIMEOUT] [--secure] [--no-pre-allocate] [--version]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Command line interface for testing internet bandwidth using speedtest.net. -------------------------------------------------------------------------- https://github.com/sivel/speedtest-cli
@@ -62,7 +62,7 @@ options:
   --version             Show the version number and exit
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ speedtest-cli
@@ -77,6 +77,6 @@ Testing upload speed............................................................
 Upload: 502.02 Mbit/s
 ```
 
-### URL list
+## URL List
 
 * [Github.com - speedtest-cli](https://github.com/sivel/speedtest-cli)

@@ -13,19 +13,19 @@ weight : 0
 
 Converts many CD-ROM image formats to iso9660.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install iat
 ```
 
-### Usage
+## Usage
 
 ```plain
 iat  input_file [output_file.iso]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Iso9660 Analyzer Tool v0.1.3 by Salvatore Santagati
@@ -42,7 +42,7 @@ Options :
     -h      Display this notice
 ```
 
-### Examples
+## Examples
 
 #### Convert .IMG to .ISO
 
@@ -52,7 +52,7 @@ Iso9660 Analyzer Tool v0.1.3 by Salvatore Santagati
 Licensed under GPL v2 or later
 ```
 
-### URL list
+## URL List
 
 * [Linuxlinks.com - iat](https://www.linuxlinks.com/iat/)
 * [Unix.com - iat](https://www.unix.com/man-page/debian/1/iat/)

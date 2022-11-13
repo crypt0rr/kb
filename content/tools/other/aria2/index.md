@@ -13,19 +13,19 @@ tags : ['Other', 'macOS', 'Linux', 'Downloader', 'Torrent', 'P2P']
 
 Is a command line download client with resuming and segmented downloading. Supported protocols are HTTP/HTTPS/SFTP/FTP/BitTorrent and it also supports Metalink.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install aria2
 ```
 
-### Usage
+## Usage
 
 ```plain
 aria2c [OPTIONS] [URI | MAGNET | TORRENT_FILE | METALINK_FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Printing options tagged with '#basic'.
@@ -312,7 +312,7 @@ About the number of connections
  --max-connection-per-server=4 --min-split-size=1M.
 ```
 
-### Examples
+## Examples
 
 #### HTTP/HTTPS
 
@@ -376,7 +376,7 @@ aria2c magnet:?xt=urn:btih:1e99d95f1764644a86a8e99bfd80c ...
 aria2c ftp://example.com/linux-distro.iso
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Aria2](https://github.com/aria2/aria2)
 * [UUPdump.net](https://uupdump.net/)

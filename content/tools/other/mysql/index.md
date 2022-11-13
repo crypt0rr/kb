@@ -13,7 +13,7 @@ weight : 0
 
 MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install mysql-server
@@ -25,13 +25,13 @@ sudo apt install mysql-server
 mysql_secure_installation
 ```
 
-### Usage
+## Usage
 
 ```plain
 mysql [OPTIONS] [database]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: mysql [OPTIONS] [database]
@@ -198,7 +198,7 @@ The following options may be given as the first argument:
 --login-path=#          Read this path from the login file.
 ```
 
-### Examples
+## Examples
 
 #### Login to MySQL
 
@@ -272,7 +272,7 @@ desc <table>;
 SELECT User from mysql.user;
 ```
 
-### URL list
+## URL List
 
 * [DigitalOcean.com - How to install MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
 * [Server-world.info](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=nginx&f=6)

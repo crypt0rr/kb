@@ -13,19 +13,19 @@ tags : ['Other', 'SNMP']
 
 onesixtyone is a simple SNMP scanner which sends SNMP requests for the sysDescr value asynchronously with user-adjustable sending times and then logs the responses which gives the description of the software running on the device.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install onesixtyone
 ```
 
-### Usage
+## Usage
 
 ```plain
 onesixtyone [options] <host> <community>
 ```
 
-### Flags
+## Flags
 
 ```plain
   -c <communityfile> file with community names to try
@@ -46,7 +46,7 @@ Max community length:       32
 Max number of communities:  16384
 ```
 
-### Examples
+## Examples
 
 #### Basic whole subnet scan
 
@@ -80,7 +80,7 @@ private
 manager
 ```
 
-### URL list
+## URL List
 
 * [Github.com - onesixtyone](https://github.com/trailofbits/onesixtyone)
 * [Kali.org - onesixtyone](https://www.kali.org/tools/onesixtyone/)

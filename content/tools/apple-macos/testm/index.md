@@ -30,15 +30,15 @@ List of Tests Included in the app:
 * Hardware test: Light Sensor, Charger, Vibration, Proximity Sensor, Fingerprint Sensor
 * Camera test: Front Camera, Back Camera, LED Flash
 
-### Installation
+## Installation
 
 [AppStore - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
 
-### Examples
+## Examples
 
 ![Example](images/example1.jpeg)
 ![Example](images/example2.jpeg)
 
-### URL list
+## URL List
 
 * [Apps.apple.com - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)

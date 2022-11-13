@@ -13,18 +13,18 @@ weight : 0
 
 A multi-platform client-server tool for distributing hashcat tasks to multiple computers
 
-### Installation
+## Installation
 
 See website on [Github.com](https://github.com/s3inlc/hashtopolis)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
 ![Example](images/example-3.png)
 ![Example](images/example-4.png)
 
-### URL list
+## URL List
 
 * [Hashtopolis.org](https://hashtopolis.org/)
 * [GitHub.com - hashtopolis](https://github.com/s3inlc/hashtopolis)

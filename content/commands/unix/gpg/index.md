@@ -11,13 +11,13 @@ weight : 0
 
 ## Gpg - OpenPGP encryption and signing tool - Sign, check, encrypt or decrypt
 
-### Usage
+## Usage
 
 ```plain
 gpg [options] [files]
 ```
 
-### Flags
+## Flags
 
 ```plain
 gpg (GnuPG) 2.2.19
@@ -105,7 +105,7 @@ Examples:
 Please report bugs to <https://bugs.gnupg.org>.
 ```
 
-### Examples
+## Examples
 
 #### Encrypt files (password based)
 
@@ -183,7 +183,7 @@ Will automatically select the corresponding key (if you have one)
 gpg -d file.txt.gpg
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/gpg)
 * [Rtcamp.com Tutorial GPG keys](https://rtcamp.com/tutorials/linux/gpg-keys/)

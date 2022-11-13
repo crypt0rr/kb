@@ -11,13 +11,13 @@ weight : 0
 
 ## net user
 
-### Usage
+## Usage
 
 ```plain
 net user
 ```
 
-### Flags
+## Flags
 
 ```plain
 [username [password | *] [options]] [/DOMAIN]
@@ -27,7 +27,7 @@ net user
          username [/ACTIVE: {YES | NO}]
 ```
 
-### Examples
+## Examples
 
 #### Show users on local system
 
@@ -59,6 +59,6 @@ net user JohnDo /ADD
 net group "Domain Admins" JohnDo /ADD /DOMAIN
 ```
 
-### URL list
+## URL List
 
 * [Docs.microsoft.com](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/cc771865(v%3Dws.11))

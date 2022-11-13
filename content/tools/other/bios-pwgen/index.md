@@ -31,13 +31,13 @@ Sony | 4x4 hexadecimal digits | 1234-1234-1234-1234 | [pwgen-sony-4x4.py](https:
 Sony | 7 digit serial number | 1234567 | [pwgen-sony-serial.py](https://github.com/dogbert/bios-pwgen) / [Windows binary](http://sites.google.com/site/dogber1/blag/pwgen-5dec.zip)
 Samsung | 12 hexadecimal digits | 07088120410C0000 | [pwgen-samsung.py](https://github.com/dogbert/bios-pwgen) / [Windows binary](http://sites.google.com/site/dogber1/blag/pwgen-5dec.zip)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/dogbert/bios-pwgen
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
@@ -62,7 +62,7 @@ The master password is: 483tv06q
 Please note that the password is encoded for US QWERTY keyboard layouts.
 ```
 
-### URL list
+## URL List
 
 * [BIOS Master Password Generators for Laptops](https://github.com/dogbert/bios-pwgen)
 * [Dogber1-blogspot.com - BIOS Password Backdoors in Laptops](https://dogber1.blogspot.com/2009/05/table-of-reverse-engineered-bios.html)

@@ -13,19 +13,19 @@ weight : 0
 
 A simple forensics tool with command line interface that lets you keep track of USB device artifacts (i.e., USB event history) on Linux machines
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install usbrip
 ```
 
-### Usage
+## Usage
 
 ```plain
 usbrip [-h] {banner,events,storage,ids} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -39,7 +39,7 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ usbrip events history   
@@ -90,6 +90,6 @@ Disconnected:   ∅
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - usbrip](https://github.com/snovvcrash/usbrip)

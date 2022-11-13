@@ -13,19 +13,19 @@ weight : 0
 
 Client for the whois directory service.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install whois
 ```
 
-### Usage
+## Usage
 
 ```plain
 whois [OPTION]... OBJECT...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: whois [OPTION]... OBJECT...
@@ -63,7 +63,7 @@ These flags are supported by whois.ripe.net and some RIPE-like servers:
 -q [version|sources|types]  query specified server info 
 ```
 
-### Examples
+## Examples
 
 ```plain
 whois google.com
@@ -93,6 +93,6 @@ whois google.com
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - whois](https://linux.die.net/man/1/whois)

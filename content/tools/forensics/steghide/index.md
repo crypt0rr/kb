@@ -13,19 +13,19 @@ weight : 0
 
 Steganography program that is able to hide data in various kinds of image- and audio-files.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install steghide
 ```
 
-### Usage
+## Usage
 
 ```plain
 steghide [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 steghide version 0.5.1
@@ -80,7 +80,7 @@ To embed emb.txt in cvr.jpg: steghide embed -cf cvr.jpg -ef emb.txt
 To extract embedded data from stg.jpg: steghide extract -sf stg.jpg
 ```
 
-### Examples
+## Examples
 
 To embed
 
@@ -94,6 +94,6 @@ To extract
 steghide extract -sf stg.jpg
 ```
 
-### URL list
+## URL List
 
 * [Sourceforge.net - steghide](http://steghide.sourceforge.net/)

@@ -17,7 +17,7 @@ We have designed subfinder to comply with all passive sources licenses, and usag
 
 This tool can be easily combined with [dnsx]({{< ref "dnsx" >}}).
 
-### Installation
+## Installation
 
 ```plain
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
@@ -61,13 +61,13 @@ github:
   - asdsd54bbc1aabb208c9acfbd2dd41ce7fc9db39
 ```
 
-### Usage
+## Usage
 
 ```plain
 subfinder [flags]
 ```
 
-### Flags
+## Flags
 
 | Flag             | Description                                                | Example                                  |
 | ---------------- | ---------------------------------------------------------- | ---------------------------------------- |
@@ -97,7 +97,7 @@ subfinder [flags]
 | -v               | Show Verbose output                                        | subfinder -v                             |
 | -version         | Show current program version                               | subfinder -version                       |
 
-### Examples
+## Examples
 
 ```plain
 $ subfinder -d hackerone.com
@@ -138,6 +138,6 @@ events.hackerone.com
 [INF] Found 18 subdomains for hackerone.com in 3 seconds 672 milliseconds
 ```
 
-### URL list
+## URL List
 
 * [Github.com - subfinder](https://github.com/projectdiscovery/subfinder)

@@ -11,15 +11,15 @@ weight : 0
 
 ## FOCA (Fingerprinting Organizations with Collected Archives)
 
-### Installation
+## Installation
 
 Download newest release from [github.com](https://github.com/ElevenPaths/FOCA/releases)
 
-### Examples
+## Examples
 
 ![Example](images/example.jpg)
 
-### URL list
+## URL List
 
 * [Github.com - FOCA](https://github.com/ElevenPaths/FOCA)
 * [Elevenpaths.com - FOCA](https://www.elevenpaths.com/labstools/foca/index.html)

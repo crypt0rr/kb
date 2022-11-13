@@ -13,7 +13,7 @@ weight : 0
 
 Hunt down social media accounts by username across social networks.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/sherlock-project/sherlock.git
@@ -21,7 +21,7 @@ cd sherlock
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--output OUTPUT] [--tor] [--unique-tor] [--csv] [--site SITE_NAME] [--proxy PROXY_URL] 
@@ -29,7 +29,7 @@ python3 sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT] [--o
          USERNAMES [USERNAMES ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Sherlock: Find Usernames Across Social Networks (Version 0.14.0)
@@ -63,10 +63,10 @@ optional arguments:
   --local, -l           Force the use of the local data.json file.
 ```
 
-### Examples
+## Examples
 
 ![Example](images/sherlock_demo.gif)
 
-### URL list
+## URL List
 
 * [Github.com - Sherlock](https://github.com/sherlock-project/sherlock)

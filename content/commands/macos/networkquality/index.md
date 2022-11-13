@@ -19,13 +19,13 @@ networkQuality allows for measuring the different aspects of Network Quality, in
 
 NOTE: This tool will connect to the Internet to perform its tests. This will use data on your Internet service plan.
 
-### Usage
+## Usage
 
 ```plain
 networkQuality [-C <configuration_url>] [-c] [-h] [-I <interfaceName>] [-s] [-v]
 ```
 
-### Flags
+## Flags
 
 ```plain
     -C: override Configuration URL
@@ -36,7 +36,7 @@ networkQuality [-C <configuration_url>] [-c] [-h] [-I <interfaceName>] [-s] [-v]
     -v: Verbose output
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ networkQuality -v
@@ -52,6 +52,6 @@ End: 13/01/2022, 10:32:30
 OS Version: Version 12.1 (Build 21C52)
 ```
 
-### URL list
+## URL List
 
 * [Support.apple.com - Test Wi-Fi networks with Apple Network Responsiveness](https://support.apple.com/kb/HT212313)

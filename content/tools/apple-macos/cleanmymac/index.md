@@ -15,11 +15,11 @@ The most user-friendly problem fixer for Mac. Delete system junk, unwanted apps 
 
 ![Example](images/overview.gif)
 
-### Installation
+## Installation
 
 Download newest release from [macOS AppStore](https://apps.apple.com/us/app/cleanmymac-x/id1339170533?l=en&mt=12) or download from website [cleanmymac.com](https://cleanmymac.com/)
 
-### Examples
+## Examples
 
 #### Clean up your Mac
 
@@ -74,7 +74,7 @@ Update all your apps in one sweep, including the macOS itself. Everything is ref
 
 ![Example](images/manage-apps-and-extensions.png)
 
-### URL list
+## URL List
 
 * [CleanMyMac.com](https://cleanmymac.com/)
 * [Apps.apple.com](https://apps.apple.com/us/app/cleanmymac-x/id1339170533?l=en&mt=12)

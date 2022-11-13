@@ -21,7 +21,7 @@ Go CLI and Library for quickly mapping organization network ranges using [ASN](h
 * JSON/CSV/TEXT output
 * STD IN/OUT support
 
-### Installation
+## Installation
 
 ```plain
 go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
@@ -29,13 +29,13 @@ go install github.com/projectdiscovery/asnmap/cmd/asnmap@latest
 
 Or download newest pre-compiled binary from [Github.com](https://github.com/projectdiscovery/asnmap/releases).
 
-### Usage
+## Usage
 
 ```plain
 asnmap [flags]
 ```
 
-### Flags
+## Flags
 
 ```plain
 INPUT:
@@ -58,7 +58,7 @@ OUTPUT:
    -version            show version of the project
 ```
 
-### Examples
+## Examples
 
 Example input for asnmap:
 
@@ -133,6 +133,6 @@ timestamp|input|as_number|as_name|as_country|as_range
 2022-10-13 09:15:59.239025 +0200 CEST|hackerone.com|AS13335|CLOUDFLARENET|US|2606:4700::/47
 ```
 
-### URL list
+## URL List
 
 * [Github.com - asnmap](https://github.com/projectdiscovery/asnmap)

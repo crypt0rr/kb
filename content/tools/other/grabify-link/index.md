@@ -17,7 +17,7 @@ Log and track IP addresses from every person that opens the link
 
 [Grabify.link](https://grabify.link/)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)

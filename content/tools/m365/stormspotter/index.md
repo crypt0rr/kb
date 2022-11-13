@@ -13,7 +13,7 @@ weight : 0
 
 Stormspotter creates an “attack graph” of the resources in an Azure subscription. It enables red teams and pentesters to visualize the attack surface and pivot opportunities within a tenant, and supercharges your defenders to quickly orient and prioritize incident response work.
 
-### Installation
+## Installation
 
 #### Docker
 
@@ -111,7 +111,7 @@ python3 sscollector.pyz spn -t <tenant> -c <clientID> -s <clientSecret>
 
 Once you've started up the UI, you will see a section in the database tab labeled "Stormcollector Upload". Add your file to this uploader and the processing will begin. As the results get processed, you can check the backend logs to view progress, and the results should also be reflected in the same Database View tab.
 
-### Examples
+## Examples
 
 #### View Permissions on a KeyVault
 
@@ -125,6 +125,6 @@ Once you've started up the UI, you will see a section in the database tab labele
 
 ![Screenshot3](images/screenshot3.png)
 
-### URL list
+## URL List
 
 * [Github.com - Stormspotter](https://github.com/Azure/Stormspotter)

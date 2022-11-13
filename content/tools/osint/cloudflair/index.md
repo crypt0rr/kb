@@ -13,7 +13,7 @@ tags : ['OSINT', 'DNS', 'CloudFlare']
 
 A tool to find origin servers of websites protected by CloudFlare who are publicly exposed and don't restrict network access to the CloudFlare IP ranges as they should.
 
-### Installation
+## Installation
 
 Register a free account at [Censys.io](https://censys.io/register) and save your [API keys](https://censys.io/account/api).
 
@@ -25,7 +25,7 @@ git clone https://github.com/christophetd/CloudFlair
 pip2 install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 cloudflair.py [-h] [-o OUTPUT_FILE] [--censys-api-id CENSYS_API_ID]
@@ -33,7 +33,7 @@ cloudflair.py [-h] [-o OUTPUT_FILE] [--censys-api-id CENSYS_API_ID]
                      domain
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -53,7 +53,7 @@ optional arguments:
 
 ```
 
-### Examples
+## Examples
 
 Set environment variables or use inline instead.
 
@@ -73,7 +73,7 @@ $ python cloudflair.py kb.offsec.nl
 [-] The target is most likely not vulnerable.
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Cloudflair](https://github.com/christophetd/CloudFlair)
 * [Censys.io - Register](https://censys.io/register)

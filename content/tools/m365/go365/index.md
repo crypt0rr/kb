@@ -21,7 +21,7 @@ Read these three bullets!
 * The domains this tool was tested on showed that it did not actually lock out accounts after multiple password failures. Your results may vary!
 * This tool is intended to be used by security professionals that are authorized to "attack" the target organization's o365 instance.
 
-### Installation
+## Installation
 
 ### Option 1
 
@@ -55,13 +55,13 @@ go build Go365.go
 
 Run the resulting binary and enjoy :)
 
-### Usage
+## Usage
 
 ```plain
 ./Go365 [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   ██████         ██████   ██████  ██████
@@ -150,7 +150,7 @@ Usage:
                                 : Print xml response 
 ```
 
-### Examples
+## Examples
 
 ```plain
 ./Go365 -endpoint rst -ul ./user_list.txt -p 'coolpasswordbro!123' -d pwnthisfakedomain.com
@@ -161,6 +161,6 @@ Usage:
 ./Go365 -endpoint graph -ul ./user_list.txt -p 'coolpasswordbro!123' -d pwnthisfakedomain.com -w 5 -o Go365output.txt -url https://k62g98dne3.execute-api.us-east-2.amazonaws.com/login 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Go365](https://github.com/optiv/Go365)

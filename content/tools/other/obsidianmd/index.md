@@ -13,7 +13,7 @@ tags : ['Other', 'Markdown']
 
 Obsidian is a powerful and extensible knowledge base that works on top of your local folder of plain text files.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/obsidianmd/obsidian-releases/releases)
 
@@ -32,11 +32,11 @@ brew install --cask obsidian
 
 * [Things](https://github.com/colineckert/obsidian-things)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 
-### URL list
+## URL List
 
 * [Obsidian.md](https://obsidian.md/)
 * [Github.com - ObsidianMD](https://github.com/obsidianmd/obsidian-releases/)
