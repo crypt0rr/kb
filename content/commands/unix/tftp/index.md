@@ -11,6 +11,8 @@ weight : 0
 
 ## TFTP
 
+For TFTP-server check [atftp]({{< ref "atftp" >}})
+
 ### Examples
 
 #### Test for TFTP
