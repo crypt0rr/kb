@@ -11,7 +11,7 @@ tags : ['Networking', 'SMTP']
 
 ## Swaks
 
-Swaks is a featureful, flexible, scriptable, transaction-oriented SMTP test tool written and maintained by [John Jetmore][john_jetmore].  It is free to use and licensed under the GNU GPLv2. Features include:
+Swaks is a featureful, flexible, scriptable, transaction-oriented SMTP test tool written and maintained by John Jetmore.  It is free to use and licensed under the GNU GPLv2. Features include:
 
 * SMTP extensions including TLS, authentication, pipelining, PROXY, PRDR, and XCLIENT
 * Protocols including SMTP, ESMTP, and LMTP
