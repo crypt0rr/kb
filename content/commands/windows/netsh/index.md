@@ -6,7 +6,7 @@ date : 2020-03-16T11:31:37+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Windows' , 'Networking']
 ---
 
 ## Network Shell (netsh)
@@ -84,7 +84,7 @@ netsh wlan show profile
 netsh wlan show profile "<profilename>" key=clear
 ```
 
-### Show current IP configuration
+### Show Current IP configuration
 
 ```plain
 $ netsh interface ip show config
@@ -106,6 +106,32 @@ Configuration for interface "Ethernet"
 `netsh wlan set hostednetwork mode=allow ssid=Test key=12345678`
 
 Start the Mobile hotspot with `netsh wlan start hostednetwork`
+
+### Show Current Firewall Configuration
+
+```cmd
+$ netsh advfirewall show currentprofile
+
+Public Profile Settings:
+----------------------------------------------------------------------
+State                                 ON
+Firewall Policy                       BlockInbound,AllowOutbound
+LocalFirewallRules                    N/A (GPO-store only)
+LocalConSecRules                      N/A (GPO-store only)
+InboundUserNotification               Enable
+RemoteManagement                      Disable
+UnicastResponseToMulticast            Enable
+
+Logging:
+LogAllowedConnections                 Disable
+LogDroppedConnections                 Disable
+FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+MaxFileSize                           4096
+
+Ok.
+```
+
+List all firewall rules currently active: `netsh advfirewall firewall show rule name=all`
 
 ## URL List
 
