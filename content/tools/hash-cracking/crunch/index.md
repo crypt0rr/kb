@@ -36,7 +36,7 @@ crunch <min-len> <max-len> [<charset string>] [options]
 | `@`         | Lower case alpha characters        | abcdefghijklmnopqrstuvwxyz                      |
 | `,`         | Upper case alpha characters        | ABCDEFGHIJKLMNOPQRSTUVWXYZ                      |
 | `%`         | Numeric characters                 | 1234567890                                      |
-| `^`         | Special characters including space | ```«space»!"#$%&'()*+,-./:;<=>?@[\]^_`{\| }~``` |
+| `^`         | Special characters including space | ```«space»!"#$%&'()-+,-./:;<=>?@[\]^_`{\| }~``` |
 
 ## Flags
 
@@ -112,6 +112,8 @@ crunch <min-len> <max-len> [<charset string>] [options]
 
 ## Examples
 
+### Create list with specific word followed by specific placeholder
+
 ```plain
 $ crunch 10 10 -t Welkom%%%%
 Crunch will now generate the following amount of data: 110000 bytes
@@ -134,7 +136,30 @@ Welkom0010
 [...]
 ```
 
+### Brute force wordlist creation
+
+```plain
+$ crunch 4 6 0123456789ABCDEF -o wordlist.txt
+Crunch will now generate the following amount of data: 124059648 bytes
+118 MB
+0 GB
+0 TB
+0 PB
+Crunch will now generate the following number of lines: 17891328 
+
+crunch: 100% completed generating output
+```
+
+This will result in for example:
+
+- 0000
+- 0001
+- 0002
+- FFFFF6
+- FFFFF7
+- FFFFF8
+
 ## URL list
 
-* [Sourceforge.net - crunch-wordlist](https://sourceforge.net/projects/crunch-wordlist/)
-* [Formulae.brew.sh - crunch](https://formulae.brew.sh/formula/crunch#default)
+- [Sourceforge.net - crunch-wordlist](https://sourceforge.net/projects/crunch-wordlist/)
+- [Formulae.brew.sh - crunch](https://formulae.brew.sh/formula/crunch#default)
