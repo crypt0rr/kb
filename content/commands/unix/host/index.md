@@ -6,7 +6,7 @@ date : 2020-04-14T12:14:50+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Unix', 'DNS', 'Reverse DNS', 'Nameserver', 'DNS Zone Transfer']
+tags : ['Unix', 'DNS', 'OSINT', 'Reverse DNS', 'Subdomain', 'Nameserver', 'DNS Zone Transfer']
 ---
 
 ## Host
