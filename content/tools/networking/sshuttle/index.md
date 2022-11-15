@@ -6,7 +6,7 @@ date : 2022-05-31T11:03:47+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Networking', 'VPN', 'SSH']
+tags : ['Networking', 'VPN', 'SSH', 'Pivoting']
 ---
 
 ## sshuttle
