@@ -6,7 +6,7 @@ date : 2022-02-04T15:28:07+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Networking', 'Proxy', 'Pivoting']
 ---
 
 ## Proxychains
