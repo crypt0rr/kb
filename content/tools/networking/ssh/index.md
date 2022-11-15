@@ -110,10 +110,15 @@ The key's randomart image is:
 
 ### SSH port forward to local
 
+- 2222 - Local port to bind
+- 22 - remote port to bind
+
+This scenario will expose the remote port 22 to the local machine on port 2222.
+
 ```plain
-ssh -L 10000:localhost:10000 <username>@<ip>
+ssh -L 2222:localhost:22 <username>@<ip>
 ```
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/ssh)
+- [Linux.die.net](https://linux.die.net/man/1/ssh)
