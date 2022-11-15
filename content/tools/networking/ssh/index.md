@@ -6,7 +6,7 @@ date : 2020-03-11T15:19:22+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Networking', 'SSH', 'Pivoting']
 ---
 
 ## Secure Shell
