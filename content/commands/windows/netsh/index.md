@@ -6,7 +6,7 @@ date : 2020-03-16T11:31:37+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Windows' , 'Networking']
+tags : ['Windows' , 'Networking', 'Pivoting']
 ---
 
 ## Network Shell (netsh)
@@ -133,6 +133,24 @@ Ok.
 
 List all firewall rules currently active: `netsh advfirewall firewall show rule name=all`
 
+### Remote Port Forwarding
+
+- `v4tov4` - Makes sure IPv4 to IPv4 routing is done.
+- `listenport` - Port to listen on the local host.
+- `listenaddress` - IP address to listen on local machine.
+- `connectport` - The local port that is forwarded `listenport`.
+- `connectaddress` - The remote host to connect the session to.
+
+```plain
+netsh interface portproxy add v4tov4 listenport=1234 listenaddress=192.168.1.1 connectport=445 connectaddress=10.10.10.1
+```
+
+**NOTE** default firewall rules will not allow `1234` to direct traffic outbound. The command below creates the allow rule.
+
+```plain
+netsh advfirewall firewall add rule name="forward_port_rule" protocol=TCP dir=in localip=192.168.1.1 localport=1234 action=allow
+```
+
 ## URL List
 
-* [Docs.microsoft.com](https://docs.microsoft.com/nl-nl/windows-server/networking/technologies/netsh/netsh)
+- [Docs.microsoft.com](https://docs.microsoft.com/nl-nl/windows-server/networking/technologies/netsh/netsh)
