@@ -30,7 +30,7 @@ proxychains4 -q -f config_file program_name [arguments]
 
 ## Examples
 
-Default location of the config file is `/etc/proxychains4.conf`. For example use [ssh]({{< ref "ssh" >}}) to build a Dynamic Port Forward.
+Default location of the config file is `/etc/proxychains4.conf`. For example use  SSH to build a Dynamic Port Forward.
 
 ```plain
 [ProxyList]
