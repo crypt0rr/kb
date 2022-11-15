@@ -308,6 +308,20 @@ To forward multiple ports in one session, use the `-L` option multiple times.
 ssh -L 2222:localhost:22 -L 4444:localhost:80 -L 5555:localhost:443 -L 6666:localhost:3389 <username>@<ip>
 ```
 
+### SSH Remote Port Forwarding
+
+- `-N` - Do not execute a remote command, will result in only forwarding the port not opening a command shell.
+- `-R` - Specifies that connections to the given TCP port or Unix socket on the remote (server) host are to be forwarded to the local side.
+
+This scenario is ran on the host that can SSH outbound but has no ability to receive a SSH connection. Otherwise the SSH Local Port Forwarding could be used instead.
+
+- `10.10.10.1:4444` - The remote host that will receive the connection binding on port `4444` exposing port `445` on the remote host.
+- `127.0.0.1:445` - The remote host that will connect to the target host exposing it's local port `445` to the remote port `4444`
+
+```plain
+ssh -N -R 10.10.10.1:4444:127.0.0.1:445 user@target-host
+```
+
 ## URL List
 
 - [Linux.die.net](https://linux.die.net/man/1/ssh)
