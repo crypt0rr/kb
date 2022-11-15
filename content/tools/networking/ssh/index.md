@@ -119,6 +119,12 @@ This scenario will expose the remote port 22 to the local machine on port 2222.
 ssh -L 2222:localhost:22 <username>@<ip>
 ```
 
+To forward multiple ports in one session, use the `-L` option multiple times.
+
+```plain
+ssh -L 2222:localhost:22 -L 4444:localhost:80 -L 5555:localhost:443 -L 6666:localhost:3389 <username>@<ip>
+```
+
 ## URL List
 
 - [Linux.die.net](https://linux.die.net/man/1/ssh)
