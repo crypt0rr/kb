@@ -105,6 +105,8 @@ Tunnel all traffic thru SSH.
 sshuttle -r username@sshserver 0.0.0.0/0 -vv
 ```
 
+To use key authentication add `--ssh-cmd 'ssh -i /home/crypt0rr/myprivatekey.key'`
+
 ## URL List
 
 * [Sshuttle.readthedocs.org - documentation](https://sshuttle.readthedocs.org/)
