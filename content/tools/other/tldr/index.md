@@ -24,7 +24,7 @@ It certainly doesn't help that the first option explained in man tar is:
    and usually not even then as the default block size of 20 records (10240 bytes) is very common.
 ```
 
-### Installation
+## Installation
 
 ```plain
 pip3 install tldr
@@ -34,13 +34,13 @@ pip3 install tldr
 brew install tldr
 ```
 
-### Usage
+## Usage
 
 ```plain
 tldr [-v] [OPTION]... SEARCH
 ```
 
-### Flags
+## Flags
 
 ```plain
 available commands:
@@ -57,7 +57,7 @@ available commands:
     -r, --render=PATH    render a local page for testing purposes
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ tldr tar             
@@ -93,7 +93,7 @@ More information: <https://www.gnu.org/software/tar>.
     tar xf source.tar --wildcards "*.html"
 ```
 
-### URL list
+## URL list
 
 * [tldr.sh](https://tldr.sh/)
 * [Github.com - tldr](https://github.com/tldr-pages/tldr)
