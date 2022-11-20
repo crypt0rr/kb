@@ -13,23 +13,23 @@ weight : 0
 
 tcpdump is the world’s premier network analysis tool—combining both power and simplicity into a single command-line interface.
 
-### Installation
+## Installation
 
-#### Debian
+### Debian
 
 ```plain
 sudo apt install tcpdump
 ```
 
-#### Apple macOS
+### Apple macOS
 
 ```plain
 brew install tcpdump
 ```
 
-### Usage
+## Usage
 
-#### Linux
+### Linux
 
 ```plain
 tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] [ -B size ] [ -c count ]
@@ -42,7 +42,7 @@ tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] [ -B size ] [ -c count ]
                 [ -Z user ] [ expression ]
 ```
 
-#### macOS
+### macOS
 
 ```plain
 tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] [ -B size ] [ -c count ]
@@ -57,9 +57,9 @@ tcpdump [-aAbdDefhHIJKlLnNOpqStuUvxX#] [ -B size ] [ -c count ]
                 [ -Z user ] [ expression ]
 ```
 
-### Examples
+## Examples
 
-#### Creating dump with specific maximum filesize
+### Creating dump with specific maximum filesize
 
 `-C 1` states the files captured are capped to 1MB. It will create as many separate files as long as the capture is ran.
 
@@ -73,13 +73,13 @@ tcpdump: listening on en0, link-type EN10MB (Ethernet), capture size 262144 byte
 0 packets dropped by kernel
 ```
 
-#### Reading tcpdump file finding unique IP + port combinations
+### Reading tcpdump file finding unique IP + port combinations
 
 **Source IP + port:** `tcpdump -n -r client-lan.pcapng | awk -F" " '{print $3}' | sort | uniq -c | head`
 
 **Destination IP + port:** `tcpdump -n -r client-lan.pcapng | awk -F" " '{print $5}' | sort | uniq -c | head`
 
-#### Source / Destination / Port host search
+### Source / Destination / Port host search
 
 Source:
 
@@ -126,7 +126,7 @@ reading from PCAP-NG file client-lan.pcapng
 10:22:01.322466 IP 10.10.12.84.64223 > 10.10.10.1.53: 42426+ A? 1-courier.sandbox.push.apple.com. (50)
 ```
 
-#### Dumping traffic
+### Dumping traffic
 
 ```plain
 $ tcpdump -nX -r client-lan.pcapng
@@ -145,7 +145,7 @@ reading from file client-lan.pcapng, link-type EN10MB (Ethernet)
 [...]
 ```
 
-#### ACK/PSH
+### ACK/PSH
 
 ```plain
 $ tcpdump -A -n 'tcp[13] = 24' -r client-lan.pcapng
@@ -160,7 +160,7 @@ User-Agent: Joe
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Tcpdump.org](https://www.tcpdump.org/)
 * [Danielmeissler.com - A tcpdump Tutorial with Examples — 50 Ways to Isolate Traffic](https://danielmiessler.com/study/tcpdump/)

@@ -15,20 +15,20 @@ A tool for visual inspection of websites across a large amount of hosts and is c
 
 [Automated version - Subdomain Visualizer](https://github.com/crypt0rr/subdomain-visualizer)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/shelld3v/aquatone.git
 go build
 ```
 
-### Usage
+## Usage
 
 ```plain
 aquatone [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage of aquatone:
@@ -86,13 +86,13 @@ Usage of aquatone:
         Print current Aquatone version
 ```
 
-### Examples
+## Examples
 
 ```plain
 cat <targets> | ./aquatone -ports <flag>
 ```
 
-### URL list
+## URL List
 
 * [Github.com - aquatone](https://github.com/shelld3v/aquatone)
 * [GitHub.com - aquatone (original, not maintained)](https://github.com/michenriksen/aquatone)

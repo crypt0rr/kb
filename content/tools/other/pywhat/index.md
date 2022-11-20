@@ -17,7 +17,7 @@ Well, with `what` all you have to do is ask what "0x52908400098527886E0F70300698
 
 `what`'s job is to identify what something is. Whether it be a file or text! Or even the hex of a file! What about text within files? We have that too! `what` is recursive, it will identify everything in text and more!
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install pywhat
@@ -29,13 +29,13 @@ For macOS you can also install using HomeBrew.
 brew install pywhat
 ```
 
-### Usage
+## Usage
 
 ```plain
 what [OPTIONS] [TEXT_INPUT]
 ```
 
-### Flags
+## Flags
 
 ```plain
   Filtration:
@@ -200,11 +200,11 @@ Options:
   --help                          Show this message and exit.
 ```
 
-### Examples
+## Examples
 
 ![example](images/example1.gif)
 
-### URL list
+## URL List
 
 * [Github.com - pyWhat](https://github.com/bee-san/pyWhat)
 * [Twitter.com - bee_sec_san](https://twitter.com/bee_sec_san)

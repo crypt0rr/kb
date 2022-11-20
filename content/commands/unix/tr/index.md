@@ -11,13 +11,13 @@ weight : 0
 
 ## Tr - Translate, squeeze, and/or delete characters from standard input, writing to standard output
 
-### Usage
+## Usage
 
 ```plain
 tr [OPTION]... SET1 [SET2]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -c, -C, --complement    use the complement of SET1
@@ -71,9 +71,9 @@ Full documentation at: <https://www.gnu.org/software/coreutils/tr>
 or available locally via: info '(coreutils) tr invocation'
 ```
 
-### Examples
+## Examples
 
-#### Remove every char you don't want in output
+### Remove every char you don't want in output
 
 ```plain
 cat example.json
@@ -97,7 +97,7 @@ edelivery
 labs
 ```
 
-#### All lines in file to upper/lower case
+### All lines in file to upper/lower case
 
 ```plain
 $ cat da.txt | tr '[:upper:]' '[:lower:]'       
@@ -107,7 +107,7 @@ svc_lmt
 svc_curium
 ```
 
-#### Delete newlines from current output/file
+### Delete newlines from current output/file
 
 ```plain
 $ diff file1 file2
@@ -146,6 +146,6 @@ $ diff file1 file2 | grep -v "^[0-9c0-9]" | cut -d ' ' -f2 | tr --delete '\n'
 crypt0rroffsec
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/tr)

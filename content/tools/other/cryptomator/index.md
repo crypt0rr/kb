@@ -13,7 +13,7 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 Free client-side encryption for your cloud files. Open source software: No backdoors, no registration.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/cryptomator/cryptomator/releases)
 
@@ -24,11 +24,11 @@ sudo add-apt-repository ppa:sebastian-stenzel/cryptomator
 sudo apt-get update
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Cryptomator.org](https://cryptomator.org/)
 * [GitHub.com - Cryptomator](https://github.com/cryptomator/cryptomator)

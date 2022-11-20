@@ -11,7 +11,7 @@ weight : 0
 
 ## Blkid - locate/print block device attributes
 
-### Usage
+## Usage
 
 ```plain
  blkid --label <label> | --uuid <uuid>
@@ -25,7 +25,7 @@ weight : 0
  blkid -i [--match-tag <tag>] [--output <format>] <dev> ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -58,7 +58,7 @@ Low-level probing options:
 For more details see blkid(8).
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ blkid
@@ -68,7 +68,7 @@ $ blkid
 /dev/nvme0n1p4: UUID="afbdeaea-1111-444c-5aa9-abcdbe067ad0" TYPE="swap" PARTUUID="34330769-ed04-4c3a-acd0-66b4c9070ef6"
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/blkid)
 * [Systutorials.com](https://www.systutorials.com/docs/linux/man/8-blkid/)

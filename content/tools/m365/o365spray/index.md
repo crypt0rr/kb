@@ -15,14 +15,14 @@ o365spray a username enumeration and password spraying tool aimed at Microsoft O
 
 > WARNING: The oAuth2 module for user enumeration is performed by submitting a single authentication attempt per user. If the module is run in conjunction with password spraying in a single execution, o365spray will automatically reset the lockout timer prior to performing the password spray -- if enumeration is run alone, the user should be aware of how many and when each authentication attempt was made and manually reset the lockout timer before performing any password spraying.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/0xZDH/o365spray
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 o365spray.py [-h] [-d DOMAIN] [--validate] [--enum] [--spray] [-u USERNAME] [-p PASSWORD] [-U USERFILE] [-P PASSFILE] [--paired PAIRED] [-c COUNT] [-l LOCKOUT] [--enum-module {office,onedrive,oauth2}]
@@ -30,7 +30,7 @@ o365spray.py [-h] [-d DOMAIN] [--validate] [--enum] [--spray] [-u USERNAME] [-p 
                     [-v] [--debug]
 ```
 
-### Flags
+## Flags
 
 ```plain
 o365spray | Microsoft O365 User Enumerator and Password Sprayer -- v2.0.4
@@ -71,9 +71,9 @@ optional arguments:
   --debug               Enable debug output.
 ```
 
-### Examples
+## Examples
 
-#### Validate domain
+### Validate domain
 
 ```plain
 $ python3 o365spray.py -d offsec.nl --validate
@@ -95,7 +95,7 @@ $ python3 o365spray.py -d offsec.nl --validate
         [!] --> ADFS AuthURL: https://offsec.okta-emea.com/app/office365/
 ```
 
-#### Passwordspray over ActiveSync
+### Passwordspray over ActiveSync
 
 ```plain
 $ python3 o365spray.py -d offsec.nl -u john.do --paired usercreds.txt --spray-module activesync --spray
@@ -136,6 +136,6 @@ $ python3 o365spray.py -d offsec.nl -u john.do --paired usercreds.txt --spray-mo
 [2021-11-03 21:00:30,499] INFO : Valid Credentials: 1
 ```
 
-### URL list
+## URL List
 
 * [Github.com - o365spray](https://github.com/0xZDH/o365spray)

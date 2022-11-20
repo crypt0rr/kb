@@ -13,11 +13,11 @@ tags : ['Windows','Recovery','Harddisk']
 
 Recover your deleted files quickly and easily.
 
-### Installation
+## Installation
 
 Download newest release from [ccleaner.com](https://www.ccleaner.com/recuva)
 
-### Examples
+## Examples
 
 ![Example](images/example-1.png)
 ![Example](images/example-2.png)
@@ -25,6 +25,6 @@ Download newest release from [ccleaner.com](https://www.ccleaner.com/recuva)
 ![Example](images/example-4.png)
 ![Example](images/example-5.png)
 
-### URL list
+## URL List
 
 * [CCleaner.com - Recuva](https://www.ccleaner.com/recuva/screenshots)

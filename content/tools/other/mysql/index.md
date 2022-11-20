@@ -13,25 +13,25 @@ weight : 0
 
 MySQL is a fast, stable and true multi-user, multi-threaded SQL database server.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install mysql-server
 ```
 
-#### Secure set-up
+### Secure set-up
 
 ```plain
 mysql_secure_installation
 ```
 
-### Usage
+## Usage
 
 ```plain
 mysql [OPTIONS] [database]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: mysql [OPTIONS] [database]
@@ -198,81 +198,81 @@ The following options may be given as the first argument:
 --login-path=#          Read this path from the login file.
 ```
 
-### Examples
+## Examples
 
-#### Login to MySQL
+### Login to MySQL
 
 ```plain
 mysql -u <username> -p
 ```
 
-#### Show databases
+### Show databases
 
 ```plain
 SHOW DATABASES;
 ```
 
-#### Create database
+### Create database
 
 ```plain
 CREATE DATABASE <database>;
 ```
 
-#### Use specific database
+### Use specific database
 
 ```plain
 USE <database>;
 ```
 
-#### Show tables in database
+### Show tables in database
 
 ```plain
 SHOW TABLES;
 ```
 
-#### Create user
+### Create user
 
 ```plain
 CREATE USER '<USERNAME>'@'localhost' IDENTIFIED BY '<PASSWORD>';
 ```
 
-#### Edit user
+### Edit user
 
 ```plain
 ALTER USER '<username>'@'localhost' IDENTIFIED BY '<new-password>';
 ```
 
-#### Set privileges
+### Set privileges
 
 ```plain
 GRANT ALL ON <DATABASE>.* TO '<USERNAME>'@'localhost' IDENTIFIED BY '<PASSWORD>';
 ```
 
-#### Import SQL-file
+### Import SQL-file
 
 ```plain
 mysql -u <USRENAME> -p <DATABASE> < <sql-file>.sql
 ```
 
-#### Export database to file
+### Export database to file
 
 ```plain
 mysqldump -u <USERNAME> -p <DATABASE> > <sql-file-to-export-to>.sql
 ```
 
-#### Describe contents of table
+### Describe contents of table
 
 ```plain
 desc <table>;
 ```
 
-#### List users in system database
+### List users in system database
 
 ```plain
 SELECT User from mysql.user;
 ```
 
-### URL list
+## URL List
 
 * [DigitalOcean.com - How to install MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
 * [Server-world.info](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=nginx&f=6)

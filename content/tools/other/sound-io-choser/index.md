@@ -13,15 +13,15 @@ tags : ['Other', 'Gnome Extensions']
 
 Shows a list of sound output and input devices (similar to gnome sound settings) in the status menu below the volume slider.
 
-### Installation
+## Installation
 
 Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Extensions.gnome.org - Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
 * [Github.com - Gnome Shell Extension - Sound Input & Output Device Chooser](https://github.com/kgshank/gse-sound-output-device-chooser)

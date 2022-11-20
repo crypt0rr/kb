@@ -11,20 +11,20 @@ weight : 0
 
 ## onedrive_user_enum
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/nyxgeek/onedrive_user_enum.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 onedrive_enum.py [-h] -d DOMAIN [-t TENANT] [-u USERNAME] [-U USERFILE] [-o OUTPUT] [-v] [-T THREADS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -h, --help            show this help message and exit
@@ -43,7 +43,7 @@ onedrive_enum.py [-h] -d DOMAIN [-t TENANT] [-u USERNAME] [-U USERFILE] [-o OUTP
                         total number of threads (defaut: 10)
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 onedrive_enum.py -U users.txt -d offsec.nl
@@ -63,6 +63,6 @@ Beginning enumeration of https://offsec-my.sharepoint.com/personal/USER_offsec_c
 [+] [403] VALID ONEDRIVE FOR offsec.nl - attacker
 ```
 
-### URL list
+## URL List
 
 * [Github.com - onedrive_user_enum](https://github.com/nyxgeek/onedrive_user_enum)

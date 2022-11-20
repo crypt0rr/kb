@@ -11,13 +11,13 @@ weight : 0
 
 ## Strings
 
-### Usage
+## Usage
 
 ```plain
 strings [option(s)] [file(s)]
 ```
 
-### Flags
+## Flags
 
 ```plain
 
@@ -43,7 +43,7 @@ Report bugs to <http://www.sourceware.org/bugzilla/>
 
 ```
 
-### Examples
+## Examples
 
 ```plain
 strings file.txt
@@ -55,6 +55,6 @@ line4
 line5
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/strings)

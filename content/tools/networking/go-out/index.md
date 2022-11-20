@@ -13,7 +13,7 @@ weight : 0
 
 A simple, Golang egress buster using [@mubix](https://twitter.com/mubix) letmeoutofyour.net and [@bhinfosecurity](https://twitter.com/bhinfosecurity) allports.exposed services.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/sensepost/go-out.git
@@ -22,13 +22,13 @@ go build -o go-out main.go
 
 Or download newest binary from the [releases](https://github.com/sensepost/go-out/releases)
 
-### Usage
+## Usage
 
 ```plain
 ./go-out
 ```
 
-### Flags
+## Flags
 
 ```plain
   -end int
@@ -54,9 +54,9 @@ Or download newest binary from the [releases](https://github.com/sensepost/go-ou
         Number of concurrent workers to spawn. (default 5)
 ```
 
-### Examples
+## Examples
 
-#### Checking on HTTP protocol on port range from 80 to 100
+### Checking on HTTP protocol on port range from 80 to 100
 
 ```plain
 $ ./go-out -start=80 -end=100 -https=false
@@ -80,7 +80,7 @@ Random Ports:   false
 Done in 6.32565113s
 ```
 
-#### Checking on HTTPS protocol on port range from 80 to 443
+### Checking on HTTPS protocol on port range from 80 to 443
 
 ```plain
 $ ./go-out -start=80 -end=443             
@@ -102,6 +102,6 @@ Random Ports:   false
 Done in 36.501049166s
 ```
 
-### URL list
+## URL List
 
 * [Github.com - go-out](https://github.com/sensepost/go-out)

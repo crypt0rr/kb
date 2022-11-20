@@ -13,25 +13,25 @@ tags : ['Other', 'Certificates']
 
 osslsigncode is a small tool that implements part of the functionality of the Microsoft tool signtool.exe - more exactly the Authenticode signing and timestamping. But osslsigncode is based on OpenSSL and cURL, and thus should be able to compile on most platforms where these exist.
 
-### Installation
+## Installation
 
-#### Linux
+### Linux
 
 Check [github.com](https://github.com/mtrojnar/osslsigncode) for installation instructions.
 
-#### macOS
+### macOS
 
 ```plain
 brew install osslsigncode
 ```
 
-### Usage
+## Usage
 
 ```plain
 osslsigncode [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands:
@@ -98,7 +98,7 @@ Usage:
             [ -verbose ]
 ```
 
-### Examples
+## Examples
 
 ```plain
 osslsigncode verify PsExec64.exe 
@@ -155,6 +155,6 @@ TSA's certificates file: /etc/ssl/cert.pem
 CRL distribution point: http://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_2011-07-08.crl
 ```
 
-### URL list
+## URL List
 
 * [Github.com - osslsigncode](https://github.com/mtrojnar/osslsigncode)

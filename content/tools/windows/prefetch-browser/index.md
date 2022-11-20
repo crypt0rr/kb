@@ -13,16 +13,16 @@ weight : 0
 
 Browse Windows Prefetch file properties.
 
-### Installation
+## Installation
 
 Download latest release from [Github.com](https://github.com/kacos2000/Prefetch-Browser/releases/latest).
 
-### Examples
+## Examples
 
 ![example](images/example-1.png)
 ![example](images/example-2.png)
 ![example](images/example-3.png)
 
-### URL list
+## URL List
 
 * [Github.com - Prefetch-Browser](https://github.com/kacos2000/Prefetch-Browser)

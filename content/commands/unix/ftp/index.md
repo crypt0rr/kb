@@ -11,19 +11,19 @@ weight : 0
 
 ## Ftp
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install ftp
 ```
 
-### Usage
+## Usage
 
 ```plain
 ftp [OPTIONS] [hostname]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: { ftp | pftp } [-46pinegvtd] [hostname]
@@ -39,9 +39,9 @@ Usage: { ftp | pftp } [-46pinegvtd] [hostname]
    -d: enable debugging
 ```
 
-### Examples
+## Examples
 
-#### Connect to FTP-server
+### Connect to FTP-server
 
 ```plain
 $ ftp <target>
@@ -53,7 +53,7 @@ Connected to <target>
 Name (<target>):
 ```
 
-#### Download a file
+### Download a file
 
 ```plain
 ftp> get Confidential.txt
@@ -65,7 +65,7 @@ local: Confidential.txt remote: Confidential.txt
 174 bytes received in 0.02 secs (9.1607 kB/s)
 ```
 
-#### Upload a file
+### Upload a file
 
 ```plain
 ftp> put Confidential.txt
@@ -77,7 +77,7 @@ local: Confidential.txt remote: Confidential.txt
 174 bytes received in 0.02 secs (9.1607 kB/s)
 ```
 
-#### Get all files of specific extension
+### Get all files of specific extension
 
 ```plain
 ftp> mget *.txt
@@ -89,6 +89,6 @@ mget Notes to do.txt?
 186 bytes received in 0.02 secs (10.9481 kB/s)
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/ftp)

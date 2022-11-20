@@ -13,7 +13,7 @@ weight : 0
 
 Automated Decryption Tool - Fully automated decryption/decoding/cracking tool using natural language processing & artificial intelligence, along with some common sense.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install ciphey --upgrade
@@ -23,13 +23,13 @@ python3 -m pip install ciphey --upgrade
 docker run -it --rm remnux/ciphey
 ```
 
-### Usage
+## Usage
 
 ```plain
 ciphey [OPTIONS] [TEXT_STDIN]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Ciphey - Automated Decryption Tool
@@ -73,7 +73,7 @@ Options:
   --help                     Show this message and exit.
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ciphey -t "aGVsbG8gbXkgbmFtZSBpcyBiZWU="
@@ -103,6 +103,6 @@ Possible plaintext: "don't know" (y/N): y
 ╰─────────────────────────────────────╯
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Ciphey](https://github.com/ciphey/ciphey)

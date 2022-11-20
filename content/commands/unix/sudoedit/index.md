@@ -11,13 +11,13 @@ weight : 0
 
 ## Sudoedit - edit files as another user
 
-### Usage
+## Usage
 
 ```plain
 sudoedit [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -52,6 +52,6 @@ Options:
 
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/sudoedit)

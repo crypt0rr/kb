@@ -13,19 +13,19 @@ weight : 0
 
 Encode input data in a QR Code and save as a PNG or EPS image.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install qrencode
 ```
 
-### Usage
+## Usage
 
 ```plain
 qrencode [OPTION]... [STRING]
 ```
 
-### Flags
+## Flags
 
 ```plain
 qrencode version 4.0.2
@@ -111,7 +111,7 @@ SYMBOL VERSIONS
                version list.
 ```
 
-### Examples
+## Examples
 
 Frequent used flags
 
@@ -120,24 +120,24 @@ Higher DPI (default 72): -d <number>
 Higher size (default 3): -s <number>
 ```
 
-#### Embed URL
+### Embed URL
 
 ```plain
 qrencode -o <output>.png <URL>
 ```
 
-#### Embed text
+### Embed text
 
 ```plain
 qrencode -o <output.png>
 ```
 
-#### Embed WiFi connection
+### Embed WiFi connection
 
 ```plain
 qrencode -o <output>.png "WIFI:T:WPA;S:<SSID>;P:<PASSWORD>;;"
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - qrencode](https://linux.die.net/man/1/qrencode)

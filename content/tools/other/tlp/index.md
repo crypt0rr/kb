@@ -13,7 +13,7 @@ weight : 0
 
 Apply power saving settings manually and control ThinkPad battery features.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install tlp
@@ -25,15 +25,15 @@ For ThinkPads install:
 sudo apt install acpi-call-dkms
 ```
 
-### Usage
+## Usage
 
 ```plain
 tlp start|true|bat|false|ac|usb|bayoff|chargeonce|discharge|setcharge|fullcharge|recalibrate|diskid
 ```
 
-### Examples
+## Examples
 
-#### Set threshold
+### Set threshold
 
 ```plain
 sudo tlp setcharge 75 80 BAT0
@@ -45,7 +45,7 @@ Check statistics
 sudo tlp-stat -b
 ```
 
-#### Recalibrate cycle
+### Recalibrate cycle
 
 ```plain
 $ sudo tlp recalibrate
@@ -61,7 +61,7 @@ force discharge    = 1
 Press Ctrl+C to cancel.
 ```
 
-#### Temporarily fully charge
+### Temporarily fully charge
 
 ```plain
 $ sudo tlp fullcharge
@@ -71,7 +71,7 @@ Setting temporary charge thresholds for BAT0:
 Charging starts now, keep AC connected.
 ```
 
-### URL list
+## URL List
 
 * [Linrunner.de - TLP](https://linrunner.de/tlp/)
 * [Github.com - TLP](https://github.com/linrunner/TLP)

@@ -18,19 +18,19 @@ Where to get your Docker images:
 * [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
 * [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install docker.io
 ```
 
-### Usage
+## Usage
 
 ```plain
 docker [OPTIONS] COMMAND
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -111,9 +111,9 @@ Run 'docker COMMAND --help' for more information on a command.
 To get more help with docker, check out our guides at https://docs.docker.com/go/guides/
 ```
 
-### Examples
+## Examples
 
-#### Installing Vaultwarden
+### Installing Vaultwarden
 
 To update an existing container, re-run the ```docker pull```.
 
@@ -133,14 +133,14 @@ Status: Downloaded newer image for vaultwarden/server:latest
 docker.io/vaultwarden/server:latest
 ```
 
-#### Running image
+### Running image
 
 ```plain
 $ sudo docker run -d --name vaultwarden -v /vw-data/:/data/ -p 80:80 vaultwarden/server:latest
 371ae7c4a9ee697218b7f418a3d410781a140875b50ff817dd1531a9f1624edb
 ```
 
-#### List running images
+### List running images
 
 ```plain
 $ sudo docker ps                         
@@ -148,7 +148,7 @@ CONTAINER ID   IMAGE                       COMMAND                  CREATED     
 371ae7c4a9ee   vaultwarden/server:latest   "/usr/bin/dumb-init …"   5 minutes ago   Up 10 seconds (health: starting)   0.0.0.0:80->80/tcp, 3012/tcp   vaultwarden
 ```
 
-#### List running and non-running images
+### List running and non-running images
 
 ```plain
 $ sudo docker ps -a                  
@@ -156,7 +156,7 @@ CONTAINER ID   IMAGE                       COMMAND                  CREATED     
 371ae7c4a9ee   vaultwarden/server:latest   "/usr/bin/dumb-init …"   27 minutes ago   Exited (143) 15 seconds ago             vaultwarden
 ```
 
-#### Start / stop images
+### Start / stop images
 
 ```plain
 sudo docker start <name>
@@ -166,13 +166,13 @@ sudo docker start <name>
 sudo docker stop <name>
 ```
 
-#### Remove image
+### Remove image
 
 ```plain
 sudo docker rm <name>
 ```
 
-### URL list
+## URL List
 
 * [Docker.com](https://www.docker.com/)
 * [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)

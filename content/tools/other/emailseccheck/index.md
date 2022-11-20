@@ -25,20 +25,20 @@ Email spoofing is identified under the following conditions:
   * DMARC record contains a syntax error
   * Multiple DMARC records exist
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/MarkoH17/EmailSecCheck.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 emailseccheck.py [-h] (--domain DOMAIN | --domains_file DOMAINS_FILE)
 ```
 
-### Flags
+## Flags
 
 ```plain
 options:
@@ -48,7 +48,7 @@ options:
                         File containing list of domains to check for SPF/DMARC issues (default: None)
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 emailseccheck.py --domain offsec.nl
@@ -61,6 +61,6 @@ $ python3 emailseccheck.py --domain offsec.nl
    > offsec.nl
 ```
 
-### URL list
+## URL List
 
 * [Github.com - EmailSecCheck](https://github.com/MarkoH17/EmailSecCheck)

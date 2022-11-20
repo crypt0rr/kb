@@ -13,17 +13,17 @@ weight : 0
 
 Defeat Slow WiFi.
 
-### Installation
+## Installation
 
 Non-subscription based version.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 ![Example](images/example1.png)
 
-### URL list
+## URL List
 
 * [Metageek - inSSIDer](https://www.metageek.com/products/inssider/)

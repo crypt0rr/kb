@@ -13,20 +13,20 @@ weight : 0
 
 Synchronised Audio Player for iTunes / AirPlay.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install shairport-sync
 ```
 
-### Usage
+## Usage
 
 ```plain
 shairport-sync [options...]
 or:  shairport-sync [options...] -- [audio output-specific options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -99,10 +99,10 @@ There are no settings or options for the audio backend "stdout".
 There are no settings or options for the audio backend "dummy".
 ```
 
-### Examples
+## Examples
 
 Shairport will directly be available when installed from an Apple device streaming via AirPlay.
 
-### URL list
+## URL List
 
 * [GitHub.com - Shairport-sync](https://github.com/mikebrady/shairport-sync)

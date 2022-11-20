@@ -11,13 +11,13 @@ weight : 0
 
 ## Iwconfig
 
-### Usage
+## Usage
 
 ```plain
 iwconfig [interface] [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 iwconfig [interface]
@@ -43,15 +43,15 @@ iwconfig [interface]
 Check man pages for more details.
 ```
 
-### Examples
+## Examples
 
-#### Connect to specific (hidden) SSID
+### Connect to specific (hidden) SSID
 
 ```plain
 sudo iwconfig [INTERFACE] essid [(HIDDEN)SSID]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - iwconfig](https://linux.die.net/man/8/iwconfig)
 * [Computerhope.com - iwconfig](https://www.computerhope.com/unix/iwconfig.htm)

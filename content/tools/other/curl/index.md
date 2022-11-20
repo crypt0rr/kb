@@ -13,19 +13,19 @@ weight : 0
 
 Is  a tool to transfer data from or to a server, using one of the supported protocols. The command is designed to work  without user interaction.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install curl
 ```
 
-### Usage
+## Usage
 
 ```plain
 curl [options...] <url>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: curl [options...] <url>
@@ -252,9 +252,9 @@ Usage: curl [options...] <url>
      --xattr         Store metadata in extended file attributes
 ```
 
-### Examples
+## Examples
 
-#### curl header of target
+### curl header of target
 
 ```plain
 curl --head https://www.google.com
@@ -275,38 +275,38 @@ accept-ranges: none
 vary: Accept-Encoding
 ```
 
-#### curl site content
+### curl site content
 
 ```plain
 curl https://www.google.com
 <!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="nl"><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title>
 ```
 
-#### Insecure SSL/TLS site
+### Insecure SSL/TLS site
 
 ```plain
 curl -k https://<target>
 ```
 
-#### Follow redirections to endpoint
+### Follow redirections to endpoint
 
 ```plain
 curl -L https://<target>
 ```
 
-#### Show headers only
+### Show headers only
 
 ```plain
 curl -I https://<target>
 ```
 
-#### Don't show progress
+### Don't show progress
 
 ```plain
 curl -s https://<target>
 ```
 
-#### Using Basic Auth
+### Using Basic Auth
 
 ```plain
 $ curl -I -H "Authorization: Basic <base64-string>"  https://example.com
@@ -331,7 +331,7 @@ cf-ray: 687e271faff40132-AMS
 alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
 ```
 
-### URL list
+## URL List
 
 * [curl.haxx.se](https://curl.haxx.se/)
 * [GitHub.com - curl](https://github.com/curl/curl)

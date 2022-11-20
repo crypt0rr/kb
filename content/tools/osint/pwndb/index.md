@@ -13,7 +13,7 @@ weight : 0
 
 `pwndb.py` is a python command-line tool for searching leaked credentials using the Onion service with the same name.
 
-### Installation
+## Installation
 
 ```plain
 $ git clone https://github.com/davidtavarez/pwndb
@@ -47,13 +47,13 @@ optional arguments:
   --output OUTPUT  Return results as json/txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 pwndb.py [-h] [--target TARGET] [--list LIST] [--output OUTPUT]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -63,6 +63,6 @@ optional arguments:
   --output OUTPUT  Return results as json/txt
 ```
 
-### URL list
+## URL List
 
 * [Github.com - pwndb](https://github.com/davidtavarez/pwndb)

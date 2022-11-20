@@ -11,14 +11,14 @@ weight : 0
 
 ## Fls - List file and directory names in a disk image
 
-### Usage
+## Usage
 
 ```plain
 usage: fls [-adDFlhpruvV] [-f fstype] [-i imgtype] [-b dev_sector_size] [-m dir/] [-o imgoffset] [-z ZONE] [-s seconds] image [images] [inode]
         If [inode] is not given, the root directory is used
 ```
 
-### Flags
+## Flags
 
 ```plain
     -a: Display "." and ".." entries
@@ -42,7 +42,7 @@ usage: fls [-adDFlhpruvV] [-f fstype] [-i imgtype] [-b dev_sector_size] [-m dir/
     -s seconds: Time skew of original machine (in seconds) (only useful with -l & -m)
 ```
 
-### URL list
+## URL List
 
 * [Sleuthkit.org - fls](https://www.sleuthkit.org/sleuthkit/man/fls.html)
 * [Manpages.ubuntu.com - fls](https://manpages.ubuntu.com/manpages/bionic/man1/fls.1.html)

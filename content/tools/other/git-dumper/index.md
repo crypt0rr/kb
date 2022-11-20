@@ -13,19 +13,19 @@ weight : 0
 
 A tool to dump a git repository from a website.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install git-dumper
 ```
 
-### Usage
+## Usage
 
 ```plain
 git-dumper [options] URL DIR
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -46,7 +46,7 @@ options:
                         additional http headers, e.g `NAME=VALUE`
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ git-dumper http://127.0.0.1 output
@@ -146,6 +146,6 @@ pare-commit-msg.sample [200]
 Updated 6 paths from the index
 ```
 
-### URL list
+## URL List
 
 * [Github.com - git-dumper](https://github.com/arthaud/git-dumper.git)

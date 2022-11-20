@@ -13,13 +13,13 @@ weight : 0
 
 Is a small and fast file manager for Windows. With tabs, bookmarks and advanced file operations, it allows you to be much more productive!
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 Or download newest release from [Github.com](https://github.com/derceg/explorerplusplus/releases)
 
-### Examples
+## Examples
 
 ![Example](images/screenshot-1.png)
 ![Example](images/screenshot-2.png)
@@ -32,7 +32,7 @@ Or download newest release from [Github.com](https://github.com/derceg/explorerp
 ![Example](images/screenshot-9.png)
 ![Example](images/screenshot-10.png)
 
-### URL list
+## URL List
 
 * [Explorerplusplus.com](https://explorerplusplus.com/)
 * [Github.com - Explorer++](https://github.com/derceg/explorerplusplus)

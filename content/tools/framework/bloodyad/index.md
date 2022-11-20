@@ -19,21 +19,21 @@ This tool can perform specific LDAP/SAMR calls to a domain controller in order t
 
 It is designed to be used transparently with a SOCKS proxy.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/CravateRouge/bloodyAD
 python3 -m pip install .
 ```
 
-### Usage
+## Usage
 
 ```plain
 bloodyAD [-h] [-d DOMAIN] [-u USERNAME] [-p PASSWORD] [-k] [-c CERTIFICATE] [-s] [--host HOST]
         {getObjectAttributes,setAttribute,addUser,addComputer,delObject,changePassword,addObjectToGroup,addForeignObjectToGroup,delObjectFromGroup,getChildObjects,search,setShadowCredentials,setGenericAll,setOwner,setRbcd,setDCSync,setUserAccountControl} ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Main options:
@@ -55,11 +55,11 @@ Commands:
                         Function to call
 ```
 
-### Examples
+## Examples
 
 Other useful commands can be found [here](https://github.com/CravateRouge/bloodyAD#useful-commands)
 
-#### Get group members
+### Get group members
 
 **Note:** As shown in the example below, groups (ThisIsAGroupWithinDA) that are part of the 'Domain Admins' group, are shown but not distinguished in any form.
 
@@ -79,7 +79,7 @@ $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getObjectAttr
 }
 ```
 
-#### Get all users of the domain
+### Get all users of the domain
 
 ```plain
 $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getChildObjects 'DC=offsec,DC=nl' user
@@ -98,7 +98,7 @@ CN=SEYMOUR_VEGA,OU=Devices,OU=ESM,OU=Tier 1,DC=offsec,DC=nl
 [...]
 ```
 
-#### Get AD functional level
+### Get AD functional level
 
 ```plain
 $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getObjectAttributes 'DC=offsec,DC=nl' msDS-Behavior-Version
@@ -107,7 +107,7 @@ $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getObjectAttr
 }
 ```
 
-#### Get quota for adding computer objects to the domain
+### Get quota for adding computer objects to the domain
 
 ```plain
 $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getObjectAttributes 'DC=offsec,DC=nl' ms-DS-MachineAccountQuota
@@ -116,6 +116,6 @@ $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getObjectAttr
 }
 ```
 
-### URL list
+## URL List
 
 * [Github.com - bloodyAD](https://github.com/CravateRouge/bloodyAD)

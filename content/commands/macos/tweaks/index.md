@@ -41,25 +41,25 @@ defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
 All tweaks regarding screenshots require restarting 'SystemUIServer'. To do so use `killall SystemUIServer`.
 
-#### Change where screenshots are saved
+### Change where screenshots are saved
 
 ```plain
 defaults write com.apple.screencapture location ~/your/location/here
 ```
 
-#### Change screenshot default naming scheme
+### Change screenshot default naming scheme
 
 ```plain
 defaults write com.apple.screencapture name "New Screen Shot Name"
 ```
 
-#### Change format screenshots are saved in (default .PNG)
+### Change format screenshots are saved in (default .PNG)
 
 ```plain
 defaults write com.apple.screencapture type jpg
 ```
 
-#### Disable screenshot shadows
+### Disable screenshot shadows
 
 ```plain
 defaults write com.apple.screencapture disable-shadow -bool TRUE
@@ -153,7 +153,7 @@ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-sp
 defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 ```
 
-### URL list
+## URL List
 
 * [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
 * [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)

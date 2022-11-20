@@ -6,18 +6,18 @@ date : 2020-03-16T11:31:37+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Windows' , 'Networking', 'Pivoting']
 ---
 
 ## Network Shell (netsh)
 
-### Usage
+## Usage
 
 ```cmd
 netsh [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands in this context:
@@ -68,15 +68,15 @@ The following sub-contexts are available:
  advfirewall branchcache bridge dhcpclient dnsclient firewall http interface ipsec lan mbn namespace netio p2p ras rpc trace wcn wfp winhttp winsock wlan
 ```
 
-### Examples
+## Examples
 
-#### Show known Wi-Fi networks
+### Show known Wi-Fi networks
 
 ```cmd
 netsh wlan show profile
 ```
 
-#### Show passwords from known networks (admin required)
+### Show passwords from known networks (admin required)
 
 {{%attachments title="Script for showing all known network passwords" fa_icon_class="fas fa-terminal" pattern=".*(ps1)"/%}}
 
@@ -84,7 +84,7 @@ netsh wlan show profile
 netsh wlan show profile "<profilename>" key=clear
 ```
 
-#### Show current IP configuration
+### Show Current IP configuration
 
 ```plain
 $ netsh interface ip show config
@@ -101,12 +101,56 @@ Configuration for interface "Ethernet"
     WINS servers configured through DHCP: None
 ```
 
-#### Create Mobile Hotspot
+### Create Mobile Hotspot
 
 `netsh wlan set hostednetwork mode=allow ssid=Test key=12345678`
 
 Start the Mobile hotspot with `netsh wlan start hostednetwork`
 
-### URL list
+### Show Current Firewall Configuration
 
-* [Docs.microsoft.com](https://docs.microsoft.com/nl-nl/windows-server/networking/technologies/netsh/netsh)
+```cmd
+$ netsh advfirewall show currentprofile
+
+Public Profile Settings:
+----------------------------------------------------------------------
+State                                 ON
+Firewall Policy                       BlockInbound,AllowOutbound
+LocalFirewallRules                    N/A (GPO-store only)
+LocalConSecRules                      N/A (GPO-store only)
+InboundUserNotification               Enable
+RemoteManagement                      Disable
+UnicastResponseToMulticast            Enable
+
+Logging:
+LogAllowedConnections                 Disable
+LogDroppedConnections                 Disable
+FileName                              %systemroot%\system32\LogFiles\Firewall\pfirewall.log
+MaxFileSize                           4096
+
+Ok.
+```
+
+List all firewall rules currently active: `netsh advfirewall firewall show rule name=all`
+
+### Remote Port Forwarding
+
+- `v4tov4` - Makes sure IPv4 to IPv4 routing is done.
+- `listenport` - Port to listen on the local host.
+- `listenaddress` - IP address to listen on local machine.
+- `connectport` - The local port that is forwarded `listenport`.
+- `connectaddress` - The remote host to connect the session to.
+
+```plain
+netsh interface portproxy add v4tov4 listenport=1234 listenaddress=192.168.1.1 connectport=445 connectaddress=10.10.10.1
+```
+
+**NOTE** default firewall rules will not allow `1234` to direct traffic outbound. The command below creates the allow rule.
+
+```plain
+netsh advfirewall firewall add rule name="forward_port_rule" protocol=TCP dir=in localip=192.168.1.1 localport=1234 action=allow
+```
+
+## URL List
+
+- [Docs.microsoft.com](https://docs.microsoft.com/nl-nl/windows-server/networking/technologies/netsh/netsh)

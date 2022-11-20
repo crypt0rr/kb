@@ -13,14 +13,14 @@ weight : 0
 
 Stream any audio from your Mac all around your network.
 
-### Installation
+## Installation
 
 Download newest release from [Rogueamoeba.com](https://rogueamoeba.com/airfoil/mac/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Rogueamoeba.com - Airfoil](https://rogueamoeba.com/airfoil/mac/)

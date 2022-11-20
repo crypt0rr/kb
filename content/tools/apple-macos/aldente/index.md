@@ -6,7 +6,7 @@ date : 2021-12-19T20:16:22+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['macOS', 'Battery']
 ---
 
 ## AlDente
@@ -24,7 +24,7 @@ AlDente Pro is our paid version of AlDente. It has many more features such as He
 * Charge Limiter allows you to set your maximum charging percentage between 20 and 100 percent. You can either set it by using the slide bar or by typing in the desired percentage in the field above and pressing enter afterwards. Read more about the Charge Limiter feature here: <https://apphousekitchen.com/feature-explanation-charge-limiter/>
 * Discharge - This feature allows your MacBook to run completely on Battery even if it is plugged in. Therefore, you can actively discharge your MacBook to a more healthy percentage. Unfortunately, while Discharge is activated, clamshell mode is not supported due to technical limitations. Read more about the Discharge feature here: <https://apphousekitchen.com/feature-explanation-discharge/>
 
-### Installation
+## Installation
 
 Download newest release on [Github.com](https://github.com/davidwernhart/AlDente/releases)
 
@@ -36,12 +36,12 @@ For some reason, macOS will always try to squeeze in a few more percent than spe
 
 IMPORTANT: Keeping your battery at a lower percentage, such as 20-80%, over weeks without doing full cycles (100%-0%) can result in a disturbed battery calibration. When this happens, your Macbook might turn off with 40-50% left or your battery capacity will drop significantly. However, this is only due to a disturbed battery calibration and not because of a faulty or degraded battery. To avoid this issue, we recommend doing at least one full cycle (0%-100%) every two weeks. Even if your battery calibration gets disturbed, doing 4+ full cycles will recalibrate your battery and the capacity will go up again.
 
-### Examples
+## Examples
 
 ![Example](images/free.png)
 
 ![Example](images/free-settings.png)
 
-### URL list
+## URL List
 
 * [Github.com - AlDente](https://github.com/davidwernhart/AlDente)

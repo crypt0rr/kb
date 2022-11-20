@@ -13,20 +13,20 @@ weight : 0
 
 Python script for converting nmap reports into XLS.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/mrschyte/nmap-converter.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 nmap-converter.py [-h] [-o XLS] XML [XML ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -37,7 +37,7 @@ optional arguments:
   -o XLS, --output XLS  path to xlsx output
 ```
 
-### Examples
+## Examples
 
 Perform a [nmap]({{< ref "nmap" >}}) to the target system(s) and for example use `-oA` to save in all formats.
 
@@ -79,6 +79,6 @@ $ python3 nmap-converter.py kb-offsec.xml -o kb-offsec-nl.xls
 
 {{%attachments title="Example file" fa_icon_class="fas fa-file-excel" pattern=".*(xls)"/%}}
 
-### URL list
+## URL List
 
 * [Github.com - nmap-converter](https://github.com/mrschyte/nmap-converter)

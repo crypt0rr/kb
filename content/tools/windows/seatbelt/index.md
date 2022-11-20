@@ -13,7 +13,7 @@ tags : ['Other', 'Active Directory']
 
 A C# project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.
 
-### Installation
+## Installation
 
 Pre-build binary (15-04-2021) available below, or [compile](https://github.com/GhostPack/Seatbelt#compile-instructions) yourself to get the latest release.
 
@@ -21,26 +21,26 @@ Obfuscated version is tested against Windows Defender and Cylance.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 .\Seatbelt.exe [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
                         %&&@@@&&
-                        &&&&&&&%%%,                       #&&@@@@@@%%%%%%###############%
-                        &%&   %&%%                        &////(((&%%%%%#%################//((((###%%%%%%%%%%%%%%%
-%%%%%%%%%%%######%%%#%%####%  &%%**#                      @////(((&%%%%%%######################(((((((((((((((((((
-#%#%%%%%%%#######%#%%#######  %&%,,,,,,,,,,,,,,,,         @////(((&%%%%%#%#####################(((((((((((((((((((
-#%#%%%%%%#####%%#%#%%#######  %%%,,,,,,  ,,.   ,,         @////(((&%%%%%%%######################(#(((#(#((((((((((
-#####%%%####################  &%%......  ...   ..         @////(((&%%%%%%%###############%######((#(#(####((((((((
-#######%##########%#########  %%%......  ...   ..         @////(((&%%%%%#########################(#(#######((#####
-###%##%%####################  &%%...............          @////(((&%%%%%%%%##############%#######(#########((#####
-#####%######################  %%%..                       @////(((&%%%%%%%################
-                        &%&   %%%%%      Seatbelt         %////(((&%%%%%%%%#############*
+                        &&&&&&&%%%,                       #&&@@@@@@%%%%%%############%
+                        &%&   %&%%                        &////(((&%%%%%#%############//((((###%%%%%%%%%%%%%%%
+%%%%%%%%%%%#####%%%#%%###%  &%%**#                      @////(((&%%%%%%#################(((((((((((((((((((
+#%#%%%%%%%######%#%%######  %&%,,,,,,,,,,,,,,,,         @////(((&%%%%%#%################(((((((((((((((((((
+#%#%%%%%%####%%#%#%%######  %%%,,,,,,  ,,.   ,,         @////(((&%%%%%%%#################(#(((#(#((((((((((
+####%%%###############  &%%......  ...   ..         @////(((&%%%%%%%############%#####((#(#(###((((((((
+######%########%#######  %%%......  ...   ..         @////(((&%%%%%###################(#(######((####
+###%##%%###############  &%%...............          @////(((&%%%%%%%%###########%######(#######((####
+####%#################  %%%..                       @////(((&%%%%%%%############
+                        &%&   %%%%%      Seatbelt         %////(((&%%%%%%%%##########*
                         &%%&&&%%%%%        v1.1.1         ,(((&%%%%%%%%%%%%%%%%%,
                          #%%%%##,
 
@@ -232,9 +232,9 @@ Examples:
     'Seatbelt.exe -group=user -q -outputfile="C:\Temp\out.json"' will run in quiet mode with user checks and output to a .json file.
 ```
 
-### Examples
+## Examples
 
-#### Check which Antivirus is installed / active
+### Check which Antivirus is installed / active
 
 ```plain
  .\Seatbelt.exe Antivirus
@@ -248,7 +248,7 @@ Examples:
 [*] Completed collection in 0.109 seconds
 ```
 
-#### Check logon evens for last 30 days
+### Check logon evens for last 30 days
 
 ```plain
  .\Seatbelt.exe "LogonEvents 30"
@@ -268,7 +268,7 @@ Listing 4624 Account Logon Events for the last 30 days.
 [*] Completed collection in 0.122 seconds
 ```
 
-#### Run all modules available (local and remote)
+### Run all modules available (local and remote)
 
 ```plain
 .\Seatbelt.exe -group=all -outputfile="C:\Path\file.txt"
@@ -332,6 +332,6 @@ Listing 4624 Account Logon Events for the last 30 days.
 ====== Certificates ======
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Seatbelt](https://github.com/GhostPack/Seatbelt)

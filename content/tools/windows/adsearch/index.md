@@ -13,17 +13,17 @@ weight : 0
 
 A tool written for cobalt-strike's execute-assembly command that allows for more efficent querying of AD
 
-### Installation
+## Installation
 
 {{%attachments title="Related Files" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 ADSearch.exe [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
     ___    ____  _____                 __
@@ -79,9 +79,9 @@ Query Active Directory remotely or locally:
   --version           Display version information.
 ```
 
-### Examples
+## Examples
 
-#### Enumerate Domain Admins
+### Enumerate Domain Admins
 
 ```plain
 .\ADSearch.exe --domain-admins -d offsec.nl
@@ -104,6 +104,6 @@ GitHub: @tomcarver16
         [+] cn : JohnDo_adm
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ADSearch](https://github.com/tomcarver16/ADSearch)

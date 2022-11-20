@@ -11,7 +11,7 @@ tags : ['Windows', 'Networking']
 
 ## Cain
 
-### Installation
+## Installation
 
 Required [Winpacp.org](https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe)
 
@@ -19,7 +19,7 @@ Required [Winpacp.org](https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe)
 
 Network adapter > IPv4 properties > Advanced > DNS > Enable 'Use this connection's DNS suffix in DNS registration'
 
-### Usage
+## Usage
 
 ```plain
 1. Start Cain as Admin
@@ -28,6 +28,6 @@ Network adapter > IPv4 properties > Advanced > DNS > Enable 'Use this connection
 4. Click the yellow nuke button to start
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)

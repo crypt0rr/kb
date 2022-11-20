@@ -13,20 +13,20 @@ weight : 0
 
 Python tool to brute force against an AzureAD SSO endpoint.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/thijsvos/aad_sso_brute.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 main.py username_file password_file [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Brute force tool to enumerate emails and spray passwords.
@@ -49,7 +49,7 @@ optional arguments:
 
 ```
 
-### Examples
+## Examples
 
 ```plain
 python3 main.py usernames.txt passwords.txt --stop_brute
@@ -58,6 +58,6 @@ python3 main.py usernames.txt passwords.txt --stop_brute
 [SUCCESS]: test@epic-company.tld - EpicPassword1337
 ```
 
-### URL list
+## URL List
 
 * [Github.com - AzureAD SSO Brute](https://github.com/thijsvos/aad_sso_brute)

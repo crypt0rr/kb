@@ -13,7 +13,7 @@ weight : 0
 
 Fight Flash Fraud - testing performance of flash / disks.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/AltraMayor/f3/releases)
 
@@ -23,7 +23,7 @@ make
 make install
 ```
 
-### Usage
+## Usage
 
 ```plain
 f3write [OPTION...] <PATH>
@@ -33,7 +33,7 @@ f3write [OPTION...] <PATH>
 f3read [OPTION...] <PATH>
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: f3write [OPTION...] <PATH>
@@ -66,9 +66,9 @@ Mandatory or optional arguments to long options are also mandatory or optional
 for any corresponding short options.
 ```
 
-### Examples
+## Examples
 
-#### F3 Write
+### F3 Write
 
 ```plain
 f3write /media/b/1GB-USB
@@ -83,7 +83,7 @@ Free space: 0.00 Byte
 Average writing speed: 15.97 MB/s
 ```
 
-#### F3 Read
+### F3 Read
 
 ```plain
 f3read /media/b/1GB-USB
@@ -103,7 +103,7 @@ Data LOST: 0.00 Byte (0 sectors)
 Average reading speed: 835.91 MB/s
 ```
 
-#### F3 custom write amount
+### F3 custom write amount
 
 ```plain
 $ f3write -e 3 /media/b/DISK
@@ -123,7 +123,7 @@ Free space: 430.51 GB
 Average writing speed: 60.21 MB/s
 ```
 
-#### F3 custom read amount
+### F3 custom read amount
 
 ```plain
 $ f3read -e 3 /media/b/DISK
@@ -145,7 +145,7 @@ Data LOST: 0.00 Byte (0 sectors)
 Average reading speed: 1.09 GB/s
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - f3](https://github.com/AltraMayor/f3)
 * [Readthedocs.io](https://fight-flash-fraud.readthedocs.io/)

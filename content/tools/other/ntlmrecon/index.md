@@ -13,7 +13,7 @@ weight : 0
 
 A fast and flexible NTLM reconnaissance tool without external dependencies. Useful to find out information about NTLM endpoints when working with a large set of potential IP addresses and domains.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/pwnfoo/NTLMRecon.git
@@ -21,13 +21,13 @@ cd NTLMRecon
 sudo python3 setup.py install
 ```
 
-### Usage
+## Usage
 
 ```plain
 ntlmrecon [-h] [--input INPUT | --infile INFILE] [--wordlist WORDLIST] [--threads THREADS] [--output-type] [--outfile OUTFILE] [--random-user-agent] [--force-all] [--shuffle] [-f]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -47,7 +47,7 @@ optional arguments:
   -f, --force           Force replace output file if it already exists
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ntlmrecon --input https://example.com
@@ -80,6 +80,6 @@ https://example.com/EWS/,EXAMPLE,EX01,EXAMPLE.COM,EX01.EXAMPLE.COM,EXAMPLE.COM
 https://example.com/OAB/,EXAMPLE,EX01,EXAMPLE.COM,EX01.EXAMPLE.COM,EXAMPLE.COM
 ```
 
-### URL list
+## URL List
 
 * [Github.com - NTLMRecon](https://github.com/pwnfoo/NTLMRecon)

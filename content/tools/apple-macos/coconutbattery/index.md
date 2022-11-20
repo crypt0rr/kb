@@ -13,14 +13,14 @@ weight : 0
 
 The standard for battery reading since 2005.
 
-### Installation
+## Installation
 
 Download newest release from [coconut-flavour.com](https://coconut-flavour.com/downloads/coconutBattery_latest.zip)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Coconut-flavour.com - Coconutbattery](https://www.coconut-flavour.com/coconutbattery/)

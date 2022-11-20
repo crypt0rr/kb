@@ -13,19 +13,19 @@ weight : 0
 
 Set of tools to manage Redis server.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install redis-tools
 ```
 
-### Usage
+## Usage
 
 ```plain
 redis-cli -h <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 redis-cli 5.0.5
@@ -110,9 +110,9 @@ Type "help" in interactive mode for information on available commands
 and settings.
 ```
 
-### Examples
+## Examples
 
-#### Unauthenticated Redis-server check
+### Unauthenticated Redis-server check
 
 ```plain
 redis-cli -h <target>  
@@ -123,7 +123,7 @@ redis_version:3.0.503
 [...]
 ```
 
-#### Unauthenticated Redis-server check #2
+### Unauthenticated Redis-server check #2
 
 ```plain
 telnet <target> 6379
@@ -131,7 +131,7 @@ telnet <target> 6379
 echo "If server echo's, no authentication is needed (PoC)"
 ```
 
-### URL list
+## URL List
 
 * [Redis.io - rediscli](https://redis.io/topics/rediscli)
 * [Debian.org - redis-tools](https://packages.debian.org/nl/sid/redis-tools)

@@ -13,19 +13,19 @@ weight : 0
 
 A commandline web screenshot and information gathering tool by @leonjza.
 
-### Installation
+## Installation
 
 ```plain
 go get -u github.com/sensepost/gowitness
 ```
 
-### Usage
+## Usage
 
 ```plain
 gowitness [command]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Available Commands:
@@ -63,9 +63,9 @@ Flags:
 Use "gowitness [command] --help" for more information about a command.
 ```
 
-### Examples
+## Examples
 
-#### Single page screenshot
+### Single page screenshot
 
 ```plain
 $ gowitness single https://www.google.com/
@@ -74,7 +74,7 @@ $ gowitness single https://www.google.com/
 
 ![Example](images/example-1.png)
 
-#### Screenshot nmap XML output
+### Screenshot nmap XML output
 
 ```plain
 $ gowitness nmap --file out.xml                       
@@ -93,7 +93,7 @@ $ gowitness nmap --file out.xml
 21 Jun 2022 21:14:59 INF processing complete
 ```
 
-#### View results in web browser
+### View results in web browser
 
 ```plain
 $ gowitness server                        
@@ -105,6 +105,6 @@ $ gowitness server
 ![Example](images/example-2.png)
 ![Example](images/example-3.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - gowitness](https://github.com/sensepost/gowitness)

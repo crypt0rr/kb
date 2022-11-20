@@ -11,13 +11,13 @@ weight : 0
 
 ## Groupdel
 
-### Usage
+## Usage
 
 ```plain
 groupdel [options] GROUP
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: groupdel [options] GROUP
@@ -29,6 +29,6 @@ Options:
       --extrausers              Use the extra users database
 ```
 
-### URL list
+## URL List
 
 * [linux.die.net](https://linux.die.net/man/8/groupdel)

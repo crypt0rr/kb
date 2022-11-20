@@ -13,30 +13,30 @@ weight : 0
 
 DCOMrade is a Powershell script that is able to enumerate the possible vulnerable DCOM applications that might allow for lateral movement, code execution, data exfiltration, etc. The script is build to work with Powershell 2.0 but will work with all versions above as well. The script currently supports the following Windows operating systems (both x86 and x64).
 
-### Installation
+## Installation
 
 ```plain
 
 ```
 
-### Usage
+## Usage
 
 ```plain
 
 ```
 
-### Flags
+## Flags
 
 ```plain
 
 ```
 
-### Examples
+## Examples
 
 ```plain
 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - DCOMrade](https://github.com/sud0woodo/DCOMrade)

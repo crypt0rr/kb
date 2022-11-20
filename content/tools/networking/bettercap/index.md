@@ -13,7 +13,7 @@ tags : ['Networking', 'Wi-Fi', 'LAN']
 
 The Swiss Army knife for WiFi, Bluetooth Low Energy, wireless HID hijacking and Ethernet networks reconnaissance and MITM attacks.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/bettercap/bettercap/releases)
 
@@ -35,13 +35,13 @@ Install caplet updates and UI, default credentials user:pass
 sudo bettercap -eval "caplets.update; ui.update; quit"
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo bettercap [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage of bettercap:
@@ -73,21 +73,21 @@ Usage of bettercap:
         Print the version and exit.
 ```
 
-### Examples
+## Examples
 
-#### Start on active network interface
+### Start on active network interface
 
 ```plain
 sudo bettercap
 ```
 
-#### Start on specific network interface
+### Start on specific network interface
 
 ```plain
 sudo bettercap -iface <interface>
 ```
 
-#### ARP spoofing
+### ARP spoofing
 
 ```plain
 sudo bettercap
@@ -98,13 +98,13 @@ set arp.spoof.fullduplex true
 arp.spoof on
 ```
 
-#### Use caplets
+### Use caplets
 
 ```plain
 sudo bettercap -caplet http-ui
 ```
 
-#### Local network recon
+### Local network recon
 
 ```plain
 sudo bettercap
@@ -112,7 +112,7 @@ sudo bettercap
 
 ![Example](images/example-1.png)
 
-#### Wi-Fi network recon
+### Wi-Fi network recon
 
 ```plain
 sudo bettercap -iface <wifi-interface>
@@ -143,13 +143,13 @@ The `/root/bettercap-wifi-handshakes.pcap` file can be converted with [hcxpcapng
 
 ### Troubleshooting
 
-#### libpcap not found
+### libpcap not found
 
 ```plain
 sudo ln -s /usr/lib/x86_64-linux-gnu/libpcap.so /usr/lib/x86_64-linux-gnu/libpcap.so.1
 ```
 
-#### Kali web-ui 404-error
+### Kali web-ui 404-error
 
 ```plain
 bettercap
@@ -157,20 +157,20 @@ ui.update
 cp -r /usr/local/share/bettercap/ui/ /usr/share/bettercap/ui/
 ```
 
-#### Kali web-ui 404-error Raspberry Pi
+### Kali web-ui 404-error Raspberry Pi
 
 ```plain
 Download newest release: https://github.com/bettercap/ui/releases
 unzip ui.zip -d /usr/share/bettercap/
 ```
 
-#### Filter IP's from Bettercap output
+### Filter IP's from Bettercap output
 
 ```plain
 grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" bettercap.log | sort -u > ip.txt
 ```
 
-### URL list
+## URL List
 
 * [Bettercap.org](https://www.bettercap.org/)
 * [GitHub.com - Bettercap](https://github.com/bettercap/bettercap/)

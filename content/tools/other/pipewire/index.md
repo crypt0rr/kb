@@ -25,7 +25,7 @@ Features include:
 
 Optionally install [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/) to easily chose input/output devices.
 
-### Installation on Pop!_OS 21.04
+## Installation on Pop!_OS 21.04
 
 ```plain
 # Add ppa for latest build
@@ -53,7 +53,7 @@ systemctl --user --now enable pipewire pipewire-pulse
 systemctl --user --now enable pipewire-media-session.service
 ```
 
-### URL list
+## URL List
 
 * [Pipewire.org](https://pipewire.org/)
 * [Reddit.com - Replaced pulseaudio with pipewire on Pop!_OS 21.04](https://www.reddit.com/r/pop_os/comments/ofdalv/replaced_pulseaudio_with_pipewire_on_popos_2104_i/)

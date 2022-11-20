@@ -21,9 +21,9 @@ Backscatter is the incorrectly automated bounce messages sent by mail servers, t
 - If above not possible disable NDR reports
 ```
 
-### Examples
+## Examples
 
-#### Single test
+### Single test
 
 ```plain
 nc 10.10.10.10 25
@@ -35,7 +35,7 @@ backscatter testdata
 .
 ```
 
-#### Automated test
+### Automated test
 
 Create a file with this content (backscatter.txt)
 
@@ -56,6 +56,6 @@ do
 done
 ```
 
-### URL list
+## URL List
 
 * [Wikipedia.org - Backscatter](https://en.wikipedia.org/wiki/Backscatter_(email))

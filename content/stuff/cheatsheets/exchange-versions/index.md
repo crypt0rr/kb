@@ -398,6 +398,6 @@ Latest releases are at the top; version numbers may vary slightly between the re
 | 4.0 RTM (Touchdown)          | 4.0.837     | Apr-96  |                   |
 | Internal (Mercury, Spitfire) |             |         |                   |
 
-### URL list
+## URL List
 
 * [Eightwone.com - Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)

@@ -13,19 +13,19 @@ weight : 0
 
 Apower consumption and power management diagnosis tool.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install powertop
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo powertop [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
      --auto-tune                sets all tunable options to their GOOD setting
@@ -45,10 +45,10 @@ sudo powertop [OPTIONS]
 For more help please refer to the 'man 8 powertop'
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - PowerTOP](https://github.com/fenrus75/powertop)

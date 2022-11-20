@@ -13,19 +13,19 @@ tags : ['Other', 'macOS', 'Windows', 'Linux']
 
 Automatic SQL injection and database takeover tool.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/sqlmapproject/sqlmap.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 sqlmap.py [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: python3 sqlmap.py [options]
@@ -111,7 +111,7 @@ Options:
     --wizard            Simple wizard interface for beginner users
 ```
 
-### Examples
+## Examples
 
 Scan site for SQLi
 
@@ -193,19 +193,19 @@ available databases [3]:
 [*] ending @ 10:44:47 /2020-03-11/
 ```
 
-#### To run all without questions
+### To run all without questions
 
 ```plain
 --level 4 --risk 3 --batch
 ```
 
-#### Bypass WAF option
+### Bypass WAF option
 
 ```plain
 --tamper="between,randomcase"
 ```
 
-### URL list
+## URL List
 
 * [Sqlmap.org](http://sqlmap.org/)
 * [GitHub.com - SQLmap](https://github.com/sqlmapproject/sqlmap)

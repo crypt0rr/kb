@@ -12,19 +12,19 @@ weight : 0
 
 The snap command lets you install, configure, refresh and remove snaps.  Snaps are packages that work across many different Linux distributions, enabling secure delivery and operation of the latest apps and utilities.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install snapd
 ```
 
-### Usage
+## Usage
 
 ```plain
 snap <command> [<options>...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 The snap command lets you install, configure, refresh and remove snaps.
@@ -51,27 +51,27 @@ For more information about a command, run 'snap help <command>'.
 For a short summary of all commands, run 'snap help --all'.
 ```
 
-### Examples
+## Examples
 
-#### Install snap package
+### Install snap package
 
 ```plain
 sudo snap install <package>
 ```
 
-#### Remove snap package
+### Remove snap package
 
 ```plain
 sudo snap remove <package>
 ```
 
-#### Find snap package
+### Find snap package
 
 ```plain
 snap search <package>
 ```
 
-### URL list
+## URL List
 
 * [Snapcraft.io](https://snapcraft.io/)
 * [Snapcraft.io - Store](https://snapcraft.io/store)

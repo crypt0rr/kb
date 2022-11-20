@@ -13,17 +13,17 @@ weight : 0
 
 This script downloads the list of users for the target system.
 
-### Installation
+## Installation
 
 Install the [Impacket Framework]({{< ref "../" >}})
 
-### Usage
+## Usage
 
 ```plain
 samrdump.py [-h] [-csv] [-ts] [-debug] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] target
 ```
 
-### Flags
+## Flags
 
 ```plain
 Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
@@ -54,7 +54,7 @@ authentication:
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ samrdump.py offsec.nl/johndo-adm:Welkom1234@10.10.10.10
@@ -89,6 +89,6 @@ Administrator (500)/ScriptPath
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com](https://github.com/SecureAuthCorp/impacket)

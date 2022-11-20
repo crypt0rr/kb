@@ -11,7 +11,7 @@ tags : ['Other', 'Exchange', 'Microsoft']
 
 ## ExchangeFinder
 
-### Installation
+## Installation
 
 Requirements:
 
@@ -19,13 +19,13 @@ Requirements:
 python3 -m pip install pyparsing attrs certifi charset-normalizer idna more-itertools packaging pluggy py urllib3 wcwidth dnspython pytest requests termcolor
 ```
 
-### Usage
+## Usage
 
 ```plain
 exchangefinder.py [-h] [--domain DOMAIN] [--domains DOMAINS] [--useragent USERAGENT] [--output OUTPUT] [--verbose]
 ```
 
-### Flags
+## Flags
 
 ```plain
 DNSStager main parser
@@ -40,7 +40,7 @@ options:
   --verbose             Show detailed output
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 exchangefinder.py --domain offsec.nl              
@@ -70,6 +70,6 @@ $ python3 exchangefinder.py --domain offsec.nl
         IIS/Webserver version: Microsoft-IIS/10.0
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ExchangeFinder](https://github.com/mhaskar/ExchangeFinder)

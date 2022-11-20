@@ -13,7 +13,7 @@ weight : 0
 
 A debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available.
 
-### Installation
+## Installation
 
 ```plain
 git clone --recursive https://github.com/0xd4d/dnSpy.git
@@ -21,11 +21,11 @@ cd dnSpy
 ./build.ps1 -NoMsbuild
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example-1.gif)
 ![Example](images/example-2.gif)
 
-### URL list
+## URL List
 
 * [GitHub.com - dnSpy](https://github.com/0xd4d/dnSpy)

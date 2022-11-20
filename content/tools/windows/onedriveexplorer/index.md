@@ -26,19 +26,19 @@ C:\Users\<USERNAME>\AppData\Local\Microsoft\OneDrive\settings\Personal\<UserCid.
 C:\Users\<USERNAME>\AppData\Local\Microsoft\OneDrive\settings\Business1\<UserCid.dat>
 ```
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Beercow/OneDriveExplorer.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 OneDriveExplorer.py [-h] [-f FILE] [-o OUTFILE] [--pretty]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -49,7 +49,7 @@ optional arguments:
   --pretty              When exporting to json, use a more human readable layout. Default is FALSE
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 OneDriveExplorer.py -f 4f241cd83085182d.dat --pretty
@@ -124,6 +124,6 @@ $ cat OneDrive.json
 }
 ```
 
-### URL list
+## URL List
 
 * [Github.com - OneDriveExplorer](https://github.com/Beercow/OneDriveExplorer)

@@ -13,7 +13,7 @@ tags : ['Other', 'O365']
 
 Enumerates valid email addresses from Office 365 without submitting login attempts.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/LMGsec/o365creeper.git
@@ -25,13 +25,13 @@ Requirements
 pip install requests
 ```
 
-### Usage
+## Usage
 
 ```plain
 o365creeper.py [-h] [-e EMAIL] [-f FILE] [-o OUTPUT]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -43,9 +43,9 @@ optional arguments:
                         Output valid email addresses to the specified file.
 ```
 
-### Examples
+## Examples
 
-#### Check single email
+### Check single email
 
 ```plain
 $ python o365creeper.py -e john.do@example.com
@@ -53,6 +53,6 @@ $ python o365creeper.py -e john.do@example.com
 john.do@example.com - INVALID
 ```
 
-### URL list
+## URL List
 
 * [Github.com - o365creeper](https://github.com/LMGsec/o365creeper)

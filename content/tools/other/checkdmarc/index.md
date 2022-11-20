@@ -13,19 +13,19 @@ weight : 0
 
 Validates and parses SPF amd DMARC DNS records.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install checkdmarc
 ```
 
-### Usage
+## Usage
 
 ```plain
 checkdmarc [OPTIONS] domain
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: checkdmarc [-h] [-p] [--ns NS [NS ...]] [--mx MX [MX ...]] [-d]
@@ -63,7 +63,7 @@ optional arguments:
   --debug               enable debugging output
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ checkdmarc --nameserver=1.1.1.1 amazon.com
@@ -113,6 +113,6 @@ $ checkdmarc --nameserver=1.1.1.1 amazon.com
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Pypi.org - checkdmarc](https://pypi.org/project/checkdmarc/)

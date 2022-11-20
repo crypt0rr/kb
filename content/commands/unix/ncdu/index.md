@@ -11,19 +11,19 @@ tags : ['Unix', 'Harddisk']
 
 ## Ncdu
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install ncdu
 ```
 
-### Usage
+## Usage
 
 ```plain
 ncdu <options> <directory>
 ```
 
-### Flags
+## Flags
 
 ```plain
 ncdu <options> <directory>
@@ -46,7 +46,7 @@ ncdu <options> <directory>
   --color SCHEME             Set color scheme
 ```
 
-### Examples
+## Examples
 
 ```plain
 ncdu /home/b/Desktop/temp
@@ -54,7 +54,7 @@ ncdu /home/b/Desktop/temp
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/ncdu)
 * [Dev.yorhel.nl](https://dev.yorhel.nl/ncdu)

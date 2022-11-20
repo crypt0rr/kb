@@ -13,13 +13,13 @@ weight : 0
 
 Tiling GTK3 terminal emulator for GNOME.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install tilix
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -52,9 +52,9 @@ Application Options:
   --display=DISPLAY                     X display to use
 ```
 
-### Examples
+## Examples
 
-#### Edit default terminal
+### Edit default terminal
 
 ```plain
 sudo update-alternatives --config x-terminal-emulator
@@ -75,7 +75,7 @@ Press <enter> to keep the current choice[*], or type selection number: 4
 update-alternatives: using /usr/bin/tilix.wrapper to provide /usr/bin/x-terminal-emulator (x-terminal-emulator) in manual mode
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - tilix](https://github.com/gnunn1/tilix/)
 * [GitHub.io - tilix-web](https://gnunn1.github.io/tilix-web/)

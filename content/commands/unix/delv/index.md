@@ -11,13 +11,13 @@ weight : 0
 
 ## Delv
 
-### Usage
+## Usage
 
 ```plain
 delv [@server] {q-opt} {d-opt} [domain] [q-type] [q-class]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:  delv [@server] {q-opt} {d-opt} [domain] [q-type] [q-class]
@@ -62,9 +62,9 @@ Where:  domain    is in the Domain Name System
         -v                           (print version and exit)
 ```
 
-### Examples
+## Examples
 
-#### DNSSEC enabled
+### DNSSEC enabled
 
 ```plain
 delv @1.1.1.1 cloudflare.com
@@ -75,7 +75,7 @@ cloudflare.com.     217 IN  A   104.17.176.85
 cloudflare.com.     217 IN  RRSIG   A 13 2 300 20200314153130 20200312133130 34505 cloudflare.com. obmtyacO2462qIC97UGdcd8EYc7/Bl2kqbG281oZO1yVWKV//jWav5ET 1p9IjL6anF8Kq4Puvf9DSQ1SjvaRGw==
 ```
 
-#### DNSSEC not enabled
+### DNSSEC not enabled
 
 ```plain
 delv @1.1.1.1 google.com
@@ -84,6 +84,6 @@ delv @1.1.1.1 google.com
 google.com.     3200171710 IN   A   172.217.17.46
 ```
 
-### URL list
+## URL List
 
 * [Google](https://www.google.com)

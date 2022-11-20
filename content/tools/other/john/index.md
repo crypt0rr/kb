@@ -13,7 +13,7 @@ weight : 0
 
 Open Source password security auditing and password recovery tool available for many operating systems.
 
-### Installation
+## Installation
 
 Read 'INSTALL' file in 'doc' folder for correct installation procedure after cloning the repo.
 
@@ -21,13 +21,13 @@ Read 'INSTALL' file in 'doc' folder for correct installation procedure after clo
 git clone https://github.com/openwall/john
 ```
 
-### Usage
+## Usage
 
 ```plain
 john [OPTIONS] [PASSWORD-FILES]
 ```
 
-### Flags
+## Flags
 
 ```plain
 John the Ripper 1.9.0-jumbo-1+bleeding-65d8222ef 2020-09-22 17:11:48 +0200 OMP [linux-gnu 64-bit x86_64 AVX2 AC]
@@ -78,9 +78,9 @@ Homepage: https://www.openwall.com/john/
                            be seen with --list=formats and --list=subformats
 ```
 
-### Examples
+## Examples
 
-#### Run benchmark
+### Run benchmark
 
 ```plain
 $ ./john --test  
@@ -132,7 +132,7 @@ Use the "--show --format=NT" options to display all of the cracked passwords rel
 Session completed.
 ```
 
-### URL list
+## URL List
 
 * [Openwall.com](https://www.openwall.com/john/)
 * [Gbhackers.com Offline Password Attack John Ripper](https://gbhackers.com/offline-password-attack-john-ripper/)

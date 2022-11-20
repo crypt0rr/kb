@@ -13,13 +13,13 @@ weight : 0
 
 Search the whatis database for strings.
 
-### Usage
+## Usage
 
 ```plain
 apropos <keyword>
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ apropos partition
@@ -32,6 +32,6 @@ gpt(8)                   - GUID partition table maintenance utility
 pdisk(8)                 - Apple partition table editor
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - apropos](https://linux.die.net/man/1/apropos)

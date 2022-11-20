@@ -24,16 +24,16 @@ Supports:
 * WEBM
 * AVI
 
-### Installation
+## Installation
 
 Installation via [Apple AppStore](https://apps.apple.com/nl/app/video-converter/id1518836004?l=en&mt=12)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 ![example](images/example2.png)
 
-### URL list
+## URL List
 
 * [Apps.apple.com - Video Converter](https://apps.apple.com/nl/app/video-converter/id1518836004?l=en&mt=12)
 * [Converter.airtv.io](https://converter.airtv.io/)

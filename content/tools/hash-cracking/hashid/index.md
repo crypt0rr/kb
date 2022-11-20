@@ -13,19 +13,19 @@ weight : 0
 
 Identify the different types of hashes used to encrypt data.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install hashid
 ```
 
-### Usage
+## Usage
 
 ```plain
 hashid.py [-h] [-e] [-m] [-j] [-o FILE] [--version] INPUT
 ```
 
-### Flags
+## Flags
 
 ```plain
 usage: hashid.py [-h] [-e] [-m] [-j] [-o FILE] [--version] INPUT
@@ -47,7 +47,7 @@ options:
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 ```
 
-### Examples
+## Examples
 
 ```plain
 hashid '527dda9cae309ba94c25b5262a0ebe62'
@@ -73,6 +73,6 @@ Analyzing '527dda9cae309ba94c25b5262a0ebe62'
 [+] RAdmin v2.x
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - hashID](https://github.com/psypanda/hashID)

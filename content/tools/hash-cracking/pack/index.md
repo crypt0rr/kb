@@ -13,25 +13,25 @@ weight : 0
 
 Password Analysis and Cracking Kit (PACK).
 
-### Installation
+## Installation
 
-#### Python2 based
+### Python2 based
 
 ```plain
 git clone https://github.com/iphelix/pack
 pip install pyenchant==3.0.0a1
 ```
 
-#### Python3 based
+### Python3 based
 
 ```plain
 git clone https://github.com/Hydraze/pack
 python3 -m pip install pyenchant
 ```
 
-### Examples
+## Examples
 
-#### Generate statistics from found passwords
+### Generate statistics from found passwords
 
 ```plain
 $ python statsgen.py rockyou.txt 
@@ -59,7 +59,7 @@ $ python statsgen.py rockyou.txt
 [...]
 ```
 
-#### Generate rule from found passwords
+### Generate rule from found passwords
 
 ```plain
 $ python rulegen.py rockyou.txt
@@ -88,6 +88,6 @@ $ python rulegen.py rockyou.txt
 [...]
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - PACK](https://github.com/iphelix/pack)

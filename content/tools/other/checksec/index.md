@@ -13,7 +13,7 @@ weight : 0
 
 A simple tool to verify the security properties of your binaries.
 
-### Installation
+## Installation
 
 ```plain
 virtualenv -p python3 venv
@@ -21,13 +21,13 @@ source venv/bin/activate
 (venv) pip install checksec.py
 ```
 
-### Usage
+## Usage
 
 ```plain
 checksec.py [options] <file/directory>...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -38,10 +38,10 @@ Options:
     -h --help                       Display this message
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [GitHub.com - Checksec](https://github.com/Wenzel/checksec.py)

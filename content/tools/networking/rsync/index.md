@@ -13,19 +13,19 @@ weight : 0
 
 A fast, versatile, remote (and local) file-copying tool.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install rsync
 ```
 
-### Usage
+## Usage
 
 ```plain
 rsync [OPTION]... SRC [SRC]... DEST
 ```
 
-### Flags
+## Flags
 
 ```plain
 rsync  version 3.1.3  protocol version 31
@@ -193,15 +193,15 @@ Please see the rsync(1) and rsyncd.conf(5) man pages for full documentation.
 See http://rsync.samba.org/ for updates, bug reports, and answers
 ```
 
-### Examples
+## Examples
 
-#### Anonymous connect rsync
+### Anonymous connect rsync
 
 ```plain
 rsync rsync://<ip-or-domain>/<folder-module>
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - rsync](https://linux.die.net/man/1/rsync)
 * [Nmap.org - rsync-brute](https://nmap.org/nsedoc/scripts/rsync-brute.html)

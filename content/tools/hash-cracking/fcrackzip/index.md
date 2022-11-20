@@ -13,7 +13,7 @@ weight : 0
 
 fcrackzip version 1.0, a fast/free zip password cracker written by Marc Lehmann <pcg@goof.com>.
 
-### Installation
+## Installation
 
 Download latest source (2008) from the [website](http://oldhome.schmorp.de/marc/fcrackzip.html).
 
@@ -23,13 +23,13 @@ Or use Brew.
 brew install fcrackzip
 ```
 
-### Usage
+## Usage
 
 ```plain
 fcrackzip [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
     [-b|--brute-force]            use brute force algorithm
@@ -54,7 +54,7 @@ methods compiled in (* = default):
 *2: zip2, USE_MULT_TAB
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ fcrackzip -D -p rockyou.txt -v -u archive.zip
@@ -66,7 +66,7 @@ PASSWORD FOUND!!!!: pw == thisisapassword
 
 {{%attachments title="Example archive used" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### URL list
+## URL List
 
 * [Oldhome.schmorp.de - fcrackzip](http://oldhome.schmorp.de/marc/fcrackzip.html)
 * [Formulae.brew.sh - fcrackzip](https://formulae.brew.sh/formula/fcrackzip#default)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Lsblk - List information about block devices
 
-### Usage
+## Usage
 
 ```plain
 lsblk [options] [<device> ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -108,7 +108,7 @@ Available output columns:
 For more details see lsblk(8).
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ lsblk   
@@ -133,7 +133,7 @@ nvme1n1         259:4    0 931.5G  0 disk
   └─cryptswap   253:2    0     4G  0 crypt [SWAP]
 ```
 
-### URL list
+## URL List
 
 * [Man7.org - lsblk](https://man7.org/linux/man-pages/man8/lsblk.8.html)
 * [Linux.die.net - lsblk](https://linux.die.net/man/8/lsblk)

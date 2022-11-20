@@ -6,7 +6,7 @@ date : 2021-10-20T10:54:24+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS', 'Subdomain', 'Nameserver']
 ---
 
 ## Subfinder
@@ -15,13 +15,15 @@ Is a subdomain discovery tool that discovers valid subdomains for websites by us
 
 We have designed subfinder to comply with all passive sources licenses, and usage restrictions, as well as maintained a consistently passive model to make it useful to both penetration testers and bug bounty hunters alike.
 
-### Installation
+This tool can be easily combined with [dnsx]({{< ref "dnsx" >}}).
+
+## Installation
 
 ```plain
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 ```
 
-#### Post Installation Instructions
+### Post Installation Instructions
 
 Subfinder will work after using the installation instructions however to configure Subfinder to work with certain services, you will need to have setup API keys. The following services do not work without an API key:
 
@@ -59,13 +61,13 @@ github:
   - asdsd54bbc1aabb208c9acfbd2dd41ce7fc9db39
 ```
 
-### Usage
+## Usage
 
 ```plain
-
+subfinder [flags]
 ```
 
-### Flags
+## Flags
 
 | Flag             | Description                                                | Example                                  |
 | ---------------- | ---------------------------------------------------------- | ---------------------------------------- |
@@ -95,7 +97,7 @@ github:
 | -v               | Show Verbose output                                        | subfinder -v                             |
 | -version         | Show current program version                               | subfinder -version                       |
 
-### Examples
+## Examples
 
 ```plain
 $ subfinder -d hackerone.com
@@ -136,6 +138,6 @@ events.hackerone.com
 [INF] Found 18 subdomains for hackerone.com in 3 seconds 672 milliseconds
 ```
 
-### URL list
+## URL List
 
 * [Github.com - subfinder](https://github.com/projectdiscovery/subfinder)

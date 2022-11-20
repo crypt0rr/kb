@@ -25,13 +25,13 @@ Select Restart or Shutdown from the Apple menu in the top-left corner.
 
 The firmware password will activate at next boot. To validate the password, hold `Alt` during boot - you should be prompted to enter the password.
 
-### Usage
+## Usage
 
 ```plain
 firmwarepasswd [OPTION]
 ```
 
-### Flags
+## Flags
 
 ```plain
     ?                               Show usage
@@ -59,7 +59,7 @@ firmwarepasswd [OPTION]
                                             without having set a password
 ```
 
-### Examples
+## Examples
 
 The firmware password can also be managed with the firmwarepasswd utility while booted into the OS. For example, to prompt for the firmware password when attempting to boot from a different volume:
 
@@ -67,7 +67,7 @@ The firmware password can also be managed with the firmwarepasswd utility while 
 sudo firmwarepasswd -setpasswd -setmode command
 ```
 
-#### Verifying password
+### Verifying password
 
 ```plain
 $ sudo firmwarepasswd -verify
@@ -76,6 +76,6 @@ Enter password:
 Correct
 ```
 
-### URL list
+## URL List
 
 * [Support.apple.com - Set a firmware password on your Mac](https://support.apple.com/en-us/HT204455)

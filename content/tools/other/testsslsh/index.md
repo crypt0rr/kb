@@ -6,14 +6,14 @@ date : 2020-03-13T14:09:06+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Other', 'SSL/TLS', 'Certificates']
 ---
 
 ## Testssl.sh
 
 Is a free command line tool which checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as recent cryptographic flaws and more.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/drwetter/testssl.sh.git
@@ -23,13 +23,13 @@ git clone https://github.com/drwetter/testssl.sh.git
 chmod +x testssl.sh
 ```
 
-### Usage
+## Usage
 
 ```plain
 ./testssl.sh [OPTIONS] <target>
 ```
 
-### Flags
+## Flags
 
 ```plain
 "testssl.sh <options>", where <options> is:
@@ -146,22 +146,22 @@ Options requiring a value can also be called with '=' e.g. testssl.sh -t=smtp --
 <URI> always needs to be the last parameter.
 ```
 
-### Examples
+## Examples
 
-#### Display the server's default picks and certificate info
+### Display the server's default picks and certificate info
 
 ```plain
 ./testssl.sh -S <target>
 ```
 
-#### Only show protocols
+### Only show protocols
 
 ```plain
 ./testssl.sh --protocols <target>
 
 No engine or GOST support via engine with your /usr/bin/openssl
 
-###########################################################
+#############################################
     testssl.sh       3.0 from https://testssl.sh/
     (4601670 2020-03-07 12:15:55 -- )
 
@@ -171,7 +171,7 @@ No engine or GOST support via engine with your /usr/bin/openssl
 
        Please file bugs @ https://testssl.sh/bugs/
 
-###########################################################
+#############################################
 
  Using "OpenSSL 1.1.1c  28 May 2019" [~79 ciphers]
  on lo:/usr/bin/openssl
@@ -199,7 +199,7 @@ No engine or GOST support via engine with your /usr/bin/openssl
  Done 2020-03-13 14:13:03 [  11s] -->> <target>:443 (<target>) <<--
 ```
 
-### URL list
+## URL List
 
 * [Testssl.sh](https://testssl.sh/)
 * [GitHub.com - testssl.sh](https://github.com/drwetter/testssl.sh)

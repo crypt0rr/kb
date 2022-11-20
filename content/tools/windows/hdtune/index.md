@@ -13,16 +13,16 @@ weight : 0
 
 HD Tune (Pro) is a hard disk / SSD utility with many functions. It can be used to measure the drive's performance, scan for errors, check the health status (S.M.A.R.T.), securely erase all data and much more.
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
-### Examples
+## Examples
 
 ![Example](images/screenshot.png)
 ![Example](images/screenshot2.png)
 ![Example](images/screenshot3.png)
 
-### URL list
+## URL List
 
 * [HDTune.com](https://www.hdtune.com/)

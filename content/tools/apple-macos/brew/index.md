@@ -13,13 +13,13 @@ weight : 0
 
 Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn’t include with macOS. It can also install software not packaged for your Linux distribution to your home directory without requiring sudo.
 
-### Installation
+## Installation
 
 ```plain
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-### Usage
+## Usage
 
 ```plain
 brew search TEXT|/REGEX/
@@ -31,7 +31,7 @@ brew uninstall FORMULA|CASK...
 brew list [FORMULA|CASK...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Troubleshooting:
@@ -46,45 +46,45 @@ Further help:
   https://docs.brew.sh
 ```
 
-### Examples
+## Examples
 
-#### Install formula
+### Install formula
 
 ```plain
 brew install [FORMULA]
 ```
 
-#### Uninstall formula
+### Uninstall formula
 
 ```plain
 brew uninstall [FORMULA]
 ```
 
-#### Fetch latest version of homebrew and formula
+### Fetch latest version of homebrew and formula
 
 ```plain
 brew update
 ```
 
-#### Upgrade all outdated and unpinned brews
+### Upgrade all outdated and unpinned brews
 
 ```plain
 brew upgrade
 ```
 
-#### List installed formulas
+### List installed formulas
 
 ```plain
 brew list
 ```
 
-#### Search formulas
+### Search formulas
 
 ```plain
 brew search [text|/text/]
 ```
 
-#### Change analytic settings
+### Change analytic settings
 
 ```plain
 crypt0rr@mba ~ % brew analytics
@@ -103,7 +103,7 @@ crypt0rr@mba ~ % brew analytics
 Analytics are disabled.
 ```
 
-### URL list
+## URL List
 
 * [Brew.sh](https://brew.sh)
 * [Brew.sh - All Formula](https://formulae.brew.sh/formula/)

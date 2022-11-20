@@ -13,7 +13,7 @@ weight : 0
 
 This subsystem maintains and evaluates rules that determine whether the system allows the installation, execution, and other operations on files on the system.
 
-### Usage
+## Usage
 
 ```plain
 spctl --assess [--type type] [-v] path ... # assessment
@@ -22,7 +22,7 @@ spctl [--enable|--disable|--remove] [--type type] [--path|--requirement|--anchor
 spctl --status | --global-enable | --global-disable # system global switch
 ```
 
-### Flags
+## Flags
 
 ```plain
 Developer Mode Usage:
@@ -45,9 +45,9 @@ Kernel Extension User Consent Usage:
             Remove a Team Identifier from the list allowed to load kernel extensions without user consent.
 ```
 
-### Examples
+## Examples
 
-#### Check app signing
+### Check app signing
 
 ```plain
 crypt0rr@mba /Applications % spctl -a -vv Numbers.app 
@@ -62,6 +62,6 @@ Numbers.app: valid on disk
 Numbers.app: satisfies its Designated Requirement
 ```
 
-### URL list
+## URL List
 
 * [Medium.com - How to verify app signatures](https://medium.com/@andrew.perfiliev/how-to-verify-app-signatures-43fd5cd1bd3d)

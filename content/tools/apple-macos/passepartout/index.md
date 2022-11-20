@@ -39,19 +39,19 @@ Passepartout does not engage any unrequested background activity other than the 
 * Pick pre-resolved endpoints when DNS is problematic.
 * No web services, ads or any undesired bloat besides the VPN itself.
 
-### Installation
+## Installation
 
-#### macOS / iOS
+### macOS / iOS
 
 Download from [Apple AppStore](https://apps.apple.com/us/app/passepartout-openvpn-client/id1433648537?mt=8)
 
-### Examples
+## Examples
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 
-### URL list
+## URL List
 
 * [Github.com - Passepartout](https://github.com/passepartoutvpn)
 * [Reddit.com - Passepartout](https://www.reddit.com/r/passepartout)

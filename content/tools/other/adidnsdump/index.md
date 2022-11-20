@@ -13,7 +13,7 @@ weight : 0
 
 Query/modify DNS records for Active Directory integrated DNS via LDAP.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/dirkjanm/adidnsdump.git
@@ -21,7 +21,7 @@ cd adidnsdump
 pip install .
 ```
 
-### Usage
+## Usage
 
 ```plain
 adidnsdump [-h] [-u USERNAME] [-p PASSWORD] [--forest] [--legacy] [--zone ZONE] [--print-zones] [-v] [-d] [-r] [--dns-tcp]
@@ -29,7 +29,7 @@ adidnsdump [-h] [-u USERNAME] [-p PASSWORD] [--forest] [--legacy] [--zone ZONE] 
             HOSTNAME
 ```
 
-### Flags
+## Flags
 
 ```plain
 Query/modify DNS records for Active Directory integrated DNS via LDAP
@@ -59,9 +59,9 @@ Main options:
                         SSL version for LDAP connection, can be SSLv23, TLSv1, TLSv1_1 or TLSv1_2
 ```
 
-### Examples
+## Examples
 
-#### Check amount of records
+### Check amount of records
 
 ```plain
 $ adidnsdump -u offsec\\janedo  10.10.10.10
@@ -73,7 +73,7 @@ Password:
 [+] Found 20 records
 ```
 
-#### View records found
+### View records found
 
 ```plain
 $ adidnsdump -u offsec\\janedo -v 10.10.10.10
@@ -108,7 +108,7 @@ Password:
 [+] Found 20 records
 ```
 
-#### Print DNS zones
+### Print DNS zones
 
 ```plain
 $ adidnsdump -u offsec\\janedo 10.10.10.10 --print-zones
@@ -125,7 +125,7 @@ Password:
     RootDNSServers
 ```
 
-### URL list
+## URL List
 
 * [Github.com - adidnsdump](https://github.com/dirkjanm/adidnsdump)
 * [Dirkjan.io - Getting in the zone dumping active directory DNS with adidnsdump](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/)

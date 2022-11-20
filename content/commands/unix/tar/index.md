@@ -11,13 +11,13 @@ weight : 0
 
 ## Tar - GNU 'tar' saves many files together into a single tape or disk archive, and can restore individual files from the archive
 
-### Usage
+## Usage
 
 ```plain
 tar [OPTION...] [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Local file name selection:
@@ -341,7 +341,7 @@ Valid arguments for the --quoting-style option are:
 --rsh-command=/usr/bin/rsh
 ```
 
-### Examples
+## Examples
 
 ```plain
 tar -cf archive.tar foo bar  # Create archive.tar from files foo and bar.
@@ -349,7 +349,7 @@ tar -tvf archive.tar         # List all files in archive.tar verbosely.
 tar -xf archive.tar          # Extract all files from archive.tar.
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net - tar](https://linux.die.net/man/1/tar)
 * [Tecmint.com - 18 tar command examples in Linux](https://www.tecmint.com/18-tar-command-examples-in-linux/)

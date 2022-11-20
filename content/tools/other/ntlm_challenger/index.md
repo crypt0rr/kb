@@ -13,19 +13,19 @@ weight : 0
 
 Fetch and parse NTLM challenge messages from HTTP and SMB services.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/b17zr/ntlm_challenger.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 ntlm_challenger.py [-h] [--smbv1] url
 ```
 
-### Flags
+## Flags
 
 ```plain
 Fetch and parse NTLM challenge messages from HTTP and SMB services
@@ -38,9 +38,9 @@ optional arguments:
   --smbv1     Use SMBv1
 ```
 
-### Examples
+## Examples
 
-#### Challenge NTLM HTTPS endpoint
+### Challenge NTLM HTTPS endpoint
 
 ```plain
 $ python3 ntlm_challenger.py 'https://ntlm.example.com/'
@@ -67,7 +67,7 @@ Negotiate Flags:
   NTLMSSP_NEGOTIATE_VERSION
 ```
 
-#### Challenge SMB
+### Challenge SMB
 
 ```plain
 $ python3 ntlm_challenger.py 'smb://10.10.10.10' 
@@ -94,6 +94,6 @@ Negotiate Flags:
   NTLMSSP_NEGOTIATE_56
 ```
 
-### URL list
+## URL List
 
 * [Github.com - NTLM_Challenger](https://github.com/b17zr/ntlm_challenger)

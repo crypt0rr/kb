@@ -11,13 +11,13 @@ weight : 0
 
 ## Split
 
-### Usage
+## Usage
 
 ```plain
 split [OPTION]... [FILE [PREFIX]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: split [OPTION]... [FILE [PREFIX]]
@@ -63,15 +63,15 @@ Full documentation at: <https://www.gnu.org/software/coreutils/split>
 or available locally via: info '(coreutils) split invocation'
 ```
 
-### Examples
+## Examples
 
-#### Split files default 1000 lines per file
+### Split files default 1000 lines per file
 
 ```plain
 split <file>
 ```
 
-#### Split files with customize line numbers (-l)
+### Split files with customize line numbers (-l)
 
 Split a file with 200 lines per file
 
@@ -98,7 +98,7 @@ wc -l xa*
 1091 total
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/split)
 * [GNU.org](https://www.gnu.org/software/coreutils/split)

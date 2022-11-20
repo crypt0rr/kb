@@ -11,13 +11,13 @@ weight : 0
 
 ## Watch
 
-### Usage
+## Usage
 
 ```plain
 watch [options] command
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -41,7 +41,7 @@ Options:
 For more details see watch(1)
 ```
 
-### Examples
+## Examples
 
 Watch every 1 second the 'free -h' command
 
@@ -55,6 +55,6 @@ Mem:           31Gi       7,0Gi       7,9Gi       383Mi        16Gi        23Gi
 Swap:         4,0Gi          0B       4,0Gi
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/watch)

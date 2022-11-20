@@ -11,13 +11,13 @@ weight : 0
 
 ## Gpg - OpenPGP encryption and signing tool - Sign, check, encrypt or decrypt
 
-### Usage
+## Usage
 
 ```plain
 gpg [options] [files]
 ```
 
-### Flags
+## Flags
 
 ```plain
 gpg (GnuPG) 2.2.19
@@ -105,15 +105,15 @@ Examples:
 Please report bugs to <https://bugs.gnupg.org>.
 ```
 
-### Examples
+## Examples
 
-#### Encrypt files (password based)
+### Encrypt files (password based)
 
 ```plain
 gpg -c <file>
 ```
 
-#### Decrypt files  (password based)
+### Decrypt files  (password based)
 
 ```plain
 gpg <file>
@@ -121,13 +121,13 @@ gpg <file>
 
 ### Key based
 
-#### Create keys
+### Create keys
 
 ```plain
 gpg --gen-key
 ```
 
-#### List available keys
+### List available keys
 
 ```plain
 $ gpg --list-keys
@@ -139,43 +139,43 @@ uid           [ultimate] John Do <john.do@offsec.nl>
 sub   rsa3072 2020-11-12 [E] [expires: 2022-11-12]
 ```
 
-#### Export public key
+### Export public key
 
 ```plain
 gpg --export -a "<certificate-name-user>" > public.key
 ```
 
-#### Export private key
+### Export private key
 
 ```plain
 gpg --export-secret-key -a "<certificate-name-user>" > private.key
 ```
 
-#### Import public key
+### Import public key
 
 ```plain
 gpg --import public.key
 ```
 
-#### Import private key
+### Import private key
 
 ```plain
 gpg --allow-secret-key-import --import private.key
 ```
 
-#### Generate fingerprint
+### Generate fingerprint
 
 ```plain
 gpg --fingerprint
 ```
 
-#### Encrypt data using key
+### Encrypt data using key
 
 ```plain
 gpg -e -u "Sender (Your) Real Name" -r "Receiver User Name" file.txt
 ```
 
-#### Decrypt data using key
+### Decrypt data using key
 
 Will automatically select the corresponding key (if you have one)
 
@@ -183,7 +183,7 @@ Will automatically select the corresponding key (if you have one)
 gpg -d file.txt.gpg
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/gpg)
 * [Rtcamp.com Tutorial GPG keys](https://rtcamp.com/tutorials/linux/gpg-keys/)

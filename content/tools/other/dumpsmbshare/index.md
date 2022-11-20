@@ -13,14 +13,14 @@ tags : ['Other', 'SMB']
 
 A script to dump files and folders remotely from a Windows SMB share.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/p0dalirius/DumpSMBShare.git
 python3 install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 DumpSMBShare.py [-h] (-s SHARE | -l) [-e EXTENSIONS] [-D DUMP_DIR] [-f FILE] [-B BASE_DIR] [--debug] [-q] [-H LMHASH:NTHASH] [--no-pass] [-k] [-A hex key] [--dc-ip ip address] [-I ip address]
@@ -28,7 +28,7 @@ DumpSMBShare.py [-h] (-s SHARE | -l) [-e EXTENSIONS] [-D DUMP_DIR] [-f FILE] [-B
                        target
 ```
 
-### Flags
+## Flags
 
 ```plain
 DumpSMBShare v1.2 - by @podalirius_
@@ -70,10 +70,10 @@ connection:
                         Destination port to connect to SMB Server
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Github.com - DumpSMBShare](https://github.com/p0dalirius/DumpSMBShare)

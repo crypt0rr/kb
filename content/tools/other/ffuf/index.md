@@ -13,7 +13,7 @@ weight : 0
 
 A fast web fuzzer written in Go.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/ffuf/ffuf/releases/latest)
 Or you can use Go to install the tool.
@@ -22,13 +22,13 @@ Or you can use Go to install the tool.
 go get -u github.com/ffuf/ffuf
 ```
 
-### Usage
+## Usage
 
 ```plain
 ffuf [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Fuzz Faster U Fool - v1.3.0-git
@@ -115,12 +115,12 @@ EXAMPLE USAGE:
   More information and examples: https://github.com/ffuf/ffuf
 ```
 
-### Examples
+## Examples
 
 ```plain
 ffuc -c -w /path/to/wordlist -u https://example.com/FUZZ
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ffuf](https://github.com/ffuf/ffuf)

@@ -15,7 +15,7 @@ An interactive cheatsheet tool for the command-line and application launchers.
 
 Navi allows you to browse through cheatsheets (that you may write yourself or download from maintainers) and execute commands. Suggested values for arguments are dynamically displayed in a list.
 
-### Installation
+## Installation
 
 *Recommended* way of installation
 
@@ -25,13 +25,13 @@ brew install navi
 
 Or download newest pre-compiled binary from [Github.com](https://github.com/denisidoro/navi/releases/latest)
 
-### Usage
+## Usage
 
 ```plain
 navi [FLAGS] [OPTIONS] [SUBCOMMAND]
 ```
 
-### Flags
+## Flags
 
 ```plain
 FLAGS:
@@ -98,10 +98,10 @@ search
     navi --fzf-overrides '--no-exact'                # use looser search algorithm
 ```
 
-### Examples
+## Examples
 
 ![Example](images/navi.gif)
 
-### URL list
+## URL List
 
 * [Github.com - navi](https://github.com/denisidoro/navi)

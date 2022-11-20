@@ -15,19 +15,19 @@ Is a ncurses-based monitoring application for wireless network devices. It plots
 
 Analyze Wi-Fi networks, use for example [iperf3]({{< ref "iperf3" >}}) to measure speed and stability.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install wavemon
 ```
 
-### Usage
+## Usage
 
 ```plain
 wavemon [ -hgv ] [ -i ifname ]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -g            Ensure screen is sufficiently dimensioned
@@ -36,7 +36,7 @@ wavemon [ -hgv ] [ -i ifname ]
   -v            Print version details
 ```
 
-### Examples
+## Examples
 
 ```plain
 sudo wavemon -iface wlp4s0
@@ -85,7 +85,7 @@ sudo wavemon -iface wlp4s0
 **F1 info**  F2 lhist F3 scan  F4      F5      F6      F7 prefs F8 help  F9 about F10 quit
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Wavemon](https://github.com/uoaerg/wavemon)
 * [Systutorials - Wavemon](https://www.systutorials.com/docs/linux/man/1-wavemon/)

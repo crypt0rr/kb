@@ -11,14 +11,14 @@ weight : 0
 
 ## Date - Display the current time in the given FORMAT, or set the system date
 
-### Usage
+## Usage
 
 ```plain
 date [OPTION]... [+FORMAT]
   or:  date [-u|--utc|--universal] [MMDDhhmm[[CC]YY][.ss]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Mandatory arguments to long options are mandatory for short options too.
@@ -121,13 +121,13 @@ Full documentation at: <https://www.gnu.org/software/coreutils/date>
 or available locally via: info '(coreutils) date invocation'
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ date +"%m-%d-%Y-%H-%M-%S"
 11-27-2020-17-03-31
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/date)

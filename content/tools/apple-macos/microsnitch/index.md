@@ -13,14 +13,14 @@ weight : 0
 
 Micro Snitch is an ultra-light menu bar application that operates inconspicuously in the background.
 
-### Installation
+## Installation
 
 Download newest release from [obdev.at](https://www.obdev.at/products/microsnitch/download.html)
 
-### Examples
+## Examples
 
 ![Example](images/example.jpg)
 
-### URL list
+## URL List
 
 * [Obdev.at - MicroSnitch](https://www.obdev.at/products/microsnitch/index.html)

@@ -11,19 +11,19 @@ weight : 0
 
 ## Iotop - Check live disk speed
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install iotop
 ```
 
-### Usage
+## Usage
 
 ```plain
 iotop [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: /usr/sbin/iotop [OPTIONS]
@@ -55,10 +55,10 @@ Options:
   --no-help             suppress listing of shortcuts
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/iotop)

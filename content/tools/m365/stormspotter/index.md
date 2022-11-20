@@ -13,9 +13,9 @@ weight : 0
 
 Stormspotter creates an “attack graph” of the resources in an Azure subscription. It enables red teams and pentesters to visualize the attack surface and pivot opportunities within a tenant, and supercharges your defenders to quickly orient and prioritize incident response work.
 
-### Installation
+## Installation
 
-#### Docker
+### Docker
 
 Most users may find it easier to install Stormspotter via Docker. This is the recommended method.
 
@@ -94,7 +94,7 @@ python3 sscollector.pyz cli
 python3 sscollector.pyz spn -t <tenant> -c <clientID> -s <clientSecret>
 ```
 
-#### Common options for all authentication types
+### Common options for all authentication types
 
 * **--cloud**: Specify a different Azure Cloud (GERMAN, CHINA, USGOV)
 * **--config**: Specify a custom configuration for cloud environments
@@ -107,24 +107,24 @@ python3 sscollector.pyz spn -t <tenant> -c <clientID> -s <clientSecret>
 * **--ssl-cert**: Specify an SSL cert for Stormcollector to use for requests. Not a common option
 * **--backfill**: Perform AAD enumeration only for object IDs associated with RBAC enumeration. Only applicable when --azure is specified.
 
-#### Uploading Results
+### Uploading Results
 
 Once you've started up the UI, you will see a section in the database tab labeled "Stormcollector Upload". Add your file to this uploader and the processing will begin. As the results get processed, you can check the backend logs to view progress, and the results should also be reflected in the same Database View tab.
 
-### Examples
+## Examples
 
-#### View Permissions on a KeyVault
+### View Permissions on a KeyVault
 
 ![Screenshot1](images/screenshot1.png)
 
-#### Show Members of an Azure AD Role
+### Show Members of an Azure AD Role
 
 ![Screenshot2](images/screenshot2.png)
 
-#### Show Incoming and Outgoing Relationships
+### Show Incoming and Outgoing Relationships
 
 ![Screenshot3](images/screenshot3.png)
 
-### URL list
+## URL List
 
 * [Github.com - Stormspotter](https://github.com/Azure/Stormspotter)

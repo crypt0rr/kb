@@ -13,7 +13,7 @@ weight : 0
 
 Scrape the internet for files and EXIF data.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/m8r0wn/pymeta
@@ -25,7 +25,7 @@ sudo python3 setup.py install
 python3 -m pip install pymetadata
 ```
 
-### Usage
+## Usage
 
 ```plain
 pymeta -d example.com -s all -csv
@@ -33,7 +33,7 @@ pymeta -d example.org -s bing
 pymeta -dir my_files/
 ```
 
-### Flags
+## Flags
 
 ```plain
             PyMeta v.1.0.4
@@ -59,7 +59,7 @@ Output Options:
   --debug               Show links as they are collected during scraping
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ pymeta -d example.com
@@ -96,6 +96,6 @@ $ pymeta -d example.com
 [+] Report complete: example_meta.csv
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - pymeta](https://github.com/m8r0wn/pymeta)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Lshw
 
-### Usage
+## Usage
 
 ```plain
 lshw [-format] [-options ...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Hardware Lister (lshw) -
@@ -45,7 +45,7 @@ options can be
     -notime         exclude volatile attributes (timestamps) from output
 ```
 
-### Examples
+## Examples
 
 ```plain
 sudo lshw
@@ -73,6 +73,6 @@ sudo lshw
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/lshw)

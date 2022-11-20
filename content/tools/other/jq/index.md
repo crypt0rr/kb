@@ -13,13 +13,13 @@ weight : 0
 
 jq is a tool for processing JSON inputs, applying the given filter to its JSON text inputs and producing the filter's results as JSON on standard output.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install jq
 ```
 
-### Usage
+## Usage
 
 ```plain
 jq [options] <jq filter> [file...]
@@ -27,7 +27,7 @@ jq [options] --args <jq filter> [strings...]
 jq [options] --jsonargs <jq filter> [JSON_TEXTS...]
 ```
 
-### Flags
+## Flags
 
 ```plain
 jq is a tool for processing JSON inputs, applying the given filter to
@@ -73,9 +73,9 @@ positional arguments are available as $ARGS.positional[].
 See the manpage for more options.
 ```
 
-### Examples
+## Examples
 
-#### Filter specific fields from json file
+### Filter specific fields from json file
 
 Input file for query:
 
@@ -117,6 +117,6 @@ antipublic
 linkedin
 ```
 
-### URL list
+## URL List
 
 * [Stedolan.GitHub.io - jq](https://stedolan.github.io/jq/)

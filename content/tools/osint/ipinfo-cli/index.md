@@ -21,9 +21,9 @@ This is the official CLI for the [IPinfo.io](https://ipinfo.io/) IP address API,
 * Print out IP lists for any CIDR or IP range.
 * And more!
 
-### Installation
+## Installation
 
-#### Ubuntu
+### Ubuntu
 
 PPA:
 
@@ -39,13 +39,13 @@ Source:
 curl -Ls https://github.com/ipinfo/cli/releases/download/ipinfo-2.8.1/deb.sh | sh
 ```
 
-#### Brew
+### Brew
 
 ```plain
 brew install ipinfo-cli
 ```
 
-### Usage
+## Usage
 
 ```plain
 ipinfo <cmd> [<opts>] [<args>]
@@ -59,7 +59,7 @@ If you have a token, log in with it first. You can continue without a token, but
 ipinfo login
 ```
 
-### Flags
+## Flags
 
 ```plain
 Commands:
@@ -111,7 +111,7 @@ Options:
       output CSV format.
 ```
 
-### Examples
+## Examples
 
 **Note** Don't forget to login unless you want no detail.
 
@@ -130,7 +130,7 @@ Core
 - Timezone     America/Los_Angeles
 ```
 
-### URL list
+## URL List
 
 * [ipinfo.io](https://ipinfo.io/)
 * [Github.com - ipinfo-cli](https://github.com/ipinfo/cli)

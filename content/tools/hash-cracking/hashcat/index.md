@@ -13,7 +13,7 @@ weight : 0
 
 World's fastest and most advanced password recovery utility.
 
-### Installation
+## Installation
 
 For automation of hash-cracking process use [hash-cracker]({{< ref "hash-cracker" >}})
 
@@ -39,7 +39,7 @@ For devices running a NVIDIA card with CUDA support.
 sudo apt install nvidia-cuda-toolkit
 ```
 
-### Usage
+## Usage
 
 ```plain
 hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
@@ -58,7 +58,7 @@ hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
 ?b = 0x00 - 0xff
 ```
 
-### Flags
+## Flags
 
 ```plain
 hashcat (v6.0.0) starting...
@@ -590,9 +590,9 @@ If you still have no idea what just happened, try the following pages:
 
 Please check [hash-cracker - rules](https://github.com/crypt0rr/hash-cracker/tree/master/scripts/rules)
 
-### Examples
+## Examples
 
-#### Start hashcat with session
+### Start hashcat with session
 
 ```plain
 hashcat -m <hash-number> --session=<NAME>
@@ -604,25 +604,25 @@ Restore the session
 hashcat --session <NAME> --restore
 ```
 
-#### Dictionary
+### Dictionary
 
 ```plain
 hashcat -m <hash-number> <fileWithHash> <wordlist>
 ```
 
-#### Dictionary + rules
+### Dictionary + rules
 
 ```plain
 hashcat -m <hash-number> <fileWithHash> <wordlist> -r <rulefile>.rule
 ```
 
-#### Mask
+### Mask
 
 ```plain
 hashcat -m <hash-number> <fileWithHash> -a3 'Welkom?1?1?1' --increment -1 '?l?d?u'
 ```
 
-#### Specific word and brute force combined
+### Specific word and brute force combined
 
 ```plain
 hashcat --bitmap-max=24 -m0 md5s -a6 <file-containing-word> '?1?1?1?1?1?1?1?1?1' -1 '?l?u'
@@ -632,31 +632,31 @@ hashcat --bitmap-max=24 -m0 md5s -a6 <file-containing-word> '?1?1?1?1?1?1?1?1?1'
 hashcat --bitmap-max=24 -m0 md5s -a7 '?1?1?1?1?1?1?1?1?1' -1 '?l?u' <file-containing-word>
 ```
 
-#### Show username, hash and password
+### Show username, hash and password
 
 ```plain
 hashcat -m <hash-number> <fileWithHash> --username --show
 ```
 
-#### Filter password reuse
+### Filter password reuse
 
 ```plain
 sort <file-with-passwords>.txt | uniq -c | sort -rn | head -n10
 ```
 
-#### Match users versus cracked hashes, for example domain admins
+### Match users versus cracked hashes, for example domain admins
 
 ```plain
 grep -wif <domain-admins>.txt <username-hash-password>.txt
 ```
 
-#### Kerberoast hashes John to hashcat
+### Kerberoast hashes John to hashcat
 
 ```plain
 sed 's/\$krb5tgs\$\(.*\):\(.*\)/\$krb5tgs\$23\$\*\1\*\$\2/' <file-with-hashes>
 ```
 
-#### HEX to readable
+### HEX to readable
 
 Content of $HEX[517765a737383972]
 
@@ -667,7 +667,7 @@ Qwe§789r
 
 For a list of HEX to readable use [this script](https://github.com/crypt0rr/hex-to-readable)
 
-#### Keepass database to hashcat format
+### Keepass database to hashcat format
 
 You need to use -m13400 and --username for hashcat
 
@@ -721,7 +721,7 @@ $ head output.txt
 * [Github.com - Wikiraider](https://github.com/NorthwaveSecurity/wikiraider)
 * [En.wikipedia.org - RockYou](https://en.wikipedia.org/wiki/RockYou#Data_breach)
 
-### URL list
+## URL List
 
 * [Hashcat.net](https://hashcat.net/hashcat/)
 * [Hashcat.net Example Hashlist](https://hashcat.net/wiki/doku.php?id=example_hashes)

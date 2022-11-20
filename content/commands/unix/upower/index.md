@@ -11,13 +11,13 @@ weight : 0
 
 ## Upower - UPower tool - System-wide Power Management
 
-### Usage
+## Usage
 
 ```plain
 upower [OPTION…]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Help Options:
@@ -34,7 +34,7 @@ Application Options:
 
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ upower -d
@@ -144,6 +144,6 @@ Daemon:
   critical-action: HybridSleep
 ```
 
-### URL list
+## URL List
 
 * [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/trusty/man1/upower.1.html)

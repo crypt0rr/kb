@@ -11,7 +11,7 @@ weight : 0
 
 ## Network Manager
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install network-manager
@@ -19,13 +19,13 @@ sudo apt install network-manager
 
 ## Nm-connection-editor
 
-### Usage
+## Usage
 
 ```plain
 nm-connection-editor [OPTION…]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage:
@@ -44,7 +44,7 @@ Application Options:
   -i, --import                  Import a VPN connection from given file
 ```
 
-### URL list
+## URL List
 
 * [Ubuntu.com](https://help.ubuntu.com/community/NetworkManager)
 * [Unix.com](https://www.unix.com/man-page/centos/1/nm-connection-editor/)

@@ -13,22 +13,22 @@ weight : 0
 
 VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.
 
-### Installation
+## Installation
 
 Download newest release from [Virtualbox.org](https://www.virtualbox.org/wiki/Downloads)
 
 ### Troubleshooting
 
-#### When no USB-device is reported to send to vm
+### When no USB-device is reported to send to vm
 
 ```plain
 sudo adduser $USER vboxusers
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Virtualbox.org](https://www.virtualbox.org/)

@@ -13,19 +13,19 @@ weight : 0
 
 Is used to show the current readings of all sensor chips.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install lm-sensors
 ```
 
-### Usage
+## Usage
 
 ```plain
 sensors [OPTION]... [CHIP]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: sensors [OPTION]... [CHIP]...
@@ -51,7 +51,7 @@ Example chip names:
     lm78-*
 ```
 
-### Examples
+## Examples
 
 ```plain
 sensors
@@ -95,7 +95,7 @@ Adapter: ACPI interface
 temp1:        +46.0°C  (crit = +128.0°C)
 ```
 
-### URL list
+## URL List
 
 * [Ubuntu.com - Sensor Install HowTo](https://help.ubuntu.com/community/SensorInstallHowto)
 * [GitHub.com - LM-sensors](https://github.com/lm-sensors/lm-sensors)

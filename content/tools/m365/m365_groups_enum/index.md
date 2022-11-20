@@ -13,14 +13,14 @@ weight : 0
 
 Enumerate Microsoft 365 Groups in a tenant with their metadata.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/cnotin/m365_groups_enum.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 all_groups.py [-h] [-u USERNAME] [-p PASSWORD] [-t TENANT] [-c CLIENT]
@@ -33,7 +33,7 @@ all_groups.py [-h] [-u USERNAME] [-p PASSWORD] [-t TENANT] [-c CLIENT]
                      [-f TOKENFILE] [--tokens-stdout] [--debug]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -81,9 +81,9 @@ optional arguments:
   --debug               Enable debug logging to disk
 ```
 
-### Examples
+## Examples
 
-#### Gather information without 2FA
+### Gather information without 2FA
 
 ```plain
 $ python3 all_groups.py -u johndo@example.com -p 'Welkom1234!'
@@ -97,7 +97,7 @@ Getting groups details...
 Bye!
 ```
 
-#### Gather when 2FA is implemented
+### Gather when 2FA is implemented
 
 ```plain
 $ python3 all_groups.py --device-code
@@ -138,6 +138,6 @@ jq '.[] | select(.visibility=="Public")' all_groups.json | jq -r '.sharepoint'
 jq '.[] | select(.visibility=="Public")' all_groups.json | jq -r '.displayName, .sharepoint, .members'
 ```
 
-### URL list
+## URL List
 
 * [Github.com - m365_groups_enum](https://github.com/cnotin/m365_groups_enum.git)

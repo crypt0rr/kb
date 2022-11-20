@@ -13,19 +13,19 @@ weight : 0
 
 Dump and analyze network traffic on CLI.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install tshark
 ```
 
-### Usage
+## Usage
 
 ```plain
 tshark [options] ...
 ```
 
-### Flags
+## Flags
 
 ```plain
 TShark (Wireshark) 3.0.5 (Git v3.0.5 packaged as 3.0.5-1)
@@ -153,27 +153,27 @@ You might want to enable it by executing:
 Note that this can make your system less secure!
 ```
 
-### Examples
+## Examples
 
-#### Start tshark output to CLI
+### Start tshark output to CLI
 
 ```plain
 sudo tshark -i <interface>
 ```
 
-#### Start tshark output to file
+### Start tshark output to file
 
 ```plain
 sudo tshark -i <interface> -w <output-file>.pcap
 ```
 
-#### Start tshark output to file for x time
+### Start tshark output to file for x time
 
 ```plain
 sudo tshark -i <interface> -a duration:<timeInSeconds> -w <output-file>.pcap
 ```
 
-#### Troubleshooting
+### Troubleshooting
 
 Error message: tshark: The file to which the capture would be saved ("output.pcap") could not be opened: Permission denied.
 
@@ -183,6 +183,6 @@ Rights are not correct, first create the file that will be used as output
 sudo touch <output>.pcap
 ```
 
-### URL list
+## URL List
 
 * [Wireshark.org - tshark](https://www.wireshark.org/docs/man-pages/tshark.html)

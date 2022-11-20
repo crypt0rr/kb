@@ -34,6 +34,6 @@ Note 2: Currently OpenCore Legacy Patcher officially supports patching to run ma
 
 To run the project from source, see here: [Build and run from source](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/SOURCE.md)
 
-### URL list
+## URL List
 
 * [Github.com - OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher)

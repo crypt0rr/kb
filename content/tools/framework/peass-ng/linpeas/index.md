@@ -15,7 +15,7 @@ Linux Privilege Escalation Awesome Script.
 
 [Github.com - LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 
-### Installation
+## Installation
 
 Download `.sh` or binary from [Github.com](https://github.com/carlospolop/PEASS-ng/releases)
 
@@ -27,11 +27,11 @@ wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-
 curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh > linpeas.sh
 ```
 
-### Usage
+## Usage
 
 Check the checklist on [book.hacktricks.xyz](https://book.hacktricks.xyz/linux-unix/privilege-escalation)
 
-### URL list
+## URL List
 
 * [GitHub.com - Privilege Escalation Awesome Scripts Suite](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
 * [WinPEAS GitHub](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)

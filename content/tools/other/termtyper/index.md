@@ -23,7 +23,7 @@ A typing application to level up your fingers!
 * Change styles/settings on the fly
 * Lots of options to tweak! (See tweaks)
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/kraanzu/termtyper.git
@@ -57,6 +57,6 @@ pip3 install .
     Sorry, your browser doesn't support embedded videos.
 </video>
 
-### URL list
+## URL List
 
 * [Github.com - termtyper](https://github.com/kraanzu/termtyper)

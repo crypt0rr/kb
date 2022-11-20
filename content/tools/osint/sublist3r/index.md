@@ -6,28 +6,28 @@ date : 2021-01-27T12:57:59+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS']
 ---
 
 ## Sublist3r
 
 Python tool designed to enumerate subdomains of websites using OSINT.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/aboul3la/Sublist3r.git
 python3 -m pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 usage: sublist3r.py [-h] -d DOMAIN [-b [BRUTEFORCE]] [-p PORTS] [-v [VERBOSE]]
                     [-t THREADS] [-e ENGINES] [-o OUTPUT] [-n]
 ```
 
-### Flags
+## Flags
 
 ```plain
 OPTIONS:
@@ -51,7 +51,7 @@ OPTIONS:
 Example: python ./sublist3r.py -d google.com
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./sublist3r.py -d example.com
@@ -92,6 +92,6 @@ lesha.ermakov.01.example.com
 [...REDACTED...]
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Sublist3r](https://github.com/aboul3la/Sublist3r)

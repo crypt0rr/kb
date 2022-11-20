@@ -13,19 +13,19 @@ tags : ['Other', 'SMB']
 
 wget-like utility for download files over SMB
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install smbclient
 ```
 
-### Usage
+## Usage
 
 ```plain
 smbget [OPTION...]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -w, --workgroup=STRING      Workgroup to use (optional)
@@ -50,9 +50,9 @@ Help options:
       --usage                 Display brief usage message
 ```
 
-### Examples
+## Examples
 
-#### Recursively get with `anonymous` user
+### Recursively get with `anonymous` user
 
 ```plain
 # smbget -R smb://10.10.196.36/anonymous
@@ -65,7 +65,7 @@ smb://10.10.196.36/anonymous/logs/log3.txt
 Downloaded 634b in 2 seconds
 ```
 
-#### Recursively get with authentication
+### Recursively get with authentication
 
 ```plain
 # smbget -R smb://10.10.196.36/johndo -U johndo
@@ -80,7 +80,7 @@ smb://10.10.196.36/johndo/notes/4.01 Agent-Based Models.md
 Downloaded 45.07MB in 53 seconds
 ```
 
-### URL list
+## URL List
 
 * [Samba.org - smbget](https://www.samba.org/samba/docs/current/man-html/smbget.1.html)
 * [Unix.com - smbget](https://www.unix.com/man-page/centos/1/smbget/)

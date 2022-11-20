@@ -13,15 +13,15 @@ weight : 0
 
 Xirrus Wi-Fi Inspector is special software that allows users to find the various Wi-Fi hotspots in their area and get connected quickly and conveniently. The software also helps to troubleshoot connection problems so that users can make sure they are always connected to the net when they need to be.
 
-### Installation
+## Installation
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 ![Example](images/example2.png)
 
-### URL list
+## URL List
 
 * [Xirrus.com - Inspector](https://www.xirrus.com/inspector)

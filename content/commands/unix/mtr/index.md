@@ -11,13 +11,13 @@ weight : 0
 
 ## Mtr - a network diagnostic tool - TraceRoute alternative
 
-### Usage
+## Usage
 
 ```plain
 mtr [options] hostname
 ```
 
-### Flags
+## Flags
 
 ```plain
  -F, --filename FILE        read hostname(s) from a file
@@ -61,10 +61,10 @@ mtr [options] hostname
 See the 'man 8 mtr' for details.
 ```
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/mtr)

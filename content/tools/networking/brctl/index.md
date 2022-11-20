@@ -13,19 +13,19 @@ weight: 0
 
 Bridge networking - Ethernet bridge administration.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt-get install bridge-utils
 ```
 
-### Usage
+## Usage
 
 ```plain
 brctl [commands]
 ```
 
-### Flags
+## Flags
 
 ```plain
 commands:
@@ -47,7 +47,7 @@ showstp         <bridge>        show bridge stp info
 stp             <bridge> {on|off}   turn stp on/off
 ```
 
-### Examples
+## Examples
 
 Add a bridge to route network through system
 
@@ -59,6 +59,6 @@ sudo ifconfig br0 up
 sudo dhclient -v br0
 ```
 
-### URL list
+## URL List
 
 - [Linux.die.net - brctl](https://linux.die.net/man/8/brctl)

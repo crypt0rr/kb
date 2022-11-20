@@ -11,13 +11,13 @@ weight : 0
 
 ## Dmesg - Display or control the kernel ring buffer - show bootup messages
 
-### Usage
+## Usage
 
 ```plain
 dmesg [options]
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -75,7 +75,7 @@ Supported log levels (priorities):
 For more details see dmesg(1).
 ```
 
-### Examples
+## Examples
 
 ```plain
  dmesg
@@ -92,6 +92,6 @@ For more details see dmesg(1).
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/8/dmesg)

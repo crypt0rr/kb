@@ -15,7 +15,7 @@ A little tool to convert ccache tickets into kirbi (KRB-CRED) and vice versa bas
 
 As input you must provide a ccache or kirbi file. The script will detect the format and convert it.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/Zer1t0/ticket_converter
@@ -23,13 +23,13 @@ cd ticket_converter
 pip install -r requirements.txt
 ```
 
-### Usage
+## Usage
 
 ```plain
 ticket_converter.py [-h] input_file output_file
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -40,22 +40,22 @@ optional arguments:
   -h, --help   show this help message and exit
 ```
 
-### Examples
+## Examples
 
-#### kirbi to ccache
+### kirbi to ccache
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache
 Converting kirbi => ccache
 ```
 
-#### ccache to kirbi
+### ccache to kirbi
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.ccache johnDomainAdmin.kirbi
 Converting ccache => kirbi
 ```
 
-### URL list
+## URL List
 
 * [Github.com - ticket_converter](https://github.com/Zer1t0/ticket_converter)

@@ -11,13 +11,13 @@ weight : 0
 
 ## Df - Show information about the file system on which each FILE resides, or all file systems by default
 
-### Usage
+## Usage
 
 ```plain
 df [OPTION]... [FILE]...
 ```
 
-### Flags
+## Flags
 
 ```plain
 Mandatory arguments to long options are mandatory for short options too.
@@ -60,9 +60,9 @@ Full documentation at: <https://www.gnu.org/software/coreutils/df>
 or available locally via: info '(coreutils) df invocation'
 ```
 
-### Examples
+## Examples
 
-#### Show all devices human readable
+### Show all devices human readable
 
 ```plain
 $ df -h
@@ -76,7 +76,7 @@ tmpfs                  7.8G     0  7.8G   0% /sys/fs/cgroup
 [...]
 ```
 
-#### Show specific folder, usage and mountpoint
+### Show specific folder, usage and mountpoint
 
 ```plain
 $ df -h /home
@@ -84,7 +84,7 @@ Filesystem             Size  Used Avail Use% Mounted on
 /dev/mapper/data-root  461G  132G  306G  31% /
 ```
 
-### URL list
+## URL List
 
 * [Linux.die.net](https://linux.die.net/man/1/df)
 * [Tecmint.com](https://www.tecmint.com/how-to-check-disk-space-in-linux/)

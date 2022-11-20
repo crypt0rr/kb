@@ -11,7 +11,7 @@ tags : ['Networking', 'SMTP']
 
 ## Swaks
 
-Swaks is a featureful, flexible, scriptable, transaction-oriented SMTP test tool written and maintained by [John Jetmore][john_jetmore].  It is free to use and licensed under the GNU GPLv2. Features include:
+Swaks is a featureful, flexible, scriptable, transaction-oriented SMTP test tool written and maintained by John Jetmore.  It is free to use and licensed under the GNU GPLv2. Features include:
 
 * SMTP extensions including TLS, authentication, pipelining, PROXY, PRDR, and XCLIENT
 * Protocols including SMTP, ESMTP, and LMTP
@@ -20,23 +20,23 @@ Swaks is a featureful, flexible, scriptable, transaction-oriented SMTP test tool
 
 The official project page is <https://jetmore.org/john/code/swaks/>.
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/jetmore/swaks/releases).
 
-### Usage
+## Usage
 
 ```plain
 ./swaks [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 Please run `./swaks --help` or check the help file below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern="ref.*(txt)"/%}}
 
-### Examples
+## Examples
 
 ```plain
 $ ./swaks --to john.do@offsec.nl --from karel@example.com –-server 10.10.10.10
@@ -69,6 +69,12 @@ $ ./swaks --to john.do@offsec.nl --from karel@example.com –-server 10.10.10.10
 === Connection closed with remote host.
 ```
 
-### URL list
+To for example insert own body text, use the `--body` flag.
+
+```plain
+swaks -t john.do@offsec.nl --server 10.10.10.10 --body "This is test body text, you can put whatever you want in here."
+```
+
+## URL List
 
 * [Github.com - Swaks](https://github.com/jetmore/swaks)

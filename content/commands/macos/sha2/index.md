@@ -13,19 +13,19 @@ weight : 0
 
 Open source implementation of the SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512 secure has algorithms.
 
-### Installation
+## Installation
 
 ```plain
 brew install sha2
 ```
 
-### Usage
+## Usage
 
 ```plain
 sha2 [options] [<file>]
 ```
 
-### Flags
+## Flags
 
 ```plain
 -256    Generate SHA-256 hash
@@ -35,14 +35,14 @@ sha2 [options] [<file>]
 -q      Quiet mode - only output hexadecimal hashes, one per line
 ```
 
-### Examples
+## Examples
 
 ```plain
 sha2 -256 kali-linux-2022.3-installer-netinst-amd64.iso                                                                 
 SHA-256 (kali-linux-2022.3-installer-netinst-amd64.iso) = 82f702acf37771ac27355c5f9170bf365a73f0cc9e571fb422f7aa58ca218d48
 ```
 
-### URL list
+## URL List
 
 * [Formulae.brew.sh - sha2](https://formulae.brew.sh/formula/sha2#default)
 * [Aarongifford - sha](https://aarongifford.com/computers/sha.html)

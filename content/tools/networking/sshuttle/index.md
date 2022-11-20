@@ -6,7 +6,7 @@ date : 2022-05-31T11:03:47+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Networking', 'VPN', 'SSH']
+tags : ['Networking', 'VPN', 'SSH', 'Pivoting']
 ---
 
 ## sshuttle
@@ -23,7 +23,7 @@ As far as I know, sshuttle is the only program that solves the following common 
 * You hate openssh's port forwarding because it's randomly slow and/or stupid.
 * You can't use openssh's PermitTunnel feature because it's disabled by default on openssh servers; plus it does TCP-over-TCP, which has terrible performance.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/sshuttle/sshuttle.git
@@ -31,19 +31,19 @@ cd sshuttle
 sudo ./setup.py install
 ```
 
-#### Brew
+### Brew
 
 ```plain
 brew install sshuttle
 ```
 
-### Usage
+## Usage
 
 ```plain
 sshuttle [-l [ip:]port] -r [user@]sshserver[:port] <subnets...>
 ```
 
-### Flags
+## Flags
 
 ```plain
 positional arguments:
@@ -97,7 +97,7 @@ options:
                         tproxy optional traffic mark with provided MARK value in hexadecimal (default '0x01')
 ```
 
-### Examples
+## Examples
 
 Tunnel all traffic thru SSH.
 
@@ -105,7 +105,9 @@ Tunnel all traffic thru SSH.
 sshuttle -r username@sshserver 0.0.0.0/0 -vv
 ```
 
-### URL list
+To use key authentication add `--ssh-cmd 'ssh -i /home/crypt0rr/myprivatekey.key'`
+
+## URL List
 
 * [Sshuttle.readthedocs.org - documentation](https://sshuttle.readthedocs.org/)
 * [Formulae.brew.sh - sshuttle](https://formulae.brew.sh/formula/sshuttle#default)

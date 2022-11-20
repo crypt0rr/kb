@@ -13,14 +13,14 @@ weight : 0
 
 Makes these Internet connections visible and puts you back in control!
 
-### Installation
+## Installation
 
 Download newest release from [obdev.at](https://www.obdev.at/products/littlesnitch/download.html)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Obdev.at - LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html)

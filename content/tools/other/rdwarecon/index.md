@@ -15,7 +15,7 @@ A python script to extract information from a Microsoft Remote Desktop Web Acces
 
 This python script allow to extract various information from a Microsoft Remote Desktop Web Access (RDWA) application, such as the FQDN of the remote server, the internal AD domain name (from the FQDN), and the remote Windows Server version
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/p0dalirius/RDWArecon.git
@@ -63,13 +63,13 @@ If the remote RDWeb installation was not hardened, there is a high chance that t
 
 The `RDWArecon.py` tool automatically gets this file and compare its hash to get the remote Windows Server version.
 
-### Usage
+## Usage
 
 ```plain
 RDWArecon.py [-h] -u URL [-v] [-k] [-L] [--no-colors]
 ```
 
-### Flags
+## Flags
 
 ```plain
         ____  ____ _       _____                             
@@ -88,7 +88,7 @@ options:
   --no-colors        Disable colored output (default: False)
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./RDWArecon.py -u https://rdweb.offsec.nl/RDWeb/Pages/en-US/login.aspx\?ReturnUrl\=/RDWeb/Pages/en-US/Default.aspx     
@@ -118,6 +118,6 @@ Finding RDWA hosts on the web.
 inurl:/RDWeb/Pages/en-US/Default.aspx
 ```
 
-### URL list
+## URL List
 
 * [Github.com - RDWArecon](https://github.com/p0dalirius/RDWArecon)

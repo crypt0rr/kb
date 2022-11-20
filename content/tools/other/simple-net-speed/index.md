@@ -21,15 +21,15 @@ Simply showing network speed. Left click to change modes:
 
 Middle click to change font size
 
-### Installation
+## Installation
 
 Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/1085/simple-net-speed/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Extensions.gnome.org - Simple net speed](https://extensions.gnome.org/extension/1085/simple-net-speed/)
 * [Github.com - Simple net speed](https://github.com/biji/simplenetspeed)

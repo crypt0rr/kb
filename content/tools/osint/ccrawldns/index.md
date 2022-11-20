@@ -6,26 +6,26 @@ date : 2021-08-04T15:10:35+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['OSINT', 'DNS']
 ---
 
 ## CCrawlDNS
 
 This small utility retrieves from the CommonCrawl data set unique subdomains for a given domain name.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/lgandx/CCrawlDNS
 ```
 
-### Usage
+## Usage
 
 ```plain
 python3 CCrawlDNS.py -p -f asp -d microsoft.com
 ```
 
-### Flags
+## Flags
 
 ```plain
 Options:
@@ -37,7 +37,7 @@ Options:
                         Print collected URL with the following file extension
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ python3 CCrawlDNS.py -d example.com
@@ -67,6 +67,6 @@ Subdomain found: www.example.com
 Subdomain found: www.example.com.
 ```
 
-### URL list
+## URL List
 
 * [Github.com - CCrawlDNS](https://github.com/lgandx/CCrawlDNS)

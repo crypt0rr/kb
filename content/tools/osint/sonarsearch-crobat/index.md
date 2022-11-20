@@ -13,19 +13,19 @@ weight : 0
 
 Crobat is a command line utility designed to allow easy querying of the Crobat API for DNS lookups. For example sear sub-domains and reverse lookup.
 
-### Installation
+## Installation
 
 ```plain
 go get github.com/cgboal/sonarsearch/crobat
 ```
 
-### Usage
+## Usage
 
 ```plain
 crobat [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
   -r string
@@ -36,9 +36,9 @@ crobat [OPTIONS]
         Get tlds for this value. Supports files and quoted lists
 ```
 
-### Examples
+## Examples
 
-#### Reverse DNS lookup
+### Reverse DNS lookup
 
 ```plain
 $ crobat -r 93.184.216.34
@@ -49,7 +49,7 @@ example.org
 [...]
 ```
 
-#### Subdomain search
+### Subdomain search
 
 ```plain
 $ crobat -s google.com
@@ -70,7 +70,7 @@ $ crobat -s google.com
 [...]
 ```
 
-#### TLD (Top Level Domain) search
+### TLD (Top Level Domain) search
 
 ```plain
 $ crobat -t example
@@ -95,7 +95,7 @@ example.com
 [...]
 ```
 
-### URL list
+## URL List
 
 * [Sonar.omnisint.io](https://sonar.omnisint.io/)
 * [GitHub.com - SonarSearch](https://github.com/cgboal/sonarsearch)

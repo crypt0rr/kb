@@ -27,11 +27,11 @@ Reasons you’ll love HandBrake:
 
 ### Features
 
-#### Built-in Device Presets
+### Built-in Device Presets
 
 Get started with HandBrake in seconds by choosing a profile optimised for your device, or choose a universal profile for standard or high quality conversions. Simple, easy, fast. For those that want more choice, tweak many basic and advanced options to improve your encodes.
 
-#### Supported Input Sources
+### Supported Input Sources
 
 Handbrake can process most common multimedia files and any DVD or BluRay sources that do not contain any kind of copy protection.
 
@@ -42,7 +42,7 @@ Handbrake can process most common multimedia files and any DVD or BluRay sources
 * Audio Encoders: AAC / HE-AAC, MP3, FLAC, AC3, E-AC3, Opus and Vorbis
 * Audio Pass-thru: AC-3, E-AC3, FLAC, DTS, DTS-HD, TrueHD, AAC, MP3 and MP2 tracks
 
-#### Even more features
+### Even more features
 
 * Title / chapter and range selection
 * Batch Scan and Queueing of encodes
@@ -53,17 +53,17 @@ Handbrake can process most common multimedia files and any DVD or BluRay sources
 * Video Filters: Deinterlacing, Decomb, Denoise, Detelecine, Deblock, Grayscale, Colourspace, Cropping and scaling
 * Live Static and Video Preview
 
-### Installation
+## Installation
 
 Download newest release from [Github.com](https://github.com/HandBrake/HandBrake/releases)
 
-### Examples
+## Examples
 
 ![example](images/example1.png)
 
 ![example](images/example2.png)
 
-### URL list
+## URL List
 
 * [Handbrake.fr](https://handbrake.fr/)
 * [Handbrake.fr - Forum](https://forum.handbrake.fr/)

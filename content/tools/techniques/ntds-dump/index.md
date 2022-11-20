@@ -49,13 +49,13 @@ Preferably you want to also make a copy of:
 
 It can happen that [secretsdump.py]({{< ref"secretsdump-py" >}}) keeps looping and throwing out hashes. In this case, or maybe even preferably, use [Gosecretsdump]({{< ref "gosecretsdump" >}}).
 
-#### Secretsdump.py
+### Secretsdump.py
 
 ```plain
 secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -outputfile extracted-hashes -just-dc-ntlm -user-status -history
 ```
 
-#### Gosecretsdump
+### Gosecretsdump
 
 ```plain
 ./gosecretsdump -system SYSTEM -ntds NTDS.DIT -history -status -out hashes.log
@@ -67,6 +67,6 @@ Example `NTDS.dit` and `SYSTEM` files zipped below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
-### URL list
+## URL List
 
 * [Stealthbits.com - Extracting Password Hashes from the Ntds.dit File](https://stealthbits.com/blog/extracting-password-hashes-from-the-ntds-dit-file/)

@@ -13,19 +13,19 @@ weight : 0
 
 Command line system information script for console and IRC.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install inxi
 ```
 
-### Usage
+## Usage
 
 ```plain
 inxi [OPTIONS]
 ```
 
-### Flags
+## Flags
 
 ```plain
 inxi supports the following options. For more detailed information, see man inxi. If you start inxi with no arguments, it will 
@@ -323,9 +323,9 @@ Debugging Options:
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 ```
 
-### Examples
+## Examples
 
-#### Basic information CPU/MEM
+### Basic information CPU/MEM
 
 ```plain
 $ inxi   
@@ -333,7 +333,7 @@ CPU: Dual Core Intel Core i7-7500U (-MT MCP-) speed/min/max: 800/400/3500 MHz Ke
 Mem: 13072.6/15764.5 MiB (82.9%) Storage: 476.94 GiB (22.1% used) Procs: 291 Shell: Zsh inxi: 3.3.01 
 ```
 
-#### Use of specific Output Control Options
+### Use of specific Output Control Options
 
 Check the flags overview for the available Output Control Options.
 
@@ -358,7 +358,7 @@ Drives:    Local Storage: total: 476.94 GiB used: 105.29 GiB (22.1%)
 Info:      Processes: 293 Uptime: 1h 16m Memory: 15.39 GiB used: 12.78 GiB (83.0%) Shell: Zsh inxi: 3.3.01 
 ```
 
-#### Full output of all components
+### Full output of all components
 
 ```plain
 $ inxi -F -xxx
@@ -412,7 +412,7 @@ Info:      Processes: 368 Uptime: 2h 29m wakeups: 5 Memory: 31.16 GiB used: 8.41
            Compilers: gcc: 10.3.0 alt: 10/9 Packages: 2534 apt: 2514 snap: 20 Shell: Zsh v: 5.8 running in: tilix inxi: 3.3.01 
 ```
 
-### URL list
+## URL List
 
 * [Github.com - inxi](https://github.com/smxi/inxi)
 * [Smxi.org - inxi](https://smxi.org/docs/inxi.htm)

@@ -17,7 +17,7 @@ stress-ng was originally intended to make a machine work hard and trip hardware 
 
 The tool has a wide range of different stress mechanisms (known as "stressors") and a full description of these is included in the man page. This document is a quick-start reference guide and covers some of the more typical use cases for stress-ng.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install stress-ng
@@ -27,13 +27,13 @@ sudo apt install stress-ng
 brew install stress-ng
 ```
 
-### Usage
+## Usage
 
 ```plain
 stress-ng [OPTION [ARG]]
 ```
 
-### Flags
+## Flags
 
 ```plain
 General control options:
@@ -891,7 +891,7 @@ Example: stress-ng --cpu 8 --io 4 --vm 2 --vm-bytes 128M --fork 4 --timeout 10s
 Note: Sizes can be suffixed with B,K,M,G and times with s,m,h,d,y
 ```
 
-### Examples
+## Examples
 
 This example stressed the most out of my system. Change the `--cpu` parameter according to your CPU cores.
 
@@ -903,7 +903,7 @@ stress-ng: info:  [40671] dispatching hogs: 8 cpu, 20 matrix
 ^Cstress-ng: info:  [40671] successful run completed in 145.56s (2 mins, 25.56 secs)
 ```
 
-### URL list
+## URL List
 
 * [Wiki.ubuntu.com - stress-ng](https://wiki.ubuntu.com/Kernel/Reference/stress-ng)
 * [Formulae.brew.sh - stress-ng](https://formulae.brew.sh/formula/stress-ng)

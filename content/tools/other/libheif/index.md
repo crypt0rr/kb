@@ -13,21 +13,21 @@ weight : 0
 
 Convert HEIC/HEIF image.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install libheif-examples
 ```
 
-### Usage
+## Usage
 
 ```plain
 heif-convert [-q QUALITY] filename output[.jpg|.png|.y4m]
 ```
 
-### Examples
+## Examples
 
-#### HEIC to JPG
+### HEIC to JPG
 
 ```plain
 heif-convert infile.HEIC outfile.jpg
@@ -37,6 +37,6 @@ heif-convert infile.HEIC outfile.jpg
 for i in {137..152}; do heif-convert IMG_0$i.HEIC IMG_0$i.jpg; done
 ```
 
-### URL list
+## URL List
 
 * [Manpages.debian.org - HEIF convert](https://manpages.debian.org/testing/libheif-examples/heif-convert.1.en.html)

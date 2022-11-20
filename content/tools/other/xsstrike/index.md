@@ -13,20 +13,20 @@ weight : 0
 
 XSStrike is a Cross Site Scripting detection suite equipped with four hand written parsers, an intelligent payload generator, a powerful fuzzing engine and an incredibly fast crawler.
 
-### Installation
+## Installation
 
 ```plain
 git clone https://github.com/s0md3v/XSStrike.git
 ```
 
-### Usage
+## Usage
 
 ```plain
 xsstrike.py [-h] [-u target] [--data paramdata] [-e encode] [--fuzzer] [--update] [--timeout timeout] [--proxy] [--params] [--crawl] [--json] [--path] [--seeds args_seeds] [-f args_file] [-l level] [--headers [add_headers]] [-t threadcount] [-d delay] [--skip] [--skip-dom]
                    [--blind] [--console-log-level {debug,info,run,good,warning,error,critical,vuln}] [--file-log-level {debug,info,run,good,warning,error,critical,vuln}] [--log-file log_file]
 ```
 
-### Flags
+## Flags
 
 ```plain
 optional arguments:
@@ -65,7 +65,7 @@ optional arguments:
   --log-file log_file   name of the file to log
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ ./xsstrike.py -u 'https://www.example.com/zoeken/\?value\=test' --crawl
@@ -91,6 +91,6 @@ XSStrike v3.1.4
 [++] Vector for Subject: <D3v%09onmOUsEoVEr+=+confirm()//v3dm0s
 ```
 
-### URL list
+## URL List
 
 * [GitHub.com - XSStrike](https://github.com/s0md3v/XSStrike)

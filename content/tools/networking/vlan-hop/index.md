@@ -13,13 +13,13 @@ weight : 0
 
 Commands needed to do a VLAN hop.
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install vlan
 ```
 
-### Usage
+## Usage
 
 ```plain
 sudo modprobe 8021q
@@ -38,11 +38,11 @@ git clone https://github.com/nccgroup/vlan-hopping.git
 ```
 
 ```plain
-########################################################
+##########################################
 ***   Frogger - The VLAN Hopper Version 1.9  ***
 
 ***   Auto enumerates VLANs and device discovery ***
-########################################################
+##########################################
 
 For usage information refer to the Wiki
 
@@ -63,6 +63,6 @@ eth0
 [-] Now Sniffing CDP Packets on eth0 - Please wait for 90 seconds.
 ```
 
-### URL list
+## URL List
 
 * [Github.com - vlan-hopping](https://github.com/nccgroup/vlan-hopping.git)

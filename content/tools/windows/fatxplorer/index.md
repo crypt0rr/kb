@@ -13,14 +13,14 @@ weight : 0
 
 The ultimate Xbox storage device explorer.
 
-### Installation
+## Installation
 
 Download newest release from [fatxplorer.eaton-works.com](https://fatxplorer.eaton-works.com/)
 
-### Examples
+## Examples
 
 ![Example](images/example.png)
 
-### URL list
+## URL List
 
 * [Fatxplorer.eaton-works.com](https://fatxplorer.eaton-works.com)

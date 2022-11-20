@@ -11,19 +11,19 @@ tags : ['Unix','Networking']
 
 ## Nmcli
 
-### Installation
+## Installation
 
 ```plain
 sudo apt install network-manager
 ```
 
-### Usage
+## Usage
 
 ```plain
 nmcli [OPTIONS] OBJECT { COMMAND | help }
 ```
 
-### Flags
+## Flags
 
 ```plain
 Usage: nmcli [OPTIONS] OBJECT { COMMAND | help }
@@ -53,9 +53,9 @@ OBJECT
   m[onitor]       monitor NetworkManager changes
 ```
 
-### Examples
+## Examples
 
-#### Show current interface status (standard)
+### Show current interface status (standard)
 
 ```plain
 nmcli device status
@@ -65,7 +65,7 @@ wlp4s0          wifi      connected     Network-A
 enp0s31f6       ethernet  unavailable   --
 ```
 
-#### Show current interface status (extended)
+### Show current interface status (extended)
 
 ```plain
 nmcli
@@ -92,7 +92,7 @@ DNS configuration:
         interface: wlp4s0
 ```
 
-#### Show all Wi-Fi networks in range
+### Show all Wi-Fi networks in range
 
 ```plain
 nmcli device wifi list
@@ -103,7 +103,7 @@ IN-USE  SSID         MODE   CHAN  RATE        SIGNAL  BARS  SECURITY
         Network-D    Infra  11    130 Mbit/s  45      ▂▄__  WPA2
 ```
 
-#### Analyze Wi-Fi network
+### Analyze Wi-Fi network
 
 ```plain
 $ nmcli d wifi
@@ -116,7 +116,7 @@ IN-USE  BSSID              SSID                   MODE   CHAN  RATE        SIGNA
         AB:CD:EF:G8:D7:E1  Cordless-G                   Infra  1     130 Mbit/s  59      ▂▄▆_  WPA2 WPA3   
 ```
 
-### URL list
+## URL List
 
 * [Linux.man.die](https://linux.die.net/man/1/nmcli)
 * [Developer.gnome.org](https://developer.gnome.org/NetworkManager/stable/nmcli.html)

@@ -17,19 +17,19 @@ KeeFarce uses DLL injection to execute code within the context of a running KeeP
 
 The KeeFarceDLL uses [CLRMD](https://github.com/Microsoft/dotnetsamples/tree/master/Microsoft.Diagnostics.Runtime/CLRMD) to find the necessary object in the KeePass processes heap, locates the pointers to some required sub-objects (using offsets), and uses reflection to call an export method.
 
-### Installation
+## Installation
 
 Download the needed files below.
 
 {{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### Usage
+## Usage
 
 ```plain
 .\KeeFarce.exe
 ```
 
-### Examples
+## Examples
 
 ```plain
 $ .\KeeFarce.exe
@@ -38,6 +38,6 @@ CallExport: returning.
 [.] Done! Check %APPDATA%/keepass_export.csv
 ```
 
-### URL list
+## URL List
 
 * [Github.com - KeeFarce](https://github.com/denandz/KeeFarce)
