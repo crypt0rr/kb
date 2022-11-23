@@ -6,7 +6,7 @@ date : 2020-06-04T11:55:04+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'Unix', 'macOS']
 ---
 
 ## MACchanger
@@ -19,13 +19,19 @@ Change MAC address of a NIC.
 sudo apt install macchanger
 ```
 
+For macOS installation via brew.
+
+```plain
+brew install acrogenesis/macchanger/macchanger
+```
+
 ## Usage
 
 ```plain
 macchanger [options] device
 ```
 
-## Flags
+## Flags Unix
 
 ```plain
 GNU MAC Changer
@@ -45,6 +51,14 @@ GNU MAC Changer
 Report bugs to https://github.com/alobbs/macchanger/issues
 ```
 
+## Flags macOS
+
+```plain
+    -m, --mac MAC                    Set the MAC address, macchanger -m XX:XX:XX:XX:XX:XX en0
+    -r, --random                     Set random MAC address, macchanger -r en0
+    -s, --show                       Show the MAC address, macchanger -s en0
+```
+
 ## Examples
 
 Remember to save your MAC-adres.
@@ -60,3 +74,4 @@ New MAC:       12:34:56:78:90 (unknown)
 ## URL List
 
 * [Manpages.ubuntu.com - macchanger](https://manpages.ubuntu.com/manpages/xenial/man1/macchanger.1.html)
+* [Github.com - macchanger (macOS)](https://github.com/acrogenesis/macchanger)
