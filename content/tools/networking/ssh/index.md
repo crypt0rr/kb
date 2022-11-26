@@ -245,6 +245,12 @@ ssh-keygen -f <filename> -t rsa -b 4096
 ssh-copy-id -f -i <filename>.pub <user>@<target>
 ```
 
+### Disable host key checking
+
+```plain
+-o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no"
+```
+
 ### Disable password authentication
 
 ```plain
