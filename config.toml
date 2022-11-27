@@ -47,7 +47,13 @@ url = "https://github.com/crypt0rr/kb"
 weight = 30
 
 [[menu.shortcuts]]
+name = "<i class='fa-solid fa-robot'></i> CyberChef"
+identifier = "cyberchef"
+url = "https://cyberchef.offsec.nl"
+weight = 40
+
+[[menu.shortcuts]]
 name = "<i class='fab fa-twitter'></i> Twitter"
 identifier = "twitter"
 url = "https://twitter.com/crypt0rr_"
-weight = 40
+weight = 50
