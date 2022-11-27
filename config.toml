@@ -47,7 +47,7 @@ url = "https://github.com/crypt0rr/kb"
 weight = 30
 
 [[menu.shortcuts]]
-name = "<i class='fa-solid fa-robot'></i> CyberChef"
+name = "<i class='fas fa-robot'></i> CyberChef"
 identifier = "cyberchef"
 url = "https://cyberchef.offsec.nl"
 weight = 40
