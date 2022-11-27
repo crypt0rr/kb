@@ -129,6 +129,18 @@ Server Operators
 Backup Operators
 ```
 
+### Neo4j Multi-database usage
+
+To use multiple databases in Neo4j with BloodHound, edit the `/etc/neo4j/neo4j.conf` configuration file.
+
+The uncommented (#) database will be in use when starting Neo4j.
+
+```plain
+#dbms.default_database=neo4j-1
+#dbms.default_database=neo4j-2
+dbms.default_database=neo4j-3
+```
+
 ### Troubleshooting
 
 ### Installation of Neo4j and BloodHound interface on Ubuntu
