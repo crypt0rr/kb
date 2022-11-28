@@ -19,7 +19,7 @@ weight : 0
 
 ### Active Directory PowerShell Module
 
-This way the [Active Directory PowerShell](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2019-ps) module can be used portable without administrator privileges.
+This way the [Active Directory PowerShell](https://docs.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2019-ps) module can be used portable without administrator privileges. For example, when running in Azure Virtual Desktops or AzureAD managed devices, you will probably get the error message *Unable to find a default server with Active Directory Web Services running.*. Use the `-Server DC01.offsec.nl` flag after your CMDlet.
 
 ```plain
 mkdir C:\temp; iwr https://github.com/crypt0rr/filehosting/raw/master/Microsoft.ActiveDirectory.Management.dll -OutFile C:\temp\1234hoedjevanpapier.dll; Import-Module C:\temp\1234hoedjevanpapier.dll
