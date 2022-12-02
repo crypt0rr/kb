@@ -6,7 +6,7 @@ date : 2021-04-22T09:47:06+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'NTLM']
 ---
 
 ## NTLM_challenger

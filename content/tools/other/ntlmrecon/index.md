@@ -6,7 +6,7 @@ date : 2021-06-03T11:47:01+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'NTLM']
 ---
 
 ## NTLMRecon
