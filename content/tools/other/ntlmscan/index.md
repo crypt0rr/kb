@@ -20,7 +20,7 @@ reliable targets are:
 - Autodiscover servers (autodiscover.domain.com and lyncdiscover.domain.com)
 - ADFS servers
 
-Oonce identified, use nmap and the [http-ntlm-info](https://nmap.org/nsedoc/scripts/http-ntlm-info.html) script to extract internal domain/server information 
+Once identified, use nmap and the [http-ntlm-info](https://nmap.org/nsedoc/scripts/http-ntlm-info.html) script to extract internal domain/server information.
 
 ## Installation
 
