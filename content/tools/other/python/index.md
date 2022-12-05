@@ -33,6 +33,8 @@ python3 -m http.server 9090
 
 Requires: `python2 -m pip install pyftpdlib` / `python3 -m pip install pyftpdlib`
 
+**Note:** By default this will allow *anonymous* login. To use username/password based authentication, please use the `-u USERNAME` and `-P PASSWORD` flags.
+
 ```plain
 python2 -m pyftpdlib -p 21 -w
 ```
