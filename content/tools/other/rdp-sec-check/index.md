@@ -16,10 +16,7 @@ Is a Perl script to enumerate security settings of an RDP Service (AKA Terminal 
 ## Installation
 
 ```plain
-sudo cpan
-install Encoding::BER
-/usr/bin/make install
-exit
+sudo cpan install Encoding::BER
 
 git clone https://github.com/portcullislabs/rdp-sec-check.git
 ```
