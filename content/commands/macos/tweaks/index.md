@@ -153,9 +153,24 @@ defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-sp
 defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 ```
 
+### Change TimeMachine Back-up Interval
+
+Interval is in seconds, default is 60 minutes (3600).
+
+```plain
+sudo defaults write /System/Library/LaunchDaemons/com.apple.backupd-auto StartInterval -int 3600
+```
+
+### Clear DNS Cache
+
+```plain
+sudo dscacheutil -flushcache && \
+sudo killall -HUP mDNSResponder
+```
+
 ## URL List
 
-* [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
-* [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)
-* [Github.com - TerminalTweaks](https://github.com/MacTweaks/TerminalTweaks)
-* [Github.com - macOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide#)
+- [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
+- [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)
+- [Github.com - TerminalTweaks](https://github.com/MacTweaks/TerminalTweaks)
+- [Github.com - macOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide#)
