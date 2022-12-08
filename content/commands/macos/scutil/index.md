@@ -81,7 +81,7 @@ sudo scutil --set LocalHostName crypt0rr
 Computer Name:
 
 ```plain
-sudo scutil --set ComputerName Cedric
+sudo scutil --set ComputerName crypt0rr
 ```
 
 ### Show DNS Configuration
