@@ -6,7 +6,7 @@ date : 2022-11-30T20:56:26+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'DNS', 'Subdomain', 'Nameserver']
+tags : ['OSINT', 'DNS', 'Subdomain']
 ---
 
 ## puredns
