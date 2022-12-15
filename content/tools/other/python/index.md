@@ -6,7 +6,7 @@ date : 2022-12-05T09:22:16+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Python2', 'Python3']
+tags : ['Python2', 'Python3', 'FTP', 'HTTP']
 ---
 
 ## Python

@@ -6,7 +6,7 @@ date : 2020-05-04T14:00:13+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Unix', 'FTP']
 ---
 
 ## TFTP

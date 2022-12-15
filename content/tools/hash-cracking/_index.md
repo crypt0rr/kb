@@ -9,7 +9,7 @@ weight : 0
 tags : ["Hash Cracking"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
-    tags: ['Hash Cracking', 'Password cracking']
+    tags: ['Hash Cracking']
     pre : '<i class="fas fa-lock-open"></i> '
 ---
 
