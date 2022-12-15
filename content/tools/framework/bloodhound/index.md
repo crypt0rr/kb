@@ -129,47 +129,28 @@ Server Operators
 Backup Operators
 ```
 
-### Troubleshooting
+### Neo4j v4.x Multi-database usage
 
-### Installation of Neo4j and BloodHound interface on Ubuntu
+To use multiple databases in Neo4j v4.x with BloodHound, edit the `/etc/neo4j/neo4j.conf` configuration file.
+
+The uncommented (#) database will be in use when starting Neo4j.
 
 ```plain
-sudo wget -O - https://debian.neo4j.org/neotechnology.gpg.key | sudo apt-key add -
-sudo echo 'deb https://debian.neo4j.org/repo stable/' | sudo tee -a /etc/apt/sources.list.d/neo4j.list
-sudo apt update && sudo apt install neo4j openjdk-8-jdk apt-transport-https
+#dbms.default_database=neo4j-1
+#dbms.default_database=neo4j-2
+dbms.default_database=neo4j-3
 ```
 
-Download newest binary from [Github.com](https://github.com/BloodHoundAD/BloodHound/releases)
+### Neo4j v5.x Multi-database usage
+
+To use multiple databases in Neo4j v5.x with BloodHound, edit the `/etc/neo4j/neo4j.conf` configuration file.
+
+The uncommented (#) database will be in use when starting Neo4j.
 
 ```plain
-sudo neo4j console
-./BloodHound -no-sandbox
-```
-
-Change default Java JDK to 8
-
-```plain
-$ sudo update-alternatives --config java
-
-There are 2 choices for the alternative java (providing /usr/bin/java).
-
-  Selection    Path                                            Priority   Status
-------------------------------------------------------------
-* 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      auto mode
-  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java      1111      manual mode
-  2            /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java   1081      manual mode
-
-Press <enter> to keep the current choice[*], or type selection number: 2
-```
-
-Change `DefaultLimitNOFILE` for Neo4j to run without standard `1024` limit. After changing the files reboot your system.
-
-```plain
-$ cat /etc/systemd/user.conf 
-DefaultLimitNOFILE=60000
-
-$ cat /etc/systemd/system.conf 
-DefaultLimitNOFILE=60000
+#initial.dbms.default_database=neo4j-1
+#initial.dbms.default_database=neo4j-2
+initial.dbms.default_database=neo4j-3
 ```
 
 ## URL List

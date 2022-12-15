@@ -17,6 +17,10 @@ CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" 
 
 The tool is designed to enable both technical and non-technical analysts to manipulate data in complex ways without having to deal with complex tools or algorithms. It was conceived, designed, built and incrementally improved by an analyst in their 10% innovation time over several years.
 
+## Live instance
+
+Use the hosted instance on [cyberchef.offsec.nl](https://cyberchef.offsec.nl).
+
 ## Installation
 
 Download latest release from [Github](https://github.com/gchq/CyberChef/releases).

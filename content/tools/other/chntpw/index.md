@@ -62,6 +62,131 @@ Source/binary freely distributable under GPL v2 license. See README for details.
 NOTE: This program is somewhat hackish! You are on your own!
 ```
 
+## Examples
+
+```plain
+$ sudo chntpw -i SAM
+chntpw version 1.00 140201, (c) Petter N Hagen
+Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
+ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
+File size 65536 [10000] bytes, containing 7 pages (+ 1 headerpage)
+Used for data: 315/30544 blocks/bytes, unused: 63/14288 blocks/bytes.
+
+
+
+<>========<> chntpw Main Interactive Menu <>========<>
+
+Loaded hives: <SAM>
+
+  1 - Edit user data and passwords
+  2 - List groups
+      - - -
+  9 - Registry editor, now with full write support!
+  q - Quit (you will be asked if there is something to save)
+
+
+What to do? [1] -> 1
+
+
+===== chntpw Edit User Info & Passwords ====
+
+| RID -|---------- Username ------------| Admin? |- Lock? --|
+| 01f4 | Administrator                  | ADMIN  | dis/lock |
+| 03e9 | NotYourLocalAdmin              | ADMIN  |          |
+| 01f7 | DefaultAccount                 |        | dis/lock |
+| 01f5 | Gast                           |        | dis/lock |
+| 01f8 | WDAGUtilityAccount             |        | dis/lock |
+
+Please enter user number (RID) or 0 to exit: [3e9] 03e9 
+================= USER EDIT ====================
+
+RID     : 0501 [03e9]
+Username: NotYourLocalAdmin
+fullname: 
+comment : Ingebouwd account voor beheer van de computer of het domein
+homedir : 
+
+00000220 = Administrators (which has 2 members)
+
+Account bits: 0x0211 =
+[X] Disabled        | [ ] Homedir req.    | [ ] Passwd not req. | 
+[ ] Temp. duplicate | [X] Normal account  | [ ] NMS account     | 
+[ ] Domain trust ac | [ ] Wks trust act.  | [ ] Srv trust act   | 
+[X] Pwd don't expir | [ ] Auto lockout    | [ ] (unknown 0x08)  | 
+[ ] (unknown 0x10)  | [ ] (unknown 0x20)  | [ ] (unknown 0x40)  | 
+
+Failed login count: 0, while max tries is: 0
+Total  login count: 4
+
+- - - - User Edit Menu:
+ 1 - Clear (blank) user password
+ 2 - Unlock and enable user account [probably locked now]
+ 3 - Promote user (make user an administrator)
+ 4 - Add user to a group
+ 5 - Remove user from a group
+ q - Quit editing user, back to user select
+Select: [q] > 2
+Unlocked!
+================= USER EDIT ====================
+
+RID     : 0501 [03e9]
+Username: NotYourLocalAdmin
+fullname: 
+comment : Ingebouwd account voor beheer van de computer of het domein
+homedir : 
+
+00000220 = Administrators (which has 2 members)
+
+Account bits: 0x0210 =
+[ ] Disabled        | [ ] Homedir req.    | [ ] Passwd not req. | 
+[ ] Temp. duplicate | [X] Normal account  | [ ] NMS account     | 
+[ ] Domain trust ac | [ ] Wks trust act.  | [ ] Srv trust act   | 
+[X] Pwd don't expir | [ ] Auto lockout    | [ ] (unknown 0x08)  | 
+[ ] (unknown 0x10)  | [ ] (unknown 0x20)  | [ ] (unknown 0x40)  | 
+
+Failed login count: 0, while max tries is: 0
+Total  login count: 4
+
+- - - - User Edit Menu:
+ 1 - Clear (blank) user password
+(2 - Unlock and enable user account) [seems unlocked already]
+ 3 - Promote user (make user an administrator)
+ 4 - Add user to a group
+ 5 - Remove user from a group
+ q - Quit editing user, back to user select
+Select: [q] > 1
+Password cleared!
+
+- - - - User Edit Menu:
+ 1 - Clear (blank) user password
+(2 - Unlock and enable user account) [seems unlocked already]
+ 3 - Promote user (make user an administrator)
+ 4 - Add user to a group
+ 5 - Remove user from a group
+ q - Quit editing user, back to user select
+Select: [q] > q
+
+
+<>========<> chntpw Main Interactive Menu <>========<>
+
+Loaded hives: <SAM>
+
+  1 - Edit user data and passwords
+  2 - List groups
+      - - -
+  9 - Registry editor, now with full write support!
+  q - Quit (you will be asked if there is something to save)
+
+
+What to do? [1] -> q
+
+Hives that have changed:
+ #  Name
+ 0  <SAM>
+Write hive files? (y/n) [n] : y
+ 0  <SAM> - OK
+```
+
 ## URL List
 
 - [chntpw.com](http://www.chntpw.com/download/)

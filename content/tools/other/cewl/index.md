@@ -19,7 +19,13 @@ CeWL also has an associated command line app, FAB (Files Already Bagged) which u
 
 ## Installation
 
-Please use Kali.
+Please use Kali or install from source.
+
+```plain
+git clone https://github.com/digininja/CeWL/
+gem install bundler
+bundle install
+```
 
 ## Usage
 

