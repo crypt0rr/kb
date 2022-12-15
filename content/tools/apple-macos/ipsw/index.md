@@ -6,7 +6,7 @@ date : 2022-08-15T14:41:44+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['macOS', 'iOS', 'watchOS', 'tvOS', 'IPSW', 'DMG']
+tags : ['macOS', 'iOS']
 ---
 
 ## IPSW
