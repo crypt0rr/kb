@@ -6,7 +6,7 @@ date : 2022-08-15T10:26:54+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'macOS', 'Linux', 'Downloader']
+tags : ['Other', 'macOS', 'Linux', 'FTP', 'HTTP']
 ---
 
 ## Axel
