@@ -330,6 +330,12 @@ This scenario is ran on the host that can SSH outbound but has no ability to rec
 ssh -N -R 10.10.10.1:4444:127.0.0.1:445 user@target-host
 ```
 
+Or just create a socks proxy from the remote host to the server. On remote host run the following and thereafter for example use proxychains on the server side.
+
+```plain
+ssh -N -R 1080 user@target-host
+```
+
 ### SSH Dynamic Port Forwarding
 
 Route any traffic thru the SSH connection to the remote host, a proxy tool like [proxychains]({{< ref "proxychains" >}}) is required. An alternative is to using SSH for this is [SSHuttle]({{< ref "sshuttle" >}}).
