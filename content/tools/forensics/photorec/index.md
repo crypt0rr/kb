@@ -6,7 +6,7 @@ date : 2020-03-11T10:52:29+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Forensics','Harddisk']
+tags : ['Forensics', 'Harddisk', 'Recovery']
 ---
 
 ## Photorec

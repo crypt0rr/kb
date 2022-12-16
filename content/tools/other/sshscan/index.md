@@ -6,7 +6,7 @@ date : 2020-03-11T15:21:44+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Other', 'SSH']
 ---
 
 ## SSHScan

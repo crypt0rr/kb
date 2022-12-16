@@ -6,7 +6,7 @@ date : 2022-12-05T09:39:09+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'Password']
+#tags : ['Other']
 ---
 
 ## Foolproof Passgen

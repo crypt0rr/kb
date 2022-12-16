@@ -6,7 +6,7 @@ date : 2022-11-13T10:01:31+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Networking', 'WireShark', 'Windows']
+tags : ['Networking', 'Wirehark', 'Windows']
 ---
 
 ## NetworkMiner

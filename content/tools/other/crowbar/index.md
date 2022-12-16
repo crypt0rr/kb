@@ -6,7 +6,7 @@ date : 2022-12-04T14:47:30+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'Brute Force', 'RDP', 'SSH', 'OpenVPN', 'VNC']
+tags : ['Other', 'Brute Force', 'RDP', 'SSH']
 ---
 
 ## Crowbar

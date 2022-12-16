@@ -6,7 +6,7 @@ date: 2020-03-10T15:32:54+01:00
 # hidden : true
 # draft : true
 weight: 0
-tags: ["Other", "Windows", "Password"]
+tags: ['Other', 'Windows']
 ---
 
 ## Chntpw

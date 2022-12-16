@@ -6,7 +6,7 @@ date : 2022-02-05T14:41:03+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['macOS', 'iOS', 'watchOS', 'tvOS', 'IPSW', 'DMG']
+tags : ['macOS', 'iOS']
 ---
 
 ## macAdmin Scripts

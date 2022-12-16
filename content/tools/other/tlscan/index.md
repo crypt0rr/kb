@@ -6,7 +6,7 @@ date : 2020-03-23T16:50:07+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'SSL/TLS', 'Certificates']
+tags : ['Other', 'SSL/TLS', 'Certificates', 'FTP', 'RDP', 'SMTP']
 ---
 
 ## TLScan
