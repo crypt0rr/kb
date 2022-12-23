@@ -29,6 +29,16 @@ sudo adduser $USER vboxusers
 
 ![Example](images/example.png)
 
+## VirtualBox CLI
+
+| Description                            | Command                                                                                       | Option(s)             |
+| -------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------- |
+| List All VMS                           | `VBoxManage list vms`                                                                         | -                     |
+| List running VMS                       | `VBoxManage list runningvms`                                                                  | More details add `-l` |
+| Show VM Properties                     | `VBoxManage showvminfo <VM>`                                                                  | -                     |
+| Start VM (Not HeadLess)                | `VBoxManage startvm <VM>`                                                                     | `--type headless`     |
+| Stop Time Sync Between Host and Client | `VBoxManage setextradata <VM> "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" "1"` | -                     |
+
 ## URL List
 
 * [Virtualbox.org](https://www.virtualbox.org/)
