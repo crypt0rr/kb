@@ -35,9 +35,14 @@ sudo adduser $USER vboxusers
 | -------------------------------------- | --------------------------------------------------------------------------------------------- | --------------------- |
 | List All VMS                           | `VBoxManage list vms`                                                                         | -                     |
 | List running VMS                       | `VBoxManage list runningvms`                                                                  | More details add `-l` |
-| Show VM Properties                     | `VBoxManage showvminfo <VM>`                                                                  | -                     |
-| Start VM (Not HeadLess)                | `VBoxManage startvm <VM>`                                                                     | `--type headless`     |
-| Stop Time Sync Between Host and Client | `VBoxManage setextradata <VM> "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" "1"` | -                     |
+| Show VM Properties                     | `VBoxManage showvminfo <vm>`                                                                  | -                     |
+| Start VM (Not HeadLess)                | `VBoxManage startvm <vm>`                                                                     | `--type headless`     |
+| Stop Time Sync Between Host and Client | `VBoxManage setextradata <vm> "VBoxInternal/Devices/VMMDev/0/Config/GetHostTimeDisabled" "1"` | -                     |
+| Send ACPI Shutdown Signal              | `VBoxManage controlvm <vm> acpipowerbutton`                                                   | -                     |
+| PowerOff VM                            | `VBoxManage controlvm <vm> poweroff`                                                          | -                     |
+| Reset VM                               | `VBoxManage controlvm <vm> reset`                                                             | -                     |
+| Pauze VM                               | `VBoxManage controlvm <vm> pause`                                                             | -                     |
+| Resume VM                              | `VBoxManage controlvm <vm> resume`                                                            | -                     |
 
 ## URL List
 
