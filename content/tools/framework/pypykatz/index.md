@@ -6,7 +6,7 @@ date : 2020-03-16T12:28:51+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Framework', 'LSASS']
 ---
 
 ## Pypykatz
@@ -53,7 +53,7 @@ optional arguments:
 
 ## Examples
 
-### Read lsass dump
+### Read LSASS dump
 
 ```plain
 pypykatz lsa minidump lsass_dump.DMP

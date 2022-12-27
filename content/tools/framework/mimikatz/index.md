@@ -6,7 +6,7 @@ date : 2020-03-13T22:19:32+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Framework', 'LSASS']
 ---
 
 ## Mimikatz
