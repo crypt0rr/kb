@@ -6,7 +6,7 @@ date : 2020-04-14T12:30:49+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'DNS', 'Subdomain', 'Nameserver', 'DNS Zone Transfer']
+tags : ['OSINT', 'DNS', 'Subdomain', 'DNS Zone Transfer']
 ---
 
 ## DNSrecon

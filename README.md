@@ -2,9 +2,13 @@
 
 Just some silly notes digitalized, have fun and feel free to open PR.
 
-## Start live server locally
+Live version of the site is available on [kb.offsec.nl](https://kb.offsec.nl).
+
+## Run Locally?
 
 ```plain
+git clone https://github.com/crypt0rr/kb
+cd kb
 hugo server
 ```
 
@@ -18,12 +22,6 @@ Example creation of tool
 
 ```plain
 hugo new --kind tool content/tools/other/testtool
-```
-
-## List draft entries that require work to get published
-
-```plain
-hugo list drafts
 ```
 
 ## Contributing

@@ -6,7 +6,7 @@ date : 2022-11-06T15:23:40+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'DNS', 'Subdomain', 'Nameserver']
+tags : ['OSINT', 'DNS', 'Subdomain']
 ---
 
 ## assetfinder

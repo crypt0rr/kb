@@ -6,7 +6,7 @@ date : 2020-03-13T14:23:56+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Other', 'SSH']
 ---
 
 ## SSH-method-scanner

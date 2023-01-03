@@ -6,7 +6,7 @@ date : 2020-09-22T14:37:32+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Unix', 'HTTP', 'FTP']
 ---
 
 ## wget
