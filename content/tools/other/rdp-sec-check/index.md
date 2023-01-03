@@ -16,6 +16,8 @@ Is a Perl script to enumerate security settings of an RDP Service (AKA Terminal 
 ## Installation
 
 ```plain
+sudo apt install make
+
 sudo cpan install Encoding::BER
 
 git clone https://github.com/portcullislabs/rdp-sec-check.git
@@ -109,4 +111,3 @@ rdp-sec-check v0.9-beta completed at Wed Mar 18 11:08:15 2020
 ## URL List
 
 * [GitHub.com - RDP-sec-check](https://github.com/portcullislabs/rdp-sec-check)
-* [Alternativesec.xyz - RDP Sec Check Tool](https://www.alternativesec.xyz/tools/2017/01/26/rdp-sec-check/)
