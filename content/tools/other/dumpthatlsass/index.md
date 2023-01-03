@@ -21,7 +21,7 @@ Download source and compile with for example [Visual Studio](https://visualstudi
 
 The binaries below are compiled on Windows 11 21H2 Build 22000.1335 on the 27th of December 2022.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ## Usage
 

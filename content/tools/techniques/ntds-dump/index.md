@@ -26,7 +26,7 @@ PS C:\temp>
 
 To make it easy for yourself and extract the `ntds.dit` and `SYSTEM` file from the ShadowCopy, you can use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view.html)
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### Copy NTDS.dit
 
@@ -65,7 +65,7 @@ secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -output
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ## URL List
 

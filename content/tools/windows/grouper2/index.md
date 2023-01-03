@@ -19,8 +19,8 @@ Download newest release from [GitHub.com](https://github.com/l0ss/Grouper2/relea
 
 ### Obfuscated
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(exe)"/%}}
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
 
 ## Usage
 

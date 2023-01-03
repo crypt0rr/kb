@@ -15,7 +15,7 @@ Xirrus Wi-Fi Inspector is special software that allows users to find the various
 
 ## Installation
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## Examples
 

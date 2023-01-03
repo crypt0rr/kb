@@ -11,7 +11,7 @@ weight : 0
 
 ## CMD - Command Prompt
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ### Show Domain Admins / Enterprise Admins
 

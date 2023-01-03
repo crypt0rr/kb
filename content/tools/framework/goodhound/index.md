@@ -116,7 +116,7 @@ $ ll out*
 -rw-r--r--  1 crypt0rr  staff   639B Feb  5 16:54 out\2021-10-17_GoodHound_weakestlinks.csv
 ```
 
-{{%attachments title="Related files" fa_icon_class="fas fa-file-csv" pattern=".*(csv)"/%}}
+{{%attachments fa_icon_class="fas fa-file-csv" pattern=".*(csv)"/%}}
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)

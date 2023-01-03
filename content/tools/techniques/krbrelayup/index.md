@@ -15,7 +15,7 @@ weight : 0
 
 Build the binary from [source](https://github.com/Dec0ne/KrbRelayUp) or use the pre-compiled binary below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ## Usage
 

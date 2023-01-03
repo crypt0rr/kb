@@ -32,7 +32,7 @@ Statistics:
 * GPOs: 2
 * Domains: 1
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## URL List
 

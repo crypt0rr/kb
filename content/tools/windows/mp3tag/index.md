@@ -21,7 +21,7 @@ It supports batch tag-editing of ID3v1, ID3v2.3, ID3v2.4, iTunes MP4, WMA, Vorbi
 
 ## Installation
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 Download newest release from [mp3tag.de](https://www.mp3tag.de/en/download.html) or install with [Microsoft Store](https://www.microsoft.com/en-us/p/mp3tag/9nn77tcq1nc8).
 

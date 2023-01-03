@@ -19,7 +19,7 @@ Custom queries for finding interesting stuff <https://hausec.com/2020/11/23/azur
 
 Install PowerShell Azure Module `Install-Module -Name Az`
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
 
 ## Usage
 

@@ -65,7 +65,7 @@ authentication:
 
 ## Examples
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="smbexec.mp4"/%}}
+{{%attachments fa_icon_class="far fa-file-video" pattern="smbexec.mp4"/%}}
 
 ### Start RCE via SMB
 

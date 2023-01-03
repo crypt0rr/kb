@@ -138,7 +138,7 @@ $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01P
 
 ### Requesting TGT for alternative user
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 Move the `.pfx` to a Windows machine and start PowerShell for `Rubeus.exe`.
 
