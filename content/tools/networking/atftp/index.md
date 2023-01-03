@@ -6,7 +6,7 @@ date : 2022-11-12T12:50:29+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Networking', 'TFTP']
+tags : ['Networking', 'FTP']
 ---
 
 ## atftp
