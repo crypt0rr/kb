@@ -183,7 +183,7 @@ sudo nmap -sU -p 53 --script=dns-update --script-args=dns-update.hostname=<subdo
 
 To manually validate with dig use
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
 
 ```plain
 Add record
@@ -343,7 +343,7 @@ nmap -p5672 --script amqp-info <target>
 
 ### WinRM detection
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(nse)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(nse)"/%}}
 [Github.com - winRM.nse](https://github.com/RicterZ/My-NSE-Scripts/blob/master/scripts/winrm.nse)
 
 ```plain

@@ -69,11 +69,11 @@ Statistics:
 * GPOs: 2
 * Domains: 1
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### Custom Queries
 
-{{%attachments title="Related files" fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
+{{%attachments fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
 
 Linux
 

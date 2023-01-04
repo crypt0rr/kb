@@ -87,7 +87,7 @@ Blog of offensive security consultant.
 
 ### Information Security References
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 [rmusser.net](https://rmusser.net/docs/)
 

@@ -27,7 +27,7 @@ Supported Credentials:
 
 ## Installation
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ## Usage
 

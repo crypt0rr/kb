@@ -75,7 +75,7 @@ Options:
 
 ## Examples
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="responder.mp4"/%}}
+{{%attachments fa_icon_class="far fa-file-video" pattern="responder.mp4"/%}}
 
 ### Analyse mode
 

@@ -53,7 +53,7 @@ connection:
 
 ## Examples
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="smbclient.mp4"/%}}
+{{%attachments fa_icon_class="far fa-file-video" pattern="smbclient.mp4"/%}}
 
 ```plain
 $ smbclient.py offsec.nl/administrator:Welkom1234@10.10.10.10
