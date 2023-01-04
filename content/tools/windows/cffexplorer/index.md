@@ -15,11 +15,11 @@ CFF Explorer was designed to make PE editing as easy as possible, but without lo
 
 ## Installation
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### Guide
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
+{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 
 ## Examples
 

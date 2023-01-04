@@ -69,11 +69,11 @@ Statistics:
 * GPOs: 2
 * Domains: 1
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### Custom Queries
 
-{{%attachments title="Related files" fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
+{{%attachments fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
 
 Linux
 
@@ -152,6 +152,12 @@ The uncommented (#) database will be in use when starting Neo4j.
 #initial.dbms.default_database=neo4j-2
 initial.dbms.default_database=neo4j-3
 ```
+
+## CypherHound
+
+Tool that can be used to interact with BloodHound collected data in the Neo4j database.
+
+Please see [CypherHound]({{< ref "cypherhound" >}}).
 
 ## URL List
 

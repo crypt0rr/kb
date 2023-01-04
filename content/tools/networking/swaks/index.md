@@ -34,7 +34,7 @@ Download newest release from [Github.com](https://github.com/jetmore/swaks/relea
 
 Please run `./swaks --help` or check the help file below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern="ref.*(txt)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern="ref.*(txt)"/%}}
 
 ## Examples
 

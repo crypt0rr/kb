@@ -21,7 +21,7 @@ You can use the `.exe` below or try to run it directly from Command Prompt.
 \\live.sysinternals.com\tools\ADExplorer.exe -accepteula -snapshot "" out.snapshot
 ```
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ### Limitations
 

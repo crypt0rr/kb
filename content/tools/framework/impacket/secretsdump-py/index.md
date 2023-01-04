@@ -149,7 +149,7 @@ grep -E 'status=Enabled' secretsdump-users-with-status.txt | awk '{print $1}'
 
 ### Practical examples
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-video" pattern="secretsdump.mp4"/%}}
+{{%attachments fa_icon_class="far fa-file-video" pattern="secretsdump.mp4"/%}}
 
 ### Dumping NTDS
 
@@ -260,7 +260,7 @@ Henk:1003:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 
 Example `SAM` and `SYSTEM` files zipped below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(SAM-SYSTEM)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(SAM-SYSTEM)"/%}}
 
 ### Extract accounts from NTDS.dit
 
@@ -288,7 +288,7 @@ john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments title="Related files" fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ## URL List
 

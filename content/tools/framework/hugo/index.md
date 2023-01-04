@@ -161,13 +161,13 @@ Use "hugo [command] --help" for more information about a command.
 ### File attachments
 
 ```plain
-{ {%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
+{ {%attachments fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 ```
 
 Multiple filetypes
 
 ```plain
-{ {%attachments title="Related files" fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
+{ {%attachments fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
 ```
 
 ### Enable target blank for links

@@ -29,11 +29,11 @@ cd arsenal
 
 [Source](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/pentest_ad.png)
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern="Pentesting_ActiveDirectory.*(png)"/%}}
+{{%attachments fa_icon_class="far fa-file-pdf" pattern="Pentesting_ActiveDirectory.*(png)"/%}}
 
 ### Pentesting Microsoft Exchange on the Perimeter
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-pdf" pattern="Pentesting_MS.*(png)"/%}}
+{{%attachments fa_icon_class="far fa-file-pdf" pattern="Pentesting_MS.*(png)"/%}}
 
 [Github.com - Arsenal - Pentesting Microsoft Exchange on the Perimeter](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/Pentesting_MS_Exchange_Server_on_the_Perimeter.png)
 
