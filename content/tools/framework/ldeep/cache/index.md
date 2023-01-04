@@ -56,12 +56,16 @@ commands:
     zone                Return the records of a DNS zone.
 ```
 
+## Example dataset
+
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"/%}}
+
 ## Examples
 
 The cache module depends on the collected data with the [LDAP]({{< ref "../LDAP" >}}) module.
 
 ```plain
-$ ldeep cache -p output_cache membersof 'Domain Admins'
+$ ldeep cache -p cache membersof 'Domain Admins'
 Administrator
 NestedDAGroup (group)
 ```
