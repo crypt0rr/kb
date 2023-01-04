@@ -197,7 +197,7 @@ Administrator 07/09/20 12:31:41
 Below a sample dataset is available. Created with the following code.
 
 ```plain
-$ python3 ldapdomaindump.py -u 'offsec.nl\johndo' -p 'Welkom1234' -d ';' 10.20.30.10
+$ python3 ldapdomaindump.py -u 'offsec.nl\administrator' -p 'Welkom1234' -d ';' 10.10.20.52
 [*] Connecting to host...
 [*] Binding to host
 [+] Bind OK
@@ -205,7 +205,7 @@ $ python3 ldapdomaindump.py -u 'offsec.nl\johndo' -p 'Welkom1234' -d ';' 10.20.3
 [+] Domain dump finished
 ```
 
-{{%attachments title="Related files" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"/%}}
 
 ## URL List
 
