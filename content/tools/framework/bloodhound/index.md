@@ -165,7 +165,7 @@ Please see [CypherHound]({{< ref "cypherhound" >}}).
 
 Tool that helps marking objects in the database, for example as `owned` or `high value`.
 
-Please see [BloodHoundLoader]({{<> ref "BloodHoundLoader" >}}).
+Please see [BloodHoundLoader]({{< ref "BloodHoundLoader" >}}).
 
 ## URL List
 
