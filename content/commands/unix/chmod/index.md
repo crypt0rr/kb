@@ -43,6 +43,29 @@ Full documentation at: <https://www.gnu.org/software/coreutils/chmod>
 or available locally via: info '(coreutils) chmod invocation'
 ```
 
+## Chmod Rights
+
+- `r` - Read rights
+- `w` - Write rights
+- `x` - Execute rights
+
+| Number | Permissions | Build-up |
+| ------ | ----------- | -------- |
+| 0      | - - -       | 0+0+0    |
+| 1      | - - x       | 0+0+1    |
+| 2      | - w -       | 0+2+0    |
+| 3      | - w x       | 0+2+1    |
+| 4      | r - -       | 4+0+0    |
+| 5      | r - x       | 4+0+1    |
+| 6      | r w -       | 4+2+0    |
+| 7      | r w x       | 4+2+1    |
+
+Example privilege string `rwxr--r--`
+
+- First block is rights for the specific user
+- Second block is rights for the specific group
+- Third block is rights for everyone else
+
 ## Examples
 
 Change permissions of 'testfile.txt'
