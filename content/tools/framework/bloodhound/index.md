@@ -129,31 +129,11 @@ Server Operators
 Backup Operators
 ```
 
-### Neo4j v4.x Multi-database usage
-
-To use multiple databases in Neo4j v4.x with BloodHound, edit the `/etc/neo4j/neo4j.conf` configuration file.
-
-The uncommented (#) database will be in use when starting Neo4j.
-
-```plain
-#dbms.default_database=neo4j-1
-#dbms.default_database=neo4j-2
-dbms.default_database=neo4j-3
-```
-
-### Neo4j v5.x Multi-database usage
-
-To use multiple databases in Neo4j v5.x with BloodHound, edit the `/etc/neo4j/neo4j.conf` configuration file.
-
-The uncommented (#) database will be in use when starting Neo4j.
-
-```plain
-#initial.dbms.default_database=neo4j-1
-#initial.dbms.default_database=neo4j-2
-initial.dbms.default_database=neo4j-3
-```
-
 ## Helpfull Tools for BloodHound
+
+### Neo4j
+
+Neo4j is usually used as database for BloodHound data. Please see [neo4j]({{< ref "neo4j" >}}) for installation and multi-database usage.
 
 ### CypherHound
 
