@@ -43,6 +43,8 @@ sudo adduser $USER vboxusers
 | Reset VM                               | `VBoxManage controlvm <vm> reset`                                                             | -                     |
 | Pauze VM                               | `VBoxManage controlvm <vm> pause`                                                             | -                     |
 | Resume VM                              | `VBoxManage controlvm <vm> resume`                                                            | -                     |
+| Memory                                 | `VBoxManage modifyvm <vm> --memory 1024`                                                      | -                     |
+| CPUs                                   | VBoxManage modifyvm <vm> --cpus 4`                                                            | -                     |
 
 ## URL List
 
