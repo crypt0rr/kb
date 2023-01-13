@@ -2365,7 +2365,7 @@ A '**-**' means the field should be left blank.
 | PokerTracker Software                                | postgres                   | dbpass                                                          |
 | PokerTracker Software                                | postgres                   | svcPASS83                                                       |
 | Pollsafe                                             | SMDR                       | SECONDARY                                                       |
-| Polycom                                              | administrator              | * * #                                                           |
+| Polycom                                              | administrator              | `* * #`                                                           |
 | Polycom                                              | <blank>                    | ACCORD                                                          |
 | Polycom                                              | <blank>                    | admin                                                           |
 | Polycom                                              | <blank>                    | <blank>                                                         |
