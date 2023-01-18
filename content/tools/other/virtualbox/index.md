@@ -46,6 +46,10 @@ sudo adduser $USER vboxusers
 | Memory                                 | `VBoxManage modifyvm <vm> --memory 1024`                                                      | -                     |
 | CPUs                                   | VBoxManage modifyvm <vm> --cpus 4`                                                            | -                     |
 
+## X11
+
+For example running Ubuntu Server headless with Virtualbox on top, you can install xorg (`sudo apt install xorg`) to be able to use SSH and manage the interface.
+
 ## URL List
 
 * [Virtualbox.org](https://www.virtualbox.org/)
