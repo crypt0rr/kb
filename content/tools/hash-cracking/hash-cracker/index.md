@@ -45,15 +45,20 @@ git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ## Examples
 
 ```plain
-$ ./hash-cracker.sh 
-hash-cracker v3.1 by crypt0rr (https://github.com/crypt0rr)
+./hash-cracker.sh 
+hash-cracker v3.2 by crypt0rr (https://github.com/crypt0rr)
 
-Checking if requirements are met:
-[+] Hashcat is installed
-[+] common-substr is executable
-[+] Python2 available
-[+] expander is executable
+Mandatory modules:
+[+] Hashcat is executable
 [+] Potfile "hash-cracker.pot" present
+
+Optional modules:
+[+] Common-substr is executable
+[+] Python2 is executable
+[+] Expander is executable
+[+] CeWL is executable
+
+Kernel mode:
 [+] Optimised kernels enabled
 
 0. Exit
@@ -74,12 +79,13 @@ Checking if requirements are met:
 15. Directory of word lists plain and then with OneRuleToRuleThemAll
 16. Username iteration (only complete NTDS)
 17. Markov-chain passwords generator
+18. CeWL wordlist generator
 
 Please enter job number: 6
 Enter hashtype (number): 1000
 Hashtype 1000 | NTLM selected.
-Enter full path to hashlist: input-bart 
-Hashlist input-bart selected.
+Enter full path to hashlist: input 
+Hashlist input selected.
 Single or Multiple wordlist mode? S/M: s
 Enter full path to wordlist: wordlists/ignis-1M.txt 
 [...]
