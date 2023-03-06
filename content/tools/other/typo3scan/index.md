@@ -85,4 +85,4 @@ Options:
 
 ## URL list
 
-- [Github.com - Typo3Scan]](https://github.com/whoot/Typo3Scan)
+- [Github.com - Typo3Scan](https://github.com/whoot/Typo3Scan)
