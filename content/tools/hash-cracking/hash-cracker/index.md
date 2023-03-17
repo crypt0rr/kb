@@ -34,19 +34,21 @@ git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ## Flags
 
 ```plain
-    -n / --no-limit
-            Disable the use of optimized kernels (un-limits password length)
-    -m / --module-info
-            Display information around modules/options
-    -s [hash-name] / --search [hash-name]
-            Will search local DB for hash module. E.g. '-s ntlm'
+        -l / --no-loopback
+                 Disable loopback functionality
+        -n / --no-limit
+                 Disable the use of optimized kernels (un-limits password length)
+        -m / --module-info
+                 Display information around modules/options
+        -s [hash-name] / --search [hash-name]
+                 Will search local DB for hash module. E.g. '-s ntlm'
 ```
 
 ## Examples
 
 ```plain
-./hash-cracker.sh 
-hash-cracker v3.2 by crypt0rr (https://github.com/crypt0rr)
+$ ./hash-cracker.sh 
+hash-cracker v3.4 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
@@ -58,8 +60,9 @@ Optional modules:
 [+] Expander is executable
 [+] CeWL is executable
 
-Kernel mode:
+Variable Parameters:
 [+] Optimised kernels enabled
+[+] Loopback enabled
 
 0. Exit
 1. Brute force
@@ -80,15 +83,9 @@ Kernel mode:
 16. Username iteration (only complete NTDS)
 17. Markov-chain passwords generator
 18. CeWL wordlist generator
+19. Digit remover
 
-Please enter job number: 6
-Enter hashtype (number): 1000
-Hashtype 1000 | NTLM selected.
-Enter full path to hashlist: input 
-Hashlist input selected.
-Single or Multiple wordlist mode? S/M: s
-Enter full path to wordlist: wordlists/ignis-1M.txt 
-[...]
+Please enter job number:
 ```
 
 ## URL List
