@@ -33,6 +33,14 @@ curl --request GET \
   --header 'Accept: application/json'
 ```
 
+### Extract Subdomains using jq
+
+This requires [jq]({{< ref "jq" >}}) to be installed.
+
+```plain
+jq '.subdomains[]' securitytrails.json
+```
+
 ## URL List
 
 * [Securitytrails.com](https://securitytrails.com/)
