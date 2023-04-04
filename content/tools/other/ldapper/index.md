@@ -172,4 +172,4 @@ $krb5tgs$23$*BERRY_TRAVIS$OFFSEC.NL$BERRY_TRAVIS*$1eacfa05b0737825dcc664fabf2a86
 
 ## URL List
 
-* [Github.com - ldapper](https://github.com/Synzack/ldapper)
+- [Github.com - ldapper](https://github.com/Synzack/ldapper)
