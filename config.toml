@@ -59,7 +59,13 @@ url = "https://cyberchef.offsec.nl"
 weight = 50
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-code-branch'></i> SAF"
+name = "<i class='fas fa-code-branch'></i> Search Active Github Forks"
 identifier = "search-active-github-forks"
 url = "https://saf.offsec.nl"
 weight = 60
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-envelope-open-text'></i> Message Header Analyser"
+identifier = "message-header-analyzer"
+url = "https://mha.offsec.nl"
+weight = 70
