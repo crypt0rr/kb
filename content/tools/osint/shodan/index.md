@@ -78,7 +78,7 @@ NETSurveillance uc-httpd
 
 ### Find based on favicon
 
-Get the favicon and create a hash with the following script.
+Get the favicon and create a hash with the following script. To use makes sure to edit the URL in the script.
 
 {{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"/%}}
 
