@@ -165,6 +165,7 @@ The modules below can be used with the `-M` option.
 [*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
 [*] handlekatz                Get lsass dump using handlekatz64 and parse the result with pypykatz
 [*] hash_spider               Dump lsass recursively from a given hash using BH to find local admins
+[*] impersonate               List and impersonate tokens to run command as locally logged on users
 [*] install_elevated          Checks for AlwaysInstallElevated
 [*] ioxidresolver             Thie module helps you to identify hosts that have additional active interfaces
 [*] keepass_discover          Search for KeePass-related files and process.
