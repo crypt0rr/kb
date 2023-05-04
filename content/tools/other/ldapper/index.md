@@ -72,9 +72,11 @@ Optional flags:
 - `-t` - Enable timestamps for each command performed
 - `-s` - Enable the use of LDAP**S**
 
-With Password:  connect -u <username@domain> -p <password> -d <ip/FQDN>
-With Hash:      connect -u <username@domain> -H <hash> -d <ip/FQDN>
-With Kerberos:  connect -u <username@domain> -k -d <ip/FQDN>
+With Password:  `connect -u <username@domain> -p <password> -d <ip/FQDN>`
+
+With Hash:      `connect -u <username@domain> -H <hash> -d <ip/FQDN>`
+
+With Kerberos:  `connect -u <username@domain> -k -d <ip/FQDN>`
 
 ### Starting LDAP-shell session running 'net user'
 
