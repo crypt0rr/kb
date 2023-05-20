@@ -3,4 +3,4 @@
   X-Content-Type-Options: nosniff
   Access-Control-Allow-Origin: kb.offsec.nl cloudflareinsights.com
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: frame-ancestors 'self' https://kb.offsec.nl; script-src 'self' https://kb.offsec.nl https://static.cloudflareinsights.com 'unsafe-inline'; connect-src https://kb.offsec.nl https://cloudflareinsights.com; worker-src 'self' blob:; bkb-all-mixed-content; upgrade-insecure-requests;
+  Content-Security-Policy: frame-ancestors 'self' https://kb.offsec.nl; script-src 'self' https://kb.offsec.nl https://static.cloudflareinsights.com 'unsafe-inline'; connect-src https://kb.offsec.nl https://cloudflareinsights.com; worker-src 'self' blob:; block-all-mixed-content; upgrade-insecure-requests;
