@@ -1,5 +1,6 @@
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
+  Access-Control-Allow-Origin: kb.offsec.nl cloudflareinsights.com
   Referrer-Policy: strict-origin-when-cross-origin
   Content-Security-Policy: frame-ancestors 'self' https://kb.offsec.nl; block-all-mixed-content; upgrade-insecure-requests;
