@@ -25,6 +25,14 @@ To gather additional information directly from ADExplorer for BloodHound, check 
 
 Download newest release from [Github.com](https://github.com/BloodHoundAD/BloodHound/releases)
 
+### Apple macOS
+
+The BloodHound binary is not signed, to still use it the following should be executed.
+
+```plain
+xattr -d com.apple.quarantine /Applications/BloodHound.app
+```
+
 ## Usage
 
 ### Bloodhound - Run ingestor on target domain joined system
