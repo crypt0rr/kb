@@ -21,26 +21,28 @@ python3 -m pip install -r requirements.txt
 ## Usage
 
 ```plain
-onedrive_enum.py [-h] -d DOMAIN [-t TENANT] [-u USERNAME] [-U USERFILE] [-o OUTPUT] [-v] [-T THREADS]
+onedrive_enum.py [-h] -d  [-t] [-u] [-a] [-U] [-p] [-o] [-T] [-e] [-r] [-x] [-n] [-k] [-v] [-D]
 ```
 
 ## Flags
 
 ```plain
-  -h, --help            show this help message and exit
-  -d DOMAIN, --domain DOMAIN
-                        target domain name
-  -t TENANT, --tenant TENANT
-                        tenant name (default: based off domain name)
-  -u USERNAME, --username USERNAME
-                        user to target
-  -U USERFILE, --userfile USERFILE
-                        file containing users to target
-  -o OUTPUT, --output OUTPUT
-                        file to write output to (default: output.log)
-  -v, --verbose         enable verbose output
-  -T THREADS, --threads THREADS
-                        total number of threads (defaut: 10)
+  -h, --help           show this help message and exit
+  -d , --domain        target domain name (required)
+  -t , --tenant        tenant name
+  -u , --username      user to target
+  -a , --append        mutator: append a number, character, or string to a username
+  -U , --userfile      file containing usernames (wordlists) -- will also take a directory
+  -p , --playlist      file containing list of paths to user lists (wordlists) to try
+  -o , --output        file to write output to (default: output.log)
+  -T , --threads       total number of threads (defaut: 100)
+  -e , --environment   Azure environment to target [commercial (default), chinese, gov]
+  -r, --rerun          force re-run of previously tested tenant/domain/wordlist combination
+  -x, --skip-tried     dedupe. skip any usernames from previous runs
+  -n, --no-db          disable logging to db
+  -k , --killafter     kill off non-productive jobs after x tries with no success
+  -v, --verbose        enable verbose output
+  -D, --debug          enable debug output
 ```
 
 ## Examples
