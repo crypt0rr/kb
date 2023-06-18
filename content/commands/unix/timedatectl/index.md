@@ -102,6 +102,12 @@ sudo timedatectl set-ntp 1
 sudo timedatectl set-time '2021-08-31 14:25'
 ```
 
+### Show Status
+
+```plain
+timedatectl timesync-status
+```
+
 ## URL List
 
 * [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/xenial/man1/timedatectl.1.html)
