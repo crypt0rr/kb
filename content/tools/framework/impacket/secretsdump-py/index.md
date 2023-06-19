@@ -97,8 +97,8 @@ Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
 
 Required files:
 
-* NTDS.dit (`C:\Windows\NTDS\ntds.dit`)
-* SYSTEM (`C:\Windows\System32\config\SYSTEM`)
+- NTDS.dit (`C:\Windows\NTDS\ntds.dit`)
+- SYSTEM (`C:\Windows\System32\config\SYSTEM`)
 
 ```plain
 secretsdump.py -system SYSTEM -ntds NTDS.dit -hashes lmhash:nthash LOCAL -outputfile ntlm-extract -just-dc-ntlm -user-status -history
@@ -110,8 +110,8 @@ Instead of using [samdump2]({{< ref "samdump2" >}}).
 
 Required files:
 
-* SAM (`C:\Windows\System32\config\SAM`)
-* SYSTEM (`C:\Windows\System32\config\SYSTEM`)
+- SAM (`C:\Windows\System32\config\SAM`)
+- SYSTEM (`C:\Windows\System32\config\SYSTEM`)
 
 ```plain
 secretsdump.py -sam SAM -system SYSTEM LOCAL        
@@ -237,8 +237,8 @@ Instead of using [samdump2]({{< ref "samdump2" >}}).
 
 Required files:
 
-* SAM (`C:\Windows\System32\config\SAM`)
-* SYSTEM (`C:\Windows\System32\config\SYSTEM`)
+- SAM (`C:\Windows\System32\config\SAM`)
+- SYSTEM (`C:\Windows\System32\config\SYSTEM`)
 
 ```plain
 $ secretsdump.py -sam SAM -system SYSTEM LOCAL          
@@ -268,8 +268,8 @@ Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
 
 Required files:
 
-* NTDS.dit (`C:\Windows\NTDS\ntds.dit`)
-* SYSTEM (`C:\Windows\System32\config\SYSTEM`)
+- NTDS.dit (`C:\Windows\NTDS\ntds.dit`)
+- SYSTEM (`C:\Windows\System32\config\SYSTEM`)
 
 ```plain
 $ secretsdump.py -system SYSTEM -ntds NTDS.dit -hashes lmhash:nthash LOCAL -outputfile ntlm-extract -just-dc-ntlm -user-status -history
