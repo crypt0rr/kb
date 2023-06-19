@@ -82,4 +82,4 @@ Impacket v0.9.22.dev1+20200611.111621.760cb1ea - Copyright 2020 SecureAuth Corpo
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+* [Github.com - getST.py](https://github.com/fortra/impacket/blob/master/examples/getST.py)

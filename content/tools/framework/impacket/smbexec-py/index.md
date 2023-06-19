@@ -87,4 +87,4 @@ C:\Windows\system32>
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - smbexec.py](https://github.com/fortra/impacket/blob/master/examples/smbexec.py)

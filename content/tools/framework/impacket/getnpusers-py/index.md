@@ -96,4 +96,4 @@ $krb5asrep$23$svc-admin@offsec.nl:0507c99ed0c44924dee1bd4fdb34e0b9$e6abe0cd017c4
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - GetNPUsers.py](https://github.com/fortra/impacket/blob/master/examples/GetNPUsers.py)

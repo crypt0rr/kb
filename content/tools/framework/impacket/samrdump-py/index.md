@@ -91,4 +91,4 @@ Administrator (500)/ScriptPath
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - samrdump.py](https://github.com/fortra/impacket/blob/master/examples/samrdump.py)
