@@ -19,12 +19,28 @@ Is a collection of Python classes for working with network protocols.
 
 ## Installation
 
-```plain
-git clone https://github.com/fortra/impacket.git
-```
+### PipX
+
+`pipx` is recommended over `pip` for system-wide installations.
+
+In order to grab the latest stable release run:
 
 ```plain
-sudo python3 -m pip install .
+python3 -m pipx install impacket
+```
+
+If you want to play with the unreleased changes, download the development version from the master branch, extract the package, and execute the following command from the directory where Impacket has been unpacked:
+
+```plain
+git clone https://github.com/fortra/impacket.git
+python3 -m pipx install .
+```
+
+### Pip3
+
+```plain
+git clone https://github.com/fortra/impacket.git
+python3 -m pip install .
 ```
 
 ## URL List
