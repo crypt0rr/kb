@@ -62,4 +62,4 @@ janedo          Person          Resource-Based Constrained      SRV01$
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - findDelegation.py](https://github.com/fortra/impacket/blob/master/examples/findDelegation.py)

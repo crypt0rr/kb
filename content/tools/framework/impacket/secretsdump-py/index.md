@@ -292,4 +292,4 @@ Example `NTDS.dit` and `SYSTEM` files zipped below.
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - secretsdump.py](https://github.com/fortra/impacket/blob/master/examples/secretsdump.py)

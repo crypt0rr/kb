@@ -32,4 +32,4 @@ Requires SMB-signing disabled or not required.
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - smbrelayx.py](https://github.com/fortra/impacket/blob/master/examples/smbrelayx.py)

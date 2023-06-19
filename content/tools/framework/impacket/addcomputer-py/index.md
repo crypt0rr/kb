@@ -73,4 +73,4 @@ Impacket v0.10.1.dev1+20230316.112532.f0ac44b - Copyright 2022 Fortra
 
 ## URL list
 
-- [Github.com](https://github.com/fortra/impacket/blob/master/examples/addcomputer.py)
+- [Github.com - addcomputer.py](https://github.com/fortra/impacket/blob/master/examples/addcomputer.py)

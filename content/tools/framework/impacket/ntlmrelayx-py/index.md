@@ -232,4 +232,4 @@ SMB         10.10.10.2      OFFSEC/JOHNDO       FALSE           445
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - ntlmrelayx.py](https://github.com/fortra/impacket/blob/master/examples/ntlmrelayx.py)

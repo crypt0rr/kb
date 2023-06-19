@@ -126,4 +126,4 @@ C:\>get 20201105105903_BloodHound.zip
 
 ## URL List
 
-* [Github.com](https://github.com/SecureAuthCorp/impacket)
+- [Github.com - wmiexec.py](https://github.com/fortra/impacket/blob/master/examples/wmiexec.py)
