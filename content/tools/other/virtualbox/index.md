@@ -17,6 +17,15 @@ VirtualBox is a powerful x86 and AMD64/Intel64 virtualization product for enterp
 
 Download newest release from [Virtualbox.org](https://www.virtualbox.org/wiki/Downloads)
 
+### Guest Additions
+
+```plain
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential dkms linux-headers-$(uname -r)
+```
+
+Mount the Guest Additions and run `autorun.sh`.
+
 ### Troubleshooting
 
 ### When no USB-device is reported to send to vm
