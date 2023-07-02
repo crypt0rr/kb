@@ -18,11 +18,11 @@ Install the [CrackMapExec]({{< ref "../" >}})
 ## Usage
 
 ```plain
-crackmapexec rdp [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
-                        [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
-                        [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--no-bruteforce] [--continue-on-success] [--port PORT] [--rdp-timeout RDP_TIMEOUT] [-d DOMAIN | --local-auth] [--screenshot]
-                        [--screentime SCREENTIME] [--res RES]
-                        [target ...]
+cme rdp [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--no-bruteforce] [--continue-on-success] [--use-kcache] [--log LOG] [--aesKey AESKEY [AESKEY ...]]
+               [--kdcHost KDCHOST] [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
+               [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--port PORT] [--rdp-timeout RDP_TIMEOUT] [--nla-screenshot] [-d DOMAIN | --local-auth] [--screenshot] [--screentime SCREENTIME]
+               [--res RES]
+               target [target ...]
 ```
 
 ## Flags
@@ -39,9 +39,12 @@ options:
                         username(s) or file(s) containing usernames
   -p PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
-  -k, --kerberos        Use Kerberos authentication from ccache file (KRB5CCNAME)
-  --export EXPORT [EXPORT ...]
-                        Export result into a file, probably buggy
+  -k, --kerberos        Use Kerberos authentication
+  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --continue-on-success
+                        continues authentication attempts even after successes
+  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+  --log LOG             Export result into a custom file
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
@@ -62,12 +65,10 @@ options:
                         IP for the remote system to connect back to (default: same as server-host)
   -H HASH [HASH ...], --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
-  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
-  --continue-on-success
-                        continues authentication attempts even after successes
   --port PORT           Custom RDP port
   --rdp-timeout RDP_TIMEOUT
                         RDP timeout on socket connection
+  --nla-screenshot      Screenshot RDP login prompt if NLA is disabled
   -d DOMAIN             domain to authenticate to
   --local-auth          authenticate locally to each target
 
@@ -100,4 +101,4 @@ RDP         10.10.10.20 3389   FILE02           [-] offsec.nl\john:Welkom1234
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
+* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
