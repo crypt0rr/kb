@@ -18,10 +18,10 @@ Install the [CrackMapExec]({{< ref "../" >}})
 ## Usage
 
 ```plain
-cme ftp [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
-               [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST] [--server-port PORT]
-               [--connectback-host CHOST] [--no-bruteforce] [--port PORT] [--continue-on-success]
-               [target ...]
+cme ftp [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--no-bruteforce] [--continue-on-success] [--use-kcache] [--log LOG] [--aesKey AESKEY [AESKEY ...]]
+               [--kdcHost KDCHOST] [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {https,http}] [--server-host HOST]
+               [--server-port PORT] [--connectback-host CHOST] [--port PORT] [--ls]
+               target [target ...]
 ```
 
 ## Flags
@@ -38,9 +38,12 @@ options:
                         username(s) or file(s) containing usernames
   -p PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
-  -k, --kerberos        Use Kerberos authentication from ccache file (KRB5CCNAME)
-  --export EXPORT [EXPORT ...]
-                        Export result into a file, probably buggy
+  -k, --kerberos        Use Kerberos authentication
+  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --continue-on-success
+                        continues authentication attempts even after successes
+  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+  --log LOG             Export result into a custom file
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
@@ -53,16 +56,18 @@ options:
                         module options
   -L, --list-modules    list available modules
   --options             display module options
-  --server {http,https}
+  --server {https,http}
                         use the selected server (default: https)
   --server-host HOST    IP to bind the server to (default: 0.0.0.0)
   --server-port PORT    start the server on the specified port
   --connectback-host CHOST
                         IP for the remote system to connect back to (default: same as server-host)
-  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
   --port PORT           FTP port (default: 21)
-  --continue-on-success
-                        continues authentication attempts even after successes
+
+FTP Access:
+  Options for enumerating your access
+
+  --ls                  List files in the directory
 ```
 
 ## Examples
@@ -77,4 +82,4 @@ FTP         194.244.111.113 21     194.244.111.113  [+] anonymous:anonymous
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
+* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

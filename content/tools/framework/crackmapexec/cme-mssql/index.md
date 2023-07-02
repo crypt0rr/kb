@@ -18,11 +18,11 @@ Install the [CrackMapExec]({{< ref "../" >}})
 ## Usage
 
 ```plain
-cme mssql [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
-                 [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
-                 [--server-port PORT] [--connectback-host CHOST] [-d DOMAIN | --local-auth] [-H HASH [HASH ...]] [--port PORT] [-q QUERY] [--no-bruteforce] [--continue-on-success] [--force-ps32]
-                 [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--clear-obfscripts]
-                 [target ...]
+cme mssql [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--no-bruteforce] [--continue-on-success] [--use-kcache] [--log LOG] [--aesKey AESKEY [AESKEY ...]]
+                [--kdcHost KDCHOST] [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
+                [--server-port PORT] [--connectback-host CHOST] [-d DOMAIN | --local-auth] [-H HASH [HASH ...]] [--port PORT] [-q QUERY] [--force-ps32] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs]
+                [--clear-obfscripts] [--put-file FILE FILE] [--get-file FILE FILE]
+                target [target ...]
 ```
 
 ## Flags
@@ -39,9 +39,12 @@ options:
                         username(s) or file(s) containing usernames
   -p PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
-  -k, --kerberos        Use Kerberos authentication from ccache file (KRB5CCNAME)
-  --export EXPORT [EXPORT ...]
-                        Export result into a file, probably buggy
+  -k, --kerberos        Use Kerberos authentication
+  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --continue-on-success
+                        continues authentication attempts even after successes
+  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+  --log LOG             Export result into a custom file
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
@@ -67,9 +70,6 @@ options:
   --port PORT           MSSQL port (default: 1433)
   -q QUERY, --query QUERY
                         execute the specified query against the MSSQL DB
-  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
-  --continue-on-success
-                        continues authentication attempts even after successes
 
 Command Execution:
   options for executing commands
@@ -84,6 +84,12 @@ Powershell Obfuscation:
 
   --obfs                Obfuscate PowerShell scripts
   --clear-obfscripts    Clear all cached obfuscated PowerShell scripts
+
+Files:
+  Options for put and get remote files
+
+  --put-file FILE FILE  Put a local file into remote target, ex: whoami.txt C:\Windows\Temp\whoami.txt
+  --get-file FILE FILE  Get a remote file, ex: C:\Windows\Temp\whoami.txt whoami.txt
 ```
 
 ### Modules
@@ -124,4 +130,4 @@ The modules below can be used with the `-M` option.
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
+* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

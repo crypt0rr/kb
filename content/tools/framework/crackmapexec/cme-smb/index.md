@@ -18,15 +18,15 @@ Install the [CrackMapExec]({{< ref "../" >}})
 ## Usage
 
 ```plain
-cme smb [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
-               [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
-               [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--no-bruteforce] [-d DOMAIN | --local-auth] [--port {139,445}] [--share SHARE] [--smb-server-port SMB_SERVER_PORT]
-               [--gen-relay-list OUTPUT_FILE] [--continue-on-success] [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]] [--sam | --lsa | --ntds [{drsuapi,vss}]] [--shares] [--sessions] [--disks]
-               [--loggedon-users] [--users [USER]] [--groups [GROUP]] [--computers [COMPUTER]] [--local-groups [GROUP]] [--pass-pol] [--rid-brute [MAX_RID]] [--wmi QUERY] [--wmi-namespace NAMESPACE]
-               [--spider SHARE] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST] [--pattern PATTERN [PATTERN ...] | --regex REGEX [REGEX ...]] [--depth DEPTH] [--only-files]
-               [--put-file FILE FILE] [--get-file FILE FILE] [--exec-method {wmiexec,smbexec,atexec,mmcexec}] [--force-ps32] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE]
-               [--clear-obfscripts]
-               [target ...]
+cme smb [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--no-bruteforce] [--continue-on-success] [--use-kcache] [--log LOG] [--aesKey AESKEY [AESKEY ...]]
+               [--kdcHost KDCHOST] [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {https,http}] [--server-host HOST]
+               [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [-d DOMAIN | --local-auth] [--port {139,445}] [--share SHARE] [--smb-server-port SMB_SERVER_PORT] [--gen-relay-list OUTPUT_FILE]
+               [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]] [--sam] [--lsa] [--ntds [{drsuapi,vss}]] [--dpapi [{password,cookies}]] [--mkfile MKFILE] [--pvk PVK] [--enabled] [--user USERNTDS] [--shares]
+               [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--sessions] [--disks] [--loggedon-users-filter LOGGEDON_USERS_FILTER] [--loggedon-users] [--users [USER]] [--groups [GROUP]] [--computers [COMPUTER]]
+               [--local-groups [GROUP]] [--pass-pol] [--rid-brute [MAX_RID]] [--wmi QUERY] [--wmi-namespace NAMESPACE] [--spider SHARE] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST]
+               [--pattern PATTERN [PATTERN ...] | --regex REGEX [REGEX ...]] [--depth DEPTH] [--only-files] [--put-file FILE FILE] [--get-file FILE FILE] [--append-host] [--exec-method {atexec,mmcexec,wmiexec,smbexec}]
+               [--codec CODEC] [--force-ps32] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE] [--clear-obfscripts]
+               target [target ...]
 ```
 
 ## Flags
@@ -43,9 +43,12 @@ options:
                         username(s) or file(s) containing usernames
   -p PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
-  -k, --kerberos        Use Kerberos authentication from ccache file (KRB5CCNAME)
-  --export EXPORT [EXPORT ...]
-                        Export result into a file, probably buggy
+  -k, --kerberos        Use Kerberos authentication
+  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --continue-on-success
+                        continues authentication attempts even after successes
+  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+  --log LOG             Export result into a custom file
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
@@ -58,7 +61,7 @@ options:
                         module options
   -L, --list-modules    list available modules
   --options             display module options
-  --server {http,https}
+  --server {https,http}
                         use the selected server (default: https)
   --server-host HOST    IP to bind the server to (default: 0.0.0.0)
   --server-port PORT    start the server on the specified port
@@ -66,7 +69,6 @@ options:
                         IP for the remote system to connect back to (default: same as server-host)
   -H HASH [HASH ...], --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
-  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
   -d DOMAIN             domain to authenticate to
   --local-auth          authenticate locally to each target
   --port {139,445}      SMB port (default: 445)
@@ -75,10 +77,8 @@ options:
                         specify a server port for SMB
   --gen-relay-list OUTPUT_FILE
                         outputs all hosts that don't require SMB signing to the specified file
-  --continue-on-success
-                        continues authentication attempts even after successes
   --smb-timeout SMB_TIMEOUT
-                        SMB connection timeout, default 3 secondes
+                        SMB connection timeout, default 2 secondes
   --laps [LAPS]         LAPS authentification
 
 Credential Gathering:
@@ -88,13 +88,27 @@ Credential Gathering:
   --lsa                 dump LSA secrets from target systems
   --ntds [{drsuapi,vss}]
                         dump the NTDS.dit from target DCs using the specifed method (default: drsuapi)
+  --dpapi [{password,cookies}]
+                        dump DPAPI secrets from target systems, can dump cookies if you add "cookies" (default: password)
+
+Credential Gathering:
+  Options for gathering credentials
+
+  --mkfile MKFILE       DPAPI option. File with masterkeys in form of {GUID}:SHA1
+  --pvk PVK             DPAPI option. File with domain backupkey
+  --enabled             Only dump enabled targets from DC
+  --user USERNTDS       Dump selected user from DC
 
 Mapping/Enumeration:
   Options for Mapping/Enumerating
 
   --shares              enumerate shares and access
+  --filter-shares FILTER_SHARES [FILTER_SHARES ...]
+                        Filter share by access, option 'read' 'write' or 'read,write'
   --sessions            enumerate active sessions
   --disks               enumerate disks
+  --loggedon-users-filter LOGGEDON_USERS_FILTER
+                        only search for specific user, works with regex
   --loggedon-users      enumerate logged on users
   --users [USER]        enumerate domain users, if a user is specified than only its information is queried.
   --groups [GROUP]      enumerate domain groups, if a group is specified than its members are enumerated
@@ -130,12 +144,15 @@ Files:
 
   --put-file FILE FILE  Put a local file into remote target, ex: whoami.txt \\Windows\\Temp\\whoami.txt
   --get-file FILE FILE  Get a remote file, ex: \\Windows\\Temp\\whoami.txt whoami.txt
+  --append-host         append the host to the get-file filename
 
 Command Execution:
   Options for executing commands
 
-  --exec-method {wmiexec,smbexec,atexec,mmcexec}
+  --exec-method {atexec,mmcexec,wmiexec,smbexec}
                         method to execute the command. Ignored if in MSSQL mode (default: wmiexec)
+  --codec CODEC         Set encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with
+                        https://docs.python.org/3/library/codecs.html#standard-encodings and then execute again with --codec and the corresponding codec
   --force-ps32          force the PowerShell command to run in a 32-bit process
   --no-output           do not retrieve command output
   -x COMMAND            execute the specified command
@@ -158,8 +175,9 @@ The modules below can be used with the `-M` option.
 [*] dfscoerce                 Module to check if the DC is vulnerable to DFSCocerc, credit to @filip_dragovic/@Wh04m1001 and @topotam
 [*] drop-sc                   Drop a searchConnector-ms file on each writable share
 [*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
-[*] enum_avproducts           Gathers information on all endpoint protection solutions installed on the the remote host(s) via WMI
+[*] enum_av                   Gathers information on all endpoint protection solutions installed on the the remote host(s) via LsarLookupNames (no privilege needed)
 [*] enum_dns                  Uses WMI to dump DNS from an AD DNS Server
+[*] firefox                   Dump credentials from Firefox
 [*] get_netconnections        Uses WMI to query network connections.
 [*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
 [*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
@@ -174,12 +192,17 @@ The modules below can be used with the `-M` option.
 [*] masky                     Remotely dump domain user credentials via an ADCS and a KDC
 [*] met_inject                Downloads the Meterpreter stager and injects it into memory
 [*] ms17-010                  MS17-010, /!\ not tested oustide home lab
+[*] msol                      Dump MSOL cleartext password from the localDB on the Azure AD-Connect Server
 [*] nanodump                  Get lsass dump using nanodump and parse the result with pypykatz
 [*] nopac                     Check if the DC is vulnerable to CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard domain user
+[*] ntdsutil                  Dump NTDS with ntdsutil
 [*] ntlmv1                    Detect if lmcompatibilitylevel on the target is set to 0 or 1
 [*] petitpotam                Module to check if the DC is vulnerable to PetitPotam, credit to @topotam
+[*] printnightmare            Check if host vulnerable to printnightmare
 [*] procdump                  Get lsass dump using procdump64 and parse the result with pypykatz
+[*] rdcman                    Remotely dump Remote Desktop Connection Manager (sysinternals) credentials
 [*] rdp                       Enables/Disables RDP
+[*] reg-query                 Performs a registry query on the machine
 [*] runasppl                  Check if the registry value RunAsPPL is set or not
 [*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
 [*] shadowcoerce              Module to check if the target is vulnerable to ShadowCoerce, credit to @Shutdown and @topotam
@@ -189,10 +212,12 @@ The modules below can be used with the `-M` option.
 [*] teams_localdb             Retrieves the cleartext ssoauthcookie from the local Microsoft Teams database, if teams is open we kill all Teams process
 [*] test_connection           Pings a host
 [*] uac                       Checks UAC status
+[*] veeam                     Extracts credentials from local Veeam SQL Database
 [*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
 [*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
 [*] webdav                    Checks whether the WebClient service is running on the target
-[*] wireless                  Get key of all wireless interfaces
+[*] wifi                      Get key of all wireless interfaces
+[*] winscp                    Looks for WinSCP.ini files in the registry and default locations and tries to extract credentials.
 [*] zerologon                 Module to check if the DC is vulnerable to Zerologon aka CVE-2020-1472
 ```
 
@@ -484,4 +509,4 @@ MASKY   10.10.10.8  445     ADCS01          [+] 2 NT hash(es) successfully colle
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
+* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

@@ -18,11 +18,12 @@ Install the [CrackMapExec]({{< ref "../" >}})
 ## Usage
 
 ```plain
-cme ldap [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--export EXPORT [EXPORT ...]] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST]
-                [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {https,http}] [--server-host HOST]
-                [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--no-bruteforce] [--continue-on-success] [--port {636,389}] [-d DOMAIN | --local-auth] [--asreproast ASREPROAST]
-                [--kerberoasting KERBEROASTING] [--trusted-for-delegation] [--password-not-required] [--admin-count] [--users] [--groups]
-                [target ...]
+cme ldap [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-k] [--no-bruteforce] [--continue-on-success] [--use-kcache] [--log LOG] [--aesKey AESKEY [AESKEY ...]]
+                [--kdcHost KDCHOST] [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options] [--server {http,https}] [--server-host HOST]
+                [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--port {636,389}] [--no-smb] [-d DOMAIN | --local-auth] [--asreproast ASREPROAST] [--kerberoasting KERBEROASTING]
+                [--trusted-for-delegation] [--password-not-required] [--admin-count] [--users] [--groups] [--get-sid] [--gmsa] [--gmsa-convert-id GMSA_CONVERT_ID] [--gmsa-decrypt-lsa GMSA_DECRYPT_LSA] [--bloodhound]
+                [-ns NAMESERVER] [-c COLLECTION]
+                target [target ...]
 ```
 
 ## Flags
@@ -39,9 +40,12 @@ options:
                         username(s) or file(s) containing usernames
   -p PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
-  -k, --kerberos        Use Kerberos authentication from ccache file (KRB5CCNAME)
-  --export EXPORT [EXPORT ...]
-                        Export result into a file, probably buggy
+  -k, --kerberos        Use Kerberos authentication
+  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --continue-on-success
+                        continues authentication attempts even after successes
+  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+  --log LOG             Export result into a custom file
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
@@ -62,10 +66,8 @@ options:
                         IP for the remote system to connect back to (default: same as server-host)
   -H HASH [HASH ...], --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
-  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
-  --continue-on-success
-                        continues authentication attempts even after successes
   --port {636,389}      LDAP port (default: 389)
+  --no-smb              No smb connection
   -d DOMAIN             domain to authenticate to
   --local-auth          authenticate locally to each target
 
@@ -87,6 +89,26 @@ Retrieve useful information on the domain:
   --admin-count         Get objets that had the value adminCount=1
   --users               Enumerate enabled domain users
   --groups              Enumerate domain groups
+  --get-sid             Get domain sid
+
+Retrevie gmsa on the remote DC:
+  Options to play with gmsa
+
+  --gmsa                Enumerate GMSA passwords
+  --gmsa-convert-id GMSA_CONVERT_ID
+                        Get the secret name of specific gmsa or all gmsa if no gmsa provided
+  --gmsa-decrypt-lsa GMSA_DECRYPT_LSA
+                        Decrypt the gmsa encrypted value from LSA
+
+Bloodhound scan:
+  Options to play with bloodhoud
+
+  --bloodhound          Perform bloodhound scan
+  -ns NAMESERVER, --nameserver NAMESERVER
+                        Custom DNS IP
+  -c COLLECTION, --collection COLLECTION
+                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default, DCOnly, DCOM, RDP, PSRemote, LoggedOn, Container, ObjectProps, ACL, All. You can specify more than one by
+                        separating them with a comma. (default: Default)'
 ```
 
 ### Modules
@@ -94,14 +116,15 @@ Retrieve useful information on the domain:
 The modules below can be used with the `-M` option.
 
 ```plain
-[*] MAQ                       Retrieves the MachineAccountQuota domain-level attribute
 [*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
-[*] daclread                  Read and backup the Discretionary Access Control List of objects. Based on the work of @_nwodtuhs and @BlWasp_. Be carefull, this module cannot read the DACLS recursively, more explains in the options.
+[*] daclread                  Read and backup the Discretionary Access Control List of objects. Based on the work of @_nwodtuhs and @BlWasp_. Be carefull, this module cannot read the DACLS recursively, more explains in the  options.
 [*] get-desc-users            Get description of the users. May contained password
 [*] get-network               
+[*] groupmembership           Query the groups to which a user belongs.
 [*] laps                      Retrieves the LAPS passwords
 [*] ldap-checker              Checks whether LDAP signing and binding are required and / or enforced
-[*] ldap-signing              Check whether LDAP signing is required
+[*] maq                       Retrieves the MachineAccountQuota domain-level attribute
+[*] pso                       Query to get PSO from LDAP
 [*] subnets                   Retrieves the different Sites and Subnets of an Active Directory
 [*] user-desc                 Get user descriptions stored in Active Directory
 [*] whoami                    Get details of provided user
@@ -121,4 +144,4 @@ ADCS                                           Found CN: offsec-ADCS01-CA
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/Porchetta-Industries/CrackMapExec)
+* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
