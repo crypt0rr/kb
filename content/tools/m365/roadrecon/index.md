@@ -60,6 +60,15 @@ optional arguments:
   -h, --help            show this help message and exit
 ```
 
+## Plugins
+
+| Plugin        | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| policies      | Parse conditional access policies                            |
+| bloodhound    | Export Azure AD data to a custom BloodHound version          |
+| xlsexport     | Export data to an Excel file                                 |
+| road2timeline | Generate a forensic timeline from Azure AD object timestamps |
+
 ## Examples
 
 ### Authentication username / password based
@@ -125,5 +134,5 @@ Data have been exported to the data.xls file
 
 ## URL List
 
-* [GitHub.com - ROADtools](https://github.com/dirkjanm/ROADtools)
-* [Dirkjanm.io - Introducing ROADtools - The Azure AD exploration framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
+- [GitHub.com - ROADtools](https://github.com/dirkjanm/ROADtools)
+- [Dirkjanm.io - Introducing ROADtools - The Azure AD exploration framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
