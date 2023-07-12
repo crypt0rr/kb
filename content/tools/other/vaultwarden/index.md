@@ -33,4 +33,4 @@ docker stop vaultwarden
 
 ## URL List
 
-* [Github.com - Vaultwarden](https://github.com/dani-garcia/vaultwarden)
+- [Github.com - Vaultwarden](https://github.com/dani-garcia/vaultwarden)

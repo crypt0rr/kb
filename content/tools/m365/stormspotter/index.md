@@ -127,4 +127,4 @@ Once you've started up the UI, you will see a section in the database tab labele
 
 ## URL List
 
-* [Github.com - Stormspotter](https://github.com/Azure/Stormspotter)
+- [Github.com - Stormspotter](https://github.com/Azure/Stormspotter)

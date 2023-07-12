@@ -76,5 +76,5 @@ Download newest release from [Github.com](https://github.com/alin23/Lunar/releas
 
 ## URL List
 
-* [Lunar.fyi](https://lunar.fyi)
-* [Github.com - Lunar](https://github.com/alin23/Lunar)
+- [Lunar.fyi](https://lunar.fyi)
+- [Github.com - Lunar](https://github.com/alin23/Lunar)

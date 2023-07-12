@@ -111,5 +111,5 @@ DOWNLOADED: 4612 - FOUND: 4
 
 ## URL List
 
-* [Kali.org - dirb](https://www.kali.org/tools/dirb/)
-* [Github.com - dirb](https://github.com/Seabreg/dirb)
+- [Kali.org - dirb](https://www.kali.org/tools/dirb/)
+- [Github.com - dirb](https://github.com/Seabreg/dirb)

@@ -71,4 +71,4 @@ Addresses:  2606:2800:220:1:248:1893:25c8:1946
 
 ## URL List
 
-* [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup)
+- [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup)

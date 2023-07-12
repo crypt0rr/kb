@@ -97,4 +97,4 @@ offsec.nl\MARSHALL_FRANKS:des-cbc-md5:0df19bf71a6d9245
 
 ## URL List
 
-* [Github.com - Gosecretsdump](https://github.com/C-Sto/gosecretsdump)
+- [Github.com - Gosecretsdump](https://github.com/C-Sto/gosecretsdump)

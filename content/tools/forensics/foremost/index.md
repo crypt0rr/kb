@@ -46,5 +46,5 @@ $ foremost [-v|-V|-h|-T|-Q|-q|-a|-w-d] [-t <type>] [-s <blocks>] [-k <size>] [-b
 
 ## URL List
 
-* [Sourceforge.net - foremost](http://foremost.sourceforge.net/)
-* [Kali.org - foremost](https://tools.kali.org/forensics/foremost)
+- [Sourceforge.net - foremost](http://foremost.sourceforge.net/)
+- [Kali.org - foremost](https://tools.kali.org/forensics/foremost)

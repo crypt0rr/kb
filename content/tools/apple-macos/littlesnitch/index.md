@@ -23,4 +23,4 @@ Download newest release from [obdev.at](https://www.obdev.at/products/littlesnit
 
 ## URL List
 
-* [Obdev.at - LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html)
+- [Obdev.at - LittleSnitch](https://www.obdev.at/products/littlesnitch/index.html)

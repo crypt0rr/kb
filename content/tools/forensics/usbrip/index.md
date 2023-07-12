@@ -92,4 +92,4 @@ Disconnected:   ∅
 
 ## URL List
 
-* [Github.com - usbrip](https://github.com/snovvcrash/usbrip)
+- [Github.com - usbrip](https://github.com/snovvcrash/usbrip)

@@ -119,4 +119,4 @@ $ python3 omnispray.py --type enum -uf users.txt  --module o365_enum_office --pr
 
 ## URL List
 
-* [Github.com - Omnispray](https://github.com/0xZDH/Omnispray)
+- [Github.com - Omnispray](https://github.com/0xZDH/Omnispray)

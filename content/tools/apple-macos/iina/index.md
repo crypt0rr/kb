@@ -70,6 +70,6 @@ IINA supports the native Picture-in-Picture mode, enables you to enjoy either lo
 
 ## URL List
 
-* [IINA.io](https://iina.io/)
-* [Github.com - iina](https://github.com/iina/iina)
-* [IINA.io - Browser Extensions](https://iina.io/download/#browser-extensions)
+- [IINA.io](https://iina.io/)
+- [Github.com - iina](https://github.com/iina/iina)
+- [IINA.io - Browser Extensions](https://iina.io/download/#browser-extensions)

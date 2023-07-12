@@ -101,4 +101,4 @@ Device Descriptor:
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/lsusb)
+- [Linux.die.net](https://linux.die.net/man/8/lsusb)

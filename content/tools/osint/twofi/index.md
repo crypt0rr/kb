@@ -58,5 +58,5 @@ twofi [OPTIONS]
 
 ## URL List
 
-* [Digi.ninja - twofi](https://digi.ninja/projects/twofi.php)
-* [Github.com - twofi](https://github.com/digininja/twofi)
+- [Digi.ninja - twofi](https://digi.ninja/projects/twofi.php)
+- [Github.com - twofi](https://github.com/digininja/twofi)

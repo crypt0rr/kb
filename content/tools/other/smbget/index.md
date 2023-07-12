@@ -82,5 +82,5 @@ Downloaded 45.07MB in 53 seconds
 
 ## URL List
 
-* [Samba.org - smbget](https://www.samba.org/samba/docs/current/man-html/smbget.1.html)
-* [Unix.com - smbget](https://www.unix.com/man-page/centos/1/smbget/)
+- [Samba.org - smbget](https://www.samba.org/samba/docs/current/man-html/smbget.1.html)
+- [Unix.com - smbget](https://www.unix.com/man-page/centos/1/smbget/)

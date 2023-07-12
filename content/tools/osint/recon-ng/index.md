@@ -189,7 +189,7 @@ recon-web [-h] [--host HOST] [--port PORT]
 
 ## URL List
 
-* [Github.com - recon-ng](https://github.com/lanmaster53/recon-ng)
-* [Github.com - Wiki](https://github.com/lanmaster53/recon-ng/wiki)
-* [Tools.kali.org - recon-ng](https://tools.kali.org/information-gathering/recon-ng)
-* [Securitytrails.com - blog - recon-ng](https://securitytrails.com/blog/recon-ng)
+- [Github.com - recon-ng](https://github.com/lanmaster53/recon-ng)
+- [Github.com - Wiki](https://github.com/lanmaster53/recon-ng/wiki)
+- [Tools.kali.org - recon-ng](https://tools.kali.org/information-gathering/recon-ng)
+- [Securitytrails.com - blog - recon-ng](https://securitytrails.com/blog/recon-ng)

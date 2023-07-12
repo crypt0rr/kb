@@ -27,5 +27,5 @@ Microsoft Exchange DKIM-signer
 
 ## URL List
 
-* [GitHub.com - DKIM-Exchange](https://github.com/Pro/dkim-exchange)
-* [GitHub.com - DKIM-Exchange Wiki](https://github.com/Pro/dkim-exchange/wiki)
+- [GitHub.com - DKIM-Exchange](https://github.com/Pro/dkim-exchange)
+- [GitHub.com - DKIM-Exchange Wiki](https://github.com/Pro/dkim-exchange/wiki)

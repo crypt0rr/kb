@@ -35,5 +35,5 @@ Installation via [Apple AppStore](https://apps.apple.com/nl/app/video-converter/
 
 ## URL List
 
-* [Apps.apple.com - Video Converter](https://apps.apple.com/nl/app/video-converter/id1518836004?l=en&mt=12)
-* [Converter.airtv.io](https://converter.airtv.io/)
+- [Apps.apple.com - Video Converter](https://apps.apple.com/nl/app/video-converter/id1518836004?l=en&mt=12)
+- [Converter.airtv.io](https://converter.airtv.io/)

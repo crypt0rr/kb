@@ -74,5 +74,5 @@ libdvdread: Encrypted DVD support unavailable.**********************************
 
 ## URL List
 
-* [Manpages.ubuntu.com - dvdbackup](https://manpages.ubuntu.com/manpages/bionic/man1/dvdbackup.1.html)
-* [Wiki.archlinux.org - dvdbackup](https://wiki.archlinux.org/title/Dvdbackup)
+- [Manpages.ubuntu.com - dvdbackup](https://manpages.ubuntu.com/manpages/bionic/man1/dvdbackup.1.html)
+- [Wiki.archlinux.org - dvdbackup](https://wiki.archlinux.org/title/Dvdbackup)

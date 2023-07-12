@@ -21,4 +21,4 @@ Phonebook lists all domains, email addresses, or URLs for the given input domain
 
 ## URL List
 
-* [Phonebook.cz](https://phonebook.cz/)
+- [Phonebook.cz](https://phonebook.cz/)

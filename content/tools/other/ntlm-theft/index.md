@@ -107,4 +107,4 @@ URL=file://10.10.10.10/leak/leak.html
 
 ## URL List
 
-* [Github.com - ntlm_theft](https://github.com/Greenwolf/ntlm_theft)
+- [Github.com - ntlm_theft](https://github.com/Greenwolf/ntlm_theft)

@@ -53,6 +53,6 @@ sudo iwconfig [INTERFACE] essid [(HIDDEN)SSID]
 
 ## URL List
 
-* [Linux.die.net - iwconfig](https://linux.die.net/man/8/iwconfig)
-* [Computerhope.com - iwconfig](https://www.computerhope.com/unix/iwconfig.htm)
-* [Geeksforgeeks.org - iwconfig command in Linux with examples](https://www.geeksforgeeks.org/iwconfig-command-in-linux-with-examples/)
+- [Linux.die.net - iwconfig](https://linux.die.net/man/8/iwconfig)
+- [Computerhope.com - iwconfig](https://www.computerhope.com/unix/iwconfig.htm)
+- [Geeksforgeeks.org - iwconfig command in Linux with examples](https://www.geeksforgeeks.org/iwconfig-command-in-linux-with-examples/)

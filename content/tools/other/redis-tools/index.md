@@ -133,5 +133,5 @@ echo "If server echo's, no authentication is needed (PoC)"
 
 ## URL List
 
-* [Redis.io - rediscli](https://redis.io/topics/rediscli)
-* [Debian.org - redis-tools](https://packages.debian.org/nl/sid/redis-tools)
+- [Redis.io - rediscli](https://redis.io/topics/rediscli)
+- [Debian.org - redis-tools](https://packages.debian.org/nl/sid/redis-tools)

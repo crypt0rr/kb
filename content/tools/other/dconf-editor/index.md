@@ -66,4 +66,4 @@ Arguments description:
 
 ## URL List
 
-* [Wiki.gnome.org - DconfEditor](https://wiki.gnome.org/Apps/DconfEditor)
+- [Wiki.gnome.org - DconfEditor](https://wiki.gnome.org/Apps/DconfEditor)

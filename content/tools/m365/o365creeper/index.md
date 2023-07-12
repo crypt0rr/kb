@@ -55,4 +55,4 @@ john.do@example.com - INVALID
 
 ## URL List
 
-* [Github.com - o365creeper](https://github.com/LMGsec/o365creeper)
+- [Github.com - o365creeper](https://github.com/LMGsec/o365creeper)

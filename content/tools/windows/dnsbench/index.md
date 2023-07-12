@@ -25,4 +25,4 @@ Download newest executable from [grc.com](https://www.grc.com/dns/benchmark.htm)
 
 ## URL List
 
-* [GRC.com - DNS Benchmark](https://www.grc.com/dns/benchmark.htm)
+- [GRC.com - DNS Benchmark](https://www.grc.com/dns/benchmark.htm)

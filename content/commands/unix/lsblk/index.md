@@ -135,5 +135,5 @@ nvme1n1         259:4    0 931.5G  0 disk
 
 ## URL List
 
-* [Man7.org - lsblk](https://man7.org/linux/man-pages/man8/lsblk.8.html)
-* [Linux.die.net - lsblk](https://linux.die.net/man/8/lsblk)
+- [Man7.org - lsblk](https://man7.org/linux/man-pages/man8/lsblk.8.html)
+- [Linux.die.net - lsblk](https://linux.die.net/man/8/lsblk)

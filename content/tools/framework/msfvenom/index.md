@@ -74,5 +74,5 @@ Final size of exe file: 7168 bytes
 
 ## URL List
 
-* [Offensive-Security.com - MSFvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/)
-* [Infinitelogins.com - MSFVenom Reverse Shell Payload Cheatsheet (with & without Meterpreter)](https://infinitelogins.com/2020/01/25/msfvenom-reverse-shell-payload-cheatsheet/)
+- [Offensive-Security.com - MSFvenom](https://www.offensive-security.com/metasploit-unleashed/msfvenom/)
+- [Infinitelogins.com - MSFVenom Reverse Shell Payload Cheatsheet (with & without Meterpreter)](https://infinitelogins.com/2020/01/25/msfvenom-reverse-shell-payload-cheatsheet/)

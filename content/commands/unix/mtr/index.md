@@ -67,4 +67,4 @@ See the 'man 8 mtr' for details.
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/mtr)
+- [Linux.die.net](https://linux.die.net/man/8/mtr)

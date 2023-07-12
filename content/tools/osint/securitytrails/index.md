@@ -43,4 +43,4 @@ jq '.subdomains[]' securitytrails.json
 
 ## URL List
 
-* [Securitytrails.com](https://securitytrails.com/)
+- [Securitytrails.com](https://securitytrails.com/)

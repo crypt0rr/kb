@@ -52,4 +52,4 @@ Options to display fan speed and sensor temperature (displayed in the tray icon 
 
 ## URL List
 
-* [Crystalidea.com - Macs Fan Control](https://crystalidea.com/macs-fan-control)
+- [Crystalidea.com - Macs Fan Control](https://crystalidea.com/macs-fan-control)

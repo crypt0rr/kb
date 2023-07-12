@@ -105,4 +105,4 @@ Possible plaintext: "don't know" (y/N): y
 
 ## URL List
 
-* [Github.com - Ciphey](https://github.com/ciphey/ciphey)
+- [Github.com - Ciphey](https://github.com/ciphey/ciphey)

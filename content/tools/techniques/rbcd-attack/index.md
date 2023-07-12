@@ -180,6 +180,6 @@ offsec.nl\JOHNDO-ADM
 
 ## URL List
 
-* [iRED.team - Kerberos Resource-based Constrained Delegation: Computer Object Take Over](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/resource-based-constrained-delegation-ad-computer-object-take-over-and-privilged-code-execution)
-* [Github.com - Abusing Kerberos Resource-Based Constrained Delegation](https://github.com/tothi/rbcd-attack)
-* [harmj0y.net - A case study in wagging the dog computer takeover](https://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
+- [iRED.team - Kerberos Resource-based Constrained Delegation: Computer Object Take Over](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/resource-based-constrained-delegation-ad-computer-object-take-over-and-privilged-code-execution)
+- [Github.com - Abusing Kerberos Resource-Based Constrained Delegation](https://github.com/tothi/rbcd-attack)
+- [harmj0y.net - A case study in wagging the dog computer takeover](https://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)

@@ -59,4 +59,4 @@ Options:
 
 ## URL List
 
-* [Github.com - CDK](https://github.com/cdk-team/CDK)
+- [Github.com - CDK](https://github.com/cdk-team/CDK)

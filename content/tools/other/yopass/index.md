@@ -81,5 +81,5 @@ yopass-server -h
 
 ## URL List
 
-* [Yopass.se](https://yopass.se/)
-* [Github.com - yopass](https://github.com/jhaals/yopass)
+- [Yopass.se](https://yopass.se/)
+- [Github.com - yopass](https://github.com/jhaals/yopass)

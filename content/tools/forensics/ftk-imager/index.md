@@ -30,4 +30,4 @@ Download newest release from [accessdata.com](https://accessdata.com/product-dow
 
 ## URL List
 
-* [Accessdata.com](https://accessdata.com)
+- [Accessdata.com](https://accessdata.com)

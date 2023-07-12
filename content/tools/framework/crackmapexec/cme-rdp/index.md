@@ -101,4 +101,4 @@ RDP         10.10.10.20 3389   FILE02           [-] offsec.nl\john:Welkom1234
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+- [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

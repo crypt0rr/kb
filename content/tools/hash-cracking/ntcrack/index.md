@@ -89,5 +89,5 @@ e45a314c664d40a227f9540121d1a29d:Admin123
 
 ## URL List
 
-* [Github.com - ntcrack](https://github.com/sensepost/ntcrack)
-* [Sensepost.com - Left To My Own Devices – Fast NTCracking in Rust](https://sensepost.com/blog/2022/left-to-my-own-devices-fast-ntcracking-in-rust/)
+- [Github.com - ntcrack](https://github.com/sensepost/ntcrack)
+- [Sensepost.com - Left To My Own Devices – Fast NTCracking in Rust](https://sensepost.com/blog/2022/left-to-my-own-devices-fast-ntcracking-in-rust/)

@@ -109,6 +109,6 @@ To use key authentication add `--ssh-cmd 'ssh -i /home/crypt0rr/myprivatekey.key
 
 ## URL List
 
-* [Sshuttle.readthedocs.org - documentation](https://sshuttle.readthedocs.org/)
-* [Formulae.brew.sh - sshuttle](https://formulae.brew.sh/formula/sshuttle#default)
-* [Github.com - sshuttle](https://github.com/sshuttle/sshuttle)
+- [Sshuttle.readthedocs.org - documentation](https://sshuttle.readthedocs.org/)
+- [Formulae.brew.sh - sshuttle](https://formulae.brew.sh/formula/sshuttle#default)
+- [Github.com - sshuttle](https://github.com/sshuttle/sshuttle)

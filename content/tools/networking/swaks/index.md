@@ -77,4 +77,4 @@ swaks -t john.do@offsec.nl --server 10.10.10.10 --body "This is test body text, 
 
 ## URL List
 
-* [Github.com - Swaks](https://github.com/jetmore/swaks)
+- [Github.com - Swaks](https://github.com/jetmore/swaks)

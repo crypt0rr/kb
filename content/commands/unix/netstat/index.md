@@ -100,4 +100,4 @@ tcp6       0      0 127.0.0.1:41401         :::*                    LISTEN      
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/netstat)
+- [Linux.die.net](https://linux.die.net/man/8/netstat)

@@ -142,4 +142,4 @@ $ python3 RDPassSpray.py -U userlist.txt -p Welkom1234 -T targetlist.txt -o outp
 
 ## URL List
 
-* [GitHub.com - RDPassSpray](https://github.com/xFreed0m/RDPassSpray)
+- [GitHub.com - RDPassSpray](https://github.com/xFreed0m/RDPassSpray)

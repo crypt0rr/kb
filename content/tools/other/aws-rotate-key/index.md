@@ -64,4 +64,4 @@ Please note that it may take a minute for your new access key to propagate in th
 
 ## URL List
 
-* [Github.com - aws-rotate-key](https://github.com/stefansundin/aws-rotate-key)
+- [Github.com - aws-rotate-key](https://github.com/stefansundin/aws-rotate-key)

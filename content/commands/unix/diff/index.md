@@ -164,4 +164,4 @@ diff -u file1 file2
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/diff)
+- [Linux.die.net](https://linux.die.net/man/1/diff)

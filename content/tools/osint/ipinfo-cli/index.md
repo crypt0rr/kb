@@ -132,6 +132,6 @@ Core
 
 ## URL List
 
-* [ipinfo.io](https://ipinfo.io/)
-* [Github.com - ipinfo-cli](https://github.com/ipinfo/cli)
-* [Formulae.brew.sh - ipinfo-cli](https://formulae.brew.sh/formula/ipinfo-cli#default)
+- [ipinfo.io](https://ipinfo.io/)
+- [Github.com - ipinfo-cli](https://github.com/ipinfo/cli)
+- [Formulae.brew.sh - ipinfo-cli](https://formulae.brew.sh/formula/ipinfo-cli#default)

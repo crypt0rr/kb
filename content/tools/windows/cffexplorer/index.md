@@ -28,4 +28,4 @@ CFF Explorer was designed to make PE editing as easy as possible, but without lo
 
 ## URL List
 
-* [ntcore.com - explorer suite](https://ntcore.com/?page_id=388)
+- [ntcore.com - explorer suite](https://ntcore.com/?page_id=388)

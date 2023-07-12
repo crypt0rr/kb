@@ -23,4 +23,4 @@ Download newest release from [fatxplorer.eaton-works.com](https://fatxplorer.eat
 
 ## URL List
 
-* [Fatxplorer.eaton-works.com](https://fatxplorer.eaton-works.com)
+- [Fatxplorer.eaton-works.com](https://fatxplorer.eaton-works.com)

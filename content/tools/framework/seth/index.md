@@ -132,4 +132,4 @@ Hiding forged protocol request from client
 
 ## URL List
 
-* [GitHub.com - Seth](https://github.com/SySS-Research/Seth)
+- [GitHub.com - Seth](https://github.com/SySS-Research/Seth)

@@ -31,5 +31,5 @@ Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) o
 
 ## URL List
 
-* [O365blog.com - AADInternals](https://o365blog.com/aadinternals/)
-* [Github.co - AADInternals](https://github.com/Gerenios/AADInternals)
+- [O365blog.com - AADInternals](https://o365blog.com/aadinternals/)
+- [Github.co - AADInternals](https://github.com/Gerenios/AADInternals)

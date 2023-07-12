@@ -53,6 +53,6 @@ exiftool -all= *
 
 ## URL List
 
-* [ExifTool.org](https://exiftool.org/)
-* [ExifTool.org Flag creator](https://exiftool.org/examples.html)
-* [GitHub.com - exiftool](https://github.com/exiftool/exiftool)
+- [ExifTool.org](https://exiftool.org/)
+- [ExifTool.org Flag creator](https://exiftool.org/examples.html)
+- [GitHub.com - exiftool](https://github.com/exiftool/exiftool)

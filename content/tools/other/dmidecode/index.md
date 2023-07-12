@@ -133,4 +133,4 @@ Physical Memory Array
 
 ## URL List
 
-* [Linux.die.net - dmidecode](https://linux.die.net/man/8/dmidecode)
+- [Linux.die.net - dmidecode](https://linux.die.net/man/8/dmidecode)

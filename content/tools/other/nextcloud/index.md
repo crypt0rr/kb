@@ -19,5 +19,5 @@ The self-hosted productivity platform that keeps you in control.
 
 ## URL List
 
-* [Nextcloud.com](https://nextcloud.com/)
-* [Snapcraft.io](https://snapcraft.io/nextcloud)
+- [Nextcloud.com](https://nextcloud.com/)
+- [Snapcraft.io](https://snapcraft.io/nextcloud)

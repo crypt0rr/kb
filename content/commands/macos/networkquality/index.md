@@ -54,4 +54,4 @@ OS Version: Version 12.1 (Build 21C52)
 
 ## URL List
 
-* [Support.apple.com - Test Wi-Fi networks with Apple Network Responsiveness](https://support.apple.com/kb/HT212313)
+- [Support.apple.com - Test Wi-Fi networks with Apple Network Responsiveness](https://support.apple.com/kb/HT212313)

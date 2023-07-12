@@ -106,5 +106,5 @@ laserjet.lan:/> exit
 
 ## URL List
 
-* [GitHub.com - PRET](https://github.com/RUB-NDS/PRET.git)
-* [Hacking-Printers.net](http://hacking-printers.net/wiki/index.php/)
+- [GitHub.com - PRET](https://github.com/RUB-NDS/PRET.git)
+- [Hacking-Printers.net](http://hacking-printers.net/wiki/index.php/)

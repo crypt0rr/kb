@@ -76,4 +76,4 @@ qobuz-dl dl this_txt_file_has_urls.txt
 
 ## URL List
 
-* [Github.com - qobuz-dl](https://github.com/vitiko98/qobuz-dl)
+- [Github.com - qobuz-dl](https://github.com/vitiko98/qobuz-dl)

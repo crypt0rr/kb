@@ -90,4 +90,4 @@ trufflehog3 -R report.json > report.html
 
 ## URL List
 
-* [Github.com - TruffleHog3](https://github.com/feeltheajf/truffleHog3)
+- [Github.com - TruffleHog3](https://github.com/feeltheajf/truffleHog3)

@@ -23,5 +23,5 @@ Download newest release from [Github.com](https://github.com/nikolaeu/numi/relea
 
 ## URL List
 
-* [Numi.app](https://numi.app/)
-* [Github.com - Numi](https://github.com/nikolaeu/numi)
+- [Numi.app](https://numi.app/)
+- [Github.com - Numi](https://github.com/nikolaeu/numi)

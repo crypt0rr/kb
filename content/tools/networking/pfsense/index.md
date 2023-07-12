@@ -19,5 +19,5 @@ Download newest release from [pfSense.com](https://www.pfsense.org/download/)
 
 ## URL List
 
-* [pfSense.org](https://www.pfsense.org/)
-* [GitHub.com - pfSense](https://github.com/pfsense/pfsense)
+- [pfSense.org](https://www.pfsense.org/)
+- [GitHub.com - pfSense](https://github.com/pfsense/pfsense)

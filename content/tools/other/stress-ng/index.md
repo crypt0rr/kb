@@ -905,5 +905,5 @@ stress-ng: info:  [40671] dispatching hogs: 8 cpu, 20 matrix
 
 ## URL List
 
-* [Wiki.ubuntu.com - stress-ng](https://wiki.ubuntu.com/Kernel/Reference/stress-ng)
-* [Formulae.brew.sh - stress-ng](https://formulae.brew.sh/formula/stress-ng)
+- [Wiki.ubuntu.com - stress-ng](https://wiki.ubuntu.com/Kernel/Reference/stress-ng)
+- [Formulae.brew.sh - stress-ng](https://formulae.brew.sh/formula/stress-ng)

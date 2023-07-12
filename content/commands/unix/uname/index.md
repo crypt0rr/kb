@@ -49,4 +49,4 @@ Linux testsystem 5.8.0-7642-generic #47~1614007149~20.04~82fb226-Ubuntu SMP Tue 
 
 ## URL List
 
-* [Linux.die.net - uname](https://linux.die.net/man/1/uname)
+- [Linux.die.net - uname](https://linux.die.net/man/1/uname)

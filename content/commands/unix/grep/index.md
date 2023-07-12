@@ -179,4 +179,4 @@ grep -v '\$' file.txt
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/grep)
+- [Linux.die.net](https://linux.die.net/man/1/grep)

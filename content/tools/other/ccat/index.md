@@ -272,4 +272,4 @@ $ python3 ccat.py sample-cisco.config
 
 ## URL List
 
-* [Github.com - ccat](https://github.com/frostbits-security/ccat)
+- [Github.com - ccat](https://github.com/frostbits-security/ccat)

@@ -66,5 +66,5 @@ ditto -V --norsrc ~/Sample/Folder /Volumes/NoMetadataBackups
 
 ## URL List
 
-* [ss64.com - ditto](https://ss64.com/osx/ditto.html)
-* [OSXdaily.com - Use ditto to Copy Files & Directories Intelligently from the Mac Terminal](https://osxdaily.com/2014/06/11/use-ditto-copy-files-directories-mac-command-line/)
+- [ss64.com - ditto](https://ss64.com/osx/ditto.html)
+- [OSXdaily.com - Use ditto to Copy Files & Directories Intelligently from the Mac Terminal](https://osxdaily.com/2014/06/11/use-ditto-copy-files-directories-mac-command-line/)

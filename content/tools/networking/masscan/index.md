@@ -57,5 +57,5 @@ Discovered open port 80/tcp on 10.10.10.3
 
 ## URL List
 
-* [Github.com - MASSCAN](https://github.com/robertdavidgraham/masscan)
-* [Kali.org - MASSCAN](https://www.kali.org/tools/masscan/)
+- [Github.com - MASSCAN](https://github.com/robertdavidgraham/masscan)
+- [Kali.org - MASSCAN](https://www.kali.org/tools/masscan/)

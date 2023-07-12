@@ -253,5 +253,5 @@ sudo cryptsetup luksChangeKey <device>
 
 ## URL List
 
-* [Linux.die.net - Cryptsetup](https://linux.die.net/man/8/cryptsetup)
-* [Johnpili.com - How to change full disk encryption LUKS password on Ubuntu](https://johnpili.com/how-to-change-full-disk-encryption-luks-password-on-ubuntu-18-04/)
+- [Linux.die.net - Cryptsetup](https://linux.die.net/man/8/cryptsetup)
+- [Johnpili.com - How to change full disk encryption LUKS password on Ubuntu](https://johnpili.com/how-to-change-full-disk-encryption-luks-password-on-ubuntu-18-04/)

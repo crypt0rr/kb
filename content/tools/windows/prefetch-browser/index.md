@@ -25,4 +25,4 @@ Download latest release from [Github.com](https://github.com/kacos2000/Prefetch-
 
 ## URL List
 
-* [Github.com - Prefetch-Browser](https://github.com/kacos2000/Prefetch-Browser)
+- [Github.com - Prefetch-Browser](https://github.com/kacos2000/Prefetch-Browser)

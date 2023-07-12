@@ -135,4 +135,4 @@ KrbRelayUp - Relaying you to SYSTEM
 
 ## URL List
 
-* [Github.com - KrbRelayUp](https://github.com/Dec0ne/KrbRelayUp)
+- [Github.com - KrbRelayUp](https://github.com/Dec0ne/KrbRelayUp)

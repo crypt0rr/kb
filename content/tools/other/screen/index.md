@@ -126,4 +126,4 @@ screen -S <name-or-pid> -X quit
 
 ## URL List
 
-* [Linux.die.net - screen](https://linux.die.net/man/1/screen)
+- [Linux.die.net - screen](https://linux.die.net/man/1/screen)

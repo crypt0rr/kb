@@ -87,4 +87,4 @@ To create a `.PEM` file you can `cat` the `.key` and `.crt` into a `.pem`.
 
 ## URL List
 
-* [OpenSSL.org](https://www.openssl.org/)
+- [OpenSSL.org](https://www.openssl.org/)

@@ -15,8 +15,8 @@ A self-sufficient runtime for containers.
 
 Where to get your Docker images:
 
-* [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
-* [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)
+- [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
+- [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)
 
 ## Installation
 
@@ -174,6 +174,6 @@ sudo docker rm <name>
 
 ## URL List
 
-* [Docker.com](https://www.docker.com/)
-* [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
-* [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)
+- [Docker.com](https://www.docker.com/)
+- [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
+- [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)

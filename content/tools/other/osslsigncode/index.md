@@ -157,4 +157,4 @@ CRL distribution point: http://www.microsoft.com/pkiops/crl/MicCodSigPCA2011_201
 
 ## URL List
 
-* [Github.com - osslsigncode](https://github.com/mtrojnar/osslsigncode)
+- [Github.com - osslsigncode](https://github.com/mtrojnar/osslsigncode)

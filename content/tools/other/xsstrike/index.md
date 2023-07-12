@@ -93,4 +93,4 @@ XSStrike v3.1.4
 
 ## URL List
 
-* [GitHub.com - XSStrike](https://github.com/s0md3v/XSStrike)
+- [GitHub.com - XSStrike](https://github.com/s0md3v/XSStrike)

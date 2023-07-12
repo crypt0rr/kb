@@ -78,4 +78,4 @@ Correct
 
 ## URL List
 
-* [Support.apple.com - Set a firmware password on your Mac](https://support.apple.com/en-us/HT204455)
+- [Support.apple.com - Set a firmware password on your Mac](https://support.apple.com/en-us/HT204455)

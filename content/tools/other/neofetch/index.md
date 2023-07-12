@@ -279,4 +279,4 @@ Report bugs to https://github.com/dylanaraps/neofetch/issues
 
 ## URL List
 
-* [GitHub.com - neofetch](https://github.com/dylanaraps/neofetch)
+- [GitHub.com - neofetch](https://github.com/dylanaraps/neofetch)

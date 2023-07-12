@@ -132,5 +132,5 @@ $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 
 ## URL List
 
-* [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
-* [Github.com - Dumpert](https://github.com/outflanknl/Dumpert)
+- [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
+- [Github.com - Dumpert](https://github.com/outflanknl/Dumpert)

@@ -144,4 +144,4 @@ nc -nv -u -z -w 1 10.10.10.20 160-162
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/nc)
+- [Linux.die.net](https://linux.die.net/man/1/nc)

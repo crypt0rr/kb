@@ -57,4 +57,4 @@ Swap:         4,0Gi          0B       4,0Gi
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/watch)
+- [Linux.die.net](https://linux.die.net/man/1/watch)

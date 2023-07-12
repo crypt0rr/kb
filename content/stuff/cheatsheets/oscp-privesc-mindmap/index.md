@@ -23,4 +23,4 @@ Note: This does not contain any Active Directory attack paths
 
 ## URL List
 
-* [Github.com - OSCP-Priv-Esc](https://github.com/C0nd4/OSCP-Priv-Esc)
+- [Github.com - OSCP-Priv-Esc](https://github.com/C0nd4/OSCP-Priv-Esc)

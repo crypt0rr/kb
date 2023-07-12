@@ -152,5 +152,5 @@ cewl -m 3 https://kb.offsec.nl/ -u "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Ap
 
 ## URL List
 
-* [Digi.ninja - cewl](https://digi.ninja/projects/cewl.php)
-* [Github.com - cewl](https://github.com/digininja/CeWL/)
+- [Digi.ninja - cewl](https://digi.ninja/projects/cewl.php)
+- [Github.com - cewl](https://github.com/digininja/CeWL/)

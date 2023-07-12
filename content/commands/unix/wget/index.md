@@ -256,4 +256,4 @@ Downloaded: 22284 files, 1.6G in 1m 38s (16.4 MB/s)
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/wget)
+- [Linux.die.net](https://linux.die.net/man/1/wget)

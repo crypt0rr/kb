@@ -81,8 +81,8 @@ options:
 
 For example you can start this live capture with the following tools all at the same time:
 
-* [Impacket - SMBserver.py]({{< ref "smbserver-py" >}})
-* [Responder]({{< ref "responder" >}})
+- [Impacket - SMBserver.py]({{< ref "smbserver-py" >}})
+- [Responder]({{< ref "responder" >}})
 
 ```plain
 $ sudo python3 Pcredz -i enp0s31f6
@@ -204,5 +204,5 @@ SQLPassWord=    aMEWMj7J?Cz7hU?44KwD3js8KyxXddhG
 
 ## URL List
 
-* [Github.com - PCredz](https://github.com/lgandx/PCredz)
-* [HTTPbin.org - HTTP Basic Auth testing page](http://httpbin.org/basic-auth/user/passwd)
+- [Github.com - PCredz](https://github.com/lgandx/PCredz)
+- [HTTPbin.org - HTTP Basic Auth testing page](http://httpbin.org/basic-auth/user/passwd)

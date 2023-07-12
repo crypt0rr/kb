@@ -55,5 +55,5 @@ Nmap done: 1 IP address (1 host up) scanned in 6.08 seconds
 
 ## URL List
 
-* [Linuxhint.com - Proxychains Tutorial](https://linuxhint.com/proxychains-tutorial/)
-* [Github.com - Proxychains](https://github.com/haad/proxychains)
+- [Linuxhint.com - Proxychains Tutorial](https://linuxhint.com/proxychains-tutorial/)
+- [Github.com - Proxychains](https://github.com/haad/proxychains)

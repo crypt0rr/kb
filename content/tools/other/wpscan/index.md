@@ -176,5 +176,5 @@ $ wpscan --url 10.10.10.10/wordpress/ --passwords /usr/share/wordlists/rockyou.t
 
 ## URL List
 
-* [WPscan.org](https://wpscan.org/)
-* [GitHub.com - wpscan](https://github.com/wpscanteam/wpscan)
+- [WPscan.org](https://wpscan.org/)
+- [GitHub.com - wpscan](https://github.com/wpscanteam/wpscan)

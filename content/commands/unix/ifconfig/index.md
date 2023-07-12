@@ -81,4 +81,4 @@ sudo ifconfig eth0 up
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/ifconfig)
+- [Linux.die.net](https://linux.die.net/man/8/ifconfig)

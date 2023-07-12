@@ -163,4 +163,4 @@ PS > .\ADCollector_new.exe
 
 ## URL List
 
-* [Github.com - ADCollector](https://github.com/dev-2null/ADCollector)
+- [Github.com - ADCollector](https://github.com/dev-2null/ADCollector)

@@ -375,5 +375,5 @@ location = /444.html {
 
 ## URL List
 
-* [Nginx.org](https://nginx.org/)
-* [Nginx.org - Basic Authenticaton](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/)
+- [Nginx.org](https://nginx.org/)
+- [Nginx.org - Basic Authenticaton](https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/)

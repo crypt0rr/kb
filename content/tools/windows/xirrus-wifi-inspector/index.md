@@ -24,4 +24,4 @@ Xirrus Wi-Fi Inspector is special software that allows users to find the various
 
 ## URL List
 
-* [Xirrus.com - Inspector](https://www.xirrus.com/inspector)
+- [Xirrus.com - Inspector](https://www.xirrus.com/inspector)

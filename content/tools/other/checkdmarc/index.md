@@ -115,4 +115,4 @@ $ checkdmarc --nameserver=1.1.1.1 amazon.com
 
 ## URL List
 
-* [Pypi.org - checkdmarc](https://pypi.org/project/checkdmarc/)
+- [Pypi.org - checkdmarc](https://pypi.org/project/checkdmarc/)

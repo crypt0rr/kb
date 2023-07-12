@@ -30,4 +30,4 @@ $ python3 version_check.py 10.10.10.10
 
 ## URL List
 
-* [Gist.github.com - Pulse Secure Version Scanner](https://gist.github.com/rxwx/d07495f790d62029b12065c38ac2a86a#gistcomment-3715940)
+- [Gist.github.com - Pulse Secure Version Scanner](https://gist.github.com/rxwx/d07495f790d62029b12065c38ac2a86a#gistcomment-3715940)

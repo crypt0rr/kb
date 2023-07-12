@@ -66,4 +66,4 @@ optional arguments:
 
 ## URL List
 
-* [Github.com - 403fuzzer](https://github.com/intrudir/403fuzzer)
+- [Github.com - 403fuzzer](https://github.com/intrudir/403fuzzer)

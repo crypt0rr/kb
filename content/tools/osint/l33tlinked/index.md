@@ -74,4 +74,4 @@ Scrape Complete! Results saved to /L33tLinked/exaScraped.xls
 
 ## URL List
 
-* [Github.com - LeetLinked](https://github.com/Sq00ky/LeetLinked)
+- [Github.com - LeetLinked](https://github.com/Sq00ky/LeetLinked)

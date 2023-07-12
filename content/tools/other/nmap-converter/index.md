@@ -81,4 +81,4 @@ $ python3 nmap-converter.py kb-offsec.xml -o kb-offsec-nl.xls
 
 ## URL List
 
-* [Github.com - nmap-converter](https://github.com/mrschyte/nmap-converter)
+- [Github.com - nmap-converter](https://github.com/mrschyte/nmap-converter)

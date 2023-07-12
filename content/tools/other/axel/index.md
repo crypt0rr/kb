@@ -88,4 +88,4 @@ Downloaded 3.56401 Gigabyte(s) in 18:49 minute(s). (3309.93 KB/s)
 
 ## URL List
 
-* [Github.com - Axel](https://github.com/axel-download-accelerator/axel)
+- [Github.com - Axel](https://github.com/axel-download-accelerator/axel)

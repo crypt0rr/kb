@@ -98,4 +98,4 @@ LISTEN       0         10                    [::]:44641               [::]:*    
 
 ## URL List
 
-* [Linux.die.net - ss](https://linux.die.net/man/8/ss)
+- [Linux.die.net - ss](https://linux.die.net/man/8/ss)

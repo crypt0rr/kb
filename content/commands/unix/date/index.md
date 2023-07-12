@@ -130,4 +130,4 @@ $ date +"%m-%d-%Y-%H-%M-%S"
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/date)
+- [Linux.die.net](https://linux.die.net/man/1/date)

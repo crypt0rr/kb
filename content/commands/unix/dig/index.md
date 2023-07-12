@@ -146,4 +146,4 @@ $ dig axfr @1.1.1.1 offsec.nl
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/dig)
+- [Linux.die.net](https://linux.die.net/man/1/dig)

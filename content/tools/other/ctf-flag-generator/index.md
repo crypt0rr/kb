@@ -35,4 +35,4 @@ Added entropy: 8.75 bits
 
 ## URL List
 
-* [Github.com - CTF Flag Generator](https://github.com/ss8651twtw/CTF-flag-generator)
+- [Github.com - CTF Flag Generator](https://github.com/ss8651twtw/CTF-flag-generator)

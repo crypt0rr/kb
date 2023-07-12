@@ -71,5 +71,5 @@ testfile.txt: OK
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/sha1sum)
-* [GNU.org](https://www.gnu.org/software/coreutils/sha1sum)
+- [Linux.die.net](https://linux.die.net/man/1/sha1sum)
+- [GNU.org](https://www.gnu.org/software/coreutils/sha1sum)

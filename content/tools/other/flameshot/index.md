@@ -50,4 +50,4 @@ Arguments:
 
 ## URL List
 
-* [Github.com - Flameshot](https://github.com/flameshot-org/flameshot)
+- [Github.com - Flameshot](https://github.com/flameshot-org/flameshot)

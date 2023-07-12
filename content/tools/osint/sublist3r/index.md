@@ -94,4 +94,4 @@ lesha.ermakov.01.example.com
 
 ## URL List
 
-* [Github.com - Sublist3r](https://github.com/aboul3la/Sublist3r)
+- [Github.com - Sublist3r](https://github.com/aboul3la/Sublist3r)

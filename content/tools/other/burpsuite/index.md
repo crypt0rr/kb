@@ -48,6 +48,6 @@ Wsdler
 
 ## URL List
 
-* [PortSwigger.net](https://portswigger.net/)
-* [PortSwigger.net - Pentesting docs](https://portswigger.net/testers/penetration-testing-tools)
-* [PortSwigger.net - Pentesting docs 2](https://portswigger.net/burp/documentation/desktop/penetration-testing)
+- [PortSwigger.net](https://portswigger.net/)
+- [PortSwigger.net - Pentesting docs](https://portswigger.net/testers/penetration-testing-tools)
+- [PortSwigger.net - Pentesting docs 2](https://portswigger.net/burp/documentation/desktop/penetration-testing)

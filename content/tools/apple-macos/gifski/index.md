@@ -49,6 +49,6 @@ Download app from [Apple AppStore](https://apps.apple.com/us/app/gifski/id135163
 
 ## URL List
 
-* [Sindresorhus.com - Gifski](https://sindresorhus.com/gifski)
-* [Github.com - Gifski](https://github.com/sindresorhus/Gifski)
-* [Apps.apple.com - Gifski](https://apps.apple.com/us/app/gifski/id1351639930?l=en&mt=12)
+- [Sindresorhus.com - Gifski](https://sindresorhus.com/gifski)
+- [Github.com - Gifski](https://github.com/sindresorhus/Gifski)
+- [Apps.apple.com - Gifski](https://apps.apple.com/us/app/gifski/id1351639930?l=en&mt=12)

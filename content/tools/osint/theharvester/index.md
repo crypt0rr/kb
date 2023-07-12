@@ -90,5 +90,5 @@ www.example.com:93.184.216.34
 
 ## URL List
 
-* [GitHub.com - theHarvester](https://github.com/laramies/theHarvester)
-* [Kali.org - theHarvester](https://tools.kali.org/information-gathering/theharvester)
+- [GitHub.com - theHarvester](https://github.com/laramies/theHarvester)
+- [Kali.org - theHarvester](https://tools.kali.org/information-gathering/theharvester)

@@ -207,6 +207,6 @@ available databases [3]:
 
 ## URL List
 
-* [Sqlmap.org](http://sqlmap.org/)
-* [GitHub.com - SQLmap](https://github.com/sqlmapproject/sqlmap)
-* [Pollevanhoof.be SQLi guide](https://pollevanhoof.be/nuggets/SQL_injection/blind_injection)
+- [Sqlmap.org](http://sqlmap.org/)
+- [GitHub.com - SQLmap](https://github.com/sqlmapproject/sqlmap)
+- [Pollevanhoof.be SQLi guide](https://pollevanhoof.be/nuggets/SQL_injection/blind_injection)

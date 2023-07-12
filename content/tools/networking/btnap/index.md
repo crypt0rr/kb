@@ -111,4 +111,4 @@ systemctl start bluetooth
 
 ## URL List
 
-* [GitHub.com - pi-btnap](https://github.com/bablokb/pi-btnap)
+- [GitHub.com - pi-btnap](https://github.com/bablokb/pi-btnap)

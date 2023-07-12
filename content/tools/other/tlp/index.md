@@ -73,5 +73,5 @@ Charging starts now, keep AC connected.
 
 ## URL List
 
-* [Linrunner.de - TLP](https://linrunner.de/tlp/)
-* [Github.com - TLP](https://github.com/linrunner/TLP)
+- [Linrunner.de - TLP](https://linrunner.de/tlp/)
+- [Github.com - TLP](https://github.com/linrunner/TLP)

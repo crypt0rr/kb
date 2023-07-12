@@ -66,4 +66,4 @@ Also supports active device monitoring when a drive is getting plugged-in or unp
 
 ## URL List
 
-* [Github.com - Popsicle](https://github.com/pop-os/popsicle)
+- [Github.com - Popsicle](https://github.com/pop-os/popsicle)

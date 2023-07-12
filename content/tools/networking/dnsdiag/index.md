@@ -177,4 +177,4 @@ server                   avg(ms)     min(ms)     max(ms)     stddev(ms)  lost(%)
 
 ## URL List
 
-* [Github.com - dnsdiag](https://github.com/farrokhi/dnsdiag)
+- [Github.com - dnsdiag](https://github.com/farrokhi/dnsdiag)

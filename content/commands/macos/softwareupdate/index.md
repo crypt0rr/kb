@@ -97,4 +97,4 @@ sudo softwareupdate --fetch-full-installer --full-installer-version 10.15.4
 
 ## URL List
 
-* [ss64.com - softwareupdate](https://ss64.com/osx/softwareupdate.html)
+- [ss64.com - softwareupdate](https://ss64.com/osx/softwareupdate.html)

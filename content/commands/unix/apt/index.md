@@ -116,5 +116,5 @@ sudo apt --only-upgrade install <package>
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/apt-get)
-* [Ubuntu.com](https://help.ubuntu.com/lts/serverguide/apt.html)
+- [Linux.die.net](https://linux.die.net/man/8/apt-get)
+- [Ubuntu.com](https://help.ubuntu.com/lts/serverguide/apt.html)

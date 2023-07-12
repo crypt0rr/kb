@@ -133,5 +133,5 @@ Graham Pugh has a fork with a lot more features and bells and whistles. Check it
 
 ## URL List
 
-* [Github.com - macadmin-scripts](https://github.com/munki/macadmin-scripts/)
-* [Github.com - grahampugh - macadmin-scripts (fork)](https://github.com/grahampugh/macadmin-scripts)
+- [Github.com - macadmin-scripts](https://github.com/munki/macadmin-scripts/)
+- [Github.com - grahampugh - macadmin-scripts (fork)](https://github.com/grahampugh/macadmin-scripts)

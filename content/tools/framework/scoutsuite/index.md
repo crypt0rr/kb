@@ -48,4 +48,4 @@ There are also a number of handy [tools](https://github.com/nccgroup/ScoutSuite/
 
 ## URL List
 
-* [Github.com - ScoutSuite](https://github.com/nccgroup/ScoutSuite)
+- [Github.com - ScoutSuite](https://github.com/nccgroup/ScoutSuite)

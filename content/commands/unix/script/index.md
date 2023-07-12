@@ -45,4 +45,4 @@ script logfile.txt
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/script)
+- [Linux.die.net](https://linux.die.net/man/1/script)

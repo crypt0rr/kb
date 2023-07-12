@@ -111,6 +111,6 @@ Skein-512 [JtR: skein-512]
 
 ## URL List
 
-* [Github.com - Noraj - HAITI](https://github.com/noraj/haiti)
-* [Noraj.github.com - Documentation](https://noraj.github.io/haiti/#/)
-* [Github.com - Orange-Cyberdefense - HAITI](https://github.com/Orange-Cyberdefense/haiti)
+- [Github.com - Noraj - HAITI](https://github.com/noraj/haiti)
+- [Noraj.github.com - Documentation](https://noraj.github.io/haiti/#/)
+- [Github.com - Orange-Cyberdefense - HAITI](https://github.com/Orange-Cyberdefense/haiti)

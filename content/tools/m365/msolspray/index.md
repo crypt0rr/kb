@@ -36,4 +36,4 @@ URL       - The URL to spray against. Potentially useful if pointing at an API G
 
 ## URL List
 
-* [GitHub.com - MSOLSpray](https://github.com/dafthack/MSOLSpray)
+- [GitHub.com - MSOLSpray](https://github.com/dafthack/MSOLSpray)

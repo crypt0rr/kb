@@ -124,6 +124,6 @@ Copied to: /root/40698.py
 
 ## URL List
 
-* [Exploit-db.com - Searchsploit](https://www.exploit-db.com/searchsploit)
-* [Exploit-db.com - Offsec-Searchsploit.pdf](https://www.exploit-db.com/documentation/Offsec-SearchSploit.pdf)
-* [Github.com - ExploitDB](https://github.com/offensive-security/exploitdb)
+- [Exploit-db.com - Searchsploit](https://www.exploit-db.com/searchsploit)
+- [Exploit-db.com - Offsec-Searchsploit.pdf](https://www.exploit-db.com/documentation/Offsec-SearchSploit.pdf)
+- [Github.com - ExploitDB](https://github.com/offensive-security/exploitdb)

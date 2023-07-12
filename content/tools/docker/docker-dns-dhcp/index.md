@@ -137,4 +137,4 @@ $ cat ad.list
 
 ## URL List
 
-* [Github.com - Docker DNS and DHCP server](https://github.com/PARC6502/docker-dns-dhcp)
+- [Github.com - Docker DNS and DHCP server](https://github.com/PARC6502/docker-dns-dhcp)

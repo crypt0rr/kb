@@ -63,4 +63,4 @@ $ python3 emailseccheck.py --domain offsec.nl
 
 ## URL List
 
-* [Github.com - EmailSecCheck](https://github.com/MarkoH17/EmailSecCheck)
+- [Github.com - EmailSecCheck](https://github.com/MarkoH17/EmailSecCheck)

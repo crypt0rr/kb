@@ -139,4 +139,4 @@ sudo powermetrics -i 2000 --samplers smc | grep 'Fan:'
 
 ## URL List
 
-* [Unix.com - Powermetrics](https://www.unix.com/man-page/osx/1/powermetrics/)
+- [Unix.com - Powermetrics](https://www.unix.com/man-page/osx/1/powermetrics/)

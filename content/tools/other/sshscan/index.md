@@ -89,4 +89,4 @@ python sshscan.py -t <target>:22
 
 ## URL List
 
-* [GitHub.com - SSHscan](https://github.com/evict/SSHScan)
+- [GitHub.com - SSHscan](https://github.com/evict/SSHScan)

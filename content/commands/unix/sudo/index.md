@@ -88,4 +88,4 @@ User crypt0rr may run the following commands on kali:
 
 ## URL List
 
-* [Linux.die.net - sudo](https://linux.die.net/man/8/sudo)
+- [Linux.die.net - sudo](https://linux.die.net/man/8/sudo)

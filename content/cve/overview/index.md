@@ -11,4 +11,4 @@ weight : 0
 
 ## Overview
 
-* [Windows Kernel Exploits overview](https://github.com/SecWiki/windows-kernel-exploits)
+- [Windows Kernel Exploits overview](https://github.com/SecWiki/windows-kernel-exploits)

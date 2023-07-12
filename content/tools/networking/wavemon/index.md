@@ -87,5 +87,5 @@ sudo wavemon -iface wlp4s0
 
 ## URL List
 
-* [Github.com - Wavemon](https://github.com/uoaerg/wavemon)
-* [Systutorials - Wavemon](https://www.systutorials.com/docs/linux/man/1-wavemon/)
+- [Github.com - Wavemon](https://github.com/uoaerg/wavemon)
+- [Systutorials - Wavemon](https://www.systutorials.com/docs/linux/man/1-wavemon/)

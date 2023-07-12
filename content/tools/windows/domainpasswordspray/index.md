@@ -35,4 +35,4 @@ Invoke-DomainPasswordSpray -UsernameAsPassword -OutFile c:\temp\spray-results.tx
 
 ## URL List
 
-* [Github.com - DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
+- [Github.com - DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)

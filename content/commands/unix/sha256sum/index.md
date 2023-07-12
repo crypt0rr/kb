@@ -71,4 +71,4 @@ testfile.txt: OK
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/sha256sum)
+- [Linux.die.net](https://linux.die.net/man/1/sha256sum)

@@ -56,4 +56,4 @@ With the power of the new Triggers in Show for Updates, you now have options whe
 
 ## URL List
 
-* [Macbartender.com](https://www.macbartender.com/)
+- [Macbartender.com](https://www.macbartender.com/)

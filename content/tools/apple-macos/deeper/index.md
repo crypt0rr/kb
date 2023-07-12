@@ -31,4 +31,4 @@ Download newest release from [titanium-software.fr](https://www.titanium-softwar
 
 ## URL List
 
-* [titanium-software.fr - Deeper](https://www.titanium-software.fr/en/deeper.html)
+- [titanium-software.fr - Deeper](https://www.titanium-software.fr/en/deeper.html)

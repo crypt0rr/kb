@@ -126,4 +126,4 @@ $ cat OneDrive.json
 
 ## URL List
 
-* [Github.com - OneDriveExplorer](https://github.com/Beercow/OneDriveExplorer)
+- [Github.com - OneDriveExplorer](https://github.com/Beercow/OneDriveExplorer)

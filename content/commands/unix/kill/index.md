@@ -36,4 +36,4 @@ pkill <name>
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/3/kill)
+- [Linux.die.net](https://linux.die.net/man/3/kill)

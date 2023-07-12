@@ -24,5 +24,5 @@ Download newest release from [apps.apple.com](https://apps.apple.com/app/magnet/
 
 ## URL List
 
-* [Magnet.crowdcafe.com](https://magnet.crowdcafe.com/)
-* [Apps.apple.com - Magnet](https://apps.apple.com/app/magnet/id441258766?mt=12)
+- [Magnet.crowdcafe.com](https://magnet.crowdcafe.com/)
+- [Apps.apple.com - Magnet](https://apps.apple.com/app/magnet/id441258766?mt=12)

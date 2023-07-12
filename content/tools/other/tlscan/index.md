@@ -94,5 +94,5 @@ Starting enumeration at: 23-03-2020 16:52:56
 
 ## URL List
 
-* [GitHub.com - TLScan](https://github.com/mjol/TLScan)
-* [Ciphersuite.info](https://ciphersuite.info/)
+- [GitHub.com - TLScan](https://github.com/mjol/TLScan)
+- [Ciphersuite.info](https://ciphersuite.info/)

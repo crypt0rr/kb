@@ -85,4 +85,4 @@ Dpapi failed: Object reference not set to an instance of an object.
 
 ## URL List
 
-* [Github.com - Minidump](https://github.com/cube0x0/MiniDump)
+- [Github.com - Minidump](https://github.com/cube0x0/MiniDump)

@@ -86,4 +86,4 @@ curl -X POST -H "Content-Type:application/json" -d '{"protection_enabled":true}'
 
 ## URL List
 
-* [GitHub.com - AdGuardHome](https://github.com/adguardteam/adguardhome)
+- [GitHub.com - AdGuardHome](https://github.com/adguardteam/adguardhome)

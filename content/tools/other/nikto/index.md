@@ -94,4 +94,4 @@ $ nikto -host=https://kb.offsec.nl -maxtime=30s
 
 ## URL List
 
-* [Kali.org - nikto](https://www.kali.org/tools/nikto/)
+- [Kali.org - nikto](https://www.kali.org/tools/nikto/)

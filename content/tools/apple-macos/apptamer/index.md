@@ -27,4 +27,4 @@ Download newest version from [Vendor site](https://stclairsoft.com/AppTamer/inde
 
 ## URL List
 
-* [StClairSoft.com - AppTamer](https://stclairsoft.com/AppTamer/index.html)
+- [StClairSoft.com - AppTamer](https://stclairsoft.com/AppTamer/index.html)

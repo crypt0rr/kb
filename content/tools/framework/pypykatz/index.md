@@ -61,4 +61,4 @@ pypykatz lsa minidump lsass_dump.DMP
 
 ## URL List
 
-* [GitHub.com - pypykatz](https://github.com/skelsec/pypykatz)
+- [GitHub.com - pypykatz](https://github.com/skelsec/pypykatz)

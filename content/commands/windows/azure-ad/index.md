@@ -57,6 +57,6 @@ ObjectId                             DisplayName                        Descript
 
 ## URL List
 
-* [posts.specterops.io](https://posts.specterops.io/requesting-azure-ad-request-tokens-on-azure-ad-joined-machines-for-browser-sso-2b0409caad30?gi=7d52b34697d0)
-* [DirkJanM.io PrivEsc](https://dirkjanm.io/azure-ad-privilege-escalation-application-admin/)
-* [DirkJanM.io RoadRecon](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
+- [posts.specterops.io](https://posts.specterops.io/requesting-azure-ad-request-tokens-on-azure-ad-joined-machines-for-browser-sso-2b0409caad30?gi=7d52b34697d0)
+- [DirkJanM.io PrivEsc](https://dirkjanm.io/azure-ad-privilege-escalation-application-admin/)
+- [DirkJanM.io RoadRecon](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)

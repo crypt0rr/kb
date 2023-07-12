@@ -121,6 +121,6 @@ $ comm file1 file2
 
 ## URL List
 
-* [Linux.die.net - comm](https://linux.die.net/man/1/comm)
-* [Geeksforgeeks.org - Comm command in Linux with examples](https://www.geeksforgeeks.org/comm-command-in-linux-with-examples/)
-* [Howtoforge.com - Linux comm command tutorial for beginners (5 examples)](https://www.howtoforge.com/linux-comm-command/)
+- [Linux.die.net - comm](https://linux.die.net/man/1/comm)
+- [Geeksforgeeks.org - Comm command in Linux with examples](https://www.geeksforgeeks.org/comm-command-in-linux-with-examples/)
+- [Howtoforge.com - Linux comm command tutorial for beginners (5 examples)](https://www.howtoforge.com/linux-comm-command/)

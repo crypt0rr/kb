@@ -63,4 +63,4 @@ Node IpAddress: [10.10.10.10] Scope Id: []
 
 ## URL List
 
-* [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat)
+- [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/nbtstat)

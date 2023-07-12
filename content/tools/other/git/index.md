@@ -151,4 +151,4 @@ $ git shortlog -s -n
 
 ## URL List
 
-* [Meziantou.net - Hide your email address on Github](https://www.meziantou.net/2018/04/23/hide-your-email-address-on-github)
+- [Meziantou.net - Hide your email address on Github](https://www.meziantou.net/2018/04/23/hide-your-email-address-on-github)

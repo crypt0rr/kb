@@ -33,4 +33,4 @@ Install via [extensions.gnome.org](https://extensions.gnome.org/extension/3628/a
 
 ## URL List
 
-* [Gitlab.com - ArcMenu](https://gitlab.com/arcmenu/ArcMenu)
+- [Gitlab.com - ArcMenu](https://gitlab.com/arcmenu/ArcMenu)

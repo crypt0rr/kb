@@ -34,4 +34,4 @@ Decrypted password: WhatAGreatPassword123!
 
 ## URL List
 
-* [Github.com - gppdecrypt0rr](https://github.com/crypt0rr/gppdecrypt0rr)
+- [Github.com - gppdecrypt0rr](https://github.com/crypt0rr/gppdecrypt0rr)

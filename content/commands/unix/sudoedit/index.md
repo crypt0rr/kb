@@ -54,4 +54,4 @@ Options:
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/sudoedit)
+- [Linux.die.net](https://linux.die.net/man/8/sudoedit)

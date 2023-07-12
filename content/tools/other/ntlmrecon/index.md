@@ -82,4 +82,4 @@ https://example.com/OAB/,EXAMPLE,EX01,EXAMPLE.COM,EX01.EXAMPLE.COM,EXAMPLE.COM
 
 ## URL List
 
-* [Github.com - NTLMRecon](https://github.com/pwnfoo/NTLMRecon)
+- [Github.com - NTLMRecon](https://github.com/pwnfoo/NTLMRecon)

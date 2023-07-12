@@ -40,4 +40,4 @@ vboxdrv               487424  3 vboxpci,vboxnetadp,vboxnetflt
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/lsmod)
+- [Linux.die.net](https://linux.die.net/man/8/lsmod)

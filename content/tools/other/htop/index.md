@@ -52,4 +52,4 @@ See 'man htop' for more information.
 
 ## URL List
 
-* [GitHub.com - htop](https://github.com/hishamhm/htop)
+- [GitHub.com - htop](https://github.com/hishamhm/htop)

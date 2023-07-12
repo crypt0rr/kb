@@ -37,4 +37,4 @@ sudo service ntp start
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/ntpd)
+- [Linux.die.net](https://linux.die.net/man/8/ntpd)

@@ -93,4 +93,4 @@ $ cat /etc/hosts
 
 ## URL List
 
-* [Github.com - AdGuard Home Sync](https://github.com/bakito/adguardhome-sync)
+- [Github.com - AdGuard Home Sync](https://github.com/bakito/adguardhome-sync)

@@ -144,4 +144,4 @@ $ ./ADReaper -command users -dc SRV2019.offsec.nl -password Welkom1234 -user joh
 
 ## URL List
 
-* [Github.com - ADReaper](https://github.com/AidenPearce369/ADReaper)
+- [Github.com - ADReaper](https://github.com/AidenPearce369/ADReaper)

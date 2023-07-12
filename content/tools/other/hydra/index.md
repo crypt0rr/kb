@@ -148,5 +148,5 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-11 15:16:
 
 ## URL List
 
-* [Github.com - THC-Hydra](https://github.com/vanhauser-thc/thc-hydra)
-* [Github.com - Default-Credentials-List](https://raw.githubusercontent.com/eset/malware-research/master/moose/targeted-vendors/default-credentials-list.txt)
+- [Github.com - THC-Hydra](https://github.com/vanhauser-thc/thc-hydra)
+- [Github.com - Default-Credentials-List](https://raw.githubusercontent.com/eset/malware-research/master/moose/targeted-vendors/default-credentials-list.txt)

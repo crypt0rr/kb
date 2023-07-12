@@ -59,4 +59,4 @@ pip3 install .
 
 ## URL List
 
-* [Github.com - termtyper](https://github.com/kraanzu/termtyper)
+- [Github.com - termtyper](https://github.com/kraanzu/termtyper)

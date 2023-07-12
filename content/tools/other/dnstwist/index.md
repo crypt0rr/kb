@@ -87,4 +87,4 @@ addition       examplel.com    138.201.138.240 2a01:4f8:172:35ec::2 NS:b.ns14.ne
 
 ## URL List
 
-* [GitHub.com - DNStwist](https://github.com/elceef/dnstwist)
+- [GitHub.com - DNStwist](https://github.com/elceef/dnstwist)

@@ -90,4 +90,4 @@ $ python rulegen.py rockyou.txt
 
 ## URL List
 
-* [GitHub.com - PACK](https://github.com/iphelix/pack)
+- [GitHub.com - PACK](https://github.com/iphelix/pack)

@@ -33,4 +33,4 @@ javaws viewer.jnlp
 
 ## URL List
 
-* [Packages.debian.org - icedtea-netx](https://packages.debian.org/nl/sid/icedtea-netx)
+- [Packages.debian.org - icedtea-netx](https://packages.debian.org/nl/sid/icedtea-netx)

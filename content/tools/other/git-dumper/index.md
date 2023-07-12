@@ -148,4 +148,4 @@ Updated 6 paths from the index
 
 ## URL List
 
-* [Github.com - git-dumper](https://github.com/arthaud/git-dumper.git)
+- [Github.com - git-dumper](https://github.com/arthaud/git-dumper.git)

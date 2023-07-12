@@ -83,4 +83,4 @@ Download newest release from [apps.apple.com](https://apps.apple.com/us/app/amph
 
 ## URL List
 
-* [Apps.apple.com - Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
+- [Apps.apple.com - Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)

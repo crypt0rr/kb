@@ -65,6 +65,6 @@ Download newest release from [Github.com](https://github.com/HandBrake/HandBrake
 
 ## URL List
 
-* [Handbrake.fr](https://handbrake.fr/)
-* [Handbrake.fr - Forum](https://forum.handbrake.fr/)
-* [Github.com - HandBrake](https://github.com/HandBrake/HandBrake)
+- [Handbrake.fr](https://handbrake.fr/)
+- [Handbrake.fr - Forum](https://forum.handbrake.fr/)
+- [Github.com - HandBrake](https://github.com/HandBrake/HandBrake)

@@ -34,4 +34,4 @@ pdisk(8)                 - Apple partition table editor
 
 ## URL List
 
-* [Linux.die.net - apropos](https://linux.die.net/man/1/apropos)
+- [Linux.die.net - apropos](https://linux.die.net/man/1/apropos)

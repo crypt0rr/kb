@@ -28,5 +28,5 @@ Download newest release from [fannywidget.com](https://fannywidget.com/)
 
 ## URL List
 
-* [Fannywidget.com](https://fannywidget.com/)
-* [Github.com - Fanny](https://github.com/DanielStormApps/Fanny)
+- [Fannywidget.com](https://fannywidget.com/)
+- [Github.com - Fanny](https://github.com/DanielStormApps/Fanny)

@@ -363,5 +363,5 @@ End of status report
 
 ## URL List
 
-* [Tmkk.undo.jp - XLD](https://tmkk.undo.jp/xld/index_e.html)
-* [Wiki.hydrogenaud.io - XLD](https://wiki.hydrogenaud.io/index.php?title=XLD)
+- [Tmkk.undo.jp - XLD](https://tmkk.undo.jp/xld/index_e.html)
+- [Wiki.hydrogenaud.io - XLD](https://wiki.hydrogenaud.io/index.php?title=XLD)

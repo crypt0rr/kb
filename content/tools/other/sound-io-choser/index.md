@@ -23,5 +23,5 @@ Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/9
 
 ## URL List
 
-* [Extensions.gnome.org - Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
-* [Github.com - Gnome Shell Extension - Sound Input & Output Device Chooser](https://github.com/kgshank/gse-sound-output-device-chooser)
+- [Extensions.gnome.org - Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/)
+- [Github.com - Gnome Shell Extension - Sound Input & Output Device Chooser](https://github.com/kgshank/gse-sound-output-device-chooser)

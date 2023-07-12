@@ -509,4 +509,4 @@ MASKY   10.10.10.8  445     ADCS01          [+] 2 NT hash(es) successfully colle
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+- [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

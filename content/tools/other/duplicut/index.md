@@ -55,4 +55,4 @@ $ wc -l wordlist.txt clean-wordlist.txt
 
 ## URL List
 
-* [GitHub.com - duplicut](https://github.com/nil0x42/duplicut)
+- [GitHub.com - duplicut](https://github.com/nil0x42/duplicut)

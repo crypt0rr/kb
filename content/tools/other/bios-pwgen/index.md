@@ -64,8 +64,8 @@ Please note that the password is encoded for US QWERTY keyboard layouts.
 
 ## URL List
 
-* [BIOS Master Password Generators for Laptops](https://github.com/dogbert/bios-pwgen)
-* [Dogber1-blogspot.com - BIOS Password Backdoors in Laptops](https://dogber1.blogspot.com/2009/05/table-of-reverse-engineered-bios.html)
-* [Sites.google.com - My quick article about brands laptops bios passwords](https://sites.google.com/site/hpglserv/Home/article)
-* [Github.com - Password generator for BIOS](https://github.com/bacher09/pwgen-for-bios)
-* [beta.bios-pw.org - BIOS Password Recovery for Laptops](https://beta.bios-pw.org/)
+- [BIOS Master Password Generators for Laptops](https://github.com/dogbert/bios-pwgen)
+- [Dogber1-blogspot.com - BIOS Password Backdoors in Laptops](https://dogber1.blogspot.com/2009/05/table-of-reverse-engineered-bios.html)
+- [Sites.google.com - My quick article about brands laptops bios passwords](https://sites.google.com/site/hpglserv/Home/article)
+- [Github.com - Password generator for BIOS](https://github.com/bacher09/pwgen-for-bios)
+- [beta.bios-pw.org - BIOS Password Recovery for Laptops](https://beta.bios-pw.org/)

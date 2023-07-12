@@ -44,4 +44,4 @@ Options:
 
 ## URL List
 
-* [GitHub.com - Checksec](https://github.com/Wenzel/checksec.py)
+- [GitHub.com - Checksec](https://github.com/Wenzel/checksec.py)

@@ -78,4 +78,4 @@ find . -name "*.txt" | xargs -I{} cp -u {} ~/Desktop/temp
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/xargs)
+- [Linux.die.net](https://linux.die.net/man/1/xargs)

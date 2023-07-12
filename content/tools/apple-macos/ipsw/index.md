@@ -114,5 +114,5 @@ ipsw download macos
 
 ## URL List
 
-* [Blacktop.github.io - Documentation IPSW](https://blacktop.github.io/ipsw/)
-* [Github.com - IPSW](https://github.com/blacktop/ipsw)
+- [Blacktop.github.io - Documentation IPSW](https://blacktop.github.io/ipsw/)
+- [Github.com - IPSW](https://github.com/blacktop/ipsw)

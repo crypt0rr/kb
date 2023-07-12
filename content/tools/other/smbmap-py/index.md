@@ -186,4 +186,4 @@ $ smbmap.py -u johndo -p Welkom1234 -H 10.10.20.251 -R aiff
 
 ## URL List
 
-* [Github.com - smbmap.py](https://github.com/ShawnDEvans/smbmap)
+- [Github.com - smbmap.py](https://github.com/ShawnDEvans/smbmap)

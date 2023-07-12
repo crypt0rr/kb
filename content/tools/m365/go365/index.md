@@ -163,4 +163,4 @@ Usage:
 
 ## URL List
 
-* [Github.com - Go365](https://github.com/optiv/Go365)
+- [Github.com - Go365](https://github.com/optiv/Go365)

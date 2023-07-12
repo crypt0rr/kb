@@ -168,7 +168,7 @@ commands...
 
 ## URL List
 
-* [Linuxconfig.org - Bash Scripting Tutorial for Beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
-* [Linuxconfig.org - Bash Scripting Tutorial](https://linuxconfig.org/bash-scripting-tutorial)
-* [Hostinger.com - Bash Scripting Tutorial for Beginners](https://www.hostinger.com/tutorials/bash-function-tutorial-with-examples/)
-* [Geeksforgeeks.org - Bash Scripting – Functions](https://www.geeksforgeeks.org/bash-scripting-functions/)
+- [Linuxconfig.org - Bash Scripting Tutorial for Beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+- [Linuxconfig.org - Bash Scripting Tutorial](https://linuxconfig.org/bash-scripting-tutorial)
+- [Hostinger.com - Bash Scripting Tutorial for Beginners](https://www.hostinger.com/tutorials/bash-function-tutorial-with-examples/)
+- [Geeksforgeeks.org - Bash Scripting – Functions](https://www.geeksforgeeks.org/bash-scripting-functions/)

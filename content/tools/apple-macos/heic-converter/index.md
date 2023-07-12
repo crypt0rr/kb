@@ -32,5 +32,5 @@ Download HEIC Converter from [macOS App Store](https://apps.apple.com/app/id1294
 
 ## URL List
 
-* [Sindresorhus.com - HIEC Converter](https://sindresorhus.com/heic-converter)
-* [Apps.apple.com - HEIC Converter](https://apps.apple.com/app/id1294126402)
+- [Sindresorhus.com - HIEC Converter](https://sindresorhus.com/heic-converter)
+- [Apps.apple.com - HEIC Converter](https://apps.apple.com/app/id1294126402)

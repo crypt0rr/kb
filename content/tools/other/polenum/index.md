@@ -85,4 +85,4 @@ $ polenum --username johndo --password Welkom1234 --domain 10.10.10.10
 
 ## URL List
 
-* [Tools.kali.org - polenum](https://tools.kali.org/password-attacks/polenum)
+- [Tools.kali.org - polenum](https://tools.kali.org/password-attacks/polenum)

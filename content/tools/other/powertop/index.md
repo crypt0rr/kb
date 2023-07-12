@@ -51,4 +51,4 @@ For more help please refer to the 'man 8 powertop'
 
 ## URL List
 
-* [Github.com - PowerTOP](https://github.com/fenrus75/powertop)
+- [Github.com - PowerTOP](https://github.com/fenrus75/powertop)

@@ -90,9 +90,9 @@ johndo@example:~$
 
 ## URL List
 
-* [Askubuntu.com - How to configure a U2F key such as Yubikey for system wide 2-factor authentication](https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic)
-* [Support.yubico.com - Ubuntu Linux Login Guide U2F](https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F)
-* [Support.yubico.com - Enabling Yubico PPA on Ubuntu](https://support.yubico.com/hc/en-us/articles/360016649039-Enabling-the-Yubico-PPA-on-Ubuntu)
-* [Support.yubico.com - Using your U2F Yubikey with Linux](https://support.yubico.com/hc/en-us/articles/360013708900-Using-Your-U2F-YubiKey-with-Linux)
-* [Github.com - Yubico password less Ubuntu](https://github.com/vanderblugen/yubico_password_less_ubuntu)
-* [Developers.yubico.com - SSH](https://developers.yubico.com/SSH/)
+- [Askubuntu.com - How to configure a U2F key such as Yubikey for system wide 2-factor authentication](https://askubuntu.com/questions/1071027/how-to-configure-a-u2f-keysuch-as-a-yubikey-for-system-wide-2-factor-authentic)
+- [Support.yubico.com - Ubuntu Linux Login Guide U2F](https://support.yubico.com/hc/en-us/articles/360016649099-Ubuntu-Linux-Login-Guide-U2F)
+- [Support.yubico.com - Enabling Yubico PPA on Ubuntu](https://support.yubico.com/hc/en-us/articles/360016649039-Enabling-the-Yubico-PPA-on-Ubuntu)
+- [Support.yubico.com - Using your U2F Yubikey with Linux](https://support.yubico.com/hc/en-us/articles/360013708900-Using-Your-U2F-YubiKey-with-Linux)
+- [Github.com - Yubico password less Ubuntu](https://github.com/vanderblugen/yubico_password_less_ubuntu)
+- [Developers.yubico.com - SSH](https://developers.yubico.com/SSH/)

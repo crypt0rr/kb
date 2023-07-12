@@ -81,5 +81,5 @@ $ ./pyLDAPmonitor.py -d 'offsec.nl' -u 'JOHNDO' -p 'Welkom1234!' --dc-ip 10.10.1
 
 ## URL List
 
-* [Github.com - LDAPmonitor](https://github.com/p0dalirius/LDAPmonitor)
-* [Podalirius.net](https://podalirius.net/)
+- [Github.com - LDAPmonitor](https://github.com/p0dalirius/LDAPmonitor)
+- [Podalirius.net](https://podalirius.net/)

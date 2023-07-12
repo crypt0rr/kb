@@ -145,4 +145,4 @@ offsec.nl\ULYSSES_COTE:1108:aad3b435b51404eeaad3b435b51404ee:c7f0cab839fde136be0
 
 ## URL List
 
-* [Github.com - From Backup Operator To Domain Admin](https://github.com/mpgn/BackupOperatorToDA)
+- [Github.com - From Backup Operator To Domain Admin](https://github.com/mpgn/BackupOperatorToDA)

@@ -147,4 +147,4 @@ Detailed:
 
 ## URL List
 
-* [Github.com - ngxtop](https://github.com/lebinh/ngxtop)
+- [Github.com - ngxtop](https://github.com/lebinh/ngxtop)

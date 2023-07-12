@@ -61,4 +61,4 @@ The -j option is to keep all the connected session in the background.
 
 ## URL List
 
-* [Thor-sec.com - msfvenom cheat sheet](https://thor-sec.com/cheatsheet/oscp/msfvenom_cheat_sheet/)
+- [Thor-sec.com - msfvenom cheat sheet](https://thor-sec.com/cheatsheet/oscp/msfvenom_cheat_sheet/)

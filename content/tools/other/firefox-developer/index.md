@@ -48,4 +48,4 @@ Comment=Firefox Developer Edition Web Browser.
 
 ## URL List
 
-* [Mozilla.org - FireFox Developer Edition](https://www.mozilla.org/nl/firefox/developer)
+- [Mozilla.org - FireFox Developer Edition](https://www.mozilla.org/nl/firefox/developer)

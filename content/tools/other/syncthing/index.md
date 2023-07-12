@@ -23,5 +23,5 @@ Download latest release from [Syncthing.net](https://syncthing.net/downloads/)
 
 ## URL List
 
-* [Syncthing.net](https://syncthing.net/)
-* [GitHub.com - Syncthing](https://github.com/syncthing/)
+- [Syncthing.net](https://syncthing.net/)
+- [GitHub.com - Syncthing](https://github.com/syncthing/)

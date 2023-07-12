@@ -562,4 +562,4 @@ sudo apt install network-manager-openvpn-gnome
 
 ## URL List
 
-* [OpenVPN.net](https://openvpn.net/)
+- [OpenVPN.net](https://openvpn.net/)

@@ -63,4 +63,4 @@ Wildcard mask:       0.0.0.255
 
 ## URL List
 
-* [Github.com - subnetcalc](https://github.com/crypt0rr/subnetcalc)
+- [Github.com - subnetcalc](https://github.com/crypt0rr/subnetcalc)

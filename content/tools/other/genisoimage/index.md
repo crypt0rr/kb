@@ -43,4 +43,4 @@ Boot from USB
 
 ## URL List
 
-* [Linux.die.net - genisoimage](https://linux.die.net/man/1/genisoimage)
+- [Linux.die.net - genisoimage](https://linux.die.net/man/1/genisoimage)

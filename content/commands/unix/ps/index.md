@@ -66,5 +66,5 @@ crypt0rr    2228     934  2 17:07 ?        00:00:00 /usr/bin/gedit --gapplicatio
 
 ## URL List
 
-* [Linux.die.net - ps](https://linux.die.net/man/1/ps)
-* [Askubuntu.com - What is the difference between standard syntax and BSD syntax?](https://askubuntu.com/questions/484982/what-is-the-difference-between-standard-syntax-and-bsd-syntax)
+- [Linux.die.net - ps](https://linux.die.net/man/1/ps)
+- [Askubuntu.com - What is the difference between standard syntax and BSD syntax?](https://askubuntu.com/questions/484982/what-is-the-difference-between-standard-syntax-and-bsd-syntax)

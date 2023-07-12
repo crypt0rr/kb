@@ -135,4 +135,4 @@ timestamp|input|as_number|as_name|as_country|as_range
 
 ## URL List
 
-* [Github.com - asnmap](https://github.com/projectdiscovery/asnmap)
+- [Github.com - asnmap](https://github.com/projectdiscovery/asnmap)

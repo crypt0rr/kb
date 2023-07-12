@@ -89,4 +89,4 @@ NOTE: It will exploit all routers in `routers.txt` list by their addresses and s
 
 ## URL List
 
-* [Github.com - RomBuster](https://github.com/EntySec/RomBuster)
+- [Github.com - RomBuster](https://github.com/EntySec/RomBuster)

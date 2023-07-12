@@ -93,4 +93,4 @@ sudo modprobe <module>
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/modprobe)
+- [Linux.die.net](https://linux.die.net/man/8/modprobe)

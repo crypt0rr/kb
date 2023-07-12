@@ -41,4 +41,4 @@ List of Tests Included in the app:
 
 ## URL List
 
-* [Apps.apple.com - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
+- [Apps.apple.com - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)

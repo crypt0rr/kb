@@ -96,4 +96,4 @@ Negotiate Flags:
 
 ## URL List
 
-* [Github.com - NTLM_Challenger](https://github.com/b17zr/ntlm_challenger)
+- [Github.com - NTLM_Challenger](https://github.com/b17zr/ntlm_challenger)

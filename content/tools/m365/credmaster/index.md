@@ -33,15 +33,15 @@ For detection tips, see the blogpost and detection section.
 
 ### The following plugins are currently supported
 
-* [OWA](https://github.com/knavesec/CredMaster/wiki/OWA) - Outlook Web Access
-* [EWS](https://github.com/knavesec/CredMaster/wiki/EWS) - Exchange Web Services
-* [O365](https://github.com/knavesec/CredMaster/wiki/O365) - Office365
-* [MSOL](https://github.com/knavesec/CredMaster/wiki/MSOL) - Microsoft Online
-* [Okta](https://github.com/knavesec/CredMaster/wiki/Okta) - Okta Authentication Portal
-* [FortinetVPN](https://github.com/knavesec/CredMaster/wiki/FortinetVPN) - Fortinet VPN Client
-* [HTTPBrute](https://github.com/knavesec/CredMaster/wiki/HTTPBrute) - Generic HTTP Brute Methods (Basic/Digest/NTLM)
-* [ADFS](https://github.com/knavesec/CredMaster/wiki/ADFS) - Active Directory Federation Services
-* [AzureSSO](https://github.com/knavesec/CredMaster/wiki/AzureSSO) - Azure AD Seamless SSO Endpoint
+- [OWA](https://github.com/knavesec/CredMaster/wiki/OWA) - Outlook Web Access
+- [EWS](https://github.com/knavesec/CredMaster/wiki/EWS) - Exchange Web Services
+- [O365](https://github.com/knavesec/CredMaster/wiki/O365) - Office365
+- [MSOL](https://github.com/knavesec/CredMaster/wiki/MSOL) - Microsoft Online
+- [Okta](https://github.com/knavesec/CredMaster/wiki/Okta) - Okta Authentication Portal
+- [FortinetVPN](https://github.com/knavesec/CredMaster/wiki/FortinetVPN) - Fortinet VPN Client
+- [HTTPBrute](https://github.com/knavesec/CredMaster/wiki/HTTPBrute) - Generic HTTP Brute Methods (Basic/Digest/NTLM)
+- [ADFS](https://github.com/knavesec/CredMaster/wiki/ADFS) - Active Directory Federation Services
+- [AzureSSO](https://github.com/knavesec/CredMaster/wiki/AzureSSO) - Azure AD Seamless SSO Endpoint
 
 ## Installation
 
@@ -114,4 +114,4 @@ python3 credmaster.py --plugin {pluginname} --access_key {key} --secret_access_k
 
 ## URL List
 
-* [Github.com - CredMaster](https://github.com/knavesec/CredMaster)
+- [Github.com - CredMaster](https://github.com/knavesec/CredMaster)

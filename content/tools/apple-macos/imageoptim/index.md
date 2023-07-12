@@ -34,5 +34,5 @@ Download newest release from [imageoptim.com](https://imageoptim.com/mac)
 
 ## URL List
 
-* [Imageoptim.com](https://imageoptim.com/mac)
-* [Github.com - ImageOptim](https://github.com/ImageOptim/ImageOptim)
+- [Imageoptim.com](https://imageoptim.com/mac)
+- [Github.com - ImageOptim](https://github.com/ImageOptim/ImageOptim)

@@ -144,4 +144,4 @@ ADCS                                           Found CN: offsec-ADCS01-CA
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+- [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

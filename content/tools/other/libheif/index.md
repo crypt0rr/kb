@@ -39,4 +39,4 @@ for i in {137..152}; do heif-convert IMG_0$i.HEIC IMG_0$i.jpg; done
 
 ## URL List
 
-* [Manpages.debian.org - HEIF convert](https://manpages.debian.org/testing/libheif-examples/heif-convert.1.en.html)
+- [Manpages.debian.org - HEIF convert](https://manpages.debian.org/testing/libheif-examples/heif-convert.1.en.html)

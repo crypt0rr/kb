@@ -108,5 +108,5 @@ Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
 
 ## URL List
 
-* [Kali.org - enum4linux](https://www.kali.org/tools/enum4linux/)
-* [Gitlab.com - enum4linux](https://gitlab.com/kalilinux/packages/enum4linux)
+- [Kali.org - enum4linux](https://www.kali.org/tools/enum4linux/)
+- [Gitlab.com - enum4linux](https://gitlab.com/kalilinux/packages/enum4linux)

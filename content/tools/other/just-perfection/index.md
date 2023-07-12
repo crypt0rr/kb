@@ -77,5 +77,5 @@ Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/3
 
 ## URL List
 
-* [Gitlab.gnome.org - Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
-* [Extensions.gnome.org - Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+- [Gitlab.gnome.org - Just Perfection](https://gitlab.gnome.org/jrahmatzadeh/just-perfection)
+- [Extensions.gnome.org - Just Perfection](https://extensions.gnome.org/extension/3843/just-perfection/)

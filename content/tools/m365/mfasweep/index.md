@@ -129,5 +129,5 @@ $ python3 -m mfasweep john.do example.com
 
 ## URL List
 
-* [Github.com - MFASweep](https://github.com/dafthack/MFASweep)
-* [Github.com - Python port of MFASweep by @dafthack](https://github.com/CasperGN/MFASweep.py)
+- [Github.com - MFASweep](https://github.com/dafthack/MFASweep)
+- [Github.com - Python port of MFASweep by @dafthack](https://github.com/CasperGN/MFASweep.py)

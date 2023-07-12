@@ -115,4 +115,4 @@ sudo mount -o nolock 10.10.10.10:/crypt0rr /mnt/local_share
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/2/mount)
+- [Linux.die.net](https://linux.die.net/man/2/mount)

@@ -124,4 +124,4 @@ No interesting files detected ¯\_(ツ)_/¯
 
 ## URL List
 
-* [Github.com - Dirhunt](https://github.com/Nekmo/dirhunt)
+- [Github.com - Dirhunt](https://github.com/Nekmo/dirhunt)

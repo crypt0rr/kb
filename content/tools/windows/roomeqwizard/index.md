@@ -32,5 +32,5 @@ Download installation from [RoomEQwizard.com](https://www.roomeqwizard.com/)
 
 ## URL List
 
-* [RoomEQwizard.com](https://www.roomeqwizard.com/)
-* [Avnirvana.com - Official Room EQ Wizard Forum](https://www.avnirvana.com/forums/official-rew-room-eq-wizard-support-forum.10/)
+- [RoomEQwizard.com](https://www.roomeqwizard.com/)
+- [Avnirvana.com - Official Room EQ Wizard Forum](https://www.avnirvana.com/forums/official-rew-room-eq-wizard-support-forum.10/)

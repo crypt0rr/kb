@@ -414,5 +414,5 @@ Info:      Processes: 368 Uptime: 2h 29m wakeups: 5 Memory: 31.16 GiB used: 8.41
 
 ## URL List
 
-* [Github.com - inxi](https://github.com/smxi/inxi)
-* [Smxi.org - inxi](https://smxi.org/docs/inxi.htm)
+- [Github.com - inxi](https://github.com/smxi/inxi)
+- [Smxi.org - inxi](https://smxi.org/docs/inxi.htm)

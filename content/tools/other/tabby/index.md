@@ -55,5 +55,5 @@ Download newest release from [Github.com](https://github.com/Eugeny/tabby/releas
 
 ## URL List
 
-* [Tabby.sh](https://tabby.sh/)
-* [Github.com - tabby](https://github.com/Eugeny/tabby)
+- [Tabby.sh](https://tabby.sh/)
+- [Github.com - tabby](https://github.com/Eugeny/tabby)

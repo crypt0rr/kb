@@ -333,5 +333,5 @@ alt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400,
 
 ## URL List
 
-* [curl.haxx.se](https://curl.haxx.se/)
-* [GitHub.com - curl](https://github.com/curl/curl)
+- [curl.haxx.se](https://curl.haxx.se/)
+- [GitHub.com - curl](https://github.com/curl/curl)

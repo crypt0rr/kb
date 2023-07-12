@@ -186,5 +186,5 @@ http://example.com [200 OK] Country[EUROPEAN UNION][EU], HTML5, HTTPServer[ECS (
 
 ## URL List
 
-* [Morningstarsecurity - Whatweb](https://www.morningstarsecurity.com/research/whatweb)
-* [Github.com - WhatWeb](https://github.com/urbanadventurer/WhatWeb/)
+- [Morningstarsecurity - Whatweb](https://www.morningstarsecurity.com/research/whatweb)
+- [Github.com - WhatWeb](https://github.com/urbanadventurer/WhatWeb/)

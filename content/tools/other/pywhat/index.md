@@ -206,5 +206,5 @@ Options:
 
 ## URL List
 
-* [Github.com - pyWhat](https://github.com/bee-san/pyWhat)
-* [Twitter.com - bee_sec_san](https://twitter.com/bee_sec_san)
+- [Github.com - pyWhat](https://github.com/bee-san/pyWhat)
+- [Twitter.com - bee_sec_san](https://twitter.com/bee_sec_san)

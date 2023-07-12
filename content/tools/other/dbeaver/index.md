@@ -27,5 +27,5 @@ Download newest binary from [dbeaver.io](https://dbeaver.io/download/)
 
 ## URL List
 
-* [Dbeaver.io](https://dbeaver.io/)
-* [Github.com - Dbeaver](https://github.com/dbeaver/dbeaver)
+- [Dbeaver.io](https://dbeaver.io/)
+- [Github.com - Dbeaver](https://github.com/dbeaver/dbeaver)

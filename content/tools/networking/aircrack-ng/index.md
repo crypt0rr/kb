@@ -156,6 +156,6 @@ sudo aircrack-ng <input-file>.cap -w <wordlist>
 
 ## URL List
 
-* [Aircrack-ng.org](https://www.aircrack-ng.org/)
-* [Github.com - Aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
-* [Github.com - Aircrack-ng - rtl8812au driver - awus036acs](https://github.com/aircrack-ng/rtl8812au/)]
+- [Aircrack-ng.org](https://www.aircrack-ng.org/)
+- [Github.com - Aircrack-ng](https://github.com/aircrack-ng/aircrack-ng)
+- [Github.com - Aircrack-ng - rtl8812au driver - awus036acs](https://github.com/aircrack-ng/rtl8812au/)]

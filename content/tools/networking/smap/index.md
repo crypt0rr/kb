@@ -90,4 +90,4 @@ Nmap done: 1 IP address (1 host up) scanned in 0.38 seconds
 
 ## URL List
 
-* [Github.com - Smap](https://github.com/s0md3v/Smap)
+- [Github.com - Smap](https://github.com/s0md3v/Smap)

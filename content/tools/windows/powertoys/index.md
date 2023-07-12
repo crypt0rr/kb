@@ -32,5 +32,5 @@ Please read full capabilities at [learn.microsoft.com](https://learn.microsoft.c
 
 ## URL List
 
-* [learn.microsoft.com - PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
-* [Github.com - PowerToys](https://github.com/microsoft/PowerToys)
+- [learn.microsoft.com - PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/)
+- [Github.com - PowerToys](https://github.com/microsoft/PowerToys)

@@ -48,4 +48,4 @@ reg save hklm\security security
 
 ## URL List
 
-* [Support.accessdata.com - Disable Remote UAC](https://support.accessdata.com/hc/en-us/articles/204150405-Disable-Remote-UAC)
+- [Support.accessdata.com - Disable Remote UAC](https://support.accessdata.com/hc/en-us/articles/204150405-Disable-Remote-UAC)

@@ -60,4 +60,4 @@ caffeinate -i make
 
 ## URL List
 
-* [ss64.com - Caffeinate](https://ss64.com/osx/caffeinate.html)
+- [ss64.com - Caffeinate](https://ss64.com/osx/caffeinate.html)

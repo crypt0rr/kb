@@ -36,4 +36,4 @@ To run the project from source, see here: [Build and run from source](https://gi
 
 ## URL List
 
-* [Github.com - OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher)
+- [Github.com - OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher)

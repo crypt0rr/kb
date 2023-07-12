@@ -44,5 +44,5 @@ SHA-256 (kali-linux-2022.3-installer-netinst-amd64.iso) = 82f702acf37771ac27355c
 
 ## URL List
 
-* [Formulae.brew.sh - sha2](https://formulae.brew.sh/formula/sha2#default)
-* [Aarongifford - sha](https://aarongifford.com/computers/sha.html)
+- [Formulae.brew.sh - sha2](https://formulae.brew.sh/formula/sha2#default)
+- [Aarongifford - sha](https://aarongifford.com/computers/sha.html)

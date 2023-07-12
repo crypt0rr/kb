@@ -119,4 +119,4 @@ Easily configure everything from network settings to complex multi-factor authen
 
 ## URL List
 
-* [Sparklabs.com - Viscosity](https://www.sparklabs.com/viscosity/)
+- [Sparklabs.com - Viscosity](https://www.sparklabs.com/viscosity/)

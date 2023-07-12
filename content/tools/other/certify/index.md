@@ -106,5 +106,5 @@ C3rt1fy completed in 00:00:01.1902168
 
 ## URL List
 
-* [Github.com - Certify](https://github.com/GhostPack/Certify)
-* [Github.com - Certipy](https://github.com/ly4k/Certipy)
+- [Github.com - Certify](https://github.com/GhostPack/Certify)
+- [Github.com - Certipy](https://github.com/ly4k/Certipy)

@@ -24,4 +24,4 @@ Download newest release from [alfredapp.com](https://www.alfredapp.com/)
 
 ## URL list
 
-* [Alfredapp.com](https://www.alfredapp.com/)
+- [Alfredapp.com](https://www.alfredapp.com/)

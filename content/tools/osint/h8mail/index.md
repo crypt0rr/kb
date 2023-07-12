@@ -186,5 +186,5 @@ Status code: 200
 
 ## URL List
 
-* [Github.com - h8mail](https://github.com/khast3x/h8mail)
-* [Github.com - Wiki](https://github.com/khast3x/h8mail/wiki)
+- [Github.com - h8mail](https://github.com/khast3x/h8mail)
+- [Github.com - Wiki](https://github.com/khast3x/h8mail/wiki)

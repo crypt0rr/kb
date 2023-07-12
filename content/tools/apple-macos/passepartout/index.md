@@ -53,5 +53,5 @@ Download from [Apple AppStore](https://apps.apple.com/us/app/passepartout-openvp
 
 ## URL List
 
-* [Github.com - Passepartout](https://github.com/passepartoutvpn)
-* [Reddit.com - Passepartout](https://www.reddit.com/r/passepartout)
+- [Github.com - Passepartout](https://github.com/passepartoutvpn)
+- [Reddit.com - Passepartout](https://www.reddit.com/r/passepartout)

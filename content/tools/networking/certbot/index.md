@@ -127,4 +127,4 @@ sudo certbot delete --cert-name <certificate>
 
 ## URL List
 
-* [Certbot.eff.org](https://certbot.eff.org/)
+- [Certbot.eff.org](https://certbot.eff.org/)

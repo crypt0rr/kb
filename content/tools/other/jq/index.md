@@ -119,4 +119,4 @@ linkedin
 
 ## URL List
 
-* [Stedolan.GitHub.io - jq](https://stedolan.github.io/jq/)
+- [Stedolan.GitHub.io - jq](https://stedolan.github.io/jq/)

@@ -171,5 +171,5 @@ total 22M
 
 ## URL List
 
-* [GitHub.com - Responder](https://github.com/lgandx/Responder)
-* [Original DEPRECATED GitHub](https://github.com/SpiderLabs/Responder)
+- [GitHub.com - Responder](https://github.com/lgandx/Responder)
+- [Original DEPRECATED GitHub](https://github.com/SpiderLabs/Responder)

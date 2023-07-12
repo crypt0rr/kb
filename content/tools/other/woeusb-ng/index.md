@@ -33,4 +33,4 @@ sudo python3 -m pip install WoeUSB-ng
 
 ## URL List
 
-* [Github.com - WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng)
+- [Github.com - WoeUSB-ng](https://github.com/WoeUSB/WoeUSB-ng)

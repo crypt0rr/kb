@@ -31,4 +31,4 @@ Download newest release from [mp3tag.de](https://www.mp3tag.de/en/download.html)
 
 ## URL List
 
-* [MP3tag.de](https://www.mp3tag.de/en/index.html)
+- [MP3tag.de](https://www.mp3tag.de/en/index.html)

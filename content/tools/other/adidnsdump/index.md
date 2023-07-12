@@ -127,5 +127,5 @@ Password:
 
 ## URL List
 
-* [Github.com - adidnsdump](https://github.com/dirkjanm/adidnsdump)
-* [Dirkjan.io - Getting in the zone dumping active directory DNS with adidnsdump](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/)
+- [Github.com - adidnsdump](https://github.com/dirkjanm/adidnsdump)
+- [Dirkjan.io - Getting in the zone dumping active directory DNS with adidnsdump](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/)

@@ -48,21 +48,21 @@ You can target the following entities in a SpiderFoot scan:
 
 SpiderFoot's 200+ modules feed each other in a publisher/subscriber model to ensure maximum data extraction to do things like:
 
-* [Host/sub-domain/TLD enumeration/extraction](https://asciinema.org/a/295912)
-* [Email address, phone number and human name extraction](https://asciinema.org/a/295947)
-* [Bitcoin and Ethereum address extraction](https://asciinema.org/a/295957)
-* [Check for susceptibility to sub-domain hijacking](https://asciinema.org/a/344377)
+- [Host/sub-domain/TLD enumeration/extraction](https://asciinema.org/a/295912)
+- [Email address, phone number and human name extraction](https://asciinema.org/a/295947)
+- [Bitcoin and Ethereum address extraction](https://asciinema.org/a/295957)
+- [Check for susceptibility to sub-domain hijacking](https://asciinema.org/a/344377)
 * DNS zone transfers
-* [Threat intelligence and Blacklist queries](https://asciinema.org/a/295949)
+- [Threat intelligence and Blacklist queries](https://asciinema.org/a/295949)
 * API integration with [SHODAN](https://asciinema.org/a/127601), [HaveIBeenPwned](https://asciinema.org/a/128731), [GreyNoise](https://asciinema.org/a/295943), AlienVault, SecurityTrails, etc.
-* [Social media account enumeration](https://asciinema.org/a/295923)
-* [S3/Azure/Digitalocean bucket enumeration/scraping](https://asciinema.org/a/295941)
+- [Social media account enumeration](https://asciinema.org/a/295923)
+- [S3/Azure/Digitalocean bucket enumeration/scraping](https://asciinema.org/a/295941)
 * IP geo-location
 * Web scraping, web content analysis
-* [Image, document and binary file meta data analysis](https://asciinema.org/a/296274)
+- [Image, document and binary file meta data analysis](https://asciinema.org/a/296274)
 * Dark web searches
-* [Port scanning and banner grabbing](https://asciinema.org/a/295939)
-* [Data breach searches](https://asciinema.org/a/296145)
+- [Port scanning and banner grabbing](https://asciinema.org/a/295939)
+- [Data breach searches](https://asciinema.org/a/296145)
 * So much more...
 
 ## Installation
@@ -366,6 +366,6 @@ Latest updates announced on [Twitter](https://twitter.com/spiderfoot).
 
 ## URL List
 
-* [SpiderFoot.net](https://www.spiderfoot.net/)
-* [Github.com - SpiderFoot](https://github.com/smicallef/spiderfoot)
-* [SpiderFoot.net - Documentation](https://www.spiderfoot.net/documentation/)
+- [SpiderFoot.net](https://www.spiderfoot.net/)
+- [Github.com - SpiderFoot](https://github.com/smicallef/spiderfoot)
+- [SpiderFoot.net - Documentation](https://www.spiderfoot.net/documentation/)

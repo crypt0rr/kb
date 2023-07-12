@@ -57,4 +57,4 @@ line5
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/strings)
+- [Linux.die.net](https://linux.die.net/man/1/strings)

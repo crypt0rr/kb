@@ -102,4 +102,4 @@ Password:
 
 ## URL List
 
-* [Github.com - LdapRelayScan](https://github.com/zyn3rgy/LdapRelayScan)
+- [Github.com - LdapRelayScan](https://github.com/zyn3rgy/LdapRelayScan)

@@ -149,4 +149,4 @@ Finder Of XSS and Dal is the Korean pronunciation of moon. @hahwul
 
 ## URL List
 
-* [GitHub.com - dalfox](https://github.com/hahwul/dalfox)
+- [GitHub.com - dalfox](https://github.com/hahwul/dalfox)

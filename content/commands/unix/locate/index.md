@@ -67,4 +67,4 @@ $ locate python3 | head
 
 ## URL List
 
-* [Linux.die.net - locate](https://linux.die.net/man/1/locate)
+- [Linux.die.net - locate](https://linux.die.net/man/1/locate)

@@ -91,4 +91,4 @@ The below demo features a challenge from X-MAS CTF 2020. A flag was hidden using
 
 ## URL List
 
-* [Github.com - Stegseek](https://github.com/RickdeJager/stegseek)
+- [Github.com - Stegseek](https://github.com/RickdeJager/stegseek)

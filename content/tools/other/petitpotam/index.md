@@ -140,10 +140,10 @@ Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
 
 For relaying have a look at
 
-* [Impacket - NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}})
-* [CrackMapExec - Generate target list where targets do not require signing (SMB)]({{< ref "cme-smb" >}})
+- [Impacket - NTLMrelayx.py]({{< ref "ntlmrelayx-py" >}})
+- [CrackMapExec - Generate target list where targets do not require signing (SMB)]({{< ref "cme-smb" >}})
 
 ## URL List
 
-* [Github.com - PetitPotam](https://github.com/topotam/PetitPotam)
-* [Github.com - From RPC to RCE - Workstation Takeover via RBCD and MS-RPChoose-Your-Own-Adventure](https://gist.github.com/audibleblink/06916db2a76c7bd13400c4f9da422ad5)
+- [Github.com - PetitPotam](https://github.com/topotam/PetitPotam)
+- [Github.com - From RPC to RCE - Workstation Takeover via RBCD and MS-RPChoose-Your-Own-Adventure](https://gist.github.com/audibleblink/06916db2a76c7bd13400c4f9da422ad5)

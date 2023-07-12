@@ -97,4 +97,4 @@ This can be used in combination with the Git Dumper in case the downloaded repos
 
 ## URL List
 
-* [Github.com - GitTools](https://github.com/internetwache/GitTools)
+- [Github.com - GitTools](https://github.com/internetwache/GitTools)

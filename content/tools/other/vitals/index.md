@@ -26,5 +26,5 @@ Installation via [extensions.gnome.org](https://extensions.gnome.org/extension/1
 
 ## URL List
 
-* [Extensions.gnome.org](https://extensions.gnome.org/extension/1460/vitals/)
-* [Github.com - Vitals](https://github.com/corecoding/Vitals)
+- [Extensions.gnome.org](https://extensions.gnome.org/extension/1460/vitals/)
+- [Github.com - Vitals](https://github.com/corecoding/Vitals)

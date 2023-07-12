@@ -118,4 +118,4 @@ python3 EyeWitness.py --web -x <file>.nessus
 
 ## URL List
 
-* [GitHub.com - EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)
+- [GitHub.com - EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness)

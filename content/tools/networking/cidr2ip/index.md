@@ -61,4 +61,4 @@ $ cidr2ip -f cidrs.txt
 
 ## URL List
 
-* [Github.com - cidr2ip](https://github.com/crypt0rr/cidr2ip)
+- [Github.com - cidr2ip](https://github.com/crypt0rr/cidr2ip)

@@ -23,4 +23,4 @@ sudo dpkg -i sonos-controller-unofficial-amd64.deb
 
 ## URL List
 
-* [GitHub.com - Unofficial Sonos Controller for Linux](https://github.com/pascalopitz/unoffical-sonos-controller-for-linux)
+- [GitHub.com - Unofficial Sonos Controller for Linux](https://github.com/pascalopitz/unoffical-sonos-controller-for-linux)

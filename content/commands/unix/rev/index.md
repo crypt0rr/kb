@@ -38,4 +38,4 @@ gnirts-elpmaxe
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/rev)
+- [Linux.die.net](https://linux.die.net/man/1/rev)

@@ -43,4 +43,4 @@ Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
 
 ## URL List
 
-* [Github.com - CyberChef](https://github.com/gchq/CyberChef)
+- [Github.com - CyberChef](https://github.com/gchq/CyberChef)

@@ -106,4 +106,4 @@ GitHub: @tomcarver16
 
 ## URL List
 
-* [Github.com - ADSearch](https://github.com/tomcarver16/ADSearch)
+- [Github.com - ADSearch](https://github.com/tomcarver16/ADSearch)

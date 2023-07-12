@@ -94,4 +94,4 @@ fácebook.com (xn--fcebook-hwa.com) registered : ips=165.160.15.20,165.160.13.20
 
 ## URL List
 
-* [GitHub.com - Ditto](https://github.com/evilsocket/ditto)
+- [GitHub.com - Ditto](https://github.com/evilsocket/ditto)

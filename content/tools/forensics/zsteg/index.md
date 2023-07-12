@@ -17,9 +17,9 @@ Detects:
 
 * LSB steganography in PNG & BMP
 * zlib-compressed data
-* [OpenStego](http://openstego.sourceforge.net/)
-* [Camouflage 1.2.1](http://camouflage.unfiction.com/)
-* [LSB with The Eratosthenes set](http://wiki.cedricbonhomme.org/security:steganography)
+- [OpenStego](http://openstego.sourceforge.net/)
+- [Camouflage 1.2.1](http://camouflage.unfiction.com/)
+- [LSB with The Eratosthenes set](http://wiki.cedricbonhomme.org/security:steganography)
 
 ## Installation
 
@@ -149,4 +149,4 @@ b1,rgb,lsb,yx       .. zlib: data="%PDF-1.4\n%\xC3\xA4\xC3\xBC\xC3\xB6\xC3\x9F\n
 
 ## URL list
 
-* [Github.com - zsteg](https://github.com/zed-0xff/zsteg)
+- [Github.com - zsteg](https://github.com/zed-0xff/zsteg)

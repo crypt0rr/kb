@@ -55,6 +55,6 @@ systemctl --user --now enable pipewire-media-session.service
 
 ## URL List
 
-* [Pipewire.org](https://pipewire.org/)
-* [Reddit.com - Replaced pulseaudio with pipewire on Pop!_OS 21.04](https://www.reddit.com/r/pop_os/comments/ofdalv/replaced_pulseaudio_with_pipewire_on_popos_2104_i/)
-* [Gitlab.freedesktop.org - PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire)
+- [Pipewire.org](https://pipewire.org/)
+- [Reddit.com - Replaced pulseaudio with pipewire on Pop!_OS 21.04](https://www.reddit.com/r/pop_os/comments/ofdalv/replaced_pulseaudio_with_pipewire_on_popos_2104_i/)
+- [Gitlab.freedesktop.org - PipeWire](https://gitlab.freedesktop.org/pipewire/pipewire)

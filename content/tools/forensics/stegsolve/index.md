@@ -46,4 +46,4 @@ java -jar stegsolve.jar
 
 ## URL List
 
-* [Github.com - StegSolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install)
+- [Github.com - StegSolve](https://github.com/zardus/ctf-tools/blob/master/stegsolve/install)

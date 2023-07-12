@@ -152,4 +152,4 @@ Default password policy:
 
 ## URL List
 
-* [Github.com - ldapsearch-ad](https://github.com/yaap7/ldapsearch-ad)
+- [Github.com - ldapsearch-ad](https://github.com/yaap7/ldapsearch-ad)

@@ -72,4 +72,4 @@ $ python3 exchangefinder.py --domain offsec.nl
 
 ## URL List
 
-* [Github.com - ExchangeFinder](https://github.com/mhaskar/ExchangeFinder)
+- [Github.com - ExchangeFinder](https://github.com/mhaskar/ExchangeFinder)

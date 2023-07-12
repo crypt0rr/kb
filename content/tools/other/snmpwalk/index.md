@@ -156,4 +156,4 @@ iso.3.6.1.4.1.77.1.2.25.1.1.16.83.85.80.80.79.82.84.95.51.56.56.57.52.53.97.48 =
 
 ## URL List
 
-* [Kali.org - snmpwalk](https://www.kali.org/tools/net-snmp/#snmpwalk)
+- [Kali.org - snmpwalk](https://www.kali.org/tools/net-snmp/#snmpwalk)

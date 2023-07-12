@@ -54,4 +54,4 @@ Pick the drive containing your EFI:
 
 ## URL List
 
-* [Github.com - MountEFI](https://github.com/corpnewt/MountEFI)
+- [Github.com - MountEFI](https://github.com/corpnewt/MountEFI)

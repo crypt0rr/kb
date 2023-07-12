@@ -44,4 +44,4 @@ IMPORTANT: Keeping your battery at a lower percentage, such as 20-80%, over week
 
 ## URL List
 
-* [Github.com - AlDente](https://github.com/davidwernhart/AlDente)
+- [Github.com - AlDente](https://github.com/davidwernhart/AlDente)

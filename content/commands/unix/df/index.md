@@ -86,5 +86,5 @@ Filesystem             Size  Used Avail Use% Mounted on
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/df)
-* [Tecmint.com](https://www.tecmint.com/how-to-check-disk-space-in-linux/)
+- [Linux.die.net](https://linux.die.net/man/1/df)
+- [Tecmint.com](https://www.tecmint.com/how-to-check-disk-space-in-linux/)

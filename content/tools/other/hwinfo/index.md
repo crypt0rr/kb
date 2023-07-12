@@ -146,4 +146,4 @@ cpu:
 
 ## URL List
 
-* [Linuxintro.org - hwinfo](http://www.linuxintro.org/wiki/Hwinfo)
+- [Linuxintro.org - hwinfo](http://www.linuxintro.org/wiki/Hwinfo)

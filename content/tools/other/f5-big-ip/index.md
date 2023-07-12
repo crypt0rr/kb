@@ -60,4 +60,4 @@ In total:
 
 ## URL List
 
-* [GitHub.com - F5-BigIP-Decoder](https://github.com/drwetter/F5-BIGIP-Decoder)
+- [GitHub.com - F5-BigIP-Decoder](https://github.com/drwetter/F5-BIGIP-Decoder)

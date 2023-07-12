@@ -25,5 +25,5 @@ Download latest installer from [Github.com](https://github.com/odedshimon/BruteS
 
 ## URL List
 
-* [GitHub.com.com - Bruteshark](https://github.com/odedshimon/BruteShark)
-* [YouTube.com Brute Shark - Cracking NTLM Hash from random PCAP file](https://www.youtube.com/watch?v=AreguLxCCz4&feature=youtu.be)
+- [GitHub.com.com - Bruteshark](https://github.com/odedshimon/BruteShark)
+- [YouTube.com Brute Shark - Cracking NTLM Hash from random PCAP file](https://www.youtube.com/watch?v=AreguLxCCz4&feature=youtu.be)

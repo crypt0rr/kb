@@ -23,5 +23,5 @@ Check the checklist on [book.hacktricks.xyz](https://book.hacktricks.xyz/windows
 
 ## URL List
 
-* [Github.com - PEASS-ng](https://github.com/carlospolop/PEASS-ng/)
-* [book.hacktricks.xyz - Checklist - Local Windows Privilege Escalation](https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation)
+- [Github.com - PEASS-ng](https://github.com/carlospolop/PEASS-ng/)
+- [book.hacktricks.xyz - Checklist - Local Windows Privilege Escalation](https://book.hacktricks.xyz/windows/checklist-windows-privilege-escalation)

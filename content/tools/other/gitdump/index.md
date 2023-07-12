@@ -49,4 +49,4 @@ Please provide website URL with /.git/ directory e.g. example.com/.git/
 
 ## URL List
 
-* [Github.com - GitDump](https://github.com/Ebryx/GitDump)
+- [Github.com - GitDump](https://github.com/Ebryx/GitDump)

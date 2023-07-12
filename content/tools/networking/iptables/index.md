@@ -164,5 +164,5 @@ sudo iptables -A OUTPUT -p tcp --dport 443 -j ACCEPT
 
 ## URL List
 
-* [Linux.die.net - iptables](https://linux.die.net/man/8/iptables)
-* [Wikipedia.org - iptables](https://en.wikipedia.org/wiki/Iptables)
+- [Linux.die.net - iptables](https://linux.die.net/man/8/iptables)
+- [Wikipedia.org - iptables](https://en.wikipedia.org/wiki/Iptables)

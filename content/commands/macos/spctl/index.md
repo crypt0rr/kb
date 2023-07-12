@@ -64,4 +64,4 @@ Numbers.app: satisfies its Designated Requirement
 
 ## URL List
 
-* [Medium.com - How to verify app signatures](https://medium.com/@andrew.perfiliev/how-to-verify-app-signatures-43fd5cd1bd3d)
+- [Medium.com - How to verify app signatures](https://medium.com/@andrew.perfiliev/how-to-verify-app-signatures-43fd5cd1bd3d)
