@@ -17,27 +17,27 @@ With Trusted Networks, Passepartout unlocks the very best of using a VPN.
 
 Passepartout does not engage any unrequested background activity other than the VPN tunnel, thus being also friendlier to firewalls.
 
-* Presets for multiple providers (virtually any)
-* Trusted networks
-* Siri shortcuts (iOS)
-* Override network settings
-* No background activities
-* Wise on battery
+- Presets for multiple providers (virtually any)
+- Trusted networks
+- Siri shortcuts (iOS)
+- Override network settings
+- No background activities
+- Wise on battery
 
 ### Easy to use
 
-* Incredible ease of use, with native look & feel.
-* Handle your profiles in one single place.
-* Import .ovpn configuration files.
-* Use Trusted Networks to fine-grain your connectivity.
-* Fine-tune encryption without tweaking any configuration file.
-* Override network settings in a snap (default gateway, DNS, proxy, MTU).
+- Incredible ease of use, with native look & feel.
+- Handle your profiles in one single place.
+- Import .ovpn configuration files.
+- Use Trusted Networks to fine-grain your connectivity.
+- Fine-tune encryption without tweaking any configuration file.
+- Override network settings in a snap (default gateway, DNS, proxy, MTU).
 
 ### Privacy Friendly
 
-* Full transparency on what servers you're connecting to.
-* Pick pre-resolved endpoints when DNS is problematic.
-* No web services, ads or any undesired bloat besides the VPN itself.
+- Full transparency on what servers you're connecting to.
+- Pick pre-resolved endpoints when DNS is problematic.
+- No web services, ads or any undesired bloat besides the VPN itself.
 
 ## Installation
 

@@ -21,19 +21,19 @@ Read more about how to use Dirhunt [in the documentation](http://docs.nekmo.org/
 
 ### Features
 
-* Process one or multiple sites at a time.
-* Process 'Index Of' pages and report interesting files.
-* Detect redirectors.
-* Detect blank index file created on directory to hide things.
-* Process some html files in search of new directories.
-* 404 error pages and detect fake 404 errors.
-* Filter results by flags.
-* Analyze results at end. It also processes date & size of the Index Pages.
-* Get new directories using robots.txt, VirusTotal & Google.
-* Delay between requests.
-* One or multiple proxies option. It can also search for free proxies.
-* Save the results to a JSON file (NEW!)
-* Resume the aborted scans (NEW!)
+- Process one or multiple sites at a time.
+- Process 'Index Of' pages and report interesting files.
+- Detect redirectors.
+- Detect blank index file created on directory to hide things.
+- Process some html files in search of new directories.
+- 404 error pages and detect fake 404 errors.
+- Filter results by flags.
+- Analyze results at end. It also processes date & size of the Index Pages.
+- Get new directories using robots.txt, VirusTotal & Google.
+- Delay between requests.
+- One or multiple proxies option. It can also search for free proxies.
+- Save the results to a JSON file (NEW!)
+- Resume the aborted scans (NEW!)
 
 ## Installation
 

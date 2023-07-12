@@ -15,19 +15,19 @@ Is an open source intelligence (OSINT) automation tool. It integrates with just 
 
 ### FEATURES
 
-* Web based UI or CLI
-* Over 200 modules (see below)
-* Python 3
-* CSV/JSON/GEXF export
-* API key export/import
-* SQLite back-end for custom querying
-* Highly configurable
-* Fully documented
-* Visualisations
-* TOR integration for dark web searching
-* Dockerfile for Docker-based deployments
-* Can call other tools like DNSTwist, Whatweb, Nmap and CMSeeK
-* Actively developed since 2012!
+- Web based UI or CLI
+- Over 200 modules (see below)
+- Python 3
+- CSV/JSON/GEXF export
+- API key export/import
+- SQLite back-end for custom querying
+- Highly configurable
+- Fully documented
+- Visualisations
+- TOR integration for dark web searching
+- Dockerfile for Docker-based deployments
+- Can call other tools like DNSTwist, Whatweb, Nmap and CMSeeK
+- Actively developed since 2012!
 
 ### USES
 
@@ -35,16 +35,16 @@ SpiderFoot can be used offensively (e.g. in a red team exercise or penetration t
 
 You can target the following entities in a SpiderFoot scan:
 
-* IP address
-* Domain/sub-domain name
-* Hostname
-* Network subnet (CIDR)
-* ASN
-* E-mail address
-* Phone number
-* Username
-* Person's name
-* Bitcoin address
+- IP address
+- Domain/sub-domain name
+- Hostname
+- Network subnet (CIDR)
+- ASN
+- E-mail address
+- Phone number
+- Username
+- Person's name
+- Bitcoin address
 
 SpiderFoot's 200+ modules feed each other in a publisher/subscriber model to ensure maximum data extraction to do things like:
 
@@ -52,18 +52,18 @@ SpiderFoot's 200+ modules feed each other in a publisher/subscriber model to ens
 - [Email address, phone number and human name extraction](https://asciinema.org/a/295947)
 - [Bitcoin and Ethereum address extraction](https://asciinema.org/a/295957)
 - [Check for susceptibility to sub-domain hijacking](https://asciinema.org/a/344377)
-* DNS zone transfers
+- DNS zone transfers
 - [Threat intelligence and Blacklist queries](https://asciinema.org/a/295949)
-* API integration with [SHODAN](https://asciinema.org/a/127601), [HaveIBeenPwned](https://asciinema.org/a/128731), [GreyNoise](https://asciinema.org/a/295943), AlienVault, SecurityTrails, etc.
+- API integration with [SHODAN](https://asciinema.org/a/127601), [HaveIBeenPwned](https://asciinema.org/a/128731), [GreyNoise](https://asciinema.org/a/295943), AlienVault, SecurityTrails, etc.
 - [Social media account enumeration](https://asciinema.org/a/295923)
 - [S3/Azure/Digitalocean bucket enumeration/scraping](https://asciinema.org/a/295941)
-* IP geo-location
-* Web scraping, web content analysis
+- IP geo-location
+- Web scraping, web content analysis
 - [Image, document and binary file meta data analysis](https://asciinema.org/a/296274)
-* Dark web searches
+- Dark web searches
 - [Port scanning and banner grabbing](https://asciinema.org/a/295939)
 - [Data breach searches](https://asciinema.org/a/296145)
-* So much more...
+- So much more...
 
 ## Installation
 

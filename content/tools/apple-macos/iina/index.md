@@ -17,28 +17,28 @@ IINA is born to be a modern macOS application, from its framework to the user in
 
 ### Features
 
-* Based on [mpv](https://github.com/mpv-player/mpv), which provides the best decoding capacity on macOS
-* Designed with modern versions of macOS (10.11+) in mind
-* All the features you need for video and music: subtitles, playlists, chapters…and much, much more!
-* Force Touch, picture-in-picture and advanced Touch Bar support
-* Customizable user interface including multiple color schemes and on screen controller (OSC) layout positioning
-* Standalone Music Mode designed for audio files
-* Video thumbnails
-* Online subtitle searching and intelligent local subtitle matching
-* Unlimited playback history
-* Convenient and interactive settings for video/audio filters
-* Fully customizable keyboard, mouse, trackpad, and gesture controls
-* mpv configuration files and script system for advanced users
-* Command line tool and browser extensions provided
-* In active development
+- Based on [mpv](https://github.com/mpv-player/mpv), which provides the best decoding capacity on macOS
+- Designed with modern versions of macOS (10.11+) in mind
+- All the features you need for video and music: subtitles, playlists, chapters…and much, much more!
+- Force Touch, picture-in-picture and advanced Touch Bar support
+- Customizable user interface including multiple color schemes and on screen controller (OSC) layout positioning
+- Standalone Music Mode designed for audio files
+- Video thumbnails
+- Online subtitle searching and intelligent local subtitle matching
+- Unlimited playback history
+- Convenient and interactive settings for video/audio filters
+- Fully customizable keyboard, mouse, trackpad, and gesture controls
+- mpv configuration files and script system for advanced users
+- Command line tool and browser extensions provided
+- In active development
 
 ### Plays anything
 
 Powered by the open source media player mpv, IINA can play almost every media file you have. With the support of youtube-dl and our browser extensions, you can also play a variety of online streams in IINA via one click.
 
-* Local files
-* Online streams
-* YouTube playlists
+- Local files
+- Online streams
+- YouTube playlists
 
 ## Installation
 

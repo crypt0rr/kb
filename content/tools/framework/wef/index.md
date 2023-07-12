@@ -19,37 +19,37 @@ Tested and supported in **Kali Linux**, **Parrot OS**, **Arch Linux** and **Ubun
 
 **However it's not finished and may have issues, try it at your own risk.**
 
-* I recommend you my alfa adapter: **Alfa AWUS036ACM**, which works really great with both, 2.4 and 5 Ghz
-* If you have any doubt, please contact me or create a issue
+- I recommend you my alfa adapter: **Alfa AWUS036ACM**, which works really great with both, 2.4 and 5 Ghz
+- If you have any doubt, please contact me or create a issue
 
 ## ⭕ SUPPORTED ATTACKS
 
-* Deauthentication Attack
-* Authentication Attack
-* Beacon Flood Attack
-* PMKID Attack
-* EvilTwin Attack
-* Passive/Stealthy Attack
-* Pixie Dust Attack
-* Null Pin Attack
-* Chopchop Attack
-* Replay Attack
-* Michael Exploitation Attack
-* Caffe-Latte Attack
-* Jamming, Reading and Writing bluetooth connections
-* GPS Spoofing with HackRF
+- Deauthentication Attack
+- Authentication Attack
+- Beacon Flood Attack
+- PMKID Attack
+- EvilTwin Attack
+- Passive/Stealthy Attack
+- Pixie Dust Attack
+- Null Pin Attack
+- Chopchop Attack
+- Replay Attack
+- Michael Exploitation Attack
+- Caffe-Latte Attack
+- Jamming, Reading and Writing bluetooth connections
+- GPS Spoofing with HackRF
 
 ## ⭕ FEATURES
 
-* Log generator
-* WPA/WPA2, WPS and WEP Attacks
-* Auto handshake cracking
-* Multiple templates for EvilTwin attack
-* Check monitor mode and it status
-* 2Ghz and 5Ghz attacks
-* Custom wordlist selector
-* Auto detect requirements
-* Bluetooth support (Jamming, Reading, Writing)
+- Log generator
+- WPA/WPA2, WPS and WEP Attacks
+- Auto handshake cracking
+- Multiple templates for EvilTwin attack
+- Check monitor mode and it status
+- 2Ghz and 5Ghz attacks
+- Custom wordlist selector
+- Auto detect requirements
+- Bluetooth support (Jamming, Reading, Writing)
 
 ## Installation
 

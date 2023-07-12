@@ -19,39 +19,39 @@ Lots of credentials are protected by [DPAPI](https://docs.microsoft.com/en-us/do
 
 We aim at locating those "secured" credentials, and retrieve them using:
 
-* User password
-* Domaine DPAPI BackupKey
-* Local machine DPAPI Key (protecting `TaskScheduled` blob)
+- User password
+- Domaine DPAPI BackupKey
+- Local machine DPAPI Key (protecting `TaskScheduled` blob)
 
 ### Curently gathered info
 
-* Windows credentials (Taskscheduled credentials & a lot more)
-* Windows Vaults
-* Windows RDP credentials
-* AdConnect (still require a manual operation)
-* Wifi key
-* Intenet explorer Credentials
-* Chrome cookies & credentials
-* Firefox cookies & credentials
-* VNC passwords
-* mRemoteNG password (with default config)
+- Windows credentials (Taskscheduled credentials & a lot more)
+- Windows Vaults
+- Windows RDP credentials
+- AdConnect (still require a manual operation)
+- Wifi key
+- Intenet explorer Credentials
+- Chrome cookies & credentials
+- Firefox cookies & credentials
+- VNC passwords
+- mRemoteNG password (with default config)
 
 ### Check for a bit of compliance
 
-* SMB signing status
-* OS/Domain/Hostname/Ip of the audited scope
+- SMB signing status
+- OS/Domain/Hostname/Ip of the audited scope
 
 ### Operational use
 
 With local admin account on a host, we can:
 
-* Gather machine protected DPAPI secrets
-  * ScheduledTask that will contain cleartext login/password of the account configured to run the task
-  * Wi-Fi passwords
-* Extract Masterkey's hash value for every user profiles (masterkeys beeing protected by the user's password, let's try to crack them with Hashcat)
-* Identify who is connected from where, in order to identify admin's personal computers.
-* Extract other non-dpapi protected secrets (VNC/Firefox/mRemoteNG)
-* Gather protected secrets from IE, Chrome, Firefox and start reaching the Azure tenant.
+- Gather machine protected DPAPI secrets
+  - ScheduledTask that will contain cleartext login/password of the account configured to run the task
+  - Wi-Fi passwords
+- Extract Masterkey's hash value for every user profiles (masterkeys beeing protected by the user's password, let's try to crack them with Hashcat)
+- Identify who is connected from where, in order to identify admin's personal computers.
+- Extract other non-dpapi protected secrets (VNC/Firefox/mRemoteNG)
+- Gather protected secrets from IE, Chrome, Firefox and start reaching the Azure tenant.
 
 With a user password, or the domain PVK we can unprotect the user's DPAPI secrets.
 

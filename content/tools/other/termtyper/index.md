@@ -15,13 +15,13 @@ A typing application to level up your fingers!
 
 ### Features
 
-* An interactive & beautiful UI
-* Mechanical sounds!
-* Words and Time based typing
-* Real-time comparision of speed carets
-* Racebar themes with typing-speed based colors
-* Change styles/settings on the fly
-* Lots of options to tweak! (See tweaks)
+- An interactive & beautiful UI
+- Mechanical sounds!
+- Words and Time based typing
+- Real-time comparision of speed carets
+- Racebar themes with typing-speed based colors
+- Change styles/settings on the fly
+- Lots of options to tweak! (See tweaks)
 
 ## Installation
 

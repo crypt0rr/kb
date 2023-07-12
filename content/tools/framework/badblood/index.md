@@ -25,12 +25,12 @@ BadBlood fills a Microsoft Active Directory Domain with a structure and thousand
 
 Statistics:
 
-* Users: 2492
-* Groups: 551
-* Computers: 102
-* OUS: 223
-* GPOs: 2
-* Domains: 1
+- Users: 2492
+- Groups: 551
+- Computers: 102
+- OUS: 223
+- GPOs: 2
+- Domains: 1
 
 {{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 

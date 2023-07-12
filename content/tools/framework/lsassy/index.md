@@ -107,9 +107,9 @@ $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' 10.10.10
 
 Modules that can be used without prerequisites and from experience are not generally detected:
 
-* comsvcs_stealth
-* procdump_embedded
-* mirrordump_embedded
+- comsvcs_stealth
+- procdump_embedded
+- mirrordump_embedded
 
 #### comsvcs_stealth
 

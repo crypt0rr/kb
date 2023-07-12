@@ -19,30 +19,30 @@ The benefits of these file types over say macro based documents or exploit docum
 
 `ntlm_theft` supports the following attack types:
 
-* Browse to Folder Containing
-  * .url – via URL field
-  * .url – via ICONFILE field
-  * .lnk - via icon_location field
-  * .scf – via ICONFILE field (Not Working on Latest Windows)
-  * autorun.inf via OPEN field (Not Working on Latest Windows)
-  * desktop.ini - via IconResource field (Not Working on Latest Windows)
-* Open Document
-  * .xml – via Microsoft Word external stylesheet
-  * .xml – via Microsoft Word includepicture field
-  * .htm – via Chrome & IE & Edge img src (only if opened locally, not hosted)
-  * .docx – via Microsoft Word includepicture field
-  * .docx – via Microsoft Word external template
-  * .docx – via Microsoft Word frameset webSettings
-  * .xlsx - via Microsoft Excel external cell
-  * .wax - via Windows Media Player playlist (Better, primary open)
-  * .asx – via Windows Media Player playlist (Better, primary open)
-  * .m3u – via Windows Media Player playlist (Worse, Win10 opens first in Groovy)
-  * .jnlp – via Java external jar
-  * .application – via any Browser (Must be served via a browser downloaded or won’t run)
-* Open Document and Accept Popup
-  * .pdf – via Adobe Acrobat Reader
-* Click Link in Chat Program
-  * .txt – formatted link to paste into Zoom chat
+- Browse to Folder Containing
+  - .url – via URL field
+  - .url – via ICONFILE field
+  - .lnk - via icon_location field
+  - .scf – via ICONFILE field (Not Working on Latest Windows)
+  - autorun.inf via OPEN field (Not Working on Latest Windows)
+  - desktop.ini - via IconResource field (Not Working on Latest Windows)
+- Open Document
+  - .xml – via Microsoft Word external stylesheet
+  - .xml – via Microsoft Word includepicture field
+  - .htm – via Chrome & IE & Edge img src (only if opened locally, not hosted)
+  - .docx – via Microsoft Word includepicture field
+  - .docx – via Microsoft Word external template
+  - .docx – via Microsoft Word frameset webSettings
+  - .xlsx - via Microsoft Excel external cell
+  - .wax - via Windows Media Player playlist (Better, primary open)
+  - .asx – via Windows Media Player playlist (Better, primary open)
+  - .m3u – via Windows Media Player playlist (Worse, Win10 opens first in Groovy)
+  - .jnlp – via Java external jar
+  - .application – via any Browser (Must be served via a browser downloaded or won’t run)
+- Open Document and Accept Popup
+  - .pdf – via Adobe Acrobat Reader
+- Click Link in Chat Program
+  - .txt – formatted link to paste into Zoom chat
 
 ## Installation
 

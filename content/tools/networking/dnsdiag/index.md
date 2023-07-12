@@ -72,9 +72,9 @@ docker run --network host -it --rm farrokhi/dnsdiag dnsping.py
 dnsping pings a DNS resolver by sending an arbitrary DNS query for given number of times.
 A complete explanation of supported command line flags is shown by using `--help`. Here are a few useful flags:
 
-* Using `--tcp`, `--tls` and `--doh` to select transport protocol. Default is UDP.
-* Using `--flags` to display response flags for each response
-* Using `--dnssec` to request DNSSEC if available
+- Using `--tcp`, `--tls` and `--doh` to select transport protocol. Default is UDP.
+- Using `--flags` to display response flags for each response
+- Using `--dnssec` to request DNSSEC if available
 
 In addition to UDP, you can ping using TCP, DoT (DNS over TLS) and DoH (DNS over HTTPS) using `--tcp`, `--tls` and `--doh` respectively.
 
@@ -100,9 +100,9 @@ jitter (stddev) and lost packets.
 
 There are several interesting use cases for dnsping, including:
 
-* Comparing response times using different transport protocols (e.g. UDP vs DoH)
-* Measuring how reliable your DNS server is, by measuring Jitter and packet loss
-* Measuring responses times when DNSSEC is enabled using `--dnssec`
+- Comparing response times using different transport protocols (e.g. UDP vs DoH)
+- Measuring how reliable your DNS server is, by measuring Jitter and packet loss
+- Measuring responses times when DNSSEC is enabled using `--dnssec`
 
 ## dnstraceroute
 

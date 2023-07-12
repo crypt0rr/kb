@@ -15,10 +15,10 @@ Axel tries to accelerate the download process by using multiple connections per 
 
 Axel supports:
 
-* HTTP
-* HTTPS
-* FTP
-* FTPS
+- HTTP
+- HTTPS
+- FTP
+- FTPS
 
 ## Installation
 

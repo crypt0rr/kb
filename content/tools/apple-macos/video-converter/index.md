@@ -17,12 +17,12 @@ Video Converter for macOS features the most intelligent conversion software on t
 
 Supports:
 
-* MP4
-* MKV
-* M4V
-* MOV
-* WEBM
-* AVI
+- MP4
+- MKV
+- M4V
+- MOV
+- WEBM
+- AVI
 
 ## Installation
 

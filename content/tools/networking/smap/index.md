@@ -17,12 +17,12 @@ Smap is a replica of Nmap which uses shodan.io's free API for port scanning. It 
 
 ## Features
 
-* Scans 200 hosts per second
-* Vulnerability detection
-* Supports all nmap's output formats
-* Service and version fingerprinting
-* Makes no contact to the targets
-* Doesn't require any account/api key
+- Scans 200 hosts per second
+- Vulnerability detection
+- Supports all nmap's output formats
+- Service and version fingerprinting
+- Makes no contact to the targets
+- Doesn't require any account/api key
 
 ## Installation
 
@@ -52,16 +52,16 @@ Since Smap simply fetches existent port data from shodan.io, it is super fast bu
 
 ### You want
 
-* vulnerability detection
-* a super fast port scanner
-* results for most common ports (top 1237)
-* no connections to be made to the targets
+- vulnerability detection
+- a super fast port scanner
+- results for most common ports (top 1237)
+- no connections to be made to the targets
 
 ### You are okay with
 
-* not being able to scan IPv6 addresses
-* results being up to 7 days old
-* a few false negatives
+- not being able to scan IPv6 addresses
+- results being up to 7 days old
+- a few false negatives
 
 ## Examples
 

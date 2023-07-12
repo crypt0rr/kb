@@ -15,13 +15,13 @@ MFASweep is a PowerShell script that attempts to log in to various Microsoft ser
 
 Currently MFASweep has the ability to login to the following services:
 
-* Microsoft Graph API
-* Azure Service Management API
-* Microsoft 365 Exchange Web Services
-* Microsoft 365 Web Portal
-* Microsoft 365 Web Portal Using a Mobile User Agent
-* Microsoft 365 Active Sync
-* ADFS
+- Microsoft Graph API
+- Azure Service Management API
+- Microsoft 365 Exchange Web Services
+- Microsoft 365 Web Portal
+- Microsoft 365 Web Portal Using a Mobile User Agent
+- Microsoft 365 Active Sync
+- ADFS
 
 **WARNING: This script attempts to login to the provided account SIX (6) different times (7 if you include ADFS). If you entered an incorrect password this may lock the account out.**
 

@@ -11,7 +11,7 @@ weight : 0
 
 ## Postfix
 
-* Add domain to /etc/postfix/virtual
-* Apply config: $ postmap /etc/postfix/virtual
-* Add domain to "mydestination" in /etc/postfix/main.cf
-* $ systemctl restart postfix
+- Add domain to /etc/postfix/virtual
+- Apply config: $ postmap /etc/postfix/virtual
+- Add domain to "mydestination" in /etc/postfix/main.cf
+- $ systemctl restart postfix

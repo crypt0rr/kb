@@ -582,8 +582,8 @@ Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]
 
 If you still have no idea what just happened, try the following pages:
 
-* https://hashcat.net/wiki/#howtos_videos_papers_articles_etc_in_the_wild
-* https://hashcat.net/faq/
+- https://hashcat.net/wiki/#howtos_videos_papers_articles_etc_in_the_wild
+- https://hashcat.net/faq/
 ```
 
 ### Rules

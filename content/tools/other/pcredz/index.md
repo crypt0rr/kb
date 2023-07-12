@@ -15,22 +15,22 @@ This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Ker
 
 ### Features
 
-* Extract from a pcap file or from a live interface IPv4 and IPv6:
-  * Credit card numbers
-  * POP
-  * SMTP
-  * IMAP
-  * SNMP community string
-  * FTP
-  * HTTP (NTLM/Basic/HTTP Forms)
-  * NTLMv1/v2 (DCE-RPC,SMBv1/2,LDAP, MSSQL, HTTP, etc)
-  * Kerberos (AS-REQ Pre-Auth etype 23) hashes.
+- Extract from a pcap file or from a live interface IPv4 and IPv6:
+  - Credit card numbers
+  - POP
+  - SMTP
+  - IMAP
+  - SNMP community string
+  - FTP
+  - HTTP (NTLM/Basic/HTTP Forms)
+  - NTLMv1/v2 (DCE-RPC,SMBv1/2,LDAP, MSSQL, HTTP, etc)
+  - Kerberos (AS-REQ Pre-Auth etype 23) hashes.
 
-* All hashes are displayed in a hashcat format (use -m 7500 for kerberos, -m 5500 for NTLMv1, -m 5600 for NTLMv2).
+- All hashes are displayed in a hashcat format (use -m 7500 for kerberos, -m 5500 for NTLMv1, -m 5600 for NTLMv2).
 
-* Log all credentials and information to a file (CredentialDump-Session.log).
+- Log all credentials and information to a file (CredentialDump-Session.log).
 
-* Log credentials in the logs/ folder. MSKerb.txt, NTLMv1.txt and NTLMv2.txt can be directly fed to hashcat.
+- Log credentials in the logs/ folder. MSKerb.txt, NTLMv1.txt and NTLMv2.txt can be directly fed to hashcat.
 
 ## Installation
 

@@ -17,12 +17,12 @@ There is no perfect way of sharing secrets online and there is a trade off in ev
 
 [Demo available here](https://yopass.se/). It's recommended to host yopass yourself if you care about security.
 
-* End-to-End encryption using [OpenPGP](https://openpgpjs.org/)
-* Secrets can only be viewed once
-* No accounts or user management required
-* Secrets self destruct after X hours
-* Custom password option
-* Limited file upload functionality
+- End-to-End encryption using [OpenPGP](https://openpgpjs.org/)
+- Secrets can only be viewed once
+- No accounts or user management required
+- Secrets self destruct after X hours
+- Custom password option
+- Limited file upload functionality
 
 ## Installation
 

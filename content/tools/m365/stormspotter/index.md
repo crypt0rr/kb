@@ -26,9 +26,9 @@ docker-compose up
 
 The `docker-compose` file will create three containers:
 
-* Stormspotter Frontend
-* Stormspotter Backend
-* Neo4j v4
+- Stormspotter Frontend
+- Stormspotter Backend
+- Neo4j v4
 
 By default, the Stormspotter container will expose the UI on port 9091. The neo4j container will expose neo4j on ports 7474 (HTTP), and 7687 (Bolt). Default configuration of Neo4j does not have SSL enabled, therefore you may initially interact directly with the neo4j interface on port 7474.
 
@@ -84,8 +84,8 @@ optional arguments:
 
 Current login types supported:
 
-* Azure CLI (must use `az login` first)
-* Service Principal Client ID/Secret
+- Azure CLI (must use `az login` first)
+- Service Principal Client ID/Secret
 
 You can check out all of the options Stormcollector offers by using the `-h` switch as shown above. The most basic usages of Stormcollector are:
 
@@ -96,16 +96,16 @@ python3 sscollector.pyz spn -t <tenant> -c <clientID> -s <clientSecret>
 
 ### Common options for all authentication types
 
-* **--cloud**: Specify a different Azure Cloud (GERMAN, CHINA, USGOV)
-* **--config**: Specify a custom configuration for cloud environments
-* **--azure**: Only enumerate Azure Resource Manager resources
-* **--aad**: Only enumerate Azure Active Directory
-* **--subs**: Subscriptions you wish to scan. Multiple subscriptions can be added as a space deliminated list.
-* **--nosubs**: Subscriptions you wish to exclude. Multiple subscriptions can be excluded as a space deliminated list.
-* **--json**: Convert SQLite output to JSON (**WARNING: STORMSPOTTER ONLY PARSES SQLITE FORMAT** )
-  * This option is useful if you want to parse the output for reasons other than Stormspotter.
-* **--ssl-cert**: Specify an SSL cert for Stormcollector to use for requests. Not a common option
-* **--backfill**: Perform AAD enumeration only for object IDs associated with RBAC enumeration. Only applicable when --azure is specified.
+- **--cloud**: Specify a different Azure Cloud (GERMAN, CHINA, USGOV)
+- **--config**: Specify a custom configuration for cloud environments
+- **--azure**: Only enumerate Azure Resource Manager resources
+- **--aad**: Only enumerate Azure Active Directory
+- **--subs**: Subscriptions you wish to scan. Multiple subscriptions can be added as a space deliminated list.
+- **--nosubs**: Subscriptions you wish to exclude. Multiple subscriptions can be excluded as a space deliminated list.
+- **--json**: Convert SQLite output to JSON (**WARNING: STORMSPOTTER ONLY PARSES SQLITE FORMAT*- )
+  - This option is useful if you want to parse the output for reasons other than Stormspotter.
+- **--ssl-cert**: Specify an SSL cert for Stormcollector to use for requests. Not a common option
+- **--backfill**: Perform AAD enumeration only for object IDs associated with RBAC enumeration. Only applicable when --azure is specified.
 
 ### Uploading Results
 

@@ -15,19 +15,19 @@ Subnet calculator written in Python. It takes IP address and subnet mask as an i
 
 Program takes an IPv4 address and subnet mask as an input and returns following information:
 
-* IPv4 address
-* Subnet mask in dotted decimal format and CIDR notation
-* Network address
-* Broadcast address
-* First IP address in the subnet
-* Last IP address in the subnet
-* Usable hosts per subnet
-* Wildcard mask
+- IPv4 address
+- Subnet mask in dotted decimal format and CIDR notation
+- Network address
+- Broadcast address
+- First IP address in the subnet
+- Last IP address in the subnet
+- Usable hosts per subnet
+- Wildcard mask
 
 Program will accept IPv4 address from class A, B, C except:
 
-* 127.0.0.0/ 8 - used for loopback addresses
-* 169.254.0.0/16 - used for link-local addresses
+- 127.0.0.0/ 8 - used for loopback addresses
+- 169.254.0.0/16 - used for link-local addresses
 
 ## Installation
 

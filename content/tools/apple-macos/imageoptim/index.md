@@ -17,9 +17,9 @@ Removes bloated metadata. Saves disk space & bandwidth by compressing images wit
 
 ### Features
 
-* **Reduces image file sizes** - so they take up less disk space and download faster - by applying advanced compression that preserves quality.
-* **Removes invisible junk**: private EXIF metadata from digital cameras, embedded thumbnails, comments, and unnecessary color profiles.
-* Seamlessly combines all the best image optimization tools: MozJPEG, pngquant, Pngcrush, 7zip, SVGO and Google Zopfli. **All Free and Open-Source**.
+- **Reduces image file sizes** - so they take up less disk space and download faster - by applying advanced compression that preserves quality.
+- **Removes invisible junk**: private EXIF metadata from digital cameras, embedded thumbnails, comments, and unnecessary color profiles.
+- Seamlessly combines all the best image optimization tools: MozJPEG, pngquant, Pngcrush, 7zip, SVGO and Google Zopfli. **All Free and Open-Source**.
 
 ## Installation
 

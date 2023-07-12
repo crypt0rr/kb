@@ -23,9 +23,9 @@ A makefile is included for simply building and installing all required files int
 git clone https://github.com/pop-os/popsicle.git
 ```
 
-* `make cli && sudo make install-cli` will build and install just the CLI workspace
-* `make gtk && sudo make install-gtk` will build and install just the GTK workspace
-* `make && sudo make install` will build and install both the CLI and GTK workspaces
+- `make cli && sudo make install-cli` will build and install just the CLI workspace
+- `make gtk && sudo make install-gtk` will build and install just the GTK workspace
+- `make && sudo make install` will build and install both the CLI and GTK workspaces
 
 ## Usage
 

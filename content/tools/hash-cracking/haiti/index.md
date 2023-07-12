@@ -17,11 +17,11 @@ Homepage / Documentation: <https://noraj.github.io/haiti/>
 
 ### Features
 
-* 442+ hash types detected
-* Modern algorithms supported (SHA3, Keccak, Blake2, etc.)
-* Hashcat and John the Ripper references
-* CLI tool & library
-* Hackable
+- 442+ hash types detected
+- Modern algorithms supported (SHA3, Keccak, Blake2, etc.)
+- Hashcat and John the Ripper references
+- CLI tool & library
+- Hackable
 
 ## Why HAITI?
 
@@ -38,16 +38,16 @@ Homepage / Documentation: <https://noraj.github.io/haiti/>
 
 Legend:
 
-* Ref.: hashcat and john the ripper matching reference
-* ✅: feature supported
-* ❌: feature not supported
-* ⭕️: feature partially supported
-* Programming langage:
-  * 💎: Ruby
-  * 🐍: Python
-  * 🇨 : C
-* \# correct modern hashes support
-* 🔢 number of hash types supported
+- Ref.: hashcat and john the ripper matching reference
+- ✅: feature supported
+- ❌: feature not supported
+- ⭕️: feature partially supported
+- Programming langage:
+  - 💎: Ruby
+  - 🐍: Python
+  - 🇨 : C
+- \# correct modern hashes support
+- 🔢 number of hash types supported
 
 ## Installation
 

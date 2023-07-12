@@ -21,11 +21,11 @@ The project team can be contacted at <scoutsuite@nccgroup.com>.
 
 The following cloud providers are currently supported:
 
-* Amazon Web Services
-* Microsoft Azure
-* Google Cloud Platform
-* Alibaba Cloud (alpha)
-* Oracle Cloud Infrastructure (alpha)
+- Amazon Web Services
+- Microsoft Azure
+- Google Cloud Platform
+- Alibaba Cloud (alpha)
+- Oracle Cloud Infrastructure (alpha)
 
 ## Installation
 

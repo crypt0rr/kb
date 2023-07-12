@@ -13,9 +13,9 @@ weight : 0
 
 Some applications, particularly web browsers and older apps, continue running tasks or animating ads even when they're idle. That uses valuable processing (CPU) power, which leaves you with:
 
-* Less CPU power for the application you're using
-* Increased heat and fan noise
-* Reduced battery run-time
+- Less CPU power for the application you're using
+- Increased heat and fan noise
+- Reduced battery run-time
 
 ## Installation
 

@@ -76,8 +76,8 @@ dirb <url_base> [<wordlist_file(s)>] [options]
  dirb https://secure_url/ (Simple Test with SSL)
 ```
 
-* `-r` - Don't search recursively.
-* `-z <millisecs>` - Add a milliseconds delay to not cause excessive Flood.
+- `-r` - Don't search recursively.
+- `-z <millisecs>` - Add a milliseconds delay to not cause excessive Flood.
 
 ```plain
 $ dirb http://www.megacorpone.com -r -z 10

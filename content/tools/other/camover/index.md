@@ -15,9 +15,9 @@ Is a camera exploitation tool that allows to disclosure network camera admin pas
 
 **Features:**
 
-* Exploits vulnerabilities in most popular camera models such as CCTV, GoAhead and Netwave.
-* Optimized to exploit multiple cameras at one time from list with threading enabled.
-* Simple CLI and API usage.
+- Exploits vulnerabilities in most popular camera models such as CCTV, GoAhead and Netwave.
+- Optimized to exploit multiple cameras at one time from list with threading enabled.
+- Simple CLI and API usage.
 
 Tool effectively looks for `http://{address}/system.ini?loginuse&loginpas` and reads the `username:password` plaintext from the `system.ini` file.
 

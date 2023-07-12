@@ -29,8 +29,8 @@ Please check [linux.die.net - ps](https://linux.die.net/man/1/ps)
 
 The `-ef` options we used above stand for:
 
-* e: select all processes
-* f: display full format listing (UID, PID, PPID, etc.)
+- e: select all processes
+- f: display full format listing (UID, PID, PPID, etc.)
 
 ```plain
 $ ps -ef  
@@ -56,7 +56,7 @@ root          14       2  0 17:05 ?        00:00:00 [migration/0]
 
 `e` is replaced by `C` so the command name can be searched instead of all processes.
 
-* C: select by command name as follows
+- C: select by command name as follows
 
 ```plain
 $ ps -fC gedit

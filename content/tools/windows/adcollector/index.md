@@ -15,36 +15,36 @@ Is a lightweight tool that enumerates the Active Directory environment to identi
 
 ### Enumeration
 
-* Current Domain/Forest information
-* Domains in the current forest (with domain SIDs)
-* Domain Controllers in the current domain \[GC/RODC]
-* Domain/Forest trusts as well as trusted domain objects[SID filtering status]
-* Privileged users (currently in DA and EA group)
-* Unconstrained delegation accounts (Excluding DCs)
-* Constrained Delegation (S4U2Self, S4U2Proxy)
-* Resources-based constrained delegation
-* MSSQL/Exchange(/RDP/PS) Remoting SPN accounts
-* User accounts with SPN set & password does not expire account
-* Protected Users
-* Confidential attributes
-* ASREQROAST (DontRequirePreAuth accounts)
-* AdminSDHolder protected accounts
-* Domain attributes (MAQ, minPwdLength, maxPwdAge lockoutThreshold, gpLink[group policies that linked to the current domain object])
-* LDAP basic info(supportedLDAPVersion, supportedSASLMechanisms, domain/forest/DC Functionality)
-* Kerberos Policy
-* Interesting ACLs on the domain object, resolving GUIDs (User defined object in the future)
-* Unusual DCSync Accounts
-* Interesting ACLs on GPOs
-* Interesting descriptions on user objects
-* Sensitive & Not delegate account
-* Group Policy Preference cpassword in SYSVOL/Cache
-* Effective GPOs on the current user/computer
-* Nested Group Membership
-* Restricted Group
-* LAPS Password View Access
-* ADCS Configurations
-* Machine Owner
-* ACL Scan
+- Current Domain/Forest information
+- Domains in the current forest (with domain SIDs)
+- Domain Controllers in the current domain \[GC/RODC]
+- Domain/Forest trusts as well as trusted domain objects[SID filtering status]
+- Privileged users (currently in DA and EA group)
+- Unconstrained delegation accounts (Excluding DCs)
+- Constrained Delegation (S4U2Self, S4U2Proxy)
+- Resources-based constrained delegation
+- MSSQL/Exchange(/RDP/PS) Remoting SPN accounts
+- User accounts with SPN set & password does not expire account
+- Protected Users
+- Confidential attributes
+- ASREQROAST (DontRequirePreAuth accounts)
+- AdminSDHolder protected accounts
+- Domain attributes (MAQ, minPwdLength, maxPwdAge lockoutThreshold, gpLink[group policies that linked to the current domain object])
+- LDAP basic info(supportedLDAPVersion, supportedSASLMechanisms, domain/forest/DC Functionality)
+- Kerberos Policy
+- Interesting ACLs on the domain object, resolving GUIDs (User defined object in the future)
+- Unusual DCSync Accounts
+- Interesting ACLs on GPOs
+- Interesting descriptions on user objects
+- Sensitive & Not delegate account
+- Group Policy Preference cpassword in SYSVOL/Cache
+- Effective GPOs on the current user/computer
+- Nested Group Membership
+- Restricted Group
+- LAPS Password View Access
+- ADCS Configurations
+- Machine Owner
+- ACL Scan
 
 ## Installation
 

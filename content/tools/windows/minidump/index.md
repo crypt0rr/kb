@@ -15,15 +15,15 @@ C# implementation of mimikatz/pypykatz minidump functionality to get credentials
 
 Supported Credentials:
 
-* Lsa
-* Msv
-* Kerberos
-* WDigest
-* SSP
-* TsPkg
-* Credman
-* Dpapi
-* CloudAP
+- Lsa
+- Msv
+- Kerberos
+- WDigest
+- SSP
+- TsPkg
+- Credman
+- Dpapi
+- CloudAP
 
 ## Installation
 

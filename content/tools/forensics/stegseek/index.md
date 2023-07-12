@@ -79,9 +79,9 @@ stegseek --seed [stegofile.jpg]
 
 This command will tell you:
 
-* Whether this file actually contains steghide content.
-* How much hidden content the file contains.
-* How the content was encrypted.
+- Whether this file actually contains steghide content.
+- How much hidden content the file contains.
+- How the content was encrypted.
 
 If you're (very) lucky and the file was encoded without encryption, this mode will even recover the encoded file for you!
 

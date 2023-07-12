@@ -55,9 +55,9 @@ or available locally via: info '(coreutils) comm invocation'
 
 It outputs three space-offset columns:
 
-* The first contains lines that are unique to the first file or argument
-* The second contains lines that are unique to the second file or argument
-* The third column contains lines that are shared by both files
+- The first contains lines that are unique to the first file or argument
+- The second contains lines that are unique to the second file or argument
+- The third column contains lines that are shared by both files
 
 ### Compare normally
 

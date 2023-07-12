@@ -15,11 +15,11 @@ Anonymously bruteforce Active Directory usernames from Domain Controllers by abu
 
 **No** Windows audit logs generated. High speed ~ up to 10K usernames tested per second.
 
-* Tries to autodetect DC from environment variables on domain joined machines or falls back to machine hostname FDQN DNS suffix
-* Reads usernames to test from stdin (default) or file
-* Outputs to stdout (default) or file
-* Parallelized (defaults to 8 connections)
-* Shows progressbar if you're using both input and output files
+- Tries to autodetect DC from environment variables on domain joined machines or falls back to machine hostname FDQN DNS suffix
+- Reads usernames to test from stdin (default) or file
+- Outputs to stdout (default) or file
+- Parallelized (defaults to 8 connections)
+- Shows progressbar if you're using both input and output files
 
 ### Username lists
 

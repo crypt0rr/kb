@@ -13,12 +13,12 @@ tags : ['Other', 'SMB']
 
 Samba Share Enumerator.
 
-* Pass-the-Hash Support
-* File upload/download/delete
-* Permission enumeration (writable share, meet Metasploit)
-* Remote Command Execution
-* Distrubted file content searching (beta!)
-* File name matching (with an auto downoad capability)
+- Pass-the-Hash Support
+- File upload/download/delete
+- Permission enumeration (writable share, meet Metasploit)
+- Remote Command Execution
+- Distrubted file content searching (beta!)
+- File name matching (with an auto downoad capability)
 
 ## Installation
 

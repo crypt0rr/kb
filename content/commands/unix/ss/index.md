@@ -82,11 +82,11 @@ ss [ OPTIONS ] [ FILTER ]
 
 Showing all sockets, numeric that are listening on TCP and show the process that is using the socket.
 
-* `-a` - display all sockets
-* `-n` - don't resolve service names
-* `-t` - display only TCP sockets
-* `-l` - display listening sockets
-* `-p` - show process using socket
+- `-a` - display all sockets
+- `-n` - don't resolve service names
+- `-t` - display only TCP sockets
+- `-l` - display listening sockets
+- `-p` - show process using socket
 
 ```plain
 $ ss -antlp

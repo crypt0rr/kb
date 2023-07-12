@@ -23,13 +23,13 @@ For detection tips, see the blogpost and detection section.
 
 ### Benefits
 
-* Fully supports all AWS Regions
-* Automatically generates APIs for proxy passthru
-* Spoofs API tracking numbers, forwarded-for IPs, and other proxy tracking headers
-* Multi-threaded processing
-* Password delay counters & configuration for lockout policy evasion
-* Easily add new plugins
-* Fully [anonymous](https://github.com/knavesec/CredMaster/wiki/Anonymity)
+- Fully supports all AWS Regions
+- Automatically generates APIs for proxy passthru
+- Spoofs API tracking numbers, forwarded-for IPs, and other proxy tracking headers
+- Multi-threaded processing
+- Password delay counters & configuration for lockout policy evasion
+- Easily add new plugins
+- Fully [anonymous](https://github.com/knavesec/CredMaster/wiki/Anonymity)
 
 ### The following plugins are currently supported
 

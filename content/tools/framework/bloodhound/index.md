@@ -70,12 +70,12 @@ Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
 
 Statistics:
 
-* Users: 2497
-* Groups: 551
-* Computers: 103
-* OUS: 223
-* GPOs: 2
-* Domains: 1
+- Users: 2497
+- Groups: 551
+- Computers: 103
+- OUS: 223
+- GPOs: 2
+- Domains: 1
 
 {{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 

@@ -17,11 +17,11 @@ It provides a low-latency, graph based processing engine on top of audio and vid
 
 Features include:
 
-* Capture and playback of audio and video with minimal latency.
-* Real-time Multimedia processing on audio and video.
-* Multiprocess architecture to let applications share multimedia content.
-* Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
-* Sandboxed applications support. See Flatpak for more info.
+- Capture and playback of audio and video with minimal latency.
+- Real-time Multimedia processing on audio and video.
+- Multiprocess architecture to let applications share multimedia content.
+- Seamless support for PulseAudio, JACK, ALSA and GStreamer applications.
+- Sandboxed applications support. See Flatpak for more info.
 
 Optionally install [Sound Input & Output Device Chooser](https://extensions.gnome.org/extension/906/sound-output-device-chooser/) to easily chose input/output devices.
 

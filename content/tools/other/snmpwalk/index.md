@@ -122,9 +122,9 @@ General options
 
 ### Gather full MIB tree
 
-* `-c` - community string
-* `-v1` - SNMP version
-* `-t 10` - timeout
+- `-c` - community string
+- `-v1` - SNMP version
+- `-t 10` - timeout
 
 ```plain
 $ snmpwalk -c public -v1 -t 10 10.10.10.1
@@ -150,9 +150,9 @@ iso.3.6.1.4.1.77.1.2.25.1.1.16.83.85.80.80.79.82.84.95.51.56.56.57.52.53.97.48 =
 
 ### Other helpful Windows variables
 
-* Windows Processes -  `1.3.6.1.2.1.25.4.2.1.2`
-* Open TCP Ports - `1.3.6.1.2.1.6.13.1.3`
-* Installed Software - `1.3.6.1.2.1.25.6.3.1.2`
+- Windows Processes -  `1.3.6.1.2.1.25.4.2.1.2`
+- Open TCP Ports - `1.3.6.1.2.1.6.13.1.3`
+- Installed Software - `1.3.6.1.2.1.25.6.3.1.2`
 
 ## URL List
 

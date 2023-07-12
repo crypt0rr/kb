@@ -15,9 +15,9 @@ Is a router exploitation tool that allows to disclosure network router admin pas
 
 **Features**:
 
-* Exploits vulnerabilities in most popular routers such as D-Link, Zyxel, TP-Link and Huawei.
-* Optimized to exploit multiple routers at one time from list.
-* Simple CLI and API usage.
+- Exploits vulnerabilities in most popular routers such as D-Link, Zyxel, TP-Link and Huawei.
+- Optimized to exploit multiple routers at one time from list.
+- Simple CLI and API usage.
 
 ## Installation
 
