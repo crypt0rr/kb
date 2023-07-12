@@ -151,8 +151,8 @@ Slot                     Plug
 
 ## URL List
 
-* [Snapcraft.io - Sosumi Ubuntu](https://snapcraft.io/install/sosumi/ubuntu)
-* [Github.com - Popey - sosumi-snap](https://github.com/popey/sosumi-snap)
-* [Github.com - Foxlet - macOS Simple KVM](https://github.com/foxlet/macOS-Simple-KVM)
-* [Youtube.com - Run macOS on Linux with 1 COMMAND](https://www.youtube.com/watch?v=6WgjQpm9VWE)
-* [Youtube.com - Sosumi: Run Mac OS on Linux with 1 Click](https://www.youtube.com/watch?v=QWZ_LjzT39k)
+- [Snapcraft.io - Sosumi Ubuntu](https://snapcraft.io/install/sosumi/ubuntu)
+- [Github.com - Popey - sosumi-snap](https://github.com/popey/sosumi-snap)
+- [Github.com - Foxlet - macOS Simple KVM](https://github.com/foxlet/macOS-Simple-KVM)
+- [Youtube.com - Run macOS on Linux with 1 COMMAND](https://www.youtube.com/watch?v=6WgjQpm9VWE)
+- [Youtube.com - Sosumi: Run Mac OS on Linux with 1 Click](https://www.youtube.com/watch?v=QWZ_LjzT39k)

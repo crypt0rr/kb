@@ -197,4 +197,4 @@ For further steps on how to abuse AD CS, checkout [Abuse AD CS]({{< ref "abuse-a
 
 ## URL List
 
-* [Github.com - Certi](https://github.com/zer1t0/certi)
+- [Github.com - Certi](https://github.com/zer1t0/certi)

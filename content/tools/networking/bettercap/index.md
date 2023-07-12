@@ -172,5 +172,5 @@ grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b" bettercap.log | sort -u > ip.txt
 
 ## URL List
 
-* [Bettercap.org](https://www.bettercap.org/)
-* [GitHub.com - Bettercap](https://github.com/bettercap/bettercap/)
+- [Bettercap.org](https://www.bettercap.org/)
+- [GitHub.com - Bettercap](https://github.com/bettercap/bettercap/)

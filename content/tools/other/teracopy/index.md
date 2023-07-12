@@ -69,4 +69,4 @@ TeraCopy can keep history of recently used directories, as well as show folders 
 
 ## URL List
 
-* [Codesector.com - TeraCopy](https://www.codesector.com/teracopy)
+- [Codesector.com - TeraCopy](https://www.codesector.com/teracopy)

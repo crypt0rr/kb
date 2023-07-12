@@ -23,4 +23,4 @@ Download newest release from [Github.com](https://github.com/pbatard/rufus/relea
 
 ## URL List
 
-* [Rufus.ie](https://rufus.ie/)
+- [Rufus.ie](https://rufus.ie/)

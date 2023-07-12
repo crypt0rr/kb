@@ -57,4 +57,4 @@ Starting Nmap 7.80 ( https://nmap.org ) at 2021-03-09 15:15 CET
 
 ## URL List
 
-* [Github.com - Subdomain Visualizer](https://github.com/crypt0rr/subdomain-visualizer)
+- [Github.com - Subdomain Visualizer](https://github.com/crypt0rr/subdomain-visualizer)

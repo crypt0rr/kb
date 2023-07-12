@@ -71,5 +71,5 @@ network:
 
 ## URL List
 
-* [Netplan.io](https://netplan.io/)
-* [Netplan.io Examples](https://netplan.io/examples)
+- [Netplan.io](https://netplan.io/)
+- [Netplan.io Examples](https://netplan.io/examples)

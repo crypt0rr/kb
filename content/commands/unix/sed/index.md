@@ -104,5 +104,5 @@ find -type f -name "*.md" | xargs sed -i '2d;4,6d;8,10d;12d;14,26d;28d;30,31d;33
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/sed)
-* [Gnu.org - sed](https://www.gnu.org/software/sed/manual/sed.html)
+- [Linux.die.net](https://linux.die.net/man/1/sed)
+- [Gnu.org - sed](https://www.gnu.org/software/sed/manual/sed.html)

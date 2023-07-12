@@ -17,10 +17,10 @@ All credit from [filip_dragovic](https://twitter.com/filip_dragovic) with his in
 
 ## Prerequisites
 
-* Compile the `.sln` file from [Github Repo](https://github.com/mpgn/BackupOperatorToDA) (or trust mine below.)
-* Impacket [smbserver.py]({{< ref "smbserver-py" >}})
-* Impacket [secretsdump.py]({{< ref "secretsdump-py" >}})
-* Account in target domain with the 'Backup Operator' membership
+- Compile the `.sln` file from [Github Repo](https://github.com/mpgn/BackupOperatorToDA) (or trust mine below.)
+- Impacket [smbserver.py]({{< ref "smbserver-py" >}})
+- Impacket [secretsdump.py]({{< ref "secretsdump-py" >}})
+- Account in target domain with the 'Backup Operator' membership
 
 {{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
@@ -145,4 +145,4 @@ offsec.nl\ULYSSES_COTE:1108:aad3b435b51404eeaad3b435b51404ee:c7f0cab839fde136be0
 
 ## URL List
 
-* [Github.com - From Backup Operator To Domain Admin](https://github.com/mpgn/BackupOperatorToDA)
+- [Github.com - From Backup Operator To Domain Admin](https://github.com/mpgn/BackupOperatorToDA)

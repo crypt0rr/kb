@@ -70,5 +70,5 @@ $ blkid
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/blkid)
-* [Systutorials.com](https://www.systutorials.com/docs/linux/man/8-blkid/)
+- [Linux.die.net](https://linux.die.net/man/8/blkid)
+- [Systutorials.com](https://www.systutorials.com/docs/linux/man/8-blkid/)

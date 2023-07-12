@@ -112,4 +112,4 @@ Sep 28 09:36:55 laptop kernel: ACPI: EC: event blocked
 
 ## URL List
 
-* [HowToGeek.com](https://www.howtogeek.com/499623/how-to-use-journalctl-to-read-linux-system-logs/)
+- [HowToGeek.com](https://www.howtogeek.com/499623/how-to-use-journalctl-to-read-linux-system-logs/)

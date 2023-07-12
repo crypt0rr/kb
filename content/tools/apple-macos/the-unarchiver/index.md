@@ -55,5 +55,5 @@ Download newest release from [Apple AppStore](https://apps.apple.com/nl/app/the-
 
 ## URL List
 
-* [TheUnarchiver.com](https://theunarchiver.com/)
-* [Apps.apple.com](https://apps.apple.com/nl/app/the-unarchiver/id425424353)
+- [TheUnarchiver.com](https://theunarchiver.com/)
+- [Apps.apple.com](https://apps.apple.com/nl/app/the-unarchiver/id425424353)

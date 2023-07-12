@@ -13,9 +13,9 @@ weight : 0
 
 networkQuality allows for measuring the different aspects of Network Quality, including:
 
-* Maximal capacity (often described as speed)
-* The responsiveness of the connection. Responsiveness measures the quality of your network by the number of roundtrips completed per minute (RPM) under working conditions. See <https://support.apple.com/kb/HT212313>
-* Other aspects of the connection that affect the quality of experience.
+- Maximal capacity (often described as speed)
+- The responsiveness of the connection. Responsiveness measures the quality of your network by the number of roundtrips completed per minute (RPM) under working conditions. See <https://support.apple.com/kb/HT212313>
+- Other aspects of the connection that affect the quality of experience.
 
 NOTE: This tool will connect to the Internet to perform its tests. This will use data on your Internet service plan.
 
@@ -54,4 +54,4 @@ OS Version: Version 12.1 (Build 21C52)
 
 ## URL List
 
-* [Support.apple.com - Test Wi-Fi networks with Apple Network Responsiveness](https://support.apple.com/kb/HT212313)
+- [Support.apple.com - Test Wi-Fi networks with Apple Network Responsiveness](https://support.apple.com/kb/HT212313)

@@ -98,5 +98,5 @@ GLOBAL OPTIONS:
 
 ## URL List
 
-* [GitHub](https://github.com/sensepost/ruler/)
-* [ired.team](https://www.ired.team/offensive-security/initial-access/password-spraying-outlook-web-access-remote-shell)
+- [GitHub](https://github.com/sensepost/ruler/)
+- [ired.team](https://www.ired.team/offensive-security/initial-access/password-spraying-outlook-web-access-remote-shell)

@@ -27,5 +27,5 @@ GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}
 
 ## URL List
 
-* [Lifewire.com - GodMode Windows](https://www.lifewire.com/god-mode-windows-4154662)
-* [HowToGeek.com - Enable GodMode in Windows 10](https://www.howtogeek.com/402458/enable-god-mode-in-windows-10/)
+- [Lifewire.com - GodMode Windows](https://www.lifewire.com/god-mode-windows-4154662)
+- [HowToGeek.com - Enable GodMode in Windows 10](https://www.howtogeek.com/402458/enable-god-mode-in-windows-10/)

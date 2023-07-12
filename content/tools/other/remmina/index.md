@@ -62,5 +62,5 @@ Application Options:
 
 ## URL List
 
-* [GitHub.com - Remmina](https://github.com/FreeRDP/Remmina)
-* [Remmina.org](https://remmina.org/)
+- [GitHub.com - Remmina](https://github.com/FreeRDP/Remmina)
+- [Remmina.org](https://remmina.org/)

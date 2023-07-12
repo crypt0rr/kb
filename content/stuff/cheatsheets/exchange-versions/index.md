@@ -441,4 +441,4 @@ Latest releases are at the top; version numbers may vary slightly between the re
 
 ## URL List
 
-* [Eightwone.com - Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
+- [Eightwone.com - Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)

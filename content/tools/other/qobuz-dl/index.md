@@ -15,17 +15,17 @@ Search, explore and download Lossless and Hi-Res music from Qobuz - The ultimate
 
 ### Features
 
-* Download FLAC and MP3 files from Qobuz
-* Explore and download music directly from your terminal with interactive or lucky mode
-* Download albums, tracks, artists, playlists and labels with download mode
-* Download music from last.fm playlists (Spotify, Apple Music and Youtube playlists are also supported through this method)
-* Queue support on interactive mode
-* Effective duplicate handling with own portable database
-* Support for albums with multiple discs
-* Support for M3U playlists
-* Downloads URLs from text file
-* Extended tags
-* And more
+- Download FLAC and MP3 files from Qobuz
+- Explore and download music directly from your terminal with interactive or lucky mode
+- Download albums, tracks, artists, playlists and labels with download mode
+- Download music from last.fm playlists (Spotify, Apple Music and Youtube playlists are also supported through this method)
+- Queue support on interactive mode
+- Effective duplicate handling with own portable database
+- Support for albums with multiple discs
+- Support for M3U playlists
+- Downloads URLs from text file
+- Extended tags
+- And more
 
 ## Installation
 
@@ -76,4 +76,4 @@ qobuz-dl dl this_txt_file_has_urls.txt
 
 ## URL List
 
-* [Github.com - qobuz-dl](https://github.com/vitiko98/qobuz-dl)
+- [Github.com - qobuz-dl](https://github.com/vitiko98/qobuz-dl)

@@ -101,4 +101,4 @@ INFO: Compressing output into 20220210132706_bloodhound.zip
 
 ## URL List
 
-* [Github.com - BloodHound.py](https://github.com/fox-it/BloodHound.py)
+- [Github.com - BloodHound.py](https://github.com/fox-it/BloodHound.py)

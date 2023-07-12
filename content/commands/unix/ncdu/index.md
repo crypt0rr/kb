@@ -56,5 +56,5 @@ ncdu /home/b/Desktop/temp
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/ncdu)
-* [Dev.yorhel.nl](https://dev.yorhel.nl/ncdu)
+- [Linux.die.net](https://linux.die.net/man/1/ncdu)
+- [Dev.yorhel.nl](https://dev.yorhel.nl/ncdu)

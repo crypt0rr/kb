@@ -73,5 +73,5 @@ New MAC:       12:34:56:78:90 (unknown)
 
 ## URL List
 
-* [Manpages.ubuntu.com - macchanger](https://manpages.ubuntu.com/manpages/xenial/man1/macchanger.1.html)
-* [Github.com - macchanger (macOS)](https://github.com/acrogenesis/macchanger)
+- [Manpages.ubuntu.com - macchanger](https://manpages.ubuntu.com/manpages/xenial/man1/macchanger.1.html)
+- [Github.com - macchanger (macOS)](https://github.com/acrogenesis/macchanger)

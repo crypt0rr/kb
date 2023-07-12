@@ -85,4 +85,4 @@ Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 
 ## URL List
 
-* [Github.com - RustScan](https://github.com/RustScan/RustScan)
+- [Github.com - RustScan](https://github.com/RustScan/RustScan)

@@ -86,4 +86,4 @@ google.com.     3200171710 IN   A   172.217.17.46
 
 ## URL List
 
-* [Google](https://www.google.com)
+- [Google](https://www.google.com)

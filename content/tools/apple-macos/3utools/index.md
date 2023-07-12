@@ -31,4 +31,4 @@ Download the newest version from [3u.com](https://www.3u.com/)
 
 ## URL List
 
-* [3u.com](http://www.3u.com/)
+- [3u.com](http://www.3u.com/)

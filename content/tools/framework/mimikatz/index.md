@@ -73,5 +73,5 @@ lsadump::dcsync /domain:example.local /all /csv
 
 ## URL List
 
-* [GitHub.com - Mimikatz](https://github.com/gentilkiwi/mimikatz)
-* [GitHub.com - Impacket](https://github.com/SecureAuthCorp/impacket/releases)
+- [GitHub.com - Mimikatz](https://github.com/gentilkiwi/mimikatz)
+- [GitHub.com - Impacket](https://github.com/SecureAuthCorp/impacket/releases)

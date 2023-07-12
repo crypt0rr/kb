@@ -68,5 +68,5 @@ tmux new-session -d -s "<session-name>" "command-to-run"
 
 ## URL List
 
-* [GitHub.com - TMUX](https://github.com/tmux/tmux)
-* [Openbsd.org - TMUX](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)
+- [GitHub.com - TMUX](https://github.com/tmux/tmux)
+- [Openbsd.org - TMUX](http://man.openbsd.org/OpenBSD-current/man1/tmux.1)

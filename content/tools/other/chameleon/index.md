@@ -96,4 +96,4 @@ $ python chameleon.py --proxy m --submit --domain foobar.com
 
 ## URL List
 
-* [Github.com - Chameleon](https://github.com/mdsecactivebreach/Chameleon)
+- [Github.com - Chameleon](https://github.com/mdsecactivebreach/Chameleon)

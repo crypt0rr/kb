@@ -105,4 +105,4 @@ Shairport will directly be available when installed from an Apple device streami
 
 ## URL List
 
-* [GitHub.com - Shairport-sync](https://github.com/mikebrady/shairport-sync)
+- [GitHub.com - Shairport-sync](https://github.com/mikebrady/shairport-sync)

@@ -61,5 +61,5 @@ $ cat testfile.txt | tee output.txt &>/dev/null
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/tee)
-* [GNU.org](https://www.gnu.org/software/coreutils/tee)
+- [Linux.die.net](https://linux.die.net/man/1/tee)
+- [GNU.org](https://www.gnu.org/software/coreutils/tee)

@@ -80,4 +80,4 @@ $ python3 panos-scanner.py -s -t https://example.com | jq '.match'
 
 ## URL List
 
-* [Github.com - PAN-OS GlobalProtect Portal Scanner](https://github.com/noperator/panos-scanner)
+- [Github.com - PAN-OS GlobalProtect Portal Scanner](https://github.com/noperator/panos-scanner)

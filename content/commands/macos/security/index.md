@@ -97,4 +97,4 @@ $ security list-keychains
 
 ## URL List
 
-* [ss64.com - security](https://ss64.com/osx/security.html)
+- [ss64.com - security](https://ss64.com/osx/security.html)

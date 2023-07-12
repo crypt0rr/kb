@@ -28,4 +28,4 @@ Download newest release from [W10Privacy.de](https://www.w10privacy.de/english-h
 
 ## URL List
 
-* [W10privacy.de - Home](https://www.w10privacy.de/english-home/)
+- [W10privacy.de - Home](https://www.w10privacy.de/english-home/)

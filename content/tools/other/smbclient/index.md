@@ -134,4 +134,4 @@ smb: \>
 
 ## URL List
 
-* [Linux.die.net - smbclient](https://linux.die.net/man/1/smbclient)
+- [Linux.die.net - smbclient](https://linux.die.net/man/1/smbclient)

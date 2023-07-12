@@ -34,5 +34,5 @@ Or download newest release from [Github.com](https://github.com/derceg/explorerp
 
 ## URL List
 
-* [Explorerplusplus.com](https://explorerplusplus.com/)
-* [Github.com - Explorer++](https://github.com/derceg/explorerplusplus)
+- [Explorerplusplus.com](https://explorerplusplus.com/)
+- [Github.com - Explorer++](https://github.com/derceg/explorerplusplus)

@@ -120,4 +120,4 @@ line254
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/tail)
+- [Linux.die.net](https://linux.die.net/man/1/tail)

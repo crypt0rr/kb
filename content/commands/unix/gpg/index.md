@@ -185,7 +185,7 @@ gpg -d file.txt.gpg
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/gpg)
-* [Rtcamp.com Tutorial GPG keys](https://rtcamp.com/tutorials/linux/gpg-keys/)
-* [Techrepublic.com](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)
-* [HowToGeek.com](https://www.howtogeek.com/427982/how-to-encrypt-and-decrypt-files-with-gpg-on-linux/)
+- [Linux.die.net](https://linux.die.net/man/1/gpg)
+- [Rtcamp.com Tutorial GPG keys](https://rtcamp.com/tutorials/linux/gpg-keys/)
+- [Techrepublic.com](https://www.techrepublic.com/article/how-to-easily-encryptdecrypt-a-file-in-linux-with-gpg/)
+- [HowToGeek.com](https://www.howtogeek.com/427982/how-to-encrypt-and-decrypt-files-with-gpg-on-linux/)

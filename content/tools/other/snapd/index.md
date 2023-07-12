@@ -73,5 +73,5 @@ snap search <package>
 
 ## URL List
 
-* [Snapcraft.io](https://snapcraft.io/)
-* [Snapcraft.io - Store](https://snapcraft.io/store)
+- [Snapcraft.io](https://snapcraft.io/)
+- [Snapcraft.io - Store](https://snapcraft.io/store)

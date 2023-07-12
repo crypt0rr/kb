@@ -95,4 +95,4 @@ whois google.com
 
 ## URL List
 
-* [Linux.die.net - whois](https://linux.die.net/man/1/whois)
+- [Linux.die.net - whois](https://linux.die.net/man/1/whois)

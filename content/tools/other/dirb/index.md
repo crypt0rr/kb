@@ -76,8 +76,8 @@ dirb <url_base> [<wordlist_file(s)>] [options]
  dirb https://secure_url/ (Simple Test with SSL)
 ```
 
-* `-r` - Don't search recursively.
-* `-z <millisecs>` - Add a milliseconds delay to not cause excessive Flood.
+- `-r` - Don't search recursively.
+- `-z <millisecs>` - Add a milliseconds delay to not cause excessive Flood.
 
 ```plain
 $ dirb http://www.megacorpone.com -r -z 10
@@ -111,5 +111,5 @@ DOWNLOADED: 4612 - FOUND: 4
 
 ## URL List
 
-* [Kali.org - dirb](https://www.kali.org/tools/dirb/)
-* [Github.com - dirb](https://github.com/Seabreg/dirb)
+- [Kali.org - dirb](https://www.kali.org/tools/dirb/)
+- [Github.com - dirb](https://github.com/Seabreg/dirb)

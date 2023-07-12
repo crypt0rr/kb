@@ -23,4 +23,4 @@ Download newest release from [obdev.at](https://www.obdev.at/products/microsnitc
 
 ## URL List
 
-* [Obdev.at - MicroSnitch](https://www.obdev.at/products/microsnitch/index.html)
+- [Obdev.at - MicroSnitch](https://www.obdev.at/products/microsnitch/index.html)

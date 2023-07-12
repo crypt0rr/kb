@@ -100,5 +100,5 @@ wc -l xa*
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/split)
-* [GNU.org](https://www.gnu.org/software/coreutils/split)
+- [Linux.die.net](https://linux.die.net/man/1/split)
+- [GNU.org](https://www.gnu.org/software/coreutils/split)

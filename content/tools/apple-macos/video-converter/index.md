@@ -17,12 +17,12 @@ Video Converter for macOS features the most intelligent conversion software on t
 
 Supports:
 
-* MP4
-* MKV
-* M4V
-* MOV
-* WEBM
-* AVI
+- MP4
+- MKV
+- M4V
+- MOV
+- WEBM
+- AVI
 
 ## Installation
 
@@ -35,5 +35,5 @@ Installation via [Apple AppStore](https://apps.apple.com/nl/app/video-converter/
 
 ## URL List
 
-* [Apps.apple.com - Video Converter](https://apps.apple.com/nl/app/video-converter/id1518836004?l=en&mt=12)
-* [Converter.airtv.io](https://converter.airtv.io/)
+- [Apps.apple.com - Video Converter](https://apps.apple.com/nl/app/video-converter/id1518836004?l=en&mt=12)
+- [Converter.airtv.io](https://converter.airtv.io/)

@@ -351,5 +351,5 @@ tar -xf archive.tar          # Extract all files from archive.tar.
 
 ## URL List
 
-* [Linux.die.net - tar](https://linux.die.net/man/1/tar)
-* [Tecmint.com - 18 tar command examples in Linux](https://www.tecmint.com/18-tar-command-examples-in-linux/)
+- [Linux.die.net - tar](https://linux.die.net/man/1/tar)
+- [Tecmint.com - 18 tar command examples in Linux](https://www.tecmint.com/18-tar-command-examples-in-linux/)

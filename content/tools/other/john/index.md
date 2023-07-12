@@ -134,5 +134,5 @@ Session completed.
 
 ## URL List
 
-* [Openwall.com](https://www.openwall.com/john/)
-* [Gbhackers.com Offline Password Attack John Ripper](https://gbhackers.com/offline-password-attack-john-ripper/)
+- [Openwall.com](https://www.openwall.com/john/)
+- [Gbhackers.com Offline Password Attack John Ripper](https://gbhackers.com/offline-password-attack-john-ripper/)

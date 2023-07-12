@@ -30,6 +30,6 @@ sudo apt-get update
 
 ## URL List
 
-* [Cryptomator.org](https://cryptomator.org/)
-* [GitHub.com - Cryptomator](https://github.com/cryptomator/cryptomator)
-* [Launchpad.net PPA - Cryptomator](https://launchpad.net/~sebastian-stenzel/+archive/ubuntu/cryptomator)
+- [Cryptomator.org](https://cryptomator.org/)
+- [GitHub.com - Cryptomator](https://github.com/cryptomator/cryptomator)
+- [Launchpad.net PPA - Cryptomator](https://launchpad.net/~sebastian-stenzel/+archive/ubuntu/cryptomator)

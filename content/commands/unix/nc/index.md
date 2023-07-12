@@ -17,7 +17,7 @@ Netcat, arbitrary TCP and UDP connections and listens.
 
 {{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
-* SHA256 'nc.exe' - `be4211fe5c1a19ff393a2bcfa21dad8d0a687663263a63789552bda446d9421b`
+- SHA256 'nc.exe' - `be4211fe5c1a19ff393a2bcfa21dad8d0a687663263a63789552bda446d9421b`
 
 ## Usage
 
@@ -144,4 +144,4 @@ nc -nv -u -z -w 1 10.10.10.20 160-162
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/nc)
+- [Linux.die.net](https://linux.die.net/man/1/nc)

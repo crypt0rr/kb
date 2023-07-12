@@ -82,5 +82,5 @@ manager
 
 ## URL List
 
-* [Github.com - onesixtyone](https://github.com/trailofbits/onesixtyone)
-* [Kali.org - onesixtyone](https://www.kali.org/tools/onesixtyone/)
+- [Github.com - onesixtyone](https://github.com/trailofbits/onesixtyone)
+- [Kali.org - onesixtyone](https://www.kali.org/tools/onesixtyone/)

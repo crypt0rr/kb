@@ -65,4 +65,4 @@ optional arguments:
 
 ## URL List
 
-* [Github.com - pwndb](https://github.com/davidtavarez/pwndb)
+- [Github.com - pwndb](https://github.com/davidtavarez/pwndb)

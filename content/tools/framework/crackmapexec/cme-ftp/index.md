@@ -82,4 +82,4 @@ FTP         194.244.111.113 21     194.244.111.113  [+] anonymous:anonymous
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+- [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

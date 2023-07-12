@@ -26,6 +26,6 @@ See website on [Github.com](https://github.com/s3inlc/hashtopolis)
 
 ## URL List
 
-* [Hashtopolis.org](https://hashtopolis.org/)
-* [GitHub.com - hashtopolis](https://github.com/s3inlc/hashtopolis)
-* [GitHub.com Wiki](https://github.com/s3inlc/hashtopolis/wiki)
+- [Hashtopolis.org](https://hashtopolis.org/)
+- [GitHub.com - hashtopolis](https://github.com/s3inlc/hashtopolis)
+- [GitHub.com Wiki](https://github.com/s3inlc/hashtopolis/wiki)

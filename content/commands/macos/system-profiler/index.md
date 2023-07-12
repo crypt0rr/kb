@@ -80,4 +80,4 @@ system_profiler -xml > MyReport.spx
 
 ## URL List
 
-* [ss64.com - system_profiler](https://ss64.com/osx/system_profiler.html)
+- [ss64.com - system_profiler](https://ss64.com/osx/system_profiler.html)

@@ -378,6 +378,6 @@ aria2c ftp://example.com/linux-distro.iso
 
 ## URL List
 
-* [Github.com - Aria2](https://github.com/aria2/aria2)
-* [UUPdump.net](https://uupdump.net/)
-* [Linuxconfig.org - aria2 - all in one command line download tool](https://linuxconfig.org/aria2-all-in-one-command-line-download-tool)
+- [Github.com - Aria2](https://github.com/aria2/aria2)
+- [UUPdump.net](https://uupdump.net/)
+- [Linuxconfig.org - aria2 - all in one command line download tool](https://linuxconfig.org/aria2-all-in-one-command-line-download-tool)

@@ -64,7 +64,7 @@ python3 laps.py -u user -p e52cac67419a9a224a3b108f3fa6cb6d:8846f7eaee8fb117ad06
 
 ## URL List
 
-* [GitHub.com - LAPSDumper](https://github.com/n00py/LAPSDumper)
-* [n00py.io - Dumping LAPS passwords from Linux](https://www.n00py.io/2020/12/dumping-laps-passwords-from-linux/)
-* [ADSecurity.org - Microsoft Local Administrator Password Solution (LAPS)](https://adsecurity.org/?p=1790)
-* [ADSecurity.org - Microsoft LAPS Security & Active Directory LAPS Configuration Recon](https://adsecurity.org/?p=3164)
+- [GitHub.com - LAPSDumper](https://github.com/n00py/LAPSDumper)
+- [n00py.io - Dumping LAPS passwords from Linux](https://www.n00py.io/2020/12/dumping-laps-passwords-from-linux/)
+- [ADSecurity.org - Microsoft Local Administrator Password Solution (LAPS)](https://adsecurity.org/?p=1790)
+- [ADSecurity.org - Microsoft LAPS Security & Active Directory LAPS Configuration Recon](https://adsecurity.org/?p=3164)

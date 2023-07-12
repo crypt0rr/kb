@@ -19,9 +19,9 @@ The example conf reflects this setup but it can also be setup in any other way y
 
 It uses the following ports:
 
-* 8080 Web UI
-* 53 DNS
-* 67 DHCP
+- 8080 Web UI
+- 53 DNS
+- 67 DHCP
 
 ### Caveats
 
@@ -137,4 +137,4 @@ $ cat ad.list
 
 ## URL List
 
-* [Github.com - Docker DNS and DHCP server](https://github.com/PARC6502/docker-dns-dhcp)
+- [Github.com - Docker DNS and DHCP server](https://github.com/PARC6502/docker-dns-dhcp)

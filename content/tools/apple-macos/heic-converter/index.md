@@ -15,10 +15,10 @@ HEIC Converter is a macOS app that makes it easy to quickly convert images in th
 
 If you don't have any HEIC images, you can try the app out with [this one](https://sindresorhus.com/assets/heic-converter/heic-example.heic).
 
-* Does it preserve 10-bit depth?
-  * No. JPEG only supports 8-bit. PNG supports 8-bit and 16-bit, but macOS doesn’t have a way to convert 10-bit HEIC to 16-bit PNG, so it ends up as 8-bit too.
-* Does it support other HEIF variants like .heif or .hif?
-  * No. Only .heic is supported at the moment as macOS support for other variants is buggy.
+- Does it preserve 10-bit depth?
+  - No. JPEG only supports 8-bit. PNG supports 8-bit and 16-bit, but macOS doesn’t have a way to convert 10-bit HEIC to 16-bit PNG, so it ends up as 8-bit too.
+- Does it support other HEIF variants like .heif or .hif?
+  - No. Only .heic is supported at the moment as macOS support for other variants is buggy.
 
 ## Installation
 
@@ -32,5 +32,5 @@ Download HEIC Converter from [macOS App Store](https://apps.apple.com/app/id1294
 
 ## URL List
 
-* [Sindresorhus.com - HIEC Converter](https://sindresorhus.com/heic-converter)
-* [Apps.apple.com - HEIC Converter](https://apps.apple.com/app/id1294126402)
+- [Sindresorhus.com - HIEC Converter](https://sindresorhus.com/heic-converter)
+- [Apps.apple.com - HEIC Converter](https://apps.apple.com/app/id1294126402)

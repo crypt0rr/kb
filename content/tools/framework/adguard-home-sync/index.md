@@ -15,13 +15,13 @@ Synchronize config from one AdGuardHome instance to another.
 
 ### Current sync features
 
-* General Settings
-* Filters
-* Rewrites
-* Services
-* Clients
-* DNS Config
-* DHCP Config
+- General Settings
+- Filters
+- Rewrites
+- Services
+- Clients
+- DNS Config
+- DHCP Config
 
 By default, all features are enabled. Single features can be disabled in the config.
 
@@ -93,4 +93,4 @@ $ cat /etc/hosts
 
 ## URL List
 
-* [Github.com - AdGuard Home Sync](https://github.com/bakito/adguardhome-sync)
+- [Github.com - AdGuard Home Sync](https://github.com/bakito/adguardhome-sync)

@@ -71,5 +71,5 @@ testfile.txt: OK
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/md5sum)
-* [GNU.org](https://www.gnu.org/software/coreutils/md5sum)
+- [Linux.die.net](https://linux.die.net/man/1/md5sum)
+- [GNU.org](https://www.gnu.org/software/coreutils/md5sum)

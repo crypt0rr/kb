@@ -143,5 +143,5 @@ $  python2 tilde_enum.py -u http://offsec.nl -w raft-small-directories-lowercase
 
 ## URL List
 
-* [Github.com - tilde_enum](https://github.com/WebBreacher/tilde_enum)
-* [Github.com - Wordlists to use](https://github.com/tennc/fuzzdb/tree/master/Discovery/PredictableRes)
+- [Github.com - tilde_enum](https://github.com/WebBreacher/tilde_enum)
+- [Github.com - Wordlists to use](https://github.com/tennc/fuzzdb/tree/master/Discovery/PredictableRes)

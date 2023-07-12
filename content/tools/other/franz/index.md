@@ -23,5 +23,5 @@ Download newest release from [Github.com](https://github.com/meetfranz/franz/rel
 
 ## URL List
 
-* [Meetfranz.com](https://meetfranz.com/)
-* [GitHub.com - franz](https://github.com/meetfranz/franz)
+- [Meetfranz.com](https://meetfranz.com/)
+- [GitHub.com - franz](https://github.com/meetfranz/franz)

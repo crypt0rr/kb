@@ -85,4 +85,4 @@ linkedin.com:443                                Valid        Apr  2, 2021  107
 
 ## URL List
 
-* [Github.com - ssl-cert-check](https://github.com/Matty9191/ssl-cert-check)
+- [Github.com - ssl-cert-check](https://github.com/Matty9191/ssl-cert-check)

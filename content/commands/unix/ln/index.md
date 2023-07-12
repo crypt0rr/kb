@@ -114,5 +114,5 @@ $ ll hardlink-test
 
 ## URL List
 
-* [Linux.die.net - ln](https://linux.die.net/man/1/ln)
-* [Medium.com - Hard links and Symbolic links — A comparison](https://medium.com/@307/hard-links-and-symbolic-links-a-comparison-7f2b56864cdd)
+- [Linux.die.net - ln](https://linux.die.net/man/1/ln)
+- [Medium.com - Hard links and Symbolic links — A comparison](https://medium.com/@307/hard-links-and-symbolic-links-a-comparison-7f2b56864cdd)

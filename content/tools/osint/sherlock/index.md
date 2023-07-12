@@ -69,4 +69,4 @@ optional arguments:
 
 ## URL List
 
-* [Github.com - Sherlock](https://github.com/sherlock-project/sherlock)
+- [Github.com - Sherlock](https://github.com/sherlock-project/sherlock)

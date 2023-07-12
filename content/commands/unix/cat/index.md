@@ -57,4 +57,4 @@ F1@9_NoWyoUArE63t7in97H3r3413
 
 ## URL List
 
-* [Linux.die.net - cat](https://linux.die.net/man/1/cat)
+- [Linux.die.net - cat](https://linux.die.net/man/1/cat)

@@ -59,5 +59,5 @@ history -c
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/Linux-CLI/x1712.htm)
-* [Linux.die.net](https://linux.die.net/man/3/history)
+- [Linux.die.net](https://linux.die.net/Linux-CLI/x1712.htm)
+- [Linux.die.net](https://linux.die.net/man/3/history)

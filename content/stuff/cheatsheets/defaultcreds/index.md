@@ -3494,5 +3494,5 @@ One place for all the default credentials to assist the Blue/Red teamers activit
 
 ## URL List
 
-* [Github.com - Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet)
-* [Github.com - Default Credentials Cheat Sheet (.CSV)](https://github.com/ihebski/DefaultCreds-cheat-sheet/blob/main/DefaultCreds-Cheat-Sheet.csv)
+- [Github.com - Default Credentials Cheat Sheet](https://github.com/ihebski/DefaultCreds-cheat-sheet)
+- [Github.com - Default Credentials Cheat Sheet (.CSV)](https://github.com/ihebski/DefaultCreds-cheat-sheet/blob/main/DefaultCreds-Cheat-Sheet.csv)

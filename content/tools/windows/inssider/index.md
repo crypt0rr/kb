@@ -26,4 +26,4 @@ Non-subscription based version.
 
 ## URL List
 
-* [Metageek - inSSIDer](https://www.metageek.com/products/inssider/)
+- [Metageek - inSSIDer](https://www.metageek.com/products/inssider/)

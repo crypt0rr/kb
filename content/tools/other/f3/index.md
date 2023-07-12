@@ -147,5 +147,5 @@ Average reading speed: 1.09 GB/s
 
 ## URL List
 
-* [GitHub.com - f3](https://github.com/AltraMayor/f3)
-* [Readthedocs.io](https://fight-flash-fraud.readthedocs.io/)
+- [GitHub.com - f3](https://github.com/AltraMayor/f3)
+- [Readthedocs.io](https://fight-flash-fraud.readthedocs.io/)

@@ -32,5 +32,5 @@ sudo apt-get install balena-etcher-electron
 
 ## URL List
 
-* [Balena.io - Etcher](https://www.balena.io/etcher/)
-* [GitHub.com - Etcher](https://github.com/balena-io/etcher)
+- [Balena.io - Etcher](https://www.balena.io/etcher/)
+- [GitHub.com - Etcher](https://github.com/balena-io/etcher)

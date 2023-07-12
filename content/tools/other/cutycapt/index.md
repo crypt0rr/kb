@@ -72,6 +72,6 @@ cutycapt --url=https://kali.org --out=kali.png
 
 ## URL List
 
-* [Cutycapt.sf.net](http://cutycapt.sf.net)
-* [Cutycapt.sourceforge.net](http://cutycapt.sourceforge.net/)
-* [Kali.org - cutycapt](https://www.kali.org/tools/cutycapt/)
+- [Cutycapt.sf.net](http://cutycapt.sf.net)
+- [Cutycapt.sourceforge.net](http://cutycapt.sourceforge.net/)
+- [Kali.org - cutycapt](https://www.kali.org/tools/cutycapt/)

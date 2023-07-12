@@ -23,4 +23,4 @@ Download newest release from [easy2boot.xyz](https://easy2boot.xyz/download/)
 
 ## URL List
 
-* [Easy2boot.xyz](https://easy2boot.xyz/)
+- [Easy2boot.xyz](https://easy2boot.xyz/)

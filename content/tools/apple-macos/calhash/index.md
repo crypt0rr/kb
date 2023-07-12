@@ -24,4 +24,4 @@ Download newest release from [titanium-software.fr](https://www.titanium-softwar
 
 ## URL List
 
-* [titanium-software.fr - CalHash](https://www.titanium-software.fr/en/calhash.html)
+- [titanium-software.fr - CalHash](https://www.titanium-software.fr/en/calhash.html)

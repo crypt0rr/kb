@@ -65,4 +65,4 @@ scp -r <user>@<ip-address>:/directory local_directory
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/scp)
+- [Linux.die.net](https://linux.die.net/man/1/scp)

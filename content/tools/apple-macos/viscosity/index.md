@@ -19,67 +19,67 @@ Viscosity caters to both users new to VPNs and experts alike, providing secure a
 
 ### Authentication
 
-* Username & Password
-* Public Key Infrastructure (PKI) & PKCS#12
-* Shared Secret
-* PKCS#11 Token & Smartcard
-* FIDO Universal 2nd Factor (U2F)
-* One Time Password (OTP)
-* Dynamic & Static Two Factor
+- Username & Password
+- Public Key Infrastructure (PKI) & PKCS#12
+- Shared Secret
+- PKCS#11 Token & Smartcard
+- FIDO Universal 2nd Factor (U2F)
+- One Time Password (OTP)
+- Dynamic & Static Two Factor
 
 ### Network
 
-* Simultaneous Connections
-* Full & Split DNS Modes
-* Connect via HTTP or SOCKS Proxy
-* Traffic Obfuscation
-* DHCP IP, DNS, And Route Assignment
-* Complete IPv4 and IPv6 Support
-* Automatic & Manual Proxy Settings
-* Powerful Traffic Routing Options
-* Intelligent Server Selection & Fallback
+- Simultaneous Connections
+- Full & Split DNS Modes
+- Connect via HTTP or SOCKS Proxy
+- Traffic Obfuscation
+- DHCP IP, DNS, And Route Assignment
+- Complete IPv4 and IPv6 Support
+- Automatic & Manual Proxy Settings
+- Powerful Traffic Routing Options
+- Intelligent Server Selection & Fallback
 
 ### Interface
 
-* Powerful Connection Editor
-* Traffic Graph & Statistics
-* Unobtrusive Status Icon & Menu
-* Customisable Menu Icons
-* Customisable Menu Quick Statistics
-* Connection Folders & Shared Credentials
-* OpenVPN Version Selection
+- Powerful Connection Editor
+- Traffic Graph & Statistics
+- Unobtrusive Status Icon & Menu
+- Customisable Menu Icons
+- Customisable Menu Quick Statistics
+- Connection Folders & Shared Credentials
+- OpenVPN Version Selection
 
 ### Performance & Integration
 
-* Native Implementation for Each Platform
-* Low CPU & Memory Usage
-* Reliable OpenVPN Connections
-* Automatically Disconnect on Inactivity
-* Automatically Reconnect on Disconnect
-* Automatically Reconnect on Network Availability
-* Automatically Disable Time Machine Backups
+- Native Implementation for Each Platform
+- Low CPU & Memory Usage
+- Reliable OpenVPN Connections
+- Automatically Disconnect on Inactivity
+- Automatically Reconnect on Disconnect
+- Automatically Reconnect on Network Availability
+- Automatically Disable Time Machine Backups
 
 ### Security
 
-* Latest Cipher & Digest Support
-* Sandboxed OpenVPN & Scripts
-* Keychain & Windows Password Store Integration
-* IPv6 Leak Protection
+- Latest Cipher & Digest Support
+- Sandboxed OpenVPN & Scripts
+- Keychain & Windows Password Store Integration
+- IPv6 Leak Protection
 
 ### Enterprise
 
-* Bundling Connections & Preferences
-* GPO Group Policy Deployment
-* Connection Importing & Exporting
-* Admin Rights Not Required for User Operation
+- Bundling Connections & Preferences
+- GPO Group Policy Deployment
+- Connection Importing & Exporting
+- Admin Rights Not Required for User Operation
 
 ### Advanced
 
-* Conditional Connections
-* Control Viscosity using AppleScript
-* Control Viscosity using Scripts or Command Line
-* Run Scripts on Connection Events
-* Advanced Configuration Commands
+- Conditional Connections
+- Control Viscosity using AppleScript
+- Control Viscosity using Scripts or Command Line
+- Run Scripts on Connection Events
+- Advanced Configuration Commands
 
 ## Installation
 
@@ -119,4 +119,4 @@ Easily configure everything from network settings to complex multi-factor authen
 
 ## URL List
 
-* [Sparklabs.com - Viscosity](https://www.sparklabs.com/viscosity/)
+- [Sparklabs.com - Viscosity](https://www.sparklabs.com/viscosity/)

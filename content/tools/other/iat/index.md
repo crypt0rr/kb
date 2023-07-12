@@ -54,5 +54,5 @@ Licensed under GPL v2 or later
 
 ## URL List
 
-* [Linuxlinks.com - iat](https://www.linuxlinks.com/iat/)
-* [Unix.com - iat](https://www.unix.com/man-page/debian/1/iat/)
+- [Linuxlinks.com - iat](https://www.linuxlinks.com/iat/)
+- [Unix.com - iat](https://www.unix.com/man-page/debian/1/iat/)

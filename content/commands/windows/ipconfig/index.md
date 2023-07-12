@@ -136,4 +136,4 @@ ipconfig /flushdns
 
 ## URL List
 
-* [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig)
+- [Docs.microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig)

@@ -13,12 +13,12 @@ tags : ['Other', 'SMB']
 
 Samba Share Enumerator.
 
-* Pass-the-Hash Support
-* File upload/download/delete
-* Permission enumeration (writable share, meet Metasploit)
-* Remote Command Execution
-* Distrubted file content searching (beta!)
-* File name matching (with an auto downoad capability)
+- Pass-the-Hash Support
+- File upload/download/delete
+- Permission enumeration (writable share, meet Metasploit)
+- Remote Command Execution
+- Distrubted file content searching (beta!)
+- File name matching (with an auto downoad capability)
 
 ## Installation
 
@@ -186,4 +186,4 @@ $ smbmap.py -u johndo -p Welkom1234 -H 10.10.20.251 -R aiff
 
 ## URL List
 
-* [Github.com - smbmap.py](https://github.com/ShawnDEvans/smbmap)
+- [Github.com - smbmap.py](https://github.com/ShawnDEvans/smbmap)

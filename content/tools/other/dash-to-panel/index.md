@@ -40,4 +40,4 @@ Metro | Ciliora/Dashes
 
 ## URL List
 
-* [Github.com - Dash-To-Panel](https://github.com/home-sweet-gnome/dash-to-panel)
+- [Github.com - Dash-To-Panel](https://github.com/home-sweet-gnome/dash-to-panel)

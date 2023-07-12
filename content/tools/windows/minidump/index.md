@@ -15,15 +15,15 @@ C# implementation of mimikatz/pypykatz minidump functionality to get credentials
 
 Supported Credentials:
 
-* Lsa
-* Msv
-* Kerberos
-* WDigest
-* SSP
-* TsPkg
-* Credman
-* Dpapi
-* CloudAP
+- Lsa
+- Msv
+- Kerberos
+- WDigest
+- SSP
+- TsPkg
+- Credman
+- Dpapi
+- CloudAP
 
 ## Installation
 
@@ -85,4 +85,4 @@ Dpapi failed: Object reference not set to an instance of an object.
 
 ## URL List
 
-* [Github.com - Minidump](https://github.com/cube0x0/MiniDump)
+- [Github.com - Minidump](https://github.com/cube0x0/MiniDump)

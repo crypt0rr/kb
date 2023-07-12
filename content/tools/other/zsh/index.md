@@ -79,5 +79,5 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ## URL List
 
-* [Linux.die.net - zsh](https://linux.die.net/man/1/zsh)
-* [Oh My ZHS!](https://ohmyz.sh/)
+- [Linux.die.net - zsh](https://linux.die.net/man/1/zsh)
+- [Oh My ZHS!](https://ohmyz.sh/)

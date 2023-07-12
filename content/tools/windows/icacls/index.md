@@ -174,4 +174,4 @@ Successfully processed 1 files; Failed processing 0 files
 
 ## URL List
 
-* [Docs.microsoft.com - icacls](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/icacls)
+- [Docs.microsoft.com - icacls](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/icacls)

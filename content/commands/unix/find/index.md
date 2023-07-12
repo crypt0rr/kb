@@ -145,4 +145,4 @@ find . -mtime +7 -ls
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/find)
+- [Linux.die.net](https://linux.die.net/man/1/find)

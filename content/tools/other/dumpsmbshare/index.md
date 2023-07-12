@@ -76,4 +76,4 @@ connection:
 
 ## URL List
 
-* [Github.com - DumpSMBShare](https://github.com/p0dalirius/DumpSMBShare)
+- [Github.com - DumpSMBShare](https://github.com/p0dalirius/DumpSMBShare)

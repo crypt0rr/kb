@@ -27,4 +27,4 @@ Download newest release from [ccleaner.com](https://www.ccleaner.com/recuva)
 
 ## URL List
 
-* [CCleaner.com - Recuva](https://www.ccleaner.com/recuva/screenshots)
+- [CCleaner.com - Recuva](https://www.ccleaner.com/recuva/screenshots)

@@ -86,4 +86,4 @@ admin@example.com
 
 ## URL List
 
-* [Github.com - EmailFinder](https://github.com/Josue87/EmailFinder)
+- [Github.com - EmailFinder](https://github.com/Josue87/EmailFinder)

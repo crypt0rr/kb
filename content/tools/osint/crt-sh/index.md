@@ -23,5 +23,5 @@ Certificate search.
 
 ## URL List
 
-* [Github.com - crtsh](https://github.com/crtsh)
-* [Sectigo.com](https://sectigo.com/)
+- [Github.com - crtsh](https://github.com/crtsh)
+- [Sectigo.com](https://sectigo.com/)

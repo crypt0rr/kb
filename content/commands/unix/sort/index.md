@@ -128,4 +128,4 @@ sort -nr <file>
 
 ## URL List
 
-* [Gnu.org](https://www.gnu.org/software/coreutils/sort)
+- [Gnu.org](https://www.gnu.org/software/coreutils/sort)

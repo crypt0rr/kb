@@ -138,4 +138,4 @@ $ python3 o365spray.py -d offsec.nl -u john.do --paired usercreds.txt --spray-mo
 
 ## URL List
 
-* [Github.com - o365spray](https://github.com/0xZDH/o365spray)
+- [Github.com - o365spray](https://github.com/0xZDH/o365spray)

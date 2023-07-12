@@ -74,4 +74,4 @@ touch -d '13:37' <filename>
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/touch)
+- [Linux.die.net](https://linux.die.net/man/1/touch)

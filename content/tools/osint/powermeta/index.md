@@ -79,4 +79,4 @@ Would you like to download all of the files discovered?
 
 ## URL List
 
-* [GitHub.com - PowerMeta](https://github.com/dafthack/PowerMeta)
+- [GitHub.com - PowerMeta](https://github.com/dafthack/PowerMeta)

@@ -44,5 +44,5 @@ usage: fls [-adDFlhpruvV] [-f fstype] [-i imgtype] [-b dev_sector_size] [-m dir/
 
 ## URL List
 
-* [Sleuthkit.org - fls](https://www.sleuthkit.org/sleuthkit/man/fls.html)
-* [Manpages.ubuntu.com - fls](https://manpages.ubuntu.com/manpages/bionic/man1/fls.1.html)
+- [Sleuthkit.org - fls](https://www.sleuthkit.org/sleuthkit/man/fls.html)
+- [Manpages.ubuntu.com - fls](https://manpages.ubuntu.com/manpages/bionic/man1/fls.1.html)

@@ -23,5 +23,5 @@ Download newest release from [Github.com](https://github.com/markrussinovich/Tas
 
 ## URL List
 
-* [Github.com - TaskManagerBitmap](https://github.com/markrussinovich/TaskManagerBitmap)
-* [Reposhub.com - TaskManagerBitmap](https://reposhub.com/cpp/image-processing/markrussinovich-TaskManagerBitmap.html)
+- [Github.com - TaskManagerBitmap](https://github.com/markrussinovich/TaskManagerBitmap)
+- [Reposhub.com - TaskManagerBitmap](https://reposhub.com/cpp/image-processing/markrussinovich-TaskManagerBitmap.html)

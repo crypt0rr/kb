@@ -209,4 +209,4 @@ $ python3 ldapdomaindump.py -u 'offsec.nl\administrator' -p 'Welkom1234' -d ';' 
 
 ## URL List
 
-* [Github.com - LDAPdomaindump](https://github.com/dirkjanm/ldapdomaindump)
+- [Github.com - LDAPdomaindump](https://github.com/dirkjanm/ldapdomaindump)

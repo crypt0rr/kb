@@ -86,4 +86,4 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 
 ## URL List
 
-* [Linux.die.net - cal](https://linux.die.net/man/1/cal)
+- [Linux.die.net - cal](https://linux.die.net/man/1/cal)

@@ -71,4 +71,4 @@ sudo smbserver.py -smb2support share $PWD
 
 ## URL List
 
-* [Github.com - smbserver.py](https://github.com/fortra/impacket/blob/master/examples/smbserver.py)
+- [Github.com - smbserver.py](https://github.com/fortra/impacket/blob/master/examples/smbserver.py)

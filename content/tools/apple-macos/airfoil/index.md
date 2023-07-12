@@ -23,4 +23,4 @@ Download newest release from [Rogueamoeba.com](https://rogueamoeba.com/airfoil/m
 
 ## URL List
 
-* [Rogueamoeba.com - Airfoil](https://rogueamoeba.com/airfoil/mac/)
+- [Rogueamoeba.com - Airfoil](https://rogueamoeba.com/airfoil/mac/)

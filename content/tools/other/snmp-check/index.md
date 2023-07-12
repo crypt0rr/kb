@@ -76,4 +76,4 @@ Copyright (c) 2005-2015 by Matteo Cantoni (www.nothink.org)
 
 ## URL List
 
-* [Kali.org - snmp-check](https://www.kali.org/tools/snmpcheck/)
+- [Kali.org - snmp-check](https://www.kali.org/tools/snmpcheck/)

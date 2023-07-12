@@ -91,5 +91,5 @@ After the configuration is set, test it by manually connecting the SSH tunnel an
 
 ## URL List
 
-* [Linux.die.net - AutoSSH](https://linux.die.net/man/1/autossh)
-* [everythingcli.org - SSH TUNNELLING FOR FUN AND PROFIT: AUTOSSH](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/)
+- [Linux.die.net - AutoSSH](https://linux.die.net/man/1/autossh)
+- [everythingcli.org - SSH TUNNELLING FOR FUN AND PROFIT: AUTOSSH](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/)

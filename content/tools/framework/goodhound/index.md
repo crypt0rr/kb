@@ -124,4 +124,4 @@ $ ll out*
 
 ## URL List
 
-* [Github.com - GoodHound](https://github.com/idnahacks/GoodHound)
+- [Github.com - GoodHound](https://github.com/idnahacks/GoodHound)

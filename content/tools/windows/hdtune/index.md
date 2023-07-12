@@ -25,4 +25,4 @@ HD Tune (Pro) is a hard disk / SSD utility with many functions. It can be used t
 
 ## URL List
 
-* [HDTune.com](https://www.hdtune.com/)
+- [HDTune.com](https://www.hdtune.com/)

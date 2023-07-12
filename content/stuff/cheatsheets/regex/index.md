@@ -168,8 +168,8 @@ grep -o '[^/]*\.js'
 
 ## URL List
 
-* [Regex-generator.olafneumann.org](https://regex-generator.olafneumann.org)
-* [Regexone.com](https://regexone.com)
-* [Regexr.com](https://regexr.com/)
-* [Rexegg.com - Regex tutorial, one of the most detailed on the web](http://www.rexegg.com/)
-* [Regular-expressions.info](https://www.regular-expressions.info/)
+- [Regex-generator.olafneumann.org](https://regex-generator.olafneumann.org)
+- [Regexone.com](https://regexone.com)
+- [Regexr.com](https://regexr.com/)
+- [Rexegg.com - Regex tutorial, one of the most detailed on the web](http://www.rexegg.com/)
+- [Regular-expressions.info](https://www.regular-expressions.info/)

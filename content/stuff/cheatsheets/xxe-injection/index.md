@@ -178,4 +178,4 @@ Content-Length: 52
 
 ## URL List
 
-* [Portswigger.net academy - XXE injection](https://portswigger.net/web-security/xxe)
+- [Portswigger.net academy - XXE injection](https://portswigger.net/web-security/xxe)

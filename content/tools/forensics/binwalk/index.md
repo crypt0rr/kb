@@ -102,4 +102,4 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 
 ## URL List
 
-* [GitHub.com - binwalk](https://github.com/ReFirmLabs/binwalk)
+- [GitHub.com - binwalk](https://github.com/ReFirmLabs/binwalk)

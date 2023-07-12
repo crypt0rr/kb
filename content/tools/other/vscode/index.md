@@ -151,5 +151,5 @@ YAML
 
 ## URL List
 
-* [Code.visualstudio.com](https://code.visualstudio.com/)
-* [Snapcraft.io - Code](https://snapcraft.io/code)
+- [Code.visualstudio.com](https://code.visualstudio.com/)
+- [Snapcraft.io - Code](https://snapcraft.io/code)

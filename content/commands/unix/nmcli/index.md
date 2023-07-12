@@ -118,5 +118,5 @@ IN-USE  BSSID              SSID                   MODE   CHAN  RATE        SIGNA
 
 ## URL List
 
-* [Linux.man.die](https://linux.die.net/man/1/nmcli)
-* [Developer.gnome.org](https://developer.gnome.org/NetworkManager/stable/nmcli.html)
+- [Linux.man.die](https://linux.die.net/man/1/nmcli)
+- [Developer.gnome.org](https://developer.gnome.org/NetworkManager/stable/nmcli.html)

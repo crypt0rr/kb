@@ -107,4 +107,4 @@ $ gowitness server
 
 ## URL List
 
-* [GitHub.com - gowitness](https://github.com/sensepost/gowitness)
+- [GitHub.com - gowitness](https://github.com/sensepost/gowitness)

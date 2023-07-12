@@ -187,5 +187,5 @@ ASN: 15133 - EDGECAST - MCI Communications Services, Inc. d/b/a Verizon Business
 
 ## URL List
 
-* [Github.com - Amass](https://github.com/OWASP/Amass)
-* [Medium.com - Guide to amass how to use amass more effectively](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
+- [Github.com - Amass](https://github.com/OWASP/Amass)
+- [Medium.com - Guide to amass how to use amass more effectively](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)

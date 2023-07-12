@@ -28,4 +28,4 @@ Error code 4: Transfer mode not supported.
 
 ## URL List
 
-* [Scan.shadowserver.org](https://scan.shadowserver.org/tftp/)
+- [Scan.shadowserver.org](https://scan.shadowserver.org/tftp/)

@@ -310,4 +310,4 @@ sudo systemctl start YOUR_SERVICE_NAME
 
 ## URL List
 
-* [Debian.org](https://manpages.debian.org/stretch/systemd/systemctl.1.en.html)
+- [Debian.org](https://manpages.debian.org/stretch/systemd/systemctl.1.en.html)

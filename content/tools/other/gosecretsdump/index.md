@@ -19,10 +19,10 @@ This is a conversion of the impacket secretsdump module into golang. It's not ve
 
 ### Features
 
-* Dumps dits very fast. Operations that usually take hours are now done in minutes.
-* Can dump SAM/SYSTEM backups
-* Can dump local SAM/SYSTEM (must be run as the machine account/SYSTEM)
-* A somewhat usable interface for integration other other tooling (See lib example below)
+- Dumps dits very fast. Operations that usually take hours are now done in minutes.
+- Can dump SAM/SYSTEM backups
+- Can dump local SAM/SYSTEM (must be run as the machine account/SYSTEM)
+- A somewhat usable interface for integration other other tooling (See lib example below)
 
 ## Installation
 
@@ -97,4 +97,4 @@ offsec.nl\MARSHALL_FRANKS:des-cbc-md5:0df19bf71a6d9245
 
 ## URL List
 
-* [Github.com - Gosecretsdump](https://github.com/C-Sto/gosecretsdump)
+- [Github.com - Gosecretsdump](https://github.com/C-Sto/gosecretsdump)

@@ -25,4 +25,4 @@ Download newest release from [Github.com](https://github.com/waynebonc/iDeviceLo
 
 ## URL List
 
-* [Github.com - iDevice Panic Log Analyzer](https://github.com/waynebonc/iDeviceLogAnalyzer-public)
+- [Github.com - iDevice Panic Log Analyzer](https://github.com/waynebonc/iDeviceLogAnalyzer-public)

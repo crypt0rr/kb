@@ -13,13 +13,13 @@ weight : 0
 
 Is a tool designed to perform user enumeration* and password guessing attacks on organizations that use Office365 (now/soon Microsoft365). Go365 uses a unique SOAP API endpoint on login.microsoftonline.com that most other tools do not use. When queried with an email address and password, the endpoint responds with an Azure AD Authentication and Authorization code. This code is then processed by Go365 and the result is printed to screen or an output file.
 
-* User enumeration is performed in conjunction with a password guess attempt. Thus, there is no specific flag or funtionality to perform only user enumeration. Instead, conduct your first password guessing attack, then parse the results for valid users.
+- User enumeration is performed in conjunction with a password guess attempt. Thus, there is no specific flag or funtionality to perform only user enumeration. Instead, conduct your first password guessing attack, then parse the results for valid users.
 
 Read these three bullets!
 
-* This tool might not work on all domains that utilize o365. Tests show that it works with most federated domains. Some domains will only report valid users even if a valid password is also provided. Your results may vary!
-* The domains this tool was tested on showed that it did not actually lock out accounts after multiple password failures. Your results may vary!
-* This tool is intended to be used by security professionals that are authorized to "attack" the target organization's o365 instance.
+- This tool might not work on all domains that utilize o365. Tests show that it works with most federated domains. Some domains will only report valid users even if a valid password is also provided. Your results may vary!
+- The domains this tool was tested on showed that it did not actually lock out accounts after multiple password failures. Your results may vary!
+- This tool is intended to be used by security professionals that are authorized to "attack" the target organization's o365 instance.
 
 ## Installation
 
@@ -46,8 +46,8 @@ go get github.com/fatih/color
 go get golang.org/x/net/proxy
 ```
 
-* Clone the repo.
-* Navigate to the repo and compile ya dingus.
+- Clone the repo.
+- Navigate to the repo and compile ya dingus.
 
 ```plain
 go build Go365.go
@@ -163,4 +163,4 @@ Usage:
 
 ## URL List
 
-* [Github.com - Go365](https://github.com/optiv/Go365)
+- [Github.com - Go365](https://github.com/optiv/Go365)

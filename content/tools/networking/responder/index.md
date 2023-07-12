@@ -93,18 +93,18 @@ sudo ./Responder.py -I <interface> -w -F --lm -v
 
 Works on:
 
-* Internet Explorer 8 (8.0.7600.16385, Windows 7)
-* Internet Explorer 8 (8.0.7601.17514, Windows Server 2008R2)
-* Internet Explorer 11 (11.719.18362.0, Windows 10)
-* Internet Explorer 11 (11.2273.14393.0, Windows Server 2016)
-* Internet Explorer 11 (11.1098.17763.0, Windows Server 2019)
+- Internet Explorer 8 (8.0.7600.16385, Windows 7)
+- Internet Explorer 8 (8.0.7601.17514, Windows Server 2008R2)
+- Internet Explorer 11 (11.719.18362.0, Windows 10)
+- Internet Explorer 11 (11.2273.14393.0, Windows Server 2016)
+- Internet Explorer 11 (11.1098.17763.0, Windows Server 2019)
 
 Does not work on:
 
-* Microsoft Edge (44.18362.449.0 Windows 10)
-* Google Chrome (80.0.3987.149, Windows 10)
-* Brave (1.5.115, Windows 10)
-* Opera (67.0.3575.115, Windows 10)
+- Microsoft Edge (44.18362.449.0 Windows 10)
+- Google Chrome (80.0.3987.149, Windows 10)
+- Brave (1.5.115, Windows 10)
+- Opera (67.0.3575.115, Windows 10)
 
 ### Index.html content
 
@@ -171,5 +171,5 @@ total 22M
 
 ## URL List
 
-* [GitHub.com - Responder](https://github.com/lgandx/Responder)
-* [Original DEPRECATED GitHub](https://github.com/SpiderLabs/Responder)
+- [GitHub.com - Responder](https://github.com/lgandx/Responder)
+- [Original DEPRECATED GitHub](https://github.com/SpiderLabs/Responder)

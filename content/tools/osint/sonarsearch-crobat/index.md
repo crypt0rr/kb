@@ -97,5 +97,5 @@ example.com
 
 ## URL List
 
-* [Sonar.omnisint.io](https://sonar.omnisint.io/)
-* [GitHub.com - SonarSearch](https://github.com/cgboal/sonarsearch)
+- [Sonar.omnisint.io](https://sonar.omnisint.io/)
+- [GitHub.com - SonarSearch](https://github.com/cgboal/sonarsearch)

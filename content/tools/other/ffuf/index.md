@@ -123,4 +123,4 @@ ffuc -c -w /path/to/wordlist -u https://example.com/FUZZ
 
 ## URL List
 
-* [Github.com - ffuf](https://github.com/ffuf/ffuf)
+- [Github.com - ffuf](https://github.com/ffuf/ffuf)

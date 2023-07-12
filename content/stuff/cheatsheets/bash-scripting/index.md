@@ -21,9 +21,9 @@ Bash scripting must have/know tips.
 echo "Hello World!"
 ```
 
-* Line 1: #! is commonly known as the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) and is ignored by the Bash interpreter. The second part, /bin/bash, is the [absolute path](http://www.linfo.org/absolute_pathname.html) to the interpreter, which is used to run the script. This is what makes this a “Bash script” as opposed to another type of shell script, like a “C Shell script”, for example.
-* Line 2: # is used to add a comment, so all text that follows it is ignored.
-* Line 3: echo “Hello World!” uses the echo Linux command utility to print a given string to the terminal, which in this case is “Hello World!”.
+- Line 1: #! is commonly known as the [shebang](https://en.wikipedia.org/wiki/Shebang_(Unix)) and is ignored by the Bash interpreter. The second part, /bin/bash, is the [absolute path](http://www.linfo.org/absolute_pathname.html) to the interpreter, which is used to run the script. This is what makes this a “Bash script” as opposed to another type of shell script, like a “C Shell script”, for example.
+- Line 2: # is used to add a comment, so all text that follows it is ignored.
+- Line 3: echo “Hello World!” uses the echo Linux command utility to print a given string to the terminal, which in this case is “Hello World!”.
 
 Results in:
 
@@ -75,8 +75,8 @@ Hello World!
 
 Prompting user for input and silently reading it using `read`.
 
-* `-p` - prompts the user to supply input, while the input is typed it is shown in the terminal
-* `-sp` - prompts the user to supply input, while the input is typed it is NOT shown in the terminal
+- `-p` - prompts the user to supply input, while the input is typed it is shown in the terminal
+- `-sp` - prompts the user to supply input, while the input is typed it is NOT shown in the terminal
 
 ```bash
 #!/bin/bash
@@ -168,7 +168,7 @@ commands...
 
 ## URL List
 
-* [Linuxconfig.org - Bash Scripting Tutorial for Beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
-* [Linuxconfig.org - Bash Scripting Tutorial](https://linuxconfig.org/bash-scripting-tutorial)
-* [Hostinger.com - Bash Scripting Tutorial for Beginners](https://www.hostinger.com/tutorials/bash-function-tutorial-with-examples/)
-* [Geeksforgeeks.org - Bash Scripting – Functions](https://www.geeksforgeeks.org/bash-scripting-functions/)
+- [Linuxconfig.org - Bash Scripting Tutorial for Beginners](https://linuxconfig.org/bash-scripting-tutorial-for-beginners)
+- [Linuxconfig.org - Bash Scripting Tutorial](https://linuxconfig.org/bash-scripting-tutorial)
+- [Hostinger.com - Bash Scripting Tutorial for Beginners](https://www.hostinger.com/tutorials/bash-function-tutorial-with-examples/)
+- [Geeksforgeeks.org - Bash Scripting – Functions](https://www.geeksforgeeks.org/bash-scripting-functions/)

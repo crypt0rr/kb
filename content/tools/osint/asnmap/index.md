@@ -13,13 +13,13 @@ tags : ['OSINT', 'CIDR']
 
 Go CLI and Library for quickly mapping organization network ranges using [ASN](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) information.
 
-* ASN to CIDR Lookup
-* ORG to CIDR Lookup
-* DNS to CIDR Lookup
-* IP to CIDR Lookup
-* ASN/DNS/IP/ORG input
-* JSON/CSV/TEXT output
-* STD IN/OUT support
+- ASN to CIDR Lookup
+- ORG to CIDR Lookup
+- DNS to CIDR Lookup
+- IP to CIDR Lookup
+- ASN/DNS/IP/ORG input
+- JSON/CSV/TEXT output
+- STD IN/OUT support
 
 ## Installation
 
@@ -62,10 +62,10 @@ OUTPUT:
 
 Example input for asnmap:
 
-* `asnmap -a AS45596 -silent`
-* `asnmap -i 100.19.12.21 -silent`
-* `asnmap -d hackerone.com -silent`
-* `asnmap -o GOOGLE -silent`
+- `asnmap -a AS45596 -silent`
+- `asnmap -i 100.19.12.21 -silent`
+- `asnmap -d hackerone.com -silent`
+- `asnmap -o GOOGLE -silent`
 
 ### ASN Look-up by name
 
@@ -135,4 +135,4 @@ timestamp|input|as_number|as_name|as_country|as_range
 
 ## URL List
 
-* [Github.com - asnmap](https://github.com/projectdiscovery/asnmap)
+- [Github.com - asnmap](https://github.com/projectdiscovery/asnmap)

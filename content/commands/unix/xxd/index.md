@@ -61,4 +61,4 @@ xxd test.txt
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/xxd)
+- [Linux.die.net](https://linux.die.net/man/1/xxd)

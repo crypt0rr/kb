@@ -118,4 +118,4 @@ $ bloodyAD -u crypt0rr -d offsec.nl -p Welkom1234 --host 10.0.0.20 getObjectAttr
 
 ## URL List
 
-* [Github.com - bloodyAD](https://github.com/CravateRouge/bloodyAD)
+- [Github.com - bloodyAD](https://github.com/CravateRouge/bloodyAD)

@@ -80,5 +80,5 @@ Completed 12 queries in 1.75s
 
 ## URL List
 
-* [GitHub.com - socialscan](https://github.com/iojw/socialscan)
-* [Pypi.org - socialscan](https://pypi.org/project/socialscan/)
+- [GitHub.com - socialscan](https://github.com/iojw/socialscan)
+- [Pypi.org - socialscan](https://pypi.org/project/socialscan/)

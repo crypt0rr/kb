@@ -15,15 +15,15 @@ EmailSecCheck is a lightweight Python utility that checks whether email security
 
 Email spoofing is identified under the following conditions:
 
-* SPF Issues
-  * SPF configured as something other than `fail` or `softfail`
-  * SPF record is missing
-  * SPF record contains a syntax error
-* DMARC Issues
-  * Multiple SPF records exist
-  * DMARC record is missing
-  * DMARC record contains a syntax error
-  * Multiple DMARC records exist
+- SPF Issues
+  - SPF configured as something other than `fail` or `softfail`
+  - SPF record is missing
+  - SPF record contains a syntax error
+- DMARC Issues
+  - Multiple SPF records exist
+  - DMARC record is missing
+  - DMARC record contains a syntax error
+  - Multiple DMARC records exist
 
 ## Installation
 
@@ -63,4 +63,4 @@ $ python3 emailseccheck.py --domain offsec.nl
 
 ## URL List
 
-* [Github.com - EmailSecCheck](https://github.com/MarkoH17/EmailSecCheck)
+- [Github.com - EmailSecCheck](https://github.com/MarkoH17/EmailSecCheck)

@@ -118,5 +118,5 @@ Top Client: 10.10.10.40
 
 ## URL List
 
-* [Pi-hole.net](https://pi-hole.net/)
-* [GitHub.com - Pi-Hole](https://github.com/pi-hole/pi-hole)
+- [Pi-hole.net](https://pi-hole.net/)
+- [GitHub.com - Pi-Hole](https://github.com/pi-hole/pi-hole)

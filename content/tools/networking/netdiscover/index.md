@@ -61,5 +61,5 @@ sudo netdiscover -r 10.20.30.0/24
 
 ## URL List
 
-* [Debian.org](https://manpages.debian.org/unstable/netdiscover/netdiscover.8.en.html)
-* [Github.com - netdiscover](https://github.com/netdiscover-scanner/netdiscover)
+- [Debian.org](https://manpages.debian.org/unstable/netdiscover/netdiscover.8.en.html)
+- [Github.com - netdiscover](https://github.com/netdiscover-scanner/netdiscover)

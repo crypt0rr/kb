@@ -110,5 +110,5 @@ timedatectl timesync-status
 
 ## URL List
 
-* [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/xenial/man1/timedatectl.1.html)
-* [Man7.org](http://man7.org/linux/man-pages/man1/timedatectl.1.html)
+- [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/xenial/man1/timedatectl.1.html)
+- [Man7.org](http://man7.org/linux/man-pages/man1/timedatectl.1.html)

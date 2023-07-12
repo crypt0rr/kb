@@ -364,4 +364,4 @@ KeyIdentifier [
 
 ## URL List
 
-* [Github.com - Certificate Ripper](https://github.com/Hakky54/certificate-ripper)
+- [Github.com - Certificate Ripper](https://github.com/Hakky54/certificate-ripper)

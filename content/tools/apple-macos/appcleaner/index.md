@@ -30,4 +30,4 @@ Download newest release from [freemacsoft.net](http://freemacsoft.net/appcleaner
 
 ## URL List
 
-* [freemacsoft.net - AppCleaner](http://freemacsoft.net/appcleaner/)
+- [freemacsoft.net - AppCleaner](http://freemacsoft.net/appcleaner/)

@@ -148,4 +148,4 @@ crypt0rroffsec
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/tr)
+- [Linux.die.net](https://linux.die.net/man/1/tr)

@@ -13,43 +13,43 @@ weight : 0
 
 Linux Driver for USB WiFi Adapters that are based on the RTL8814AU Chipset.
 
-* v5.8.5.1 (Realtek) (20191029)
-* Plus updates from the Linux community
+- v5.8.5.1 (Realtek) (20191029)
+- Plus updates from the Linux community
 
 ### Features
 
-* IEEE 802.11 b/g/n/ac WiFi compliant
-* 802.1x, WEP, WPA TKIP and WPA2 AES/Mixed mode for PSK and TLS (Radius)
-* IEEE 802.11b/g/n/ac Client mode
-  * Supports wireless security for WEP, WPA TKIP and WPA2 AES PSK
-  * Supports site survey scan and manual connect
-  * Supports power saving mode
-* Supported interface modes
-  * IBSS
-  * Managed
-  * AP (see *Bridged Wireless Access Point* located in the main directory of this repo)
-  * Monitor
-* USB mode control
-* Log level control
-* LED control
-* Power saving control
-* VHT control (allows 80 MHz channel width in AP mode)
-* SU Beamformee control
-* SU Beamformer control
+- IEEE 802.11 b/g/n/ac WiFi compliant
+- 802.1x, WEP, WPA TKIP and WPA2 AES/Mixed mode for PSK and TLS (Radius)
+- IEEE 802.11b/g/n/ac Client mode
+  - Supports wireless security for WEP, WPA TKIP and WPA2 AES PSK
+  - Supports site survey scan and manual connect
+  - Supports power saving mode
+- Supported interface modes
+  - IBSS
+  - Managed
+  - AP (see *Bridged Wireless Access Point- located in the main directory of this repo)
+  - Monitor
+- USB mode control
+- Log level control
+- LED control
+- Power saving control
+- VHT control (allows 80 MHz channel width in AP mode)
+- SU Beamformee control
+- SU Beamformer control
 
 Please check [repo](https://github.com/morrownr/8814au) for more information and current support.
 
 ### Tested Hardware
 
-* [Wireless USB WiFi Adapter, 1900Mbps Dual Band 2.4GHz/600Mbps 5.8GHz/1300Mbps High Gain 5dBi Antennas USB 3.0](https://www.amazon.com/gp/product/B07VCKN83P)
-* [ASUS USB-AC68 AC1900 Dual-Band USB 3.0 WiFi Adapter](https://www.amazon.com/dp/B01I7QFR10)
+- [Wireless USB WiFi Adapter, 1900Mbps Dual Band 2.4GHz/600Mbps 5.8GHz/1300Mbps High Gain 5dBi Antennas USB 3.0](https://www.amazon.com/gp/product/B07VCKN83P)
+- [ASUS USB-AC68 AC1900 Dual-Band USB 3.0 WiFi Adapter](https://www.amazon.com/dp/B01I7QFR10)
 
 ### Compatible Devices
 
-* ALFA AWUS1900
-* ASUS USB-AC68 AC1900 Dual-Band USB 3.0 WiFi Adapter
-* Edimax EW-7833 UAC AC1750 Dual-Band Wi-Fi USB 3.0 Adapter
-* Numerous products that are based on the supported chipset
+- ALFA AWUS1900
+- ASUS USB-AC68 AC1900 Dual-Band USB 3.0 WiFi Adapter
+- Edimax EW-7833 UAC AC1750 Dual-Band Wi-Fi USB 3.0 Adapter
+- Numerous products that are based on the supported chipset
 
 ## Installation
 
@@ -75,7 +75,7 @@ git clone https://github.com/morrownr/8814au.git
 sudo ./install-driver.sh
 ```
 
-**Note:** please reboot after installation
+**Note:*- please reboot after installation
 
 ### Driver Options
 
@@ -95,4 +95,4 @@ Documentation for Driver Options is included in the file `8814au.conf`.
 
 ## URL List
 
-* [Github.com - 8814au](https://github.com/morrownr/8814au)
+- [Github.com - 8814au](https://github.com/morrownr/8814au)

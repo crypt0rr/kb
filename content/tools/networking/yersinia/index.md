@@ -46,4 +46,4 @@ Usage: yersinia [-hVGIDd] [-l logfile] [-c conffile] protocol [protocol_options]
 
 ## URL List
 
-* [Kali.org - yersinia](https://tools.kali.org/vulnerability-analysis/yersinia)
+- [Kali.org - yersinia](https://tools.kali.org/vulnerability-analysis/yersinia)

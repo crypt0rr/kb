@@ -48,12 +48,12 @@ Instantly find, show, and activate menu bar items, all from your keyboard.
 
 With the power of the new Triggers in Show for Updates, you now have options when an item shows. Triggers include: any change, icon matching, or a script. Allowing you to show menu bar items exactly when you need them. Bartender also includes some unique Triggers for:
 
-* Battery - show when on battery power or at specific levels.
-* WiFi - show when not connected to a WiFi network.
-* Time Machine - show while time machine is backing up.
+- Battery - show when on battery power or at specific levels.
+- WiFi - show when not connected to a WiFi network.
+- Time Machine - show while time machine is backing up.
 
 ![Example](images/sfu2x.jpeg)
 
 ## URL List
 
-* [Macbartender.com](https://www.macbartender.com/)
+- [Macbartender.com](https://www.macbartender.com/)

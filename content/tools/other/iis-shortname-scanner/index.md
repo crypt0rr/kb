@@ -151,5 +151,5 @@ Change value from 0 to 1
 
 ## URL List
 
-* [GitHub.com - IIS Shortname Scanner](https://github.com/irsdl/IIS-ShortName-Scanner)
-* [Microsoft.com - How to disable 8.3 file name creation on NTFS partitions](https://support.microsoft.com/en-us/help/121007/how-to-disable-8-3-file-name-creation-on-ntfs-partitions)
+- [GitHub.com - IIS Shortname Scanner](https://github.com/irsdl/IIS-ShortName-Scanner)
+- [Microsoft.com - How to disable 8.3 file name creation on NTFS partitions](https://support.microsoft.com/en-us/help/121007/how-to-disable-8-3-file-name-creation-on-ntfs-partitions)

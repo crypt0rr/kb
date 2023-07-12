@@ -31,4 +31,4 @@ Options:
 
 ## URL List
 
-* [linux.die.net](https://linux.die.net/man/8/groupdel)
+- [linux.die.net](https://linux.die.net/man/8/groupdel)

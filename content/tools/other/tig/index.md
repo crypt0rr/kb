@@ -52,4 +52,4 @@ Options:
 
 ## URL List
 
-* [GitHub.com - tig](https://github.com/jonas/tig)
+- [GitHub.com - tig](https://github.com/jonas/tig)

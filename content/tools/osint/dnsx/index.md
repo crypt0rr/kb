@@ -168,4 +168,4 @@ events.hackerone.com [whitelabel.bigmarker.com]
 
 ## URL List
 
-* [Github.com - dnsx](https://github.com/projectdiscovery/dnsx)
+- [Github.com - dnsx](https://github.com/projectdiscovery/dnsx)

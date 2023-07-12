@@ -92,4 +92,4 @@ $ python3 ADExplorerSnapshot.py snapshot.dat
 
 ## URL List
 
-* [Github.com - ADExplorerSnapshot.py](https://github.com/c3c/ADExplorerSnapshot.py)
+- [Github.com - ADExplorerSnapshot.py](https://github.com/c3c/ADExplorerSnapshot.py)

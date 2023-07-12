@@ -60,4 +60,4 @@ Perfect for both dark mode and light mode.
 
 ## URL List
 
-* [Fireball.studio - One Switch](https://fireball.studio/oneswitch/)
+- [Fireball.studio - One Switch](https://fireball.studio/oneswitch/)

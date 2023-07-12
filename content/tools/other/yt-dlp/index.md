@@ -399,5 +399,5 @@ $ yt-dlp https://www.youtube.com/watch\?v\=uVQx6Frqfx8
 
 ## URL List
 
-* [Github.com - yt-dlp](https://github.com/yt-dlp/yt-dlp)
-* [Formulae.brew.sh - yt-dlp](https://formulae.brew.sh/formula/yt-dlp#default)
+- [Github.com - yt-dlp](https://github.com/yt-dlp/yt-dlp)
+- [Formulae.brew.sh - yt-dlp](https://formulae.brew.sh/formula/yt-dlp#default)

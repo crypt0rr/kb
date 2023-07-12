@@ -19,22 +19,22 @@ It doesn't use a software overlay if the monitor supports DDC/CI.
 
 ## Features
 
-* **[Native keyboard control](https://lunar.fyi/#keys)** and hotkeys for setting brightness, volume and contrast that respect the min/max values per monitor
-* **[1000-to-1600 nits of brightness](https://lunar.fyi/#xdr)** for supported **XDR** and **HDR** displays
-* **[Dim brightness below 0%](https://lunar.fyi/#subzero)** for late-night work
-* **[Sensor-based Adaptive Brightness](https://lunar.fyi/#sensor)** (and contrast) based on [an external light sensor](https://lunar.fyi/sensor)
-* **[Sync-based Adaptive Brightness](https://lunar.fyi/#sync)** (and contrast) based on **the built-in light sensor of the MacBook or iMac**
-* **[Location-based Adaptive Brightness](https://lunar.fyi/#location)** (and contrast) based on the sunrise/sunset times in your location
-* **[App Presets](https://lunar.fyi/#configuration-page)** if you need more/less brightness for specific activities (watching movies, design work)
-* **Input switching** from a convenient dropdown or using up to 3 input-specific hotkeys
-* **[Screen orientation](https://lunar.fyi/#display-settings-page)** change from the menu bar or using hotkeys (Ctrl+0/9/8/7 mapped to 0°/90°/180°/270° for the display with the cursor on it)
-* **[Hidden resolutions](https://lunar.fyi/#display-settings-page)** accessible from a dropdown in the Display Settings menu
-* **[BlackOut](https://lunar.fyi/#blackout)**: turn off monitors (or the built-in display) selectively while also keeping important functions:
-  * USB-C charging still works
-  * Monitor audio keeps playing
-  * Monitor USB hub remains available
-  * The built-in keyboard and trackpad are still available for use
-  * Avoid overheating the MacBook because of using it with the lid closed
+- **[Native keyboard control](https://lunar.fyi/#keys)** and hotkeys for setting brightness, volume and contrast that respect the min/max values per monitor
+- **[1000-to-1600 nits of brightness](https://lunar.fyi/#xdr)** for supported **XDR** and **HDR** displays
+- **[Dim brightness below 0%](https://lunar.fyi/#subzero)** for late-night work
+- **[Sensor-based Adaptive Brightness](https://lunar.fyi/#sensor)** (and contrast) based on [an external light sensor](https://lunar.fyi/sensor)
+- **[Sync-based Adaptive Brightness](https://lunar.fyi/#sync)** (and contrast) based on **the built-in light sensor of the MacBook or iMac**
+- **[Location-based Adaptive Brightness](https://lunar.fyi/#location)** (and contrast) based on the sunrise/sunset times in your location
+- **[App Presets](https://lunar.fyi/#configuration-page)** if you need more/less brightness for specific activities (watching movies, design work)
+- **Input switching** from a convenient dropdown or using up to 3 input-specific hotkeys
+- **[Screen orientation](https://lunar.fyi/#display-settings-page)** change from the menu bar or using hotkeys (Ctrl+0/9/8/7 mapped to 0°/90°/180°/270° for the display with the cursor on it)
+- **[Hidden resolutions](https://lunar.fyi/#display-settings-page)** accessible from a dropdown in the Display Settings menu
+- **[BlackOut](https://lunar.fyi/#blackout)**: turn off monitors (or the built-in display) selectively while also keeping important functions:
+  - USB-C charging still works
+  - Monitor audio keeps playing
+  - Monitor USB hub remains available
+  - The built-in keyboard and trackpad are still available for use
+  - Avoid overheating the MacBook because of using it with the lid closed
 
 It doesn't interfere at all with the native adaptive brightness that macOS implements for the built-in display.
 
@@ -76,5 +76,5 @@ Download newest release from [Github.com](https://github.com/alin23/Lunar/releas
 
 ## URL List
 
-* [Lunar.fyi](https://lunar.fyi)
-* [Github.com - Lunar](https://github.com/alin23/Lunar)
+- [Lunar.fyi](https://lunar.fyi)
+- [Github.com - Lunar](https://github.com/alin23/Lunar)

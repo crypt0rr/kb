@@ -79,4 +79,4 @@ Upload: 502.02 Mbit/s
 
 ## URL List
 
-* [Github.com - speedtest-cli](https://github.com/sivel/speedtest-cli)
+- [Github.com - speedtest-cli](https://github.com/sivel/speedtest-cli)

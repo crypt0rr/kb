@@ -27,4 +27,4 @@ Download newest release from [titanium-software.fr](https://www.titanium-softwar
 
 ## URL List
 
-* [Titanium-software.fr - OnyX](https://www.titanium-software.fr/en/onyx.html)
+- [Titanium-software.fr - OnyX](https://www.titanium-software.fr/en/onyx.html)

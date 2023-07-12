@@ -35,4 +35,4 @@ sudo ./checkra1n
 
 ## URL List
 
-* [Checkra.in](https://checkra.in/)
+- [Checkra.in](https://checkra.in/)

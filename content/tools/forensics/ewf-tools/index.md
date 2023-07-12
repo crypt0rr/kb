@@ -34,4 +34,4 @@ ewfmount image.E01 <folder>
 
 ## URL List
 
-* [Github.com - FATX](https://github.com/mborgerson/fatx)
+- [Github.com - FATX](https://github.com/mborgerson/fatx)

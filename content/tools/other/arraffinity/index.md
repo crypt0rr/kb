@@ -37,5 +37,5 @@ ARRAffinity match! IP: 10.20.30.40
 
 ## URL List
 
-* [Github.com - ARRAffinity](https://github.com/0x454b/ARRAffinity)
-* [Blog.msdn.microsoft.com - Azure ARRAffinity Makes AFFinity cookies](https://blogs.msdn.microsoft.com/devschool/2015/06/19/azure-arraffinity-makes-affinity-cookies/)
+- [Github.com - ARRAffinity](https://github.com/0x454b/ARRAffinity)
+- [Blog.msdn.microsoft.com - Azure ARRAffinity Makes AFFinity cookies](https://blogs.msdn.microsoft.com/devschool/2015/06/19/azure-arraffinity-makes-affinity-cookies/)

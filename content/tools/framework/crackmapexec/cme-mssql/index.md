@@ -130,4 +130,4 @@ The modules below can be used with the `-M` option.
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+- [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

@@ -75,6 +75,6 @@ $ python cloudflair.py kb.offsec.nl
 
 ## URL List
 
-* [Github.com - Cloudflair](https://github.com/christophetd/CloudFlair)
-* [Censys.io - Register](https://censys.io/register)
-* [Linuxize.com - How to install pip2 on Ubuntu 20.04](https://linuxize.com/post/how-to-install-pip-on-ubuntu-20.04/)
+- [Github.com - Cloudflair](https://github.com/christophetd/CloudFlair)
+- [Censys.io - Register](https://censys.io/register)
+- [Linuxize.com - How to install pip2 on Ubuntu 20.04](https://linuxize.com/post/how-to-install-pip-on-ubuntu-20.04/)

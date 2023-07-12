@@ -57,4 +57,4 @@ $ wc -l hostlist.txt
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/wc)
+- [Linux.die.net](https://linux.die.net/man/1/wc)

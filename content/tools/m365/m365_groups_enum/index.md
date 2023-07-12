@@ -140,4 +140,4 @@ jq '.[] | select(.visibility=="Public")' all_groups.json | jq -r '.displayName, 
 
 ## URL List
 
-* [Github.com - m365_groups_enum](https://github.com/cnotin/m365_groups_enum.git)
+- [Github.com - m365_groups_enum](https://github.com/cnotin/m365_groups_enum.git)

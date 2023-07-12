@@ -146,4 +146,4 @@ Daemon:
 
 ## URL List
 
-* [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/trusty/man1/upower.1.html)
+- [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/trusty/man1/upower.1.html)

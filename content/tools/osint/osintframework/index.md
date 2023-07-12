@@ -19,4 +19,4 @@ Open url in browser [OSINT framework](https://osintframework.com/)
 
 ## URL List
 
-* [Github.com - OSINT framework](https://github.com/lockfale/osint-framework)
+- [Github.com - OSINT framework](https://github.com/lockfale/osint-framework)

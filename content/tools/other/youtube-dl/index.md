@@ -324,4 +324,4 @@ $ youtube-dl https://www.youtube.com/watch\?v\=dQw4w9WgXcQ -f249
 
 ## URL List
 
-* [GitHub.com - youtube-dl](https://github.com/ytdl-org/youtube-dl)
+- [GitHub.com - youtube-dl](https://github.com/ytdl-org/youtube-dl)

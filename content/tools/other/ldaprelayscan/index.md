@@ -17,8 +17,8 @@ A tool to check Domain Controllers for LDAP server protections regarding the rel
 
 There are a couple server-side protections when attempting to relay NTLM authentication LDAP on Domain Controllers. The LDAP protections this tools attempts to enumerate include:
 
-* LDAPS - [channel binding](https://support.microsoft.com/en-us/topic/use-the-ldapenforcechannelbinding-registry-entry-to-make-ldap-authentication-over-ssl-tls-more-secure-e9ecfa27-5e57-8519-6ba3-d2c06b21812e)
-* LDAP - [server signing requirements](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/domain-controller-ldap-server-signing-requirements)
+- LDAPS - [channel binding](https://support.microsoft.com/en-us/topic/use-the-ldapenforcechannelbinding-registry-entry-to-make-ldap-authentication-over-ssl-tls-more-secure-e9ecfa27-5e57-8519-6ba3-d2c06b21812e)
+- LDAP - [server signing requirements](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/domain-controller-ldap-server-signing-requirements)
 
 The enforcement of channel binding for LDAP over SSL/TLS can be determined from an unauthenticated perspective. This is because the error associated with an LDAP client lacking the ability to conduct channel binding properly will occur before credentials are validated during the LDAP bind process.
 
@@ -102,4 +102,4 @@ Password:
 
 ## URL List
 
-* [Github.com - LdapRelayScan](https://github.com/zyn3rgy/LdapRelayScan)
+- [Github.com - LdapRelayScan](https://github.com/zyn3rgy/LdapRelayScan)

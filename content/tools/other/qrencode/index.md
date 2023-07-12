@@ -140,4 +140,4 @@ qrencode -o <output>.png "WIFI:T:WPA;S:<SSID>;P:<PASSWORD>;;"
 
 ## URL List
 
-* [Linux.die.net - qrencode](https://linux.die.net/man/1/qrencode)
+- [Linux.die.net - qrencode](https://linux.die.net/man/1/qrencode)

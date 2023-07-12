@@ -90,4 +90,4 @@ Command Execution:
 
 ## URL List
 
-* [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+- [Github.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)

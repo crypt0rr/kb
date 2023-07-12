@@ -33,8 +33,8 @@ brew install ddosify/tap/ddosify
 
 ### apk, deb, rpm, Arch Linux packages
 
-* For arm architectures change `ddosify_amd64` to `ddosify_arm64` or `ddosify_armv6`.
-* Superuser privilege is required.
+- For arm architectures change `ddosify_amd64` to `ddosify_arm64` or `ddosify_armv6`.
+- Superuser privilege is required.
 
 ```plain
 # For Redhat based (Fedora, CentOS, RHEL, etc.)
@@ -56,10 +56,10 @@ makepkg -sri
 
 ### Windows exe from the [releases page](https://github.com/ddosify/ddosify/releases/latest)
 
-* Download *.zip file for your architecture. For example download ddosify version vx.x.x with amd64 architecture: ddosify_x.x.x.zip_windows_amd64
-* Unzip `ddosify_x.x.x_windows_amd64.zip`
-* Open Powershell or CMD (Command Prompt) and change directory to unzipped folder: `ddosify_x.x.x_windows_amd64`
-* Run ddosify:
+- Download *.zip file for your architecture. For example download ddosify version vx.x.x with amd64 architecture: ddosify_x.x.x.zip_windows_amd64
+- Unzip `ddosify_x.x.x_windows_amd64.zip`
+- Open Powershell or CMD (Command Prompt) and change directory to unzipped folder: `ddosify_x.x.x_windows_amd64`
+- Run ddosify:
 
 ```bash
 .\ddosify.exe -t target_site.com
@@ -100,5 +100,5 @@ ddosify [FLAG]
 
 ## URL List
 
-* [Ddosify.com](https://ddosify.com/)
-* [Github.com - ddosify](https://github.com/ddosify/ddosify)
+- [Ddosify.com](https://ddosify.com/)
+- [Github.com - ddosify](https://github.com/ddosify/ddosify)

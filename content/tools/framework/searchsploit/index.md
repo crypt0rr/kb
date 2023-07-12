@@ -78,15 +78,15 @@ searchsploit [options] term1 [term2] ... [termN]
 =======
  Notes 
 =======
- * You can use any number of search terms
- * By default, search terms are not case-sensitive, ordering is irrelevant, and will search between version ranges
-   * Use '-c' if you wish to reduce results by case-sensitive searching
-   * And/Or '-e' if you wish to filter results by using an exact match
-   * And/Or '-s' if you wish to look for an exact version match
- * Use '-t' to exclude the file's path to filter the search results
-   * Remove false positives (especially when searching using numbers - i.e. versions)
- * When using '--nmap', adding '-v' (verbose), it will search for even more combinations
- * When updating or displaying help, search terms will be ignored
+ - You can use any number of search terms
+ - By default, search terms are not case-sensitive, ordering is irrelevant, and will search between version ranges
+   - Use '-c' if you wish to reduce results by case-sensitive searching
+   - And/Or '-e' if you wish to filter results by using an exact match
+   - And/Or '-s' if you wish to look for an exact version match
+ - Use '-t' to exclude the file's path to filter the search results
+   - Remove false positives (especially when searching using numbers - i.e. versions)
+ - When using '--nmap', adding '-v' (verbose), it will search for even more combinations
+ - When updating or displaying help, search terms will be ignored
 ```
 
 ## Examples
@@ -124,6 +124,6 @@ Copied to: /root/40698.py
 
 ## URL List
 
-* [Exploit-db.com - Searchsploit](https://www.exploit-db.com/searchsploit)
-* [Exploit-db.com - Offsec-Searchsploit.pdf](https://www.exploit-db.com/documentation/Offsec-SearchSploit.pdf)
-* [Github.com - ExploitDB](https://github.com/offensive-security/exploitdb)
+- [Exploit-db.com - Searchsploit](https://www.exploit-db.com/searchsploit)
+- [Exploit-db.com - Offsec-Searchsploit.pdf](https://www.exploit-db.com/documentation/Offsec-SearchSploit.pdf)
+- [Github.com - ExploitDB](https://github.com/offensive-security/exploitdb)

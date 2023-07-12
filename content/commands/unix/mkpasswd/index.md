@@ -60,4 +60,4 @@ $6$ONAmo76fZnYT4hQD$tAhBUefxumKisUGH87kRmOChJ7fVdVMGpYTGxNFwSwn7bOVEXs9qIHY8TVqt
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/mkpasswd)
+- [Linux.die.net](https://linux.die.net/man/1/mkpasswd)

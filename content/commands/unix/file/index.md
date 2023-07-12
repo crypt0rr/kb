@@ -82,4 +82,4 @@ picture.JPG: JPEG image data
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/file)
+- [Linux.die.net](https://linux.die.net/man/1/file)

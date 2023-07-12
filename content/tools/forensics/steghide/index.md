@@ -96,4 +96,4 @@ steghide extract -sf stg.jpg
 
 ## URL List
 
-* [Sourceforge.net - steghide](http://steghide.sourceforge.net/)
+- [Sourceforge.net - steghide](http://steghide.sourceforge.net/)

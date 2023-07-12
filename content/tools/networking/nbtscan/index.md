@@ -92,4 +92,4 @@ IP address       NetBIOS Name     Server    User             MAC address
 
 ## URL List
 
-* [Sectools.org - NBTscan](https://sectools.org/tool/nbtscan/)
+- [Sectools.org - NBTscan](https://sectools.org/tool/nbtscan/)

@@ -38,4 +38,4 @@ Give port to scan: 22
 
 ## URL List
 
-* [GitHub.com - ssh-method-scanner](https://github.com/crypt0rr/ssh-method-scanner)
+- [GitHub.com - ssh-method-scanner](https://github.com/crypt0rr/ssh-method-scanner)

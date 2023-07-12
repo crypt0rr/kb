@@ -15,13 +15,13 @@ Nikto is a pluggable web server and CGI scanner written in Perl, using rfp’s L
 
 Features:
 
-* Easily updatable CSV-format checks database
-* Output reports in plain text or HTML
-* Available HTTP versions automatic switching
-* Generic as well as specific server software checks
-* SSL support (through libnet-ssleay-perl)
-* Proxy support (with authentication)
-* Cookies support
+- Easily updatable CSV-format checks database
+- Output reports in plain text or HTML
+- Available HTTP versions automatic switching
+- Generic as well as specific server software checks
+- SSL support (through libnet-ssleay-perl)
+- Proxy support (with authentication)
+- Cookies support
 
 ## Installation
 
@@ -94,4 +94,4 @@ $ nikto -host=https://kb.offsec.nl -maxtime=30s
 
 ## URL List
 
-* [Kali.org - nikto](https://www.kali.org/tools/nikto/)
+- [Kali.org - nikto](https://www.kali.org/tools/nikto/)

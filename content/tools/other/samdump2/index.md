@@ -56,6 +56,6 @@ Admin2:1001:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 
 ## URL List
 
-* [Linux.die.net - samdump2](https://linux.die.net/man/1/samdump2)
-* [Traviswhitney - Using samdump2](https://traviswhitney.com/2016/12/30/using-samdump2/)
-* [ComputerSecurityStudent.com - Password Cracking using samdump2](https://www.computersecuritystudent.com/SECURITY_TOOLS/PASSWORD_CRACKING/lesson2/index.html)
+- [Linux.die.net - samdump2](https://linux.die.net/man/1/samdump2)
+- [Traviswhitney - Using samdump2](https://traviswhitney.com/2016/12/30/using-samdump2/)
+- [ComputerSecurityStudent.com - Password Cracking using samdump2](https://www.computersecuritystudent.com/SECURITY_TOOLS/PASSWORD_CRACKING/lesson2/index.html)

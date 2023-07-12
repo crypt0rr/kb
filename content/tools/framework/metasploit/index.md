@@ -143,6 +143,6 @@ Administrator  OFFSEC   Welkom1234
 
 ## URL List
 
-* [Metasploit.com](https://www.metasploit.com/)
-* [Offensive-security.com Meterpreter](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)
-* [GitHub.com - Metasploit framework](https://github.com/rapid7/metasploit-framework)
+- [Metasploit.com](https://www.metasploit.com/)
+- [Offensive-security.com Meterpreter](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)
+- [GitHub.com - Metasploit framework](https://github.com/rapid7/metasploit-framework)

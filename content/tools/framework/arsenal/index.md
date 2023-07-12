@@ -43,4 +43,4 @@ cd arsenal
 
 ## URL List
 
-* [Github.com - Arsenal](https://github.com/Orange-Cyberdefense/arsenal)
+- [Github.com - Arsenal](https://github.com/Orange-Cyberdefense/arsenal)

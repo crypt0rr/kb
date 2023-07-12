@@ -30,5 +30,5 @@ Download newest version of [Tony](https://code.soundsoftware.ac.uk/projects/soni
 
 ## URL List
 
-* [Sonicvisualiser.org](https://sonicvisualiser.org/)
-* [Github.com - Sonic Visualiser](https://github.com/sonic-visualiser/sonic-visualiser)
+- [Sonicvisualiser.org](https://sonicvisualiser.org/)
+- [Github.com - Sonic Visualiser](https://github.com/sonic-visualiser/sonic-visualiser)

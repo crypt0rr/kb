@@ -60,4 +60,4 @@ python3 main.py usernames.txt passwords.txt --stop_brute
 
 ## URL List
 
-* [Github.com - AzureAD SSO Brute](https://github.com/thijsvos/aad_sso_brute)
+- [Github.com - AzureAD SSO Brute](https://github.com/thijsvos/aad_sso_brute)

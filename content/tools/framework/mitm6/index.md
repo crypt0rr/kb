@@ -100,4 +100,4 @@ IPv6 address fe80::4865:2 is now assigned to mac=00:00:00:00:00:26 host=DC2016.o
 
 ## URL List
 
-* [GitHub.com - mitm6](https://github.com/fox-it/mitm6)
+- [GitHub.com - mitm6](https://github.com/fox-it/mitm6)

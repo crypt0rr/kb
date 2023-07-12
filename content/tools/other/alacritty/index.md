@@ -68,4 +68,4 @@ OPTIONS:
 
 ## URL List
 
-* [GitHub.com - alacritty](https://github.com/alacritty/alacritty)
+- [GitHub.com - alacritty](https://github.com/alacritty/alacritty)

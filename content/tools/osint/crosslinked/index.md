@@ -103,4 +103,4 @@ jim.bob@example.com
 
 ## URL List
 
-* [GitHub.com - Crosslinked](https://github.com/m8r0wn/CrossLinked)
+- [GitHub.com - Crosslinked](https://github.com/m8r0wn/CrossLinked)

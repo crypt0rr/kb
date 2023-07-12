@@ -105,6 +105,6 @@ Analytics are disabled.
 
 ## URL List
 
-* [Brew.sh](https://brew.sh)
-* [Brew.sh - All Formula](https://formulae.brew.sh/formula/)
-* [Docs.brew.sh - Homebrew Documentation](https://docs.brew.sh/Manpage)
+- [Brew.sh](https://brew.sh)
+- [Brew.sh - All Formula](https://formulae.brew.sh/formula/)
+- [Docs.brew.sh - Homebrew Documentation](https://docs.brew.sh/Manpage)

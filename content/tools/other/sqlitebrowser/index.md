@@ -53,6 +53,6 @@ Possible command line arguments:
 
 ## URL List
 
-* [Sqlitebrowser.org](https://sqlitebrowser.org/)
-* [Github.com - sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser)
-* [Snapcraft.io - sqlitebrowser](https://snapcraft.io/sqlitebrowser)
+- [Sqlitebrowser.org](https://sqlitebrowser.org/)
+- [Github.com - sqlitebrowser](https://github.com/sqlitebrowser/sqlitebrowser)
+- [Snapcraft.io - sqlitebrowser](https://snapcraft.io/sqlitebrowser)

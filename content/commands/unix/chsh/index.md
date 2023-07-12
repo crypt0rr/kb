@@ -39,4 +39,4 @@ Changing the login shell for <user>
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/chsh)
+- [Linux.die.net](https://linux.die.net/man/1/chsh)

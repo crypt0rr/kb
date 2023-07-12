@@ -83,4 +83,4 @@ Text : Welcome0
 
 ## URL List
 
-* [Github.com - Search That Hash](https://github.com/HashPals/Search-That-Hash)
+- [Github.com - Search That Hash](https://github.com/HashPals/Search-That-Hash)

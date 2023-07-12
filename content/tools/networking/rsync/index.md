@@ -203,5 +203,5 @@ rsync rsync://<ip-or-domain>/<folder-module>
 
 ## URL List
 
-* [Linux.die.net - rsync](https://linux.die.net/man/1/rsync)
-* [Nmap.org - rsync-brute](https://nmap.org/nsedoc/scripts/rsync-brute.html)
+- [Linux.die.net - rsync](https://linux.die.net/man/1/rsync)
+- [Nmap.org - rsync-brute](https://nmap.org/nsedoc/scripts/rsync-brute.html)

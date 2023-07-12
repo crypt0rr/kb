@@ -33,6 +33,6 @@ Check the checklist on [book.hacktricks.xyz](https://book.hacktricks.xyz/linux-u
 
 ## URL List
 
-* [GitHub.com - Privilege Escalation Awesome Scripts Suite](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
-* [WinPEAS GitHub](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
-* [LinPEAS Github](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
+- [GitHub.com - Privilege Escalation Awesome Scripts Suite](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite)
+- [WinPEAS GitHub](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
+- [LinPEAS Github](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)

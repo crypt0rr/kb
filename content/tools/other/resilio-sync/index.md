@@ -69,5 +69,5 @@ sudo rm /var/lib/resilio-sync/settings.dat.old
 
 ## URL List
 
-* [Resilio.com](https://www.resilio.com)
-* [Resilio.com - Help Center](https://help.resilio.com/hc/en-us)
+- [Resilio.com](https://www.resilio.com)
+- [Resilio.com - Help Center](https://help.resilio.com/hc/en-us)

@@ -57,4 +57,4 @@ Codename:   focal
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/lsb_release)
+- [Linux.die.net](https://linux.die.net/man/1/lsb_release)

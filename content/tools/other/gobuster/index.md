@@ -73,9 +73,9 @@ test1.php
 
 ### Wordlists
 
-* [Github.com - Bo0om - fuzz.txt](https://github.com/Bo0oM/fuzz.txt/blob/master/fuzz.txt)
-* [Github.com - daviddias - lists](https://github.com/daviddias/node-dirbuster/tree/master/lists)
+- [Github.com - Bo0om - fuzz.txt](https://github.com/Bo0oM/fuzz.txt/blob/master/fuzz.txt)
+- [Github.com - daviddias - lists](https://github.com/daviddias/node-dirbuster/tree/master/lists)
 
 ## URL List
 
-* [GitHub.com - gobuster](https://github.com/OJ/gobuster)
+- [GitHub.com - gobuster](https://github.com/OJ/gobuster)

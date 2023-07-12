@@ -98,4 +98,4 @@ $ pymeta -d example.com
 
 ## URL List
 
-* [GitHub.com - pymeta](https://github.com/m8r0wn/pymeta)
+- [GitHub.com - pymeta](https://github.com/m8r0wn/pymeta)

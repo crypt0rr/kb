@@ -178,6 +178,6 @@ Connecting to host 10.10.20.250, port 5201
 
 ## URL List
 
-* [iperf.fr - iperf](https://iperf.fr/)
-* [iperf.fr - Docs](https://iperf.fr/iperf-doc.php)
-* [Support.cumulusnetworks.com - iperf - throughput Testing and Troubleshooting](https://support.cumulusnetworks.com/hc/en-us/articles/216509388-Throughput-Testing-and-Troubleshooting)
+- [iperf.fr - iperf](https://iperf.fr/)
+- [iperf.fr - Docs](https://iperf.fr/iperf-doc.php)
+- [Support.cumulusnetworks.com - iperf - throughput Testing and Troubleshooting](https://support.cumulusnetworks.com/hc/en-us/articles/216509388-Throughput-Testing-and-Troubleshooting)

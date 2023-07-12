@@ -72,4 +72,4 @@ Misconfigurations       : ESC8
 
 ## URL List
 
-* [Github.com - PSPKIAudit](https://github.com/GhostPack/PSPKIAudit)
+- [Github.com - PSPKIAudit](https://github.com/GhostPack/PSPKIAudit)

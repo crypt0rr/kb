@@ -27,5 +27,5 @@ Download newest release from [Winaero.com](https://winaero.com/winaero-tweaker/)
 
 ## URL List
 
-* [Winaero.com](https://winaero.com/)
-* [Winaero.com - WinaeroTweaker](https://winaero.com/winaero-tweaker/)
+- [Winaero.com](https://winaero.com/)
+- [Winaero.com - WinaeroTweaker](https://winaero.com/winaero-tweaker/)

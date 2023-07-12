@@ -94,5 +94,5 @@ cat <targets> | ./aquatone -ports <flag>
 
 ## URL List
 
-* [Github.com - aquatone](https://github.com/shelld3v/aquatone)
-* [GitHub.com - aquatone (original, not maintained)](https://github.com/michenriksen/aquatone)
+- [Github.com - aquatone](https://github.com/shelld3v/aquatone)
+- [GitHub.com - aquatone (original, not maintained)](https://github.com/michenriksen/aquatone)

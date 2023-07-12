@@ -78,4 +78,4 @@ optional arguments:
 
 ## URL List
 
-* [Github.com - StegCracker](https://github.com/Paradoxis/StegCracker)
+- [Github.com - StegCracker](https://github.com/Paradoxis/StegCracker)

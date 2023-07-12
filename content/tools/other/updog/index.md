@@ -62,4 +62,4 @@ $ updog -d temp --ssl --password 'JoeJoe'
 
 ## URL List
 
-* [GitHub.com - updog](https://github.com/sc0tfree/updog)
+- [GitHub.com - updog](https://github.com/sc0tfree/updog)

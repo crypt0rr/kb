@@ -116,5 +116,5 @@ C:\TOOLS>PrintSpoofer.exe -d 3 -c "powershell -ep bypass"
 
 ## URL List
 
-* [Github.com - PrintSpoofer](https://github.com/itm4n/PrintSpoofer)
-* [itm4n.github.io - PrintSpoofer - Abusing Impersonation Privileges on Windows 10 and Server 2019](https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/)
+- [Github.com - PrintSpoofer](https://github.com/itm4n/PrintSpoofer)
+- [itm4n.github.io - PrintSpoofer - Abusing Impersonation Privileges on Windows 10 and Server 2019](https://itm4n.github.io/printspoofer-abusing-impersonate-privileges/)

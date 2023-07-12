@@ -76,5 +76,5 @@ Update all your apps in one sweep, including the macOS itself. Everything is ref
 
 ## URL List
 
-* [CleanMyMac.com](https://cleanmymac.com/)
-* [Apps.apple.com](https://apps.apple.com/us/app/cleanmymac-x/id1339170533?l=en&mt=12)
+- [CleanMyMac.com](https://cleanmymac.com/)
+- [Apps.apple.com](https://apps.apple.com/us/app/cleanmymac-x/id1339170533?l=en&mt=12)

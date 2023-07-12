@@ -65,5 +65,5 @@ $ ip -6 addr
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/ip)
-* [HowToGeek.com](https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/)
+- [Linux.die.net](https://linux.die.net/man/8/ip)
+- [HowToGeek.com](https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/)

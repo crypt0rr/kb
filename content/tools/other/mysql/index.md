@@ -274,5 +274,5 @@ SELECT User from mysql.user;
 
 ## URL List
 
-* [DigitalOcean.com - How to install MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
-* [Server-world.info](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=nginx&f=6)
+- [DigitalOcean.com - How to install MySQL on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-18-04)
+- [Server-world.info](https://www.server-world.info/en/note?os=Ubuntu_18.04&p=nginx&f=6)

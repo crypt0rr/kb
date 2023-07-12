@@ -60,5 +60,5 @@ Swap:         4,0Gi          0B       4,0Gi
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/free)
-* [man7.org](http://man7.org/linux/man-pages/man1/free.1.html)
+- [Linux.die.net](https://linux.die.net/man/1/free)
+- [man7.org](http://man7.org/linux/man-pages/man1/free.1.html)

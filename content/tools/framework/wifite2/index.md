@@ -142,4 +142,4 @@ $ sudo ./Wifite.py
 
 ## URL List
 
-* [Github.com - Wifite2](https://github.com/derv82/wifite2)
+- [Github.com - Wifite2](https://github.com/derv82/wifite2)

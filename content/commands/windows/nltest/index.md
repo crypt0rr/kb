@@ -97,4 +97,4 @@ The command completed successfully
 
 ## URL List
 
-* [Docs.microsoft.com - Nltest](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731935(v=ws.11))
+- [Docs.microsoft.com - Nltest](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731935(v=ws.11))

@@ -26,5 +26,5 @@ Download via [Apple AppStore](https://apps.apple.com/app/easyres/id688211836?ls=
 
 ## URL List
 
-* [Easyresapp.com](http://easyresapp.com/)
-* [Apps.apple.com](https://apps.apple.com/app/easyres/id688211836?ls=1&mt=12)
+- [Easyresapp.com](http://easyresapp.com/)
+- [Apps.apple.com](https://apps.apple.com/app/easyres/id688211836?ls=1&mt=12)

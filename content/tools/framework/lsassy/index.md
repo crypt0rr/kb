@@ -107,9 +107,9 @@ $ lsassy -d <domain> -u '<domain-admin>or<local-admin>' -p '<password>' 10.10.10
 
 Modules that can be used without prerequisites and from experience are not generally detected:
 
-* comsvcs_stealth
-* procdump_embedded
-* mirrordump_embedded
+- comsvcs_stealth
+- procdump_embedded
+- mirrordump_embedded
 
 #### comsvcs_stealth
 
@@ -132,5 +132,5 @@ $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 
 ## URL List
 
-* [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
-* [Github.com - Dumpert](https://github.com/outflanknl/Dumpert)
+- [GitHub.com - lsassy](https://github.com/Hackndo/lsassy)
+- [Github.com - Dumpert](https://github.com/outflanknl/Dumpert)

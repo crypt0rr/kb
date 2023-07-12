@@ -23,4 +23,4 @@ Download newest release from [coconut-flavour.com](https://coconut-flavour.com/d
 
 ## URL List
 
-* [Coconut-flavour.com - Coconutbattery](https://www.coconut-flavour.com/coconutbattery/)
+- [Coconut-flavour.com - Coconutbattery](https://www.coconut-flavour.com/coconutbattery/)

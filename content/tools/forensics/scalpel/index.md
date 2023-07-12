@@ -71,5 +71,5 @@ Usage: scalpel [-b] [-c <config file>] [-d] [-h|V] [-i <file>]
 
 ## URL List
 
-* [Linux.die.net - scalpel](https://linux.die.net/man/1/scalpel)
-* [GitHub.com - scalpel](https://github.com/sleuthkit/scalpel)
+- [Linux.die.net - scalpel](https://linux.die.net/man/1/scalpel)
+- [GitHub.com - scalpel](https://github.com/sleuthkit/scalpel)

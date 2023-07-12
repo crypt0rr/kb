@@ -94,4 +94,4 @@ For more details see dmesg(1).
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/dmesg)
+- [Linux.die.net](https://linux.die.net/man/8/dmesg)

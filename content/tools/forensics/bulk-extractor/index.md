@@ -233,5 +233,5 @@ Total email features found: 899
 
 ## URL List
 
-* [GitHub.com - bulk_extractor](https://github.com/simsong/bulk_extractor)
-* [Tools.kali.org](https://tools.kali.org/forensics/bulk-extractor)
+- [GitHub.com - bulk_extractor](https://github.com/simsong/bulk_extractor)
+- [Tools.kali.org](https://tools.kali.org/forensics/bulk-extractor)

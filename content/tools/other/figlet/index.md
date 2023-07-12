@@ -58,4 +58,4 @@ $ figlet -f script yourtexthere
 
 ## URL List
 
-* [Linux.com - Fun With the Figlet And Toilet Commands](https://www.linux.com/training-tutorials/linux-tips-fun-figlet-and-toilet-commands/)
+- [Linux.com - Fun With the Figlet And Toilet Commands](https://www.linux.com/training-tutorials/linux-tips-fun-figlet-and-toilet-commands/)

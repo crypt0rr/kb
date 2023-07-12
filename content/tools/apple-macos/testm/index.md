@@ -23,12 +23,12 @@ TestM reports are easy to understand, simple to produce, and available online an
 
 List of Tests Included in the app:
 
-* Screen test: Touch Screen, 3D touch
-* Sound test: Speakers, Earpiece, Microphone, Headphones
-* Motion: Gyroscope, Accelerometer, Compass
-* Connectivity test: WiFi, Bluetooth, Cellular, GPS
-* Hardware test: Light Sensor, Charger, Vibration, Proximity Sensor, Fingerprint Sensor
-* Camera test: Front Camera, Back Camera, LED Flash
+- Screen test: Touch Screen, 3D touch
+- Sound test: Speakers, Earpiece, Microphone, Headphones
+- Motion: Gyroscope, Accelerometer, Compass
+- Connectivity test: WiFi, Bluetooth, Cellular, GPS
+- Hardware test: Light Sensor, Charger, Vibration, Proximity Sensor, Fingerprint Sensor
+- Camera test: Front Camera, Back Camera, LED Flash
 
 ## Installation
 
@@ -41,4 +41,4 @@ List of Tests Included in the app:
 
 ## URL List
 
-* [Apps.apple.com - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
+- [Apps.apple.com - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)

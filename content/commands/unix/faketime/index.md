@@ -55,4 +55,4 @@ Fri 28 Jan 2022 07:19:20 AM EST
 
 ## URL List
 
-* [Manpages.ubuntu.com - Faketime](https://manpages.ubuntu.com/manpages/trusty/man1/faketime.1.html)
+- [Manpages.ubuntu.com - Faketime](https://manpages.ubuntu.com/manpages/trusty/man1/faketime.1.html)

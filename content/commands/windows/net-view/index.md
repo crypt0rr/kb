@@ -33,4 +33,4 @@ net view /DOMAIN:domainname
 
 ## URL List
 
-* [ss64.com](https://ss64.com/nt/net-view.html)
+- [ss64.com](https://ss64.com/nt/net-view.html)

@@ -159,6 +159,6 @@ Options:
 
 ## URL List
 
-* [Snapcraft.io - htmldoc](https://snapcraft.io/htmldoc)
-* [Msweet.org - htmldoc](https://www.msweet.org/htmldoc/)
-* [Github.com - htmldoc](https://github.com/michaelrsweet/htmldoc)
+- [Snapcraft.io - htmldoc](https://snapcraft.io/htmldoc)
+- [Msweet.org - htmldoc](https://www.msweet.org/htmldoc/)
+- [Github.com - htmldoc](https://github.com/michaelrsweet/htmldoc)

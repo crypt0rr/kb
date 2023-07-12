@@ -21,11 +21,11 @@ The project team can be contacted at <scoutsuite@nccgroup.com>.
 
 The following cloud providers are currently supported:
 
-* Amazon Web Services
-* Microsoft Azure
-* Google Cloud Platform
-* Alibaba Cloud (alpha)
-* Oracle Cloud Infrastructure (alpha)
+- Amazon Web Services
+- Microsoft Azure
+- Google Cloud Platform
+- Alibaba Cloud (alpha)
+- Oracle Cloud Infrastructure (alpha)
 
 ## Installation
 
@@ -48,4 +48,4 @@ There are also a number of handy [tools](https://github.com/nccgroup/ScoutSuite/
 
 ## URL List
 
-* [Github.com - ScoutSuite](https://github.com/nccgroup/ScoutSuite)
+- [Github.com - ScoutSuite](https://github.com/nccgroup/ScoutSuite)

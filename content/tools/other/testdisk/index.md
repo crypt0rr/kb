@@ -84,4 +84,4 @@ Select a media (use Arrow keys, then press Enter):
 
 ## URL List
 
-* [GitHub.com - Testdisk](https://github.com/cgsecurity/testdisk)
+- [GitHub.com - Testdisk](https://github.com/cgsecurity/testdisk)

@@ -95,6 +95,6 @@ More information: <https://www.gnu.org/software/tar>.
 
 ## URL list
 
-* [tldr.sh](https://tldr.sh/)
-* [Github.com - tldr](https://github.com/tldr-pages/tldr)
-* [Formulae.brew.sh](https://formulae.brew.sh/formula/tldr#default)
+- [tldr.sh](https://tldr.sh/)
+- [Github.com - tldr](https://github.com/tldr-pages/tldr)
+- [Formulae.brew.sh](https://formulae.brew.sh/formula/tldr#default)

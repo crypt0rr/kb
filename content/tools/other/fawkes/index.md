@@ -86,4 +86,4 @@ Number of targets: 93
 
 ## URL List
 
-* [Github.com - fawkes](https://github.com/0xdutra/fawkes)
+- [Github.com - fawkes](https://github.com/0xdutra/fawkes)

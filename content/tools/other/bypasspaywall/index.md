@@ -21,4 +21,4 @@ Browsers based on Chromium need to look at the [Gitlab](https://gitlab.com/magno
 
 ## URL List
 
-* [Addons.mozilla.org - Bypass Paywalls Clean](https://addons.mozilla.org/nl/firefox/addon/bypass-paywalls-clean/)
+- [Addons.mozilla.org - Bypass Paywalls Clean](https://addons.mozilla.org/nl/firefox/addon/bypass-paywalls-clean/)

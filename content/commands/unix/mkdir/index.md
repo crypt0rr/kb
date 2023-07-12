@@ -44,4 +44,4 @@ one   three two
 
 ## URL List
 
-* [Linux.die.net - mkdir](https://linux.die.net/man/1/mkdir)
+- [Linux.die.net - mkdir](https://linux.die.net/man/1/mkdir)

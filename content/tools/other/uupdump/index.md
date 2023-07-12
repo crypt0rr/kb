@@ -99,6 +99,6 @@ Done.
 
 ## URL List
 
-* [UUPdump.net](https://uupdump.net/)
-* [Github.com - UUP dump](https://github.com/uup-dump)
-* [Win10.guru - UUP Dump - Get Insider Fast Ring ISO](https://win10.guru/uup-dump-get-insider-fast-ring-iso/)
+- [UUPdump.net](https://uupdump.net/)
+- [Github.com - UUP dump](https://github.com/uup-dump)
+- [Win10.guru - UUP Dump - Get Insider Fast Ring ISO](https://win10.guru/uup-dump-get-insider-fast-ring-iso/)

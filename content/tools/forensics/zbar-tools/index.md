@@ -58,4 +58,4 @@ QR-Code:https://soundcloud.com/user-86667759/thm-ctf-vol1
 
 ## URL List
 
-* [Linux.die.net - zbarimg](https://linux.die.net/man/1/zbarimg)
+- [Linux.die.net - zbarimg](https://linux.die.net/man/1/zbarimg)

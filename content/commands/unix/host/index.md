@@ -116,4 +116,4 @@ intranet.megacorpone.com has address 51.222.169.211
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/host)
+- [Linux.die.net](https://linux.die.net/man/1/host)

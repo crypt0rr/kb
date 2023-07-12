@@ -140,4 +140,4 @@ events.hackerone.com
 
 ## URL List
 
-* [Github.com - subfinder](https://github.com/projectdiscovery/subfinder)
+- [Github.com - subfinder](https://github.com/projectdiscovery/subfinder)

@@ -162,5 +162,5 @@ User-Agent: Joe
 
 ## URL List
 
-* [Tcpdump.org](https://www.tcpdump.org/)
-* [Danielmeissler.com - A tcpdump Tutorial with Examples — 50 Ways to Isolate Traffic](https://danielmiessler.com/study/tcpdump/)
+- [Tcpdump.org](https://www.tcpdump.org/)
+- [Danielmeissler.com - A tcpdump Tutorial with Examples — 50 Ways to Isolate Traffic](https://danielmiessler.com/study/tcpdump/)

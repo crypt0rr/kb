@@ -13,10 +13,10 @@ tags : ['Other', 'Active Directory']
 
 adPEAS is a Powershell tool to automate Active Directory enumeration. In fact, adPEAS is like a wrapper for different other cool projects like
 
-* PowerView
-* Empire
-* Bloodhound
-* and some own written lines of code
+- PowerView
+- Empire
+- Bloodhound
+- and some own written lines of code
 
 As said, adPEAS is a wrapper for other tools. They are almost all written in pure Powershell but some of them are included as compressed binary blob or C# code.
 
@@ -30,13 +30,13 @@ adPEAS can be run simply by starting the script via 'invoke-adPEAS' if it is sta
 
 adPEAS consists of the following enumeration modules:
 
-* Domain - Searching for basic Active Directory information, like Domain Controllers, Sites und Subnets, Trusts and DCSync rights
-* CA - Searching for basic Enterprise Certificate Authority information, like CA Name, CA Server and Templates
-* Creds - Searching for different kind of credential exposure, like ASREPRoast, Kerberoasting, GroupPolicies, Netlogon scripts, LAPS, gMSA, certain account attributes, e.g. UnixPassword, etc.
-* Delegation - Searching for delegation issues, like 'Constrained Delegation', 'Unconstrained Delegation' and 'Resource Based Unconstrained Delegation', for computer and user accounts
-* Accounts - Searching for high privileged user accounts in predefined groups, account issues like e.g. password not expire
-* Computer - Enumerating Domain Controllers, CA and Exchange server, with the switch -Vulns it checks the systems for EternalBlue, BlueKeep, ZeroLogon and critical Exchange vulnerabilities
-* Bloodhound - Enumerating Active Directory with BloodHound
+- Domain - Searching for basic Active Directory information, like Domain Controllers, Sites und Subnets, Trusts and DCSync rights
+- CA - Searching for basic Enterprise Certificate Authority information, like CA Name, CA Server and Templates
+- Creds - Searching for different kind of credential exposure, like ASREPRoast, Kerberoasting, GroupPolicies, Netlogon scripts, LAPS, gMSA, certain account attributes, e.g. UnixPassword, etc.
+- Delegation - Searching for delegation issues, like 'Constrained Delegation', 'Unconstrained Delegation' and 'Resource Based Unconstrained Delegation', for computer and user accounts
+- Accounts - Searching for high privileged user accounts in predefined groups, account issues like e.g. password not expire
+- Computer - Enumerating Domain Controllers, CA and Exchange server, with the switch -Vulns it checks the systems for EternalBlue, BlueKeep, ZeroLogon and critical Exchange vulnerabilities
+- Bloodhound - Enumerating Active Directory with BloodHound
 
 ## Installation
 
@@ -96,4 +96,4 @@ Domain        : offsec.nl
 
 ## URL List
 
-* [Github.com - adPEAS](https://github.com/61106960/adPEAS)
+- [Github.com - adPEAS](https://github.com/61106960/adPEAS)

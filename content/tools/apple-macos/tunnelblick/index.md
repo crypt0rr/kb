@@ -33,5 +33,5 @@ Download newest release from [Github.com - release](https://github.com/Tunnelbli
 
 ## URL List
 
-* [Tunnelblick.net](https://tunnelblick.net/)
-* [Github.com - Tunnelblick](https://github.com/Tunnelblick/Tunnelblick)
+- [Tunnelblick.net](https://tunnelblick.net/)
+- [Github.com - Tunnelblick](https://github.com/Tunnelblick/Tunnelblick)

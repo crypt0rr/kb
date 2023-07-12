@@ -13,9 +13,9 @@ weight : 0
 
 Fanny is a free Notification Center Widget and Menu Bar application to monitor your Macs fans.
 
-* Compact design allowing you to keep an eye on your systems fans and CPU/GPU temperature while not cluttering up your work space.
-* Get information on; current speed, target speed, minimum speed, maximum speed, number of fans, and CPU/GPU temperature.
-* Simply open the Notification Center or Menu Bar application to glance at your Macs fan stats.
+- Compact design allowing you to keep an eye on your systems fans and CPU/GPU temperature while not cluttering up your work space.
+- Get information on; current speed, target speed, minimum speed, maximum speed, number of fans, and CPU/GPU temperature.
+- Simply open the Notification Center or Menu Bar application to glance at your Macs fan stats.
 
 ## Installation
 
@@ -28,5 +28,5 @@ Download newest release from [fannywidget.com](https://fannywidget.com/)
 
 ## URL List
 
-* [Fannywidget.com](https://fannywidget.com/)
-* [Github.com - Fanny](https://github.com/DanielStormApps/Fanny)
+- [Fannywidget.com](https://fannywidget.com/)
+- [Github.com - Fanny](https://github.com/DanielStormApps/Fanny)

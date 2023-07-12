@@ -77,7 +77,7 @@ update-alternatives: using /usr/bin/tilix.wrapper to provide /usr/bin/x-terminal
 
 ## URL List
 
-* [GitHub.com - tilix](https://github.com/gnunn1/tilix/)
-* [GitHub.io - tilix-web](https://gnunn1.github.io/tilix-web/)
-* [itsfoss.com - Change default terminal Ubuntu](https://itsfoss.com/change-default-terminal-ubuntu/)
-* [Darculatheme.com - Tilix](https://draculatheme.com/tilix/)
+- [GitHub.com - tilix](https://github.com/gnunn1/tilix/)
+- [GitHub.io - tilix-web](https://gnunn1.github.io/tilix-web/)
+- [itsfoss.com - Change default terminal Ubuntu](https://itsfoss.com/change-default-terminal-ubuntu/)
+- [Darculatheme.com - Tilix](https://draculatheme.com/tilix/)

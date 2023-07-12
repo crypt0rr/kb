@@ -68,5 +68,5 @@ PASSWORD FOUND!!!!: pw == thisisapassword
 
 ## URL List
 
-* [Oldhome.schmorp.de - fcrackzip](http://oldhome.schmorp.de/marc/fcrackzip.html)
-* [Formulae.brew.sh - fcrackzip](https://formulae.brew.sh/formula/fcrackzip#default)
+- [Oldhome.schmorp.de - fcrackzip](http://oldhome.schmorp.de/marc/fcrackzip.html)
+- [Formulae.brew.sh - fcrackzip](https://formulae.brew.sh/formula/fcrackzip#default)

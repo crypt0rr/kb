@@ -139,4 +139,4 @@ Rule deleted
 
 ## URL List
 
-* [Ubuntu.com - UFW](https://help.ubuntu.com/community/UFW)
+- [Ubuntu.com - UFW](https://help.ubuntu.com/community/UFW)

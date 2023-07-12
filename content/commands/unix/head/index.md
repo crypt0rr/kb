@@ -82,4 +82,4 @@ line7
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/head)
+- [Linux.die.net](https://linux.die.net/man/1/head)

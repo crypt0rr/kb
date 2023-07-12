@@ -70,5 +70,5 @@ Password changed successfully
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/passwd)
-* [Linux.die.net passwd file](https://linux.die.net/man/5/passwd)
+- [Linux.die.net](https://linux.die.net/man/1/passwd)
+- [Linux.die.net passwd file](https://linux.die.net/man/5/passwd)

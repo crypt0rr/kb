@@ -180,4 +180,4 @@ $ ls -l Desktop | egrep -c '^-'
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/1/ls)
+- [Linux.die.net](https://linux.die.net/man/1/ls)

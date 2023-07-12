@@ -127,4 +127,4 @@ dmesg | grep -i sata | grep 'link up'
 
 ## URL List
 
-* [Linux.die.net](https://linux.die.net/man/8/hdparm)
+- [Linux.die.net](https://linux.die.net/man/8/hdparm)

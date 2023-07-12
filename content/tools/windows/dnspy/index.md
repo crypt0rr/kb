@@ -28,4 +28,4 @@ cd dnSpy
 
 ## URL List
 
-* [GitHub.com - dnSpy](https://github.com/0xd4d/dnSpy)
+- [GitHub.com - dnSpy](https://github.com/0xd4d/dnSpy)

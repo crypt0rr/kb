@@ -69,4 +69,4 @@ Subdomain found: www.example.com.
 
 ## URL List
 
-* [Github.com - CCrawlDNS](https://github.com/lgandx/CCrawlDNS)
+- [Github.com - CCrawlDNS](https://github.com/lgandx/CCrawlDNS)

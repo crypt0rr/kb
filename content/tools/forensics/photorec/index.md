@@ -52,4 +52,4 @@ sudo photorec /dev/sda1
 
 ## URL List
 
-* [CGSecurity.org - photorec](https://www.cgsecurity.org/wiki/PhotoRec)
+- [CGSecurity.org - photorec](https://www.cgsecurity.org/wiki/PhotoRec)

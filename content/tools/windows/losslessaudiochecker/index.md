@@ -24,4 +24,4 @@ Download newest release from [Losslessaudiochecker.com](https://losslessaudioche
 
 ## URL List
 
-* [Losslessaudiochecker.com](https://losslessaudiochecker.com/)
+- [Losslessaudiochecker.com](https://losslessaudiochecker.com/)

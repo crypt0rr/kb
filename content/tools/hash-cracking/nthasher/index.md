@@ -66,4 +66,4 @@ cb30eb57a626946c7e70f4232f677bb2
 
 ## URL List
 
-* [Github.com - nthasher](https://github.com/singe/nthasher)
+- [Github.com - nthasher](https://github.com/singe/nthasher)

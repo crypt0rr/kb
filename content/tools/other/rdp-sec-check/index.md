@@ -110,4 +110,4 @@ rdp-sec-check v0.9-beta completed at Wed Mar 18 11:08:15 2020
 
 ## URL List
 
-* [GitHub.com - RDP-sec-check](https://github.com/portcullislabs/rdp-sec-check)
+- [GitHub.com - RDP-sec-check](https://github.com/portcullislabs/rdp-sec-check)

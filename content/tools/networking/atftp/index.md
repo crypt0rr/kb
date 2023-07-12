@@ -75,4 +75,4 @@ Transfer successful: 1337420 bytes in 69 second(s), 1337 bytes/s
 
 ## URL list
 
-* [Linux.die.net - atftp](https://linux.die.net/man/1/atftp)
+- [Linux.die.net - atftp](https://linux.die.net/man/1/atftp)

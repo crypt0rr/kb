@@ -142,5 +142,5 @@ Your Report : reports/10.10.10.10/
 
 ## URL List
 
-* [Github.com - JoomScan](https://github.com/OWASP/joomscan)
-* [Tools.kali.org - JoomScan](https://tools.kali.org/web-applications/joomscan)
+- [Github.com - JoomScan](https://github.com/OWASP/joomscan)
+- [Tools.kali.org - JoomScan](https://tools.kali.org/web-applications/joomscan)

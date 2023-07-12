@@ -159,4 +159,4 @@ PLAY RECAP *********************************************************************
 
 ## URL List
 
-* [Ansible.com](https://www.ansible.com/)
+- [Ansible.com](https://www.ansible.com/)

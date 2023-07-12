@@ -172,4 +172,4 @@ $ dnsrecon -d megacorpone.com -D ~/list.txt -t brt
 
 ## URL List
 
-* [GitHub.com - DNSrecon](https://github.com/darkoperator/dnsrecon)
+- [GitHub.com - DNSrecon](https://github.com/darkoperator/dnsrecon)

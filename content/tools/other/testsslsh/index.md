@@ -201,6 +201,6 @@ No engine or GOST support via engine with your /usr/bin/openssl
 
 ## URL List
 
-* [Testssl.sh](https://testssl.sh/)
-* [GitHub.com - testssl.sh](https://github.com/drwetter/testssl.sh)
-* [Ciphersuite.info](https://ciphersuite.info/)
+- [Testssl.sh](https://testssl.sh/)
+- [GitHub.com - testssl.sh](https://github.com/drwetter/testssl.sh)
+- [Ciphersuite.info](https://ciphersuite.info/)
