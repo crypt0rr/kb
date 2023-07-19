@@ -34,6 +34,9 @@ options:
   -b BASE, --base BASE  LDAP base for query (by default, this value is pulled from remote Ldap)
   -t {ntlm,simple}, --type {ntlm,simple}
                         Authentication type: ntlm (default) or simple
+  --throttle THROTTLE   Add a throttle between queries to sneak under detection thresholds (in seconds between queries: argument to the sleep function)
+  --page_size PAGE_SIZE
+                        Configure the page size used by the engine to query the LDAP server (default: 1000)
 
 NTLM authentication:
   -u USERNAME, --username USERNAME
@@ -56,8 +59,11 @@ Anonymous authentication:
 commands:
   available commands
 
-  {computers,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,subnets,trusts,users,zones,from_guid,from_sid,memberships,membersof,object,sddl,zone,all,enum_users,search,add_to_group,modify_password,remove_from_group,unlock}
+  {auth_policies,computers,conf,delegations,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,shadow_principals,silos,smsa,subnets,trusts,users,zones,from_guid,from_sid,laps,memberships,membersof,object,sddl,silo,zone,all,enum_users,search,add_to_group,create_computer,modify_password,remove_from_group,unlock}
+    auth_policies       List the authentication policies configured in the Active Directory.
     computers           List the computer hostnames and resolve them if --resolve is specify.
+    conf                Dump the configuration partition of the Active Directory.
+    delegations         List accounts configured for any kind of delegation.
     domain_policy       Return the domain policy.
     gmsa                List the gmsa accounts and retrieve NT hash if possible.
     gpo                 Return the list of Group policy objects.
@@ -66,21 +72,27 @@ commands:
     ou                  Return the list of organizational units with linked GPO.
     pkis                List pkis.
     pso                 List the Password Settings Objects.
+    shadow_principals   List the shadow principals and the groups associated with.
+    silos               List the silos configured in the Active Directory.
+    smsa                List the smsa accounts and the machines they are associated with.
     subnets             List sites and associated subnets.
     trusts              List the domain's trust relationships.
     users               List users according to a filter.
     zones               List the DNS zones configured in the Active Directory.
     from_guid           Return the object associated with the given `guid`.
     from_sid            Return the object associated with the given `sid`.
+    laps                Return the LAPS passwords. If a target is specified, only retrieve the LAPS password for this one.
     memberships         List the group for which `account` belongs to.
     membersof           List the members of `group`.
     object              Return the records containing `object` in a CN.
     sddl                Returns the SDDL of an object given it's CN.
+    silo                Get information about a specific `silo`.
     zone                Return the records of a DNS zone.
     all                 Collect and store computers, domain_policy, zones, gpo, groups, ou, users, trusts, pso information
     enum_users          Anonymously enumerate users with LDAP pings.
     search              Query the LDAP with `filter` and retrieve ALL or `attributes` if specified.
     add_to_group        Add `user` to `group`.
+    create_computer     Create a computer account
     modify_password     Change `user`'s password.
     remove_from_group   Remove `user` from `group`.
     unlock              Unlock `user`.

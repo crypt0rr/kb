@@ -20,13 +20,13 @@ In-depth ldap enumeration utility bringing two modules.
 ## Installation
 
 ```plain
-python3 -m pip3 install git+https://github.com/franc-pentest/ldeep
+python3 -m pip install git+https://github.com/franc-pentest/ldeep
 ```
 
 ## Upgrading Current Installation
 
 ```plain
-python3 -m pip3 install --upgrade git+https://github.com/franc-pentest/ldeep
+python3 -m pip install --upgrade git+https://github.com/franc-pentest/ldeep
 ```
 
 ## URL List
