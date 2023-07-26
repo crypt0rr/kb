@@ -52,13 +52,13 @@ Use "gobuster [command] --help" for more information about a command.
 ### Start gobuster with directory list only showing status code 200 OK
 
 ```plain
-./gobuster dir -u <url> -w <directory-lits>.txt -k --statuscodes 200
+./gobuster dir -u <url> -w <directory-list>.txt -k --statuscodes 200
 ```
 
 ### Append extension after every entry in wordlist
 
 ```plain
-./gobuster dir -u <url> -w <directory-lits>.txt -x php
+./gobuster dir -u <url> -w <directory-list>.txt -x php
 ```
 
 Will result in:
@@ -68,7 +68,7 @@ test1.php
 ### Start gobuster through proxy
 
 ```plain
-./gobuster dir -u <url> -w <directory-lits>.txt -k --statuscodes 200 --proxy http://127.0.0.1:8080
+./gobuster dir -u <url> -w <directory-list>.txt -k --statuscodes 200 --proxy http://127.0.0.1:8080
 ```
 
 ### Wordlists
