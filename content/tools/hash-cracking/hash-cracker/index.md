@@ -38,21 +38,34 @@ git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
                  Disable loopback functionality
         -n / --no-limit
                  Disable the use of optimized kernels (un-limits password length)
-        -m / --module-info
+        --hwmon-enable
+                 Enable hashcat to do hardware monitoring
+        --module-info
                  Display information around modules/options
         -s [hash-name] / --search [hash-name]
                  Will search local DB for hash module. E.g. '-s ntlm'
+        --static
+                 Use the 'hash-cracker.conf' static configuration file.
 ```
+
+## Static Configuration File
+
+By default, hash-cracker will run in 'ask you all variable' mode. When specifying `--static` the `hash-cracker.conf` file is used for some basic settings. You can specify:
+
+- `HASHCAT` - binary path where you've installed [hashcat](https://github.com/hashcat/hashcat)
+- `HASHTYPE` - mode hashcat will run in (e.g. 1000 (NTLM))
+- `HASHLIST` - file containing target hashes
+- `POTFILE` - specify the potfile you want to use / create
 
 ## Examples
 
 ```plain
 $ ./hash-cracker.sh 
-hash-cracker v3.4 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v3.7 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
-[+] Potfile "hash-cracker.pot" present
+[+] Potfile hash-cracker.pot present
 
 Optional modules:
 [+] Common-substr is executable
@@ -84,6 +97,7 @@ Variable Parameters:
 17. Markov-chain passwords generator
 18. CeWL wordlist generator
 19. Digit remover
+20. Stacker
 
 Please enter job number:
 ```
