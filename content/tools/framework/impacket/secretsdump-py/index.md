@@ -21,22 +21,20 @@ Install the [Impacket Framework]({{< ref "../" >}})
 
 ```plain
 secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-security SECURITY] [-sam SAM] [-ntds NTDS] [-resumefile RESUMEFILE] [-outputfile OUTPUTFILE] [-use-vss] [-rodcNo RODCNO]
-                      [-rodcKey RODCKEY] [-use-keylist] [-exec-method [{smbexec,wmiexec,mmcexec}]] [-just-dc-user USERNAME] [-just-dc] [-just-dc-ntlm] [-pwd-last-set] [-user-status] [-history] [-hashes LMHASH:NTHASH]
-                      [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB] [-dc-ip ip address] [-target-ip ip address]
+                      [-rodcKey RODCKEY] [-use-keylist] [-exec-method [{smbexec,wmiexec,mmcexec}]] [-just-dc-user USERNAME] [-ldapfilter LDAPFILTER] [-just-dc] [-just-dc-ntlm] [-pwd-last-set] [-user-status] [-history]
+                      [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB] [-dc-ip ip address] [-target-ip ip address]
                       target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
-
-Performs various techniques to dump secrets from the remote machine without executing any agent there.
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address> or LOCAL (if you want to parse local files)
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
@@ -59,6 +57,8 @@ optional arguments:
 display options:
   -just-dc-user USERNAME
                         Extract only NTDS.DIT data for the user specified. Only available for DRSUAPI approach. Implies also -just-dc switch
+  -ldapfilter LDAPFILTER
+                        Extract only NTDS.DIT data for specific users based on an LDAP filter. Only available for DRSUAPI approach. Implies also -just-dc switch
   -just-dc              Extract only NTDS.DIT data (NTLM hashes and Kerberos keys)
   -just-dc-ntlm         Extract only NTDS.DIT data (NTLM hashes only)
   -pwd-last-set         Shows pwdLastSet attribute for each NTDS.DIT account. Doesn't apply to -outputfile data

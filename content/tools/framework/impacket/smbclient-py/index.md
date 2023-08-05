@@ -24,14 +24,12 @@ smbclient.py [-h] [-file FILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] 
 ## Flags
 
 ```plain
-Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
-
-SMB client implementation.
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -file FILE            input file with commands to execute in the mini shell
   -debug                Turn DEBUG output ON

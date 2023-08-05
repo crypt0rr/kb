@@ -26,7 +26,7 @@ rdp_check.py [-h] [-hashes LMHASH:NTHASH] target
 ## Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 Test whether an account is valid on the target host using the RDP protocol.
 

@@ -20,8 +20,8 @@ Install the [Impacket Framework]({{< ref "../" >}})
 ## Usage
 
 ```plain
-smbrelayx.py [--help] [-ts] [-debug] [-h HOST] [-s {denied,success,logon_failure}] [-e FILE] [-c COMMAND] [-socks] [-one-shot] [-codec CODEC] [-outputfile OUTPUTFILE]
-                    [-machine-account MACHINE_ACCOUNT] [-machine-hashes LMHASH:NTHASH] [-domain DOMAIN]
+smbrelayx.py [--help] [-ts] [-debug] [-h HOST] [-s {success,logon_failure,denied}] [-e FILE] [-c COMMAND] [-socks] [-one-shot] [-codec CODEC] [-outputfile OUTPUTFILE] [-machine-account MACHINE_ACCOUNT]
+                    [-machine-hashes LMHASH:NTHASH] [-domain DOMAIN]
 ```
 
 ## Examples

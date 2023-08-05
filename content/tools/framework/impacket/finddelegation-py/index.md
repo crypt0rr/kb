@@ -20,33 +20,34 @@ Install the [Impacket Framework]({{< ref "../" >}})
 ## Usage
 
 ```plain
-findDelegation.py [-h] [-target-domain TARGET_DOMAIN] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] target
+findDelegation.py [-h] [-target-domain TARGET_DOMAIN] [-ts] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-dc-host hostname] target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
-
-Queries target domain for delegation relationships
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
-  target                domain/username[:password]
+  target                domain[/username[:password]]
 
 options:
   -h, --help            show this help message and exit
   -target-domain TARGET_DOMAIN
                         Domain to query/request if different than the domain of the user. Allows for retrieving delegation info across trusts.
+  -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
 
 authentication:
   -hashes LMHASH:NTHASH
                         NTLM hashes, format is LMHASH:NTHASH
   -no-pass              don't ask for password (useful for -k)
-  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in
-                        the command line
+  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
+
+connection:
   -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter. Ignoredif -target-domain is specified.
+  -dc-host hostname     Hostname of the domain controller to use. If ommited, the domain part (FQDN) specified in the account parameter will be used
 ```
 
 ## Examples

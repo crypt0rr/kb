@@ -20,23 +20,24 @@ Install the [Impacket Framework]({{< ref "../" >}})
 ## Usage
 
 ```plain
-GetUserSPNs.py [-h] [-target-domain TARGET_DOMAIN] [-usersfile USERSFILE] [-request] [-request-user username] [-save] [-outputfile OUTPUTFILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] target
+GetUserSPNs.py [-h] [-target-domain TARGET_DOMAIN] [-stealth] [-usersfile USERSFILE] [-request] [-request-user username] [-save] [-outputfile OUTPUTFILE] [-ts] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k]
+                      [-aesKey hex key] [-dc-ip ip address] [-dc-host hostname]
+                      target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
-
-Queries target domain for SPNs that are running under a user account
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
-  target                domain/username[:password]
+  target                domain[/username[:password]]
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -target-domain TARGET_DOMAIN
                         Domain to query/request if different than the domain of the user. Allows for Kerberoasting across trusts.
+  -stealth              Removes the (servicePrincipalName=*) filter from the LDAP query for added stealth. May cause huge memory consumption / errors on large domains.
   -usersfile USERSFILE  File with user per line to test
   -request              Requests TGS for users and output them in JtR/hashcat format (default False)
   -request-user username
@@ -44,6 +45,7 @@ optional arguments:
   -save                 Saves TGS requested to disk. Format is <username>.ccache. Auto selects -request
   -outputfile OUTPUTFILE
                         Output filename to write ciphers in JtR/hashcat format
+  -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
 
 authentication:
@@ -52,7 +54,10 @@ authentication:
   -no-pass              don't ask for password (useful for -k)
   -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
+
+connection:
   -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter. Ignoredif -target-domain is specified.
+  -dc-host hostname     Hostname of the domain controller to use. If ommited, the domain part (FQDN) specified in the account parameter will be used
 ```
 
 ## Examples

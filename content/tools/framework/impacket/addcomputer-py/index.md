@@ -28,6 +28,8 @@ addcomputer.py [-h] [-domain-netbios NETBIOSNAME] [-computer-name COMPUTER-NAME$
 ## Flags
 
 ```plain
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+
 positional arguments:
   [domain/]username[:password]
                         Account used to authenticate to DC.

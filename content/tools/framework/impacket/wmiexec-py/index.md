@@ -20,15 +20,15 @@ Install the [Impacket Framework]({{< ref "../" >}})
 ## Usage
 
 ```plain
-wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH]
-                  [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-A authfile] [-keytab KEYTAB]
+wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH] [-no-pass] [-k]
+                  [-aesKey hex key] [-dc-ip ip address] [-A authfile] [-keytab KEYTAB]
                   target [command ...]
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.9.25.dev1+20220201.191645.d8679837 - Copyright 2021 SecureAuth Corporation
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
@@ -52,8 +52,7 @@ authentication:
   -hashes LMHASH:NTHASH
                         NTLM hashes, format is LMHASH:NTHASH
   -no-pass              don't ask for password (useful for -k)
-  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in
-                        the command line
+  -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
   -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter
   -A authfile           smbclient/mount.cifs-style authentication file. See smbclient man page's -A option.
