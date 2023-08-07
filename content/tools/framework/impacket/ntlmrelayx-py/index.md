@@ -25,16 +25,14 @@ ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip I
                      [-wh WPAD_HOST] [-wa WPAD_AUTH_NUM] [-6] [--remove-mic] [--serve-image SERVE_IMAGE] [-c COMMAND] [-e FILE] [--enum-local-admins] [-rpc-mode {TSCH}] [-rpc-use-smb]
                      [-auth-smb [domain/]username[:password]] [-hashes-smb LMHASH:NTHASH] [-rpc-smb-port {139,445}] [-q QUERY] [-machine-account MACHINE_ACCOUNT] [-machine-hashes LMHASH:NTHASH] [-domain DOMAIN]
                      [-remove-target] [--no-dump] [--no-da] [--no-acl] [--no-validate-privs] [--escalate-user ESCALATE_USER] [--add-computer [COMPUTERNAME [PASSWORD ...]]] [--delegate-access] [--sid] [--dump-laps]
-                     [--dump-gmsa] [--dump-adcs] [-k KEYWORD] [-m MAILBOX] [-a] [-im IMAP_MAX] [--adcs] [--template TEMPLATE] [--altname ALTNAME] [--shadow-credentials] [--shadow-target SHADOW_TARGET]
-                     [--pfx-password PFX_PASSWORD] [--export-type {PEM, PFX}] [--cert-outfile-path CERT_OUTFILE_PATH]
+                     [--dump-gmsa] [--dump-adcs] [--add-dns-record NAME IPADDR] [-k KEYWORD] [-m MAILBOX] [-a] [-im IMAP_MAX] [--adcs] [--template TEMPLATE] [--altname ALTNAME] [--shadow-credentials]
+                     [--shadow-target SHADOW_TARGET] [--pfx-password PFX_PASSWORD] [--export-type {PEM,PFX}] [--cert-outfile-path CERT_OUTFILE_PATH]
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
-
-For every connection received, this module will try to relay that connection to specified target(s) system or the original client
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 Main options:
   -h, --help            show this help message and exit
@@ -45,7 +43,7 @@ Main options:
                         will relay back to the client')
   -tf TARGETSFILE       File that contains targets by hostname or full URL, one per line
   -w                    Watch the target file for changes and update target list automatically (only valid with -tf)
-  -i, --interactive     Launch an smbclient or LDAP console insteadof executing a command after a successful relay. This console will listen locally on a tcp port and can be reached with for example netcat.
+  -i, --interactive     Launch an smbclient, LDAP console or SQL shell insteadof executing a command after a successful relay. This console will listen locally on a tcp port and can be reached with for example netcat.
   -ip INTERFACE_IP, --interface-ip INTERFACE_IP
                         IP address of interface to bind SMB and HTTP servers
   --smb-port SMB_PORT   Port to listen on smb server
@@ -120,6 +118,8 @@ LDAP client options:
   --dump-laps           Attempt to dump any LAPS passwords readable by the user
   --dump-gmsa           Attempt to dump any gMSA passwords readable by the user
   --dump-adcs           Attempt to dump ADCS enrollment services and certificate templates info
+  --add-dns-record NAME IPADDR
+                        Add the <NAME> record to DNS via LDAP pointing to <IPADDR>
 
 IMAP client options:
   -k KEYWORD, --keyword KEYWORD
@@ -141,7 +141,7 @@ Shadow Credentials attack options:
                         target account (user or computer$) to populate msDS-KeyCredentialLink from
   --pfx-password PFX_PASSWORD
                         password for the PFX stored self-signed certificate (will be random if not set, not needed when exporting to PEM)
-  --export-type {PEM, PFX}
+  --export-type {PEM,PFX}
                         choose to export cert+private key in PEM or PFX (i.e. #PKCS12) (default: PFX))
   --cert-outfile-path CERT_OUTFILE_PATH
                         filename to store the generated self-signed PEM or PFX certificate and key

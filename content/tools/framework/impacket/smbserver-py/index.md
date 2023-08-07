@@ -26,15 +26,13 @@ smbserver.py [-h] [-comment COMMENT] [-username USERNAME] [-password PASSWORD] [
 ## Flags
 
 ```plain
-Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
-
-This script will launch a SMB Server and add a share specified as an argument. You need to be root in order to bind to port 445. For optional authentication, it is possible to specify username and password or the NTLM hash. 
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
   shareName             name of the share to add
   sharePath             path of the share to add
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -comment COMMENT      share's comment to display when asked for shares
   -username USERNAME    Username to authenticate clients

@@ -26,14 +26,12 @@ samrdump.py [-h] [-csv] [-ts] [-debug] [-dc-ip ip address] [-target-ip ip addres
 ## Flags
 
 ```plain
-Impacket v0.10.1.dev1+20220504.120002.d5097759 - Copyright 2022 SecureAuth Corporation
-
-This script downloads the list of users for the target system.
+Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -csv                  Turn CSV output
   -ts                   Adds timestamp to every logging output
