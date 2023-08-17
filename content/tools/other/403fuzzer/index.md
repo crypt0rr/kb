@@ -6,7 +6,7 @@ date : 2021-06-04T09:39:37+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'Brute Force', 'Web Application']
 ---
 
 ## 403fuzzer
