@@ -6,7 +6,7 @@ date : 2020-03-10T15:34:50+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : [""]
+tags : ['Other', 'Brute Force', 'Web Application', 'Directory Brute Force']
 ---
 
 ## Gobuster

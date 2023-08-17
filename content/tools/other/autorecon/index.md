@@ -6,7 +6,7 @@ date : 2022-12-15T13:06:25+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Other', 'Brute Force', 'Web Application', 'Directory Brute Force']
 ---
 
 ## AutoRecon
