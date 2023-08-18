@@ -6,10 +6,12 @@ date : 2020-09-28T20:32:48+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Unix', 'Networking']
 ---
 
-## IP -  show / manipulate routing, network devices, interfaces and tunnels
+## IP
+
+Show / manipulate routing, network devices, interfaces and tunnels
 
 ## Usage
 
@@ -35,19 +37,33 @@ OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
             -c[olor]}
 ```
 
+| Object      | Abbreviated form | Purpose                                             |
+| ----------- | ---------------- | --------------------------------------------------- |
+| `link`      | `l`              | Network device.                                     |
+| `address`   | `a` `addr`       | Protocol (IP or IPv6) address on a device.          |
+| `addrlabel` | `addrl`          | Label configuration for protocol address selection. |
+| `neighbour` | `n` `neigh`      | ARP or NDISC cache entry.                           |
+| `route`     | `r`              | Routing table entry.                                |
+| `rule`      | `ru`             | Rule in routing policy database.                    |
+| `maddress`  | `m` `maddr`      | Multicast address.                                  |
+| `mroute`    | `mr`             | Multicast routing cache entry.                      |
+| `tunnel`    | `t`              | Tunnel over IP.                                     |
+| `xfrm`      | `x`              | Framework for IPsec protocol.                       |
+
+For more information per object use the `help` flag (e.g. `ip a help`).
+
 ## Examples
 
 ### Show IPv4 addresses
 
 ```plain
 $ ip -4 a
-
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
     inet 127.0.0.1/8 scope host lo
        valid_lft forever preferred_lft forever
-3: wlp4s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default qlen 1000
-    inet 192.168.1.35/24 brd 192.168.1.255 scope global dynamic noprefixroute wlp4s0
-       valid_lft 85828sec preferred_lft 85828sec
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    inet 10.10.30.253/24 brd 10.10.30.255 scope global eth0
+       valid_lft forever preferred_lft forever
 ```
 
 ### Show IPv6 addresses
@@ -63,7 +79,16 @@ $ ip -6 addr
        valid_lft forever preferred_lft forever
 ```
 
+### Show Routing Tables
+
+```plain
+$ ip r list
+default via 10.10.30.254 dev eth0 proto static 
+10.10.30.0/24 dev eth0 proto kernel scope link src 10.10.30.253
+```
+
 ## URL List
 
 - [Linux.die.net](https://linux.die.net/man/8/ip)
 - [HowToGeek.com](https://www.howtogeek.com/657911/how-to-use-the-ip-command-on-linux/)
+- [Cyberciti.biz - Linux ip Command Examples](https://www.cyberciti.biz/faq/linux-ip-command-examples-usage-syntax)
