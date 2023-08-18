@@ -40,12 +40,12 @@ OPTIONS := { -V[ersion] | -s[tatistics] | -d[etails] | -r[esolve] |
 | Object      | Abbreviated form | Purpose                                             |
 | ----------- | ---------------- | --------------------------------------------------- |
 | `link`      | `l`              | Network device.                                     |
-| `address`   | `a` `addr`       | Protocol (IP or IPv6) address on a device.          |
+| `address`   | `a` / `addr`     | Protocol (IP or IPv6) address on a device.          |
 | `addrlabel` | `addrl`          | Label configuration for protocol address selection. |
-| `neighbour` | `n` `neigh`      | ARP or NDISC cache entry.                           |
+| `neighbour` | `n` / `neigh`    | ARP or NDISC cache entry.                           |
 | `route`     | `r`              | Routing table entry.                                |
 | `rule`      | `ru`             | Rule in routing policy database.                    |
-| `maddress`  | `m` `maddr`      | Multicast address.                                  |
+| `maddress`  | `m` / `maddr`    | Multicast address.                                  |
 | `mroute`    | `mr`             | Multicast routing cache entry.                      |
 | `tunnel`    | `t`              | Tunnel over IP.                                     |
 | `xfrm`      | `x`              | Framework for IPsec protocol.                       |
