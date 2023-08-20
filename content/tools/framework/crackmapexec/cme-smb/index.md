@@ -171,6 +171,7 @@ Powershell Obfuscation:
 The modules below can be used with the `-M` option.
 
 ```plain
+[*] add-computer              Adds or deletes a domain computer
 [*] bh_owned                  Set pwned computer as owned in Bloodhound
 [*] dfscoerce                 Module to check if the DC is vulnerable to DFSCocerc, credit to @filip_dragovic/@Wh04m1001 and @topotam
 [*] drop-sc                   Drop a searchConnector-ms file on each writable share
@@ -183,9 +184,10 @@ The modules below can be used with the `-M` option.
 [*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
 [*] handlekatz                Get lsass dump using handlekatz64 and parse the result with pypykatz
 [*] hash_spider               Dump lsass recursively from a given hash using BH to find local admins
+[*] iis                       Checks for credentials in IIS Application Pool configuration files using appcmd.exe
 [*] impersonate               List and impersonate tokens to run command as locally logged on users
 [*] install_elevated          Checks for AlwaysInstallElevated
-[*] ioxidresolver             Thie module helps you to identify hosts that have additional active interfaces
+[*] ioxidresolver             This module helps you to identify hosts that have additional active interfaces
 [*] keepass_discover          Search for KeePass-related files and process.
 [*] keepass_trigger           Set up a malicious KeePass trigger to export the database in cleartext.
 [*] lsassy                    Dump lsass and parse the result remotely with lsassy
@@ -198,6 +200,7 @@ The modules below can be used with the `-M` option.
 [*] ntdsutil                  Dump NTDS with ntdsutil
 [*] ntlmv1                    Detect if lmcompatibilitylevel on the target is set to 0 or 1
 [*] petitpotam                Module to check if the DC is vulnerable to PetitPotam, credit to @topotam
+[*] pi                        Run command as logged on users via Process Injection
 [*] printnightmare            Check if host vulnerable to printnightmare
 [*] procdump                  Get lsass dump using procdump64 and parse the result with pypykatz
 [*] rdcman                    Remotely dump Remote Desktop Connection Manager (sysinternals) credentials
@@ -207,12 +210,13 @@ The modules below can be used with the `-M` option.
 [*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
 [*] shadowcoerce              Module to check if the target is vulnerable to ShadowCoerce, credit to @Shutdown and @topotam
 [*] slinky                    Creates windows shortcuts with the icon attribute containing a UNC path to the specified SMB server in all shares with write permissions
-[*] spider_plus               List files on the target server (excluding `DIR` directories and `EXT` extensions) and save them to the `OUTPUT` directory if they are smaller then `SIZE`
+[*] spider_plus               List files recursively (excluding `EXCLUDE_FILTER` and `EXCLUDE_EXTS` extensions) and save JSON share-file metadata to the `OUTPUT_FOLDER`. If `DOWNLOAD_FLAG`=True, download files smaller then `MAX_FILE_SIZE` to the `OUTPUT_FOLDER`.
 [*] spooler                   Detect if print spooler is enabled or not
 [*] teams_localdb             Retrieves the cleartext ssoauthcookie from the local Microsoft Teams database, if teams is open we kill all Teams process
 [*] test_connection           Pings a host
 [*] uac                       Checks UAC status
 [*] veeam                     Extracts credentials from local Veeam SQL Database
+[*] wcc                       Check various security configuration items on Windows machines
 [*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
 [*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
 [*] webdav                    Checks whether the WebClient service is running on the target

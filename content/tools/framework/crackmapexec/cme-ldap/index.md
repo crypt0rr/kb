@@ -118,8 +118,10 @@ The modules below can be used with the `-M` option.
 ```plain
 [*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
 [*] daclread                  Read and backup the Discretionary Access Control List of objects. Based on the work of @_nwodtuhs and @BlWasp_. Be carefull, this module cannot read the DACLS recursively, more explains in the  options.
+[*] find-computer             Finds computers in the domain via the provided text
 [*] get-desc-users            Get description of the users. May contained password
 [*] get-network               
+[*] group-mem                 Retrieves all the members within a Group
 [*] groupmembership           Query the groups to which a user belongs.
 [*] laps                      Retrieves the LAPS passwords
 [*] ldap-checker              Checks whether LDAP signing and binding are required and / or enforced
