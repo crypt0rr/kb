@@ -308,6 +308,12 @@ To forward multiple ports in one session, use the `-L` option multiple times.
 ssh -L 2222:localhost:22 -L 4444:localhost:80 -L 5555:localhost:443 -L 6666:localhost:3389 <username>@<ip>
 ```
 
+Helpful ports when targeting Active Directory Domain Controllers, you want to replace `localhost` with the IP address of the DC.
+
+```plain
+ssh -L 53:localhost:53 -L 88:localhost:88 -L 389:localhost:389 -L 445:localhost:445 -L 3389:localhost:3389 <username>@<ip>
+```
+
 ### SSH Remote Port Forwarding
 
 For full routing please check SSH Dynamic Port Forwarding or [SSHuttle]({{< ref "sshuttle" >}}).
