@@ -15,22 +15,22 @@ Read and write meta information in files.
 
 ## Installation
 
-### APT Repo
+### Linux
 
 ```plain
 sudo apt install exiftool
 ```
 
-### GitHub Repo
+### Brew
 
 ```plain
-git clone https://github.com/exiftool/exiftool.git
+brew install exiftool
 ```
 
 ## Usage
 
 ```plain
-./exiftool
+exiftool [FLAGS]
 ```
 
 ## Flags
@@ -39,16 +39,22 @@ See documentation <https://github.com/exiftool/exiftool>
 
 ## Examples
 
-Remove all EXIF-data from image
+### Remove all exif data from image
 
 ```plain
 exiftool -all= <file>
 ```
 
-Remove all EXIF-data from all images in folder
+### Remove all EXIF-data from all images in folder
 
 ```plain
 exiftool -all= *
+```
+
+### Show only timestamp
+
+```plain
+exiftool -DateTimeOriginal <file>
 ```
 
 ## URL List
