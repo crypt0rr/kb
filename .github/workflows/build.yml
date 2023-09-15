@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Clone this repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
           
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.6.0
