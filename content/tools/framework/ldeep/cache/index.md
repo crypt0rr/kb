@@ -20,6 +20,7 @@ Install [LDEEP]({{< ref "../" >}}).
 ```plain
 ldeep cache [-h] [-d DIR] -p PREFIX
                    {auth_policies,computers,conf,delegations,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,shadow_principals,silos,smsa,subnets,trusts,users,zones,from_guid,from_sid,laps,memberships,membersof,object,sddl,silo,zone}
+                   ...
 ```
 
 ## Flags
