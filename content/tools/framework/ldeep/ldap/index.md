@@ -18,8 +18,9 @@ Install [LDEEP]({{< ref "../" >}}).
 ## Usage
 
 ```plain
-ldeep ldap [-h] -d DOMAIN -s LDAPSERVER [-b BASE] [-t {ntlm,simple}] [-u USERNAME] [-p PASSWORD] [-H NTLM] [-k] [--pfx-file PFX_FILE] [--cert-pem CERT_PEM] [--key-pem KEY_PEM] [-a]
-                  {computers,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,subnets,trusts,users,zones,from_guid,from_sid,memberships,membersof,object,sddl,zone,all,enum_users,search,add_to_group,modify_password,remove_from_group,unlock} ...
+ldeep ldap [-h] -d DOMAIN -s LDAPSERVER [-b BASE] [-t {ntlm,simple}] [--throttle THROTTLE] [--page_size PAGE_SIZE] [-u USERNAME] [-p PASSWORD] [-H NTLM] [-k] [--pfx-file PFX_FILE] [--cert-pem CERT_PEM] [--key-pem KEY_PEM] [-a]
+                  {auth_policies,computers,conf,delegations,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,shadow_principals,silos,smsa,subnets,trusts,users,zones,from_guid,from_sid,laps,memberships,membersof,object,sddl,silo,zone,all,enum_users,search,add_to_group,create_computer,create_user,modify_password,remove_from_group,unlock}
+                  ...
 ```
 
 ## Flags
@@ -59,7 +60,7 @@ Anonymous authentication:
 commands:
   available commands
 
-  {auth_policies,computers,conf,delegations,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,shadow_principals,silos,smsa,subnets,trusts,users,zones,from_guid,from_sid,laps,memberships,membersof,object,sddl,silo,zone,all,enum_users,search,add_to_group,create_computer,modify_password,remove_from_group,unlock}
+  {auth_policies,computers,conf,delegations,domain_policy,gmsa,gpo,groups,machines,ou,pkis,pso,shadow_principals,silos,smsa,subnets,trusts,users,zones,from_guid,from_sid,laps,memberships,membersof,object,sddl,silo,zone,all,enum_users,search,add_to_group,create_computer,create_user,modify_password,remove_from_group,unlock}
     auth_policies       List the authentication policies configured in the Active Directory.
     computers           List the computer hostnames and resolve them if --resolve is specify.
     conf                Dump the configuration partition of the Active Directory.
@@ -93,6 +94,7 @@ commands:
     search              Query the LDAP with `filter` and retrieve ALL or `attributes` if specified.
     add_to_group        Add `user` to `group`.
     create_computer     Create a computer account
+    create_user         Create a user account
     modify_password     Change `user`'s password.
     remove_from_group   Remove `user` from `group`.
     unlock              Unlock `user`.
