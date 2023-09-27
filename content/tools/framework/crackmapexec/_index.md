@@ -22,7 +22,8 @@ A swiss army knife for pentesting networks.
 ```plain
 python3 -m pip install pipx
 python3 -m pipx ensurepath
-git clone https://github.com/mpgn/CrackMapExec
+git clone https://github.com/byt3bl33d3r/CrackMapExec
+cd CrackMapExec
 pipx install .
 ```
 
@@ -36,7 +37,7 @@ pipx upgrade crackmapexec
 
 ## URL List
 
-* [GitHub.com - CrackMapExec](https://github.com/mpgn/CrackMapExec)
+* [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
 * [PtestMethod.readthedocs.io - CME](https://ptestmethod.readthedocs.io/en/latest/cme.html)
 
 ## Modules
