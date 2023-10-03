@@ -34,13 +34,16 @@ git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ## Flags
 
 ```plain
+Note: flags are optional, by default hash-cracker will run with optimized kernels enabled and perform loopback actions.
+
+Flags:
         -l / --no-loopback
                  Disable loopback functionality
         -n / --no-limit
                  Disable the use of optimized kernels (un-limits password length)
         --hwmon-enable
                  Enable hashcat to do hardware monitoring
-        --module-info
+        -m / --module-info
                  Display information around modules/options
         -s [hash-name] / --search [hash-name]
                  Will search local DB for hash module. E.g. '-s ntlm'
@@ -59,23 +62,103 @@ By default, hash-cracker will run in 'ask you all variable' mode. When specifyin
 
 ## Examples
 
+### 'Normal' mode
+
 ```plain
-$ ./hash-cracker.sh 
-hash-cracker v3.7 by crypt0rr (https://github.com/crypt0rr)
+$ ./hash-cracker.sh   
+
+hash-cracker v3.8 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
-[+] Potfile hash-cracker.pot present
+[-] Potfile not present, will create hash-cracker.pot
 
 Optional modules:
 [+] Common-substr is executable
-[+] Python2 is executable
+[-] Python2 is not available/executable (option 12 / 13)
 [+] Expander is executable
-[+] CeWL is executable
+[-] CeWL is not available/executable (option 18)
 
 Variable Parameters:
 [+] Optimised kernels enabled
 [+] Loopback enabled
+[-] Hardware monitoring disabled
+
+0. Exit
+1. Brute force
+2. Light rules
+3. Heavy rules
+4. Enter specific word/name/company
+5. Enter specific word/name/company (brute force)
+6. Hybrid
+7. Toggle-case
+8. Combinator
+9. Iterate results
+10. Prefix suffix (advise: first run steps above)
+11. Common substring (advise: first run steps above)
+12. PACK rulegen
+13. PACK mask
+14. Fingerprint attack
+15. Directory of word lists plain and then with OneRuleToRuleThemAll
+16. Username iteration (only complete NTDS)
+17. Markov-chain passwords generator
+18. CeWL wordlist generator
+19. Digit remover
+20. Stacker
+
+Please enter job number:
+```
+
+### Static Configuration
+
+hash-cracker can be used with a static configuration. An example configuration is supplied with hash-cracker.
+
+Default static configuration:
+
+```plain
+# Hashcat path
+HASHCAT=(/usr/local/bin/hashcat)
+
+# Hashtype
+HASHTYPE=1000
+
+# File containing target hashes
+HASHLIST=input
+
+# Potfile you want to use
+POTFILE=hash-cracker.pot
+
+# Wordlist(s)
+WORDLIST=wordlists/ignis-1M.txt
+WORDLIST2=wordlists/ignis-1K.txt
+```
+
+```plain
+$ ./hash-cracker.sh --static   
+
+hash-cracker v3.8 by crypt0rr (https://github.com/crypt0rr)
+
+Mandatory modules:
+[+] Hashcat is executable
+[-] Potfile not present, will create hash-cracker.pot
+
+Optional modules:
+[+] Common-substr is executable
+[-] Python2 is not available/executable (option 12 / 13)
+[+] Expander is executable
+[-] CeWL is not available/executable (option 18)
+
+Variable Parameters:
+[+] Optimised kernels enabled
+[+] Loopback enabled
+[-] Hardware monitoring disabled
+
+Static parameters:
+[+] Potfile: hash-cracker.pot
+[+] Hashlist: input
+[+] Hashtype: 1000
+[+] Wordlist 1: wordlists/ignis-1M.txt
+[+] Wordlist 2: wordlists/ignis-1K.txt
 
 0. Exit
 1. Brute force
