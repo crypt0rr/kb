@@ -73,6 +73,10 @@ FTP Access:
 
 ## Examples
 
-```plain
+### Validation of Anonymous Login
 
+```plain
+$ cme ftp 194.244.111.113 -u anonymous -p anonymous
+FTP         194.244.111.113 21     194.244.111.113  [*] Banner: 194.244.111.113 FTP server ready
+FTP         194.244.111.113 21     194.244.111.113  [+] anonymous:anonymous
 ```
