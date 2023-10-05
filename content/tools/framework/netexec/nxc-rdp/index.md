@@ -4,7 +4,7 @@ title : "RDP"
 description : "Own stuff using RDP."
 date : 2023-10-05T12:27:02+02:00
 # hidden : true
-draft : true
+# draft : true
 weight : 0
 tags : ['Framework', 'RDP']
 ---
@@ -84,6 +84,16 @@ Screenshot:
 
 ## Examples
 
-```plain
+**NOTE:** By default CME will exit after a successful login is found. Using the `--continue-on-success` flag will continue spraying even after a valid password is found. Useful for spraying a single password against a large user list.
 
+### Login Checking
+
+```plain
+nxc rdp 100.120.137.0/24 -u user -p password
+```
+
+```plain
+$ nxc rdp 100.120.137.43 -u crypt0rr -p Welkom1234   
+RDP         100.120.137.43  3389   DC01             [*] Windows 10 or Windows Server 2016 Build 20348 (name:DC01) (domain:offsec.nl) (nla:True)
+RDP         100.120.137.43  3389   DC01             [+] offsec.nl\crypt0rr:Welkom1234 
 ```
