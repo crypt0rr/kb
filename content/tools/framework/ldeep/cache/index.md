@@ -68,7 +68,7 @@ commands:
 
 ## Example dataset
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"%}}
 
 ## Examples
 

@@ -45,7 +45,7 @@ Download app from [Apple AppStore](https://apps.apple.com/us/app/gifski/id135163
 ![example](images/example3.jpeg)
 ![example](images/example4.jpeg)
 
-{{%attachments title="Test file" fa_icon_class="far fa-file-video" pattern=".*(mp4)"/%}}
+{{%attachments title="Test file" fa_icon_class="far fa-file-video" pattern=".*(mp4)"%}}
 
 ## URL List
 

@@ -109,7 +109,7 @@ Program launched in interactive mode - press any key to terminate the program
 
 ## Example Report
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(html)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(html)"%}}
 
 ## URL list
 

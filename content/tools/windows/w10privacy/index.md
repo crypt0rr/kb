@@ -19,7 +19,7 @@ The by default highly questionable set options concerning privacy and data prote
 
 Download newest release from [W10Privacy.de](https://www.w10privacy.de/english-home/)
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
 
 ## Examples
 

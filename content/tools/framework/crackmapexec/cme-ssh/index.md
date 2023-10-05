@@ -94,7 +94,7 @@ SSH         10.10.10.3      22     10.10.10.3       [*] SSH-2.0-OpenSSH_8.2p1 Ub
 
 ### Brute force SSH
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"%}}
 
 ```plain
 $ cme ssh 10.10.10.1 -u usernames.txt -p passwords.txt 

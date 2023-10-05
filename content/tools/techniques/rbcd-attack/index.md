@@ -21,7 +21,7 @@ git clone https://github.com/tothi/rbcd-attack
 
 ### Rubeus.exe
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
 
 ### Abusing
 

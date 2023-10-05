@@ -33,7 +33,7 @@ With this tool you can quickly see if your attack worked and if it changed LDAP 
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"%}}
 
 ```plain
 git clone https://github.com/p0dalirius/LDAPmonitor.git

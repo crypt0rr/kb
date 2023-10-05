@@ -205,7 +205,7 @@ $ python3 ldapdomaindump.py -u 'offsec.nl\administrator' -p 'Welkom1234' -d ';' 
 [+] Domain dump finished
 ```
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"%}}
 
 ## URL List
 

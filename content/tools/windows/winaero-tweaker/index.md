@@ -17,7 +17,7 @@ After years of development, I decided to release an all-in-one application which
 
 Download newest release from [Winaero.com](https://winaero.com/winaero-tweaker/).
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(zip)"%}}
 
 ## Examples
 

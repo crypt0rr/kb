@@ -33,7 +33,7 @@ PS C:\> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5\windows\ntds\ntds.d
 
 You can also use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view.html) if you prefer a GUI.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
 
 ### Step 3 - Remove your Tracks
 
@@ -69,7 +69,7 @@ secretsdump.py -system SYSTEM -ntds ntds.dit -hashes lmhash:nthash LOCAL -output
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"%}}
 
 ## URL List
 
