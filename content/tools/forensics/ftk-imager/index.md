@@ -13,7 +13,7 @@ weight : 0
 
 FTK® Imager is a data preview and imaging tool that lets you quickly assess electronic evidence to determine if further analysis.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
 
 ## Installation
 

@@ -129,7 +129,7 @@ List of all modules can be found [here.](https://docs.ansible.com/ansible/2.5/mo
 
 ### Example playbook
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(yml)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(yml)"%}}
 
 ```plain
 $ ansible-playbook nginx-install.yml --ask-pass

@@ -399,7 +399,7 @@ $ bbot -t offsec.nl -f subdomain-enum -m naabu gowitness -n my_scan -o .
 
 Output files from the above run are available below.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
 
 ## URL list
 

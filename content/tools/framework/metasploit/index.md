@@ -84,7 +84,7 @@ janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
 
 ### MS17-010 - Eternalblue
 
-{{%attachments fa_icon_class="far fa-file-video" pattern="ms17-010.*(mp4)"/%}}
+{{%attachments fa_icon_class="far fa-file-video" pattern="ms17-010.*(mp4)"%}}
 
 ### Scanner
 

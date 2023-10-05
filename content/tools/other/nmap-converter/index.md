@@ -77,7 +77,7 @@ $ python3 nmap-converter.py kb-offsec.xml -o kb-offsec-nl.xls
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 
-{{%attachments title="Example file" fa_icon_class="fas fa-file-excel" pattern=".*(xls)"/%}}
+{{%attachments title="Example file" fa_icon_class="fas fa-file-excel" pattern=".*(xls)"%}}
 
 ## URL List
 

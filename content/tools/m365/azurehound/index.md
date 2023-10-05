@@ -20,7 +20,7 @@ Custom queries for finding interesting stuff <https://hausec.com/2020/11/23/azur
 - Download newest release of AzureHound from [Github.com](https://github.com/BloodHoundAD/AzureHound/releases)
 - Download `pre-AzureHound.ps1` from below
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(ps1)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(ps1)"%}}
 
 ## Usage
 

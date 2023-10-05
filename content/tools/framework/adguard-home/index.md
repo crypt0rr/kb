@@ -32,7 +32,7 @@ chmod +x AdGuardHome
 
 ### AdGuard ErrorPage
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
 
 ```plain
 http://standard-block.dns.adguard.com/

@@ -15,7 +15,7 @@ Group Policy Preferences cpassword decryptor.
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"%}}
 
 ```plain
 wget https://raw.githubusercontent.com/reider-roque/pentest-tools/master/password-cracking/gpprefdecrypt/gpprefdecrypt.py

@@ -64,7 +64,7 @@ found file 'secretfile.txt', (size cp/uc     35/    23, flags 1, chk f8e7)
 PASSWORD FOUND!!!!: pw == thisisapassword
 ```
 
-{{%attachments title="Example archive used" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
+{{%attachments title="Example archive used" fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
 
 ## URL List
 

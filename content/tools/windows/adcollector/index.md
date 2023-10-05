@@ -48,7 +48,7 @@ Is a lightweight tool that enumerates the Active Directory environment to identi
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
 
 ## Usage
 

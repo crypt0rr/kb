@@ -17,7 +17,7 @@ X Lossless Decoder(XLD) is a tool for Mac OS X that is able to decode/convert/pl
 
 Download newest release from [tmkk.undo.jp](https://tmkk.undo.jp/xld/index_e.html)
 
-{{%attachments fa_icon_class="fas fa-compact-disk" pattern=".*(dmg)"/%}}
+{{%attachments fa_icon_class="fas fa-compact-disk" pattern=".*(dmg)"%}}
 
 ## Examples
 

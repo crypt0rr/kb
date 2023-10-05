@@ -365,7 +365,7 @@ SMB         10.10.10.10     445    DC2016           offsec.nl\adm_johndo:1108:aa
 
 The file below is a example of the full output of the command above.
 
-{{%attachments title="CME NTDS" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
+{{%attachments title="CME NTDS" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
 
 ### Dump LSASS (remote)
 

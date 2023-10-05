@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-{{%attachments fa_icon_class="fab fa-python" pattern=".*(py)"/%}}
+{{%attachments fa_icon_class="fab fa-python" pattern=".*(py)"%}}
 
 ## Usage
 

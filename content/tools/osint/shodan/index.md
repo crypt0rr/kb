@@ -80,7 +80,7 @@ NETSurveillance uc-httpd
 
 Get the favicon and create a hash with the following script. To use makes sure to edit the URL in the script.
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"%}}
 
 ```plain
 http.favicon.hash:-1922044295

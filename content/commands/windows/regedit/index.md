@@ -29,7 +29,7 @@ reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v LocalA
 
 In case remote access is mitigated thru **User Rights Assignment** you can use the following to disable this.
 
-{{%attachments fa_icon_class="far fa-file" pattern="ntrights.(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern="ntrights.(exe)"%}}
 
 ```plain
 C:\temp>ntrights.exe -r SeDenyNetworkLogonRight -u "Local Account"

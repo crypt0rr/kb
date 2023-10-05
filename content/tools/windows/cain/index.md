@@ -15,7 +15,7 @@ tags : ['Windows', 'Networking']
 
 Required [Winpacp.org](https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe)
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
 
 Network adapter > IPv4 properties > Advanced > DNS > Enable 'Use this connection's DNS suffix in DNS registration'
 

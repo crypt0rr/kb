@@ -1,4 +1,4 @@
-name: Perform markdown linting
+name: Validation of Markdown Linting
 on:
   workflow_dispatch:
   push:

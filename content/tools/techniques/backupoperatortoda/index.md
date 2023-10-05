@@ -22,7 +22,7 @@ All credit from [filip_dragovic](https://twitter.com/filip_dragovic) with his in
 - Impacket [secretsdump.py]({{< ref "secretsdump-py" >}})
 - Account in target domain with the 'Backup Operator' membership
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
+{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
 
 ### Account checking
 

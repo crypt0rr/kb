@@ -27,7 +27,7 @@ If an image fails to load, for example because it is corrupt, then file analysis
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(jar)"/%}}
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(jar)"%}}
 
 ```plain
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar

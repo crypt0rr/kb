@@ -75,7 +75,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ### Theme
 
-{{%attachments fa_icon_class="far fa-file-alt" pattern=".*(txt)"/%}}
+{{%attachments fa_icon_class="far fa-file-alt" pattern=".*(txt)"%}}
 
 ## URL List
 

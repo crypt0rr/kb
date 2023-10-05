@@ -128,7 +128,7 @@ $ lsassy -d offsec.nl -u john.do -p 'Welkom1234' 10.10.10.10 -m comsvcs_stealth
 
 #### Dumpert
 
-{{%attachments title="Compiled binaries" fa_icon_class="far fa-file" pattern=".*(exe|dll)"/%}}
+{{%attachments title="Compiled binaries" fa_icon_class="far fa-file" pattern=".*(exe|dll)"%}}
 
 ## URL List
 
