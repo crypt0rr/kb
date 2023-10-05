@@ -4,7 +4,7 @@ title : "MSSQL"
 description : "Owning stuff using MSSQL."
 date : 2023-10-05T12:26:41+02:00
 # hidden : true
-draft : true
+# draft : true
 weight : 0
 tags : ['Framework', 'MSSQL']
 ---
@@ -94,8 +94,13 @@ Files:
   --get-file FILE FILE  Get a remote file, ex: C:\Windows\Temp\whoami.txt whoami.txt
 ```
 
-## Examples
+## Modules
 
 ```plain
-
+[*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
+[*] met_inject                Downloads the Meterpreter stager and injects it into memory
+[*] mssql_priv                Enumerate and exploit MSSQL privileges
+[*] nanodump                  Get lsass dump using nanodump and parse the result with pypykatz
+[*] test_connection           Pings a host
+[*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
 ```
