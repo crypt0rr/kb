@@ -4,7 +4,7 @@ title : "WMI"
 description : "Own stuff using WMI."
 date : 2023-10-05T12:26:45+02:00
 # hidden : true
-draft : true
+# draft : true
 weight : 0
 tags : ['Framework', 'WMI']
 ---
@@ -91,10 +91,4 @@ Command Execution:
                         Set timeout (in seconds) when executing a command, minimum 5 seconds is recommended. Default: 5
   --codec CODEC         Set encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with
                         https://docs.python.org/3/library/codecs.html#standard-encodings and then execute again with --codec and the corresponding codec
-```
-
-## Examples
-
-```plain
-
 ```
