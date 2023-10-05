@@ -113,8 +113,36 @@ Bloodhound scan:
                         separating them with a comma. (default: Default)'
 ```
 
-## Examples
+## Modules
 
 ```plain
+[*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
+[*] daclread                  Read and backup the Discretionary Access Control List of objects. Based on the work of @_nwodtuhs and @BlWasp_. Be carefull, this module cannot read the DACLS recursively, more explains in the  options.
+[*] enum_trusts               Extract all Trust Relationships, Trusting Direction, and Trust Transitivity
+[*] find-computer             Finds computers in the domain via the provided text
+[*] get-desc-users            Get description of the users. May contained password
+[*] get-network               
+[*] group-mem                 Retrieves all the members within a Group
+[*] groupmembership           Query the groups to which a user belongs.
+[*] laps                      Retrieves the LAPS passwords
+[*] ldap-checker              Checks whether LDAP signing and binding are required and / or enforced
+[*] maq                       Retrieves the MachineAccountQuota domain-level attribute
+[*] pso                       Query to get PSO from LDAP
+[*] subnets                   Retrieves the different Sites and Subnets of an Active Directory
+[*] user-desc                 Get user descriptions stored in Active Directory
+[*] whoami                    Get details of provided user
+```
 
+## Examples
+
+### Active Directory Certificate Services (ADCS)
+
+Finding ADCS-server(s) in the environment.
+
+```plain
+nxc ldap 100.120.137.43 -u crypt0rr -p Welkom1234 -M adcs
+SMB         100.120.137.43  445    DC01        [*] Windows 10.0 Build 20348 x64 (name:DC01) (domain:offsec.nl) (signing:True) (SMBv1:False)
+LDAP        100.120.137.43  389    DC01        [+] offsec.nl\crypt0rr:Welkom1234!
+ADCS                                           Found PKI Enrollment Server: ADCS01.offsec.nl
+ADCS                                           Found CN: offsec-ADCS01-CA
 ```
