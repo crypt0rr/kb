@@ -264,7 +264,7 @@ nxc smb <target> -u <user> -p <password> --lsa
 
 To find valid usernames to spray, have a look at [Kerbrute]({{< ref "kerbrute" >}}).
 
-By default CME will stop when a valid login combination is found. If you want CME to proceed with the whole list you're trying, use the `--continue-on-success` flag.
+By default NXC will stop when a valid login combination is found. If you want NXC to proceed with the whole list you're trying, use the `--continue-on-success` flag.
 
 ```plain
 nxc smb <dc-ip> -u <user.txt> -p <password.txt>

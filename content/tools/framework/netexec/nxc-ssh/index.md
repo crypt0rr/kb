@@ -96,7 +96,7 @@ SSH         100.96.36.115   22     100.96.36.115    [+] crypt0rr:Welkom1234  - s
 {{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ```plain
-$ cme ssh 100.96.36.115 -u usernames.txt -p passwords.txt 
+$ nxc ssh 100.96.36.115 -u usernames.txt -p passwords.txt 
 SSH         100.96.36.115     22     100.96.36.115      [*] SSH-2.0-OpenSSH_8.4p1 Ubuntu-6ubuntu2.1
 SSH         100.96.36.115     22     100.96.36.115      [-] 11111:admin Authentication failed.
 SSH         100.96.36.115     22     100.96.36.115      [-] 11111:root Authentication failed.
