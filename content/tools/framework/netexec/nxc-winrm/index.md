@@ -4,7 +4,7 @@ title : "WinRM"
 description : "Own stuff using WinRM."
 date : 2023-10-05T12:26:59+02:00
 # hidden : true
-draft : true
+# draft : true
 weight : 0
 tags : ['Framework', 'WinRM']
 ---
@@ -90,10 +90,4 @@ Command Execution:
   --no-output           do not retrieve command output
   -x COMMAND            execute the specified command
   -X PS_COMMAND         execute the specified PowerShell command
-```
-
-## Examples
-
-```plain
-
 ```
