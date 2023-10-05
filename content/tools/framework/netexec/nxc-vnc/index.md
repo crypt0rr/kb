@@ -4,7 +4,7 @@ title : "VNC"
 description : "Own stuff using VNC."
 date : 2023-10-05T12:26:53+02:00
 # hidden : true
-draft : true
+# draft : true
 weight : 0
 tags : ['Framework', 'VNC']
 ---
@@ -73,10 +73,4 @@ Screenshot:
   --screenshot          Screenshot VNC if connection success
   --screentime SCREENTIME
                         Time to wait for desktop image
-```
-
-## Examples
-
-```plain
-
 ```
