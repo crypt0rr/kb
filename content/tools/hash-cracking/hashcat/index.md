@@ -48,14 +48,14 @@ hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
 ### Built-in charsets (brute-force)
 
 ```plain
-  l | abcdefghijklmnopqrstuvwxyz [a-z]
-  u | ABCDEFGHIJKLMNOPQRSTUVWXYZ [A-Z]
-  d | 0123456789                 [0-9]
-  h | 0123456789abcdef           [0-9a-f]
-  H | 0123456789ABCDEF           [0-9A-F]
-  s |  !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
-  a | ?l?u?d?s
-  b | 0x00 - 0xff
+  ?l | abcdefghijklmnopqrstuvwxyz [a-z]
+  ?u | ABCDEFGHIJKLMNOPQRSTUVWXYZ [A-Z]
+  ?d | 0123456789                 [0-9]
+  ?h | 0123456789abcdef           [0-9a-f]
+  ?H | 0123456789ABCDEF           [0-9A-F]
+  ?s |  !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+  ?a | ?l?u?d?s
+  ?b | 0x00 - 0xff
 ```
 
 ## Flags
