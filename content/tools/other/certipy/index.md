@@ -29,9 +29,7 @@ certipy [-v] [-h] {account,auth,ca,cert,find,forge,ptt,relay,req,shadow,template
 ## Flags
 
 ```plain
-Certipy v4.0.0 - by Oliver Lyak (ly4k)
-
-
+Certipy v4.8.2 - by Oliver Lyak (ly4k)
 
 positional arguments:
   {account,auth,ca,cert,find,forge,ptt,relay,req,shadow,template}
