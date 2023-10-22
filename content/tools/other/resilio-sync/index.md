@@ -6,7 +6,7 @@ date : 2020-03-11T14:59:09+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'macOS', 'Windows', 'Linux', 'Peer-to-Peer']
+tags : ['Other', 'macOS', 'Windows', 'Linux', 'P2P']
 ---
 
 ## Resilio Sync
@@ -29,35 +29,42 @@ sudo dpkg -i <resilio-sync.deb>
 
 ## Usage
 
+If you want the Resilio Sync Service to listen on another interface, edit `/etc/resilio-sync/config.json`.
+
 ```plain
 http://localhost:8888
 ```
 
-### Configuration Linux
+## Configuration Linux
 
-### Disable startup under rslsync user
-
-```plain
-sudo systemctl disable resilio-sync.service
-```
-
-### Enable startup under current user
+### Enable Startup at Boot
 
 ```plain
 sudo nano /usr/lib/systemd/user/resilio-sync.service
-
-Change "WantedBy=multi-user.target" to "WantedBy=default.target"
 ```
+
+Change:
+
+- Old: `WantedBy=multi-user.target`
+- New: `WantedBy=default.target`
 
 ```plain
-systemctl enable --user resilio-sync.service
+sudo systemctl enable resilio-sync.service
 ```
 
-### Set permissions for hosting
+### Set Permissions
+
+Resilio Sync will run under the `rslsync` user. To give this user the required access on specific folder(s) you can use ACLs.
+
+```plain
+sudo apt install acl
+```
 
 ```plain
 sudo setfacl -R -m "u:rslsync:rwx" /var/www/*
 ```
+
+## Troubleshooting
 
 ### Remove GUI password
 
