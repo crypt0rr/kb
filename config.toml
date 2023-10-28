@@ -75,3 +75,9 @@ name = "<i class='fas fa-envelope-open-text'></i> Message Header Analyser"
 identifier = "message-header-analyzer"
 url = "https://mha.offsec.nl"
 weight = 80
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-searchengin'></i> Google/Github/Shodan Dorking"
+identifier = "google-github-shodan-dorking"
+url = "https://dork.offsec.nl"
+weight = 90
