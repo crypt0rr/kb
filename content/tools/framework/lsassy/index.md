@@ -22,18 +22,21 @@ python3 -m pip install lsassy
 ## Usage
 
 ```plain
-lsassy [-h] [-m DUMP_METHOD] [--dump-path DUMP_PATH] [--dump-name DUMP_NAME] [-e EXEC] [--no-powershell] [--copy] [-O OPTIONS] [--timeout TIMEOUT] [--parse-only] [-u USERNAME] [-p PASSWORD] [-d DOMAIN] [--port PORT] [--no-pass] [-H HASHES] [-k] [-dc-ip ip address] [-aesKey hex key] [-K KERBEROS_DIR] [-o OUTFILE] [-f {pretty,json,grep,table}] [--users] [-v] [--threads THREADS] [-q] [-V] [target ...]
+lsassy [-h] [-m DUMP_METHOD] [--dump-path DUMP_PATH] [--dump-name DUMP_NAME] [-e EXEC] [--no-powershell] [--copy] [-O OPTIONS] [--timeout TIMEOUT] [--time-between-commands TIME_BETWEEN_COMMANDS] [--parse-only]
+              [--dump-only] [--keep-dump] [-u USERNAME] [-p PASSWORD] [-d DOMAIN] [--port PORT] [--no-pass] [-H HASHES] [-k] [-dc-ip ip address] [-aesKey hex key] [-K KERBEROS_DIR] [-M MASTERKEYS_FILE] [-o OUTFILE]
+              [-f {pretty,json,grep,table}] [-ff {pretty,json,grep,table}] [-nc] [--users] [--no-tickets] [--masterkeys] [-v] [--threads THREADS] [-q] [-V]
+              [target ...]
 ```
 
 ## Flags
 
 ```plain
-lsassy v3.1.0 - Remote lsass dump reader
+lsassy v3.1.9 - Remote lsass dump reader
 
 positional arguments:
   target                The target IP(s), range(s), CIDR(s), hostname(s), FQDN(s), file(s) containing a list of targets
 
-optional arguments:
+options:
   -h, --help            show this help message and exit
   -v                    Verbosity level (-v or -vv)
   --threads THREADS     Threads number
@@ -42,7 +45,8 @@ optional arguments:
 
 dump:
   -m DUMP_METHOD, --dump-method DUMP_METHOD
-                        Dumping method (comsvcs, comsvcs_stealth, dllinject, dumpert, dumpertdll, edrsandblast, mirrordump, mirrordump_embedded, nanodump, ppldump, ppldump_embedded, procdump, procdump_embedded, rdrleakdiag, wer)
+                        Dumping method (comsvcs, comsvcs_stealth, dllinject, dumpert, dumpertdll, edrsandblast, mirrordump, mirrordump_embedded, nanodump, nanodump_ssp_embedded, ppldump, ppldump_embedded, procdump,
+                        procdump_embedded, rawrpc, rawrpc_embedded, rdrleakdiag, silentprocessexit, sqldumper, wer)
   --dump-path DUMP_PATH
                         Path to store lsass dumpfile (Default: \Windows\Temp)
   --dump-name DUMP_NAME
@@ -53,7 +57,11 @@ dump:
   -O OPTIONS, --options OPTIONS
                         Dump module options (Example procdump_path=/opt/procdump.exe,procdump=procdump.exe
   --timeout TIMEOUT     Max time to wait for lsass dump (Default 5s)
+  --time-between-commands TIME_BETWEEN_COMMANDS
+                        Time to wait between dump methods commands (Default 1s)
   --parse-only          Parse dump without dumping
+  --dump-only           Dump lsass without parsing it
+  --keep-dump           Do not delete lsass dump on remote host
 
 authentication:
   -u USERNAME, --username USERNAME
@@ -73,14 +81,18 @@ authentication:
 output:
   -K KERBEROS_DIR, --kerberos-dir KERBEROS_DIR
                         Save kerberos tickets to a directory
+  -M MASTERKEYS_FILE, --masterkeys-file MASTERKEYS_FILE
+                        Save masterkeys in format {GUID}:SHA1 to a file
   -o OUTFILE, --outfile OUTFILE
                         Output credentials to file
   -f {pretty,json,grep,table}, --format {pretty,json,grep,table}
                         Output format (Default pretty)
+  -ff {pretty,json,grep,table}, --file-format {pretty,json,grep,table}
+                        File format (Default same value as --format)
+  -nc, --no-color       No colors in output
   --users               Only display user accounts (No computer accounts)
-
-example:
-    lsassy -d adsec.local -u pixis -p p4ssw0rd 192.168.1.0/24
+  --no-tickets          Do not display valid TGT
+  --masterkeys          Display valid masterkeys
 ```
 
 ## Examples
