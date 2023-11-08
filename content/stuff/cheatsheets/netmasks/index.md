@@ -1,21 +1,22 @@
 ---
-title : "Netmasks / Subnetting"
-pre : '<i class="fas fa-network-wired"></i> '
-description : "Overview of network CIDR, Addresses, Hosts, Netmask and amount of clients."
-date : 2020-11-26T15:39:37+01:00
+title: "Netmasks / Subnetting"
+pre: '<i class="fas fa-network-wired"></i> '
+description: "Overview of network CIDR, Addresses, Hosts, Netmask and amount of clients."
+date: 2020-11-26T15:39:37+01:00
 # hidden : true
 # draft : true
-weight : 0
-tags : ['Stuff', 'CIDR', 'Netmask', 'Subnetting']
+weight: 0
+tags: ["Stuff", "CIDR", "Netmask", "Subnetting"]
 ---
 
 ## Network classes (private ranges)
 
-| Class | Short noted | Address Range                 | Default Subnet Mask | Available Hosts |
-| ----- | ----------- | ----------------------------- | ------------------- | --------------- |
-| A     | 10/8        | 10.0.0.0 - 10.255.255.255     | 255.0.0.0 (/8)      | 16.777.214      |
-| B     | 172.16/12   | 172.16.0.0 - 172.31.255.255   | 255.240.0.0 (/12)   | 1.048.574       |
-| C     | 192.168/16  | 192.168.0.0 - 192.168.255.255 | 255.255.0.0 (/16)   | 65.534          |
+| Class     | Short noted | Address Range                 | Default Subnet Mask | Available Hosts |
+| --------- | ----------- | ----------------------------- | ------------------- | --------------- |
+| A         | 10/8        | 10.0.0.0 - 10.255.255.255     | 255.0.0.0 (/8)      | 16.777.214      |
+| B         | 172.16/12   | 172.16.0.0 - 172.31.255.255   | 255.240.0.0 (/12)   | 1.048.574       |
+| C         | 192.168/16  | 192.168.0.0 - 192.168.255.255 | 255.255.0.0 (/16)   | 65.534          |
+| LOCALHOST | -           | 127.0.0.0 - 127.255.255.255   | -                   | -               |
 
 ## Netmasks / Subnetting
 
