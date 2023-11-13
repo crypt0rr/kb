@@ -59,25 +59,7 @@ url = "https://discord.gg/yhfPKyBGbp"
 weight = 50
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-robot'></i> CyberChef"
-identifier = "cyberchef"
-url = "https://cyberchef.offsec.nl"
+name = "<i class='fas fa-external-link-alt'></i> More helpfull tools?"
+identifier = "offsec"
+url = "https://offsec.nl"
 weight = 60
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-code-branch'></i> Search Active Github Forks"
-identifier = "search-active-github-forks"
-url = "https://saf.offsec.nl"
-weight = 70
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-envelope-open-text'></i> Message Header Analyser"
-identifier = "message-header-analyzer"
-url = "https://mha.offsec.nl"
-weight = 80
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-searchengin'></i> Google/Github/Shodan Dorking"
-identifier = "google-github-shodan-dorking"
-url = "https://dork.offsec.nl"
-weight = 90
