@@ -224,6 +224,15 @@ If not yet running as `root`, first run `adb root`.
 adb remount
 ```
 
+If the above is not working for you, try the following.
+
+```plain
+adb shell
+su
+mount -o remount,rw /
+exit
+```
+
 ### Install .APK Application
 
 ```plain
@@ -269,6 +278,7 @@ adb shell settings put global http_proxy :0
 ## URL list
 
 - [Android.googlesource.com - adb](https://android.googlesource.com/platform/packages/modules/adb/+/refs/heads/master/docs/user/adb.1.md)
+- [Youtube.com - Intercepting Android App Traffic with BurpSuite by IppSec](https://www.youtube.com/watch?v=xp8ufidc514)
 - [Configuring Burp Suite With Android Nougat](https://blog.ropnop.com/configuring-burp-suite-with-android-nougat)
 - [How to Install Android Apps via ADB](https://www.makeuseof.com/install-apps-via-adb-android/)
 - [Android device: set Wifi Proxy with ADB command](https://andresand.medium.com/android-device-set-wifi-proxy-with-adb-command-7a2f8cf4c434)
