@@ -15,8 +15,7 @@ weight : 0
 
 - [Coercer]({{< ref "coercer" >}})
 - [Certipy]({{< ref "certipy" >}})
-- [Secretsdump]({{< ref "secretsdump-py" >}})
-- []({{< ref "" >}})
+- [Impacket]({{< ref "impacket" >}})
 
 ## Usage
 
