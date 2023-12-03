@@ -1,7 +1,7 @@
 ---
-title : "Abuse AD CS (ESC1)"
+title : "ESC1"
 # pre : ' '
-description : "Abuse the Active Directory Certificate Services."
+description : "ESC1 - Abuse Active Directory Certificate Services."
 date : 2022-01-20T09:05:59+01:00
 # hidden : true
 # draft : true
@@ -9,7 +9,7 @@ weight : 0
 tags : ['Techniques', 'Active Directory', 'ADCS']
 ---
 
-## Abuse Active Directory Certificate Services (AD CS / ESC1)
+## ESC1 - Abuse Active Directory Certificate Services
 
 This is a little guide on abusing Active Directory Certificate Services (AD CS) with practical examples.
 
@@ -255,3 +255,4 @@ SMB         DC01PKI.offsec.nl 445    DC01PKI         [+] offsec.nl\johnDomainAdm
 - [Github.com - Active Directory Attacks - Active Directory Certificate Services](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md#active-directory-certificate-services)
 - [Gist.github.com - Flangvik - PKI Abuse Cheatsheet](https://gist.github.com/Flangvik/15c3007dcd57b742d4ee99502440b250)
 - [Ppn.snovvcrash.rocks - ADCS Abuse](https://ppn.snovvcrash.rocks/pentest/infrastructure/ad/ad-cs-abuse)
+- [Crowe.com - Exploiting AD CS: A quick look at ESC1 and ESC8](https://www.crowe.com/cybersecurity-watch/exploiting-ad-cs-a-quick-look-at-esc1-esc8)
