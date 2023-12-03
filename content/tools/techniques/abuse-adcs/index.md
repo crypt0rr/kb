@@ -1,5 +1,5 @@
 ---
-title : "Abuse AD CS"
+title : "Abuse AD CS (ESC1)"
 # pre : ' '
 description : "Abuse the Active Directory Certificate Services."
 date : 2022-01-20T09:05:59+01:00
@@ -9,7 +9,7 @@ weight : 0
 tags : ['Techniques', 'Active Directory', 'ADCS']
 ---
 
-## Abuse Active Directory Certificate Services (AD CS)
+## Abuse Active Directory Certificate Services (AD CS / ESC1)
 
 This is a little guide on abusing Active Directory Certificate Services (AD CS) with practical examples.
 
