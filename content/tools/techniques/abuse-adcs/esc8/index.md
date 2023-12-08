@@ -13,13 +13,13 @@ weight : 0
 
 ## Requirements
 
-- [Coercer]({{< ref "coercer" >}})
-- [Certipy]({{< ref "certipy" >}})
-- [Impacket]({{< ref "impacket" >}})
+- [Coercer]({{< ref "tools/framework/coercer" >}})
+- [Certipy]({{< ref "tools/other/certipy" >}})
+- [Impacket]({{< ref "tools/framework/impacket" >}})
   - `secretsdump.py`
-- [PKINITtools]({{< ref "pkinittools" >}})
+- [PKINITtools]({{< ref "tools/framework/pkinittools" >}})
   - `gettgtpkinit.py`
-- [NetExec - optional]({{< ref "netexec" >}})
+- [NetExec - optional]({{< ref "tools/framework/netexec" >}})
 
 ## Examples
 
