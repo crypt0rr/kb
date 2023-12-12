@@ -11,12 +11,12 @@ weight : 0
 
 ## GoWitness
 
-A commandline web screenshot and information gathering tool by @leonjza.
+A command line web screenshot and information gathering tool by [@leonjza](https://twitter.com/leonjza).
 
 ## Installation
 
 ```plain
-go get -u github.com/sensepost/gowitness
+go install github.com/sensepost/gowitness@latest
 ```
 
 ## Usage
@@ -43,24 +43,25 @@ Available Commands:
 
 Flags:
       --chrome-path string       path to chrome executable to use
-  -D, --db-path string           destination for the gowitness database (default "gowitness.sqlite3")
+  -D, --db-location string       destination for the gowitness database. supports sqlite & postgres (eg: postgres://user:pass@host:port/db) (default "sqlite://gowitness.sqlite3")
       --debug                    enable debug logging
       --debug-db                 enable debug logging for all database operations
       --delay int                delay in seconds between navigation and screenshot
       --disable-db               disable all database operations
       --disable-logging          disable all logging
   -F, --fullpage                 take fullpage screenshots
-      --header strings           Additional HTTP header to set. Supports multiple --header flags
+      --header strings           additional HTTP header to set. Supports multiple --header flags
   -h, --help                     help for gowitness
+      --js string                javascript code to execute when loading a target site (eg: console.log('gowitness'))
       --pdf                      save screenshots as pdf
   -p, --proxy string             http/socks5 proxy to use. Use format proto://address:port
   -X, --resolution-x int         screenshot resolution x (default 1440)
   -Y, --resolution-y int         screenshot resolution y (default 900)
+      --screenshot-db-store      save screenshots to the database as well
+      --screenshot-filter ints   http response codes to screenshot. this is a filter. by default all codes are screenshotted
   -P, --screenshot-path string   store path for screenshots (use . for pwd) (default "screenshots")
       --timeout int              preflight check timeout (default 10)
       --user-agent string        user agent string to use (default "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36")
-
-Use "gowitness [command] --help" for more information about a command.
 ```
 
 ## Examples
