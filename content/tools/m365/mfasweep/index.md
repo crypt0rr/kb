@@ -6,7 +6,7 @@ date : 2021-11-03T13:28:24+01:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['M365', 'AzureAD', 'MFA']
 ---
 
 ## MFASweep
