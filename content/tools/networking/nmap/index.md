@@ -154,11 +154,12 @@ SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
 
 ## Port Status Meaning
 
-| Port State | Description                                                                                      | Implication                                                      |
-| ---------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
-| Open       | An application is actively accepting connections or packets                                      | A service is running and accessible                              |
-| Filtered   | The port might be open or closed, but a firewall/filter is preventing determination of the state | The network is protected by some kind of filtering mechanism     |
-| Closed     | No application is listening, but the port is reachable                                           | No service is running on this port, but it's not behind a filter |
+| Port State     | Description                                                                                                                                         | Implication                                                                                             |
+| -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Open           | An application is actively accepting connections or packets                                                                                         | A service is running and accessible                                                                     |
+| Filtered       | The port might be open or closed, but a firewall/filter is preventing determination of the state                                                    | The network is protected by some kind of filtering mechanism                                            |
+| Closed         | No application is listening, but the port is reachable                                                                                              | No service is running on this port, but it's not behind a filter                                        |
+| Open\|Filtered | nmap cannot determine whether a port is open or filtered. This for example is due to no response to probes or the scan technique used (UDP/SYN/FIN) | Further investigation needed, other nmap techniques or tools required. Potential false positive result. |
 
 ## Examples
 
