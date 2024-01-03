@@ -405,5 +405,5 @@ nmap --script vuln <target>
 
 ## URL List
 
--   [Nmap.org](https://nmap.org/)
--   [Github.com - nmap](https://github.com/nmap/nmap)
+- [Nmap.org](https://nmap.org/)
+- [Github.com - nmap](https://github.com/nmap/nmap)
