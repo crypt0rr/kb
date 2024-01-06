@@ -28,22 +28,18 @@ python3 -m pip install bloodhound
 ## Usage
 
 ```plain
-bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER] [--dns-tcp]
-                         [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE] [--cachefile CACHEFILE]
-                         [-op PREFIX_NAME]
+bloodhound-python [-h] [-c COLLECTIONMETHOD] [-d DOMAIN] [-v] [-u USERNAME] [-p PASSWORD] [-k] [--hashes HASHES] [-no-pass] [-aesKey hex key] [--auth-method {auto,ntlm,kerberos}] [-ns NAMESERVER]
+                         [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-dc HOST] [-gc HOST] [-w WORKERS] [--exclude-dcs] [--disable-pooling] [--disable-autogc] [--zip] [--computerfile COMPUTERFILE]
+                         [--cachefile CACHEFILE] [--use-ldaps] [-op PREFIX_NAME]
 ```
 
 ## Flags
 
 ```plain
-Python based ingestor for BloodHound
-For help or reporting issues, visit https://github.com/Fox-IT/BloodHound.py
-
-options:
   -h, --help            show this help message and exit
   -c COLLECTIONMETHOD, --collectionmethod COLLECTIONMETHOD
-                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default (all previous), DCOnly (no computer connections), DCOM, RDP,PSRemote, LoggedOn, Container, ObjectProps, ACL,
-                        All (all except LoggedOn). You can specify more than one by separating them with a comma. (default: Default)
+                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default (all previous), DCOnly (no computer connections), DCOM, RDP,PSRemote, LoggedOn, Container,
+                        ObjectProps, ACL, All (all except LoggedOn). You can specify more than one by separating them with a comma. (default: Default)
   -d DOMAIN, --domain DOMAIN
                         Domain to query.
   -v                    Enable verbose output
@@ -84,8 +80,9 @@ collection options:
                         File containing computer FQDNs to use as allowlist for any computer based methods
   --cachefile CACHEFILE
                         Cache file (experimental)
+  --use-ldaps           Use LDAP over TLS on port 636 by default
   -op PREFIX_NAME, --outputprefix PREFIX_NAME
-                        String to prepend to output file name
+                        String to prepend to output file names
 ```
 
 ## Examples
