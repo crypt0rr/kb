@@ -47,14 +47,13 @@ crip [COMMAND]
 
 ## Flags
 
-### Print
-
-Prints the extracted certificates to the console.
+### Print - Prints the extracted certificates to the console
 
 ```plain
-crip print [--proxy-password] [-f=<format>] [--proxy-host=<proxyHost>]
-           [--proxy-port=<proxyPort>] [--proxy-user=<proxyUser>]
-           -u=<urls> [-u=<urls>]...
+crip print [--proxy-password] [--resolve-ca] [-f=<format>]
+           [--proxy-host=<proxyHost>] [--proxy-port=<proxyPort>]
+           [--proxy-user=<proxyUser>] [-t=<timeoutInMilliseconds>]
+            -u=<urls> [-u=<urls>]...
 ```
 
 ```plain
@@ -67,12 +66,13 @@ crip print [--proxy-password] [-f=<format>] [--proxy-host=<proxyHost>]
                           Proxy port
       --proxy-user=<proxyUser>
                           User for authenticating the user for the given proxy
+      --resolve-ca        Indicator to automatically resolve the root ca
+  -t, --timeout=<timeoutInMilliseconds>
+                          Amount of milliseconds till the ripping should timeout
   -u, --url=<urls>        Url of the target server to extract the certificates
 ```
 
-### Export
-
-Export the extracted certificate to the provided output type.
+### Export - Export the extracted certificate to the provided output type
 
 ```plain
 crip export [COMMAND]
@@ -85,7 +85,6 @@ crip export [COMMAND]
   der          Export the extracted certificate to a binary form also known as
                  DER
   pem          Export the extracted certificate to a base64 encoded string also
-                 known as PEM
 ```
 
 ## Examples
