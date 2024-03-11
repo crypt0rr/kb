@@ -72,7 +72,7 @@ commands:
 
 ## Examples
 
-The cache module depends on the collected data with the [LDAP]({{< ref "../LDAP" >}}) module.
+The cache module depends on the collected data with the LDAP module.
 
 ```plain
 $ ldeep cache -p cache membersof 'Domain Admins'
