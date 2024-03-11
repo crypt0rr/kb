@@ -6,7 +6,7 @@ date : 2022-10-13T09:07:56+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'CIDR']
+tags : ['Framework', 'OSINT', 'CIDR']
 ---
 
 ## ASNmap
