@@ -104,7 +104,7 @@ commands:
 
 ### Enumerate All Domain Information
 
-This can be used with the [cache]({{< ref "../cache" >}}) functionality. An example dataset is available on the [cache]({{< ref "../cache" >}}) page.
+This can be used with the cache functionality. An example dataset is available on the cache page.
 
 ```plain
 $ ldeep ldap -d offsec.nl -s ldap://172.16.0.123:389 -u administrator -p Welkom1234 all output_cache
