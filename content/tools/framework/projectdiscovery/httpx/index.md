@@ -6,7 +6,7 @@ date : 2024-03-11T11:37:05+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'HTTP']
+tags : ['Framework', 'OSINT', 'HTTP']
 ---
 
 ## httpx

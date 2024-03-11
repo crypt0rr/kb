@@ -6,7 +6,7 @@ date : 2022-11-09T19:46:30+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['OSINT', 'DNS']
+tags : ['Framework', 'OSINT', 'DNS']
 ---
 
 ## dnsx
