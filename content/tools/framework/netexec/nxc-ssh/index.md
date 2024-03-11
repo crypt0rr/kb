@@ -13,7 +13,7 @@ tags : ['Framework', 'SSH']
 
 ## Installation
 
-Install [NetExec]({{< ref "../" >}}).
+Install [NetExec]({{< ref "netexec" >}}).
 
 ## Usage
 

@@ -15,7 +15,7 @@ Relay SMB traffic.
 
 ## Installation
 
-Install the [Impacket Framework]({{< ref "../" >}})
+Install [Impacket]({{< ref "impacket" >}}).
 
 ## Usage
 

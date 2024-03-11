@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install the [CrackMapExec]({{< ref "../" >}})
+Install [CrackMapExec]({{< ref "crackmapexec" >}})
 
 ## Usage
 

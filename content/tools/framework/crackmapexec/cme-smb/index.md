@@ -13,7 +13,7 @@ tags : ['Framework', 'SMB']
 
 ## Installation
 
-Install the [CrackMapExec]({{< ref "../" >}})
+Install [CrackMapExec]({{< ref "crackmapexec" >}})
 
 ## Usage
 

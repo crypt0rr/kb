@@ -13,7 +13,7 @@ tags : ['Framework', 'VNC']
 
 ## Installation
 
-Install [NetExec]({{< ref "../" >}}).
+Install [NetExec]({{< ref "netexec" >}}).
 
 ## Usage
 

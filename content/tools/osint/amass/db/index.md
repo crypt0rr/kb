@@ -15,7 +15,7 @@ You can use this subcommand in order to interact with an Amass graph database, e
 
 ## Installation
 
-Install the [Amass]({{< ref "../" >}}).
+Install [Amass]({{< ref "amass" >}}).
 
 ## Usage
 

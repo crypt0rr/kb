@@ -11,7 +11,7 @@ weight : 0
 
 ## nxcdb
 
-nxcdb is default installed with your installation of [NetExec]({{< ref "../" >}}).
+nxcdb is default installed with your installation of [NetExec]({{< ref "netexec" >}}).
 
 ## Usage
 

@@ -15,7 +15,7 @@ tags : ['Kerberoasting']
 
 ## Installation
 
-Install the [Impacket Framework]({{< ref "../" >}})
+Install [Impacket]({{< ref "impacket" >}}).
 
 ## Usage
 

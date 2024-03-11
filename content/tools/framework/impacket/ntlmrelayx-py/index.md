@@ -15,7 +15,7 @@ For every connection received, this module will try to relay that connection to 
 
 ## Installation
 
-Install the [Impacket Framework]({{< ref "../" >}})
+Install [Impacket]({{< ref "impacket" >}}).
 
 ## Usage
 

@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install the [hcxtools]({{< ref "../" >}})
+Install [hcxtools]({{< ref "hcxtools" >}}).
 
 ## Usage
 
