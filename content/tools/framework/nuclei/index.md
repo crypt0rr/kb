@@ -155,6 +155,7 @@ RATE-LIMIT:
    -c, -concurrency int               maximum number of templates to be executed in parallel (default 25)
    -hbs, -headless-bulk-size int      maximum number of headless hosts to be analyzed in parallel per template (default 10)
    -headc, -headless-concurrency int  maximum number of headless templates to be executed in parallel (default 10)
+   -jsc, -js-concurrency int          maximum number of javascript runtimes to be executed in parallel (default 120)
 
 OPTIMIZATIONS:
    -timeout int                     time to wait in seconds before timeout (default 10)
@@ -212,8 +213,9 @@ STATISTICS:
    -mp, -metrics-port int    port to expose nuclei metrics on (default 9092)
 
 CLOUD:
-   -auth                configure projectdiscovery cloud (pdcp) api key
-   -cup, -cloud-upload  upload scan results to pdcp dashboard
+   -auth                  configure projectdiscovery cloud (pdcp) api key
+   -cup, -cloud-upload    upload scan results to pdcp dashboard
+   -sid, -scan-id string  upload scan results to given scan id
 
 
 EXAMPLES:
@@ -233,7 +235,6 @@ Run nuclei with sorted Markdown outputs (with environment variables):
         $ MARKDOWN_EXPORT_SORT_MODE=template nuclei -target example.com -markdown-export nuclei_report/
 
 Additional documentation is available at: https://docs.nuclei.sh/getting-started/running
-
 ```
 
 ## Examples
