@@ -13,7 +13,7 @@ tags : ['Framework', 'LDAP']
 
 ## Installation
 
-Install [NetExec]({{< ref "../" >}}).
+Install [NetExec]({{< ref "netexec" >}}).
 
 ## Usage
 

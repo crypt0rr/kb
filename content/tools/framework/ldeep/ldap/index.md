@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install [LDEEP]({{< ref "../" >}}).
+Install [LDEEP]({{< ref "ldeep" >}}).
 
 ## Usage
 

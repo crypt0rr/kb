@@ -15,7 +15,7 @@ Queries target domain for users with 'Do not require Kerberos preauthentication'
 
 ## Installation
 
-Install the [Impacket Framework]({{< ref "../" >}})
+Install [Impacket]({{< ref "impacket" >}}).
 
 ## Usage
 

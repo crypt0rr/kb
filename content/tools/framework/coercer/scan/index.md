@@ -15,7 +15,7 @@ You want to assess the Remote Procedure Calls listening on a machine to see if t
 
 ## Installation
 
-Install [Coercer]({{< ref "../" >}}).
+Install [Coercer]({{< ref "coercer" >}}).
 
 ## Usage
 

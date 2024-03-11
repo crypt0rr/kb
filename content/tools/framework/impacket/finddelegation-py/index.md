@@ -15,7 +15,7 @@ Queries target domain for delegation relationships.
 
 ## Installation
 
-Install the [Impacket Framework]({{< ref "../" >}})
+Install [Impacket]({{< ref "impacket" >}}).
 
 ## Usage
 

@@ -15,7 +15,7 @@ Let's move to Amass enum, which is where most of Amass' powerful capabilities re
 
 ## Installation
 
-Install the [Amass]({{< ref "../" >}}).
+Install [Amass]({{< ref "amass" >}}).
 
 ## Usage
 
