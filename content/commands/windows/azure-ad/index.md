@@ -6,7 +6,7 @@ date : 2020-07-07T14:25:09+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Commands', 'AzureAD']
+tags : ['Commands', 'AzureAD/EntraID']
 ---
 
 ## Azure AD

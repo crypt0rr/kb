@@ -6,7 +6,7 @@ date : 2020-03-10T15:32:33+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Framework', 'Active Directory', 'AzureAD']
+tags : ['Framework', 'Active Directory', 'AzureAD/EntraID']
 ---
 
 ## BloodHound

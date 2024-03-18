@@ -6,7 +6,7 @@ date : 2023-04-04T18:37:35+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Framework', 'Active Directory', 'AzureAD']
+tags : ['Framework', 'Active Directory', 'AzureAD/EntraID']
 ---
 
 ## PingCastle
