@@ -6,7 +6,7 @@ date : 2020-04-17T11:57:13+02:00
 # hidden : true
 # draft : true
 weight : 0
-#tags : ['M365', 'AzureAD']
+#tags : ['M365', 'AzureAD/EntraID']
 ---
 
 ## ROADrecon

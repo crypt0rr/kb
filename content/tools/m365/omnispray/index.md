@@ -6,7 +6,7 @@ date : 2022-09-20T10:00:04+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['M365', 'AzureAD', 'Passwordspray']
+tags : ['M365', 'AzureAD/EntraID', 'Passwordspray']
 ---
 
 ## Omnispray

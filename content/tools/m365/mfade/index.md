@@ -6,7 +6,7 @@ date : 2023-12-14T20:27:42+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['M365', 'AzureAD', 'MFA']
+tags : ['M365', 'AzureAD/EntraID', 'MFA']
 ---
 
 ## MFade

@@ -6,7 +6,7 @@ date : 2023-01-03T12:19:14+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other', 'Active Directory', 'AzureAD']
+tags : ['Other', 'Active Directory', 'AzureAD/EntraID']
 ---
 
 ## CypherHound
