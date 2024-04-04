@@ -192,3 +192,4 @@ Please enter job number or type exit:
 - [Github.com - hash-cracker](https://github.com/crypt0rr/hash-cracker)
 - [Github.com - hash-cracker Apple Silicon Edition](https://github.com/crypt0rr/hash-cracker-apple-silicon)
 - [Google Docs - Wordlist test](https://docs.google.com/spreadsheets/d/1qQNwggWIWtL-m0EYrRg_vdwHOrZCY-SnWcYTwQN0fMk/edit)
+- [Sensepost.com - hash-cracker – password cracking done effectively](https://sensepost.com/blog/2023/hash-cracker-password-cracking-done-effectively/)
