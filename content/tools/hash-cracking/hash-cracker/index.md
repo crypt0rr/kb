@@ -15,14 +15,10 @@ Simple script to get some hash cracking done effectively.
 
 ## Installation
 
+Compatible with both Linux and macOS (ARM/M-series)
+
 ```plain
 git clone https://github.com/crypt0rr/hash-cracker
-```
-
-For use with **Apple Silicon (M1/M2)** systems, please use the following repo.
-
-```plain
-git clone https://github.com/crypt0rr/hash-cracker-apple-silicon
 ```
 
 ## Usage
@@ -49,6 +45,8 @@ Flags:
                  Will search local DB for hash module. E.g. '-s ntlm'
         --static
                  Use the 'hash-cracker.conf' static configuration file.
+        -d / --disable-cracked
+                 Will stop output cracked hashes directly on screen.
 ```
 
 ## Static Configuration File
@@ -59,30 +57,32 @@ By default, hash-cracker will run in 'ask you all variable' mode. When specifyin
 - `HASHTYPE` - mode hashcat will run in (e.g. 1000 (NTLM))
 - `HASHLIST` - file containing target hashes
 - `POTFILE` - specify the potfile you want to use / create
+- `WORDLIST` - specify the first static word list
+- `WORDLIST2` - specify the second static word list
 
 ## Examples
 
 ### 'Normal' mode
 
 ```plain
-$ ./hash-cracker.sh   
+$ $ ./hash-cracker.sh   
 
-hash-cracker v3.8 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v4.1 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
-[-] Potfile not present, will create hash-cracker.pot
+[+] Potfile hash-cracker.pot present
 
-Optional modules:
-[+] Common-substr is executable
-[-] Python2 is not available/executable (option 12 / 13)
+Optional Modules:
+[+] common-substr-mac is executable
 [+] Expander is executable
-[-] CeWL is not available/executable (option 18)
+[-] CeWL is not executable or found (option 18)
 
 Variable Parameters:
 [+] Optimised kernels enabled
 [+] Loopback enabled
 [-] Hardware monitoring disabled
+[+] STDOUT cracked hashes enabled
 
 0. Exit
 1. Brute force
@@ -105,8 +105,9 @@ Variable Parameters:
 18. CeWL wordlist generator
 19. Digit remover
 20. Stacker
+21. Custom brute force
 
-Please enter job number:
+Please enter job number or type exit:
 ```
 
 ### Static Configuration
@@ -134,31 +135,31 @@ WORDLIST2=wordlists/ignis-1K.txt
 ```
 
 ```plain
-$ ./hash-cracker.sh --static   
+$ ./hash-cracker.sh --static
 
-hash-cracker v3.8 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v4.1 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
-[-] Potfile not present, will create hash-cracker.pot
+[+] Potfile hash-cracker.pot present
 
-Optional modules:
-[+] Common-substr is executable
-[-] Python2 is not available/executable (option 12 / 13)
+Optional Modules:
+[+] common-substr-mac is executable
 [+] Expander is executable
-[-] CeWL is not available/executable (option 18)
+[-] CeWL is not executable or found (option 18)
 
 Variable Parameters:
 [+] Optimised kernels enabled
 [+] Loopback enabled
 [-] Hardware monitoring disabled
+[+] STDOUT cracked hashes enabled
 
 Static parameters:
 [+] Potfile: hash-cracker.pot
 [+] Hashlist: input
 [+] Hashtype: 1000
-[+] Wordlist 1: wordlists/ignis-1M.txt
-[+] Wordlist 2: wordlists/ignis-1K.txt
+[+] Wordlist 1: wordlists/ignis-10M.txt
+[+] Wordlist 2: wordlists/ignis-1M.txt
 
 0. Exit
 1. Brute force
@@ -181,8 +182,9 @@ Static parameters:
 18. CeWL wordlist generator
 19. Digit remover
 20. Stacker
+21. Custom brute force
 
-Please enter job number:
+Please enter job number or type exit:
 ```
 
 ## URL List
