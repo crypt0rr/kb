@@ -6,7 +6,7 @@ date : 2022-02-21T12:10:24+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Framework', 'Wi-Fi']
+tags : ['Framework', 'WiFi']
 ---
 
 ## Wifite2

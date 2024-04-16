@@ -6,7 +6,7 @@ date : 2020-03-11T11:14:10+01:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Networking', 'Wi-Fi', 'LAN']
+tags : ['Networking', 'WiFi', 'LAN']
 ---
 
 ## Bettercap

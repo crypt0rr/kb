@@ -6,7 +6,7 @@ date : 2022-07-28T14:30:28+02:00
 # hidden : true
 # draft : true
 weight : 0
-# tags : ['']
+tags : ['Framework', 'WiFi']
 ---
 
 ## WEF - 📡 Wi-Fi Exploitation Framework 📡
