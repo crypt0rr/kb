@@ -9,7 +9,7 @@ weight : 0
 tags : ["hash-cracking"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
-    tags: ['hcxtools', 'Wi-Fi']
+    tags: ['hcxtools', 'WiFi']
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
