@@ -21,6 +21,12 @@ Where to get your Docker images:
 ## Installation
 
 ```plain
+curl -fsSL https://get.docker.com -o install-docker.sh
+
+sudo sh install-docker.sh
+```
+
+```plain
 sudo apt install docker.io
 ```
 
