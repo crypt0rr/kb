@@ -56,31 +56,7 @@ shcheck.py [options] <target>
 
 ## Examples
 
-```plain
-$ shcheck.py https://kb.offsec.nl
-
-======================================================
- > shcheck.py - santoru ..............................
-------------------------------------------------------
- Simple tool to check security headers on a webserver 
-======================================================
-
-[*] Analyzing headers of https://kb.offsec.nl
-[*] Effective URL: https://kb.offsec.nl
-[*] Header X-Frame-Options is present! (Value: DENY)
-[*] Header X-Content-Type-Options is present! (Value: nosniff)
-[*] Header Strict-Transport-Security is present! (Value: max-age=15552000; includeSubDomains)
-[*] Header Content-Security-Policy is present! (Value: frame-ancestors 'self' https://kb.offsec.nl; block-all-mixed-content; upgrade-insecure-requests;)
-[*] Header Referrer-Policy is present! (Value: no-referrer)
-[!] Missing security header: Permissions-Policy
-[!] Missing security header: Cross-Origin-Embedder-Policy
-[!] Missing security header: Cross-Origin-Resource-Policy
-[!] Missing security header: Cross-Origin-Opener-Policy
--------------------------------------------------------
-[!] Headers analyzed for https://kb.offsec.nl
-[+] There are 5 security headers
-[-] There are not 4 security headers
-```
+![example](images/shcheck-example-2024-05-05_20-40.png)
 
 ## URL list
 
