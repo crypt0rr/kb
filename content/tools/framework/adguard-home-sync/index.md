@@ -62,10 +62,13 @@ Configuration file location: `$HOME/.adguardhome-sync.yaml`
 
 ```plain
 # cron expression to run in daemon mode. (default; "" = runs only once)
-cron: "0 * * * *"
+cron: "0 */2 * * *"
 
 # runs the synchronisation on startup
 runOnStart: true
+
+# If enabled, the synchronisation task will not fail on single errors, but will log the errors and continue
+continueOnError: false
 
 origin:
   # url of the origin instance
@@ -89,6 +92,21 @@ $ cat /etc/hosts
 127.0.1.1 ns2
 10.10.10.3 ns1.offsec.nl # 10.10.10.3 == NGINX proxy
 10.10.10.3 ns2.offsec.nl # 10.10.10.3 == NGINX proxy
+```
+
+## Crontab
+
+Running the service automatically on reboot in a tmux session.
+
+The following is the content of `/opt/adguardhome-sync.sh`
+
+```plain
+#!/bin/bash
+tmux new-session -d -s "sync" "/home/crypt0rr/go/bin/adguardhome-sync run --config /home/crypt0rr/.adguardhome-sync.yaml"
+```
+
+```plain
+@reboot sleep 60 && /opt/adguardhome-sync.sh
 ```
 
 ## URL List
