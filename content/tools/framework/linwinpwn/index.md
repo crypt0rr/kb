@@ -68,7 +68,7 @@ chmod +x install.sh
 ### Unauthenticated
 
 ```plain
-/linWinPwn.sh -t 100.70.60.50
+$ ./linWinPwn.sh -t 100.70.60.50
 
        _        __        ___       ____                  
       | |(_)_ __\ \      / (_)_ __ |  _ \__      ___ __   
