@@ -56,6 +56,12 @@ python3 ticket_converter.py johnDomainAdmin.ccache johnDomainAdmin.kirbi
 Converting ccache => kirbi
 ```
 
+## Troubleshooting
+
+Fixing the error message `ImportError: cannot import name 'KeyBlock' from 'impacket.krb5.ccache'`.
+
+Open `ticket_converter.py` in a text editor and find+replace `KeyBlock` with `KeyBlockV4`.
+
 ## URL List
 
 - [Github.com - ticket_converter](https://github.com/Zer1t0/ticket_converter)
