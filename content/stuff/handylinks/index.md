@@ -11,6 +11,10 @@ weight : 0
 
 ## Handy Links
 
+### M365Maps - Microsoft 365 Licensing
+
+- <https://m365maps.com/>
+
 ### The Book of Secret Knowledge
 
 A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools, and more.
