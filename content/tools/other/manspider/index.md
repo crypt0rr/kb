@@ -26,8 +26,6 @@ File types supported:
 
 Prerequisites
 
-> Linux
-
 ```plain
 sudo apt install tesseract-ocr antiword
 pip install pdf2txt
