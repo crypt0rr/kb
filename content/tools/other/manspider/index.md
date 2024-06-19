@@ -29,6 +29,7 @@ Prerequisites
 ```plain
 sudo apt install tesseract-ocr antiword
 pip install pdf2txt
+wget https://raw.githubusercontent.com/blacklanternsecurity/MANSPIDER/master/requirements.txt && pip install -r requirements.txt
 ```
 
 ```plain
