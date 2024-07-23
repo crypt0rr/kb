@@ -20,16 +20,17 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-security SECURITY] [-sam SAM] [-ntds NTDS] [-resumefile RESUMEFILE] [-outputfile OUTPUTFILE] [-use-vss] [-rodcNo RODCNO]
-                      [-rodcKey RODCKEY] [-use-keylist] [-exec-method [{smbexec,wmiexec,mmcexec}]] [-just-dc-user USERNAME] [-ldapfilter LDAPFILTER] [-just-dc] [-just-dc-ntlm] [-pwd-last-set] [-user-status] [-history]
-                      [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB] [-dc-ip ip address] [-target-ip ip address]
+secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-security SECURITY] [-sam SAM] [-ntds NTDS] [-resumefile RESUMEFILE] [-skip-sam] [-skip-security] [-outputfile OUTPUTFILE] [-use-vss] [-rodcNo RODCNO]
+                      [-rodcKey RODCKEY] [-use-keylist] [-exec-method [{smbexec,wmiexec,mmcexec}]] [-use-remoteSSMethod] [-remoteSS-remote-volume REMOTESS_REMOTE_VOLUME] [-remoteSS-local-path REMOTESS_LOCAL_PATH]
+                      [-just-dc-user USERNAME] [-ldapfilter LDAPFILTER] [-just-dc] [-just-dc-ntlm] [-skip-user SKIP_USER] [-pwd-last-set] [-user-status] [-history] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]
+                      [-keytab KEYTAB] [-dc-ip ip address] [-target-ip ip address]
                       target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address> or LOCAL (if you want to parse local files)
@@ -45,14 +46,21 @@ options:
   -ntds NTDS            NTDS.DIT file to parse
   -resumefile RESUMEFILE
                         resume file name to resume NTDS.DIT session dump (only available to DRSUAPI approach). This file will also be used to keep updating the session's state
+  -skip-sam             Do NOT parse the SAM hive on remote system
+  -skip-security        Do NOT parse the SECURITY hive on remote system
   -outputfile OUTPUTFILE
                         base output filename. Extensions will be added for sam, secrets, cached and ntds
-  -use-vss              Use the VSS method instead of default DRSUAPI
+  -use-vss              Use the NTDSUTIL VSS method instead of default DRSUAPI
   -rodcNo RODCNO        Number of the RODC krbtgt account (only avaiable for Kerb-Key-List approach)
   -rodcKey RODCKEY      AES key of the Read Only Domain Controller (only avaiable for Kerb-Key-List approach)
   -use-keylist          Use the Kerb-Key-List method instead of default DRSUAPI
   -exec-method [{smbexec,wmiexec,mmcexec}]
                         Remote exec method to use at target (only when using -use-vss). Default: smbexec
+  -use-remoteSSMethod   Remotely create Shadow Snapshot via WMI and download SAM, SYSTEM and SECURITY from it, the parse locally
+  -remoteSS-remote-volume REMOTESS_REMOTE_VOLUME
+                        Remote Volume to perform the Shadow Snapshot and download SAM, SYSTEM and SECURITY
+  -remoteSS-local-path REMOTESS_LOCAL_PATH
+                        Path where download SAM, SYSTEM and SECURITY from Shadow Snapshot. It defaults to current path
 
 display options:
   -just-dc-user USERNAME
@@ -61,6 +69,7 @@ display options:
                         Extract only NTDS.DIT data for specific users based on an LDAP filter. Only available for DRSUAPI approach. Implies also -just-dc switch
   -just-dc              Extract only NTDS.DIT data (NTLM hashes and Kerberos keys)
   -just-dc-ntlm         Extract only NTDS.DIT data (NTLM hashes only)
+  -skip-user SKIP_USER  Do NOT extract NTDS.DIT data for the user specified. Can provide comma-separated list of users to skip, or text file with one user per line
   -pwd-last-set         Shows pwdLastSet attribute for each NTDS.DIT account. Doesn't apply to -outputfile data
   -user-status          Display whether or not the user is disabled
   -history              Dump password history, and LSA secrets OldVal

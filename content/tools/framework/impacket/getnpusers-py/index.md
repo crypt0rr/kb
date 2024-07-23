@@ -20,15 +20,13 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-GetNPUsers.py [-h] [-request] [-outputfile OUTPUTFILE] [-format {hashcat,john}] [-usersfile USERSFILE] [-ts] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address]
-                     [-dc-host hostname]
-                     target
+GetNPUsers.py [-h] [-request] [-outputfile OUTPUTFILE] [-format {hashcat,john}] [-usersfile USERSFILE] [-ts] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-dc-host hostname] target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]]

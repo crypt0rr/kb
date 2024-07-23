@@ -18,20 +18,22 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-smbclient.py [-h] [-file FILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]] target
+smbclient.py [-h] [-inputfile INPUTFILE] [-outputfile OUTPUTFILE] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]] target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
 
 options:
   -h, --help            show this help message and exit
-  -file FILE            input file with commands to execute in the mini shell
+  -inputfile INPUTFILE  input file with commands to execute in the mini shell
+  -outputfile OUTPUTFILE
+                        Output file to log smbclient actions in
   -debug                Turn DEBUG output ON
 
 authentication:

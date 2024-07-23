@@ -21,13 +21,15 @@ Install [Impacket]({{< ref "impacket" >}}).
 
 ```plain
 ticketer.py [-h] [-spn SPN] [-request] -domain DOMAIN -domain-sid DOMAIN_SID [-aesKey hex key] [-nthash NTHASH] [-keytab KEYTAB] [-groups GROUPS] [-user-id USER_ID] [-extra-sid EXTRA_SID] [-extra-pac] [-old-pac]
-                   [-duration DURATION] [-ts] [-debug] [-user USER] [-password PASSWORD] [-hashes LMHASH:NTHASH] [-dc-ip ip address]
+                   [-duration DURATION] [-ts] [-debug] [-user USER] [-password PASSWORD] [-hashes LMHASH:NTHASH] [-dc-ip ip address] [-impersonate IMPERSONATE]
                    target
 ```
 
 ## Flags
 
 ```plain
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
+
 positional arguments:
   target                username for the newly created ticket
 
@@ -49,6 +51,8 @@ options:
   -duration DURATION    Amount of hours till the ticket expires (default = 24*365*10)
   -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
+  -impersonate IMPERSONATE
+                        Sapphire ticket. target username that will be impersonated (through S4U2Self+U2U) for querying the ST and extracting the PAC, which will be included in the new ticket
 
 authentication:
   -user USER            domain/username to be used if -request is chosen (it can be different from domain/username

@@ -21,26 +21,26 @@ Install [Impacket]({{< ref "impacket" >}}).
 
 ```plain
 ntlmrelayx.py [-h] [-ts] [-debug] [-t TARGET] [-tf TARGETSFILE] [-w] [-i] [-ip INTERFACE_IP] [--no-smb-server] [--no-http-server] [--no-wcf-server] [--no-raw-server] [--smb-port SMB_PORT] [--http-port HTTP_PORT]
-                     [--wcf-port WCF_PORT] [--raw-port RAW_PORT] [--no-multirelay] [-ra] [-r SMBSERVER] [-l LOOTDIR] [-of OUTPUT_FILE] [-codec CODEC] [-smb2support] [-ntlmchallenge NTLMCHALLENGE] [-socks]
-                     [-wh WPAD_HOST] [-wa WPAD_AUTH_NUM] [-6] [--remove-mic] [--serve-image SERVE_IMAGE] [-c COMMAND] [-e FILE] [--enum-local-admins] [-rpc-mode {TSCH}] [-rpc-use-smb]
-                     [-auth-smb [domain/]username[:password]] [-hashes-smb LMHASH:NTHASH] [-rpc-smb-port {139,445}] [-q QUERY] [-machine-account MACHINE_ACCOUNT] [-machine-hashes LMHASH:NTHASH] [-domain DOMAIN]
-                     [-remove-target] [--no-dump] [--no-da] [--no-acl] [--no-validate-privs] [--escalate-user ESCALATE_USER] [--add-computer [COMPUTERNAME [PASSWORD ...]]] [--delegate-access] [--sid] [--dump-laps]
-                     [--dump-gmsa] [--dump-adcs] [--add-dns-record NAME IPADDR] [-k KEYWORD] [-m MAILBOX] [-a] [-im IMAP_MAX] [--adcs] [--template TEMPLATE] [--altname ALTNAME] [--shadow-credentials]
+                     [--wcf-port WCF_PORT] [--raw-port RAW_PORT] [--no-multirelay] [--keep-relaying] [-ra] [-r SMBSERVER] [-l LOOTDIR] [-of OUTPUT_FILE] [-codec CODEC] [-smb2support] [-ntlmchallenge NTLMCHALLENGE] [-socks]
+                     [-socks-address SOCKS_ADDRESS] [-socks-port SOCKS_PORT] [-http-api-port HTTP_API_PORT] [-wh WPAD_HOST] [-wa WPAD_AUTH_NUM] [-6] [--remove-mic] [--serve-image SERVE_IMAGE] [-c COMMAND] [-e FILE]
+                     [--enum-local-admins] [-rpc-mode {TSCH}] [-rpc-use-smb] [-auth-smb [domain/]username[:password]] [-hashes-smb LMHASH:NTHASH] [-rpc-smb-port {139,445}] [-q QUERY] [-machine-account MACHINE_ACCOUNT]
+                     [-machine-hashes LMHASH:NTHASH] [-domain DOMAIN] [-remove-target] [--no-dump] [--no-da] [--no-acl] [--no-validate-privs] [--escalate-user ESCALATE_USER] [--delegate-access] [--sid] [--dump-laps] [--dump-gmsa]
+                     [--dump-adcs] [--add-dns-record NAME IPADDR] [--add-computer [COMPUTERNAME [PASSWORD ...]]] [-k KEYWORD] [-m MAILBOX] [-a] [-im IMAP_MAX] [--adcs] [--template TEMPLATE] [--altname ALTNAME] [--shadow-credentials]
                      [--shadow-target SHADOW_TARGET] [--pfx-password PFX_PASSWORD] [--export-type {PEM,PFX}] [--cert-outfile-path CERT_OUTFILE_PATH]
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 Main options:
   -h, --help            show this help message and exit
   -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
   -t TARGET, --target TARGET
-                        Target to relay the credentials to, can be an IP, hostname or URL like domain\username@host:port (domain\username and port are optional, and don't forget to escape the '\'). If unspecified, it
-                        will relay back to the client')
+                        Target to relay the credentials to, can be an IP, hostname or URL like domain\username@host:port (domain\username and port are optional, and don't forget to escape the '\'). If unspecified, it will relay back
+                        to the client')
   -tf TARGETSFILE       File that contains targets by hostname or full URL, one per line
   -w                    Watch the target file for changes and update target list automatically (only valid with -tf)
   -i, --interactive     Launch an smbclient, LDAP console or SQL shell insteadof executing a command after a successful relay. This console will listen locally on a tcp port and can be reached with for example netcat.
@@ -52,18 +52,25 @@ Main options:
   --wcf-port WCF_PORT   Port to listen on wcf server
   --raw-port RAW_PORT   Port to listen on raw server
   --no-multirelay       If set, disable multi-host relay (SMB and HTTP servers)
+  --keep-relaying       If set, keeps relaying to a target even after a successful connection on it
   -ra, --random         Randomize target selection
   -r SMBSERVER          Redirect HTTP requests to a file:// path on SMBSERVER
   -l LOOTDIR, --lootdir LOOTDIR
                         Loot directory in which gathered loot such as SAM dumps will be stored (default: current directory).
   -of OUTPUT_FILE, --output-file OUTPUT_FILE
                         base output filename for encrypted hashes. Suffixes will be added for ntlm and ntlmv2
-  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with
-                        https://docs.python.org/3/library/codecs.html#standard-encodings and then execute ntlmrelayx.py again with -codec and the corresponding codec
+  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with https://docs.python.org/3/library/codecs.html#standard-encodings
+                        and then execute ntlmrelayx.py again with -codec and the corresponding codec
   -smb2support          SMB2 Support
   -ntlmchallenge NTLMCHALLENGE
                         Specifies the NTLM server challenge used by the SMB Server (16 hex bytes long. eg: 1122334455667788)
   -socks                Launch a SOCKS proxy for the connection relayed
+  -socks-address SOCKS_ADDRESS
+                        SOCKS5 server address (also used for HTTP API)
+  -socks-port SOCKS_PORT
+                        SOCKS5 server port
+  -http-api-port HTTP_API_PORT
+                        SOCKS5 HTTP API port
   -wh WPAD_HOST, --wpad-host WPAD_HOST
                         Enable serving a WPAD file for Proxy Authentication attack, setting the proxy host to the one supplied.
   -wa WPAD_AUTH_NUM, --wpad-auth-num WPAD_AUTH_NUM
@@ -111,8 +118,6 @@ LDAP client options:
   --no-validate-privs   Do not attempt to enumerate privileges, assume permissions are granted to escalate a user via ACL attacks
   --escalate-user ESCALATE_USER
                         Escalate privileges of this user instead of creating a new one
-  --add-computer [COMPUTERNAME [PASSWORD ...]]
-                        Attempt to add a new computer account
   --delegate-access     Delegate access on relayed computer account to the specified account
   --sid                 Use a SID to delegate access rather than an account name
   --dump-laps           Attempt to dump any LAPS passwords readable by the user
@@ -120,6 +125,10 @@ LDAP client options:
   --dump-adcs           Attempt to dump ADCS enrollment services and certificate templates info
   --add-dns-record NAME IPADDR
                         Add the <NAME> record to DNS via LDAP pointing to <IPADDR>
+
+Common options for SMB and LDAP:
+  --add-computer [COMPUTERNAME [PASSWORD ...]]
+                        Attempt to add a new computer account via SMB or LDAP, depending on the specified target. This argument can be used either with the LDAP or the SMB service, as long as the target is a domain controller.
 
 IMAP client options:
   -k KEYWORD, --keyword KEYWORD

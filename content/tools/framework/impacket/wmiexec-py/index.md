@@ -20,15 +20,15 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH] [-no-pass] [-k]
-                  [-aesKey hex key] [-dc-ip ip address] [-A authfile] [-keytab KEYTAB]
+wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]
+                  [-dc-ip ip address] [-target-ip ip address] [-A authfile] [-keytab KEYTAB]
                   target [command ...]
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
@@ -41,8 +41,8 @@ options:
   -ts                   Adds timestamp to every logging output
   -silentcommand        does not execute cmd.exe to run given command (no output)
   -debug                Turn DEBUG output ON
-  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with
-                        https://docs.python.org/3/library/codecs.html#standard-encodings and then execute wmiexec.py again with -codec and the corresponding codec
+  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with https://docs.python.org/3/library/codecs.html#standard-encodings
+                        and then execute wmiexec.py again with -codec and the corresponding codec
   -shell-type {cmd,powershell}
                         choose a command processor for the semi-interactive shell
   -com-version MAJOR_VERSION:MINOR_VERSION
@@ -55,6 +55,8 @@ authentication:
   -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
   -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter
+  -target-ip ip address
+                        IP Address of the target machine. If omitted it will use whatever was specified as target. This is useful when target is the NetBIOS name and you cannot resolve it
   -A authfile           smbclient/mount.cifs-style authentication file. See smbclient man page's -A option.
   -keytab KEYTAB        Read keys for SPN from keytab file
 ```

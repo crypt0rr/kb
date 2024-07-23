@@ -26,7 +26,7 @@ smbserver.py [-h] [-comment COMMENT] [-username USERNAME] [-password PASSWORD] [
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   shareName             name of the share to add
