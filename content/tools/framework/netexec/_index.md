@@ -25,9 +25,7 @@ You are on the latest up-to-date repository of the project NetExec (nxc) !
 
 ```plain
 python3 -m pip install pipx
-git clone https://github.com/Pennyw0rth/NetExec
-cd NetExec
-pipx install .
+pipx install git+https://github.com/Pennyw0rth/NetExec
 ```
 
 On error uninstall `pipx python3 -m pip uninstall` pipx and remove local folder `sudo rm .local/pipx`. Then reinstall as listed above.

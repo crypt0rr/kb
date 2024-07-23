@@ -18,11 +18,11 @@ Install [NetExec]({{< ref "netexec" >}}).
 ## Usage
 
 ```plain
-nxc rdp [-h] [-id CRED_ID [CRED_ID ...]] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [--ignore-pw-decoding] [-k] [--no-bruteforce] [--continue-on-success] [--use-kcache] [--log LOG]
-               [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--gfail-limit LIMIT | --ufail-limit LIMIT | --fail-limit LIMIT] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options]
-               [--server {https,http}] [--server-host HOST] [--server-port PORT] [--connectback-host CHOST] [-H HASH [HASH ...]] [--port PORT] [--rdp-timeout RDP_TIMEOUT] [--nla-screenshot] [-d DOMAIN | --local-auth]
-               [--screenshot] [--screentime SCREENTIME] [--res RES]
-               target [target ...]
+netexec rdp [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]]
+                   [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache]
+                   [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--server {https,http}] [--server-host HOST] [--server-port PORT] [--connectback-host CHOST] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options]
+                   [-H HASH [HASH ...]] [--port PORT] [--rdp-timeout RDP_TIMEOUT] [--nla-screenshot] [-d DOMAIN | --local-auth] [--screenshot] [--screentime SCREENTIME] [--res RES]
+                   target [target ...]
 ```
 
 ## Flags
@@ -33,53 +33,92 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
+  -H HASH [HASH ...], --hash HASH [HASH ...]
+                        NTLM hash(es) or file(s) containing NTLM hashes
+  --port PORT           RDP port (default: 3389)
+  --rdp-timeout RDP_TIMEOUT
+                        RDP timeout on socket connection (default: 5)
+  --nla-screenshot      Screenshot RDP login prompt if NLA is disabled
+  -d DOMAIN             domain to authenticate to
+  --local-auth          authenticate locally to each target
+
+Generic:
+  Generic options for nxc across protocols
+
+  -t THREADS, --threads THREADS
+                        set how many concurrent threads to use (default: 256)
+  --timeout TIMEOUT     max timeout in seconds of each thread
+  --jitter INTERVAL     sets a random delay between each authentication
+
+Output:
+  Options to set verbosity levels and control output
+
+  --verbose             enable verbose output
+  --debug               enable debug level information
+  --no-progress         do not displaying progress bar during scan
+  --log LOG             export result into a custom file
+
+DNS:
+  -6                    Enable force IPv6
+  --dns-server DNS_SERVER
+                        Specify DNS server (default: Use hosts file & System DNS)
+  --dns-tcp             Use TCP instead of UDP for DNS queries
+  --dns-timeout DNS_TIMEOUT
+                        DNS query timeout in seconds (default: 3)
+
+Authentication:
+  Options for authenticating
+
+  -u USERNAME [USERNAME ...], --username USERNAME [USERNAME ...]
+                        username(s) or file(s) containing usernames
+  -p PASSWORD [PASSWORD ...], --password PASSWORD [PASSWORD ...]
+                        password(s) or file(s) containing passwords
   -id CRED_ID [CRED_ID ...]
                         database credential ID(s) to use for authentication
-  -u USERNAME [USERNAME ...]
-                        username(s) or file(s) containing usernames
-  -p PASSWORD [PASSWORD ...]
-                        password(s) or file(s) containing passwords
   --ignore-pw-decoding  Ignore non UTF-8 characters when decoding the password file
-  -k, --kerberos        Use Kerberos authentication
-  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2
+  --no-bruteforce       No spray when using file for username and password (user1 => password1, user2 => password2)
   --continue-on-success
                         continues authentication attempts even after successes
-  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
-  --log LOG             Export result into a custom file
-  --aesKey AESKEY [AESKEY ...]
-                        AES key to use for Kerberos Authentication (128 or 256 bits)
-  --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
   --gfail-limit LIMIT   max number of global failed login attempts
   --ufail-limit LIMIT   max number of failed login attempts per username
   --fail-limit LIMIT    max number of failed login attempts per host
+
+Kerberos:
+  Options for Kerberos authentication
+
+  -k, --kerberos        Use Kerberos authentication
+  --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
+  --aesKey AESKEY [AESKEY ...]
+                        AES key to use for Kerberos Authentication (128 or 256 bits)
+  --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
+
+Servers:
+  Options for nxc servers
+
+  --server {https,http}
+                        use the selected server (default: https)
+  --server-host HOST    IP to bind the server to (default: 0.0.0.0)
+  --server-port PORT    start the server on the specified port
+  --connectback-host CHOST
+                        IP for the remote system to connect back to
+
+Modules:
+  Options for nxc modules
+
   -M MODULE, --module MODULE
                         module to use
   -o MODULE_OPTION [MODULE_OPTION ...]
                         module options
   -L, --list-modules    list available modules
   --options             display module options
-  --server {https,http}
-                        use the selected server (default: https)
-  --server-host HOST    IP to bind the server to (default: 0.0.0.0)
-  --server-port PORT    start the server on the specified port
-  --connectback-host CHOST
-                        IP for the remote system to connect back to (default: same as server-host)
-  -H HASH [HASH ...], --hash HASH [HASH ...]
-                        NTLM hash(es) or file(s) containing NTLM hashes
-  --port PORT           Custom RDP port
-  --rdp-timeout RDP_TIMEOUT
-                        RDP timeout on socket connection, defalut is 5s
-  --nla-screenshot      Screenshot RDP login prompt if NLA is disabled
-  -d DOMAIN             domain to authenticate to
-  --local-auth          authenticate locally to each target
 
 Screenshot:
   Remote Desktop Screenshot
 
   --screenshot          Screenshot RDP if connection success
   --screentime SCREENTIME
-                        Time to wait for desktop image, default is 10s
-  --res RES             Resolution in "WIDTHxHEIGHT" format. Default: "1024x768"
+                        Time to wait for desktop image (default: 10)
+  --res RES             Resolution in WIDTHxHEIGHT format (default: 1024x768)
 ```
 
 ## Examples
