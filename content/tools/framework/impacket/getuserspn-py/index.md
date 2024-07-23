@@ -20,15 +20,15 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-GetUserSPNs.py [-h] [-target-domain TARGET_DOMAIN] [-stealth] [-usersfile USERSFILE] [-request] [-request-user username] [-save] [-outputfile OUTPUTFILE] [-ts] [-debug] [-hashes LMHASH:NTHASH] [-no-pass] [-k]
-                      [-aesKey hex key] [-dc-ip ip address] [-dc-host hostname]
+GetUserSPNs.py [-h] [-target-domain TARGET_DOMAIN] [-no-preauth NO_PREAUTH] [-stealth] [-usersfile USERSFILE] [-request] [-request-user username] [-save] [-outputfile OUTPUTFILE] [-ts] [-debug] [-hashes LMHASH:NTHASH]
+                      [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] [-dc-host hostname]
                       target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   target                domain[/username[:password]]
@@ -37,6 +37,8 @@ options:
   -h, --help            show this help message and exit
   -target-domain TARGET_DOMAIN
                         Domain to query/request if different than the domain of the user. Allows for Kerberoasting across trusts.
+  -no-preauth NO_PREAUTH
+                        account that does not require preauth, to obtain Service Ticket through the AS
   -stealth              Removes the (servicePrincipalName=*) filter from the LDAP query for added stealth. May cause huge memory consumption / errors on large domains.
   -usersfile USERSFILE  File with user per line to test
   -request              Requests TGS for users and output them in JtR/hashcat format (default False)
@@ -44,8 +46,8 @@ options:
                         Requests TGS for the SPN associated to the user specified (just the username, no domain needed)
   -save                 Saves TGS requested to disk. Format is <username>.ccache. Auto selects -request
   -outputfile OUTPUTFILE
-                        Output filename to write ciphers in JtR/hashcat format
-  -ts                   Adds timestamp to every logging output
+                        Output filename to write ciphers in JtR/hashcat format. Auto selects -request
+  -ts                   Adds timestamp to every logging output.
   -debug                Turn DEBUG output ON
 
 authentication:

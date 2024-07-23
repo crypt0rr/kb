@@ -20,13 +20,15 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-getST.py [-h] -spn SPN [-impersonate IMPERSONATE] [-additional-ticket ticket.ccache] [-ts] [-debug] [-force-forwardable] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-dc-ip ip address] identity
+getST.py [-h] [-spn SPN] [-altservice ALTSERVICE] [-impersonate IMPERSONATE] [-additional-ticket ticket.ccache] [-ts] [-debug] [-u2u] [-self] [-force-forwardable] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]
+                [-dc-ip ip address]
+                identity
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   identity              [domain/]username[:password]
@@ -34,15 +36,18 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
   -spn SPN              SPN (service/server) of the target service the service ticket will be generated for
+  -altservice ALTSERVICE
+                        New sname/SPN to set in the ticket
   -impersonate IMPERSONATE
-                        target username that will be impersonated (thru S4U2Self) for quering the ST. Keep in mind this will only work if the identity provided in this scripts is allowed for delegation to the SPN
-                        specified
+                        target username that will be impersonated (thru S4U2Self) for quering the ST. Keep in mind this will only work if the identity provided in this scripts is allowed for delegation to the SPN specified
   -additional-ticket ticket.ccache
                         include a forwardable service ticket in a S4U2Proxy request for RBCD + KCD Kerberos only
   -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
-  -force-forwardable    Force the service ticket obtained through S4U2Self to be forwardable. For best results, the -hashes and -aesKey values for the specified -identity should be provided. This allows impresonation
-                        of protected users and bypass of "Kerberos-only" constrained delegation restrictions. See CVE-2020-17049
+  -u2u                  Request User-to-User ticket
+  -self                 Only do S4U2self, no S4U2proxy
+  -force-forwardable    Force the service ticket obtained through S4U2Self to be forwardable. For best results, the -hashes and -aesKey values for the specified -identity should be provided. This allows impresonation of protected
+                        users and bypass of "Kerberos-only" constrained delegation restrictions. See CVE-2020-17049
 
 authentication:
   -hashes LMHASH:NTHASH
@@ -50,7 +55,7 @@ authentication:
   -no-pass              don't ask for password (useful for -k)
   -k                    Use Kerberos authentication. Grabs credentials from ccache file (KRB5CCNAME) based on target parameters. If valid credentials cannot be found, it will use the ones specified in the command line
   -aesKey hex key       AES key to use for Kerberos Authentication (128 or 256 bits)
-  -dc-ip ip address     IP Address of the domain controller. If ommited it use the domain part (FQDN) specified in the target parameter
+  -dc-ip ip address     IP Address of the domain controller. If omitted it use the domain part (FQDN) specified in the target parameter
 
 Examples: 
         ./getST.py -spn cifs/contoso-dc -hashes lm:nt contoso.com/user

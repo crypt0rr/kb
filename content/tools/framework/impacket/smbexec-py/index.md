@@ -20,15 +20,15 @@ Install [Impacket]({{< ref "impacket" >}}).
 ## Usage
 
 ```plain
-smbexec.py [-h] [-share SHARE] [-mode {SHARE,SERVER}] [-ts] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]]
-                  [-service-name service_name] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB]
+smbexec.py [-h] [-share SHARE] [-mode {SERVER,SHARE}] [-ts] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-dc-ip ip address] [-target-ip ip address] [-port [destination port]] [-service-name service_name]
+                  [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB]
                   target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20230803.144057.e2092339 - Copyright 2023 Fortra
+Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
@@ -36,11 +36,11 @@ positional arguments:
 options:
   -h, --help            show this help message and exit
   -share SHARE          share where the output will be grabbed from (default C$)
-  -mode {SHARE,SERVER}  mode to use (default SHARE, SERVER needs root!)
+  -mode {SERVER,SHARE}  mode to use (default SHARE, SERVER needs root!)
   -ts                   adds timestamp to every logging output
   -debug                Turn DEBUG output ON
-  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with
-                        https://docs.python.org/3/library/codecs.html#standard-encodings and then execute smbexec.py again with -codec and the corresponding codec
+  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with https://docs.python.org/3/library/codecs.html#standard-encodings
+                        and then execute smbexec.py again with -codec and the corresponding codec
   -shell-type {cmd,powershell}
                         choose a command processor for the semi-interactive shell
 
