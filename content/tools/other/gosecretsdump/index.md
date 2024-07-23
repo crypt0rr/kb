@@ -74,7 +74,7 @@ Example `NTDS.dit` and `SYSTEM` files zipped below.
 {{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"%}}
 
 ```plain
-$ ./gosecretsdump --ntds ntds.dit -system SYSTEM 
+$ ./gosecretsdump -ntds ntds.dit -system SYSTEM 
 gosecretsdump vDEV (@C__Sto)
 Administrator:500:aad3b435b51404eeaad3b435b51404ee:97f2592347d8fbe42be381726ff9ea83:::
 Administrator:aes256-cts-hmac-sha1-96:01cf1b228b57c4eaf079d3351df334bcf29029758cd149fe9119288790a81ffe
