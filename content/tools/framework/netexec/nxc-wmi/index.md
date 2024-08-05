@@ -13,7 +13,7 @@ tags : ['Framework', 'WMI']
 
 ## Installation
 
-Install [NetExec]({{< ref "netexec" >}}).
+Install [NetExec]({{< ref "../netexec" >}}).
 
 ## Usage
 

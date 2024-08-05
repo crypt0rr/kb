@@ -15,7 +15,7 @@ Adds a computer account to domain.
 
 ## Installation
 
-Install [Impacket]({{< ref "impacket" >}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 

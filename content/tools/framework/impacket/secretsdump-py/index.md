@@ -15,7 +15,7 @@ Performs various techniques to dump secrets from the remote machine without exec
 
 ## Installation
 
-Install [Impacket]({{< ref "impacket" >}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 

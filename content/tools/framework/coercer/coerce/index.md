@@ -16,7 +16,7 @@ or [Responder]({{< ref "responder" >}})?
 
 ## Installation
 
-Install [Coercer]({{< ref "coercer" >}}).
+Install [Coercer]({{< ref "../coercer" >}}).
 
 ## Usage
 

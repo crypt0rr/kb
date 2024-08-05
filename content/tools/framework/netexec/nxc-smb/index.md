@@ -13,7 +13,7 @@ tags : ['Framework', 'SMB']
 
 ## Installation
 
-Install [NetExec]({{< ref "netexec" >}}).
+Install [NetExec]({{< ref "../netexec" >}}).
 
 ## Usage
 

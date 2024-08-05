@@ -1,4 +1,4 @@
-name: Build website using Hugo version 0.123.8 (reflect production)
+name: Build website using Hugo version 0.131.0 (reflect production)
 on:
   workflow_dispatch:
   push:
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3.0.0
         with:
-          hugo-version: '0.123.8'
+          hugo-version: '0.131.0'
           extended: true
       
       - name: Build hugo site
