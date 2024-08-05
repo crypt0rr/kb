@@ -15,7 +15,7 @@ Executes a semi-interactive shell using Windows Management Instrumentation.
 
 ## Installation
 
-Install [Impacket]({{< ref "impacket" >}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 
