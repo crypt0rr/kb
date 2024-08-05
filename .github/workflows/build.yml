@@ -1,4 +1,4 @@
-name: Build website using Hugo version 0.123.8 (reflect production)
+name: Build website using Hugo version 0.131.0 (reflect production)
 on:
   workflow_dispatch:
   push:
