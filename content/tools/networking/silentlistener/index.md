@@ -20,6 +20,8 @@ wget https://gist.githubusercontent.com/Dfte/9cfeb87892557fd098de78f68b1b1390/ra
 python3 -m pip install argparse ipaddress scapy
 ```
 
+{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"%}}
+
 ## Usage
 
 ```plain
