@@ -31,4 +31,4 @@ python3 -m pip install -r requirements.txt
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

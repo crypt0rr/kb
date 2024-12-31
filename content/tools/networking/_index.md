@@ -15,4 +15,4 @@ cascade:
 
 ## Networking
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

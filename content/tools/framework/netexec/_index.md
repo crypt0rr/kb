@@ -40,4 +40,4 @@ pipx upgrade NetExec
 
 - [NetExec.wiki](https://www.netexec.wiki/)
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

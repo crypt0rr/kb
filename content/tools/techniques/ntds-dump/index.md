@@ -57,7 +57,7 @@ PS C:\> vssadmin delete shadows /shadow={3d781b5d-e053-41ad-85d4-5b8f1ffb2d42}
 
 ## Extract hashes
 
-It can happen that [secretsdump.py]({{< ref"secretsdump-py" >}}) keeps looping and throwing out hashes. In this case, or maybe even preferably, use [Gosecretsdump]({{< ref "gosecretsdump" >}}).
+It can happen that [secretsdump.py]({{< ref"secretsdump-py" %}}) keeps looping and throwing out hashes. In this case, or maybe even preferably, use [Gosecretsdump]({{< ref "gosecretsdump" %}}).
 
 ### Secretsdump.py
 

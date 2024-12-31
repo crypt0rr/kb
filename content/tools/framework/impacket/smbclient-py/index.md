@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" >}}).
+Install [Impacket]({{< ref "../impacket" %}}).
 
 ## Usage
 

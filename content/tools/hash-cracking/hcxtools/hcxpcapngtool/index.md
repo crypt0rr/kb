@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install [hcxtools]({{< ref "../hcxtools" >}}).
+Install [hcxtools]({{< ref "../hcxtools" %}}).
 
 ## Usage
 
@@ -103,14 +103,14 @@ It is much better to run gzip to compress the files. Wireshark, tshark and hcxpc
 
 ## Examples
 
-This example uses the 'dumpfile.pcapng' that is captured with [hcxdumptool]({{< ref "hcxdumptool" >}}).
+This example uses the 'dumpfile.pcapng' that is captured with [hcxdumptool]({{< ref "hcxdumptool" %}}).
 
 It will output two files in this case:
 
-1. `hash.hc22000` - Directly crackable with [hashcat]({{< ref "hashcat" >}}) (`-m22000`)
+1. `hash.hc22000` - Directly crackable with [hashcat]({{< ref "hashcat" %}}) (`-m22000`)
 2. `essidlist` - List of SSID's that were observed during capture
 
-To filter a specific ESSID, have a look at [hcxhashtool]({{< ref "hcxhashtool" >}}).
+To filter a specific ESSID, have a look at [hcxhashtool]({{< ref "hcxhashtool" %}}).
 
 ```plain
 $ hcxpcapngtool -o hash.hc22000 -E essidlist dumpfile.pcapng
@@ -166,7 +166,7 @@ PMKID written to combi hash file.........: 4
 
 ### Cracking the hashes
 
-Cracking is done with [hashcat]({{< ref "hashcat" >}}) (`-m22000`)
+Cracking is done with [hashcat]({{< ref "hashcat" %}}) (`-m22000`)
 
 ```plain
 $ hashcat -m22000 hash.hc22000 wordlist        
@@ -186,7 +186,7 @@ Status...........: Cracked
 
 ### Bettercap
 
-You can also capture handshakes / PMKID with [bettercap]({{< ref "bettercap" >}})
+You can also capture handshakes / PMKID with [bettercap]({{< ref "bettercap" %}})
 
 ```plain
 $ ./hcxpcapngtool -o output bettercap-wifi-handshakes.pcap 

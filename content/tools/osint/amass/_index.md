@@ -43,4 +43,4 @@ docker build -t amass https://github.com/OWASP/Amass.git
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

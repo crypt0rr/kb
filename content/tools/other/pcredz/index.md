@@ -81,8 +81,8 @@ options:
 
 For example you can start this live capture with the following tools all at the same time:
 
-- [Impacket - SMBserver.py]({{< ref "smbserver-py" >}})
-- [Responder]({{< ref "responder" >}})
+- [Impacket - SMBserver.py]({{< ref "smbserver-py" %}})
+- [Responder]({{< ref "responder" %}})
 
 ```plain
 $ sudo python3 Pcredz -i enp0s31f6

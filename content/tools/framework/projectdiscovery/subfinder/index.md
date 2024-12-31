@@ -15,7 +15,7 @@ Is a subdomain discovery tool that discovers valid subdomains for websites by us
 
 We have designed subfinder to comply with all passive sources licenses, and usage restrictions, as well as maintained a consistently passive model to make it useful to both penetration testers and bug bounty hunters alike.
 
-This tool can be easily combined with [dnsx]({{< ref "dnsx" >}}).
+This tool can be easily combined with [dnsx]({{< ref "dnsx" %}}).
 
 ## Installation
 

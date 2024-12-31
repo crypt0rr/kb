@@ -15,7 +15,7 @@ The Amass intel subcommand, or module if you want, can aid with collecting open 
 
 ## Installation
 
-Install [Amass]({{< ref "amass" >}}).
+Install [Amass]({{< ref "amass" %}}).
 
 ## Usage
 

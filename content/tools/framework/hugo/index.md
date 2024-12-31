@@ -38,13 +38,13 @@ Hugo supports a list of [shortcodes](https://gohugo.io/content-management/shortc
 
 ```plain
 The spaces after {{ should not be used in working situation
-{{ < youtube 2xkNJL4gJ9E >}}
+{{ < youtube 2xkNJL4gJ9E %}}
 ```
 
 ### Github Gist
 
 ```plain
-{{ < gist spf13 7896402 >}}
+{{ < gist spf13 7896402 %}}
 ```
 
 ### Front Matter

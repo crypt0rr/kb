@@ -39,7 +39,7 @@ optional arguments:
 
 ## Examples
 
-Perform a [nmap]({{< ref "nmap" >}}) to the target system(s) and for example use `-oA` to save in all formats.
+Perform a [nmap]({{< ref "nmap" %}}) to the target system(s) and for example use `-oA` to save in all formats.
 
 ```plain
 $ nmap -Pn -sV -sC -oA kb-offsec kb.offsec.nl     

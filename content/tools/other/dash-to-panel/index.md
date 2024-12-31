@@ -15,7 +15,7 @@ Is an icon taskbar for Gnome Shell. This extension moves the dash into the gnome
 
 ![Example](images/D2P_logo.svg)
 
-Works nice in combination with [ArcMenu]({{< ref "arcmenu" >}})
+Works nice in combination with [ArcMenu]({{< ref "arcmenu" %}})
 
 ## Installation
 

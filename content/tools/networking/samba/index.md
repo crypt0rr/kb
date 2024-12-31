@@ -76,7 +76,7 @@ Configuration file `/etc/samba/smb.conf`
 
 ### UFW
 
-It is recommended to use host based firewalls, for example [UFW]({{< ref "ufw" >}}).
+It is recommended to use host based firewalls, for example [UFW]({{< ref "ufw" %}}).
 
 ```plain
 sudo ufw allow from 10.10.10.0/24 to any port 445

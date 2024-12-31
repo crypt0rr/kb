@@ -19,7 +19,7 @@ Note: By default, no metadata is saved except for screenshots that are stored in
 
 ## Installation
 
-Install [GoWitness]({{< ref "../gowitness" >}})
+Install [GoWitness]({{< ref "../gowitness" %}})
 
 ## Usage
 

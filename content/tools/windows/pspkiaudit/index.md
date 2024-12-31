@@ -11,7 +11,7 @@ weight : 0
 
 ## PSPKIAudit
 
-**NOTE** Please checkout [Abuse ADCS]({{< ref "abuse-adcs" >}}) **instead of using PSPKIAudit**.
+**NOTE** Please checkout [Abuse ADCS]({{< ref "abuse-adcs" %}}) **instead of using PSPKIAudit**.
 
 ---
 

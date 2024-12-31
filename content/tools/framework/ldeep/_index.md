@@ -38,4 +38,4 @@ python3 -m pip install --upgrade git+https://github.com/franc-pentest/ldeep
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

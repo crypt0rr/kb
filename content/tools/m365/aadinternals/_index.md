@@ -41,4 +41,4 @@ Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) o
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

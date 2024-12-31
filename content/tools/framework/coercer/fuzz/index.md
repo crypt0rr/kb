@@ -15,7 +15,7 @@ You are doing research and want to fuzz Remote Procedure Calls listening on a ma
 
 ## Installation
 
-Install [Coercer]({{< ref "../coercer" >}}).
+Install [Coercer]({{< ref "../coercer" %}}).
 
 ## Usage
 

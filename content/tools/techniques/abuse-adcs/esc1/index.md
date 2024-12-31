@@ -13,13 +13,13 @@ tags : ['Techniques', 'Active Directory', 'ADCS']
 
 This is a little guide on abusing Active Directory Certificate Services (AD CS) with practical examples.
 
-**PLEASE NOTE:** Check if [Certipy]({{< ref "certipy" >}}) is an option for you since this is easier to use in general.
+**PLEASE NOTE:** Check if [Certipy]({{< ref "certipy" %}}) is an option for you since this is easier to use in general.
 
 [Cheatsheet about the different AD-CS's ESC presented by SpecterOps](https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services)
 
 ### Install Certi
 
-Please install [Certi]({{< ref "certi" >}})
+Please install [Certi]({{< ref "certi" %}})
 
 ### Checking vulnerable templates
 
@@ -228,7 +228,7 @@ d-----         1/19/2022   6:25 AM                Windows
 
 ### Convert .kirbi to .ccache
 
-Use [ticket_converter]({{< ref "ticket-converter" >}}).
+Use [ticket_converter]({{< ref "ticket-converter" %}}).
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache

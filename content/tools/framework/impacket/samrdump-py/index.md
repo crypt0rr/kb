@@ -15,7 +15,7 @@ This script downloads the list of users for the target system.
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" >}}).
+Install [Impacket]({{< ref "../impacket" %}}).
 
 ## Usage
 

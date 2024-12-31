@@ -15,7 +15,7 @@ Use Kerberos U2U to submit a TGS request for yourself. This will include with th
 
 ## Installation
 
-Install [PKINITtools]({{< ref "pkinittools" >}}).
+Install [PKINITtools]({{< ref "pkinittools" %}}).
 
 ## Usage
 

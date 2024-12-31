@@ -44,7 +44,7 @@ Help Options:
 
 ### Basic Usage with prips
 
-Used in combination with [prips]({{< ref "prips" >}}).
+Used in combination with [prips]({{< ref "prips" %}}).
 
 ```plain
 $ prips 173.0.84.0/24 | hakrevdns 

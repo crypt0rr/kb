@@ -13,7 +13,7 @@ weight : 0
 
 Is a ncurses-based monitoring application for wireless network devices. It plots levels in real-time as well as showing wireless and network related device information.
 
-Analyze Wi-Fi networks, use for example [iperf3]({{< ref "iperf3" >}}) to measure speed and stability.
+Analyze Wi-Fi networks, use for example [iperf3]({{< ref "iperf3" %}}) to measure speed and stability.
 
 ## Installation
 

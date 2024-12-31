@@ -31,4 +31,4 @@ Or download a pre-compiled binary at [GitHub.com - releases](https://github.com/
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

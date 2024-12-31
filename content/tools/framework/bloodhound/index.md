@@ -19,7 +19,7 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 {{%resources title="Collectors for v4.2+ (newest)" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.2.*"/%}}
 
-To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
+To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" %}})
 
 ## Installation
 
@@ -53,11 +53,11 @@ Invoke-BloodHound -CollectionMethod All
 
 ### Bloodhound - Remote ingestor
 
-Please check [BloodHound.py]({{< ref "bloodhoundpy" >}})
+Please check [BloodHound.py]({{< ref "bloodhoundpy" %}})
 
 ### AzureHound
 
-Please check [AzureHound]({{< ref "azurehound" >}})
+Please check [AzureHound]({{< ref "azurehound" %}})
 
 ## Examples
 
@@ -66,7 +66,7 @@ Please check [AzureHound]({{< ref "azurehound" >}})
 
 ### Example dataset
 
-Dataset based on lab environment with [BadBlood]({{< ref "badblood" >}}).
+Dataset based on lab environment with [BadBlood]({{< ref "badblood" %}}).
 
 Statistics:
 
@@ -141,19 +141,19 @@ Backup Operators
 
 ### Neo4j
 
-Neo4j is usually used as database for BloodHound data. Please see [neo4j]({{< ref "neo4j" >}}) for installation and multi-database usage.
+Neo4j is usually used as database for BloodHound data. Please see [neo4j]({{< ref "neo4j" %}}) for installation and multi-database usage.
 
 ### CypherHound
 
 Tool that can be used to interact with BloodHound collected data in the Neo4j database.
 
-Please see [CypherHound]({{< ref "cypherhound" >}}).
+Please see [CypherHound]({{< ref "cypherhound" %}}).
 
 ### BloodHoundLoader
 
 Tool that helps marking objects in the database, for example as `owned` or `high value`.
 
-Please see [BloodHoundLoader]({{< ref "BloodHoundLoader" >}}).
+Please see [BloodHoundLoader]({{< ref "BloodHoundLoader" %}}).
 
 ## URL List
 

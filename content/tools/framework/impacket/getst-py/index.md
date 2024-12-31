@@ -15,7 +15,7 @@ Given a password, hash or aesKey, it will request a Service Ticket and save it a
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" >}}).
+Install [Impacket]({{< ref "../impacket" %}}).
 
 ## Usage
 

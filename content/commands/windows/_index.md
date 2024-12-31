@@ -15,4 +15,4 @@ cascade:
 
 ## Windows
 
-{{< children style="card" depth="1" description="true"  >}}
+{{% children style="card" depth="1" description="true"  %}}

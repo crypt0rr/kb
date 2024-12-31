@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install [PKINITtools]({{< ref "pkinittools" >}}).
+Install [PKINITtools]({{< ref "pkinittools" %}}).
 
 ## Usage
 

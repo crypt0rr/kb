@@ -15,7 +15,7 @@ Performs various techniques to dump secrets from the remote machine without exec
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" >}}).
+Install [Impacket]({{< ref "../impacket" %}}).
 
 ## Usage
 
@@ -102,7 +102,7 @@ secretsdump.py <domain>/<domain-or-local-admin>:<password>@<computer-or-domain-c
 
 ### Local NTDS
 
-Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
+Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" %}}).
 
 Required files:
 
@@ -115,7 +115,7 @@ secretsdump.py -system SYSTEM -ntds NTDS.dit -hashes lmhash:nthash LOCAL -output
 
 ### Dump SAM (local)
 
-Instead of using [samdump2]({{< ref "samdump2" >}}).
+Instead of using [samdump2]({{< ref "samdump2" %}}).
 
 Required files:
 
@@ -242,7 +242,7 @@ offsec.nl\john.do:8124:aad3b435b51404eeaad3b435b51404ee:61ce05b7b3951672d5d42c4c
 
 ### Extract SAM accounts from SAM/SYSTEM hive
 
-Instead of using [samdump2]({{< ref "samdump2" >}}).
+Instead of using [samdump2]({{< ref "samdump2" %}}).
 
 Required files:
 
@@ -273,7 +273,7 @@ Example `SAM` and `SYSTEM` files zipped below.
 
 ### Extract accounts from NTDS.dit
 
-Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" >}}).
+Also check [NTDS.dit Dump&Extract]({{< ref "ntds-dump" %}}).
 
 Required files:
 

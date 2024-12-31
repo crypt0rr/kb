@@ -15,4 +15,4 @@ cascade:
 
 ## Microsoft 365
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

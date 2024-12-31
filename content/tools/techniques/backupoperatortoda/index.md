@@ -18,8 +18,8 @@ All credit from [filip_dragovic](https://twitter.com/filip_dragovic) with his in
 ## Prerequisites
 
 - Compile the `.sln` file from [Github Repo](https://github.com/mpgn/BackupOperatorToDA) (or trust mine below.)
-- Impacket [smbserver.py]({{< ref "smbserver-py" >}})
-- Impacket [secretsdump.py]({{< ref "secretsdump-py" >}})
+- Impacket [smbserver.py]({{< ref "smbserver-py" %}})
+- Impacket [secretsdump.py]({{< ref "secretsdump-py" %}})
 - Account in target domain with the 'Backup Operator' membership
 
 {{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}

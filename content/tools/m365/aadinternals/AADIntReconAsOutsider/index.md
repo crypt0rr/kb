@@ -15,7 +15,7 @@ Starts tenant recon of the given domain.
 
 ## Installation
 
-Install [AADInternals]({{< ref "aadinternals" >}})
+Install [AADInternals]({{< ref "aadinternals" %}})
 
 ## Usage
 

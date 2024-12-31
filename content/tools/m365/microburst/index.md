@@ -26,7 +26,7 @@ Recommended Modules to install:
 - [AzureAd](https://docs.microsoft.com/en-us/powershell/module/azuread/?view=azureadps-2.0) - `Install-Module -Name AzureAD`
 - [MSOnline](https://docs.microsoft.com/en-us/powershell/module/msonline/?view=azureadps-1.0) - `Install-Module -Name MSOnline`
 
-If you haven't configured the use of PowerShell Gallery, please look at [PowerShell - Enable repository use]({{< ref "powershell#enable-repository-use" >}})
+If you haven't configured the use of PowerShell Gallery, please look at [PowerShell - Enable repository use]({{< ref "powershell#enable-repository-use" %}})
 
 ## Examples
 

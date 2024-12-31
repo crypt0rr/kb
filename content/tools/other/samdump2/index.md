@@ -13,7 +13,7 @@ weight : 0
 
 Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista SAM.
 
-**NOTE** Please check [secretsdump.py - SAM dump]({{< ref "secretsdump-py" >}}) if you are getting empty hashes (`31d6cfe0d16ae931b73c59d7e0c089c0`).
+**NOTE** Please check [secretsdump.py - SAM dump]({{< ref "secretsdump-py" %}}) if you are getting empty hashes (`31d6cfe0d16ae931b73c59d7e0c089c0`).
 
 ## Installation
 

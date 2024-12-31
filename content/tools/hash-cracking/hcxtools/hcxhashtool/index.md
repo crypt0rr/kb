@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install [hcxtools]({{< ref "../hcxtools" >}}).
+Install [hcxtools]({{< ref "../hcxtools" %}}).
 
 ## Usage
 
@@ -86,7 +86,7 @@ options:
 
 ## Examples
 
-This example uses the 'hash.hc22000' that is converted with [hcxpcapngtool]({{< ref "hcxpcapngtool" >}}) and captured with [hcxdumptool]({{< ref "hcxdumptool" >}}).
+This example uses the 'hash.hc22000' that is converted with [hcxpcapngtool]({{< ref "hcxpcapngtool" %}}) and captured with [hcxdumptool]({{< ref "hcxdumptool" %}}).
 
 Filter a specific ESSID that you want to target.
 

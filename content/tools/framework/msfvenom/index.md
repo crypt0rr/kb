@@ -15,7 +15,7 @@ Is a combination of Msfpayload and Msfencode, putting both of these tools into a
 
 ## Installation
 
-Install the [MetaSploit framework]({{< ref "metasploit/" >}}).
+Install the [MetaSploit framework]({{< ref "metasploit/" %}}).
 
 ## Usage
 
