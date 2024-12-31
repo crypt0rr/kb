@@ -13,7 +13,7 @@ tags : ['Framework', 'SMB']
 
 ## Installation
 
-Install [NetExec]({{< ref "../netexec" %}}).
+Install [NetExec]({{< ref "../netexec" >}}).
 
 ## Usage
 
@@ -322,7 +322,7 @@ nxc smb <target> -u <user> -p <password> --lsa
 
 ### Domain Password Spray
 
-To find valid usernames to spray, have a look at [Kerbrute]({{< ref "kerbrute" %}}).
+To find valid usernames to spray, have a look at [Kerbrute]({{< ref "kerbrute" >}}).
 
 By default NXC will stop when a valid login combination is found. If you want NXC to proceed with the whole list you're trying, use the `--continue-on-success` flag.
 
@@ -440,7 +440,7 @@ SMB         100.120.137.43  445    DC01             [+] offsec.nl\administrator:
 
 If you know the user has local administrator rights but you get the error `STATUS_LOGON_TYPE_NOT_GRANTED` or the authentication works but not `Pwn3d!`, Remote User Account Control is likely to be enabled.
 
-Have a look at [Regedit - Disabled Remote UAC]({{< ref "regedit#disable-remote-user-account-control-uac" %}})
+Have a look at [Regedit - Disabled Remote UAC]({{< ref "regedit#disable-remote-user-account-control-uac" >}})
 
 ```plain
 $ nxc smb 100.97.176.89 -u crypt0rr -p Welkom1234  --local-auth

@@ -13,7 +13,7 @@ weight : 0
 
 Steganography brute-force utility to uncover hidden data inside files.
 
-Please use [Stegeek]({{< ref "stegseek" %}}), newer and quicker.
+Please use [Stegeek]({{< ref "stegseek" >}}), newer and quicker.
 
 ## Installation
 

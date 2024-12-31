@@ -13,7 +13,7 @@ weight : 0
 
 The ultimate speed test tool for TCP, UDP and SCTP.
 
-For Wi-Fi analyse use with [Wavemon.]({{< ref "wavemon" %}})
+For Wi-Fi analyse use with [Wavemon.]({{< ref "wavemon" >}})
 
 ## Installation
 

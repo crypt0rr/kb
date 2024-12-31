@@ -35,7 +35,7 @@ curl --request GET \
 
 ### Extract Subdomains using jq
 
-This requires [jq]({{< ref "jq" %}}) to be installed.
+This requires [jq]({{< ref "jq" >}}) to be installed.
 
 ```plain
 jq '.subdomains[]' securitytrails.json

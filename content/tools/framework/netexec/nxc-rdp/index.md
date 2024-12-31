@@ -13,7 +13,7 @@ tags : ['Framework', 'RDP']
 
 ## Installation
 
-Install [NetExec]({{< ref "../netexec" %}}).
+Install [NetExec]({{< ref "../netexec" >}}).
 
 ## Usage
 

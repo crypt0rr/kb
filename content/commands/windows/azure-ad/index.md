@@ -11,7 +11,7 @@ tags : ['Commands', 'AzureAD/EntraID']
 
 ## Azure AD
 
-Please check [Roadrecon]({{< ref "roadrecon" %}}), [MFASweep]({{< ref "mfasweep" %}}), [AzureHound]({{< ref "bloodhound" %}}) and [Azure Active Directory - Rootsecdev](https://github.com/rootsecdev/Azure-Red-Team)
+Please check [Roadrecon]({{< ref "roadrecon" >}}), [MFASweep]({{< ref "mfasweep" >}}), [AzureHound]({{< ref "bloodhound" >}}) and [Azure Active Directory - Rootsecdev](https://github.com/rootsecdev/Azure-Red-Team)
 
 {{%resources title="Presentation from Antonio Formato of Cyber Saiyan" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 

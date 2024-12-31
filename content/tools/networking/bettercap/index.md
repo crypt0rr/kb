@@ -122,7 +122,7 @@ sudo bettercap -iface <wifi-interface>
 
 ### Capturing PMKIDs
 
-This can also be done by the [hcxdumptool]({{< ref "hcxdumptool" %}})
+This can also be done by the [hcxdumptool]({{< ref "hcxdumptool" >}})
 
 ```plain
 bettercap v2.31.0 (built for linux arm with go1.16.2) [type 'help' for a list of commands]
@@ -139,7 +139,7 @@ bettercap v2.31.0 (built for linux arm with go1.16.2) [type 'help' for a list of
  mon0  » [01:52:59] [wifi.client.handshake] captured b8:12:34:56:78:2e -> OFFSEC-G (c8:12:34:56:78:e1) RSN PMKID to /root/bettercap-wifi-handshakes.pcap
 ```
 
-The `/root/bettercap-wifi-handshakes.pcap` file can be converted with [hcxpcapngtool]({{< ref "hcxpcapngtool" %}}) to [hashcat]({{< ref "hashcat" %}}) format.
+The `/root/bettercap-wifi-handshakes.pcap` file can be converted with [hcxpcapngtool]({{< ref "hcxpcapngtool" >}}) to [hashcat]({{< ref "hashcat" >}}) format.
 
 ### Troubleshooting
 

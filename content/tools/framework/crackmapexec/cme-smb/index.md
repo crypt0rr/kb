@@ -13,7 +13,7 @@ tags : ['Framework', 'SMB']
 
 ## Installation
 
-Install [CrackMapExec]({{< ref "../crackmapexec" %}})
+Install [CrackMapExec]({{< ref "../crackmapexec" >}})
 
 ## Usage
 
@@ -255,7 +255,7 @@ cme smb <target> -u <user> -p <password> --lsa
 
 ### Domain password spray
 
-To find valid usernames to spray, have a look at [Kerbrute]({{< ref "kerbrute" %}}).
+To find valid usernames to spray, have a look at [Kerbrute]({{< ref "kerbrute" >}}).
 
 By default CME will stop when a valid login combination is found. If you want CME to proceed with the whole list you're trying, use the `--continue-on-success` flag.
 
@@ -269,7 +269,7 @@ cme smb <dc-ip> -u <user.txt> -p <password.txt>
 cme smb <target> -u <user> -p <password> -M lsassy
 ```
 
-If the lsassy module fails, then use the following instead using [sysinternals procdump]({{< ref "sysinternals" %}}):
+If the lsassy module fails, then use the following instead using [sysinternals procdump]({{< ref "sysinternals" >}}):
 
 Other modules that can be used.
 
@@ -448,7 +448,7 @@ LSASSY      10.10.10.11     445    DC2019           offsec.nl\Administrator Welk
 
 If you know the user has local administrator rights but you get the error `STATUS_LOGON_TYPE_NOT_GRANTED` or the authentication works but not `Pwn3d!`, Remote User Account Control is likely to be enabled.
 
-Have a look at [Regedit - Disabled Remote UAC]({{< ref "regedit#disable-remote-user-account-control-uac" %}})
+Have a look at [Regedit - Disabled Remote UAC]({{< ref "regedit#disable-remote-user-account-control-uac" >}})
 
 ```plain
 $ cme smb 10.10.10.10 -u johndo -p 'Welkom1234!' --local-auth

@@ -19,7 +19,7 @@ Download UUP files from Windows Update servers with ease - Create Windows ISO as
 
 ### Linux (Debian)
 
-Please install [Aria2]({{< ref "aria2" %}}).
+Please install [Aria2]({{< ref "aria2" >}}).
 
 ```plain
 sudo apt-get install cabextract wimtools chntpw genisoimage

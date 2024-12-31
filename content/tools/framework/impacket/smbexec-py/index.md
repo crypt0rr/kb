@@ -15,7 +15,7 @@ PSEXEC over SMB.
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" %}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 

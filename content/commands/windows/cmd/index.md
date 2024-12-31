@@ -103,7 +103,7 @@ Local admin required.
 
 ### Enable / disable Remote Desktop (RDP)
 
-You can enable (remotely) Remote Desktop (RDP) by adjusting the register key. Tip: use 'smbexec.py' / 'wmiexec.py' to enable on remote system where RDP is not enabled. Or use the CrackMapExec module RDP see [CrackMapExec]({{< ref "tools/framework/crackmapexec" %}}).
+You can enable (remotely) Remote Desktop (RDP) by adjusting the register key. Tip: use 'smbexec.py' / 'wmiexec.py' to enable on remote system where RDP is not enabled. Or use the CrackMapExec module RDP see [CrackMapExec]({{< ref "tools/framework/crackmapexec" >}}).
 
 Enable
 

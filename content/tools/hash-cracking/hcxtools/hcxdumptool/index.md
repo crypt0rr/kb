@@ -13,7 +13,7 @@ weight : 0
 
 ## Installation
 
-Install [hcxtools]({{< ref "../hcxtools" %}}).
+Install [hcxtools]({{< ref "../hcxtools" >}}).
 
 ## Usage
 
@@ -262,7 +262,7 @@ SNONCE....................: 8eeedb3d57ab1b059ffa4da4c07bb43f790cf83f3d6d32c9e77f
 terminating...
 ```
 
-Use [hcxpcapngtool]({{< ref "hcxpcapngtool" %}}) to convert the `.pcap` to crackable hashes.
+Use [hcxpcapngtool]({{< ref "hcxpcapngtool" >}}) to convert the `.pcap` to crackable hashes.
 
 ### Scan Wi-Fi networks in range
 

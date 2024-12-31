@@ -31,7 +31,7 @@ Supported Credentials:
 
 ## Usage
 
-[Sysinternals - procdump]({{< ref "sysinternals" %}})
+[Sysinternals - procdump]({{< ref "sysinternals" >}})
 
 ```plain
 PS C:\> .\procdump64.exe (ps lsass).id data -ma

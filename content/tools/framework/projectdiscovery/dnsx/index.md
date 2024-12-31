@@ -13,7 +13,7 @@ tags : ['Framework', 'OSINT', 'DNS']
 
 dnsx is a fast and multi-purpose DNS toolkit allow to run multiple probes using retryabledns library.
 
-Combine with [subfinder]({{< ref "subfinder" %}}).
+Combine with [subfinder]({{< ref "subfinder" >}}).
 
 ## Installation
 

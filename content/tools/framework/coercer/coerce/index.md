@@ -11,12 +11,12 @@ weight : 0
 
 ## Coerce
 
-You want to exploit the Remote Procedure Calls on a remote machine to coerce an authentication to [ntlmrelayx.py]({{< ref "ntlmrelayx-py" %}})
-or [Responder]({{< ref "responder" %}})?
+You want to exploit the Remote Procedure Calls on a remote machine to coerce an authentication to [ntlmrelayx.py]({{< ref "ntlmrelayx-py" >}})
+or [Responder]({{< ref "responder" >}})?
 
 ## Installation
 
-Install [Coercer]({{< ref "../coercer" %}}).
+Install [Coercer]({{< ref "../coercer" >}}).
 
 ## Usage
 
@@ -120,4 +120,4 @@ Impacket v0.10.1.dev1+20230316.112532.f0ac44b - Copyright 2022 Fortra
 [*] Adding new computer with username: JDIWKAKA$ and password: pU^Jj391_X6>b result: OK
 ```
 
-For example, go further at [Step 4 - printerbug]({{< ref "printerbug" %}}).
+For example, go further at [Step 4 - printerbug]({{< ref "printerbug" >}}).

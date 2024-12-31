@@ -15,7 +15,7 @@ Uses Kerberos S4U2Self to request a service ticket that is valid on the host for
 
 ## Installation
 
-Install [PKINITtools]({{< ref "pkinittools" %}}).
+Install [PKINITtools]({{< ref "pkinittools" >}}).
 
 ## Usage
 

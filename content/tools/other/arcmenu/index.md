@@ -23,7 +23,7 @@ Install via [extensions.gnome.org](https://extensions.gnome.org/extension/3628/a
 
 ### ArcMenu integrated with Dash-to-Panel
 
-[Dash-to-panel]({{< ref "dash-to-panel" %}})
+[Dash-to-panel]({{< ref "dash-to-panel" >}})
 
 ![Example](images/ArcMenu_Banner.png)
 

@@ -15,7 +15,7 @@ PSEXEC like functionality example using RemComSvc.
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" %}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 

@@ -11,7 +11,7 @@ weight : 0
 
 ## YouTube-dl
 
-**NOTE:** Please check [yt-dlp]({{< ref "yt-dlp" %}}), yt-dlp is a youtube-dl fork based on the now inactive youtube-dl.
+**NOTE:** Please check [yt-dlp]({{< ref "yt-dlp" >}}), yt-dlp is a youtube-dl fork based on the now inactive youtube-dl.
 
 By default youtube-dl tries to download the best available quality.
 

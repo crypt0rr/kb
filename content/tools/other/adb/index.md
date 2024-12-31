@@ -261,7 +261,7 @@ adb push 9a5ba575.0 /system/etc/security/cacerts
 
 ### Set Global Proxy Settings
 
-**NOTE** Nowadays applications are often 'proxy unaware', this means the application is not listening to system proxy settings. To tackle this issue, have a look at [create_ap]({{< ref "create_ap" %}}).
+**NOTE** Nowadays applications are often 'proxy unaware', this means the application is not listening to system proxy settings. To tackle this issue, have a look at [create_ap]({{< ref "create_ap" >}}).
 
 Set proxy:
 

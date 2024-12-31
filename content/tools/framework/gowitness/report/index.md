@@ -15,7 +15,7 @@ Work with gowitness reports.
 
 ## Installation
 
-Install [GoWitness]({{< ref "../gowitness" %}})
+Install [GoWitness]({{< ref "../gowitness" >}})
 
 ## Usage
 

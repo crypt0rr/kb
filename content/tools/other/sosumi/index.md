@@ -147,7 +147,7 @@ Slot                     Plug
 -                        sosumi:network-control
 ```
 
-{{< youtube QWZ_LjzT39k %}}
+{{< youtube QWZ_LjzT39k >}}
 
 ## URL List
 

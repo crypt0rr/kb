@@ -11,7 +11,7 @@ weight : 0
 
 ## AzureHound
 
-Please go to [BloodHound]({{< ref "bloodhound" %}}) after gathering information with AzureHound.
+Please go to [BloodHound]({{< ref "bloodhound" >}}) after gathering information with AzureHound.
 
 Custom queries for finding interesting stuff <https://hausec.com/2020/11/23/azurehound-cypher-cheatsheet/>.
 

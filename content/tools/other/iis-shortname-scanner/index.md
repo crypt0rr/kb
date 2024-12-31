@@ -15,7 +15,7 @@ Scanner for IIS Tilde vulnerability.
 
 ## NOTE
 
-Also check [tilde_enum]({{< ref "tilde-enum" %}}).
+Also check [tilde_enum]({{< ref "tilde-enum" >}}).
 
 ## Installation
 

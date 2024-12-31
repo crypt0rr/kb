@@ -193,7 +193,7 @@ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI
 [*] Saving certificate in johnDomainAdmin@offsec.nl.pfx (password: admin)
 ```
 
-For further steps on how to abuse AD CS, checkout [Abuse AD CS]({{< ref "abuse-adcs" %}})
+For further steps on how to abuse AD CS, checkout [Abuse AD CS]({{< ref "abuse-adcs" >}})
 
 ## URL List
 

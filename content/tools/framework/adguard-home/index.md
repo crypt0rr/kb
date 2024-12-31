@@ -13,7 +13,7 @@ tags : ['Framework', 'DNS']
 
 Network-wide ads & trackers blocking DNS server.
 
-When running multiple instances of AdGuardHome you can synchronize the configuration with [AdGuardHome Sync]({{< ref "adguard-home-sync" %}})
+When running multiple instances of AdGuardHome you can synchronize the configuration with [AdGuardHome Sync]({{< ref "adguard-home-sync" >}})
 
 ## Installation
 

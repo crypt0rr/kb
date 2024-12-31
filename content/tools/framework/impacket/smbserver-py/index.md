@@ -15,7 +15,7 @@ This script will launch a SMB Server and add a share specified as an argument. Y
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" %}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 

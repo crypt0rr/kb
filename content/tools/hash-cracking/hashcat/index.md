@@ -15,7 +15,7 @@ World's fastest and most advanced password recovery utility.
 
 ## Installation
 
-For automation of hash-cracking process use [hash-cracker]({{< ref "hash-cracker" %}})
+For automation of hash-cracking process use [hash-cracker]({{< ref "hash-cracker" >}})
 
 ```plain
 git clone https://github.com/hashcat/hashcat.git
@@ -680,11 +680,11 @@ keepassdb:$keepass$*2*6000*0*2fff26de592b5a4b46b7d34f189c203c2b7af9ad9fb67ccc4a7
 
 ### Calculate your own NTLM hash
 
-Please see [NThasher]({{< ref "nthasher" %}})
+Please see [NThasher]({{< ref "nthasher" >}})
 
 ### Creating rules from found clears / cracked hashes
 
-[PACK - Password Analysis and Cracking Kit]({{< ref "pack" %}})
+[PACK - Password Analysis and Cracking Kit]({{< ref "pack" >}})
 
 ### Create custom wordlist
 

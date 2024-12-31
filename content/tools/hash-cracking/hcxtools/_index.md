@@ -17,9 +17,9 @@ cascade:
 
 **Note**: the tools can be used stand-alone but also in combination with each other. The steps would be:
 
-1. [hcxdumptool]({{< ref "hcxdumptool" %}}) - capturing needed things
-2. [hcxpcapngtool]({{< ref "hcxpcapngtool" %}}) - converting to hash file
-3. [hcxhashtool]({{< ref "hcxhashtool" %}}) - selecting specific network to crack
+1. [hcxdumptool]({{< ref "hcxdumptool" >}}) - capturing needed things
+2. [hcxpcapngtool]({{< ref "hcxpcapngtool" >}}) - converting to hash file
+3. [hcxhashtool]({{< ref "hcxhashtool" >}}) - selecting specific network to crack
 
 Small set of tools convert packets from captures (h = hash, c = capture, convert and calculate candidates, x = different hashtypes) for the use with latest hashcat or John the Ripper. The tools are 100% compatible to hashcat and John the Ripper and recommended by hashcat. This branch is pretty closely synced to hashcat git and John the Ripper git.
 

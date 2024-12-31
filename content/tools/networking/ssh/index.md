@@ -288,7 +288,7 @@ The key's randomart image is:
 
 ### SSH Local Port Forwarding
 
-For full routing please check SSH Dynamic Port Forwarding or [SSHuttle]({{< ref "sshuttle" %}}).
+For full routing please check SSH Dynamic Port Forwarding or [SSHuttle]({{< ref "sshuttle" >}}).
 
 - 2222 - Local port to bind
 - 22 - remote port to bind
@@ -316,7 +316,7 @@ ssh -L 53:localhost:53 -L 88:localhost:88 -L 389:localhost:389 -L 445:localhost:
 
 ### SSH Remote Port Forwarding
 
-For full routing please check SSH Dynamic Port Forwarding or [SSHuttle]({{< ref "sshuttle" %}}).
+For full routing please check SSH Dynamic Port Forwarding or [SSHuttle]({{< ref "sshuttle" >}}).
 
 - `-N` - Do not execute a remote command, will result in only forwarding the port not opening a command shell.
 - `-R` - Specifies that connections to the given TCP port or Unix socket on the remote (server) host are to be forwarded to the local side.
@@ -338,7 +338,7 @@ ssh -N -R 1080 user@target-host
 
 ### SSH Dynamic Port Forwarding
 
-Route any traffic thru the SSH connection to the remote host, a proxy tool like [proxychains]({{< ref "proxychains" %}}) is required. An alternative is to using SSH for this is [SSHuttle]({{< ref "sshuttle" %}}).
+Route any traffic thru the SSH connection to the remote host, a proxy tool like [proxychains]({{< ref "proxychains" >}}) is required. An alternative is to using SSH for this is [SSHuttle]({{< ref "sshuttle" >}}).
 
 - `-N` - Do not execute a remote command, will result in only forwarding the port not opening a command shell.
 - `-D` - Specifies a local “dynamic” application-level port forwarding. (SOCKS4 Proxy)

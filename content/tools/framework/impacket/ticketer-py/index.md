@@ -15,7 +15,7 @@ Creates a Kerberos golden/silver tickets based on user options.
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" %}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 

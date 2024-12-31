@@ -11,11 +11,11 @@ weight : 0
 
 ## bike-scan
 
-bike-scan is a wrapper to turn [ike-scan]({{< ref "ike-scan" %}}) into a brute-force tool. It does this by testing a remote host with every possible combination of transforms, in the chosen order of 'rarity'. Eg. all DES, 3DES, AES, MD5, SHA1, PSK, MOD1 types before testing less common combinations. By default, bike-scan will try and brute-force transforms in main mode first, then move onto aggressive mode.
+bike-scan is a wrapper to turn [ike-scan]({{< ref "ike-scan" >}}) into a brute-force tool. It does this by testing a remote host with every possible combination of transforms, in the chosen order of 'rarity'. Eg. all DES, 3DES, AES, MD5, SHA1, PSK, MOD1 types before testing less common combinations. By default, bike-scan will try and brute-force transforms in main mode first, then move onto aggressive mode.
 
 ## Installation
 
-bike-scan requires a working installation of [ike-scan]({{< ref "ike-scan" %}}).
+bike-scan requires a working installation of [ike-scan]({{< ref "ike-scan" >}}).
 
 ```plain
 git clone https://github.com/yaap7/bike-scan

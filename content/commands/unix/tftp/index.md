@@ -13,7 +13,7 @@ tags : ['Unix', 'FTP']
 
 ## Examples
 
-For TFTP-server check [atftp]({{< ref "atftp" %}})
+For TFTP-server check [atftp]({{< ref "atftp" >}})
 
 ### Test for TFTP
 

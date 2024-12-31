@@ -15,7 +15,7 @@ Test whether an account is valid on the target host using the RDP protocol.
 
 ## Installation
 
-Install [Impacket]({{< ref "../impacket" %}}).
+Install [Impacket]({{< ref "../impacket" >}}).
 
 ## Usage
 
