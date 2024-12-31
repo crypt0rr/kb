@@ -23,7 +23,7 @@ pluralizelisttitles = false
   disableBreadcrumb = true
   disableNextPrev = true
   ordersectionsby = "title"
-    themeVariant = ['theme-relearn-light', 'theme-relearn-dark']
+  themeVariant = "theme"
 
 # Enables raw html in markdown.
 [markup.goldmark.renderer]
