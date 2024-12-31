@@ -116,6 +116,12 @@ need a way to calculate them ourself */
     --TOGGLE-TRACK-color:#0f1114; /* color of the theme switcher background */
     --TOGGLE-THUMB-color:#FFFFFF; /* color of the theme switcher circle button */
     --TOGGLE-ACTIVE-color: #0077b6; /* color of the outer circle glow */
+
+    /* Checked */
+    --INTERNAL-TAG-BG-color: #0077b6; /* Tag Colors */
+    --MAIN-TITLES-H2-TEXT-color: #0077b6; /* Menu Titles H2 */
+    --INTERNAL-ACCENT-color: #8c989f60; /* Search result highlight */
+    /* --ACCENT-color: #777e82; */
 }
 
 @media (min-resolution: 105dpi) {
