@@ -13,6 +13,4 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## Cheatsheets
-
 {{% children style="card" depth="1" description="true" sort="Name"  %}}

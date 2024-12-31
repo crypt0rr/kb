@@ -9,8 +9,6 @@ weight : 0
 # tags : ['']
 ---
 
-## Bash Scripting
-
 Bash scripting must have/know tips.
 
 ## Intro script

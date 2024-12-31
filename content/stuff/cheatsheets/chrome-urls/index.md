@@ -1,6 +1,6 @@
 ---
-title : "Chrome URLs"
-# pre : ' '
+title : "Chrome URLs/Flags"
+pre : '<i class="fab fa-chrome"></i> '
 description : "URLs that can be used in Chromium based browsers."
 date : 2023-08-17T13:27:19+02:00
 # hidden : true
@@ -9,7 +9,7 @@ weight : 0
 tags : ['Stuff', 'HTTP']
 ---
 
-## Chrome URLs/Flags
+---
 
 URLs that can be used in Chromium based browsers.
 

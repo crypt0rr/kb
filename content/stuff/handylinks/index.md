@@ -9,8 +9,6 @@ weight : 0
 # tags : ['']
 ---
 
-## Handy Links
-
 ### M365Maps - Microsoft 365 Licensing
 
 - <https://m365maps.com/>
