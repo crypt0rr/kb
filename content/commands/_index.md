@@ -1,5 +1,6 @@
 ---
-title : "Commands"
+title : "For Unix / macOS Windows"
+linkTitle : "Commands"
 pre : '<i class="fas fa-keyboard"></i> '
 description : "Commands that are frequently used."
 date : 2020-03-10T13:56:14+01:00
@@ -13,6 +14,6 @@ cascade:
     pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## Commands
+---
 
-{{% children style="card" depth="1" description="true" sort="Name" %}}
+{{% children depth="1" %}}

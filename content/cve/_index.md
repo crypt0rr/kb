@@ -1,5 +1,6 @@
 ---
-title : "CVE"
+title : "Common Vulnerabilities and Exposures (CVE)"
+linkTitle: "CVE"
 pre : '<i class="fas fa-radiation"></i> '
 description : "Common Vulnerabilities and Exposures."
 date : 2020-03-11T12:34:37+01:00
@@ -13,8 +14,8 @@ cascade:
     pre : '<i class="fas fa-unlock"></i> '
 ---
 
-## Common Vulnerabilities and Exposures
+---
 
 Have a look at this [Github repo](https://github.com/trickest/cve) for a collection of CVE's.
 
-{{% children style="card" depth="1" description="true" sort="Name"  %}}
+{{% children depth="1" %}}
