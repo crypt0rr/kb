@@ -30,37 +30,31 @@ pluralizelisttitles = false
 unsafe = true
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-home'></i> Home"
-identifier = "home"
-url = "/"
-weight = 10
-
-[[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> All Tags"
 identifier = "tags"
 url = "/tags"
-weight = 20
+weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub"
 identifier = "github"
 url = "https://github.com/crypt0rr/kb"
-weight = 30
+weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-twitter'></i> Twitter"
 identifier = "twitter"
 url = "https://twitter.com/crypt0rr_"
-weight = 40
+weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-discord'></i> Discord"
 identifier = "discord"
 url = "https://discord.gg/yhfPKyBGbp"
-weight = 50
+weight = 40
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-external-link-alt'></i> More helpfull tools?"
 identifier = "offsec"
 url = "https://offsec.nl"
-weight = 60
+weight = 50
