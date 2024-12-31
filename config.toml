@@ -10,7 +10,7 @@ pluralizelisttitles = false
     home = [ "HTML", "RSS"]
 
 [params]
-  [params.author]
+  [params.author.name]
     name = "crypt0rr"
   editURL = "https://github.com/crypt0rr/kb/tree/main/content/"
   showVisitedLinks = false
