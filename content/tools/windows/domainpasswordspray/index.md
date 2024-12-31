@@ -13,7 +13,7 @@ weight : 0
 
 Powershell script to perform password spray attack in Active Directory.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(ps1)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(ps1)"/%}}
 
 ## Installation
 

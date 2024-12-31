@@ -227,7 +227,7 @@ https://kb.offsec.nl [200] [Home :: Knowledge Base (KB)] [Cloudflare,HSTS,HTTP/3
 
 httpx by default creates a folder `output` in the location the tool is started. The `.zip` below contains the output of the above run.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## URL list
 

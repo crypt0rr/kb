@@ -268,7 +268,7 @@ $ python3 ccat.py sample-cisco.config
 
 ### Sample configuration file
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(config)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(config)"/%}}
 
 ## URL List
 

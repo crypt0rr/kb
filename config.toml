@@ -1,7 +1,7 @@
 baseURL = "https://kb.offsec.nl"
 languageCode = "en-us"
 title = "Knowledge Base (KB)"
-theme = "hugo-learn" # https://github.com/matcornic/hugo-theme-learn/
+theme = "hugo-relearn" # https://github.com/matcornic/hugo-theme-learn/
 copyright = "© 2018-{year} - All rights reserved"
 pluralizelisttitles = false
 

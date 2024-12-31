@@ -19,7 +19,7 @@ More info at [itm4n.github.io](https://itm4n.github.io/printspoofer-abusing-impe
 
 Download latest release from [Github.com](https://github.com/itm4n/PrintSpoofer/releases/tag/v1.0)
 
-{{%attachments title="v1.0" fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
+{{%resources title="v1.0" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
 ## Usage
 

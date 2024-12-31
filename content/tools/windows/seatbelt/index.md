@@ -19,7 +19,7 @@ Pre-build binary (15-04-2021) available below, or [compile](https://github.com/G
 
 Obfuscated version is tested against Windows Defender and Cylance.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## Usage
 

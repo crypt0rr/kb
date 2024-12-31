@@ -21,7 +21,7 @@ The KeeFarceDLL uses [CLRMD](https://github.com/Microsoft/dotnetsamples/tree/mas
 
 Download the needed files below.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## Usage
 

@@ -71,7 +71,7 @@ gosecretsdump vDEV (@C__Sto)
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ```plain
 $ ./gosecretsdump -ntds ntds.dit -system SYSTEM 

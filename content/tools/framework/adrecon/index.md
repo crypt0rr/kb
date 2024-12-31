@@ -196,7 +196,7 @@ on a host with Microsoft Excel installed.
 
 #### Results from a Run Without Excel
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029162358.(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029162358.(zip)"/%}}
 
 ### With Microsoft Excel Installed
 
@@ -240,7 +240,7 @@ WARNING: [*] runas /user:<Domain FQDN>\<Username> /netonly powershell.exe
 
 #### Results from a Run With Excel
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029164038.(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029164038.(zip)"/%}}
 
 ## URL list
 

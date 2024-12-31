@@ -17,7 +17,7 @@ Plink is part of [PuTTY](https://putty.org/), install PuTTY yourself or download
 
 ## Installation
 
-{{%attachments fa_icon_class="fas fa-file-code" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="fas fa-file-code" pattern=".*(exe)"/%}}
 
 ## Usage
 

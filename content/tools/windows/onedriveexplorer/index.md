@@ -112,7 +112,7 @@ $ cat OneDrive.json
             "Folder_UUID": "4F241CD83085182D!105",
             "Object_UUID": "4F241CD83085182D!595",
             "Type": "File",
-            "Name": "Attachments"
+            "Name": "resources"
         },
         {
             "Folder_UUID": "4F241CD83085182D!105",

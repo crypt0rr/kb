@@ -78,7 +78,7 @@ netsh wlan show profile
 
 ### Show passwords from known networks (admin required)
 
-{{%attachments title="Script for showing all known network passwords" fa_icon_class="fas fa-terminal" pattern=".*(ps1)"%}}
+{{%resources title="Script for showing all known network passwords" fa_icon_class="fas fa-terminal" pattern=".*(ps1)"/%}}
 
 ```plain
 netsh wlan show profile "<profilename>" key=clear

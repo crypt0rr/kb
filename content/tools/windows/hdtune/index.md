@@ -15,7 +15,7 @@ HD Tune (Pro) is a hard disk / SSD utility with many functions. It can be used t
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ## Examples
 

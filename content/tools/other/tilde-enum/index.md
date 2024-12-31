@@ -31,7 +31,7 @@ git clone https://github.com/WebBreacher/tilde_enum
 
 Find wordlists to use at [this GitHub repo](https://github.com/tennc/fuzzdb/tree/master/Discovery/PredictableRes). Or download some handy ones below.
 
-{{%attachments title="Wordlists" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="Wordlists" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ## Usage
 

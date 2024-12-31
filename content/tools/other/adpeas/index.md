@@ -92,7 +92,7 @@ Domain        : offsec.nl
 [...]
 ```
 
-{{%attachments title="Example output" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="Example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ## URL List
 

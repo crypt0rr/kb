@@ -158,16 +158,16 @@ Use "hugo [command] --help" for more information about a command.
 
 ## Examples
 
-### File attachments
+### File resources
 
 ```plain
-{ {%attachments fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"%}}
+{ {%resources fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 ```
 
 Multiple filetypes
 
 ```plain
-{ {%attachments fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"%}}
+{ {%resources fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
 ```
 
 ### Enable target blank for links

@@ -15,8 +15,8 @@ Change password of a user in a Windows SAM file.
 
 ## Installation
 
-{{%attachments title="Bootable CD image. (md5sum: f274127bf8be9a7ed48b563fd951ae9e)" fa_icon_class="far fa-file-archive" pattern="cd.*(zip)"%}}
-{{%attachments title="Files for USB install (md5sum: a60dbb91016d93ec5f11e64650394afb)" fa_icon_class="far fa-file-archive" pattern="usb.*(zip)"%}}
+{{%resources title="Bootable CD image. (md5sum: f274127bf8be9a7ed48b563fd951ae9e)" fa_icon_class="far fa-file-archive" pattern="cd.*(zip)"/%}}
+{{%resources title="Files for USB install (md5sum: a60dbb91016d93ec5f11e64650394afb)" fa_icon_class="far fa-file-archive" pattern="usb.*(zip)"/%}}
 
 Or install from repo.
 

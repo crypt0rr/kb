@@ -103,7 +103,7 @@ beta.megacorpone.com has address 51.222.169.209
 
 To automate this process a script is made available below.
 
-{{%attachments fa_icon_class="fas fa-code" pattern=".*(sh)" %}}
+{{% resources fa_icon_class="fas fa-code" pattern=".*(sh)" /%}}
 
 ```plain
 ./dns-axfr.sh megacorpone.com

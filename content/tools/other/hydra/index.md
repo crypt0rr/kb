@@ -13,7 +13,7 @@ weight : 0
 
 A tool to guess/crack valid login/password pairs.
 
-{{%attachments title="List with default credentials" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="List with default credentials" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ## Installation
 

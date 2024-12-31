@@ -158,7 +158,7 @@ grep -E 'status=Enabled' secretsdump-users-with-status.txt | awk '{print $1}'
 
 ### Practical examples
 
-{{%attachments fa_icon_class="far fa-file-video" pattern="secretsdump.mp4"%}}
+{{%resources fa_icon_class="far fa-file-video" pattern="secretsdump.mp4"/%}}
 
 ### Dumping NTDS
 
@@ -188,7 +188,7 @@ SA_LOCAL_SERVICE@INFOSEC.NL.local:ThisIsAStrongPassword?
 
 The file below is a example of the full output of the command above.
 
-{{%attachments title="Secretsdump example output" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="Secretsdump example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ### Example dump all hashes NTLM format
 
@@ -269,7 +269,7 @@ Henk:1003:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 
 Example `SAM` and `SYSTEM` files zipped below.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(SAM-SYSTEM)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(SAM-SYSTEM)"/%}}
 
 ### Extract accounts from NTDS.dit
 
@@ -297,7 +297,7 @@ john_do_adm:19530:aad3b435b51404eeaad3b435b51404ee:2b311d396123456789f280077beee
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ## URL List
 

@@ -111,7 +111,7 @@ INFO: Done in 00M 24S
 INFO: Compressing output into 20220210132706_bloodhound.zip
 ```
 
-{{%attachments title="Example dataset" fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources title="Example dataset" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## URL List
 

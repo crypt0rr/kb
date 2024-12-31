@@ -23,7 +23,7 @@ A second option, suggested by [@pentest4dummies](https://www.twitter.com/pentest
 
 Download newest release from [digi.ninja](https://digi.ninja/projects/twofi.php). Or use the downloads below.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(bz2)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(bz2)"/%}}
 
 ```plain
 bundle install

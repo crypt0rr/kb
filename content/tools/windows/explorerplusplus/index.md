@@ -15,7 +15,7 @@ Is a small and fast file manager for Windows. With tabs, bookmarks and advanced 
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 Or download newest release from [Github.com](https://github.com/derceg/explorerplusplus/releases)
 

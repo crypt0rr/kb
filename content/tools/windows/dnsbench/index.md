@@ -17,7 +17,7 @@ A unique, comprehensive, accurate & free Windows (and Linux/Wine) utility to det
 
 Download newest executable from [grc.com](https://www.grc.com/dns/benchmark.htm) and run locally on any Windows system.
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
 ## Examples
 

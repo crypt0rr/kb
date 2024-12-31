@@ -17,7 +17,7 @@ Defeat Slow WiFi.
 
 Non-subscription based version.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## Examples
 

@@ -19,7 +19,7 @@ powercat is a powershell function. First you need to load the function before yo
 
 Download the `.ps1` here and execute with the command below.
 
-{{%attachments fa_icon_class="fas fa-terminal" pattern=".*(ps1)"%}}
+{{%resources fa_icon_class="fas fa-terminal" pattern=".*(ps1)"/%}}
 
 ```plain
 . .\powercat.ps1

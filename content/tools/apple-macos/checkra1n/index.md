@@ -17,7 +17,7 @@ Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up
 
 Download newest release from [Checkra.in](https://checkra.in/#release)
 
-{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*()"%}}
+{{%resources fa_icon_class="far fa-file-pdf" pattern=".*()"/%}}
 
 ## Usage
 
