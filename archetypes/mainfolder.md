@@ -13,6 +13,4 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## {{ replace .Name "-" " " | title }}
-
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children depth="1" description="true" %}}
