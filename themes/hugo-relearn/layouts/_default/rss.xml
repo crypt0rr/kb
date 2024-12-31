@@ -1,6 +1,6 @@
 {{- /* based on Hugo 0.135.0 rss.xml */}}
 {{- $authorEmail := "" }}
-{{- with .Site.params.author.name }}
+{{- with .Site.Params.author.name }}
   {{- if reflect.IsMap . }}
     {{- with .email }}
       {{- $authorEmail = . }}

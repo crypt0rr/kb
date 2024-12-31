@@ -7,12 +7,12 @@ copyright = "© 2018-{year} - All rights reserved"
 pluralizelisttitles = false
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+    home = [ "HTML", "RSS", "JSON"]
 
 [params]
+  [params.author]
+    name = "crypt0rr"
   editURL = "https://github.com/crypt0rr/kb/tree/main/content/"
-    [params.author]
-        name = 'crypt0rr'
   showVisitedLinks = false
   disableSearch = false
   disableAssetsBusting = false

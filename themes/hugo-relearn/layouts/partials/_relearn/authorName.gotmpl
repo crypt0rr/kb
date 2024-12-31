@@ -1,5 +1,5 @@
 {{- $authorName := "" }}
-{{- with .Site.params.author.name }}
+{{- with .Site.Params.author.name }}
   {{- if reflect.IsMap . }}
     {{- with .name }}
       {{- $authorName = . }}
