@@ -1,6 +1,7 @@
 baseURL = "https://kb.offsec.nl"
 languageCode = "en-us"
 title = "Knowledge Base (KB)"
+description = "Knowledgde Base (KB)"
 theme = "hugo-relearn" # https://github.com/matcornic/hugo-theme-learn/
 copyright = "© 2018-{year} - All rights reserved"
 pluralizelisttitles = false
@@ -11,7 +12,6 @@ home = [ "HTML", "RSS", "JSON"]
 [params]
   editURL = "https://github.com/crypt0rr/kb/tree/main/content/"
   author = "crypt0rr"
-  description = "Knowledgde Base (KB)"
   showVisitedLinks = false
   disableSearch = false
   disableAssetsBusting = false
