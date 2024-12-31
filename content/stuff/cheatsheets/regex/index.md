@@ -1,15 +1,15 @@
 ---
-title : "Regex"
+title : "Regular Expressions"
 pre : '<i class="fas fa-terminal"></i> '
 description : "Regular Expressions."
 date : 2020-05-05T17:37:46+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## Regular Expressions
+---
 
 Creating Regular Expressions online, use [this site](https://regex-generator.olafneumann.org/).
 

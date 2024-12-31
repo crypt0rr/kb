@@ -5,11 +5,11 @@ description : "Technique for optimizing Google search queries."
 date : 2020-03-14T19:40:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## Google Dork
+---
 
 ### SQL-injection
 

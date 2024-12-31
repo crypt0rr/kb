@@ -18,11 +18,11 @@ pluralizelisttitles = false
   disableAssetsBusting = false
   disableInlineCopyToClipBoard = false
   disableShortcutsTitle = false
-  disableLanguageSwitchingButton = false
+  disableLanguageSwitchingButton = true
   disableLandingPageButton = true
   disableBreadcrumb = true
   disableNextPrev = true
-  ordersectionsby = "title"
+  ordersectionsby = "linktitle"
   themeVariant = "theme"
 
 # Enables raw html in markdown.

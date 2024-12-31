@@ -5,7 +5,7 @@ description : "URLs that can be used in Chromium based browsers."
 date : 2023-08-17T13:27:19+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Stuff', 'HTTP']
 ---
 

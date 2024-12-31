@@ -5,11 +5,11 @@ description: "One place for all the default credentials to assist the Blue/Red t
 date: 2022-07-22T14:52:55+02:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 40
 tags: ["Cheatsheets", "Credentials"]
 ---
 
-## Default Credentials Cheat Sheet
+---
 
 One place for all the default credentials to assist the Blue/Red teamers activities on finding devices with default password. Blank username or password means you leave it blank when logging into the device.
 

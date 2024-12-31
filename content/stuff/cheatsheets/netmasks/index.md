@@ -5,8 +5,10 @@ description: "Overview of network CIDR, Addresses, Hosts, Netmask and amount of 
 date: 2020-11-26T15:39:37+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 90
 tags: ["Stuff", "CIDR", "Netmask", "Subnetting"]
+---
+
 ---
 
 ## Network classes (private ranges)

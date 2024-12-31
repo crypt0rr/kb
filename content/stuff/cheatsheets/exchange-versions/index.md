@@ -5,11 +5,11 @@ description : "List of Exchange versions, build numbers and release dates for ma
 date : 2021-11-29T15:55:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Cheatsheets', 'Active Directory']
 ---
 
-## Exchange Versions
+---
 
 This is the list of Exchange versions, build numbers and release dates for major releases (RTM, Service Packs) as well as Cumulative Updates and Rollups. The table also contains a link to the release notes or related KB article as well as a download link. Note that downloads for older versions might become unavailable over time.
 

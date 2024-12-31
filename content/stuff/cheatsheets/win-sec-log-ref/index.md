@@ -5,11 +5,11 @@ description : "Most handy Windows Security Log Event ID's"
 date : 2022-09-13T12:43:46+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 tags : ['Cheatsheets', 'Active Directory']
 ---
 
-## Windows Security Log References
+---
 
 Most handy Windows Security Log Event ID's.
 

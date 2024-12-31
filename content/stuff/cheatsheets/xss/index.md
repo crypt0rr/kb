@@ -1,15 +1,15 @@
 ---
-title : "XSS"
+title : "Cross-Site Scripting (XSS)"
 pre : '<i class="fab fa-js"></i> '
 description : "Cross-Site-Scripting payloads."
 date : 2021-12-07T17:10:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 31
 # tags : ['']
 ---
 
-## Cross-Site Scripting (XSS)
+---
 
 ## Test Characters
 

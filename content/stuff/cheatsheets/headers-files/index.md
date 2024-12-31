@@ -5,11 +5,11 @@ description : "Interesting headers and files in relation to webservers."
 date : 2021-12-10T14:08:20+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## Interesting Headers
+---
 
 ### Host header issues / WAF bypass
 
