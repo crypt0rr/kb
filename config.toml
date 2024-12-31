@@ -11,7 +11,8 @@ home = [ "HTML", "RSS", "JSON"]
 
 [params]
   editURL = "https://github.com/crypt0rr/kb/tree/main/content/"
-  author = "crypt0rr"
+    [params.author]
+        name = 'crypt0rr'
   showVisitedLinks = false
   disableSearch = false
   disableAssetsBusting = false
