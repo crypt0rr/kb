@@ -5,11 +5,11 @@ description : "BadBlood fills a Microsoft Active Directory Domain with a structu
 date : 2020-07-06T12:39:58+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Other', 'Active Directory']
 ---
 
-## BadBlood
+---
 
 BadBlood fills a Microsoft Active Directory Domain with a structure and thousands of objects.
 

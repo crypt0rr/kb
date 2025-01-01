@@ -5,11 +5,11 @@ description : "This shell is the ultimate WinRM shell for hacking/pentesting."
 date : 2020-05-12T13:08:16+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 # tags : ['']
 ---
 
-## Evil-WinRM
+---
 
 This shell is the ultimate WinRM shell for hacking/pentesting.
 

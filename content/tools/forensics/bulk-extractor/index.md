@@ -5,11 +5,11 @@ description : "Program that extracts features such as email addresses, credit ca
 date : 2020-04-21T12:57:34+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Bulk_extractor
+---
 
 Program that extracts features such as email addresses, credit card numbers, URLs, and other types of information from digital evidence files.
 

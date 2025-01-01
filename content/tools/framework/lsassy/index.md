@@ -5,11 +5,11 @@ description : "Python library to remotely extract credentials on a set of hosts.
 date : 2020-05-15T09:32:35+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 tags : ['Framework', 'LSASS']
 ---
 
-## Lsassy
+---
 
 Remote LSASS dumper - Python library to remotely extract credentials on a set of hosts.
 

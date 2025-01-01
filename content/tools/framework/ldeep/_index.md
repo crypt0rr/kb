@@ -5,7 +5,7 @@ description : "In-depth ldap enumeration utility."
 date : 2022-12-07T10:36:13+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 tags : ['Framework', 'LDAP', 'Active Directory']
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
@@ -13,7 +13,7 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## LDEEP
+---
 
 In-depth ldap enumeration utility bringing two modules.
 

@@ -5,11 +5,11 @@ description : " Fully automated decryption/decoding/cracking tool using natural 
 date : 2021-08-13T18:56:31+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
 ---
 
-## Ciphey
+---
 
 Automated Decryption Tool - Fully automated decryption/decoding/cracking tool using natural language processing & artificial intelligence, along with some common sense.
 

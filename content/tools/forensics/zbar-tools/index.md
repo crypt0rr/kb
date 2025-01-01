@@ -5,11 +5,11 @@ description : "Scan and decode bar codes (QR) from one or more image files."
 date : 2021-06-20T13:57:32+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 # tags : ['']
 ---
 
-## zbar-tools
+---
 
 Scan and decode bar codes (QR) from one or more image files.
 

@@ -5,11 +5,11 @@ description : "Tool for analyzing, reverse engineering and extracting firmware i
 date : 2020-03-11T10:52:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : [""]
 ---
 
-## Binwalk
+---
 
 Tool for analyzing, reverse engineering and extracting firmware images.
 

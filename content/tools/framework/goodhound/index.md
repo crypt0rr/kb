@@ -5,11 +5,11 @@ description : "GoodHound operationalises Bloodhound by determining the busiest p
 date : 2022-02-05T16:35:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 tags : ['Framework', 'Active Directory']
 ---
 
-## GoodHound
+---
 
 Attackers think in graphs, defenders think in actions, management think in charts.
 

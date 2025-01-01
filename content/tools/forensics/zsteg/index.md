@@ -5,11 +5,11 @@ description : "Detect stegano-hidden data in PNG & BMP."
 date : 2023-06-18T14:56:18+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## zsteg
+---
 
 Detect stegano-hidden data in PNG & BMP
 

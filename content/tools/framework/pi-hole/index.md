@@ -5,11 +5,11 @@ description : "A black hole for Internet advertisements. Network-wide (DNS-based
 date : 2020-03-12T16:37:49+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 310
 tags : ['Framework', 'DNS']
 ---
 
-## Pi-Hole
+---
 
 A black hole for Internet advertisements. Network-wide (DNS-based) Ad Blocking.
 

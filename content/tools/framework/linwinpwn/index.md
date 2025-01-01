@@ -5,11 +5,11 @@ description : "Swiss-Army knife for Active Directory Pentesting using Linux."
 date : 2024-05-08T10:37:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 tags : ['Framework', 'Active Directory' ,'NTLM', 'Coercer', 'LSASS', 'Windows', 'Passwordspray']
 ---
 
-## linWinPwn
+---
 
 linWinPwn is a bash script that wraps a number of Active Directory tools for enumeration (LDAP, RPC, ADCS, MSSQL, Kerberos), vulnerability checks (noPac, ZeroLogon, MS17-010, MS14-068), object modifications (password change, add user to group, RBCD, Shadow Credentials) and password dumping (secretsdump, lsassy, nanodump, DonPAPI). The script streamlines the use of a large number of tools: impacket, bloodhound, netexec, enum4linux-ng, ldapdomaindump, lsassy, smbmap, kerbrute, adidnsdump, certipy, silenthound, bloodyAD, DonPAPI and many others.
 

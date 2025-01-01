@@ -5,11 +5,11 @@ description : "Steganography brute-force utility to uncover hidden data inside f
 date : 2021-07-01T16:07:59+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## StegCracker
+---
 
 Steganography brute-force utility to uncover hidden data inside files.
 

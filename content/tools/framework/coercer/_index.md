@@ -5,14 +5,14 @@ description : "A python script to automatically coerce a Windows server to authe
 date : 2022-09-16T11:58:17+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 tags : ['Framework', 'Coercer']
 cascade:
     tags: ['Framework', 'Coercer']
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## Coercer
+---
 
 A python script to automatically coerce a Windows server to authenticate on an arbitrary machine through 9 methods.
 

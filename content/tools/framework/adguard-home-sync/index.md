@@ -5,11 +5,11 @@ description : "Synchronize config from one AdGuardHome instance to another."
 date : 2021-12-23T10:48:23+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 tags : ['Framework', 'DNS']
 ---
 
-## AdGuardHome Sync
+---
 
 Synchronize config from one AdGuardHome instance to another.
 

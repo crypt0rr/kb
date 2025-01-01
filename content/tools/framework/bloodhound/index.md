@@ -5,11 +5,11 @@ description : "Uses graph theory to reveal the hidden and often unintended relat
 date : 2020-03-10T15:32:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 tags : ['Framework', 'Active Directory', 'AzureAD/EntraID']
 ---
 
-## BloodHound
+---
 
 Uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment.
 

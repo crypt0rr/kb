@@ -5,11 +5,11 @@ description : "FTK® Imager is a data preview and imaging tool that lets you qui
 date : 2020-04-21T11:23:23+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 # tags : ['']
 ---
 
-## AccessData FTK Imager
+---
 
 FTK® Imager is a data preview and imaging tool that lets you quickly assess electronic evidence to determine if further analysis.
 

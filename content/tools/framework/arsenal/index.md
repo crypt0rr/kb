@@ -5,11 +5,11 @@ description : "Arsenal is just a quick inventory, reminder and launcher for pent
 date : 2021-02-11T12:29:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## Arsenal
+---
 
 Is just a quick inventory, reminder and launcher for pentest commands.
 

@@ -5,11 +5,11 @@ description : "Stegsolve is a stegano solver for challenges."
 date : 2021-06-19T19:40:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## Stegsolve
+---
 
 A stegano solver for challenges.
 

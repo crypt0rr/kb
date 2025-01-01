@@ -5,11 +5,11 @@ description : "Python based ingestor for BloodHound."
 date : 2022-02-10T13:12:39+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags : ['Framework', 'Active Directory']
 ---
 
-## BloodHound.py
+---
 
 ## Installation
 

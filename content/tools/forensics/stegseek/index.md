@@ -5,11 +5,11 @@ description : "Stegseek is a lightning fast steghide cracker that can be used to
 date : 2021-07-01T16:11:13+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
 ---
 
-## Stegseek
+---
 
 Is a lightning fast steghide cracker that can be used to extract hidden data from files. It is built as a fork of the original steghide project and, as a result, it is thousands of times faster than other crackers and can run through the entirety of rockyou.txt* in under 2 seconds
 
