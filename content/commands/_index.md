@@ -1,5 +1,5 @@
 ---
-title : "For Unix / macOS Windows"
+title : "For Unix / macOS / Windows"
 linkTitle : "Commands"
 pre : '<i class="fas fa-keyboard"></i> '
 description : "Commands that are frequently used."
