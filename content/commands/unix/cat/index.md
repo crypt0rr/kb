@@ -5,11 +5,11 @@ description : "Concatenate files and print on the standard output."
 date : 2022-06-04T14:47:36+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## cat
+---
 
 Concatenate files and print on the standard output.
 

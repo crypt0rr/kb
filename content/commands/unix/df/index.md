@@ -5,11 +5,13 @@ description : "Show information about the file system on which each FILE resides
 date : 2020-08-22T14:30:21+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 # tags : ['']
 ---
 
-## Df - Show information about the file system on which each FILE resides, or all file systems by default
+---
+
+Show information about the file system on which each FILE resides, or all file systems by default.
 
 ## Usage
 

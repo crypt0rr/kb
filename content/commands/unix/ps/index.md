@@ -5,11 +5,11 @@ description : "Displays information about a selection of the active processes."
 date : 2022-09-25T17:02:25+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 730
 # tags : ['']
 ---
 
-## ps
+---
 
 Displays information about a selection of the active processes.
 

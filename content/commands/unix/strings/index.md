@@ -5,11 +5,11 @@ description : "Print the sequences of printable characters in files."
 date : 2020-04-03T14:09:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 840
 # tags : ['']
 ---
 
-## Strings
+---
 
 ## Usage
 

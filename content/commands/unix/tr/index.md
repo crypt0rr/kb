@@ -5,11 +5,13 @@ description : "Translate, squeeze, and/or delete characters from standard input,
 date : 2020-11-24T15:44:09+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 940
 # tags : ['']
 ---
 
-## Tr - Translate, squeeze, and/or delete characters from standard input, writing to standard output
+---
+
+Translate, squeeze, and/or delete characters from standard input, writing to standard output.
 
 ## Usage
 

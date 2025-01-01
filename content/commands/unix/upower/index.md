@@ -5,11 +5,13 @@ description : "Battery information."
 date : 2020-08-22T19:46:52+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 960
 # tags : ['']
 ---
 
-## Upower - UPower tool - System-wide Power Management
+---
+
+UPower tool - System-wide Power Management.
 
 ## Usage
 

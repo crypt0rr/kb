@@ -5,11 +5,11 @@ description : "Change user password."
 date : 2020-03-13T17:48:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 710
 # tags : ['']
 ---
 
-## Passwd
+---
 
 ## Usage
 

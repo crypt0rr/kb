@@ -5,11 +5,11 @@ description : "Search the whatis database for strings."
 date : 2022-09-20T11:09:37+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## Apropos
+---
 
 Search the whatis database for strings.
 

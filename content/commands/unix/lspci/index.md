@@ -5,11 +5,11 @@ description : "List all PCI devices."
 date : 2020-03-13T16:57:54+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 530
 # tags : ['']
 ---
 
-## Lspci
+---
 
 ## Usage
 

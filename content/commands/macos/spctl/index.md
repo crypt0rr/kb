@@ -5,11 +5,11 @@ description : "SecAssessment system policy security."
 date : 2021-12-10T14:39:05+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## Spctl
+---
 
 This subsystem maintains and evaluates rules that determine whether the system allows the installation, execution, and other operations on files on the system.
 

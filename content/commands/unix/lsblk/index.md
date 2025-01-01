@@ -5,11 +5,13 @@ description : "List information about block devices."
 date : 2021-03-17T11:23:47+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 500
 # tags : ['']
 ---
 
-## Lsblk - List information about block devices
+---
+
+List information about block devices.
 
 ## Usage
 

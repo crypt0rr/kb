@@ -5,11 +5,11 @@ description : "Write a random permutation of the input lines to standard output.
 date : 2023-10-09T09:53:30+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 800
 # tags : ['']
 ---
 
-## Shuf
+---
 
 Write a random permutation of the input lines to standard output.
 

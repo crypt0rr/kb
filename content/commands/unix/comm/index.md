@@ -5,11 +5,13 @@ description : "Compare sorted files FILE1 and FILE2 line by line."
 date : 2021-03-17T11:36:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## Comm - Compare sorted files FILE1 and FILE2 line by line
+---
+
+Compare sorted files FILE1 and FILE2 line by line.
 
 ## Usage
 

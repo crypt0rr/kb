@@ -5,11 +5,11 @@ description : "Find files by name."
 date : 2022-09-20T11:31:39+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 470
 # tags : ['']
 ---
 
-## Locate
+---
 
 locate reads one or more databases prepared by [updatedb](https://linux.die.net/man/8/updatedb)(8) and writes file names matching at least one of the PATTERNs to standard output, one per line.
 

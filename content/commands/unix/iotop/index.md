@@ -5,11 +5,13 @@ description : "Simple top-like I/O monitor."
 date : 2020-03-13T17:22:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 410
 # tags : ['']
 ---
 
-## Iotop - Check live disk speed
+---
+
+Check live disk speed.
 
 ## Installation
 

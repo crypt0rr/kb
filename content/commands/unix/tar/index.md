@@ -5,11 +5,13 @@ description : "GNU 'tar' saves many files together into a single tape or disk ar
 date : 2021-03-17T12:04:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 890
 # tags : ['']
 ---
 
-## Tar - GNU 'tar' saves many files together into a single tape or disk archive, and can restore individual files from the archive
+---
+
+GNU 'tar' saves many files together into a single tape or disk archive, and can restore individual files from the archive.
 
 ## Usage
 

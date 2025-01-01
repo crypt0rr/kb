@@ -5,11 +5,11 @@ description : "Search for PATTERNS in each FILE."
 date : 2020-05-16T16:20:32+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 330
 # tags : ['']
 ---
 
-## Grep
+---
 
 ## Usage
 

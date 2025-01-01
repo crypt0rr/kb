@@ -5,11 +5,11 @@ description : "Gather and display CPU usage statistics (divided into time spent 
 date : 2021-12-21T08:54:06+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## Powermetrics
+---
 
 Gather and display CPU usage statistics (divided into time spent in user mode and supervisor mode), timer and interrupt wakeup frequency (total and, for near-idle workloads, those that resulted in package C-state exits), and on supported platforms, interrupt frequencies (categorized by CPU number), package C-state statistics (an indication of the time the core complex + integrated graphics, if any, were in low-power idle states), as well as the average execution frequency for each CPU when not idle.
 

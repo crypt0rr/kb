@@ -5,11 +5,11 @@ description: "Netcat, arbitrary TCP and UDP connections and listens."
 date: 2020-04-09T13:47:11+02:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 620
 # tags : ['']
 ---
 
-## Netcat
+---
 
 Netcat, arbitrary TCP and UDP connections and listens.
 

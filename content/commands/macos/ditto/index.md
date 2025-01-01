@@ -5,11 +5,11 @@ description : "Useful in copying large amounts of data as it can run within a Te
 date : 2021-12-10T15:18:31+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Ditto
+---
 
 Copy directory hierarchies, create and extract archives. Ditto can preserve ownership / permissions, resource forks and file / folder metadata. Ditto will automatically create the destination folder if it doesn’t yet exist, if the destination does exist and contains files, then ditto will merge them.
 

@@ -5,11 +5,11 @@ description : "Reports system hardware and software configuration."
 date : 2021-12-10T15:52:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## System Profiler
+---
 
 ## Usage
 

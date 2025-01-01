@@ -5,11 +5,11 @@ description : "Tool for setting and removing firmware passwords on a system."
 date : 2021-12-31T17:09:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## Firmwarepasswd
+---
 
 Setting a firmware password prevents a Mac from starting up from any device other than the startup disk. It may also be set to be required on each boot. This may be useful for mitigating some attacks which require physical access to hardware. See how to [Set a firmware password on your Mac](https://support.apple.com/en-au/HT204455) for official documentation.
 

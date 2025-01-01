@@ -5,11 +5,13 @@ description : "Displays a calendar"
 date : 2021-03-17T11:58:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## Cal - displays a calendar and the date of Easter
+---
+
+Displays a calendar and the date of Easter.
 
 ## Usage
 

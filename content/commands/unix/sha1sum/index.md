@@ -5,11 +5,11 @@ description : "Compute and check SHA1 message digest."
 date : 2020-03-10T16:18:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 780
 tags : ['Unix', 'Hashing']
 ---
 
-## Sha1sum
+---
 
 ## Usage
 

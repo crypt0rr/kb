@@ -5,11 +5,11 @@ description : "Provides a fast and easy-to-use interface through famous du utili
 date : 2020-03-10T16:18:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 630
 tags : ['Unix', 'Harddisk']
 ---
 
-## Ncdu
+---
 
 ## Installation
 

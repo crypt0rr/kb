@@ -5,11 +5,11 @@ description : "Print the last 10 lines of each FILE to standard output."
 date : 2020-04-09T13:43:14+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 880
 # tags : ['']
 ---
 
-## Tail
+---
 
 ## Usage
 

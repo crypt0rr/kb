@@ -5,11 +5,13 @@ description : "Encrypts the given password with the crypt(3) libc function, usin
 date : 2020-08-04T15:17:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 580
 # tags : ['']
 ---
 
-## mkpasswd - Crypts the PASSWORD using crypt(3)
+---
+
+Crypts the PASSWORD using crypt(3).
 
 ## Usage
 

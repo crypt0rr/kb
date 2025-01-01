@@ -5,11 +5,11 @@ description : "Read from standard input and write to standard output and files."
 date : 2020-03-10T16:18:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 900
 # tags : [""]
 ---
 
-## Tee
+---
 
 ## Usage
 

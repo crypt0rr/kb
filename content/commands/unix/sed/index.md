@@ -5,11 +5,11 @@ description : "Stream editor for filtering and transforming text."
 date : 2020-03-10T16:18:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 770
 # tags : [""]
 ---
 
-## Sed
+---
 
 ## Usage
 

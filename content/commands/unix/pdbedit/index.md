@@ -5,11 +5,11 @@ description : "Manage the SAM database (Database of Samba Users)."
 date : 2023-09-15T21:07:12+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 720
 tags : ['Unix', 'SMB']
 ---
 
-## Pdbedit
+---
 
 Manage the SAM database (Database of Samba Users).
 

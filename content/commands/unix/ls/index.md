@@ -5,11 +5,11 @@ description : "List information about the FILEs (the current directory by defaul
 date : 2020-04-07T14:48:29+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 480
 # tags : ['']
 ---
 
-## Ls
+---
 
 ## Usage
 

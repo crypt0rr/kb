@@ -5,11 +5,13 @@ description : "Edit files as another user."
 date : 2021-02-09T13:00:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 860
 # tags : ['']
 ---
 
-## Sudoedit - edit files as another user
+---
+
+Edit files as another user.
 
 ## Usage
 

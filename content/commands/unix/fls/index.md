@@ -5,11 +5,13 @@ description : "List file and directory names in a disk image."
 date : 2021-05-13T15:55:33+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 280
 # tags : ['']
 ---
 
-## Fls - List file and directory names in a disk image
+---
+
+List file and directory names in a disk image.
 
 ## Usage
 

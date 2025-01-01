@@ -5,11 +5,11 @@ description : "A non-interactive network retriever."
 date : 2020-09-22T14:37:32+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1000
 tags : ['Unix', 'HTTP', 'FTP']
 ---
 
-## wget
+---
 
 A non-interactive network retriever
 

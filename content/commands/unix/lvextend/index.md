@@ -5,11 +5,11 @@ description : "Extend the size of a logical volume."
 date : 2023-10-22T20:21:24+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 550
 # tags : ['']
 ---
 
-## Lvextend
+---
 
 Extend the size of a logical volume.
 

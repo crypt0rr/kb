@@ -5,11 +5,11 @@ description: "Command for cutting out the sections from each line of files."
 date: 2020-03-10T16:18:52+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 150
 # tags : [""]
 ---
 
-## Cut
+---
 
 ## Usage
 

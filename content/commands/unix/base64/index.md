@@ -5,11 +5,11 @@ description : "Base64 encode or decode FILE, or standard input, to standard outp
 date : 2020-04-03T13:50:19+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## Base64
+---
 
 ## Usage
 

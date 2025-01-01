@@ -5,11 +5,11 @@ description : "DNS lookup utility."
 date : 2020-04-14T12:14:50+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 390
 tags : ['Unix', 'DNS', 'OSINT', 'Subdomain', 'DNS Zone Transfer']
 ---
 
-## Host
+---
 
 ## Usage
 

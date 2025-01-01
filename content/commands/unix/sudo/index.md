@@ -5,11 +5,11 @@ description : "Execute a command as another user."
 date : 2022-09-21T10:12:26+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 850
 # tags : ['']
 ---
 
-## sudo
+---
 
 Execute a command as another user.
 

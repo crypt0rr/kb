@@ -5,11 +5,11 @@ description : "Command-line tool for controlling NetworkManager."
 date : 2020-03-13T14:34:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 680
 tags : ['Unix','Networking']
 ---
 
-## Nmcli
+---
 
 ## Installation
 

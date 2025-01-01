@@ -5,11 +5,11 @@ description : "Tweaks for the macOS environment that can be helpful for your dai
 date : 2021-12-10T14:47:12+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## Tweaks
+---
 
 ### View Hidden Files & Folders
 
