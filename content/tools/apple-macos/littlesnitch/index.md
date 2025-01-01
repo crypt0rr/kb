@@ -5,11 +5,11 @@ description : "Makes these Internet connections visible and puts you back in con
 date : 2020-03-16T09:22:12+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 230
 # tags : ['']
 ---
 
-## Little Snitch
+---
 
 Makes these Internet connections visible and puts you back in control!
 

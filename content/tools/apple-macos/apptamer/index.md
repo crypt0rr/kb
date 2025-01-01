@@ -5,11 +5,11 @@ description : "Tame your apps, free your CPU."
 date : 2022-09-15T14:44:51+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## App Tamer
+---
 
 Some applications, particularly web browsers and older apps, continue running tasks or animating ads even when they're idle. That uses valuable processing (CPU) power, which leaves you with:
 

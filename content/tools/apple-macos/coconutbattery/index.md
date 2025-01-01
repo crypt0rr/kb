@@ -5,11 +5,11 @@ description : "The standard for battery reading since 2005."
 date : 2020-04-17T09:01:33+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## coconutBattery 3
+---
 
 The standard for battery reading since 2005.
 

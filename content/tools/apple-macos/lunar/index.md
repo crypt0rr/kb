@@ -5,11 +5,11 @@ description : "The defacto app for controlling monitors. Intelligent adaptive br
 date : 2022-09-26T18:57:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 240
 # tags : ['']
 ---
 
-## Lunar
+---
 
 The defacto app for controlling monitors. Intelligent adaptive brightness for your internal and external monitors.
 

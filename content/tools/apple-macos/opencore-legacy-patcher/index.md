@@ -5,11 +5,11 @@ description : "Experience macOS just like before. Patch your Mac to be compatibl
 date : 2022-01-27T14:51:20+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 360
 # tags : ['']
 ---
 
-## OpenCore Legacy Patcher
+---
 
 A python program for building and booting [OpenCore](https://github.com/acidanthera/OpenCorePkg) on both legacy and modern Macs, see our in-depth [Guide](https://dortania.github.io/OpenCore-Legacy-Patcher/) for more information.
 

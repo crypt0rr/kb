@@ -5,11 +5,11 @@ description : "The only Mac quick resolution switcher with fully animated previe
 date : 2022-10-11T19:40:58+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 # tags : ['']
 ---
 
-## EasyRes
+---
 
 The only Mac quick resolution switcher with fully animated previews. Quickly and easily select resolutions for any connected screen from the menu bar or from the Yosemite Notification Center. See live animated previews of screen resolutions before selecting them, making it even easier to choose the right resolution size for your needs.
 

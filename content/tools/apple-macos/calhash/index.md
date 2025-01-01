@@ -5,11 +5,11 @@ description : "CalHash is a utility that you can use to calculate and compare th
 date : 2021-12-24T16:11:43+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
 ---
 
-## CalHash
+---
 
 CalHash is a utility that you can use to calculate and compare the checksum (also known as a message-digest-fingerprint) for a file.
 

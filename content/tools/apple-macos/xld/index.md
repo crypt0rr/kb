@@ -5,11 +5,11 @@ description : "X Lossless Decoder(XLD) is a tool for Mac OS X that is able to de
 date : 2021-05-25T13:52:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 430
 # tags : ['']
 ---
 
-## XLD
+---
 
 X Lossless Decoder(XLD) is a tool for Mac OS X that is able to decode/convert/play various 'lossless' audio files. The supported audio files can be split into some tracks with cue sheet when decoding
 

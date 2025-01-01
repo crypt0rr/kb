@@ -5,11 +5,11 @@ description : "A first class OpenVPN client that lets you secure your network wi
 date : 2021-12-31T14:21:02+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 420
 tags : ['Tools', 'macOS', Windows', 'VPN']
 ---
 
-## Viscosity
+---
 
 Viscosity is a first class VPN client, providing everything you need to establish fast and secure OpenVPN connections on both macOS and Windows.
 

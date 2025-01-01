@@ -5,11 +5,11 @@ description : "Convert videos to high-quality GIFs."
 date : 2022-01-14T10:49:49+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 180
 # tags : ['']
 ---
 
-## Gifski
+---
 
 It converts videos to animated GIFs that use thousands of colors per frame. This is made possible by some fancy features for efficient cross-frame palettes and temporal dithering.
 

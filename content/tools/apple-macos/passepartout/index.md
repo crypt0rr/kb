@@ -5,11 +5,11 @@ description : "A non-official, user-friendly OpenVPN® client for iOS and macOS.
 date : 2021-12-30T13:50:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 370
 tags : ['Tools', 'macOS', 'iOS', 'VPN']
 ---
 
-## Passepartout
+---
 
 Passepartout is a smart OpenVPN client perfectly integrated with Apple platforms. Passepartout is the only app you need for both well-known OpenVPN providers and your personal OpenVPN servers.
 

@@ -5,11 +5,11 @@ description : "Controls your external display brightness and volume and shows na
 date : 2022-12-11T13:22:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 300
 # tags : ['']
 ---
 
-## MonitorControl
+---
 
 Control your display's brightness & volume on your Mac as if it was a native Apple Display. Use Apple Keyboard keys or custom shortcuts. Shows the native macOS OSDs.
 

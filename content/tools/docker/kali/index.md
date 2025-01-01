@@ -5,11 +5,11 @@ description : "The Kali Linux penetration testing platform contains a vast array
 date : 2021-05-19T14:14:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## Kali
+---
 
 The Kali Linux penetration testing platform contains a vast array of tools and utilities.
 
