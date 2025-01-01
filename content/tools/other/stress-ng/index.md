@@ -5,11 +5,11 @@ description : "stress-ng will stress test a computer system in various selectabl
 date : 2022-06-28T11:28:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1780
 # tags : ['']
 ---
 
-## stress-ng
+---
 
 stress-ng will stress test a computer system in various selectable ways. It was designed to exercise various physical subsystems of a computer as well as the various operating system kernel interfaces. stress-ng also has a wide range of CPU specific stress tests that exercise floating point, integer, bit manipulation and control flow.
 

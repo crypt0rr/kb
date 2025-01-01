@@ -5,11 +5,11 @@ description : "A fast, reliable, and simple file sync and share solution, powere
 date : 2020-03-11T14:59:09+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1500
 tags : ['Other', 'macOS', 'Windows', 'Linux', 'P2P']
 ---
 
-## Resilio Sync
+---
 
 A fast, reliable, and simple file sync and share solution, powered by P2P technology.
 

@@ -5,11 +5,11 @@ description : "Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista S
 date : 2021-02-12T09:49:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1540
 # tags : ['']
 ---
 
-## SAMdump2
+---
 
 Retrieves syskey and extract hashes from Windows 2k/NT/XP/Vista SAM.
 

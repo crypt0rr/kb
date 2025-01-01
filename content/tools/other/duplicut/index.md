@@ -5,11 +5,11 @@ description : "Remove duplicate lines from INFILE without changing order."
 date : 2020-09-22T12:52:59+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 530
 # tags : ['']
 ---
 
-## Duplicut
+---
 
 Quickly dedupe massive wordlists, without changing the order.
 

@@ -5,11 +5,11 @@ description : "Copy your files faster and more securely."
 date : 2021-12-26T10:45:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1810
 tags : ['Other', 'Windows', 'macOS']
 ---
 
-## TeraCopy
+---
 
 A free utility designed to copy files faster and more secure. It can verify copied files to ensure they are identical. It skips bad files during copy, not terminating the entire transfer. Seamless integration with Windows Explorer.
 

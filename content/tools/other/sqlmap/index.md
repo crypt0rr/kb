@@ -5,11 +5,11 @@ description : "Automatic SQL injection and database takeover tool."
 date : 2020-03-11T10:24:41+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1740
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## SQLmap
+---
 
 Automatic SQL injection and database takeover tool.
 

@@ -5,11 +5,11 @@ description : "Secure sharing of secrets, passwords and files."
 date : 2022-06-21T20:46:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2100
 # tags : ['']
 ---
 
-## Yopass - Share Secrets Securely
+---
 
 Yopass is a project for sharing secrets in a quick and secure manner*. The sole purpose of Yopass is to minimize the amount of passwords floating around in ticket management systems, Slack messages and emails. The message is encrypted/decrypted locally in the browser and then sent to yopass without the decryption key which is only visible once during encryption, yopass then returns a one-time URL with specified expiry date.
 

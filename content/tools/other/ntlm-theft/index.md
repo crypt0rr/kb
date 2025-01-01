@@ -5,11 +5,11 @@ description : "A tool for generating multiple types of NTLMv2 hash theft files."
 date : 2022-09-19T08:41:52+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1230
 # tags : ['']
 ---
 
-## ntlm_theft
+---
 
 A tool for generating multiple types of NTLMv2 hash theft files.
 

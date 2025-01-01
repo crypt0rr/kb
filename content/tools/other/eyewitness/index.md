@@ -5,11 +5,11 @@ description : "Is a tool used to capture screenshots from a list of URLs."
 date : 2020-03-10T15:34:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 600
 # tags : [""]
 ---
 
-## EyeWitness
+---
 
 Is a tool used to capture screenshots from a list of URLs.
 

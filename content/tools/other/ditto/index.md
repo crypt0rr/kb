@@ -5,11 +5,11 @@ description : "Ditto is a small tool that accepts a domain name as input and gen
 date : 2021-01-29T15:09:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 480
 # tags : ['']
 ---
 
-## Ditto
+---
 
 A small tool that accepts a domain name as input and generates all its variants for an homograph attack as output, checking which ones are available and which are already registered.
 

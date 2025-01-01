@@ -5,11 +5,11 @@ description : "Free client-side encryption for your cloud files. Open source sof
 date : 2020-03-13T14:16:45+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 360
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## Cryptomator
+---
 
 Free client-side encryption for your cloud files. Open source software: No backdoors, no registration.
 

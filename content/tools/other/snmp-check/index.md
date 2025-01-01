@@ -5,11 +5,11 @@ description : "Like to snmpwalk, snmpcheck allows you to enumerate the SNMP devi
 date : 2022-10-09T16:10:30+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1680
 tags : ['Other', 'SNMP']
 ---
 
-## snmp-check
+---
 
 Like to snmpwalk, snmpcheck allows you to enumerate the SNMP devices and places the output in a very human readable friendly format. It could be useful for penetration testing or systems monitoring.
 

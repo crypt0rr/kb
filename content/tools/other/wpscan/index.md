@@ -5,11 +5,11 @@ description : "WordPress Vulnerability Scanner."
 date : 2020-03-11T15:57:21+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2080
 # tags : [""]
 ---
 
-## WPscan
+---
 
 WordPress Vulnerability Scanner.
 

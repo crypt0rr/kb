@@ -5,11 +5,11 @@ description : "Active Directory certificate abuse."
 date : 2022-01-19T21:26:13+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 280
 tags : ['Other', 'Active Directory', 'ADCS']
 ---
 
-## Certify
+---
 
 Certify is a C# tool to enumerate and abuse misconfigurations in Active Directory Certificate Services (AD CS).
 

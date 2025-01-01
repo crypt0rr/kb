@@ -5,11 +5,11 @@ description : "Determine the Palo Alto PAN-OS software version of a remote Globa
 date : 2022-04-24T14:34:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1290
 # tags : ['']
 ---
 
-## PAN-OS GlobalProtect Portal Scanner
+---
 
 Palo Alto's GlobalProtect portal, a feature of PAN-OS, has been the subject of [several critical-severity vulnerabilities](https://security.paloaltonetworks.com/?severity=CRITICAL&product=PAN-OS&sort=-date) that can allow authorization bypass, unauthenticated remote code execution, etc. From an external perspective, it can be difficult to tell if you're running a patched version of PAN-OS since the GlobalProtect portal and management interface don't explicitly reveal their underlying software version.
 

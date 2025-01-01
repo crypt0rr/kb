@@ -5,11 +5,11 @@ description : "A fast enumeration tool for Windows Active Directory Pentesting w
 date : 2022-04-25T09:28:30+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 tags : ['Other', 'Active Directory']
 ---
 
-## ADReaper
+---
 
 `ADReaper` is a tool written in Golang which enumerate a Active Directory environment with LDAP queries within few seconds
 

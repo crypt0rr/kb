@@ -5,11 +5,11 @@ description : "Mattermost is a messaging and collaboration platform. With Matter
 date : 2021-04-21T13:12:06+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1120
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## Mattermost
+---
 
 A messaging and collaboration platform. With Mattermost, you can integrate the tools you use every day into one place and never miss a notification or task.
 

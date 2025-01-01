@@ -5,11 +5,11 @@ description : "Query/modify DNS records for Active Directory integrated DNS via 
 date : 2020-07-24T12:57:59+02:00
 #  hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## ADIDNSdump
+---
 
 Query/modify DNS records for Active Directory integrated DNS via LDAP.
 

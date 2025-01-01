@@ -5,11 +5,11 @@ description : "Searches through git repositories for secrets, digging deep into 
 date : 2021-11-30T14:02:05+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1950
 tags : ['Other', 'Git']
 ---
 
-## TruffleHog3
+---
 
 Searches through git repositories for secrets, digging deep into commit history and branches. This is effective at finding secrets accidentally committed.
 

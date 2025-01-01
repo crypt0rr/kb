@@ -5,11 +5,11 @@ description : "Group Policy Preferences cpassword decryptor."
 date : 2020-03-10T15:34:56+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 790
 #tags : ['Other']
 ---
 
-## Gpprefdecrypt
+---
 
 Group Policy Preferences cpassword decryptor.
 

@@ -5,11 +5,11 @@ description : "Download videos from youtube.com or other video platforms."
 date : 2020-11-18T13:49:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2110
 # tags : ['']
 ---
 
-## YouTube-dl
+---
 
 **NOTE:** Please check [yt-dlp]({{< ref "yt-dlp" >}}), yt-dlp is a youtube-dl fork based on the now inactive youtube-dl.
 

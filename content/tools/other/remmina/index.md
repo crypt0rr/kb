@@ -5,11 +5,11 @@ description : "The GTK Remote Desktop Client."
 date : 2020-03-11T15:24:28+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1490
 tags : ['Other', 'RDP']
 ---
 
-## Remmina
+---
 
 The GTK Remote Desktop Client.
 

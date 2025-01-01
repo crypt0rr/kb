@@ -5,11 +5,11 @@ description : "OpenSource, self hosted file sharing platform."
 date : 2020-10-06T10:01:22+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1180
 # tags : ['']
 ---
 
-## Nextcloud
+---
 
 The self-hosted productivity platform that keeps you in control.
 

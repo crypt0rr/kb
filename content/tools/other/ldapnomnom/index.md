@@ -5,11 +5,11 @@ description : "Anonymously bruteforce Active Directory usernames from Domain Con
 date : 2022-09-20T10:42:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1030
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## LDAP Nom Nom
+---
 
 Anonymously bruteforce Active Directory usernames from Domain Controllers by abusing LDAP Ping requests (cLDAP)
 

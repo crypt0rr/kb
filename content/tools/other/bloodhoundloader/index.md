@@ -5,11 +5,11 @@ description : "BloodHoundLoader, tool to set attributes in BloodHound for all th
 date : 2023-01-04T11:54:39+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 # tags : ['']
 ---
 
-## BloodHoundLoader
+---
 
 BloodHoundLoader, tool to set attributes in BloodHound for all the items contained in files
 

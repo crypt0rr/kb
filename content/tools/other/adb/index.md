@@ -5,11 +5,11 @@ description : "Android Debug Bridge (ADB)."
 date : 2023-11-15T15:20:11+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 tags : ['Other', 'Android']
 ---
 
-## Android Debug Bridge (ADB)
+---
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "Easily rotate your AWS access key."
 date : 2022-05-12T15:16:22+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 tags : ['Other', 'AWS']
 ---
 
-## aws-rotate-key
+---
 
 As a security best practice, AWS recommends that users periodically regenerate their API access keys. This tool simplifies the rotation of access keys defined in your credentials file.
 

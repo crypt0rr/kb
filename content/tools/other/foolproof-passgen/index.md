@@ -5,11 +5,11 @@ description : "Mitigate the risk anyone takes a 0 for a O."
 date : 2022-12-05T09:39:09+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 690
 #tags : ['Other']
 ---
 
-## Foolproof Passgen
+---
 
 Just a simple 'random' password generator with some foolproof measures. For example it will not use `0O1I`.
 

@@ -5,11 +5,11 @@ description : "Scanner for IIS Tilde vulnerability."
 date : 2020-03-13T22:10:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 890
 tags : ['Other', 'IIS']
 ---
 
-## IIS-ShortName-Scanner
+---
 
 Scanner for IIS Tilde vulnerability.
 

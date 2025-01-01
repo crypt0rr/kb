@@ -5,11 +5,11 @@ description : "A fast, highly customizable system info script."
 date : 2020-03-11T16:34:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1160
 # tags : [""]
 ---
 
-## Neofetch
+---
 
 A fast, highly customizable system info script.
 

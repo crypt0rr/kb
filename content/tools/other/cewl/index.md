@@ -5,11 +5,11 @@ description : "CeWL - Custom Word List generator."
 date : 2021-10-28T13:47:56+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 300
 # tags : ['']
 ---
 
-## CeWL
+---
 
 Based on a discussion on PaulDotCom (episode 129) about creating custom word lists spidering a targets website and collecting unique words I decided to write CeWL, the Custom Word List generator. CeWL is a ruby app which spiders a given URL to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers such as John the Ripper.
 

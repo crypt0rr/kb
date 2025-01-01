@@ -5,11 +5,11 @@ description : "KeeFarce allows for the extraction of KeePass 2.x password databa
 date : 2022-02-02T13:48:08+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 970
 tags : ['Other', 'KeePass']
 ---
 
-## KeeFarce
+---
 
 KeeFarce allows for the extraction of KeePass 2.x password database information from memory. The cleartext information, including usernames, passwords, notes and url's are dumped into a CSV file in %AppData%
 

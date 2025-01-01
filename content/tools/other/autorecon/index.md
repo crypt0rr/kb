@@ -5,11 +5,11 @@ description : "AutoRecon is a multi-threaded network reconnaissance tool which p
 date : 2022-12-15T13:06:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 tags : ['Other', 'Brute Force', 'Web Application', 'Directory Brute Force']
 ---
 
-## AutoRecon
+---
 
 AutoRecon is a multi-threaded network reconnaissance tool which performs automated enumeration of services. It is intended as a time-saving tool for use in CTFs and other penetration testing environments (e.g. OSCP). It may also be useful in real-world engagements.
 

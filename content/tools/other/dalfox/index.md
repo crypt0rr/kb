@@ -6,10 +6,10 @@ date : 2020-05-12T12:28:52+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Other','XSS']
+tags : ['Oth420r','XSS']
 ---
 
-## Dalfox
+---
 
 DalFox is an powerful open source XSS scanning tool and parameter analyzer and utility that fast the process of detecting and verify XSS flaws. It comes with a powerful testing engine, many niche features for the cool hacker
 

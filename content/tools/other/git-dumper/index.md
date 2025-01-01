@@ -5,11 +5,11 @@ description : "A tool to dump a git repository from a website."
 date : 2022-01-12T17:24:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 730
 # tags : ['']
 ---
 
-## Git-dumper
+---
 
 A tool to dump a git repository from a website.
 

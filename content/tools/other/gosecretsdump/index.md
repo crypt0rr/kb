@@ -5,11 +5,11 @@ description : "Dump ntds.dit really fast."
 date : 2022-03-11T14:42:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 770
 # tags : ['']
 ---
 
-## Gosecretsdump
+---
 
 Have you been using Impacket to dump hashes out of (large) NTDS.dit files, and become increasingly frustrated at how long it takes? I sure have!
 

@@ -5,11 +5,13 @@ description : "Cisco Configuration Analysis Tool."
 date : 2022-02-07T10:34:02+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 250
 # tags : ['']
 ---
 
-## CCAT - Cisco Config Analysis Tool
+---
+
+Cisco Config Analysis Tool.
 
 [![Blackhat Arsenal 2018](https://rawgit.com/toolswatch/badges/master/arsenal/europe/2018.svg)](http://www.toolswatch.org/2018/09/black-hat-arsenal-europe-2018-lineup-announced/)  
 This tool is designed to analyze the configuration files of Cisco devices. The [list of checks](https://github.com/cisco-config-analysis-tool/ccat/wiki/List-of-the-checks) is based on the [Cisco Guide to Harden Cisco IOS Devices](https://www.cisco.com/c/en/us/support/docs/ip/access-lists/13608-21.html).

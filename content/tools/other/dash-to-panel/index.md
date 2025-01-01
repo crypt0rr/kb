@@ -1,15 +1,15 @@
 ---
-title : "Dash-to-panel"
+title: "Dash-to-panel"
 # pre : ' '
-description : "Dash to Panel is an icon taskbar for Gnome Shell. This extension moves the dash into the gnome main panel so that the application launchers and system tray are combined into a single panel, similar to that found in KDE Plasma and Windows 7+. A separate dock is no longer needed for easy access to running and favorited applications."
-date : 2021-07-11T20:30:38+02:00
+description: "Dash to Panel is an icon taskbar for Gnome Shell. This extension moves the dash into the gnome main panel so that the application launchers and system tray are combined into a single panel, similar to that found in KDE Plasma and Windows 7+. A separate dock is no longer needed for easy access to running and favorited applications."
+date: 2021-07-11T20:30:38+02:00
 # hidden : true
 # draft : true
-weight : 0
-tags : ['Other', 'Gnome Extensions']
+weight: 430
+tags: ["Other", "Gnome Extensions"]
 ---
 
-## Dash-to-Panel
+---
 
 Is an icon taskbar for Gnome Shell. This extension moves the dash into the gnome main panel so that the application launchers and system tray are combined into a single panel, similar to that found in KDE Plasma and Windows 7+. A separate dock is no longer needed for easy access to running and favorited applications.
 
@@ -28,11 +28,11 @@ Install via [extensions.gnome.org](https://extensions.gnome.org/extension/1160/d
 
 ### Customizable running indicators
 
-Metro | Ciliora/Dashes
-|---|---|
-![Example](images/metro.png) | ![Example](images/ciliora-dashes.png)
-![Example](images/ciliora.png) | ![Example](images/squares-segments.png)
-![Example](images/dashes.png) | ![Example](images/dots-solid.png)
+| Metro                          | Ciliora/Dashes                          |
+| ------------------------------ | --------------------------------------- |
+| ![Example](images/metro.png)   | ![Example](images/ciliora-dashes.png)   |
+| ![Example](images/ciliora.png) | ![Example](images/squares-segments.png) |
+| ![Example](images/dashes.png)  | ![Example](images/dots-solid.png)       |
 
 ### Live previews on hover
 

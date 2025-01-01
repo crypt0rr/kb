@@ -5,11 +5,11 @@ description : "A tool to check Domain Controllers for LDAP server protections re
 date : 2022-01-19T09:39:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1050
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## LDAP Relay Scan
+---
 
 A tool to check Domain Controllers for LDAP server protections regarding the relay of NTLM authentication. If you're interested in the specifics of the error-based enumeration, see [below](https://github.com/zyn3rgy/LdapRelayScan#error-based-enumeration-specifics). For details regarding what can be done when you identify a lack of LDAP protections, see the [references section](https://github.com/zyn3rgy/LdapRelayScan#references).
 

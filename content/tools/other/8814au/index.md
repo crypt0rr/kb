@@ -5,11 +5,11 @@ description : "Linux Driver for USB WiFi Adapters that are based on the RTL8814A
 date : 2022-01-03T16:32:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## 8814au
+---
 
 Linux Driver for USB WiFi Adapters that are based on the RTL8814AU Chipset.
 

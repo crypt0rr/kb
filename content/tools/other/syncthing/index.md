@@ -5,11 +5,11 @@ description : "A continuous file synchronization program."
 date : 2020-09-09T20:59:19+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1790
 # tags : ['']
 ---
 
-## Syncthing
+---
 
 A continuous file synchronization program.
 

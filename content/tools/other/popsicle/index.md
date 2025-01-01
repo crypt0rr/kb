@@ -5,11 +5,11 @@ description : "Popsicle is a Linux utility for flashing multiple USB devices in 
 date : 2021-07-09T13:36:45+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1340
 # tags : ['']
 ---
 
-## Popsicle
+---
 
 Is a Linux utility for flashing multiple USB devices in parallel, written in Rust.
 

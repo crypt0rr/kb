@@ -5,11 +5,11 @@ description : "A youtube-dl fork with additional features and fixes"
 date : 2022-09-25T18:30:18+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2120
 # tags : ['']
 ---
 
-## yt-dlp
+---
 
 yt-dlp is a youtube-dl fork based on the now inactive youtube-dlc. The main focus of this project is adding new features and patches while also keeping up to date with the original project
 

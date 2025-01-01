@@ -5,11 +5,11 @@ description : "Simple Network Management Protocol."
 date : 2020-03-13T16:08:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1670
 tags : ['Other', 'SNMP']
 ---
 
-## SNMP
+---
 
 Simple Network Management Protocol.
 

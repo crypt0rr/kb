@@ -5,11 +5,11 @@ description : "Git is a fast, scalable, distributed revision control system with
 date : 2020-03-10T15:34:47+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 720
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## Git
+---
 
 Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals.
 

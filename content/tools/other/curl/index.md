@@ -5,11 +5,11 @@ description : "Is  a tool to transfer data from or to a server, using one of the
 date : 2020-03-13T15:04:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 390
 tags : ['Other', 'HTTP', 'FTP']
 ---
 
-## Curl
+---
 
 Is  a tool to transfer data from or to a server, using one of the supported protocols. The command is designed to work  without user interaction.
 

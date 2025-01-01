@@ -5,11 +5,11 @@ description : "A little tool to convert ccache tickets into kirbi (KRB-CRED) and
 date : 2022-01-20T10:19:30+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1850
 # tags : ['']
 ---
 
-## Ticket_Converter
+---
 
 A little tool to convert ccache tickets into kirbi (KRB-CRED) and vice versa based on impacket.
 

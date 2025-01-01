@@ -5,11 +5,11 @@ description : "Apply power saving settings manually and control ThinkPad battery
 date : 2021-07-20T09:59:54+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1910
 # tags : ['']
 ---
 
-## TLP
+---
 
 Apply power saving settings manually and control ThinkPad battery features.
 

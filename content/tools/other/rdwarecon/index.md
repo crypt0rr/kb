@@ -5,11 +5,11 @@ description : "A python script to extract information from a Microsoft Remote De
 date : 2022-02-06T10:32:12+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1470
 # tags : ['']
 ---
 
-## RDWArecon
+---
 
 A python script to extract information from a Microsoft Remote Desktop Web Access (RDWA) application.
 

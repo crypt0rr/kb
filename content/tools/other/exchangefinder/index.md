@@ -5,11 +5,11 @@ description : "Find Microsoft Exchange instance for a given domain and identify 
 date : 2022-09-13T12:10:15+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 580
 tags : ['Other', 'Exchange', 'Microsoft']
 ---
 
-## ExchangeFinder
+---
 
 ## Installation
 

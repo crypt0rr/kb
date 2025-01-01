@@ -5,11 +5,11 @@ description : "OWASP JoomScan (short for [Joom]la Vulnerability [Scan]ner) is an
 date : 2021-06-18T19:12:50+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 940
 # tags : ['']
 ---
 
-## Joomscan
+---
 
 OWASP JoomScan (short for [Joom]la Vulnerability [Scan]ner) is an opensource project in perl programming language to detect Joomla CMS vulnerabilities and analysis them.
 

@@ -5,11 +5,11 @@ description : "The #1 security key, offering strong two factor authentication fr
 date : 2020-12-14T17:19:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2130
 # tags : ['']
 ---
 
-## Yubikey
+---
 
 The #1 security key, offering strong two factor authentication from industry leader Yubico.
 

@@ -5,11 +5,11 @@ description : "FTP-like client to access SMB/CIFS resources on servers."
 date : 2020-04-13T13:23:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1620
 tags : ['Other', 'SMB']
 ---
 
-## SMBclient
+---
 
 FTP-like client to access SMB/CIFS resources on servers.
 

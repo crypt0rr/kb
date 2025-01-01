@@ -5,11 +5,11 @@ description : "A program for viewing and analysing the contents of music audio f
 date : 2021-05-26T10:41:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1700
 # tags : ['']
 ---
 
-## Sonic Visualiser
+---
 
 A program for viewing and analysing the contents of music audio files.
 

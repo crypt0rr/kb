@@ -5,11 +5,11 @@ description : "Python is a programming language that lets you work quickly and i
 date : 2022-12-05T09:22:16+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1400
 tags : ['Python2', 'Python3', 'FTP', 'HTTP']
 ---
 
-## Python
+---
 
 Python is a programming language that lets you work quickly and integrate systems more effectively.
 

@@ -5,11 +5,11 @@ description : "postfix description."
 date : 2020-03-13T22:22:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1350
 # tags : ['']
 ---
 
-## Postfix
+---
 
 - Add domain to /etc/postfix/virtual
 - Apply config: $ postmap /etc/postfix/virtual

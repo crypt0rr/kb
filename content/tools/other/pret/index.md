@@ -5,11 +5,13 @@ description : "Printer Exploitation Toolkit."
 date : 2020-03-13T16:49:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1380
 # tags : ['']
 ---
 
-## Printer Exploitation Toolkit (PRET)
+---
+
+Printer Exploitation Toolkit (PRET).
 
 ## Installation
 

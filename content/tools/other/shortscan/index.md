@@ -5,11 +5,11 @@ description : "An IIS short filename enumeration tool."
 date : 2024-05-05T20:34:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1590
 tags : ['Other', 'IIS']
 ---
 
-## Shortscan
+---
 
 An IIS short filename enumeration tool.
 

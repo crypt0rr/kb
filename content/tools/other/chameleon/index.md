@@ -5,11 +5,11 @@ description : "Chameleon is a tool which assists red teams in categorizing their
 date : 2021-03-04T12:33:06+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 310
 # tags : ['']
 ---
 
-## Chameleon
+---
 
 A tool which assists red teams in categorizing their infrastructure under arbitrary categories.
 

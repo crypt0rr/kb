@@ -5,11 +5,11 @@ description : "Command line system information script for console and IRC."
 date : 2021-07-11T15:20:45+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 910
 # tags : ['']
 ---
 
-## Inxi
+---
 
 Command line system information script for console and IRC.
 

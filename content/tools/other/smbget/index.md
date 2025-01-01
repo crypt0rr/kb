@@ -5,11 +5,11 @@ description : "wget-like utility for download files over SMB."
 date : 2021-06-21T10:57:08+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1640
 tags : ['Other', 'SMB']
 ---
 
-## SMBget
+---
 
 wget-like utility for download files over SMB
 

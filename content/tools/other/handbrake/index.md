@@ -5,11 +5,11 @@ description : "HandBrake is a tool for converting video from nearly any format t
 date : 2022-01-10T18:44:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 810
 tags : ['Other', 'Windows', 'Linux', 'macOS']
 ---
 
-## HandBrake
+---
 
 HandBrake is an open-source video transcoder available for Linux, Mac, and Windows, licensed under the [GNU General Public License (GPL) Version 2](https://github.com/HandBrake/HandBrake/blob/master/LICENSE).
 

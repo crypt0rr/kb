@@ -5,11 +5,11 @@ description : "ADExplorerSnapshot.py is an AD Explorer snapshot ingestor for Blo
 date : 2021-12-30T14:34:11+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Other', 'Active Directory']
 ---
 
-## ADExplorerSnapshot.py
+---
 
 ADExplorerSnapshot.py is an AD Explorer snapshot ingestor for [BloodHound](https://bloodhound.readthedocs.io/).
 

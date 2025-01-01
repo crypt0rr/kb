@@ -5,11 +5,11 @@ description : "Dumping LSASS by Unhooking MiniDumpWriteDump by getting a fresh D
 date : 2022-12-27T15:55:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 520
 tags : ['Other', 'LSASS']
 ---
 
-## DumpThatLSASS
+---
 
 Dumping LSASS by Unhooking MiniDumpWriteDump by getting a fresh DbgHelp.dll copy from the disk , plus functions and strings obfuscation , it contains Anti-sandbox , if you run it under unperformant Virtual Machine you need to uncomment the code related to it and recompile.
 

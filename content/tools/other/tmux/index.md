@@ -5,11 +5,11 @@ description : "Lets you switch easily between several programs in one terminal."
 date : 2020-03-11T15:35:54+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1930
 # tags : [""]
 ---
 
-## Tmux
+---
 
 Lets you switch easily between several programs in one terminal.
 

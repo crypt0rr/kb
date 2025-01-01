@@ -5,11 +5,11 @@ description : "A fast web fuzzer written in Go."
 date : 2021-02-03T14:12:28+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 640
 # tags : ['']
 ---
 
-## Ffuf
+---
 
 A fast web fuzzer written in Go.
 

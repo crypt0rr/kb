@@ -5,11 +5,11 @@ description : "Obsidian is a powerful and extensible knowledge base that works o
 date : 2022-10-15T19:28:02+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1260
 tags : ['Other', 'Markdown']
 ---
 
-## Obsidian
+---
 
 Obsidian is a powerful and extensible knowledge base that works on top of your local folder of plain text files.
 

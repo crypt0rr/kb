@@ -5,11 +5,11 @@ description : "Lightweight CLI download accelerator."
 date : 2022-08-15T10:26:54+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 tags : ['Other', 'macOS', 'Linux', 'FTP', 'HTTP']
 ---
 
-## Axel
+---
 
 Axel tries to accelerate the download process by using multiple connections per file, and can also balance the load between different servers. Axel tries to be as light as possible, so it might be useful on byte-critical systems.
 

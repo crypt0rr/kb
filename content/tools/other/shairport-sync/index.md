@@ -5,11 +5,11 @@ description : "Synchronised Audio Player for iTunes / AirPlay."
 date : 2020-08-24T14:01:44+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1570
 # tags : ['']
 ---
 
-## Shairport-Sync
+---
 
 Synchronised Audio Player for iTunes / AirPlay.
 

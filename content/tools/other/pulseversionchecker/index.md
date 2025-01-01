@@ -5,11 +5,11 @@ description : "Pulse Secure Version Scanner."
 date : 2021-11-22T09:40:28+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1390
 # tags : ['']
 ---
 
-## Pulse Secure Version Scanner
+---
 
 ## Installation
 

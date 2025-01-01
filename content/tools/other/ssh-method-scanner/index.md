@@ -5,11 +5,11 @@ description : "SSH method scanner. Reports password and publickey authentication
 date : 2020-03-13T14:23:56+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1750
 tags : ['Other', 'SSH']
 ---
 
-## SSH-method-scanner
+---
 
 SSH method scanner. Reports password and publickey authentication.
 

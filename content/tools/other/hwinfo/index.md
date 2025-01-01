@@ -5,11 +5,11 @@ description : "Probe for hardware."
 date : 2020-04-24T14:29:04+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 850
 # tags : ['']
 ---
 
-## HWinfo
+---
 
 Probe for hardware.
 

@@ -5,11 +5,11 @@ description : "Discover and fingerprint IKE hosts (IPsec VPN Servers)."
 date : 2020-03-13T21:52:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 900
 # tags : ['']
 ---
 
-## IKE-scan
+---
 
 Discover and fingerprint IKE hosts (IPsec VPN Servers).
 

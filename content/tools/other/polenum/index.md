@@ -5,11 +5,11 @@ description : "Password policy enumerator."
 date : 2020-07-09T14:17:45+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1330
 # tags : ['']
 ---
 
-## Polenum
+---
 
 Request the password policy for a user(s).
 

@@ -5,11 +5,11 @@ description : "Client for the whois directory service."
 date : 2020-03-13T15:39:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2050
 # tags : ['']
 ---
 
-## Whois
+---
 
 Client for the whois directory service.
 

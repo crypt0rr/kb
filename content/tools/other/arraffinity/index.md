@@ -5,11 +5,11 @@ description : "Information Disclosure?"
 date : 2021-06-22T09:53:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## ARRAffinity - Information Disclosure?
+---
 
 ## Installation
 

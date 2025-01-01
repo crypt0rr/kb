@@ -5,11 +5,11 @@ description : "Convert HEIC/HEIF image."
 date : 2020-03-31T10:02:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1080
 # tags : ['']
 ---
 
-## Libheif
+---
 
 Convert HEIC/HEIF image.
 

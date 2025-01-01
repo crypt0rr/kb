@@ -5,11 +5,11 @@ description : "Tool for dumping a computer's DMI (some say SMBIOS) table content
 date : 2020-04-28T20:11:22+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 490
 # tags : ['']
 ---
 
-## Dmidecode
+---
 
 Tool for dumping a computer's DMI (some say SMBIOS) table contents in a human-readable format.
 

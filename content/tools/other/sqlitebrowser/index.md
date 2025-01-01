@@ -5,11 +5,11 @@ description : "DB Browser for SQLite (DB4S) is a high quality, visual, open sour
 date : 2021-06-04T11:09:42+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1730
 # tags : ['']
 ---
 
-## SQlitebrowser
+---
 
 DB Browser for SQLite (DB4S) is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
 

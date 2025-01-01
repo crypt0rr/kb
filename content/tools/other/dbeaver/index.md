@@ -5,11 +5,11 @@ description : "Free multi-platform database tool for developers, database admini
 date : 2021-09-08T11:01:57+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 440
 # tags : ['']
 ---
 
-## DBeaver
+---
 
 Universal Database Tool
 

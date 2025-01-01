@@ -5,11 +5,11 @@ description : "Scanner to enumerate SSL/TLS encryption protocol support."
 date : 2020-03-23T16:50:07+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1920
 tags : ['Other', 'SSL/TLS', 'Certificates', 'FTP', 'RDP', 'SMTP']
 ---
 
-## TLScan
+---
 
 Scanner to enumerate SSL/TLS encryption protocol support.
 

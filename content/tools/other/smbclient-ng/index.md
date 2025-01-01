@@ -5,11 +5,11 @@ description : "smbclient-ng, a fast and user friendly way to interact with SMB s
 date : 2024-06-03T10:24:39+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1630
 tags : ['Other', 'SMB']
 ---
 
-## Smbclient Ng
+---
 
 ## Features
 

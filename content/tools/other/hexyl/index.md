@@ -5,11 +5,11 @@ description : "A command-line hex viewer."
 date : 2023-06-17T21:49:35+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 810
 # tags : ['']
 ---
 
-## Hexyl
+---
 
 `hexyl` is a simple hex viewer for the terminal. It uses a colored output to distinguish different categories of bytes (NULL bytes, printable ASCII characters, ASCII whitespace characters, other ASCII characters and non-ASCII).
 

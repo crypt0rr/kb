@@ -5,11 +5,11 @@ description : "Creating ASCII text banners or large letters out of ordinary text
 date : 2021-03-17T12:10:30+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 650
 # tags : ['']
 ---
 
-## Figlet
+---
 
 Creating ASCII text banners or large letters out of ordinary text.
 

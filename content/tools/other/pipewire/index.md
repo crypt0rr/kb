@@ -5,11 +5,11 @@ description : "PipeWire is a project that aims to greatly improve handling of au
 date : 2021-07-12T10:08:37+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1320
 # tags : ['']
 ---
 
-## PipeWire
+---
 
 Is a project that aims to greatly improve handling of audio and video under Linux.
 

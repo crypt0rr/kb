@@ -5,11 +5,11 @@ description : "Change MAC address of a NIC."
 date : 2020-06-04T11:55:04+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1100
 tags : ['Other', 'Unix', 'macOS']
 ---
 
-## MACchanger
+---
 
 Change MAC address of a NIC.
 

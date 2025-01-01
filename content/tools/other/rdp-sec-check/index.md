@@ -5,11 +5,11 @@ description : "Is a Perl script to enumerate security settings of an RDP Service
 date : 2020-03-18T11:06:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1450
 # tags : ['']
 ---
 
-## RDP-Sec-Check
+---
 
 Is a Perl script to enumerate security settings of an RDP Service (AKA Terminal Services).
 

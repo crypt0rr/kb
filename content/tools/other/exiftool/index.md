@@ -5,11 +5,11 @@ description : "Read and write meta information in files."
 date : 2020-03-10T15:34:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 590
 # tags : [""]
 ---
 
-## ExifTool
+---
 
 Read and write meta information in files.
 

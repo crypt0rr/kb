@@ -5,13 +5,13 @@ description : "Open Source password security auditing and password recovery tool
 date : 2020-09-22T16:33:56+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 930
 # tags : ['']
 ---
 
-## John The Ripper
+---
 
-Open Source password security auditing and password recovery tool available for many operating systems.
+John the Ripper - Open Source password security auditing and password recovery tool available for many operating systems.
 
 ## Installation
 

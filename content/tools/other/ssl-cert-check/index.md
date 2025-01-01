@@ -5,11 +5,11 @@ description : "SSL Certification Expiration Checker."
 date : 2020-12-16T13:13:08+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1770
 # tags : ['']
 ---
 
-## SSL-Cert-Check
+---
 
 SSL Certification Expiration Checker.
 

@@ -5,11 +5,11 @@ description : "A script to dump files and folders remotely from a Windows SMB sh
 date : 2022-02-21T10:55:12+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 510
 tags : ['Other', 'SMB']
 ---
 
-## DumpSMBShare
+---
 
 A script to dump files and folders remotely from a Windows SMB share.
 

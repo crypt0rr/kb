@@ -5,11 +5,11 @@ description : "Is a high performance graph store with all the features expected 
 date : 2023-01-09T21:29:44+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1150
 # tags : ['']
 ---
 
-## Neo4j
+---
 
 Neo4j is the world’s leading Graph Database. It is a high performance graph store with all the features expected of a mature and robust database, like a friendly query language and ACID transactions. The programmer works with a flexible network structure of nodes and relationships rather than static tables — yet enjoys all the benefits of enterprise-quality database. For many applications, Neo4j offers orders of magnitude performance benefits compared to relational DBs.
 

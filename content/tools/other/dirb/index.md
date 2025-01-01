@@ -5,11 +5,11 @@ description : "DIRB is a Web Content Scanner."
 date : 2022-10-09T17:25:06+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 460
 tags : ['Other', 'Brute Force', 'Web Application']
 ---
 
-## DIRB
+---
 
 DIRB is a Web Content Scanner. It looks for existing (and/or hidden) Web Objects. It basically works by launching a dictionary based attack against a web server and analyzing the response.
 

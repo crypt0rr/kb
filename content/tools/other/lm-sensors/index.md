@@ -5,11 +5,11 @@ description : "Is used to show the current readings of all sensor chips."
 date : 2020-03-14T14:57:46+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1090
 # tags : ['']
 ---
 
-## Lm-sensors
+---
 
 Is used to show the current readings of all sensor chips.
 

@@ -5,11 +5,11 @@ description : "A testing tool that enumerates SSH Ciphers. Using SSHScan, weak c
 date : 2020-03-11T15:21:44+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1760
 tags : ['Other', 'SSH']
 ---
 
-## SSHScan
+---
 
 A testing tool that enumerates SSH Ciphers. Using SSHScan, weak ciphers can be easily detected.
 

@@ -5,11 +5,11 @@ description : "Monitor creation, deletion and changes to LDAP objects live durin
 date : 2021-10-27T12:44:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1000
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## LDAPmonitor
+---
 
 Monitor creation, deletion and changes to LDAP objects live during your pentest or system administration!
 

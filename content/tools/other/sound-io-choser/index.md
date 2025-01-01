@@ -5,11 +5,11 @@ description : "Shows a list of sound output and input devices (similar to gnome 
 date : 2021-07-28T10:34:06+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1720
 tags : ['Other', 'Gnome Extensions']
 ---
 
-## Sound Input & Output Device Chooser
+---
 
 Shows a list of sound output and input devices (similar to gnome sound settings) in the status menu below the volume slider.
 

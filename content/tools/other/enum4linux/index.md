@@ -5,13 +5,13 @@ description : "A tool for enumerating information from Windows and Samba systems
 date : 2022-06-27T11:37:00+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 570
 tags : ['Other', 'SMB']
 ---
 
-## Enum4linux
+---
 
-Enum4linux is a tool for enumerating information from Windows and Samba systems. It attempts to offer similar functionality to enum.exe formerly available from www.bindview.com.
+Enum4linux is a tool for enumerating information from Windows and Samba systems. It attempts to offer similar functionality to enum.exe formerly available from <www.bindview.com>.
 
 It is written in PERL and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup. The samba package is therefore a dependency.
 

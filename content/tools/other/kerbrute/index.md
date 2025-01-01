@@ -5,11 +5,11 @@ description : "This tool is designed to assist in quickly bruteforcing valid Act
 date : 2021-02-15T13:24:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 980
 tags : ['Other', 'Active Directory']
 ---
 
-## Kerbrute
+---
 
 This tool is designed to assist in quickly bruteforcing valid Active Directory accounts through Kerberos Pre-Authentication.
 

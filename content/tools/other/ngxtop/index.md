@@ -5,11 +5,11 @@ description : "Real-time metrics for nginx server (and others)"
 date : 2021-10-20T12:23:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1190
 # tags : ['']
 ---
 
-## Ngxtop
+---
 
 Ngxtop parses your nginx access log and outputs useful, top-like, metrics of your nginx server. So you can tell what is happening with your server in real-time.
 

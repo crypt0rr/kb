@@ -5,11 +5,11 @@ description : "Active Directory information dumper via LDAP."
 date : 2020-04-21T13:59:19+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1020
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## LDAPDomainDump
+---
 
 Active Directory information dumper via LDAP.
 

@@ -5,11 +5,11 @@ description : "Conveniently create, copy, store and upload screenshots."
 date : 2021-07-25T13:04:10+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1560
 tags : ['Other', 'Gnome Extensions']
 ---
 
-## Screenshot Tool
+---
 
 Conveniently create, copy, store and upload screenshots.
 

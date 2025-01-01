@@ -5,11 +5,11 @@ description : "This Python script can be used to bypass IP source restrictions u
 date : 2021-10-21T10:27:30+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 920
 # tags : ['']
 ---
 
-## IPsourcebypass
+---
 
 This Python script can be used to bypass IP source restrictions using HTTP headers.
 
