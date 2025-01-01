@@ -5,11 +5,11 @@ description : "OSINT automation for hackers."
 date : 2023-06-18T15:43:26+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## BBOT - Bighuge BLS OSINT Tool
+---
 
 OSINT automation for hackers.
 

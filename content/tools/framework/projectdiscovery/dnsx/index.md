@@ -5,11 +5,11 @@ description : "dnsx is a fast and multi-purpose DNS toolkit allow to run multipl
 date : 2022-11-09T19:46:30+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 tags : ['Framework', 'OSINT', 'DNS']
 ---
 
-## dnsx
+---
 
 dnsx is a fast and multi-purpose DNS toolkit allow to run multiple probes using retryabledns library.
 

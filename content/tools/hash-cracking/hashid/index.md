@@ -5,11 +5,11 @@ description : "Identify the different types of hashes used to encrypt data."
 date : 2020-03-11T14:29:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : [""]
 ---
 
-## HashID
+---
 
 Identify the different types of hashes used to encrypt data.
 

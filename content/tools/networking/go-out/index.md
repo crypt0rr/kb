@@ -5,11 +5,11 @@ description : "A simple, Golang egress buster."
 date : 2022-07-01T12:53:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 # tags : ['']
 ---
 
-## go-out
+---
 
 A simple, Golang egress buster using [@mubix](https://twitter.com/mubix) letmeoutofyour.net and [@bhinfosecurity](https://twitter.com/bhinfosecurity) allports.exposed services.
 

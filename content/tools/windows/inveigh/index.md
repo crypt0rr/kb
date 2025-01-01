@@ -5,11 +5,11 @@ description : "A PowerShell ADIDNS/LLMNR/NBNS/mDNS/DNS spoofer and man-in-the-mi
 date : 2020-07-24T13:16:33+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 170
 # tags : ['']
 ---
 
-## Inveigh
+---
 
 A PowerShell ADIDNS/LLMNR/NBNS/mDNS/DNS spoofer and man-in-the-middle tool designed to assist penetration testers/red teamers that find themselves limited to a Windows system.
 

@@ -5,11 +5,11 @@ description : "Commands needed to do a VLAN hop."
 date : 2020-06-26T10:54:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 470
 # tags : ['']
 ---
 
-## VLAN hop
+---
 
 Commands needed to do a VLAN hop.
 

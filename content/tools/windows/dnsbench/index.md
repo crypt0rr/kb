@@ -5,11 +5,11 @@ description : "A unique, comprehensive, accurate & free Windows (and Linux/Wine)
 date : 2021-02-16T13:21:30+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## DNSbench
+---
 
 A unique, comprehensive, accurate & free Windows (and Linux/Wine) utility to determine the exact performance of local and remote DNS nameservers
 

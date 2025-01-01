@@ -5,11 +5,11 @@ description : "Mimikatz implementation in pure Python. At least a part of it :)"
 date : 2020-03-16T12:28:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 360
 tags : ['Framework', 'LSASS']
 ---
 
-## Pypykatz
+---
 
 Mimikatz implementation in pure Python. At least a part of it :)
 

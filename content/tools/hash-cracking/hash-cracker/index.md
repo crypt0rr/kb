@@ -5,11 +5,11 @@ description : "Simple script to get some hash cracking done effectively."
 date : 2021-04-12T09:27:07+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 #tags : ['']
 ---
 
-## hash-Cracker
+---
 
 Simple script to get some hash cracking done effectively.
 

@@ -5,11 +5,11 @@ description : "Own stuff using SMB."
 date : 2022-02-14T15:22:48+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Framework', 'SMB']
 ---
 
-## CrackMapExec - SMB
+---
 
 ## Installation
 

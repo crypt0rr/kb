@@ -5,11 +5,11 @@ description : "Filter hashes."
 date : 2022-02-23T14:08:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## hcxhashtool
+---
 
 ## Installation
 

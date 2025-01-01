@@ -5,11 +5,11 @@ description : "Display bandwidth usage on an interface by host."
 date : 2023-06-21T10:17:46+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 170
 # tags : ['']
 ---
 
-## iftop
+---
 
 Display bandwidth usage on an interface by host.
 

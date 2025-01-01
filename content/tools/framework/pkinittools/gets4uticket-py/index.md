@@ -5,11 +5,13 @@ description : "Gets an S4U2self ticket impersonating given user."
 date : 2023-12-03T06:11:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## gets4uticket.py - Gets an S4U2self ticket impersonating given user
+---
+
+Gets an S4U2self ticket impersonating given user.
 
 Uses Kerberos S4U2Self to request a service ticket that is valid on the host for which you've obtained a certificate. This ticket can then be used to interact with the original host. This only requires a TGT for the machine account of this host. This TGT should be in a ccache file that you specify in the `kerberos_connection_url`. The only accepted `kerberos_connection_url` for this example is one containing a ccache file, so for example `kerberos+ccache://domain.local\\victimhostname\$:victimhostname.ccache@kdchostname.domain.local`. The SPN should be a service name on the host you are impersonating, you can't use this for delegation attacks (since it does not implement S4U2Proxy, there are plenty of tools already for that).
 

@@ -5,7 +5,7 @@ description : "In-depth Attack Surface Mapping and Asset Discovery."
 date : 2020-03-11T12:58:39+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 tags : ['OSINT', 'DNS', 'WhoIS']
 cascade:
     tags: ['OSINT']
@@ -13,7 +13,7 @@ cascade:
 
 ---
 
-## Amass
+---
 
 In-depth Attack Surface Mapping and Asset Discovery.
 

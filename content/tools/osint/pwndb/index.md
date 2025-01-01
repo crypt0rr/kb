@@ -5,11 +5,11 @@ description : "pwndb.py is a python command-line tool for searching leaked crede
 date : 2021-02-08T10:41:37+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 240
 # tags : ['']
 ---
 
-## Pwndb
+---
 
 `pwndb.py` is a python command-line tool for searching leaked credentials using the Onion service with the same name.
 

@@ -5,11 +5,11 @@ description : "Explorer++ is a small and fast file manager for Windows. With tab
 date : 2021-09-01T13:07:00+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## Explorer++
+---
 
 Is a small and fast file manager for Windows. With tabs, bookmarks and advanced file operations, it allows you to be much more productive!
 

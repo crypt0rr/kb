@@ -5,11 +5,11 @@ description : "SpiderFoot is an open source intelligence (OSINT) automation tool
 date : 2021-07-10T14:26:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 330
 # tags : ['']
 ---
 
-## SpiderFoot
+---
 
 Is an open source intelligence (OSINT) automation tool. It integrates with just about every data source available and utilises a range of methods for data analysis, making that data easy to navigate.
 

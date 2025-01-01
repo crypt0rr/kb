@@ -5,11 +5,11 @@ description : "Certificate Search."
 date : 2020-07-06T15:34:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 tags : ['OSINT', 'DNS', 'Certificates']
 ---
 
-## crt.sh
+---
 
 Certificate search.
 

@@ -5,11 +5,11 @@ description : "SearchSploit gives you the power to perform detailed off-line sea
 date : 2021-06-18T15:25:16+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 380
 # tags : ['']
 ---
 
-## SearchSploit
+---
 
 Gives you the power to perform detailed off-line searches through your locally checked-out copy of the repository
 

@@ -5,11 +5,11 @@ description : "Own stuff using SSH."
 date : 2022-02-14T15:23:02+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## CrackMapExec - SSH
+---
 
 ## Installation
 

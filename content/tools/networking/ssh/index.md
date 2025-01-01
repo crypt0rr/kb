@@ -5,11 +5,11 @@ description : "ssh (SSH client) is a program for logging into a remote machine a
 date : 2020-03-11T15:19:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 390
 tags : ['Networking', 'SSH', 'Pivoting']
 ---
 
-## Secure Shell
+---
 
 ssh (SSH client) is a program for logging into a remote machine and for executing commands on a remote machine.  It is intended to provide secure encrypted communications between two untrusted hosts over an insecure network.  X11 connections, arbitrary TCP ports and UNIX-domain sockets can also be forwarded over the secure channel.
 

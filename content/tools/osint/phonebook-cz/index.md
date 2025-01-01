@@ -5,11 +5,11 @@ description : "Phonebook lists all domains, email addresses, or URLs for the giv
 date : 2020-07-02T15:54:26+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 210
 # tags : ['']
 ---
 
-## Phonebook.cz
+---
 
 Phonebook lists all domains, email addresses, or URLs for the given input domain. Wildcards such as *.gov.uk are allowed. You are searching 20 billion records.
 

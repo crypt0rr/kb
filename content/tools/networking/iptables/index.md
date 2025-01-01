@@ -5,11 +5,11 @@ description : "Administration tool for IPv4 packet filtering and NAT."
 date : 2022-09-14T10:59:39+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 # tags : ['']
 ---
 
-## iptables
+---
 
 Administration tool for IPv4 packet filtering and NAT. Is used to set up, maintain, and inspect the tables of IP packet filter rules in the Linux kernel. Several different tables may be defined. Each table contains a number of built-in chains and may also contain user-defined chains.
 

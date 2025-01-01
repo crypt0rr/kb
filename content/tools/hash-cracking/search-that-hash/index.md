@@ -5,11 +5,11 @@ description : "The Fastest Hash Cracking System."
 date : 2021-03-08T14:09:50+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## Search-That-Hash
+---
 
 Tired of going to every website to crack your hash? Search-That-Hash automates this process in less than 2 seconds. Search-That-Hash searches the most popular hash cracking sites and automatically inputs your hash(s) for cracking.
 

@@ -5,11 +5,11 @@ description : "Multipurpose relay (SOcket CAT)."
 date : 2022-08-15T11:11:56+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 370
 #tags : ['Networking']
 ---
 
-## socat
+---
 
 socat is a relay for bidirectional data transfer between two independent data channels. Each of these data channels may be a file, pipe, device (serial line etc. or a pseudo terminal), a socket (UNIX, IP4, IP6 - raw, UDP, TCP), an SSL socket, proxy CONNECT connection, a file descriptor (stdin etc.), the GNU line editor (readline), a program, or a combination of two of these. These modes include generation of "listening" sockets, named pipes, and pseudo terminals.
 

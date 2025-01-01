@@ -5,11 +5,11 @@ description : "Performs various techniques to dump secrets from the remote machi
 date : 2022-02-14T11:56:46+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
 ---
 
-## secretsdump.py
+---
 
 Performs various techniques to dump secrets from the remote machine without executing any agent there.
 

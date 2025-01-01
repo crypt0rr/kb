@@ -5,11 +5,11 @@ description : "The Swiss Army knife for WiFi, Bluetooth Low Energy, wireless HID
 date : 2020-03-11T11:14:10+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Networking', 'WiFi', 'LAN']
 ---
 
-## Bettercap
+---
 
 The Swiss Army knife for WiFi, Bluetooth Low Energy, wireless HID hijacking and Ethernet networks reconnaissance and MITM attacks.
 

@@ -5,11 +5,11 @@ description : "A drop-in replacement for Nmap powered by shodan.io"
 date : 2022-04-01T14:07:54+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 360
 # tags : ['']
 ---
 
-## Smap
+---
 
 passive Nmap like scanner built with shodan.io
 

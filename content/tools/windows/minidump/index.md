@@ -5,11 +5,11 @@ description : "C# implementation of mimikatz/pypykatz minidump functionality to 
 date : 2021-10-22T11:14:39+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 tags : ['Windows', 'LSASS']
 ---
 
-## Minidump
+---
 
 C# implementation of mimikatz/pypykatz minidump functionality to get credentials from LSASS dumps.
 

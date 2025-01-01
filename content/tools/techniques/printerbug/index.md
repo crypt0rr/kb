@@ -5,11 +5,11 @@ description : "Triggers RPC call using SpoolService bug."
 date : 2023-05-03T20:08:19+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags : ['Techniques', 'Active Directory', 'Coercer']
 ---
 
-## PrinterBug (MS-RPRN abuse)
+---
 
 Triggers RPC call using SpoolService bug.
 

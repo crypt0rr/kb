@@ -5,11 +5,11 @@ description : "NBTscan is a program for scanning IP networks for NetBIOS name in
 date : 2022-01-19T10:56:21+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 210
 #tags : ['Networking']
 ---
 
-## NBTscan
+---
 
 NBTscan is a program for scanning IP networks for NetBIOS name information. It sends NetBIOS status query to each address in supplied range and lists received information in human readable form. For each responded host it lists IP address, NetBIOS computer name, logged-in user name and MAC address (such as Ethernet).
 

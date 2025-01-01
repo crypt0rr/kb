@@ -5,11 +5,11 @@ description : "Script that visualizes subdomains for the domain you want."
 date : 2021-03-09T13:11:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 400
 # tags : ['']
 ---
 
-## Subdomain Visualizer
+---
 
 Script that visualizes subdomains for the domain you want.
 

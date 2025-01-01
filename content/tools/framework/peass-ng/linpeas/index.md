@@ -5,11 +5,11 @@ description : "Linux Privilege Escalation Awesome Script."
 date : 2022-02-17T09:34:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## LinPEAS
+---
 
 Linux Privilege Escalation Awesome Script.
 

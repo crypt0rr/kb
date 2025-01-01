@@ -5,11 +5,13 @@ description : "From Backup Operator To Domain Admin."
 date : 2022-02-22T17:33:18+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## BackupOperatorToDA - From Backup Operator To Domain Admin
+---
+
+BackupOperatorToDA - From Backup Operator To Domain Admin.
 
 If you compromise an account member of the group Backup Operators you can become the Domain Admin without RDP or WinRM on the Domain Controller.
 

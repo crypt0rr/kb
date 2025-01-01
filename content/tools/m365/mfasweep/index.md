@@ -5,11 +5,11 @@ description : "MFASweep is a PowerShell script that attempts to log in to variou
 date : 2021-11-03T13:28:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 tags : ['M365', 'AzureAD/EntraID', 'MFA']
 ---
 
-## MFASweep
+---
 
 MFASweep is a PowerShell script that attempts to log in to various Microsoft services using a provided set of credentials and will attempt to identify if MFA is enabled. Depending on how conditional access policies and other multi-factor authentication settings are configured some protocols may end up being left single factor. It also has an additional check for ADFS configurations and can attempt to log in to the on-prem ADFS server if detected.
 

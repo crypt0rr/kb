@@ -5,11 +5,11 @@ description : "Powershell script to perform password spray attack in Active Dire
 date : 2021-02-02T10:07:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## Invoke-Domainpasswordspray
+---
 
 Powershell script to perform password spray attack in Active Directory.
 

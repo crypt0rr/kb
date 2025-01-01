@@ -5,11 +5,11 @@ description : "A universal no-fix local privilege escalation in windows domain e
 date : 2022-04-26T13:05:29+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## KrbRelayUp
+---
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "A utility to check whether a WAVE or FLAC file is truly lossless 
 date : 2021-05-25T14:36:11+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 180
 # tags : ['']
 ---
 
-## Lossless Audio Checker
+---
 
 A utility to check whether a WAVE or FLAC file is truly lossless or not.
 

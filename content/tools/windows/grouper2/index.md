@@ -5,11 +5,11 @@ description : "Tool for pentesters to help find security-related misconfiguratio
 date : 2021-01-20T10:26:34+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 tags : ['Other', 'Active Directory']
 ---
 
-## Grouper2
+---
 
 Tool for pentesters to help find security-related misconfigurations in Active Directory Group Policy.
 

@@ -5,11 +5,11 @@ description : "fcrackzip is a zip password cracker, similar to fzc, zipcrack and
 date : 2022-05-29T20:01:45+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## FCrackZip
+---
 
 fcrackzip version 1.0, a fast/free zip password cracker written by Marc Lehmann <pcg@goof.com>.
 

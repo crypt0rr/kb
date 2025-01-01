@@ -5,11 +5,11 @@ description : "ProxyChains is a UNIX program, that hooks network-related libc fu
 date : 2022-02-04T15:28:07+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 300
 tags : ['Networking', 'Proxy', 'Pivoting']
 ---
 
-## Proxychains
+---
 
 ProxyChains is a UNIX program, that hooks network-related libc functions in dynamically linked programs via a preloaded DLL and redirects the connections through SOCKS4a/5 or HTTP proxies.
 

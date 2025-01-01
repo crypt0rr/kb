@@ -5,11 +5,13 @@ description : "ESC8 - Abuse Active Directory Certificate Services."
 date : 2023-12-03T06:03:37+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## ESC8 - Abuse Active Directory Certificate Services
+---
+
+ESC8 - Abuse Active Directory Certificate Services.
 
 ## Requirements
 

@@ -5,11 +5,11 @@ description : "For research purposes - fuzz Remote Procedure Calls (RPC)."
 date : 2023-05-04T08:54:33+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Fuzz
+---
 
 You are doing research and want to fuzz Remote Procedure Calls listening on a machine with various paths?
 

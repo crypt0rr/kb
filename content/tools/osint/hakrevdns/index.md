@@ -5,11 +5,11 @@ description : "Small, fast tool for performing reverse DNS lookups en masse."
 date : 2023-06-04T18:31:02+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 tags : ['OSINT', 'DNS']
 ---
 
-## Hakrevdns
+---
 
 Small, fast, simple tool for performing reverse DNS lookups en masse. You feed it IP addresses, it returns hostnames.
 

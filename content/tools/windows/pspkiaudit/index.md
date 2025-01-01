@@ -5,11 +5,11 @@ description : "PowerShell toolkit for auditing Active Directory Certificate Serv
 date : 2021-11-16T15:49:11+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 260
 # tags : ['']
 ---
 
-## PSPKIAudit
+---
 
 **NOTE** Please checkout [Abuse ADCS]({{< ref "abuse-adcs" >}}) **instead of using PSPKIAudit**.
 

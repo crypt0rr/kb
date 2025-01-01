@@ -5,11 +5,11 @@ description : "Azucar is a multi-threaded plugin-based tool to help you assess t
 date : 2021-12-01T11:06:41+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Azucar
+---
 
 Azucar is a multi-threaded plugin-based tool to help you assess the security of your Azure Cloud environment.
 

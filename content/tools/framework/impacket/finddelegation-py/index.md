@@ -5,11 +5,11 @@ description : "Queries target domain for delegation relationships."
 date : 2022-02-14T12:20:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## FindDelegation.py
+---
 
 Queries target domain for delegation relationships.
 

@@ -5,11 +5,11 @@ description : "This program converts IPv4 CIDR blocks into their constituent IP 
 date : 2022-08-01T14:24:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 tags : ['Networking', 'CIDR', 'Netmask']
 ---
 
-## cidr2ip
+---
 
 This program converts IPv4 CIDR blocks into their constituent IP addresses.
 

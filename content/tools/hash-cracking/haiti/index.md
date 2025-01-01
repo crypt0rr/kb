@@ -5,11 +5,11 @@ description : "A CLI tool to identify the hash type of a given hash."
 date : 2022-01-31T11:12:37+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## HAITI - HAsh IdenTifIer
+---
 
 A CLI tool to identify the hash type of a given hash.
 

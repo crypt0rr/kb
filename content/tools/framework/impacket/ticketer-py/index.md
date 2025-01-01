@@ -5,11 +5,11 @@ description : "Creates a Kerberos golden/silver tickets based on user options."
 date : 2023-12-03T06:36:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## ticketer.py
+---
 
 Creates a Kerberos golden/silver tickets based on user options.
 

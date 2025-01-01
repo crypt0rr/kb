@@ -5,11 +5,11 @@ description : "Relay SMB traffic."
 date : 2022-02-14T12:19:44+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## smbrelayx.py
+---
 
 Relay SMB traffic.
 

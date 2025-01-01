@@ -5,11 +5,11 @@ description : "SMB client implementation."
 date : 2022-02-14T14:52:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## smbclient.py
+---
 
 ## Installation
 

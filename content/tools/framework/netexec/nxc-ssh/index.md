@@ -5,11 +5,11 @@ description : "Own stuff using SSH."
 date : 2023-10-05T12:26:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags : ['Framework', 'SSH']
 ---
 
-## NetExec - SSH
+---
 
 ## Installation
 

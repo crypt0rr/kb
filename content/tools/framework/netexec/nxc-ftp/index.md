@@ -5,11 +5,11 @@ description : "Own stuff using FTP."
 date : 2023-10-05T12:26:55+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 tags : ['Framework', 'FTP']
 ---
 
-## NetExec - FTP
+---
 
 ## Installation
 

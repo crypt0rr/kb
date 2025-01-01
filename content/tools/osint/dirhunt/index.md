@@ -5,11 +5,11 @@ description : "Find web directories without bruteforce."
 date : 2021-10-20T15:30:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## Dirhunt
+---
 
 Find web directories without bruteforce.
 

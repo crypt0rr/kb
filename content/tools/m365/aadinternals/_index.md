@@ -5,7 +5,7 @@ description : "AADInternals is PowerShell module for administering Azure AD and 
 date : 2022-01-13T10:38:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 tags : ["M365"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
@@ -13,7 +13,7 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## AADInternals
+---
 
 AADInternals is PowerShell module for administering Azure AD and Office 365
 
@@ -41,4 +41,4 @@ Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) o
 
 ## Modules
 
-{{% children style="card" depth="1" description="true" sort="Name"  %}}
+{{% children depth="1" %}}

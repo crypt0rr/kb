@@ -5,11 +5,11 @@ description : "Command-line connection utility."
 date : 2022-11-15T10:28:37+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 220
 tags : ['Windows' , 'SSH', 'Pivoting']
 ---
 
-## Plink
+---
 
 Command-line connection utility.
 

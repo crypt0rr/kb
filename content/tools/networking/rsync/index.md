@@ -5,11 +5,11 @@ description : "A fast, versatile, remote (and local) file-copying tool."
 date : 2020-03-13T22:27:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 320
 # tags : ['']
 ---
 
-## Rsync
+---
 
 A fast, versatile, remote (and local) file-copying tool.
 

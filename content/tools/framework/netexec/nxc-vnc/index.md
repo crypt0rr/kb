@@ -5,11 +5,11 @@ description : "Own stuff using VNC."
 date : 2023-10-05T12:26:53+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 tags : ['Framework', 'VNC']
 ---
 
-## NetExec - VNC
+---
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "Displays or modifies discretionary access control lists (DACLs) o
 date : 2020-12-21T14:37:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## Icacls
+---
 
 Displays or modifies discretionary access control lists (DACLs) on specified files, and applies stored DACLs to files in specified directories
 

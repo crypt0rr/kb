@@ -5,11 +5,11 @@ description : "Perform various scans using sources such as a file, Nmap XMLs, Ne
 date : 2024-09-18T14:55:33+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Scan
+---
 
 Perform various scans using sources such as a file, Nmap XMLs, Nessus exports, or by scanning network CIDR ranges.
 

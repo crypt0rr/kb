@@ -5,11 +5,11 @@ description : "World's fastest and most advanced password recovery utility."
 date : 2020-03-11T14:16:57+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 #tags : ['Other']
 ---
 
-## Hashcat
+---
 
 World's fastest and most advanced password recovery utility.
 

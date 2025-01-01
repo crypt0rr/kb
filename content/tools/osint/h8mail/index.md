@@ -5,11 +5,11 @@ description : "An email OSINT and breach hunting tool using different breach and
 date : 2020-07-02T15:47:55+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## H8mail
+---
 
 An email OSINT and breach hunting tool using different breach and reconnaissance services, or local breaches such as Troy Hunt's Collection1 and the infamous Breach Compilation torrent.
 

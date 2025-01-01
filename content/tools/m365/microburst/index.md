@@ -5,11 +5,11 @@ description : "A PowerShell Toolkit for Attacking Azure."
 date : 2021-12-01T11:29:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## MicroBurst
+---
 
 MicroBurst includes functions and scripts that support Azure Services discovery, weak configuration auditing, and post exploitation actions such as credential dumping. It is intended to be used during penetration tests where Azure is in use.
 

@@ -5,11 +5,11 @@ description : "Go CLI and Library for quickly mapping organization network range
 date : 2022-10-13T09:07:56+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 tags : ['Framework', 'OSINT', 'CIDR']
 ---
 
-## ASNmap
+---
 
 Go CLI and Library for quickly mapping organization network ranges using [ASN](https://en.wikipedia.org/wiki/Autonomous_system_(Internet)) information.
 

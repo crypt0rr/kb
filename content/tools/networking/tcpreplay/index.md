@@ -5,11 +5,11 @@ description : "Replay network traffic stored in pcap files."
 date : 2024-12-09T14:30:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 440
 # tags : ['']
 ---
 
-## Tcpreplay
+---
 
 Replay network traffic stored in pcap files. Tcpreplay is a suite of [GPLv3] licensed utilities for UNIX (and Win32 under [Cygwin]) operating systems for editing and replaying network traffic which was previously captured by tools like [tcpdump] and [Wireshark]. It allows you to classify traffic as client or server, rewrite Layer 2, 3 and 4 packets and finally replay the traffic back onto the network and through other devices such as switches, routers, firewalls, NIDS and IPS's. Tcpreplay supports both single and dual NIC modes for testing both sniffing and in-line devices.
 

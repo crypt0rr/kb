@@ -5,11 +5,11 @@ description : "Refactored & improved CredKing password spraying tool, uses FireP
 date : 2021-11-29T20:11:46+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags : ['M365', 'Passwordspray']
 ---
 
-## Credmaster
+---
 
 Launch a password spray / brute force attach via Amazon AWS passthrough proxies, shifting the requesting IP address for every authentication attempt. This dynamically creates FireProx APIs for more evasive password sprays.
 

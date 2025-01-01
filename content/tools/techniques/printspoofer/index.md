@@ -5,11 +5,11 @@ description : "From LOCAL/NETWORK SERVICE to SYSTEM by abusing SeImpersonatePriv
 date : 2021-06-21T14:57:31+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## Printspoofer
+---
 
 From LOCAL/NETWORK SERVICE to SYSTEM by abusing SeImpersonatePrivilege on Windows 10 and Server 2016/2019.
 

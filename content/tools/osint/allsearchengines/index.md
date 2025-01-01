@@ -5,11 +5,11 @@ description : "Public search engines by category."
 date : 2022-08-08T09:48:14+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## All Search Engines
+---
 
 Public search engines by category.
 

@@ -5,13 +5,13 @@ description : "Resource-Based Constrained Delegation Attack (Kerberos RBCD / KRB
 date : 2021-02-17T15:54:06+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## Kerberos Resource-Based Constrained Delegation Attack (Kerberos RBCD / KRBCD)
+---
 
-Resource-Based Constrained Delegation - Generic write abuse.
+Kerberos Resource-Based Constrained Delegation Attack (Kerberos RBCD / KRBCD). Resource-Based Constrained Delegation - Generic write abuse.
 
 ## Installation
 

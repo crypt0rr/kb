@@ -5,11 +5,11 @@ description : "SilentListener listens on the network interface of choice to iden
 date : 2024-10-23T14:59:04+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 350
 # tags : ['']
 ---
 
-## SilentListener
+---
 
 SilentListener listens on the network interface of choice to identify network segments that cross the interface.
 

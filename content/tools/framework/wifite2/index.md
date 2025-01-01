@@ -5,11 +5,11 @@ description : "Rewrite of the popular wireless network auditor, 'wifite' - autom
 date : 2022-02-21T12:10:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 420
 tags : ['Framework', 'WiFi']
 ---
 
-## Wifite2
+---
 
 This repo is a complete re-write of [wifite](https://github.com/derv82/wifite), a Python script for auditing wireless networks.
 

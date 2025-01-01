@@ -5,11 +5,11 @@ description : "Queries target domain for users with 'Do not require Kerberos pre
 date : 2022-02-14T11:57:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## GetNPUsers.py
+---
 
 Queries target domain for users with 'Do not require Kerberos preauthentication' set and export their TGTs for cracking (ASREPRoasting).
 

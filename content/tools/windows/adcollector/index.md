@@ -5,11 +5,11 @@ description : "ADCollector is a lightweight tool that enumerates the Active Dire
 date : 2021-10-18T16:05:15+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## ADCollector
+---
 
 Is a lightweight tool that enumerates the Active Directory environment to identify possible attack vectors. It will give you a basic understanding of the configuration/deployment of the environment as a starting point
 

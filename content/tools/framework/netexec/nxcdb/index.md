@@ -5,11 +5,11 @@ description : "Database containing credentials captured."
 date : 2023-10-05T12:44:28+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## nxcdb
+---
 
 nxcdb is default installed with your installation of [NetExec]({{< ref "../netexec" >}}).
 

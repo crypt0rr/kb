@@ -5,11 +5,11 @@ description : "A C# project that performs a number of security oriented host-sur
 date : 2021-04-15T09:09:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 300
 tags : ['Other', 'Active Directory']
 ---
 
-## Seatbelt
+---
 
 A C# project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.
 

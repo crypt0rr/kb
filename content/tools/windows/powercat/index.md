@@ -5,11 +5,11 @@ description : "Netcat: The powershell version. (Powershell Version 2 and Later S
 date : 2022-09-26T14:49:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 230
 # tags : ['']
 ---
 
-## powercat
+---
 
 Netcat: The powershell version. (Powershell Version 2 and Later Supported)
 

@@ -5,11 +5,11 @@ description : "Given a password, hash or aesKey, it will request a Service Ticke
 date : 2022-02-14T12:21:48+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## GetST.py
+---
 
 Given a password, hash or aesKey, it will request a Service Ticket and save it as ccache.
 

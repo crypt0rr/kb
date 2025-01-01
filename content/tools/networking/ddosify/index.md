@@ -5,11 +5,11 @@ description : "High-performance load testing tool, written in Golang."
 date : 2022-05-29T14:56:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 # tags : ['']
 ---
 
-## ddosify
+---
 
 High-performance load testing tool, written in Golang. For distributed and Geo-targeted load testing: Ddosify Cloud - <https://ddosify.com>.
 
@@ -90,8 +90,8 @@ ddosify [FLAG]
 | `-T`       | Timeout of the request in seconds.                                                                                                                                  | `int`    | `5`      | No        |
 | `-P`       | Proxy address as host:port. `-P http://user:pass@proxy_host.com:port'`                                                                                              | `string` | -        | No        |
 | `-o`       | Test result output destination. Supported outputs are [*stdout, stdout-json*] Other output types will be added.                                                     | `string` | `stdout` | No        |
-| `-l`       | [Type](#load-types) of the load test. Ddosify supports 3 load types.                                                                                                | `string` | `linear` | No        |
-| `-config`  | [Config File](#config-file) of the load test.                                                                                                                       | `string` | -        | No        |
+| `-l`       | Type load-types of the load test. Ddosify supports 3 load types.                                                                                                | `string` | `linear` | No        |
+| `-config`  | Config File] of the load test.                                                                                                                       | `string` | -        | No        |
 | `-version` | Prints version, git commit, built date (utc), go information and quit                                                                                               | -        | -        | No        |
 
 ## Examples

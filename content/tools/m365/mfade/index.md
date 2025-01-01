@@ -5,11 +5,11 @@ description : "A tool to find failure points in Microsoft Multi Factor Authentic
 date : 2023-12-14T20:27:42+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 tags : ['M365', 'AzureAD/EntraID', 'MFA']
 ---
 
-## MFade
+---
 
 A tool to find failure points in Microsoft Multi Factor Authentication configurations from an attacker's perspective but with some extra OPSEC features.
 

@@ -5,11 +5,11 @@ description : "Abusing the kerberos protocol to gain KRBTG hashes to crack."
 date : 2020-07-08T09:50:07+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## Kerberoasting
+---
 
 Abusing the kerberos protocol to gain KRBTG hashes to crack.
 

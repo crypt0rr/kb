@@ -5,11 +5,13 @@ description : "Use Kerberos U2U to submit a TGS request for yourself."
 date : 2023-12-03T06:11:46+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## getnthash.py - Use Kerberos U2U to submit a TGS request for yourself
+---
+
+Use Kerberos U2U to submit a TGS request for yourself.
 
 Use Kerberos U2U to submit a TGS request for yourself. This will include with the PAC which in turn contains the NT hash that you can decrypt with the AS-REP key that was used for your specific TGT. It's magic really. This tool requires a TGT resulting from PKINIT to be in your `KRB5CCNAME` env variable.
 

@@ -5,7 +5,7 @@ description : "Small set of tools convert packets from captures (h = hash, c = c
 date : 2022-02-23T12:00:34+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 tags : ["hash-cracking"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
@@ -13,7 +13,7 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## hcxtools
+---
 
 **Note**: the tools can be used stand-alone but also in combination with each other. The steps would be:
 

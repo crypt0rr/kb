@@ -5,11 +5,11 @@ description : "puredns description."
 date : 2022-11-30T20:56:26+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 230
 tags : ['OSINT', 'DNS', 'Subdomain']
 ---
 
-## puredns
+---
 
 puredns is a fast domain resolver and subdomain bruteforcing tool that can accurately filter out wildcard subdomains and DNS poisoned entries.
 

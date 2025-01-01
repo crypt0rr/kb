@@ -5,11 +5,11 @@ description : "Executes a semi-interactive shell using Windows Management Instru
 date : 2022-02-14T12:19:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 # tags : ['']
 ---
 
-## wmiexec.py
+---
 
 Executes a semi-interactive shell using Windows Management Instrumentation.
 

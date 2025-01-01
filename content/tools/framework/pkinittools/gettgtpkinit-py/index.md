@@ -5,11 +5,13 @@ description : "Requests a TGT using Kerberos PKINIT and either a PEM or PFX base
 date : 2023-12-03T06:11:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## gettgtpkinit.py - Requests a TGT using Kerberos PKINIT and either a PEM or PFX based certificate+key
+---
+
+Requests a TGT using Kerberos PKINIT and either a PEM or PFX based certificate+key.
 
 ## Installation
 

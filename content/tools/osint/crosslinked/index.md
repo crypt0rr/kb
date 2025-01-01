@@ -5,11 +5,11 @@ description : "Simplifies the processes of searching LinkedIn to collect valid e
 date : 2020-03-10T15:34:20+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags: ['Other','LinkedIn']
 ---
 
-## Crosslinked
+---
 
 CrossLinked is a LinkedIn enumeration tool that uses search engine scraping to collect valid employee names from an organization. This technique provides accurate results without the use of API keys, credentials, or accessing LinkedIn directly!
 

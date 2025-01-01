@@ -5,11 +5,11 @@ description : "Use the hash of a user to authenticate around the network."
 date : 2020-07-08T09:50:00+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## Pass-the-hash
+---
 
 Use the hash of a user to authenticate around the network.
 

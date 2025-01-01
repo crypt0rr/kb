@@ -5,11 +5,11 @@ description : "Command-line interface for checking email address and username us
 date : 2020-11-17T11:55:13+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 310
 # tags : ['']
 ---
 
-## Socialscan
+---
 
 Command-line interface for checking email address and username usage on online platforms: GitHub, GitLab, Instagram, Lastfm, Pinterest, Reddit, Snapchat, /.Spotify, Twitter, Tumblr, Yahoo, Firefox.
 

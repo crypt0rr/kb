@@ -1,15 +1,15 @@
 ---
-title : "AADIntReconAsOutsider"
+title : "Invoke-AADIntReconAsOutsider"
 # pre : ' '
 description : "Starts tenant recon of the given domain."
 date : 2024-01-06T14:02:06+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## Invoke-AADIntReconAsOutsider
+---
 
 Starts tenant recon of the given domain.
 

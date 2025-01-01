@@ -5,11 +5,11 @@ description : "This script will launch a SMB Server and add a share specified as
 date : 2022-02-14T12:02:26+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 # tags : ['']
 ---
 
-## smbserver.py
+---
 
 This script will launch a SMB Server and add a share specified as an argument. You need to be root in order to bind to port 445. For optional authentication, it is possible to specify username and password or the NTLM hash.
 

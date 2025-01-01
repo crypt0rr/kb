@@ -5,11 +5,11 @@ description : "PSEXEC over SMB."
 date : 2022-02-14T14:52:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## smbexec.py
+---
 
 PSEXEC over SMB.
 

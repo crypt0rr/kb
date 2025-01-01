@@ -5,11 +5,11 @@ description : "Cache mode."
 date : 2022-12-07T10:37:02+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## LDEEP - Cache Mode
+---
 
 ## Installation
 

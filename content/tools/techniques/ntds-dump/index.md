@@ -5,11 +5,11 @@ description : "How to dump NTDS.dit and extract the hashes with ShadowCopy and S
 date : 2022-01-18T10:07:23+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 # tags : ['']
 ---
 
-## NTDS.dit Dump&Extract
+---
 
 On Domain Controller - create snapshot with `vssadmin.exe`.
 

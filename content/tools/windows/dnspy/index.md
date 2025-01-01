@@ -5,11 +5,11 @@ description : "A debugger and .NET assembly editor. You can use it to edit and d
 date : 2020-03-13T22:09:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## dnSpy
+---
 
 A debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available.
 

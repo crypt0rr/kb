@@ -5,11 +5,11 @@ description : "Swiss Army Knife for SMTP."
 date : 2022-04-08T12:09:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 420
 tags : ['Networking', 'SMTP']
 ---
 
-## Swaks
+---
 
 Swaks is a featureful, flexible, scriptable, transaction-oriented SMTP test tool written and maintained by John Jetmore.  It is free to use and licensed under the GNU GPLv2. Features include:
 

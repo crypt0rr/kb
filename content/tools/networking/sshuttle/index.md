@@ -5,11 +5,11 @@ description : "Transparent proxy server that works as a poor man's VPN. Forwards
 date : 2022-05-31T11:03:47+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 400
 tags : ['Networking', 'VPN', 'SSH', 'Pivoting']
 ---
 
-## sshuttle
+---
 
 Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
 

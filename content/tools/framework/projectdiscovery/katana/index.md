@@ -5,11 +5,11 @@ description : "Katana is a fast crawler focused on execution in automation pipel
 date : 2024-03-11T13:30:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## Katana
+---
 
 Katana is a fast crawler focused on execution in automation pipelines offering both headless and non-headless crawling.
 

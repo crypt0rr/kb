@@ -5,11 +5,11 @@ description : "Exploit Remote Procedure Calls (RPC)."
 date : 2023-05-04T08:54:56+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## Coerce
+---
 
 You want to exploit the Remote Procedure Calls on a remote machine to coerce an authentication to [ntlmrelayx.py]({{< ref "ntlmrelayx-py" >}})
 or [Responder]({{< ref "responder" >}})?

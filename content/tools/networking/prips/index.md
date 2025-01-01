@@ -5,11 +5,11 @@ description : "Print IP addresses in a range."
 date : 2023-06-04T18:25:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 290
 # tags : ['']
 ---
 
-## prips
+---
 
 prips is a tool that can be used to print all of the IP addresses in a given range. It can enhance the usability of tools that are made to work on only one host at a time (e.g. whois).
 

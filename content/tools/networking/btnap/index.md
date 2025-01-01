@@ -5,11 +5,11 @@ description : "Bluetooth Network Access Point for Raspberry Pi."
 date : 2020-03-11T11:14:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 tags : ['Networking', 'Bluetooth']
 ---
 
-## Bluetooth Network Access Point (BTNAP)
+---
 
 Bluetooth Network Access Point for Raspberry Pi.
 

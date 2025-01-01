@@ -5,11 +5,11 @@ description : "Subfinder is a subdomain discovery tool that discovers subdomains
 date : 2021-10-20T10:54:24+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 tags : ['Framework', 'OSINT', 'DNS', 'Subdomain']
 ---
 
-## Subfinder
+---
 
 Is a subdomain discovery tool that discovers valid subdomains for websites by using passive online sources. It has a simple modular architecture and is optimized for speed. subfinder is built for doing one thing only - passive subdomain enumeration, and it does that very well.
 

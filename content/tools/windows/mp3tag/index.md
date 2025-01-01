@@ -5,11 +5,11 @@ description : "Mp3tag is a powerful and easy-to-use tool to edit metadata of aud
 date : 2020-03-23T10:29:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 # tags : ['']
 ---
 
-## Mp3tag
+---
 
 Is a powerful and easy-to-use tool to edit metadata of audio files.
 
