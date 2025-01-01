@@ -5,11 +5,11 @@ description : "Windows Powershell handy commands."
 date : 2020-04-16T13:14:28+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## Powershell
+---
 
 {{%resources title="PowerShell and ISE executable" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 

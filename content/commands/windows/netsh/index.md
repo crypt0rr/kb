@@ -5,11 +5,11 @@ description : "Is a command-line utility that allows you to configure and displa
 date : 2020-03-16T11:31:37+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 tags : ['Windows' , 'Networking', 'Pivoting']
 ---
 
-## Network Shell (netsh)
+---
 
 ## Usage
 

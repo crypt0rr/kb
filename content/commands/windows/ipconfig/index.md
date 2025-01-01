@@ -5,11 +5,11 @@ description : "Displays all current TCP/IP network configuration values and refr
 date : 2020-03-16T11:39:44+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## Ipconfig
+---
 
 ## Usage
 

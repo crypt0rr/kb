@@ -5,11 +5,11 @@ description : "Quickly access administrative tools, backup and restore options a
 date : 2022-08-02T11:55:53+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## Windows GodMode
+---
 
 Quickly access administrative tools, backup and restore options and other important management settings from a single window.
 

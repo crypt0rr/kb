@@ -5,11 +5,13 @@ description : "Displays information that you can use to diagnose Domain Name Sys
 date : 2020-09-23T12:30:20+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## Nslookup - Displays information that you can use to diagnose Domain Name System (DNS) infrastructure
+---
+
+Displays information that you can use to diagnose Domain Name System (DNS) infrastructure.
 
 ## Usage
 

@@ -5,11 +5,11 @@ description : "Adds, displays, or modifies global groups in domains."
 date : 2020-03-16T12:12:57+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## net group
+---
 
 ## Usage
 

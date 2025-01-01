@@ -5,11 +5,11 @@ description : "Registry Editor."
 date : 2021-09-09T09:52:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## Registry Editor
+---
 
 ### Disable Remote User Account Control (UAC)
 
