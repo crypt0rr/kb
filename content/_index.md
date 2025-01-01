@@ -14,7 +14,7 @@ Built for both reference and exploration, this knowledge base reflects my ongoin
 <h2 id="contributing">Contributing</h2>
 <p>Contributions are always welcome. Please see the <a href="https://github.com/crypt0rr/kb?tab=readme-ov-file#contributing" rel="external" target="_blank">contribution guidelines</a> before getting started.</p>
 <h2 id="licensing">Licensing</h2>
-<p>This Knowledge Base (KB) is distributed under the <a href="https://github.com/crypt0rr/kb/blob/main/LICENSE" rel="external" target="_blank">GNU General Public License v3.0</a>.</p>
+<p>This Knowledge Base (KB) is made available under the <a href="https://github.com/crypt0rr/kb/blob/main/LICENSE" rel="external" target="_blank">GNU General Public License v3.0</a>.</p>
 <h2 id="other-tools">Other Tools</h2>
 <p>Discover more helpful tools and resources <a href="https://offsec.nl/" rel="external" target="_blank">here!</a></p>
 </div>
