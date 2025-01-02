@@ -18,7 +18,17 @@ Where to get your Docker images:
 - [Hub.docker.com - Build and Ship any Application Anywhere](https://hub.docker.com/)
 - [Linuxserver.io - Building and maintaining community images](https://www.linuxserver.io/)
 
-## Installation
+## Installation on Debian
+
+```plain
+groupadd docker
+usermod -aG docker docker-user
+apt-get update && apt-get install apt-transport-https ca-certificates curl software-properties-common && curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt-get update && apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+## Installation on Ubuntu
 
 Preferably you install Docker in a non-root / non-sudo user. Follow the next steps to do so.
 
