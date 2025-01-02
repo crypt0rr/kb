@@ -1,6 +1,6 @@
 ---
 title : "linWinPwn"
-pre : '<i class="far fa-window-restore"></i> '
+#pre : '<i class="far fa-window-restore"></i> '
 description : "Swiss-Army knife for Active Directory Pentesting using Linux."
 date : 2024-05-08T10:37:03+02:00
 # hidden : true

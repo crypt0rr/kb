@@ -13,7 +13,7 @@ weight : 20
 
 ### M365Maps - Microsoft 365 Licensing
 
-- <https://m365maps.com/>
+[M365maps.com](https://m365maps.com)
 
 ### The Book of Secret Knowledge
 

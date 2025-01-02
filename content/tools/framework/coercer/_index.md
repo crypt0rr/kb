@@ -39,10 +39,10 @@ A python script to automatically coerce a Windows server to authenticate on an a
 sudo python3 -m pip install coercer
 ```
 
+## Modules
+
+{{% children depth="1" %}}
+
 ## URL List
 
 - [Github.com - Coercer](https://github.com/p0dalirius/Coercer)
-
-## Modules
-
-{{% children style="card" depth="1" description="true" sort="Name"  %}}

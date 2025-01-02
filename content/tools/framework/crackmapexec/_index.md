@@ -35,11 +35,11 @@ On error uninstall `pipx python3 -m pip uninstall` pipx and remove local folder 
 pipx upgrade crackmapexec
 ```
 
-## URL List
-
-* [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
-* [PtestMethod.readthedocs.io - CME](https://ptestmethod.readthedocs.io/en/latest/cme.html)
-
 ## Modules
 
 {{% children depth="1" %}}
+
+## URL List
+
+- [GitHub.com - CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
+- [PtestMethod.readthedocs.io - CME](https://ptestmethod.readthedocs.io/en/latest/cme.html)

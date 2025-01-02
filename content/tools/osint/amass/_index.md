@@ -33,6 +33,10 @@ Docker
 docker build -t amass https://github.com/OWASP/Amass.git
 ```
 
+## Modules
+
+{{% children depth="1" %}}
+
 ## URL List
 
 - [Github.com - Amass](https://github.com/OWASP/Amass)
@@ -40,7 +44,3 @@ docker build -t amass https://github.com/OWASP/Amass.git
 - [Github.com - Example configuration file](https://github.com/owasp-amass/amass/blob/master/examples/config.yaml)
 - [Github.com - The Amass tutorial](https://github.com/owasp-amass/amass/blob/master/doc/tutorial.md)
 - [Medium.com - Guide to amass how to use amass more effectively](https://medium.com/@hakluke/haklukes-guide-to-amass-how-to-use-amass-more-effectively-for-bug-bounties-7c37570b83f7)
-
-## Modules
-
-{{% children style="card" depth="1" description="true" sort="Name"  %}}

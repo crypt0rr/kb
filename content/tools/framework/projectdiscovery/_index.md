@@ -25,4 +25,4 @@ We are an open-source cyber security company, we build tools for security engine
 
 ## Tools
 
-{{% children style="card" depth="1" description="true" sort="Name"  %}}
+{{% children depth="1" %}}

@@ -36,8 +36,10 @@ On error uninstall `pipx python3 -m pip uninstall` pipx and remove local folder 
 pipx upgrade NetExec
 ```
 
+## Modules
+
+{{% children depth="1" %}}
+
 ## URL List
 
 - [NetExec.wiki](https://www.netexec.wiki/)
-
-{{% children depth="1" %}}

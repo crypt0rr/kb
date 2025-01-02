@@ -33,12 +33,12 @@ Import-Module AADInternals
 
 Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) on how to use and available commands.
 
+## Modules
+
+{{% children depth="1" %}}
+
 ## URL List
 
 - [O365blog.com - AADInternals](https://o365blog.com/aadinternals/)
 - [Github.co - AADInternals](https://github.com/Gerenios/AADInternals)
 - [Trustedsec.com - AzureAD Kerberos Tickets Pivoting to the Cloud](https://trustedsec.com/blog/azure-ad-kerberos-tickets-pivoting-to-the-cloud)
-
-## Modules
-
-{{% children depth="1" %}}
