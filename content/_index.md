@@ -4,7 +4,6 @@ date: 2020-03-06T13:37:08+01:00
 draft: false
 ---
 
-<h1> </h1>
 <h2 id="introduction">Introduction</h2>
 <p>This site is a curated repository of tools, techniques, and writeups, designed to support your journey in offensive security, ethical hacking, and beyond. Whether you're exploring new methodologies, troubleshooting tools, or diving into detailed technical guides, you'll find resources here to help you stay ahead.
 
