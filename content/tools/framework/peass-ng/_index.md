@@ -17,4 +17,4 @@ cascade:
 
 Privilege Escalation Awesome Scripts SUITE new generation.
 
-{{% children style="card" depth="1" description="true" sort="Name"  %}}
+{{% children depth="1" %}}

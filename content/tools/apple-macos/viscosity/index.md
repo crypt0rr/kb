@@ -6,7 +6,7 @@ date : 2021-12-31T14:21:02+01:00
 # hidden : true
 # draft : true
 weight : 420
-tags : ['Tools', 'macOS', Windows', 'VPN']
+tags : ['macOS', 'Windows', 'VPN']
 ---
 
 ---

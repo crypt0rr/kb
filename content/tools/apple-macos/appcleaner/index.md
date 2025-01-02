@@ -24,9 +24,9 @@ Download newest release from [freemacsoft.net](http://freemacsoft.net/appcleaner
 
 ## Examples
 
-![Example](images/example1.png)
-![Example](images/example2.png)
-![Example](images/example3.png)
+![Example](images/example-1.png)
+![Example](images/example-2.png)
+![Example](images/example-3.png)
 
 ## URL List
 

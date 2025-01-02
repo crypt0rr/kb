@@ -25,10 +25,10 @@ go install github.com/sensepost/gowitness@latest
 
 Or download a pre-compiled binary at [GitHub.com - releases](https://github.com/sensepost/gowitness/releases).
 
+## Modules
+
+{{% children depth="1" %}}
+
 ## URL List
 
 - [GitHub.com - gowitness](https://github.com/sensepost/gowitness)
-
-## Modules
-
-{{% children style="card" depth="1" description="true" sort="Name"  %}}

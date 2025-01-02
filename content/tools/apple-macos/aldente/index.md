@@ -6,7 +6,7 @@ date : 2021-12-19T20:16:22+01:00
 # hidden : true
 # draft : true
 weight : 30
-tags : ['macOS', 'Battery']
+# tags : ['macOS']
 ---
 
 ---

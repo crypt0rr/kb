@@ -29,13 +29,13 @@ python3 -m pip install git+https://github.com/franc-pentest/ldeep
 python3 -m pip install --upgrade git+https://github.com/franc-pentest/ldeep
 ```
 
+## Modules
+
+{{% children depth="1" %}}
+
 ## URL List
 
 - [Github.com - LDEEP](https://github.com/franc-pentest/ldeep)
 - [Github.com - Impacket](https://github.com/SecureAuthCorp/impacket)
 - [Github.com - windapsearch](https://github.com/ropnop/windapsearch)
 - [Github.com - LDAPPER](https://github.com/shellster/LDAPPER)
-
-## Modules
-
-{{% children style="card" depth="1" description="true" sort="Name"  %}}
