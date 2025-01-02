@@ -5,11 +5,11 @@ description : "A script to find admin login pages and EAR vulnerabilities."
 date : 2021-05-24T16:58:06+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 # tags : ['']
 ---
 
-## Breacher
+---
 
 A script to find admin login pages and EAR vulnerabilities.
 

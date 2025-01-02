@@ -5,11 +5,11 @@ description : "Steganography program that is able to hide data in various kinds 
 date : 2020-03-11T10:50:01+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : [""]
 ---
 
-## Steghide
+---
 
 Steganography program that is able to hide data in various kinds of image- and audio-files.
 

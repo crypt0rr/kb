@@ -1,15 +1,15 @@
 ---
-title : "Softwareupdate"
+title : "SoftwareUpdate"
 # pre : '<i class="fas fa-code"></i> '
 description : "Check for new and updated versions of your software based on information about your computer and current software."
 date : 2021-12-10T17:22:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
 ---
 
-## Softwareupdate
+---
 
 Check for new and updated versions of your software based on information about your computer and current software.
 

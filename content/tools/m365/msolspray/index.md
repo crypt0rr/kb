@@ -5,11 +5,11 @@ description : "A password spraying tool for Microsoft Online accounts (Azure/O36
 date : 2020-04-02T11:48:31+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 tags : ['M365', 'Passwordspray']
 ---
 
-## MSOLSpray
+---
 
 A password spraying tool for Microsoft Online accounts (Azure/O365).
 

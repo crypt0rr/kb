@@ -5,11 +5,11 @@ description : "Monitor your Mac's fan speed and CPU/GPU temperature from your No
 date : 2021-12-20T07:19:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 170
 # tags : ['']
 ---
 
-## Fanny
+---
 
 Fanny is a free Notification Center Widget and Menu Bar application to monitor your Macs fans.
 

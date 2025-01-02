@@ -5,11 +5,13 @@ description : "Displays protocol statistics and current TCP/IP connections using
 date : 2020-09-23T12:24:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 # tags : ['']
 ---
 
-## Nbtstat - Displays protocol statistics and current TCP/IP connections using NBT (NetBIOS over TCP/IP)
+---
+
+Displays protocol statistics and current TCP/IP connections using NBT (NetBIOS over TCP/IP).
 
 ## Usage
 

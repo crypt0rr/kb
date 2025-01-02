@@ -5,11 +5,11 @@ description : "Own stuff using MSSQL"
 date : 2022-02-14T15:23:07+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## CrackMapExec - MSSQL
+---
 
 ## Installation
 

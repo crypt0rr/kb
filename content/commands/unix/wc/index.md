@@ -5,11 +5,11 @@ description : "Print newline, word, and byte counts for each file."
 date : 2020-05-11T09:51:12+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 990
 # tags : ['']
 ---
 
-## wc - wordcount
+---
 
 ## Usage
 

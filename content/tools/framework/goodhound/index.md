@@ -5,11 +5,11 @@ description : "GoodHound operationalises Bloodhound by determining the busiest p
 date : 2022-02-05T16:35:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 tags : ['Framework', 'Active Directory']
 ---
 
-## GoodHound
+---
 
 Attackers think in graphs, defenders think in actions, management think in charts.
 
@@ -116,7 +116,7 @@ $ ll out*
 -rw-r--r--  1 crypt0rr  staff   639B Feb  5 16:54 out\2021-10-17_GoodHound_weakestlinks.csv
 ```
 
-{{%attachments fa_icon_class="fas fa-file-csv" pattern=".*(csv)"%}}
+{{%resources fa_icon_class="fas fa-file-csv" pattern=".*(csv)"/%}}
 
 ![Example](images/example1.png)
 ![Example](images/example2.png)

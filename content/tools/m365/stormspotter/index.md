@@ -5,11 +5,11 @@ description : "Stormspotter creates an 'attack graph' of the resources in an Azu
 date : 2021-12-01T16:31:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 # tags : ['']
 ---
 
-## Stormspotter
+---
 
 Stormspotter creates an “attack graph” of the resources in an Azure subscription. It enables red teams and pentesters to visualize the attack surface and pivot opportunities within a tenant, and supercharges your defenders to quickly orient and prioritize incident response work.
 
@@ -102,7 +102,7 @@ python3 sscollector.pyz spn -t <tenant> -c <clientID> -s <clientSecret>
 - **--aad**: Only enumerate Azure Active Directory
 - **--subs**: Subscriptions you wish to scan. Multiple subscriptions can be added as a space deliminated list.
 - **--nosubs**: Subscriptions you wish to exclude. Multiple subscriptions can be excluded as a space deliminated list.
-- **--json**: Convert SQLite output to JSON (**WARNING: STORMSPOTTER ONLY PARSES SQLITE FORMAT*- )
+- **--json**: Convert SQLite output to JSON (**WARNING: STORMSPOTTER ONLY PARSES SQLITE FORMAT**)
   - This option is useful if you want to parse the output for reasons other than Stormspotter.
 - **--ssl-cert**: Specify an SSL cert for Stormcollector to use for requests. Not a common option
 - **--backfill**: Perform AAD enumeration only for object IDs associated with RBAC enumeration. Only applicable when --azure is specified.

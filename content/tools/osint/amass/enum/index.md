@@ -5,11 +5,11 @@ description : "Amass enum allows you to perform DNS enumeration and mapping of t
 date : 2023-07-24T11:43:16+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Enum
+---
 
 Let's move to Amass enum, which is where most of Amass' powerful capabilities reside. Amass enum allows you to perform DNS enumeration and mapping of the target to determine the attack surface exposed by organizations. The enumeration findings are stored in a graph database, which will be located in Amass' default output folder or the specified output directory with "-dir" flag. This is also the case with other Amass subcommands.
 

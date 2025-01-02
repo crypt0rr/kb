@@ -5,11 +5,11 @@ description : "This script downloads the list of users for the target system."
 date : 2022-02-14T11:56:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## samrdump.py
+---
 
 This script downloads the list of users for the target system.
 

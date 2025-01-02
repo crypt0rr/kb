@@ -5,11 +5,13 @@ description : "Allows users to view and edit network connection settings. For ex
 date : 2020-12-07T12:10:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 670
 # tags : ['']
 ---
 
-## Nm-Connection-Editor - Allows users to view and edit network connection settings
+---
+
+Allows users to view and edit network connection settings.
 
 ## Usage
 

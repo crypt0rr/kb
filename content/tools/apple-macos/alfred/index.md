@@ -5,11 +5,11 @@ description : "Boosts your efficiency with hotkeys, keywords, text expansion and
 date : 2020-04-06T12:59:51+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## Alfred
+---
 
 Boosts your efficiency with hotkeys, keywords, text expansion and more.
 

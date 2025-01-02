@@ -5,11 +5,11 @@ description : "PingCastle - Get Active Directory Security at 80% in 20% of the t
 date : 2023-04-04T18:37:35+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 320
 tags : ['Framework', 'Active Directory', 'AzureAD/EntraID']
 ---
 
-## PingCastle
+---
 
 The risk level regarding Active Directory security has changed. Several vulnerabilities have been made popular with tools like [mimikatz](https://github.com/gentilkiwi/mimikatz) or sites likes [adsecurity.org](http://adsecurity.org/).
 
@@ -109,7 +109,7 @@ Program launched in interactive mode - press any key to terminate the program
 
 ## Example Report
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(html)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(html)"/%}}
 
 ## URL list
 

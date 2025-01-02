@@ -5,11 +5,13 @@ description: "Tidal-Media-Downloader."
 date: 2023-10-16T12:59:45+02:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 1860
 # tags : ['']
 ---
 
-## Tidal-Media-Downloader - tidal-dl
+---
+
+Tidal-Media-Downloader.
 
 ## Installation
 

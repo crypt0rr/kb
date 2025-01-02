@@ -5,11 +5,11 @@ description : "TruffleHog is a tool for finding credentials."
 date : 2023-04-23T19:52:06+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1940
 tags : ['Other', 'Git']
 ---
 
-## TruffleHog
+---
 
 TruffleHog is an open source secret-scanning engine that helps resolve exposed secrets across your company’s entire tech stack.
 

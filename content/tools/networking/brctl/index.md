@@ -5,11 +5,11 @@ description: "Ethernet bridge administration."
 date: 2020-03-10T16:18:52+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 60
 # tags : [""]
 ---
 
-## Brctl
+---
 
 Bridge networking - Ethernet bridge administration.
 

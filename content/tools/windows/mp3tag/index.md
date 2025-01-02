@@ -5,11 +5,11 @@ description : "Mp3tag is a powerful and easy-to-use tool to edit metadata of aud
 date : 2020-03-23T10:29:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 # tags : ['']
 ---
 
-## Mp3tag
+---
 
 Is a powerful and easy-to-use tool to edit metadata of audio files.
 
@@ -21,7 +21,7 @@ It supports batch tag-editing of ID3v1, ID3v2.3, ID3v2.4, iTunes MP4, WMA, Vorbi
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 Download newest release from [mp3tag.de](https://www.mp3tag.de/en/download.html) or install with [Microsoft Store](https://www.microsoft.com/en-us/p/mp3tag/9nn77tcq1nc8).
 

@@ -5,11 +5,11 @@ description : "The Amass intel subcommand, or module if you want, can aid with c
 date : 2023-07-24T11:38:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## Intel
+---
 
 The Amass intel subcommand, or module if you want, can aid with collecting open source intelligence on the organization and allow you to find further root domain names associated with the organization.
 

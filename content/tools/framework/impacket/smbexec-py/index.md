@@ -5,11 +5,11 @@ description : "PSEXEC over SMB."
 date : 2022-02-14T14:52:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## smbexec.py
+---
 
 PSEXEC over SMB.
 
@@ -64,7 +64,7 @@ authentication:
 
 ## Examples
 
-{{%attachments fa_icon_class="far fa-file-video" pattern="smbexec.mp4"%}}
+{{%resources fa_icon_class="far fa-file-video" pattern="smbexec.mp4"/%}}
 
 ### Start RCE via SMB
 

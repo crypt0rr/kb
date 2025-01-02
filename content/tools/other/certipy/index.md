@@ -5,11 +5,11 @@ description : "Active Directory Certificate Services enumeration and abuse."
 date : 2022-10-11T10:36:25+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 290
 tags : ['Other', 'Active Directory', 'ADCS']
 ---
 
-## Certipy
+---
 
 Active Directory Certificate Services enumeration and abuse.
 

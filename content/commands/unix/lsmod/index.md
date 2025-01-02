@@ -5,11 +5,11 @@ description : "Show the status of modules in the Linux Kernel."
 date : 2020-03-13T17:00:48+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 520
 # tags : ['']
 ---
 
-## Lsmod
+---
 
 ## Usage
 

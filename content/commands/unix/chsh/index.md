@@ -5,11 +5,11 @@ description : "Change login shell."
 date : 2020-05-01T12:37:23+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## Chsh
+---
 
 ## Usage
 

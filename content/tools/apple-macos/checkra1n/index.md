@@ -5,11 +5,11 @@ description : "Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up."
 date : 2021-05-17T11:12:08+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## Checkra1n
+---
 
 Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up
 
@@ -17,7 +17,7 @@ Jailbreak for iPhone 5s through iPhone X, iOS 12.0 and up
 
 Download newest release from [Checkra.in](https://checkra.in/#release)
 
-{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*()"%}}
+{{%resources fa_icon_class="far fa-file-pdf" pattern=".*()"/%}}
 
 ## Usage
 

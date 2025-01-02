@@ -5,11 +5,11 @@ description : "PowerMeta searches for publicly available files hosted on various
 date : 2020-11-16T12:52:56+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 220
 # tags : ['']
 ---
 
-## PowerMeta
+---
 
 PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches.
 

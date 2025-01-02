@@ -5,11 +5,11 @@ description : "OneDrive user enumeration - pentest tool to enumerate valid o365 
 date : 2022-09-22T20:07:00+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 170
 # tags : ['']
 ---
 
-## onedrive_user_enum
+---
 
 ## Installation
 

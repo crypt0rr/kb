@@ -5,15 +5,15 @@ description : "Hydra is a tool to guess/crack valid login/password pairs."
 date : 2021-05-11T11:13:54+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 860
 # tags : ['']
 ---
 
-## Hydra
+---
 
 A tool to guess/crack valid login/password pairs.
 
-{{%attachments title="List with default credentials" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="List with default credentials" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ## Installation
 

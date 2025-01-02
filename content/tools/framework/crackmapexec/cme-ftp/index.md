@@ -5,11 +5,11 @@ description : "Own stuff using FTP."
 date : 2022-10-11T09:53:15+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## CrackMapExec - FTP
+---
 
 ## Installation
 

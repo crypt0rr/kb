@@ -5,15 +5,15 @@ description : "Pulse Secure Version Scanner."
 date : 2021-11-22T09:40:28+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1390
 # tags : ['']
 ---
 
-## Pulse Secure Version Scanner
+---
 
 ## Installation
 
-{{%attachments fa_icon_class="fab fa-python" pattern=".*(py)"%}}
+{{%resources fa_icon_class="fab fa-python" pattern=".*(py)"/%}}
 
 ## Usage
 

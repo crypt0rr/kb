@@ -5,11 +5,11 @@ description : "Is a free command line tool which checks a server's service on an
 date : 2020-03-13T14:09:06+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1840
 tags : ['Other', 'SSL/TLS', 'Certificates']
 ---
 
-## Testssl.sh
+---
 
 Is a free command line tool which checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as recent cryptographic flaws and more.
 

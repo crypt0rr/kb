@@ -5,11 +5,11 @@ description : "Control the system time and date."
 date : 2020-04-30T15:09:58+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 920
 # tags : ['']
 ---
 
-## Timedatectl
+---
 
 ## Usage
 

@@ -5,11 +5,11 @@ description : "Own stuff using RDP."
 date : 2023-10-05T12:27:02+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Framework', 'RDP']
 ---
 
-## NetExec - RDP
+---
 
 ## Installation
 

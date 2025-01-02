@@ -5,11 +5,11 @@ description : "Open source implementation of the SHA-1, SHA-224, SHA-256, SHA-38
 date : 2022-09-19T13:08:09+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## sha2
+---
 
 Open source implementation of the SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512 secure has algorithms.
 

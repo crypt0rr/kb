@@ -5,11 +5,11 @@ description : "Checksec tool in Python, Rich output, based on LIEF. A simple too
 date : 2020-10-07T19:34:42+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 330
 # tags : ['']
 ---
 
-## Checksec
+---
 
 A simple tool to verify the security properties of your binaries.
 

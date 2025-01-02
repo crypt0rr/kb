@@ -9,7 +9,7 @@ weight : 0
 # tags : ['']
 ---
 
-## {{ replace .Name "-" " " | title }}
+---
 
 ## Installation
 

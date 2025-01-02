@@ -5,11 +5,11 @@ description : "Control fans on Apple computers."
 date : 2021-12-19T19:22:15+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 260
 # tags : ['']
 ---
 
-## Macs Fan Control
+---
 
 - Real-time monitoring of fan speeds and temperatures
 - Solve overheating problems like those found on a MacBook Pro

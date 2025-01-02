@@ -5,11 +5,11 @@ description : "Network-wide ads & trackers blocking DNS server."
 date : 2020-03-12T15:50:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 tags : ['Framework', 'DNS']
 ---
 
-## AdGuardHome
+---
 
 Network-wide ads & trackers blocking DNS server.
 
@@ -32,7 +32,7 @@ chmod +x AdGuardHome
 
 ### AdGuard ErrorPage
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ```plain
 http://standard-block.dns.adguard.com/

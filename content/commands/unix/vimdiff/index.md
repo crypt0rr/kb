@@ -5,11 +5,11 @@ description : "Edit between two and eight versions of a file with Vim and show d
 date : 2022-09-25T15:53:41+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 970
 # tags : ['']
 ---
 
-## vimdiff
+---
 
 Vimdiff starts Vim on two up to eight files.  Each file gets its own window.  The differences between the files are highlighted.  This is a nice way to inspect changes and to move changes from one version to another version of the same file.
 

@@ -5,11 +5,11 @@ description : "Just another Powerview alternative."
 date : 2023-04-24T14:43:59+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1370
 tags : ['Other', 'Active Directory', 'LDAP']
 ---
 
-## PowerView.py
+---
 
 ### What is PowerView.py?
 

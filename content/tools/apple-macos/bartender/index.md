@@ -5,11 +5,11 @@ description : "Take control of your menu bar."
 date : 2021-12-15T17:26:48+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## Bartender
+---
 
 Bartender is an award-winning app for macOS that superpowers your menu bar, giving you total control over your menu bar items, what's displayed, and when, with menu bar items only showing when you need them. Bartender improves your workflow with quick reveal, search, custom hotkeys and triggers, and lots more.
 

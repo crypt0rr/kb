@@ -5,11 +5,11 @@ description: "Is a SSH, FTP, Telnet, PostgreSQL, RDP, VNC brute forcing tool wit
 date: 2020-03-10T15:32:40+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 210
 tags: ["Other", "Brute Force"]
 ---
 
-## Brutedum
+---
 
 Is a SSH, FTP, Telnet, PostgreSQL, RDP, VNC brute forcing tool with Hydra, Medusa and Ncrack.
 

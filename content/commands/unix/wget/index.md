@@ -5,17 +5,17 @@ description : "A non-interactive network retriever."
 date : 2020-09-22T14:37:32+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1000
 tags : ['Unix', 'HTTP', 'FTP']
 ---
 
-## wget
+---
 
 A non-interactive network retriever
 
 ### Binary for Windows
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{% resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 - SHA256 'wget.exe' - `3d28e43da1d24dc517b4d570f7a8851fa2766caaad330001795b51191f2cc2f8`
 

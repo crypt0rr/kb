@@ -5,11 +5,11 @@ description : "Interesting headers and files in relation to webservers."
 date : 2021-12-10T14:08:20+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## Interesting Headers
+---
 
 ### Host header issues / WAF bypass
 
@@ -111,7 +111,7 @@ trace.axd (IIS .NET ASPNET)
 
 ### Umbraco
 
-{{%attachments title="Directory list" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="Directory list" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ```plain
 /Umbraco
@@ -162,7 +162,7 @@ X-Forwarded-For: 127.0.0.1
 
 ### Oracle APEX
 
-{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"%}}
+{{%resources fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 
 ```plain
 python3 sqlmap.py -u "https://<url>/apex/wwv_flow.show?p_flow_id=121&p_flow_step_id=1&p_instance=0&p_arg_name=P1_ITEM&p_arg_value=ABC" --batch --dbms Oracle -p p_arg_value --flush-session

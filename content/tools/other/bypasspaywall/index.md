@@ -5,11 +5,11 @@ description : "Add-on allows you to read articles from (supported) sites that im
 date : 2022-04-10T17:23:29+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 230
 # tags : ['']
 ---
 
-## Bypass Paywalls Clean for Firefox
+---
 
 Add-on allows you to read articles from (supported) sites that implement a paywall. You can also add domains as custom site and try to bypass the paywall. Weekly updates are released for fixes and new sites.
 

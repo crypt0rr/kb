@@ -5,11 +5,11 @@ description : "A power consumption and power management diagnosis tool."
 date : 2021-07-24T15:26:04+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1360
 # tags : ['']
 ---
 
-## Powertop
+---
 
 Apower consumption and power management diagnosis tool.
 

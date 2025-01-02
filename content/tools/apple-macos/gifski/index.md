@@ -5,11 +5,11 @@ description : "Convert videos to high-quality GIFs."
 date : 2022-01-14T10:49:49+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 180
 # tags : ['']
 ---
 
-## Gifski
+---
 
 It converts videos to animated GIFs that use thousands of colors per frame. This is made possible by some fancy features for efficient cross-frame palettes and temporal dithering.
 
@@ -45,7 +45,7 @@ Download app from [Apple AppStore](https://apps.apple.com/us/app/gifski/id135163
 ![example](images/example3.jpeg)
 ![example](images/example4.jpeg)
 
-{{%attachments title="Test file" fa_icon_class="far fa-file-video" pattern=".*(mp4)"%}}
+{{%resources title="Test file" fa_icon_class="far fa-file-video" pattern=".*(mp4)"/%}}
 
 ## URL List
 

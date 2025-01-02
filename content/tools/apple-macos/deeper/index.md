@@ -5,11 +5,11 @@ description : "Deeper is a personalization utility for macOS that you can use to
 date : 2021-12-24T16:07:50+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 # tags : ['']
 ---
 
-## Deeper
+---
 
 Deeper is a personalization utility for macOS that you can use to enable and disable the hidden functions of the Finder, Dock, Safari, iTunes/Music, login window, and many Apple applications, and more.
 

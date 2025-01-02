@@ -5,11 +5,11 @@ description : "DNS lookup and validation utility, DNSSEC validation."
 date : 2020-03-13T15:30:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 180
 # tags : ['']
 ---
 
-## Delv
+---
 
 ## Usage
 

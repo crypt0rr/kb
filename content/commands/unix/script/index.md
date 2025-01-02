@@ -5,11 +5,13 @@ description : "Make a typescript of a terminal session."
 date : 2020-11-27T16:33:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 760
 # tags : ['']
 ---
 
-## Script - Make a typescript of a terminal session
+---
+
+Make a typescript of a terminal session.
 
 ## Usage
 

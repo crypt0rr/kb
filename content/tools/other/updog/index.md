@@ -5,11 +5,11 @@ description : "Updog is a replacement for Python's SimpleHTTPServer. It allows u
 date : 2021-02-04T15:12:20+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1980
 # tags : ['']
 ---
 
-## Updog
+---
 
 Is a replacement for Python's SimpleHTTPServer. It allows uploading and downloading via HTTP/S, can set ad hoc SSL certificates and use HTTP basic auth.
 

@@ -4,11 +4,11 @@ description : "The snap command lets you install, configure, refresh and remove 
 date : 2020-03-13T17:53:39+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1660
 # tags : ['']
 ---
 
-## Snapcraft.io / snap
+---
 
 The snap command lets you install, configure, refresh and remove snaps.  Snaps are packages that work across many different Linux distributions, enabling secure delivery and operation of the latest apps and utilities.
 

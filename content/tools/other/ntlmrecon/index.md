@@ -5,11 +5,11 @@ description : "A fast and flexible NTLM reconnaissance tool without external dep
 date : 2021-06-03T11:47:01+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1240
 tags : ['Other', 'NTLM']
 ---
 
-## NTLMRecon
+---
 
 A fast and flexible NTLM reconnaissance tool without external dependencies. Useful to find out information about NTLM endpoints when working with a large set of potential IP addresses and domains.
 

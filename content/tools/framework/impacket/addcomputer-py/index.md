@@ -5,11 +5,11 @@ description : "Adds a computer account to domain."
 date : 2023-06-19T08:57:18+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## addcomputer.py
+---
 
 Adds a computer account to domain.
 

@@ -5,11 +5,11 @@ description : "The Unarchiver is a small and easy to use program that can unarch
 date : 2021-12-24T16:27:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 390
 # tags : ['']
 ---
 
-## The Unarchiver
+---
 
 The Unarchiver is a small and easy to use program that can unarchive many different kinds of archive files. It will open common formats such as Zip, RAR (including v5), 7-zip, Tar, Gzip and Bzip2. It will also open many older formats, such as StuffIt, DiskDoubler, LZH, ARJ and ARC. It will even open other kinds of files, like ISO and BIN disc images, some Windows .EXE installers. The list is actually much longer - see the program homepage for the full list.
 

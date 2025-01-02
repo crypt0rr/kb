@@ -5,11 +5,11 @@ description : "Official Command Line Interface for the IPinfo API (IP geolocatio
 date : 2022-07-16T19:21:58+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 170
 # tags : ['']
 ---
 
-## ipinfo-cli
+---
 
 This is the official CLI for the [IPinfo.io](https://ipinfo.io/) IP address API, allowing you to:
 

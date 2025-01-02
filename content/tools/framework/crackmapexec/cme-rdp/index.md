@@ -5,11 +5,11 @@ description : "Own stuff using RDP."
 date : 2022-10-16T20:04:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## CrackMapExec - RDP
+---
 
 ## Installation
 

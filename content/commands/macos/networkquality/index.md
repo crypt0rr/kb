@@ -5,11 +5,11 @@ description : "Network quality testing tool."
 date : 2022-01-13T10:32:57+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 # tags : ['']
 ---
 
-## networkQuality
+---
 
 networkQuality allows for measuring the different aspects of Network Quality, including:
 

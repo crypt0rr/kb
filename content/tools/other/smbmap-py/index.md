@@ -5,11 +5,11 @@ description : "Samba Share Enumerator."
 date : 2021-08-03T09:48:12+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1650
 tags : ['Other', 'SMB']
 ---
 
-## SMBmap.py
+---
 
 Samba Share Enumerator.
 

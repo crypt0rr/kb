@@ -5,11 +5,11 @@ description : "Flexible I/O Tester."
 date : 2023-06-22T14:25:34+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 660
 tags : ['Other', 'Harddisk']
 ---
 
-## Fio
+---
 
 Fio (Flexible I/O Tester) was originally written to save me the hassle of writing special test case programs when I wanted to test a specific workload, either for performance reasons or to find/reproduce a bug. The process of writing such a test app can be tiresome, especially if you have to do it often. Hence I needed a tool that would be able to simulate a given I/O workload without resorting to writing a tailored test case again and again.
 

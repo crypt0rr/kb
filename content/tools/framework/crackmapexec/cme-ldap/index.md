@@ -5,11 +5,11 @@ description : "Own stuff using LDAP"
 date : 2022-02-14T15:22:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## CrackMapExec - LDAP
+---
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "OSINT automation for hackers."
 date : 2023-06-18T15:43:26+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## BBOT - Bighuge BLS OSINT Tool
+---
 
 OSINT automation for hackers.
 
@@ -399,7 +399,7 @@ $ bbot -t offsec.nl -f subdomain-enum -m naabu gowitness -n my_scan -o .
 
 Output files from the above run are available below.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}}
 
 ## URL list
 

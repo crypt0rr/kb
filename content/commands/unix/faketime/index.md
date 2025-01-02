@@ -5,11 +5,11 @@ description : "Manipulate the system time for a given command."
 date : 2022-01-30T15:40:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 240
 # tags : ['']
 ---
 
-## Faketime
+---
 
 The Fake Time Preload Library (FTPL, a.k.a. libfaketime) intercepts various system calls which programs use to retrieve the current date and time. It can then report faked dates and times (as specified by you, the user) to these programs. This means you can modify the system time a program sees without having to change the time system-wide. FTPL allows you to specify both absolute dates (e.g., 2004-01-01) and relative dates (e.g., 10 days ago). . This package contains a "faketime" binary that makes it easy to use the LD_PRELOAD library.
 

@@ -5,11 +5,11 @@ description : "Messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts an
 date : 2020-03-13T17:33:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 700
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## Franz
+---
 
 Messaging app for WhatsApp, Slack, Telegram, HipChat, Hangouts and many many more.
 

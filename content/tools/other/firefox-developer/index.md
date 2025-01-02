@@ -5,11 +5,11 @@ description : "Browser made for developers."
 date : 2021-08-04T13:55:01+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 670
 # tags : ['']
 ---
 
-## Firefox Developer Edition
+---
 
 ## Installation
 

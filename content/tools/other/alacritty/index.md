@@ -5,11 +5,11 @@ description : "Is the fastest terminal emulator in existence. Using the GPU for 
 date : 2020-03-17T09:09:27+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## Alacritty
+---
 
 Is the fastest terminal emulator in existence. Using the GPU for rendering enables optimizations that simply aren't possible without it.
 

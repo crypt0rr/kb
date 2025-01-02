@@ -5,11 +5,11 @@ description : "GitDump dumps the source code from .git when the directory traver
 date : 2021-07-10T15:06:22+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 740
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## GitDump
+---
 
 Dumps the source code from .git when the directory traversal is disabled.
 

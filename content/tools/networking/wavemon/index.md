@@ -5,11 +5,11 @@ description : "A wireless network monitor."
 date : 2021-05-24T11:12:45+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 490
 # tags : ['']
 ---
 
-## Wavemon
+---
 
 Is a ncurses-based monitoring application for wireless network devices. It plots levels in real-time as well as showing wireless and network related device information.
 

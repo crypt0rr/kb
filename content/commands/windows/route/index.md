@@ -5,11 +5,11 @@ description : "Manipulates network routing tables."
 date : 2022-11-13T16:05:57+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 tags : ['Windows', 'Networking']
 ---
 
-## Route
+---
 
 Displays and modifies the entries in the local IP routing table. If used without parameters, route displays help at the command prompt.
 

@@ -5,11 +5,11 @@ description : "DNS Measurement, Troubleshooting and Security Auditing Toolset."
 date : 2021-10-20T11:02:58+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## DNSdiag
+---
 
 DNS Measurement, Troubleshooting and Security Auditing Toolset.
 

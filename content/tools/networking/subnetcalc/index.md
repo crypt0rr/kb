@@ -5,11 +5,11 @@ description : "Subnet calculator written in Python. It takes IP address and subn
 date : 2022-08-01T14:32:57+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 410
 tags : ['Networking', 'CIDR', 'Netmask']
 ---
 
-## Subnet Calculator
+---
 
 Subnet calculator written in Python. It takes IP address and subnet mask as an input and returns for a given subnet network and broadcast address, first and last IP host, wildcard mask and number of usable hosts.
 

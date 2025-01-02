@@ -5,11 +5,11 @@ description : "Takes a bitmap that is the size or width of Task Managers's CPU c
 date : 2021-05-27T09:52:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 320
 # tags : ['']
 ---
 
-## TaskManagerBitmap
+---
 
 Takes a bitmap that is the size or width of Task Managers's CPU core view (ideally with single cells showing instantaneous percent CPU) and scrolls the bitmap using threads that consume CPU based on the pixel's greyscale (black is 100% CPU)
 

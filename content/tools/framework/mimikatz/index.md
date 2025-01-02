@@ -5,11 +5,11 @@ description : "Is a tool I've made to learn C and make somes experiments with Wi
 date : 2020-03-13T22:19:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 220
 tags : ['Framework', 'LSASS']
 ---
 
-## Mimikatz
+---
 
 Is a tool I've made to learn C and make somes experiments with Windows security.
 

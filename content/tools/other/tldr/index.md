@@ -5,11 +5,11 @@ description : "A collection of simplified and community-driven man pages."
 date : 2022-10-11T10:58:14+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1900
 # tags : ['']
 ---
 
-## tldr
+---
 
 The tldr-pages project is a collection of community-maintained help pages for command-line tools, that aims to be a simpler, more approachable complement to traditional man pages.
 

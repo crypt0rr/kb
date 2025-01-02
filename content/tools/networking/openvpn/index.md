@@ -5,11 +5,11 @@ description : "Provides flexible VPN solutions for businesses to secure all data
 date : 2020-03-12T15:51:00+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 270
 # tags : [""]
 ---
 
-## OpenVPN
+---
 
 Provides flexible VPN solutions for businesses to secure all data communications and extend private network services while maintaining security.
 

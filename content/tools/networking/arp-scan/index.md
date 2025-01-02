@@ -5,11 +5,11 @@ description : "Send ARP requests to target hosts and display responses."
 date : 2023-01-22T16:56:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## ARP-scan
+---
 
 Target hosts must be specified on the command line unless the --file option is given, in which case the targets are read from the specified file instead, or the --localnet option is used, in which case the targets are generated from the network interface IP address and netmask.
 

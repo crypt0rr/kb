@@ -5,11 +5,11 @@ description : "PSEXEC like functionality example using RemComSvc."
 date : 2022-02-14T12:22:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## psexec.py
+---
 
 PSEXEC like functionality example using RemComSvc.
 

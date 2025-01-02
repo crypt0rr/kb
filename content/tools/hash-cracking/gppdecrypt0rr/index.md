@@ -5,11 +5,11 @@ description : "Simple decryption script for Group Policy Preferences (GPP) passw
 date : 2021-10-21T09:43:55+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## Gppdecrypt0rr
+---
 
 Simple decryption script for Group Policy Preferences (GPP) passwords. (cpassword)
 

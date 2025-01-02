@@ -5,11 +5,11 @@ description : "A CTF leet flag generator."
 date : 2022-06-04T15:48:06+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 380
 # tags : ['']
 ---
 
-## CTF Flag Generator
+---
 
 A CTF leet flag generator.
 

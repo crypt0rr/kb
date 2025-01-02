@@ -5,11 +5,13 @@ description : "Is a tool used mainly to find metadata and hidden information in 
 date : 2020-03-13T22:21:20+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 # tags : ['']
 ---
 
-## FOCA (Fingerprinting Organizations with Collected Archives)
+---
+
+Fingerprinting Organizations with Collected Archives.
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "An interactive cheatsheet tool for the command-line and applicati
 date : 2021-02-11T13:56:16+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 250
 # tags : ['']
 ---
 
-## Navi
+---
 
 An interactive cheatsheet tool for the command-line and application launchers.
 

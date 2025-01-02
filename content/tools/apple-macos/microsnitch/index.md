@@ -5,11 +5,11 @@ description : "Micro Snitch is an ultra-light menu bar application that operates
 date : 2020-03-16T09:22:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 280
 # tags : ['']
 ---
 
-## Micro Snitch
+---
 
 Micro Snitch is an ultra-light menu bar application that operates inconspicuously in the background.
 

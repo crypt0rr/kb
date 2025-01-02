@@ -5,11 +5,11 @@ description : "Unofficial Sonos Controller for Linux."
 date : 2020-06-08T15:53:00+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1970
 # tags : ['']
 ---
 
-## Unofficial Sonos Controller for Linux
+---
 
 ## Installation
 

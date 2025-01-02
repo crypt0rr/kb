@@ -5,11 +5,11 @@ description : "Active Directory Privilege Escalation Framework."
 date : 2022-09-16T11:39:56+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## bloodyAD
+---
 
 bloodyAD.py is an Active Directory privilege escalation swiss army knife.
 

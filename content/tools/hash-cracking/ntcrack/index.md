@@ -5,11 +5,11 @@ description : "Left To My Own Devices - NT cracker."
 date : 2022-06-02T11:42:44+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
 ---
 
-## ntcrack
+---
 
 Left To My Own Devices - NT cracker
 

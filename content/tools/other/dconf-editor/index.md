@@ -5,11 +5,11 @@ description : "Graphical editor for gsettings and dconf."
 date : 2020-08-22T14:26:32+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 450
 tags : ['Other', 'Gnome Extensions']
 ---
 
-## Dconf-editor
+---
 
 Graphical interface for editing other applications settings.
 

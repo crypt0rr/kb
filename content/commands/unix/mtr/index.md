@@ -5,11 +5,13 @@ description : "A network diagnostic tool, faster and easier then traceroute."
 date : 2020-09-10T16:57:39+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 610
 # tags : ['']
 ---
 
-## Mtr - a network diagnostic tool - TraceRoute alternative
+---
+
+A network diagnostic tool - TraceRoute alternative.
 
 ## Usage
 

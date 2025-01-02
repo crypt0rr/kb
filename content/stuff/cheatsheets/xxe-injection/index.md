@@ -5,8 +5,10 @@ description : "XXE injection payloads."
 date : 2022-03-11T18:01:46+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 # tags : ['']
+---
+
 ---
 
 ## XML external entity (XXE) injection

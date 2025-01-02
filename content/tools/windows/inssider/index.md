@@ -5,11 +5,11 @@ description : "Defeat Slow WiFi."
 date : 2021-05-21T13:47:08+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 # tags : ['']
 ---
 
-## inSSIDer
+---
 
 Defeat Slow WiFi.
 
@@ -17,7 +17,7 @@ Defeat Slow WiFi.
 
 Non-subscription based version.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## Examples
 

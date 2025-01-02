@@ -5,11 +5,11 @@ description : "Create bootable USB drives the easy way."
 date : 2020-03-13T13:00:45+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 290
 # tags : [""]
 ---
 
-## Rufus
+---
 
 Create bootable USB drives the easy way.
 

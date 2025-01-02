@@ -5,11 +5,11 @@ description : "Dumping revelant information on compromised targets without AV de
 date : 2022-02-08T15:34:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## DonPAPI
+---
 
 Dumping revelant information on compromised targets without AV detection
 

@@ -5,11 +5,11 @@ description : "RDP credential sniffer - Man in the Middle RDP"
 date : 2020-12-01T08:18:42+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 390
 # tags : ['']
 ---
 
-## Seth
+---
 
 RDP credential sniffer - Man in the Middle RDP
 

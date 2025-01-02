@@ -5,11 +5,11 @@ description : "Search, explore and download Lossless and Hi-Res music from Qobuz
 date : 2021-07-17T21:24:15+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1420
 # tags : ['']
 ---
 
-## qobuz-dl
+---
 
 Search, explore and download Lossless and Hi-Res music from Qobuz - The ultimate Qobuz music downloader.
 

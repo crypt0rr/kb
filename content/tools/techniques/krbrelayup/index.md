@@ -5,17 +5,17 @@ description : "A universal no-fix local privilege escalation in windows domain e
 date : 2022-04-26T13:05:29+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## KrbRelayUp
+---
 
 ## Installation
 
 Build the binary from [source](https://github.com/Dec0ne/KrbRelayUp) or use the pre-compiled binary below.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ## Usage
 

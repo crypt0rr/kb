@@ -5,11 +5,11 @@ description : "MASSCAN is a fast port scanner. The primary input parameters are 
 date : 2022-10-08T12:40:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 # tags : ['']
 ---
 
-## MASSCAN
+---
 
 MASSCAN is a fast port scanner. The primary input parameters are the IP addresses/ranges you want to scan, and the port numbers. The program auto-detects network interface/adapter settings. If this fails, you'll have to set these manually. Parameters can be set either via the command-line or config-file. The names are the same for both. All single-dash parameters have a spelled out double-dash equivalent, so `-p80` is the same as `--ports 80` (or `ports = 80` in config file). To generate a config-file from the current settings, use the `--echo` option. This stops the program from actually running, and just echoes the current configuration instead. This is a useful way to generate your first config file, or see a list of parameters you didn't know about.
 

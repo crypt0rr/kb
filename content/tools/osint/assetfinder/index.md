@@ -5,11 +5,11 @@ description : "Find domains and subdomains potentially related to a given domain
 date : 2022-11-06T15:23:40+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['OSINT', 'DNS', 'Subdomain']
 ---
 
-## assetfinder
+---
 
 Find domains and subdomains potentially related to a given domain.
 

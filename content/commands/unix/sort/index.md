@@ -5,11 +5,11 @@ description : "Write sorted concatenation of all FILE(s) to standard output."
 date : 2020-03-14T19:33:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 810
 # tags : ['']
 ---
 
-## Sort
+---
 
 ## Usage
 

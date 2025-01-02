@@ -5,11 +5,11 @@ description : "Code editing. Redefined."
 date : 2020-03-11T15:39:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2030
 tags : ['Other', 'Coding']
 ---
 
-## Visual Studio Code
+---
 
 Code editing. Redefined.
 

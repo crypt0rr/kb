@@ -5,11 +5,11 @@ description : "A C# project that performs a number of security oriented host-sur
 date : 2021-04-15T09:09:38+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 300
 tags : ['Other', 'Active Directory']
 ---
 
-## Seatbelt
+---
 
 A C# project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives.
 
@@ -19,7 +19,7 @@ Pre-build binary (15-04-2021) available below, or [compile](https://github.com/G
 
 Obfuscated version is tested against Windows Defender and Cylance.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## Usage
 

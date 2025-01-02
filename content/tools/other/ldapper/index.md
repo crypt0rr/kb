@@ -5,11 +5,11 @@ description : "A GoLang tool to enumerate and abuse LDAP. Made simple."
 date : 2022-09-25T12:59:17+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1040
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## ldapper
+---
 
 A GoLang tool to enumerate and abuse LDAP. Made simple.
 

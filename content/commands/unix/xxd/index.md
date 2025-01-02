@@ -5,11 +5,13 @@ description : "Make a hexdump or do the reverse."
 date : 2020-04-03T17:17:25+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1020
 # tags : ['']
 ---
 
-## Xxd - make a hexdump or do the reverse
+---
+
+Make a hexdump or do the reverse.
 
 ## Usage
 

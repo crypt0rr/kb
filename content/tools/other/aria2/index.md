@@ -5,11 +5,11 @@ description : "Aria2 is a command line download client with resuming and segment
 date : 2021-07-02T09:34:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 tags : ['Other', 'macOS', 'Linux', 'Torrent', 'P2P', 'FTP']
 ---
 
-## Aria2
+---
 
 Is a command line download client with resuming and segmented downloading. Supported protocols are HTTP/HTTPS/SFTP/FTP/BitTorrent and it also supports Metalink.
 

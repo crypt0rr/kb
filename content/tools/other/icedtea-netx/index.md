@@ -5,11 +5,11 @@ description : "NetX provides a drop-in replacement for javaws (Java Web Start). 
 date : 2021-06-02T15:15:09+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 880
 # tags : ['']
 ---
 
-## Icedtea-NetX
+---
 
 NetX provides a drop-in replacement for javaws (Java Web Start). Since upstream NetX is dead, the IcedTea Web project is hosting a fork of the original code. However, as icedtea-web has evolved to complex set of tools, extensions and tests, it has now only a few lines of code shared with the original implementation.
 

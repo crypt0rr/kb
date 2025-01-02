@@ -5,11 +5,11 @@ description : "Lets you background programs and run them when closing terminal."
 date : 2020-03-11T15:15:50+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1550
 # tags : [""]
 ---
 
-## Screen
+---
 
 Lets you background programs and run them when closing terminal.
 

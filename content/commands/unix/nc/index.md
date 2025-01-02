@@ -5,17 +5,17 @@ description: "Netcat, arbitrary TCP and UDP connections and listens."
 date: 2020-04-09T13:47:11+02:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 620
 # tags : ['']
 ---
 
-## Netcat
+---
 
 Netcat, arbitrary TCP and UDP connections and listens.
 
 ### Binary for Windows
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{% resources fa_icon_class="far fa-file" pattern=".*(exe)" /%}}
 
 - SHA256 'nc.exe' - `be4211fe5c1a19ff393a2bcfa21dad8d0a687663263a63789552bda446d9421b`
 

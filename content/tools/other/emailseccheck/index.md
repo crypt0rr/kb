@@ -5,11 +5,11 @@ description : "EmailSecCheck is a lightweight Python utility used to check for c
 date : 2022-02-08T16:38:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 560
 # tags : ['']
 ---
 
-## EmailSecCheck
+---
 
 EmailSecCheck is a lightweight Python utility that checks whether email security DNS records (DMARC and SPF) are configured properly for a domain. EmailSecCheck is powered by [checkdmarc](https://github.com/domainaware/checkdmarc), and leverages it to identify common misconfigurations in DNS records that may enable for email spoofing.
 

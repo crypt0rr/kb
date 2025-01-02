@@ -5,11 +5,11 @@ description: "A commandline package manager and provides commands for searching 
 date : 2020-03-10T14:13:26+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : [""]
 ---
 
-## Apt
+---
 
 ## Usage
 

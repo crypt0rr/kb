@@ -5,11 +5,11 @@ description: "Change file mode bits."
 date: 2020-03-10T16:18:52+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 110
 # tags : [""]
 ---
 
-## Chmod
+---
 
 ## Usage
 

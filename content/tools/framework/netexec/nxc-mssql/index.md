@@ -5,11 +5,11 @@ description : "Owning stuff using MSSQL."
 date : 2023-10-05T12:26:41+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Framework', 'MSSQL']
 ---
 
-## NetExec - MSSQL
+---
 
 ## Installation
 

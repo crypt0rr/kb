@@ -5,11 +5,11 @@ description : "ADRecon is a tool which gathers information about the Active Dire
 date : 2023-10-29T17:20:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Framework', 'Active Directory']
 ---
 
-## ADRecon
+---
 
 ADRecon is a tool which extracts and combines various artefacts (as highlighted below) out of an AD environment. The information can be presented in a specially formatted Microsoft Excel report that includes summary views with metrics to facilitate analysis and provide a holistic picture of the current state of the target AD environment.
 
@@ -196,7 +196,7 @@ on a host with Microsoft Excel installed.
 
 #### Results from a Run Without Excel
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029162358.(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029162358.(zip)"/%}}
 
 ### With Microsoft Excel Installed
 
@@ -240,7 +240,7 @@ WARNING: [*] runas /user:<Domain FQDN>\<Username> /netonly powershell.exe
 
 #### Results from a Run With Excel
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029164038.(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern="ADRecon-Report-20231029164038.(zip)"/%}}
 
 ## URL list
 

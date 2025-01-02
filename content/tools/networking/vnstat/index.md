@@ -5,11 +5,11 @@ description : "A console-based network traffic monitor."
 date : 2020-09-06T14:30:13+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 480
 # tags : ['']
 ---
 
-## Vnstat
+---
 
 A console-based network traffic monitor.
 

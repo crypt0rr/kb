@@ -5,11 +5,13 @@ description : "Network Time Protocol daemon and utility programs."
 date : 2020-05-04T12:05:14+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 700
 # tags : ['']
 ---
 
-## NTP - Network Time Protocol
+---
+
+Network Time Protocol.
 
 ## Examples
 

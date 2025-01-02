@@ -5,11 +5,11 @@ description : "Disable and Customize GNOME shell UI Elements."
 date : 2021-07-25T12:25:39+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 960
 tags : ['Other', 'Gnome Extensions']
 ---
 
-## Just Perfection
+---
 
 Disable and Customize GNOME shell UI Elements.
 

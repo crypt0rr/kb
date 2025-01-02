@@ -5,11 +5,11 @@ description : "theHarvester is used to gather open source intelligence (OSINT) o
 date : 2020-03-14T19:48:31+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 350
 tags : ['OSINT', 'DNS']
 ---
 
-## theHarvester
+---
 
 theHarvester is used to gather open source intelligence (OSINT) on a company or domain.
 

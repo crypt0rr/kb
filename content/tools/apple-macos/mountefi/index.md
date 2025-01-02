@@ -5,11 +5,11 @@ description : "An even more robust edition of my previous MountEFI scripts."
 date : 2022-01-25T16:40:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 310
 # tags : ['']
 ---
 
-## MountEFI
+---
 
 An *even* more robust edition of my previous MountEFI scripts.
 

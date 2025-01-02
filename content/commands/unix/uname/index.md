@@ -5,11 +5,13 @@ description : "Print certain system information."
 date : 2021-03-17T11:28:42+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 950
 # tags : ['']
 ---
 
-## Uname - Print certain system information
+---
+
+Print certain system information.
 
 ## Usage
 

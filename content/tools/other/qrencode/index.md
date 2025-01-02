@@ -5,11 +5,11 @@ description : "Encode input data in a QR Code and save as a PNG or EPS image."
 date : 2020-03-13T16:45:38+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1430
 # tags : ['']
 ---
 
-## QRencode
+---
 
 Encode input data in a QR Code and save as a PNG or EPS image.
 

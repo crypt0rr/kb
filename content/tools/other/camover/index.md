@@ -5,11 +5,11 @@ description : "CamOver is a camera exploitation tool that allows to disclosure n
 date : 2021-07-06T11:40:36+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 240
 # tags : ['']
 ---
 
-## CamOver
+---
 
 Is a camera exploitation tool that allows to disclosure network camera admin password.
 

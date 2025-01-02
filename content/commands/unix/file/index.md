@@ -5,11 +5,13 @@ description : "Determine type of FILEs."
 date : 2020-08-22T14:42:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 260
 # tags : ['']
 ---
 
-## File - determine file type
+---
+
+Determine file type.
 
 ## Usage
 

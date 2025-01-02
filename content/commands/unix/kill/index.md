@@ -5,11 +5,11 @@ description : "Send a signal to a process."
 date : 2020-03-13T21:57:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 450
 # tags : ['']
 ---
 
-## Kill
+---
 
 ## Usage
 

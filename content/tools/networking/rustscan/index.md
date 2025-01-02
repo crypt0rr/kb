@@ -5,11 +5,11 @@ description : "Fast Port Scanner built in Rust. RustScans only job is to reduce 
 date : 2020-08-31T14:17:57+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 330
 # tags : ['']
 ---
 
-## RustScan
+---
 
 Find all open ports fast with RustScan, automatically pipe them into Nmap.
 

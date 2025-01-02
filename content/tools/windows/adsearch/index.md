@@ -5,17 +5,17 @@ description : "A tool written for cobalt-strike's execute-assembly command that 
 date : 2021-10-18T16:12:44+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## ADSearch
+---
 
 A tool written for cobalt-strike's execute-assembly command that allows for more efficent querying of AD
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
 ## Usage
 

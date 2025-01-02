@@ -5,11 +5,11 @@ description : "Windows manager, shortcuts assignment to keys."
 date : 2020-04-06T13:05:00+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 270
 # tags : ['']
 ---
 
-## Magnet
+---
 
 Windows manager, shortcuts assignment to keys.
 

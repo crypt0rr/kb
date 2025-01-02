@@ -5,11 +5,11 @@ description: "The world's fastest framework for building websites."
 date: 2020-03-10T15:00:41+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 170
 # tags : [""]
 ---
 
-## Hugo
+---
 
 The world's fastest framework for building websites.
 
@@ -38,13 +38,13 @@ Hugo supports a list of [shortcodes](https://gohugo.io/content-management/shortc
 
 ```plain
 The spaces after {{ should not be used in working situation
-{{ < youtube 2xkNJL4gJ9E >}}
+{{ < youtube 2xkNJL4gJ9E %}}
 ```
 
 ### Github Gist
 
 ```plain
-{{ < gist spf13 7896402 >}}
+{{ < gist spf13 7896402 %}}
 ```
 
 ### Front Matter
@@ -158,16 +158,16 @@ Use "hugo [command] --help" for more information about a command.
 
 ## Examples
 
-### File attachments
+### File resources
 
 ```plain
-{ {%attachments fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"%}}
+{ {%resources fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 ```
 
 Multiple filetypes
 
 ```plain
-{ {%attachments fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"%}}
+{ {%resources fa_icon_class="far fa-file-code" pattern=".*(exe|ps1|py)"/%}}
 ```
 
 ### Enable target blank for links

@@ -5,11 +5,11 @@ description : "List of available Top Level Domains (TLDs)."
 date : 2021-07-14T15:23:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## List of TLDs
+---
 
 ```plain
 # Version 2022010300, Last Updated Mon Jan  3 07:07:01 2022 UTC

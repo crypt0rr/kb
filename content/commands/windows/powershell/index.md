@@ -5,13 +5,13 @@ description : "Windows Powershell handy commands."
 date : 2020-04-16T13:14:28+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## Powershell
+---
 
-{{%attachments title="PowerShell and ISE executable" fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
+{{%resources title="PowerShell and ISE executable" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
 ### Antimalware Scan Interface (AMSI) bypass generator
 
@@ -25,7 +25,7 @@ This way the [Active Directory PowerShell](https://docs.microsoft.com/en-us/powe
 mkdir C:\temp; iwr https://github.com/crypt0rr/filehosting/raw/master/Microsoft.ActiveDirectory.Management.dll -OutFile C:\temp\1234hoedjevanpapier.dll; Import-Module C:\temp\1234hoedjevanpapier.dll
 ```
 
-{{%attachments title="PowerShell module" fa_icon_class="far fa-file-code" pattern=".*(dll)"%}}
+{{%resources title="PowerShell module" fa_icon_class="far fa-file-code" pattern=".*(dll)"/%}}
 
 PowerShell: `Import-Module C:\ADModule\Microsoft.ActiveDirectory.Management.dll -Verbose`
 

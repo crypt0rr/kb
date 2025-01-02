@@ -5,11 +5,11 @@ description : "A Mac utility that automatically downloads macOS Firmwares / Inst
 date : 2024-10-08T16:56:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 290
 # tags : ['']
 ---
 
-## Mist
+---
 
 A Mac utility that automatically downloads macOS Firmwares / Installers.
 

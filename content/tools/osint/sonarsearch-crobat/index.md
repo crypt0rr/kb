@@ -5,11 +5,11 @@ description : "Crobat is a command line utility designed to allow easy querying 
 date : 2020-09-24T16:31:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 320
 # tags : ['']
 ---
 
-## SonarSearch Crobat
+---
 
 Crobat is a command line utility designed to allow easy querying of the Crobat API for DNS lookups. For example sear sub-domains and reverse lookup.
 

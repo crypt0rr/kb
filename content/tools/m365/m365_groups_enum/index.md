@@ -5,11 +5,11 @@ description : "Enumerate Microsoft 365 Groups in a tenant with their metadata."
 date : 2021-05-03T11:53:07+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## M365_groups_enum
+---
 
 Enumerate Microsoft 365 Groups in a tenant with their metadata.
 

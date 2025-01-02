@@ -5,11 +5,11 @@ description : "NetCraft DNS lookup, includes sub-domains."
 date : 2020-04-14T11:59:28+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 tags : ['OSINT', 'DNS']
 ---
 
-## Netcraft DNS
+---
 
 NetCraft DNS lookup, includes sub-domains.
 

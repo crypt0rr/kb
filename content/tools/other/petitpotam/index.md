@@ -5,11 +5,11 @@ description : "PoC tool to coerce Windows hosts to authenticate to other machine
 date : 2021-07-22T11:32:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1310
 # tags : ['']
 ---
 
-## Petitpotam
+---
 
 PoC tool to coerce Windows hosts to authenticate to other machines via MS-EFSRPC EfsRpcOpenFileRaw function.
 

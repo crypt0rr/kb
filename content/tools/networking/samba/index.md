@@ -5,11 +5,11 @@ description : "Server to provide AD and SMB/CIFS services to clients."
 date : 2023-09-15T20:46:01+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 340
 tags : ['Networking', 'SMB']
 ---
 
-## Samba (SMB)
+---
 
 Server to provide AD and SMB/CIFS services to clients.
 

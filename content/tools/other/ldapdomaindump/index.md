@@ -5,11 +5,11 @@ description : "Active Directory information dumper via LDAP."
 date : 2020-04-21T13:59:19+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1020
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## LDAPDomainDump
+---
 
 Active Directory information dumper via LDAP.
 
@@ -205,7 +205,7 @@ $ python3 ldapdomaindump.py -u 'offsec.nl\administrator' -p 'Welkom1234' -d ';' 
 [+] Domain dump finished
 ```
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(gz)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(gz)"/%}}
 
 ## URL List
 

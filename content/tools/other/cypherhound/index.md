@@ -5,11 +5,11 @@ description : "Python3 terminal application that contains 260+ Neo4j cyphers for
 date : 2023-01-03T12:19:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 410
 tags : ['Other', 'Active Directory', 'AzureAD/EntraID']
 ---
 
-## CypherHound
+---
 
 A `Python3` terminal application that contains 260+ `Neo4j` cyphers for BloodHound data sets.
 

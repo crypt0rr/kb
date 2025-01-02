@@ -5,11 +5,11 @@ description : "A tool to search for targets vulnerable to SQL Injection. Perform
 date : 2020-12-22T12:45:39+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 630
 # tags : ['']
 ---
 
-## Fawkes
+---
 
 Tool to search for targets vulnerable to SQL Injection. Performs the search using Google search engine.
 

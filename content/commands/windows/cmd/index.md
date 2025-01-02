@@ -5,13 +5,15 @@ description : "Microsoft Command Prompt."
 date : 2020-07-09T12:52:37+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## CMD - Command Prompt
+---
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+Command Prompt.
+
+{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 ### Show Domain Admins / Enterprise Admins
 

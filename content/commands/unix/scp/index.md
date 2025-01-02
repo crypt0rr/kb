@@ -5,11 +5,13 @@ description : "Secure copy (remote file copy program)."
 date : 2020-03-17T16:54:05+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 750
 # tags : ['']
 ---
 
-## SCP / Secure copy (remote file copy program)
+---
+
+SCP / Secure copy (remote file copy program).
 
 ## Usage
 

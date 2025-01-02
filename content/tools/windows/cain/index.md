@@ -5,17 +5,17 @@ description : "ARP poisoning / credentials - network."
 date : 2020-03-13T13:02:46+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Windows', 'Networking']
 ---
 
-## Cain
+---
 
 ## Installation
 
 Required [Winpacp.org](https://www.winpcap.org/install/bin/WinPcap_4_1_3.exe)
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 Network adapter > IPv4 properties > Advanced > DNS > Enable 'Use this connection's DNS suffix in DNS registration'
 

@@ -5,11 +5,11 @@ description : "Python script for converting nmap reports into XLS."
 date : 2022-04-11T11:26:01+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1210
 # tags : ['']
 ---
 
-## nmap-converter
+---
 
 Python script for converting nmap reports into XLS.
 
@@ -77,7 +77,7 @@ $ python3 nmap-converter.py kb-offsec.xml -o kb-offsec-nl.xls
 ![Example](images/example2.png)
 ![Example](images/example3.png)
 
-{{%attachments title="Example file" fa_icon_class="fas fa-file-excel" pattern=".*(xls)"%}}
+{{%resources title="Example file" fa_icon_class="fas fa-file-excel" pattern=".*(xls)"/%}}
 
 ## URL List
 

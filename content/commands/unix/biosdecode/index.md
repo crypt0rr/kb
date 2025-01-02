@@ -5,11 +5,11 @@ description : "BIOS information decoder."
 date : 2020-08-22T14:22:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 # tags : ['']
 ---
 
-## Biosdecode
+---
 
 ## Usage
 

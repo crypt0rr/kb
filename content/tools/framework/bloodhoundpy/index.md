@@ -5,11 +5,11 @@ description : "Python based ingestor for BloodHound."
 date : 2022-02-10T13:12:39+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags : ['Framework', 'Active Directory']
 ---
 
-## BloodHound.py
+---
 
 ## Installation
 
@@ -111,7 +111,7 @@ INFO: Done in 00M 24S
 INFO: Compressing output into 20220210132706_bloodhound.zip
 ```
 
-{{%attachments title="Example dataset" fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources title="Example dataset" fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## URL List
 

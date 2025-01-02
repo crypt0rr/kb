@@ -5,11 +5,11 @@ description : "A tool to abuse Exchange Services."
 date : 2020-03-13T22:28:30+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1530
 tags : ['Other', 'O365', 'Passwordspray']
 ---
 
-## Ruler
+---
 
 A tool to abuse Exchange Services.
 

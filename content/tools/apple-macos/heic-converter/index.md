@@ -5,11 +5,11 @@ description : "Convert HEIC images to JPG/PNG."
 date : 2021-12-22T15:24:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 190
 # tags : ['']
 ---
 
-## HEIC Converter
+---
 
 HEIC Converter is a macOS app that makes it easy to quickly convert images in the [HEIC](https://www.macworld.co.uk/feature/iphone/what-is-heic-3660408/) format to JPEG or PNG. HEIC is Apple's new default image format in iOS 11, replacing JPEG. HEIC uses more advanced and modern compression methods to achieve much smaller file sizes with the same visual quality. Unfortunately, HEIC is a very new format and not yet supported outside of iOS and macOS. This app makes it possible to share your HEIC images on the web or with non-Apple users.
 

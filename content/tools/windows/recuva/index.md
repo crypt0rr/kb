@@ -5,11 +5,11 @@ description : "Recover your deleted files quickly and easily."
 date : 2020-05-07T15:10:54+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 270
 tags : ['Windows','Recovery','Harddisk']
 ---
 
-## Recuva
+---
 
 Recover your deleted files quickly and easily.
 

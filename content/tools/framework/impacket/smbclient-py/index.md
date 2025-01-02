@@ -5,11 +5,11 @@ description : "SMB client implementation."
 date : 2022-02-14T14:52:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## smbclient.py
+---
 
 ## Installation
 
@@ -53,7 +53,7 @@ connection:
 
 ## Examples
 
-{{%attachments fa_icon_class="far fa-file-video" pattern="smbclient.mp4"%}}
+{{%resources fa_icon_class="far fa-file-video" pattern="smbclient.mp4"/%}}
 
 ```plain
 $ smbclient.py offsec.nl/administrator:Welkom1234@10.10.10.10

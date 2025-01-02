@@ -5,11 +5,11 @@ description : "Tool for pentesters to help find security-related misconfiguratio
 date : 2021-01-20T10:26:34+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 tags : ['Other', 'Active Directory']
 ---
 
-## Grouper2
+---
 
 Tool for pentesters to help find security-related misconfigurations in Active Directory Group Policy.
 
@@ -19,8 +19,8 @@ Download newest release from [GitHub.com](https://github.com/l0ss/Grouper2/relea
 
 ### Obfuscated
 
-{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(exe)"%}}
-{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-pdf" pattern=".*(exe)"/%}}
+{{%resources fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
 
 ## Usage
 

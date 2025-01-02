@@ -5,11 +5,11 @@ description : "DNS lookup utility."
 date : 2020-03-13T15:21:58+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 210
 # tags : ['']
 ---
 
-## Dig
+---
 
 ## Usage
 

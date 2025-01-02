@@ -5,11 +5,11 @@ description : "RDPassSpray is a python tool to perform password spray attack in 
 date : 2020-08-06T08:32:16+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1460
 # tags : ['']
 ---
 
-## RDPassSpray
+---
 
 Is a python tool to perform password spray attack in a Microsoft domain environment.
 

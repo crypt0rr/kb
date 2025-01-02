@@ -5,7 +5,7 @@ description : "A swiss army knife for pentesting networks."
 date : 2022-02-14T15:18:21+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 tags : ["Framework"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
@@ -13,7 +13,7 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## CrackMapExec
+---
 
 A swiss army knife for pentesting networks.
 
@@ -42,4 +42,4 @@ pipx upgrade crackmapexec
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children depth="1" %}}

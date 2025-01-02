@@ -5,11 +5,11 @@ description : "A typing application to level up your fingers!"
 date : 2022-07-19T09:37:51+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1820
 # tags : ['']
 ---
 
-## Termtyper
+---
 
 A typing application to level up your fingers!
 

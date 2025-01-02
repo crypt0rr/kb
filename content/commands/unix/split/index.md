@@ -5,11 +5,11 @@ description : "Split a file into pieces."
 date : 2020-03-11T11:53:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 820
 # tags : [""]
 ---
 
-## Split
+---
 
 ## Usage
 

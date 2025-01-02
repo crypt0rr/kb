@@ -5,11 +5,11 @@ description : "Can be used interactively or in batch mode to retrieve files from
 date : 2022-11-12T12:50:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Networking', 'FTP']
 ---
 
-## atftp
+---
 
 Can be used interactively or in batch mode to retrieve files from TFTP servers. When used interactively, a summary of the commands can be printed by typing 'help'. This TFTP client support all basic feature from RFC1350, RFC2347, RFC2348 and RFC2349. It also support multicast implementation of RFC2090 and mtftp as defined in the PXE specification.
 

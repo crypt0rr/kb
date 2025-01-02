@@ -5,11 +5,11 @@ description : "Text-mode interface for Git."
 date : 2020-03-11T14:01:56+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1870
 tags : ['Other', 'Git']
 ---
 
-## Tig
+---
 
 Text-mode interface for Git.
 

@@ -5,11 +5,11 @@ description : "Command line interface for testing internet bandwidth using speed
 date : 2022-05-02T12:00:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 380
 # tags : ['']
 ---
 
-## speedtest-cli
+---
 
 Command line interface for testing internet bandwidth using speedtest.net
 

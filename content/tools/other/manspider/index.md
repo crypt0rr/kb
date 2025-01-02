@@ -5,11 +5,11 @@ description : "Scan for juicy data on SMB shares. Matching files and logs are st
 date : 2024-06-18T15:58:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1110
 tags : ['Other', 'SMB']
 ---
 
-## MANSPIDER
+---
 
 Scan for juicy data on SMB shares. Matching files and logs are stored in $HOME/.manspider. All filters are case-insensitive.
 

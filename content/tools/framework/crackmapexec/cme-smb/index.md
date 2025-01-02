@@ -5,11 +5,11 @@ description : "Own stuff using SMB."
 date : 2022-02-14T15:22:48+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Framework', 'SMB']
 ---
 
-## CrackMapExec - SMB
+---
 
 ## Installation
 
@@ -365,7 +365,7 @@ SMB         10.10.10.10     445    DC2016           offsec.nl\adm_johndo:1108:aa
 
 The file below is a example of the full output of the command above.
 
-{{%attachments title="CME NTDS" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="CME NTDS" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ### Dump LSASS (remote)
 

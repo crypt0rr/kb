@@ -5,11 +5,11 @@ description : "GRABIFY IP LOGGER."
 date : 2020-04-25T16:31:58+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 800
 # tags : ['']
 ---
 
-## Grabify.Link
+---
 
 IP LOGGER.
 

@@ -5,11 +5,13 @@ description : "Display or control the kernel ring buffer."
 date : 2020-08-22T14:36:17+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 220
 # tags : ['']
 ---
 
-## Dmesg - Display or control the kernel ring buffer - show bootup messages
+---
+
+Display or control the kernel ring buffer - show bootup messages.
 
 ## Usage
 

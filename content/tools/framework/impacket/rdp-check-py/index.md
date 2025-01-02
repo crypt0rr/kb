@@ -5,11 +5,11 @@ description : "Test whether an account is valid on the target host using the RDP
 date : 2022-02-14T12:22:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## rdp_check.py
+---
 
 Test whether an account is valid on the target host using the RDP protocol.
 

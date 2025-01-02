@@ -5,11 +5,13 @@ description : "OpenPGP encryption and signing tool - Sign, check, encrypt or dec
 date : 2020-08-19T12:10:48+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 320
 # tags : ['']
 ---
 
-## Gpg - OpenPGP encryption and signing tool - Sign, check, encrypt or decrypt
+---
+
+OpenPGP encryption and signing tool - Sign, check, encrypt or decrypt.
 
 ## Usage
 

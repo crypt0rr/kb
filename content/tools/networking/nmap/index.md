@@ -5,11 +5,11 @@ description: "Network exploration tool and security / port scanner."
 date: 2020-03-11T11:41:35+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 250
 # tags : [""]
 ---
 
-## nmap
+---
 
 Network exploration tool and security / port scanner.
 
@@ -191,7 +191,7 @@ sudo nmap -sU -p 53 --script=dns-update --script-args=dns-update.hostname=<subdo
 
 To manually validate with dig use
 
-{{%attachments fa_icon_class="far fa-file-pdf" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-pdf" pattern=".*(zip)"/%}}
 
 ```plain
 Add record
@@ -351,7 +351,7 @@ nmap -p5672 --script amqp-info <target>
 
 ### WinRM detection
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(nse)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(nse)"/%}}
 [Github.com - winRM.nse](https://github.com/RicterZ/My-NSE-Scripts/blob/master/scripts/winrm.nse)
 
 ```plain

@@ -5,11 +5,11 @@ description : "OneDriveExplorer is a command line and GUI based application for 
 date : 2022-02-08T10:28:18+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 210
 # tags : ['']
 ---
 
-## OneDriveExplorer
+---
 
 OneDriveExplorer is a command line and GUI based application for reconstructing the folder structure of OneDrive from the `.\<UserCid>.dat` file.
 
@@ -112,7 +112,7 @@ $ cat OneDrive.json
             "Folder_UUID": "4F241CD83085182D!105",
             "Object_UUID": "4F241CD83085182D!595",
             "Type": "File",
-            "Name": "Attachments"
+            "Name": "resources"
         },
         {
             "Folder_UUID": "4F241CD83085182D!105",

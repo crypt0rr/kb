@@ -5,11 +5,11 @@ description : "A simple forensics tool with command line interface that lets you
 date : 2021-02-08T09:44:17+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## Usbrip
+---
 
 A simple forensics tool with command line interface that lets you keep track of USB device artifacts (i.e., USB event history) on Linux machines
 

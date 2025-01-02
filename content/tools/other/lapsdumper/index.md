@@ -5,11 +5,11 @@ description : "Dump LAPS Passwords."
 date : 2020-12-21T14:32:07+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 990
 tags : ['Other', 'LDAP', 'Active Directory']
 ---
 
-## LAPSdumper
+---
 
 Dump LAPS (Microsoft Local Administrator Password Solution) Passwords.
 

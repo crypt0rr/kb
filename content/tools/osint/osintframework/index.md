@@ -5,11 +5,11 @@ description : "OSINT framework focused on gathering information from free tools 
 date : 2020-05-01T14:39:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 # tags : ['']
 ---
 
-## OSINT Framework
+---
 
 OSINT framework focused on gathering information from free tools or resources.
 

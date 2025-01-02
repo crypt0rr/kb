@@ -5,11 +5,11 @@ description : "Backscatter is the incorrectly automated bounce messages sent by 
 date : 2020-07-03T09:33:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## Backscatter
+---
 
 Backscatter is the incorrectly automated bounce messages sent by mail servers, typically as a side effect of incoming spam.can be used.
 

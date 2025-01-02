@@ -5,11 +5,11 @@ description : "Database containing credentials captured."
 date : 2022-02-14T18:33:53+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## cmedb
+---
 
 cmedb is default installed with your installation of [CrackMapExec]({{< ref "../" >}}).
 

@@ -5,11 +5,11 @@ description : "XSStrike is a Cross Site Scripting detection suite equipped with 
 date : 2020-08-28T12:45:17+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2090
 # tags : ['']
 ---
 
-## XSStrike
+---
 
 XSStrike is a Cross Site Scripting detection suite equipped with four hand written parsers, an intelligent payload generator, a powerful fuzzing engine and an incredibly fast crawler.
 

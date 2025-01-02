@@ -5,11 +5,11 @@ description : "Autossh is a program to start a copy of ssh and monitor it, resta
 date : 2022-03-06T13:19:01+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## AutoSSH
+---
 
 AutoSSH is a program to start a copy of ssh and monitor it, restarting it as necessary should it die or stop passing traffic.
 

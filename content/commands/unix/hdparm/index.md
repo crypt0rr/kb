@@ -5,11 +5,11 @@ description : "Get/set SATA/IDE device parameters."
 date : 2020-04-02T14:31:44+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 360
 tags : ['Unix','Harddisk']
 ---
 
-## Hdparm
+---
 
 ## Usage
 

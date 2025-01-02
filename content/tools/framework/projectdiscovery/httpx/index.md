@@ -5,11 +5,11 @@ description : "httpx is a fast and multi-purpose HTTP toolkit that allows runnin
 date : 2024-03-11T11:37:05+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['Framework', 'OSINT', 'HTTP']
 ---
 
-## httpx
+---
 
 `httpx` is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the [retryablehttp](https://github.com/projectdiscovery/retryablehttp-go) library. It is designed to maintain result reliability with an increased number of threads.
 
@@ -227,7 +227,7 @@ https://kb.offsec.nl [200] [Home :: Knowledge Base (KB)] [Cloudflare,HSTS,HTTP/3
 
 httpx by default creates a folder `output` in the location the tool is started. The `.zip` below contains the output of the above run.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ## URL list
 

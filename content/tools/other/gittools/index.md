@@ -5,11 +5,11 @@ description : "This repository contains three small python/bash scripts used for
 date : 2021-06-20T17:22:59+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 750
 tags : ['Other', 'Git']
 ---
 
-## Gittools
+---
 
 This repository contains three small python/bash scripts used for the Git research.
 

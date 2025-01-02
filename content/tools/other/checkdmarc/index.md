@@ -5,11 +5,11 @@ description : "Validates and parses SPF amd DMARC DNS records."
 date : 2020-03-13T14:26:48+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 320
 # tags : [""]
 ---
 
-## Checkdmarc
+---
 
 Validates and parses SPF amd DMARC DNS records.
 

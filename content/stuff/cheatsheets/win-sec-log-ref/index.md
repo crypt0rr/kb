@@ -5,11 +5,11 @@ description : "Most handy Windows Security Log Event ID's"
 date : 2022-09-13T12:43:46+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 tags : ['Cheatsheets', 'Active Directory']
 ---
 
-## Windows Security Log References
+---
 
 Most handy Windows Security Log Event ID's.
 
@@ -109,4 +109,4 @@ For both `4771` and `4772` see the following Kerberos Failure Codes
 
 ## URL List
 
-- [Static.spiceworks.com](https://static.spiceworks.com/attachments/post/0014/9751/quickref.pdf)
+- [Static.spiceworks.com](https://static.spiceworks.com/resources/post/0014/9751/quickref.pdf)

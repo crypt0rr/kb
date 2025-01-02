@@ -5,11 +5,11 @@ description : "Enumerates valid email addresses from Office 365 without submitti
 date : 2020-05-01T08:49:21+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 140
 tags : ['Other', 'O365']
 ---
 
-## O365creeper
+---
 
 Enumerates valid email addresses from Office 365 without submitting login attempts.
 

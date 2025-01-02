@@ -5,11 +5,11 @@ description : "For every connection received, this module will try to relay that
 date : 2022-02-14T11:56:40+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## ntlmrelayx.py
+---
 
 For every connection received, this module will try to relay that connection to specified target(s) system or the original client.
 

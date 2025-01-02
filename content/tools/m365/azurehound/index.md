@@ -5,11 +5,11 @@ description : "AzureAD focused module to gather information."
 date : 2021-12-20T14:51:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## AzureHound
+---
 
 Please go to [BloodHound]({{< ref "bloodhound" >}}) after gathering information with AzureHound.
 

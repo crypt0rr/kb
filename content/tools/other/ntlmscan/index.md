@@ -5,11 +5,11 @@ description : "scan for NTLM directories."
 date : 2022-12-02T19:21:04+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1250
 tags : ['Other', 'NTLM']
 ---
 
-## Ntlmscan
+---
 
 scan for NTLM directories
 

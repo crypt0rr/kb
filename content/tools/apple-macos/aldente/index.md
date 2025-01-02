@@ -5,11 +5,11 @@ description : "MacOS menu bar tool to limit maximum charging percentage."
 date : 2021-12-19T20:16:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 tags : ['macOS', 'Battery']
 ---
 
-## AlDente
+---
 
 Li-Ion batteries (like the one in your MacBook) last the longest when operating between 20 and 80 percent. Keeping your battery at 100% at all times can shorten the lifespan of your MacBook significantly.
 

@@ -5,11 +5,11 @@ description : "A glimpse into your computer's temperature, voltage, fan speed, m
 date : 2021-07-25T12:39:20+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2020
 tags : ['Other', 'Gnome Extensions']
 ---
 
-## Vitals
+---
 
 A glimpse into your computer's temperature, voltage, fan speed, memory usage and CPU load.
 

@@ -5,11 +5,11 @@ description : "Make directories."
 date : 2022-09-20T11:21:43+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 570
 # tags : ['']
 ---
 
-## mkdir
+---
 
 Create the DIRECTORY(ies), if they do not already exist.
 

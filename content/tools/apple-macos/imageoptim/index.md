@@ -5,11 +5,11 @@ description : "Removes bloated metadata. Saves disk space & bandwidth by compres
 date : 2022-01-14T16:26:42+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 210
 # tags : ['']
 ---
 
-## ImageOptim
+---
 
 [ImageOptim](https://imageoptim.com/) is a GUI for lossless image optimization tools: Zopfli, PNGOUT, [OxiPNG](https://crates.rs/crates/oxipng), AdvPNG, PNGCrush, [JPEGOptim](https://github.com/tjko/jpegoptim), Jpegtran, [Guetzli](https://github.com/google/guetzli), [Gifsicle](https://kornel.ski/lossygif), [SVGO](https://github.com/svg/svgo), [svgcleaner](https://github.com/RazrFalcon/svgcleaner) and [MozJPEG](https://github.com/mozilla/mozjpeg).
 

@@ -5,11 +5,11 @@ description : "Domain name permutation engine for detecting homograph phishing a
 date : 2020-07-02T15:37:36+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 500
 # tags : ['']
 ---
 
-## DNStwist
+---
 
 Domain name permutation engine for detecting homograph phishing attacks, typosquatting, fraud and brand impersonation.
 

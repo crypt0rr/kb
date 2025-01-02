@@ -5,11 +5,11 @@ description : "Exploits and expands the file names found from the (IIS) tilde en
 date : 2022-02-07T09:55:27+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1880
 tags : ['Other', 'IIS']
 ---
 
-## tilde_enum
+---
 
 Takes a URL and then exploits the IIS tilde 8.3 enumeration vuln (<https://soroush.secproject.com/blog/tag/iis-tilde-vulnerability/>, <http://www.acunetix.com/vulnerabilities/microsoft-iis-tilde-direc/>, <http://soroush.secproject.com/downloadable/microsoft_iis_tilde_character_vulnerability_feature.pdf>) and tries to get you full file and directory names.
 
@@ -31,7 +31,7 @@ git clone https://github.com/WebBreacher/tilde_enum
 
 Find wordlists to use at [this GitHub repo](https://github.com/tennc/fuzzdb/tree/master/Discovery/PredictableRes). Or download some handy ones below.
 
-{{%attachments title="Wordlists" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="Wordlists" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ## Usage
 

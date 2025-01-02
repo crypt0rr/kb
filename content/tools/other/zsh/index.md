@@ -1,15 +1,15 @@
 ---
-title : "Z Shell"
+title : "zsh - Z Shell"
 # pre : ' '
 description : "Is a UNIX command interpreter (shell) usable as an interactive login shell and as a shell script command processor."
 date : 2020-03-13T15:35:05+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2140
 # tags : ['']
 ---
 
-## Zsh - the Z shell
+---
 
 Is a UNIX command interpreter (shell) usable as an interactive login shell and as a shell script command processor.
 
@@ -75,7 +75,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 ### Theme
 
-{{%attachments fa_icon_class="far fa-file-alt" pattern=".*(txt)"%}}
+{{%resources fa_icon_class="far fa-file-alt" pattern=".*(txt)"/%}}
 
 ## URL List
 

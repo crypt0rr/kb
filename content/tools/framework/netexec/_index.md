@@ -5,7 +5,7 @@ description : "The Network Execution Tool."
 date : 2023-10-05T12:20:14+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 270
 tags : ["Framework"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
@@ -13,7 +13,7 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## NetExec
+---
 
 This project was initially created in 2015 by @byt3bl33d3r, known as CrackMapExec. In 2019 @mpgn_x64 started maintaining the project for the next 4 years, adding a lot of great tools and features. In September 2023 he retired from maintaining the project.
 
@@ -40,4 +40,4 @@ pipx upgrade NetExec
 
 - [NetExec.wiki](https://www.netexec.wiki/)
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children depth="1" %}}

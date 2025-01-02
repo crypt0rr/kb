@@ -5,11 +5,11 @@ description : "A Remote Desktop Protocol client."
 date : 2020-03-11T15:24:16+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1440
 tags : ['Other', 'RDP']
 ---
 
-## RDesktop
+---
 
 A Remote Desktop Protocol client.
 

@@ -5,11 +5,11 @@ description : "Browse Windows Prefetch file properties."
 date : 2022-07-17T17:07:03+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 250
 # tags : ['']
 ---
 
-## Prefetch-Browser
+---
 
 Browse Windows Prefetch file properties.
 

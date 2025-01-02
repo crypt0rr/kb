@@ -5,11 +5,11 @@ description : "Dropover is a macOS utility that makes Drag and Drop easier. Use 
 date : 2022-10-11T20:01:37+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## Dropover
+---
 
 Dropover is a macOS utility that makes Drag and Drop easier. Use it to stash, gather or move any draggable content without having to open side-by-side windows.
 

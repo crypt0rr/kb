@@ -5,11 +5,11 @@ description : "Python script to enumerate valid Microsoft 365 domains, retrieve 
 date : 2023-02-22T09:39:23+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## check_mdi
+---
 
 Python script to enumerate valid Microsoft 365 domains, retrieve tenant name, and check for a Microsoft Defender for Identity (MDI) instance.
 

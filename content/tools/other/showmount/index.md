@@ -5,11 +5,11 @@ description: "Show mount information for an NFS server."
 date: 2020-03-10T19:48:37+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 1600
 tags : ['Other', 'Tools']
 ---
 
-## Showmount
+---
 
 Show mount information for an NFS server.
 

@@ -5,11 +5,11 @@ description : "Add and remove modules from the Linux Kernel."
 date : 2020-03-13T17:00:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 590
 # tags : ['']
 ---
 
-## Modprobe
+---
 
 ## Usage
 

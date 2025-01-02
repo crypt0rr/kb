@@ -5,11 +5,11 @@ description : "MSFvenom is a combination of Msfpayload and Msfencode, putting bo
 date : 2021-07-06T15:27:20+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 240
 # tags : ['']
 ---
 
-## MSFvenom
+---
 
 Is a combination of Msfpayload and Msfencode, putting both of these tools into a single Framework instance. msfvenom replaced both msfpayload and msfencode as of June 8th, 2015.
 

@@ -5,11 +5,11 @@ description : "adPEAS is a Powershell tool to automate Active Directory enumerat
 date : 2022-02-10T13:51:12+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Other', 'Active Directory']
 ---
 
-## adPEAS
+---
 
 adPEAS is a Powershell tool to automate Active Directory enumeration. In fact, adPEAS is like a wrapper for different other cool projects like
 
@@ -92,7 +92,7 @@ Domain        : offsec.nl
 [...]
 ```
 
-{{%attachments title="Example output" fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources title="Example output" fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ## URL List
 

@@ -5,11 +5,11 @@ description : "DNS lookup utility."
 date : 2020-04-14T12:14:50+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 390
 tags : ['Unix', 'DNS', 'OSINT', 'Subdomain', 'DNS Zone Transfer']
 ---
 
-## Host
+---
 
 ## Usage
 
@@ -103,7 +103,7 @@ beta.megacorpone.com has address 51.222.169.209
 
 To automate this process a script is made available below.
 
-{{%attachments fa_icon_class="fas fa-code" pattern=".*(sh)" %}}
+{{% resources fa_icon_class="fas fa-code" pattern=".*(sh)" /%}}
 
 ```plain
 ./dns-axfr.sh megacorpone.com

@@ -5,11 +5,11 @@ description : "Want to check your phone's hardware, sensors and components, to m
 date : 2021-10-24T18:37:23+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 380
 # tags : ['']
 ---
 
-## TestM
+---
 
 Want to check your phone's hardware, sensors and components, to make sure everything is operating properly? Need to fix your smartphone or tablet?
 

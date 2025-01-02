@@ -5,11 +5,11 @@ description : "Configure a network interface."
 date : 2020-03-13T15:00:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 400
 tags : ['Unix','Networking']
 ---
 
-## Ifconfig
+---
 
 ## Usage
 

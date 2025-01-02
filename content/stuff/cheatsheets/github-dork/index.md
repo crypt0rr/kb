@@ -5,11 +5,11 @@ description : "GitHub dorking queries."
 date : 2022-09-13T12:37:09+02:00
 # hidden : true
 # draft : true
-weight : 0
-tags : ['GitHub']
+weight : 60
+# tags : ['GitHub']
 ---
 
-## Github Dork
+---
 
 ```plain
 GITHUB_TOKEN=

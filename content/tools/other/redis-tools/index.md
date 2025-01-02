@@ -5,11 +5,11 @@ description : "Set of tools to manage Redis server."
 date : 2020-03-13T16:21:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1480
 # tags : ['']
 ---
 
-## Redis Tools
+---
 
 Set of tools to manage Redis server.
 

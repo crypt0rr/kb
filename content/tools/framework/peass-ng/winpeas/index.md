@@ -5,11 +5,11 @@ description : "Windows local Privilege Escalation Awesome Script."
 date : 2022-02-17T09:34:35+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## WinPEAS
+---
 
 Windows local Privilege Escalation Awesome Script.
 

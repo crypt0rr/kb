@@ -5,11 +5,11 @@ description : "You can use this subcommand in order to interact with an Amass gr
 date : 2023-07-24T11:43:18+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## DB
+---
 
 You can use this subcommand in order to interact with an Amass graph database, either the default or the one specified with the "-dir" flag.
 

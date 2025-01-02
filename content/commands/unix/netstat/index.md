@@ -5,11 +5,11 @@ description : "Print network connections, routing tables, interface statistics, 
 date : 2020-04-14T14:12:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 650
 # tags : ['']
 ---
 
-## Netstat
+---
 
 ## Usage
 

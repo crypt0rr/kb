@@ -5,11 +5,11 @@ description : "Omnispray aims to replace tools such as o365spray and provide a m
 date : 2022-09-20T10:00:04+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 tags : ['M365', 'AzureAD/EntraID', 'Passwordspray']
 ---
 
-## Omnispray
+---
 
 Omnispray aims to replace tools such as [o365spray](https://github.com/0xZDH/o365spray) and provide a modular framework to expand enumeration and spraying beyond just a single target/application.
 

@@ -5,11 +5,11 @@ description : "Some scripts that might be of use to macOS admins. Might be relat
 date : 2022-02-05T14:41:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 250
 tags : ['macOS', 'iOS']
 ---
 
-## macAdmin Scripts
+---
 
 Some scripts that might be of use to macOS admins. Might be related to Munki;
 might not.

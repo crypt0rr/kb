@@ -5,11 +5,11 @@ description : "A free tool that gives administrators the ability to enable or di
 date : 2020-03-13T22:16:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 # tags : ['']
 ---
 
-## IIS-crypto
+---
 
 A free tool that gives administrators the ability to enable or disable protocols, ciphers, hashes and key exchange algorithms on Windows Server 2008, 2012, 2016 and 2019.
 

@@ -5,11 +5,11 @@ description : "A tool to find origin servers of websites protected by CloudFlare
 date : 2021-03-01T07:46:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 tags : ['OSINT', 'DNS', 'CloudFlare']
 ---
 
-## Cloudflair
+---
 
 A tool to find origin servers of websites protected by CloudFlare who are publicly exposed and don't restrict network access to the CloudFlare IP ranges as they should.
 

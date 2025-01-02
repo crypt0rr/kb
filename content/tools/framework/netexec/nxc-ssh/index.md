@@ -5,11 +5,11 @@ description : "Own stuff using SSH."
 date : 2023-10-05T12:26:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 tags : ['Framework', 'SSH']
 ---
 
-## NetExec - SSH
+---
 
 ## Installation
 
@@ -141,7 +141,7 @@ SSH         100.96.36.115   22     100.96.36.115    [+] crypt0rr:Welkom1234  - s
 
 ### Password Spray SSH
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ```plain
 $ nxc ssh 100.96.36.115 -u usernames.txt -p passwords.txt 

@@ -5,11 +5,11 @@ description : "o365spray | Microsoft O365 User Enumerator and Password Sprayer."
 date : 2021-11-03T20:53:22+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 150
 tags : ['M365', 'Passwordspray']
 ---
 
-## O365spray
+---
 
 o365spray a username enumeration and password spraying tool aimed at Microsoft Office 365 (O365). This tool reimplements a collection of enumeration and spray techniques researched and identified by those mentioned in [Acknowledgments](https://github.com/0xZDH/o365spray#Acknowledgments).
 

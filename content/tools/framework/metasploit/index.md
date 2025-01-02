@@ -5,11 +5,11 @@ description : "The world's most used penetration testing framework."
 date : 2020-03-11T16:59:30+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 210
 # tags : [""]
 ---
 
-## Metasploit
+---
 
 The world's most used penetration testing framework.
 
@@ -84,7 +84,7 @@ janedo:1110:aad3b435b51404eeaad3b435b51404ee:f3fe13546c4c0d2db443a0865626203b:::
 
 ### MS17-010 - Eternalblue
 
-{{%attachments fa_icon_class="far fa-file-video" pattern="ms17-010.*(mp4)"%}}
+{{%resources fa_icon_class="far fa-file-video" pattern="ms17-010.*(mp4)"/%}}
 
 ### Scanner
 

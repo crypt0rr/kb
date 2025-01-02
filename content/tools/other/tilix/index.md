@@ -5,11 +5,11 @@ description : "Tiling GTK3 terminal emulator for GNOME."
 date : 2020-03-24T08:56:55+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1890
 # tags : ['']
 ---
 
-## Tilix
+---
 
 Tiling GTK3 terminal emulator for GNOME.
 

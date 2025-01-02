@@ -5,11 +5,11 @@ description : " Is a Network Forensic Analysis Tool (NFAT) that performs deep pr
 date : 2020-08-05T09:04:29+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 70
 # tags : ['']
 ---
 
-## Bruteshark
+---
 
 Is a Network Forensic Analysis Tool (NFAT) that performs deep processing and inspection of network traffic (mainly PCAP files). It includes: password extracting, building a network map, reconstruct TCP sessions, extract hashes of encrypted passwords and even convert them to a Hashcat format in order to perform an offline Brute Force attack.
 

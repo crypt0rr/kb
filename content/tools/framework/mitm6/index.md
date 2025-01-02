@@ -5,11 +5,11 @@ description : "mitm6 is a pentesting tool that exploits the default configuratio
 date : 2020-05-16T14:54:31+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 230
 # tags : ['']
 ---
 
-## Mitm6
+---
 
 "pwning IPv4 via IPv6" - mitm6 is a pentesting tool that exploits the default configuration of Windows to take over the default DNS server.
 

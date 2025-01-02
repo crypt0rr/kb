@@ -5,8 +5,10 @@ description : "OSCP Privilege Escalation Mindmap."
 date : 2022-02-08T14:12:47+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 100
 # tags : ['']
+---
+
 ---
 
 ## OSCP Privilege Escalation Mindmap

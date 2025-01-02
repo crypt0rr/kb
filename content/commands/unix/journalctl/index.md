@@ -5,11 +5,13 @@ description : "Query the journal."
 date : 2020-09-28T20:39:16+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 440
 # tags : ['']
 ---
 
-## Journalctl - Query the journal
+---
+
+Query the journal.
 
 ## Usage
 

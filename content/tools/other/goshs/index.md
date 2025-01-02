@@ -5,11 +5,11 @@ description : "goshs is a replacement for Python's `SimpleHTTPServer`. It allows
 date : 2024-11-15T19:48:10+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 780
 # tags : ['']
 ---
 
-## goshs
+---
 
 goshs is a replacement for Python's `SimpleHTTPServer`. It allows uploading and downloading via HTTP/S with either self-signed certificate or user provided certificate and you can use HTTP basic auth.
 

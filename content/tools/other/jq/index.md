@@ -5,11 +5,11 @@ description : "jq is a tool for processing JSON inputs, applying the given filte
 date : 2020-08-17T15:08:45+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 950
 # tags : ['']
 ---
 
-## jq
+---
 
 jq is a tool for processing JSON inputs, applying the given filter to its JSON text inputs and producing the filter's results as JSON on standard output.
 

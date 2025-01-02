@@ -5,11 +5,11 @@ description : "Own stuff using SMB."
 date : 2023-10-05T12:25:10+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 tags : ['Framework', 'SMB']
 ---
 
-## NetExec - SMB
+---
 
 ## Installation
 

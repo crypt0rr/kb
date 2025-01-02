@@ -5,11 +5,11 @@ description : "Stegsolve is a stegano solver for challenges."
 date : 2021-06-19T19:40:05+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## Stegsolve
+---
 
 A stegano solver for challenges.
 
@@ -27,7 +27,7 @@ If an image fails to load, for example because it is corrupt, then file analysis
 
 ## Installation
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(jar)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(jar)"/%}}
 
 ```plain
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar

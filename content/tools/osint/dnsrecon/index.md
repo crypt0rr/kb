@@ -5,11 +5,11 @@ description : "DNS Enumeration and Scanning Tool."
 date : 2020-04-14T12:30:49+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 tags : ['OSINT', 'DNS', 'Subdomain', 'DNS Zone Transfer']
 ---
 
-## DNSrecon
+---
 
 DNS Enumeration and Scanning Tool.
 

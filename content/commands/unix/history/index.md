@@ -5,11 +5,11 @@ description : "GNU History Library."
 date : 2020-09-10T17:24:33+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 380
 # tags : ['']
 ---
 
-## History
+---
 
 ## Usage
 

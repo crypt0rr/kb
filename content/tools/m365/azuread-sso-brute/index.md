@@ -5,11 +5,11 @@ description : "Python tool to brute force against an AzureAD SSO endpoint."
 date : 2021-10-22T13:39:32+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 30
 # tags : ['']
 ---
 
-## AzureAD SSO brute
+---
 
 Python tool to brute force against an AzureAD SSO endpoint.
 

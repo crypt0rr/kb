@@ -5,11 +5,11 @@ description : "Recover files using their headers, footers, and data structures."
 date : 2020-03-11T10:52:25+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : [""]
 ---
 
-## Foremost
+---
 
 Recover files using their headers, footers, and data structures.
 

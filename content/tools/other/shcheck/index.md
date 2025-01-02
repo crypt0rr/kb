@@ -5,11 +5,11 @@ description : "A basic tool to check security headers of a website."
 date : 2023-05-04T19:45:29+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1580
 # tags : ['']
 ---
 
-## shcheck - Security Header Check
+---
 
 ## Installation
 

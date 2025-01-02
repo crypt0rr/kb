@@ -1,19 +1,19 @@
 ---
-title : "azureAD"
+title : "azureAD/EntraID"
 # pre : '<i class="fas fa-code"></i> '
 description : "Microsoft Azure AD commands."
 date : 2020-07-07T14:25:09+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 tags : ['Commands', 'AzureAD/EntraID']
 ---
 
-## Azure AD
+---
 
 Please check [Roadrecon]({{< ref "roadrecon" >}}), [MFASweep]({{< ref "mfasweep" >}}), [AzureHound]({{< ref "bloodhound" >}}) and [Azure Active Directory - Rootsecdev](https://github.com/rootsecdev/Azure-Red-Team)
 
-{{%attachments title="Presentation from Antonio Formato of Cyber Saiyan" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"%}}
+{{%resources title="Presentation from Antonio Formato of Cyber Saiyan" fa_icon_class="far fa-file-pdf" pattern=".*(pdf)"/%}}
 
 ## Installation
 

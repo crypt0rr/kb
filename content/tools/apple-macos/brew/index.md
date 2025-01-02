@@ -5,11 +5,11 @@ description : "The Missing Package Manager for macOS (or Linux)."
 date : 2021-12-10T17:39:51+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 # tags : ['']
 ---
 
-## Brew
+---
 
 Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn’t include with macOS. It can also install software not packaged for your Linux distribution to your home directory without requiring sudo.
 

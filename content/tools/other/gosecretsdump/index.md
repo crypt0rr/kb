@@ -5,11 +5,11 @@ description : "Dump ntds.dit really fast."
 date : 2022-03-11T14:42:32+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 770
 # tags : ['']
 ---
 
-## Gosecretsdump
+---
 
 Have you been using Impacket to dump hashes out of (large) NTDS.dit files, and become increasingly frustrated at how long it takes? I sure have!
 
@@ -71,7 +71,7 @@ gosecretsdump vDEV (@C__Sto)
 
 Example `NTDS.dit` and `SYSTEM` files zipped below.
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(NTDS.DIT-SYSTEM)"/%}}
 
 ```plain
 $ ./gosecretsdump -ntds ntds.dit -system SYSTEM 

@@ -5,11 +5,11 @@ description : "NetworkManager monitors all network connections and automatically
 date : 2020-04-16T10:43:57+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 660
 # tags : ['']
 ---
 
-## Network Manager
+---
 
 ## Installation
 

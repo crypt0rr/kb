@@ -5,11 +5,13 @@ description : "Locate/print block device attributes."
 date : 2020-08-22T14:16:11+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## Blkid - locate/print block device attributes
+---
+
+Locate/print block device attributes.
 
 ## Usage
 

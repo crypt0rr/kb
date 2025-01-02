@@ -5,11 +5,13 @@ description : "ESC1 - Abuse Active Directory Certificate Services."
 date : 2022-01-20T09:05:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 tags : ['Techniques', 'Active Directory', 'ADCS']
 ---
 
-## ESC1 - Abuse Active Directory Certificate Services
+---
+
+ESC1 - Abuse Active Directory Certificate Services.
 
 This is a little guide on abusing Active Directory Certificate Services (AD CS) with practical examples.
 
@@ -138,7 +140,7 @@ $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01P
 
 ### Requesting TGT for alternative user
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
 Move the `.pfx` to a Windows machine and start PowerShell for `Rubeus.exe`.
 

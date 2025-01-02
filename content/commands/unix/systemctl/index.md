@@ -5,11 +5,11 @@ description : "Control the systemd system and service manager."
 date : 2020-03-11T16:44:03+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 870
 # tags : [""]
 ---
 
-## Systemctl
+---
 
 ## Usage
 

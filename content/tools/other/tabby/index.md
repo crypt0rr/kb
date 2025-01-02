@@ -5,11 +5,11 @@ description : "Tabby (formerly Terminus) is a highly configurable terminal emula
 date : 2021-10-27T21:59:02+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1800
 tags : ['Other', 'macOS', 'Windows', 'Linux']
 ---
 
-## Tabby
+---
 
 Tabby (formerly Terminus) is a highly configurable terminal emulator, SSH and serial client for Windows, macOS and Linux
 

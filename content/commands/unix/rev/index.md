@@ -5,11 +5,13 @@ description : "Reverse lines characterwise."
 date : 2021-01-29T10:24:36+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 740
 # tags : ['']
 ---
 
-## Rev - reverse lines characterwise
+---
+
+Reverse lines characterwise.
 
 ## Usage
 

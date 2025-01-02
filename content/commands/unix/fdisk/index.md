@@ -5,11 +5,11 @@ description: "Manipulate disk partition table."
 date: 2020-03-10T16:18:53+01:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 250
 tags: ["Unix", "Harddisk"]
 ---
 
-## Fdisk
+---
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "Own stuff using NFS."
 date : 2024-10-10T12:25:57+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 40
 # tags : ['']
 ---
 
-## NetExec - NFS
+---
 
 ## Installation
 

@@ -5,11 +5,11 @@ description : "Crunch can create a word list based on criteria you specify. The 
 date : 2022-11-14T14:30:12+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 10
 # tags : ['']
 ---
 
-## Crunch
+---
 
 Crunch can create a word list based on criteria you specify. The output from crunch can be sent to the screen, file, or to another program.
 

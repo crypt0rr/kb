@@ -5,11 +5,11 @@ description : "Enumerate Typo3 version and extensions."
 date : 2023-03-06T11:21:31+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1960
 # tags : ['']
 ---
 
-## Typo3Scan
+---
 
 Enumerate Typo3 version and extensions.
 

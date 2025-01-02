@@ -5,11 +5,11 @@ description : "Queries target domain for SPNs that are running under a user acco
 date : 2022-02-14T12:20:24+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['Kerberoasting']
 ---
 
-## GetUserSPNs.py
+---
 
 "Queries target domain for SPNs that are running under a user account (kerberoasting).
 

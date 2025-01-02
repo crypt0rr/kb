@@ -5,11 +5,11 @@ description : "OpenSSL based Authenticode signing for PE/MSI/Java CAB files."
 date : 2022-07-22T20:31:36+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1280
 tags : ['Other', 'Certificates']
 ---
 
-## osslsigncode
+---
 
 osslsigncode is a small tool that implements part of the functionality of the Microsoft tool signtool.exe - more exactly the Authenticode signing and timestamping. But osslsigncode is based on OpenSSL and cURL, and thus should be able to compile on most platforms where these exist.
 

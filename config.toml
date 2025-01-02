@@ -1,65 +1,60 @@
 baseURL = "https://kb.offsec.nl"
 languageCode = "en-us"
 title = "Knowledge Base (KB)"
-theme = "hugo-learn" # https://github.com/matcornic/hugo-theme-learn/
+description = "Knowledgde Base (KB)"
+theme = "hugo-relearn" # https://github.com/matcornic/hugo-theme-learn/
 copyright = "© 2018-{year} - All rights reserved"
 pluralizelisttitles = false
 
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+    home = [ "HTML"]
 
 [params]
+  [params.author.name]
+    name = "crypt0rr"
   editURL = "https://github.com/crypt0rr/kb/tree/main/content/"
-  author = "crypt0rr"
-  description = "Knowledgde Base (KB)"
   showVisitedLinks = false
   disableSearch = false
   disableAssetsBusting = false
   disableInlineCopyToClipBoard = false
   disableShortcutsTitle = false
-  disableLanguageSwitchingButton = false
+  disableLanguageSwitchingButton = true
   disableLandingPageButton = true
   disableBreadcrumb = true
   disableNextPrev = true
-  ordersectionsby = "title"
-  themeVariant = "kb"
+  ordersectionsby = "linktitle"
+  themeVariant = "theme"
 
 # Enables raw html in markdown.
 [markup.goldmark.renderer]
 unsafe = true
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-home'></i> Home"
-identifier = "home"
-url = "/"
-weight = 10
-
-[[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> All Tags"
 identifier = "tags"
 url = "/tags"
-weight = 20
+weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub"
 identifier = "github"
 url = "https://github.com/crypt0rr/kb"
-weight = 30
+weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-twitter'></i> Twitter"
 identifier = "twitter"
 url = "https://twitter.com/crypt0rr_"
-weight = 40
+weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-discord'></i> Discord"
 identifier = "discord"
 url = "https://discord.gg/yhfPKyBGbp"
-weight = 50
+weight = 40
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-external-link-alt'></i> More helpfull tools?"
 identifier = "offsec"
 url = "https://offsec.nl"
-weight = 60
+weight = 50

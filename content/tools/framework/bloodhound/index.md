@@ -5,19 +5,19 @@ description : "Uses graph theory to reveal the hidden and often unintended relat
 date : 2020-03-10T15:32:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 tags : ['Framework', 'Active Directory', 'AzureAD/EntraID']
 ---
 
-## BloodHound
+---
 
 Uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment.
 
 ### Collectors
 
-{{%attachments title="Collector for v4.1+" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.1.*"%}}
+{{%resources title="Collector for v4.1+" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.1.*"/%}}
 
-{{%attachments title="Collectors for v4.2+ (newest)" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.2.*"%}}
+{{%resources title="Collectors for v4.2+ (newest)" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.2.*"/%}}
 
 To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
 
@@ -77,11 +77,11 @@ Statistics:
 - GPOs: 2
 - Domains: 1
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 ### Custom Queries
 
-{{%attachments fa_icon_class="fas fa-file-code" pattern=".*(json)"%}}
+{{%resources fa_icon_class="fas fa-file-code" pattern=".*(json)"/%}}
 
 Linux
 

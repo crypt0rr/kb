@@ -5,11 +5,11 @@ description : "The most user-friendly problem fixer for Mac. Delete system junk,
 date : 2021-12-28T14:05:52+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 120
 # tags : ['']
 ---
 
-## CleanMyMac
+---
 
 The most user-friendly problem fixer for Mac. Delete system junk, unwanted apps and malware, and tune your Mac for maximum speed. For a slow computer, use immediately.
 

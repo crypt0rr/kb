@@ -5,11 +5,13 @@ description : "Wi-Fi Exploitation Framework."
 date : 2022-07-28T14:30:28+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 410
 tags : ['Framework', 'WiFi']
 ---
 
-## WEF - 📡 Wi-Fi Exploitation Framework 📡
+---
+
+📡 Wi-Fi Exploitation Framework 📡
 
 <img src="https://raw.githubusercontent.com/D3Ext/WEF/main/images/WEF.png" width=1110 height=500>
 

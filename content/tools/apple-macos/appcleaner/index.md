@@ -5,11 +5,11 @@ description : "AppCleaner is a small application which allows you to thoroughly 
 date : 2021-12-24T16:14:57+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## AppCleaner
+---
 
 AppCleaner is a small application which allows you to thoroughly uninstall unwanted apps.
 

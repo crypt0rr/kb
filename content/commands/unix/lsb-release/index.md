@@ -5,11 +5,11 @@ description : "Print distribution-specific information."
 date : 2020-05-06T16:43:17+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 490
 # tags : ['']
 ---
 
-## Lsb_Release
+---
 
 ## Usage
 

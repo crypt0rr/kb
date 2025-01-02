@@ -5,11 +5,11 @@ description : "Own stuff using WinRM."
 date : 2023-10-05T12:26:59+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 90
 tags : ['Framework', 'WinRM']
 ---
 
-## NetExec - WinRM
+---
 
 ## Installation
 

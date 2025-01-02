@@ -5,11 +5,11 @@ description : "Trivial File Transfer Program."
 date : 2020-05-04T14:00:13+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 910
 tags : ['Unix', 'FTP']
 ---
 
-## TFTP
+---
 
 ## Examples
 

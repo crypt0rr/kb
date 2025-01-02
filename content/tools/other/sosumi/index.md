@@ -5,11 +5,11 @@ description : "Download and install macOS in a VM / macOS on Linux in one comman
 date : 2021-05-27T09:05:20+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1710
 tags : ['Other', 'macOS', 'Linux']
 ---
 
-## Sosumi
+---
 
 Download and install macOS in a VM / macOS on Linux in one command.
 

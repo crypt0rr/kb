@@ -5,11 +5,13 @@ description : "Display the current time in the given FORMAT, or set the system d
 date : 2020-11-27T17:02:21+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 # tags : ['']
 ---
 
-## Date - Display the current time in the given FORMAT, or set the system date
+---
+
+Display the current time in the given FORMAT, or set the system date
 
 ## Usage
 

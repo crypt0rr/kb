@@ -5,11 +5,11 @@ description : "From LOCAL/NETWORK SERVICE to SYSTEM by abusing SeImpersonatePriv
 date : 2021-06-21T14:57:31+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 80
 # tags : ['']
 ---
 
-## Printspoofer
+---
 
 From LOCAL/NETWORK SERVICE to SYSTEM by abusing SeImpersonatePrivilege on Windows 10 and Server 2016/2019.
 
@@ -19,7 +19,7 @@ More info at [itm4n.github.io](https://itm4n.github.io/printspoofer-abusing-impe
 
 Download latest release from [Github.com](https://github.com/itm4n/PrintSpoofer/releases/tag/v1.0)
 
-{{%attachments title="v1.0" fa_icon_class="far fa-file-code" pattern=".*(exe)"%}}
+{{%resources title="v1.0" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
 ## Usage
 

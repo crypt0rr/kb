@@ -5,11 +5,11 @@ description : "List USB devices."
 date : 2020-03-13T17:00:36+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 540
 # tags : ['']
 ---
 
-## Lsusb
+---
 
 ## Usage
 

@@ -5,11 +5,11 @@ description : "Your MitM sidekick for relaying attacks featuring DHCPv6 DNS take
 date : 2022-12-27T16:58:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 340
 # tags : ['']
 ---
 
-## Pretender
+---
 
 Your MitM sidekick for relaying attacks featuring DHCPv6 DNS takeover as well as mDNS, LLMNR and NetBIOS-NS spoofing.
 

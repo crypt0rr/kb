@@ -5,11 +5,11 @@ description : "Own stuff using SSH."
 date : 2022-02-14T15:23:02+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 60
 # tags : ['']
 ---
 
-## CrackMapExec - SSH
+---
 
 ## Installation
 
@@ -94,7 +94,7 @@ SSH         10.10.10.3      22     10.10.10.3       [*] SSH-2.0-OpenSSH_8.2p1 Ub
 
 ### Brute force SSH
 
-{{%attachments fa_icon_class="far fa-file" pattern=".*(txt)"%}}
+{{%resources fa_icon_class="far fa-file" pattern=".*(txt)"/%}}
 
 ```plain
 $ cme ssh 10.10.10.1 -u usernames.txt -p passwords.txt 

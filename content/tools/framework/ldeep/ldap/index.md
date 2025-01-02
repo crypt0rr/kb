@@ -5,11 +5,11 @@ description : "LDAP mode."
 date : 2022-12-07T10:36:59+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## LDEEP - LDAP Mode
+---
 
 ## Installation
 

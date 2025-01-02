@@ -5,11 +5,11 @@ description : "An advanced web path brute-forcer."
 date : 2023-08-17T10:54:02+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 470
 tags : ['Other', 'Brute Force', 'Web Application', 'Directory Brute Force']
 ---
 
-## Dirsearch
+---
 
 An advanced web path brute-forcer.
 

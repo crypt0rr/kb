@@ -5,7 +5,7 @@ description : "A website screenshot utility written in Golang, that uses Chrome 
 date : 2020-08-14T10:01:21+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 160
 tags : ["Framework"]
 ### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
 cascade:
@@ -13,7 +13,7 @@ cascade:
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
-## GoWitness
+---
 
 A command line web screenshot and information gathering tool by [@leonjza](https://twitter.com/leonjza).
 
@@ -31,4 +31,4 @@ Or download a pre-compiled binary at [GitHub.com - releases](https://github.com/
 
 ## Modules
 
-{{< children style="card" depth="1" description="true" sort="Name"  >}}
+{{% children style="card" depth="1" description="true" sort="Name"  %}}

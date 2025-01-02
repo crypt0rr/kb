@@ -5,11 +5,11 @@ description : "Alternative implementation of the Bitwarden server API written in
 date : 2021-05-19T13:43:02+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2000
 # tags : ['']
 ---
 
-## Vaultwarden
+---
 
 Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.
 

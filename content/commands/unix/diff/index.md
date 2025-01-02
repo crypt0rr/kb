@@ -5,11 +5,13 @@ description : "Compare FILES line by line."
 date : 2020-07-20T11:34:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 200
 # tags : ['']
 ---
 
-## Diff - Compare FILES line by line
+---
+
+Compare FILES line by line.
 
 ## Usage
 

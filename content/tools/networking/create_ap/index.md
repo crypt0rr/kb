@@ -5,11 +5,11 @@ description : "This script creates a NATed or Bridged WiFi Access Point."
 date : 2023-08-22T09:17:01+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 tags : ['Networking', 'WiFi']
 ---
 
-## Create_ap
+---
 
 This script creates a NATed or Bridged WiFi Access Point.
 

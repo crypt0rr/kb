@@ -5,11 +5,11 @@ description: "Query Internet name servers interactively."
 date: 2020-04-07T09:11:48+02:00
 # hidden : true
 # draft : true
-weight: 0
+weight: 690
 # tags : ['']
 ---
 
-## Nslookup
+---
 
 ## Usage
 

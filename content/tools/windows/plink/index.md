@@ -5,11 +5,11 @@ description : "Command-line connection utility."
 date : 2022-11-15T10:28:37+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 220
 tags : ['Windows' , 'SSH', 'Pivoting']
 ---
 
-## Plink
+---
 
 Command-line connection utility.
 
@@ -17,7 +17,7 @@ Plink is part of [PuTTY](https://putty.org/), install PuTTY yourself or download
 
 ## Installation
 
-{{%attachments fa_icon_class="fas fa-file-code" pattern=".*(exe)"%}}
+{{%resources fa_icon_class="fas fa-file-code" pattern=".*(exe)"/%}}
 
 ## Usage
 

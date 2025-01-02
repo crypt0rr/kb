@@ -5,11 +5,11 @@ description : "The wipe command can be used to securely erase files from magneti
 date : 2020-03-13T15:42:10+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 2060
 tags : ['Other', 'Harddisk']
 ---
 
-## Wipe
+---
 
 The wipe command can be used to securely erase files from magnetic media.
 

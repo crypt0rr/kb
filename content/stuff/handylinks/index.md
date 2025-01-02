@@ -5,11 +5,11 @@ description : "Handy links to save for feature use."
 date : 2020-04-13T13:39:40+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Handy Links
+---
 
 ### M365Maps - Microsoft 365 Licensing
 
@@ -91,7 +91,7 @@ Blog of offensive security consultant.
 
 ### Information Security References
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(zip)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(zip)"/%}}
 
 [rmusser.net](https://rmusser.net/docs/)
 

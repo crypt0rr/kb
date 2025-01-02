@@ -5,11 +5,11 @@ description : "SilentListener listens on the network interface of choice to iden
 date : 2024-10-23T14:59:04+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 350
 # tags : ['']
 ---
 
-## SilentListener
+---
 
 SilentListener listens on the network interface of choice to identify network segments that cross the interface.
 
@@ -20,7 +20,7 @@ wget https://gist.githubusercontent.com/Dfte/9cfeb87892557fd098de78f68b1b1390/ra
 python3 -m pip install argparse ipaddress scapy
 ```
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(py)"/%}}
 
 ## Usage
 

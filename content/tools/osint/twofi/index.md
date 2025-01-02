@@ -5,11 +5,11 @@ description : "Twitter Words of Interest."
 date : 2022-10-03T15:44:16+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 360
 # tags : ['']
 ---
 
-## Twofi
+---
 
 Twitter Words of Interest.
 
@@ -23,7 +23,7 @@ A second option, suggested by [@pentest4dummies](https://www.twitter.com/pentest
 
 Download newest release from [digi.ninja](https://digi.ninja/projects/twofi.php). Or use the downloads below.
 
-{{%attachments fa_icon_class="far fa-file-archive" pattern=".*(bz2)"%}}
+{{%resources fa_icon_class="far fa-file-archive" pattern=".*(bz2)"/%}}
 
 ```plain
 bundle install

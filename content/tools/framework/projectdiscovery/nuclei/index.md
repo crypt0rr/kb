@@ -5,11 +5,11 @@ description : "Nuclei is a fast, template based vulnerability scanner focusing o
 date : 2023-12-18T14:26:19+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 # tags : ['']
 ---
 
-## Nuclei
+---
 
 Nuclei is a fast, template based vulnerability scanner focusing on extensive configurability, massive extensibility and ease of use.
 

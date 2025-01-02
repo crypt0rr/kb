@@ -5,11 +5,11 @@ description : "A dns and dhcp server for your local network, with optional ad bl
 date : 2021-12-01T12:26:14+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Docker DNS and DHCP server
+---
 
 This is my setup for a dockerized DNS and DHCP server using the [jpillora/dnsmasq](https://hub.docker.com/r/jpillora/dnsmasq) docker image for dnsmasq.
 

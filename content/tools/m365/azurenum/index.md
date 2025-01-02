@@ -5,11 +5,11 @@ description : "Enumerate Microsoft Entra ID (Azure AD) fast."
 date : 2024-03-18T13:47:26+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['M365', 'AzureAD/EntraID']
 ---
 
-## AzurEnum
+---
 
 Enumerate some Entra ID (formerly Azure AD) stuff fast, including:
 

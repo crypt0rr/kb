@@ -5,11 +5,11 @@ description : "Registry Editor."
 date : 2021-09-09T09:52:27+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 130
 # tags : ['']
 ---
 
-## Registry Editor
+---
 
 ### Disable Remote User Account Control (UAC)
 
@@ -29,7 +29,7 @@ reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /v LocalA
 
 In case remote access is mitigated thru **User Rights Assignment** you can use the following to disable this.
 
-{{%attachments fa_icon_class="far fa-file" pattern="ntrights.(exe)"%}}
+{{%resources fa_icon_class="far fa-file" pattern="ntrights.(exe)"/%}}
 
 ```plain
 C:\temp>ntrights.exe -r SeDenyNetworkLogonRight -u "Local Account"

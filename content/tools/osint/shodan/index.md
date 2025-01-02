@@ -5,11 +5,11 @@ description : "Shodan is the world's first search engine for Internet-connected 
 date : 2020-03-13T22:30:15+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 300
 # tags : ['']
 ---
 
-## Shodan.io
+---
 
 Shodan is the world's first search engine for Internet-connected devices.
 
@@ -80,7 +80,7 @@ NETSurveillance uc-httpd
 
 Get the favicon and create a hash with the following script. To use makes sure to edit the URL in the script.
 
-{{%attachments fa_icon_class="far fa-file-code" pattern=".*(py)"%}}
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(py)"/%}}
 
 ```plain
 http.favicon.hash:-1922044295

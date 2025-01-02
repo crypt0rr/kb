@@ -5,11 +5,11 @@ description : "This small utility retrieves from the CommonCrawl data set unique
 date : 2021-08-04T15:10:35+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 50
 tags : ['OSINT', 'DNS']
 ---
 
-## CCrawlDNS
+---
 
 This small utility retrieves from the CommonCrawl data set unique subdomains for a given domain name.
 

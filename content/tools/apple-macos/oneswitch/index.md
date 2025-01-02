@@ -5,11 +5,11 @@ description : "All your powerful switches in one place."
 date : 2022-01-09T13:25:29+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 330
 # tags : ['']
 ---
 
-## One Switch
+---
 
 One Switch is a tiny app designed to improve your efficiency by providing quick access to a few important switches. It can be opened from your menu bar, and it allows you to toggle certain system features with just a couple of clicks.
 

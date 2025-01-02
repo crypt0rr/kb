@@ -5,11 +5,11 @@ description : "Mount a filesystem."
 date : 2020-03-13T21:37:42+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 600
 # tags : ['']
 ---
 
-## Mount
+---
 
 ## Usage
 

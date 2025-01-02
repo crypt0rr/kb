@@ -5,11 +5,11 @@ description : "Build and execute command lines from standard input."
 date : 2020-05-27T11:53:40+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 1010
 # tags : ['']
 ---
 
-## Xargs
+---
 
 ## Usage
 

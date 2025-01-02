@@ -5,11 +5,11 @@ description : "A fast wordlist to nthash converter."
 date : 2021-11-25T13:50:33+01:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 110
 # tags : ['']
 ---
 
-## nthasher
+---
 
 A fast wordlist to nthash converter
 

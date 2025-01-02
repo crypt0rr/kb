@@ -5,11 +5,11 @@ description : "Bash scripting must have/know tips."
 date : 2022-09-18T14:34:31+02:00
 # hidden : true
 # draft : true
-weight : 0
+weight : 20
 # tags : ['']
 ---
 
-## Bash Scripting
+---
 
 Bash scripting must have/know tips.
 
