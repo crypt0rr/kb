@@ -1,5 +1,42 @@
 # Changelog
 
+## 7.3.2 (2025-01-26)
+
+### Fixes
+
+- [**bug**] scroll: fix high cpu usage [#996](https://github.com/McShelby/hugo-theme-relearn/issues/996)
+- [**bug**] a11y: don't select a11y helper text in selection [#993](https://github.com/McShelby/hugo-theme-relearn/issues/993)
+- [**bug**] headings: add anchor link in nested shortcode [#992](https://github.com/McShelby/hugo-theme-relearn/issues/992)
+- [**bug**] highlight: make copy of selection work with `noClasses=true` [#991](https://github.com/McShelby/hugo-theme-relearn/issues/991)
+
+---
+
+## 7.3.1 (2025-01-03)
+
+### Fixes
+
+- [**bug**] taxonomy: fix rendering if `unsafe=false` [#986](https://github.com/McShelby/hugo-theme-relearn/issues/986)
+- [**bug**] bug: missing translations for Markdown topbar button [#985](https://github.com/McShelby/hugo-theme-relearn/issues/985)
+
+---
+
+## 7.3.0 (2025-01-02)
+
+### Enhancements
+
+- [**feature**] clipboard: make copy button reachable by keyboard [#983](https://github.com/McShelby/hugo-theme-relearn/issues/983)
+- [**feature**] a11y: use native button elements where appropriate [#982](https://github.com/McShelby/hugo-theme-relearn/issues/982)
+- [**feature**] markdown: support new output format [#979](https://github.com/McShelby/hugo-theme-relearn/issues/979)
+- [**feature**] topbar: improve button configuration [#978](https://github.com/McShelby/hugo-theme-relearn/issues/978)
+- [**feature**] details: support built-in Hugo shortcode [#957](https://github.com/McShelby/hugo-theme-relearn/issues/957)
+
+### Fixes
+
+- [**bug**] notice: avoid tab focus for non-expandable boxes [#977](https://github.com/McShelby/hugo-theme-relearn/issues/977)
+- [**bug**] variant: fix importing base variants [#974](https://github.com/McShelby/hugo-theme-relearn/issues/974)
+
+---
+
 ## 7.2.1 (2024-12-10)
 
 ### Fixes

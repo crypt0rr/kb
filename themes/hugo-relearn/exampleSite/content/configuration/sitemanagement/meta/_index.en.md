@@ -13,7 +13,7 @@ weight = 3
 
 {{< multiconfig file=hugo >}}
 [params]
-  [params.author.name]
+  [params.author]
     name = 'Santa Claus'
     email = 'santa@example.com'
 {{< /multiconfig >}}
