@@ -1,11 +1,11 @@
 {{- $authorName := "" }}
-{{- with .Site.Params.author.name }}
+{{- with .Site.Params.author }}
   {{- if reflect.IsMap . }}
     {{- with .name }}
       {{- $authorName = . }}
     {{- end }}
   {{- else }}
-    {{- warnf "DEPRECATED usage of 'params.author.name' config parameter found, replace it with `params.author.name.name` in your hugo.toml; see https://mcshelby.github.io/hugo-theme-relearn/introduction/releasenotes/5/#5-23-0" }}
+    {{- warnf "DEPRECATED usage of 'params.author' config parameter found, replace it with `params.author.name` in your hugo.toml; see https://mcshelby.github.io/hugo-theme-relearn/introduction/releasenotes/5/#5-23-0" }}
     {{- $authorName = . }}
   {{- end }}
 {{- end }}

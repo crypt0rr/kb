@@ -1002,7 +1002,8 @@ div.highlight > div td {
   display: none;
 }
 /* disable selection for lineno cells */
-div.highlight > div td:first-child:not(:last-child) {
+div.highlight > div td:first-child:not(:last-child),
+div.highlight > span[id] {
   -webkit-user-select: none;
   user-select: none;
 }
@@ -1443,11 +1444,16 @@ div.highlight .copy-to-clipboard-button {
     display: block;
   }
 }
+div.highlight:focus-within .copy-to-clipboard-button,
+div.highlight .copy-to-clipboard-button:active,
 div.highlight:hover .copy-to-clipboard-button {
   display: block;
 }
 .disableHoverBlockCopyToClipBoard div.highlight .copy-to-clipboard-button {
   display: block;
+}
+.force-display {
+  display: block !important;
 }
 
 div.highlight > div table + .copy-to-clipboard-button > i,
@@ -1479,7 +1485,7 @@ pre:not(.mermaid) .copy-to-clipboard-button:hover {
   color: var(--INTERNAL-CODE-BLOCK-BG-color);
 }
 
-.disableInlineCopyToClipboard span > code.copy-to-clipboard-code + span.copy-to-clipboard-button {
+.disableInlineCopyToClipboard span > code.copy-to-clipboard-code + .copy-to-clipboard-button {
   display: none;
 }
 
@@ -1821,6 +1827,9 @@ html[dir='rtl'] .expand[open] > .box-label > i.expander-icon {
 
 /* anchors */
 .anchor {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
   color: var(--INTERNAL-MAIN-LINK-color);
   cursor: pointer;
   font-size: 0.5em;
@@ -2009,6 +2018,8 @@ span.math:has(> mjx-container[display]) {
   height: 1px;
   transform: translateY(-100%);
   transition: transform 0.5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  -webkit-user-select: none;
+  user-select: none;
   white-space: nowrap;
   width: 1px;
 }
