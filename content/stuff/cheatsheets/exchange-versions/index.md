@@ -1,12 +1,12 @@
 ---
-title : "Exchange versions"
-pre : '<i class="far fa-envelope"></i> '
-description : "List of Exchange versions, build numbers and release dates for major releases (RTM, Service Packs) as well as Cumulative Updates and Rollups."
-date : 2021-11-29T15:55:24+01:00
+title: "Exchange versions"
+pre: '<i class="far fa-envelope"></i> '
+description: "List of Exchange versions, build numbers and release dates for major releases (RTM, Service Packs) as well as Cumulative Updates and Rollups."
+date: 2021-11-29T15:55:24+01:00
 # hidden : true
 # draft : true
-weight : 50
-tags : ['Cheatsheets', 'Active Directory']
+weight: 50
+tags: ["Cheatsheets", "Active Directory"]
 ---
 
 ---
@@ -17,24 +17,49 @@ Latest releases are at the top; version numbers may vary slightly between the re
 
 ### 2023
 
-| VERSION            | BUILD        | RELEASE | INFO      |
-| ------------------ | ------------ | ------- | --------- |
-| 2019CU13+KB5026261 | 15.2.1258.16 | Jun-23  | KB5026261 |
-| 2019CU12+KB5026261 | 15.2.1118.30 | Jun-23  | KB5026261 |
-| 2016CU23+KB5026261 | 15.1.2507.27 | Jun-23  | KB5026261 |
-| 2019CU13           | 15.2.1258.12 | May-23  | KB5020999 |
-| 2019CU12+KB5024296 | 15.2.1118.26 | Mar-23  | KB5024296 |
-| 2019CU11+KB5024296 | 15.2.986.42  | Mar-23  | KB5024296 |
-| 2016CU23+KB5024296 | 15.1.2507.23 | Mar-23  | KB5024296 |
-| 2013CU23+KB5024296 | 15.0.1497.48 | Mar-23  | KB5024296 |
-| 2019CU12+KB5023038 | 15.2.1118.25 | Feb-23  | KB5023038 |
-| 2019CU12+KB5023038 | 15.2.986.41  | Feb-23  | KB5023038 |
-| 2016CU23+KB5023038 | 15.1.2507.21 | Feb-23  | KB5023038 |
-| 2013CU23+KB5023038 | 15.0.1497.47 | Feb-23  | KB5023038 |
-| 2019CU12+KB5022193 | 15.2.1118.21 | Jan-23  | KB5022193 |
-| 2019CU11+KB5022193 | 15.2.986.37  | Jan-23  | KB5022193 |
-| 2016CU23+KB5022143 | 15.1.2507.17 | Jan-23  | KB5022143 |
-| 2013CU23+KB5022188 | 15.0.1497.45 | Jan-23  | KB5022188 |
+| VERSION                               | BUILD        | RELEASE | INFO      |
+| ------------------------------------- | ------------ | ------- | --------- |
+| 2019CU14+KB5049233 (November SU v2)   | 15.2.1544.14 | Nov-24  | KB5049233 |
+| 2019CU13+KB5049233 (November SU v2)   | 15.2.1258.39 | Nov-24  | KB5049233 |
+| 2016CU23+KB5049233 (November SU v2)   | 15.1.2507.44 | Nov-24  | KB5049233 |
+| 2019CU14+KB5044062                    | 15.2.1544.13 | Nov-24  | KB5044062 |
+| 2019CU13+KB5044062                    | 15.2.1258.38 | Nov-24  | KB5044062 |
+| 2016CU23+KB5044062                    | 15.1.2507.43 | Nov-24  | KB5044062 |
+| 2019CU14+KB5037224 HU2                | 15.2.1544.11 | Apr-24  | KB5037224 |
+| 2019CU13+KB5037224 HU6                | 15.2.1258.34 | Apr-24  | KB5037224 |
+| 2016CU23+KB5037224 HU13               | 15.1.2507.39 | Apr-24  | KB5037224 |
+| 2019CU14+KB5036402 SU1                | 15.2.1544.9  | Mar-24  | KB5036401 |
+| 2019CU13+KB5036401 SU5                | 15.2.1258.32 | Mar-24  | KB5036402 |
+| 2016CU23+KB5036386 SU12               | 15.1.2507.37 | Mar-24  | KB5036386 |
+| 2019CU14 (2024 H1)                    | 15.2.1544.4  | Jan-24  | KB5035606 |
+| 2019CU13+KB5032146 SU4                | 15.2.1258.28 | Nov-23  | KB5032146 |
+| 2019CU12+KB5032146 SU11               | 15.2.1118.40 | Nov-23  | KB5032146 |
+| 2016CU23+KB5032147 SU11               | 15.1.2507.35 | Nov-23  | KB5032147 |
+| 2019CU13+KB5030877 SU3                | 15.2.1258.27 | Oct-23  | KB5030877 |
+| 2019CU12+KB5030877 SU10               | 15.2.1118.39 | Oct-23  | KB5030877 |
+| 2016CU23+KB5030877 SU10               | 15.1.2507.34 | Oct-23  | KB5030877 |
+| 2019CU13+KB5030524 SU2 (August SU V2) | 15.2.1258.25 | Aug-23  | KB5030524 |
+| 2019CU12+KB5030524 SU9 (August SU V2) | 15.2.1118.37 | Aug-23  | KB5030524 |
+| 2016CU23+KB5030524 SU9 (August SU V2) | 15.1.2507.32 | Aug-23  | KB5030524 |
+| 2019CU13+KB5029388 SU2 (August SU V1) | 15.2.1258.23 | Aug-23  | KB5029388 |
+| 2019CU12+KB5029388 SU9 (August SU V1) | 15.2.1118.36 | Aug-23  | KB5029388 |
+| 2016CU23+KB5029388 SU9 (August SU V1) | 15.1.2507.31 | Aug-23  | KB5029388 |
+| 2019CU13+KB5026261                    | 15.2.1258.16 | Jun-23  | KB5026261 |
+| 2019CU12+KB5026261                    | 15.2.1118.30 | Jun-23  | KB5026261 |
+| 2016CU23+KB5026261                    | 15.1.2507.27 | Jun-23  | KB5026261 |
+| 2019CU13                              | 15.2.1258.12 | May-23  | KB5020999 |
+| 2019CU12+KB5024296                    | 15.2.1118.26 | Mar-23  | KB5024296 |
+| 2019CU11+KB5024296                    | 15.2.986.42  | Mar-23  | KB5024296 |
+| 2016CU23+KB5024296                    | 15.1.2507.23 | Mar-23  | KB5024296 |
+| 2013CU23+KB5024296                    | 15.0.1497.48 | Mar-23  | KB5024296 |
+| 2019CU12+KB5023038                    | 15.2.1118.25 | Feb-23  | KB5023038 |
+| 2019CU12+KB5023038                    | 15.2.986.41  | Feb-23  | KB5023038 |
+| 2016CU23+KB5023038                    | 15.1.2507.21 | Feb-23  | KB5023038 |
+| 2013CU23+KB5023038                    | 15.0.1497.47 | Feb-23  | KB5023038 |
+| 2019CU12+KB5022193                    | 15.2.1118.21 | Jan-23  | KB5022193 |
+| 2019CU11+KB5022193                    | 15.2.986.37  | Jan-23  | KB5022193 |
+| 2016CU23+KB5022143                    | 15.1.2507.17 | Jan-23  | KB5022143 |
+| 2013CU23+KB5022188                    | 15.0.1497.45 | Jan-23  | KB5022188 |
 
 ### 2022
 
@@ -441,4 +466,4 @@ Latest releases are at the top; version numbers may vary slightly between the re
 
 ## URL List
 
-- [Eightwone.com - Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
+-   [Eightwone.com - Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
