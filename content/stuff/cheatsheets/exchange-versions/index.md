@@ -15,7 +15,7 @@ This is the list of Exchange versions, build numbers and release dates for major
 
 Latest releases are at the top; version numbers may vary slightly between the reported version installed, and version of Exchange's setup program, ExSetup.exe.
 
-### 2023
+### 2024
 
 | VERSION                               | BUILD        | RELEASE | INFO      |
 | ------------------------------------- | ------------ | ------- | --------- |
@@ -32,6 +32,11 @@ Latest releases are at the top; version numbers may vary slightly between the re
 | 2019CU13+KB5036401 SU5                | 15.2.1258.32 | Mar-24  | KB5036402 |
 | 2016CU23+KB5036386 SU12               | 15.1.2507.37 | Mar-24  | KB5036386 |
 | 2019CU14 (2024 H1)                    | 15.2.1544.4  | Jan-24  | KB5035606 |
+
+### 2023
+
+| VERSION                               | BUILD        | RELEASE | INFO      |
+| ------------------------------------- | ------------ | ------- | --------- |
 | 2019CU13+KB5032146 SU4                | 15.2.1258.28 | Nov-23  | KB5032146 |
 | 2019CU12+KB5032146 SU11               | 15.2.1118.40 | Nov-23  | KB5032146 |
 | 2016CU23+KB5032147 SU11               | 15.1.2507.35 | Nov-23  | KB5032147 |
