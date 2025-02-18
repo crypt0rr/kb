@@ -15,13 +15,26 @@ weight : 110
 
 ```plain
 git clone https://github.com/0x454b/ARRAffinity.git
-python3 ARR
+```
+
+## Usage
+
+```plain
+python3 ARRAffinity.py value [-h] [-c COOKIE] [-s SUBNET]
+```
+
+## Flags
+
+```plain
+  -h, --help           show this help message and exit
+  -c, --cookie COOKIE  Cookie value
+  -s, --subnet SUBNET  Expected subnet
 ```
 
 ### Precomputation
 
 ```plain
-$ ./ARRAffinity.py -s 127.0.0.0/30
+$ python3 ARRAffinity.py -s 127.0.0.0/30
 127.0.0.0 b1bdc9bd47ba441055db5507a6d0e73c4c0c569b343d80342bec79ca19a27844
 127.0.0.1 a65017b383afe1d4c5d31a1a299b19102ba29d57d8a1d13f96ef19d7a3a64b7c
 127.0.0.2 445d7f3ba4d968338f6ac82fd7a6e78eb620630da86e42e7d0105b91eec78e4f
@@ -31,7 +44,11 @@ $ ./ARRAffinity.py -s 127.0.0.0/30
 ### Cookie and/or subnet check
 
 ```plain
-$ ./ARRAffinity.py -c c4a2a70106b7cf78b28c0ef7da0327960c3fc7fa76363fb9c937f01b04c6276f -s 10.20.30.0/24
+$ python3 ARRAffinity.py -c c4a2a70106b7cf78b28c0ef7da0327960c3fc7fa76363fb9c937f01b04c6276f
+No ARRAffinity match in subnet 127.0.0.1/32
+No ARRAffinity match in subnet 192.168.0.0/16
+No ARRAffinity match in subnet 172.16.0.0/12
+
 ARRAffinity match! IP: 10.20.30.40
 ```
 
