@@ -1,7 +1,7 @@
 ---
-title : "ticket_converter"
+title : "ticketConverter.py"
 # pre : ' '
-description : "A little tool to convert ccache tickets into kirbi (KRB-CRED) and vice versa based on impacket."
+description : "This script will convert kirbi files (commonly used by mimikatz) into ccache files used by impacket, and vice versa."
 date : 2022-01-20T10:19:30+01:00
 # hidden : true
 # draft : true
@@ -18,23 +18,21 @@ As input you must provide a ccache or kirbi file. The script will detect the for
 ## Installation
 
 ```plain
-git clone https://github.com/Zer1t0/ticket_converter
-cd ticket_converter
-pip install -r requirements.txt
+wget https://raw.githubusercontent.com/fortra/impacket/refs/heads/master/examples/ticketConverter.py
 ```
 
 ## Usage
 
 ```plain
-ticket_converter.py [-h] input_file output_file
+ticketConverter.py [-h] input_file output_file
 ```
 
 ## Flags
 
 ```plain
 positional arguments:
-  input_file
-  output_file
+  input_file    File in kirbi (KRB-CRED) or ccache format
+  output_file   Output file
 
 optional arguments:
   -h, --help   show this help message and exit
@@ -45,15 +43,21 @@ optional arguments:
 ### kirbi to ccache
 
 ```plain
-python3 ticket_converter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache
-Converting kirbi => ccache
+$ python3 ticketConverter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache                     
+Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
+
+[*] converting kirbi to ccache...
+[+] done
 ```
 
 ### ccache to kirbi
 
 ```plain
-python3 ticket_converter.py johnDomainAdmin.ccache johnDomainAdmin.kirbi
-Converting ccache => kirbi
+$ python3 ticketConverter.py johnDomainAdmin.ccache johnDomainAdmin.kirbi
+Impacket v0.10.0 - Copyright 2022 SecureAuth Corporation
+
+[*] converting ccache to kirbi...
+[+] done
 ```
 
 ## Troubleshooting
