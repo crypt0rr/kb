@@ -233,7 +233,7 @@ d-----         1/19/2022   6:25 AM                Windows
 
 ### Convert .kirbi to .ccache
 
-Use [ticket_converter]({{< ref "ticket-converter" >}}).
+Use [ticketConverter.py]({{< ref "ticketconverter" >}}).
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache
