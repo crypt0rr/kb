@@ -1,6 +1,9 @@
 [Reading-direction]
 other = "rtl"
 
+[Versioning-warning]
+other = 'أنت تقرأ الإصدار {{.pageVersion.title}} من هذه الصفحة. يمكن العثور على الإصدار الحالي <a href="{{.latestUrl}}">هنا</a>.'
+
 [Search]
 other = "البحث"
 
@@ -37,11 +40,17 @@ other = ".¯\\_(ツ)_/¯أوبس. يبدو أن هذه الصفحة غير مو�
 [Go-to-homepage]
 other = "الذهاب إلى الصفحة الرئيسية"
 
+[home-button]
+other = "Home"
+
 [Edit-this-page]
 other = "حرر"
 
 [Show-Markdown]
 other = "إظهار Markdown"
+
+[Show-source]
+other = "إظهار شفرة المصدر"
 
 [Print-this-chapter]
 other = "طباعة الفصل بأكمله"

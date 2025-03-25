@@ -5,54 +5,161 @@
       {{- warnf "WARNING no key `relearnOutputFormat` found in page store, set one by providing the file `layouts/_default/view/storeOutputFormat.<MYOUTPUTFORMAT>.html` for your self-defined output format; see https://mcshelby.github.io/hugo-theme-relearn/introduction/releasenotes/6/#6-0-0" }}
     {{- end }}
     {{- $assetBusting := partialCached "assetbusting.gotmpl" . }}
-    {{- /* https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use */}}
-    <link href="{{"css/fontawesome-all.min.css" | relURL}}{{ $assetBusting }}" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="{{"css/fontawesome-all.min.css" | relURL}}{{ $assetBusting }}" rel="stylesheet"></noscript>
-    <link href="{{"css/auto-complete.css" | relURL}}{{ $assetBusting }}" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="{{"css/auto-complete.css" | relURL}}{{ $assetBusting }}" rel="stylesheet"></noscript>
-    <link href="{{"css/perfect-scrollbar.min.css" | relURL}}{{ $assetBusting }}" rel="stylesheet">
-    {{- $themevariants := partialCached "_relearn/themeVariants.gotmpl" . }}
     {{- $minify := not hugo.IsServer }}
     {{- if and (isset site.Params "minify") (ne site.Params.minify "") }}
       {{- $minify = site.Params.minify }}
     {{- end }}
     {{- $min := cond $minify ".min" "" }}
+    {{- /* https://github.com/filamentgroup/loadCSS/blob/master/README.md#how-to-use */}}
+    {{- with resources.Get "/fonts/fontawesome/css/fontawesome-all.min.css" }}
+    <link href="{{ .RelPermalink }}{{ $assetBusting }}" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="{{ .RelPermalink }}{{ $assetBusting }}" rel="stylesheet"></noscript>
+    {{- end }}
+    {{- with resources.Get "/css/perfect-scrollbar/perfect-scrollbar.min.css" }}
+    <link href="{{ .RelPermalink }}{{ $assetBusting }}" rel="stylesheet">
+    {{- end }}
+    {{- $themevariants := partialCached "_relearn/themeVariants.gotmpl" . }}
+    {{- $quotedthemevariants := slice }}
+    {{- range $themevariants }}
+      {{- $quotedthemevariants = $quotedthemevariants | append (printf "'%s'" .identifier) }}
+    {{- end }}
+    {{- $wrap := true }}
+    {{- if isset site.Params "highlightwrap" }}
+      {{- $wrap = site.Params.highlightWrap  }}
+    {{- end }}
+    {{- if isset .Params "highlightwrap" }}
+      {{- $wrap = .Params.highlightWrap }}
+    {{- end }}
+    {{- $disableInlineCopyToClipboard := site.Params.disableInlineCopyToClipBoard }}
+    {{- $pageBaseLang := replaceRE "([a-z]+).*" "${1}" .Page.Language.LanguageCode }}
+    {{- $contentlangs := (union (slice | append (site.Params.additionalContentLanguage | default slice)) (slice $pageBaseLang)) }}
+    {{- $quotedcontentlangs := slice }}
+    {{- $searchIndexUrl := "" }}
     <link href="{{(printf "css/theme%s.css" $min) | relURL}}{{ $assetBusting }}" rel="stylesheet">
     <link href="{{(printf "css/format-%s%s.css" $outputFormat $min) | relURL}}{{ $assetBusting }}" rel="stylesheet" id="R-format-style">
+    {{- if not .Site.Params.disableSearch }}
+      {{- with resources.Get "/css/auto-complete/auto-complete.css" }}
+    <link href="{{ (. | minify).RelPermalink }}{{ $assetBusting }}" rel="stylesheet">
+      {{- end }}
+      {{- with resources.Get "/js/auto-complete/auto-complete.js" }}
+    <script src="{{ (. | minify).RelPermalink }}{{ $assetBusting }}" defer></script>
+      {{- end }}
+      {{- if not .Site.Params.disableSearchIndex }}
+        {{- $searchIndexUrl = trim (or .Site.Params.searchIndexURL "searchindex.js") "/" }}
+        {{- $searchIndexUrl = path.Join (path.Dir $searchIndexUrl) (print (path.BaseName $searchIndexUrl) "." .Language.Lang (path.Ext $searchIndexUrl)) }}
+        {{- if .IsHome }}
+          {{- $templateres := resources.Get "/_relearn_searchindex.js" }}
+          {{- $resultres := $templateres | resources.ExecuteAsTemplate $searchIndexUrl .Site.Home }}
+          {{- /* the following code causes Hugo to generate our file in public */}}
+          {{- $url := $resultres.RelPermalink }}
+        {{- end }}
+        {{- with resources.Get "/js/lunr/lunr.min.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+        {{- end }}
+        {{- with resources.Get "/js/lunr/lunr.stemmer.support.min.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+        {{- end }}
+        {{- with resources.Get "/js/lunr/lunr.multi.min.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+        {{- end }}
+        {{- $missingcontentlangs := slice }}
+        {{- $tinyseg := false }}
+        {{- $wordcut := false }}
+        {{- range $contentlangs }}
+          {{- $lang := . }}
+          {{- with resources.Get (printf "/js/lunr/lunr.%s.min.js" $lang) }}
+            {{- if and (not $tinyseg) (or (eq $lang "ja")) }}
+              {{- $tinyseg = true }}
+              {{- with resources.Get "/js/lunr/tinyseg.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+              {{- end }}
+            {{- end }}
+            {{- if and (not $wordcut) (or (eq $lang "hi") (eq $lang "th")) }}
+              {{- $wordcut = true }}
+              {{- with resources.Get "/js/lunr/wordcut.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+              {{- end }}
+            {{- end }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+          {{- else }}
+            {{- $missingcontentlangs = $missingcontentlangs | append . }}
+          {{- end }}
+        {{- end }}
+        {{- $contentlangs = $contentlangs | complement $missingcontentlangs }}
+      {{- end }}
+      {{- with resources.Get "/js/search.js" }}
+        {{- $res := . }}
+        {{- if $minify }}
+          {{- $res = $res | minify }}
+        {{- end }}
+    <script src="{{ $res.RelPermalink }}{{ $assetBusting }}" defer></script>
+      {{- end }}
+    {{- end }}
+    {{- range $contentlangs }}
+      {{- $quotedcontentlangs = $quotedcontentlangs | append (printf "'%s'" .) }}
+    {{- end }}
+    {{- $versionIndexUrl := "" }}
+    {{- $versions := partialCached "_relearn/siteVersions.gotmpl" . }}
+    {{- if $versions }}
+      {{- $versionIndexUrl = trim (or .Site.Params.versionIndexURL "versionindex.js") "/" }}
+      {{- $versionIndexUrl = path.Join (path.Dir $versionIndexUrl) (print (path.BaseName $versionIndexUrl) "." site.Language.Lang (path.Ext $versionIndexUrl)) }}
+      {{- if .IsHome }}
+        {{- $templateres := resources.Get "/_relearn_versionindex.js" }}
+        {{- $resultres := $templateres | resources.ExecuteAsTemplate $versionIndexUrl site.Home }}
+        {{- /* the following code causes Hugo to generate our file in public */}}
+        {{- $url := $resultres.RelPermalink }}
+      {{- end }}
+      {{- with (where $versions "isLatest" true | first 1) }}
+        {{- range . }}
+          {{- $versionIndexUrl = print .baseURL "/" $versionIndexUrl }}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+    {{- $path := partial "_relearn/pageLangPath.gotmpl" . }}
     <script>
       window.relearn = window.relearn || {};
+      {{ "// configuration" | safeJS }}
+      {{ printf "window.relearn.min = `%s`;" $min | safeJS }}
+      window.relearn.path='{{ $path | safeJS }}';
       window.relearn.relBasePath='{{ partial "_relearn/relBasePath.gotmpl" . | safeJS }}';
       window.relearn.relBaseUri='{{ partial "_relearn/relBaseUri.gotmpl" . | safeJS }}';
       window.relearn.absBaseUri='{{ replaceRE "/*$" "" .Site.BaseURL | safeJS }}';
-      {{ printf "window.relearn.min = `%s`;" $min | safeJS }}
+      window.relearn.contentLangs=[{{ delimit $quotedcontentlangs ", " | safeJS }}];
+      {{- if $searchIndexUrl }}
+      window.relearn.index_js_url={{ (printf "%s%s" $searchIndexUrl $assetBusting) | relURL }};
+      {{- end }}
+      {{- if $versionIndexUrl }}
+      window.relearn.version_js_url={{ (printf "%s%s" $versionIndexUrl $assetBusting) | relURL }};
+      {{- end }}
       window.relearn.disableAnchorCopy={{ printf "%t" (eq .Site.Params.disableAnchorCopy true) | safeJS }};
       window.relearn.disableAnchorScrolling={{ printf "%t" (eq .Site.Params.disableAnchorScrolling true) | safeJS }};
+      window.relearn.disableInlineCopyToClipboard={{ printf "%t" (eq $disableInlineCopyToClipboard true) | safeJS }};
+      window.relearn.enableBlockCodeWrap={{ printf "%t" (eq $wrap true) | safeJS }};
+      {{ "// legal" | safeJS }}
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
       {{ "// variant stuff" | safeJS }}
-      {{- $quotedthemevariants := slice }}
-      {{- range $themevariants }}
-        {{- $quotedthemevariants = $quotedthemevariants | append (printf "'%s'" .identifier) }}
-      {{- end }}
       window.relearn.themevariants = [ {{ delimit $quotedthemevariants ", " | safeJS }} ];
       window.relearn.customvariantname = "my-custom-variant";
       window.relearn.changeVariant = function(variant) {
         var oldVariant = document.documentElement.dataset.rThemeVariant;
-        window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
         document.documentElement.dataset.rThemeVariant = variant;
         if (oldVariant != variant) {
           document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
         }
       }
       window.relearn.markVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant");
-        var select = document.querySelector("#R-select-variant");
-        if (select) {
-          select.value = variant;
-        }
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
       }
       window.relearn.initVariant = function() {
-        var variant = window.localStorage.getItem(window.relearn.absBaseUri + "/variant") ?? "";
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
         if( variant == window.relearn.customvariantname ){
         }else if( !variant || !window.relearn.themevariants.includes(variant) ){
           variant = window.relearn.themevariants[0];
-          window.localStorage.setItem(window.relearn.absBaseUri + "/variant", variant);
+          window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
         }
         document.documentElement.dataset.rThemeVariant = variant;
       }

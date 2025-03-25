@@ -1,6 +1,9 @@
 [Reading-direction]
 other = "rtl"
 
+[Versioning-warning]
+other = 'شما در حال خواندن نسخه {{.pageVersion.title}} این صفحه هستید. نسخه فعلی را می توان یافت <a href="{{.latestUrl}}">اینجا</a>.'
+
 [Search]
 other = "جستجو"
 
@@ -37,11 +40,17 @@ other = "اوه! به نظر می‌رسد این صفحه وجود ندارد �
 [Go-to-homepage]
 other = "رفتن به صفحه اصلی"
 
+[home-button]
+other = "Home"
+
 [Edit-this-page]
 other = "ویرایش"
 
 [Show-Markdown]
 other = "نمایش Markdown"
+
+[Show-source]
+other = "نمایش کد منبع"
 
 [Print-this-chapter]
 other = "چاپ کل فصل"

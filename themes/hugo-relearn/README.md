@@ -30,24 +30,27 @@ The Relearn theme is an enhanced fork of the popular [Learn theme](https://githu
 - **Advanced Functionality**
   - [Chapter and site-wide printing capabilities](https://mcshelby.github.io/hugo-theme-relearn/configuration/sitemanagement/outputformats#print-support)
   - [Versatile search options: in-page, popup, and dedicated search page](https://mcshelby.github.io/hugo-theme-relearn/configuration/sidebar/search)
-  - [Customizable top bar buttons](https://mcshelby.github.io/hugo-theme-relearn/configuration/customization/topbar)
-  - [Configurable menus](https://mcshelby.github.io/hugo-theme-relearn/configuration/sidebar/menus)
+  - [Customizable topbar buttons](https://mcshelby.github.io/hugo-theme-relearn/configuration/customization/topbar)
+  - [Configurable sidebar menus](https://mcshelby.github.io/hugo-theme-relearn/configuration/sidebar/menus)
   - [Support for hidden pages](https://mcshelby.github.io/hugo-theme-relearn/configuration/content/hidden)
   - [Comprehensive taxonomy support](https://mcshelby.github.io/hugo-theme-relearn/configuration/customization/taxonomy)
+  - [Versioning support](https://mcshelby.github.io/hugo-theme-relearn/configuration/sitemanagement/versioning)
   - [Social media integration](https://mcshelby.github.io/hugo-theme-relearn/configuration/sitemanagement/meta#social-media-images)
 
 - **Multilingual Support**
   - [Full right-to-left (RTL) language support](https://mcshelby.github.io/hugo-theme-relearn/configuration/sitemanagement/multilingual)
-  - [Extensive list of supported languages](https://mcshelby.github.io/hugo-theme-relearn/configuration/sitemanagement/multilingual): Arabic, Chinese (Simplified and Traditional), Czech, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Persian, Polish, Portuguese, Romanian, Russian, Spanish, Swahili, Turkish, Vietnamese
+  - [Extensive list of supported languages](https://mcshelby.github.io/hugo-theme-relearn/configuration/sitemanagement/multilingual): Arabic, Chinese (Simplified and Traditional), Czech, Dutch, English, Finnish, French, German, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Persian, Polish, Portuguese, Romanian, Russian, Spanish, Swahili, Turkish, Ukrainian, Vietnamese
   - [Multilingual content search capabilities](https://mcshelby.github.io/hugo-theme-relearn/configuration/sidebar/search#mixed-language-support)
 
 - **Enhanced Markdown Features**
-  - [CommonMark and other Markdown extensions](https://mcshelby.github.io/hugo-theme-relearn/authoring/markdown#standard-and-extensions)
+  - [CommonMark compliant](https://mcshelby.github.io/hugo-theme-relearn/authoring/markdown)
+  - [Support for Markdown extensions like GitHub Flavored Markdown](https://mcshelby.github.io/hugo-theme-relearn/authoring/markdown#standard-and-extensions)
   - [Support for Obsidian callouts](https://mcshelby.github.io/hugo-theme-relearn/authoring/markdown#obsidian-callouts)
-  - [Advanced image manipulation like lightbox, sizing, shadows, borders, and alignment](https://mcshelby.github.io/hugo-theme-relearn/configuration/customization/imageeffects)
+  - [Advanced link manipulation like download and target](https://mcshelby.github.io/hugo-theme-relearn/configuration/customization/linkeffects)
+  - [Advanced image manipulation like lightbox, sizing, shadows, borders and alignment](https://mcshelby.github.io/hugo-theme-relearn/configuration/customization/imageeffects)
 
 - **Rich Shortcode Library**
-  - [Customizable marker badges](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/badge)
+  - [Marker badges](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/badge)
   - [Flexible buttons](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/button)
   - [Child page listing](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/children)
   - [Expandable content areas](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/expand)
@@ -60,6 +63,7 @@ The Relearn theme is an enhanced fork of the popular [Learn theme](https://githu
   - [Page bundle resource display](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/resources)
   - [Site configuration parameter display](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/siteparam)
   - [Tab-based content organization](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/tab) and [multi-tab panels](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/tabs)
+  - [Nicely formatted tree lists](https://mcshelby.github.io/hugo-theme-relearn/shortcodes/tree)
 
 ## Getting Started
 

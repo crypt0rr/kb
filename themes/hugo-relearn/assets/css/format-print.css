@@ -17,11 +17,6 @@ html {
 body {
   background-color: rgba(255, 255, 255, 1);
 }
-code.copy-to-clipboard-code {
-  border-start-end-radius: 2px;
-  border-end-end-radius: 2px;
-  border-inline-end-width: 1px;
-}
 pre:not(.mermaid) {
   border: 1px solid rgba(204, 204, 204, 1);
 }
@@ -43,7 +38,10 @@ pre:not(.mermaid) {
     visibility: visible;
   }
 }
-#R-body .copy-to-clipboard-button {
+
+code.copy-to-clipboard-code:after,
+.inline-copy-to-clipboard-button,
+.block-copy-to-clipboard-button {
   display: none;
 }
 
@@ -189,7 +187,7 @@ article {
   width: 100%;
 }
 
-#R-body #R-body-inner > .flex-block-wrapper article.narrow p {
+#R-body #R-body-inner > .flex-block-wrapper article.narrow > p {
   font-size: 1.015625rem;
   text-align: start;
 }

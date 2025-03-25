@@ -1,6 +1,9 @@
 [Reading-direction]
 other = "ltr"
 
+[Versioning-warning]
+other = 'Вы читаете версию {{.pageVersion.title}} этой страницы. Актуальную версию можно найти <a href="{{.latestUrl}}">здесь</a>.'
+
 [Search]
 other = "Поиск"
 
@@ -37,11 +40,17 @@ other = "Упс. Выглядит будто такой страницы нет 
 [Go-to-homepage]
 other = "Перейти на главную"
 
+[home-button]
+other = "Home"
+
 [Edit-this-page]
 other = "редактировать"
 
 [Show-Markdown]
 other = "Показать Markdown"
+
+[Show-source]
+other = "Показать исходный код"
 
 [Print-this-chapter]
 other = "Печать всей главы"

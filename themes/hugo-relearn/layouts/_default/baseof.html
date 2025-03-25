@@ -40,7 +40,7 @@
     {{- partial "dependencies.gotmpl" (dict "page" . "location" "header") }}
     {{- partial "custom-header.html" . }}
   </head>
-  <body class="mobile-support {{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}{{- if .Site.Params.disableInlineCopyToClipBoard }} disableInlineCopyToClipboard{{ end }}{{- if .Site.Params.disableHoverBlockCopyToClipBoard }} disableHoverBlockCopyToClipBoard{{ end }}" data-url="{{ partial "permalink.gotmpl" (dict "to" .) }}">
+  <body class="mobile-support {{ with .Store.Get "relearnOutputFormat" }}{{ . }}{{ else }}html{{ end }}{{- if .Site.Params.disableHoverBlockCopyToClipBoard }} disableHoverBlockCopyToClipBoard{{ end }}" data-url="{{ partial "permalink.gotmpl" (dict "to" .) }}">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -52,7 +52,7 @@
           {{- $showBreadcrumb := (and (not .Params.disableBreadcrumb) (not .Site.Params.disableBreadcrumb)) }}
           {{- if $showBreadcrumb }}
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
-            {{- partial "breadcrumbs.html" (dict "page" .) }}
+            {{- partial "breadcrumbs.html" (dict "page" . "schema" true) }}
           </ol>
           {{- else }}
           <span class="topbar-breadcrumbs highlightable">
@@ -74,10 +74,24 @@
     </div>
 {{- block "menu" . }}{{ end }}
 {{- $assetBusting := partialCached "assetbusting.gotmpl" . }}
-    <script src="{{"js/clipboard.min.js" | relURL}}{{ $assetBusting }}" defer></script>
-    <script src="{{"js/perfect-scrollbar.min.js" | relURL}}{{ $assetBusting }}" defer></script>
+{{- $minify := not hugo.IsServer }}
+{{- if and (isset site.Params "minify") (ne site.Params.minify "") }}
+  {{- $minify = site.Params.minify }}
+{{- end }}
+{{- with resources.Get "/js/clipboard/clipboard.min.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+{{- end }}
+{{- with resources.Get "/js/perfect-scrollbar/perfect-scrollbar.min.js" }}
+    <script src="{{ .RelPermalink }}{{ $assetBusting }}" defer></script>
+{{- end }}
 {{- partial "dependencies.gotmpl" (dict "page" . "location" "footer") }}
-    <script src="{{"js/theme.js" | relURL}}{{ $assetBusting }}" defer></script>
+{{- with resources.Get "/js/theme.js" }}
+  {{- $res := . }}
+  {{- if $minify }}
+    {{- $res = $res | minify }}
+  {{- end }}
+    <script src="{{ $res.RelPermalink }}{{ $assetBusting }}" defer></script>
+{{- end }}
 {{- partial "custom-footer.html" . }}
   </body>
 </html>

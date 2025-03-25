@@ -1,6 +1,9 @@
 [Reading-direction]
 other = "ltr"
 
+[Versioning-warning]
+other = '您正在阅读此页面的 {{.pageVersion.title}} 版本。可以找到当前版本<a href="{{.latestUrl}}">这里</a>。'
+
 [Search]
 other = "搜索"
 
@@ -37,11 +40,17 @@ other = "哎哟。 看起来这个页面不存在 ¯\\_(ツ)_/¯。"
 [Go-to-homepage]
 other = "转到主页"
 
+[home-button]
+other = "Home"
+
 [Edit-this-page]
 other = "编辑"
 
 [Show-Markdown]
 other = "显示 Markdown"
+
+[Show-source]
+other = "显示源代码"
 
 [Print-this-chapter]
 other = "打印整章"
