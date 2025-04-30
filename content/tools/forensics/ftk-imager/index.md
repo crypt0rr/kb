@@ -15,7 +15,9 @@ FTK® Imager is a data preview and imaging tool that lets you quickly assess ele
 
 ## Installation
 
-Download newest release from [accessdata.com](https://accessdata.com/product-download)
+Download newest release from [exterro.com](https://www.exterro.com/digital-forensics-software/ftk-imager)
+
+{{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
 ## Examples
 
@@ -28,4 +30,4 @@ Download newest release from [accessdata.com](https://accessdata.com/product-dow
 
 ## URL List
 
-- [Accessdata.com](https://accessdata.com)
+- [Exterro.com](https://www.exterro.com)
