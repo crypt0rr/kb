@@ -17,8 +17,6 @@ FTK® Imager is a data preview and imaging tool that lets you quickly assess ele
 
 Download newest release from [exterro.com](https://www.exterro.com/digital-forensics-software/ftk-imager)
 
-{{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
-
 ## Examples
 
 ![Example](images/example-1.png)
