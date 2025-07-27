@@ -120,6 +120,7 @@ Andromeda (theme, https://marketplace.visualstudio.com/items?itemName=EliverLara
 ANSI Colors
 auto rename tag
 autoclosetag
+Batch Rename
 better comments
 better toml
 code spell checker
