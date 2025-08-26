@@ -285,3 +285,4 @@ SMB         DC01PKI.offsec.nl 445    DC01PKI         [+] offsec.nl\johnDomainAdm
 - [Gist.github.com - Flangvik - PKI Abuse Cheatsheet](https://gist.github.com/Flangvik/15c3007dcd57b742d4ee99502440b250)
 - [Ppn.snovvcrash.rocks - ADCS Abuse](https://ppn.snovvcrash.rocks/pentest/infrastructure/ad/ad-cs-abuse)
 - [Crowe.com - Exploiting AD CS: A quick look at ESC1 and ESC8](https://www.crowe.com/cybersecurity-watch/exploiting-ad-cs-a-quick-look-at-esc1-esc8)
+- [Pentest Everything - ESC1](https://viperone.gitbook.io/pentest-everything/everything/everything-active-directory/adcs/esc1)
