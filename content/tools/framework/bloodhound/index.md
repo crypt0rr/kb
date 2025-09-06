@@ -15,10 +15,6 @@ Uses graph theory to reveal the hidden and often unintended relationships within
 
 ### Collectors
 
-{{%resources title="Collector for v4.1+" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.1.*"/%}}
-
-{{%resources title="Collectors for v4.2+ (newest)" fa_icon_class="far fa-file-code" pattern="SharpHound_v4.2.*"/%}}
-
 To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
 
 ## Installation
