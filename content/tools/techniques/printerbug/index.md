@@ -17,8 +17,6 @@ Triggers RPC call using SpoolService bug.
 
 Make sure you have installed Impacket and download [printerbug.py](https://raw.githubusercontent.com/dirkjanm/krbrelayx/master/printerbug.py).
 
-{{%resources fa_icon_class="far fa-file-code" pattern=".*(py|exe)"/%}}
-
 ## Step 1 - Is printspooler enabled?
 
 ```plain

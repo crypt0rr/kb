@@ -19,10 +19,6 @@ Kerberos Resource-Based Constrained Delegation Attack (Kerberos RBCD / KRBCD). R
 git clone https://github.com/tothi/rbcd-attack
 ```
 
-### Rubeus.exe
-
-{{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
-
 ### Abusing
 
 ### Create the computer object needed for the operation

@@ -19,10 +19,6 @@ It's Fully Undetectable and bypass almost all the vendors AV/EDRs, it doesn't by
 
 Download source and compile with for example [Visual Studio](https://visualstudio.microsoft.com/).
 
-The binaries below are compiled on Windows 11 21H2 Build 22000.1335 on the 27th of December 2022.
-
-{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
-
 ## Usage
 
 Start CMD or PowerShell as (local) administrator.
