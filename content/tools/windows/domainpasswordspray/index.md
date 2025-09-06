@@ -9,12 +9,6 @@ weight : 80
 # tags : ['']
 ---
 
----
-
-Powershell script to perform password spray attack in Active Directory.
-
-{{%resources fa_icon_class="far fa-file" pattern=".*(ps1)"/%}}
-
 ## Installation
 
 ```plain

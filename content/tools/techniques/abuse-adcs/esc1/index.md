@@ -167,8 +167,6 @@ You can now use the hash (`5f859684db2422704e9e4c2cd7e27b07`) for Pass-the-Hash.
 
 ### Requesting TGT for alternative user via Windows
 
-{{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
-
 Move the `.pfx` to a Windows machine and start PowerShell for `Rubeus.exe`.
 
 ```plain
