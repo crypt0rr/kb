@@ -13,11 +13,11 @@ tags : ['Other', 'Active Directory']
 
 This tool is designed to assist in quickly bruteforcing valid Active Directory accounts through Kerberos Pre-Authentication.
 
-A list of common used AD usernames can be downloaded [here](https://github.com/crypt0rr/common-ad-usernames).
+A list of common used AD usernames can be downloaded [this link](https://github.com/crypt0rr/common-ad-usernames).
 
 ## Installation
 
-Download latest binary from [Github.com](https://github.com/ropnop/kerbrute/releases/latest)
+Download latest binary from [Github.com](https://github.com/ropnop/kerbrute/releases/latest) or install directly via Go `go install github.com/ropnop/kerbrute@latest`.
 
 ## Usage
 
@@ -34,11 +34,14 @@ kerbrute [command]
  / ,< /  __/ /  / /_/ / /  / /_/ / /_/  __/
 /_/|_|\___/_/  /_.___/_/   \__,_/\__/\___/                                        
 
-Version: v1.0.3 (9dad6e1) - 02/15/21 - Ronnie Flathers @ropnop
+Version: dev (n/a) - 09/22/25 - Ronnie Flathers @ropnop
 
 This tool is designed to assist in quickly bruteforcing valid Active Directory accounts through Kerberos Pre-Authentication.
 It is designed to be used on an internal Windows domain with access to one of the Domain Controllers.
 Warning: failed Kerberos Pre-Auth counts as a failed login and WILL lock out accounts
+
+Usage:
+  kerbrute [command]
 
 Available Commands:
   bruteforce    Bruteforce username:password combos, from a file or stdin

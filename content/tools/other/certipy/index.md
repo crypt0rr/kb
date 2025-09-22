@@ -16,8 +16,9 @@ Active Directory Certificate Services enumeration and abuse.
 ## Installation
 
 ```plain
-git clone https://github.com/ly4k/Certipy
-sudo python3 setup.py install
+python3 -m venv certipy-venv
+source certipy-venv/bin/activate
+pip install certipy-ad
 ```
 
 ## Usage
