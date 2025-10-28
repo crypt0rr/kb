@@ -65,9 +65,8 @@ By default, hash-cracker will run in 'ask you all variable' mode. When specifyin
 ### 'Normal' mode
 
 ```plain
-$ $ ./hash-cracker.sh   
-
-hash-cracker v4.1 by crypt0rr (https://github.com/crypt0rr)
+$ ./hash-cracker.sh
+hash-cracker v4.2.1 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
@@ -106,6 +105,7 @@ Variable Parameters:
 19. Digit remover
 20. Stacker
 21. Custom brute force
+22. Directory of word lists plain and then with buka_400k
 
 Please enter job number or type exit:
 ```
@@ -137,7 +137,7 @@ WORDLIST2=wordlists/ignis-1K.txt
 ```plain
 $ ./hash-cracker.sh --static
 
-hash-cracker v4.1 by crypt0rr (https://github.com/crypt0rr)
+hash-cracker v4.2.1 by crypt0rr (https://github.com/crypt0rr)
 
 Mandatory modules:
 [+] Hashcat is executable
@@ -158,7 +158,7 @@ Static parameters:
 [+] Potfile: hash-cracker.pot
 [+] Hashlist: input
 [+] Hashtype: 1000
-[+] Wordlist 1: wordlists/ignis-10M.txt
+[+] Wordlist 1: wordlists/ignis-1M.txt
 [+] Wordlist 2: wordlists/ignis-1M.txt
 
 0. Exit
@@ -183,6 +183,7 @@ Static parameters:
 19. Digit remover
 20. Stacker
 21. Custom brute force
+22. Directory of word lists plain and then with buka_400k
 
 Please enter job number or type exit:
 ```
