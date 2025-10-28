@@ -9,8 +9,6 @@ weight : 50
 # tags : ['']
 ---
 
----
-
 On Domain Controller - create snapshot with `vssadmin.exe`.
 
 ## NTDSUtil
