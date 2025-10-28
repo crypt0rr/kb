@@ -18,10 +18,11 @@ Install [NetExec]({{< ref "../netexec" >}}).
 ## Usage
 
 ```plain
-netexec rdp [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]]
-                   [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache]
-                   [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--server {https,http}] [--server-host HOST] [--server-port PORT] [--connectback-host CHOST] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options]
-                   [-H HASH [HASH ...]] [--port PORT] [--rdp-timeout RDP_TIMEOUT] [--nla-screenshot] [-d DOMAIN | --local-auth] [--screenshot] [--screentime SCREENTIME] [--res RES]
+netexec rdp [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT]
+                   [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT]
+                   [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
+                   [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...]] [--port PORT] [--rdp-timeout RDP_TIMEOUT] [--nla-screenshot] [-d DOMAIN | --local-auth]
+                   [--screenshot] [--screentime SCREENTIME] [--res RES] [-x COMMAND] [-X PS_COMMAND] [--cmd-delay CMD_DELAY] [--clipboard-delay CLIPBOARD_DELAY] [--no-output]
                    target [target ...]
 ```
 
@@ -33,7 +34,7 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -H HASH [HASH ...], --hash HASH [HASH ...]
+  -H, --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
   --port PORT           RDP port (default: 3389)
   --rdp-timeout RDP_TIMEOUT
@@ -45,7 +46,8 @@ options:
 Generic:
   Generic options for nxc across protocols
 
-  -t THREADS, --threads THREADS
+  --version             Display nxc version
+  -t, --threads THREADS
                         set how many concurrent threads to use (default: 256)
   --timeout TIMEOUT     max timeout in seconds of each thread
   --jitter INTERVAL     sets a random delay between each authentication
@@ -69,9 +71,9 @@ DNS:
 Authentication:
   Options for authenticating
 
-  -u USERNAME [USERNAME ...], --username USERNAME [USERNAME ...]
+  -u, --username USERNAME [USERNAME ...]
                         username(s) or file(s) containing usernames
-  -p PASSWORD [PASSWORD ...], --password PASSWORD [PASSWORD ...]
+  -p, --password PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
   -id CRED_ID [CRED_ID ...]
                         database credential ID(s) to use for authentication
@@ -92,24 +94,23 @@ Kerberos:
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
 
-Servers:
-  Options for nxc servers
+Certificate:
+  Options for certificate authentication
 
-  --server {https,http}
-                        use the selected server (default: https)
-  --server-host HOST    IP to bind the server to (default: 0.0.0.0)
-  --server-port PORT    start the server on the specified port
-  --connectback-host CHOST
-                        IP for the remote system to connect back to
+  --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
+  --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
+  --pfx-pass PFXPASS    Password of the pfx certificate
+  --pem-cert PEMCERT    Use certificate authentication from PEM file
+  --pem-key PEMKEY      Private key for the PEM format
 
 Modules:
   Options for nxc modules
 
-  -M MODULE, --module MODULE
-                        module to use
+  -M, --module MODULE   module to use
   -o MODULE_OPTION [MODULE_OPTION ...]
                         module options
-  -L, --list-modules    list available modules
+  -L, --list-modules [LIST_MODULES]
+                        list available modules
   --options             display module options
 
 Screenshot:
@@ -119,6 +120,17 @@ Screenshot:
   --screentime SCREENTIME
                         Time to wait for desktop image (default: 10)
   --res RES             Resolution in WIDTHxHEIGHT format (default: 1024x768)
+
+Command Execution:
+  Options for executing commands
+
+  -x COMMAND            execute the specified command
+  -X PS_COMMAND         execute the specified PowerShell command
+  --cmd-delay CMD_DELAY
+                        Sleep time before executing command (default: 5)
+  --clipboard-delay CLIPBOARD_DELAY
+                        Maximum time to wait for clipboard initialization (seconds) (default: 30)
+  --no-output           do not retrieve command output
 ```
 
 ## Examples

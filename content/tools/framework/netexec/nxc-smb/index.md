@@ -18,15 +18,19 @@ Install [NetExec]({{< ref "../netexec" >}}).
 ## Usage
 
 ```plain
-netexec smb [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]]
-                   [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache]
-                   [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--server {http,https}] [--server-host HOST] [--server-port PORT] [--connectback-host CHOST] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options]
-                   [-H HASH [HASH ...]] [--delegate DELEGATE] [--self] [-d DOMAIN | --local-auth] [--port PORT] [--share SHARE] [--smb-server-port SMB_SERVER_PORT] [--gen-relay-list OUTPUT_FILE] [--smb-timeout SMB_TIMEOUT]
-                   [--laps [LAPS]] [--sam] [--lsa] [--ntds [{vss,drsuapi}]] [--dpapi [{cookies,nosystem} ...]] [--sccm [{disk,wmi}]] [--mkfile MKFILE] [--pvk PVK] [--enabled] [--user USERNTDS] [--shares] [--interfaces]
-                   [--no-write-check] [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--sessions] [--disks] [--loggedon-users-filter LOGGEDON_USERS_FILTER] [--loggedon-users] [--users [USER ...]] [--groups [GROUP]]
-                   [--computers [COMPUTER]] [--local-groups [GROUP]] [--pass-pol] [--rid-brute [MAX_RID]] [--wmi QUERY] [--wmi-namespace NAMESPACE] [--spider SHARE] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST]
-                   [--depth DEPTH] [--only-files] [--pattern PATTERN [PATTERN ...] | --regex REGEX [REGEX ...]] [--put-file FILE FILE] [--get-file FILE FILE] [--append-host] [--exec-method {smbexec,wmiexec,mmcexec,atexec}]
-                   [--dcom-timeout DCOM_TIMEOUT] [--get-output-tries GET_OUTPUT_TRIES] [--codec CODEC] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE] [--clear-obfscripts] [--force-ps32] [--no-encode]
+usage: netexec smb [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT]
+                   [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT]
+                   [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
+                   [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...]] [--delegate DELEGATE] [--self] [-d DOMAIN | --local-auth] [--port PORT] [--share SHARE]
+                   [--smb-server-port SMB_SERVER_PORT] [--no-smbv1] [--gen-relay-list OUTPUT_FILE] [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]] [--generate-hosts-file GENERATE_HOSTS_FILE]
+                   [--generate-krb5-file GENERATE_KRB5_FILE] [--generate-tgt GENERATE_TGT] [--sam [{regdump,secdump}]] [--lsa [{regdump,secdump}]] [--ntds [{drsuapi,vss}]] [--dpapi [{cookies,nosystem} ...]]
+                   [--sccm [{wmi,disk}]] [--mkfile MKFILE] [--pvk PVK] [--enabled] [--user USERNTDS] [--shares [SHARES]] [--dir [DIR]] [--interfaces] [--no-write-check]
+                   [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--disks] [--users [USER ...]] [--users-export USERS_EXPORT] [--groups [GROUP]] [--local-groups [GROUP]] [--computers [COMPUTER]] [--pass-pol]
+                   [--rid-brute [MAX_RID]] [--smb-sessions] [--reg-sessions [REG_SESSIONS]] [--loggedon-users [LOGGEDON_USERS]] [--loggedon-users-filter LOGGEDON_USERS_FILTER] [--qwinsta [QWINSTA]]
+                   [--tasklist [TASKLIST]] [--taskkill TASKKILL] [--wmi QUERY] [--wmi-namespace NAMESPACE] [--spider SHARE] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST] [--depth DEPTH] [--only-files]
+                   [--silent] [--pattern PATTERN [PATTERN ...] | --regex REGEX [REGEX ...]] [--put-file FILE FILE] [--get-file FILE FILE] [--append-host] [--exec-method {smbexec,wmiexec,atexec,mmcexec}]
+                   [--dcom-timeout DCOM_TIMEOUT] [--get-output-tries GET_OUTPUT_TRIES] [--codec CODEC] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE] [--clear-obfscripts] [--force-ps32]
+                   [--no-encode]
                    target [target ...]
 ```
 
@@ -38,27 +42,34 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -H HASH [HASH ...], --hash HASH [HASH ...]
+  -H, --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
   --delegate DELEGATE   Impersonate user with S4U2Self + S4U2Proxy
   --self                Only do S4U2Self, no S4U2Proxy (use with delegate)
-  -d DOMAIN, --domain DOMAIN
-                        domain to authenticate to
+  -d, --domain DOMAIN   domain to authenticate to
   --local-auth          authenticate locally to each target
   --port PORT           SMB port (default: 445)
   --share SHARE         specify a share (default: C$)
   --smb-server-port SMB_SERVER_PORT
                         specify a server port for SMB (default: 445)
+  --no-smbv1            Force to disable SMBv1 in connection
   --gen-relay-list OUTPUT_FILE
                         outputs all hosts that don't require SMB signing to the specified file
   --smb-timeout SMB_TIMEOUT
                         SMB connection timeout (default: 2)
   --laps [LAPS]         LAPS authentification
+  --generate-hosts-file GENERATE_HOSTS_FILE
+                        Generate a hosts file like from a range of IP
+  --generate-krb5-file GENERATE_KRB5_FILE
+                        Generate a krb5 file like from a range of IP
+  --generate-tgt GENERATE_TGT
+                        Generate a tgt ticket
 
 Generic:
   Generic options for nxc across protocols
 
-  -t THREADS, --threads THREADS
+  --version             Display nxc version
+  -t, --threads THREADS
                         set how many concurrent threads to use (default: 256)
   --timeout TIMEOUT     max timeout in seconds of each thread
   --jitter INTERVAL     sets a random delay between each authentication
@@ -82,9 +93,9 @@ DNS:
 Authentication:
   Options for authenticating
 
-  -u USERNAME [USERNAME ...], --username USERNAME [USERNAME ...]
+  -u, --username USERNAME [USERNAME ...]
                         username(s) or file(s) containing usernames
-  -p PASSWORD [PASSWORD ...], --password PASSWORD [PASSWORD ...]
+  -p, --password PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
   -id CRED_ID [CRED_ID ...]
                         database credential ID(s) to use for authentication
@@ -105,36 +116,37 @@ Kerberos:
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
 
-Servers:
-  Options for nxc servers
+Certificate:
+  Options for certificate authentication
 
-  --server {http,https}
-                        use the selected server (default: https)
-  --server-host HOST    IP to bind the server to (default: 0.0.0.0)
-  --server-port PORT    start the server on the specified port
-  --connectback-host CHOST
-                        IP for the remote system to connect back to
+  --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
+  --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
+  --pfx-pass PFXPASS    Password of the pfx certificate
+  --pem-cert PEMCERT    Use certificate authentication from PEM file
+  --pem-key PEMKEY      Private key for the PEM format
 
 Modules:
   Options for nxc modules
 
-  -M MODULE, --module MODULE
-                        module to use
+  -M, --module MODULE   module to use
   -o MODULE_OPTION [MODULE_OPTION ...]
                         module options
-  -L, --list-modules    list available modules
+  -L, --list-modules [LIST_MODULES]
+                        list available modules
   --options             display module options
 
 Credential Gathering:
   Options for gathering credentials
 
-  --sam                 dump SAM hashes from target systems
-  --lsa                 dump LSA secrets from target systems
-  --ntds [{vss,drsuapi}]
+  --sam [{regdump,secdump}]
+                        dump SAM hashes from target systems
+  --lsa [{regdump,secdump}]
+                        dump LSA secrets from target systems
+  --ntds [{drsuapi,vss}]
                         dump the NTDS.dit from target DCs using the specifed method
   --dpapi [{cookies,nosystem} ...]
                         dump DPAPI secrets from target systems, can dump cookies if you add 'cookies', will not dump SYSTEM dpapi if you add nosystem
-  --sccm [{disk,wmi}]   dump SCCM secrets from target systems
+  --sccm [{wmi,disk}]   dump SCCM secrets from target systems
   --mkfile MKFILE       DPAPI option. File with masterkeys in form of {GUID}:SHA1
   --pvk PVK             DPAPI option. File with domain backupkey
   --enabled             Only dump enabled targets from DC
@@ -143,25 +155,35 @@ Credential Gathering:
 Mapping/Enumeration:
   Options for Mapping/Enumerating
 
-  --shares              enumerate shares and access
-  --interfaces          enumerate network interfaces
+  --shares [SHARES]     Enumerate shares and access, filter on specified argument (read ; write ; read,write)
+  --dir [DIR]           List the content of a path (default path: '')
+  --interfaces          Enumerate network interfaces
   --no-write-check      Skip write check on shares (avoid leaving traces when missing delete permissions)
   --filter-shares FILTER_SHARES [FILTER_SHARES ...]
-                        Filter share by access, option 'read' 'write' or 'read,write'
-  --sessions            enumerate active sessions
-  --disks               enumerate disks
-  --loggedon-users-filter LOGGEDON_USERS_FILTER
-                        only search for specific user, works with regex
-  --loggedon-users      enumerate logged on users
-  --users [USER ...]    enumerate domain users, if a user is specified than only its information is queried.
-  --groups [GROUP]      enumerate domain groups, if a group is specified than its members are enumerated
-  --computers [COMPUTER]
-                        enumerate computer users
+                        Filter share by access, option 'READ' 'WRITE' or 'READ,WRITE'
+  --disks               Enumerate disks
+  --users [USER ...]    Enumerate domain users, if a user is specified than only its information is queried.
+  --users-export USERS_EXPORT
+                        Enumerate domain users and export them to the specified file
+  --groups [GROUP]      Enumerate domain groups, if a group is specified than its members are Enumerated
   --local-groups [GROUP]
-                        enumerate local groups, if a group is specified then its members are enumerated
+                        Enumerate local groups, if a group is specified then its members are Enumerated
+  --computers [COMPUTER]
+                        Enumerate computer users
   --pass-pol            dump password policy
   --rid-brute [MAX_RID]
-                        enumerate users by bruteforcing RIDs
+                        Enumerate users by bruteforcing RIDs
+  --smb-sessions        Enumerate active smb sessions
+  --reg-sessions [REG_SESSIONS]
+                        Enumerate users sessions using the Remote Registry. If a username is given, filter for it. If a file is given, filter for listed usernames. If no value is given, list all.
+  --loggedon-users [LOGGEDON_USERS]
+                        Enumerate logged on users, if a user is specified than a regex filter is applied.
+  --loggedon-users-filter LOGGEDON_USERS_FILTER
+                        only search for specific user, works with regex
+  --qwinsta [QWINSTA]   Enumerate user sessions. If a username is given, filter for it; if a file is given, filter for listed usernames. If no value is given, list all.
+  --tasklist [TASKLIST]
+                        Enumerate running processes and filter for the specified one if specified
+  --taskkill TASKKILL   Kills a specific PID or a proces name's PID's
 
 WMI:
   Options for WMI Queries
@@ -181,6 +203,7 @@ Spidering:
                         directories to exclude from spidering
   --depth DEPTH         max spider recursion depth
   --only-files          only spider files
+  --silent              Do not print found files/directories
   --pattern PATTERN [PATTERN ...]
                         pattern(s) to search for in folders, filenames and file content
   --regex REGEX [REGEX ...]
@@ -196,14 +219,14 @@ Files:
 Command Execution:
   Options for executing commands
 
-  --exec-method {smbexec,wmiexec,mmcexec,atexec}
+  --exec-method {smbexec,wmiexec,atexec,mmcexec}
                         method to execute the command. Ignored if in MSSQL mode (default: wmiexec)
   --dcom-timeout DCOM_TIMEOUT
                         DCOM connection timeout (default: 5)
   --get-output-tries GET_OUTPUT_TRIES
                         Number of times atexec/smbexec/mmcexec tries to get results (default: 10)
-  --codec CODEC         Set encoding used (codec) from the target's output. If errors are detected, run chcp.com at the target & map the result with https://docs.python.org/3/library/codecs.html#standard-encodings and then execute
-                        again with --codec and the corresponding codec (default: utf-8)
+  --codec CODEC         Set encoding used (codec) from the target's output. If errors are detected, run chcp.com at the target & map the result with https://docs.python.org/3/library/codecs.html#standard-encodings and
+                        then execute again with --codec and the corresponding codec (default: utf-8)
   --no-output           do not retrieve command output
   -x COMMAND            execute the specified CMD command
   -X PS_COMMAND         execute the specified PowerShell command
@@ -223,71 +246,110 @@ Powershell Obfuscation:
 #### LOW PRIVILEGE MODULES
 
 ```plain
-[*] add-computer              Adds or deletes a domain computer
-[*] dfscoerce                 Module to check if the DC is vulnerable to DFSCocerc, credit to @filip_dragovic/@Wh04m1001 and @topotam
-[*] drop-sc                   Drop a searchConnector-ms file on each writable share
+ENUMERATION
 [*] enum_av                   Gathers information on all endpoint protection solutions installed on the the remote host(s) via LsarLookupNames (no privilege needed)
 [*] enum_ca                   Anonymously uses RPC endpoints to hunt for ADCS CAs
-[*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
-[*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
+[*] gpp_privileges            Extracts privileges assigned via GPOs and resolves SIDs via LDAP.
 [*] ioxidresolver             This module helps you to identify hosts that have additional active interfaces
 [*] ms17-010                  MS17-010 - EternalBlue - NOT TESTED OUTSIDE LAB ENVIRONMENT
 [*] nopac                     Check if the DC is vulnerable to CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard domain user
-[*] petitpotam                Module to check if the DC is vulnerable to PetitPotam, credit to @topotam
-[*] printerbug                Module to check if the Target is vulnerable to PrinterBug. Set LISTENER IP for coercion.
+[*] ntlm_reflection           Attempt to check if the OS is vulnerable to CVE-2025-33073 (NTLM Reflection attack)
+[*] petitpotam                [REMOVED] Module to check if the DC is vulnerable to PetitPotam, credit to @topotam
+[*] printerbug                [REMOVED] Module to check if the Target is vulnerable to PrinterBug. Set LISTENER IP for coercion.
 [*] printnightmare            Check if host vulnerable to printnightmare
-[*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
-[*] shadowcoerce              Module to check if the target is vulnerable to ShadowCoerce, credit to @Shutdown and @topotam
-[*] slinky                    Creates windows shortcuts with the icon attribute containing a URI to the specified  server (default SMB) in all shares with write permissions
-[*] spider_plus               List files recursively and save a JSON share-file metadata to the 'OUTPUT_FOLDER'. See module options for finer configuration.
+[*] remove-mic                Check if host vulnerable to CVE-2019-1040
+[*] sccm-recon6               Check if target is a Distribution point or Primary Site Server through winreg (RECON-6)
+[*] shadowcoerce              [REMOVED] Module to check if the target is vulnerable to ShadowCoerce, credit to @Shutdown and @topotam
+[*] smbghost                  Module to check for the SMB dialect 3.1.1 and compression capability of the host, which is an indicator for the SMBGhost vulnerability (CVE-2020-0796).
 [*] spooler                   Detect if print spooler is enabled or not
 [*] webdav                    Checks whether the WebClient service is running on the target
 [*] zerologon                 Module to check if the DC is vulnerable to Zerologon aka CVE-2020-1472
+
+CREDENTIAL_DUMPING
+[*] aws-credentials           Search for aws credentials files.
+[*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
+[*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
+[*] spider_plus               List files recursively and save a JSON share-file metadata to the 'OUTPUT_FOLDER'. See module options for finer configuration.
+
+PRIVILEGE_ESCALATION
+[*] add-computer              Adds or deletes a domain computer
+[*] backup_operator           Exploit user in backup operator group to dump NTDS @mpgn_x64
+[*] change-password           Change or reset user passwords via various protocols
+[*] coerce_plus               Module to check if the Target is vulnerable to any coerce vulns. Set LISTENER IP for coercion.
+[*] dfscoerce                 [REMOVED] Module to check if the DC is vulnerable to DFSCoerce, credit to @filip_dragovic/@Wh04m1001 and @topotam
+[*] drop-sc                   Drop a searchConnector-ms file on each writable share
+[*] efsr_spray                [REMOVED] Tries to activate the EFSR service by creating a file with the encryption attribute on some available share.
+[*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
+[*] slinky                    Creates windows shortcuts with the icon attribute containing a URI to the specified  server (default SMB) in all shares with write permissions
+[*] timeroast                 Timeroasting exploits Windows NTP authentication to request password hashes of any computer or trust account
 ```
 
 #### HIGH PRIVILEGE MODULES (requires admin privs)
 
 ```plain
+ENUMERATION
 [*] bitlocker                 Enumerating BitLocker Status on target(s) If it is enabled or disabled.
-[*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
 [*] enum_dns                  Uses WMI to dump DNS from an AD DNS Server
-[*] firefox                   Dump credentials from Firefox
+[*] enum_interfaces           Retrieve the list of network interfaces info (Name, IP Address, Subnet Mask, Default Gateway) from remote Windows registry (formerly --interfaces)
 [*] get_netconnections        Uses WMI to query network connections.
-[*] handlekatz                Get lsass dump using handlekatz64 and parse the result with pypykatz
-[*] hash_spider               Dump lsass recursively from a given hash using BH to find local admins
-[*] iis                       Checks for credentials in IIS Application Pool configuration files using appcmd.exe
-[*] impersonate               List and impersonate tokens to run command as locally logged on users
+[*] hyperv-host               Performs a registry query on the VM to lookup its HyperV Host
 [*] install_elevated          Checks for AlwaysInstallElevated
 [*] keepass_discover          Search for KeePass-related files and process.
+[*] lockscreendoors           Detect Windows lock screen backdoors by checking FileDescriptions of accessibility binaries.
+[*] ntlmv1                    Detect if lmcompatibilitylevel on the target is set to lower than 3 (which means ntlmv1 is enabled)
+[*] presence                  Traces Domain and Enterprise Admin presence in the target over SMB
+[*] reg-query                 Performs a registry query on the machine
+[*] runasppl                  Check if the registry value RunAsPPL is set or not
+[*] test_connection           Pings a host
+[*] uac                       Checks UAC status
+[*] wcc                       Check various security configuration items on Windows machines
+
+CREDENTIAL_DUMPING
+[*] dpapi_hash                Remotely dump Dpapi hash based on masterkeys
+[*] entra-sync-creds          Extract Entra ID sync credentials from the target host
+[*] eventlog_creds            Extracting Credentials From Windows Logs (Event ID: 4688 and SYSMON)
+[*] firefox                   [REMOVED] Dump credentials from Firefox
+[*] handlekatz                Get lsass dump using handlekatz64 and parse the result with pypykatz
+[*] iis                       Checks for credentials in IIS Application Pool configuration files using appcmd.exe
 [*] keepass_trigger           Set up a malicious KeePass trigger to export the database in cleartext.
 [*] lsassy                    Dump lsass and parse the result remotely with lsassy
 [*] masky                     Remotely dump domain user credentials via an ADCS and a KDC
-[*] met_inject                Downloads the Meterpreter stager and injects it into memory
 [*] mobaxterm                 Remotely dump MobaXterm credentials via RemoteRegistry or NTUSER.dat export
 [*] mremoteng                 Dump mRemoteNG Passwords in AppData and in Desktop / Documents folders (digging recursively in them) 
-[*] msol                      Dump MSOL cleartext password from the localDB on the Azure AD-Connect Server
+[*] msol                      Dump MSOL cleartext password and Entra ID credentials from the localDB on the Entra ID Connect Server
 [*] nanodump                  Get lsass dump using nanodump and parse the result with pypykatz
+[*] notepad                   Extracts content from Windows Notepad tab state binary files.
+[*] notepad++                 Extracts notepad++ unsaved files.
+[*] ntds-dump-raw             Extracting the ntds.dit, SAM, and SYSTEM files from DC by accessing the raw hard drive.
 [*] ntdsutil                  Dump NTDS with ntdsutil
-[*] ntlmv1                    Detect if lmcompatibilitylevel on the target is set to lower than 3 (which means ntlmv1 is enabled)
-[*] pi                        Run command as logged on users via Process Injection
+[*] powershell_history        Extracts PowerShell history for all users and looks for sensitive commands.
 [*] procdump                  Get lsass dump using procdump64 and parse the result with pypykatz
 [*] putty                     Query the registry for users who saved ssh private keys in PuTTY. Download the private keys if found.
 [*] rdcman                    Remotely dump Remote Desktop Connection Manager (sysinternals) credentials
-[*] rdp                       Enables/Disables RDP
-[*] reg-query                 Performs a registry query on the machine
+[*] recent_files              Extracts recently modified files
+[*] recyclebin                Lists and exports users' recycle bins
 [*] reg-winlogon              Collect autologon credential stored in the registry
-[*] runasppl                  Check if the registry value RunAsPPL is set or not
-[*] schtask_as                Remotely execute a scheduled task as a logged on user
+[*] security-questions        Gets security questions and answers for users on computer
+[*] snipped                   Downloads screenshots taken by the (new) Snipping Tool.
 [*] teams_localdb             Retrieves the cleartext ssoauthcookie from the local Microsoft Teams database, if teams is open we kill all Teams process
-[*] test_connection           Pings a host
-[*] uac                       Checks UAC status
 [*] veeam                     Extracts credentials from local Veeam SQL Database
 [*] vnc                       Loot Passwords from VNC server and client configurations
-[*] wcc                       Check various security configuration items on Windows machines
+[*] wam                       Dump access token from Token Broker Cache. More info here https://blog.xpnsec.com/wam-bam/. Module by zblurx
 [*] wdigest                   Creates/Deletes the 'UseLogonCredential' registry key enabling WDigest cred dumping on Windows >= 8.1
-[*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
 [*] wifi                      Get key of all wireless interfaces
 [*] winscp                    Looks for WinSCP.ini files in the registry and default locations and tries to extract credentials.
+
+PRIVILEGE_ESCALATION
+[*] empire_exec               Uses Empire's RESTful API to generate a launcher for the specified listener and executes it
+[*] hash_spider               Dump lsass recursively from a given hash using BH to find local admins
+[*] impersonate               List and impersonate tokens to run command as locally logged on users
+[*] met_inject                Downloads the Meterpreter stager and injects it into memory
+[*] pi                        Run command as logged on users via Process Injection
+[*] rdp                       Enables/Disables RDP
+[*] remote-uac                Enable or disable remote UAC
+[*] schtask_as                Remotely execute a scheduled task as a logged on user
+[*] shadowrdp                 Enables or disables shadow RDP
+[*] web_delivery              Kicks off a Metasploit Payload using the exploit/multi/script/web_delivery module
 ```
 
 ## Commands to Have on Hand
