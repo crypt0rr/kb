@@ -18,12 +18,13 @@ Install [NetExec]({{< ref "../netexec" >}}).
 ## Usage
 
 ```plain
-netexec ldap [-h] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]]
-                    [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache]
-                    [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--server {http,https}] [--server-host HOST] [--server-port PORT] [--connectback-host CHOST] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L] [--options]
-                    [-H HASH [HASH ...]] [--port PORT] [--no-smb] [-d DOMAIN | --local-auth] [--asreproast ASREPROAST] [--kerberoasting KERBEROASTING] [--query QUERY QUERY] [--trusted-for-delegation] [--password-not-required]
-                    [--admin-count] [--users [USERS ...]] [--groups] [--dc-list] [--get-sid] [--active-users [ACTIVE_USERS ...]] [--gmsa] [--gmsa-convert-id GMSA_CONVERT_ID] [--gmsa-decrypt-lsa GMSA_DECRYPT_LSA] [--bloodhound]
-                    [-c COLLECTION]
+netexec ldap [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT]
+                    [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT]
+                    [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
+                    [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...]] [--port PORT] [-d DOMAIN | --local-auth] [--asreproast ASREPROAST]
+                    [--kerberoasting KERBEROASTING] [--kerberoast-account KERBEROAST_ACCOUNT [KERBEROAST_ACCOUNT ...]] [--no-preauth-targets NO_PREAUTH_TARGETS] [--base-dn BASE_DN] [--query QUERY QUERY]
+                    [--find-delegation] [--trusted-for-delegation] [--password-not-required] [--admin-count] [--users [USERS ...]] [--users-export USERS_EXPORT] [--groups [GROUPS]] [--computers] [--dc-list] [--get-sid]
+                    [--active-users [ACTIVE_USERS ...]] [--pso] [--pass-pol] [--gmsa] [--gmsa-convert-id GMSA_CONVERT_ID] [--gmsa-decrypt-lsa GMSA_DECRYPT_LSA] [--bloodhound] [-c COLLECTION]
                     target [target ...]
 ```
 
@@ -35,17 +36,17 @@ positional arguments:
 
 options:
   -h, --help            show this help message and exit
-  -H HASH [HASH ...], --hash HASH [HASH ...]
+  -H, --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
   --port PORT           LDAP port (default: 389)
-  --no-smb              No smb connection
   -d DOMAIN             domain to authenticate to
   --local-auth          authenticate locally to each target
 
 Generic:
   Generic options for nxc across protocols
 
-  -t THREADS, --threads THREADS
+  --version             Display nxc version
+  -t, --threads THREADS
                         set how many concurrent threads to use (default: 256)
   --timeout TIMEOUT     max timeout in seconds of each thread
   --jitter INTERVAL     sets a random delay between each authentication
@@ -69,9 +70,9 @@ DNS:
 Authentication:
   Options for authenticating
 
-  -u USERNAME [USERNAME ...], --username USERNAME [USERNAME ...]
+  -u, --username USERNAME [USERNAME ...]
                         username(s) or file(s) containing usernames
-  -p PASSWORD [PASSWORD ...], --password PASSWORD [PASSWORD ...]
+  -p, --password PASSWORD [PASSWORD ...]
                         password(s) or file(s) containing passwords
   -id CRED_ID [CRED_ID ...]
                         database credential ID(s) to use for authentication
@@ -92,24 +93,23 @@ Kerberos:
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
 
-Servers:
-  Options for nxc servers
+Certificate:
+  Options for certificate authentication
 
-  --server {http,https}
-                        use the selected server (default: https)
-  --server-host HOST    IP to bind the server to (default: 0.0.0.0)
-  --server-port PORT    start the server on the specified port
-  --connectback-host CHOST
-                        IP for the remote system to connect back to
+  --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
+  --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
+  --pfx-pass PFXPASS    Password of the pfx certificate
+  --pem-cert PEMCERT    Use certificate authentication from PEM file
+  --pem-key PEMKEY      Private key for the PEM format
 
 Modules:
   Options for nxc modules
 
-  -M MODULE, --module MODULE
-                        module to use
+  -M, --module MODULE   module to use
   -o MODULE_OPTION [MODULE_OPTION ...]
                         module options
-  -L, --list-modules    list available modules
+  -L, --list-modules [LIST_MODULES]
+                        list available modules
   --options             display module options
 
 Retrieve hash on the remote DC:
@@ -117,24 +117,33 @@ Retrieve hash on the remote DC:
 
   --asreproast ASREPROAST
                         Output AS_REP response to crack with hashcat to file
-  --kerberoasting KERBEROASTING
+  --kerberoasting, --kerberoast KERBEROASTING
                         Output TGS ticket to crack with hashcat to file
+  --kerberoast-account KERBEROAST_ACCOUNT [KERBEROAST_ACCOUNT ...]
+                        Target specific accounts for kerberoasting (sAMAccountNames or file containing sAMAccountNames)
+  --no-preauth-targets NO_PREAUTH_TARGETS
+                        Targeted kerberoastable users
 
 Retrieve useful information on the domain:
-  Options to to play with Kerberos
-
+  --base-dn BASE_DN     base DN for search queries
   --query QUERY QUERY   Query LDAP with a custom filter and attributes
+  --find-delegation     Finds delegation relationships within an Active Directory domain. (Enabled Accounts only)
   --trusted-for-delegation
                         Get the list of users and computers with flag TRUSTED_FOR_DELEGATION
   --password-not-required
                         Get the list of users with flag PASSWD_NOTREQD
-  --admin-count         Get objets that had the value adminCount=1
-  --users [USERS ...]   Enumerate enabled domain users
-  --groups              Enumerate domain groups
+  --admin-count         Get user that had the value adminCount=1
+  --users [USERS ...]   Enumerate domain users
+  --users-export USERS_EXPORT
+                        Enumerate domain users and export them to the specified file
+  --groups [GROUPS]     Enumerate domain groups, if a group is specified than its members are enumerated
+  --computers           Enumerate domain computers
   --dc-list             Enumerate Domain Controllers
   --get-sid             Get domain sid
   --active-users [ACTIVE_USERS ...]
                         Get Active Domain Users Accounts
+  --pso                 Get Fine Grained Password Policy/PSOs
+  --pass-pol            Dump password policy
 
 Retrieve gmsa on the remote DC:
   Options to play with gmsa
@@ -149,33 +158,44 @@ Bloodhound Scan:
   Options to play with Bloodhoud
 
   --bloodhound          Perform a Bloodhound scan
-  -c COLLECTION, --collection COLLECTION
-                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default, DCOnly, DCOM, RDP, PSRemote, LoggedOn, Container, ObjectProps, ACL, All. You can specify more than one by separating them
-                        with a comma (default: Default)
+  -c, --collection COLLECTION
+                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default, DCOnly, DCOM, RDP, PSRemote, LoggedOn, Container, ObjectProps, ACL, All. You can specify more than one by
+                        separating them with a comma (default: Default)
 ```
 
-## Modules
+## Low Privilege Modules
 
 ```plain
-LOW PRIVILEGE MODULES
+ENUMERATION
 [*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
+[*] badsuccessor              Check if vulnerable to bad successor attack (DMSA)
+[*] certipy-find              certipy find command with options to export the result to text/csv/json. Default: Show only vulnerable templates
 [*] daclread                  Read and backup the Discretionary Access Control List of objects. Be careful, this module cannot read the DACLS recursively, see more explanation in the options.
-[*] enum_trusts               Extract all Trust Relationships, Trusting Direction, and Trust Transitivity
+[*] dump-computers            Dumps all computers in the domain
+[*] entra-id                  Find the Entra ID sync server
+[*] enum_trusts               [REMOVED] Extract all Trust Relationships, Trusting Direction, and Trust Transitivity
 [*] find-computer             Finds computers in the domain via the provided text
-[*] get-desc-users            Get description of the users. May contained password
 [*] get-network               Query all DNS records with the corresponding IP from the domain.
-[*] get-unixUserPassword      Get unixUserPassword attribute from all users in ldap
-[*] get-userPassword          Get userPassword attribute from all users in ldap
-[*] group-mem                 Retrieves all the members within a Group
+[*] group-mem                 [REMOVED] Retrieves all the members within a Group
 [*] groupmembership           Query the groups to which a user belongs.
-[*] laps                      Retrieves all LAPS passwords which the account has read permissions for.
-[*] ldap-checker              Checks whether LDAP signing and binding are required and / or enforced
+[*] ldap-checker              [REMOVED] Checks whether LDAP signing and channel binding are required and / or enforced
 [*] maq                       Retrieves the MachineAccountQuota domain-level attribute
 [*] obsolete                  Extract all obsolete operating systems from LDAP
 [*] pso                       Module to get the Fine Grained Password Policy/PSOs
+[*] sccm                      Find a SCCM infrastructure in the Active Directory
 [*] subnets                   Retrieves the different Sites and Subnets of an Active Directory
-[*] user-desc                 Get user descriptions stored in Active Directory
 [*] whoami                    Get details of provided user
+
+CREDENTIAL_DUMPING
+[*] get-desc-users            Get description of the users. May contain password
+[*] get-info-users            Get the info field of all users. May contain password
+[*] get-unixUserPassword      Get unixUserPassword attribute from all users in ldap
+[*] get-userPassword          Get userPassword attribute from all users in ldap
+[*] laps                      Retrieves all LAPS passwords which the account has read permissions for.
+[*] user-desc                 Get user descriptions stored in Active Directory
+
+PRIVILEGE_ESCALATION
+[*] pre2k                     Identify pre-created computer accounts, save the results to a file, and obtain TGTs for each
 ```
 
 ## Examples
