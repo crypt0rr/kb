@@ -121,6 +121,13 @@ Creation of the user 'NewLaForMe' - `net user NewLAForMe "NotThatStrongPassword@
 
 Adding the user to the group - `net localgroup Administrators NewLAForMe /add`
 
+**Note:** If you try to create a local administrator account from Windows Recovery, this will not work. Follow the next steps to perform this action:
+
+1. Click on the Start button, click on Power button, and click on restart while pressing shift;
+2. In the new page, go to Troubleshoot > Advanced Options > Startup Settings > Restart; After this, the computer will restart and you can choose different Safe Mode Options;
+3. Choose either option, **4. Enable Safe Mode**, **5. Enable Safe Mode with Networking**, or **6. Enable Safe Mode with Command Prompt**;
+4. Perform the required actions, e.g. create a new account or change the password of an existing administrative account.
+
 ### Add Domain Admin / Enterprise Admin via CMD
 
 Creation of the user 'NewDAForMe' - `net user NewDAForMe "NotThatStrongPassword@" /add /domain /Y`
