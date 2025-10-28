@@ -20,19 +20,23 @@ Install [Impacket]({{< ref "../impacket" >}}).
 ## Usage
 
 ```plain
-smbserver.py [-h] [-comment COMMENT] [-username USERNAME] [-password PASSWORD] [-hashes LMHASH:NTHASH] [-ts] [-debug] [-ip INTERFACE_ADDRESS] [-port PORT] [-smb2support] shareName sharePath
+smbserver.py [-h] [-comment COMMENT] [-username USERNAME] [-password PASSWORD] [-hashes LMHASH:NTHASH] [-ts] [-debug] [-ip INTERFACE_ADDRESS] [-port PORT] [-dropssp] [-smb2support] [-outputfile OUTPUTFILE]
+                    shareName sharePath
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
+Impacket v0.13.0.dev0+20250820.203717.835623ae - Copyright Fortra, LLC and its affiliated companies 
+
+This script will launch a SMB Server and add a share specified as an argument. Usually, you need to be root in order to bind to port 445. For optional authentication, it is possible to specify username and password or
+the NTLM hash. Example: smbserver.py -comment 'My share' TMP /tmp
 
 positional arguments:
   shareName             name of the share to add
   sharePath             path of the share to add
 
-options:
+optional arguments:
   -h, --help            show this help message and exit
   -comment COMMENT      share's comment to display when asked for shares
   -username USERNAME    Username to authenticate clients
@@ -44,7 +48,10 @@ options:
   -ip INTERFACE_ADDRESS, --interface-address INTERFACE_ADDRESS
                         ip address of listening interface
   -port PORT            TCP port for listening incoming connections (default 445)
+  -dropssp              Disable NTLM ESS/SSP during negotiation
   -smb2support          SMB2 Support (experimental!)
+  -outputfile OUTPUTFILE
+                        Output file to log smbserver output messages
 ```
 
 ## Examples

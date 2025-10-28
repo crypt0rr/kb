@@ -20,22 +20,24 @@ Install [Impacket]({{< ref "../impacket" >}}).
 ## Usage
 
 ```plain
-secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-security SECURITY] [-sam SAM] [-ntds NTDS] [-resumefile RESUMEFILE] [-skip-sam] [-skip-security] [-outputfile OUTPUTFILE] [-use-vss] [-rodcNo RODCNO]
-                      [-rodcKey RODCKEY] [-use-keylist] [-exec-method [{smbexec,wmiexec,mmcexec}]] [-use-remoteSSMethod] [-remoteSS-remote-volume REMOTESS_REMOTE_VOLUME] [-remoteSS-local-path REMOTESS_LOCAL_PATH]
-                      [-just-dc-user USERNAME] [-ldapfilter LDAPFILTER] [-just-dc] [-just-dc-ntlm] [-skip-user SKIP_USER] [-pwd-last-set] [-user-status] [-history] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]
-                      [-keytab KEYTAB] [-dc-ip ip address] [-target-ip ip address]
+secretsdump.py [-h] [-ts] [-debug] [-system SYSTEM] [-bootkey BOOTKEY] [-security SECURITY] [-sam SAM] [-ntds NTDS] [-resumefile RESUMEFILE] [-skip-sam] [-skip-security] [-outputfile OUTPUTFILE] [-use-vss]
+                      [-rodcNo RODCNO] [-rodcKey RODCKEY] [-use-keylist] [-exec-method [{smbexec,wmiexec,mmcexec}]] [-use-remoteSSMethod] [-remoteSS-remote-volume REMOTESS_REMOTE_VOLUME]
+                      [-remoteSS-local-path REMOTESS_LOCAL_PATH] [-just-dc-user USERNAME] [-ldapfilter LDAPFILTER] [-just-dc] [-just-dc-ntlm] [-skip-user SKIP_USER] [-pwd-last-set] [-user-status] [-history]
+                      [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key] [-keytab KEYTAB] [-dc-ip ip address] [-target-ip ip address]
                       target
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
+Impacket v0.13.0.dev0+20250820.203717.835623ae - Copyright Fortra, LLC and its affiliated companies 
+
+Performs various techniques to dump secrets from the remote machine without executing any agent there.
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address> or LOCAL (if you want to parse local files)
 
-options:
+optional arguments:
   -h, --help            show this help message and exit
   -ts                   Adds timestamp to every logging output
   -debug                Turn DEBUG output ON
