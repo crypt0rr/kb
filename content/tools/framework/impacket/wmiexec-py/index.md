@@ -20,29 +20,31 @@ Install [Impacket]({{< ref "../impacket" >}}).
 ## Usage
 
 ```plain
-wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH] [-no-pass] [-k] [-aesKey hex key]
-                  [-dc-ip ip address] [-target-ip ip address] [-A authfile] [-keytab KEYTAB]
+wmiexec.py [-h] [-share SHARE] [-nooutput] [-ts] [-silentcommand] [-debug] [-codec CODEC] [-shell-type {cmd,powershell}] [-com-version MAJOR_VERSION:MINOR_VERSION] [-hashes LMHASH:NTHASH] [-no-pass] [-k]
+                  [-aesKey hex key] [-dc-ip ip address] [-target-ip ip address] [-A authfile] [-keytab KEYTAB]
                   target [command ...]
 ```
 
 ## Flags
 
 ```plain
-Impacket v0.12.0.dev1+20240718.115833.4e0e3174 - Copyright 2023 Fortra
+Impacket v0.13.0.dev0+20250820.203717.835623ae - Copyright Fortra, LLC and its affiliated companies 
+
+Executes a semi-interactive shell using Windows Management Instrumentation.
 
 positional arguments:
   target                [[domain/]username[:password]@]<targetName or address>
   command               command to execute at the target. If empty it will launch a semi-interactive shell
 
-options:
+optional arguments:
   -h, --help            show this help message and exit
   -share SHARE          share where the output will be grabbed from (default ADMIN$)
   -nooutput             whether or not to print the output (no SMB connection created)
   -ts                   Adds timestamp to every logging output
   -silentcommand        does not execute cmd.exe to run given command (no output)
   -debug                Turn DEBUG output ON
-  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with https://docs.python.org/3/library/codecs.html#standard-encodings
-                        and then execute wmiexec.py again with -codec and the corresponding codec
+  -codec CODEC          Sets encoding used (codec) from the target's output (default "utf-8"). If errors are detected, run chcp.com at the target, map the result with
+                        https://docs.python.org/3/library/codecs.html#standard-encodings and then execute wmiexec.py again with -codec and the corresponding codec
   -shell-type {cmd,powershell}
                         choose a command processor for the semi-interactive shell
   -com-version MAJOR_VERSION:MINOR_VERSION
@@ -58,7 +60,6 @@ authentication:
   -target-ip ip address
                         IP Address of the target machine. If omitted it will use whatever was specified as target. This is useful when target is the NetBIOS name and you cannot resolve it
   -A authfile           smbclient/mount.cifs-style authentication file. See smbclient man page's -A option.
-  -keytab KEYTAB        Read keys for SPN from keytab file
 ```
 
 ## Examples
