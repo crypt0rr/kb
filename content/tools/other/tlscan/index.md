@@ -16,7 +16,11 @@ Scanner to enumerate SSL/TLS encryption protocol support.
 ## Installation
 
 ```plain
-git clone https://github.com/mjol/TLScan.git
+pip install tlscan
+```
+
+```plain
+pipx install tlscan
 ```
 
 ## Usage
@@ -94,5 +98,5 @@ Starting enumeration at: 23-03-2020 16:52:56
 
 ## URL List
 
-- [GitHub.com - TLScan](https://github.com/mjol/TLScan)
+- [GitHub.com - TLScan](https://github.com/ThreatLabsNL/TLScan)
 - [Ciphersuite.info](https://ciphersuite.info/)
