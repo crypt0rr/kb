@@ -18,19 +18,20 @@ Install [NetExec]({{< ref "../netexec" >}}).
 ## Usage
 
 ```plain
-usage: netexec smb [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT]
-                   [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT]
-                   [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
-                   [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...]] [--delegate DELEGATE] [--self] [-d DOMAIN | --local-auth] [--port PORT] [--share SHARE]
-                   [--smb-server-port SMB_SERVER_PORT] [--no-smbv1] [--gen-relay-list OUTPUT_FILE] [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]] [--generate-hosts-file GENERATE_HOSTS_FILE]
-                   [--generate-krb5-file GENERATE_KRB5_FILE] [--generate-tgt GENERATE_TGT] [--sam [{regdump,secdump}]] [--lsa [{regdump,secdump}]] [--ntds [{drsuapi,vss}]] [--dpapi [{cookies,nosystem} ...]]
-                   [--sccm [{wmi,disk}]] [--mkfile MKFILE] [--pvk PVK] [--enabled] [--user USERNTDS] [--shares [SHARES]] [--dir [DIR]] [--interfaces] [--no-write-check]
-                   [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--disks] [--users [USER ...]] [--users-export USERS_EXPORT] [--groups [GROUP]] [--local-groups [GROUP]] [--computers [COMPUTER]] [--pass-pol]
-                   [--rid-brute [MAX_RID]] [--smb-sessions] [--reg-sessions [REG_SESSIONS]] [--loggedon-users [LOGGEDON_USERS]] [--loggedon-users-filter LOGGEDON_USERS_FILTER] [--qwinsta [QWINSTA]]
-                   [--tasklist [TASKLIST]] [--taskkill TASKKILL] [--wmi QUERY] [--wmi-namespace NAMESPACE] [--spider SHARE] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST] [--depth DEPTH] [--only-files]
-                   [--silent] [--pattern PATTERN [PATTERN ...] | --regex REGEX [REGEX ...]] [--put-file FILE FILE] [--get-file FILE FILE] [--append-host] [--exec-method {smbexec,wmiexec,atexec,mmcexec}]
-                   [--dcom-timeout DCOM_TIMEOUT] [--get-output-tries GET_OUTPUT_TRIES] [--codec CODEC] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE] [--clear-obfscripts] [--force-ps32]
-                   [--no-encode]
+netexec smb [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--no-progress] [--log LOG] [--verbose | --debug] [-6] [--dns-server DNS_SERVER] [--dns-tcp]
+                   [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success]
+                   [--gfail-limit LIMIT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64]
+                   [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...]] [--delegate DELEGATE]
+                   [--delegate-spn DELEGATE_SPN] [--generate-st GENERATE_ST] [--self] [-d DOMAIN | --local-auth] [--port PORT] [--share SHARE] [--smb-server-port SMB_SERVER_PORT] [--no-smbv1]
+                   [--no-admin-check] [--gen-relay-list OUTPUT_FILE] [--smb-timeout SMB_TIMEOUT] [--laps [LAPS]] [--generate-hosts-file GENERATE_HOSTS_FILE] [--generate-krb5-file GENERATE_KRB5_FILE]
+                   [--generate-tgt GENERATE_TGT] [--sam [{secdump,regdump}]] [--lsa [{secdump,regdump}]] [--ntds [{vss,drsuapi}]] [--kerberos-keys] [--history | --enabled] [--user USERNTDS]
+                   [--dpapi [{nosystem,cookies} ...]] [--sccm [{wmi,disk}]] [--mkfile MKFILE] [--pvk PVK] [--list-snapshots [LIST_SNAPSHOTS]] [--shares [SHARES]]
+                   [--exclude-shares EXCLUDE_SHARES [EXCLUDE_SHARES ...]] [--dir [DIR]] [--interfaces] [--no-write-check] [--filter-shares FILTER_SHARES [FILTER_SHARES ...]] [--disks] [--users [USER ...]]
+                   [--users-export USERS_EXPORT] [--groups [GROUP]] [--local-groups [GROUP]] [--computers [COMPUTER]] [--pass-pol] [--rid-brute [MAX_RID]] [--smb-sessions] [--reg-sessions [REG_SESSIONS]]
+                   [--loggedon-users [LOGGEDON_USERS]] [--loggedon-users-filter LOGGEDON_USERS_FILTER] [--qwinsta [QWINSTA]] [--tasklist [TASKLIST]] [--taskkill TASKKILL] [--wmi-query QUERY]
+                   [--wmi-namespace NAMESPACE] [--spider SHARE] [--spider-folder FOLDER] [--content] [--exclude-dirs DIR_LIST] [--depth DEPTH] [--only-files] [--silent] [--pattern PATTERN [PATTERN ...] |
+                   --regex REGEX [REGEX ...]] [--put-file FILE FILE] [--get-file FILE FILE] [--append-host] [--exec-method {smbexec,atexec,wmiexec,mmcexec}] [--dcom-timeout DCOM_TIMEOUT]
+                   [--get-output-tries GET_OUTPUT_TRIES] [--codec CODEC] [--no-output] [-x COMMAND | -X PS_COMMAND] [--obfs] [--amsi-bypass FILE] [--clear-obfscripts] [--force-ps32] [--no-encode]
                    target [target ...]
 ```
 
@@ -45,6 +46,10 @@ options:
   -H, --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
   --delegate DELEGATE   Impersonate user with S4U2Self + S4U2Proxy
+  --delegate-spn DELEGATE_SPN
+                        SPN to use for S4U2Proxy, if not specified the SPN used will be cifs/<target>
+  --generate-st GENERATE_ST
+                        Store the S4U Service Ticket in the specified file
   --self                Only do S4U2Self, no S4U2Proxy (use with delegate)
   -d, --domain DOMAIN   domain to authenticate to
   --local-auth          authenticate locally to each target
@@ -53,6 +58,7 @@ options:
   --smb-server-port SMB_SERVER_PORT
                         specify a server port for SMB (default: 445)
   --no-smbv1            Force to disable SMBv1 in connection
+  --no-admin-check      Avoid checking admin which queries the Service Control Manager
   --gen-relay-list OUTPUT_FILE
                         outputs all hosts that don't require SMB signing to the specified file
   --smb-timeout SMB_TIMEOUT
@@ -65,22 +71,18 @@ options:
   --generate-tgt GENERATE_TGT
                         Generate a tgt ticket
 
-Generic:
-  Generic options for nxc across protocols
-
+Generic Options:
   --version             Display nxc version
   -t, --threads THREADS
                         set how many concurrent threads to use (default: 256)
   --timeout TIMEOUT     max timeout in seconds of each thread
   --jitter INTERVAL     sets a random delay between each authentication
 
-Output:
-  Options to set verbosity levels and control output
-
-  --verbose             enable verbose output
-  --debug               enable debug level information
+Output Options:
   --no-progress         do not displaying progress bar during scan
   --log LOG             export result into a custom file
+  --verbose             enable verbose output
+  --debug               enable debug level information
 
 DNS:
   -6                    Enable force IPv6
@@ -91,8 +93,6 @@ DNS:
                         DNS query timeout in seconds (default: 3)
 
 Authentication:
-  Options for authenticating
-
   -u, --username USERNAME [USERNAME ...]
                         username(s) or file(s) containing usernames
   -p, --password PASSWORD [PASSWORD ...]
@@ -107,18 +107,14 @@ Authentication:
   --ufail-limit LIMIT   max number of failed login attempts per username
   --fail-limit LIMIT    max number of failed login attempts per host
 
-Kerberos:
-  Options for Kerberos authentication
-
+Kerberos Authentication:
   -k, --kerberos        Use Kerberos authentication
   --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
 
-Certificate:
-  Options for certificate authentication
-
+Certificate Authentication:
   --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
   --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
   --pfx-pass PFXPASS    Password of the pfx certificate
@@ -126,8 +122,6 @@ Certificate:
   --pem-key PEMKEY      Private key for the PEM format
 
 Modules:
-  Options for nxc modules
-
   -M, --module MODULE   module to use
   -o MODULE_OPTION [MODULE_OPTION ...]
                         module options
@@ -136,26 +130,28 @@ Modules:
   --options             display module options
 
 Credential Gathering:
-  Options for gathering credentials
-
-  --sam [{regdump,secdump}]
+  --sam [{secdump,regdump}]
                         dump SAM hashes from target systems
-  --lsa [{regdump,secdump}]
+  --lsa [{secdump,regdump}]
                         dump LSA secrets from target systems
-  --ntds [{drsuapi,vss}]
+  --ntds [{vss,drsuapi}]
                         dump the NTDS.dit from target DCs using the specifed method
-  --dpapi [{cookies,nosystem} ...]
+  --kerberos-keys       Also dump Kerberos AES and DES keys from target DC (NTDS.dit)
+  --history             Also retrieve password history from target DC (NTDS.dit)
+  --enabled             Only dump enabled targets from DC (NTDS.dit)
+  --user USERNTDS       Dump selected user from DC (NTDS.dit)
+  --dpapi [{nosystem,cookies} ...]
                         dump DPAPI secrets from target systems, can dump cookies if you add 'cookies', will not dump SYSTEM dpapi if you add nosystem
   --sccm [{wmi,disk}]   dump SCCM secrets from target systems
   --mkfile MKFILE       DPAPI option. File with masterkeys in form of {GUID}:SHA1
   --pvk PVK             DPAPI option. File with domain backupkey
-  --enabled             Only dump enabled targets from DC
-  --user USERNTDS       Dump selected user from DC
+  --list-snapshots [LIST_SNAPSHOTS]
+                        Lists the VSS snapshots (default: ADMIN$)
 
 Mapping/Enumeration:
-  Options for Mapping/Enumerating
-
   --shares [SHARES]     Enumerate shares and access, filter on specified argument (read ; write ; read,write)
+  --exclude-shares EXCLUDE_SHARES [EXCLUDE_SHARES ...]
+                        List of shares to exclude from enumeration (e.g., C$ Admin$ IPC$)
   --dir [DIR]           List the content of a path (default path: '')
   --interfaces          Enumerate network interfaces
   --no-write-check      Skip write check on shares (avoid leaving traces when missing delete permissions)
@@ -185,16 +181,12 @@ Mapping/Enumeration:
                         Enumerate running processes and filter for the specified one if specified
   --taskkill TASKKILL   Kills a specific PID or a proces name's PID's
 
-WMI:
-  Options for WMI Queries
-
-  --wmi QUERY           issues the specified WMI query
+WMI Queries:
+  --wmi-query QUERY     Issues the specified WMI query
   --wmi-namespace NAMESPACE
                         WMI Namespace (default: root\cimv2)
 
-Spidering:
-  Options for spidering shares
-
+Spidering Shares:
   --spider SHARE        share to spider
   --spider-folder FOLDER
                         folder to spider (default: .)
@@ -209,31 +201,25 @@ Spidering:
   --regex REGEX [REGEX ...]
                         regex(s) to search for in folders, filenames and file content
 
-Files:
-  Options for remote file interaction
-
+File Operations:
   --put-file FILE FILE  Put a local file into remote target, ex: whoami.txt \\Windows\\Temp\\whoami.txt
   --get-file FILE FILE  Get a remote file, ex: \\Windows\\Temp\\whoami.txt whoami.txt
   --append-host         append the host to the get-file filename
 
 Command Execution:
-  Options for executing commands
-
-  --exec-method {smbexec,wmiexec,atexec,mmcexec}
+  --exec-method {smbexec,atexec,wmiexec,mmcexec}
                         method to execute the command. Ignored if in MSSQL mode (default: wmiexec)
   --dcom-timeout DCOM_TIMEOUT
                         DCOM connection timeout (default: 5)
   --get-output-tries GET_OUTPUT_TRIES
                         Number of times atexec/smbexec/mmcexec tries to get results (default: 10)
-  --codec CODEC         Set encoding used (codec) from the target's output. If errors are detected, run chcp.com at the target & map the result with https://docs.python.org/3/library/codecs.html#standard-encodings and
-                        then execute again with --codec and the corresponding codec (default: utf-8)
+  --codec CODEC         Set encoding used (codec) from the target's output. If errors are detected, run chcp.com at the target & map the result with https://docs.python.org/3/library/codecs.html#standard-
+                        encodings and then execute again with --codec and the corresponding codec (default: utf-8)
   --no-output           do not retrieve command output
   -x COMMAND            execute the specified CMD command
   -X PS_COMMAND         execute the specified PowerShell command
 
-Powershell Obfuscation:
-  Options for PowerShell script obfuscation
-
+Powershell Script Obfuscation:
   --obfs                Obfuscate PowerShell scripts
   --amsi-bypass FILE    File with a custom AMSI bypass
   --clear-obfscripts    Clear all cached obfuscated PowerShell scripts
@@ -264,19 +250,18 @@ ENUMERATION
 [*] spooler                   Detect if print spooler is enabled or not
 [*] webdav                    Checks whether the WebClient service is running on the target
 [*] zerologon                 Module to check if the DC is vulnerable to Zerologon aka CVE-2020-1472
-
 CREDENTIAL_DUMPING
 [*] aws-credentials           Search for aws credentials files.
 [*] gpp_autologin             Searches the domain controller for registry.xml to find autologon information and returns the username and password.
 [*] gpp_password              Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
 [*] spider_plus               List files recursively and save a JSON share-file metadata to the 'OUTPUT_FOLDER'. See module options for finer configuration.
-
 PRIVILEGE_ESCALATION
 [*] add-computer              Adds or deletes a domain computer
 [*] backup_operator           Exploit user in backup operator group to dump NTDS @mpgn_x64
 [*] change-password           Change or reset user passwords via various protocols
 [*] coerce_plus               Module to check if the Target is vulnerable to any coerce vulns. Set LISTENER IP for coercion.
 [*] dfscoerce                 [REMOVED] Module to check if the DC is vulnerable to DFSCoerce, credit to @filip_dragovic/@Wh04m1001 and @topotam
+[*] drop-library-ms           Creates and uploads an arbitrary .library-ms on writable shares, leveraging CVE-2025-24054 for looting NTLMv2 hash
 [*] drop-sc                   Drop a searchConnector-ms file on each writable share
 [*] efsr_spray                [REMOVED] Tries to activate the EFSR service by creating a file with the encryption attribute on some available share.
 [*] scuffy                    Creates and dumps an arbitrary .scf file with the icon property containing a UNC path to the declared SMB server against all writeable shares
@@ -306,7 +291,6 @@ ENUMERATION
 
 CREDENTIAL_DUMPING
 [*] dpapi_hash                Remotely dump Dpapi hash based on masterkeys
-[*] entra-sync-creds          Extract Entra ID sync credentials from the target host
 [*] eventlog_creds            Extracting Credentials From Windows Logs (Event ID: 4688 and SYSMON)
 [*] firefox                   [REMOVED] Dump credentials from Firefox
 [*] handlekatz                Get lsass dump using handlekatz64 and parse the result with pypykatz

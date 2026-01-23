@@ -18,13 +18,14 @@ Install [NetExec]({{< ref "../netexec" >}}).
 ## Usage
 
 ```plain
-netexec ldap [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--verbose] [--debug] [--no-progress] [--log LOG] [-6] [--dns-server DNS_SERVER] [--dns-tcp] [--dns-timeout DNS_TIMEOUT]
-                    [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success] [--gfail-limit LIMIT] [--ufail-limit LIMIT]
-                    [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64] [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY]
-                    [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...]] [--port PORT] [-d DOMAIN | --local-auth] [--asreproast ASREPROAST]
-                    [--kerberoasting KERBEROASTING] [--kerberoast-account KERBEROAST_ACCOUNT [KERBEROAST_ACCOUNT ...]] [--no-preauth-targets NO_PREAUTH_TARGETS] [--base-dn BASE_DN] [--query QUERY QUERY]
-                    [--find-delegation] [--trusted-for-delegation] [--password-not-required] [--admin-count] [--users [USERS ...]] [--users-export USERS_EXPORT] [--groups [GROUPS]] [--computers] [--dc-list] [--get-sid]
-                    [--active-users [ACTIVE_USERS ...]] [--pso] [--pass-pol] [--gmsa] [--gmsa-convert-id GMSA_CONVERT_ID] [--gmsa-decrypt-lsa GMSA_DECRYPT_LSA] [--bloodhound] [-c COLLECTION]
+netexec ldap [-h] [--version] [-t THREADS] [--timeout TIMEOUT] [--jitter INTERVAL] [--no-progress] [--log LOG] [--verbose | --debug] [-6] [--dns-server DNS_SERVER] [--dns-tcp]
+                    [--dns-timeout DNS_TIMEOUT] [-u USERNAME [USERNAME ...]] [-p PASSWORD [PASSWORD ...]] [-id CRED_ID [CRED_ID ...]] [--ignore-pw-decoding] [--no-bruteforce] [--continue-on-success]
+                    [--gfail-limit LIMIT] [--ufail-limit LIMIT] [--fail-limit LIMIT] [-k] [--use-kcache] [--aesKey AESKEY [AESKEY ...]] [--kdcHost KDCHOST] [--pfx-cert PFXCERT] [--pfx-base64 PFXB64]
+                    [--pfx-pass PFXPASS] [--pem-cert PEMCERT] [--pem-key PEMKEY] [-M MODULE] [-o MODULE_OPTION [MODULE_OPTION ...]] [-L [LIST_MODULES]] [--options] [-H HASH [HASH ...] | --simple-bind]
+                    [--port PORT] [-d DOMAIN] [--asreproast ASREPROAST] [--kerberoasting KERBEROASTING] [--kerberoast-account KERBEROAST_ACCOUNT [KERBEROAST_ACCOUNT ...]]
+                    [--no-preauth-targets NO_PREAUTH_TARGETS] [--base-dn BASE_DN] [--query QUERY QUERY] [--find-delegation] [--trusted-for-delegation] [--password-not-required] [--admin-count]
+                    [--users [USERS ...]] [--users-export USERS_EXPORT] [--groups [GROUPS]] [--computers] [--dc-list] [--get-sid] [--active-users [ACTIVE_USERS ...]] [--pso] [--pass-pol] [--gmsa]
+                    [--gmsa-convert-id GMSA_CONVERT_ID] [--gmsa-decrypt-lsa GMSA_DECRYPT_LSA] [--bloodhound] [-c COLLECTION]
                     target [target ...]
 ```
 
@@ -38,26 +39,22 @@ options:
   -h, --help            show this help message and exit
   -H, --hash HASH [HASH ...]
                         NTLM hash(es) or file(s) containing NTLM hashes
+  --simple-bind         Use simple bind authentication (no signing/sealing)
   --port PORT           LDAP port (default: 389)
   -d DOMAIN             domain to authenticate to
-  --local-auth          authenticate locally to each target
 
-Generic:
-  Generic options for nxc across protocols
-
+Generic Options:
   --version             Display nxc version
   -t, --threads THREADS
                         set how many concurrent threads to use (default: 256)
   --timeout TIMEOUT     max timeout in seconds of each thread
   --jitter INTERVAL     sets a random delay between each authentication
 
-Output:
-  Options to set verbosity levels and control output
-
-  --verbose             enable verbose output
-  --debug               enable debug level information
+Output Options:
   --no-progress         do not displaying progress bar during scan
   --log LOG             export result into a custom file
+  --verbose             enable verbose output
+  --debug               enable debug level information
 
 DNS:
   -6                    Enable force IPv6
@@ -68,8 +65,6 @@ DNS:
                         DNS query timeout in seconds (default: 3)
 
 Authentication:
-  Options for authenticating
-
   -u, --username USERNAME [USERNAME ...]
                         username(s) or file(s) containing usernames
   -p, --password PASSWORD [PASSWORD ...]
@@ -84,18 +79,14 @@ Authentication:
   --ufail-limit LIMIT   max number of failed login attempts per username
   --fail-limit LIMIT    max number of failed login attempts per host
 
-Kerberos:
-  Options for Kerberos authentication
-
+Kerberos Authentication:
   -k, --kerberos        Use Kerberos authentication
   --use-kcache          Use Kerberos authentication from ccache file (KRB5CCNAME)
   --aesKey AESKEY [AESKEY ...]
                         AES key to use for Kerberos Authentication (128 or 256 bits)
   --kdcHost KDCHOST     FQDN of the domain controller. If omitted it will use the domain part (FQDN) specified in the target parameter
 
-Certificate:
-  Options for certificate authentication
-
+Certificate Authentication:
   --pfx-cert PFXCERT    Use certificate authentication from pfx file .pfx
   --pfx-base64 PFXB64   Use certificate authentication from pfx file encoded in base64
   --pfx-pass PFXPASS    Password of the pfx certificate
@@ -103,8 +94,6 @@ Certificate:
   --pem-key PEMKEY      Private key for the PEM format
 
 Modules:
-  Options for nxc modules
-
   -M, --module MODULE   module to use
   -o MODULE_OPTION [MODULE_OPTION ...]
                         module options
@@ -159,19 +148,21 @@ Bloodhound Scan:
 
   --bloodhound          Perform a Bloodhound scan
   -c, --collection COLLECTION
-                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default, DCOnly, DCOM, RDP, PSRemote, LoggedOn, Container, ObjectProps, ACL, All. You can specify more than one by
-                        separating them with a comma (default: Default)
+                        Which information to collect. Supported: Group, LocalAdmin, Session, Trusts, Default, DCOnly, DCOM, RDP, PSRemote, LoggedOn, Container, ObjectProps, ACL, All. You can specify more than
+                        one by separating them with a comma (default: Default)
 ```
 
 ## Low Privilege Modules
 
 ```plain
+LOW PRIVILEGE MODULES
 ENUMERATION
 [*] adcs                      Find PKI Enrollment Services in Active Directory and Certificate Templates Names
 [*] badsuccessor              Check if vulnerable to bad successor attack (DMSA)
 [*] certipy-find              certipy find command with options to export the result to text/csv/json. Default: Show only vulnerable templates
 [*] daclread                  Read and backup the Discretionary Access Control List of objects. Be careful, this module cannot read the DACLS recursively, see more explanation in the options.
-[*] dump-computers            Dumps all computers in the domain
+[*] dns-nonsecure             Detects DNS zones that allow nonsecure dynamic updates
+[*] dump-computers            Dumps FQDN and OS of all computers in the domain
 [*] entra-id                  Find the Entra ID sync server
 [*] enum_trusts               [REMOVED] Extract all Trust Relationships, Trusting Direction, and Trust Transitivity
 [*] find-computer             Finds computers in the domain via the provided text
@@ -196,6 +187,10 @@ CREDENTIAL_DUMPING
 
 PRIVILEGE_ESCALATION
 [*] pre2k                     Identify pre-created computer accounts, save the results to a file, and obtain TGTs for each
+
+HIGH PRIVILEGE MODULES (requires admin privs)
+PRIVILEGE_ESCALATION
+[*] raisechild                Compromise parent domain from child domain via trust abuse
 ```
 
 ## Examples
