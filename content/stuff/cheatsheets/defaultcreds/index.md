@@ -6,7 +6,7 @@ date: 2022-07-22T14:52:55+02:00
 # hidden : true
 # draft : true
 weight: 40
-tags: ["Cheatsheets", "Credentials"]
+tags: ["Cheatsheets"]
 ---
 
 ---

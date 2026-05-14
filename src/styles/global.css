@@ -252,12 +252,36 @@ kbd {
 
 .sidebar-footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 6px;
   padding-top: 14px;
   border-top: 1px solid var(--line-soft);
   color: var(--muted);
   font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.sidebar-footer p {
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 4px;
+  color: var(--muted);
   font-size: 12px;
+}
+
+.footer-credit,
+.footer-copyright {
+  color: var(--dim);
+}
+
+.footer-credit a {
+  color: var(--muted);
 }
 
 .main-column {

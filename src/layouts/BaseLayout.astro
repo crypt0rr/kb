@@ -13,6 +13,7 @@ const sections = getRootSections();
 const tags = getAllTags().slice(0, 18);
 const canonical = new URL(Astro.url.pathname, "https://kb.offsec.nl").toString();
 const activeUrl = page?.url ?? Astro.url.pathname;
+const currentYear = new Date().getFullYear();
 
 function escapeHtml(value: string) {
   return value
@@ -87,8 +88,14 @@ function renderNav(items: KbPage[], level = 0): string {
         </div>
 
         <footer class="sidebar-footer">
-          <a href="https://github.com/crypt0rr/kb" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://offsec.nl" target="_blank" rel="noopener noreferrer">offsec.nl</a>
+          <div class="footer-links">
+            <a href="https://github.com/crypt0rr/kb" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://offsec.nl" target="_blank" rel="noopener noreferrer">offsec.nl</a>
+          </div>
+          <p class="footer-credit">
+            Built by <a href="https://github.com/crypt0rr" target="_blank" rel="noopener noreferrer">crypt0rr</a>
+          </p>
+          <p class="footer-copyright">&copy; 2018-{currentYear} - All rights reserved</p>
         </footer>
       </aside>
 
