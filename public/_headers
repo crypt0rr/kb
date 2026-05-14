@@ -1,8 +1,12 @@
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
-  Access-Control-Allow-Origin: kb.offsec.nl cloudflareinsights.com
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Resource-Policy: same-origin
+  X-Permitted-Cross-Domain-Policies: none
+  Permissions-Policy: accelerometer=(), autoplay=(), camera=(), display-capture=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()
+  Access-Control-Allow-Origin: https://kb.offsec.nl
   Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
   Access-Control-Allow-Headers: *
   Referrer-Policy: strict-origin-when-cross-origin
-  Content-Security-Policy: frame-ancestors 'self' https://kb.offsec.nl; script-src 'self' https://static.cloudflareinsights.com; connect-src https://kb.offsec.nl https://cloudflareinsights.com; worker-src 'self'; upgrade-insecure-requests;
+  Content-Security-Policy: frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; script-src 'self' https://static.cloudflareinsights.com; connect-src https://kb.offsec.nl https://cloudflareinsights.com; worker-src 'self'; upgrade-insecure-requests;
