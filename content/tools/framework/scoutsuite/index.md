@@ -6,7 +6,7 @@ date : 2022-02-08T15:17:53+01:00
 # hidden : true
 # draft : true
 weight : 370
-tags : ['Framework', 'AWS', 'Azure', 'Google Cloud', 'Alibaba', 'Oracle']
+tags : ['Framework']
 ---
 
 ---

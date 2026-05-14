@@ -6,9 +6,9 @@ date : 2022-09-16T11:58:17+02:00
 # hidden : true
 # draft : true
 weight : 110
-tags : ['Framework', 'Coercer']
+tags : ['Framework']
 cascade:
-    tags: ['Framework', 'Coercer']
+    tags: ['Framework']
     # pre : '<i class="fas fa-terminal"></i> '
 ---
 
