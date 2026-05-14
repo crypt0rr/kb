@@ -6,7 +6,7 @@ date : 2022-09-13T12:10:15+02:00
 # hidden : true
 # draft : true
 weight : 580
-tags : ['Other', 'Exchange', 'Microsoft']
+tags : ['Other', 'Microsoft']
 ---
 
 ---
