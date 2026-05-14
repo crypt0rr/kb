@@ -6,7 +6,7 @@ date : 2023-10-05T12:26:59+02:00
 # hidden : true
 # draft : true
 weight : 90
-tags : ['Framework', 'WinRM']
+tags : ['Framework']
 ---
 
 ---

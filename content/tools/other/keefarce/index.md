@@ -6,7 +6,7 @@ date : 2022-02-02T13:48:08+01:00
 # hidden : true
 # draft : true
 weight : 970
-tags : ['Other', 'KeePass']
+tags : ['Other']
 ---
 
 ---

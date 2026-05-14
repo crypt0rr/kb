@@ -6,7 +6,7 @@ date : 2023-10-05T12:26:53+02:00
 # hidden : true
 # draft : true
 weight : 80
-tags : ['Framework', 'VNC']
+tags : ['Framework']
 ---
 
 ---

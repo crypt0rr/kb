@@ -6,7 +6,7 @@ date : 2020-05-12T12:28:52+02:00
 # hidden : true
 # draft : true
 weight : 0
-tags : ['Oth420r','XSS']
+tags : ['Other']
 ---
 
 ---
