@@ -6,7 +6,7 @@ date : 2021-03-01T07:46:52+01:00
 # hidden : true
 # draft : true
 weight : 60
-tags : ['OSINT', 'DNS', 'CloudFlare']
+tags : ['OSINT', 'DNS']
 ---
 
 ---

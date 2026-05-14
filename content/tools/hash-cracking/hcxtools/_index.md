@@ -7,7 +7,7 @@ date : 2022-02-23T12:00:34+01:00
 # draft : true
 weight : 90
 tags : ["hash-cracking"]
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['hcxtools', 'WiFi']
     # pre : '<i class="fas fa-terminal"></i> '

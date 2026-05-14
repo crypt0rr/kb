@@ -7,7 +7,7 @@ date : 2023-10-05T12:20:14+02:00
 # draft : true
 weight : 270
 tags : ["Framework"]
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['Framework', 'NetExec']
     # pre : '<i class="fas fa-terminal"></i> '

@@ -13,7 +13,7 @@ tags: ['Other','LinkedIn']
 
 Modified version of CrossLinked.
 
-Welcome to my modification of CrossLinked (Can be found [here](https://github.com/m8r0wn/CrossLinked)). Crosslink/L33tLinked is a LinkedIn scraping tool that utilizes both Google and Bing to grab LinkedIn profiles. Whats the use for this? Well, collecting all known employees in a comapny can be used on a red-team op for searching for employees that are involved in Data Breaches. It's simple enough to take the info you'll recieve here and run the info through the Dehashed/Have I Been Pwned API to determine if the user was affected by a data breach!
+Welcome to my modification of CrossLinked (Can be found on [Github](https://github.com/m8r0wn/CrossLinked)). Crosslink/L33tLinked is a LinkedIn scraping tool that utilizes both Google and Bing to grab LinkedIn profiles. Whats the use for this? Well, collecting all known employees in a comapny can be used on a red-team op for searching for employees that are involved in Data Breaches. It's simple enough to take the info you'll recieve here and run the info through the Dehashed/Have I Been Pwned API to determine if the user was affected by a data breach!
 
 ## Installation
 
@@ -62,7 +62,7 @@ $ python3 leetlinked.py example -e example.lcom -f 5
 | $$      | $$_____/| $$_____/  | $$ /$$| $$      | $$| $$  | $$| $$_  $$ | $$_____/| $$  | $$
 | $$$$$$$$|  $$$$$$$|  $$$$$$$  |  $$$$/| $$$$$$$$| $$| $$  | $$| $$ \  $$|  $$$$$$$|  $$$$$$$
 |________/ \_______/ \_______/   \___/  |________/|__/|__/  |__/|__/  \__/ \_______/ \_______/
-                                                                                              
+
 Based off of https://github.com/m8r0wn/CrossLinked
 Modified by Ronnie Bartwitz and @Horshark on Github
 Email format john.smith@company.xyz chosen

@@ -19,7 +19,7 @@ The Unarchiver aims to be the only unarchiving program you will ever need, and t
 
 Also, if you need to open archives on your iPad or iPhone, look for "Archives" on the App Store, or go to <https://theunarchiver.com/archives>. It is based on The Unarchiver, and lets you easily handle Archives on iOS!
 
-### Supported archive formats
+## Supported archive formats
 
 With The Unarchiver you can extract files from the following archive formats.
 
@@ -35,15 +35,15 @@ With The Unarchiver you can extract files from the following archive formats.
 | LZMA, XZ                | Full      | ARJ           | No multi-part  | NDS             | Full             |
 | CAB                     | Full      | ARC,PAK       | Full           | SWF             | Images and audio |
 | MSI                     | Full      | Ace           | Only old files | PDF             | Bitmap images    |
-| NSIS                    | Extensive | Zoo           | Full           |
-| EXE                     | Some      | LZH           | Full           |
-| ISO, BIN, MDF, NRG, CDI | Extensive | ADF           | FFS            |
-| Split files             | Basic     | DMS           | FFS            |
-|                         |           | LZX           | Full           |
-|                         |           | PowerPacker   | Full           |
-|                         |           | LBR           | Full           |
-|                         |           | Squeeze       | Full           |
-|                         |           | Crunch        | Full           |
+| NSIS                    | Extensive | Zoo           | Full           |                 |                  |
+| EXE                     | Some      | LZH           | Full           |                 |                  |
+| ISO, BIN, MDF, NRG, CDI | Extensive | ADF           | FFS            |                 |                  |
+| Split files             | Basic     | DMS           | FFS            |                 |                  |
+|                         |           | LZX           | Full           |                 |                  |
+|                         |           | PowerPacker   | Full           |                 |                  |
+|                         |           | LBR           | Full           |                 |                  |
+|                         |           | Squeeze       | Full           |                 |                  |
+|                         |           | Crunch        | Full           |                 |                  |
 
 ## Installation
 

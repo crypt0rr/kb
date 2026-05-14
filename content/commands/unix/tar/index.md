@@ -283,7 +283,7 @@ Local file name selection:
       --quoting-style=STYLE  set name quoting style; see below for valid STYLE
                              values
   -R, --block-number         show block number within archive with each message
-                            
+
       --show-defaults        show tar defaults
       --show-omitted-dirs    when listing or extracting, list each directory
                              that does not match search criteria

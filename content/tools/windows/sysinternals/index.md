@@ -17,7 +17,7 @@ Download via [Windows Store](ms-windows-store://pdp/?productid=9P7KNL5RWT25) dir
 
 [Live hosted tools when you're on an assessment](https://live.sysinternals.com/) or download each tool below.
 
-### All tooling
+## All tooling
 
 {{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 

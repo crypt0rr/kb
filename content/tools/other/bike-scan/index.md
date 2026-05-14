@@ -86,61 +86,61 @@ vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=DES Hash=SHA1 Group=2:modp1024 Auth=PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 1,2,3,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=DES Hash=SHA1 Group=2:modp1024 Auth=RSA_Sig LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 1,2,65001,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=DES Hash=SHA1 Group=2:modp1024 Auth=XAUTH_PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 5,2,1,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=3DES Hash=SHA1 Group=2:modp1024 Auth=PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 5,2,3,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=3DES Hash=SHA1 Group=2:modp1024 Auth=RSA_Sig LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 5,2,65001,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=3DES Hash=SHA1 Group=2:modp1024 Auth=XAUTH_PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 7/128,2,1,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=AES KeyLength=128 Hash=SHA1 Group=2:modp1024 Auth=PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 7/192,2,1,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=AES KeyLength=192 Hash=SHA1 Group=2:modp1024 Auth=PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 7/256,2,1,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=AES KeyLength=256 Hash=SHA1 Group=2:modp1024 Auth=PSK LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 7/128,2,3,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)
    SA=(Enc=AES KeyLength=128 Hash=SHA1 Group=2:modp1024 Auth=RSA_Sig LifeType=Seconds LifeDuration=28800)
    VID=1234567898525e712345678900000 (IKE Fragmentation)
-   
+
 Successful command: ike-scan -r 1 -M  -a 7/192,2,3,2 vpn.offsec.nl
 vpn.offsec.nl   Main Mode Handshake returned
    HDR=(CKY-R=1234567890)

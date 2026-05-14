@@ -17,7 +17,7 @@ The script will **not change or modify** any assets deployed in an Azure subscri
 
 As the script uses the .NET ADAL library for authenticating a user and calling REST APIs, it only supports Windows OS.
 
-### Features
+## Features
 
 - Return a number of attributes on computers, users, groups, contacts, events, etc... from Azure Active Directory.
 - Search for High Level Accounts in a specific Azure Tenant, including Azure Active Directory, classic administrators, and Directory Roles (RBAC).
@@ -59,7 +59,7 @@ PSRemotingProtocolVersion      2.3
 SerializationVersion           1.1.0.1
 ```
 
-You should use an **account with at least read-permission** on the assets you want to access. More information about Role-Based Access Control in Azure can be found by clicking [here](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
+You should use an **account with at least read-permission** on the assets you want to access. More information about Role-Based Access Control in Azure can be found by clicking [here, docs.microsoft.com](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
 
 ## Installation
 

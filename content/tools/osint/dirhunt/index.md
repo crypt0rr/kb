@@ -19,7 +19,7 @@ Dirhunt does not use brute force. But neither is it just a crawler. This tool is
 
 Read more about how to use Dirhunt [in the documentation](http://docs.nekmo.org/dirhunt/usage.html).
 
-### Features
+## Features
 
 - Process one or multiple sites at a time.
 - Process 'Index Of' pages and report interesting files.

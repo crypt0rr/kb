@@ -17,7 +17,7 @@ All credit for the original code to the impacket devs, it's much more complicate
 
 This is a conversion of the impacket secretsdump module into golang. It's not very good, but it is quite fast. Please let me know if you find bugs, I'll try and fix where I can - bonus points if you can provide sample .dit files for me to bash against.
 
-### Features
+## Features
 
 - Dumps dits very fast. Operations that usually take hours are now done in minutes.
 - Can dump SAM/SYSTEM backups

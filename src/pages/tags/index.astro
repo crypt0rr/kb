@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAllTags, tagSlug } from "@lib/content";
+
+const tags = getAllTags();
+---
+
+<BaseLayout title="Tags" description="Browse the knowledge base by topic.">
+  <section class="listing-grid">
+    {tags.map((item) => (
+      <a class="listing-item" href={`/tags/${tagSlug(item.tag)}/`}>
+        <span>#{item.tag}</span>
+        <small>{item.count} notes</small>
+      </a>
+    ))}
+  </section>
+</BaseLayout>

@@ -41,7 +41,7 @@ Author: @0xdutra
 Version: 1.0.0
 Bugs: https://github.com/0xdutra/fawkes/issues
 ---------------------------------------------------
-    
+
 usage: 
     -q, --query      - Dork that will be used in the search engine.
     -r, --results    - Number of results brought by the search engine.
@@ -71,7 +71,7 @@ Author: @0xdutra
 Version: 1.0.0
 Bugs: https://github.com/0xdutra/fawkes/issues
 ---------------------------------------------------
-    
+
 Random google URL: https://www.google.pn/search
 Random User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36
 Number of targets: 93

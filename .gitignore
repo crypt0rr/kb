@@ -88,4 +88,10 @@ $RECYCLE.BIN/
 # Custom
 .hugo_build.lock
 .sync
+.rumdl_cache/
 !/public/_headers
+
+# Astro / Node
+.astro/
+dist/
+node_modules/

@@ -178,7 +178,7 @@ ec42192[REDACTED]4d32ad18:8ce7481dfb9a:ac49dbada3b8:OFFSEC:CompanyNetworkPasswor
 576f360[REDACTED]665cedfef:c8b5adf8d7e1:e80410d52f0c:OFFSEC-G:welkom@offsec
 8b9901e[REDACTED]8d0edc21672:8ce7481dfb99:703c69cd5fec:OFFSEC-G:welkom@offsec
 61fa5d2[REDACTED]07d2585f44:c8b5adf92be1:e80410d52f0c:OFFSEC-G:welkom@offsec
-                                                          
+
 Session..........: hashcat
 Status...........: Cracked
 [...]

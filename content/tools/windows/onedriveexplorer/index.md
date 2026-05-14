@@ -13,7 +13,7 @@ weight : 210
 
 OneDriveExplorer is a command line and GUI based application for reconstructing the folder structure of OneDrive from the `.\<UserCid>.dat` file.
 
-### GUI
+## GUI
 
 The GUI consists of two panes: the folder structure on the left and details on the right. By clicking on one of the entries in the left pane, the details pane will populate with various data such as name, whether it is a file or folder, UUIDs and the number of children, if any.
 
@@ -62,7 +62,7 @@ $ python3 OneDriveExplorer.py -f 4f241cd83085182d.dat --pretty
     (_____)(_) (_)`\____)(____/'(_)   (_)`\___/'`\____)(____/'(_/\_)| ,__/'(___)`\___/'(_)  `\____)(_) v2022.02.08
                                                                     | |        by @bmmaloney97
                                                                     (_)
-    
+
 [======================================================------] 89.2% ...Building folder list. Please wait....
 
 [======================================================------] 89.2% ...Recreating OneDrive folder. Please wait....

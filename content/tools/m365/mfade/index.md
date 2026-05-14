@@ -60,7 +60,7 @@ ___  _________        _
 | |\/| ||  _/ _` |/ _` |/ _ \
 | |  | || || (_| | (_| |  __/
 \_|  |_/\_| \__,_|\__,_|\___|
-                             
+
 ########## MICROSOFT API CHECKS ##########
 [i] === Logging into Microsoft Graph API ===
 [*] Success! mfatest@offsec.nl is able to authenticate to the Microsoft Graph API

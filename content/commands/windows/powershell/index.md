@@ -13,7 +13,7 @@ weight : 120
 
 {{%resources title="PowerShell and ISE executable" fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
-### Antimalware Scan Interface (AMSI) bypass generator
+## Antimalware Scan Interface (AMSI) bypass generator
 
 <https://amsi.fail>
 

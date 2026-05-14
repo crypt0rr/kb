@@ -55,7 +55,7 @@ $ python3 emailseccheck.py --domain offsec.nl
  [+] INFO: Analyzing 1 domain(s)...
  [+] INFO: Analyzing offsec.nl
  [-] WARN: DMARC record is missing for 'offsec.nl'
- 
+
 
  Spoofing possible for 1 domain(s): 
    > offsec.nl

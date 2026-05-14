@@ -11,7 +11,7 @@ weight : 130
 
 ---
 
-### Disable Remote User Account Control (UAC)
+## Disable Remote User Account Control (UAC)
 
 1. Open regedit.exe (as Administrator)
 2. Navigate to "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System"

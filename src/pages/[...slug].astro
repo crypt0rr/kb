@@ -1,0 +1,20 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getPages, renderPage } from "@lib/content";
+
+export function getStaticPaths() {
+  return getPages()
+    .filter((page) => page.url !== "/")
+    .map((page) => ({
+      params: { slug: page.slug },
+      props: { page }
+    }));
+}
+
+const { page } = Astro.props;
+const html = renderPage(page);
+---
+
+<BaseLayout page={page} title={page.title} description={page.description}>
+  <article class="content prose" data-pagefind-body set:html={html} />
+</BaseLayout>

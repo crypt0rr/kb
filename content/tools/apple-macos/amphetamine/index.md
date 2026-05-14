@@ -13,7 +13,7 @@ weight : 50
 
 Welcome to Amphetamine, the most awesome keep-awake app ever created for macOS. Amphetamine can keep your Mac, and optionally its display(s), awake through a super simple on/off switch, or automatically through easy-to-configure Triggers. Amphetamine is extremely powerful and includes advanced features for those who need them, yet remains intuitive and easy-to-use for those who don't need all of the bells and whistles.
 
-### Features
+## Features
 
 ### Click to Keep Your Mac Awake
 

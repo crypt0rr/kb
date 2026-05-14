@@ -15,7 +15,7 @@ weight : 210
 
 Removes bloated metadata. Saves disk space & bandwidth by compressing images without losing quality.
 
-### Features
+## Features
 
 - **Reduces image file sizes** - so they take up less disk space and download faster - by applying advanced compression that preserves quality.
 - **Removes invisible junk**: private EXIF metadata from digital cameras, embedded thumbnails, comments, and unnecessary color profiles.

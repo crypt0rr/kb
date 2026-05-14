@@ -74,7 +74,7 @@ options:
                             crt:      Perform crt.sh search for subdomains and hosts.
                             snoop:    Perform cache snooping against all NS servers for a given domain, testing
                                       all with file containing the domains, file given with -D option.
-                        
+
                             tld:      Remove the TLD of given domain and test against all TLDs registered in IANA.
                             zonewalk: Perform a DNSSEC zone walk using NSEC records.
 ```

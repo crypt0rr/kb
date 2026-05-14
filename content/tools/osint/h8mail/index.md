@@ -163,9 +163,9 @@ $ h8mail -u 'https://example.com'
       Official h8mail posts: 
       https://khast3x.club/tags/h8mail/
 
- 
+
     Version 2.5.4 - "ROCKSMASSON.4"  
- 
+
   ._____. ._____.     ;____________;
   | ._. | | ._. |     ;   h8mail   ;
   | !_| |_|_|_! |     ;------------;

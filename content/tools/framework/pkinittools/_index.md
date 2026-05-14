@@ -7,7 +7,7 @@ date : 2023-12-03T06:10:07+01:00
 # draft : true
 weight : 330
 tags : ['Framework', 'ADCS']
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['Framework', 'ADCS']
     # pre : '<i class="fas fa-terminal"></i> '

@@ -13,7 +13,7 @@ weight : 330
 
 Is an open source intelligence (OSINT) automation tool. It integrates with just about every data source available and utilises a range of methods for data analysis, making that data easy to navigate.
 
-### FEATURES
+## FEATURES
 
 - Web based UI or CLI
 - Over 200 modules (see below)

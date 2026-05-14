@@ -11,7 +11,7 @@ weight : 70
 
 ---
 
-### SQL-injection
+## SQL-injection
 
 [Google Dorking SQLi](https://jarnobaselier.nl/google-dorks/)
 

@@ -38,7 +38,7 @@ There is many pre-filled information on the `login.aspx` page of the Remote Desk
     <input type="hidden" name="RedirectorName" value="DC01.lab.local"/>
     <input type="hidden" name="ClaimsHint" value=""/>
     <input type="hidden" name="ClaimsToken" value=""/>
-    
+
     <input name="isUtf8" type="hidden" value="1"/>
     <input type="hidden" name="flags" value="0"/>
 ...
@@ -51,8 +51,8 @@ The `RDWArecon.py` tool automatically parses this form and extract all the infor
 
 If the remote RDWeb installation was not hardened, there is a high chance that the default version image file `/RDWeb/Pages/images/WS_h_c.png` is still accessible (even if not mentioned on the login page). This is really awesome as we can compare its sha256 hash value directly with a known table of the windows banners of this service:
 
-| Windows OS                 | SHA256 hash                                                        | Banner                                                           |
-| -------------------------- | ------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| Windows OS                 | SHA256 hash                                                        | Banner                                                        |
+| -------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------- |
 | **Windows Server 2008 R2** | `5a8a77dc7ffd463647987c0de6df2c870f42819ec03bbd02a3ea9601e2ed8a4b` | ![example](images/Windows%20Server%202008%20R2.png)           |
 | **Windows Server 2012 R2** | `4560591682d433c7fa190c6bf40827110e219929932dc6dc049697529c8a98bc` | ![example](images/Windows%20Server%202012%20R2_white.png)     |
 | **Windows Server 2012 R2** | `3d9b56811a5126a6d3b78a692c2278d588d495ee215173f752ce4cbf8102921c` | ![example](images/Windows%20Server%202012%20R2_black.png)     |
@@ -77,8 +77,8 @@ RDWArecon.py [-h] -u URL [-v] [-k] [-L] [--no-colors]
       / /_/ / / / / | /| / / /| | / ___/ _ \/ ___/ __ \/ __ \   @podalirius_
      / _, _/ /_/ /| |/ |/ / ___ |/ /  /  __/ /__/ /_/ / / / /   
     /_/ |_/_____/ |__/|__/_/  |_/_/   \___/\___/\____/_/ /_/    v1.1
-                                                             
-    
+
+
 options:
   -h, --help         show this help message and exit
   -u URL, --url URL  Target RDWeb url
@@ -97,7 +97,7 @@ $ ./RDWArecon.py -u https://rdweb.offsec.nl/RDWeb/Pages/en-US/login.aspx\?Return
       / /_/ / / / / | /| / / /| | / ___/ _ \/ ___/ __ \/ __ \   @podalirius_
      / _, _/ /_/ /| |/ |/ / ___ |/ /  /  __/ /__/ /_/ / / / /   
     /_/ |_/_____/ |__/|__/_/  |_/_/   \___/\___/\____/_/ /_/    v1.1
-                                                             
+
 [+] Remote server is running: Windows Server 2019
 [>] Found information on https://rdweb.offsec.nl/RDWeb/Pages/en-US/login.aspx?ReturnUrl=/RDWeb/Pages/en-US/Default.aspx/RDWeb/Pages/de-DE/login.aspx
   [>] Parsing interesting HTTP headers if any

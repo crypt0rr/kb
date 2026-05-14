@@ -13,7 +13,7 @@ tags : ['Framework', 'WiFi']
 
 📡 Wi-Fi Exploitation Framework 📡
 
-<img src="https://raw.githubusercontent.com/D3Ext/WEF/main/images/WEF.png" width=1110 height=500>
+<img alt="WEF.png" src="https://raw.githubusercontent.com/D3Ext/WEF/main/images/WEF.png" width=1110 height=500>
 
 A fully offensive framework to the 802.11 networks and protocols with different types of attacks for WPA/WPA2 and WEP, automated hash cracking, bluetooth hacking and much more.
 
@@ -126,7 +126,7 @@ Type 'help' to view more functions
 ██║███╗██║██╔══╝  ██╔══╝       [WEF] WiFi Exploitation Framework 1.0
 ╚███╔███╔╝███████╗██║                    
  ╚══╝╚══╝ ╚══════╝╚═╝     
-   
+
 
 Type 'help' to view more functions
 

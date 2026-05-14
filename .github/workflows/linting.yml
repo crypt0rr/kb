@@ -1,26 +1,23 @@
-name: Validation of Markdown Linting
+name: Perform markdown linting
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
-    paths-ignore:
-      - '.github/**'
+    paths:
+      - 'content/**/*.md'
       - 'README.md'
-      - 'LICENSE'
-      - '.gitignore'
-      - '.gitattributes'
-      - '.editorconfig'
+      - '.markdownlint.yml'
+      - '.github/workflows/linting.yml'
   pull_request:
     branches:
       - main
-    paths-ignore:
-      - '.github/**'
+    paths:
+      - 'content/**/*.md'
       - 'README.md'
-      - 'LICENSE'
-      - '.gitignore'
-      - '.gitattributes'
-      - '.editorconfig'
+      - '.markdownlint.yml'
+      - '.github/workflows/linting.yml'
 
 jobs:
   lint:
@@ -28,10 +25,19 @@ jobs:
     steps:
       - name: Clone this repo
         uses: actions/checkout@v6
-      
-      - name: Markdown Linting Action
-        id: lint
-        uses: avto-dev/markdown-lint@v1.5.0
+
+      - name: Lint content Markdown
+        uses: rvben/rumdl@v0
         with:
-          config: "./.markdownlint.yml"
-          args: "./content/**/*.md"
+          version: '0.1.91'
+          path: 'content/'
+          config: '.markdownlint.yml'
+          report-type: annotations
+
+      - name: Lint README
+        uses: rvben/rumdl@v0
+        with:
+          version: '0.1.91'
+          path: 'README.md'
+          config: '.markdownlint.yml'
+          report-type: annotations

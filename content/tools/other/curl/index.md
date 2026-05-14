@@ -11,7 +11,7 @@ tags : ['Other', 'HTTP', 'FTP']
 
 ---
 
-Is  a tool to transfer data from or to a server, using one of the supported protocols. The command is designed to work  without user interaction.
+Is a tool to transfer data from or to a server, using one of the supported protocols. The command is designed to work without user interaction.
 
 ## Installation
 

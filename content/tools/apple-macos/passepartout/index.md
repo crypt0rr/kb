@@ -24,7 +24,7 @@ Passepartout does not engage any unrequested background activity other than the 
 - No background activities
 - Wise on battery
 
-### Easy to use
+## Easy to use
 
 - Incredible ease of use, with native look & feel.
 - Handle your profiles in one single place.

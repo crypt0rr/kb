@@ -13,7 +13,7 @@ tags : ['Unix', 'HTTP', 'FTP']
 
 A non-interactive network retriever
 
-### Binary for Windows
+## Binary for Windows
 
 {{% resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 

@@ -15,7 +15,7 @@ CrossLinked is a LinkedIn enumeration tool that uses search engine scraping to c
 
 In the latest version CrossLinked now includes a names.csv output file, which stores all scraping data including: first name, last name, job title, and url. This can be ingested and parsed to reformat user accounts as needed.
 
-### Prerequisite
+## Prerequisite
 
 CrossLinked assumes the organization's account naming convention has already been identified. This is required for execution and should be added to the CMD args based on your expected output. See the [Naming Format](https://github.com/m8sec/CrossLinked#naming-format) and [Example Usage](https://github.com/m8sec/CrossLinked#example-usage-1) sections.
 

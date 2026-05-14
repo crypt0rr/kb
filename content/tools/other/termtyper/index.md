@@ -13,7 +13,7 @@ weight : 1820
 
 A typing application to level up your fingers!
 
-### Features
+## Features
 
 - An interactive & beautiful UI
 - Mechanical sounds!

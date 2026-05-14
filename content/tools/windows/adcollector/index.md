@@ -13,7 +13,7 @@ weight : 10
 
 Is a lightweight tool that enumerates the Active Directory environment to identify possible attack vectors. It will give you a basic understanding of the configuration/deployment of the environment as a starting point
 
-### Enumeration
+## Enumeration
 
 - Current Domain/Forest information
 - Domains in the current forest (with domain SIDs)

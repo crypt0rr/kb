@@ -6,7 +6,7 @@ date : 2022-05-12T15:16:22+02:00
 # hidden : true
 # draft : true
 weight : 130
-tags : ['Other', 'AWS']
+tags : ['Other']
 ---
 
 ---

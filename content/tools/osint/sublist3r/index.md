@@ -63,7 +63,7 @@ $ ./sublist3r.py -d example.com
                 |____/ \__,_|_.__/|_|_|___/\__|____/|_|
 
                 # Coded By Ahmed Aboul-Ela - @aboul3la
-    
+
 [-] Enumerating subdomains now for example.com
 [-] Searching now in Baidu..
 [-] Searching now in Yahoo..

@@ -6,7 +6,7 @@ date : 2022-02-08T15:17:53+01:00
 # hidden : true
 # draft : true
 weight : 370
-tags : ['Framework', 'AWS', 'Azure', 'Google Cloud', 'Alibaba', 'Oracle']
+tags : ['Framework']
 ---
 
 ---
@@ -17,7 +17,7 @@ Scout Suite was designed by security consultants/auditors. It is meant to provid
 
 The project team can be contacted at <scoutsuite@nccgroup.com>.
 
-### Cloud Provider Support
+## Cloud Provider Support
 
 The following cloud providers are currently supported:
 

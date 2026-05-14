@@ -13,7 +13,7 @@ weight : 2130
 
 The #1 security key, offering strong two factor authentication from industry leader Yubico.
 
-### Ubuntu 2FA
+## Ubuntu 2FA
 
 ### Install requirements
 

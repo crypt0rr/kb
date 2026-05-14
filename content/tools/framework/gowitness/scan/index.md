@@ -13,9 +13,9 @@ weight : 20
 
 Perform various scans using sources such as a file, Nmap XMLs, Nessus exports, or by scanning network CIDR ranges.
 
-By default, gowitness will only take screenshots. However, that is only half the fun! You can add multiple writers that will collect information such as response codes, content, and more. You can specify multiple writers using the  `--writer-*` flags (see --help).
+By default, gowitness will only take screenshots. However, that is only half the fun! You can add multiple writers that will collect information such as response codes, content, and more. You can specify multiple writers using the `--writer-*` flags (see --help).
 
-Note: By default, no metadata is saved except for screenshots that are stored in the configured --screenshot-path. For later parsing (i.e., using the  gowitness reporting feature), you need to specify where to write results (db, csv, jsonl) using the --write-* set of flags. See --help for available flags.
+Note: By default, no metadata is saved except for screenshots that are stored in the configured --screenshot-path. For later parsing (i.e., using the gowitness reporting feature), you need to specify where to write results (db, csv, jsonl) using the --write-* set of flags. See --help for available flags.
 
 ## Installation
 

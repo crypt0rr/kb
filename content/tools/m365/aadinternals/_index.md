@@ -7,7 +7,7 @@ date : 2022-01-13T10:38:38+01:00
 # draft : true
 weight : 10
 tags : ["M365"]
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['M365', 'AzureAD/EntraID']
     # pre : '<i class="fas fa-terminal"></i> '

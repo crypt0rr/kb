@@ -30,7 +30,7 @@ Note 2: Currently OpenCore Legacy Patcher officially supports patching to run ma
 
 - For macOS Mojave and Catalina support, we recommend the use of [dosdude1's patchers](http://dosdude1.com)
 
-### Running from source
+## Running from source
 
 To run the project from source, see here: [Build and run from source](https://github.com/dortania/OpenCore-Legacy-Patcher/blob/main/SOURCE.md)
 

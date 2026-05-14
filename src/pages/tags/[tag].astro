@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getAllTags, getPagesByTag, tagSlug } from "@lib/content";
+
+export function getStaticPaths() {
+  return getAllTags().map((item) => ({
+    params: { tag: tagSlug(item.tag) },
+    props: { tag: item.tag }
+  }));
+}
+
+const { tag } = Astro.props;
+const pages = getPagesByTag(tag);
+---
+
+<BaseLayout title={`#${tag}`} description={`Knowledge base entries tagged ${tag}.`}>
+  <section class="listing-grid">
+    {pages.map((page) => (
+      <a class="listing-item" href={page.url}>
+        <span>{page.title}</span>
+        {page.description && <p>{page.description}</p>}
+      </a>
+    ))}
+  </section>
+</BaseLayout>

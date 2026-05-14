@@ -25,7 +25,7 @@ Reasons you’ll love HandBrake:
 - Free and Open Source
 - Multi-Platform (Windows, Mac and Linux)
 
-### Features
+## Features
 
 ### Built-in Device Presets
 

@@ -29,7 +29,7 @@ optional arguments:
   --debug     Enable debug messages
 
 Available commands:
-  
+
     help      Show this help message
     apply     Apply current netplan config to running system
     generate  Generate backend specific configuration files from
