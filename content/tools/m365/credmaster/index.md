@@ -54,7 +54,7 @@ python3 -m pip install -r requirements.txt
 
 This tool requires AWS API access keys, a walkthrough on how to acquire these keys can be found here: <https://bond-o.medium.com/aws-pass-through-proxy-84f1f7fa4b4b>
 
-All other usage details can be found [here](https://github.com/knavesec/CredMaster/wiki/Usage)
+All other usage details can be found on [github.com](https://github.com/knavesec/CredMaster/wiki/Usage)
 
 ## Usage
 

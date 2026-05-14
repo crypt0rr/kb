@@ -59,7 +59,7 @@ PSRemotingProtocolVersion      2.3
 SerializationVersion           1.1.0.1
 ```
 
-You should use an **account with at least read-permission** on the assets you want to access. More information about Role-Based Access Control in Azure can be found by clicking [here](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
+You should use an **account with at least read-permission** on the assets you want to access. More information about Role-Based Access Control in Azure can be found by clicking [here, docs.microsoft.com](https://docs.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
 
 ## Installation
 
