@@ -6,7 +6,7 @@ date : 2022-09-23T14:02:24+02:00
 # hidden : true
 # draft : true
 weight : 140
-tags : ['Windows', 'Apple']
+tags : ['Windows']
 ---
 
 ---
