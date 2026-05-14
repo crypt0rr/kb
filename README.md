@@ -9,19 +9,7 @@ Live version of the site is available on [kb.offsec.nl](https://kb.offsec.nl).
 ```plain
 git clone https://github.com/crypt0rr/kb
 cd kb
-hugo server
-```
-
-## Create new pages
-
-```plain
-hugo new --kind <archetype> content/<folder>/<item>
-```
-
-Example creation of tool
-
-```plain
-hugo new --kind tool content/tools/other/testtool
+npm run dev -- --host 127.0.0.1
 ```
 
 ## Contributing
