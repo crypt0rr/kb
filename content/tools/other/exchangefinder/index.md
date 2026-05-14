@@ -45,16 +45,16 @@ options:
 ```plain
 $ python3 exchangefinder.py --domain offsec.nl              
 
-    
+
     ______     __                           _______           __         
    / ____/  __/ /_  ____ _____  ____ ____  / ____(_)___  ____/ /__  _____
   / __/ | |/_/ __ \/ __ `/ __ \/ __ `/ _ \/ /_  / / __ \/ __  / _ \/ ___/
  / /____>  </ / / / /_/ / / / / /_/ /  __/ __/ / / / / / /_/ /  __/ /    
 /_____/_/|_/_/ /_/\__,_/_/ /_/\__, /\___/_/   /_/_/ /_/\__,_/\___/_/     
                              /____/                                        
-                                                
+
                                                 Find that Microsoft Exchange server ..
-    
+
 [!] Scanning domain offsec.nl
         [+] The following MX records found for the main domain
         10 filter.fekahost.nl.

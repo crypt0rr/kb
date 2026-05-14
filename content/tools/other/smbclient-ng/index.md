@@ -85,7 +85,7 @@ $ smbclient-ng -u "Administrator" -d OFFSEC.nl -p 'Welkom1234' --target "100.70.
 \__ \ | | | | | |_) | (__| | |  __/ | | | ||_____| | | | (_| |
 |___/_| |_| |_|_.__/ \___|_|_|\___|_| |_|\__|    |_| |_|\__, |
     by @podalirius_                               v1.2  |___/  
-    
+
 [+] Successfully authenticated to '100.70.60.50' as 'OFFSEC.nl\Administrator'!
 ⏺[\\100.70.60.50\]> shares
 ┏━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━┓

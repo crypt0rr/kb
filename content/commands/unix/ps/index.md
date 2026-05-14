@@ -52,7 +52,7 @@ root          14       2  0 17:05 ?        00:00:00 [migration/0]
 [...]
 ```
 
-### Search specific process by  name
+### Search specific process by name
 
 `e` is replaced by `C` so the command name can be searched instead of all processes.
 

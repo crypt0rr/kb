@@ -13,7 +13,7 @@ tags : ['Stuff', 'HTTP']
 
 URLs that can be used in Chromium based browsers.
 
-### Base URLs
+## Base URLs
 
 ```plain
 chrome://about

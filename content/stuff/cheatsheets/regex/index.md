@@ -50,7 +50,7 @@ For more look [here](http://www.rexegg.com/regex-quickstart.html#ref).
 | .         | Any character except line break                          | a.c                               | abc            |
 | .         | Any character except line break                          | .*                                | whatever, man. |
 | \.        | A period (special character: needs to be escaped by a \) | a\.c                              | a.c            |
-| \         | Escapes a special character                              | \.\*\+\?    \$\^\/\\|.*+?    $^/\ | -              |
+| \ | Escapes a special character | \.\*\+\?    \$\^\/\\ | .*+?    $^/\ |
 | \         | Escapes a special character                              | \[\{\(\)\}\]                      | [{()}]         |
 
 ### Logic
@@ -68,16 +68,16 @@ For more look [here](http://www.rexegg.com/regex-quickstart.html#ref).
 | Character | Legend                                                                                                                                             | Example   | Sample Match |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------------ |
 | \t        | Tab                                                                                                                                                | T\t\w{2}  | T     ab     |
-| \r        | Carriage return character                                                                                                                          | see below |
-| \n        | Line feed character                                                                                                                                | see below |
+| \r | Carriage return character | see below |  |
+| \n | Line feed character | see below |  |
 | \r\n      | Line separator on Windows                                                                                                                          | AB\r\nCD  | ABCD         |
 | \N        | Perl, PCRE (C, PHP, R…): one character that is not a line break                                                                                    | \N+       | ABC          |
-| \h        | Perl, PCRE (C, PHP, R…), Java: one horizontal whitespace character: tab or Unicode space separator                                                 |           |
-| \H        | One character that is not a horizontal whitespace                                                                                                  |           |
-| \v        | .NET, JavaScript, Python, Ruby: vertical tab                                                                                                       |           |
-| \v        | Perl, PCRE (C, PHP, R…), Java: one vertical whitespace character: line feed, carriage return, vertical tab, form feed, paragraph or line separator |           |
-| \V        | Perl, PCRE (C, PHP, R…), Java: any character that is not a vertical whitespace                                                                     |           |
-| \R        | Perl, PCRE (C, PHP, R…), Java: one line break (carriage return + line feed pair, and all the characters matched by \v)                             |
+| \h | Perl, PCRE (C, PHP, R…), Java: one horizontal whitespace character: tab or Unicode space separator |  |  |
+| \H | One character that is not a horizontal whitespace |  |  |
+| \v | .NET, JavaScript, Python, Ruby: vertical tab |  |  |
+| \v | Perl, PCRE (C, PHP, R…), Java: one vertical whitespace character: line feed, carriage return, vertical tab, form feed, paragraph or line separator |  |  |
+| \V | Perl, PCRE (C, PHP, R…), Java: any character that is not a vertical whitespace |  |  |
+| \R | Perl, PCRE (C, PHP, R…), Java: one line break (carriage return + line feed pair, and all the characters matched by \v) |  |  |
 
 ### More Quantifiers
 

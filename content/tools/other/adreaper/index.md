@@ -36,7 +36,7 @@ go build
 ```plain
   -command string
         Command to run
-    
+
                 users           - to list all users
                 user-logs       - to list user session activities
                 never-loggedon  - to list users never logged on
@@ -49,7 +49,7 @@ go build
                 domain-trust    - to list domain trust
                 ou              - to list organizational units
                 ms-sql          - to list MS-SQL servers
-    
+
   -dc string
         Enter the DC
   -password string

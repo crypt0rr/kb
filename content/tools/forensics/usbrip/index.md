@@ -43,13 +43,13 @@ optional arguments:
 
 ```plain
 $ usbrip events history   
-                       
+
          _     {{4}}    {v2.2.2-1}
  _ _ ___| |_ ___[e]___ 
 | | |_ -| . |  _[N] . |
 |___|___|___|_| [5]  _|
                x[I]_|   https://github.com/snovvcrash/usbrip
-                       
+
 
 [*] Started at 2021-02-08 09:47:15
 [09:47:15] [INFO] Trying to run journalctl...

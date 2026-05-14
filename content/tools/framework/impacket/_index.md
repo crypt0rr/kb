@@ -7,7 +7,7 @@ date : 2022-02-14T11:20:55+02:00
 # draft : true
 weight : 180
 tags : ["Framework"]
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['Framework' , 'Impacket']
     # pre : '<i class="fab fa"></i> '

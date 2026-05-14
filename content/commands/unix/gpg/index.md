@@ -115,7 +115,7 @@ Please report bugs to <https://bugs.gnupg.org>.
 gpg -c <file>
 ```
 
-### Decrypt files  (password based)
+### Decrypt files (password based)
 
 ```plain
 gpg <file>

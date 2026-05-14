@@ -21,7 +21,7 @@ Anonymously bruteforce Active Directory usernames from Domain Controllers by abu
 - Parallelized (defaults to 8 connections)
 - Shows progressbar if you're using both input and output files
 
-### Username lists
+## Username lists
 
 - [Common-AD-Usernames](https://github.com/crypt0rr/common-ad-usernames)
 - [SecLists](https://github.com/danielmiessler/SecLists/tree/master/Usernames)

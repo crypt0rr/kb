@@ -17,7 +17,7 @@ Scout Suite was designed by security consultants/auditors. It is meant to provid
 
 The project team can be contacted at <scoutsuite@nccgroup.com>.
 
-### Cloud Provider Support
+## Cloud Provider Support
 
 The following cloud providers are currently supported:
 

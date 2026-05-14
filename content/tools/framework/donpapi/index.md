@@ -13,7 +13,7 @@ weight : 130
 
 Dumping revelant information on compromised targets without AV detection
 
-### DPAPI dumping
+## DPAPI dumping
 
 Lots of credentials are protected by [DPAPI](https://docs.microsoft.com/en-us/dotnet/standard/security/how-to-use-data-protection).
 
@@ -217,7 +217,7 @@ Description : PersistedCredential
 Unknown     : 
 Username    : 02revvqacndgtgkt
 Unknown3     : 
- 
+
 INFO [10.20.30.10] [+] Gathering Wifi Keys
 INFO [10.20.30.10] [+] Gathering Vaults
 INFO [10.20.30.10] [+] Gathering Chrome Secrets 

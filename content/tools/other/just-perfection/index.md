@@ -15,7 +15,7 @@ Disable and Customize GNOME shell UI Elements.
 
 This extension allows you to do the following:
 
-### Visibility
+## Visibility
 
 - OSD
 - Search

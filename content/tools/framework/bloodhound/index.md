@@ -13,7 +13,7 @@ tags : ['Framework', 'Active Directory', 'AzureAD/EntraID']
 
 Uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment.
 
-### Collectors
+## Collectors
 
 To gather additional information directly from ADExplorer for BloodHound, check [ADExplorerSnapshot.py]({{< ref "ADExplorerSnapshotpy" >}})
 

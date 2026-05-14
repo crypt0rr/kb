@@ -53,16 +53,16 @@ Options:
    You dont need to specify this arguments, but you may want to
 
     --vuln              Check for extensions with known vulnerabilities only.
-              
+
     --timeout TIMEOUT   Request Timeout.
                         Default: 10 seconds
-              
+
     --auth USER:PASS    Username and Password for HTTP Basic Authorization.
-    
+
     --cookie NAME=VALUE Can be used for authenticiation based on cookies.
 
     --agent USER-AGENT  Set custom User-Agent for requests.
-         
+
     --threads THREADS   The number of threads to use for enumerating extensions.
                         Default: 5
 

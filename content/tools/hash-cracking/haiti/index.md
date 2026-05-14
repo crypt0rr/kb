@@ -15,7 +15,7 @@ A CLI tool to identify the hash type of a given hash.
 
 Homepage / Documentation: <https://noraj.github.io/haiti/>
 
-### Features
+## Features
 
 - 442+ hash types detected
 - Modern algorithms supported (SHA3, Keccak, Blake2, etc.)

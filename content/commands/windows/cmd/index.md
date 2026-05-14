@@ -15,7 +15,7 @@ Command Prompt.
 
 {{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
-### Show Domain Admins / Enterprise Admins
+## Show Domain Admins / Enterprise Admins
 
 `net group "Domain Admins" /domain`
 

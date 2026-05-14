@@ -17,7 +17,7 @@ The script will **not change or modify** any assets deployed in an Azure subscri
 
 As the script uses the .NET ADAL library for authenticating a user and calling REST APIs, it only supports Windows OS.
 
-### Features
+## Features
 
 - Return a number of attributes on computers, users, groups, contacts, events, etc... from Azure Active Directory.
 - Search for High Level Accounts in a specific Azure Tenant, including Azure Active Directory, classic administrators, and Directory Roles (RBAC).

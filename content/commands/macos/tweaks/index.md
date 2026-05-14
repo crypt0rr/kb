@@ -11,7 +11,7 @@ weight : 130
 
 ---
 
-### View Hidden Files & Folders
+## View Hidden Files & Folders
 
 ```plain
 defaults write com.apple.finder AppleShowAllFiles -bool TRUE

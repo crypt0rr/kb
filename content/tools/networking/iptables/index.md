@@ -119,7 +119,7 @@ target     prot opt source               destination
 
 ```plain
 $ sudo iptables -A INPUT -s 10.10.20.241 -j ACCEPT
-                                                                                                                                                                                                                                            
+
 $ sudo iptables -L
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         

@@ -13,7 +13,7 @@ weight : 1420
 
 Search, explore and download Lossless and Hi-Res music from Qobuz - The ultimate Qobuz music downloader.
 
-### Features
+## Features
 
 - Download FLAC and MP3 files from Qobuz
 - Explore and download music directly from your terminal with interactive or lucky mode

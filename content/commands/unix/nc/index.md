@@ -13,7 +13,7 @@ weight: 620
 
 Netcat, arbitrary TCP and UDP connections and listens.
 
-### Binary for Windows
+## Binary for Windows
 
 {{% resources fa_icon_class="far fa-file" pattern=".*(exe)" /%}}
 

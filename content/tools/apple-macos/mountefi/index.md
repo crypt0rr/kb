@@ -36,7 +36,7 @@ $ ./MountEFI.command
   ##########################################
  #                     MountEFI                        #
 ##########################################
- 
+
 1. Macintosh HD (disk1s1s1)
 
 S. Switch to Full Output
@@ -47,7 +47,7 @@ D. Pick Default Disk (None Set)
 M. After Mounting: Return to Menu
 R. Toggle Window Resizing (Currently Enabled)
 Q. Quit
- 
+
 (* denotes the booted EFI (Clover/OC))
 Pick the drive containing your EFI:
 ```

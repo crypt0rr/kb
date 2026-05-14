@@ -129,7 +129,7 @@ $ python3 smbmap.py -u johndo -p 'Welkom1234' -H 10.10.10.10
      SMBMap - Samba Share Enumerator | Shawn Evans - ShawnDEvans@gmail.com   
                      https://github.com/ShawnDEvans/smbmap
 
-                                                                                                    
+
 [+] IP: 10.10.10.10:445    Name: unknown               Status: Authenticated
     Disk                                                Permissions Comment
     ----                                                ----------- -------
@@ -172,7 +172,7 @@ $ smbmap.py -u johndo -p Welkom1234 -H 10.10.20.251 -R aiff
      SMBMap - Samba Share Enumerator | Shawn Evans - ShawnDEvans@gmail.com   
                      https://github.com/ShawnDEvans/smbmap
 
-                                                                                                    
+
 [+] IP: 10.10.20.251:445    Name: unknown                 Status: Authenticated
         Disk                                              Permissions    Comment
     ----                                                  -----------    -------

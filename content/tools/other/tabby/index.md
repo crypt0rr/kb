@@ -26,7 +26,7 @@ Tabby (formerly Terminus) is a highly configurable terminal emulator, SSH and se
 - Proper shell experience on Windows including tab completion (via Clink)
 - Integrated encrypted container for SSH secrets and configuration
 
-### Features
+## Features
 
 - A V220 terminal + various extensions
 - Multiple nested split panes

@@ -11,7 +11,7 @@ weight : 80
 
 ---
 
-### Host header issues / WAF bypass
+## Host header issues / WAF bypass
 
 ```plain
 curl -i -s -k -X $'GET' -H $'Host: example.com' $'http://<target>/'
@@ -70,7 +70,7 @@ nmap --script http-ntlm-info <target>
 [Basic auth generator](https://www.blitter.se/utils/basic-authentication-header-generator/)
 
 Username | Password | Basic auth header
-|-----|------|------|
+-----|------|------
 admin | admin | Authorization: Basic YWRtaW46YWRtaW4=
 Aladdin | OpenSesame | Authorization: Basic QWxhZGRpbjpPcGVuU2VzYW1l
 test | test | Authorization: Basic dGVzdDp0ZXN0

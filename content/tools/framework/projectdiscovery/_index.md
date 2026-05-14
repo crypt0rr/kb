@@ -7,7 +7,7 @@ date : 2024-03-11T13:22:05+01:00
 # draft : true
 weight : 350
 tags : ["Framework"]
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['ProjectDiscovery']
     pre : '<i class="fas fa-terminal"></i> '

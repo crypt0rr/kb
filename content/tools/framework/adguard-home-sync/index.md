@@ -13,7 +13,7 @@ tags : ['Framework', 'DNS']
 
 Synchronize config from one AdGuardHome instance to another.
 
-### Current sync features
+## Current sync features
 
 - General Settings
 - Filters

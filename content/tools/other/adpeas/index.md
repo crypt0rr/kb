@@ -22,7 +22,7 @@ As said, adPEAS is a wrapper for other tools. They are almost all written in pur
 
 adPEAS-Light is a version without Bloodhound and vulnerability checks and it is more likely that it will not blocked by an AV solution.
 
-### How It Works
+## How It Works
 
 adPEAS can be run simply by starting the script via 'invoke-adPEAS' if it is started on a domain joined computer. If the system you are running adPEAS from is not domain joined or you want to enumerate another domain, use a certain domain controller to connect to, use different credentials or just to enumerate for credential exposure only, you can do it by using defined parameters.
 

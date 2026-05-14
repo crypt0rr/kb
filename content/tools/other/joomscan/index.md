@@ -35,7 +35,7 @@ joomscan [options]
   .-_)(   )(_)(  )(_)(  )    ( \__ \( (__  /(__)\  )  ( 
   \____) (_____)(_____)(_/\/\_)(___/ \___)(__)(__)(_)\_)
             (1337.today)
-   
+
     --=[OWASP JoomScan
     +---++---==[Version : 0.0.7
     +---++---==[Update Date : [2018/09/23]
@@ -54,7 +54,7 @@ joomscan [options]
            Proxy example: --proxy http://127.0.0.1:8080
                                   https://127.0.0.1:443
                                   socks://127.0.0.1:414
-                                  
+
 --about                         |   About Author
 --help | -h                     |   This help screen.
 --version                       |   Output the current version and exit.
@@ -69,7 +69,7 @@ $ joomscan -u http://10.10.10.10
   .-_)(   )(_)(  )(_)(  )    ( \__ \( (__  /(__)\  )  ( 
   \____) (_____)(_____)(_/\/\_)(___/ \___)(__)(__)(_)\_)
             (1337.today)
-   
+
     --=[OWASP JoomScan
     +---++---==[Version : 0.0.7
     +---++---==[Update Date : [2018/09/23]

@@ -13,7 +13,7 @@ weight : 150
 
 Backscatter is the incorrectly automated bounce messages sent by mail servers, typically as a side effect of incoming spam.can be used.
 
-### Solution
+## Solution
 
 ```plain
 - Implement anti-forgery checks - SPF, DKIM and DMARC

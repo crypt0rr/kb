@@ -13,7 +13,7 @@ weight : 180
 
 It converts videos to animated GIFs that use thousands of colors per frame. This is made possible by some fancy features for efficient cross-frame palettes and temporal dithering.
 
-### Features
+## Features
 
 - Video trimming
 - Precise control of dimensions

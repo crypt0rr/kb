@@ -48,7 +48,7 @@ options:
    - AES128/256 key: "aes"
    - CCACHE file: "ccache"
    - SSPI: "sspi"
-   
+
    Example:
    - Plaintext + SOCKS5 proxy:
       kerberos+password://domain\user:SecretPassword@127.0.0.1/proxytype=socks5&proxyhost=127.0.0.1&proxyport=1080

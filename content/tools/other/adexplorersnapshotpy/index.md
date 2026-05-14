@@ -23,7 +23,7 @@ You can use the `.exe` below or try to run it directly from Command Prompt.
 
 {{%resources fa_icon_class="far fa-file" pattern=".*(exe)"/%}}
 
-### Limitations
+## Limitations
 
 The ingestor only supports offline information collection from the snapshot file and won't interact with systems on the network. That means features like session and localadmin collection are not available. GPO/OU collection is missing. The ingestor processes all data it possibly can from the snapshot (including ACLs). You will only have the data available of the LDAP/DC that you ran the snapshot against.
 

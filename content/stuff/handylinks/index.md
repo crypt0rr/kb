@@ -11,7 +11,7 @@ weight : 20
 
 ---
 
-### M365Maps - Microsoft 365 Licensing
+## M365Maps - Microsoft 365 Licensing
 
 [M365maps.com](https://m365maps.com)
 

@@ -15,7 +15,7 @@ Viscosity is a first class VPN client, providing everything you need to establis
 
 Viscosity caters to both users new to VPNs and experts alike, providing secure and reliable VPN connections. Whether remotely connecting to your workplace network, home network, VPN Service Provider, or other setup, Viscosity ensures it's done with ease and style.
 
-### Features
+## Features
 
 ### Authentication
 

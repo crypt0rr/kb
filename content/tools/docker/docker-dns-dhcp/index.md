@@ -23,7 +23,7 @@ It uses the following ports:
 - 53 DNS
 - 67 DHCP
 
-### Caveats
+## Caveats
 
 Currently this is running in "host" network mode, so it's not really as isolated as it could be, and there could be port conflicts. However this was the easiest option for getting the DHCP server to work in a docker container. Another option maybe using a [macvlan network](https://docs.docker.com/network/macvlan/). [This page](https://docs.pi-hole.net/docker/DHCP/) contains a brief discussion of the different options.
 

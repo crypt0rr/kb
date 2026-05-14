@@ -15,7 +15,7 @@ This is the list of Exchange versions, build numbers and release dates for major
 
 Latest releases are at the top; version numbers may vary slightly between the reported version installed, and version of Exchange's setup program, ExSetup.exe.
 
-### 2024
+## 2024
 
 | VERSION                               | BUILD        | RELEASE | INFO      |
 | ------------------------------------- | ------------ | ------- | --------- |

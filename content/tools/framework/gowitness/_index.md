@@ -7,7 +7,7 @@ date : 2020-08-14T10:01:21+02:00
 # draft : true
 weight : 160
 tags : ["Framework"]
-### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade. 
+### a map of Front Matter keys whose values are passed down to the page's descendants unless overwritten by self or a closer ancestor's cascade.
 cascade:
     tags: ['Framework', 'GoWitness']
     # pre : '<i class="fas fa-terminal"></i> '

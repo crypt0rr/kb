@@ -16,7 +16,7 @@ Linux Driver for USB WiFi Adapters that are based on the RTL8814AU Chipset.
 - v5.8.5.1 (Realtek) (20191029)
 - Plus updates from the Linux community
 
-### Features
+## Features
 
 - IEEE 802.11 b/g/n/ac WiFi compliant
 - 802.1x, WEP, WPA TKIP and WPA2 AES/Mixed mode for PSK and TLS (Radius)

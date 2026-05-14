@@ -21,7 +21,7 @@ For detection tips, see the blogpost and detection section.
 
 **Be careful** for account lockouts, know the reset policies of your target
 
-### Benefits
+## Benefits
 
 - Fully supports all AWS Regions
 - Automatically generates APIs for proxy passthru

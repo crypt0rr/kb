@@ -60,7 +60,7 @@ python3 azurenum.py [-h] [-o OUTPUT_TEXT] [-j OUTPUT_JSON] [-nc] [-ua USER_AGENT
 
 ```plain
 $ python3 azurenum.py   
-        
+
 [+] To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code DG8UKC4U9 to authenticate.
 [+] Got access token for Microsoft Graph with client ID d3590ed6-52b3-4102-aeff-1337
 [+] Gathering additional access tokens for other FOCI clients and resources ...

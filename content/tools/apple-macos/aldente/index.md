@@ -15,7 +15,7 @@ Li-Ion batteries (like the one in your MacBook) last the longest when operating 
 
 More information can be found here: <https://batteryuniversity.com/article/bu-415-how-to-charge-and-when-to-charge>
 
-### What’s AlDente Pro?
+## What’s AlDente Pro?
 
 AlDente Pro is our paid version of AlDente. It has many more features such as Heat Protection, Sailing Mode, Top Up, Calibration Mode,... It offers a better design and has live status icons. If you are interested in getting the most out of your battery, check out our website: <https://apphousekitchen.com/>
 

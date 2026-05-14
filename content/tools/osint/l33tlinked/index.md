@@ -62,7 +62,7 @@ $ python3 leetlinked.py example -e example.lcom -f 5
 | $$      | $$_____/| $$_____/  | $$ /$$| $$      | $$| $$  | $$| $$_  $$ | $$_____/| $$  | $$
 | $$$$$$$$|  $$$$$$$|  $$$$$$$  |  $$$$/| $$$$$$$$| $$| $$  | $$| $$ \  $$|  $$$$$$$|  $$$$$$$
 |________/ \_______/ \_______/   \___/  |________/|__/|__/  |__/|__/  \__/ \_______/ \_______/
-                                                                                              
+
 Based off of https://github.com/m8r0wn/CrossLinked
 Modified by Ronnie Bartwitz and @Horshark on Github
 Email format john.smith@company.xyz chosen

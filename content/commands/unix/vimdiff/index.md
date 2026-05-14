@@ -11,11 +11,11 @@ weight : 970
 
 ---
 
-Vimdiff starts Vim on two up to eight files.  Each file gets its own window.  The differences between the files are highlighted.  This is a nice way to inspect changes and to move changes from one version to another version of the same file.
+Vimdiff starts Vim on two up to eight files. Each file gets its own window. The differences between the files are highlighted. This is a nice way to inspect changes and to move changes from one version to another version of the same file.
 
 When started as gvimdiff the GUI will be started, if available.
 
-In each window the 'diff' option will be set, which causes the differences to be highlighted. The 'wrap' and 'scrollbind' options are set to make the text look good. The 'foldmethod' option is set to "diff", which puts ranges of lines without changes in a fold.  'foldcolumn' is set to two to make it easy to spot the folds and open or close them.
+In each window the 'diff' option will be set, which causes the differences to be highlighted. The 'wrap' and 'scrollbind' options are set to make the text look good. The 'foldmethod' option is set to "diff", which puts ranges of lines without changes in a fold. 'foldcolumn' is set to two to make it easy to spot the folds and open or close them.
 
 ## Usage
 

