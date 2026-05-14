@@ -47,6 +47,65 @@
 
   searchOpeners.forEach((button) => button.addEventListener("click", openSearch));
 
+  const counters = document.querySelectorAll("[data-count]");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const animateCounter = (counter, index = 0) => {
+    const target = Number(counter.dataset.count ?? counter.textContent);
+    if (!Number.isFinite(target)) return;
+    if (counter.dataset.counted === "true") return;
+    counter.dataset.counted = "true";
+
+    if (reduceMotion) {
+      counter.textContent = target.toLocaleString();
+      return;
+    }
+
+    const duration = 900 + Math.min(target, 600) * 0.7;
+    const delay = index * 90;
+    const startTime = performance.now() + delay;
+    counter.textContent = "0";
+    counter.classList.add("is-counting");
+
+    const tick = (now) => {
+      const elapsed = Math.max(0, now - startTime);
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const value = Math.round(target * eased);
+      counter.textContent = value.toLocaleString();
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+        return;
+      }
+
+      counter.classList.remove("is-counting");
+      counter.classList.add("is-counted");
+    };
+
+    requestAnimationFrame(tick);
+  };
+
+  if (counters.length) {
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            const index = [...counters].indexOf(entry.target);
+            animateCounter(entry.target, index);
+            observer.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.45 }
+      );
+
+      counters.forEach((counter) => observer.observe(counter));
+    } else {
+      counters.forEach(animateCounter);
+    }
+  }
+
   document.addEventListener("keydown", (event) => {
     if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
       const active = document.activeElement;

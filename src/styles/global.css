@@ -425,6 +425,18 @@ h1 {
   color: var(--amber);
   font-family: var(--mono);
   font-size: 34px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 0 rgba(249, 199, 79, 0);
+  transition: color 180ms ease, text-shadow 180ms ease;
+}
+
+.section-tile strong.is-counting {
+  color: #ffe08a;
+  text-shadow: 0 0 18px rgba(249, 199, 79, 0.24);
+}
+
+.section-tile strong.is-counted {
+  color: var(--amber);
 }
 
 .section-tile p,

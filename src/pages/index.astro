@@ -12,7 +12,7 @@ const html = page ? renderPage(page) : "";
     {sections.map((section) => (
       <a class="section-tile" href={section.url}>
         <span>{section.title}</span>
-        <strong>{getDescendantLeafCount(section)}</strong>
+        <strong data-count={getDescendantLeafCount(section)}>{getDescendantLeafCount(section)}</strong>
         {section.description && <p>{section.description}</p>}
       </a>
     ))}
