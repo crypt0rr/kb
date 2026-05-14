@@ -89,3 +89,8 @@ $RECYCLE.BIN/
 .hugo_build.lock
 .sync
 !/public/_headers
+
+# Astro / Node
+.astro/
+dist/
+node_modules/

@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getDescendantLeafCount, getPageByUrl, getRootSections, renderPage } from "@lib/content";
+
+const page = getPageByUrl("/");
+const sections = getRootSections();
+const html = page ? renderPage(page) : "";
+---
+
+<BaseLayout page={page ?? undefined} title="Knowledge Base" description="Curated offensive security tooling, commands, CVEs, and field notes.">
+  <section class="home-grid" aria-label="Primary sections">
+    {sections.map((section) => (
+      <a class="section-tile" href={section.url}>
+        <span>{section.title}</span>
+        <strong>{getDescendantLeafCount(section)}</strong>
+        {section.description && <p>{section.description}</p>}
+      </a>
+    ))}
+  </section>
+  <article class="content prose" data-pagefind-body set:html={html} />
+</BaseLayout>

@@ -1,0 +1,143 @@
+---
+import "../styles/global.css";
+import { getAllTags, getDescendantLeafCount, getRootSections, tagSlug, type KbPage } from "@lib/content";
+
+type Props = {
+  page?: KbPage;
+  title: string;
+  description?: string;
+};
+
+const { page, title, description = "" } = Astro.props;
+const sections = getRootSections();
+const tags = getAllTags().slice(0, 18);
+const canonical = new URL(Astro.url.pathname, "https://kb.offsec.nl").toString();
+const activeUrl = page?.url ?? Astro.url.pathname;
+
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function renderNav(items: KbPage[], level = 0): string {
+  const entries: string = items
+    .filter((item) => item.frontmatter.hidden !== true)
+    .map((item) => {
+      const isActive = item.url === activeUrl;
+      const isInActivePath = activeUrl.startsWith(item.url) && item.url !== "/";
+      const children: string =
+        item.children.length && level < 2 ? renderNav(item.children, level + 1) : "";
+
+      if (children) {
+        return `<li class="has-children ${isActive ? "is-active" : ""}">
+          <details ${isInActivePath ? "open" : ""}>
+            <summary>
+              <span>${escapeHtml(item.title)}</span>
+              <small>${getDescendantLeafCount(item)}</small>
+            </summary>
+            <a class="nav-overview ${isActive ? "is-current" : ""}" href="${item.url}">Overview</a>
+            ${children}
+          </details>
+        </li>`;
+      }
+
+      return `<li class="${isActive ? "is-active" : ""}">
+        <a href="${item.url}"><span>${escapeHtml(item.title)}</span></a>
+      </li>`;
+    })
+    .join("");
+
+  return `<ul class="nav-level nav-level-${level}">${entries}</ul>`;
+}
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description || "Offensive security knowledge base"} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/images/favicon.png" />
+    <title>{title} :: Knowledge Base</title>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="site-sidebar">
+        <a class="brand" href="/" aria-label="Knowledge Base home">
+          <img src="/images/favicon.png" alt="" />
+          <span>
+            <strong>KB</strong>
+            <small>offsec field notes</small>
+          </span>
+        </a>
+
+        <button class="search-trigger" type="button" data-search-open>
+          <span>Search notes</span>
+          <kbd>/</kbd>
+        </button>
+
+        <nav class="sidebar-nav" aria-label="Main navigation" set:html={renderNav(sections)} />
+
+        <div class="sidebar-tags" aria-label="Popular tags">
+          {tags.map((item) => <a href={`/tags/${tagSlug(item.tag)}/`}>{item.tag}</a>)}
+        </div>
+
+        <footer class="sidebar-footer">
+          <a href="https://github.com/crypt0rr/kb" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://offsec.nl" target="_blank" rel="noopener noreferrer">offsec.nl</a>
+        </footer>
+      </aside>
+
+      <div class="main-column">
+        <header class="topbar">
+          <button class="icon-button" type="button" data-sidebar-toggle aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+          </button>
+          <div class="crumbs">
+            <a href="/">root</a>
+            {page?.breadcrumbs.filter((item) => item.url !== "/").map((item) => (
+              <>
+                <span>/</span>
+                <a href={item.url}>{item.title}</a>
+              </>
+            ))}
+          </div>
+          <a class="topbar-link" href="https://github.com/crypt0rr/kb" target="_blank" rel="noopener noreferrer">
+            source
+          </a>
+        </header>
+
+        <main class="page-frame">
+          <header class="page-header">
+            <div class="eyebrow">::{page?.section || "index"}</div>
+            <h1>{title || "Knowledge Base"}</h1>
+            {description && <p>{description}</p>}
+            {page?.tags.length ? (
+              <div class="tag-row">
+                {page.tags.map((tag) => <a href={`/tags/${tagSlug(tag)}/`}>#{tag}</a>)}
+              </div>
+            ) : null}
+          </header>
+          <slot />
+        </main>
+      </div>
+    </div>
+
+    <dialog class="search-dialog" data-search-dialog>
+      <form method="dialog">
+        <button aria-label="Close search">x</button>
+      </form>
+      <label>
+        <span>query</span>
+        <input data-search-input autocomplete="off" spellcheck="false" placeholder="tool, command, CVE, technique" />
+      </label>
+      <div class="search-results" data-search-results></div>
+    </dialog>
+
+    <script is:inline src="/js/kb-app.js" defer></script>
+  </body>
+</html>
