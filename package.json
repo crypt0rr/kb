@@ -18,5 +18,8 @@
     "markdown-it-anchor": "^9.2.0",
     "pagefind": "^1.1.1",
     "typescript": "^5.6.3"
+  },
+  "overrides": {
+    "volar-service-yaml": "0.0.71"
   }
 }
