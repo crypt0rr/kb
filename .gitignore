@@ -89,6 +89,7 @@ $RECYCLE.BIN/
 .hugo_build.lock
 .sync
 .rumdl_cache/
+codex.resume
 !/public/_headers
 
 # Astro / Node

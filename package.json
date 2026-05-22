@@ -7,7 +7,8 @@
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/copy-content-assets.mjs && pagefind --site dist",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
-    "check": "ASTRO_TELEMETRY_DISABLED=1 astro check"
+    "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
+    "check:assets": "node scripts/check-content-assets.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

@@ -9,8 +9,22 @@ Live version of the site is available on [kb.offsec.nl](https://kb.offsec.nl).
 ```plain
 git clone https://github.com/crypt0rr/kb
 cd kb
+npm ci
 npm run dev -- --host 127.0.0.1
 ```
+
+Use the Node.js version in `.node-version`.
+
+## Checks
+
+```plain
+npm run check
+npm run check:assets
+npm run build
+```
+
+The build renders the Astro site, copies non-Markdown files from `content/`
+into `dist/`, and then builds the Pagefind search index.
 
 ## Contributing
 
@@ -19,6 +33,7 @@ Feel free to open a PR with your content/changes. Some rules:
 - Markdown styling as used in other content;
 - Content is UTF-8;
 - Single file size limit 25MB;
+- Non-Markdown files in `content/` are published as downloadable assets;
 - PR naming describes content.
 
 ## License
