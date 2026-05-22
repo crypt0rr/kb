@@ -40,5 +40,8 @@ jobs:
       - name: Check Astro project
         run: npm run check
 
+      - name: Check content assets
+        run: npm run check:assets
+
       - name: Build Astro site
         run: npm run build

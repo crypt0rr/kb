@@ -5,7 +5,8 @@
   const searchOpeners = document.querySelectorAll("[data-search-open]");
   const searchInput = document.querySelector("[data-search-input]");
   const searchResults = document.querySelector("[data-search-results]");
-  let searchData = [];
+  let pagefind = null;
+  let searchController = null;
 
   sidebarToggle?.addEventListener("click", () => {
     body.classList.toggle("sidebar-open");
@@ -37,12 +38,9 @@
 
   const openSearch = async () => {
     if (!dialog) return;
-    if (!searchData.length) {
-      const response = await fetch("/search.json");
-      searchData = await response.json();
-    }
     dialog.showModal();
     searchInput?.focus();
+    await loadPagefind();
   };
 
   searchOpeners.forEach((button) => button.addEventListener("click", openSearch));
@@ -116,32 +114,61 @@
   });
 
   searchInput?.addEventListener("input", () => {
+    if (!searchResults) return;
     const query = searchInput.value.trim().toLowerCase();
     if (!query) {
       searchResults.innerHTML = "";
       return;
     }
 
-    const terms = query.split(/\s+/);
-    const matches = searchData
-      .map((page) => {
-        const haystack = `${page.title} ${page.description} ${page.tags.join(" ")} ${page.section}`.toLowerCase();
-        const score = terms.reduce((sum, term) => sum + (haystack.includes(term) ? 1 : 0), 0);
-        return { page, score };
-      })
-      .filter((item) => item.score > 0)
-      .sort((a, b) => b.score - a.score || a.page.title.localeCompare(b.page.title))
-      .slice(0, 12);
-
-    searchResults.innerHTML = matches
-      .map(
-        ({ page }) => `<a href="${page.url}">
-          <strong>${escapeHtml(page.title)}</strong>
-          <p>${escapeHtml(page.description || page.section || page.url)}</p>
-        </a>`
-      )
-      .join("");
+    runSearch(query);
   });
+
+  async function loadPagefind() {
+    if (pagefind) return pagefind;
+    if (searchResults) {
+      searchResults.innerHTML = '<p class="search-status">loading index</p>';
+    }
+    pagefind = await import("/pagefind/pagefind.js");
+    if (searchResults?.querySelector(".search-status")) {
+      searchResults.innerHTML = "";
+    }
+    return pagefind;
+  }
+
+  async function runSearch(query) {
+    const controller = new AbortController();
+    searchController?.abort();
+    searchController = controller;
+
+    searchResults.innerHTML = '<p class="search-status">searching</p>';
+
+    try {
+      const index = await loadPagefind();
+      const search = await index.search(query);
+      if (controller.signal.aborted) return;
+
+      const results = await Promise.all(search.results.slice(0, 12).map((result) => result.data()));
+      if (controller.signal.aborted) return;
+
+      if (!results.length) {
+        searchResults.innerHTML = '<p class="search-status">no results</p>';
+        return;
+      }
+
+      searchResults.innerHTML = results
+        .map(
+          (result) => `<a href="${escapeAttr(result.url)}">
+            <strong>${escapeHtml(result.meta?.title || result.url)}</strong>
+            <p>${sanitizePagefindExcerpt(result.excerpt || result.url)}</p>
+          </a>`
+        )
+        .join("");
+    } catch {
+      if (controller.signal.aborted) return;
+      searchResults.innerHTML = '<p class="search-status">search unavailable</p>';
+    }
+  }
 
   function escapeHtml(value) {
     return String(value)
@@ -149,5 +176,15 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  function escapeAttr(value) {
+    return escapeHtml(value).replace(/'/g, "&#39;");
+  }
+
+  function sanitizePagefindExcerpt(value) {
+    return escapeHtml(value)
+      .replaceAll("&lt;mark&gt;", "<mark>")
+      .replaceAll("&lt;/mark&gt;", "</mark>");
   }
 })();
