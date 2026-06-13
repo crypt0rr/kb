@@ -23,6 +23,7 @@ npm run check:assets
 npm run check:content
 npm run check:links
 npm run audit:known
+npm run sysinternals:check
 npm run build
 npm run smoke
 ```
@@ -37,6 +38,11 @@ referenced by a `resources` or `attachments` shortcode unless they are an
 intentional mirror/bulk asset listed in `scripts/content-policy.json`.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
+
+Use `npm run sysinternals:check` to compare the published Sysinternals files
+with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to
+download missing or changed root and ARM64 files. The sync workflow skips live
+directories, marker files, and files over the 25MB Cloudflare Pages limit.
 
 ## Security Notes
 

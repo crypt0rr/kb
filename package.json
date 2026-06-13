@@ -12,6 +12,8 @@
     "check:content": "node scripts/check-content.mjs",
     "check:links": "node scripts/check-links.mjs",
     "audit:known": "node scripts/check-audit.mjs",
+    "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
+    "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
     "smoke": "node scripts/smoke-build.mjs"
   },
   "dependencies": {
