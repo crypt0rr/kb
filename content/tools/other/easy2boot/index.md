@@ -19,7 +19,7 @@ Download newest release from [easy2boot.xyz](https://easy2boot.xyz/download/)
 
 ## Examples
 
-![Example](images/example1.png)
+![Example](images/example1.jpg)
 
 ## URL List
 

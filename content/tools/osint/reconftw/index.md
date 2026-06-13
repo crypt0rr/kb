@@ -33,7 +33,7 @@ So, what are you waiting for Go! Go! Go! boom
 ### Subdomains
 
 - Passive ([subfinder](https://github.com/projectdiscovery/subfinder), [assetfinder](https://github.com/tomnomnom/assetfinder), [amass](https://github.com/OWASP/Amass), [findomain](https://github.com/Findomain/Findomain), [crobat](https://github.com/cgboal/sonarsearch), [waybackurls](https://github.com/tomnomnom/waybackurls), [github-subdomains](https://github.com/gwen001/github-subdomains), [Anubis](https://jldc.me), [gauplus](https://github.com/bp0lr/gauplus))
-- Certificate transparency ([ctfr](https://github.com/UnaPibaGeek/ctfr), [tls.bufferover](tls.bufferover.run) and [dns.bufferover](dns.bufferover.run)))
+- Certificate transparency ([ctfr](https://github.com/UnaPibaGeek/ctfr), [tls.bufferover](https://tls.bufferover.run) and [dns.bufferover](https://dns.bufferover.run)))
 - Bruteforce ([puredns](https://github.com/d3mondev/puredns))
 - Permutations ([Gotator](https://github.com/Josue87/gotator))
 - JS files & Source Code Scraping ([gospider](https://github.com/jaeles-project/gospider))

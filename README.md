@@ -20,11 +20,38 @@ Use the Node.js version in `.node-version`.
 ```plain
 npm run check
 npm run check:assets
+npm run check:content
+npm run check:links
+npm run audit:known
+npm run sysinternals:check
 npm run build
+npm run smoke
 ```
 
 The build renders the Astro site, copies non-Markdown files from `content/`
-into `dist/`, and then builds the Pagefind search index.
+into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
+the Pagefind search index.
+
+`npm run check:content` validates frontmatter, shortcodes, references, and
+downloadable content assets. New files under `content/**/files/` must be
+referenced by a `resources` or `attachments` shortcode unless they are an
+intentional mirror/bulk asset listed in `scripts/content-policy.json`.
+`npm run check:links` validates internal Markdown links, anchors, images, and
+downloadable assets. External links are inventoried without network calls.
+
+Use `npm run sysinternals:check` to compare the published Sysinternals files
+with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to
+download missing or changed root and ARM64 files. The sync workflow skips live
+directories, marker files, and files over the 25MB Cloudflare Pages limit.
+
+## Security Notes
+
+`npm audit` currently reports upstream `esbuild` advisories through Astro/Vite.
+Use `npm run audit:known` in CI and local checks: it allows only the documented
+Astro/Vite/esbuild advisory chain and fails on any new vulnerability. Do not run
+`npm audit fix --force` for that advisory, because npm currently proposes an
+invalid Astro downgrade path. Keep Astro/Vite updated through Renovate and review
+the advisory again when a compatible upstream fix is available.
 
 ## Contributing
 

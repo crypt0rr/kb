@@ -21,6 +21,10 @@ Download via [Windows Store](ms-windows-store://pdp/?productid=9P7KNL5RWT25) dir
 
 {{%resources fa_icon_class="far fa-file-code" pattern=".*(exe)"/%}}
 
+## ARM64 tooling
+
+{{%resources title="ARM64 Resources" fa_icon_class="far fa-file-code" directory="ARM64" pattern=".*(exe)"/%}}
+
 ## URL List
 
 - [Docs.microsoft.com - Sysinternals](https://docs.microsoft.com/en-us/sysinternals/)

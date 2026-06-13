@@ -1,0 +1,28 @@
+{
+  "allowedAssetWarnings": [
+    "content/tools/windows/sysinternals/files/**",
+    "content/stuff/cheatsheets/defaultcreds/files/DefaultCreds-Cheat-Sheet.csv",
+    "content/tools/forensics/volatility/files/volatility_2.6_lin64_standalone.zip",
+    "content/tools/forensics/volatility/files/volatility_2.6_mac64_standalone.zip",
+    "content/tools/forensics/volatility/files/volatility_2.6_win64_standalone.zip",
+    "content/tools/framework/pingcastle/files/ad_hc_offsec.nl.xml",
+    "content/tools/m365/azucar/files/Azucar_Report_20170308.xlsx",
+    "content/tools/m365/azurehound/files/old/AzureHound.ps1",
+    "content/tools/m365/azurehound/files/pre-AzureHound.ps1",
+    "content/tools/other/aquatone/files/plz-recon.sh",
+    "content/tools/other/arraffinity/files/ARRAffinity.py",
+    "content/tools/other/dumpthatlsass/files/MiniDump_x64.exe",
+    "content/tools/other/dumpthatlsass/files/MiniDump_x86.exe",
+    "content/tools/other/ldapdomaindump/files/highpriv-filter.sh",
+    "content/tools/other/ldapdomaindump/files/ldapdomaindump-offsec.nl.old",
+    "content/tools/other/pcredz/files/PCredz-24082021.zip",
+    "content/tools/other/samdump2/files/samdump2_3.0.0.orig.tar.bz2",
+    "content/tools/techniques/abuse-adcs/esc1/files/Rubeus.exe",
+    "content/tools/techniques/krbrelayup/files/KrbRelayUp.pdb",
+    "content/tools/techniques/printerbug/files/Rubeus-v2.0.0.exe",
+    "content/tools/techniques/printerbug/files/Rubeus-v2.2.3.exe",
+    "content/tools/techniques/printerbug/files/Rubeus.exe",
+    "content/tools/techniques/printerbug/files/printerbug.py",
+    "content/tools/techniques/rbcd-attack/files/Rubeus.exe"
+  ]
+}

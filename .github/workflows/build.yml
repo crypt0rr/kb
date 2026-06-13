@@ -40,8 +40,20 @@ jobs:
       - name: Check Astro project
         run: npm run check
 
-      - name: Check content assets
-        run: npm run check:assets
+      - name: Check content
+        run: npm run check:content
+
+      - name: Check links
+        run: npm run check:links
 
       - name: Build Astro site
         run: npm run build
+
+      - name: Smoke test build output
+        run: npm run smoke
+
+      - name: Audit dependencies
+        run: npm run audit:known
+
+      - name: Check outdated dependencies
+        run: npm outdated

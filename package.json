@@ -5,10 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
-    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/copy-content-assets.mjs && pagefind --site dist",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/copy-content-assets.mjs && node scripts/generate-asset-manifest.mjs && pagefind --site dist",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
-    "check:assets": "node scripts/check-content-assets.mjs"
+    "check:assets": "node scripts/check-content-assets.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "audit:known": "node scripts/check-audit.mjs",
+    "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
+    "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
+    "smoke": "node scripts/smoke-build.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
@@ -21,6 +27,7 @@
     "typescript": "^6.0.0"
   },
   "overrides": {
+    "esbuild": "0.28.1",
     "volar-service-yaml": "0.0.71"
   }
 }
