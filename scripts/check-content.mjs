@@ -4,6 +4,7 @@ import matter from "gray-matter";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
+const policyFile = path.join(root, "scripts", "content-policy.json");
 const maxBytes = 25 * 1024 * 1024;
 const maxWarnings = Number(process.env.CHECK_CONTENT_MAX_WARNINGS ?? 30);
 const ignoredFiles = new Set([".DS_Store", ".gitkeep"]);
@@ -32,9 +33,11 @@ const markdownFiles = [];
 const contentFiles = [];
 const pages = [];
 const errors = [];
-const warnings = [];
+const allowedWarnings = [];
 const flagged = new Map();
 const resourcePatterns = new Map();
+const policy = await readPolicy();
+const allowedAssetWarningMatchers = (policy.allowedAssetWarnings ?? []).map(globToRegExp);
 
 await walk(contentDir);
 await parsePages();
@@ -43,14 +46,13 @@ validateRefsAndShortcodes();
 validateAssets();
 await printAssetSummary();
 
-const visibleWarnings = maxWarnings > 0 ? warnings.slice(0, maxWarnings) : warnings;
-for (const warning of visibleWarnings) {
-  console.warn(`warning: ${warning}`);
-}
-if (maxWarnings > 0 && warnings.length > maxWarnings) {
-  console.warn(
-    `warning: ${warnings.length - maxWarnings} more content warning(s) hidden; set CHECK_CONTENT_MAX_WARNINGS=0 to show all`
-  );
+if (allowedWarnings.length) {
+  console.warn(`${allowedWarnings.length} allowed asset warning(s)`);
+  if (maxWarnings === 0) {
+    for (const warning of allowedWarnings) {
+      console.warn(`allowed warning: ${warning}`);
+    }
+  }
 }
 
 if (errors.length) {
@@ -235,19 +237,87 @@ async function printAssetSummary() {
     const pageDir = slash(path.relative(contentDir, path.dirname(path.dirname(asset.file))));
     const patterns = resourcePatterns.get(pageDir);
     if (!patterns?.length) {
-      warnings.push(`${asset.relative}: file is not referenced by a resources shortcode`);
+      reportAssetFinding(asset.relative, "file is not referenced by a resources shortcode");
       continue;
     }
 
     const matched = patterns.some(({ pattern }) => !pattern || pattern.test(asset.entryName));
     if (!matched) {
-      warnings.push(`${asset.relative}: file does not match any resources shortcode pattern`);
+      reportAssetFinding(asset.relative, "file does not match any resources shortcode pattern");
     }
   }
 
   if (oversized.length) {
     errors.push(`content assets over ${formatBytes(maxBytes)}:\n- ${oversized.join("\n- ")}`);
   }
+}
+
+function reportAssetFinding(relative, reason) {
+  const message = `${relative}: ${reason}`;
+  if (allowedAssetWarningMatchers.some((regex) => regex.test(relative))) {
+    allowedWarnings.push(message);
+    return;
+  }
+
+  errors.push(
+    `${message}; reference it with a resources/attachments shortcode or add an allowedAssetWarnings entry`
+  );
+}
+
+async function readPolicy() {
+  let raw;
+  try {
+    raw = await readFile(policyFile, "utf8");
+  } catch (error) {
+    errors.push(`unable to read ${slash(path.relative(root, policyFile))}: ${error.message}`);
+    return {};
+  }
+
+  try {
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed.allowedAssetWarnings)) {
+      errors.push("scripts/content-policy.json: allowedAssetWarnings must be an array");
+      return {};
+    }
+    if (
+      !parsed.allowedAssetWarnings.every((item) => typeof item === "string" && item.trim())
+    ) {
+      errors.push(
+        "scripts/content-policy.json: allowedAssetWarnings entries must be non-empty strings"
+      );
+      return {};
+    }
+    return parsed;
+  } catch (error) {
+    errors.push(`scripts/content-policy.json: invalid JSON (${error.message})`);
+    return {};
+  }
+}
+
+function globToRegExp(pattern) {
+  let source = "^";
+  for (let index = 0; index < pattern.length; index += 1) {
+    const char = pattern[index];
+    const next = pattern[index + 1];
+
+    if (char === "*" && next === "*") {
+      source += ".*";
+      index += 1;
+      continue;
+    }
+
+    if (char === "*") {
+      source += "[^/]*";
+      continue;
+    }
+
+    source += escapeRegExp(char);
+  }
+  return new RegExp(`${source}$`);
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[\\^$+?.()|[\]{}]/g, "\\$&");
 }
 
 function resolveRef(target, page, byUrl, byKey) {

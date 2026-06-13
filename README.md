@@ -29,6 +29,11 @@ The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
 the Pagefind search index.
 
+`npm run check:content` validates frontmatter, shortcodes, references, and
+downloadable content assets. New files under `content/**/files/` must be
+referenced by a `resources` or `attachments` shortcode unless they are an
+intentional mirror/bulk asset listed in `scripts/content-policy.json`.
+
 ## Security Notes
 
 `npm audit` currently reports upstream `esbuild` advisories through Astro/Vite.
