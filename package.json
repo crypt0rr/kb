@@ -27,6 +27,7 @@
     "typescript": "^6.0.0"
   },
   "overrides": {
+    "esbuild": "0.28.1",
     "volar-service-yaml": "0.0.71"
   }
 }
