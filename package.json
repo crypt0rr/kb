@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
-    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/copy-content-assets.mjs && pagefind --site dist",
+    "build": "ASTRO_TELEMETRY_DISABLED=1 astro build && node scripts/copy-content-assets.mjs && node scripts/generate-asset-manifest.mjs && pagefind --site dist",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
-    "check:assets": "node scripts/check-content-assets.mjs"
+    "check:assets": "node scripts/check-content-assets.mjs",
+    "check:content": "node scripts/check-content.mjs",
+    "audit:known": "node scripts/check-audit.mjs",
+    "smoke": "node scripts/smoke-build.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",

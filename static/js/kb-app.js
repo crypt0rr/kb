@@ -7,6 +7,8 @@
   const searchResults = document.querySelector("[data-search-results]");
   let pagefind = null;
   let searchController = null;
+  let searchTimer = null;
+  let activeResultIndex = -1;
 
   sidebarToggle?.addEventListener("click", () => {
     body.classList.toggle("sidebar-open");
@@ -116,12 +118,47 @@
   searchInput?.addEventListener("input", () => {
     if (!searchResults) return;
     const query = searchInput.value.trim().toLowerCase();
+    clearTimeout(searchTimer);
+    activeResultIndex = -1;
+
     if (!query) {
       searchResults.innerHTML = "";
       return;
     }
 
-    runSearch(query);
+    searchTimer = setTimeout(() => runSearch(query), 180);
+  });
+
+  searchInput?.addEventListener("keydown", (event) => {
+    const resultLinks = [...searchResults.querySelectorAll("a")];
+    if (!resultLinks.length && event.key !== "Escape") return;
+
+    if (event.key === "Escape") {
+      dialog?.close();
+      return;
+    }
+
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      activeResultIndex = Math.min(activeResultIndex + 1, resultLinks.length - 1);
+      updateActiveResult(resultLinks);
+    }
+
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      activeResultIndex = Math.max(activeResultIndex - 1, 0);
+      updateActiveResult(resultLinks);
+    }
+
+    if (event.key === "Enter" && activeResultIndex >= 0) {
+      event.preventDefault();
+      resultLinks[activeResultIndex].click();
+    }
+  });
+
+  searchResults?.addEventListener("click", (event) => {
+    if (!event.target.closest("a")) return;
+    dialog?.close();
   });
 
   async function loadPagefind() {
@@ -156,14 +193,17 @@
         return;
       }
 
-      searchResults.innerHTML = results
+      activeResultIndex = -1;
+      searchResults.innerHTML = `<p class="search-status">${results.length} result${
+        results.length === 1 ? "" : "s"
+      }</p>${results
         .map(
           (result) => `<a href="${escapeAttr(result.url)}">
             <strong>${escapeHtml(result.meta?.title || result.url)}</strong>
             <p>${sanitizePagefindExcerpt(result.excerpt || result.url)}</p>
           </a>`
         )
-        .join("");
+        .join("")}`;
     } catch {
       if (controller.signal.aborted) return;
       searchResults.innerHTML = '<p class="search-status">search unavailable</p>';
@@ -186,5 +226,13 @@
     return escapeHtml(value)
       .replaceAll("&lt;mark&gt;", "<mark>")
       .replaceAll("&lt;/mark&gt;", "</mark>");
+  }
+
+  function updateActiveResult(resultLinks) {
+    resultLinks.forEach((link, index) => {
+      const active = index === activeResultIndex;
+      link.classList.toggle("is-active", active);
+      if (active) link.scrollIntoView({ block: "nearest" });
+    });
   }
 })();

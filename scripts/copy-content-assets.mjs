@@ -4,19 +4,24 @@ import path from "node:path";
 const root = process.cwd();
 const contentDir = path.join(root, "content");
 const distDir = path.join(root, "dist");
-const ignored = new Set([".gitkeep"]);
+const ignoredFiles = new Set([".DS_Store", ".gitkeep"]);
+const ignoredDirectories = new Set([".rumdl_cache"]);
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
 
   for (const entry of entries) {
     const source = path.join(dir, entry.name);
+    if (ignoredDirectories.has(entry.name)) {
+      continue;
+    }
+
     if (entry.isDirectory()) {
       await walk(source);
       continue;
     }
 
-    if (entry.name.endsWith(".md") || ignored.has(entry.name)) {
+    if (entry.name.endsWith(".md") || ignoredFiles.has(entry.name)) {
       continue;
     }
 

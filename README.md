@@ -19,12 +19,24 @@ Use the Node.js version in `.node-version`.
 
 ```plain
 npm run check
-npm run check:assets
+npm run check:content
+npm run audit:known
 npm run build
+npm run smoke
 ```
 
 The build renders the Astro site, copies non-Markdown files from `content/`
-into `dist/`, and then builds the Pagefind search index.
+into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
+the Pagefind search index.
+
+## Security Notes
+
+`npm audit` currently reports upstream `esbuild` advisories through Astro/Vite.
+Use `npm run audit:known` in CI and local checks: it allows only the documented
+Astro/Vite/esbuild advisory chain and fails on any new vulnerability. Do not run
+`npm audit fix --force` for that advisory, because npm currently proposes an
+invalid Astro downgrade path. Keep Astro/Vite updated through Renovate and review
+the advisory again when a compatible upstream fix is available.
 
 ## Contributing
 
