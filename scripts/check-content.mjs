@@ -38,7 +38,6 @@ const flagged = new Map();
 const resourcePatterns = new Map();
 const policy = await readPolicy();
 const allowedAssetWarningMatchers = (policy.allowedAssetWarnings ?? []).map(globToRegExp);
-const allowedOversizedAssetMatchers = (policy.allowedOversizedAssets ?? []).map(globToRegExp);
 
 await walk(contentDir);
 await parsePages();
@@ -230,9 +229,7 @@ async function printAssetSummary() {
     const size = (await stat(file)).size;
 
     if (size > maxBytes) {
-      if (!allowedOversizedAssetMatchers.some((regex) => regex.test(relative))) {
-        oversized.push(`${relative} (${formatBytes(size)})`);
-      }
+      oversized.push(`${relative} (${formatBytes(size)})`);
     }
 
     if (relative.includes("/files/")) {
@@ -295,26 +292,10 @@ async function readPolicy() {
       return {};
     }
     if (
-      parsed.allowedOversizedAssets !== undefined &&
-      !Array.isArray(parsed.allowedOversizedAssets)
-    ) {
-      errors.push("scripts/content-policy.json: allowedOversizedAssets must be an array");
-      return {};
-    }
-    if (
       !parsed.allowedAssetWarnings.every((item) => typeof item === "string" && item.trim())
     ) {
       errors.push(
         "scripts/content-policy.json: allowedAssetWarnings entries must be non-empty strings"
-      );
-      return {};
-    }
-    if (
-      parsed.allowedOversizedAssets !== undefined &&
-      !parsed.allowedOversizedAssets.every((item) => typeof item === "string" && item.trim())
-    ) {
-      errors.push(
-        "scripts/content-policy.json: allowedOversizedAssets entries must be non-empty strings"
       );
       return {};
     }
