@@ -20,6 +20,7 @@ Use the Node.js version in `.node-version`.
 ```plain
 npm run check
 npm run check:content
+npm run check:links
 npm run audit:known
 npm run build
 npm run smoke
@@ -33,6 +34,8 @@ the Pagefind search index.
 downloadable content assets. New files under `content/**/files/` must be
 referenced by a `resources` or `attachments` shortcode unless they are an
 intentional mirror/bulk asset listed in `scripts/content-policy.json`.
+`npm run check:links` validates internal Markdown links, anchors, images, and
+downloadable assets. External links are inventoried without network calls.
 
 ## Security Notes
 

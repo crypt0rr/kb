@@ -43,6 +43,9 @@ jobs:
       - name: Check content
         run: npm run check:content
 
+      - name: Check links
+        run: npm run check:links
+
       - name: Build Astro site
         run: npm run build
 

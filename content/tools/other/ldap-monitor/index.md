@@ -17,7 +17,7 @@ With this tool you can quickly see if your attack worked and if it changed LDAP 
 
 ## Features
 
-| Feature | [Python (.py)](./python/) | [CSharp (.exe)](./csharp/) | [Powershell (.ps1)](./powershell/) |
+| Feature | [Python (.py)](files/pyLDAPmonitor.py) | [CSharp (.exe)](files/SharpLDAPmonitor.exe) | [Powershell (.ps1)](files/psLDAPmonitor.ps1) |
 |---------|--------|--------|------------|
 | LDAPS support                                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Random delay in seconds between queries          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
