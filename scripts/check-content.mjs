@@ -38,6 +38,7 @@ const flagged = new Map();
 const resourcePatterns = new Map();
 const policy = await readPolicy();
 const allowedAssetWarningMatchers = (policy.allowedAssetWarnings ?? []).map(globToRegExp);
+const allowedOversizedAssetMatchers = (policy.allowedOversizedAssets ?? []).map(globToRegExp);
 
 await walk(contentDir);
 await parsePages();
@@ -146,7 +147,7 @@ function validateRefsAndShortcodes() {
 
   for (const page of pages) {
     const shortcodes = page.body.matchAll(/\{\{([<%])\s*([a-zA-Z0-9_-]+)([\s\S]*?)([>%])\}\}/g);
-    const resourceRegexes = [];
+    const resourceRegexes = new Map();
 
     for (const match of shortcodes) {
       const opener = match[1];
@@ -177,9 +178,12 @@ function validateRefsAndShortcodes() {
 
       if (name === "resources" || name === "attachments") {
         const attrs = parseAttrs(rawAttrs);
-        resourceRegexes.push({
+        const directory = normalizeResourceDirectory(attrs.directory);
+        const resources = resourceRegexes.get(directory) ?? [];
+        resources.push({
           pattern: attrs.pattern ? safeRegex(attrs.pattern, page.relativeFile) : null
         });
+        resourceRegexes.set(directory, resources);
       }
     }
 
@@ -191,8 +195,13 @@ function validateRefsAndShortcodes() {
       errors.push(`${page.relativeFile}: shortcode has an extra closing brace`);
     }
 
-    if (resourceRegexes.length) {
-      resourcePatterns.set(page.sourceDir, resourceRegexes.filter((item) => item.pattern !== false));
+    if (resourceRegexes.size) {
+      for (const [directory, patterns] of resourceRegexes) {
+        resourcePatterns.set(
+          resourceKey(page.sourceDir, directory),
+          patterns.filter((item) => item.pattern !== false)
+        );
+      }
     }
   }
 }
@@ -221,7 +230,9 @@ async function printAssetSummary() {
     const size = (await stat(file)).size;
 
     if (size > maxBytes) {
-      oversized.push(`${relative} (${formatBytes(size)})`);
+      if (!allowedOversizedAssetMatchers.some((regex) => regex.test(relative))) {
+        oversized.push(`${relative} (${formatBytes(size)})`);
+      }
     }
 
     if (relative.includes("/files/")) {
@@ -234,8 +245,12 @@ async function printAssetSummary() {
   }
 
   for (const asset of filesDirAssets) {
-    const pageDir = slash(path.relative(contentDir, path.dirname(path.dirname(asset.file))));
-    const patterns = resourcePatterns.get(pageDir);
+    const resourceLocation = resourceLocationForAsset(asset.file);
+    if (!resourceLocation) continue;
+
+    const patterns = resourcePatterns.get(
+      resourceKey(resourceLocation.pageDir, resourceLocation.directory)
+    );
     if (!patterns?.length) {
       reportAssetFinding(asset.relative, "file is not referenced by a resources shortcode");
       continue;
@@ -280,10 +295,26 @@ async function readPolicy() {
       return {};
     }
     if (
+      parsed.allowedOversizedAssets !== undefined &&
+      !Array.isArray(parsed.allowedOversizedAssets)
+    ) {
+      errors.push("scripts/content-policy.json: allowedOversizedAssets must be an array");
+      return {};
+    }
+    if (
       !parsed.allowedAssetWarnings.every((item) => typeof item === "string" && item.trim())
     ) {
       errors.push(
         "scripts/content-policy.json: allowedAssetWarnings entries must be non-empty strings"
+      );
+      return {};
+    }
+    if (
+      parsed.allowedOversizedAssets !== undefined &&
+      !parsed.allowedOversizedAssets.every((item) => typeof item === "string" && item.trim())
+    ) {
+      errors.push(
+        "scripts/content-policy.json: allowedOversizedAssets entries must be non-empty strings"
       );
       return {};
     }
@@ -381,6 +412,29 @@ function safeRegex(pattern, source) {
     errors.push(`${source}: invalid resources pattern ${pattern}: ${error.message}`);
     return false;
   }
+}
+
+function resourceLocationForAsset(file) {
+  const parts = path.relative(contentDir, file).split(path.sep);
+  const filesIndex = parts.lastIndexOf("files");
+  if (filesIndex <= 0 || filesIndex === parts.length - 1) return null;
+
+  return {
+    pageDir: slash(parts.slice(0, filesIndex).join(path.sep)),
+    directory: slash(parts.slice(filesIndex + 1, -1).join(path.sep))
+  };
+}
+
+function resourceKey(pageDir, directory) {
+  return `${pageDir}\0${directory}`;
+}
+
+function normalizeResourceDirectory(value) {
+  if (!value) return "";
+  return slash(value)
+    .split("/")
+    .filter((part) => part && part !== "." && part !== "..")
+    .join("/");
 }
 
 function slugFromFile(relativeFile) {

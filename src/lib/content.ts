@@ -242,7 +242,8 @@ function visibleChildren(page: KbPage) {
 
 function renderResources(page: KbPage, attrs: Record<string, string>) {
   const pageDir = path.join(contentRoot, page.sourceDir);
-  const filesDir = path.join(pageDir, "files");
+  const directory = normalizeResourceDirectory(attrs.directory);
+  const filesDir = path.join(pageDir, "files", directory);
   if (!fs.existsSync(filesDir)) return "";
 
   const pattern = attrs.pattern ? new RegExp(attrs.pattern) : null;
@@ -259,12 +260,28 @@ function renderResources(page: KbPage, attrs: Record<string, string>) {
     .map((entry) => {
       const absolute = path.join(filesDir, entry.name);
       const size = Math.ceil(fs.statSync(absolute).size / 1024);
-      const href = `${page.url}files/${encodeURIComponent(entry.name)}`;
+      const hrefParts = [
+        page.url,
+        "files/",
+        directory ? `${directory}/` : "",
+        encodeURIComponent(entry.name)
+      ];
+      const href = hrefParts.join("");
       return `<li><a href="${href}">${escapeHtml(entry.name)}</a><span>${size} KB</span></li>`;
     })
     .join("");
 
   return `<section class="resources"><h2>${escapeHtml(title)}</h2><ul>${items}</ul></section>`;
+}
+
+function normalizeResourceDirectory(value?: string) {
+  if (!value) return "";
+  const clean = slash(value)
+    .split("/")
+    .filter((part) => part && part !== "." && part !== "..")
+    .join("/");
+
+  return clean;
 }
 
 function resolveRef(target: string, page: KbPage) {

@@ -52,7 +52,7 @@ Feel free to open a PR with your content/changes. Some rules:
 
 - Markdown styling as used in other content;
 - Content is UTF-8;
-- Single file size limit 25MB;
+- Single file size limit 25MB unless explicitly allowlisted in `scripts/content-policy.json`;
 - Non-Markdown files in `content/` are published as downloadable assets;
 - PR naming describes content.
 
