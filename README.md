@@ -19,6 +19,7 @@ Use the Node.js version in `.node-version`.
 
 ```plain
 npm run check
+npm run check:assets
 npm run check:content
 npm run check:links
 npm run audit:known
