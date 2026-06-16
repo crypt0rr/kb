@@ -1,8 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
+import { parseFrontmatter } from "./frontmatter.mjs";
 
 const root = process.cwd();
 const contentRoot = path.join(root, "content");
@@ -132,7 +132,7 @@ export function sortPages(a: KbPage, b: KbPage) {
 function parsePage(file: string): KbPage {
   const relativeFile = slash(path.relative(contentRoot, file));
   const raw = fs.readFileSync(file, "utf8");
-  const parsed = matter(raw);
+  const parsed = parseFrontmatter(raw, relativeFile);
   const slug = slugFromFile(relativeFile);
   const url = slug ? `/${slug}/` : "/";
   const title = normalizeTitle(parsed.data.title) || titleFromSlug(slug || "Knowledge Base");

@@ -26,6 +26,7 @@ npm run audit:known
 npm run sysinternals:check
 npm run build
 npm run smoke
+npm run validate
 ```
 
 The build renders the Astro site, copies non-Markdown files from `content/`
@@ -38,6 +39,7 @@ referenced by a `resources` or `attachments` shortcode unless they are an
 intentional mirror/bulk asset listed in `scripts/content-policy.json`.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
+`npm run validate` runs the full local validation gate.
 
 Use `npm run sysinternals:check` to compare the published Sysinternals files
 with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to
@@ -46,12 +48,9 @@ directories, marker files, and files over the 25MB Cloudflare Pages limit.
 
 ## Security Notes
 
-`npm audit` currently reports upstream `esbuild` advisories through Astro/Vite.
-Use `npm run audit:known` in CI and local checks: it allows only the documented
-Astro/Vite/esbuild advisory chain and fails on any new vulnerability. Do not run
-`npm audit fix --force` for that advisory, because npm currently proposes an
-invalid Astro downgrade path. Keep Astro/Vite updated through Renovate and review
-the advisory again when a compatible upstream fix is available.
+`npm run audit:known` expects a clean `npm audit` result and fails on any
+reported vulnerability. Keep Astro/Vite updated through Renovate and review
+dependency advisories before adding any exception.
 
 ## Contributing
 

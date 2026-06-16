@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
-import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
@@ -42,7 +42,7 @@ function collectContent() {
     const relative = slash(path.relative(contentDir, file));
     if (relative.endsWith(".md")) {
       const raw = readFileSync(file, "utf8");
-      const parsed = matter(raw);
+      const parsed = parseFrontmatter(raw, relative);
       if (parsed.data.draft === true) continue;
 
       const slug = slugFromFile(relative);
@@ -66,11 +66,11 @@ function collectContent() {
 
 function checkMarkdownFile(file) {
   const raw = readFileSync(file, "utf8");
-  const parsed = matter(raw);
+  const source = slash(path.relative(root, file));
+  const parsed = parseFrontmatter(raw, source);
   const tokens = md.parse(parsed.content, {});
   const page = pagesByFile.get(slash(path.relative(root, file))) ?? null;
   const baseDir = page ? path.join(contentDir, page.sourceDir) : path.dirname(file);
-  const source = slash(path.relative(root, file));
 
   for (const token of tokens) {
     collectTokenLinks(token, source, baseDir, page);
