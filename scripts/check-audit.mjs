@@ -1,8 +1,5 @@
 import { spawnSync } from "node:child_process";
 
-const expectedSources = new Set([1120679, 1120680]);
-const expectedNames = new Set(["astro", "esbuild", "vite"]);
-
 const result = spawnSync("npm", ["audit", "--json"], {
   encoding: "utf8",
   stdio: ["ignore", "pipe", "pipe"]
@@ -35,43 +32,16 @@ if (vulnerabilities.length === 0) {
   process.exit(0);
 }
 
-const unexpected = vulnerabilities.filter((vulnerability) => !isExpected(vulnerability));
-if (unexpected.length) {
-  console.error("npm audit found unexpected vulnerabilities:");
-  for (const vulnerability of unexpected) {
-    console.error(`- ${vulnerability.name} (${vulnerability.severity})`);
-  }
-  process.exit(1);
-}
-
-const advisories = [...collectSources(vulnerabilities)].sort((a, b) => a - b).join(", ");
-console.warn(`npm audit: only known upstream Astro/Vite/esbuild advisories found (${advisories})`);
-
-function isExpected(vulnerability) {
-  if (!expectedNames.has(vulnerability.name)) return false;
-
-  const sources = collectSources([vulnerability]);
-  if (sources.size > 0) {
-    return [...sources].every((source) => expectedSources.has(source));
-  }
-
-  return asArray(vulnerability.via).every((via) => {
-    if (typeof via === "string") return expectedNames.has(via);
-    return expectedSources.has(via.source);
-  });
-}
-
-function collectSources(vulnerabilities) {
-  const sources = new Set();
-  for (const vulnerability of vulnerabilities) {
-    for (const via of asArray(vulnerability.via)) {
-      if (typeof via === "object" && Number.isInteger(via.source)) {
-        sources.add(via.source);
-      }
+console.error("npm audit found vulnerabilities:");
+for (const vulnerability of vulnerabilities) {
+  console.error(`- ${vulnerability.name} (${vulnerability.severity})`);
+  for (const via of asArray(vulnerability.via)) {
+    if (typeof via === "object" && via.title) {
+      console.error(`  - ${via.title}`);
     }
   }
-  return sources;
 }
+process.exit(1);
 
 function asArray(value) {
   return Array.isArray(value) ? value : [];

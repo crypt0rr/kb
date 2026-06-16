@@ -1,6 +1,6 @@
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
-import matter from "gray-matter";
+import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
@@ -91,8 +91,8 @@ async function walk(dir) {
 async function parsePages() {
   for (const file of markdownFiles) {
     const raw = await readFile(file, "utf8");
-    const parsed = matter(raw);
     const relativeFile = slash(path.relative(contentDir, file));
+    const parsed = parseFrontmatter(raw, relativeFile);
     const slug = slugFromFile(relativeFile);
 
     pages.push({
