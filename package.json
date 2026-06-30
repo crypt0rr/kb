@@ -15,7 +15,7 @@
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
     "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
     "smoke": "node scripts/smoke-build.mjs",
-    "validate": "npm run check && npm run check:content && npm run check:links && npm run build && npm run smoke && npm run audit:known"
+    "validate": "npm run check && npm run check:content && npm run check:links && npm run build && npm run check:assets && npm run smoke && npm run audit:known"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
