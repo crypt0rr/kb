@@ -32,5 +32,10 @@
     "js-yaml": "4.3.0",
     "vite": "8.1.0",
     "volar-service-yaml": "0.0.71"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true,
+    "fsevents@2.3.3": true
   }
 }
