@@ -15,12 +15,12 @@
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
     "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
     "smoke": "node scripts/smoke-build.mjs",
-    "validate": "npm run check && npm run check:content && npm run check:links && npm run build && npm run smoke && npm run audit:known"
+    "validate": "npm run check && npm run check:content && npm run check:links && npm run build && npm run check:assets && npm run smoke && npm run audit:known"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.0.2",
+    "astro": "^7.0.4",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "pagefind": "^1.1.1",
@@ -32,5 +32,10 @@
     "js-yaml": "4.3.0",
     "vite": "8.1.0",
     "volar-service-yaml": "0.0.71"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "sharp@0.34.5": true,
+    "fsevents@2.3.3": true
   }
 }

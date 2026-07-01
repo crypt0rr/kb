@@ -49,6 +49,9 @@ jobs:
       - name: Build Astro site
         run: npm run build
 
+      - name: Check deployable asset sizes
+        run: npm run check:assets
+
       - name: Smoke test build output
         run: npm run smoke
 
