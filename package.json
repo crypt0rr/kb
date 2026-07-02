@@ -30,7 +30,7 @@
   "overrides": {
     "esbuild": "0.28.1",
     "js-yaml": "4.3.0",
-    "vite": "8.1.0",
+    "vite": "8.1.3",
     "volar-service-yaml": "0.0.71"
   },
   "allowScripts": {
