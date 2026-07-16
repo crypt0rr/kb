@@ -24,7 +24,7 @@
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",
     "pagefind": "^1.1.1",
-    "typescript": "^6.0.0",
+    "typescript": "^7.0.0",
     "yaml": "^2.9.0"
   },
   "overrides": {
