@@ -59,4 +59,4 @@ jobs:
         run: npm run audit:known
 
       - name: Check outdated dependencies
-        run: npm outdated
+        run: npm run check:outdated
