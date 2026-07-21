@@ -11,6 +11,7 @@
     "check:assets": "node scripts/check-content-assets.mjs",
     "check:content": "node scripts/check-content.mjs",
     "check:links": "node scripts/check-links.mjs",
+    "check:outdated": "node scripts/check-outdated.mjs",
     "audit:known": "node scripts/check-audit.mjs",
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
     "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
