@@ -1,0 +1,31 @@
+name: Check external links
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '33 7 * * 3'
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone this repo
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+
+      - name: Check external links
+        run: node scripts/check-external-links.mjs --output .reports/external-links.md
+
+      - name: Upload link health report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: external-link-health
+          path: .reports/external-links.md

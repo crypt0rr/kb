@@ -7,7 +7,11 @@ export const GET: APIRoute = () => {
     description: page.description,
     url: page.url,
     tags: page.tags,
-    section: page.section
+    section: page.section,
+    date: page.date ?? null,
+    lastReviewed: page.lastReviewed ?? null,
+    status: page.status ?? "active",
+    platforms: page.platforms
   }));
 
   return new Response(JSON.stringify(pages), {

@@ -26,6 +26,7 @@ const reportedExtensions = new Set([
   ".tgz",
   ".zip"
 ]);
+const pageStatuses = new Set(["active", "deprecated", "archived"]);
 const percentShortcodes = new Set(["children", "notice", "resources", "attachments"]);
 const angleShortcodes = new Set(["ref", "youtube", "gist"]);
 
@@ -131,6 +132,30 @@ function validatePages() {
     if (page.frontmatter.weight !== undefined && !Number.isFinite(Number(page.frontmatter.weight))) {
       errors.push(`${page.relativeFile}: weight must be numeric`);
     }
+
+    for (const field of ["date", "lastReviewed"]) {
+      if (
+        page.frontmatter[field] !== undefined &&
+        !isDateValue(page.frontmatter[field])
+      ) {
+        errors.push(`${page.relativeFile}: ${field} must use YYYY-MM-DD`);
+      }
+    }
+
+    if (
+      page.frontmatter.status !== undefined &&
+      !pageStatuses.has(String(page.frontmatter.status).trim().toLowerCase())
+    ) {
+      errors.push(`${page.relativeFile}: status must be active, deprecated, or archived`);
+    }
+
+    if (page.frontmatter.platforms !== undefined) {
+      const platforms = page.frontmatter.platforms;
+      const valid =
+        typeof platforms === "string" ||
+        (Array.isArray(platforms) && platforms.every((platform) => typeof platform === "string"));
+      if (!valid) errors.push(`${page.relativeFile}: platforms must be a string or string array`);
+    }
   }
 
   for (const [url, files] of urls) {
@@ -138,6 +163,11 @@ function validatePages() {
       errors.push(`duplicate URL ${url}: ${files.join(", ")}`);
     }
   }
+}
+
+function isDateValue(value) {
+  if (value instanceof Date) return !Number.isNaN(value.getTime());
+  return /^\d{4}-\d{2}-\d{2}(?:$|[T\s])/.test(String(value).trim());
 }
 
 function validateRefsAndShortcodes() {
