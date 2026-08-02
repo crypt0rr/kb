@@ -1,0 +1,41 @@
+name: Content freshness review
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 7 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone this repo
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate content review queue
+        run: |
+          npm run content:review -- \
+            --output .reports/content-review.md \
+            --json .reports/content-review.json \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload content review reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: content-review-queue
+          path: .reports/content-review.*
+          if-no-files-found: warn
+          retention-days: 30

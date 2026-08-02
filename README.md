@@ -24,6 +24,7 @@ npm run check:content
 npm run check:links
 npm run audit:known
 npm run sysinternals:check
+npm run content:review
 npm test
 npm run doctor
 npm run build
@@ -48,6 +49,14 @@ checks the Node.js version, required project paths, and local npm availability.
 
 The scheduled `Check external links` workflow creates a report of reachable
 external URLs without blocking content builds.
+
+`npm run content:review` scans all publishable pages and writes a maintainer-only
+review queue to `.reports/content-review.md` plus a complete JSON report at
+`.reports/content-review.json`. It always reports missing `lastReviewed` values,
+marks pages stale when their effective review date is more than 12 months old,
+and never changes frontmatter or fails a content build. The scheduled `Content
+freshness review` workflow uploads the same reports weekly and adds a summary to
+the workflow run.
 
 Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
 (`active`, `deprecated`, or `archived`), and `platforms` (a string or list of
