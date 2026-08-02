@@ -5,19 +5,24 @@
   const searchOpeners = document.querySelectorAll("[data-search-open]");
   const searchInput = document.querySelector("[data-search-input]");
   const searchResults = document.querySelector("[data-search-results]");
+  const searchSection = document.querySelector("[data-search-section]");
+  const searchTag = document.querySelector("[data-search-tag]");
   let pagefind = null;
   let searchController = null;
   let searchTimer = null;
   let activeResultIndex = -1;
+  let lastFocusedElement = null;
 
   sidebarToggle?.addEventListener("click", () => {
-    body.classList.toggle("sidebar-open");
+    const isOpen = body.classList.toggle("sidebar-open");
+    sidebarToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
   document.addEventListener("click", (event) => {
     if (!body.classList.contains("sidebar-open")) return;
     if (event.target.closest("#site-sidebar") || event.target.closest("[data-sidebar-toggle]")) return;
     body.classList.remove("sidebar-open");
+    sidebarToggle?.setAttribute("aria-expanded", "false");
   });
 
   document.querySelectorAll("pre").forEach((block) => {
@@ -27,12 +32,20 @@
     const button = document.createElement("button");
     button.className = "copy-code";
     button.type = "button";
+    button.setAttribute("aria-label", "Copy code to clipboard");
     button.textContent = "copy";
     button.addEventListener("click", async () => {
-      await navigator.clipboard.writeText(code.innerText);
-      button.textContent = "copied";
+      try {
+        await navigator.clipboard.writeText(code.innerText);
+        button.textContent = "copied";
+        button.setAttribute("aria-label", "Code copied to clipboard");
+      } catch {
+        button.textContent = "copy failed";
+        button.setAttribute("aria-label", "Copy failed");
+      }
       setTimeout(() => {
         button.textContent = "copy";
+        button.setAttribute("aria-label", "Copy code to clipboard");
       }, 1200);
     });
     block.append(button);
@@ -40,12 +53,25 @@
 
   const openSearch = async () => {
     if (!dialog) return;
+    lastFocusedElement = document.activeElement;
+    const params = new URLSearchParams(window.location.search);
+    if (searchInput && params.has("q")) searchInput.value = params.get("q") ?? "";
+    if (searchSection && params.has("section")) searchSection.value = params.get("section") ?? "";
+    if (searchTag && params.has("tag")) searchTag.value = params.get("tag") ?? "";
     dialog.showModal();
     searchInput?.focus();
     await loadPagefind();
+    const query = searchInput?.value.trim().toLowerCase() ?? "";
+    if (query) runSearch(query);
   };
 
   searchOpeners.forEach((button) => button.addEventListener("click", openSearch));
+
+  dialog?.addEventListener("close", () => {
+    lastFocusedElement?.focus?.();
+    lastFocusedElement = null;
+    activeResultIndex = -1;
+  });
 
   const counters = document.querySelectorAll("[data-count]");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -118,16 +144,31 @@
   searchInput?.addEventListener("input", () => {
     if (!searchResults) return;
     const query = searchInput.value.trim().toLowerCase();
+    syncSearchUrl();
     clearTimeout(searchTimer);
     activeResultIndex = -1;
 
     if (!query) {
       searchResults.innerHTML = "";
+      searchResults.setAttribute("aria-busy", "false");
       return;
     }
 
     searchTimer = setTimeout(() => runSearch(query), 180);
   });
+
+  [searchSection, searchTag].forEach((filter) => {
+    filter?.addEventListener("change", () => {
+      syncSearchUrl();
+      const query = searchInput?.value.trim().toLowerCase() ?? "";
+      if (query) runSearch(query);
+    });
+  });
+
+  const initialSearchParams = new URLSearchParams(window.location.search);
+  if (initialSearchParams.has("q") || initialSearchParams.has("section") || initialSearchParams.has("tag")) {
+    openSearch();
+  }
 
   searchInput?.addEventListener("keydown", (event) => {
     const resultLinks = [...searchResults.querySelectorAll("a")];
@@ -178,36 +219,58 @@
     searchController?.abort();
     searchController = controller;
 
-    searchResults.innerHTML = '<p class="search-status">searching</p>';
+    searchResults.innerHTML = '<p class="search-status" role="status">searching</p>';
+    searchResults.setAttribute("aria-busy", "true");
 
     try {
       const index = await loadPagefind();
-      const search = await index.search(query);
+      const filters = {};
+      if (searchSection?.value) filters.section = searchSection.value;
+      if (searchTag?.value) filters.tag = searchTag.value;
+      const search = await index.search(query, Object.keys(filters).length ? { filters } : undefined);
       if (controller.signal.aborted) return;
 
       const results = await Promise.all(search.results.slice(0, 12).map((result) => result.data()));
       if (controller.signal.aborted) return;
 
       if (!results.length) {
-        searchResults.innerHTML = '<p class="search-status">no results</p>';
+        searchResults.innerHTML = '<p class="search-status" role="status">no results</p>';
         return;
       }
 
       activeResultIndex = -1;
-      searchResults.innerHTML = `<p class="search-status">${results.length} result${
+      searchResults.innerHTML = `<p class="search-status" role="status">${results.length} result${
         results.length === 1 ? "" : "s"
       }</p>${results
         .map(
           (result) => `<a href="${escapeAttr(result.url)}">
             <strong>${escapeHtml(result.meta?.title || result.url)}</strong>
+            ${result.meta?.section ? `<small>${escapeHtml(result.meta.section)}</small>` : ""}
             <p>${sanitizePagefindExcerpt(result.excerpt || result.url)}</p>
           </a>`
         )
         .join("")}`;
     } catch {
       if (controller.signal.aborted) return;
-      searchResults.innerHTML = '<p class="search-status">search unavailable</p>';
+      searchResults.innerHTML = '<p class="search-status" role="status">search unavailable</p>';
+    } finally {
+      if (!controller.signal.aborted) searchResults.setAttribute("aria-busy", "false");
     }
+  }
+
+  function syncSearchUrl() {
+    const url = new URL(window.location.href);
+    const values = {
+      q: searchInput?.value.trim() ?? "",
+      section: searchSection?.value ?? "",
+      tag: searchTag?.value ?? ""
+    };
+
+    Object.entries(values).forEach(([key, value]) => {
+      if (value) url.searchParams.set(key, value);
+      else url.searchParams.delete(key);
+    });
+    window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
   }
 
   function escapeHtml(value) {

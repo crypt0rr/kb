@@ -24,6 +24,8 @@ npm run check:content
 npm run check:links
 npm run audit:known
 npm run sysinternals:check
+npm test
+npm run doctor
 npm run build
 npm run smoke
 npm run validate
@@ -40,6 +42,17 @@ intentional mirror/bulk asset listed in `scripts/content-policy.json`.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
+
+`npm test` runs focused parser and content-contract tests. `npm run doctor`
+checks the Node.js version, required project paths, and local npm availability.
+
+The scheduled `Check external links` workflow creates a report of reachable
+external URLs without blocking content builds.
+
+Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
+(`active`, `deprecated`, or `archived`), and `platforms` (a string or list of
+strings). These fields power freshness and compatibility hints without being
+required for existing pages.
 
 Use `npm run sysinternals:check` to compare the published Sysinternals files
 with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to

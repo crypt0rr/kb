@@ -1,6 +1,12 @@
 ---
 import "../styles/global.css";
-import { getAllTags, getDescendantLeafCount, getRootSections, tagSlug, type KbPage } from "@lib/content";
+import {
+  getDescendantLeafCount,
+  getPopularTags,
+  getRootSections,
+  tagSlug,
+  type KbPage
+} from "@lib/content";
 
 type Props = {
   page?: KbPage;
@@ -10,7 +16,7 @@ type Props = {
 
 const { page, title, description = "" } = Astro.props;
 const sections = getRootSections();
-const tags = getAllTags().slice(0, 18);
+const tags = getPopularTags();
 const canonical = new URL(Astro.url.pathname, "https://kb.offsec.nl").toString();
 const activeUrl = page?.url ?? Astro.url.pathname;
 const currentYear = new Date().getFullYear();
@@ -62,10 +68,21 @@ function renderNav(items: KbPage[], level = 0): string {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description || "Offensive security knowledge base"} />
     <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={`${title} :: Knowledge Base`} />
+    <meta property="og:description" content={description || "Offensive security knowledge base"} />
+    <meta property="og:type" content={page?.url && page.url !== "/" ? "article" : "website"} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`${title} :: Knowledge Base`} />
+    <meta name="twitter:description" content={description || "Offensive security knowledge base"} />
+    {(page?.lastReviewed || page?.date) && (
+      <meta property="article:modified_time" content={page.lastReviewed || page.date} />
+    )}
     <link rel="icon" href="/images/favicon.png" />
     <title>{title} :: Knowledge Base</title>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="app-shell">
       <aside class="sidebar" id="site-sidebar">
         <a class="brand" href="/" aria-label="Knowledge Base home">
@@ -101,7 +118,14 @@ function renderNav(items: KbPage[], level = 0): string {
 
       <div class="main-column">
         <header class="topbar">
-          <button class="icon-button" type="button" data-sidebar-toggle aria-label="Toggle navigation">
+          <button
+            class="icon-button"
+            type="button"
+            data-sidebar-toggle
+            aria-label="Toggle navigation"
+            aria-controls="site-sidebar"
+            aria-expanded="false"
+          >
             <span></span><span></span><span></span>
           </button>
           <div class="crumbs">
@@ -118,11 +142,21 @@ function renderNav(items: KbPage[], level = 0): string {
           </a>
         </header>
 
-        <main class="page-frame">
+        <main class="page-frame" id="main-content" tabindex="-1">
           <header class="page-header">
             <div class="eyebrow">::{page?.section || "index"}</div>
             <h1>{title || "Knowledge Base"}</h1>
             {description && <p>{description}</p>}
+            {page && (page.date || page.lastReviewed || page.status || page.platforms.length) ? (
+              <dl class="page-meta" aria-label="Page metadata">
+                {page.date && <div><dt>Updated</dt><dd>{page.date}</dd></div>}
+                {page.lastReviewed && <div><dt>Reviewed</dt><dd>{page.lastReviewed}</dd></div>}
+                {page.status && page.status !== "active" && (
+                  <div><dt>Status</dt><dd><span class={`status-badge status-${page.status}`}>{page.status}</span></dd></div>
+                )}
+                {page.platforms.length > 0 && <div><dt>Platforms</dt><dd>{page.platforms.join(", ")}</dd></div>}
+              </dl>
+            ) : null}
             {page?.tags.length ? (
               <div class="tag-row">
                 {page.tags.map((tag) => <a href={`/tags/${tagSlug(tag)}/`}>#{tag}</a>)}
@@ -134,15 +168,32 @@ function renderNav(items: KbPage[], level = 0): string {
       </div>
     </div>
 
-    <dialog class="search-dialog" data-search-dialog>
+    <dialog class="search-dialog" data-search-dialog aria-labelledby="search-dialog-title">
       <form method="dialog">
-        <button aria-label="Close search">x</button>
+        <button type="submit" aria-label="Close search">x</button>
       </form>
-      <label>
+      <h2 id="search-dialog-title" class="visually-hidden">Search knowledge base</h2>
+      <label for="search-input">
         <span>query</span>
-        <input data-search-input autocomplete="off" spellcheck="false" placeholder="tool, command, CVE, technique" />
+        <input id="search-input" data-search-input autocomplete="off" spellcheck="false" placeholder="tool, command, CVE, technique" aria-controls="search-results" />
       </label>
-      <div class="search-results" data-search-results></div>
+      <div class="search-filters" aria-label="Search filters">
+        <label>
+          <span>section</span>
+          <select data-search-section>
+            <option value="">all sections</option>
+            {sections.map((section) => <option value={section.section}>{section.title}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>tag</span>
+          <select data-search-tag>
+            <option value="">all tags</option>
+            {tags.map((item) => <option value={item.tag}>{item.tag} ({item.count})</option>)}
+          </select>
+        </label>
+      </div>
+      <div class="search-results" id="search-results" data-search-results aria-live="polite" aria-label="Search results"></div>
     </dialog>
 
     <script is:inline src="/js/kb-app.js" defer></script>

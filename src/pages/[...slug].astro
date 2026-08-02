@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getPages, renderPage } from "@lib/content";
+import { getPageNeighbors, getPages, getRelatedPages, renderPage } from "@lib/content";
 
 export function getStaticPaths() {
   return getPages()
@@ -13,8 +13,45 @@ export function getStaticPaths() {
 
 const { page } = Astro.props;
 const html = renderPage(page);
+const relatedPages = getRelatedPages(page);
+const neighbors = getPageNeighbors(page);
 ---
 
 <BaseLayout page={page} title={page.title} description={page.description}>
   <article class="content prose" data-pagefind-body set:html={html} />
+  <div class="pagefind-meta" aria-hidden="true">
+    <span data-pagefind-meta="section" data-pagefind-filter="section">{page.section}</span>
+    {page.tags.map((tag) => <span data-pagefind-filter="tag">{tag}</span>)}
+  </div>
+
+  {(neighbors.previous || neighbors.next) && (
+    <nav class="page-nav" aria-label="Page navigation">
+      {neighbors.previous ? (
+        <a href={neighbors.previous.url}>
+          <small>previous</small>
+          {neighbors.previous.title}
+        </a>
+      ) : <span />}
+      {neighbors.next ? (
+        <a class="next" href={neighbors.next.url}>
+          <small>next</small>
+          {neighbors.next.title}
+        </a>
+      ) : <span />}
+    </nav>
+  )}
+
+  {relatedPages.length > 0 && (
+    <section class="related-pages" aria-labelledby="related-pages-title">
+      <h2 id="related-pages-title">Related notes</h2>
+      <div class="related-grid">
+        {relatedPages.map((related) => (
+          <a href={related.url}>
+            {related.title}
+            {related.description && <p>{related.description}</p>}
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </BaseLayout>

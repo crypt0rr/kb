@@ -19,6 +19,9 @@ export type KbPage = {
   frontmatter: Record<string, any>;
   weight: number;
   date?: string;
+  lastReviewed?: string;
+  status?: "active" | "deprecated" | "archived";
+  platforms: string[];
   tags: string[];
   parentUrl: string | null;
   section: string;
@@ -104,11 +107,45 @@ export function getAllTags() {
   return [...tags.values()].sort((a, b) => a.tag.localeCompare(b.tag));
 }
 
+export function getPopularTags(limit = 18) {
+  return getAllTags()
+    .sort((a, b) => b.count - a.count || a.tag.localeCompare(b.tag))
+    .slice(0, limit);
+}
+
 export function getPagesByTag(tag: string) {
   const requested = tagSlug(tag);
   return getPages()
     .filter((page) => page.tags.some((item) => tagSlug(item) === requested))
     .sort(sortPages);
+}
+
+export function getRelatedPages(page: KbPage, limit = 4) {
+  const pageTags = new Set(page.tags.map(tagSlug));
+
+  return getPages()
+    .filter((candidate) => candidate.url !== page.url && candidate.frontmatter.hidden !== true)
+    .map((candidate) => {
+      const sharedTags = candidate.tags.filter((tag) => pageTags.has(tagSlug(tag))).length;
+      const sameSection = candidate.section === page.section ? 2 : 0;
+      return { candidate, score: sharedTags * 4 + sameSection };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score || sortPages(a.candidate, b.candidate))
+    .slice(0, limit)
+    .map(({ candidate }) => candidate);
+}
+
+export function getPageNeighbors(page: KbPage) {
+  getPages();
+  const siblings = (page.parentUrl ? urlMap?.get(page.parentUrl)?.children : getRootSections()) ?? [];
+  const visible = siblings.filter((item) => item.frontmatter.hidden !== true).sort(sortPages);
+  const index = visible.findIndex((item) => item.url === page.url);
+
+  return {
+    previous: index > 0 ? visible[index - 1] : undefined,
+    next: index >= 0 && index < visible.length - 1 ? visible[index + 1] : undefined
+  };
 }
 
 export function renderPage(page: KbPage) {
@@ -149,7 +186,10 @@ function parsePage(file: string): KbPage {
     body: parsed.content.trim(),
     frontmatter: parsed.data,
     weight: Number(parsed.data.weight ?? Number.MAX_SAFE_INTEGER),
-    date: parsed.data.date ? String(parsed.data.date) : undefined,
+    date: normalizeDate(parsed.data.date),
+    lastReviewed: normalizeDate(parsed.data.lastReviewed),
+    status: normalizeStatus(parsed.data.status),
+    platforms: normalizeStringList(parsed.data.platforms),
     tags,
     parentUrl: null,
     section: slug.split("/")[0] ?? "",
@@ -409,6 +449,19 @@ function normalizeStringList(value: unknown) {
   if (!value) return [];
   if (Array.isArray(value)) return value.map(String).filter(Boolean);
   return [String(value)].filter(Boolean);
+}
+
+function normalizeDate(value: unknown) {
+  if (value instanceof Date && !Number.isNaN(value.getTime())) {
+    return value.toISOString().slice(0, 10);
+  }
+  const date = String(value ?? "").trim();
+  return /^\d{4}-\d{2}-\d{2}(?:$|[T\s])/.test(date) ? date.slice(0, 10) : undefined;
+}
+
+function normalizeStatus(value: unknown): KbPage["status"] {
+  const status = String(value ?? "").trim().toLowerCase();
+  return status === "deprecated" || status === "archived" ? status : undefined;
 }
 
 function slugify(value: string) {
