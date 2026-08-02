@@ -14,6 +14,7 @@
     "check:outdated": "node scripts/check-outdated.mjs",
     "audit:known": "node scripts/check-audit.mjs",
     "doctor": "node scripts/doctor.mjs",
+    "content:review": "node scripts/content-review.mjs",
     "test": "node --test test/*.test.mjs",
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
     "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",

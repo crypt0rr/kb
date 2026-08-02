@@ -1,6 +1,7 @@
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
+import { isValidDateValue } from "../src/lib/date.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
@@ -136,9 +137,9 @@ function validatePages() {
     for (const field of ["date", "lastReviewed"]) {
       if (
         page.frontmatter[field] !== undefined &&
-        !isDateValue(page.frontmatter[field])
+        !isValidDateValue(page.frontmatter[field])
       ) {
-        errors.push(`${page.relativeFile}: ${field} must use YYYY-MM-DD`);
+        errors.push(`${page.relativeFile}: ${field} must start with a valid YYYY-MM-DD date`);
       }
     }
 
@@ -163,11 +164,6 @@ function validatePages() {
       errors.push(`duplicate URL ${url}: ${files.join(", ")}`);
     }
   }
-}
-
-function isDateValue(value) {
-  if (value instanceof Date) return !Number.isNaN(value.getTime());
-  return /^\d{4}-\d{2}-\d{2}(?:$|[T\s])/.test(String(value).trim());
 }
 
 function validateRefsAndShortcodes() {

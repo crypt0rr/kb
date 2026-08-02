@@ -3,6 +3,7 @@ import path from "node:path";
 import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import { parseFrontmatter } from "./frontmatter.mjs";
+import { normalizeDate } from "./date.mjs";
 
 const root = process.cwd();
 const contentRoot = path.join(root, "content");
@@ -449,14 +450,6 @@ function normalizeStringList(value: unknown) {
   if (!value) return [];
   if (Array.isArray(value)) return value.map(String).filter(Boolean);
   return [String(value)].filter(Boolean);
-}
-
-function normalizeDate(value: unknown) {
-  if (value instanceof Date && !Number.isNaN(value.getTime())) {
-    return value.toISOString().slice(0, 10);
-  }
-  const date = String(value ?? "").trim();
-  return /^\d{4}-\d{2}-\d{2}(?:$|[T\s])/.test(date) ? date.slice(0, 10) : undefined;
 }
 
 function normalizeStatus(value: unknown): KbPage["status"] {
