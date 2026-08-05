@@ -54,9 +54,15 @@ external URLs without blocking content builds.
 review queue to `.reports/content-review.md` plus a complete JSON report at
 `.reports/content-review.json`. It always reports missing `lastReviewed` values,
 marks pages stale when their effective review date is more than 12 months old,
-and never changes frontmatter or fails a content build. The scheduled `Content
-freshness review` workflow uploads the same reports weekly and adds a summary to
-the workflow run.
+and never changes frontmatter or fails a content build. The report uses the same
+effective metadata index as the site and includes field provenance plus a
+deterministic priority score, so inherited metadata cannot silently diverge
+between the site and maintenance checks. Reports use non-strict mode to record
+malformed cascade metadata for maintainers, while the site remains strict. The
+scheduled `Content freshness review` workflow uploads the same reports weekly
+and adds a summary to the workflow run. Markdown shows the oldest 100 queue
+entries by default (`--limit` changes this); JSON contains the complete corpus,
+field provenance, and priority data for future tooling.
 
 Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
 (`active`, `deprecated`, or `archived`), and `platforms` (a string or list of

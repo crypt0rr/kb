@@ -35,13 +35,22 @@ export function parseCascade(value, file = "content") {
 }
 
 export function resolveInheritedFrontmatter(page, byUrl) {
+  return resolveInheritedMetadata(page, byUrl).frontmatter;
+}
+
+export function resolveInheritedMetadata(page, byUrl, options = {}) {
+  const strict = options.strict ?? true;
   const ancestors = [];
   const visited = new Set();
+  const errors = [];
   let current = page.parentUrl ? byUrl.get(page.parentUrl) : undefined;
 
   while (current) {
     if (visited.has(current.url)) {
-      throw new Error(`metadata inheritance cycle detected at ${current.url}`);
+      const error = new Error(`metadata inheritance cycle detected at ${current.url}`);
+      if (strict) throw error;
+      errors.push(error.message);
+      break;
     }
     visited.add(current.url);
     ancestors.unshift(current);
@@ -49,14 +58,47 @@ export function resolveInheritedFrontmatter(page, byUrl) {
   }
 
   const inherited = {};
+  const provenance = {};
   for (const ancestor of ancestors) {
-    Object.assign(
-      inherited,
-      parseCascade(ancestor.frontmatter.cascade, ancestor.relativeFile)
-    );
+    let cascade;
+    try {
+      cascade = parseCascade(ancestor.frontmatter.cascade, ancestor.relativeFile);
+    } catch (error) {
+      if (strict) throw error;
+      errors.push(error.message);
+      continue;
+    }
+
+    for (const [field, value] of Object.entries(cascade)) {
+      inherited[field] = value;
+      provenance[field] = {
+        source: ancestor.relativeFile,
+        kind: "cascade"
+      };
+    }
   }
 
-  return normalizeFrontmatter({ ...inherited, ...page.frontmatter });
+  if (page.frontmatter.cascade !== undefined) {
+    try {
+      parseCascade(page.frontmatter.cascade, page.relativeFile);
+    } catch (error) {
+      if (strict) throw error;
+      errors.push(error.message);
+    }
+  }
+
+  for (const field of Object.keys(page.frontmatter)) {
+    provenance[field] = {
+      source: page.relativeFile,
+      kind: "explicit"
+    };
+  }
+
+  return {
+    frontmatter: normalizeFrontmatter({ ...inherited, ...page.frontmatter }),
+    provenance,
+    errors
+  };
 }
 
 export function normalizeFrontmatter(frontmatter) {
@@ -91,7 +133,9 @@ export function uniqueStrings(value) {
 }
 
 function isPlainObject(value) {
-  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+  if (!value || typeof value !== "object" || Array.isArray(value)) return false;
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === Object.prototype || prototype === null;
 }
 
 function slugify(value) {
