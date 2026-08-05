@@ -4,6 +4,12 @@ import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import { parseFrontmatter } from "./frontmatter.mjs";
 import { normalizeDate } from "./date.mjs";
+import {
+  canonicalTag,
+  resolveInheritedFrontmatter,
+  tagKey,
+  uniqueStrings
+} from "./metadata.mjs";
 
 const root = process.cwd();
 const contentRoot = path.join(root, "content");
@@ -60,10 +66,22 @@ export function getPages() {
   if (cache) return cache;
 
   const files = listMarkdown(contentRoot);
-  const pages = files.map(parsePage).filter((page) => page.frontmatter.draft !== true);
+  const allPages = files.map(parsePage);
+  const allByUrl = new Map(allPages.map((page) => [page.url, page]));
+
+  for (const page of allPages) {
+    page.parentUrl = findParentUrl(page.url, allByUrl);
+  }
+
+  for (const page of allPages) {
+    hydratePage(page, resolveInheritedFrontmatter(page, allByUrl));
+  }
+
+  const pages = allPages.filter((page) => page.frontmatter.draft !== true);
   const byUrl = new Map(pages.map((page) => [page.url, page]));
 
   for (const page of pages) {
+    page.children = [];
     page.parentUrl = findParentUrl(page.url, byUrl);
     if (page.parentUrl) {
       byUrl.get(page.parentUrl)?.children.push(page);
@@ -99,8 +117,8 @@ export function getAllTags() {
   const tags = new Map<string, { tag: string; count: number }>();
   for (const page of getPages()) {
     for (const tag of page.tags) {
-      const key = tagSlug(tag);
-      const current = tags.get(key) ?? { tag, count: 0 };
+      const key = tagKey(tag);
+      const current = tags.get(key) ?? { tag: canonicalTag(tag), count: 0 };
       current.count += 1;
       tags.set(key, current);
     }
@@ -159,7 +177,7 @@ export function renderInlineMarkdown(source: string) {
 }
 
 export function tagSlug(tag: string) {
-  return slugify(tag);
+  return tagKey(tag);
 }
 
 export function sortPages(a: KbPage, b: KbPage) {
@@ -173,8 +191,6 @@ function parsePage(file: string): KbPage {
   const parsed = parseFrontmatter(raw, relativeFile);
   const slug = slugFromFile(relativeFile);
   const url = slug ? `/${slug}/` : "/";
-  const title = normalizeTitle(parsed.data.title) || titleFromSlug(slug || "Knowledge Base");
-  const tags = normalizeStringList(parsed.data.tags);
 
   return {
     file,
@@ -182,21 +198,35 @@ function parsePage(file: string): KbPage {
     sourceDir: slash(path.dirname(relativeFile)),
     slug,
     url,
-    title,
-    description: String(parsed.data.description ?? ""),
+    title: "",
+    description: "",
     body: parsed.content.trim(),
     frontmatter: parsed.data,
-    weight: Number(parsed.data.weight ?? Number.MAX_SAFE_INTEGER),
-    date: normalizeDate(parsed.data.date),
-    lastReviewed: normalizeDate(parsed.data.lastReviewed),
-    status: normalizeStatus(parsed.data.status),
-    platforms: normalizeStringList(parsed.data.platforms),
-    tags,
+    weight: Number.MAX_SAFE_INTEGER,
+    date: undefined,
+    lastReviewed: undefined,
+    status: undefined,
+    platforms: [],
+    tags: [],
     parentUrl: null,
     section: slug.split("/")[0] ?? "",
     children: [],
     breadcrumbs: []
   };
+}
+
+function hydratePage(page: KbPage, frontmatter: Record<string, any>) {
+  const title = normalizeTitle(frontmatter.title) || titleFromSlug(page.slug || "Knowledge Base");
+
+  page.frontmatter = frontmatter;
+  page.title = title;
+  page.description = String(frontmatter.description ?? "");
+  page.weight = Number(frontmatter.weight ?? Number.MAX_SAFE_INTEGER);
+  page.date = normalizeDate(frontmatter.date);
+  page.lastReviewed = normalizeDate(frontmatter.lastReviewed);
+  page.status = normalizeStatus(frontmatter.status);
+  page.platforms = uniqueStrings(frontmatter.platforms);
+  page.tags = [...new Set(uniqueStrings(frontmatter.tags).map(canonicalTag))];
 }
 
 function preprocessShortcodes(source: string, page: KbPage) {
@@ -444,12 +474,6 @@ function titleFromSlug(slug: string) {
 
 function normalizeTitle(value: unknown) {
   return String(value ?? "").trim();
-}
-
-function normalizeStringList(value: unknown) {
-  if (!value) return [];
-  if (Array.isArray(value)) return value.map(String).filter(Boolean);
-  return [String(value)].filter(Boolean);
 }
 
 function normalizeStatus(value: unknown): KbPage["status"] {
