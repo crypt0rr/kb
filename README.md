@@ -63,6 +63,13 @@ Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
 strings). These fields power freshness and compatibility hints without being
 required for existing pages.
 
+Section `_index.md` files may also define a `cascade` mapping. Its metadata is
+inherited by descendant pages unless a closer section or the page itself
+provides an explicit value. This preserves the existing Hugo-style taxonomy
+without rewriting content frontmatter. The content checker validates cascade
+values, including the legacy `tags= [...]` form, and the site normalizes known
+tag aliases such as `Wirehark` to `Wireshark`.
+
 Use `npm run sysinternals:check` to compare the published Sysinternals files
 with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to
 download missing or changed root and ARM64 files. The sync workflow skips live

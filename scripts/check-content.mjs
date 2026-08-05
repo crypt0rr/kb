@@ -2,6 +2,7 @@ import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
+import { parseCascade } from "../src/lib/metadata.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
@@ -157,12 +158,51 @@ function validatePages() {
         (Array.isArray(platforms) && platforms.every((platform) => typeof platform === "string"));
       if (!valid) errors.push(`${page.relativeFile}: platforms must be a string or string array`);
     }
+
+    if (page.frontmatter.cascade !== undefined) {
+      try {
+        const cascade = parseCascade(page.frontmatter.cascade, page.relativeFile);
+        validateCascadeFields(cascade, page.relativeFile);
+      } catch (error) {
+        errors.push(error.message);
+      }
+    }
   }
 
   for (const [url, files] of urls) {
     if (files.length > 1) {
       errors.push(`duplicate URL ${url}: ${files.join(", ")}`);
     }
+  }
+}
+
+function validateCascadeFields(cascade, file) {
+  if (cascade.tags !== undefined) {
+    const valid =
+      typeof cascade.tags === "string" ||
+      (Array.isArray(cascade.tags) && cascade.tags.every((tag) => typeof tag === "string"));
+    if (!valid) errors.push(`${file}: cascade.tags must be a string or string array`);
+  }
+
+  if (cascade.platforms !== undefined) {
+    const valid =
+      typeof cascade.platforms === "string" ||
+      (Array.isArray(cascade.platforms) &&
+        cascade.platforms.every((platform) => typeof platform === "string"));
+    if (!valid) errors.push(`${file}: cascade.platforms must be a string or string array`);
+  }
+
+  for (const field of ["date", "lastReviewed"]) {
+    if (cascade[field] !== undefined && !isValidDateValue(cascade[field])) {
+      errors.push(`${file}: cascade.${field} must start with a valid YYYY-MM-DD date`);
+    }
+  }
+
+  if (
+    cascade.status !== undefined &&
+    !pageStatuses.has(String(cascade.status).trim().toLowerCase())
+  ) {
+    errors.push(`${file}: cascade.status must be active, deprecated, or archived`);
   }
 }
 
