@@ -1,7 +1,7 @@
-import { appendFile, mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { appendFile, mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
-import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
+import { buildContentIndex } from "../src/lib/content-index.mjs";
 import {
   differenceInDays,
   normalizeDate,
@@ -12,36 +12,54 @@ export const DEFAULT_OUTPUT = ".reports/content-review.md";
 export const DEFAULT_JSON_OUTPUT = ".reports/content-review.json";
 export const DEFAULT_STALE_MONTHS = 12;
 export const DEFAULT_LIMIT = 100;
+export const DEFAULT_SECTION_WEIGHTS = Object.freeze({
+  cve: 4,
+  tools: 3,
+  commands: 2,
+  stuff: 1,
+  index: 0
+});
+export const REVIEW_PRIORITY = Object.freeze({
+  sectionMultiplier: 100,
+  missingReview: 2_000,
+  futureDate: 5_000,
+  metadataError: 10_000,
+  maxStaleAgeDays: 5_000,
+  highThreshold: 2_000,
+  criticalThreshold: 10_000
+});
 
 const contentRoot = path.join(process.cwd(), "content");
 const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
 export async function collectContentPages(directory = contentRoot) {
-  const files = [];
-  await walkMarkdown(directory, files);
+  const index = buildContentIndex({
+    contentRoot: directory,
+    strict: false
+  });
 
-  const pages = [];
-  for (const file of files.sort((a, b) => collator.compare(a, b))) {
-    const raw = await readFile(file, "utf8");
-    const relativeFile = slash(path.relative(directory, file));
-    const parsed = parseFrontmatter(raw, relativeFile);
-    if (parsed.data.draft === true) continue;
-
-    const slug = slugFromFile(relativeFile);
-    pages.push({
-      relativeFile,
-      url: slug ? `/${slug}/` : "/",
-      title: String(parsed.data.title ?? "").trim() || titleFromSlug(slug || "Knowledge Base"),
-      section: slug.split("/")[0] || "index",
-      date: normalizeDate(parsed.data.date),
-      lastReviewed: normalizeDate(parsed.data.lastReviewed)
-    });
-  }
-
-  return pages;
+  return index.pages.map((page) => {
+    const metadata = page.effectiveFrontmatter;
+    return {
+      relativeFile: page.relativeFile,
+      url: page.url,
+      title: page.title,
+      section: page.section || "index",
+      date: normalizeDate(metadata.date),
+      lastReviewed: normalizeDate(metadata.lastReviewed),
+      tags: Array.isArray(metadata.tags) ? metadata.tags : [],
+      platforms: Array.isArray(metadata.platforms) ? metadata.platforms : [],
+      status: metadata.status ?? null,
+      metadataProvenance: page.metadataProvenance,
+      metadataErrors: page.metadataErrors
+    };
+  });
 }
 
-export function classifyReviewPage(page, { asOf, staleBefore }) {
+export function classifyReviewPage(
+  page,
+  { asOf, staleBefore, sectionWeights = DEFAULT_SECTION_WEIGHTS }
+) {
   const normalizedAsOf = normalizeDate(asOf);
   const normalizedStaleBefore = normalizeDate(staleBefore);
   if (!normalizedAsOf || !normalizedStaleBefore) {
@@ -52,11 +70,25 @@ export function classifyReviewPage(page, { asOf, staleBefore }) {
   const missingReview = !page.lastReviewed;
   const stale = Boolean(effectiveDate && effectiveDate < normalizedStaleBefore);
   const futureDate = Boolean(effectiveDate && effectiveDate > normalizedAsOf);
+  const metadataErrors = Array.isArray(page.metadataErrors) ? page.metadataErrors : [];
   const reasons = [];
 
   if (missingReview) reasons.push("missing-lastReviewed");
   if (stale) reasons.push("stale");
   if (futureDate) reasons.push("future-date");
+  if (metadataErrors.length) reasons.push("metadata-error");
+
+  const priority = calculateReviewPriority(
+    {
+      ...page,
+      missingReview,
+      stale,
+      futureDate,
+      metadataErrors,
+      ageDays: effectiveDate ? differenceInDays(normalizedAsOf, effectiveDate) : null
+    },
+    sectionWeights
+  );
 
   return {
     ...page,
@@ -67,8 +99,56 @@ export function classifyReviewPage(page, { asOf, staleBefore }) {
     missingReview,
     stale,
     futureDate,
-    needsReview: missingReview || stale,
-    reasons
+    metadataErrors,
+    needsReview: missingReview || stale || metadataErrors.length > 0,
+    reasons,
+    ...priority
+  };
+}
+
+export function calculateReviewPriority(page, sectionWeights = DEFAULT_SECTION_WEIGHTS) {
+  const hasIssue = page.missingReview || page.stale || page.futureDate || page.metadataErrors?.length;
+  if (!hasIssue) {
+    return { priorityScore: 0, priorityTier: "current", priorityReasons: [] };
+  }
+
+  const reasons = [];
+  let score = 0;
+  const sectionWeight = Number(sectionWeights[page.section] ?? 0);
+
+  if (sectionWeight > 0) {
+    score += sectionWeight * REVIEW_PRIORITY.sectionMultiplier;
+    reasons.push(`section-${page.section}`);
+  }
+  if (page.metadataErrors?.length) {
+    score += REVIEW_PRIORITY.metadataError;
+    reasons.push("metadata-error");
+  }
+  if (page.futureDate) {
+    score += REVIEW_PRIORITY.futureDate;
+    reasons.push("future-date");
+  }
+  if (page.missingReview) {
+    score += REVIEW_PRIORITY.missingReview;
+    reasons.push("missing-lastReviewed");
+  }
+  if (page.stale) {
+    score += Math.min(
+      Math.max(page.ageDays ?? 0, 0),
+      REVIEW_PRIORITY.maxStaleAgeDays
+    );
+    reasons.push("stale-age");
+  }
+
+  return {
+    priorityScore: score,
+    priorityTier:
+      score >= REVIEW_PRIORITY.criticalThreshold
+        ? "critical"
+        : score >= REVIEW_PRIORITY.highThreshold
+          ? "high"
+          : "normal",
+    priorityReasons: reasons
   };
 }
 
@@ -87,7 +167,11 @@ export function createReviewReport(pages, options = {}) {
 
   const staleBefore = subtractMonths(asOf, staleMonths);
   const reviewedPages = pages.map((page) =>
-    classifyReviewPage(page, { asOf, staleBefore })
+    classifyReviewPage(page, {
+      asOf,
+      staleBefore,
+      sectionWeights: options.sectionWeights ?? DEFAULT_SECTION_WEIGHTS
+    })
   );
   reviewedPages.sort(compareReviewPages);
 
@@ -106,8 +190,15 @@ export function createReviewReport(pages, options = {}) {
       missingLastReviewed: reviewedPages.filter((page) => page.missingReview).length,
       stale: reviewedPages.filter((page) => page.stale).length,
       futureDates: futureDates.length,
+      metadataErrors: reviewedPages.filter((page) => page.metadataErrors.length).length,
       reviewed: reviewedPages.filter((page) => page.lastReviewed).length,
-      current: current.length
+      current: current.length,
+      priorityTiers: Object.fromEntries(
+        ["critical", "high", "normal", "current"].map((tier) => [
+          tier,
+          reviewedPages.filter((page) => page.priorityTier === tier).length
+        ])
+      )
     },
     pages: reviewedPages
   };
@@ -122,7 +213,16 @@ export function compareReviewPages(a, b) {
   };
 
   return (
+    (b.priorityScore ?? 0) - (a.priorityScore ?? 0) ||
     priority(a) - priority(b) ||
+    (a.effectiveDate ?? "9999-12-31").localeCompare(b.effectiveDate ?? "9999-12-31") ||
+    collator.compare(a.title, b.title) ||
+    collator.compare(a.url, b.url)
+  );
+}
+
+export function compareReviewAge(a, b) {
+  return (
     (a.effectiveDate ?? "9999-12-31").localeCompare(b.effectiveDate ?? "9999-12-31") ||
     collator.compare(a.title, b.title) ||
     collator.compare(a.url, b.url)
@@ -131,7 +231,7 @@ export function compareReviewPages(a, b) {
 
 export function renderMarkdown(report) {
   const queue = report.pages.filter((page) => page.needsReview);
-  const visible = queue.slice(0, report.limit);
+  const visible = [...queue].sort(compareReviewAge).slice(0, report.limit);
   const lines = [
     "# Content review queue",
     "",
@@ -142,7 +242,9 @@ export function renderMarkdown(report) {
     "- Missing `lastReviewed`: " + report.summary.missingLastReviewed,
     `- Stale: ${report.summary.stale}`,
     `- Future dates: ${report.summary.futureDates}`,
+    `- Metadata errors: ${report.summary.metadataErrors}`,
     `- Reviewed pages: ${report.summary.reviewed}`,
+    `- Priority tiers: ${report.summary.priorityTiers.critical} critical, ${report.summary.priorityTiers.high} high, ${report.summary.priorityTiers.normal} normal, ${report.summary.priorityTiers.current} current`,
     ""
   ];
 
@@ -158,15 +260,15 @@ export function renderMarkdown(report) {
   }
 
   lines.push(
-    `Showing the oldest ${visible.length} queue entries. The JSON report contains all ${queue.length} queue entries and any future-date data issues.`,
+    `Showing the oldest ${visible.length} queue entries. The JSON report contains all ${queue.length} queue entries, priority scores, and any future-date data issues.`,
     "",
-    "| # | Page | Section | Effective date | Last reviewed | Age (days) | Reason |",
-    "| ---: | --- | --- | --- | --- | ---: | --- |"
+    "| # | Priority | Page | Section | Effective date | Last reviewed | Age (days) | Reason |",
+    "| ---: | --- | --- | --- | --- | --- | ---: | --- |"
   );
 
   visible.forEach((page, index) => {
     lines.push(
-      `| ${index + 1} | [${escapeTable(page.title)}](${page.url}) | ${escapeTable(
+      `| ${index + 1} | ${page.priorityTier} (${page.priorityScore}) | [${escapeTable(page.title)}](${page.url}) | ${escapeTable(
         page.section
       )} | ${page.effectiveDate ?? "—"} | ${page.lastReviewed ?? "—"} | ${
         page.ageDays ?? "—"
@@ -185,7 +287,9 @@ export function renderSummary(report) {
     `- Pages requiring review: ${report.summary.needsReview}`,
     `- Missing lastReviewed: ${report.summary.missingLastReviewed}`,
     `- Stale: ${report.summary.stale}`,
-    `- Future dates: ${report.summary.futureDates}`
+    `- Future dates: ${report.summary.futureDates}`,
+    `- Metadata errors: ${report.summary.metadataErrors}`,
+    `- Critical/high priority: ${report.summary.priorityTiers.critical}/${report.summary.priorityTiers.high}`
   ].join("\n");
 }
 
@@ -250,15 +354,6 @@ export function parseArguments(argv = []) {
   return options;
 }
 
-async function walkMarkdown(directory, files) {
-  const entries = await readdir(directory, { withFileTypes: true });
-  for (const entry of entries) {
-    const absolute = path.join(directory, entry.name);
-    if (entry.isDirectory()) await walkMarkdown(absolute, files);
-    else if (entry.name.endsWith(".md")) files.push(absolute);
-  }
-}
-
 async function writeOutput(file, content) {
   await mkdir(path.dirname(file), { recursive: true });
   await writeFile(file, content);
@@ -283,28 +378,6 @@ function currentUtcDate() {
 
 function escapeTable(value) {
   return String(value).replaceAll("|", "\\|").replaceAll("\n", " ");
-}
-
-function slugFromFile(relativeFile) {
-  if (relativeFile === "_index.md") return "";
-  return relativeFile
-    .replace(/\/index\.md$/i, "")
-    .replace(/\/_index\.md$/i, "")
-    .replace(/\.md$/i, "")
-    .replace(/^_index$/i, "");
-}
-
-function titleFromSlug(slug) {
-  return slug
-    .split("/")
-    .filter(Boolean)
-    .pop()
-    ?.replace(/[-_]+/g, " ")
-    .replace(/\b\w/g, (character) => character.toUpperCase()) ?? "Knowledge Base";
-}
-
-function slash(value) {
-  return value.replace(/\\/g, "/");
 }
 
 const isMain =

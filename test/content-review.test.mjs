@@ -1,10 +1,14 @@
 import assert from "node:assert/strict";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
+import os from "node:os";
+import path from "node:path";
 import test from "node:test";
 import {
   collectContentPages,
   createReviewReport,
   classifyReviewPage,
-  renderMarkdown
+  renderMarkdown,
+  run
 } from "../scripts/content-review.mjs";
 import {
   differenceInDays,
@@ -86,7 +90,7 @@ test("indexes the full publishable content corpus", async () => {
   const pages = await collectContentPages();
   const report = createReviewReport(pages, { asOf });
 
-  assert.ok(pages.length >= 751);
+  assert.equal(pages.length, 751);
   assert.equal(report.pages.length, pages.length);
   assert.equal(
     report.summary.needsReview,
@@ -97,4 +101,44 @@ test("indexes the full publishable content corpus", async () => {
     report.pages.filter((page) => page.missingReview).length
   );
   assert.equal(report.summary.totalPages, report.pages.length);
+  assert.equal(new Set(report.pages.map((page) => page.url)).size, 751);
+  assert.equal(pages.filter((page) => page.metadataProvenance.tags?.kind === "cascade").length, 521);
+  assert.equal(report.summary.priorityTiers.high > 0, true);
+});
+
+test("ranks higher-risk sections ahead of equally old pages", () => {
+  const report = createReviewReport(
+    [
+      { title: "Tool", url: "/tools/tool/", section: "tools", date: "2020-01-01", lastReviewed: null },
+      { title: "CVE", url: "/cve/cve-2020/", section: "cve", date: "2020-01-01", lastReviewed: null }
+    ],
+    { asOf }
+  );
+
+  assert.equal(report.pages[0].title, "CVE");
+  assert.ok(report.pages[0].priorityScore > report.pages[1].priorityScore);
+});
+
+test("writes a complete JSON corpus report", async () => {
+  const directory = await mkdtemp(path.join(os.tmpdir(), "kb-content-review-"));
+
+  try {
+    const jsonFile = path.join(directory, "review.json");
+    await run([
+      "--as-of",
+      asOf,
+      "--output",
+      path.join(directory, "review.md"),
+      "--json",
+      jsonFile
+    ]);
+
+    const report = JSON.parse(await readFile(jsonFile, "utf8"));
+    assert.equal(report.pages.length, 751);
+    assert.equal(new Set(report.pages.map((page) => page.url)).size, 751);
+    assert.equal(report.summary.totalPages, 751);
+    assert.equal(report.summary.needsReview, 751);
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
 });

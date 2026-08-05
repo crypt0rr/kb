@@ -2,17 +2,16 @@ import fs from "node:fs";
 import path from "node:path";
 import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
-import { parseFrontmatter } from "./frontmatter.mjs";
+import { buildContentIndex, normalizeWeight } from "./content-index.mjs";
 import { normalizeDate } from "./date.mjs";
 import {
   canonicalTag,
-  resolveInheritedFrontmatter,
   tagKey,
   uniqueStrings
 } from "./metadata.mjs";
 
-const root = process.cwd();
-const contentRoot = path.join(root, "content");
+const contentRoot = path.join(process.cwd(), "content");
+const pageCollator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
 export type KbPage = {
   file: string;
@@ -30,6 +29,7 @@ export type KbPage = {
   status?: "active" | "deprecated" | "archived";
   platforms: string[];
   tags: string[];
+  metadataProvenance: Record<string, { source: string; kind: "cascade" | "explicit" }>;
   parentUrl: string | null;
   section: string;
   children: KbPage[];
@@ -39,6 +39,24 @@ export type KbPage = {
 let cache: KbPage[] | null = null;
 let urlMap: Map<string, KbPage> | null = null;
 let refMap: Map<string, KbPage[]> | null = null;
+
+type ContentRecord = {
+  file: string;
+  relativeFile: string;
+  sourceDir: string;
+  slug: string;
+  url: string;
+  section: string;
+  body: string;
+  effectiveFrontmatter: Record<string, any>;
+  metadataProvenance: Record<string, { source: string; kind: "cascade" | "explicit" }>;
+  parentUrl: string | null;
+  children: ContentRecord[];
+};
+
+type ContentIndex = {
+  pages: ContentRecord[];
+};
 
 const md = new MarkdownIt({
   html: true,
@@ -65,30 +83,18 @@ md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
 export function getPages() {
   if (cache) return cache;
 
-  const files = listMarkdown(contentRoot);
-  const allPages = files.map(parsePage);
-  const allByUrl = new Map(allPages.map((page) => [page.url, page]));
-
-  for (const page of allPages) {
-    page.parentUrl = findParentUrl(page.url, allByUrl);
-  }
-
-  for (const page of allPages) {
-    hydratePage(page, resolveInheritedFrontmatter(page, allByUrl));
-  }
-
-  const pages = allPages.filter((page) => page.frontmatter.draft !== true);
+  const index = buildContentIndex({ contentRoot }) as ContentIndex;
+  const pageMap = new Map(index.pages.map((record) => [record.url, toKbPage(record)]));
+  const pages = [...pageMap.values()];
   const byUrl = new Map(pages.map((page) => [page.url, page]));
 
-  for (const page of pages) {
-    page.children = [];
-    page.parentUrl = findParentUrl(page.url, byUrl);
-    if (page.parentUrl) {
-      byUrl.get(page.parentUrl)?.children.push(page);
-    }
-  }
-
-  for (const page of pages) {
+  for (const record of index.pages) {
+    const page = pageMap.get(record.url);
+    if (!page) continue;
+    page.parentUrl = record.parentUrl;
+    page.children = record.children
+      .map((child) => pageMap.get(child.url))
+      .filter((child): child is KbPage => Boolean(child));
     page.children.sort(sortPages);
     page.breadcrumbs = buildBreadcrumbs(page, byUrl);
   }
@@ -133,7 +139,7 @@ export function getPopularTags(limit = 18) {
 }
 
 export function getPagesByTag(tag: string) {
-  const requested = tagSlug(tag);
+  const requested = tagSlug(canonicalTag(tag));
   return getPages()
     .filter((page) => page.tags.some((item) => tagSlug(item) === requested))
     .sort(sortPages);
@@ -177,56 +183,39 @@ export function renderInlineMarkdown(source: string) {
 }
 
 export function tagSlug(tag: string) {
-  return tagKey(tag);
+  return tagKey(canonicalTag(tag));
 }
 
 export function sortPages(a: KbPage, b: KbPage) {
   if (a.weight !== b.weight) return a.weight - b.weight;
-  return a.title.localeCompare(b.title);
+  return pageCollator.compare(a.title, b.title) || pageCollator.compare(a.url, b.url);
 }
 
-function parsePage(file: string): KbPage {
-  const relativeFile = slash(path.relative(contentRoot, file));
-  const raw = fs.readFileSync(file, "utf8");
-  const parsed = parseFrontmatter(raw, relativeFile);
-  const slug = slugFromFile(relativeFile);
-  const url = slug ? `/${slug}/` : "/";
-
+function toKbPage(record: ContentRecord): KbPage {
+  const frontmatter = record.effectiveFrontmatter;
+  const title = normalizeTitle(frontmatter.title) || titleFromSlug(record.slug || "Knowledge Base");
   return {
-    file,
-    relativeFile,
-    sourceDir: slash(path.dirname(relativeFile)),
-    slug,
-    url,
-    title: "",
-    description: "",
-    body: parsed.content.trim(),
-    frontmatter: parsed.data,
-    weight: Number.MAX_SAFE_INTEGER,
-    date: undefined,
-    lastReviewed: undefined,
-    status: undefined,
-    platforms: [],
-    tags: [],
-    parentUrl: null,
-    section: slug.split("/")[0] ?? "",
+    file: record.file,
+    relativeFile: record.relativeFile,
+    sourceDir: record.sourceDir,
+    slug: record.slug,
+    url: record.url,
+    title,
+    description: String(frontmatter.description ?? ""),
+    body: record.body,
+    frontmatter,
+    weight: normalizeWeight(frontmatter.weight),
+    date: normalizeDate(frontmatter.date),
+    lastReviewed: normalizeDate(frontmatter.lastReviewed),
+    status: normalizeStatus(frontmatter.status),
+    platforms: uniqueStrings(frontmatter.platforms),
+    tags: [...new Set(uniqueStrings(frontmatter.tags).map(canonicalTag))],
+    metadataProvenance: record.metadataProvenance,
+    parentUrl: record.parentUrl,
+    section: record.section,
     children: [],
     breadcrumbs: []
   };
-}
-
-function hydratePage(page: KbPage, frontmatter: Record<string, any>) {
-  const title = normalizeTitle(frontmatter.title) || titleFromSlug(page.slug || "Knowledge Base");
-
-  page.frontmatter = frontmatter;
-  page.title = title;
-  page.description = String(frontmatter.description ?? "");
-  page.weight = Number(frontmatter.weight ?? Number.MAX_SAFE_INTEGER);
-  page.date = normalizeDate(frontmatter.date);
-  page.lastReviewed = normalizeDate(frontmatter.lastReviewed);
-  page.status = normalizeStatus(frontmatter.status);
-  page.platforms = uniqueStrings(frontmatter.platforms);
-  page.tags = [...new Set(uniqueStrings(frontmatter.tags).map(canonicalTag))];
 }
 
 function preprocessShortcodes(source: string, page: KbPage) {
@@ -435,34 +424,6 @@ function buildRefMap(pages: KbPage[]) {
   return map;
 }
 
-function listMarkdown(dir: string): string[] {
-  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
-    const absolute = path.join(dir, entry.name);
-    if (entry.isDirectory()) return listMarkdown(absolute);
-    return entry.name.endsWith(".md") ? [absolute] : [];
-  });
-}
-
-function slugFromFile(relativeFile: string) {
-  if (relativeFile === "_index.md") return "";
-  return relativeFile
-    .replace(/\/index\.md$/i, "")
-    .replace(/\/_index\.md$/i, "")
-    .replace(/\.md$/i, "")
-    .replace(/^_index$/i, "");
-}
-
-function findParentUrl(url: string, byUrl: Map<string, KbPage>) {
-  if (url === "/") return null;
-  const parts = url.replace(/^\/|\/$/g, "").split("/");
-  while (parts.length > 0) {
-    parts.pop();
-    const candidate = parts.length ? `/${parts.join("/")}/` : "/";
-    if (byUrl.has(candidate)) return candidate;
-  }
-  return "/";
-}
-
 function titleFromSlug(slug: string) {
   return slug
     .split("/")
@@ -478,7 +439,9 @@ function normalizeTitle(value: unknown) {
 
 function normalizeStatus(value: unknown): KbPage["status"] {
   const status = String(value ?? "").trim().toLowerCase();
-  return status === "deprecated" || status === "archived" ? status : undefined;
+  return status === "active" || status === "deprecated" || status === "archived"
+    ? status
+    : undefined;
 }
 
 function slugify(value: string) {

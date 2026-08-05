@@ -1,6 +1,6 @@
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
-import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
+import { buildContentIndex } from "../src/lib/content-index.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
 import { parseCascade } from "../src/lib/metadata.mjs";
 
@@ -32,11 +32,11 @@ const pageStatuses = new Set(["active", "deprecated", "archived"]);
 const percentShortcodes = new Set(["children", "notice", "resources", "attachments"]);
 const angleShortcodes = new Set(["ref", "youtube", "gist"]);
 
-const markdownFiles = [];
 const contentFiles = [];
 const pages = [];
 const errors = [];
 const allowedWarnings = [];
+const reportedMetadataErrors = new Set();
 const flagged = new Map();
 const resourcePatterns = new Map();
 const policy = await readPolicy();
@@ -83,30 +83,30 @@ async function walk(dir) {
       continue;
     }
 
-    if (entry.name.endsWith(".md")) {
-      markdownFiles.push(absolute);
-    } else {
-      contentFiles.push(absolute);
-    }
+    if (!entry.name.endsWith(".md")) contentFiles.push(absolute);
   }
 }
 
-async function parsePages() {
-  for (const file of markdownFiles) {
-    const raw = await readFile(file, "utf8");
-    const relativeFile = slash(path.relative(contentDir, file));
-    const parsed = parseFrontmatter(raw, relativeFile);
-    const slug = slugFromFile(relativeFile);
+function parsePages() {
+  const index = buildContentIndex({
+    contentRoot: contentDir,
+    includeDrafts: true,
+    strict: false
+  });
 
+  for (const record of index.allPages) {
     pages.push({
-      file,
-      relativeFile,
-      sourceDir: slash(path.dirname(relativeFile)),
-      slug,
-      url: slug ? `/${slug}/` : "/",
-      title: String(parsed.data.title ?? "").trim(),
-      frontmatter: parsed.data,
-      body: parsed.content
+      file: record.file,
+      relativeFile: record.relativeFile,
+      sourceDir: record.sourceDir,
+      slug: record.slug,
+      url: record.url,
+      title: record.title,
+      frontmatter: record.frontmatter,
+      effectiveFrontmatter: record.effectiveFrontmatter,
+      metadataProvenance: record.metadataProvenance,
+      metadataErrors: record.metadataErrors,
+      body: record.body
     });
   }
 }
@@ -119,7 +119,14 @@ function validatePages() {
     matches.push(page.relativeFile);
     urls.set(page.url, matches);
 
-    if (page.url !== "/" && !page.title) {
+    for (const metadataError of page.metadataErrors) {
+      if (!reportedMetadataErrors.has(metadataError)) {
+        reportedMetadataErrors.add(metadataError);
+        errors.push(metadataError);
+      }
+    }
+
+    if (page.url !== "/" && !String(page.frontmatter.title ?? "").trim()) {
       errors.push(`${page.relativeFile}: missing frontmatter title`);
     }
 
@@ -159,7 +166,10 @@ function validatePages() {
       if (!valid) errors.push(`${page.relativeFile}: platforms must be a string or string array`);
     }
 
-    if (page.frontmatter.cascade !== undefined) {
+    if (
+      page.frontmatter.cascade !== undefined &&
+      !page.metadataErrors.some((error) => error.startsWith(`${page.relativeFile}:`))
+    ) {
       try {
         const cascade = parseCascade(page.frontmatter.cascade, page.relativeFile);
         validateCascadeFields(cascade, page.relativeFile);
@@ -167,11 +177,52 @@ function validatePages() {
         errors.push(error.message);
       }
     }
+
+    validateEffectiveMetadata(page);
   }
 
   for (const [url, files] of urls) {
     if (files.length > 1) {
       errors.push(`duplicate URL ${url}: ${files.join(", ")}`);
+    }
+  }
+}
+
+function validateEffectiveMetadata(page) {
+  const metadata = page.effectiveFrontmatter;
+
+  if (metadata.tags !== undefined) {
+    const tags = metadata.tags;
+    const valid =
+      typeof tags === "string" ||
+      (Array.isArray(tags) && tags.every((tag) => typeof tag === "string"));
+    if (!valid) errors.push(`${page.relativeFile}: effective tags must be a string or string array`);
+  }
+
+  if (metadata.weight !== undefined && !Number.isFinite(Number(metadata.weight))) {
+    errors.push(`${page.relativeFile}: effective weight must be numeric`);
+  }
+
+  for (const field of ["date", "lastReviewed"]) {
+    if (metadata[field] !== undefined && !isValidDateValue(metadata[field])) {
+      errors.push(`${page.relativeFile}: effective ${field} must start with a valid YYYY-MM-DD date`);
+    }
+  }
+
+  if (
+    metadata.status !== undefined &&
+    !pageStatuses.has(String(metadata.status).trim().toLowerCase())
+  ) {
+    errors.push(`${page.relativeFile}: effective status must be active, deprecated, or archived`);
+  }
+
+  if (metadata.platforms !== undefined) {
+    const platforms = metadata.platforms;
+    const valid =
+      typeof platforms === "string" ||
+      (Array.isArray(platforms) && platforms.every((platform) => typeof platform === "string"));
+    if (!valid) {
+      errors.push(`${page.relativeFile}: effective platforms must be a string or string array`);
     }
   }
 }
@@ -482,15 +533,6 @@ function normalizeResourceDirectory(value) {
     .split("/")
     .filter((part) => part && part !== "." && part !== "..")
     .join("/");
-}
-
-function slugFromFile(relativeFile) {
-  if (relativeFile === "_index.md") return "";
-  return relativeFile
-    .replace(/\/index\.md$/i, "")
-    .replace(/\/_index\.md$/i, "")
-    .replace(/\.md$/i, "")
-    .replace(/^_index$/i, "");
 }
 
 function slugify(value) {
