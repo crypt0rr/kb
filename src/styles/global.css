@@ -445,6 +445,26 @@ h1 {
   margin: 0;
 }
 
+.health-meta dd {
+  color: var(--green);
+}
+
+.health-repair-needed dd {
+  color: var(--red);
+}
+
+.health-review-due dd {
+  color: var(--amber);
+}
+
+.health-context-light dd {
+  color: var(--cyan);
+}
+
+.health-verified dd {
+  color: var(--green);
+}
+
 .status-badge {
   padding: 2px 6px;
   border: 1px solid currentColor;

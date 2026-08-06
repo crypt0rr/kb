@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getPageConnections, getPageNeighbors, getPages, renderPage } from "@lib/content";
+import { getPageConnections, getPageHealth, getPageNeighbors, getPages, renderPage } from "@lib/content";
 
 export function getStaticPaths() {
   return getPages()
@@ -15,12 +15,14 @@ const { page } = Astro.props;
 const html = renderPage(page);
 const connections = getPageConnections(page);
 const neighbors = getPageNeighbors(page);
+const health = getPageHealth(page);
 ---
 
 <BaseLayout page={page} title={page.title} description={page.description}>
   <article class="content prose" data-pagefind-body set:html={html} />
   <div class="pagefind-meta" aria-hidden="true">
     <span data-pagefind-meta="section" data-pagefind-filter="section">{page.section}</span>
+    <span data-pagefind-meta="health" data-pagefind-filter="health">{health.state}</span>
     {page.tags.map((tag) => <span data-pagefind-filter="tag">{tag}</span>)}
   </div>
 

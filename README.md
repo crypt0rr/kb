@@ -26,6 +26,7 @@ npm run audit:known
 npm run sysinternals:check
 npm run content:review
 npm run content:graph
+npm run content:health
 npm test
 npm run doctor
 npm run build
@@ -72,6 +73,17 @@ references, incoming/outgoing counts, and pages without explicit references.
 Those pages are not necessarily disconnected: the site still provides hierarchy
 and shared-tag navigation. The weekly content review workflow uploads both graph
 formats alongside the freshness queue.
+
+`npm run content:health` produces the maintainer-only Content Trust Ledger at
+`.reports/content-health.md` and `.reports/content-health.json`. It combines the
+freshness queue with metadata provenance, missing link/anchor/asset findings, and
+explicit graph context into four derived states: **Verified**, **Review due**,
+**Repair needed**, and **Context light**. The Markdown report shows the highest
+priority 100 pages; JSON contains the complete corpus. The ledger is report-only:
+it never backfills frontmatter or fails a content change solely because a page is
+due for review. External and protocol URLs are inventoried but are not treated as
+broken internal targets. The scheduled `Content freshness review` workflow runs
+this command weekly or on manual dispatch and uploads both report formats.
 
 Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
 (`active`, `deprecated`, or `archived`), and `platforms` (a string or list of

@@ -3,10 +3,10 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
 import {
-  differenceInDays,
   normalizeDate,
   subtractMonths
 } from "../src/lib/date.mjs";
+import { classifyReviewSignal } from "../src/lib/content-health.mjs";
 
 export const DEFAULT_OUTPUT = ".reports/content-review.md";
 export const DEFAULT_JSON_OUTPUT = ".reports/content-review.json";
@@ -60,47 +60,37 @@ export function classifyReviewPage(
   page,
   { asOf, staleBefore, sectionWeights = DEFAULT_SECTION_WEIGHTS }
 ) {
-  const normalizedAsOf = normalizeDate(asOf);
-  const normalizedStaleBefore = normalizeDate(staleBefore);
-  if (!normalizedAsOf || !normalizedStaleBefore) {
-    throw new Error("Review dates must use valid YYYY-MM-DD values");
-  }
-
-  const effectiveDate = page.lastReviewed ?? page.date ?? null;
-  const missingReview = !page.lastReviewed;
-  const stale = Boolean(effectiveDate && effectiveDate < normalizedStaleBefore);
-  const futureDate = Boolean(effectiveDate && effectiveDate > normalizedAsOf);
+  const review = classifyReviewSignal(page, { asOf, staleBefore });
   const metadataErrors = Array.isArray(page.metadataErrors) ? page.metadataErrors : [];
-  const reasons = [];
-
-  if (missingReview) reasons.push("missing-lastReviewed");
-  if (stale) reasons.push("stale");
-  if (futureDate) reasons.push("future-date");
-  if (metadataErrors.length) reasons.push("metadata-error");
+  const reasons = [...review.reasons];
 
   const priority = calculateReviewPriority(
     {
       ...page,
-      missingReview,
-      stale,
-      futureDate,
+      missingReview: review.missingReview,
+      stale: review.stale,
+      futureDate: review.futureDate,
       metadataErrors,
-      ageDays: effectiveDate ? differenceInDays(normalizedAsOf, effectiveDate) : null
+      ageDays: review.ageDays
     },
     sectionWeights
   );
+
+  if (metadataErrors.length) reasons.push("metadata-error");
 
   return {
     ...page,
     date: page.date ?? null,
     lastReviewed: page.lastReviewed ?? null,
-    effectiveDate,
-    ageDays: effectiveDate ? differenceInDays(normalizedAsOf, effectiveDate) : null,
-    missingReview,
-    stale,
-    futureDate,
+    asOf: review.asOf,
+    staleBefore: review.staleBefore,
+    effectiveDate: review.effectiveDate,
+    ageDays: review.ageDays,
+    missingReview: review.missingReview,
+    stale: review.stale,
+    futureDate: review.futureDate,
     metadataErrors,
-    needsReview: missingReview || stale || metadataErrors.length > 0,
+    needsReview: review.needsReview || metadataErrors.length > 0,
     reasons,
     ...priority
   };

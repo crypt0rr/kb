@@ -6,6 +6,10 @@ import { buildContentIndex, normalizeWeight } from "./content-index.mjs";
 import { buildContentGraph } from "./content-graph.mjs";
 import { normalizeDate } from "./date.mjs";
 import {
+  assessPageHealth,
+  classifyReviewSignal
+} from "./content-health.mjs";
+import {
   canonicalTag,
   tagKey,
   uniqueStrings
@@ -30,6 +34,7 @@ export type KbPage = {
   status?: "active" | "deprecated" | "archived";
   platforms: string[];
   tags: string[];
+  metadataErrors: string[];
   metadataProvenance: Record<string, { source: string; kind: "cascade" | "explicit" }>;
   parentUrl: string | null;
   section: string;
@@ -42,6 +47,41 @@ export type PageConnection = {
   kind: "reference" | "referenced-by" | "parent" | "child" | "related";
   reason: string;
   score: number;
+};
+
+export type PageHealth = {
+  state: "repair-needed" | "review-due" | "context-light" | "verified";
+  label: string;
+  description: string;
+  reasons: string[];
+  metadataErrors: string[];
+  review: {
+    asOf: string;
+    staleBefore: string;
+    date?: string;
+    lastReviewed?: string;
+    effectiveDate: string | null;
+    ageDays: number | null;
+    missingReview: boolean;
+    stale: boolean;
+    futureDate: boolean;
+    needsReview: boolean;
+    reasons: string[];
+  };
+  graph: {
+    incoming: number;
+    outgoing: number;
+    explicitlyIsolated: boolean;
+  };
+  links: {
+    brokenLinks: number;
+    missingAnchors: number;
+    brokenAssets: number;
+    externalLinks: number;
+    protocolLinks: number;
+  };
+  priorityScore: number;
+  priorityTier: string;
 };
 
 let cache: KbPage[] | null = null;
@@ -59,6 +99,7 @@ type ContentRecord = {
   body: string;
   effectiveFrontmatter: Record<string, any>;
   metadataProvenance: Record<string, { source: string; kind: "cascade" | "explicit" }>;
+  metadataErrors: string[];
   parentUrl: string | null;
   children: ContentRecord[];
 };
@@ -76,9 +117,18 @@ type ContentGraphEdge = {
   fragment: string;
 };
 
+type ContentGraphFindings = {
+  brokenLinks: number;
+  missingAnchors: number;
+  brokenAssets: number;
+  externalLinks: number;
+  protocolLinks: number;
+};
+
 type ContentGraph = {
   outgoing: Map<string, ContentGraphEdge[]>;
   incoming: Map<string, ContentGraphEdge[]>;
+  pageFindings: Map<string, ContentGraphFindings>;
   summary: {
     pages: number;
     referenceCount: number;
@@ -86,6 +136,11 @@ type ContentGraph = {
     pagesWithOutgoing: number;
     pagesWithIncoming: number;
     isolatedPages: number;
+    brokenLinks: number;
+    missingAnchors: number;
+    brokenAssets: number;
+    externalLinks: number;
+    protocolLinks: number;
   };
 };
 
@@ -257,8 +312,30 @@ export function getContentGraphSummary() {
     uniqueReferenceCount: 0,
     pagesWithOutgoing: 0,
     pagesWithIncoming: 0,
-    isolatedPages: 0
+    isolatedPages: 0,
+    brokenLinks: 0,
+    missingAnchors: 0,
+    brokenAssets: 0,
+    externalLinks: 0,
+    protocolLinks: 0
   };
+}
+
+export function getPageHealth(
+  page: KbPage,
+  options: { asOf?: string; staleMonths?: number } = {}
+): PageHealth {
+  getPages();
+  const review = classifyReviewSignal(page, {
+    asOf: options.asOf,
+    staleMonths: options.staleMonths
+  });
+  const graph = {
+    incoming: contentGraph?.incoming.get(page.url)?.length ?? 0,
+    outgoing: contentGraph?.outgoing.get(page.url)?.length ?? 0
+  };
+  const linkFindings = contentGraph?.pageFindings.get(page.url) ?? {};
+  return assessPageHealth(page, { review, graph, linkFindings }) as PageHealth;
 }
 
 export function getPageNeighbors(page: KbPage) {
@@ -309,6 +386,7 @@ function toKbPage(record: ContentRecord): KbPage {
     lastReviewed: normalizeDate(frontmatter.lastReviewed),
     status: normalizeStatus(frontmatter.status),
     platforms: uniqueStrings(frontmatter.platforms),
+    metadataErrors: record.metadataErrors,
     tags: [...new Set(uniqueStrings(frontmatter.tags).map(canonicalTag))],
     metadataProvenance: record.metadataProvenance,
     parentUrl: record.parentUrl,
