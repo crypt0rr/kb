@@ -1,5 +1,5 @@
 import type { APIRoute } from "astro";
-import { getPages } from "@lib/content";
+import { getPageHealth, getPages } from "@lib/content";
 
 export const GET: APIRoute = () => {
   const pages = getPages().map((page) => ({
@@ -11,7 +11,8 @@ export const GET: APIRoute = () => {
     date: page.date ?? null,
     lastReviewed: page.lastReviewed ?? null,
     status: page.status ?? "active",
-    platforms: page.platforms
+    platforms: page.platforms,
+    health: getPageHealth(page).state
   }));
 
   return new Response(JSON.stringify(pages), {

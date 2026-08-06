@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import {
   getDescendantLeafCount,
+  getPageHealth,
   getPopularTags,
   getRootSections,
   tagSlug,
@@ -20,6 +21,7 @@ const tags = getPopularTags();
 const canonical = new URL(Astro.url.pathname, "https://kb.offsec.nl").toString();
 const activeUrl = page?.url ?? Astro.url.pathname;
 const currentYear = new Date().getFullYear();
+const health = page ? getPageHealth(page) : null;
 
 function escapeHtml(value: string) {
   return value
@@ -147,10 +149,11 @@ function renderNav(items: KbPage[], level = 0): string {
             <div class="eyebrow">::{page?.section || "index"}</div>
             <h1>{title || "Knowledge Base"}</h1>
             {description && <p>{description}</p>}
-            {page && (page.date || page.lastReviewed || page.status || page.platforms.length) ? (
+            {page && (page.date || page.lastReviewed || page.status || page.platforms.length || health) ? (
               <dl class="page-meta" aria-label="Page metadata">
                 {page.date && <div><dt>Updated</dt><dd>{page.date}</dd></div>}
                 {page.lastReviewed && <div><dt>Reviewed</dt><dd>{page.lastReviewed}</dd></div>}
+                {health && <div class={`health-meta health-${health.state}`} title={health.description}><dt>Trust</dt><dd>{health.label}</dd></div>}
                 {page.status && page.status !== "active" && (
                   <div><dt>Status</dt><dd><span class={`status-badge status-${page.status}`}>{page.status}</span></dd></div>
                 )}

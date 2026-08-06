@@ -38,6 +38,13 @@ jobs:
             --json .reports/content-graph.json \
             --summary-file "$GITHUB_STEP_SUMMARY"
 
+      - name: Generate content trust ledger
+        run: |
+          npm run content:health -- \
+            --output .reports/content-health.md \
+            --json .reports/content-health.json \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
       - name: Upload content review reports
         if: always()
         uses: actions/upload-artifact@v7
@@ -46,5 +53,6 @@ jobs:
           path: |
             .reports/content-review.*
             .reports/content-graph.*
+            .reports/content-health.*
           if-no-files-found: warn
           retention-days: 30

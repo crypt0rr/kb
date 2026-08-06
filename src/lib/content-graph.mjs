@@ -33,24 +33,59 @@ export function buildContentGraph(options = {}) {
   });
   const edges = [];
   const unresolved = [];
+  const pageFindings = new Map(
+    pages.map((page) => [page.url, createEmptyFindings()])
+  );
+  const anchorsByUrl = new Map();
 
   for (const page of pages) {
     const baseDir = path.join(contentRoot, page.sourceDir || "");
+    const findings = pageFindings.get(page.url);
     for (const target of collectMarkdownTargets(page.body)) {
-      if (target.kind !== "link" || !isInternalTarget(target.value)) continue;
+      const rawTarget = String(target.value ?? "").trim();
+      if (!rawTarget || rawTarget.startsWith("javascript:")) continue;
 
-      const parsed = splitTarget(target.value);
+      if (/^https?:\/\//i.test(rawTarget)) {
+        findings.externalLinks += 1;
+        continue;
+      }
+
+      if (!isInternalTarget(rawTarget)) {
+        findings.protocolLinks += 1;
+        continue;
+      }
+
+      const parsed = splitTarget(rawTarget);
       const resolved = target.shortcode
         ? resolver.resolveRef(parsed.path, page)
         : resolver.resolve(parsed.path, baseDir, page);
+
       if (resolved?.file) continue;
       if (!resolved?.page) {
-        unresolved.push({
-          source: page.relativeFile,
-          line: target.line,
-          target: target.value
-        });
+        if (target.kind === "asset") findings.brokenAssets += 1;
+        else {
+          findings.brokenLinks += 1;
+          unresolved.push({
+            source: page.relativeFile,
+            line: target.line,
+            target: rawTarget
+          });
+        }
         continue;
+      }
+
+      if (target.kind === "asset") {
+        findings.brokenAssets += 1;
+        continue;
+      }
+
+      if (parsed.fragment) {
+        let anchors = anchorsByUrl.get(resolved.page.url);
+        if (!anchors) {
+          anchors = collectAnchors(resolved.page.body);
+          anchorsByUrl.set(resolved.page.url, anchors);
+        }
+        if (!anchors.has(slugify(parsed.fragment))) findings.missingAnchors += 1;
       }
 
       edges.push({
@@ -58,7 +93,7 @@ export function buildContentGraph(options = {}) {
         toUrl: resolved.page.url,
         kind: "reference",
         line: target.line,
-        rawTarget: target.value,
+        rawTarget,
         fragment: parsed.fragment
       });
     }
@@ -92,6 +127,13 @@ export function buildContentGraph(options = {}) {
     .sort(comparePages)
     .map((page) => page.url);
   const uniqueEdges = new Set(edges.map((edge) => `${edge.fromUrl}\u0000${edge.toUrl}`));
+  const findingTotals = [...pageFindings.values()].reduce(
+    (totals, findings) => {
+      for (const key of Object.keys(totals)) totals[key] += findings[key];
+      return totals;
+    },
+    createEmptyFindings()
+  );
 
   return {
     contentRoot,
@@ -101,6 +143,7 @@ export function buildContentGraph(options = {}) {
     edges,
     outgoing,
     incoming,
+    pageFindings,
     unresolved,
     summary: {
       pages: pages.length,
@@ -108,9 +151,20 @@ export function buildContentGraph(options = {}) {
       uniqueReferenceCount: uniqueEdges.size,
       pagesWithOutgoing,
       pagesWithIncoming,
-      isolatedPages: isolatedPages.length
+      isolatedPages: isolatedPages.length,
+      ...findingTotals
     },
     isolatedPages
+  };
+}
+
+function createEmptyFindings() {
+  return {
+    brokenLinks: 0,
+    missingAnchors: 0,
+    brokenAssets: 0,
+    externalLinks: 0,
+    protocolLinks: 0
   };
 }
 
