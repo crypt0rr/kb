@@ -1,6 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getPageNeighbors, getPages, getRelatedPages, renderPage } from "@lib/content";
+import { getPageConnections, getPageNeighbors, getPages, renderPage } from "@lib/content";
 
 export function getStaticPaths() {
   return getPages()
@@ -13,7 +13,7 @@ export function getStaticPaths() {
 
 const { page } = Astro.props;
 const html = renderPage(page);
-const relatedPages = getRelatedPages(page);
+const connections = getPageConnections(page);
 const neighbors = getPageNeighbors(page);
 ---
 
@@ -41,13 +41,15 @@ const neighbors = getPageNeighbors(page);
     </nav>
   )}
 
-  {relatedPages.length > 0 && (
+  {connections.length > 0 && (
     <section class="related-pages" aria-labelledby="related-pages-title">
-      <h2 id="related-pages-title">Related notes</h2>
+      <h2 id="related-pages-title">Explore from here</h2>
+      <p class="connection-intro">Follow references, sections, and shared topics to continue the investigation.</p>
       <div class="related-grid">
-        {relatedPages.map((related) => (
+        {connections.map(({ page: related, reason }) => (
           <a href={related.url}>
-            {related.title}
+            <small>{reason}</small>
+            <strong>{related.title}</strong>
             {related.description && <p>{related.description}</p>}
           </a>
         ))}
