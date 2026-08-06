@@ -916,10 +916,22 @@ h1 {
   font-size: 20px;
 }
 
+.connection-intro {
+  margin: -4px 0 14px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .related-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 10px;
+}
+
+.related-pages a strong {
+  display: block;
+  color: var(--text);
 }
 
 .related-pages p {

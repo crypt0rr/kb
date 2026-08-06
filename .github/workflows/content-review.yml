@@ -31,11 +31,20 @@ jobs:
             --json .reports/content-review.json \
             --summary-file "$GITHUB_STEP_SUMMARY"
 
+      - name: Generate content relationship graph
+        run: |
+          npm run content:graph -- \
+            --output .reports/content-graph.md \
+            --json .reports/content-graph.json \
+            --summary-file "$GITHUB_STEP_SUMMARY"
+
       - name: Upload content review reports
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: content-review-queue
-          path: .reports/content-review.*
+          path: |
+            .reports/content-review.*
+            .reports/content-graph.*
           if-no-files-found: warn
           retention-days: 30

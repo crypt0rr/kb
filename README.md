@@ -25,6 +25,7 @@ npm run check:links
 npm run audit:known
 npm run sysinternals:check
 npm run content:review
+npm run content:graph
 npm test
 npm run doctor
 npm run build
@@ -63,6 +64,14 @@ scheduled `Content freshness review` workflow uploads the same reports weekly
 and adds a summary to the workflow run. Markdown shows the oldest 100 queue
 entries by default (`--limit` changes this); JSON contains the complete corpus,
 field provenance, and priority data for future tooling.
+
+`npm run content:graph` builds the same canonical page index into a deterministic
+relationship report at `.reports/content-graph.md` and a complete
+`.reports/content-graph.json`. It includes explicit Markdown and `ref` shortcode
+references, incoming/outgoing counts, and pages without explicit references.
+Those pages are not necessarily disconnected: the site still provides hierarchy
+and shared-tag navigation. The weekly content review workflow uploads both graph
+formats alongside the freshness queue.
 
 Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
 (`active`, `deprecated`, or `archived`), and `platforms` (a string or list of

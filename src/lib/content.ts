@@ -3,6 +3,7 @@ import path from "node:path";
 import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import { buildContentIndex, normalizeWeight } from "./content-index.mjs";
+import { buildContentGraph } from "./content-graph.mjs";
 import { normalizeDate } from "./date.mjs";
 import {
   canonicalTag,
@@ -36,9 +37,17 @@ export type KbPage = {
   breadcrumbs: KbPage[];
 };
 
+export type PageConnection = {
+  page: KbPage;
+  kind: "reference" | "referenced-by" | "parent" | "child" | "related";
+  reason: string;
+  score: number;
+};
+
 let cache: KbPage[] | null = null;
 let urlMap: Map<string, KbPage> | null = null;
 let refMap: Map<string, KbPage[]> | null = null;
+let contentGraph: ContentGraph | null = null;
 
 type ContentRecord = {
   file: string;
@@ -56,6 +65,28 @@ type ContentRecord = {
 
 type ContentIndex = {
   pages: ContentRecord[];
+};
+
+type ContentGraphEdge = {
+  fromUrl: string;
+  toUrl: string;
+  kind: "reference";
+  line: number;
+  rawTarget: string;
+  fragment: string;
+};
+
+type ContentGraph = {
+  outgoing: Map<string, ContentGraphEdge[]>;
+  incoming: Map<string, ContentGraphEdge[]>;
+  summary: {
+    pages: number;
+    referenceCount: number;
+    uniqueReferenceCount: number;
+    pagesWithOutgoing: number;
+    pagesWithIncoming: number;
+    isolatedPages: number;
+  };
 };
 
 const md = new MarkdownIt({
@@ -84,6 +115,7 @@ export function getPages() {
   if (cache) return cache;
 
   const index = buildContentIndex({ contentRoot }) as ContentIndex;
+  const graph = buildContentGraph({ contentRoot, index }) as ContentGraph;
   const pageMap = new Map(index.pages.map((record) => [record.url, toKbPage(record)]));
   const pages = [...pageMap.values()];
   const byUrl = new Map(pages.map((page) => [page.url, page]));
@@ -103,6 +135,7 @@ export function getPages() {
   cache = pages;
   urlMap = byUrl;
   refMap = buildRefMap(pages);
+  contentGraph = graph;
   return pages;
 }
 
@@ -159,6 +192,73 @@ export function getRelatedPages(page: KbPage, limit = 4) {
     .sort((a, b) => b.score - a.score || sortPages(a.candidate, b.candidate))
     .slice(0, limit)
     .map(({ candidate }) => candidate);
+}
+
+export function getPageConnections(page: KbPage, limit = 8): PageConnection[] {
+  getPages();
+  const candidates = new Map<string, PageConnection>();
+  const kindOrder = new Map<PageConnection["kind"], number>([
+    ["reference", 0],
+    ["referenced-by", 1],
+    ["child", 2],
+    ["parent", 3],
+    ["related", 4]
+  ]);
+
+  const add = (
+    candidate: KbPage | undefined,
+    kind: PageConnection["kind"],
+    reason: string,
+    score: number
+  ) => {
+    if (!candidate || candidate.url === page.url || candidate.frontmatter.hidden === true) return;
+    const existing = candidates.get(candidate.url);
+    if (!existing || score > existing.score) {
+      candidates.set(candidate.url, { page: candidate, kind, reason, score });
+    }
+  };
+
+  for (const edge of contentGraph?.outgoing.get(page.url) ?? []) {
+    add(urlMap?.get(edge.toUrl), "reference", "Explicit reference", 100);
+  }
+  for (const edge of contentGraph?.incoming.get(page.url) ?? []) {
+    add(urlMap?.get(edge.fromUrl), "referenced-by", "References this note", 90);
+  }
+
+  if (page.parentUrl && page.parentUrl !== "/") {
+    add(urlMap?.get(page.parentUrl), "parent", "Parent section", 70);
+  }
+  for (const child of page.children) {
+    add(child, "child", "Child note", 65);
+  }
+
+  for (const related of getRelatedPages(page, Math.max(limit * 2, 12))) {
+    const sharedTags = related.tags.filter((tag) =>
+      page.tags.some((pageTag) => tagSlug(pageTag) === tagSlug(tag))
+    ).length;
+    add(related, "related", "Shared tags", 20 + sharedTags);
+  }
+
+  return [...candidates.values()]
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        (kindOrder.get(a.kind) ?? 99) - (kindOrder.get(b.kind) ?? 99) ||
+        sortPages(a.page, b.page)
+    )
+    .slice(0, Math.max(1, limit));
+}
+
+export function getContentGraphSummary() {
+  getPages();
+  return contentGraph?.summary ?? {
+    pages: 0,
+    referenceCount: 0,
+    uniqueReferenceCount: 0,
+    pagesWithOutgoing: 0,
+    pagesWithIncoming: 0,
+    isolatedPages: 0
+  };
 }
 
 export function getPageNeighbors(page: KbPage) {
