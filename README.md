@@ -104,9 +104,14 @@ values, including the legacy `tags= [...]` form, and the site normalizes known
 tag aliases such as `Wirehark` to `Wireshark`.
 
 Use `npm run sysinternals:check` to compare the published Sysinternals files
-with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to
-download missing or changed root and ARM64 files. The sync workflow skips live
-directories, marker files, and files over the 25MB Cloudflare Pages limit.
+with `https://live.sysinternals.com/`. The check uses the reviewed
+`scripts/sysinternals-manifest.json` SHA-256 inventory, so an upstream listing
+change requires an explicit `npm run sysinternals:refresh-manifest` review
+before syncing. Use `npm run sysinternals:sync` to download missing or changed
+root and ARM64 files; every replacement is checked against the manifest hash
+before the atomic rename. Manifest refresh downloads temporary copies only; it
+does not modify the mirrored files. The sync workflow skips live directories,
+marker files, and files over the 25MB Cloudflare Pages limit.
 
 ## Security Notes
 

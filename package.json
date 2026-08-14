@@ -19,6 +19,7 @@
     "content:health": "node scripts/content-health.mjs",
     "test": "node --test test/*.test.mjs",
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
+    "sysinternals:refresh-manifest": "node scripts/sync-sysinternals.mjs --refresh-manifest",
     "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
     "smoke": "node scripts/smoke-build.mjs",
     "validate": "npm run doctor && npm test && npm run check && npm run check:content && npm run check:links && npm run content:graph && npm run content:health && npm run build && npm run check:assets && npm run smoke && npm run audit:known"

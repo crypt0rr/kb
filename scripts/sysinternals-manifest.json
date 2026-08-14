@@ -1,0 +1,934 @@
+{
+  "schemaVersion": 1,
+  "source": "https://live.sysinternals.com",
+  "files": {
+    "about_this_site.txt": {
+      "size": 670,
+      "sha256": "0169b7ce66dec5858ad29d1b85e375db81bf90c1c83d2df2e72c1676bd9c841f"
+    },
+    "accesschk.exe": {
+      "size": 1468320,
+      "sha256": "69bd46e5dba2767a63408731b0c7842b9ac37aeb67586682efce4cc51057d793"
+    },
+    "accesschk64.exe": {
+      "size": 810416,
+      "sha256": "843b6b1d275946f2c4569169c10c50eec0968c4b2f0bed68c50e79f828fab9f3"
+    },
+    "AccessEnum.exe": {
+      "size": 264088,
+      "sha256": "b8a8524de389e244b57baa72e8878869436e8addffaf11621ec7a572dbf5c602"
+    },
+    "AdExplorer.chm": {
+      "size": 50379,
+      "sha256": "a89a59be46f8511e385427c942d352429072b5a83d501ca08463942abcf8e5a3"
+    },
+    "ADExplorer.exe": {
+      "size": 1259968,
+      "sha256": "c5c5363d675d1bd6797081b8b7afd7fb209960a45fe18202d64d36b72a013866"
+    },
+    "ADExplorer64.exe": {
+      "size": 661912,
+      "sha256": "e451287843b3927c6046eaabd3e22b929bc1f445eec23a73b1398b115d02e4fb"
+    },
+    "ADInsight.chm": {
+      "size": 401616,
+      "sha256": "7f9c32bd71e48c6cd1aecbaeab7031a4604fc52651272e1446b6773fd6d5b5da"
+    },
+    "ADInsight.exe": {
+      "size": 5106056,
+      "sha256": "032dc03fa3e7b3df5714aea96ddacc0da1e4d41ef4d24de2f2103ad03932f194"
+    },
+    "ADInsight64.exe": {
+      "size": 1772416,
+      "sha256": "38ff6bcb91bd6cbceec26bc60007c60031d9f35181fbae851bd239f361cf38db"
+    },
+    "adrestore.exe": {
+      "size": 349576,
+      "sha256": "903caf518c94a78b21b9a8d53920bc3a2a21b223ea5929ebc790eff2e23c843e"
+    },
+    "adrestore64.exe": {
+      "size": 450952,
+      "sha256": "ee55c681013d173edd53f5add0f964f8242ed0783f42bd1b5c4168b27594745f"
+    },
+    "ARM64/accesschk64a.exe": {
+      "size": 872368,
+      "sha256": "7aca1fe50b561531e56c9fe0a44bfd57db68928bb420d788a1f929abc59e056d"
+    },
+    "ARM64/AdExplorer.chm": {
+      "size": 50379,
+      "sha256": "a89a59be46f8511e385427c942d352429072b5a83d501ca08463942abcf8e5a3"
+    },
+    "ARM64/ADExplorer64a.exe": {
+      "size": 719808,
+      "sha256": "81fb5465a68f6c2ff9f43dedc1b03feac95408e4572c80ecacbfda05fdb249f6"
+    },
+    "ARM64/ADInsight.chm": {
+      "size": 401616,
+      "sha256": "7f9c32bd71e48c6cd1aecbaeab7031a4604fc52651272e1446b6773fd6d5b5da"
+    },
+    "ARM64/ADInsight64a.exe": {
+      "size": 1817472,
+      "sha256": "d1e727047c08073a08ea6fc365c18ee8f5837496dac7b0f78df56d10a6f22bbc"
+    },
+    "ARM64/adrestore64a.exe": {
+      "size": 532872,
+      "sha256": "38b5e90e10ac3bb76eb485db070334e2b2d2ad29e9e9f9433fa27d6f9fb718d1"
+    },
+    "ARM64/Autologon64a.exe": {
+      "size": 524880,
+      "sha256": "b1d7f3e4aadaca6e6cb8a9ad612931a75394588b4012f7bf38e734d27e324bbd"
+    },
+    "ARM64/Autoruns64a.exe": {
+      "size": 2075968,
+      "sha256": "0140f164976d62dbc115865ba0fb3f404fdd752c2e0f6b589e87a8d74ca7bd6f"
+    },
+    "ARM64/autorunsc64a.exe": {
+      "size": 1494336,
+      "sha256": "13f7ee6f51ab8d42a1d1e6812c00e174e88802412fbeaed98582c3cb443ab8ee"
+    },
+    "ARM64/Clockres64a.exe": {
+      "size": 519544,
+      "sha256": "a6f03297694432c9ebf65565ce8b51cab35ce283f294c008ba951c453f09f571"
+    },
+    "ARM64/Contig64a.exe": {
+      "size": 269208,
+      "sha256": "d08054dd9ab4b74ccd92ccfc5c0deaa4fde6115adda2c347f5c0b539c4156b59"
+    },
+    "ARM64/Coreinfo64a.exe": {
+      "size": 498480,
+      "sha256": "e7a3c5cd591d62815bbcbf97f1be7f8f58ff93e0bc069ff8d519d87d1e03e536"
+    },
+    "ARM64/CoreinfoEx64a.exe": {
+      "size": 1066824,
+      "sha256": "73d87e8fde2dcf6c0aba719f17e5ba8fda2ff84de959244dc095c8915d0bb2fe"
+    },
+    "ARM64/Dbgview.chm": {
+      "size": 68539,
+      "sha256": "e439d04d29c173ad2b4ffbaa74ce6d2312f0ed9d92ef34abdbc58d41b9b0a1cc"
+    },
+    "ARM64/Dbgview64a.exe": {
+      "size": 765280,
+      "sha256": "2d83da4db23ccb7b57f55d35a2666d40bfc5aa039a72af723e42ec7dbf8bd341"
+    },
+    "ARM64/dbgviewcli64a.exe": {
+      "size": 484664,
+      "sha256": "33b4f93a65b1460b9c839fdf1dae35334a3170cdb637f6b9a2e0dabffc7d7a9e"
+    },
+    "ARM64/Disk2vhd.chm": {
+      "size": 40717,
+      "sha256": "56b375c7db8525c93a308bb095343b74ce85a01355ff486afa6ffbdf1471a7a9"
+    },
+    "ARM64/disk2vhd64a.exe": {
+      "size": 1449336,
+      "sha256": "416d300b4445b7715cf5aeebea128e80a46097443e3122745ad17c3d611c3b6a"
+    },
+    "ARM64/diskext64a.exe": {
+      "size": 522120,
+      "sha256": "fc9de527dc6f947b966f923ffc1c7ad87f145cc39981dcb2ac499f703896010e"
+    },
+    "ARM64/DiskView64a.exe": {
+      "size": 601992,
+      "sha256": "64f59c196d5ffb4bfc84459811c6e5a00aabbdaf616c2699e0b51e170db602ba"
+    },
+    "ARM64/du64a.exe": {
+      "size": 549240,
+      "sha256": "6afec85a360967bf525dbb5eaaec0f349ee4178ed2ce0bb657321645c82703ee"
+    },
+    "ARM64/Eula.txt": {
+      "size": 7490,
+      "sha256": "8329bcbadc7f81539a4969ca13f0be5b8eb7652b912324a1926fc9bfb6ec005a"
+    },
+    "ARM64/FindLinks64a.exe": {
+      "size": 195968,
+      "sha256": "35bb745abc6aeb1911881587d77cb862256fbc473cdca9bae133f2d361b1ffce"
+    },
+    "ARM64/handle64a.exe": {
+      "size": 367512,
+      "sha256": "21bd4ed38f08015f39f1653a1a4dccf19ce06cd44ee32720488a9096a306080d"
+    },
+    "ARM64/hex2dec64a.exe": {
+      "size": 611208,
+      "sha256": "f0c30e9a5676d5a4ab6d0e7e89158e1c83d45f1de80b77e4ed78994c4b4858a5"
+    },
+    "ARM64/junction64a.exe": {
+      "size": 528256,
+      "sha256": "9ca690b05e624e49feafc213a446107d512f7d1bf1bb6115ca4230636fd731b6"
+    },
+    "ARM64/LoadOrd64a.exe": {
+      "size": 531848,
+      "sha256": "9528c3629d3076124429cdaa14a2f188f00a36fca3621716a0bafd306d56807c"
+    },
+    "ARM64/LoadOrdC64a.exe": {
+      "size": 528760,
+      "sha256": "0e07da98d82bfcf623aa467a1ad16ee3a25340336efd3cae13cb6a28b0c4c67b"
+    },
+    "ARM64/logonsessions64a.exe": {
+      "size": 647568,
+      "sha256": "0f393120bff40875c9ef1df3fc2558de2bb9d46b9b1d99fd06fba73e68c5e0e6"
+    },
+    "ARM64/movefile64a.exe": {
+      "size": 519560,
+      "sha256": "937ba12bcbf3e04565dbb160c3bb91c3f2201689c0ef7d921eca4ba49e04d846"
+    },
+    "ARM64/notmyfault64a.exe": {
+      "size": 789280,
+      "sha256": "bfcd75703bfab559d4acee3887078a3841e7530f49a631e72b02bb5730a0927f"
+    },
+    "ARM64/notmyfaultc64a.exe": {
+      "size": 587552,
+      "sha256": "e5d8a99b609bb7b5015a8e1f8ca901e68066ebe73e2c0c1c07b6d0d35821f2d5"
+    },
+    "ARM64/pendmoves64a.exe": {
+      "size": 521088,
+      "sha256": "4af9ee369d72bc1f2c2c39cfd6460ac944ef7ee6d74a9e0a3445a8a03c1133e2"
+    },
+    "ARM64/pipelist64a.exe": {
+      "size": 521080,
+      "sha256": "5dc01061065c94b1f754f3fa533218378f8f2086c199a29bae734dde3f2755fb"
+    },
+    "ARM64/procdump64a.exe": {
+      "size": 746816,
+      "sha256": "8882c08d39d89fd3c5e77a2a0ccfebca69d65e960fbac44a0e6c6ce3f22bbe59"
+    },
+    "ARM64/procexp.chm": {
+      "size": 72154,
+      "sha256": "36daeb8eb206d1ca5a0933fffcb07645c9aa68a037d64839d3dbc692c403e76f"
+    },
+    "ARM64/procexp64a.exe": {
+      "size": 2456856,
+      "sha256": "3373e0461a8421c1c92c5b07c8b258ba09a722ebb1f082fd75f43c40ed8ef839"
+    },
+    "ARM64/Procmon64a.exe": {
+      "size": 2291992,
+      "sha256": "dc0612d07cebc1de7017266bde2d35f622a372989893e5b3de922be150b906c7"
+    },
+    "ARM64/PsExec64a.exe": {
+      "size": 781712,
+      "sha256": "1166713a1866e05dfa31ca424d6b30472d6f215484a90ea1bd88871db5eb5da5"
+    },
+    "ARM64/psfile64a.exe": {
+      "size": 251264,
+      "sha256": "b8fbbc63504377530e07adbf8c61c7da73b4c37872282abbd738b14109963f0e"
+    },
+    "ARM64/PsGetsid64a.exe": {
+      "size": 465344,
+      "sha256": "e3f8bccaa5cf7b9cc5d4fd1e2edc56fc55a6048be4aee22f3c962f96574d8d67"
+    },
+    "ARM64/PsInfo64a.exe": {
+      "size": 495552,
+      "sha256": "74292ebe6db4989078a2c5ea289311b28ce61c0adabd093ff1502f61557ac971"
+    },
+    "ARM64/pskill64a.exe": {
+      "size": 438704,
+      "sha256": "b741465cdb7437248f57951f0340b6616ee7b6a520368b04bae395be51e6c3d1"
+    },
+    "ARM64/pslist64a.exe": {
+      "size": 253848,
+      "sha256": "92ba21109146d5c145f890846178217021ec69d5eabcff236c554b95ff7323e3"
+    },
+    "ARM64/psloglist64a.exe": {
+      "size": 343960,
+      "sha256": "56baa55a3dc61d9fd3b2f173edf73d052850ca486a47a0164b064eae2b13ebe6"
+    },
+    "ARM64/pspasswd64a.exe": {
+      "size": 235464,
+      "sha256": "da06554b0cf1083a91c21fcdad713966644cfd0eae3452430114d52607fef5bc"
+    },
+    "ARM64/psping64a.exe": {
+      "size": 355632,
+      "sha256": "1776f1715bc6b859b9e4fe4fd920f9d3404841ffc94f0c668e77dcb101d2b248"
+    },
+    "ARM64/PsService64a.exe": {
+      "size": 286104,
+      "sha256": "9956583c10e23363e5e8d628e62f3ff631578710bc88fe5abdb5894a7df9d3e3"
+    },
+    "ARM64/pssuspend64a.exe": {
+      "size": 441800,
+      "sha256": "b7f7d9b9848cb7e00c7d22478da8f549b6436c5f2fb15d6680a345b2d50ba5a9"
+    },
+    "ARM64/RAMMap64a.exe": {
+      "size": 414792,
+      "sha256": "5847b681b59b91ee35e7d7ad9ab4c116e4d234b8e2a6cc772b4b2ce204c7672e"
+    },
+    "ARM64/RegDelNull64a.exe": {
+      "size": 535944,
+      "sha256": "d48b577efeb48907aaecbdda134f36d489a9569cd83bf5e1130a6237519b522c"
+    },
+    "ARM64/ru64a.exe": {
+      "size": 531304,
+      "sha256": "7761987b65fb793567a46075745aafb18d212df21c65b614ff03bb50a5061c8a"
+    },
+    "ARM64/sdelete64a.exe": {
+      "size": 237080,
+      "sha256": "1dd7e9e0bfddb937e2bb554d69638bd2bcf0731a000dc756c03b88d37792d9a1"
+    },
+    "ARM64/sigcheck64a.exe": {
+      "size": 526408,
+      "sha256": "bf28d0f8e81c2d2331c33f7bf56b4e4c222adfe8d4f7e0c947d471e9873e3cfa"
+    },
+    "ARM64/streams64a.exe": {
+      "size": 524152,
+      "sha256": "6b3ed15ee3ce5cde063c46c93dfe80c84acf321913a443fa60c44064e41e49b2"
+    },
+    "ARM64/strings64a.exe": {
+      "size": 525704,
+      "sha256": "128ddf146edb4c72b48588a57f5fdc4528b870ba0fb2b99bce500452ae436912"
+    },
+    "ARM64/sync64a.exe": {
+      "size": 525680,
+      "sha256": "8fe3a1cf293a43522fd6ec3718e5f680beb062753f059ba22fab1116450dbe46"
+    },
+    "ARM64/Sysmon64a.exe": {
+      "size": 3141024,
+      "sha256": "440fca4bf161603fded8077313cb0f2d67795f1c4011516686fcd7a63dfaca49"
+    },
+    "ARM64/tcpvcon64a.exe": {
+      "size": 236952,
+      "sha256": "0e85278ca6617dcd61af1e84dea1e3049be0539ca492b5731ddf85545db00390"
+    },
+    "ARM64/tcpview.chm": {
+      "size": 15932,
+      "sha256": "37b11010a35761703e914dfd88fb26776dbfb29531934244a3bab7b6219a764f"
+    },
+    "ARM64/tcpview64a.exe": {
+      "size": 1043864,
+      "sha256": "fca26bd5a35267a2ff19317c9e4f7642517d9d8795dcf50c65ff036298d6255b"
+    },
+    "ARM64/Vmmap.chm": {
+      "size": 51747,
+      "sha256": "3a7618d52c9c0b50de7e9d263fd2afc017d0d446393263d8853453e15d00f551"
+    },
+    "ARM64/vmmap64a.exe": {
+      "size": 1529880,
+      "sha256": "9d258bf8db6b9d35e953d16c8e2490bf0217cb75bec203287da1c2cc31f0a277"
+    },
+    "ARM64/whois64a.exe": {
+      "size": 615296,
+      "sha256": "55f1c2c79187e34e9926f009b7c04f68395d53147097341e313b3598d71ec88c"
+    },
+    "ARM64/Winobj64a.exe": {
+      "size": 1881488,
+      "sha256": "3931e16b34298ff9acfb3af0012b3f739f1a465775fdf047c8831f72d27bc076"
+    },
+    "ARM64/ZoomIt64a.exe": {
+      "size": 8226104,
+      "sha256": "2066b5d05a46354e07d700f7580f4bae86ba85d67c11e35850f5f481fd95f248"
+    },
+    "Autologon.exe": {
+      "size": 341072,
+      "sha256": "df6589654abfacb1490a9f19e9c0e32623e73f2a1b852e8a8379b7873d03a33a"
+    },
+    "Autologon64.exe": {
+      "size": 441224,
+      "sha256": "5d96bbc4e5b726d87c7cf547f5fe98f8f05434ec2130bd60cbf5671fd3a7381b"
+    },
+    "autoruns.chm": {
+      "size": 24592,
+      "sha256": "ecb58342290940a5eb6b72be6faa1d0afeec9df5898df3e026d75b7b08bd8f9a"
+    },
+    "Autoruns.exe": {
+      "size": 1809728,
+      "sha256": "38519c3ae945f678261327d05efe8fb0be44afb91236bd71199e20e1151ff157"
+    },
+    "Autoruns64.exe": {
+      "size": 1931616,
+      "sha256": "d8deb836731fdf760898b377347ca4ff57e750c09f07e2cbaab43b0060a89dce"
+    },
+    "autorunsc.exe": {
+      "size": 1317184,
+      "sha256": "a2394a11272ae38e7fb6ea862e783daa6d704a3d9c73a51dfe978b7692df6b1f"
+    },
+    "autorunsc64.exe": {
+      "size": 1460024,
+      "sha256": "093d1c6b91d280c9644635c667753e0aa0e78c656eb4082147bf30364787d96f"
+    },
+    "Bginfo.exe": {
+      "size": 2198072,
+      "sha256": "599b391980a5c9cbadd6c70ba3d5a5258db8b9d87c68b3fe587d9dc84effdf63"
+    },
+    "Bginfo64.exe": {
+      "size": 2773560,
+      "sha256": "ee2c4850e62277e5efded460afd708af22007ef5f2c2c9dae7a699fc3de346d0"
+    },
+    "Cacheset.exe": {
+      "size": 424368,
+      "sha256": "43203ae51a144e4ff92d4110c93af12b7c9525a1f5435efedfd3499dc12d16c2"
+    },
+    "Cacheset64.exe": {
+      "size": 557488,
+      "sha256": "60420a39645573437fb0e085361ef2d23c08e75b85d7836213d959a4904e9bd8"
+    },
+    "Clockres.exe": {
+      "size": 338808,
+      "sha256": "4db4539c62f448c5cf563cdd02cd6d349e9a5f66ba1d757a66c28c51effeb0a5"
+    },
+    "Clockres64.exe": {
+      "size": 440184,
+      "sha256": "b594b8b9e5d6a706a33ae2e4c7b37c5aafee9bef0b3e156205f65ecdaab94fcd"
+    },
+    "Contig.exe": {
+      "size": 236944,
+      "sha256": "261a8e5e9c08e835c42aec964ca27ae63357a4ae435cc91a6c024ea6a8a55d74"
+    },
+    "Contig64.exe": {
+      "size": 285632,
+      "sha256": "063473719cdffa94ef10c380dee3eacf148cc6643a3a8c2c7cc214a180ed2826"
+    },
+    "Coreinfo.exe": {
+      "size": 967480,
+      "sha256": "a8ad5cbd2d57979b370053ebedb4508eb8da3c9c423f6989b3ac07d231c73ea5"
+    },
+    "Coreinfo64.exe": {
+      "size": 517408,
+      "sha256": "4be1e87e17499e1237d0a444aae8e775ca876f983862c5fe27e376cd4bce4030"
+    },
+    "CoreinfoEx.exe": {
+      "size": 2426144,
+      "sha256": "5b2168c9b541d3cc492e0a1deae11249ccbdb721306a0e0c47fe8e6254264a42"
+    },
+    "CoreinfoEx64.exe": {
+      "size": 1016608,
+      "sha256": "50e3237737208c97248449042739c25c5b80c92dfd648743f04e50676aa2c82e"
+    },
+    "CPUSTRES.EXE": {
+      "size": 2181688,
+      "sha256": "5497724e096b66788e284bc2c90f480a1dc8b79eab6b616f7f5615f62a651519"
+    },
+    "CPUSTRES64.EXE": {
+      "size": 2862648,
+      "sha256": "85eab30be67a554ccda5e708d6820b84b74afc9d4da517bd471d95cab23380d6"
+    },
+    "ctrl2cap.exe": {
+      "size": 255544,
+      "sha256": "ec4d9c4fec56f118ef4992e0e81c36a7b7ea7223b511555532a4bfadfdb16a73"
+    },
+    "Dbgview.chm": {
+      "size": 68539,
+      "sha256": "e439d04d29c173ad2b4ffbaa74ce6d2312f0ed9d92ef34abdbc58d41b9b0a1cc"
+    },
+    "Dbgview.exe": {
+      "size": 682808,
+      "sha256": "4c70c68cddb2ba533540a83078aadb814a14c94f3297f7c46bc58ca158b3a3a4"
+    },
+    "dbgview64.exe": {
+      "size": 761184,
+      "sha256": "5144e08b5e54005a42d98fe0c87fb4c35201f5606944d85b5c649a53b0aef09c"
+    },
+    "dbgviewcli.exe": {
+      "size": 444256,
+      "sha256": "2d3128bf2338fa25873173f265504515801d1e76d6215efa511e00dc825c3cf7"
+    },
+    "dbgviewcli64.exe": {
+      "size": 488800,
+      "sha256": "7954a8bbeb1f650bb5d2b8c4c6b642fd4585319d2092433ca841c7d672a4634b"
+    },
+    "Desktops.exe": {
+      "size": 184720,
+      "sha256": "dcdc6ec773103d01ec77cc18e4014a907a3c118743191cad71aad3c659e29ba7"
+    },
+    "Desktops64.exe": {
+      "size": 217992,
+      "sha256": "cd88a57f574aa040d9e5dec01b35bd06cf8ac6c0456c47c16bcb380e87ca3565"
+    },
+    "Disk2vhd.chm": {
+      "size": 40717,
+      "sha256": "56b375c7db8525c93a308bb095343b74ce85a01355ff486afa6ffbdf1471a7a9"
+    },
+    "disk2vhd.exe": {
+      "size": 1399184,
+      "sha256": "7c2ca32561cc5d41606b86ebadd0a6a526f669a818fa40ea2023eaed02efc4f7"
+    },
+    "disk2vhd64.exe": {
+      "size": 1442184,
+      "sha256": "029a261ae3aeab1f8e8eadaa8d2109ee38729936ad44b03eff8f16f075a3d97a"
+    },
+    "diskext.exe": {
+      "size": 340872,
+      "sha256": "21ac7976db678484dc7823e58d5200aabb01df3556be54d7dbdb5427d7b87ccd"
+    },
+    "diskext64.exe": {
+      "size": 442744,
+      "sha256": "f916c910116a497d80b443a11a10c4ec12ddfe060f29912e3c913b36fe7c4f2c"
+    },
+    "Diskmon.exe": {
+      "size": 493432,
+      "sha256": "b9b8d53e1c52fa35b9d761acdaa64316683c3143f89de7ee1ad47c5c4a2074e1"
+    },
+    "Diskmon64.exe": {
+      "size": 634760,
+      "sha256": "5c30df87f397e06aec59af95a0c2606401a81983295f0978fdc2afc2de9859cd"
+    },
+    "DiskView.exe": {
+      "size": 920456,
+      "sha256": "e0cfcb1f7037a43dc02b4a75b957b1aa866fce57a34c7441a65dd503ff8f8f52"
+    },
+    "DiskView64.exe": {
+      "size": 515976,
+      "sha256": "120ba05e5447a2d51589ab7d53c57ed769bfcf10a3f3a83e2c9740776da37ede"
+    },
+    "du.exe": {
+      "size": 359784,
+      "sha256": "f23c10c525f2273d53293c56821b7095732ace091b7825ed7b21bf79b05d52a9"
+    },
+    "du64.exe": {
+      "size": 465784,
+      "sha256": "84d4b083a25d9365a969b7de20a0bdc7f1ae04f5ce3eefc4517ca1b13c308d1d"
+    },
+    "efsdump.exe": {
+      "size": 361336,
+      "sha256": "b78823c9c7a52b043f5fa6de376df685d6d8308c89973b667792987953ce3191"
+    },
+    "Eula.txt": {
+      "size": 7490,
+      "sha256": "8329bcbadc7f81539a4969ca13f0be5b8eb7652b912324a1926fc9bfb6ec005a"
+    },
+    "FindLinks.exe": {
+      "size": 170088,
+      "sha256": "eb74645b56a4eb4306de0d0456dc764b58590d6c9a0e0f912b10a4f1db63ba69"
+    },
+    "FindLinks64.exe": {
+      "size": 194440,
+      "sha256": "b1bc5a3660c922506be7f8db3ce6e229d530bca8e58ee37fa762b9a9d806854b"
+    },
+    "handle.exe": {
+      "size": 761240,
+      "sha256": "84c22579ca09f4fd8a8d9f56a6348c4ad2a92d4722c9f1213dd73c2f68a381e3"
+    },
+    "handle64.exe": {
+      "size": 416144,
+      "sha256": "24bafcc570cc9bbb6b6e6652a57a519e0464e3996891aaba6f55299cce20b04f"
+    },
+    "hex2dec.exe": {
+      "size": 394120,
+      "sha256": "3e57cc1d455a7c33e74124888bff4c73501c8b1993a8c1e896f4d995ec93bc53"
+    },
+    "hex2dec64.exe": {
+      "size": 519560,
+      "sha256": "786d92b9457a1122dec26bcd4354e79af03eb7678a00d4dd930c32662a7d7209"
+    },
+    "junction.exe": {
+      "size": 347016,
+      "sha256": "6fb4df6555a69c2f3c117764d33b48803ae19a8ba40b12f3211195247d9c508f"
+    },
+    "junction64.exe": {
+      "size": 448392,
+      "sha256": "98720d8675036560545db93da0427b46361f565f7f517f77c11db7f72d9c8cdd"
+    },
+    "ldmdump.exe": {
+      "size": 154424,
+      "sha256": "980e64020cfceb02652a2a08270b84b974f18f290e9cb798f5d46d3aa3a0ec94"
+    },
+    "Listdlls.exe": {
+      "size": 424096,
+      "sha256": "b0f6800b2bb4c86e091120e9087c75f9b1b3e46b89cf65744d65cf5ab01fd385"
+    },
+    "Listdlls64.exe": {
+      "size": 220336,
+      "sha256": "29d23bc492e48a5ae68444302d3430e07d08e04278d53aa70d9367d9cf8bceb7"
+    },
+    "livekd.exe": {
+      "size": 657208,
+      "sha256": "278a2613910adc75e09d24e61ae1570947042b0d912ab8cfaba3cae126f12cb9"
+    },
+    "livekd64.exe": {
+      "size": 394080,
+      "sha256": "e2884fa2baa44a092fc7e8a6fe59fc02af754ff18b1e10ecaebd91a7097d5fb9"
+    },
+    "LoadOrd.exe": {
+      "size": 375696,
+      "sha256": "49ea240a4965e0cb2f994530df4f4993a1b91eef3b172e1eb74a1af2972c5c93"
+    },
+    "LoadOrd64.exe": {
+      "size": 484232,
+      "sha256": "6d260ed82396f6ea290e61c9f67ebaf0af0f3a8015d35dc878ce41bdf13ff798"
+    },
+    "LoadOrdC.exe": {
+      "size": 372600,
+      "sha256": "aac9fd7fed5bd1fe0bc11321ef08e792f220905ff66ccd2e4bfdff6d9e848e40"
+    },
+    "LoadOrdC64.exe": {
+      "size": 480648,
+      "sha256": "17b5ed2dde571fb0b56e3f4ff48f58d2e2f0b136087046048c461a70b6051bd1"
+    },
+    "logonsessions.exe": {
+      "size": 455056,
+      "sha256": "8b3f67426e578bd17608d2bb9855774cfb44dcfdc4793e30de884c54fbb8bb10"
+    },
+    "logonsessions64.exe": {
+      "size": 563088,
+      "sha256": "7b646dbccb20d5eb8c977735d3d69ea449395f8d79fdbe28bf8988b46e0ede80"
+    },
+    "movefile.exe": {
+      "size": 338808,
+      "sha256": "b1778554bee9c009176a3fe3c69c5f72b2addd7a439f6cce9851d4f631235b25"
+    },
+    "movefile64.exe": {
+      "size": 440200,
+      "sha256": "beba5a12b0c1a941baa1427656fc1da9a2674dbd6c336b0870c960e65c43a87e"
+    },
+    "notmyfault.exe": {
+      "size": 641840,
+      "sha256": "a4e1b83a841f3c301e4e3892891de1f6bba715902add3939c450251ebe93ce1d"
+    },
+    "notmyfault64.exe": {
+      "size": 784704,
+      "sha256": "893a03443021d3d5245b482b78d422e4e2142d507526293de72940b0cf8b616a"
+    },
+    "notmyfaultc.exe": {
+      "size": 474912,
+      "sha256": "8be12cab914b9ad3264f2fbb44fc764752e7362b0f69833be8a1cb98421a38a6"
+    },
+    "notmyfaultc64.exe": {
+      "size": 599328,
+      "sha256": "751656c6a24637ea10418f048c2fdf00ccaf799ff85087e4e63a26fafa5e5b46"
+    },
+    "ntfsinfo.exe": {
+      "size": 139432,
+      "sha256": "a0d29465c4ef4b6c7e146545b50228e5c08ab8888980577f907058757bdae6de"
+    },
+    "ntfsinfo64.exe": {
+      "size": 158896,
+      "sha256": "e2837be10257ee5b1441c7056aa5f92c46fb5ac24d1e4e00ffc0a2d1cfe637bc"
+    },
+    "pendmoves.exe": {
+      "size": 340360,
+      "sha256": "e6fb98119483d466c62eb3d51e557fb561595764d3ba474d13591d5c7aa940f6"
+    },
+    "pendmoves64.exe": {
+      "size": 441208,
+      "sha256": "3e7b1fcd9e8c0cca2bfc1140a8ceaa1e319487ac1f466eab01648443b80d9108"
+    },
+    "pipelist.exe": {
+      "size": 339320,
+      "sha256": "2156d7d3158ea589e8187c5cb82442ee6c37ee982bc0d728edc8a50a2a1c4281"
+    },
+    "pipelist64.exe": {
+      "size": 441720,
+      "sha256": "c7c3e2e7b729891141f5a7cb172390e57072783187edc92db95d4b7b7fe8cc4c"
+    },
+    "portmon.exe": {
+      "size": 451392,
+      "sha256": "0e848a3911070945cb71803d466ba5a02804957b51b177c52a09ac55280ba6dd"
+    },
+    "procdump.exe": {
+      "size": 1370432,
+      "sha256": "264e7ab0e27dc1545e70d14c9db8c11d1e402d7e4e2863ebf66964fee6644f1c"
+    },
+    "procdump64.exe": {
+      "size": 741216,
+      "sha256": "d1fc99ae304bd1d2bf28abeb62531da959e2431916194981b88c958fd713a8e6"
+    },
+    "procexp.chm": {
+      "size": 72154,
+      "sha256": "36daeb8eb206d1ca5a0933fffcb07645c9aa68a037d64839d3dbc692c403e76f"
+    },
+    "procexp.exe": {
+      "size": 4604704,
+      "sha256": "6a26da49b2de1c70705918f8805192f7dfe43234c59a06a55145b35d46a8e660"
+    },
+    "procexp64.exe": {
+      "size": 2411824,
+      "sha256": "917b5d71f732bf5b5423cd212c004b2433a63e9dfe02a2a27ea421252c815690"
+    },
+    "procmon.chm": {
+      "size": 63582,
+      "sha256": "9d9c7e0160537263c60c6ac0941e63f08fce23431aa4eb19acd25ee1e2be20ee"
+    },
+    "Procmon.exe": {
+      "size": 4199200,
+      "sha256": "a21dc2085f673704f336ee771c61efc0b70bb7b1a4850f89fe44ab8ef95b3a27"
+    },
+    "Procmon64.exe": {
+      "size": 2208024,
+      "sha256": "f792c9be7ecdb5c1ea0b852cee28ae8093c84e69d9206e307a2a8cd2df9c85ad"
+    },
+    "PsExec.exe": {
+      "size": 716176,
+      "sha256": "078163d5c16f64caa5a14784323fd51451b8c831c73396b967b4e35e6879937b"
+    },
+    "PsExec64.exe": {
+      "size": 833472,
+      "sha256": "edfae1a69522f87b12c6dac3225d930e4848832e3c551ee1e7d31736bf4525ef"
+    },
+    "psfile.exe": {
+      "size": 234880,
+      "sha256": "4243dc8b991f5f8b3c0f233ca2110a1e03a1d716c3f51e88faf1d59b8242d329"
+    },
+    "psfile64.exe": {
+      "size": 289168,
+      "sha256": "be922312978a53c92a49fefd2c9f9cc098767b36f0e4d2e829d24725df65bc21"
+    },
+    "PsGetsid.exe": {
+      "size": 413632,
+      "sha256": "a48ac157609888471bf8578fb8b2aef6b0068f7e0742fccf2e0e288b0b2cfdfb"
+    },
+    "PsGetsid64.exe": {
+      "size": 506304,
+      "sha256": "201d8e77ccc2575d910d47042a986480b1da28cf0033e7ee726ad9d45ccf4daa"
+    },
+    "PsInfo.exe": {
+      "size": 443328,
+      "sha256": "951b1b5fd5cb13cde159cebc7c60465587e2061363d1d8847ab78b6c4fba7501"
+    },
+    "PsInfo64.exe": {
+      "size": 535984,
+      "sha256": "de73b73eeb156f877de61f4a6975d06759292ed69f31aaf06c9811f3311e03e7"
+    },
+    "pskill.exe": {
+      "size": 390552,
+      "sha256": "5ef168f83b55d2cbd2426afc5e6fa8161270fa6a2a312831332dc472c95dfa42"
+    },
+    "pskill64.exe": {
+      "size": 476592,
+      "sha256": "7ba47558c99e18c2c6449be804b5e765c48d3a70ceaa04c1e0fae67ff1d7178d"
+    },
+    "pslist.exe": {
+      "size": 217520,
+      "sha256": "ed05f5d462767b3986583188000143f0eb24f7d89605523a28950e72e6b9039a"
+    },
+    "pslist64.exe": {
+      "size": 267136,
+      "sha256": "d3247f03dcd7b9335344ebba76a0b92370f32f1cb0e480c734da52db2bd8df60"
+    },
+    "PsLoggedon.exe": {
+      "size": 151728,
+      "sha256": "d689cb1dbd2e4c06cd15e51a6871c406c595790ddcdcd7dc8d0401c7183720ef"
+    },
+    "PsLoggedon64.exe": {
+      "size": 170160,
+      "sha256": "fdadb6e15c52c41a31e3c22659dd490d5b616e017d1b1aa6070008ce09ed27ea"
+    },
+    "psloglist.exe": {
+      "size": 312760,
+      "sha256": "dcdb9bd39b6014434190a9949dedf633726fdb470e95cc47cdaa47c1964b969f"
+    },
+    "psloglist64.exe": {
+      "size": 378776,
+      "sha256": "5e55b4caf47a248a10abd009617684e969dbe5c448d087ee8178262aaab68636"
+    },
+    "pspasswd.exe": {
+      "size": 222152,
+      "sha256": "6ed5d50cf9d07db73eaa92c5405f6b1bf670028c602c605dfa7d4fcb80ef0801"
+    },
+    "pspasswd64.exe": {
+      "size": 270768,
+      "sha256": "8d950068f46a04e77ad6637c680cccf5d703a1828fbd6bdca513268af4f2170f"
+    },
+    "psping.exe": {
+      "size": 293656,
+      "sha256": "26249b06420a6f96f361645545d6caa9209eaeb25e832900dcfc190baaf19c37"
+    },
+    "psping64.exe": {
+      "size": 352536,
+      "sha256": "356448f935bac37b1c71bf4289b3e74345842202523dd50140fc75c6b3338751"
+    },
+    "PsService.exe": {
+      "size": 268168,
+      "sha256": "d3a816fe5d545a80e4639b34b90d92d1039eb71ef59e6e81b3c0e043a45b751c"
+    },
+    "PsService64.exe": {
+      "size": 322440,
+      "sha256": "554f523914cdbaed8b17527170502199c185bd69a41c81102c50dbb0e5e5a78d"
+    },
+    "psshutdown.exe": {
+      "size": 691080,
+      "sha256": "13fd3ad690c73cf0ad26c6716d4e9d1581b47c22fb7518b1d3bf9cfb8f9e9123"
+    },
+    "psshutdown64.exe": {
+      "size": 809928,
+      "sha256": "4226738489c2a67852d51dbf96574f33e44e509bc265b950d495da79bb457400"
+    },
+    "pssuspend.exe": {
+      "size": 393160,
+      "sha256": "95a922e178075fb771066db4ab1bd70c7016f794709d514ab1c7f11500f016cd"
+    },
+    "pssuspend64.exe": {
+      "size": 480136,
+      "sha256": "4bf8fbb7db583e1aacbf36c5f740d012c8321f221066cc68107031bd8b6bc1ee"
+    },
+    "Pstools.chm": {
+      "size": 66582,
+      "sha256": "2813b6c07d17d25670163e0f66453b42d2f157bf2e42007806ebc6bb9d114acc"
+    },
+    "psversion.txt": {
+      "size": 39,
+      "sha256": "208469d3238653cc03607c08cdb4b5278ec1fde1c543b11cc3ae43a8a0e77a20"
+    },
+    "RAMMap.exe": {
+      "size": 743488,
+      "sha256": "29c9675e41224bedf1501f4bc84de6ae5107f49e8ad46707ea6bed5c61deceef"
+    },
+    "RAMMap64.exe": {
+      "size": 397848,
+      "sha256": "e970913798481432cd590991577089e68510b861dc669dcab24feb06aae0df52"
+    },
+    "readme.txt": {
+      "size": 7903,
+      "sha256": "0f2ff4d516aa1d265c13805cebc2fe9042556c1bb7e8eb2e6c289d5255242ac9"
+    },
+    "RegDelNull.exe": {
+      "size": 351104,
+      "sha256": "e39da31d87c447cfa9c5b1251df92ff418f9e873997e76ccab1ccca72c9d65d9"
+    },
+    "RegDelNull64.exe": {
+      "size": 454016,
+      "sha256": "f80d7e9727a1be93dfa035bf0427fb2deacd01cbe97cd75e218e1e772e21df10"
+    },
+    "Reghide.exe": {
+      "size": 146232,
+      "sha256": "647fefa1a6451176802dd8c6061e1a4f78caa106c079bdd868f769e8e872ff64"
+    },
+    "regjump.exe": {
+      "size": 365968,
+      "sha256": "d9b8b767e7dd8253d4eb6883ed168f0c6ac89a7ea589a67d9fad1d04fb9acbab"
+    },
+    "RootkitRevealer.chm": {
+      "size": 102160,
+      "sha256": "637d4d96f73a2ea2f1f22f36fa39345fc0ae8aecd16e5f6b5a2b5f0553a59b1b"
+    },
+    "RootkitRevealer.exe": {
+      "size": 334720,
+      "sha256": "0b3dfd1d00a0d5da5a88ee2b4734e817ee9c9b13f61eb04dc81660c22051fc27"
+    },
+    "ru.exe": {
+      "size": 348528,
+      "sha256": "85aa361ef398b441d0b95e46ad354ec734a2cf2b482acf163807641d596a94ae"
+    },
+    "ru64.exe": {
+      "size": 450424,
+      "sha256": "c48a4859ac614ed008bec1cee58e85ec23272538a4ed73823a2050e2e048e0fc"
+    },
+    "sdelete.exe": {
+      "size": 211992,
+      "sha256": "04e86e1a3db487ce85091448b0a4c6ef3a3bb4e9da2032f0e8f5fdcab28d3ea7"
+    },
+    "sdelete64.exe": {
+      "size": 257048,
+      "sha256": "a371980f5893f4ecf3b06b6cde388dc9c6ac2d311b7b5708d61eafa84c5c0b41"
+    },
+    "ShareEnum.exe": {
+      "size": 497024,
+      "sha256": "24193daf52407a536f63e2c74eb6fc590e8502b059ce14d7d79584cae5a00940"
+    },
+    "ShareEnum64.exe": {
+      "size": 643480,
+      "sha256": "5de2fe59bbc844d958bed9ad27c4bf09d92342b3607059d5598bfe9d86f9395a"
+    },
+    "ShellRunas.exe": {
+      "size": 174976,
+      "sha256": "d7d1ebac76fd713759b996e9b8724fad508717a6c385dd8e04d0d756dc9a3dc5"
+    },
+    "sigcheck.exe": {
+      "size": 437792,
+      "sha256": "b0506ade6699089afb32350a5a08814c9c0f49f440d0102a8a3c7baed2656d55"
+    },
+    "sigcheck64.exe": {
+      "size": 527944,
+      "sha256": "a2efff8d5bce9db4b899d38afaa706bdfd822711f929616a51b0dbc9f76c6281"
+    },
+    "streams.exe": {
+      "size": 342392,
+      "sha256": "f0e8bdbf4f75c13fa55eb983ca9380ce5da0ac0fdc9a8f02d82446fab664fe96"
+    },
+    "streams64.exe": {
+      "size": 444280,
+      "sha256": "a243c44fe32d9afafb7fec5c6da2f133bf605563e068a95cc5043de2d9e50257"
+    },
+    "strings.exe": {
+      "size": 370056,
+      "sha256": "a7553d77edca85bec980e38e69bf0e9f36962f20be0ee759e9a96030d519c5a0"
+    },
+    "strings64.exe": {
+      "size": 478088,
+      "sha256": "05dbb43499bcff44424c7ac2d987ea9e9742cd90afe360e84ba0bccade17f71b"
+    },
+    "sync.exe": {
+      "size": 343424,
+      "sha256": "2cd0a14d50ec5c989627df57cafb78f0c43d7bfbcda1d59f2199e5d6ce053ecd"
+    },
+    "sync64.exe": {
+      "size": 445296,
+      "sha256": "27038cb10080d92915c08d08f3ec37a85bed87bdb05d47b90425917b00f4654f"
+    },
+    "Sysmon.exe": {
+      "size": 6258072,
+      "sha256": "e629aff050b07293ce66cb5f220280727daa33b7eeda961554b86e35e8a72c7a"
+    },
+    "Sysmon64.exe": {
+      "size": 3250120,
+      "sha256": "a60aa845457406383277afdead35bd90c7804572b99901d239cc974841df2528"
+    },
+    "tcpvcon.exe": {
+      "size": 202632,
+      "sha256": "37621bdac3ced1103278e8c0ef7b73dfa1cbe9becfbaff421a46fbc78d636b5f"
+    },
+    "tcpvcon64.exe": {
+      "size": 250816,
+      "sha256": "f9fdc027050d59608062a95c41e3965e3800fd5a91f35de080a432d62bd129c1"
+    },
+    "tcpview.chm": {
+      "size": 15932,
+      "sha256": "37b11010a35761703e914dfd88fb26776dbfb29531934244a3bab7b6219a764f"
+    },
+    "tcpview.exe": {
+      "size": 944520,
+      "sha256": "9775b4bbe23b8eb93727efe0a6d0b160ae5132a10b223f43200499cf0051a18f"
+    },
+    "tcpview64.exe": {
+      "size": 1087368,
+      "sha256": "0cbcb7ec4a042622b0d9d91b18f908e4208e4725ee1fa74a3555c4dcb622cfc1"
+    },
+    "Testlimit.exe": {
+      "size": 231584,
+      "sha256": "81ce87149a14c466738903b6180d9b79ec8d3005c137870a05dafa815714d394"
+    },
+    "Testlimit64.exe": {
+      "size": 243888,
+      "sha256": "f1564b3c3eee87d62ef04ccf2c6b453020d3547faa2ccc5c9e2cef94fe659f2f"
+    },
+    "Vmmap.chm": {
+      "size": 51747,
+      "sha256": "3a7618d52c9c0b50de7e9d263fd2afc017d0d446393263d8853453e15d00f551"
+    },
+    "vmmap.exe": {
+      "size": 5193152,
+      "sha256": "a834987f7b6098027e3392366f3985f5644bbe7396406e2a43e5688ddc00bbdf"
+    },
+    "vmmap64.exe": {
+      "size": 2758064,
+      "sha256": "0b3731c524e6ba716f15087d85eae7e6225b6b51d4ae2fa6c142ff1523f57046"
+    },
+    "Volumeid.exe": {
+      "size": 233640,
+      "sha256": "22a2484d7fa799e6e71e310141614884f3bc8dad8ac749b6f1c475b5398a72f3"
+    },
+    "Volumeid64.exe": {
+      "size": 169648,
+      "sha256": "fb0d02ea26bb1e5df5a07147931caf1ae3d7d1d9b4d83f168b678e7f3a1c0ecd"
+    },
+    "whois.exe": {
+      "size": 398712,
+      "sha256": "ea845b43c323e35df041b8914a520f1d9643e3689454ab3049c2103458a0142d"
+    },
+    "whois64.exe": {
+      "size": 523632,
+      "sha256": "0797b9f6e0281d8f31791d8f92b375d1074ff7c68266f9372ab54f26b9dcdd3c"
+    },
+    "Winobj.exe": {
+      "size": 1443728,
+      "sha256": "c8313c8ea55733451a27dd43b66f90b27ff7cee5ab207c6826387a9b79c8f8a7"
+    },
+    "Winobj64.exe": {
+      "size": 1781632,
+      "sha256": "e2a2a818ab71c388fa2e4d4af6a1abbeb32c9fcbaa22ec7e7c0cc8a044639662"
+    },
+    "ZoomIt.exe": {
+      "size": 16296760,
+      "sha256": "0d544cc2e86442e270541eb1a3e077808159d0a51da28aa1433e79cc3303298c"
+    },
+    "ZoomIt64.exe": {
+      "size": 8299320,
+      "sha256": "fc4576c91343c66877612446eaeb3aa3ebb5f9814c232cb51ebba1646a770a76"
+    }
+  }
+}
