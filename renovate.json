@@ -28,5 +28,19 @@
       ],
       "groupName": "GitHub Actions dependencies"
     }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^\\.github\\/workflows\\/linting\\.yml$/"
+      ],
+      "matchStrings": [
+        "version:\\s*['\"](?<currentValue>[^'\"]+)['\"]"
+      ],
+      "depNameTemplate": "rvben/rumdl",
+      "datasourceTemplate": "github-releases",
+      "versioningTemplate": "semver-coerced"
+    }
   ]
 }
