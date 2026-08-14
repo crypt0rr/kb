@@ -72,6 +72,10 @@
 # Text files where line endings should be preserved
 *.patch    -text
 
+# Sysinternals is a byte-for-byte upstream mirror; preserve its line endings
+# so the reviewed SHA-256 manifest remains valid after checkout.
+content/tools/windows/sysinternals/files/** -text whitespace=cr-at-eol
+
 #
 # Exclude files from exporting
 #
