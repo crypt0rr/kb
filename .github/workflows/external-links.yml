@@ -21,11 +21,19 @@ jobs:
           node-version-file: .node-version
 
       - name: Check external links
-        run: node scripts/check-external-links.mjs --output .reports/external-links.md
+        run: |
+          npm run check:external-links -- \
+            --output .reports/external-links.md \
+            --json .reports/external-links.json \
+            --summary-file "$GITHUB_STEP_SUMMARY"
 
       - name: Upload link health report
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: external-link-health
-          path: .reports/external-links.md
+          path: |
+            .reports/external-links.md
+            .reports/external-links.json
+          if-no-files-found: warn
+          retention-days: 30

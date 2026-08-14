@@ -22,6 +22,7 @@ npm run check
 npm run check:assets
 npm run check:content
 npm run check:links
+npm run check:external-links
 npm run audit:known
 npm run sysinternals:check
 npm run content:review
@@ -55,8 +56,11 @@ downloadable assets. External links are inventoried without network calls.
 `npm test` runs focused parser and content-contract tests. `npm run doctor`
 checks the Node.js version, required project paths, and local npm availability.
 
-The scheduled `Check external links` workflow creates a report of reachable
-external URLs without blocking content builds.
+`npm run check:external-links` checks reachable external URLs and writes
+Markdown plus complete JSON reports under `.reports/`. The scheduled and
+manual `Check external links` workflow uploads both reports and adds the check
+counts plus a short list of failures to the GitHub job summary. It remains
+report-only: an unreachable external URL does not block content builds.
 
 `npm run content:review` scans all publishable pages and writes a maintainer-only
 review queue to `.reports/content-review.md` plus a complete JSON report at
