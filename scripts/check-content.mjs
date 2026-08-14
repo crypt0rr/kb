@@ -3,6 +3,7 @@ import path from "node:path";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
 import { parseCascade } from "../src/lib/metadata.mjs";
+import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
@@ -290,6 +291,14 @@ function validateRefsAndShortcodes() {
         if (!resolveRef(target, page, byUrl, byKey)) {
           errors.push(`${page.relativeFile}: unresolved ref ${target}`);
         }
+      }
+
+      if (name === "youtube" && !isValidYoutubeId(rawAttrs)) {
+        errors.push(`${page.relativeFile}: youtube shortcode requires a safe video id`);
+      }
+
+      if (name === "gist" && !parseGistReference(rawAttrs)) {
+        errors.push(`${page.relativeFile}: gist shortcode requires an owner and gist id`);
       }
 
       if (name === "resources" || name === "attachments") {

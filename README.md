@@ -38,6 +38,12 @@ The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
 the Pagefind search index.
 
+The supported angle shortcodes are rendered through the static page pipeline:
+`youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
+`gist` renders as a CSP-safe link to GitHub. The content checker validates the
+required identifiers for both forms; unsupported or malformed shortcodes must
+be fixed before publishing.
+
 `npm run check:content` validates frontmatter, shortcodes, references, and
 downloadable content assets. New files under `content/**/files/` must be
 referenced by a `resources` or `attachments` shortcode unless they are an
@@ -106,7 +112,8 @@ directories, marker files, and files over the 25MB Cloudflare Pages limit.
 
 `npm run audit:known` expects a clean `npm audit` result and fails on any
 reported vulnerability. Keep Astro/Vite updated through Renovate and review
-dependency advisories before adding any exception.
+dependency advisories before adding any exception. GitHub Actions are pinned
+to reviewed commit SHAs; Renovate keeps those pins current.
 
 ## Contributing
 

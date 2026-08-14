@@ -26,7 +26,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.2.0",
+    "astro": "^7.2.2",
     "markdown-it": "^15.0.0",
     "markdown-it-anchor": "^9.2.0",
     "pagefind": "^1.1.1",
@@ -40,7 +40,7 @@
     "volar-service-yaml": "0.0.71"
   },
   "allowScripts": {
-    "esbuild@0.28.1": true,
+    "esbuild@0.28.2": true,
     "sharp@0.34.5": true,
     "fsevents@2.3.3": true
   }
