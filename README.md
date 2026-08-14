@@ -38,6 +38,12 @@ The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
 the Pagefind search index.
 
+The supported angle shortcodes are rendered through the static page pipeline:
+`youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
+`gist` renders as a CSP-safe link to GitHub. The content checker validates the
+required identifiers for both forms; unsupported or malformed shortcodes must
+be fixed before publishing.
+
 `npm run check:content` validates frontmatter, shortcodes, references, and
 downloadable content assets. New files under `content/**/files/` must be
 referenced by a `resources` or `attachments` shortcode unless they are an
@@ -98,15 +104,21 @@ values, including the legacy `tags= [...]` form, and the site normalizes known
 tag aliases such as `Wirehark` to `Wireshark`.
 
 Use `npm run sysinternals:check` to compare the published Sysinternals files
-with `https://live.sysinternals.com/`. Use `npm run sysinternals:sync` to
-download missing or changed root and ARM64 files. The sync workflow skips live
-directories, marker files, and files over the 25MB Cloudflare Pages limit.
+with `https://live.sysinternals.com/`. The check uses the reviewed
+`scripts/sysinternals-manifest.json` SHA-256 inventory, so an upstream listing
+change requires an explicit `npm run sysinternals:refresh-manifest` review
+before syncing. Use `npm run sysinternals:sync` to download missing or changed
+root and ARM64 files; every replacement is checked against the manifest hash
+before the atomic rename. Manifest refresh downloads temporary copies only; it
+does not modify the mirrored files. The sync workflow skips live directories,
+marker files, and files over the 25MB Cloudflare Pages limit.
 
 ## Security Notes
 
 `npm run audit:known` expects a clean `npm audit` result and fails on any
 reported vulnerability. Keep Astro/Vite updated through Renovate and review
-dependency advisories before adding any exception.
+dependency advisories before adding any exception. GitHub Actions are pinned
+to reviewed commit SHAs; Renovate keeps those pins current.
 
 ## Contributing
 

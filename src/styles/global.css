@@ -756,6 +756,18 @@ h1 {
   border-radius: 8px;
 }
 
+.gist-embed {
+  margin: 24px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.gist-embed-invalid {
+  color: var(--red);
+}
+
 .search-dialog {
   width: min(720px, calc(100vw - 30px));
   padding: 0;

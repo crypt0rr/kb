@@ -14,6 +14,7 @@ import {
   tagKey,
   uniqueStrings
 } from "./metadata.mjs";
+import { parseGistReference } from "./shortcodes.mjs";
 
 const contentRoot = path.join(process.cwd(), "content");
 const pageCollator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
@@ -422,7 +423,20 @@ function preprocessShortcodes(source: string, page: KbPage) {
     (_match, videoId) =>
       `<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/${escapeAttr(
         videoId
-      )}" title="YouTube video" loading="lazy" allowfullscreen></iframe></div>`
+      )}" title="YouTube video" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`
+  );
+
+  output = output.replace(
+    /\{\{<\s*gist\s+([^>\s]+)\s+([^>\s]+)\s*>\}\}/g,
+    (_match, owner, gistId) => {
+      const reference = parseGistReference(`${owner} ${gistId}`);
+      if (!reference) {
+        return '<p class="gist-embed gist-embed-invalid">Invalid GitHub Gist reference.</p>';
+      }
+
+      const href = `https://gist.github.com/${reference.owner}/${reference.gistId}`;
+      return `<p class="gist-embed"><a href="${escapeAttr(href)}" rel="noreferrer">View GitHub Gist</a></p>`;
+    }
   );
 
   output = output.replace(

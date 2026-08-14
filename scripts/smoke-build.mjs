@@ -80,6 +80,10 @@ async function expectAssetManifest() {
     return;
   }
 
+  if (Object.hasOwn(manifest, "generatedAt")) {
+    errors.push("asset-manifest.json: generatedAt must not make builds non-deterministic");
+  }
+
   const privateAsset = manifest.assets.find((asset) => asset.path.startsWith("."));
   if (privateAsset) {
     errors.push(`asset-manifest.json: private asset included (${privateAsset.path})`);

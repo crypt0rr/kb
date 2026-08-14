@@ -14,7 +14,7 @@ await walk(contentDir);
 entries.sort((a, b) => a.path.localeCompare(b.path));
 await writeFile(
   path.join(distDir, "asset-manifest.json"),
-  `${JSON.stringify({ generatedAt: new Date().toISOString(), assets: entries }, null, 2)}\n`
+  `${JSON.stringify({ assets: entries }, null, 2)}\n`
 );
 
 async function walk(dir) {

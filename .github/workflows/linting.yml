@@ -19,15 +19,18 @@ on:
       - '.markdownlint.yml'
       - '.github/workflows/linting.yml'
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - name: Clone this repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
 
       - name: Lint content Markdown
-        uses: rvben/rumdl@v0
+        uses: rvben/rumdl@4997ff07b63c7a54d6a495ebcd3ce7f23ee1173f # v0
         with:
           version: '0.2.48'
           path: 'content/'
@@ -35,7 +38,7 @@ jobs:
           report-type: annotations
 
       - name: Lint README
-        uses: rvben/rumdl@v0
+        uses: rvben/rumdl@4997ff07b63c7a54d6a495ebcd3ce7f23ee1173f # v0
         with:
           version: '0.2.48'
           path: 'README.md'
