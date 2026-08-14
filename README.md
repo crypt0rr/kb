@@ -112,6 +112,8 @@ root and ARM64 files; every replacement is checked against the manifest hash
 before the atomic rename. Manifest refresh downloads temporary copies only; it
 does not modify the mirrored files. The sync workflow skips live directories,
 marker files, and files over the 25MB Cloudflare Pages limit.
+The mirror path preserves upstream bytes and line endings so the manifest hashes
+remain reproducible after checkout.
 
 ## Security Notes
 
