@@ -1,6 +1,8 @@
 (() => {
   const body = document.body;
+  const sidebar = document.querySelector("#site-sidebar");
   const sidebarToggle = document.querySelector("[data-sidebar-toggle]");
+  const mobileSidebarQuery = window.matchMedia("(max-width: 940px)");
   const dialog = document.querySelector("[data-search-dialog]");
   const searchOpeners = document.querySelectorAll("[data-search-open]");
   const searchInput = document.querySelector("[data-search-input]");
@@ -13,9 +15,31 @@
   let activeResultIndex = -1;
   let lastFocusedElement = null;
 
+  const syncSidebarAccessibility = (isOpen = body.classList.contains("sidebar-open")) => {
+    if (!sidebar) return;
+
+    if (!mobileSidebarQuery.matches) {
+      sidebar.removeAttribute("aria-hidden");
+      sidebar.removeAttribute("inert");
+      return;
+    }
+
+    sidebar.setAttribute("aria-hidden", String(!isOpen));
+    if (isOpen) sidebar.removeAttribute("inert");
+    else sidebar.setAttribute("inert", "");
+  };
+
   sidebarToggle?.addEventListener("click", () => {
     const isOpen = body.classList.toggle("sidebar-open");
     sidebarToggle.setAttribute("aria-expanded", String(isOpen));
+    syncSidebarAccessibility(isOpen);
+  });
+
+  syncSidebarAccessibility();
+  mobileSidebarQuery.addEventListener?.("change", () => {
+    body.classList.remove("sidebar-open");
+    sidebarToggle?.setAttribute("aria-expanded", "false");
+    syncSidebarAccessibility(false);
   });
 
   document.addEventListener("click", (event) => {
@@ -23,6 +47,7 @@
     if (event.target.closest("#site-sidebar") || event.target.closest("[data-sidebar-toggle]")) return;
     body.classList.remove("sidebar-open");
     sidebarToggle?.setAttribute("aria-expanded", "false");
+    syncSidebarAccessibility(false);
   });
 
   document.querySelectorAll("pre").forEach((block) => {

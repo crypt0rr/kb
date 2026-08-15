@@ -32,6 +32,7 @@ npm test
 npm run doctor
 npm run build
 npm run smoke
+npm run test:a11y
 npm run validate
 ```
 
@@ -55,6 +56,12 @@ downloadable assets. External links are inventoried without network calls.
 
 `npm test` runs focused parser and content-contract tests. `npm run doctor`
 checks the Node.js version, required project paths, and local npm availability.
+`npm run test:a11y` builds the deployable static site, serves it with Astro
+Preview, and runs the browser-level Playwright/Axe smoke suite against
+representative routes and keyboard interactions. The `Browser accessibility
+smoke tests` workflow runs the same check on pull requests, pushes to `main`,
+and manual dispatches. For a first local run, install the test browser once
+with `npx playwright install chromium`.
 
 `npm run check:external-links` checks reachable external URLs and writes
 Markdown plus complete JSON reports under `.reports/`. The scheduled and

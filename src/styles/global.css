@@ -7,7 +7,7 @@
   --line-soft: #182124;
   --text: #d8e2df;
   --muted: #849390;
-  --dim: #53615e;
+  --dim: #7f908c;
   --green: #35f29a;
   --cyan: #4cc9f0;
   --amber: #f9c74f;
@@ -847,7 +847,6 @@ h1 {
   color: var(--text);
   background: transparent;
   border: 0;
-  outline: 0;
   font-family: var(--mono);
   font-size: 22px;
 }

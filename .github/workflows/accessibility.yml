@@ -1,0 +1,81 @@
+name: Browser accessibility smoke tests
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/accessibility.yml"
+      - ".node-version"
+      - "astro.config.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - "playwright.config.mjs"
+      - "src/**"
+      - "static/**"
+      - "content/**"
+      - "scripts/**"
+      - "tests/**"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/accessibility.yml"
+      - ".node-version"
+      - "astro.config.mjs"
+      - "package.json"
+      - "package-lock.json"
+      - "playwright.config.mjs"
+      - "src/**"
+      - "static/**"
+      - "content/**"
+      - "scripts/**"
+      - "tests/**"
+
+permissions:
+  contents: read
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Clone this repo
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Chromium for browser tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Run browser accessibility smoke tests
+        run: npm run test:a11y
+
+      - name: Add job summary
+        if: always()
+        run: |
+          {
+            echo "## Browser accessibility smoke tests"
+            echo
+            echo "Checked representative routes plus keyboard search and mobile navigation with Playwright and Axe."
+            echo
+            echo "Result: ${{ job.status }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload browser test artifacts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: accessibility-playwright-report
+          path: |
+            playwright-report/
+            test-results/
+          if-no-files-found: ignore
+          retention-days: 14
