@@ -19,6 +19,7 @@
     "content:graph": "node scripts/content-graph.mjs",
     "content:health": "node scripts/content-health.mjs",
     "test": "node --test test/*.test.mjs",
+    "test:a11y": "npm run build && playwright test --config=playwright.config.mjs",
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",
     "sysinternals:refresh-manifest": "node scripts/sync-sysinternals.mjs --refresh-manifest",
     "sysinternals:sync": "node scripts/sync-sysinternals.mjs --write",
@@ -45,5 +46,9 @@
     "esbuild@0.28.2": true,
     "sharp@0.34.5": true,
     "fsevents@2.3.3": true
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.62.1"
   }
 }
