@@ -30,17 +30,17 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Lint content Markdown
-        uses: rvben/rumdl@023027472dbcb502aeb89760f4122e2235d36490 # v0.2.58
+        uses: rvben/rumdl@96c8520425eaf1b6d362e4a98754adf6ee604acb # v0.2.62
         with:
-          version: '0.2.58'
+          version: '0.2.62'
           path: 'content/'
           config: '.markdownlint.yml'
           report-type: annotations
 
       - name: Lint README
-        uses: rvben/rumdl@023027472dbcb502aeb89760f4122e2235d36490 # v0.2.58
+        uses: rvben/rumdl@96c8520425eaf1b6d362e4a98754adf6ee604acb # v0.2.62
         with:
-          version: '0.2.58'
+          version: '0.2.62'
           path: 'README.md'
           config: '.markdownlint.yml'
           report-type: annotations
