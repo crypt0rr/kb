@@ -40,7 +40,7 @@
     "esbuild": "0.28.2",
     "js-yaml": "5.4.1",
     "satteri": "0.10.5",
-    "vite": "8.2.2",
+    "vite": "8.3.0",
     "volar-service-yaml": "0.0.71"
   },
   "allowScripts": {
