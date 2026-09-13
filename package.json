@@ -38,7 +38,7 @@
   },
   "overrides": {
     "esbuild": "0.28.2",
-    "js-yaml": "5.4.1",
+    "js-yaml": "5.4.2",
     "satteri": "0.10.5",
     "vite": "8.3.0",
     "volar-service-yaml": "0.0.71"
