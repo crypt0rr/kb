@@ -28,6 +28,13 @@
         "github-actions"
       ],
       "groupName": "GitHub Actions dependencies"
+    },
+    {
+      "description": "astro check does not support TypeScript 7.0; @astrojs/ts-content-mapper requires 7.1+",
+      "matchPackageNames": [
+        "typescript"
+      ],
+      "allowedVersions": "!/^7\\.0\\./"
     }
   ],
   "customManagers": [
