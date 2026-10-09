@@ -7,13 +7,16 @@ import {
   collectContentPages,
   createReviewReport,
   classifyReviewPage,
+  parseArguments,
   renderMarkdown,
+  renderSummary,
   run
 } from "../scripts/content-review.mjs";
 import {
   differenceInDays,
   isValidDateValue,
   normalizeDate,
+  subtractDays,
   subtractMonths
 } from "../src/lib/date.mjs";
 import { corpusAsOf, describeCorpus } from "./helpers/corpus.mjs";
@@ -133,6 +136,61 @@ test("ranks higher-risk sections ahead of equally old pages", () => {
   assert.ok(report.pages[0].priorityScore > report.pages[1].priorityScore);
 });
 
+test("subtracts calendar days across month and leap-year boundaries", () => {
+  assert.equal(subtractDays(asOf, 90), "2026-05-04");
+  assert.equal(subtractDays("2024-03-01", 1), "2024-02-29");
+  assert.equal(subtractDays("2026-01-01", 1), "2025-12-31");
+  assert.equal(subtractDays("2026-02-30", 1), undefined);
+});
+
+test("counts pages reviewed within the recent window without changing priorities", () => {
+  const pages = [
+    { title: "Today", url: "/today/", section: "cve", date: null, lastReviewed: asOf },
+    { title: "Boundary", url: "/boundary/", section: "tools", date: null, lastReviewed: "2026-05-05" },
+    { title: "Older", url: "/older/", section: "tools", date: null, lastReviewed: "2026-05-04" },
+    { title: "Future", url: "/future/", section: "cve", date: null, lastReviewed: "2026-08-03" },
+    { title: "Missing", url: "/missing/", section: "cve", date: "2020-01-01", lastReviewed: null }
+  ];
+  const report = createReviewReport(pages, { asOf });
+
+  assert.equal(report.recentReviewDays, 90);
+  assert.equal(report.recentReviewSince, "2026-05-05");
+  assert.equal(report.summary.reviewed, 4);
+  assert.equal(report.summary.missingLastReviewed, 1);
+  assert.equal(report.summary.reviewedRecently, 2);
+
+  const narrow = createReviewReport(pages, { asOf, recentDays: 30 });
+  assert.equal(narrow.recentReviewSince, "2026-07-04");
+  assert.equal(narrow.summary.reviewedRecently, 1);
+  assert.deepEqual(
+    narrow.pages.map((page) => [page.url, page.priorityScore, page.priorityTier]),
+    report.pages.map((page) => [page.url, page.priorityScore, page.priorityTier])
+  );
+  assert.throws(() => createReviewReport(pages, { asOf, recentDays: 0 }), /recent review days/);
+
+  assert.match(
+    renderMarkdown(report),
+    /^- Reviewed pages: 4\n- Reviewed in the last 90 days \(since 2026-05-05\): 2$/m
+  );
+  assert.match(renderSummary(report), /^- Reviewed: 4 \(2 in the last 90 days\)$/m);
+  assert.match(renderSummary(narrow), /^- Reviewed: 4 \(1 in the last 30 days\)$/m);
+
+  const single = createReviewReport(pages, { asOf, recentDays: 1 });
+  assert.equal(single.recentReviewSince, asOf);
+  assert.equal(single.summary.reviewedRecently, 1);
+  assert.match(renderMarkdown(single), /^- Reviewed in the last day \(since 2026-08-02\): 1$/m);
+});
+
+test("parses --recent-days as a positive integer", () => {
+  assert.equal(parseArguments([]).recentDays, 90);
+  assert.equal(parseArguments(["--recent-days", "30"]).recentDays, 30);
+  assert.equal(parseArguments(["--recent-days=7"]).recentDays, 7);
+  assert.throws(
+    () => parseArguments(["--recent-days", "0"]),
+    /--recent-days must be a positive integer/
+  );
+});
+
 test("writes a complete JSON corpus report", async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), "kb-content-review-"));
 
@@ -154,6 +212,8 @@ test("writes a complete JSON corpus report", async () => {
     assert.equal(report.summary.missingLastReviewed, corpus.missingLastReviewed);
     assert.ok(report.summary.needsReview >= corpus.missingLastReviewed);
     assert.ok(report.summary.needsReview <= corpus.published.length);
+    assert.ok(report.summary.reviewedRecently <= report.summary.reviewed);
+    assert.equal(report.recentReviewDays, 90);
   } finally {
     await rm(directory, { recursive: true, force: true });
   }

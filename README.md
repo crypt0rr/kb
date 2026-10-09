@@ -171,6 +171,13 @@ strict. The scheduled `Content freshness review` workflow uploads the same
 reports weekly and adds a summary to the workflow run. Markdown shows the oldest
 100 queue entries by default (`--limit` changes this); JSON contains the
 complete corpus, field provenance, and priority data for future tooling.
+Next to the reviewed and missing counts, the report shows how many pages were
+reviewed in the last 90 days (`--recent-days` changes the window) and the date
+the window starts. The window counts the report date itself, so 90 days runs
+from 89 days before the report date through the report date, and
+`--recent-days 1` counts only reviews dated on the report date. A review dated
+after the report date is a data error and does not count as recent. The window only feeds this trend count; it does not
+change staleness, sorting, or priority scores.
 
 `npm run content:graph` builds the same canonical page index into a deterministic
 relationship report at `.reports/content-graph.md` and a complete
@@ -192,6 +199,8 @@ not rendered on the public site, in the Pagefind filters, or in `search.json`.
 External and protocol URLs are inventoried but are not treated as broken
 internal targets. The scheduled `Content freshness review` workflow runs
 this command weekly or on manual dispatch and uploads both report formats.
+Like the review queue, the ledger summary reports pages reviewed in the last
+90 days and accepts `--recent-days`.
 
 Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`
 (`active`, `deprecated`, or `archived`), and `platforms` (a string or list of
@@ -221,6 +230,52 @@ without network activity, and a failed download never leaves its temporary
 `.download` file behind.
 The mirror path preserves upstream bytes and line endings so the manifest hashes
 remain reproducible after checkout.
+
+## Reviewing Content
+
+Reviews are recorded one batch at a time by a maintainer who actually checked
+the pages:
+
+1. Pick a batch. The `cve` section has the highest section weight in the review
+   priority, so it is a good place to start; otherwise take the top entries of
+   the latest `Content freshness review` run (download the
+   `content-review-queue` artifact, or run `npm run content:review` locally and
+   open `.reports/content-review.md`).
+2. Review each page: check that commands, versions, links, and advisories are
+   still accurate, and fix what is not.
+3. Record the review:
+
+   ```plain
+   npm run content:mark-reviewed -- content/cve/cve-2021-44228 content/cve/cve-2022-0847/index.md
+   npm run content:mark-reviewed -- content/tools/networking/nmap --date 2026-10-01
+   npm run content:mark-reviewed -- content/cve/cve-2021-44228 --dry-run
+   ```
+
+   Paths are relative to the repository root and may be a page's `index.md`,
+   `_index.md`, or `<name>.md` file, or a page directory (resolved to its
+   `index.md` or `_index.md`). Paths outside `content/`, private dot-segment
+   paths, non-Markdown files, and missing files are rejected. `--date` defaults
+   to today in UTC and must be a real `YYYY-MM-DD` date that is not in the
+   future. The command sets or replaces the page's top-level `lastReviewed`
+   field (creating frontmatter if the page has none) with a single inserted or
+   replaced line, so other keys, their order and quoting, comments, the body,
+   LF or CRLF line endings, and a BOM stay byte-for-byte identical. Each edit is
+   re-parsed and must yield the original frontmatter plus the new date; if any
+   path or page fails, no file is written. `--dry-run` prints the per-file
+   summary without writing. Marking a section's `_index.md` reviews only that
+   section page, not its descendants.
+4. Commit the reviewed pages with their fixes and open a pull request.
+
+After the change is merged, the next weekly `Content freshness review` run (or
+a manual dispatch) shows the batch in the job summary: `Missing lastReviewed`
+drops, and `Reviewed: N (M in the last 90 days)` rises in both the review queue
+and the trust ledger summaries. Reviewed pages leave the queue until their
+review date is more than 12 months old.
+
+Do not seed `lastReviewed` through a section `cascade` or set it on pages that
+were not checked. A cascaded or bulk date would mark every descendant as
+reviewed without anyone reading it, fabricating the very signal the queue
+relies on and hiding stale pages for a year.
 
 ## Security Notes
 

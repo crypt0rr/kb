@@ -18,6 +18,7 @@
     "content:review": "node scripts/content-review.mjs",
     "content:graph": "node scripts/content-graph.mjs",
     "content:health": "node scripts/content-health.mjs",
+    "content:mark-reviewed": "node scripts/mark-reviewed.mjs",
     "test": "node --test test/*.test.mjs",
     "test:a11y": "npm run build && playwright test --config=playwright.config.mjs",
     "sysinternals:check": "node scripts/sync-sysinternals.mjs --check",

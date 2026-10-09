@@ -2,24 +2,18 @@ import { parseDocument } from "yaml";
 
 const delimiter = "---";
 
+export const frontmatterYamlOptions = Object.freeze({ merge: true, prettyErrors: false });
+
 export function parseFrontmatter(source, file = "content") {
-  const cleanSource = String(source).replace(/^\uFEFF/, "");
+  const located = locateFrontmatter(source, file);
 
-  if (!cleanSource.startsWith(`${delimiter}\n`) && !cleanSource.startsWith(`${delimiter}\r\n`)) {
-    return { data: {}, content: cleanSource };
+  if (!located.hasFrontmatter) {
+    return { data: {}, content: located.source };
   }
 
-  const firstLineEnd = cleanSource.indexOf("\n");
-  const bodyStart = firstLineEnd + 1;
-  const closing = findClosingDelimiter(cleanSource, bodyStart);
-
-  if (closing === -1) {
-    throw new Error(`${file}: missing closing frontmatter delimiter`);
-  }
-
-  const frontmatter = cleanSource.slice(bodyStart, closing.start);
-  const content = cleanSource.slice(closing.end).replace(/^\r?\n/, "");
-  const document = parseDocument(frontmatter, { merge: true, prettyErrors: false });
+  const frontmatter = located.source.slice(located.start, located.end);
+  const content = located.source.slice(located.closingEnd).replace(/^\r?\n/, "");
+  const document = parseDocument(frontmatter, frontmatterYamlOptions);
 
   if (document.errors.length) {
     throw new Error(`${file}: invalid frontmatter YAML: ${document.errors[0].message}`);
@@ -31,6 +25,39 @@ export function parseFrontmatter(source, file = "content") {
   }
 
   return { data, content };
+}
+
+// Splits a file exactly like parseFrontmatter without parsing the YAML, so
+// tools that edit frontmatter in place agree with the parser on its bounds.
+// Offsets index into `source` (the input without an optional UTF-8 BOM): the
+// YAML text is source.slice(start, end) and the closing delimiter line ends at
+// closingEnd. `eol` is the line ending of the opening delimiter.
+export function locateFrontmatter(source, file = "content") {
+  const text = String(source);
+  const bom = text.startsWith("\uFEFF") ? "\uFEFF" : "";
+  const cleanSource = text.slice(bom.length);
+
+  if (!cleanSource.startsWith(`${delimiter}\n`) && !cleanSource.startsWith(`${delimiter}\r\n`)) {
+    return { hasFrontmatter: false, bom, source: cleanSource };
+  }
+
+  const firstLineEnd = cleanSource.indexOf("\n");
+  const bodyStart = firstLineEnd + 1;
+  const closing = findClosingDelimiter(cleanSource, bodyStart);
+
+  if (closing === -1) {
+    throw new Error(`${file}: missing closing frontmatter delimiter`);
+  }
+
+  return {
+    hasFrontmatter: true,
+    bom,
+    source: cleanSource,
+    eol: cleanSource[firstLineEnd - 1] === "\r" ? "\r\n" : "\n",
+    start: bodyStart,
+    end: closing.start,
+    closingEnd: closing.end
+  };
 }
 
 function findClosingDelimiter(source, start) {
