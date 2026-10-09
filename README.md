@@ -61,6 +61,8 @@ downloadable assets. External links are inventoried without network calls.
 
 `npm test` runs focused parser and content-contract tests. `npm run doctor`
 checks the Node.js version, required project paths, and local npm availability.
+A different Node.js major version than `.node-version` fails; a minor or patch
+difference only prints a warning. CI installs the exact pinned version.
 `npm run test:a11y` builds the deployable static site, serves it with Astro
 Preview, and runs the browser-level Playwright/Axe smoke suite against
 representative routes and keyboard interactions. The `Browser accessibility
