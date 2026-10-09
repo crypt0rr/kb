@@ -1,14 +1,19 @@
-import { createWriteStream } from "node:fs";
-import { mkdir, mkdtemp, readdir, readFile, rm, stat, rename, writeFile } from "node:fs/promises";
-import https from "node:https";
+import { mkdir, mkdtemp, readdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
-import { createManifest, hashFile, validateManifest } from "./sysinternals-manifest.mjs";
+import { createSysinternalsClient, parseValidatedListing } from "./sysinternals-fetch.mjs";
+import {
+  createManifest,
+  hashFile,
+  manifestSource,
+  validateManifest
+} from "./sysinternals-manifest.mjs";
 
 const root = process.cwd();
 const sysinternalsDir = path.join(root, "content", "tools", "windows", "sysinternals", "files");
 const manifestPath = path.join(root, "scripts", "sysinternals-manifest.json");
-const liveBase = "https://live.sysinternals.com";
+const liveBase = manifestSource;
+const { fetchText, downloadToFile, downloadVerified } = createSysinternalsClient();
 const maxBytes = 25 * 1024 * 1024;
 const ignoredFiles = new Set([".gitkeep"]);
 const skippedLiveFiles = new Set(["healthmonitoring.html"]);
@@ -27,7 +32,7 @@ const skipped = [];
 
 for (const source of sources) {
   const listing = await fetchText(source.url);
-  for (const entry of parseListing(listing)) {
+  for (const entry of parseValidatedListing(listing, liveBase)) {
     if (skippedLiveFiles.has(entry.name) || entry.size > maxBytes) {
       skipped.push({ ...entry, directory: source.directory });
       continue;
@@ -39,7 +44,7 @@ for (const source of sources) {
       relative,
       directory: source.directory,
       target: path.join(sysinternalsDir, relative),
-      url: `${liveBase}${entry.href}`
+      url: new URL(entry.href, liveBase).href
     });
   }
 }
@@ -92,7 +97,14 @@ if (mode === "write") {
     );
   } else {
     for (const entry of [...missing, ...changed]) {
-      await download(entry, manifest.files[entry.relative]);
+      await mkdir(path.dirname(entry.target), { recursive: true });
+      await downloadVerified({
+        url: entry.url,
+        target: entry.target,
+        size: entry.size,
+        sha256: manifest.files[entry.relative].sha256,
+        label: entry.relative
+      });
       changes.push(`updated ${entry.relative}`);
     }
 
@@ -195,21 +207,6 @@ async function refreshManifest() {
   }
 }
 
-function parseListing(html) {
-  const entries = [];
-  const matcher = /(?:&lt;dir&gt;|(\d+))\s+<A HREF="([^"]+)">([^<]+)<\/A>/gi;
-  let match;
-  while ((match = matcher.exec(html))) {
-    if (!match[1]) continue;
-    entries.push({
-      href: match[2],
-      name: match[3],
-      size: Number(match[1])
-    });
-  }
-  return entries;
-}
-
 async function readLocalFiles() {
   const files = new Map();
   for (const source of sources) {
@@ -229,86 +226,6 @@ async function readLocalFiles() {
     }
   }
   return files;
-}
-
-async function download(entry, trusted) {
-  await mkdir(path.dirname(entry.target), { recursive: true });
-  const temporary = `${entry.target}.download`;
-  await downloadToFile(entry.url, temporary);
-  const fileStat = await stat(temporary);
-  if (fileStat.size !== entry.size) {
-    await rm(temporary, { force: true });
-    throw new Error(`${entry.relative}: expected ${entry.size} byte(s), got ${fileStat.size}`);
-  }
-  const sha256 = await hashFile(temporary);
-  if (sha256 !== trusted.sha256) {
-    await rm(temporary, { force: true });
-    throw new Error(`${entry.relative}: downloaded SHA-256 does not match the reviewed manifest`);
-  }
-  await rename(temporary, entry.target);
-}
-
-async function fetchText(url) {
-  const buffer = await fetchBuffer(url);
-  return buffer.toString("utf8");
-}
-
-function fetchBuffer(url, redirects = 0) {
-  return new Promise((resolve, reject) => {
-    https
-      .get(url, (response) => {
-        if (
-          response.statusCode >= 300 &&
-          response.statusCode < 400 &&
-          response.headers.location &&
-          redirects < 5
-        ) {
-          response.resume();
-          resolve(fetchBuffer(new URL(response.headers.location, url).href, redirects + 1));
-          return;
-        }
-
-        if (response.statusCode !== 200) {
-          response.resume();
-          reject(new Error(`${url}: HTTP ${response.statusCode}`));
-          return;
-        }
-
-        const chunks = [];
-        response.on("data", (chunk) => chunks.push(chunk));
-        response.on("end", () => resolve(Buffer.concat(chunks)));
-      })
-      .on("error", reject);
-  });
-}
-
-function downloadToFile(url, target, redirects = 0) {
-  return new Promise((resolve, reject) => {
-    const request = https.get(url, (response) => {
-      if (
-        response.statusCode >= 300 &&
-        response.statusCode < 400 &&
-        response.headers.location &&
-        redirects < 5
-      ) {
-        response.resume();
-        resolve(downloadToFile(new URL(response.headers.location, url).href, target, redirects + 1));
-        return;
-      }
-
-      if (response.statusCode !== 200) {
-        response.resume();
-        reject(new Error(`${url}: HTTP ${response.statusCode}`));
-        return;
-      }
-
-      const file = createWriteStream(target);
-      response.pipe(file);
-      file.on("finish", () => file.close(resolve));
-      file.on("error", reject);
-    });
-    request.on("error", reject);
-  });
 }
 
 async function exists(absolute) {
