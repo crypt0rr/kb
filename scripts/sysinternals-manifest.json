@@ -183,8 +183,8 @@
       "sha256": "4af9ee369d72bc1f2c2c39cfd6460ac944ef7ee6d74a9e0a3445a8a03c1133e2"
     },
     "ARM64/pipelist64a.exe": {
-      "size": 521080,
-      "sha256": "5dc01061065c94b1f754f3fa533218378f8f2086c199a29bae734dde3f2755fb"
+      "size": 205128,
+      "sha256": "1821ef6b358e659f5e78bab0be2069a688b09eb356742b1fc8fc20ecb09592c2"
     },
     "ARM64/procdump64a.exe": {
       "size": 746816,
@@ -195,12 +195,12 @@
       "sha256": "36daeb8eb206d1ca5a0933fffcb07645c9aa68a037d64839d3dbc692c403e76f"
     },
     "ARM64/procexp64a.exe": {
-      "size": 2456856,
-      "sha256": "3373e0461a8421c1c92c5b07c8b258ba09a722ebb1f082fd75f43c40ed8ef839"
+      "size": 2463512,
+      "sha256": "8ef966a84f8d424325310ab3e242519db76f13f53c264fec75fd9468853e228a"
     },
     "ARM64/Procmon64a.exe": {
-      "size": 2291992,
-      "sha256": "dc0612d07cebc1de7017266bde2d35f622a372989893e5b3de922be150b906c7"
+      "size": 2305840,
+      "sha256": "96f3424fd7655a6dac685a8aeab4cc48ec34d0c6de34930891360aff63aa5915"
     },
     "ARM64/PsExec64a.exe": {
       "size": 781712,
@@ -211,16 +211,16 @@
       "sha256": "b8fbbc63504377530e07adbf8c61c7da73b4c37872282abbd738b14109963f0e"
     },
     "ARM64/PsGetsid64a.exe": {
-      "size": 465344,
-      "sha256": "e3f8bccaa5cf7b9cc5d4fd1e2edc56fc55a6048be4aee22f3c962f96574d8d67"
+      "size": 444216,
+      "sha256": "7eb666d334fb929054b9a1b0a530b1a3f2ddae30ee16bccb1c46b727c1a4b95f"
     },
     "ARM64/PsInfo64a.exe": {
-      "size": 495552,
-      "sha256": "74292ebe6db4989078a2c5ea289311b28ce61c0adabd093ff1502f61557ac971"
+      "size": 476456,
+      "sha256": "e184771906c3f7ce97c77fec6b0aa1fa65b0b2fd34812ba02ea7fd3e17cc8bd9"
     },
     "ARM64/pskill64a.exe": {
-      "size": 438704,
-      "sha256": "b741465cdb7437248f57951f0340b6616ee7b6a520368b04bae395be51e6c3d1"
+      "size": 436008,
+      "sha256": "c410bff4af4d452a71ce594a0cd18498f0075f06aab31c68b1bdd48ef6e72b9f"
     },
     "ARM64/pslist64a.exe": {
       "size": 253848,
@@ -243,8 +243,8 @@
       "sha256": "9956583c10e23363e5e8d628e62f3ff631578710bc88fe5abdb5894a7df9d3e3"
     },
     "ARM64/pssuspend64a.exe": {
-      "size": 441800,
-      "sha256": "b7f7d9b9848cb7e00c7d22478da8f549b6436c5f2fb15d6680a345b2d50ba5a9"
+      "size": 420152,
+      "sha256": "377c2bdaf10fc73bd7d776dbe9dc9293305a345018b771feced5940f8cd7158a"
     },
     "ARM64/RAMMap64a.exe": {
       "size": 414792,
@@ -263,8 +263,8 @@
       "sha256": "1dd7e9e0bfddb937e2bb554d69638bd2bcf0731a000dc756c03b88d37792d9a1"
     },
     "ARM64/sigcheck64a.exe": {
-      "size": 526408,
-      "sha256": "bf28d0f8e81c2d2331c33f7bf56b4e4c222adfe8d4f7e0c947d471e9873e3cfa"
+      "size": 527672,
+      "sha256": "054fca2f936608ffd451603884618963f0ba2ba23c5f0aae6380c7e70a7c0c75"
     },
     "ARM64/streams64a.exe": {
       "size": 524152,
@@ -279,8 +279,8 @@
       "sha256": "8fe3a1cf293a43522fd6ec3718e5f680beb062753f059ba22fab1116450dbe46"
     },
     "ARM64/Sysmon64a.exe": {
-      "size": 3141024,
-      "sha256": "440fca4bf161603fded8077313cb0f2d67795f1c4011516686fcd7a63dfaca49"
+      "size": 3138824,
+      "sha256": "11ca52749f916281d5060a8f510a840fdab1342e026301b7a964c377bb5cdc25"
     },
     "ARM64/tcpvcon64a.exe": {
       "size": 236952,
@@ -311,8 +311,8 @@
       "sha256": "3931e16b34298ff9acfb3af0012b3f739f1a465775fdf047c8831f72d27bc076"
     },
     "ARM64/ZoomIt64a.exe": {
-      "size": 8226104,
-      "sha256": "2066b5d05a46354e07d700f7580f4bae86ba85d67c11e35850f5f481fd95f248"
+      "size": 8236856,
+      "sha256": "d13061c1938cb4de943ec7d2a76602dd3065cf66900bd37de60c190a964a8699"
     },
     "Autologon.exe": {
       "size": 341072,
@@ -599,12 +599,12 @@
       "sha256": "3e7b1fcd9e8c0cca2bfc1140a8ceaa1e319487ac1f466eab01648443b80d9108"
     },
     "pipelist.exe": {
-      "size": 339320,
-      "sha256": "2156d7d3158ea589e8187c5cb82442ee6c37ee982bc0d728edc8a50a2a1c4281"
+      "size": 175904,
+      "sha256": "2e71a88fd832c7b1dc2ec40d074526b3115c386fec725ffd5eb3e1b0b2001d1b"
     },
     "pipelist64.exe": {
-      "size": 441720,
-      "sha256": "c7c3e2e7b729891141f5a7cb172390e57072783187edc92db95d4b7b7fe8cc4c"
+      "size": 217888,
+      "sha256": "d493a763bd8783a33ac466fba08447ee54f9771a54c979d83b9ac6cb4d68f97e"
     },
     "portmon.exe": {
       "size": 451392,
@@ -623,24 +623,24 @@
       "sha256": "36daeb8eb206d1ca5a0933fffcb07645c9aa68a037d64839d3dbc692c403e76f"
     },
     "procexp.exe": {
-      "size": 4604704,
-      "sha256": "6a26da49b2de1c70705918f8805192f7dfe43234c59a06a55145b35d46a8e660"
+      "size": 4619544,
+      "sha256": "00a9670b2a8cfc94e45ef0b70f7963121e03c287e37301975efdc9989f069045"
     },
     "procexp64.exe": {
-      "size": 2411824,
-      "sha256": "917b5d71f732bf5b5423cd212c004b2433a63e9dfe02a2a27ea421252c815690"
+      "size": 2419992,
+      "sha256": "22bb3c30cc79252284066fff934b62d35508d240d3fa844451adc99981012835"
     },
     "procmon.chm": {
       "size": 63582,
       "sha256": "9d9c7e0160537263c60c6ac0941e63f08fce23431aa4eb19acd25ee1e2be20ee"
     },
     "Procmon.exe": {
-      "size": 4199200,
-      "sha256": "a21dc2085f673704f336ee771c61efc0b70bb7b1a4850f89fe44ab8ef95b3a27"
+      "size": 4257576,
+      "sha256": "c28d800a38621a5bc79b051052418a454ce9a67678767b9ee2164420ec895619"
     },
     "Procmon64.exe": {
-      "size": 2208024,
-      "sha256": "f792c9be7ecdb5c1ea0b852cee28ae8093c84e69d9206e307a2a8cd2df9c85ad"
+      "size": 2237208,
+      "sha256": "fc3af5317c707e0555ad6e7590ad65ceb5c5085b053b41221944ac3ca3492d9c"
     },
     "PsExec.exe": {
       "size": 716176,
@@ -659,28 +659,28 @@
       "sha256": "be922312978a53c92a49fefd2c9f9cc098767b36f0e4d2e829d24725df65bc21"
     },
     "PsGetsid.exe": {
-      "size": 413632,
-      "sha256": "a48ac157609888471bf8578fb8b2aef6b0068f7e0742fccf2e0e288b0b2cfdfb"
+      "size": 383776,
+      "sha256": "8e642ed07ab79a26a3493390ba3f5f85ba8ae1cbcd8f1867ff18b16c17efba56"
     },
     "PsGetsid64.exe": {
-      "size": 506304,
-      "sha256": "201d8e77ccc2575d910d47042a986480b1da28cf0033e7ee726ad9d45ccf4daa"
+      "size": 468768,
+      "sha256": "5bc1cb8cd8a3ce3d63c6a33e1e0aae50dd1f092c8f44be61d8886c055853e751"
     },
     "PsInfo.exe": {
-      "size": 443328,
-      "sha256": "951b1b5fd5cb13cde159cebc7c60465587e2061363d1d8847ab78b6c4fba7501"
+      "size": 413496,
+      "sha256": "e29666f97057ff8e64ad6520bc7091608908b6eb85d84f16c6dadf8e1cc28efc"
     },
     "PsInfo64.exe": {
-      "size": 535984,
-      "sha256": "de73b73eeb156f877de61f4a6975d06759292ed69f31aaf06c9811f3311e03e7"
+      "size": 498992,
+      "sha256": "983270daa5a2ffa9c5c0c0a8d0f572bc5b6e68e5151ae84bdea7cf76a1d711b9"
     },
     "pskill.exe": {
-      "size": 390552,
-      "sha256": "5ef168f83b55d2cbd2426afc5e6fa8161270fa6a2a312831332dc472c95dfa42"
+      "size": 377112,
+      "sha256": "455c7f78b3faf7d13db2d8a56698733ccf71082308bba61498abc51d464728f2"
     },
     "pskill64.exe": {
-      "size": 476592,
-      "sha256": "7ba47558c99e18c2c6449be804b5e765c48d3a70ceaa04c1e0fae67ff1d7178d"
+      "size": 458520,
+      "sha256": "5a6bf82fa3e6088933184be1893035c2d702de5e6b1278c264b810a772c50e71"
     },
     "pslist.exe": {
       "size": 217520,
@@ -731,20 +731,20 @@
       "sha256": "554f523914cdbaed8b17527170502199c185bd69a41c81102c50dbb0e5e5a78d"
     },
     "psshutdown.exe": {
-      "size": 691080,
-      "sha256": "13fd3ad690c73cf0ad26c6716d4e9d1581b47c22fb7518b1d3bf9cfb8f9e9123"
+      "size": 654640,
+      "sha256": "2786085c14c1526ee09257883aabaa830339ba9da4e5a806c93773f03aec79df"
     },
     "psshutdown64.exe": {
-      "size": 809928,
-      "sha256": "4226738489c2a67852d51dbf96574f33e44e509bc265b950d495da79bb457400"
+      "size": 759112,
+      "sha256": "6ddaf8137dea539c829f1a4133163edc5c16319e03db5eeaf0e3ca3df2d3b0ad"
     },
     "pssuspend.exe": {
-      "size": 393160,
-      "sha256": "95a922e178075fb771066db4ab1bd70c7016f794709d514ab1c7f11500f016cd"
+      "size": 363848,
+      "sha256": "023d02177ef15dddece582d91b154df9ccff1534342f60889f1f9fb1f93dd53d"
     },
     "pssuspend64.exe": {
-      "size": 480136,
-      "sha256": "4bf8fbb7db583e1aacbf36c5f740d012c8321f221066cc68107031bd8b6bc1ee"
+      "size": 443680,
+      "sha256": "ecbad759fa863f98f4a7de2aabe5a3006d7b77dc42c10d5cb5439b12d16c2f1a"
     },
     "Pstools.chm": {
       "size": 66582,
@@ -819,12 +819,12 @@
       "sha256": "d7d1ebac76fd713759b996e9b8724fad508717a6c385dd8e04d0d756dc9a3dc5"
     },
     "sigcheck.exe": {
-      "size": 437792,
-      "sha256": "b0506ade6699089afb32350a5a08814c9c0f49f440d0102a8a3c7baed2656d55"
+      "size": 437536,
+      "sha256": "ab8b16649c4211ae6a954c9a614bfb2f97c2076228680f4b305e29885166e5be"
     },
     "sigcheck64.exe": {
-      "size": 527944,
-      "sha256": "a2efff8d5bce9db4b899d38afaa706bdfd822711f929616a51b0dbc9f76c6281"
+      "size": 527160,
+      "sha256": "3a081d7ae5a052f5a2fe918c1a9fed11ef7a6686ab2bf51204b5f1f75bf4038e"
     },
     "streams.exe": {
       "size": 342392,
@@ -851,12 +851,12 @@
       "sha256": "27038cb10080d92915c08d08f3ec37a85bed87bdb05d47b90425917b00f4654f"
     },
     "Sysmon.exe": {
-      "size": 6258072,
-      "sha256": "e629aff050b07293ce66cb5f220280727daa33b7eeda961554b86e35e8a72c7a"
+      "size": 6162240,
+      "sha256": "2afacac21966b3179e3996e72512bb5c9c25b8ef779560dce1ece3bc1879b57b"
     },
     "Sysmon64.exe": {
-      "size": 3250120,
-      "sha256": "a60aa845457406383277afdead35bd90c7804572b99901d239cc974841df2528"
+      "size": 3203368,
+      "sha256": "83d31f2478dc6716cfdbf69e5c384bf043072b5f0d8d7b2eea365f709fda4352"
     },
     "tcpvcon.exe": {
       "size": 202632,
@@ -923,12 +923,12 @@
       "sha256": "e2a2a818ab71c388fa2e4d4af6a1abbeb32c9fcbaa22ec7e7c0cc8a044639662"
     },
     "ZoomIt.exe": {
-      "size": 16296760,
-      "sha256": "0d544cc2e86442e270541eb1a3e077808159d0a51da28aa1433e79cc3303298c"
+      "size": 16317752,
+      "sha256": "7cd94ff8034852ab46bdacfe7462da08952508a77184fe88c20cbaea89b45f7a"
     },
     "ZoomIt64.exe": {
-      "size": 8299320,
-      "sha256": "fc4576c91343c66877612446eaeb3aa3ebb5f9814c232cb51ebba1646a770a76"
+      "size": 8310584,
+      "sha256": "ebe7ce1010709545df66cc784cc7172651d977cfc386a8d4c8b2d9195a5d95f1"
     }
   }
 }
