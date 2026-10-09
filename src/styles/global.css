@@ -637,6 +637,7 @@ h1 {
 }
 
 .prose pre .hljs-keyword,
+.prose pre .hljs-doctag,
 .prose pre .hljs-literal,
 .prose pre .hljs-operator,
 .prose pre .hljs-name,

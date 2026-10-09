@@ -97,10 +97,12 @@ inside them.
 Fenced code is syntax highlighted at build time with highlight.js
 (`src/lib/highlight.mjs`), so pages ship no highlighting script. Only fences
 labelled with a known language are highlighted (`bash`/`sh`, `shell`,
-`powershell`/`ps1`, `cmd`/`bat`, `yaml`, `html`/`xml`, `c`, `cpp`, `json`,
-`python`, `javascript`, `ini`, `sql`, `diff` and their highlight.js aliases,
-case-insensitively); the language is never guessed, so `plain`, unlabelled and
-unknown fences stay plain escaped text. The output is `hljs-*` class spans
+`powershell`/`ps1`, `cmd`/`bat`/`batch`, `yaml`, `html`/`xml`, `c`, `cpp`,
+`json`, `python`, `javascript`, `ini`, `sql`, `diff` and their highlight.js
+aliases, case-insensitively); the language is never guessed, so `plain`,
+unlabelled and unknown fences stay plain escaped text. Fences over 20,000
+characters or with a 1,000-character unbroken word run (shellcode, blob dumps)
+also stay plain, because highlighting them would stall the build. The output is `hljs-*` class spans
 styled by `src/styles/global.css`, never inline `style` attributes, which the
 CSP (`style-src 'self'`) would block. The copy button still copies the exact
 fence text.
