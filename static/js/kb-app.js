@@ -159,11 +159,12 @@
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
-      if (dialog?.open) return;
       const active = document.activeElement;
       if (active?.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(active?.tagName)) return;
       event.preventDefault();
-      openSearch();
+      // Inside the open dialog, only move focus back to the query so the opener stays the focus return target.
+      if (dialog?.open) searchInput?.focus();
+      else openSearch();
     }
   });
 
