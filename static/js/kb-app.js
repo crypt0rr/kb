@@ -77,7 +77,7 @@
   });
 
   const openSearch = async () => {
-    if (!dialog) return;
+    if (!dialog || dialog.open) return;
     lastFocusedElement = document.activeElement;
     const params = new URLSearchParams(window.location.search);
     if (searchInput && params.has("q")) searchInput.value = params.get("q") ?? "";
@@ -159,8 +159,9 @@
 
   document.addEventListener("keydown", (event) => {
     if (event.key === "/" && !event.metaKey && !event.ctrlKey && !event.altKey) {
+      if (dialog?.open) return;
       const active = document.activeElement;
-      if (active?.tagName === "INPUT" || active?.tagName === "TEXTAREA") return;
+      if (active?.isContentEditable || ["INPUT", "TEXTAREA", "SELECT"].includes(active?.tagName)) return;
       event.preventDefault();
       openSearch();
     }

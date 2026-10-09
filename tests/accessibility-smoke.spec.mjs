@@ -54,6 +54,33 @@ test("keyboard users can skip to content and operate search", async ({ page }) =
   await expect(page.locator("[data-search-open]")).toBeFocused();
 });
 
+test("search shortcut is ignored inside the open search dialog", async ({ page }) => {
+  await page.goto("/", { waitUntil: "networkidle" });
+
+  const opener = page.locator("[data-search-open]");
+  const dialog = page.locator("[data-search-dialog]");
+  const searchInput = page.locator("[data-search-input]");
+
+  await opener.click();
+  await expect(dialog).toBeVisible();
+  await expect(searchInput).toBeFocused();
+
+  await searchInput.press("/");
+  await expect(searchInput).toHaveValue("/");
+  await expect(searchInput).toBeFocused();
+  await searchInput.fill("");
+
+  const sectionSelect = page.locator("[data-search-section]");
+  await sectionSelect.focus();
+  await expect(sectionSelect).toBeFocused();
+  await page.keyboard.press("/");
+  await expect(sectionSelect).toBeFocused();
+
+  await page.keyboard.press("Escape");
+  await expect(dialog).not.toBeVisible();
+  await expect(opener).toBeFocused();
+});
+
 test("mobile navigation exposes its expanded state", async ({ page }) => {
   await page.setViewportSize({ width: 640, height: 800 });
   await page.goto("/", { waitUntil: "networkidle" });
