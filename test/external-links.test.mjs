@@ -1094,3 +1094,92 @@ test("slows down and finally skips a host that keeps refusing after answering", 
   assert.match(skipped.error, /kept refusing connections/);
   assert.equal(classifyResult(skipped), "blocked");
 });
+
+test("blames a refused redirect target, not the link's own host", async () => {
+  const clock = virtualClock();
+  const own = "https://moved.kb-fixture.dev";
+  const urls = [`${own}/a`, `${own}/d1`, `${own}/d2`, `${own}/d3`, `${own}/z1`, `${own}/z2`];
+  const results = await clock.drive(
+    checkUrls(urls, {
+      sleep: clock.sleep,
+      now: clock.now,
+      retries: 0,
+      hostConcurrency: 1,
+      fetchImpl: async (url) => {
+        await clock.sleep(10);
+        if (url.startsWith("https://dead-target.kb-fixture.dev/")) throw systemError("ECONNREFUSED");
+        if (/\/d\d$/.test(url)) {
+          return response(301, { location: `https://dead-target.kb-fixture.dev/${url.split("/").pop()}` });
+        }
+        return response(200);
+      }
+    })
+  );
+  const byUrl = Object.fromEntries(results.map((result) => [result.url, result]));
+
+  for (const url of [`${own}/d1`, `${own}/d2`, `${own}/d3`]) {
+    assert.equal(byUrl[url].code, "ECONNREFUSED", url);
+    assert.equal(classifyResult(byUrl[url]), "broken", url);
+  }
+  for (const url of [`${own}/a`, `${own}/z1`, `${own}/z2`]) {
+    assert.equal(classifyResult(byUrl[url]), "ok", url);
+  }
+  assert.ok(results.every((result) => !Object.hasOwn(result, "refusedByOwnHost")));
+});
+
+test("keeps every link of a host that never answers broken and unthrottled", async () => {
+  const clock = virtualClock();
+  const urls = Array.from({ length: 5 }, (_, i) => `https://gone.kb-fixture.dev/${i}`);
+  const results = await clock.drive(
+    checkUrls(urls, {
+      sleep: clock.sleep,
+      now: clock.now,
+      retries: 0,
+      hostConcurrency: 1,
+      fetchImpl: async () => {
+        await clock.sleep(10);
+        throw systemError("ECONNREFUSED");
+      }
+    })
+  );
+
+  assert.deepEqual(
+    results.map((result) => [result.code, classifyResult(result)]),
+    urls.map(() => ["ECONNREFUSED", "broken"])
+  );
+  // No pause or widened gap: five links at 10 ms each, HEAD and GET.
+  assert.ok(clock.now() <= 200, `took ${clock.now()} ms`);
+});
+
+test("counts a HEAD answer before a refused GET as the host answering", async () => {
+  const results = await checkUrls(["https://head-only.kb-fixture.dev/page"], {
+    retries: 0,
+    fetchImpl: async (_url, { method }) => {
+      if (method === "HEAD") return response(405);
+      throw systemError("ECONNREFUSED");
+    }
+  });
+
+  assert.equal(results[0].code, "HOST_REFUSED");
+  assert.equal(classifyResult(results[0]), "blocked");
+});
+
+test("mentions refused connections when a host was not requested", () => {
+  const report = createExternalLinkReport(
+    [
+      {
+        url: "https://archive.kb-fixture.dev/web/9",
+        status: null,
+        code: "HOST_THROTTLED",
+        error: "not checked: host kept refusing connections",
+        attempts: 0,
+        sources: ["content/a.md"]
+      }
+    ],
+    { generatedAt: "2026-10-09T00:00:00.000Z" }
+  );
+
+  const sentence = /their host kept answering 429 or 503, refusing connections, or timing out/;
+  assert.match(renderMarkdown(report), sentence);
+  assert.match(renderSummary(report), sentence);
+});

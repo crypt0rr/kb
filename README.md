@@ -183,11 +183,13 @@ more slowly instead of being reported. A host that answered other requests in
 the same run but then refuses a connection is rate limiting (the Internet
 Archive does this), so it is slowed down the same way. Once 3 links in a row on
 one host end with 429, 503, a timeout or such a refusal, the host's remaining
-links are not requested and are reported with that reason. No request starts after `--max-duration` seconds
-(default 1200, 20 minutes); links still waiting then are reported as not
-checked, so the run always finishes and writes its reports within the
-workflow's time limit. Redirects are followed by hand (up to 20); a redirect to
-a host that would be skipped, such as a private address, is reported instead of
+links are not requested and are reported with that reason. A refusal only
+counts against the link's own host; one from a redirect target on another host
+stays a broken link. No request starts after `--max-duration` seconds (default
+1200, 20 minutes); links still waiting then are reported as not checked, so the
+run always finishes and writes its reports within the workflow's time limit.
+Redirects are followed by hand (up to 20); a redirect to a host that would be
+skipped, such as a private address, is reported instead of
 requested. Every result is classified as:
 
 - `ok`: 2xx or 3xx after redirects.

@@ -306,13 +306,17 @@ export async function checkUrls(entries, options = {}) {
   // A refused connection only means "gone" when the host never answered. If
   // it answered other requests in this run, earlier or later, it is rate
   // limiting, so the link is blocked rather than broken.
-  for (const result of results) {
-    if (result.code === "ECONNREFUSED" && hosts.get(hostKey(result.url))?.answered) {
-      result.code = "HOST_REFUSED";
-      result.error = "connection refused after the host answered other requests (rate limited)";
-    }
-  }
-  return results.sort(compareResults);
+  return results
+    .map(({ refusedByOwnHost: refused, ...result }) =>
+      refused && hosts.get(hostKey(result.url))?.answered
+        ? {
+            ...result,
+            code: "HOST_REFUSED",
+            error: "connection refused after the host answered other requests (rate limited)"
+          }
+        : result
+    )
+    .sort(compareResults);
 }
 
 /**
@@ -366,7 +370,7 @@ export async function checkUrl(url, options = {}) {
       release();
     }
     useGet ||= outcome.method === "GET";
-    if (Number.isInteger(outcome.status)) hostState.answered = true;
+    if (outcome.hostAnswered) hostState.answered = true;
 
     const retryAfterMs = parseRetryAfter(outcome.retryAfter, now());
     const wait = retryDelay(attempts, retryAfterMs, { baseMs: retryBaseMs, maxDelayMs: maxRetryDelayMs });
@@ -396,7 +400,9 @@ export async function checkUrl(url, options = {}) {
     status: outcome.status ?? null,
     code: outcome.code ?? null,
     error: outcome.error ?? null,
-    attempts
+    attempts,
+    // Lets checkUrls tell a rate-limiting host from a dead one after the run.
+    ...(refusedByOwnHost(outcome) ? { refusedByOwnHost: true } : {})
   };
 }
 
@@ -448,8 +454,12 @@ function hostReadyAt(hostState) {
   return Math.max(hostState.notBefore ?? 0, hostState.nextStart ?? 0);
 }
 
+function refusedByOwnHost(outcome) {
+  return outcome.code === "ECONNREFUSED" && !outcome.foreignFailure;
+}
+
 function refusesAfterAnswering(outcome, hostState) {
-  return outcome.code === "ECONNREFUSED" && hostState.answered === true;
+  return refusedByOwnHost(outcome) && hostState.answered === true;
 }
 
 function hostFailure(outcome, hostState) {
@@ -716,11 +726,14 @@ export function parseArguments(argv = []) {
 }
 
 async function attempt(url, { useGet, timeoutMs, fetchImpl }) {
+  let headAnswered = false;
   if (!useGet) {
     const head = await request(url, "HEAD", { timeoutMs, fetchImpl });
     if (!needsGetFallback(head)) return { ...head, method: "HEAD" };
+    headAnswered = head.hostAnswered;
   }
-  return { ...(await request(url, "GET", { timeoutMs, fetchImpl })), method: "GET" };
+  const get = await request(url, "GET", { timeoutMs, fetchImpl });
+  return { ...get, hostAnswered: get.hostAnswered || headAnswered, method: "GET" };
 }
 
 function needsGetFallback(outcome) {
@@ -737,13 +750,18 @@ function needsGetFallback(outcome) {
 /**
  * Request `url` and follow redirects by hand, so that a redirect into a host
  * that would be skipped (private, reserved, or with credentials) is reported
- * instead of requested. The timeout covers all hops.
+ * instead of requested. The timeout covers all hops. `hostAnswered` tells
+ * whether the link's own host sent any response (a redirect hop counts), and
+ * `foreignFailure` whether an error came from a redirect target on another
+ * host, so that host is not blamed on the link's host.
  */
 async function request(url, method, { timeoutMs, fetchImpl }) {
   if (typeof fetchImpl !== "function") throw new Error("fetch is unavailable");
 
   const signal = AbortSignal.timeout(timeoutMs);
+  const ownHost = hostKey(url);
   let current = url;
+  let hostAnswered = false;
   try {
     for (let redirects = 0; ; redirects += 1) {
       const response = await fetchImpl(current, {
@@ -755,6 +773,7 @@ async function request(url, method, { timeoutMs, fetchImpl }) {
           accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8"
         }
       });
+      if (hostKey(current) === ownHost) hostAnswered = true;
       try {
         Promise.resolve(response.body?.cancel?.()).catch(() => {});
       } catch {
@@ -766,31 +785,32 @@ async function request(url, method, { timeoutMs, fetchImpl }) {
       if (!location) {
         return {
           status: response.status,
-          retryAfter: response.headers?.get?.("retry-after") ?? null
+          retryAfter: response.headers?.get?.("retry-after") ?? null,
+          hostAnswered
         };
       }
       if (redirects >= MAX_REDIRECTS) {
-        return { code: "TOO_MANY_REDIRECTS", error: `more than ${MAX_REDIRECTS} redirects` };
+        return { code: "TOO_MANY_REDIRECTS", error: `more than ${MAX_REDIRECTS} redirects`, hostAnswered };
       }
 
       let next;
       try {
         next = new URL(location, current);
       } catch {
-        return { code: "UNSUPPORTED_REDIRECT", error: "redirect to an invalid URL" };
+        return { code: "UNSUPPORTED_REDIRECT", error: "redirect to an invalid URL", hostAnswered };
       }
       if (next.protocol !== "http:" && next.protocol !== "https:") {
-        return { code: "UNSUPPORTED_REDIRECT", error: `redirect to a ${next.protocol} URL` };
+        return { code: "UNSUPPORTED_REDIRECT", error: `redirect to a ${next.protocol} URL`, hostAnswered };
       }
       next.hash = "";
       const reason = skipReason(next.href);
       if (reason) {
-        return { code: "REDIRECT_SKIPPED", error: `redirect to a skipped URL (${reason})` };
+        return { code: "REDIRECT_SKIPPED", error: `redirect to a skipped URL (${reason})`, hostAnswered };
       }
       current = next.href;
     }
   } catch (error) {
-    return describeError(error);
+    return { ...describeError(error), hostAnswered, foreignFailure: hostKey(current) !== ownHost };
   }
 }
 
@@ -836,7 +856,7 @@ function renderNotChecked(summary) {
   if (!summary.notChecked) return [];
   return [
     `${summary.notChecked} of the unreachable and blocked links were not requested because the ` +
-      "time budget ran out or their host kept answering 429, 503, or timing out.",
+      "time budget ran out or their host kept answering 429 or 503, refusing connections, or timing out.",
     ""
   ];
 }
