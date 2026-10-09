@@ -1,11 +1,18 @@
 import fs from "node:fs";
 import path from "node:path";
-import MarkdownIt from "markdown-it";
-import anchor from "markdown-it-anchor";
 import { buildContentIndex, normalizeWeight } from "./content-index.mjs";
 import { buildContentGraph } from "./content-graph.mjs";
 import { isPrivateContentPath } from "./content-paths.mjs";
 import { normalizeDate } from "./date.mjs";
+import {
+  createMarkdown,
+  createRefIndex,
+  resolveRef,
+  slash,
+  slugify,
+  withSlashes,
+  type RefIndex
+} from "./links.mjs";
 import {
   canonicalTag,
   tagKey,
@@ -49,7 +56,7 @@ export type PageConnection = {
 
 let cache: KbPage[] | null = null;
 let urlMap: Map<string, KbPage> | null = null;
-let refMap: Map<string, KbPage[]> | null = null;
+let refIndex: RefIndex<KbPage> | null = null;
 let contentGraph: ContentGraph | null = null;
 
 type ContentRecord = {
@@ -107,14 +114,7 @@ type ContentGraph = {
   };
 };
 
-const md = new MarkdownIt({
-  html: true,
-  linkify: true,
-  typographer: false
-}).use(anchor, {
-  slugify,
-  permalink: anchor.permalink.headerLink()
-});
+const md = createMarkdown();
 
 const defaultLinkOpen =
   md.renderer.rules.link_open ??
@@ -152,7 +152,7 @@ export function getPages() {
   pages.sort(sortPages);
   cache = pages;
   urlMap = byUrl;
-  refMap = buildRefMap(pages);
+  refIndex = createRefIndex(pages);
   contentGraph = graph;
   return pages;
 }
@@ -345,13 +345,13 @@ function toKbPage(record: ContentRecord): KbPage {
 function preprocessShortcodes(source: string, page: KbPage) {
   let output = source;
 
+  // Open and close notices as raw HTML blocks so the body is parsed as Markdown
+  // in the main pass; the blank lines end each HTML block.
   output = output.replace(
-    /\{\{%\s*notice\s+([a-zA-Z0-9_-]+)\s*%\}\}([\s\S]*?)\{\{%\s*\/notice\s*%\}\}/g,
-    (_match, kind, body) => {
-      const rendered = md.render(String(body).trim());
-      return `<aside class="notice notice-${escapeAttr(kind)}">${rendered}</aside>`;
-    }
+    /\{\{%\s*notice\s+([a-zA-Z0-9_-]+)\s*%\}\}/g,
+    (_match, kind) => `<aside class="notice notice-${escapeAttr(kind)}">\n\n`
   );
+  output = output.replace(/\{\{%\s*\/notice\s*%\}\}/g, "\n\n</aside>\n\n");
 
   output = output.replace(
     /\{\{%\s*children\s*([^%}]*)%\}\}/g,
@@ -386,7 +386,7 @@ function preprocessShortcodes(source: string, page: KbPage) {
 
   output = output.replace(
     /\{\{[<%]\s*ref\s*"?([^"%>}]+)"?\s*[>%]\}\}/g,
-    (_match, target) => resolveRef(String(target).trim(), page)
+    (_match, target) => renderRef(String(target).trim(), page)
   );
 
   output = output.replace(/\{\{[%<][\s\S]*?[>%]\}\}/g, "");
@@ -481,45 +481,18 @@ function normalizeResourceDirectory(value?: string) {
   return clean;
 }
 
-function resolveRef(target: string, page: KbPage) {
-  const [rawPath, anchorPart] = target.split("#");
-  const clean = rawPath
-    .replace(/\\/g, "/")
-    .replace(/(^"|"$)/g, "")
-    .replace(/\.md$/i, "")
-    .replace(/\/index$/i, "")
-    .replace(/\/_index$/i, "")
-    .replace(/^\/+|\/+$/g, "");
+function renderRef(target: string, page: KbPage) {
+  const anchorPart = target.split("#")[1];
   const hash = anchorPart ? `#${slugify(anchorPart)}` : "";
 
   getPages();
-  const candidates = [
-    `/${clean}/`,
-    `/${slash(path.posix.normalize(path.posix.join(page.sourceDir, clean)))}/`,
-    `/${slash(path.posix.normalize(clean))}/`
-  ].map(withSlashes);
-
-  for (const candidate of candidates) {
-    const found = urlMap?.get(candidate);
-    if (found) return `${found.url}${hash}`;
+  const resolved = refIndex ? resolveRef(target, page, refIndex) : null;
+  if (!resolved?.page) {
+    const source = page.relativeFile || page.url || "page";
+    throw new Error(`${source}: unresolved ref "${target}"`);
   }
 
-  const basename = clean.split("/").filter(Boolean).pop()?.toLowerCase();
-  if (basename) {
-    const matches = refMap?.get(basename) ?? [];
-    if (matches.length === 1) return `${matches[0].url}${hash}`;
-
-    const nearest = matches
-      .map((match) => ({
-        match,
-        score: commonPrefix(page.slug.split("/"), match.slug.split("/"))
-      }))
-      .sort((a, b) => b.score - a.score)[0]?.match;
-
-    if (nearest) return `${nearest.url}${hash}`;
-  }
-
-  return hash || "#";
+  return `${resolved.page.url}${hash}`;
 }
 
 function parseAttrs(rawAttrs: string) {
@@ -542,25 +515,6 @@ function buildBreadcrumbs(page: KbPage, byUrl: Map<string, KbPage>) {
   return items;
 }
 
-function buildRefMap(pages: KbPage[]) {
-  const map = new Map<string, KbPage[]>();
-  for (const page of pages) {
-    const keys = new Set([
-      page.slug.split("/").filter(Boolean).pop()?.toLowerCase(),
-      page.relativeFile.replace(/\/_?index\.md$/i, "").split("/").pop()?.toLowerCase(),
-      slugify(page.title)
-    ]);
-
-    for (const key of keys) {
-      if (!key) continue;
-      const matches = map.get(key) ?? [];
-      matches.push(page);
-      map.set(key, matches);
-    }
-  }
-  return map;
-}
-
 function titleFromSlug(slug: string) {
   return slug
     .split("/")
@@ -579,30 +533,6 @@ function normalizeStatus(value: unknown): KbPage["status"] {
   return status === "active" || status === "deprecated" || status === "archived"
     ? status
     : undefined;
-}
-
-function slugify(value: string) {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/['"`]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-function withSlashes(value: string) {
-  if (value === "/") return "/";
-  return `/${value.replace(/^\/+|\/+$/g, "")}/`;
-}
-
-function slash(value: string) {
-  return value.replace(/\\/g, "/");
-}
-
-function commonPrefix(a: string[], b: string[]) {
-  let count = 0;
-  while (a[count] && b[count] && a[count] === b[count]) count += 1;
-  return count;
 }
 
 function escapeHtml(value: string) {

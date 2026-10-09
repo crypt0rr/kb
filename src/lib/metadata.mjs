@@ -1,4 +1,5 @@
 import { parseFrontmatter } from "./frontmatter.mjs";
+import { slugify } from "./links.mjs";
 
 const tagAliases = new Map([
   ["hash-cracking", "Hash Cracking"],
@@ -136,13 +137,4 @@ function isPlainObject(value) {
   if (!value || typeof value !== "object" || Array.isArray(value)) return false;
   const prototype = Object.getPrototypeOf(value);
   return prototype === Object.prototype || prototype === null;
-}
-
-function slugify(value) {
-  return value
-    .toLowerCase()
-    .trim()
-    .replace(/[\u0027\u0060\"]+/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
 }

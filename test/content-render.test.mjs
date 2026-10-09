@@ -50,3 +50,60 @@ test("shares shortcode argument validation between checks and rendering", () => 
   assert.equal(parseGistReference("crypt0rr"), null);
   assert.equal(parseGistReference("crypt0rr \" onerror=alert(1)"), null);
 });
+
+test("throws on unresolved refs instead of emitting an empty link", () => {
+  assert.throws(
+    () =>
+      renderPage({
+        ...page('[Missing]({{< ref "no-such-page-anywhere" >}})'),
+        relativeFile: "fixtures/missing-ref.md"
+      }),
+    /fixtures\/missing-ref\.md: unresolved ref "no-such-page-anywhere"/
+  );
+});
+
+test("parses notice bodies in the main pass so code blocks keep blank lines", () => {
+  const html = renderPage(
+    page(
+      [
+        "{{% notice info %}}",
+        "```bash",
+        "echo one",
+        "",
+        "# comment",
+        "echo two",
+        "```",
+        "{{% /notice %}}"
+      ].join("\n")
+    )
+  );
+
+  assert.equal(html.match(/<pre>/g)?.length, 1);
+  assert.match(html, /^<aside class="notice notice-info">/);
+  assert.match(html, /# comment\necho two\n<\/code><\/pre>\n<\/aside>/);
+  assert.doesNotMatch(html, /<h1/);
+});
+
+test("resolves shortcodes nested inside notices", () => {
+  const html = renderPage(
+    page('{{% notice warning %}}\nSee [awk]({{< ref "awk" >}}).\n{{% /notice %}}')
+  );
+
+  assert.match(html, /<aside class="notice notice-warning">/);
+  assert.match(html, /<a href="\/commands\/unix\/awk\/">awk<\/a>/);
+  assert.doesNotMatch(html, /\{\{|&lt;/);
+});
+
+test("never nests anchors in headings that contain a link", () => {
+  const html = renderPage(page("## [Link](https://x.y) title\n\n## Plain"));
+
+  assert.doesNotMatch(html, /<a [^>]*>(?:(?!<\/a>).)*<a /s);
+  assert.match(
+    html,
+    /<h2 id="link-title" tabindex="-1"><a href="https:\/\/x\.y" target="_blank" rel="noopener noreferrer">Link<\/a> title <a class="heading-permalink" href="#link-title" aria-label="Permalink to Link title">#<\/a><\/h2>/
+  );
+  assert.match(
+    html,
+    /<h2 id="plain" tabindex="-1"><a class="header-anchor" href="#plain">Plain<\/a><\/h2>/
+  );
+});
