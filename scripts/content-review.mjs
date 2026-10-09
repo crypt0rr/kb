@@ -6,12 +6,18 @@ import {
   normalizeDate,
   subtractMonths
 } from "../src/lib/date.mjs";
-import { classifyReviewSignal } from "../src/lib/content-health.mjs";
+import {
+  classifyReviewSignal,
+  DEFAULT_RECENT_REVIEW_DAYS,
+  isRecentlyReviewed,
+  recentReviewSince
+} from "../src/lib/content-health.mjs";
 
 export const DEFAULT_OUTPUT = ".reports/content-review.md";
 export const DEFAULT_JSON_OUTPUT = ".reports/content-review.json";
 export const DEFAULT_STALE_MONTHS = 12;
 export const DEFAULT_LIMIT = 100;
+export const DEFAULT_RECENT_DAYS = DEFAULT_RECENT_REVIEW_DAYS;
 export const DEFAULT_SECTION_WEIGHTS = Object.freeze({
   cve: 4,
   tools: 3,
@@ -146,6 +152,7 @@ export function createReviewReport(pages, options = {}) {
   const asOf = normalizeDate(options.asOf ?? currentUtcDate());
   const staleMonths = options.staleMonths ?? DEFAULT_STALE_MONTHS;
   const limit = options.limit ?? DEFAULT_LIMIT;
+  const recentDays = options.recentDays ?? DEFAULT_RECENT_DAYS;
 
   if (!asOf) throw new Error("--as-of must use a valid YYYY-MM-DD date");
   if (!Number.isInteger(staleMonths) || staleMonths < 1) {
@@ -156,6 +163,7 @@ export function createReviewReport(pages, options = {}) {
   }
 
   const staleBefore = subtractMonths(asOf, staleMonths);
+  const recentSince = recentReviewSince(asOf, recentDays);
   const reviewedPages = pages.map((page) =>
     classifyReviewPage(page, {
       asOf,
@@ -173,6 +181,8 @@ export function createReviewReport(pages, options = {}) {
     asOf,
     staleAfterMonths: staleMonths,
     staleBefore,
+    recentReviewDays: recentDays,
+    recentReviewSince: recentSince,
     limit,
     summary: {
       totalPages: reviewedPages.length,
@@ -182,6 +192,7 @@ export function createReviewReport(pages, options = {}) {
       futureDates: futureDates.length,
       metadataErrors: reviewedPages.filter((page) => page.metadataErrors.length).length,
       reviewed: reviewedPages.filter((page) => page.lastReviewed).length,
+      reviewedRecently: reviewedPages.filter((page) => isRecentlyReviewed(page, recentSince)).length,
       current: current.length,
       priorityTiers: Object.fromEntries(
         ["critical", "high", "normal", "current"].map((tier) => [
@@ -234,6 +245,7 @@ export function renderMarkdown(report) {
     `- Future dates: ${report.summary.futureDates}`,
     `- Metadata errors: ${report.summary.metadataErrors}`,
     `- Reviewed pages: ${report.summary.reviewed}`,
+    `- Reviewed in the last ${report.recentReviewDays} days (since ${report.recentReviewSince}): ${report.summary.reviewedRecently}`,
     `- Priority tiers: ${report.summary.priorityTiers.critical} critical, ${report.summary.priorityTiers.high} high, ${report.summary.priorityTiers.normal} normal, ${report.summary.priorityTiers.current} current`,
     ""
   ];
@@ -276,6 +288,7 @@ export function renderSummary(report) {
     `- Pages scanned: ${report.summary.totalPages}`,
     `- Pages requiring review: ${report.summary.needsReview}`,
     `- Missing lastReviewed: ${report.summary.missingLastReviewed}`,
+    `- Reviewed: ${report.summary.reviewed} (${report.summary.reviewedRecently} in the last ${report.recentReviewDays} days)`,
     `- Stale: ${report.summary.stale}`,
     `- Future dates: ${report.summary.futureDates}`,
     `- Metadata errors: ${report.summary.metadataErrors}`,
@@ -297,7 +310,7 @@ export async function run(argv = process.argv.slice(2)) {
   }
 
   console.log(
-    `Content review: ${report.summary.totalPages} pages scanned; ${report.summary.needsReview} requiring review; ${report.summary.futureDates} future-date issue(s)`
+    `Content review: ${report.summary.totalPages} pages scanned; ${report.summary.needsReview} requiring review; ${report.summary.reviewedRecently} reviewed in the last ${report.recentReviewDays} days; ${report.summary.futureDates} future-date issue(s)`
   );
   return report;
 }
@@ -309,7 +322,8 @@ export function parseArguments(argv = []) {
     summaryFile: undefined,
     asOf: currentUtcDate(),
     staleMonths: DEFAULT_STALE_MONTHS,
-    limit: DEFAULT_LIMIT
+    limit: DEFAULT_LIMIT,
+    recentDays: DEFAULT_RECENT_DAYS
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -335,6 +349,9 @@ export function parseArguments(argv = []) {
         break;
       case "--limit":
         options.limit = parsePositiveInteger(flag, value);
+        break;
+      case "--recent-days":
+        options.recentDays = parsePositiveInteger(flag, value);
         break;
       default:
         throw new Error(`Unknown option ${flag}`);

@@ -13,6 +13,7 @@ import {
 import {
   createReviewReport,
   DEFAULT_LIMIT,
+  DEFAULT_RECENT_DAYS,
   DEFAULT_SECTION_WEIGHTS
 } from "./content-review.mjs";
 
@@ -95,8 +96,10 @@ export function createContentHealthReport(options = {}) {
     asOf: reviewReport.asOf,
     staleAfterMonths: reviewReport.staleAfterMonths,
     staleBefore: reviewReport.staleBefore,
+    recentReviewDays: reviewReport.recentReviewDays,
+    recentReviewSince: reviewReport.recentReviewSince,
     limit: reviewReport.limit,
-    summary: createHealthSummary(pages),
+    summary: createHealthSummary(pages, { recentSince: reviewReport.recentReviewSince }),
     reviewSummary: reviewReport.summary,
     pages
   };
@@ -117,6 +120,8 @@ export function renderMarkdown(report) {
     `- Review due: ${summary.reviewDue}`,
     `- Repair needed: ${summary.repairNeeded}`,
     `- Context light: ${summary.contextLight}`,
+    `- Reviewed: ${summary.reviewed}`,
+    `- Reviewed in the last ${report.recentReviewDays} days (since ${report.recentReviewSince}): ${summary.reviewedRecently}`,
     `- Missing lastReviewed: ${summary.missingLastReviewed}`,
     `- Stale: ${summary.stale}`,
     `- Future dates: ${summary.futureDates}`,
@@ -172,6 +177,7 @@ export function renderSummary(report) {
     `- As of: ${report.asOf}`,
     `- Pages scanned: ${summary.totalPages}`,
     `- Verified / review due / repair needed / context light: ${summary.verified} / ${summary.reviewDue} / ${summary.repairNeeded} / ${summary.contextLight}`,
+    `- Reviewed: ${summary.reviewed} (${summary.reviewedRecently} in the last ${report.recentReviewDays} days)`,
     `- Missing lastReviewed: ${summary.missingLastReviewed}; stale: ${summary.stale}; integrity findings: ${summary.brokenLinks + summary.missingAnchors + summary.brokenAssets}`,
     "- Report-only; no content build is failed because a page needs review."
   ].join("\n");
@@ -205,6 +211,7 @@ export function parseArguments(argv = []) {
     asOf: undefined,
     staleMonths: DEFAULT_STALE_MONTHS,
     limit: DEFAULT_LIMIT,
+    recentDays: DEFAULT_RECENT_DAYS,
     sectionWeights: DEFAULT_SECTION_WEIGHTS
   };
 
@@ -231,6 +238,9 @@ export function parseArguments(argv = []) {
         break;
       case "--limit":
         options.limit = parsePositiveInteger(flag, value);
+        break;
+      case "--recent-days":
+        options.recentDays = parsePositiveInteger(flag, value);
         break;
       default:
         throw new Error(`Unknown option ${flag}`);

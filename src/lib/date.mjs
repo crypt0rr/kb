@@ -43,6 +43,14 @@ export function subtractMonths(value, months) {
   return formatDate(targetYear, targetMonth + 1, targetDay);
 }
 
+export function subtractDays(value, days) {
+  const date = parseDateOnly(value);
+  if (!date || !Number.isInteger(days) || days < 0) return undefined;
+
+  date.setUTCDate(date.getUTCDate() - days);
+  return formatDate(date.getUTCFullYear(), date.getUTCMonth() + 1, date.getUTCDate());
+}
+
 export function differenceInDays(later, earlier) {
   const laterDate = parseDateOnly(later);
   const earlierDate = parseDateOnly(earlier);

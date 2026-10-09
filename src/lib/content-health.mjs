@@ -1,10 +1,12 @@
 import {
   differenceInDays,
   normalizeDate,
+  subtractDays,
   subtractMonths
 } from "./date.mjs";
 
 export const DEFAULT_STALE_MONTHS = 12;
+export const DEFAULT_RECENT_REVIEW_DAYS = 90;
 
 export const HEALTH_STATES = Object.freeze([
   "repair-needed",
@@ -142,7 +144,26 @@ export function normalizeLinkFindings(findings = {}) {
   };
 }
 
-export function createHealthSummary(pages) {
+// The start of the recent-review window: a review on or after this date and
+// not after asOf counts as recent, so the window spans `days` days back.
+export function recentReviewSince(asOf, days = DEFAULT_RECENT_REVIEW_DAYS) {
+  if (!Number.isInteger(days) || days < 1) {
+    throw new Error("recent review days must be a positive integer");
+  }
+  const since = subtractDays(asOf, days);
+  if (!since) throw new Error("Review dates must use valid YYYY-MM-DD values");
+  return since;
+}
+
+// Counts towards the review trend. Future dates are data errors, not recent
+// reviews, so they are excluded.
+export function isRecentlyReviewed(review, since) {
+  const lastReviewed = normalizeDate(review?.lastReviewed);
+  const asOf = normalizeDate(review?.asOf);
+  return Boolean(lastReviewed && since && lastReviewed >= since && (!asOf || lastReviewed <= asOf));
+}
+
+export function createHealthSummary(pages, { recentSince } = {}) {
   const summary = {
     totalPages: pages.length,
     verified: 0,
@@ -158,7 +179,8 @@ export function createHealthSummary(pages) {
     futureDates: 0,
     missingLastReviewed: 0,
     stale: 0,
-    reviewed: 0
+    reviewed: 0,
+    reviewedRecently: 0
   };
 
   for (const page of pages) {
@@ -176,6 +198,7 @@ export function createHealthSummary(pages) {
     if (page.review.missingReview) summary.missingLastReviewed += 1;
     if (page.review.stale) summary.stale += 1;
     if (page.review.lastReviewed) summary.reviewed += 1;
+    if (isRecentlyReviewed(page.review, recentSince)) summary.reviewedRecently += 1;
   }
 
   return summary;
