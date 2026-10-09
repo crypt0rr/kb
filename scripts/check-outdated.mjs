@@ -8,7 +8,9 @@ export function parseArguments(argv = []) {
 
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index];
-    const [flag, inlineValue] = argument.split("=", 2);
+    const separator = argument.indexOf("=");
+    const flag = separator === -1 ? argument : argument.slice(0, separator);
+    const inlineValue = separator === -1 ? undefined : argument.slice(separator + 1);
     const value = inlineValue ?? argv[++index];
 
     switch (flag) {

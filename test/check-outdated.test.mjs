@@ -80,6 +80,15 @@ test("rejects invalid npm outdated JSON and unknown options", () => {
   assert.throws(() => parseArguments(["--summary-file"]), /--summary-file requires a value/);
 });
 
+test("keeps every character after the first = in an inline option value", () => {
+  assert.deepEqual(parseArguments(["--summary-file=/tmp/a=b.md"]), {
+    summaryFile: "/tmp/a=b.md"
+  });
+  assert.deepEqual(parseArguments(["--summary-file", "/tmp/c=d.md"]), {
+    summaryFile: "/tmp/c=d.md"
+  });
+});
+
 test("appends the summary file and keeps the failing exit code", async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), "kb-check-outdated-"));
   const summaryFile = path.join(directory, "summary.md");
