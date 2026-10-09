@@ -32,7 +32,7 @@ List of Tests Included in the app:
 
 ## Installation
 
-[AppStore - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
+[AppStore - TestM](https://web.archive.org/web/20220115044425/https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
 
 ## Examples
 
@@ -41,4 +41,4 @@ List of Tests Included in the app:
 
 ## URL List
 
-- [Apps.apple.com - TestM](https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
+- [Apps.apple.com - TestM](https://web.archive.org/web/20220115044425/https://apps.apple.com/nl/app/testm-check-phone-report/id1242371446)
