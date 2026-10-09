@@ -218,8 +218,13 @@ export function createContentResolver({
 export function collectMarkdownTargets(source) {
   const targets = [];
   const tokens = markdown.parse(String(source), {});
+  let line = 1;
 
-  for (const token of tokens) collectTokenTargets(token, targets);
+  for (const token of tokens) {
+    // Inline tokens inside table cells have no map; use the enclosing row's line.
+    if (token.map) line = token.map[0] + 1;
+    collectTokenTargets(token, targets, line);
+  }
   collectShortcodeTargets(String(source), targets);
   return targets;
 }
@@ -324,11 +329,13 @@ export function slash(value) {
   return String(value).replace(/\\/g, "/");
 }
 
-function collectTokenTargets(token, targets) {
-  const line = token.map ? token.map[0] + 1 : 1;
+function collectTokenTargets(token, targets, fallbackLine = 1) {
+  const line = token.map ? token.map[0] + 1 : fallbackLine;
 
   if (token.type === "inline" && token.children) {
-    for (const child of token.children) collectTokenTargets({ ...child, map: token.map }, targets);
+    for (const child of token.children) {
+      collectTokenTargets({ ...child, map: token.map }, targets, line);
+    }
     return;
   }
 
@@ -415,18 +422,41 @@ function listFiles(directory) {
   });
 }
 
+// Only real start tags count, and attributes are read pair by pair, so text in a
+// raw <pre> block, data-src, or "src=" inside another quoted value is not a target.
+const htmlTagMatcher = /<([a-z][\w-]*)((?:"[^"]*"|'[^']*'|[^"'>])*)>/gi;
+const htmlAttributeMatcher = /([^\s"'>/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g;
+const targetAttributes = new Set(["href", "src", "srcset", "poster"]);
+
 function htmlTargets(value) {
   const targets = [];
-  const matcher = /\b(href|src)\s*=\s*(['"])(.*?)\2/gi;
-  let match;
-  while ((match = matcher.exec(value))) {
-    targets.push({
-      kind: match[1].toLowerCase() === "src" ? "asset" : "link",
-      value: match[3],
-      shortcode: false
-    });
+
+  for (const [, tagName, attributes] of String(value).matchAll(htmlTagMatcher)) {
+    for (const match of attributes.matchAll(htmlAttributeMatcher)) {
+      const attribute = match[1].toLowerCase();
+      const rawValue = match[2] ?? match[3] ?? match[4];
+      if (!targetAttributes.has(attribute) || rawValue === undefined) continue;
+
+      const values = attribute === "srcset" ? srcsetUrls(rawValue) : [rawValue];
+      for (const target of values) {
+        targets.push({
+          kind: attribute === "href" ? "link" : "asset",
+          value: target,
+          attribute,
+          element: tagName.toLowerCase(),
+          shortcode: false
+        });
+      }
+    }
   }
   return targets;
+}
+
+function srcsetUrls(value) {
+  return String(value)
+    .split(",")
+    .map((candidate) => candidate.trim().split(/\s+/)[0])
+    .filter(Boolean);
 }
 
 function resolveRefTarget(target, page, pagesByUrl, refsByKey) {

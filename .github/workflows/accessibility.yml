@@ -12,6 +12,7 @@ on:
       - "package.json"
       - "package-lock.json"
       - "playwright.config.mjs"
+      - "public/_headers"
       - "src/**"
       - "static/**"
       - "content/**"
@@ -27,6 +28,7 @@ on:
       - "package.json"
       - "package-lock.json"
       - "playwright.config.mjs"
+      - "public/_headers"
       - "src/**"
       - "static/**"
       - "content/**"
@@ -65,7 +67,7 @@ jobs:
           {
             echo "## Browser accessibility smoke tests"
             echo
-            echo "Checked representative routes plus keyboard search and mobile navigation with Playwright and Axe."
+            echo "Checked representative routes plus keyboard search and mobile navigation with Playwright and Axe, served with the production _headers (CSP and cross-origin policies)."
             echo
             echo "Result: ${{ job.status }}"
           } >> "$GITHUB_STEP_SUMMARY"

@@ -13,7 +13,7 @@ weight : 40
 
 Katana is a fast crawler focused on execution in automation pipelines offering both headless and non-headless crawling.
 
-![image](https://user-images.githubusercontent.com/8293321/199371558-daba03b6-bf9c-4883-8506-76497c6c3a44.png)
+![image](images/katana-crawl-output.png)
 
 ## Features
 

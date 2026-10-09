@@ -15,14 +15,14 @@ weight : 810
 
 ## Color Reference
 
-| Type of Byte     | Color                                                                 | ANSI Code |
-| ---------------- | --------------------------------------------------------------------- | --------- |
-| NULL             | ![#555753](https://placehold.co/10x10/555753/555753.png) Bright Black | 90        |
-| OFFSET           | ![#555753](https://placehold.co/10x10/555753/555753.png) Bright Black | 90        |
-| ASCII Printable  | ![#06989a](https://placehold.co/10x10/06989a/06989a.png) Cyan         | 36        |
-| ASCII Whitespace | ![#4e9a06](https://placehold.co/10x10/4e9a06/4e9a06.png) Green        | 32        |
-| ASCII Other      | ![#4e9a06](https://placehold.co/10x10/4e9a06/4e9a06.png) Green        | 32        |
-| Non-ASCII        | ![#c4a000](https://placehold.co/10x10/c4a000/c4a000.png) Yellow       | 33        |
+| Type of Byte     | Color                                                   | ANSI Code |
+| ---------------- | ------------------------------------------------------- | --------- |
+| NULL             | ![#555753](images/swatch-bright-black.png) Bright Black | 90        |
+| OFFSET           | ![#555753](images/swatch-bright-black.png) Bright Black | 90        |
+| ASCII Printable  | ![#06989a](images/swatch-cyan.png) Cyan                 | 36        |
+| ASCII Whitespace | ![#4e9a06](images/swatch-green.png) Green               | 32        |
+| ASCII Other      | ![#4e9a06](images/swatch-green.png) Green               | 32        |
+| Non-ASCII        | ![#c4a000](images/swatch-yellow.png) Yellow             | 33        |
 
 ## Installation
 
@@ -103,13 +103,13 @@ Options:
 
 ## Examples
 
-![example](https://i.imgur.com/MWO9uSL.png)
+![example](images/hexyl-small-png.png)
 
-![example](https://i.imgur.com/Dp7Wncz.png)
+![example](images/hexyl-utf8-utf16.png)
 
-![example](https://i.imgur.com/ln3TniI.png)
+![example](images/hexyl-elf-binary.png)
 
-![example](https://i.imgur.com/f8nm8g6.png)
+![example](images/hexyl-urandom.png)
 
 ## URL list
 

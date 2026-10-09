@@ -64,6 +64,14 @@ intentional mirror/bulk asset listed in `scripts/content-policy.json`. It also
 fails on any dot-segment file under `content/` other than `.gitkeep` and
 `.DS_Store` files and the git-ignored `.rumdl_cache` lint cache directory, so an
 accidentally committed `.env`, credential file, or dot-directory page fails CI.
+Markdown images and raw HTML `src`, `srcset`, and `poster` attributes must not
+use sources that resolve to another origin, such as absolute `http(s)://` or
+protocol-relative `//` URLs: the deployed CSP only allows same-origin media
+(`img-src 'self' data:`, `media-src 'self'`), so browsers would block them.
+Mirror the file into the page's `images/` directory and reference it
+relatively. External `<iframe>` and `<script>` sources fail the same check and
+point to the `youtube` and `gist` shortcodes instead. Code blocks, text inside
+raw HTML, and attributes such as `data-src` are ignored.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
@@ -78,12 +86,33 @@ including that no trust-ledger state appears in any generated HTML page or in
 npm availability. A different Node.js major version than `.node-version` fails;
 a minor or patch difference only prints a warning. CI installs the exact pinned
 version.
-`npm run test:a11y` builds the deployable static site, serves it with Astro
-Preview, and runs the browser-level Playwright/Axe smoke suite against
-representative routes and keyboard interactions. The `Browser accessibility
-smoke tests` workflow runs the same check on pull requests, pushes to `main`,
-and manual dispatches. For a first local run, install the test browser once
-with `npx playwright install chromium`.
+`npm run test:a11y` builds the deployable static site, serves it with
+`scripts/serve-dist.mjs`, and runs every Playwright spec in `tests/`: the
+Axe smoke suite against representative routes and keyboard interactions, plus
+`tests/security-headers.spec.mjs`. The `Browser accessibility smoke tests`
+workflow runs the same check on pull requests, pushes to `main`, and manual
+dispatches. For a first local run, install the test browser once with
+`npx playwright install chromium`.
+
+`scripts/serve-dist.mjs` is a dependency-free static server for `dist/` that
+applies the response headers from `dist/_headers` (falling back to
+`public/_headers`) using the Cloudflare Pages `_headers` syntax, so browser
+tests run under the production CSP and cross-origin policies; Astro Preview
+ignores `_headers`. It serves `/x/` as `/x/index.html`, redirects
+directories without a trailing slash (keeping the query string), returns `404`
+for missing files and for `_headers`, `_redirects`, and `_routes.json`, and
+refuses paths outside the served directory. An unreadable file returns `500`
+without stopping the server. Run it directly with
+`node scripts/serve-dist.mjs --host 127.0.0.1 --port 4321 --dir dist`.
+Playwright starts it on `PLAYWRIGHT_PORT` (default `4321`); set a different
+port when another local server already uses the default. The security spec
+checks that the served policy headers match `public/_headers` exactly, fails on
+CSP violations, "Refused to" console messages, and `ERR_BLOCKED_BY_RESPONSE`
+requests on the accessibility suite's representative routes and the pages with
+mirrored images, checks that
+Pagefind search works under the CSP, and loads the YouTube embed against a
+local stub that mirrors YouTube's cross-origin headers. All other third-party
+requests are blocked, so the suite needs no internet access.
 
 `npm run check:external-links` checks reachable external URLs and writes
 Markdown plus complete JSON reports under `.reports/`. The scheduled and
@@ -170,6 +199,22 @@ is not part of the build gate, so pull requests do not depend on npm registry
 state. The scheduled `Dependency freshness report` workflow runs it weekly or on
 manual dispatch and writes both lists to the job summary
 (`--summary-file <path>` appends the same Markdown summary locally).
+
+`public/_headers` defines the deployed response headers, including a
+self-only Content Security Policy. Images and media are served from the site
+itself rather than allowlisting third-party hosts, so visitors' IP addresses
+and referrers are not sent to image hosts and local copies survive upstream
+link rot.
+
+The site does not send `Cross-Origin-Embedder-Policy`. The only third-party
+frame, the `youtube` shortcode's `youtube-nocookie.com` embed, sends
+`Cross-Origin-Resource-Policy: cross-origin` but only a report-only COEP, so
+Chromium blocks the iframe (`ERR_BLOCKED_BY_RESPONSE`) under an enforced
+`credentialless` or `require-corp` policy. Nothing on the site needs
+cross-origin isolation (no `SharedArrayBuffer` or `crossOriginIsolated` use in
+the site scripts or Pagefind), so COEP was removed instead of adding
+workarounds. `Cross-Origin-Opener-Policy` and `Cross-Origin-Resource-Policy`
+stay in place. `tests/security-headers.spec.mjs` and `npm test` guard this.
 
 ## Contributing
 
