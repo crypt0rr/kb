@@ -37,7 +37,7 @@ weight : 110
 
 ### Common network ports
 
-[Vmaxx.net - ports](http://www.vmaxx.net/techinfo/ports.htm)
+[Vmaxx.net - ports](https://web.archive.org/web/20211201221211/http://www.vmaxx.net/techinfo/ports.htm)
 
 ### Bug Bounty Checklist and Cheatsheets
 
