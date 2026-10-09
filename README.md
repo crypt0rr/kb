@@ -153,11 +153,50 @@ Pagefind search works under the CSP, and loads the YouTube embed against a
 local stub that mirrors YouTube's cross-origin headers. All other third-party
 requests are blocked, so the suite needs no internet access.
 
-`npm run check:external-links` checks reachable external URLs and writes
-Markdown plus complete JSON reports under `.reports/`. The scheduled and
-manual `Check external links` workflow uploads both reports and adds the check
-counts plus a short list of failures to the GitHub job summary. It remains
-report-only: an unreachable external URL does not block content builds.
+`npm run check:external-links` checks the external links readers can follow
+and writes Markdown plus complete JSON reports under `.reports/`. It renders
+every page with the site's renderer, and `README.md` with the same markdown-it
+setup, and collects the `http(s)` `href` and `src` targets outside `<pre>` and
+`<code>`: linkified bare URLs in prose count, examples in code blocks and
+inline code are ignored. URLs whose host is private, reserved, loopback,
+link-local or unspecified (`10/8`, `172.16/12`, `192.168/16`, `127/8`,
+`169.254/16`, `0.0.0.0`, `::1`, `fc00::/7`, `fe80::/10` and similar),
+`localhost`, `*.local` and the other reserved names (`.test`, `.invalid`,
+`.example`, `.localhost`, `.internal`), `example.com`/`.org`/`.net` and their
+subdomains, a single label such as `http://target/`, or placeholder characters
+(`{}`, `<>`, `$`, `*`) are listed as skipped instead of requested.
+
+Each URL is requested with `HEAD` and, when the server answers 400, 401, 403,
+404, 405 or 501 or drops the connection, again with `GET`, using the honest
+user agent `kb-external-link-check/2.0`. At most 8 requests are in flight
+(`--concurrency`) and at most 2 per host (`--host-concurrency`). HTTP 408, 429
+and 5xx responses, timeouts (`--timeout`, default 10000 ms) and network errors
+are retried twice (`--retries`); a `Retry-After` header (seconds or HTTP date)
+is honoured, otherwise the wait doubles from 1 s, and every wait is capped at
+60 s. A 429 or 503 pauses the whole host for that wait, and each 429 also
+doubles a minimum gap between requests to that host (1 s up to 8 s), so a
+throttling site such as `linux.die.net` is crawled more slowly instead of being
+reported. Every result is classified as:
+
+- `ok`: 2xx or 3xx after redirects.
+- `broken`: 404 or 410, a DNS failure that persists after retries, connection
+  refused, or an invalid TLS certificate. Only these are definite failures.
+- `unreachable`: timeouts and 5xx after retries, other 4xx responses, and other
+  network errors; usually temporary.
+- `blocked`: 401, 402, 403, 451, or 429 after retries; the site refuses
+  automated requests, so check it in a browser.
+
+The JSON report (`version: 2`) has per-class counts in `summary`, and for each
+URL its `class`, `status` or `error`, number of `attempts`, and the `sources`
+(files) that contain it, plus the skipped URLs with their reason and sources.
+The Markdown report shows the counts, the top hosts per class, every broken
+link with its source files, and the first 50 unreachable and blocked links;
+the job summary shows the counts, the top hosts, the first 50 broken links and
+the first 10 unreachable and blocked links. A full run takes about 15 minutes,
+mostly spent waiting on throttled hosts. The scheduled and manual `Check external links` workflow
+uploads both reports and writes the summary to the GitHub job summary. The
+check remains report-only: it exits 0 whenever the run itself succeeds, so a
+broken external URL does not block content builds.
 
 `npm run content:review` scans all publishable pages and writes a maintainer-only
 review queue to `.reports/content-review.md` plus a complete JSON report at
