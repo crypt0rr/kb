@@ -422,22 +422,31 @@ function listFiles(directory) {
   });
 }
 
+// Only real start tags count, and attributes are read pair by pair, so text in a
+// raw <pre> block, data-src, or "src=" inside another quoted value is not a target.
+const htmlTagMatcher = /<([a-z][\w-]*)((?:"[^"]*"|'[^']*'|[^"'>])*)>/gi;
+const htmlAttributeMatcher = /([^\s"'>/=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+)))?/g;
+const targetAttributes = new Set(["href", "src", "srcset", "poster"]);
+
 function htmlTargets(value) {
   const targets = [];
-  const matcher = /\b(href|src|srcset|poster)\s*=\s*(?:(['"])(.*?)\2|([^\s"'=<>`]+))/gi;
-  let match;
-  while ((match = matcher.exec(value))) {
-    const attribute = match[1].toLowerCase();
-    const rawValue = match[3] ?? match[4];
-    const values = attribute === "srcset" ? srcsetUrls(rawValue) : [rawValue];
 
-    for (const target of values) {
-      targets.push({
-        kind: attribute === "href" ? "link" : "asset",
-        value: target,
-        attribute,
-        shortcode: false
-      });
+  for (const [, tagName, attributes] of String(value).matchAll(htmlTagMatcher)) {
+    for (const match of attributes.matchAll(htmlAttributeMatcher)) {
+      const attribute = match[1].toLowerCase();
+      const rawValue = match[2] ?? match[3] ?? match[4];
+      if (!targetAttributes.has(attribute) || rawValue === undefined) continue;
+
+      const values = attribute === "srcset" ? srcsetUrls(rawValue) : [rawValue];
+      for (const target of values) {
+        targets.push({
+          kind: attribute === "href" ? "link" : "asset",
+          value: target,
+          attribute,
+          element: tagName.toLowerCase(),
+          shortcode: false
+        });
+      }
     }
   }
   return targets;

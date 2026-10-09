@@ -6,7 +6,11 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { promisify } from "node:util";
-import { collectExternalMediaSources, isExternalSource } from "../src/lib/external-media.mjs";
+import {
+  collectExternalMediaSources,
+  describeExternalSource,
+  isExternalSource
+} from "../src/lib/external-media.mjs";
 
 const run = promisify(execFile);
 const checkContentScript = fileURLToPath(new URL("../scripts/check-content.mjs", import.meta.url));
@@ -16,9 +20,15 @@ test("detects absolute and protocol-relative sources only", () => {
   assert.equal(isExternalSource("HTTP://example.com/a.png"), true);
   assert.equal(isExternalSource("//cdn.example.com/a.png"), true);
   assert.equal(isExternalSource(" https://example.com/a.png "), true);
+  // Browsers resolve these to another host as well.
+  assert.equal(isExternalSource("\\\\example.com/a.png"), true);
+  assert.equal(isExternalSource("/\\example.com/a.png"), true);
+  assert.equal(isExternalSource("http:example.com/a.png"), true);
   assert.equal(isExternalSource("images/a.png"), false);
   assert.equal(isExternalSource("/images/a.png"), false);
   assert.equal(isExternalSource("data:image/png;base64,AAAA"), false);
+  assert.equal(isExternalSource("https:images/a.png"), false);
+  assert.equal(isExternalSource("about:blank"), false);
 });
 
 test("collects external Markdown images and raw HTML media attributes", () => {
@@ -52,15 +62,60 @@ test("collects external Markdown images and raw HTML media attributes", () => {
   );
 
   assert.deepEqual(sources, [
-    { value: "https://example.com/a.png", line: 1, attribute: "image" },
-    { value: "//badges.example/b.svg", line: 4, attribute: "image" },
-    { value: "https://placehold.example/06989a.png", line: 8, attribute: "image" },
+    { value: "https://example.com/a.png", line: 1, attribute: "image", element: "img" },
+    { value: "//badges.example/b.svg", line: 4, attribute: "image", element: "img" },
+    {
+      value: "https://placehold.example/06989a.png",
+      line: 8,
+      attribute: "image",
+      element: "img"
+    },
     // An HTML block reports the line it starts on.
-    { value: "https://example.com/c.png", line: 10, attribute: "src" },
-    { value: "https://example.com/unquoted.png", line: 10, attribute: "src" },
-    { value: "https://example.com/d@2x.png", line: 13, attribute: "srcset" },
-    { value: "https://example.com/poster.jpg", line: 15, attribute: "poster" }
+    { value: "https://example.com/c.png", line: 10, attribute: "src", element: "img" },
+    { value: "https://example.com/unquoted.png", line: 10, attribute: "src", element: "img" },
+    { value: "https://example.com/d@2x.png", line: 13, attribute: "srcset", element: "img" },
+    { value: "https://example.com/poster.jpg", line: 15, attribute: "poster", element: "video" }
   ]);
+});
+
+test("ignores text and non-loading attributes inside raw HTML", () => {
+  const sources = collectExternalMediaSources(
+    [
+      "<pre>",
+      "GET /?src=https://x.example/a HTTP/1.1",
+      "</pre>",
+      "",
+      "<p>Use data-src=https://cdn.example/a.png for lazy loading.</p>",
+      "",
+      '<img data-src="https://cdn.example/b.png" alt="src=https://cdn.example/c.png" src="images/b.png">',
+      "",
+      '<img src="\\\\example.com/d.png">'
+    ].join("\n")
+  );
+
+  assert.deepEqual(sources, [
+    { value: "\\\\example.com/d.png", line: 9, attribute: "src", element: "img" }
+  ]);
+});
+
+test("points frames and scripts to the shortcodes instead of images/", () => {
+  const sources = collectExternalMediaSources(
+    [
+      '<iframe src="https://www.youtube-nocookie.com/embed/abc"></iframe>',
+      "",
+      '<script src="https://gist.github.com/user/1.js"></script>',
+      "",
+      "![x](https://example.com/a.png)"
+    ].join("\n")
+  );
+
+  assert.deepEqual(
+    sources.map((source) => source.element),
+    ["iframe", "script", "img"]
+  );
+  assert.match(describeExternalSource(sources[0]), /^external iframe source .*youtube ID/);
+  assert.match(describeExternalSource(sources[1]), /^external script source .*gist user id/);
+  assert.match(describeExternalSource(sources[2]), /^external media source .*images\/ directory/);
 });
 
 test("check:content fails on external images and passes on local images", async () => {

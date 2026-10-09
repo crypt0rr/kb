@@ -9,7 +9,7 @@ import {
   isPrivateContentPath
 } from "../src/lib/content-paths.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
-import { collectExternalMediaSources, EXTERNAL_MEDIA_HINT } from "../src/lib/external-media.mjs";
+import { collectExternalMediaSources, describeExternalSource } from "../src/lib/external-media.mjs";
 import { parseCascade } from "../src/lib/metadata.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
 
@@ -349,9 +349,7 @@ function validateExternalMedia() {
 
     const lineOffset = bodyLineOffset(page);
     for (const source of sources) {
-      errors.push(
-        `${page.relativeFile}:${source.line + lineOffset}: external media source ${source.value}; ${EXTERNAL_MEDIA_HINT}`
-      );
+      errors.push(`${page.relativeFile}:${source.line + lineOffset}: ${describeExternalSource(source)}`);
     }
   }
 }

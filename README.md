@@ -65,10 +65,13 @@ fails on any dot-segment file under `content/` other than `.gitkeep` and
 `.DS_Store` files and the git-ignored `.rumdl_cache` lint cache directory, so an
 accidentally committed `.env`, credential file, or dot-directory page fails CI.
 Markdown images and raw HTML `src`, `srcset`, and `poster` attributes must not
-use absolute `http(s)://` or protocol-relative `//` sources: the deployed CSP
-only allows same-origin media (`img-src 'self' data:`, `media-src 'self'`), so
-browsers would block them. Mirror the file into the page's `images/` directory
-and reference it relatively. Code blocks are ignored.
+use sources that resolve to another origin, such as absolute `http(s)://` or
+protocol-relative `//` URLs: the deployed CSP only allows same-origin media
+(`img-src 'self' data:`, `media-src 'self'`), so browsers would block them.
+Mirror the file into the page's `images/` directory and reference it
+relatively. External `<iframe>` and `<script>` sources fail the same check and
+point to the `youtube` and `gist` shortcodes instead. Code blocks, text inside
+raw HTML, and attributes such as `data-src` are ignored.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
