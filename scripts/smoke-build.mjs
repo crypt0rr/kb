@@ -12,6 +12,8 @@ const requiredFiles = [
   "sitemap-index.xml",
   "pagefind/pagefind-entry.json",
   "asset-manifest.json",
+  "js/kb-app.js",
+  "js/kb-search.js",
   "tools/techniques/kerberoasting/index.html"
 ];
 // The content trust ledger is a maintainer-only report; its derived state must

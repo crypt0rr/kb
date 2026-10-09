@@ -1,3 +1,5 @@
+import { MAX_RESULTS, buildSearchRequest, renderSearchResults } from "./kb-search.js";
+
 (() => {
   const body = document.body;
   const sidebar = document.querySelector("#site-sidebar");
@@ -86,8 +88,8 @@
     dialog.showModal();
     searchInput?.focus();
     await loadPagefind();
-    const query = searchInput?.value.trim().toLowerCase() ?? "";
-    if (query) runSearch(query);
+    const request = currentSearchRequest();
+    if (request) runSearch(request);
   };
 
   searchOpeners.forEach((button) => button.addEventListener("click", openSearch));
@@ -170,25 +172,27 @@
 
   searchInput?.addEventListener("input", () => {
     if (!searchResults) return;
-    const query = searchInput.value.trim().toLowerCase();
+    const request = currentSearchRequest();
     syncSearchUrl();
     clearTimeout(searchTimer);
     activeResultIndex = -1;
 
-    if (!query) {
-      searchResults.innerHTML = "";
-      searchResults.setAttribute("aria-busy", "false");
+    if (!request) {
+      clearSearch();
       return;
     }
 
-    searchTimer = setTimeout(() => runSearch(query), 180);
+    searchTimer = setTimeout(() => runSearch(request), 180);
   });
 
   [searchSection, searchTag].forEach((filter) => {
     filter?.addEventListener("change", () => {
+      if (!searchResults) return;
       syncSearchUrl();
-      const query = searchInput?.value.trim().toLowerCase() ?? "";
-      if (query) runSearch(query);
+      clearTimeout(searchTimer);
+      const request = currentSearchRequest();
+      if (request) runSearch(request);
+      else clearSearch();
     });
   });
 
@@ -241,7 +245,24 @@
     return pagefind;
   }
 
-  async function runSearch(query) {
+  function currentSearchRequest() {
+    return buildSearchRequest({
+      query: searchInput?.value,
+      section: searchSection?.value,
+      tag: searchTag?.value
+    });
+  }
+
+  function clearSearch() {
+    // Drop any search still in flight so it cannot repaint the cleared results.
+    searchController?.abort();
+    searchController = null;
+    activeResultIndex = -1;
+    searchResults.innerHTML = "";
+    searchResults.setAttribute("aria-busy", "false");
+  }
+
+  async function runSearch({ term, options }) {
     const controller = new AbortController();
     searchController?.abort();
     searchController = controller;
@@ -251,32 +272,15 @@
 
     try {
       const index = await loadPagefind();
-      const filters = {};
-      if (searchSection?.value) filters.section = searchSection.value;
-      if (searchTag?.value) filters.tag = searchTag.value;
-      const search = await index.search(query, Object.keys(filters).length ? { filters } : undefined);
+      // A null term with filters is a filter-only search that lists every matching page.
+      const search = await index.search(term, options);
       if (controller.signal.aborted) return;
 
-      const results = await Promise.all(search.results.slice(0, 12).map((result) => result.data()));
+      const results = await Promise.all(search.results.slice(0, MAX_RESULTS).map((result) => result.data()));
       if (controller.signal.aborted) return;
-
-      if (!results.length) {
-        searchResults.innerHTML = '<p class="search-status" role="status">no results</p>';
-        return;
-      }
 
       activeResultIndex = -1;
-      searchResults.innerHTML = `<p class="search-status" role="status">${results.length} result${
-        results.length === 1 ? "" : "s"
-      }</p>${results
-        .map(
-          (result) => `<a href="${escapeAttr(result.url)}">
-            <strong>${escapeHtml(result.meta?.title || result.url)}</strong>
-            ${result.meta?.section ? `<small>${escapeHtml(result.meta.section)}</small>` : ""}
-            <p>${sanitizePagefindExcerpt(result.excerpt || result.url)}</p>
-          </a>`
-        )
-        .join("")}`;
+      searchResults.innerHTML = renderSearchResults(results, search.results.length);
     } catch {
       if (controller.signal.aborted) return;
       searchResults.innerHTML = '<p class="search-status" role="status">search unavailable</p>';
@@ -298,24 +302,6 @@
       else url.searchParams.delete(key);
     });
     window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
-  }
-
-  function escapeHtml(value) {
-    return String(value)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
-  }
-
-  function escapeAttr(value) {
-    return escapeHtml(value).replace(/'/g, "&#39;");
-  }
-
-  function sanitizePagefindExcerpt(value) {
-    return escapeHtml(value)
-      .replaceAll("&lt;mark&gt;", "<mark>")
-      .replaceAll("&lt;/mark&gt;", "</mark>");
   }
 
   function updateActiveResult(resultLinks) {
