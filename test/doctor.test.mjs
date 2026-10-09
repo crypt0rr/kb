@@ -33,3 +33,9 @@ test("skips the check when .node-version is empty and rejects unparsable version
   assert.deepEqual(checkNodeVersion("", "24.19.0"), { status: "ok" });
   assert.equal(checkNodeVersion("24.21.0", "not-a-version").status, "error");
 });
+
+test("warns when .node-version is not a numeric version", () => {
+  const alias = checkNodeVersion("lts/iron", "24.19.0");
+  assert.equal(alias.status, "warning");
+  assert.match(alias.message, /unable to parse \.node-version "lts\/iron"/);
+});

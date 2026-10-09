@@ -18,7 +18,10 @@ export function checkNodeVersion(expected, actual) {
   const expectedParts = parseVersion(expected);
   const actualParts = parseVersion(actual);
 
-  if (!expectedParts.length) return { status: "ok" };
+  if (!String(expected ?? "").trim()) return { status: "ok" };
+  if (!expectedParts.length) {
+    return { status: "warning", message: `unable to parse .node-version "${expected}"` };
+  }
   if (!actualParts.length) {
     return { status: "error", message: `unable to parse the active Node.js version "${actual}"` };
   }
