@@ -15,7 +15,7 @@ KeeFarce allows for the extraction of KeePass 2.x password database information 
 
 KeeFarce uses DLL injection to execute code within the context of a running KeePass process. C# code execution is achieved by first injecting an architecture-appropriate bootstrap DLL. This spawns an instance of the dot net runtime within the appropriate app domain, subsequently executing KeeFarceDLL.dll (the main C# payload).
 
-The KeeFarceDLL uses [CLRMD](https://github.com/Microsoft/dotnetsamples/tree/master/Microsoft.Diagnostics.Runtime/CLRMD) to find the necessary object in the KeePass processes heap, locates the pointers to some required sub-objects (using offsets), and uses reflection to call an export method.
+The KeeFarceDLL uses [CLRMD](https://github.com/microsoft/clrmd) to find the necessary object in the KeePass processes heap, locates the pointers to some required sub-objects (using offsets), and uses reflection to call an export method.
 
 ## Installation
 

@@ -17,7 +17,7 @@ A fast, reliable, and simple file sync and share solution, powered by P2P techno
 
 ### Windows
 
-Download newest installer from [Resilio.com](https://download-cdn.resilio.com/stable/windows64/Resilio-Sync_x64.exe)
+Download newest installer from [Resilio.com](https://download-cdn.resilio.com/stable/windows/x64/0/Resilio-Sync_x64.exe)
 
 ### Linux
 

@@ -97,5 +97,5 @@ temp1:        +46.0°C  (crit = +128.0°C)
 
 ## URL List
 
-- [Ubuntu.com - Sensor Install HowTo](https://help.ubuntu.com/community/SensorInstallHowto)
+- [Ubuntu.com - Sensor Install HowTo](https://web.archive.org/web/20200514022010/https://help.ubuntu.com/community/SensorInstallHowto)
 - [GitHub.com - LM-sensors](https://github.com/lm-sensors/lm-sensors)

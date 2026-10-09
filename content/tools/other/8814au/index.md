@@ -41,7 +41,7 @@ Please check [repo](https://github.com/morrownr/8814au) for more information and
 
 ### Tested Hardware
 
-- [Wireless USB WiFi Adapter, 1900Mbps Dual Band 2.4GHz/600Mbps 5.8GHz/1300Mbps High Gain 5dBi Antennas USB 3.0](https://www.amazon.com/gp/product/B07VCKN83P)
+- Wireless USB WiFi Adapter, 1900Mbps Dual Band 2.4GHz/600Mbps 5.8GHz/1300Mbps High Gain 5dBi Antennas USB 3.0
 - [ASUS USB-AC68 AC1900 Dual-Band USB 3.0 WiFi Adapter](https://www.amazon.com/dp/B01I7QFR10)
 
 ### Compatible Devices
