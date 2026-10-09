@@ -24,6 +24,7 @@ npm run check:content
 npm run check:links
 npm run check:external-links
 npm run audit:known
+npm run check:outdated
 npm run sysinternals:check
 npm run content:review
 npm run content:graph
@@ -132,6 +133,13 @@ remain reproducible after checkout.
 reported vulnerability. Keep Astro/Vite updated through Renovate and review
 dependency advisories before adding any exception. GitHub Actions are pinned
 to reviewed commit SHAs; Renovate keeps those pins current.
+
+`npm run check:outdated` lists dependency updates allowed by the declared
+ranges (and fails when any exist) plus newer versions outside those ranges. It
+is not part of the build gate, so pull requests do not depend on npm registry
+state. The scheduled `Dependency freshness report` workflow runs it weekly or on
+manual dispatch and writes both lists to the job summary
+(`--summary-file <path>` appends the same Markdown summary locally).
 
 ## Contributing
 

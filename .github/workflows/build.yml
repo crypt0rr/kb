@@ -66,6 +66,3 @@ jobs:
 
       - name: Audit dependencies
         run: npm run audit:known
-
-      - name: Check outdated dependencies
-        run: npm run check:outdated
