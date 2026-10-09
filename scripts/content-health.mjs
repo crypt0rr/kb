@@ -8,7 +8,8 @@ import {
   assessPageHealth,
   compareHealthPages,
   createHealthSummary,
-  DEFAULT_STALE_MONTHS
+  DEFAULT_STALE_MONTHS,
+  describeRecentWindow
 } from "../src/lib/content-health.mjs";
 import {
   createReviewReport,
@@ -121,7 +122,7 @@ export function renderMarkdown(report) {
     `- Repair needed: ${summary.repairNeeded}`,
     `- Context light: ${summary.contextLight}`,
     `- Reviewed: ${summary.reviewed}`,
-    `- Reviewed in the last ${report.recentReviewDays} days (since ${report.recentReviewSince}): ${summary.reviewedRecently}`,
+    `- Reviewed in the ${describeRecentWindow(report.recentReviewDays)} (since ${report.recentReviewSince}): ${summary.reviewedRecently}`,
     `- Missing lastReviewed: ${summary.missingLastReviewed}`,
     `- Stale: ${summary.stale}`,
     `- Future dates: ${summary.futureDates}`,
@@ -177,7 +178,7 @@ export function renderSummary(report) {
     `- As of: ${report.asOf}`,
     `- Pages scanned: ${summary.totalPages}`,
     `- Verified / review due / repair needed / context light: ${summary.verified} / ${summary.reviewDue} / ${summary.repairNeeded} / ${summary.contextLight}`,
-    `- Reviewed: ${summary.reviewed} (${summary.reviewedRecently} in the last ${report.recentReviewDays} days)`,
+    `- Reviewed: ${summary.reviewed} (${summary.reviewedRecently} in the ${describeRecentWindow(report.recentReviewDays)})`,
     `- Missing lastReviewed: ${summary.missingLastReviewed}; stale: ${summary.stale}; integrity findings: ${summary.brokenLinks + summary.missingAnchors + summary.brokenAssets}`,
     "- Report-only; no content build is failed because a page needs review."
   ].join("\n");

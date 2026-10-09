@@ -145,14 +145,19 @@ export function normalizeLinkFindings(findings = {}) {
 }
 
 // The start of the recent-review window: a review on or after this date and
-// not after asOf counts as recent, so the window spans `days` days back.
+// not after asOf counts as recent. Both ends are included, so the window is
+// exactly `days` calendar days long and a 1-day window is asOf alone.
 export function recentReviewSince(asOf, days = DEFAULT_RECENT_REVIEW_DAYS) {
   if (!Number.isInteger(days) || days < 1) {
     throw new Error("recent review days must be a positive integer");
   }
-  const since = subtractDays(asOf, days);
+  const since = subtractDays(asOf, days - 1);
   if (!since) throw new Error("Review dates must use valid YYYY-MM-DD values");
   return since;
+}
+
+export function describeRecentWindow(days) {
+  return days === 1 ? "last day" : `last ${days} days`;
 }
 
 // Counts towards the review trend. Future dates are data errors, not recent

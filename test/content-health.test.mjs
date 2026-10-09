@@ -8,6 +8,7 @@ import {
   classifyReviewSignal,
   compareHealthPages,
   createHealthSummary,
+  describeRecentWindow,
   isRecentlyReviewed,
   recentReviewSince
 } from "../src/lib/content-health.mjs";
@@ -152,9 +153,9 @@ test("health reports count reviews within the recent window", async () => {
   const contentRoot = await mkdtemp(path.join(os.tmpdir(), "kb-content-health-recent-"));
   const pages = {
     "_index.md": "---\ntitle: Root\nlastReviewed: 2026-08-06\n---\n[Day 91](cve/day-91/)\n",
-    "cve/_index.md": "---\ntitle: CVE\nlastReviewed: 2026-05-08\n---\n",
-    "cve/day-91/index.md": "---\ntitle: Day 91\nlastReviewed: 2026-05-07\n---\n",
-    "cve/day-92/index.md": "---\ntitle: Day 92\nlastReviewed: 2026-05-06\n---\n",
+    "cve/_index.md": "---\ntitle: CVE\nlastReviewed: 2026-05-09\n---\n",
+    "cve/day-91/index.md": "---\ntitle: Day 91\nlastReviewed: 2026-05-08\n---\n",
+    "cve/day-92/index.md": "---\ntitle: Day 92\nlastReviewed: 2026-05-07\n---\n",
     "cve/future/index.md": "---\ntitle: Future\nlastReviewed: 2026-08-07\n---\n",
     "cve/missing/index.md": "---\ntitle: Missing\ndate: 2026-08-01\n---\n"
   };
@@ -167,19 +168,19 @@ test("health reports count reviews within the recent window", async () => {
 
     const report = createContentHealthReport({ contentRoot, asOf });
     assert.equal(report.recentReviewDays, 90);
-    assert.equal(report.recentReviewSince, "2026-05-08");
+    assert.equal(report.recentReviewSince, "2026-05-09");
     assert.equal(report.summary.reviewed, 5);
     assert.equal(report.summary.missingLastReviewed, 1);
     assert.equal(report.summary.reviewedRecently, 2);
     assert.equal(report.reviewSummary.reviewedRecently, 2);
     assert.match(
       renderMarkdown(report),
-      /^- Reviewed: 5\n- Reviewed in the last 90 days \(since 2026-05-08\): 2$/m
+      /^- Reviewed: 5\n- Reviewed in the last 90 days \(since 2026-05-09\): 2$/m
     );
     assert.match(renderSummary(report), /^- Reviewed: 5 \(2 in the last 90 days\)$/m);
 
     const wide = createContentHealthReport({ contentRoot, asOf, recentDays: 92 });
-    assert.equal(wide.recentReviewSince, "2026-05-06");
+    assert.equal(wide.recentReviewSince, "2026-05-07");
     assert.equal(wide.summary.reviewedRecently, 4);
     assert.deepEqual(
       wide.pages.map((page) => [page.url, page.state, page.priorityScore]),
@@ -193,11 +194,14 @@ test("health reports count reviews within the recent window", async () => {
 });
 
 test("recent review window excludes future dates and needs a positive length", () => {
-  assert.equal(recentReviewSince(asOf), "2026-05-08");
+  assert.equal(recentReviewSince(asOf), "2026-05-09");
+  assert.equal(recentReviewSince(asOf, 1), asOf);
+  assert.equal(describeRecentWindow(1), "last day");
+  assert.equal(describeRecentWindow(90), "last 90 days");
   assert.throws(() => recentReviewSince(asOf, 0), /positive integer/);
-  assert.equal(isRecentlyReviewed({ asOf, lastReviewed: asOf }, "2026-05-08"), true);
-  assert.equal(isRecentlyReviewed({ asOf, lastReviewed: "2026-08-07" }, "2026-05-08"), false);
-  assert.equal(isRecentlyReviewed({ asOf, lastReviewed: null }, "2026-05-08"), false);
+  assert.equal(isRecentlyReviewed({ asOf, lastReviewed: asOf }, "2026-05-09"), true);
+  assert.equal(isRecentlyReviewed({ asOf, lastReviewed: "2026-08-07" }, "2026-05-09"), false);
+  assert.equal(isRecentlyReviewed({ asOf, lastReviewed: null }, "2026-05-09"), false);
   assert.equal(createHealthSummary([]).reviewedRecently, 0);
 });
 

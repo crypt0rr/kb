@@ -9,6 +9,7 @@ import {
 import {
   classifyReviewSignal,
   DEFAULT_RECENT_REVIEW_DAYS,
+  describeRecentWindow,
   isRecentlyReviewed,
   recentReviewSince
 } from "../src/lib/content-health.mjs";
@@ -245,7 +246,7 @@ export function renderMarkdown(report) {
     `- Future dates: ${report.summary.futureDates}`,
     `- Metadata errors: ${report.summary.metadataErrors}`,
     `- Reviewed pages: ${report.summary.reviewed}`,
-    `- Reviewed in the last ${report.recentReviewDays} days (since ${report.recentReviewSince}): ${report.summary.reviewedRecently}`,
+    `- Reviewed in the ${describeRecentWindow(report.recentReviewDays)} (since ${report.recentReviewSince}): ${report.summary.reviewedRecently}`,
     `- Priority tiers: ${report.summary.priorityTiers.critical} critical, ${report.summary.priorityTiers.high} high, ${report.summary.priorityTiers.normal} normal, ${report.summary.priorityTiers.current} current`,
     ""
   ];
@@ -288,7 +289,7 @@ export function renderSummary(report) {
     `- Pages scanned: ${report.summary.totalPages}`,
     `- Pages requiring review: ${report.summary.needsReview}`,
     `- Missing lastReviewed: ${report.summary.missingLastReviewed}`,
-    `- Reviewed: ${report.summary.reviewed} (${report.summary.reviewedRecently} in the last ${report.recentReviewDays} days)`,
+    `- Reviewed: ${report.summary.reviewed} (${report.summary.reviewedRecently} in the ${describeRecentWindow(report.recentReviewDays)})`,
     `- Stale: ${report.summary.stale}`,
     `- Future dates: ${report.summary.futureDates}`,
     `- Metadata errors: ${report.summary.metadataErrors}`,
@@ -310,7 +311,7 @@ export async function run(argv = process.argv.slice(2)) {
   }
 
   console.log(
-    `Content review: ${report.summary.totalPages} pages scanned; ${report.summary.needsReview} requiring review; ${report.summary.reviewedRecently} reviewed in the last ${report.recentReviewDays} days; ${report.summary.futureDates} future-date issue(s)`
+    `Content review: ${report.summary.totalPages} pages scanned; ${report.summary.needsReview} requiring review; ${report.summary.reviewedRecently} reviewed in the ${describeRecentWindow(report.recentReviewDays)}; ${report.summary.futureDates} future-date issue(s)`
   );
   return report;
 }

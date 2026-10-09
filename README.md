@@ -173,8 +173,10 @@ reports weekly and adds a summary to the workflow run. Markdown shows the oldest
 complete corpus, field provenance, and priority data for future tooling.
 Next to the reviewed and missing counts, the report shows how many pages were
 reviewed in the last 90 days (`--recent-days` changes the window) and the date
-the window starts. A review dated after the report date is a data error and
-does not count as recent. The window only feeds this trend count; it does not
+the window starts. The window counts the report date itself, so 90 days runs
+from 89 days before the report date through the report date, and
+`--recent-days 1` counts only reviews dated on the report date. A review dated
+after the report date is a data error and does not count as recent. The window only feeds this trend count; it does not
 change staleness, sorting, or priority scores.
 
 `npm run content:graph` builds the same canonical page index into a deterministic

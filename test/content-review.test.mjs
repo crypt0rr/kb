@@ -146,21 +146,21 @@ test("subtracts calendar days across month and leap-year boundaries", () => {
 test("counts pages reviewed within the recent window without changing priorities", () => {
   const pages = [
     { title: "Today", url: "/today/", section: "cve", date: null, lastReviewed: asOf },
-    { title: "Boundary", url: "/boundary/", section: "tools", date: null, lastReviewed: "2026-05-04" },
-    { title: "Older", url: "/older/", section: "tools", date: null, lastReviewed: "2026-05-03" },
+    { title: "Boundary", url: "/boundary/", section: "tools", date: null, lastReviewed: "2026-05-05" },
+    { title: "Older", url: "/older/", section: "tools", date: null, lastReviewed: "2026-05-04" },
     { title: "Future", url: "/future/", section: "cve", date: null, lastReviewed: "2026-08-03" },
     { title: "Missing", url: "/missing/", section: "cve", date: "2020-01-01", lastReviewed: null }
   ];
   const report = createReviewReport(pages, { asOf });
 
   assert.equal(report.recentReviewDays, 90);
-  assert.equal(report.recentReviewSince, "2026-05-04");
+  assert.equal(report.recentReviewSince, "2026-05-05");
   assert.equal(report.summary.reviewed, 4);
   assert.equal(report.summary.missingLastReviewed, 1);
   assert.equal(report.summary.reviewedRecently, 2);
 
   const narrow = createReviewReport(pages, { asOf, recentDays: 30 });
-  assert.equal(narrow.recentReviewSince, "2026-07-03");
+  assert.equal(narrow.recentReviewSince, "2026-07-04");
   assert.equal(narrow.summary.reviewedRecently, 1);
   assert.deepEqual(
     narrow.pages.map((page) => [page.url, page.priorityScore, page.priorityTier]),
@@ -170,10 +170,15 @@ test("counts pages reviewed within the recent window without changing priorities
 
   assert.match(
     renderMarkdown(report),
-    /^- Reviewed pages: 4\n- Reviewed in the last 90 days \(since 2026-05-04\): 2$/m
+    /^- Reviewed pages: 4\n- Reviewed in the last 90 days \(since 2026-05-05\): 2$/m
   );
   assert.match(renderSummary(report), /^- Reviewed: 4 \(2 in the last 90 days\)$/m);
   assert.match(renderSummary(narrow), /^- Reviewed: 4 \(1 in the last 30 days\)$/m);
+
+  const single = createReviewReport(pages, { asOf, recentDays: 1 });
+  assert.equal(single.recentReviewSince, asOf);
+  assert.equal(single.summary.reviewedRecently, 1);
+  assert.match(renderMarkdown(single), /^- Reviewed in the last day \(since 2026-08-02\): 1$/m);
 });
 
 test("parses --recent-days as a positive integer", () => {
