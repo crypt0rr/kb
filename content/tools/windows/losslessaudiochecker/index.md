@@ -15,7 +15,7 @@ A utility to check whether a WAVE or FLAC file is truly lossless or not.
 
 ## Installation
 
-Download newest release from [Losslessaudiochecker.com](https://web.archive.org/web/20210421112651/https://losslessaudiochecker.com/)
+Releases were formerly downloadable from [Losslessaudiochecker.com](https://web.archive.org/web/20210421112651/https://losslessaudiochecker.com/)
 
 ## Examples
 

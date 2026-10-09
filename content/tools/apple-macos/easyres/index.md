@@ -15,7 +15,7 @@ The only Mac quick resolution switcher with fully animated previews. Quickly and
 
 ## Installation
 
-Download via [Apple AppStore](https://web.archive.org/web/20230103043518/https://apps.apple.com/app/easyres/id688211836?ls=1&mt=12)
+Formerly available via [Apple AppStore](https://web.archive.org/web/20230103043518/https://apps.apple.com/app/easyres/id688211836?ls=1&mt=12)
 
 ## Examples
 
