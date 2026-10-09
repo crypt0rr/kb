@@ -1,4 +1,4 @@
-import { MAX_RESULTS, buildSearchRequest, renderSearchResults } from "./kb-search.js";
+import { MAX_RESULTS, buildSearchRequest, renderSearchResults, resolveTagOption } from "./kb-search.js";
 
 (() => {
   const body = document.body;
@@ -84,7 +84,13 @@ import { MAX_RESULTS, buildSearchRequest, renderSearchResults } from "./kb-searc
     const params = new URLSearchParams(window.location.search);
     if (searchInput && params.has("q")) searchInput.value = params.get("q") ?? "";
     if (searchSection && params.has("section")) searchSection.value = params.get("section") ?? "";
-    if (searchTag && params.has("tag")) searchTag.value = params.get("tag") ?? "";
+    if (searchTag && params.has("tag")) {
+      const options = [...searchTag.options].map((option) => ({ value: option.value, slug: option.dataset.slug }));
+      searchTag.value = resolveTagOption(options, params.get("tag"));
+    }
+    // Rewrite the URL to the applied values, so a tag slug becomes its label and
+    // an unknown filter value is dropped rather than left in the address.
+    syncSearchUrl();
     dialog.showModal();
     searchInput?.focus();
     await loadPagefind();

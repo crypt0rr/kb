@@ -85,6 +85,7 @@ function renderNav(items: KbPage[], level = 0): string {
       <meta property="article:modified_time" content={page.lastReviewed || page.date} />
     )}
     <link rel="icon" href="/images/favicon.png" />
+    <link rel="modulepreload" href="/js/kb-search.js" />
     <title>{title} :: Knowledge Base</title>
   </head>
   <body>
@@ -195,7 +196,7 @@ function renderNav(items: KbPage[], level = 0): string {
           <span>tag</span>
           <select data-search-tag>
             <option value="">all tags</option>
-            {filterTags.map((item) => <option value={item.tag}>{item.tag} ({item.count})</option>)}
+            {filterTags.map((item) => <option value={item.tag} data-slug={tagSlug(item.tag)}>{item.tag} ({item.count})</option>)}
           </select>
         </label>
       </div>

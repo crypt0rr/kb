@@ -7,6 +7,7 @@ import {
   escapeHtml,
   formatResultCount,
   renderSearchResults,
+  resolveTagOption,
   sanitizePagefindExcerpt
 } from "../static/js/kb-search.js";
 
@@ -41,6 +42,22 @@ test("turns an empty query with a filter into a filter-only search", () => {
     term: null,
     options: { filters: { tag: "Brute Force" } }
   });
+});
+
+test("resolves a URL tag by label, then slug, then case-insensitive label", () => {
+  const options = [
+    { value: "", slug: undefined },
+    { value: "Active Directory", slug: "active-directory" },
+    { value: "Docker", slug: "docker" }
+  ];
+
+  assert.equal(resolveTagOption(options, "Docker"), "Docker");
+  assert.equal(resolveTagOption(options, "docker"), "Docker");
+  assert.equal(resolveTagOption(options, "active-directory"), "Active Directory");
+  assert.equal(resolveTagOption(options, " active directory "), "Active Directory");
+  assert.equal(resolveTagOption(options, "kubernetes"), "");
+  assert.equal(resolveTagOption(options, ""), "");
+  assert.equal(resolveTagOption(options, null), "");
 });
 
 test("formats the result count honestly when results are truncated", () => {

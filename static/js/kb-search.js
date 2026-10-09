@@ -18,6 +18,20 @@ export function buildSearchRequest({ query = "", section = "", tag = "" } = {}) 
   return { term: term || null, options: hasFilters ? { filters } : undefined };
 }
 
+// Resolves a ?tag= value to a tag filter option ({ value, slug }): the exact
+// label first, then the /tags/<slug>/ slug, then a label that differs only in
+// case. Returns "" when no option matches.
+export function resolveTagOption(options, wanted) {
+  const value = String(wanted ?? "").trim();
+  if (!value) return "";
+  const lower = value.toLowerCase();
+  const match =
+    options.find((option) => option.value === value) ??
+    options.find((option) => option.slug === lower) ??
+    options.find((option) => option.value.toLowerCase() === lower);
+  return match?.value ?? "";
+}
+
 export function formatResultCount(shown, total) {
   const noun = total === 1 ? "result" : "results";
   return shown < total ? `showing ${shown} of ${total} ${noun}` : `${total} ${noun}`;
