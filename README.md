@@ -64,6 +64,11 @@ intentional mirror/bulk asset listed in `scripts/content-policy.json`. It also
 fails on any dot-segment file under `content/` other than `.gitkeep` and
 `.DS_Store` files and the git-ignored `.rumdl_cache` lint cache directory, so an
 accidentally committed `.env`, credential file, or dot-directory page fails CI.
+Markdown images and raw HTML `src`, `srcset`, and `poster` attributes must not
+use absolute `http(s)://` or protocol-relative `//` sources: the deployed CSP
+only allows same-origin media (`img-src 'self' data:`, `media-src 'self'`), so
+browsers would block them. Mirror the file into the page's `images/` directory
+and reference it relatively. Code blocks are ignored.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
@@ -170,6 +175,12 @@ is not part of the build gate, so pull requests do not depend on npm registry
 state. The scheduled `Dependency freshness report` workflow runs it weekly or on
 manual dispatch and writes both lists to the job summary
 (`--summary-file <path>` appends the same Markdown summary locally).
+
+`public/_headers` defines the deployed response headers, including a
+self-only Content Security Policy. Images and media are served from the site
+itself rather than allowlisting third-party hosts, so visitors' IP addresses
+and referrers are not sent to image hosts and local copies survive upstream
+link rot.
 
 ## Contributing
 

@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
@@ -8,6 +9,7 @@ import {
   isPrivateContentPath
 } from "../src/lib/content-paths.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
+import { collectExternalMediaSources, EXTERNAL_MEDIA_HINT } from "../src/lib/external-media.mjs";
 import { parseCascade } from "../src/lib/metadata.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
 
@@ -51,6 +53,7 @@ await walk(contentDir);
 await parsePages();
 validatePages();
 validateRefsAndShortcodes();
+validateExternalMedia();
 validateAssets();
 await printAssetSummary();
 
@@ -336,6 +339,31 @@ function validateRefsAndShortcodes() {
         );
       }
     }
+  }
+}
+
+function validateExternalMedia() {
+  for (const page of pages) {
+    const sources = collectExternalMediaSources(page.body);
+    if (!sources.length) continue;
+
+    const lineOffset = bodyLineOffset(page);
+    for (const source of sources) {
+      errors.push(
+        `${page.relativeFile}:${source.line + lineOffset}: external media source ${source.value}; ${EXTERNAL_MEDIA_HINT}`
+      );
+    }
+  }
+}
+
+// Page bodies exclude frontmatter and are trimmed; map body lines back to file lines.
+function bodyLineOffset(page) {
+  try {
+    const raw = readFileSync(page.file, "utf8");
+    const start = raw.lastIndexOf(page.body);
+    return start === -1 ? 0 : raw.slice(0, start).split("\n").length - 1;
+  } catch {
+    return 0;
   }
 }
 
