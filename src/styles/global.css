@@ -625,6 +625,69 @@ h1 {
   border: 0;
 }
 
+/*
+ * Syntax highlighting: class-based highlight.js tokens emitted at build time
+ * (src/lib/highlight.mjs). Every colour is a palette variable with at least
+ * 6:1 contrast on the code block background.
+ */
+.prose pre .hljs-comment,
+.prose pre .hljs-quote {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.prose pre .hljs-keyword,
+.prose pre .hljs-literal,
+.prose pre .hljs-operator,
+.prose pre .hljs-name,
+.prose pre .hljs-selector-tag,
+.prose pre .hljs-type {
+  color: var(--cyan);
+}
+
+.prose pre .hljs-built_in,
+.prose pre .hljs-title,
+.prose pre .hljs-section,
+.prose pre .hljs-addition {
+  color: var(--green);
+}
+
+.prose pre .hljs-string,
+.prose pre .hljs-regexp,
+.prose pre .hljs-char.escape_,
+.prose pre .hljs-link {
+  color: var(--amber);
+}
+
+.prose pre .hljs-variable,
+.prose pre .hljs-template-variable,
+.prose pre .hljs-params,
+.prose pre .hljs-attr,
+.prose pre .hljs-attribute,
+.prose pre .hljs-property,
+.prose pre .hljs-symbol,
+.prose pre .hljs-bullet,
+.prose pre .hljs-meta {
+  color: var(--magenta);
+}
+
+.prose pre .hljs-number,
+.prose pre .hljs-deletion {
+  color: var(--red);
+}
+
+.prose pre .hljs-subst {
+  color: inherit;
+}
+
+.prose pre .hljs-emphasis {
+  font-style: italic;
+}
+
+.prose pre .hljs-strong {
+  font-weight: 700;
+}
+
 .copy-code {
   position: absolute;
   top: 8px;

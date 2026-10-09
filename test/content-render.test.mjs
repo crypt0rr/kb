@@ -1,13 +1,37 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { renderPage } from "../src/lib/content.ts";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
-import { collectAnchors, createRefIndex } from "../src/lib/links.mjs";
+import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
+import { highlightCode, highlightLanguage } from "../src/lib/highlight.mjs";
+import { collectAnchors, createMarkdown, createRefIndex } from "../src/lib/links.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
+import { contentRoot, walkMarkdownFiles } from "./helpers/corpus.mjs";
 
 function page(body) {
   return { body };
+}
+
+function fence(language, code) {
+  return ["```" + language, code, "```"].join("\n");
+}
+
+function stripSpans(html) {
+  return html.replace(/<\/?span[^>]*>/g, "");
+}
+
+// What a browser's innerText yields for highlighted code: tags dropped and the
+// entities markdown-it/highlight.js emit decoded.
+function codeText(html) {
+  return stripSpans(html)
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#x27;/g, "'")
+    .replace(/&amp;/g, "&");
 }
 
 test("renders GitHub Gist shortcodes as CSP-safe links", () => {
@@ -82,7 +106,7 @@ test("parses notice bodies in the main pass so code blocks keep blank lines", ()
 
   assert.equal(html.match(/<pre>/g)?.length, 1);
   assert.match(html, /^<aside class="notice notice-info">/);
-  assert.match(html, /# comment\necho two\n<\/code><\/pre>\n<\/aside>/);
+  assert.match(stripSpans(html), /# comment\necho two\n<\/code><\/pre>\n<\/aside>/);
   assert.doesNotMatch(html, /<h1/);
 });
 
@@ -126,4 +150,91 @@ test("collects the same heading ids the renderer emits for headings with refs", 
 
   assert.deepEqual(rendered, ["using-awk", "pair-with-commands-unix-awk"]);
   assert.deepEqual([...collectAnchors(body, { page: {}, refIndex })], rendered);
+});
+
+test("highlights labelled bash fences with class-based tokens", () => {
+  const html = renderPage(page(fence("bash", 'echo "$HOME" # where am I')));
+
+  assert.match(html, /^<pre><code class="language-bash">/);
+  assert.match(html, /<span class="hljs-built_in">echo<\/span>/);
+  assert.match(html, /<span class="hljs-variable">\$HOME<\/span>/);
+  assert.match(html, /<span class="hljs-comment"># where am I<\/span>/);
+});
+
+test("resolves fence languages case-insensitively and through aliases", () => {
+  const powershell = renderPage(page(fence("PowerShell", "Get-Process | Where-Object { $_.CPU -gt 1 }")));
+  const cmd = renderPage(page(fence("cmd", "echo %PATH%\nREM note")));
+
+  assert.match(powershell, /<code class="language-PowerShell">/);
+  assert.match(powershell, /<span class="hljs-built_in">Get-Process<\/span>/);
+  assert.match(cmd, /<code class="language-cmd">/);
+  assert.match(cmd, /<span class="hljs-variable">%PATH%<\/span>/);
+  assert.match(cmd, /<span class="hljs-comment">REM note<\/span>/);
+
+  assert.equal(highlightLanguage("POWERSHELL"), "powershell");
+  assert.equal(highlightLanguage("Cmd"), "cmd");
+  assert.equal(highlightLanguage("HTML"), "html");
+});
+
+test("leaves plain, unlabelled and unknown fences exactly as before", () => {
+  const plainMarkdown = createMarkdown();
+  const code = 'sudo cat /etc/shadow | grep "<root>" && echo $HOME';
+
+  for (const label of ["plain", "", "sudo", "no-such-language"]) {
+    const source = fence(label, code);
+    const html = renderPage(page(source));
+
+    assert.equal(html, plainMarkdown.render(source), `fence "${label}"`);
+    assert.doesNotMatch(html, /<span/, `fence "${label}"`);
+  }
+  assert.equal(highlightLanguage("plain"), null);
+  assert.equal(highlightCode(code, "plain"), "");
+});
+
+test("escapes markup inside highlighted code", () => {
+  const cases = [
+    ["bash", 'echo "<script>alert(1)</script>"'],
+    ["html", '<img src=x onerror="alert(1)"></code></pre><script>x</script>']
+  ];
+
+  for (const [language, code] of cases) {
+    const html = renderPage(page(fence(language, code)));
+    const inner = html.match(/^<pre><code class="language-\w+">([\s\S]*)<\/code><\/pre>\n$/)?.[1];
+
+    assert.ok(inner, language);
+    assert.match(inner, /<span class="hljs-/, language);
+    assert.doesNotMatch(inner, /<(?!\/?span[\s>])/, language);
+    assert.equal(codeText(inner), `${code}\n`, language);
+  }
+});
+
+test("emits no inline style attributes for any highlighted language", () => {
+  const languages = [
+    "bash", "PowerShell", "cmd", "yaml", "html", "c", "cpp",
+    "json", "python", "javascript", "ini", "sql", "diff"
+  ];
+  const code = 'x = "a" # 1 <b style="color:red">';
+  const html = renderPage(page(languages.map((language) => fence(language, code)).join("\n\n")));
+
+  assert.equal(html.match(/<pre>/g)?.length, languages.length);
+  assert.equal(html.match(/<span class="hljs-/g)?.length > languages.length, true);
+  assert.doesNotMatch(html, /<[^>]*\sstyle\s*=/i);
+});
+
+test("keeps the text of every labelled fence in the corpus intact", () => {
+  const markdown = createMarkdown();
+  let highlighted = 0;
+
+  for (const file of walkMarkdownFiles()) {
+    const source = readFileSync(path.join(contentRoot, file), "utf8");
+    for (const token of markdown.parse(parseFrontmatter(source, file).content, {})) {
+      if (token.type !== "fence") continue;
+      const html = highlightCode(token.content, token.info.trim().split(/\s+/)[0]);
+      if (!html) continue;
+      highlighted += 1;
+      assert.doesNotMatch(html, /<[^>]*\sstyle\s*=/i, file);
+      assert.equal(codeText(html), token.content, `${file}: ${token.info}`);
+    }
+  }
+  assert.ok(highlighted > 0);
 });

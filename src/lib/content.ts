@@ -4,6 +4,7 @@ import { buildContentIndex, normalizeWeight } from "./content-index.mjs";
 import { buildContentGraph } from "./content-graph.mjs";
 import { isPrivateContentPath } from "./content-paths.mjs";
 import { normalizeDate } from "./date.mjs";
+import { highlightCode } from "./highlight.mjs";
 import {
   createMarkdown,
   createRefIndex,
@@ -116,7 +117,7 @@ type ContentGraph = {
   };
 };
 
-const md = createMarkdown();
+const md = createMarkdown({ highlight: highlightCode });
 
 const defaultLinkOpen =
   md.renderer.rules.link_open ??
