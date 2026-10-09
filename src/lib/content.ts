@@ -132,6 +132,20 @@ md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
   return defaultLinkOpen(tokens, idx, options, env, self);
 };
 
+// markdown-it renders GFM column alignment as style="text-align:…", which the
+// production CSP (style-src 'self') blocks, so it becomes an align-* class.
+for (const rule of ["th_open", "td_open"]) {
+  md.renderer.rules[rule] = (tokens, idx, options, _env, self) => {
+    const token = tokens[idx];
+    const alignment = String(token.attrGet("style") ?? "").match(/^text-align:(left|center|right)$/)?.[1];
+    if (alignment) {
+      token.attrs = (token.attrs ?? []).filter(([name]) => name !== "style");
+      token.attrJoin("class", `align-${alignment}`);
+    }
+    return self.renderToken(tokens, idx, options);
+  };
+}
+
 export function getPages() {
   if (cache) return cache;
 

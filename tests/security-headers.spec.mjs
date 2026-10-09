@@ -20,7 +20,9 @@ const policyRoutes = [
   "/tools/framework/projectdiscovery/katana/",
   "/tools/apple-macos/ice/",
   "/tools/other/ccat/",
-  "/cve/cve-2021-40449/"
+  "/cve/cve-2021-40449/",
+  // Aligned Markdown table columns, which must not rely on inline style attributes.
+  "/stuff/cheatsheets/netmasks/"
 ];
 // Policy headers that must match public/_headers exactly, including being absent.
 const policyHeaders = [
