@@ -41,11 +41,15 @@ The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
 the Pagefind search index. It also publishes `search.json`, a public page index
 with each page's `title`, `description`, `url`, `tags`, `section`, `date`,
-`lastReviewed`, `status`, and `platforms`. Any content path with a segment that
-starts with `.` (for example `tools/x/files/.env` or `tools/.drafts/notes.md`)
-is private: the build never renders it as a page, copies it, links it from a
-`resources` listing, or lists it in the asset manifest, and `npm run smoke`
-fails if one appears there.
+`lastReviewed`, `status`, and `platforms`. The site itself searches with
+Pagefind and does not read `search.json`; it is kept as a machine-readable page
+list for external tools. Rendered pages take no state from the build clock: the
+footer copyright year comes from `SOURCE_DATE_EPOCH` when set and otherwise from
+the commit date, so rebuilding the same commit produces identical HTML. Any
+content path with a segment that starts with `.` (for example
+`tools/x/files/.env` or `tools/.drafts/notes.md`) is private: the build never
+renders it as a page, copies it, links it from a `resources` listing, or lists
+it in the asset manifest, and `npm run smoke` fails if one appears there.
 
 The supported angle shortcodes are rendered through the static page pipeline:
 `youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
