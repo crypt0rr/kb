@@ -54,6 +54,42 @@ test("keyboard users can skip to content and operate search", async ({ page }) =
   await expect(page.locator("[data-search-open]")).toBeFocused();
 });
 
+test("search shortcut inside the open search dialog keeps the focus return target", async ({ page }) => {
+  await page.goto("/", { waitUntil: "networkidle" });
+
+  const opener = page.locator("[data-search-open]");
+  const dialog = page.locator("[data-search-dialog]");
+  const searchInput = page.locator("[data-search-input]");
+
+  await opener.click();
+  await expect(dialog).toBeVisible();
+  await expect(searchInput).toBeFocused();
+
+  await searchInput.press("/");
+  await expect(searchInput).toHaveValue("/");
+  await expect(searchInput).toBeFocused();
+  await searchInput.fill("");
+
+  const sectionSelect = page.locator("[data-search-section]");
+  await sectionSelect.focus();
+  await expect(sectionSelect).toBeFocused();
+  await page.keyboard.press("/");
+  // Chromium restores focus to the opener on its own when a modal dialog closes, so this
+  // assertion (not the final opener check) is what catches the shortcut firing from a select.
+  await expect(sectionSelect).toBeFocused();
+
+  const closeButton = dialog.locator('button[aria-label="Close search"]');
+  await closeButton.focus();
+  await page.keyboard.press("/");
+  await expect(dialog).toBeVisible();
+  await expect(searchInput).toBeFocused();
+  await expect(searchInput).toHaveValue("");
+
+  await page.keyboard.press("Escape");
+  await expect(dialog).not.toBeVisible();
+  await expect(opener).toBeFocused();
+});
+
 test("mobile navigation exposes its expanded state", async ({ page }) => {
   await page.setViewportSize({ width: 640, height: 800 });
   await page.goto("/", { waitUntil: "networkidle" });
