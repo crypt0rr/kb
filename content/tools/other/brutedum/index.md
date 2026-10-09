@@ -31,4 +31,4 @@ python3 brutedum.py
 
 ## URL List
 
-- [GitHub.com - BruteDum](https://github.com/GitHackTools/BruteDum)
+- [GitHub.com - BruteDum](https://web.archive.org/web/20201205125126/https://github.com/GitHackTools/BruteDum)

@@ -717,7 +717,7 @@ $ head output.txt
 - [Github.com - FlameOfIgnis Pwdb-Public](https://github.com/FlameOfIgnis/Pwdb-Public.git)
 - [Github.com - DanielMiessler - Seclists](https://github.com/danielmiessler/SecLists.git)
 - [Weakpass.com](https://weakpass.com/)
-- [Hashes.org](https://hashes.org/)
+- [Hashes.org](https://web.archive.org/web/20201218032112/https://hashes.org/)
 - [Github.com - Wikiraider](https://github.com/NorthwaveSecurity/wikiraider)
 - [En.wikipedia.org - RockYou](https://en.wikipedia.org/wiki/RockYou#Data_breach)
 
@@ -729,7 +729,7 @@ $ head output.txt
 - [Github.com - hash-cracker](https://github.com/crypt0rr/hash-cracker)
 - [Hashmob.net Community](https://hashmob.net/)
 - [Hashmob.net - CTF writeups](https://hashmob.net/writeups/)
-- [i-disclose.net - Search though the billions of email address, hashes & find passwords using the public API](https://i-disclose.net/main/login/)
+- [i-disclose.net - Search though the billions of email address, hashes & find passwords using the public API](https://web.archive.org/web/20210518210648/https://i-disclose.net/main/login/)
 - [Sensepost.com - Cracking efficiency measurements common substring attack](https://sensepost.com/blog/2018/cracking-efficiency-measurements-common-substring-attack/)
 - [Asecuritysite.com - NTLM calculator](https://asecuritysite.com/encryption/lmhash)
 - [Browserling.com - NTLM calculator](https://www.browserling.com/tools/ntlm-hash)

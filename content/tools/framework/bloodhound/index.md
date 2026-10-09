@@ -94,10 +94,10 @@ macOS
 Some other custom queries:
 
 - [Github.com - mgeeky - Handy-BloodHound-Cypher-Queries](https://github.com/mgeeky/Penetration-Testing-Tools/blob/master/red-teaming/bloodhound/Handy-BloodHound-Cypher-Queries.md)
-- [Github.com - ly4k - Certipy](https://raw.githubusercontent.com/ly4k/Certipy/main/customqueries.json)
+- [Github.com - ly4k - Certipy](https://raw.githubusercontent.com/ly4k/Certipy/4.8.2/customqueries.json)
 - [Github.com - ZephrFish - Bloodhound-CustomQueries](https://raw.githubusercontent.com/ZephrFish/Bloodhound-CustomQueries/main/customqueries.json)
-- [Github.com - CompassSecurity - BloodHoundQueries](https://raw.githubusercontent.com/CompassSecurity/BloodHoundQueries/master/customqueries.json)
-- [Github.com - Shutdownrepo - Exegol](https://raw.githubusercontent.com/ShutdownRepo/Exegol/master/sources/bloodhound/customqueries.json)
+- [Github.com - CompassSecurity - BloodHoundQueries](https://raw.githubusercontent.com/CompassSecurity/BloodHoundQueries/master/BloodHound_Custom_Queries/customqueries.json)
+- [Github.com - Shutdownrepo - Exegol](https://raw.githubusercontent.com/ThePorgs/Exegol-images/main/sources/assets/bloodhound/customqueries.json)
 
 ### Filter users from json export Bloodhound
 
@@ -158,4 +158,4 @@ Please see [BloodHoundLoader]({{< ref "BloodHoundLoader" >}}).
 - [GitHub.com - Bloodhound.py](https://github.com/fox-it/BloodHound.py)
 - [Bloodhound for IT teams - PlumHound](https://github.com/PlumHound/PlumHound)
 - [GitHub - awsmhacks - BloodhoundCustomQueries](https://github.com/awsmhacks/awsmBloodhoundCustomQueries)
-- [Github.com - Azurehound](https://bloodhound.readthedocs.io/en/latest/data-collection/azurehound.html)
+- [Github.com - Azurehound](https://bloodhound.specterops.io/collect-data/ce-collection/azurehound)

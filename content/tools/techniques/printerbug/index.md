@@ -270,4 +270,4 @@ SMB         10.10.20.53     445    DC03             [+] offsec.nl\administrator:
 ## URL list
 
 - [Github.com - printerbug.py](https://github.com/dirkjanm/krbrelayx/blob/master/printerbug.py)
-- [Thehacker.recipes - MS-RPRN abuse (PrinterBug)](https://www.thehacker.recipes/ad/movement/mitm-and-coerced-authentications/ms-rprn)
+- [Thehacker.recipes - MS-RPRN abuse (PrinterBug)](https://www.thehacker.recipes/ad/movement/mitm-and-coerced-authentications/rpc-coercions/ms-rprn)

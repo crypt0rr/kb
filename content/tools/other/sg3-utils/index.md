@@ -37,5 +37,5 @@ sudo sg_raw /dev/sr0 EA 00 00 00 00 00 01
 
 ## URL List
 
-- [Jeltsch.org - SuperDrive](https://jeltsch.org/SuperDrive)
+- [Jeltsch.org - SuperDrive](https://web.archive.org/web/20190822134941/https://jeltsch.org/SuperDrive)
 - [Gist.github.com - AnnoyingTechnology - Apple's SuperDrive tweak for use with Linux](https://gist.github.com/AnnoyingTechnology/dbaae864822cf08372f0aafe64a63477)

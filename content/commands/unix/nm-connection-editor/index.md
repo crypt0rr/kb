@@ -42,4 +42,4 @@ Application Options:
 
 ## URL List
 
-- [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/artful/en/man1/nm-connection-editor.1.html)
+- [Manpages.ubuntu.com](https://manpages.ubuntu.com/manpages/noble/man1/nm-connection-editor.1.html)

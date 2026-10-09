@@ -65,7 +65,7 @@ Examples:
 
 ## Examples
 
-[Using tickets](https://swarm.ptsecurity.com/kerberoasting-without-spns/).
+[Using tickets](https://ptswarm.com/blog/kerberoasting-without-spns/).
 
 To use tickets install the `klist` tool with `sudo apt install krb5-user`
 

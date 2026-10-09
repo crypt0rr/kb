@@ -51,7 +51,7 @@ This is a list of resources and scripts that I have been gathering (and continui
 
 [Github.com - OSCPRepo](https://github.com/rewardone/OSCPRepo)
 
-[oscp.infosecsanyam.in](https://oscp.infosecsanyam.in/)
+[oscp.infosecsanyam.in](https://web.archive.org/web/20211204004715/https://oscp.infosecsanyam.in/)
 
 ### itm4n Documentation page
 
@@ -143,7 +143,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2021-06-22 15:04:
 
 ### Application Security overview and mitigation list
 
-[Applicationsecurity.io - Appsec Findings database list](https://applicationsecurity.io/appsec-findings-database-list/)
+[Applicationsecurity.io - Appsec Findings database list](https://web.archive.org/web/20210212025434/https://applicationsecurity.io/appsec-findings-database-list/)
 
 ### Web Application Firewall (WAF) Evasion Techniques #3
 

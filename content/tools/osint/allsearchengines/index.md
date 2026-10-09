@@ -32,8 +32,8 @@ Public search engines by category.
 | [ivre.rocks](https://ivre.rocks/)                    | Server              |
 | [viz.greynoise.io](https://viz.greynoise.io/)        | Threat Intelligence |
 | [app.binaryedge.io](https://app.binaryedge.io/login) | Threat Intelligence |
-| [fofa.info](https://fofa.info/toLogin)               | Threat Intelligence |
-| [zoomeye.org](https://www.zoomeye.org/)              | Threat Intelligence |
+| [fofa.info](https://fofa.info/)               | Threat Intelligence |
+| [zoomeye.org](https://www.zoomeye.ai/)              | Threat Intelligence |
 | [leakix.net](https://leakix.net/)                    | Threat Intelligence |
 | [urlscan.io](https://urlscan.io/)                    | Threat Intelligence |
 | [socradar.io](https://socradar.io/)                  | Threat Intelligence |

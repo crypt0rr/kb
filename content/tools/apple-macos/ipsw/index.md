@@ -15,7 +15,7 @@ Download and Parse IPSWs (and SO much more)
 
 ## Installation
 
-Check [documentation](https://blacktop.github.io/ipsw/docs/install/) for latest installation methods.
+Check [documentation](https://blacktop.github.io/ipsw/docs/getting-started/installation/) for latest installation methods.
 
 ## Usage
 
@@ -59,7 +59,7 @@ Use "ipsw [command] --help" for more information about a command.
 
 ### Download macOS
 
-Also see [documentation](https://blacktop.github.io/ipsw/docs/commands/download/#download-macos).
+Also see [documentation](https://blacktop.github.io/ipsw/docs/guides/download/#download-macos).
 
 ```plain
 ipsw download macos   

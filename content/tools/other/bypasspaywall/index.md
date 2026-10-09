@@ -15,10 +15,10 @@ Add-on allows you to read articles from (supported) sites that implement a paywa
 
 ## Installation
 
-For **FireFox** you can install add-on via [addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-clean)
+For **FireFox** the add-on was formerly available via [addons.mozilla.org](https://web.archive.org/web/20220413220237/https://addons.mozilla.org/en-US/firefox/addon/bypass-paywalls-clean/)
 
 Browsers based on Chromium need to look at the [Gitlab](https://gitlab.com/magnolia1234/bypass-paywalls-chrome-clean#installation)
 
 ## URL List
 
-- [Addons.mozilla.org - Bypass Paywalls Clean](https://addons.mozilla.org/nl/firefox/addon/bypass-paywalls-clean/)
+- [Addons.mozilla.org - Bypass Paywalls Clean](https://web.archive.org/web/20220422091100/https://addons.mozilla.org/nl/firefox/addon/bypass-paywalls-clean/)

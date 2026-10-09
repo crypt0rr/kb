@@ -55,7 +55,7 @@ Explore the repository, try out the examples, and feel free to contribute or pro
 
 | 💼 Service           | 📝 Description                                                                  | 🔗 Link                            |
 | -------------------- | ------------------------------------------------------------------------------- | ---------------------------------- |
-| ☁️ **NextCloud**     | A suite of client-server software for creating and using file hosting services. | [Details](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/tree/main/services/nextcloud)      |
+| ☁️ **NextCloud**     | A suite of client-server software for creating and using file hosting services. | [Details](https://web.archive.org/web/20260309010815/https://github.com/tailscale-dev/ScaleTail/tree/main/services/nextcloud)      |
 | 📝 **Excalidraw**    | A virtual collaborative whiteboard tool.                                        | [Details](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/tree/main/services/excalidraw)     |
 | 🔗 **Pingvin Share** | A self-hosted file sharing platform.                                            | [Details](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/tree/main/services/pingvin-share/) |
 | 🗂️ **Stirling-PDF**  | A web application for managing and editing PDF files.                           | [Details](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/tree/main/services/stirlingpdf)    |
@@ -83,7 +83,7 @@ Explore the repository, try out the examples, and feel free to contribute or pro
 | 📈 Service         | 📝 Description                                                                      | 🔗 Link                         |
 | ------------------ | ----------------------------------------------------------------------------------- | ------------------------------- |
 | 📊 **Uptime Kuma** | A self-hosted monitoring tool like "Uptime Robot".                                  | [Details](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/tree/main/services/uptime-kuma) |
-| 📉 **Beszel**      | A lightweight server monitoring hub with historical data, Docker stats, and alerts. | [Details](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/tree/main/services/beszel)      |
+| 📉 **Beszel**      | A lightweight server monitoring hub with historical data, Docker stats, and alerts. | [Details](https://github.com/tailscale-dev/ScaleTail/tree/main/services/beszel-hub)      |
 
 ## Tailscale Funnel vs. Tailscale Serve
 
@@ -93,7 +93,7 @@ Tailscale Funnel securely exposes services to the public internet. Tailscale Ser
 
 [Tailscale Funnel](https://tailscale.com/kb/1223/funnel) is a feature that lets you route traffic from the wider internet to a local service running on a machine in your Tailscale network (known as a tailnet). You can think of this as publicly sharing a local service, like a web app, for anyone to access—even if they don’t have Tailscale themselves.
 
-An example configuration for Tailscale Funnel for your service is available [here](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/blob/main/funnel-serve/funnel-example.json).
+An example configuration for Tailscale Funnel for your service is available [here](https://web.archive.org/web/20240910030921/https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/blob/main/funnel-serve/funnel-example.json).
 
 ![example](images/tailscale-funnel.png)
 ![Tailscale Funnel](images/tailscale-funnel.png)
@@ -102,7 +102,7 @@ An example configuration for Tailscale Funnel for your service is available [her
 
 [Tailscale Serve](https://tailscale.com/kb/1312/serve) is a feature that lets you route traffic from other devices on your Tailscale network (known as a tailnet) to a local service running on your device. You can think of this as sharing the service, such as a website, with the rest of your tailnet.
 
-An example configuration for Tailscale Serve for your service is available [here](https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/blob/main/funnel-serve/serve-example.json).
+An example configuration for Tailscale Serve for your service is available [here](https://web.archive.org/web/20240910062712/https://github.com/2Tiny2Scale/tailscale-docker-sidecar-configs/blob/main/funnel-serve/serve-example.json).
 
 ![Tailscale Serve](images/tailscale-serve.png)
 

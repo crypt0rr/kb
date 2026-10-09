@@ -68,5 +68,5 @@ The output will include several tokens including a `refresh_token`. It will star
 ## URL List
 
 - [Github.com - BloodHound](https://github.com/BloodHoundAD/BloodHound/)
-- [Github.com - AzureHound Collector](https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/AzureHound.ps1)
+- [Github.com - AzureHound Collector](https://web.archive.org/web/20220516130319/https://github.com/BloodHoundAD/BloodHound/blob/master/Collectors/AzureHound.ps1)
 - [Github.com - Bloodhound-CustomQueries - Azure](https://github.com/ZephrFish/Bloodhound-CustomQueries/blob/main/customqueries.json)

@@ -57,4 +57,4 @@ cdpsnarf -i <interface> -w <output>.pcap
 
 ## URL List
 
-- [Kali.org - CDPsnarf](https://tools.kali.org/information-gathering/cdpsnarf)
+- [Kali.org - CDPsnarf](https://web.archive.org/web/20200812094959/https://tools.kali.org/information-gathering/cdpsnarf)

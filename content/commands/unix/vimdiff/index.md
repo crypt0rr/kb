@@ -83,4 +83,4 @@ Arguments:
 ## URL List
 
 - [Vim.org](http://www.vim.org/)
-- [Git-scm.com - vimdiff](https://git-scm.com/docs/vimdiff/en)
+- [Git-scm.com - vimdiff](https://git-scm.com/docs/vimdiff)

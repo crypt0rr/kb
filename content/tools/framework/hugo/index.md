@@ -216,6 +216,6 @@ hugo server --port 1337 --bind 0.0.0.0
 - [GoHugo.io](https://gohugo.io/)
 - [Github.com - Hugo](https://github.com/gohugoio/hugo/)
 - [Learn theme getgrav.com](https://learn.getgrav.org)
-- [Learn theme netlify.com](https://learn.netlify.com)
+- [Learn theme netlify.com](https://learn.netlify.app/en/)
 - [Hugo themes](https://themes.gohugo.io/)
 - [Hugo configurations](https://gohugo.io/getting-started/configuration/)

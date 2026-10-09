@@ -22,7 +22,7 @@ Supported features:
 - Zero firmware patching required (ie. APFS ROM patching)
 - GPU Switching on MacBook Pro models (2012 and newer)
 
-Note: Only clean-installs and upgrades are supported, macOS Big Sur installs already patched with other patchers, such as [Patched Sur](https://github.com/BenSova/Patched-Sur) or [bigmac](https://github.com/StarPlayrX/bigmac), cannot be used due to broken file integrity with APFS snapshots and SIP.
+Note: Only clean-installs and upgrades are supported, macOS Big Sur installs already patched with other patchers, such as [Patched Sur](https://github.com/Ben216k/Patched-Sur) or [bigmac](https://github.com/StarPlayrX/bigmac), cannot be used due to broken file integrity with APFS snapshots and SIP.
 
 - You can however reinstall macOS with this patcher and retain your original data
 

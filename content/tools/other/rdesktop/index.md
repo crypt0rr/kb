@@ -112,4 +112,4 @@ rdesktop -u '' <target>
 ## URL List
 
 - [GitHub.com - rdesktop](https://github.com/rdesktop/rdesktop)
-- [rdesktop.org](https://www.rdesktop.org/)
+- [rdesktop.org](https://web.archive.org/web/20200312005825/https://www.rdesktop.org/)

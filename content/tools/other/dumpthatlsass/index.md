@@ -33,4 +33,4 @@ Start CMD or PowerShell as (local) administrator.
 
 ## URL list
 
-- [Github.com - DumpThatLSASS](https://github.com/D1rkMtr/DumpThatLSASS)
+- [Github.com - DumpThatLSASS](https://web.archive.org/web/20221002160534/https://github.com/D1rkMtr/DumpThatLSASS)
