@@ -52,11 +52,14 @@ renders it as a page, copies it, links it from a `resources` listing, or lists
 it in the asset manifest, and `npm run smoke` fails if one appears there.
 
 The search dialog filters by section and by tag; the tag filter lists every
-tag with its page count. With an empty query, a section or tag filter alone
-lists all matching pages (the first 12 are shown with the total count), so the
-dialog doubles as a browser. The query and filters are kept in the URL, and
-opening a link such as `/?tag=Docker` or `/?section=cve` opens search with
-those results. The pure search helpers live in `static/js/kb-search.js`.
+tag with its page count, and each page indexes the same tag labels, so a tag
+option always returns the pages it counts. With an empty query, a section or
+tag filter alone runs a filter-only search that shows the first 12 matching
+pages and the total count; there is no paging yet. The query and filters are
+kept in the URL, and opening a link such as `/?tag=Docker`, `/?tag=docker`
+(the `/tags/<slug>/` slug) or `/?section=cve` opens search with those results;
+an unknown filter value is dropped from the URL. The pure search helpers live
+in `static/js/kb-search.js`.
 
 The supported angle shortcodes are rendered through the static page pipeline:
 `youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
