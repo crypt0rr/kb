@@ -39,11 +39,17 @@ npm run validate
 
 The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
-the Pagefind search index. Any content path with a segment that starts with `.`
-(for example `tools/x/files/.env` or `tools/.drafts/notes.md`) is private: the
-build never renders it as a page, copies it, links it from a `resources`
-listing, or lists it in the asset manifest, and `npm run smoke` fails if one
-appears there.
+the Pagefind search index. It also publishes `search.json`, a public page index
+with each page's `title`, `description`, `url`, `tags`, `section`, `date`,
+`lastReviewed`, `status`, and `platforms`. The site itself searches with
+Pagefind and does not read `search.json`; it is kept as a machine-readable page
+list for external tools. Rendered pages take no state from the build clock: the
+footer copyright year comes from `SOURCE_DATE_EPOCH` when set and otherwise from
+the commit date, so rebuilding the same commit produces identical HTML. Any
+content path with a segment that starts with `.` (for example
+`tools/x/files/.env` or `tools/.drafts/notes.md`) is private: the build never
+renders it as a page, copies it, links it from a `resources` listing, or lists
+it in the asset manifest, and `npm run smoke` fails if one appears there.
 
 The supported angle shortcodes are rendered through the static page pipeline:
 `youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
@@ -62,10 +68,16 @@ accidentally committed `.env`, credential file, or dot-directory page fails CI.
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
 
-`npm test` runs focused parser and content-contract tests. `npm run doctor`
-checks the Node.js version, required project paths, and local npm availability.
-A different Node.js major version than `.node-version` fails; a minor or patch
-difference only prints a warning. CI installs the exact pinned version.
+`npm test` runs focused parser and content-contract tests. Tests against the
+real `content/` tree assert invariants derived from the files and frontmatter
+rather than fixed page counts, so adding a page or a `lastReviewed` date does
+not require test changes. `npm run smoke` checks the built `dist/` output,
+including that no trust-ledger state appears in any generated HTML page or in
+`search.json`.
+`npm run doctor` checks the Node.js version, required project paths, and local
+npm availability. A different Node.js major version than `.node-version` fails;
+a minor or patch difference only prints a warning. CI installs the exact pinned
+version.
 `npm run test:a11y` builds the deployable static site, serves it with Astro
 Preview, and runs the browser-level Playwright/Axe smoke suite against
 representative routes and keyboard interactions. The `Browser accessibility
@@ -86,12 +98,14 @@ marks pages stale when their effective review date is more than 12 months old,
 and never changes frontmatter or fails a content build. The report uses the same
 effective metadata index as the site and includes field provenance plus a
 deterministic priority score, so inherited metadata cannot silently diverge
-between the site and maintenance checks. Reports use non-strict mode to record
-malformed cascade metadata for maintainers, while the site remains strict. The
-scheduled `Content freshness review` workflow uploads the same reports weekly
-and adds a summary to the workflow run. Markdown shows the oldest 100 queue
-entries by default (`--limit` changes this); JSON contains the complete corpus,
-field provenance, and priority data for future tooling.
+between the site and maintenance checks. The freshness queue is maintainer-only
+and is not rendered on the public site; pages only show their own `date`,
+`lastReviewed`, `status`, and `platforms` values. Reports use non-strict mode to
+record malformed cascade metadata for maintainers, while the site remains
+strict. The scheduled `Content freshness review` workflow uploads the same
+reports weekly and adds a summary to the workflow run. Markdown shows the oldest
+100 queue entries by default (`--limit` changes this); JSON contains the
+complete corpus, field provenance, and priority data for future tooling.
 
 `npm run content:graph` builds the same canonical page index into a deterministic
 relationship report at `.reports/content-graph.md` and a complete
@@ -108,8 +122,10 @@ explicit graph context into four derived states: **Verified**, **Review due**,
 **Repair needed**, and **Context light**. The Markdown report shows the highest
 priority 100 pages; JSON contains the complete corpus. The ledger is report-only:
 it never backfills frontmatter or fails a content change solely because a page is
-due for review. External and protocol URLs are inventoried but are not treated as
-broken internal targets. The scheduled `Content freshness review` workflow runs
+due for review. Its states depend on the date the report runs, so the ledger is
+not rendered on the public site, in the Pagefind filters, or in `search.json`.
+External and protocol URLs are inventoried but are not treated as broken
+internal targets. The scheduled `Content freshness review` workflow runs
 this command weekly or on manual dispatch and uploads both report formats.
 
 Content pages may optionally define `lastReviewed` (`YYYY-MM-DD`), `status`

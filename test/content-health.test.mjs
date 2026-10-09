@@ -14,6 +14,7 @@ import {
   createContentHealthReport,
   renderMarkdown
 } from "../scripts/content-health.mjs";
+import { corpusAsOf, describeCorpus } from "./helpers/corpus.mjs";
 
 const asOf = "2026-08-06";
 
@@ -143,16 +144,38 @@ test("health summary and ordering are deterministic", () => {
   assert.equal(summary.stale, 2);
 });
 
-test("full corpus ledger contains every publishable page and accurate integrity counts", () => {
-  const report = createContentHealthReport({ asOf });
-  const second = createContentHealthReport({ asOf });
+test("corpus review date tracks the calendar so future-dated content still fails", () => {
+  assert.equal(corpusAsOf("2026-08-06", new Date("2026-10-09T23:30:00Z")), "2026-10-10");
+  assert.equal(corpusAsOf("2026-08-06", new Date("2020-01-01T00:00:00Z")), "2026-08-06");
+});
 
-  assert.equal(report.pages.length, 751);
-  assert.equal(new Set(report.pages.map((page) => page.url)).size, 751);
-  assert.equal(report.summary.totalPages, 751);
-  assert.equal(report.summary.reviewDue, 751);
-  assert.equal(report.summary.missingLastReviewed, 751);
-  assert.equal(report.summary.repairNeeded, 0);
+test("full corpus ledger contains every publishable page and accurate integrity counts", () => {
+  const corpus = describeCorpus();
+  const corpusDate = corpusAsOf(asOf);
+  const report = createContentHealthReport({ asOf: corpusDate });
+  const second = createContentHealthReport({ asOf: corpusDate });
+  const { summary } = report;
+
+  assert.ok(corpus.published.length > 0);
+  assert.deepEqual(report.pages.map((page) => page.url).sort(), corpus.publishedUrls);
+  assert.equal(summary.totalPages, corpus.published.length);
+  assert.equal(report.reviewSummary.totalPages, corpus.published.length);
+  assert.equal(summary.missingLastReviewed, corpus.missingLastReviewed);
+  assert.equal(summary.reviewed, corpus.published.length - corpus.missingLastReviewed);
+  assert.ok(summary.reviewDue >= 0 && summary.reviewDue <= summary.totalPages);
+  assert.equal(
+    summary.verified + summary.reviewDue + summary.repairNeeded + summary.contextLight,
+    summary.totalPages
+  );
+  assert.equal(
+    summary.futureDates,
+    0,
+    `future-dated pages: ${report.pages
+      .filter((page) => page.review.futureDate)
+      .map((page) => page.url)
+      .join(", ")}`
+  );
+  assert.equal(summary.repairNeeded, 0);
   assert.equal(report.summary.brokenLinks, 0);
   assert.equal(report.summary.missingAnchors, 0);
   assert.equal(report.summary.brokenAssets, 0);
