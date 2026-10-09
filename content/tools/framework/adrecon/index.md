@@ -61,7 +61,7 @@ The following information is gathered by the tool:
       - RSAT: Active Directory Domain Services and Lightweight Directory Services Tools
       - RSAT: Group Policy Management Tools
   - Windows 10 (<https://www.microsoft.com/en-au/download/details.aspx?id=45520>)
-  - Windows 7 (<https://www.microsoft.com/en-au/download/details.aspx?id=7887>)
+  - Windows 7 (<https://web.archive.org/web/20200105165016/https://www.microsoft.com/en-au/download/details.aspx?id=7887>)
 
 ### Downloading
 

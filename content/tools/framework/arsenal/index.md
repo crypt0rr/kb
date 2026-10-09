@@ -27,7 +27,7 @@ cd arsenal
 
 ### Pentesting Active Directory
 
-[Source](https://raw.githubusercontent.com/Orange-Cyberdefense/arsenal/master/mindmap/pentest_ad.png)
+[Source](https://github.com/Orange-Cyberdefense/ocd-mindmaps)
 
 {{%resources fa_icon_class="far fa-file-pdf" pattern="Pentesting_ActiveDirectory.*(png)"/%}}
 
