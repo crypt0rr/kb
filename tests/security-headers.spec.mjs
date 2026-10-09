@@ -6,9 +6,12 @@ import { expect, test } from "@playwright/test";
 // CSP or cross-origin policies break content, embeds, or search.
 
 const policyRoutes = [
+  // The representative routes from accessibility-smoke.spec.mjs.
   "/",
+  "/commands/",
   "/commands/unix/awk/",
   "/tools/techniques/kerberoasting/",
+  "/tags/",
   "/tools/framework/wef/",
   "/tools/other/hexyl/",
   "/tools/other/sosumi/",
@@ -18,6 +21,20 @@ const policyRoutes = [
   "/tools/apple-macos/ice/",
   "/tools/other/ccat/",
   "/cve/cve-2021-40449/"
+];
+// Policy headers that must match public/_headers exactly, including being absent.
+const policyHeaders = [
+  "content-security-policy",
+  "content-security-policy-report-only",
+  "cross-origin-embedder-policy",
+  "cross-origin-embedder-policy-report-only",
+  "cross-origin-opener-policy",
+  "cross-origin-resource-policy",
+  "permissions-policy",
+  "referrer-policy",
+  "x-content-type-options",
+  "x-frame-options",
+  "x-permitted-cross-domain-policies"
 ];
 const youtubeOrigin = "https://www.youtube-nocookie.com";
 const youtubeStubMarker = "kb-youtube-embed-stub";
@@ -62,6 +79,10 @@ test("responses carry the production headers from public/_headers", async ({ pag
   const actual = response.headers();
   for (const [name, value] of Object.entries(expected)) {
     expect(actual[name], `${name} should be served from public/_headers`).toBe(value);
+  }
+  // A stale dist/_headers can carry a policy that public/_headers dropped.
+  for (const name of policyHeaders.filter((header) => !(header in expected))) {
+    expect(actual[name], `${name} is not in public/_headers`).toBeUndefined();
   }
 });
 

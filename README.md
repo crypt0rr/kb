@@ -99,13 +99,17 @@ applies the response headers from `dist/_headers` (falling back to
 `public/_headers`) using the Cloudflare Pages `_headers` syntax, so browser
 tests run under the production CSP and cross-origin policies; Astro Preview
 ignores `_headers`. It serves `/x/` as `/x/index.html`, redirects
-directories without a trailing slash, returns `404` for missing files, and
-refuses paths outside the served directory. Run it directly with
+directories without a trailing slash (keeping the query string), returns `404`
+for missing files and for `_headers`, `_redirects`, and `_routes.json`, and
+refuses paths outside the served directory. An unreadable file returns `500`
+without stopping the server. Run it directly with
 `node scripts/serve-dist.mjs --host 127.0.0.1 --port 4321 --dir dist`.
 Playwright starts it on `PLAYWRIGHT_PORT` (default `4321`); set a different
 port when another local server already uses the default. The security spec
-fails on CSP violations, "Refused to" console messages, and
-`ERR_BLOCKED_BY_RESPONSE` requests on representative routes, checks that
+checks that the served policy headers match `public/_headers` exactly, fails on
+CSP violations, "Refused to" console messages, and `ERR_BLOCKED_BY_RESPONSE`
+requests on the accessibility suite's representative routes and the pages with
+mirrored images, checks that
 Pagefind search works under the CSP, and loads the YouTube embed against a
 local stub that mirrors YouTube's cross-origin headers. All other third-party
 requests are blocked, so the suite needs no internet access.

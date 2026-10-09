@@ -1,7 +1,8 @@
-import { createReadStream, existsSync, readFileSync } from "node:fs";
-import { realpath, stat } from "node:fs/promises";
+import { existsSync, readFileSync } from "node:fs";
+import { open, realpath, stat } from "node:fs/promises";
 import http from "node:http";
 import path from "node:path";
+import { pipeline } from "node:stream/promises";
 import { pathToFileURL } from "node:url";
 
 /**
@@ -160,7 +161,8 @@ export function contentTypeFor(file) {
  *
  * Returns `{ file }`, `{ redirect }` for directories requested without a
  * trailing slash, or `null` when nothing should be served. The lexical check
- * rejects `..` escapes; `realpath` rejects symlinks that leave the root.
+ * rejects `..` escapes; `realpath` rejects symlinks that leave the root. The
+ * hidden-file check runs on the final path, so `/a/..%2F_headers` is refused too.
  */
 export async function resolveRequestPath(rootDir, pathname) {
   let decoded;
@@ -171,7 +173,6 @@ export async function resolveRequestPath(rootDir, pathname) {
   }
 
   if (!decoded.startsWith("/") || decoded.includes("\0") || decoded.includes("\\")) return null;
-  if (hiddenFiles.has(decoded)) return null;
 
   const root = path.resolve(rootDir);
   const candidate = path.resolve(root, `.${decoded}`);
@@ -193,6 +194,7 @@ export async function resolveRequestPath(rootDir, pathname) {
   const realRoot = await realpath(root);
   const realFile = await realpath(file);
   if (!realFile.startsWith(`${realRoot}${path.sep}`)) return null;
+  if (hiddenFiles.has(`/${path.relative(realRoot, realFile).split(path.sep).join("/")}`)) return null;
 
   return { file: realFile };
 }
@@ -204,8 +206,9 @@ export function createDistServer({ dir = DEFAULT_DIR, headersFile } = {}) {
 
   return http.createServer(async (request, response) => {
     let pathname = "/";
+    let search = "";
     try {
-      pathname = new URL(request.url ?? "/", "http://localhost").pathname;
+      ({ pathname, search } = new URL(request.url ?? "/", "http://localhost"));
     } catch {
       // Fall through with "/" so malformed request targets still get headers.
     }
@@ -223,7 +226,7 @@ export function createDistServer({ dir = DEFAULT_DIR, headersFile } = {}) {
       const resolved = await resolveRequestPath(rootDir, pathname);
 
       if (resolved?.redirect) {
-        response.writeHead(308, { location: resolved.redirect }).end();
+        response.writeHead(308, { location: `${resolved.redirect}${search}` }).end();
         return;
       }
 
@@ -235,7 +238,13 @@ export function createDistServer({ dir = DEFAULT_DIR, headersFile } = {}) {
 
       await sendFile(request, response, 200, resolved.file);
     } catch (error) {
-      if (!response.headersSent) response.writeHead(500, { "content-type": "text/plain; charset=utf-8" });
+      // A read that fails mid-body cannot change the status any more; drop the
+      // connection so the client sees a failed request instead of a short file.
+      if (response.headersSent) {
+        response.destroy();
+        return;
+      }
+      response.writeHead(500, { "content-type": "text/plain; charset=utf-8" });
       response.end(`Internal error: ${error.message}\n`);
     }
   });
@@ -247,18 +256,25 @@ async function sendFile(request, response, status, file) {
     return;
   }
 
-  const info = await stat(file);
-  response.writeHead(status, {
-    "content-type": contentTypeFor(file),
-    "content-length": info.size
-  });
+  // Open before writing headers so an unreadable file still becomes a 500, and
+  // pipe through pipeline() so a failed read rejects instead of crashing the server.
+  const handle = await open(file);
+  try {
+    const info = await handle.stat();
+    response.writeHead(status, {
+      "content-type": contentTypeFor(file),
+      "content-length": info.size
+    });
 
-  if (request.method === "HEAD") {
-    response.end();
-    return;
+    if (request.method === "HEAD") {
+      response.end();
+      return;
+    }
+
+    await pipeline(handle.createReadStream({ autoClose: false }), response);
+  } finally {
+    await handle.close();
   }
-
-  createReadStream(file).pipe(response);
 }
 
 function findHeadersFile(rootDir) {
