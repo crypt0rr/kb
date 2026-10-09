@@ -92,4 +92,4 @@ After the configuration is set, test it by manually connecting the SSH tunnel an
 ## URL List
 
 - [Linux.die.net - AutoSSH](https://linux.die.net/man/1/autossh)
-- [everythingcli.org - SSH TUNNELLING FOR FUN AND PROFIT: AUTOSSH](https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/)
+- [everythingcli.org - SSH TUNNELLING FOR FUN AND PROFIT: AUTOSSH](https://web.archive.org/web/20220208105816/https://www.everythingcli.org/ssh-tunnelling-for-fun-and-profit-autossh/)
