@@ -14,6 +14,7 @@ import {
   createHostState,
   createLimiter,
   describeError,
+  HOST_FAILURE_LIMIT,
   MAX_HOST_INTERVAL_MS,
   parseArguments,
   parseRetryAfter,
@@ -36,6 +37,44 @@ function fakeClock() {
     sleep: async (ms) => {
       clock.sleeps.push(ms);
       clock.time += ms;
+    }
+  };
+  return clock;
+}
+
+// A clock whose sleeps resolve in time order, for concurrent checks.
+function virtualClock() {
+  const timers = [];
+  const clock = {
+    time: 0,
+    now: () => clock.time,
+    sleep: (ms) => new Promise((resolve) => timers.push({ at: clock.time + Math.max(0, ms), resolve })),
+    async drive(promise) {
+      let done = false;
+      let value;
+      let failure;
+      promise.then(
+        (result) => {
+          done = true;
+          value = result;
+        },
+        (error) => {
+          done = true;
+          failure = error;
+        }
+      );
+      for (;;) {
+        for (let i = 0; i < 20; i += 1) await new Promise((resolve) => setImmediate(resolve));
+        if (done) {
+          if (failure) throw failure;
+          return value;
+        }
+        assert.ok(timers.length, `no progress at ${clock.time} ms`);
+        timers.sort((a, b) => a.at - b.at);
+        const next = timers.shift();
+        clock.time = Math.max(clock.time, next.at);
+        next.resolve();
+      }
     }
   };
   return clock;
@@ -152,9 +191,11 @@ test("skips private, reserved, example, and placeholder hosts", () => {
     "http://<target>/",
     "http://$IP/shell",
     "http://target/",
-    "http://host.test/"
+    "http://host.test/",
+    "https://user:secret@kb-fixture.dev/"
   ];
   for (const url of skippedUrls) assert.ok(skipReason(url), `${url} should be skipped`);
+  assert.equal(skipReason("https://user@kb-fixture.dev/"), "embedded credentials");
 
   for (const url of [
     "https://github.com/crypt0rr/kb",
@@ -176,6 +217,15 @@ test("parses Retry-After as seconds or an HTTP date", () => {
   assert.equal(parseRetryAfter("soon", now), null);
   assert.equal(parseRetryAfter(null, now), null);
   assert.equal(parseRetryAfter("", now), null);
+  assert.equal(parseRetryAfter("Wednesday, 07-Oct-26 12:00:10 GMT", now), 10_000);
+  assert.equal(parseRetryAfter("Wed Oct  7 12:00:05 2026", now), 5_000);
+  // A repeated header is joined with commas; the first value counts.
+  assert.equal(parseRetryAfter("60, 60", now), 60_000);
+  assert.equal(parseRetryAfter("Wed, 07 Oct 2026 12:00:30 GMT, Wed, 07 Oct 2026 12:00:30 GMT", now), 30_000);
+  // Malformed values fall back to backoff instead of parsing as a past date.
+  for (const value of ["1.5", "-1", "1e3", "2026-10-07", "tomorrow 12:00"]) {
+    assert.equal(parseRetryAfter(value, now), null, value);
+  }
 });
 
 test("caps Retry-After and exponential backoff", () => {
@@ -235,10 +285,165 @@ test("spaces later requests to a host that answered 429", async () => {
   // The 429 at 0 opens a 1 s gap between requests; the next 429 doubles it.
   assert.deepEqual(starts, [0, 1000, 2000, 3000, 4000, 6000]);
   assert.equal(hostState.intervalMs, 2000);
-  for (let i = 0; i < 100; i += 1) {
-    hostState.intervalMs = Math.min(hostState.intervalMs * 2, MAX_HOST_INTERVAL_MS);
+});
+
+test("caps the gap between requests to a host that keeps answering 429", async () => {
+  const clock = fakeClock();
+  const hostState = createHostState();
+  const starts = [];
+  const intervals = [];
+  for (let page = 0; page < 6; page += 1) {
+    await checkUrl(`https://die.kb-fixture.dev/${page}`, {
+      fetchImpl: async () => {
+        starts.push(clock.time);
+        return response(429);
+      },
+      sleep: clock.sleep,
+      now: clock.now,
+      retries: 0,
+      hostFailureLimit: Infinity,
+      hostState
+    });
+    intervals.push(hostState.intervalMs);
   }
-  assert.equal(hostState.intervalMs, MAX_HOST_INTERVAL_MS);
+
+  const cap = MAX_HOST_INTERVAL_MS;
+  assert.deepEqual(intervals, [1000, 2000, 4000, cap, cap, cap]);
+  assert.deepEqual(starts, [0, 1000, 3000, 7000, 15_000, 23_000]);
+});
+
+test("keeps the host gap when other hosts hold the global slots", async () => {
+  const clock = virtualClock();
+  const starts = [];
+  let throttled = true;
+  const urls = [
+    ...Array.from({ length: 8 }, (_, i) => `https://slow.kb-fixture.dev/${i}`),
+    ...Array.from({ length: 5 }, (_, i) => `https://die.kb-fixture.dev/${i}`)
+  ];
+  await clock.drive(
+    checkUrls(urls, {
+      concurrency: 2,
+      hostConcurrency: 2,
+      sleep: clock.sleep,
+      now: clock.now,
+      fetchImpl: async (url) => {
+        if (url.includes("slow")) {
+          await clock.sleep(9000);
+          return response(200);
+        }
+        starts.push(clock.time);
+        if (throttled) {
+          throttled = false;
+          return response(429);
+        }
+        return response(200);
+      }
+    })
+  );
+
+  assert.equal(starts.length, 6);
+  const gaps = starts.slice(1).map((start, i) => start - starts[i]);
+  assert.ok(gaps.every((gap) => gap >= 1000), `gaps ${gaps.join(", ")}`);
+});
+
+test("stops requesting a host after repeated 429s, 503s, or timeouts", async () => {
+  for (const [name, answer, code, linkClass] of [
+    ["429", async () => response(429, { "retry-after": "60" }), "HOST_THROTTLED", "blocked"],
+    ["503", async () => response(503), "HOST_UNAVAILABLE", "unreachable"],
+    [
+      "timeout",
+      async () => {
+        throw new DOMException("timed out", "TimeoutError");
+      },
+      "HOST_UNAVAILABLE",
+      "unreachable"
+    ]
+  ]) {
+    const clock = virtualClock();
+    let calls = 0;
+    const urls = Array.from({ length: 106 }, (_, i) => `https://die.kb-fixture.dev/man/${i}`);
+    const results = await clock.drive(
+      checkUrls(urls, {
+        sleep: clock.sleep,
+        now: clock.now,
+        fetchImpl: async () => {
+          calls += 1;
+          await clock.sleep(name === "timeout" ? 10_000 : 100);
+          return answer();
+        }
+      })
+    );
+
+    const requested = results.filter((result) => result.attempts > 0);
+    const skipped = results.filter((result) => result.attempts === 0);
+    assert.ok(requested.length <= HOST_FAILURE_LIMIT + 1, `${name}: ${requested.length} requested`);
+    assert.equal(skipped.length, urls.length - requested.length);
+    assert.ok(skipped.every((result) => result.code === code), name);
+    assert.ok(skipped.every((result) => classifyResult(result) === linkClass), name);
+    assert.match(skipped[0].error, /^not checked: host kept/);
+    assert.ok(calls <= (HOST_FAILURE_LIMIT + 1) * 3, `${name}: ${calls} requests`);
+    assert.ok(clock.time <= 10 * 60_000, `${name}: ${clock.time} ms`);
+  }
+});
+
+test("a successful link resets the host's failure count", async () => {
+  const clock = fakeClock();
+  const hostState = createHostState();
+  const statuses = [429, 429, 200, 429, 429, 200];
+  for (let page = 0; page < statuses.length; page += 1) {
+    const result = await checkUrl(`https://die.kb-fixture.dev/${page}`, {
+      fetchImpl: async () => response(statuses[page]),
+      sleep: clock.sleep,
+      now: clock.now,
+      retries: 0,
+      hostState
+    });
+    assert.ok(result.attempts > 0, `page ${page} is requested`);
+  }
+  assert.equal(hostState.failures, 0);
+});
+
+test("stops starting requests when the time budget is used up", async () => {
+  const clock = virtualClock();
+  const urls = [
+    ...Array.from({ length: 20 }, (_, i) => `https://a.kb-fixture.dev/${i}`),
+    ...Array.from({ length: 20 }, (_, i) => `https://b.kb-fixture.dev/${i}`)
+  ];
+  let lastStart = 0;
+  const results = await clock.drive(
+    checkUrls(urls, {
+      maxDurationMs: 30_000,
+      sleep: clock.sleep,
+      now: clock.now,
+      fetchImpl: async () => {
+        lastStart = clock.time;
+        await clock.sleep(5000);
+        return response(200);
+      }
+    })
+  );
+
+  assert.ok(lastStart < 30_000);
+  assert.ok(clock.time <= 30_000 + 5000);
+  const notChecked = results.filter((result) => result.code === "NOT_CHECKED");
+  assert.ok(notChecked.length > 0);
+  assert.ok(results.some((result) => result.status === 200));
+  assert.equal(notChecked[0].error, "not checked: time budget used up");
+  assert.equal(notChecked[0].attempts, 0);
+  assert.equal(classifyResult(notChecked[0]), "unreachable");
+});
+
+test("does not sleep past the time budget before a retry", async () => {
+  const clock = fakeClock();
+  const result = await checkUrl("https://die.kb-fixture.dev/", {
+    fetchImpl: async () => response(429, { "retry-after": "60" }),
+    sleep: clock.sleep,
+    now: clock.now,
+    deadline: 30_000
+  });
+  assert.equal(result.status, 429);
+  assert.equal(result.attempts, 1);
+  assert.deepEqual(clock.sleeps, []);
 });
 
 test("honours a dated Retry-After and caps a long one", async () => {
@@ -355,6 +560,74 @@ test("keeps using GET on retries once HEAD was mishandled", async () => {
   assert.deepEqual(methods, ["HEAD", "GET", "GET", "GET"]);
   assert.equal(result.status, 200);
   assert.equal(result.attempts, 3);
+});
+
+test("follows redirects but does not request skipped hosts", async () => {
+  const requested = [];
+  const redirects = {
+    "https://kb-fixture.dev/old": "/new",
+    "https://kb-fixture.dev/new": "https://www.kb-fixture.dev/final#top",
+    "https://kb-fixture.dev/meta": "http://169.254.169.254/latest/meta-data/",
+    "https://kb-fixture.dev/local": "http://localhost:8080/",
+    "https://kb-fixture.dev/creds": "https://user:pw@kb-fixture.dev/",
+    "https://kb-fixture.dev/mail": "mailto:me@kb-fixture.dev",
+    "https://kb-fixture.dev/loop": "https://kb-fixture.dev/loop"
+  };
+  const fetchImpl = async (url, options) => {
+    requested.push(url);
+    assert.equal(options.redirect, "manual");
+    return redirects[url] ? response(301, { location: redirects[url] }) : response(200);
+  };
+  const check = (url) => checkUrl(url, { fetchImpl });
+
+  const followed = await check("https://kb-fixture.dev/old");
+  assert.equal(followed.status, 200);
+  assert.deepEqual(requested, [
+    "https://kb-fixture.dev/old",
+    "https://kb-fixture.dev/new",
+    "https://www.kb-fixture.dev/final"
+  ]);
+
+  for (const [url, error] of [
+    ["https://kb-fixture.dev/meta", "redirect to a skipped URL (private or reserved address)"],
+    ["https://kb-fixture.dev/local", "redirect to a skipped URL (local host)"],
+    ["https://kb-fixture.dev/creds", "redirect to a skipped URL (embedded credentials)"]
+  ]) {
+    requested.length = 0;
+    const result = await check(url);
+    assert.deepEqual(requested, [url], `${url} is the only request`);
+    assert.deepEqual(
+      { code: result.code, error: result.error, attempts: result.attempts },
+      { code: "REDIRECT_SKIPPED", error, attempts: 1 }
+    );
+    assert.equal(classifyResult(result), "unreachable");
+  }
+
+  const mail = await check("https://kb-fixture.dev/mail");
+  assert.deepEqual(
+    [mail.code, mail.error, mail.attempts],
+    ["UNSUPPORTED_REDIRECT", "redirect to a mailto: URL", 1]
+  );
+
+  requested.length = 0;
+  const loop = await check("https://kb-fixture.dev/loop");
+  assert.deepEqual([loop.code, loop.attempts], ["TOO_MANY_REDIRECTS", 1]);
+  assert.equal(requested.length, 21);
+});
+
+test("rejects URLs with credentials without requesting them", async () => {
+  let calls = 0;
+  const result = await checkUrl("https://user:pw@kb-fixture.dev/", {
+    fetchImpl: async () => {
+      calls += 1;
+      return response(200);
+    }
+  });
+  assert.equal(calls, 0);
+  assert.deepEqual(
+    { code: result.code, error: result.error, attempts: result.attempts },
+    { code: "INVALID_URL", error: "URL includes credentials", attempts: 0 }
+  );
 });
 
 test("the user agent is honest and does not impersonate a browser", () => {
@@ -485,6 +758,22 @@ test("describes fetch errors by their system error code", () => {
   });
   assert.deepEqual(describeError(systemError("UND_ERR_CONNECT_TIMEOUT")), {
     code: "TIMEOUT",
+    error: "connection timed out"
+  });
+  // Node reports a connect timeout on every address as an AggregateError.
+  const aggregate = Object.assign(
+    new AggregateError([
+      Object.assign(new Error("connect ETIMEDOUT 192.0.2.1:443"), { code: "ETIMEDOUT" }),
+      Object.assign(new Error("connect ENETUNREACH 2001:db8::1:443"), { code: "ENETUNREACH" })
+    ]),
+    { code: "ETIMEDOUT" }
+  );
+  assert.deepEqual(describeError(Object.assign(new TypeError("fetch failed"), { cause: aggregate })), {
+    code: "TIMEOUT",
+    error: "connection timed out"
+  });
+  assert.deepEqual(describeError(systemError("UND_ERR_HEADERS_TIMEOUT")), {
+    code: "TIMEOUT",
     error: "request timed out"
   });
   assert.deepEqual(describeError(new DOMException("aborted", "TimeoutError")), {
@@ -525,6 +814,7 @@ test("creates a grouped, deterministically ordered report", () => {
     broken: 1,
     unreachable: 2,
     blocked: 1,
+    notChecked: 0,
     skipped: 1
   });
   assert.deepEqual(
@@ -547,8 +837,8 @@ test("creates a grouped, deterministically ordered report", () => {
     sources: ["content/b.md", "README.md"]
   });
   assert.deepEqual(
-    { hostConcurrency: report.hostConcurrency, retries: report.retries },
-    { hostConcurrency: 1, retries: 1 }
+    { hostConcurrency: report.hostConcurrency, retries: report.retries, maxDurationMs: report.maxDurationMs },
+    { hostConcurrency: 1, retries: 1, maxDurationMs: 1_200_000 }
   );
   assert.deepEqual(topHosts(report.results, "unreachable"), [
     { host: "m.kb-fixture.dev", count: 1 },
@@ -565,6 +855,8 @@ test("creates a grouped, deterministically ordered report", () => {
   assert.match(markdown, /## Blocked \(1\)/);
   assert.match(markdown, /- blocked: die\.kb-fixture\.dev \(1\)/);
   assert.doesNotMatch(markdown, /https:\/\/a\.kb-fixture\.dev \|/);
+
+  assert.doesNotMatch(markdown, /not requested/);
 
   const summary = renderSummary(report);
   assert.match(summary, /Checked 5 links: 1 ok, \*\*1 broken\*\*, 2 unreachable, 1 blocked \(1 private/);
@@ -605,6 +897,35 @@ test("renders a concise success report", () => {
   assert.match(renderSummary(report), /All checked URLs responded successfully/);
 });
 
+test("reports how many links were not requested", () => {
+  const report = createExternalLinkReport(
+    [
+      { url: "https://die.kb-fixture.dev/1", status: 429, attempts: 3 },
+      {
+        url: "https://die.kb-fixture.dev/2",
+        code: "HOST_THROTTLED",
+        error: "not checked: host kept answering HTTP 429",
+        attempts: 0
+      },
+      {
+        url: "https://late.kb-fixture.dev/",
+        code: "NOT_CHECKED",
+        error: "not checked: time budget used up",
+        attempts: 0
+      }
+    ],
+    { generatedAt: "2026-08-14T00:00:00.000Z", maxDurationMs: 60_000 }
+  );
+  assert.equal(report.summary.notChecked, 2);
+  assert.equal(report.summary.blocked, 2);
+  assert.equal(report.summary.unreachable, 1);
+  assert.equal(report.maxDurationMs, 60_000);
+  assert.equal(report.results[1].attempts, 0);
+  assert.match(renderMarkdown(report), /2 of the unreachable and blocked links were not requested/);
+  assert.match(renderSummary(report), /2 of the unreachable and blocked links were not requested/);
+  assert.match(renderMarkdown(report), /not checked: time budget used up \| 0 \|/);
+});
+
 test("parses report, summary, timeout, concurrency, and retry options", () => {
   assert.deepEqual(
     parseArguments([
@@ -618,7 +939,9 @@ test("parses report, summary, timeout, concurrency, and retry options", () => {
       "--concurrency=3",
       "--host-concurrency",
       "1",
-      "--retries=0"
+      "--retries=0",
+      "--max-duration",
+      "600"
     ]),
     {
       output: "reports/links.md",
@@ -627,11 +950,14 @@ test("parses report, summary, timeout, concurrency, and retry options", () => {
       timeoutMs: 5000,
       concurrency: 3,
       hostConcurrency: 1,
-      retries: 0
+      retries: 0,
+      maxDurationMs: 600_000
     }
   );
   assert.equal(parseArguments([]).hostConcurrency, 2);
   assert.equal(parseArguments([]).retries, 2);
+  assert.equal(parseArguments([]).maxDurationMs, 1_200_000);
+  assert.throws(() => parseArguments(["--max-duration", "0"]), /positive integer/);
   assert.throws(() => parseArguments(["--host-concurrency", "0"]), /positive integer/);
   assert.throws(() => parseArguments(["--retries", "-1"]), /requires a value|non-negative/);
   assert.throws(() => parseArguments(["--retries", "1.5"]), /non-negative integer/);
@@ -684,6 +1010,7 @@ test("run writes Markdown, complete JSON, and the requested summary", async () =
       broken: 1,
       unreachable: 0,
       blocked: 0,
+      notChecked: 0,
       skipped: 1
     });
     assert.deepEqual(json.results[1].sources, ["content/tools/example/index.md", "README.md"]);

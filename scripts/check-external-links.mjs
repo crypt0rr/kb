@@ -1,5 +1,5 @@
 import { appendFile, mkdir, readFile, writeFile } from "node:fs/promises";
-import { isIP } from "node:net";
+import { isIP, setDefaultAutoSelectFamilyAttemptTimeout } from "node:net";
 import path from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { pathToFileURL } from "node:url";
@@ -15,6 +15,12 @@ export const DEFAULT_RETRY_BASE_MS = 1_000;
 export const MAX_RETRY_DELAY_MS = 60_000;
 export const HOST_INTERVAL_STEP_MS = 1_000;
 export const MAX_HOST_INTERVAL_MS = 8_000;
+export const DEFAULT_MAX_DURATION_MS = 20 * 60_000;
+export const HOST_FAILURE_LIMIT = 3;
+export const MAX_REDIRECTS = 20;
+// Node tries each address of a dual-stack host for only 250 ms by default, so
+// an unreachable IPv6 route turns into a fast, false connection timeout.
+export const CONNECT_ATTEMPT_TIMEOUT_MS = 2_500;
 export const REPORT_VERSION = 2;
 export const USER_AGENT = "kb-external-link-check/2.0 (+https://github.com/crypt0rr/kb)";
 export const LINK_CLASSES = Object.freeze(["ok", "broken", "unreachable", "blocked"]);
@@ -28,6 +34,17 @@ export const SUMMARY_TOP_HOST_LIMIT = 5;
 const HEAD_FALLBACK_STATUSES = new Set([400, 401, 403, 404, 405, 501]);
 const BROKEN_STATUSES = new Set([404, 410]);
 const BLOCKED_STATUSES = new Set([401, 402, 403, 429, 451]);
+const REDIRECT_STATUSES = new Set([301, 302, 303, 307, 308]);
+// Codes of URLs that were never requested; they are not retried and do not
+// count towards the host's failures.
+const NOT_CHECKED_CODES = new Set(["NOT_CHECKED", "HOST_THROTTLED", "HOST_UNAVAILABLE"]);
+// Errors that another attempt cannot change.
+const FINAL_ERROR_CODES = new Set([
+  "INVALID_URL",
+  "REDIRECT_SKIPPED",
+  "UNSUPPORTED_REDIRECT",
+  "TOO_MANY_REDIRECTS"
+]);
 const BROKEN_ERROR_CODES = new Set(["ENOTFOUND", "EAI_AGAIN", "ECONNREFUSED", "INVALID_URL"]);
 const TLS_CERTIFICATE_CODES = new Set([
   "CERT_HAS_EXPIRED",
@@ -51,6 +68,12 @@ const TIMEOUT_CODES = new Set([
 const RESERVED_DOMAINS = ["example.com", "example.org", "example.net"];
 const RESERVED_SUFFIXES = ["local", "localhost", "test", "invalid", "example", "internal"];
 const PLACEHOLDER_HOST = /[{}<>$%*`"'|\\^\s[\]]/;
+// IMF-fixdate, RFC 850 and asctime, the HTTP date formats (RFC 9110).
+const HTTP_DATE_PATTERNS = [
+  /^[a-z]{3}, \d{2} [a-z]{3} \d{4} \d{2}:\d{2}:\d{2} GMT/i,
+  /^[a-z]{6,9}, \d{2}-[a-z]{3}-\d{2} \d{2}:\d{2}:\d{2} GMT/i,
+  /^[a-z]{3} [a-z]{3} [ \d]\d \d{2}:\d{2}:\d{2} \d{4}/i
+];
 
 const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
@@ -112,7 +135,7 @@ export function collectUrls({
 
 /**
  * Explain why a URL is not worth requesting (private, reserved, or placeholder
- * hosts), or return null when it should be checked.
+ * hosts, or embedded credentials), or return null when it should be checked.
  */
 export function skipReason(url) {
   const authority = String(url).match(/^https?:\/\/([^/?#]*)/i)?.[1] ?? "";
@@ -122,12 +145,14 @@ export function skipReason(url) {
     return "placeholder host";
   }
 
-  let hostname;
+  let parsed;
   try {
-    hostname = new URL(url).hostname.toLowerCase();
+    parsed = new URL(url);
   } catch {
     return null;
   }
+  if (parsed.username || parsed.password) return "embedded credentials";
+  const hostname = parsed.hostname.toLowerCase();
   const bare = hostname.replace(/^\[|\]$/g, "").replace(/\.$/, "");
 
   if (isIP(bare) === 4) return isReservedIpv4(bare) ? "private or reserved address" : null;
@@ -149,9 +174,13 @@ export function skipReason(url) {
 export function parseRetryAfter(value, nowMs = Date.now()) {
   if (value === null || value === undefined) return null;
   const text = String(value).trim();
-  if (!text) return null;
-  if (/^\d+$/.test(text)) return Number(text) * 1000;
-  const date = Date.parse(text);
+  // A repeated header arrives joined with commas; the first value counts.
+  const seconds = text.match(/^(\d+)\s*(?:,|$)/);
+  if (seconds) return Number(seconds[1]) * 1000;
+  const httpDate = HTTP_DATE_PATTERNS.map((pattern) => text.match(pattern)?.[0]).find(Boolean);
+  if (!httpDate) return null;
+  // asctime has no zone, but HTTP dates are always GMT.
+  const date = Date.parse(/GMT$/i.test(httpDate) ? httpDate : `${httpDate} GMT`);
   if (Number.isNaN(date)) return null;
   return Math.max(0, date - nowMs);
 }
@@ -181,7 +210,9 @@ export function classifyResult({ status = null, code = null } = {}) {
     return "unreachable";
   }
   if (code && (BROKEN_ERROR_CODES.has(code) || TLS_CERTIFICATE_CODES.has(code))) return "broken";
-  // Timeouts, 5xx after retries, and other network errors may be temporary.
+  if (code === "HOST_THROTTLED") return "blocked";
+  // Timeouts, 5xx after retries, other network errors, and URLs left
+  // unchecked may be temporary.
   return "unreachable";
 }
 
@@ -218,18 +249,23 @@ export function createLimiter(limit) {
 
 /**
  * Check URLs with a global concurrency limit and a per-host limit. Each entry
- * is a URL string or `{ url, sources }`; results keep the sources.
+ * is a URL string or `{ url, sources }`; results keep the sources. No request
+ * starts after `maxDurationMs`; URLs still waiting then are reported as not
+ * checked, so a throttling host cannot stretch the run without bound.
  */
 export async function checkUrls(entries, options = {}) {
   const {
     concurrency = DEFAULT_CONCURRENCY,
     hostConcurrency = DEFAULT_HOST_CONCURRENCY,
     timeoutMs = DEFAULT_TIMEOUT_MS,
-    retries = DEFAULT_RETRIES
+    retries = DEFAULT_RETRIES,
+    maxDurationMs = DEFAULT_MAX_DURATION_MS,
+    now = Date.now
   } = options;
   assertPositiveInteger("timeout", timeoutMs);
   assertPositiveInteger("concurrency", concurrency);
   assertPositiveInteger("host concurrency", hostConcurrency);
+  assertPositiveInteger("max duration", maxDurationMs);
   if (!Number.isInteger(retries) || retries < 0) {
     throw new Error("retries must be a non-negative integer");
   }
@@ -241,6 +277,7 @@ export async function checkUrls(entries, options = {}) {
     for (const source of sources) byUrl.get(url).add(source);
   }
 
+  const deadline = now() + maxDurationMs;
   const global = createLimiter(concurrency);
   const hosts = new Map();
   const hostFor = (url) => {
@@ -257,7 +294,8 @@ export async function checkUrls(entries, options = {}) {
         const result = await checkUrl(url, {
           ...options,
           acquireSlot: () => global.acquire(),
-          hostState: host
+          hostState: host,
+          deadline
         });
         return { ...result, sources: [...sources].sort(compareStrings) };
       } finally {
@@ -274,6 +312,9 @@ export async function checkUrls(entries, options = {}) {
  * A 429/503 pauses the whole host (`hostState.notBefore`), and every 429
  * also widens the minimum gap between requests to that host
  * (`hostState.intervalMs`), so a throttling site is crawled more slowly.
+ * After `hostFailureLimit` links in a row on one host ended with 429, 503,
+ * or a timeout, the host's remaining links are not requested. No request
+ * starts at or after `deadline`.
  */
 export async function checkUrl(url, options = {}) {
   const {
@@ -282,26 +323,33 @@ export async function checkUrl(url, options = {}) {
     retries = DEFAULT_RETRIES,
     retryBaseMs = DEFAULT_RETRY_BASE_MS,
     maxRetryDelayMs = MAX_RETRY_DELAY_MS,
+    hostFailureLimit = HOST_FAILURE_LIMIT,
     sleep = delay,
     now = Date.now,
+    deadline = Infinity,
     acquireSlot = async () => () => {},
     hostState = createHostState()
   } = options;
 
+  let parsed;
   try {
-    new URL(url);
+    parsed = new URL(url);
   } catch {
     return { url, status: null, code: "INVALID_URL", error: "invalid URL", attempts: 0 };
   }
+  if (parsed.username || parsed.password) {
+    return { url, status: null, code: "INVALID_URL", error: "URL includes credentials", attempts: 0 };
+  }
 
+  const gate = { acquireSlot, sleep, now, deadline, hostFailureLimit };
   let useGet = false;
   let attempts = 0;
-  let outcome;
+  let outcome = null;
   for (;;) {
-    await waitForHost(hostState, { sleep, now });
+    const release = await startRequest(hostState, gate);
+    if (!release) break;
 
     attempts += 1;
-    const release = await acquireSlot();
     try {
       outcome = await attempt(url, { useGet, timeoutMs, fetchImpl });
     } finally {
@@ -323,9 +371,12 @@ export async function checkUrl(url, options = {}) {
       hostState.nextStart = Math.max(hostState.nextStart ?? 0, now() + hostState.intervalMs);
     }
     if (attempts > retries || !isRetryable(outcome)) break;
+    if (now() + wait >= deadline) break;
     await sleep(wait);
   }
 
+  if (!outcome) return notChecked(url, hostState, hostFailureLimit);
+  recordHostOutcome(hostState, outcome);
   return {
     url,
     status: outcome.status ?? null,
@@ -336,21 +387,81 @@ export async function checkUrl(url, options = {}) {
 }
 
 /**
- * Per-host politeness state shared by all checks of one host: a pause
- * (`notBefore`) and a minimum gap between request starts (`intervalMs`).
+ * Per-host state shared by all checks of one host: a pause (`notBefore`), a
+ * minimum gap between request starts (`intervalMs`, next start at
+ * `nextStart`), and the number of links in a row that ended with 429, 503,
+ * or a timeout (`failures`, the last one described by `failure`).
  */
 export function createHostState() {
-  return { notBefore: 0, nextStart: 0, intervalMs: 0 };
+  return { notBefore: 0, nextStart: 0, intervalMs: 0, failures: 0, failure: null };
 }
 
-async function waitForHost(hostState, { sleep, now }) {
+/**
+ * Wait until the host may be requested again and a global slot is free, then
+ * reserve the host's next start time. The host's pause and gap are checked
+ * again after the slot is acquired, because another request to the host may
+ * have started or answered 429 meanwhile. Returns the slot's release
+ * function, or null when the deadline passed or the host's breaker tripped.
+ */
+async function startRequest(hostState, { acquireSlot, sleep, now, deadline, hostFailureLimit }) {
   for (;;) {
-    const ready = Math.max(hostState.notBefore ?? 0, hostState.nextStart ?? 0);
+    if (hostState.failures >= hostFailureLimit || now() >= deadline) return null;
+    const ready = hostReadyAt(hostState);
+    if (ready >= deadline) return null;
+    if (now() < ready) {
+      await sleep(ready - now());
+      continue;
+    }
+
+    const release = await acquireSlot();
     const current = now();
-    if (current >= ready) break;
-    await sleep(ready - current);
+    if (hostState.failures >= hostFailureLimit || current >= deadline) {
+      release();
+      return null;
+    }
+    if (current < hostReadyAt(hostState)) {
+      release();
+      continue;
+    }
+    hostState.nextStart = current + (hostState.intervalMs ?? 0);
+    return release;
   }
-  hostState.nextStart = now() + (hostState.intervalMs ?? 0);
+}
+
+function hostReadyAt(hostState) {
+  return Math.max(hostState.notBefore ?? 0, hostState.nextStart ?? 0);
+}
+
+function hostFailure(outcome) {
+  if (outcome.status === 429 || outcome.status === 503) return `HTTP ${outcome.status}`;
+  if (outcome.code === "TIMEOUT") return "timeouts";
+  return null;
+}
+
+function recordHostOutcome(hostState, outcome) {
+  const failure = hostFailure(outcome);
+  if (failure) {
+    hostState.failures = (hostState.failures ?? 0) + 1;
+    hostState.failure = failure;
+  } else {
+    hostState.failures = 0;
+  }
+}
+
+function notChecked(url, hostState, hostFailureLimit) {
+  if (hostState.failures >= hostFailureLimit) {
+    const reason = hostState.failure === "timeouts"
+      ? "kept timing out"
+      : `kept answering ${hostState.failure}`;
+    return {
+      url,
+      status: null,
+      code: hostState.failure === "HTTP 429" ? "HOST_THROTTLED" : "HOST_UNAVAILABLE",
+      error: `not checked: host ${reason}`,
+      attempts: 0
+    };
+  }
+  return { url, status: null, code: "NOT_CHECKED", error: "not checked: time budget used up", attempts: 0 };
 }
 
 export function createExternalLinkReport(results, options = {}) {
@@ -359,6 +470,7 @@ export function createExternalLinkReport(results, options = {}) {
   for (const name of LINK_CLASSES) {
     summary[name] = orderedResults.filter((result) => result.class === name).length;
   }
+  summary.notChecked = orderedResults.filter((result) => NOT_CHECKED_CODES.has(result.code)).length;
   const skipped = (options.skipped ?? []).map(normalizeSkipped).sort(compareResults);
   summary.skipped = skipped.length;
 
@@ -369,6 +481,7 @@ export function createExternalLinkReport(results, options = {}) {
     concurrency: options.concurrency ?? DEFAULT_CONCURRENCY,
     hostConcurrency: options.hostConcurrency ?? DEFAULT_HOST_CONCURRENCY,
     retries: options.retries ?? DEFAULT_RETRIES,
+    maxDurationMs: options.maxDurationMs ?? DEFAULT_MAX_DURATION_MS,
     summary,
     results: orderedResults,
     skipped
@@ -410,7 +523,8 @@ export function renderMarkdown(report, { limit = MARKDOWN_GROUP_LIMIT } = {}) {
     `| blocked | ${summary.blocked} |`,
     `| checked | ${summary.checked} |`,
     `| skipped (private, example, or placeholder hosts) | ${summary.skipped} |`,
-    ""
+    "",
+    ...renderNotChecked(summary)
   ];
 
   if (!summary.broken && !summary.unreachable && !summary.blocked) {
@@ -437,7 +551,8 @@ export function renderSummary(
     `Checked ${summary.checked} links: ${summary.ok} ok, **${summary.broken} broken**, ` +
       `${summary.unreachable} unreachable, ${summary.blocked} blocked ` +
       `(${summary.skipped} private, example, or placeholder URLs skipped).`,
-    ""
+    "",
+    ...renderNotChecked(summary)
   ];
 
   if (!summary.broken && !summary.unreachable && !summary.blocked) {
@@ -471,6 +586,7 @@ export async function run(argv = process.argv.slice(2), dependencies = {}) {
     concurrency: options.concurrency,
     hostConcurrency: options.hostConcurrency,
     retries: options.retries,
+    maxDurationMs: options.maxDurationMs,
     fetchImpl,
     ...(sleep ? { sleep } : {}),
     ...(now ? { now } : {})
@@ -481,6 +597,7 @@ export async function run(argv = process.argv.slice(2), dependencies = {}) {
     concurrency: options.concurrency,
     hostConcurrency: options.hostConcurrency,
     retries: options.retries,
+    maxDurationMs: options.maxDurationMs,
     skipped
   });
 
@@ -532,7 +649,8 @@ export function parseArguments(argv = []) {
     timeoutMs: DEFAULT_TIMEOUT_MS,
     concurrency: DEFAULT_CONCURRENCY,
     hostConcurrency: DEFAULT_HOST_CONCURRENCY,
-    retries: DEFAULT_RETRIES
+    retries: DEFAULT_RETRIES,
+    maxDurationMs: DEFAULT_MAX_DURATION_MS
   };
 
   for (let index = 0; index < argv.length; index += 1) {
@@ -562,6 +680,9 @@ export function parseArguments(argv = []) {
       case "--retries":
         options.retries = parseNonNegativeInteger(flag, value);
         break;
+      case "--max-duration":
+        options.maxDurationMs = parsePositiveInteger(flag, value) * 1000;
+        break;
       default:
         throw new Error(`Unknown option ${flag}`);
     }
@@ -584,32 +705,66 @@ function needsGetFallback(outcome) {
   return !(
     BROKEN_ERROR_CODES.has(outcome.code) ||
     TLS_CERTIFICATE_CODES.has(outcome.code) ||
-    TIMEOUT_CODES.has(outcome.code)
+    TIMEOUT_CODES.has(outcome.code) ||
+    FINAL_ERROR_CODES.has(outcome.code)
   );
 }
 
+/**
+ * Request `url` and follow redirects by hand, so that a redirect into a host
+ * that would be skipped (private, reserved, or with credentials) is reported
+ * instead of requested. The timeout covers all hops.
+ */
 async function request(url, method, { timeoutMs, fetchImpl }) {
   if (typeof fetchImpl !== "function") throw new Error("fetch is unavailable");
 
+  const signal = AbortSignal.timeout(timeoutMs);
+  let current = url;
   try {
-    const response = await fetchImpl(url, {
-      method,
-      redirect: "follow",
-      signal: AbortSignal.timeout(timeoutMs),
-      headers: {
-        "user-agent": USER_AGENT,
-        accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8"
+    for (let redirects = 0; ; redirects += 1) {
+      const response = await fetchImpl(current, {
+        method,
+        redirect: "manual",
+        signal,
+        headers: {
+          "user-agent": USER_AGENT,
+          accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.8"
+        }
+      });
+      try {
+        Promise.resolve(response.body?.cancel?.()).catch(() => {});
+      } catch {
+        // The body is not needed; a failed cancel does not change the status.
       }
-    });
-    try {
-      Promise.resolve(response.body?.cancel?.()).catch(() => {});
-    } catch {
-      // The body is not needed; a failed cancel does not change the status.
+      const location = REDIRECT_STATUSES.has(response.status)
+        ? response.headers?.get?.("location")
+        : null;
+      if (!location) {
+        return {
+          status: response.status,
+          retryAfter: response.headers?.get?.("retry-after") ?? null
+        };
+      }
+      if (redirects >= MAX_REDIRECTS) {
+        return { code: "TOO_MANY_REDIRECTS", error: `more than ${MAX_REDIRECTS} redirects` };
+      }
+
+      let next;
+      try {
+        next = new URL(location, current);
+      } catch {
+        return { code: "UNSUPPORTED_REDIRECT", error: "redirect to an invalid URL" };
+      }
+      if (next.protocol !== "http:" && next.protocol !== "https:") {
+        return { code: "UNSUPPORTED_REDIRECT", error: `redirect to a ${next.protocol} URL` };
+      }
+      next.hash = "";
+      const reason = skipReason(next.href);
+      if (reason) {
+        return { code: "REDIRECT_SKIPPED", error: `redirect to a skipped URL (${reason})` };
+      }
+      current = next.href;
     }
-    return {
-      status: response.status,
-      retryAfter: response.headers?.get?.("retry-after") ?? null
-    };
   } catch (error) {
     return describeError(error);
   }
@@ -632,6 +787,11 @@ export function describeError(error) {
       message = current.message ? String(current.message) : message;
     }
   }
+  // A connect timeout (ETIMEDOUT, often for every address of the host in an
+  // AggregateError) is not the request timeout firing.
+  if (code === "ETIMEDOUT" || code === "UND_ERR_CONNECT_TIMEOUT") {
+    return { code: "TIMEOUT", error: "connection timed out" };
+  }
   if (code && TIMEOUT_CODES.has(code)) return { code: "TIMEOUT", error: "request timed out" };
   if (code === "ENOTFOUND" || code === "EAI_AGAIN") return { code, error: `DNS lookup failed (${code})` };
   if (code === "ECONNREFUSED") return { code, error: "connection refused" };
@@ -645,7 +805,16 @@ function isRetryable(outcome) {
   if (Number.isInteger(outcome.status)) {
     return outcome.status === 408 || outcome.status === 429 || (outcome.status >= 500 && outcome.status < 600);
   }
-  return !TLS_CERTIFICATE_CODES.has(outcome.code) && outcome.code !== "INVALID_URL";
+  return !TLS_CERTIFICATE_CODES.has(outcome.code) && !FINAL_ERROR_CODES.has(outcome.code);
+}
+
+function renderNotChecked(summary) {
+  if (!summary.notChecked) return [];
+  return [
+    `${summary.notChecked} of the unreachable and blocked links were not requested because the ` +
+      "time budget ran out or their host kept answering 429, 503, or timing out.",
+    ""
+  ];
 }
 
 function renderTopHosts(report, limit = TOP_HOST_LIMIT) {
@@ -826,6 +995,7 @@ const isMain =
   pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url;
 
 if (isMain) {
+  setDefaultAutoSelectFamilyAttemptTimeout(CONNECT_ATTEMPT_TIMEOUT_MS);
   try {
     await run();
   } catch (error) {
