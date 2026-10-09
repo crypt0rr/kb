@@ -3,9 +3,17 @@ import path from "node:path";
 import MarkdownIt from "markdown-it";
 import { buildContentIndex } from "./content-index.mjs";
 import { isPrivateContentPath } from "./content-paths.mjs";
+import {
+  collectAnchors,
+  comparePages,
+  createRefIndex,
+  resolveRef,
+  slash,
+  slugify,
+  withSlashes
+} from "./links.mjs";
 
 const markdown = new MarkdownIt({ html: true, linkify: false });
-const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
 /**
  * Build the visible content relationship graph from the canonical content index.
@@ -83,7 +91,10 @@ export function buildContentGraph(options = {}) {
       if (parsed.fragment) {
         let anchors = anchorsByUrl.get(resolved.page.url);
         if (!anchors) {
-          anchors = collectAnchors(resolved.page.body);
+          anchors = collectAnchors(resolved.page.body, {
+            page: resolved.page,
+            refIndex: resolver.refIndex
+          });
           anchorsByUrl.set(resolved.page.url, anchors);
         }
         if (!anchors.has(slugify(parsed.fragment))) findings.missingAnchors += 1;
@@ -182,7 +193,7 @@ export function createContentResolver({
   const resolvedContentRoot = path.resolve(contentRoot);
   const pagesByUrl = new Map(pages.map((page) => [page.url, page]));
   const pagesByFile = new Map();
-  const refsByKey = buildRefMap(pages);
+  const refIndex = createRefIndex(pages);
 
   for (const page of pages) {
     pagesByFile.set(path.resolve(resolvedContentRoot, page.relativeFile), page);
@@ -195,6 +206,7 @@ export function createContentResolver({
     pagesByUrl,
     pagesByFile,
     contentAssets,
+    refIndex,
     resolve(targetPath, baseDir, page) {
       return resolveInternalTarget(targetPath, {
         root: resolvedRoot,
@@ -207,7 +219,7 @@ export function createContentResolver({
       });
     },
     resolveRef(target, page) {
-      return resolveRefTarget(target, page, pagesByUrl, refsByKey);
+      return resolveRef(target, page, refIndex);
     }
   };
 }
@@ -227,28 +239,6 @@ export function collectMarkdownTargets(source) {
   }
   collectShortcodeTargets(String(source), targets);
   return targets;
-}
-
-export function collectAnchors(source) {
-  const anchors = new Set();
-  const tokens = markdown.parse(String(source), {});
-
-  for (let index = 0; index < tokens.length; index += 1) {
-    const token = tokens[index];
-    if (token.type === "heading_open") {
-      const id = token.attrGet("id");
-      if (id) anchors.add(slugify(id));
-
-      const inline = tokens[index + 1];
-      if (inline?.type === "inline") anchors.add(slugify(inline.content));
-    }
-
-    if (token.type === "html_block" || token.type === "html_inline") {
-      for (const id of htmlIds(token.content)) anchors.add(slugify(id));
-    }
-  }
-
-  return anchors;
 }
 
 export function resolveInternalTarget(targetPath, context) {
@@ -309,24 +299,6 @@ export function isInternalTarget(value) {
     !target.startsWith("javascript:") &&
     !/^https?:\/\//i.test(target) &&
     !/^[a-z][a-z0-9+.-]*:/i.test(target);
-}
-
-export function slugify(value) {
-  return String(value)
-    .toLowerCase()
-    .trim()
-    .replace(/[\'"`]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-export function withSlashes(value) {
-  if (value === "/") return "/";
-  return `/${value.replace(/^\/+|\/+$/g, "")}/`;
-}
-
-export function slash(value) {
-  return String(value).replace(/\\/g, "/");
 }
 
 function collectTokenTargets(token, targets, fallbackLine = 1) {
@@ -459,74 +431,6 @@ function srcsetUrls(value) {
     .filter(Boolean);
 }
 
-function resolveRefTarget(target, page, pagesByUrl, refsByKey) {
-  const clean = String(target)
-    .replace(/\\/g, "/")
-    .replace(/(^"|"$)/g, "")
-    .replace(/\.md$/i, "")
-    .replace(/\/index$/i, "")
-    .replace(/\/_index$/i, "")
-    .replace(/^\/+|\/+$/g, "");
-
-  if (!clean) return page ? { page } : null;
-
-  const candidates = [
-    `/${clean}/`,
-    `/${slash(path.posix.normalize(path.posix.join(page?.sourceDir ?? "", clean)))}/`,
-    `/${slash(path.posix.normalize(clean))}/`
-  ].map(withSlashes);
-
-  for (const candidate of candidates) {
-    const resolved = pagesByUrl.get(candidate);
-    if (resolved) return { page: resolved };
-  }
-
-  const basename = clean.split("/").filter(Boolean).pop()?.toLowerCase();
-  if (!basename) return null;
-  const matches = refsByKey.get(basename) ?? [];
-  if (matches.length === 1) return { page: matches[0] };
-
-  const nearest = matches
-    .map((match) => ({ match, score: commonPrefix(page?.slug, match.slug) }))
-    .sort((a, b) => b.score - a.score || comparePages(a.match, b.match))[0]?.match;
-  return nearest ? { page: nearest } : null;
-}
-
-function buildRefMap(pages) {
-  const map = new Map();
-  for (const page of pages) {
-    const keys = new Set([
-      page.slug?.split("/").filter(Boolean).pop()?.toLowerCase(),
-      page.relativeFile?.replace(/\/_?index\.md$/i, "").split("/").pop()?.toLowerCase(),
-      slugify(page.title)
-    ]);
-
-    for (const key of keys) {
-      if (!key) continue;
-      const matches = map.get(key) ?? [];
-      matches.push(page);
-      map.set(key, matches);
-    }
-  }
-  return map;
-}
-
-function commonPrefix(a, b) {
-  const left = String(a ?? "").split("/").filter(Boolean);
-  const right = String(b ?? "").split("/").filter(Boolean);
-  let count = 0;
-  while (left[count] && right[count] && left[count] === right[count]) count += 1;
-  return count;
-}
-
-function htmlIds(value) {
-  const ids = [];
-  const matcher = /\bid\s*=\s*(['"])(.*?)\1/gi;
-  let match;
-  while ((match = matcher.exec(value))) ids.push(match[2]);
-  return ids;
-}
-
 function getAttr(token, name) {
   if (typeof token.attrGet === "function") return token.attrGet(name) ?? "";
   return token.attrs?.find(([key]) => key === name)?.[1] ?? "";
@@ -546,9 +450,4 @@ function isFile(value) {
   } catch {
     return false;
   }
-}
-
-function comparePages(a, b) {
-  return collator.compare(String(a.title ?? ""), String(b.title ?? "")) ||
-    collator.compare(a.url, b.url);
 }

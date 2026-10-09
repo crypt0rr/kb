@@ -578,6 +578,16 @@ h1 {
   border-bottom-color: var(--green);
 }
 
+.prose .heading-permalink {
+  color: var(--muted);
+  border-bottom: 0;
+}
+
+.prose .heading-permalink:hover,
+.prose .heading-permalink:focus-visible {
+  color: var(--green);
+}
+
 .prose img {
   display: block;
   max-width: 100%;

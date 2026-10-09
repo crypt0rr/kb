@@ -10,6 +10,7 @@ import {
 } from "../src/lib/content-paths.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
 import { collectExternalMediaSources, describeExternalSource } from "../src/lib/external-media.mjs";
+import { createRefIndex, resolveRef, slash } from "../src/lib/links.mjs";
 import { parseCascade } from "../src/lib/metadata.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
 
@@ -270,10 +271,16 @@ function validateCascadeFields(cascade, file) {
 }
 
 function validateRefsAndShortcodes() {
-  const byUrl = new Map(pages.map((page) => [page.url, page]));
-  const byKey = buildRefMap(pages);
+  // Refs on published pages resolve exactly as the renderer does: drafts are
+  // never rendered, so they are not valid targets. Drafts themselves are not
+  // rendered either, so their refs may also point at other drafts.
+  const publishedRefIndex = createRefIndex(
+    pages.filter((page) => page.effectiveFrontmatter.draft !== true)
+  );
+  const draftRefIndex = createRefIndex(pages);
 
   for (const page of pages) {
+    const refIndex = page.effectiveFrontmatter.draft === true ? draftRefIndex : publishedRefIndex;
     const shortcodes = page.body.matchAll(/\{\{([<%])\s*([a-zA-Z0-9_-]+)([\s\S]*?)([>%])\}\}/g);
     const resourceRegexes = new Map();
 
@@ -299,8 +306,12 @@ function validateRefsAndShortcodes() {
 
       if (name === "ref") {
         const target = rawAttrs.trim().replace(/^"|"$/g, "");
-        if (!resolveRef(target, page, byUrl, byKey)) {
+        const resolved = resolveRef(target, page, refIndex);
+        if (!resolved.page) {
           errors.push(`${page.relativeFile}: unresolved ref ${target}`);
+        } else if (resolved.ambiguous) {
+          const urls = resolved.candidates.map((candidate) => candidate.url).join(", ");
+          errors.push(`${page.relativeFile}: ambiguous ref ${target} matches ${urls}; use a path`);
         }
       }
 
@@ -492,50 +503,6 @@ function escapeRegExp(value) {
   return value.replace(/[\\^$+?.()|[\]{}]/g, "\\$&");
 }
 
-function resolveRef(target, page, byUrl, byKey) {
-  const [rawPath] = target.split("#");
-  const clean = rawPath
-    .replace(/\\/g, "/")
-    .replace(/(^"|"$)/g, "")
-    .replace(/\.md$/i, "")
-    .replace(/\/index$/i, "")
-    .replace(/\/_index$/i, "")
-    .replace(/^\/+|\/+$/g, "");
-
-  if (!clean) return true;
-
-  const candidates = [
-    `/${clean}/`,
-    `/${slash(path.posix.normalize(path.posix.join(page.sourceDir, clean)))}/`,
-    `/${slash(path.posix.normalize(clean))}/`
-  ].map(withSlashes);
-
-  if (candidates.some((candidate) => byUrl.has(candidate))) return true;
-
-  const basename = clean.split("/").filter(Boolean).pop()?.toLowerCase();
-  if (!basename) return false;
-  return (byKey.get(basename) ?? []).length > 0;
-}
-
-function buildRefMap(items) {
-  const map = new Map();
-  for (const page of items) {
-    const keys = new Set([
-      page.slug.split("/").filter(Boolean).pop()?.toLowerCase(),
-      page.relativeFile.replace(/\/_?index\.md$/i, "").split("/").pop()?.toLowerCase(),
-      slugify(page.title)
-    ]);
-
-    for (const key of keys) {
-      if (!key) continue;
-      const matches = map.get(key) ?? [];
-      matches.push(page);
-      map.set(key, matches);
-    }
-  }
-  return map;
-}
-
 function parseAttrs(rawAttrs) {
   const attrs = {};
   const matcher = /([a-zA-Z0-9_-]+)\s*=\s*"([^"]*)"/g;
@@ -578,20 +545,6 @@ function normalizeResourceDirectory(value) {
     .join("/");
 }
 
-function slugify(value) {
-  return String(value)
-    .toLowerCase()
-    .trim()
-    .replace(/['"`]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-}
-
-function withSlashes(value) {
-  if (value === "/") return "/";
-  return `/${value.replace(/^\/+|\/+$/g, "")}/`;
-}
-
 function formatBytes(bytes) {
   const units = ["B", "KB", "MB", "GB"];
   let value = bytes;
@@ -603,8 +556,4 @@ function formatBytes(bytes) {
   }
 
   return `${value.toFixed(value >= 10 || unit === 0 ? 0 : 1)} ${units[unit]}`;
-}
-
-function slash(value) {
-  return value.replace(/\\/g, "/");
 }

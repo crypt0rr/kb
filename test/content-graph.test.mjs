@@ -71,6 +71,45 @@ test("builds deterministic references and reverse edges without treating assets 
   }
 });
 
+test("validates anchors against the ids the renderer emits", async () => {
+  const contentRoot = await mkdtemp(path.join(os.tmpdir(), "kb-content-anchors-"));
+
+  try {
+    await mkdir(path.join(contentRoot, "tools", "alpha"), { recursive: true });
+    await mkdir(path.join(contentRoot, "tools", "beta"), { recursive: true });
+    await mkdir(path.join(contentRoot, "tools", "draft"), { recursive: true });
+    await writeFile(path.join(contentRoot, "_index.md"), "---\ntitle: Root\n---\n");
+    await writeFile(
+      path.join(contentRoot, "tools", "beta", "index.md"),
+      "---\ntitle: Beta\n---\n## Usage\n\n## Usage\n\n## [Link](https://x.y) title\n"
+    );
+    await writeFile(
+      path.join(contentRoot, "tools", "draft", "index.md"),
+      "---\ntitle: Draft\ndraft: true\n---\n"
+    );
+
+    const write = (body) =>
+      writeFile(path.join(contentRoot, "tools", "alpha", "index.md"), `---\ntitle: Alpha\n---\n${body}\n`);
+
+    await write('[Second](../beta/#usage-1)\n[Link](../beta/#link-title)\n{{< ref "beta#usage-1" >}}');
+    let graph = buildContentGraph({ contentRoot });
+    assert.equal(graph.summary.missingAnchors, 0);
+    assert.equal(graph.summary.brokenLinks, 0);
+    assert.equal(graph.summary.referenceCount, 3);
+
+    await write("[Link](../beta/#link-https-x-y-title)");
+    graph = buildContentGraph({ contentRoot });
+    assert.equal(graph.summary.missingAnchors, 1);
+
+    await write('{{< ref "draft" >}}');
+    graph = buildContentGraph({ contentRoot });
+    assert.equal(graph.summary.brokenLinks, 1);
+    assert.deepEqual(graph.unresolved.map(({ target }) => target), ["draft"]);
+  } finally {
+    await rm(contentRoot, { recursive: true, force: true });
+  }
+});
+
 test("represents the full publishable corpus and resolves every page reference", () => {
   const corpus = describeCorpus();
   const graph = buildContentGraph();

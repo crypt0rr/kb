@@ -3,20 +3,20 @@ import path from "node:path";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
 import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
 import {
-  collectAnchors,
   collectMarkdownTargets,
   createContentResolver,
   isInternalTarget,
-  slugify,
   splitTarget
 } from "../src/lib/content-graph.mjs";
+import { collectAnchors, createRefIndex, slash, slugify } from "../src/lib/links.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
 const index = buildContentIndex({ contentRoot: contentDir, strict: false });
+const refIndex = createRefIndex(index.pages);
 const contentPages = index.pages.map((page) => ({
   ...page,
-  anchors: collectAnchors(page.body)
+  anchors: collectAnchors(page.body, { page, refIndex })
 }));
 const pagesByFile = new Map(contentPages.map((page) => [path.resolve(page.file), page]));
 const resolver = createContentResolver({
@@ -79,7 +79,7 @@ function checkTarget(target, source, baseDir, page) {
     ? resolver.resolveRef(targetPath, page)
     : resolver.resolve(targetPath, baseDir, page);
 
-  if (!resolved) {
+  if (!resolved?.page && !resolved?.file) {
     errors.push(`${source}:${target.line}: missing ${target.kind} target ${rawTarget}`);
     return;
   }
@@ -87,8 +87,4 @@ function checkTarget(target, source, baseDir, page) {
   if (fragment && resolved.page && !resolved.page.anchors.has(slugify(fragment))) {
     errors.push(`${source}:${target.line}: missing anchor #${fragment} in ${resolved.page.url}`);
   }
-}
-
-function slash(value) {
-  return value.replace(/\\/g, "/");
 }
