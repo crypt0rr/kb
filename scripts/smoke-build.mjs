@@ -13,6 +13,9 @@ const requiredFiles = [
   "asset-manifest.json",
   "tools/techniques/kerberoasting/index.html"
 ];
+// The content trust ledger is a maintainer-only report; its derived state must
+// never be rendered into public pages or the public search index.
+const maintainerOnlyMarkup = ["health-meta", ">Trust<", 'data-pagefind-filter="health"'];
 const errors = [];
 
 for (const file of requiredFiles) {
@@ -32,7 +35,10 @@ await expectIncludes("index.html", [
   'data-search-dialog',
   '/js/kb-app.js'
 ]);
-await expectJson("search.json");
+for (const file of ["index.html", "tools/techniques/kerberoasting/index.html"]) {
+  await expectExcludes(file, maintainerOnlyMarkup);
+}
+await expectSearchIndex();
 await expectJson("pagefind/pagefind-entry.json");
 await expectAssetManifest();
 await expectIncludes("sitemap-index.xml", ["<sitemapindex"]);
@@ -56,6 +62,43 @@ async function expectIncludes(file, needles) {
     if (!body.includes(needle)) {
       errors.push(`${file}: expected ${needle}`);
     }
+  }
+}
+
+async function expectExcludes(file, needles) {
+  let body = "";
+  try {
+    body = await readFile(path.join(distDir, file), "utf8");
+  } catch {
+    return;
+  }
+
+  for (const needle of needles) {
+    if (body.includes(needle)) {
+      errors.push(`${file}: unexpected maintainer-only markup ${needle}`);
+    }
+  }
+}
+
+async function expectSearchIndex() {
+  let entries;
+  try {
+    entries = JSON.parse(await readFile(path.join(distDir, "search.json"), "utf8"));
+  } catch (error) {
+    errors.push(`search.json: invalid JSON (${error.message})`);
+    return;
+  }
+
+  if (!Array.isArray(entries) || entries.length === 0) {
+    errors.push("search.json: expected a non-empty array of pages");
+    return;
+  }
+
+  const withHealth = entries.filter((entry) => Object.hasOwn(entry ?? {}, "health"));
+  if (withHealth.length) {
+    errors.push(
+      `search.json: ${withHealth.length} entries expose maintainer-only health (first: ${withHealth[0].url})`
+    );
   }
 }
 
