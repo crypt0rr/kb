@@ -1029,3 +1029,68 @@ test("run writes Markdown, complete JSON, and the requested summary", async () =
     await rm(root, { recursive: true, force: true });
   }
 });
+
+test("treats refused connections from a host that answers as rate limiting", async () => {
+  // web.archive.org serves some snapshots and refuses connections for others
+  // when it is busy; the refused links are blocked, not broken.
+  const clock = virtualClock();
+  const archive = Array.from({ length: 6 }, (_, i) => `https://archive.kb-fixture.dev/web/${i}`);
+  const gone = "https://gone.kb-fixture.dev/";
+  const results = await clock.drive(
+    checkUrls([...archive, gone], {
+      sleep: clock.sleep,
+      now: clock.now,
+      retries: 0,
+      fetchImpl: async (url) => {
+        await clock.sleep(10);
+        // Refuse the first two archive URLs (before any answer) and the last one.
+        if (url === gone || url.endsWith("/0") || url.endsWith("/1") || url.endsWith("/5")) {
+          throw systemError("ECONNREFUSED");
+        }
+        return response(200);
+      }
+    })
+  );
+  const byUrl = Object.fromEntries(results.map((result) => [result.url, result]));
+
+  for (const url of [archive[0], archive[1], archive[5]]) {
+    assert.equal(byUrl[url].code, "HOST_REFUSED", url);
+    assert.equal(classifyResult(byUrl[url]), "blocked", url);
+  }
+  for (const url of archive.slice(2, 5)) assert.equal(classifyResult(byUrl[url]), "ok", url);
+  // A host that never answered is still broken.
+  assert.equal(byUrl[gone].code, "ECONNREFUSED");
+  assert.equal(classifyResult(byUrl[gone]), "broken");
+});
+
+test("slows down and finally skips a host that keeps refusing after answering", async () => {
+  const clock = fakeClock();
+  const hostState = createHostState();
+  hostState.answered = true;
+  const refused = await checkUrl("https://archive.kb-fixture.dev/web/1", {
+    sleep: clock.sleep,
+    now: clock.now,
+    retries: 0,
+    hostState,
+    fetchImpl: async () => {
+      throw systemError("ECONNREFUSED");
+    }
+  });
+  assert.equal(refused.code, "ECONNREFUSED");
+  assert.ok(hostState.intervalMs >= 1000, `interval ${hostState.intervalMs}`);
+  assert.ok(hostState.notBefore > clock.now(), "host is paused");
+  assert.equal(hostState.failures, 1);
+  assert.equal(hostState.failure, "refused connections");
+
+  hostState.failures = HOST_FAILURE_LIMIT;
+  const skipped = await checkUrl("https://archive.kb-fixture.dev/web/2", {
+    sleep: clock.sleep,
+    now: clock.now,
+    hostState,
+    fetchImpl: async () => response(200)
+  });
+  assert.equal(skipped.code, "HOST_THROTTLED");
+  assert.equal(skipped.attempts, 0);
+  assert.match(skipped.error, /kept refusing connections/);
+  assert.equal(classifyResult(skipped), "blocked");
+});

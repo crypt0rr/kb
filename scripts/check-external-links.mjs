@@ -210,7 +210,7 @@ export function classifyResult({ status = null, code = null } = {}) {
     return "unreachable";
   }
   if (code && (BROKEN_ERROR_CODES.has(code) || TLS_CERTIFICATE_CODES.has(code))) return "broken";
-  if (code === "HOST_THROTTLED") return "blocked";
+  if (code === "HOST_THROTTLED" || code === "HOST_REFUSED") return "blocked";
   // Timeouts, 5xx after retries, other network errors, and URLs left
   // unchecked may be temporary.
   return "unreachable";
@@ -303,6 +303,15 @@ export async function checkUrls(entries, options = {}) {
       }
     })
   );
+  // A refused connection only means "gone" when the host never answered. If
+  // it answered other requests in this run, earlier or later, it is rate
+  // limiting, so the link is blocked rather than broken.
+  for (const result of results) {
+    if (result.code === "ECONNREFUSED" && hosts.get(hostKey(result.url))?.answered) {
+      result.code = "HOST_REFUSED";
+      result.error = "connection refused after the host answered other requests (rate limited)";
+    }
+  }
   return results.sort(compareResults);
 }
 
@@ -312,9 +321,10 @@ export async function checkUrls(entries, options = {}) {
  * A 429/503 pauses the whole host (`hostState.notBefore`), and every 429
  * also widens the minimum gap between requests to that host
  * (`hostState.intervalMs`), so a throttling site is crawled more slowly.
- * After `hostFailureLimit` links in a row on one host ended with 429, 503,
- * or a timeout, the host's remaining links are not requested. No request
- * starts at or after `deadline`.
+ * A refused connection on a host that has already answered is treated like a
+ * 429. After `hostFailureLimit` links in a row on one host ended with 429,
+ * 503, a timeout, or such a refusal, the host's remaining links are not
+ * requested. No request starts at or after `deadline`.
  */
 export async function checkUrl(url, options = {}) {
   const {
@@ -356,14 +366,18 @@ export async function checkUrl(url, options = {}) {
       release();
     }
     useGet ||= outcome.method === "GET";
+    if (Number.isInteger(outcome.status)) hostState.answered = true;
 
     const retryAfterMs = parseRetryAfter(outcome.retryAfter, now());
     const wait = retryDelay(attempts, retryAfterMs, { baseMs: retryBaseMs, maxDelayMs: maxRetryDelayMs });
+    // A host that answered other requests and now refuses connections is rate
+    // limiting (web.archive.org does this), so it is slowed down like a 429.
+    const refusedAfterAnswer = refusesAfterAnswering(outcome, hostState);
     // Slow the whole host down even when this URL has no retries left.
-    if (outcome.status === 429 || outcome.status === 503) {
+    if (outcome.status === 429 || outcome.status === 503 || refusedAfterAnswer) {
       hostState.notBefore = Math.max(hostState.notBefore ?? 0, now() + wait);
     }
-    if (outcome.status === 429) {
+    if (outcome.status === 429 || refusedAfterAnswer) {
       hostState.intervalMs = Math.min(
         Math.max((hostState.intervalMs ?? 0) * 2, HOST_INTERVAL_STEP_MS),
         MAX_HOST_INTERVAL_MS
@@ -389,11 +403,13 @@ export async function checkUrl(url, options = {}) {
 /**
  * Per-host state shared by all checks of one host: a pause (`notBefore`), a
  * minimum gap between request starts (`intervalMs`, next start at
- * `nextStart`), and the number of links in a row that ended with 429, 503,
- * or a timeout (`failures`, the last one described by `failure`).
+ * `nextStart`), the number of links in a row that ended with 429, 503, a
+ * timeout, or a refused connection after the host had answered (`failures`,
+ * the last one described by `failure`), and whether the host has answered
+ * any request with an HTTP status (`answered`).
  */
 export function createHostState() {
-  return { notBefore: 0, nextStart: 0, intervalMs: 0, failures: 0, failure: null };
+  return { notBefore: 0, nextStart: 0, intervalMs: 0, failures: 0, failure: null, answered: false };
 }
 
 /**
@@ -432,14 +448,19 @@ function hostReadyAt(hostState) {
   return Math.max(hostState.notBefore ?? 0, hostState.nextStart ?? 0);
 }
 
-function hostFailure(outcome) {
+function refusesAfterAnswering(outcome, hostState) {
+  return outcome.code === "ECONNREFUSED" && hostState.answered === true;
+}
+
+function hostFailure(outcome, hostState) {
   if (outcome.status === 429 || outcome.status === 503) return `HTTP ${outcome.status}`;
   if (outcome.code === "TIMEOUT") return "timeouts";
+  if (refusesAfterAnswering(outcome, hostState)) return "refused connections";
   return null;
 }
 
 function recordHostOutcome(hostState, outcome) {
-  const failure = hostFailure(outcome);
+  const failure = hostFailure(outcome, hostState);
   if (failure) {
     hostState.failures = (hostState.failures ?? 0) + 1;
     hostState.failure = failure;
@@ -452,11 +473,14 @@ function notChecked(url, hostState, hostFailureLimit) {
   if (hostState.failures >= hostFailureLimit) {
     const reason = hostState.failure === "timeouts"
       ? "kept timing out"
-      : `kept answering ${hostState.failure}`;
+      : hostState.failure === "refused connections"
+        ? "kept refusing connections"
+        : `kept answering ${hostState.failure}`;
+    const throttled = hostState.failure === "HTTP 429" || hostState.failure === "refused connections";
     return {
       url,
       status: null,
-      code: hostState.failure === "HTTP 429" ? "HOST_THROTTLED" : "HOST_UNAVAILABLE",
+      code: throttled ? "HOST_THROTTLED" : "HOST_UNAVAILABLE",
       error: `not checked: host ${reason}`,
       attempts: 0
     };

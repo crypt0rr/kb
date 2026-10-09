@@ -179,9 +179,11 @@ header (seconds or HTTP date) is honoured, otherwise the wait doubles from 1 s,
 and every wait is capped at 60 s. A 429 or 503 pauses the whole host for that
 wait, and each 429 also doubles a minimum gap between request starts to that
 host (1 s up to 8 s), so a throttling site such as `linux.die.net` is crawled
-more slowly instead of being reported. Once 3 links in a row on one host end
-with 429, 503 or a timeout, the host's remaining links are not requested and
-are reported with that reason. No request starts after `--max-duration` seconds
+more slowly instead of being reported. A host that answered other requests in
+the same run but then refuses a connection is rate limiting (the Internet
+Archive does this), so it is slowed down the same way. Once 3 links in a row on
+one host end with 429, 503, a timeout or such a refusal, the host's remaining
+links are not requested and are reported with that reason. No request starts after `--max-duration` seconds
 (default 1200, 20 minutes); links still waiting then are reported as not
 checked, so the run always finishes and writes its reports within the
 workflow's time limit. Redirects are followed by hand (up to 20); a redirect to
@@ -189,15 +191,17 @@ a host that would be skipped, such as a private address, is reported instead of
 requested. Every result is classified as:
 
 - `ok`: 2xx or 3xx after redirects.
-- `broken`: 404 or 410, a DNS failure that persists after retries, connection
-  refused, or an invalid TLS certificate. Only these are definite failures.
+- `broken`: 404 or 410, a DNS failure that persists after retries, a connection
+  refused by a host that answered no request in the run, or an invalid TLS
+  certificate. Only these are definite failures.
 - `unreachable`: timeouts and 5xx after retries, other 4xx responses, other
   network errors, redirects to skipped hosts, and links not checked because
   of the time budget or an unavailable host; usually temporary.
 - `blocked`: 401, 402, 403, 451, non-standard codes of 600 and above (such as
-  LinkedIn's 999), 429 after retries, and links not checked because their host
-  kept answering 429; the site refuses automated requests, so check it in a
-  browser.
+  LinkedIn's 999), 429 after retries, connections refused by a host that
+  answered other requests in the run, and links not checked because their host
+  kept answering 429 or refusing connections; the site refuses or throttles
+  automated requests, so check it in a browser.
 
 The JSON report (`version: 2`) has per-class counts and the number of links
 not requested (`notChecked`) in `summary`, and for each URL its `class`,
