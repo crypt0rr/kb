@@ -72,7 +72,8 @@ downloadable assets. External links are inventoried without network calls.
 real `content/` tree assert invariants derived from the files and frontmatter
 rather than fixed page counts, so adding a page or a `lastReviewed` date does
 not require test changes. `npm run smoke` checks the built `dist/` output,
-including that no trust-ledger state appears in public pages or `search.json`.
+including that no trust-ledger state appears in any generated HTML page or in
+`search.json`.
 `npm run doctor` checks the Node.js version, required project paths, and local
 npm availability. A different Node.js major version than `.node-version` fails;
 a minor or patch difference only prints a warning. CI installs the exact pinned
@@ -102,9 +103,9 @@ and is not rendered on the public site; pages only show their own `date`,
 `lastReviewed`, `status`, and `platforms` values. Reports use non-strict mode to
 record malformed cascade metadata for maintainers, while the site remains
 strict. The scheduled `Content freshness review` workflow uploads the same
-reports weekly and adds a summary to the workflow run. Markdown shows the oldest 100 queue
-entries by default (`--limit` changes this); JSON contains the complete corpus,
-field provenance, and priority data for future tooling.
+reports weekly and adds a summary to the workflow run. Markdown shows the oldest
+100 queue entries by default (`--limit` changes this); JSON contains the
+complete corpus, field provenance, and priority data for future tooling.
 
 `npm run content:graph` builds the same canonical page index into a deterministic
 relationship report at `.reports/content-graph.md` and a complete

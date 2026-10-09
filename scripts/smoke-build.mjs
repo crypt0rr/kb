@@ -1,9 +1,10 @@
-import { readFile, stat } from "node:fs/promises";
+import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { isPrivateContentPath } from "../src/lib/content-paths.mjs";
 
 const root = process.cwd();
 const distDir = path.join(root, "dist");
+const contentDir = path.join(root, "content");
 const requiredFiles = [
   "index.html",
   "tags/index.html",
@@ -15,7 +16,7 @@ const requiredFiles = [
 ];
 // The content trust ledger is a maintainer-only report; its derived state must
 // never be rendered into public pages or the public search index.
-const maintainerOnlyMarkup = ["health-meta", ">Trust<", 'data-pagefind-filter="health"'];
+const maintainerOnlyMarkup = ["health-meta", "<dt>Trust</dt>", 'data-pagefind-filter="health"'];
 const errors = [];
 
 for (const file of requiredFiles) {
@@ -35,7 +36,7 @@ await expectIncludes("index.html", [
   'data-search-dialog',
   '/js/kb-app.js'
 ]);
-for (const file of ["index.html", "tools/techniques/kerberoasting/index.html"]) {
+for (const file of await listGeneratedHtml()) {
   await expectExcludes(file, maintainerOnlyMarkup);
 }
 await expectSearchIndex();
@@ -63,6 +64,27 @@ async function expectIncludes(file, needles) {
       errors.push(`${file}: expected ${needle}`);
     }
   }
+}
+
+// HTML files copied verbatim from content/ (for example saved tool reports) are
+// published assets, not rendered pages, so only generated pages are scanned.
+async function listGeneratedHtml() {
+  let entries = [];
+  try {
+    entries = await readdir(distDir, { recursive: true });
+  } catch {
+    return [];
+  }
+
+  const files = [];
+  for (const entry of entries.filter((name) => name.endsWith(".html")).sort()) {
+    const copiedFromContent = await stat(path.join(contentDir, entry)).then(
+      () => true,
+      () => false
+    );
+    if (!copiedFromContent) files.push(entry.split(path.sep).join("/"));
+  }
+  return files;
 }
 
 async function expectExcludes(file, needles) {
