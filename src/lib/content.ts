@@ -172,17 +172,44 @@ export function getDescendantLeafCount(page: KbPage) {
   return visibleChildren(page).reduce((count, child) => count + countLeafPage(child), 0);
 }
 
-export function getAllTags() {
+// Groups tags by slug, so spellings that differ only in case or punctuation
+// are one tag labelled with the first spelling seen, and counts each page once.
+export function groupTags(pages: Pick<KbPage, "tags">[]) {
   const tags = new Map<string, { tag: string; count: number }>();
-  for (const page of getPages()) {
+  for (const page of pages) {
+    const seen = new Set<string>();
     for (const tag of page.tags) {
       const key = tagKey(tag);
+      if (seen.has(key)) continue;
+      seen.add(key);
       const current = tags.get(key) ?? { tag: canonicalTag(tag), count: 0 };
       current.count += 1;
       tags.set(key, current);
     }
   }
-  return [...tags.values()].sort((a, b) => a.tag.localeCompare(b.tag));
+  return tags;
+}
+
+// Maps a page's tags to the grouped labels, so the values a page indexes match
+// the options and counts that getAllTags() offers.
+export function labelTags(tags: string[], groups: ReturnType<typeof groupTags>) {
+  return [...new Set(tags.map((tag) => groups.get(tagKey(tag))?.tag ?? tag))];
+}
+
+let tagGroups: ReturnType<typeof groupTags> | null = null;
+
+function getTagGroups() {
+  tagGroups ??= groupTags(getPages());
+  return tagGroups;
+}
+
+export function getAllTags() {
+  return [...getTagGroups().values()].sort((a, b) => a.tag.localeCompare(b.tag));
+}
+
+// The values a page writes to data-pagefind-filter="tag".
+export function getFilterTags(page: KbPage) {
+  return labelTags(page.tags, getTagGroups());
 }
 
 export function getPopularTags(limit = 18) {

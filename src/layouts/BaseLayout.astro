@@ -19,8 +19,9 @@ type Props = {
 const { page, title, description = "" } = Astro.props;
 const sections = getRootSections();
 const tags = getPopularTags();
-// The search tag filter lists every tag; its values are the canonical tags the
-// page template writes to data-pagefind-filter="tag", so each option matches.
+// The search tag filter lists every tag; its values are the labels the page
+// template writes to data-pagefind-filter="tag" (getFilterTags), so each option
+// matches every page in its count.
 const filterTags = getAllTags();
 const canonical = new URL(Astro.url.pathname, "https://kb.offsec.nl").toString();
 const activeUrl = page?.url ?? Astro.url.pathname;
