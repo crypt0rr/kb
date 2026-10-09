@@ -1,5 +1,10 @@
 import { defineConfig } from "@playwright/test";
 
+// Browser tests run against dist/ served with the production _headers applied,
+// so CSP and cross-origin policy regressions surface here instead of in production.
+const port = Number(process.env.PLAYWRIGHT_PORT ?? 4321);
+const origin = `http://127.0.0.1:${port}`;
+
 export default defineConfig({
   testDir: "./tests",
   testMatch: "**/*.spec.mjs",
@@ -10,14 +15,14 @@ export default defineConfig({
     ? [["github"], ["html", { outputFolder: "playwright-report", open: "never" }]]
     : "list",
   use: {
-    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? "http://127.0.0.1:4321",
+    baseURL: process.env.PLAYWRIGHT_BASE_URL ?? origin,
     colorScheme: "dark",
     trace: "retain-on-failure",
     screenshot: "only-on-failure"
   },
   webServer: {
-    command: "npm run preview -- --host 127.0.0.1 --port 4321",
-    url: "http://127.0.0.1:4321/",
+    command: `node scripts/serve-dist.mjs --host 127.0.0.1 --port ${port}`,
+    url: `${origin}/`,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000
   }
