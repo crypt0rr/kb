@@ -34,7 +34,7 @@ export function parseFrontmatter(source, file = "content") {
 // closingEnd. `eol` is the line ending of the opening delimiter.
 export function locateFrontmatter(source, file = "content") {
   const text = String(source);
-  const bom = text.startsWith("﻿") ? "﻿" : "";
+  const bom = text.startsWith("\uFEFF") ? "\uFEFF" : "";
   const cleanSource = text.slice(bom.length);
 
   if (!cleanSource.startsWith(`${delimiter}\n`) && !cleanSource.startsWith(`${delimiter}\r\n`)) {
