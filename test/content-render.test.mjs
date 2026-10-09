@@ -6,7 +6,7 @@ import path from "node:path";
 import { renderPage } from "../src/lib/content.ts";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
 import { parseFrontmatter } from "../src/lib/frontmatter.mjs";
-import { highlightCode, highlightLanguage } from "../src/lib/highlight.mjs";
+import { MAX_HIGHLIGHT_LENGTH, highlightCode, highlightLanguage } from "../src/lib/highlight.mjs";
 import { collectAnchors, createMarkdown, createRefIndex } from "../src/lib/links.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
 import { contentRoot, walkMarkdownFiles } from "./helpers/corpus.mjs";
@@ -189,6 +189,25 @@ test("leaves plain, unlabelled and unknown fences exactly as before", () => {
   }
   assert.equal(highlightLanguage("plain"), null);
   assert.equal(highlightCode(code, "plain"), "");
+});
+
+test("leaves oversized and long-word-run fences plain so the build stays fast", () => {
+  const plainMarkdown = createMarkdown();
+  const cases = [
+    ["shellcode", `echo ${"4142".repeat(50000)}`],
+    ["oversized", "echo ok\n".repeat(MAX_HIGHLIGHT_LENGTH / 8 + 1)]
+  ];
+
+  for (const [name, code] of cases) {
+    const source = fence("bash", code);
+    const started = performance.now();
+    const html = renderPage(page(source));
+
+    assert.ok(performance.now() - started < 1000, name);
+    assert.equal(highlightCode(code, "bash"), "", name);
+    assert.equal(html, plainMarkdown.render(source), name);
+  }
+  assert.match(highlightCode(`echo ${"41".repeat(400)}`, "bash"), /hljs-built_in/);
 });
 
 test("escapes markup inside highlighted code", () => {

@@ -47,6 +47,13 @@ for (const [name, language] of Object.entries(languages)) {
 }
 hljs.registerAliases(["batch"], { languageName: "dos" });
 
+// highlight.js's bash grammar is quadratic in the length of an unbroken word
+// run (hex shellcode, blob dumps), and pages render synchronously during the
+// build, so oversized fences and long word runs are left as plain text. The
+// largest labelled corpus fence is a few KB with word runs under 100 chars.
+export const MAX_HIGHLIGHT_LENGTH = 20000;
+const LONG_WORD_RUN = /\w{1000}/;
+
 /**
  * Resolve a fence label to a registered language or alias, case-insensitively.
  * Returns null for unlabelled, `plain` and unknown fences.
@@ -58,10 +65,12 @@ export function highlightLanguage(label) {
 
 /**
  * markdown-it `highlight` callback: highlighted, escaped HTML for a known
- * language, or "" so markdown-it falls back to its default escaping.
+ * language, or "" so markdown-it falls back to its default escaping (also for
+ * fences too large or too dense to highlight quickly).
  */
 export function highlightCode(code, label) {
   const language = highlightLanguage(label);
   if (!language) return "";
+  if (code.length > MAX_HIGHLIGHT_LENGTH || LONG_WORD_RUN.test(code)) return "";
   return hljs.highlight(code, { language, ignoreIllegals: true }).value;
 }
