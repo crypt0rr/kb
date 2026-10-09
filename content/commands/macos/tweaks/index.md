@@ -103,7 +103,7 @@ defaults write com.apple.CrashReporter DialogType none
 
 ### Disable Bonjour multicast advertisements
 
-Reference: <https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/mdns-telling-the-world-about-you-and-your-device/>
+Reference: <https://www.levelblue.com/blogs/spiderlabs-blog/mdns-telling-the-world-about-you-and-your-device>
 
 ```plain
 sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
@@ -170,7 +170,7 @@ sudo killall -HUP mDNSResponder
 
 ## URL List
 
-- [Github.com - macOSuckless](https://github.com/MartinHarding/macOSuckless)
+- [Github.com - macOSuckless](https://web.archive.org/web/20201206033454/https://github.com/MartinHarding/macOSuckless)
 - [Github.com - awesome-mac](https://github.com/jaywcjlove/awesome-mac)
 - [Github.com - TerminalTweaks](https://github.com/MacTweaks/TerminalTweaks)
 - [Github.com - macOS Security and Privacy Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide#)

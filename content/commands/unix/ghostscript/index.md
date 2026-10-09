@@ -11,7 +11,7 @@ weight : 310
 
 ---
 
-Ghostscript is an interpreter for the [PostScript®](https://en.wikipedia.org/wiki/PostScript) language and [PDF](https://en.wikipedia.org/wiki/PDF) files. It is available under either the [GNU GPL Affero license](https://www.gnu.org/licenses/agpl-3.0.html) or [licensed for commercial](https://artifex.com/licensing/commercial/) use from [Artifex Software, Inc.](https://artifex.com/) It has been under active development for over 30 years and has been ported to several different systems during this time. Ghostscript consists of a PostScript interpreter layer and a graphics library.
+Ghostscript is an interpreter for the [PostScript®](https://en.wikipedia.org/wiki/PostScript) language and [PDF](https://en.wikipedia.org/wiki/PDF) files. It is available under either the [GNU GPL Affero license](https://www.gnu.org/licenses/agpl-3.0.html) or [licensed for commercial](https://artifex.com/licensing#commercial-license) use from [Artifex Software, Inc.](https://artifex.com/) It has been under active development for over 30 years and has been ported to several different systems during this time. Ghostscript consists of a PostScript interpreter layer and a graphics library.
 
 ## Usage
 

@@ -46,5 +46,5 @@ Application Options:
 
 ## URL List
 
-- [Ubuntu.com](https://help.ubuntu.com/community/NetworkManager)
+- [Ubuntu.com](https://web.archive.org/web/20200325231732/https://help.ubuntu.com/community/NetworkManager)
 - [Unix.com](https://www.unix.com/man-page/centos/1/nm-connection-editor/)
