@@ -105,7 +105,10 @@ characters or with a 1,000-character unbroken word run (shellcode, blob dumps)
 also stay plain, because highlighting them would stall the build. The output is `hljs-*` class spans
 styled by `src/styles/global.css`, never inline `style` attributes, which the
 CSP (`style-src 'self'`) would block. The copy button still copies the exact
-fence text.
+fence text. For the same reason, Markdown table column alignment (`:---`,
+`:---:`, `---:`) renders as `align-left`/`align-center`/`align-right` classes
+instead of markdown-it's inline `text-align` styles, and `npm run smoke` fails
+if any generated page contains an inline `style` attribute.
 `npm run validate` runs the full local validation gate.
 
 `npm test` runs focused parser and content-contract tests. Tests against the

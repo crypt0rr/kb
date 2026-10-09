@@ -20,7 +20,9 @@ const policyRoutes = [
   "/tools/framework/projectdiscovery/katana/",
   "/tools/apple-macos/ice/",
   "/tools/other/ccat/",
-  "/cve/cve-2021-40449/"
+  "/cve/cve-2021-40449/",
+  // Aligned Markdown table columns, which must not rely on inline style attributes.
+  "/stuff/cheatsheets/netmasks/"
 ];
 // Policy headers that must match public/_headers exactly, including being absent.
 const policyHeaders = [
@@ -112,6 +114,17 @@ for (const route of policyRoutes) {
     });
   });
 }
+
+test("aligned Markdown table columns keep their alignment under the CSP", async ({ page }) => {
+  await page.goto("/stuff/cheatsheets/netmasks/", { waitUntil: "networkidle" });
+
+  for (const alignment of ["left", "center", "right"]) {
+    await expect(page.locator(`.prose td.align-${alignment}`).first()).toHaveCSS(
+      "text-align",
+      alignment
+    );
+  }
+});
 
 test("search loads the Pagefind WASM index under the CSP", async ({ page }) => {
   const problems = trackPolicyProblems(page);

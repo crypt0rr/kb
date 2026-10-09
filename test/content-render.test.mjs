@@ -257,3 +257,19 @@ test("keeps the text of every labelled fence in the corpus intact", () => {
   }
   assert.ok(highlighted > 0);
 });
+
+test("renders table column alignment as classes instead of inline styles", () => {
+  const html = renderPage(
+    page(["| Left | Center | Right | None |", "| :--- | :---: | ---: | --- |", "| a | b | c | d |"].join("\n"))
+  );
+
+  assert.doesNotMatch(html, /<[^>]*\sstyle\s*=/i);
+  assert.match(html, /<th class="align-left">Left<\/th>/);
+  assert.match(html, /<th class="align-center">Center<\/th>/);
+  assert.match(html, /<th class="align-right">Right<\/th>/);
+  assert.match(html, /<th>None<\/th>/);
+  assert.match(html, /<td class="align-left">a<\/td>/);
+  assert.match(html, /<td class="align-center">b<\/td>/);
+  assert.match(html, /<td class="align-right">c<\/td>/);
+  assert.match(html, /<td>d<\/td>/);
+});

@@ -19,6 +19,11 @@ const requiredFiles = [
 // The content trust ledger is a maintainer-only report; its derived state must
 // never be rendered into public pages or the public search index.
 const maintainerOnlyMarkup = ["health-meta", "<dt>Trust</dt>", 'data-pagefind-filter="health"'];
+// The production CSP (style-src 'self') blocks inline style attributes, so a
+// generated page must not depend on one. The pattern steps over each attribute
+// value, so "style=" inside alt/title/content text or escaped code never matches.
+const inlineStyleAttribute =
+  /<[a-z][a-z0-9-]*(?:\s+[^\s=>"'/]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>"']+))?)*\s+style\s*=/i;
 const errors = [];
 
 for (const file of requiredFiles) {
@@ -40,6 +45,7 @@ await expectIncludes("index.html", [
 ]);
 for (const file of await listGeneratedHtml()) {
   await expectExcludes(file, maintainerOnlyMarkup);
+  await expectNoInlineStyles(file);
 }
 await expectSearchIndex();
 await expectJson("pagefind/pagefind-entry.json");
@@ -101,6 +107,20 @@ async function expectExcludes(file, needles) {
     if (body.includes(needle)) {
       errors.push(`${file}: unexpected maintainer-only markup ${needle}`);
     }
+  }
+}
+
+async function expectNoInlineStyles(file) {
+  let body = "";
+  try {
+    body = await readFile(path.join(distDir, file), "utf8");
+  } catch {
+    return;
+  }
+
+  const match = body.match(inlineStyleAttribute);
+  if (match) {
+    errors.push(`${file}: inline style attribute blocked by style-src 'self' (${match[0].slice(0, 80)})`);
   }
 }
 

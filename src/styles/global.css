@@ -723,6 +723,21 @@ h1 {
   text-align: left;
 }
 
+.prose th.align-left,
+.prose td.align-left {
+  text-align: left;
+}
+
+.prose th.align-center,
+.prose td.align-center {
+  text-align: center;
+}
+
+.prose th.align-right,
+.prose td.align-right {
+  text-align: right;
+}
+
 .children-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
