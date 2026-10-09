@@ -64,6 +64,8 @@ test("parses paths, --date, and --dry-run", () => {
   assert.equal(parseArguments(["--date=2026-01-02", "content/a"]).date, "2026-01-02");
   assert.throws(() => parseArguments(["--date"]), /--date requires a value/);
   assert.throws(() => parseArguments(["--force"]), /Unknown option --force/);
+  assert.throws(() => parseArguments(["--dry-run=false"]), /--dry-run does not take a value/);
+  assert.throws(() => parseArguments(["--help=x"]), /--help does not take a value/);
 });
 
 test("resolves page files and bundle directories inside content/", async () => {
@@ -150,7 +152,10 @@ test("replaces an existing value in place, keeping key spelling and comments", (
     ["lastReviewed: 2024-01-01\n", "lastReviewed: 2026-08-01\n", "2024-01-01"],
     ["lastReviewed :  '2024-01-01' # who\n", "lastReviewed :  2026-08-01 # who\n", "'2024-01-01'"],
     ["\"lastReviewed\": \"2024-01-01\"\n", "\"lastReviewed\": 2026-08-01\n", "\"2024-01-01\""],
-    ["lastReviewed:\n", "lastReviewed: 2026-08-01\n", null]
+    ["lastReviewed:\n", "lastReviewed: 2026-08-01\n", null],
+    ["lastReviewed:    \t\n", "lastReviewed: 2026-08-01\n", null],
+    ["lastReviewed: # todo\n", "lastReviewed: 2026-08-01 # todo\n", null],
+    ["lastReviewed:\t# todo\n", "lastReviewed: 2026-08-01 # todo\n", null]
   ];
 
   for (const [line, expected, previous] of cases) {
@@ -200,12 +205,12 @@ test("refuses values it cannot replace on a single line", () => {
 });
 
 test("preserves CRLF line endings and a UTF-8 BOM", () => {
-  const source = "﻿---\r\ntitle: Windows\r\ndate: 2020-01-01\r\n---\r\n\r\nBody\r\n";
+  const source = "\uFEFF---\r\ntitle: Windows\r\ndate: 2020-01-01\r\n---\r\n\r\nBody\r\n";
   const result = setLastReviewed(source, "2026-08-01");
 
   assert.equal(
     result.source,
-    "﻿---\r\ntitle: Windows\r\ndate: 2020-01-01\r\nlastReviewed: 2026-08-01\r\n---\r\n\r\nBody\r\n"
+    "\uFEFF---\r\ntitle: Windows\r\ndate: 2020-01-01\r\nlastReviewed: 2026-08-01\r\n---\r\n\r\nBody\r\n"
   );
 
   const replaced = setLastReviewed(result.source, "2026-08-02");
@@ -219,10 +224,10 @@ test("creates frontmatter when a page has none", () => {
   assert.equal(plain.source, "---\nlastReviewed: 2026-08-01\n---\n\n# Plain page\n\nText\n");
   assert.equal(parseFrontmatter(plain.source).content, "# Plain page\n\nText\n");
 
-  const windows = setLastReviewed("﻿\r\n# Leading blank\r\n", "2026-08-01");
+  const windows = setLastReviewed("\uFEFF\r\n# Leading blank\r\n", "2026-08-01");
   assert.equal(
     windows.source,
-    "﻿---\r\nlastReviewed: 2026-08-01\r\n---\r\n\r\n\r\n# Leading blank\r\n"
+    "\uFEFF---\r\nlastReviewed: 2026-08-01\r\n---\r\n\r\n\r\n# Leading blank\r\n"
   );
   assert.equal(parseFrontmatter(windows.source).content, "\r\n# Leading blank\r\n");
   assert.equal(setLastReviewed("", "2026-08-01").source, "---\nlastReviewed: 2026-08-01\n---\n\n");
@@ -282,5 +287,37 @@ test("dry run and invalid input write nothing", async () => {
       /pass at least one page path/
     );
     assert.equal(await readFile(file, "utf8"), before);
+  });
+});
+
+test("a page that cannot be edited leaves the other pages untouched", async () => {
+  await withContent(async ({ root, contentRoot }) => {
+    const file = path.join(contentRoot, "cve/cve-1/index.md");
+    const before = await readFile(file, "utf8");
+    const bad = path.join(contentRoot, "tools/leaf.md");
+    await writeFile(bad, "---\ntitle: [unclosed\n---\n");
+
+    await assert.rejects(
+      run(["content/cve/cve-1", "content/tools/leaf.md"], { cwd: root, contentRoot, today, log: () => {} }),
+      /^Error: content\/tools\/leaf\.md: invalid frontmatter YAML: .*\nNo files were changed\.$/s
+    );
+    assert.equal(await readFile(file, "utf8"), before);
+    assert.equal(await readFile(bad, "utf8"), "---\ntitle: [unclosed\n---\n");
+  });
+});
+
+test("counts a page reached through a symlinked alias once", async () => {
+  await withContent(async ({ root, contentRoot }) => {
+    await symlink(path.join(contentRoot, "cve/cve-1/index.md"), path.join(contentRoot, "alias.md"));
+    const lines = [];
+    const result = await run(["content/alias.md", "content/cve/cve-1", "--dry-run"], {
+      cwd: root,
+      contentRoot,
+      today,
+      log: (line) => lines.push(line)
+    });
+
+    assert.equal(result.results.length, 1);
+    assert.match(lines.at(-1), /would mark 1 page\(s\) reviewed on 2026-08-06: 1 added/);
   });
 });

@@ -165,9 +165,16 @@ function planFrontmatterEdit(yamlText, date, eol, file) {
       return { unchanged: true, previous };
     }
     if (start === end) {
-      // `lastReviewed:` with an empty value: add the date after the colon.
-      const space = /[ \t]/.test(yamlText[start - 1] ?? "") ? "" : " ";
-      return { start, end, text: `${space}${date}`, previous };
+      // `lastReviewed:` with an empty value, optionally followed by a comment:
+      // replace the gap after the colon with one space and the date, and keep
+      // a space before the comment so it stays a comment.
+      let gapStart = start;
+      while (gapStart > 0 && /[ \t]/.test(yamlText[gapStart - 1])) gapStart -= 1;
+      if (yamlText[gapStart - 1] !== ":") {
+        throw new Error(`${file}: ${FIELD} has an empty value in an unexpected form; edit it manually`);
+      }
+      const comment = yamlText[start] === "#" ? " " : "";
+      return { start: gapStart, end, text: ` ${date}${comment}`, previous };
     }
     return { start, end, text: date, previous };
   }
@@ -217,9 +224,11 @@ export function parseArguments(argv = []) {
         break;
       }
       case "--dry-run":
+        rejectInlineValue(flag, inlineValue);
         options.dryRun = true;
         break;
       case "--help":
+        rejectInlineValue(flag, inlineValue);
         options.help = true;
         break;
       default:
@@ -228,6 +237,10 @@ export function parseArguments(argv = []) {
   }
 
   return options;
+}
+
+function rejectInlineValue(flag, value) {
+  if (value !== undefined) throw new Error(`${flag} does not take a value`);
 }
 
 export async function run(
@@ -255,7 +268,8 @@ export async function run(
   for (const input of options.paths) {
     try {
       const page = resolvePagePath(input, { contentRoot, cwd });
-      pages.set(page.file, page);
+      // Key by the real path so a symlinked alias of a page counts once.
+      pages.set(fs.realpathSync(page.file), page);
     } catch (error) {
       errors.push(error.message);
     }
@@ -267,7 +281,7 @@ export async function run(
   for (const page of pages.values()) {
     try {
       const source = await readFile(page.file, "utf8");
-      const result = setLastReviewed(source, date, page.relativeFile);
+      const result = setLastReviewed(source, date, `content/${page.relativeFile}`);
       results.push({ ...page, ...result, changed: result.source !== source });
     } catch (error) {
       errors.push(error.message);
