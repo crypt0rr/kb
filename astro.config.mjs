@@ -35,9 +35,6 @@ export default defineConfig({
   build: {
     format: "directory",
     outDir: "./dist"
-  },
-  markdown: {
-    syntaxHighlight: "shiki"
   }
 });
 
