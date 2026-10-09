@@ -14,7 +14,7 @@ async function writePage(root, relative, frontmatter, body = "") {
   await writeFile(file, `---\n${frontmatter}\n---\n${body}\n`);
 }
 
-test("reports unresolved, draft-only and ambiguous refs", async () => {
+test("reports unresolved, draft-only and ambiguous refs but lets drafts ref drafts", async () => {
   const root = await mkdtemp(path.join(os.tmpdir(), "kb-check-content-"));
 
   try {
@@ -28,6 +28,12 @@ test("reports unresolved, draft-only and ambiguous refs", async () => {
     await writePage(root, "other/dup/index.md", "title: Dup other");
     await writePage(root, "tools/beta/index.md", "title: Beta");
     await writePage(root, "tools/secret/index.md", "title: Secret\ndraft: true");
+    await writePage(
+      root,
+      "tools/plan/index.md",
+      "title: Plan\ndraft: true",
+      '[Secret]({{< ref "secret" >}})'
+    );
     await writePage(
       root,
       "tools/alpha/index.md",

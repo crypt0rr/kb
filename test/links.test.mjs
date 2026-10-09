@@ -76,3 +76,17 @@ test("prefers the nearest basename match and flags unresolvable ties", () => {
   assert.equal(tie.ambiguous, true);
   assert.deepEqual(tie.candidates, [commandsAlpha, toolsAlpha]);
 });
+
+test("collects heading ids after expanding ref shortcodes like the renderer", () => {
+  const awk = refPage("commands/unix/awk", "awk");
+  const index = createRefIndex([awk]);
+  const source = [
+    '## Using [awk]({{< ref "awk" >}})',
+    '## Pair with {{< ref "awk#usage" >}}',
+    "## Notes {{% children %}}"
+  ].join("\n");
+  const anchors = collectAnchors(source, { page: refPage("tools/beta", "Beta"), refIndex: index });
+
+  assert.deepEqual([...anchors], ["using-awk", "pair-with-commands-unix-awk-usage", "notes"]);
+  assert.ok(collectAnchors('## Using [awk]({{< ref "awk" >}})').has("using-awk"));
+});

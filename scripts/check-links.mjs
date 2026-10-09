@@ -8,14 +8,15 @@ import {
   isInternalTarget,
   splitTarget
 } from "../src/lib/content-graph.mjs";
-import { collectAnchors, slash, slugify } from "../src/lib/links.mjs";
+import { collectAnchors, createRefIndex, slash, slugify } from "../src/lib/links.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
 const index = buildContentIndex({ contentRoot: contentDir, strict: false });
+const refIndex = createRefIndex(index.pages);
 const contentPages = index.pages.map((page) => ({
   ...page,
-  anchors: collectAnchors(page.body)
+  anchors: collectAnchors(page.body, { page, refIndex })
 }));
 const pagesByFile = new Map(contentPages.map((page) => [path.resolve(page.file), page]));
 const resolver = createContentResolver({

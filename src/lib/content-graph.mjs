@@ -5,6 +5,7 @@ import { buildContentIndex } from "./content-index.mjs";
 import { isPrivateContentPath } from "./content-paths.mjs";
 import {
   collectAnchors,
+  comparePages,
   createRefIndex,
   resolveRef,
   slash,
@@ -13,7 +14,6 @@ import {
 } from "./links.mjs";
 
 const markdown = new MarkdownIt({ html: true, linkify: false });
-const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
 
 /**
  * Build the visible content relationship graph from the canonical content index.
@@ -91,7 +91,10 @@ export function buildContentGraph(options = {}) {
       if (parsed.fragment) {
         let anchors = anchorsByUrl.get(resolved.page.url);
         if (!anchors) {
-          anchors = collectAnchors(resolved.page.body);
+          anchors = collectAnchors(resolved.page.body, {
+            page: resolved.page,
+            refIndex: resolver.refIndex
+          });
           anchorsByUrl.set(resolved.page.url, anchors);
         }
         if (!anchors.has(slugify(parsed.fragment))) findings.missingAnchors += 1;
@@ -203,6 +206,7 @@ export function createContentResolver({
     pagesByUrl,
     pagesByFile,
     contentAssets,
+    refIndex,
     resolve(targetPath, baseDir, page) {
       return resolveInternalTarget(targetPath, {
         root: resolvedRoot,
@@ -446,9 +450,4 @@ function isFile(value) {
   } catch {
     return false;
   }
-}
-
-function comparePages(a, b) {
-  return collator.compare(String(a.title ?? ""), String(b.title ?? "")) ||
-    collator.compare(a.url, b.url);
 }

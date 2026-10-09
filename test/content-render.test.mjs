@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile } from "node:fs/promises";
 import { renderPage } from "../src/lib/content.ts";
+import { buildContentIndex } from "../src/lib/content-index.mjs";
+import { collectAnchors, createRefIndex } from "../src/lib/links.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
 
 function page(body) {
@@ -106,4 +108,22 @@ test("never nests anchors in headings that contain a link", () => {
     html,
     /<h2 id="plain" tabindex="-1"><a class="header-anchor" href="#plain">Plain<\/a><\/h2>/
   );
+});
+
+test("labels permalinks of headings that link an image", () => {
+  const html = renderPage(page("## [![logo](x.png)](https://e.x) Tool\n\n## [![img](a.png)](b)"));
+
+  assert.match(html, /<h2 id="tool"[^>]*>.*aria-label="Permalink to logo Tool">#<\/a><\/h2>/);
+  assert.doesNotMatch(html, /href="#"/);
+  assert.doesNotMatch(html, /aria-label="Permalink to "/);
+});
+
+test("collects the same heading ids the renderer emits for headings with refs", () => {
+  const body = '## Using [awk]({{< ref "awk" >}})\n\n## Pair with {{< ref "awk" >}}';
+  const html = renderPage(page(body));
+  const rendered = [...html.matchAll(/<h2 id="([^"]*)"/g)].map((match) => match[1]);
+  const refIndex = createRefIndex(buildContentIndex({ strict: false }).pages);
+
+  assert.deepEqual(rendered, ["using-awk", "pair-with-commands-unix-awk"]);
+  assert.deepEqual([...collectAnchors(body, { page: {}, refIndex })], rendered);
 });

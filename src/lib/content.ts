@@ -7,9 +7,11 @@ import { normalizeDate } from "./date.mjs";
 import {
   createMarkdown,
   createRefIndex,
+  refHref,
+  replaceRefShortcodes,
   resolveRef,
   slash,
-  slugify,
+  stripShortcodes,
   withSlashes,
   type RefIndex
 } from "./links.mjs";
@@ -384,12 +386,8 @@ function preprocessShortcodes(source: string, page: KbPage) {
     }
   );
 
-  output = output.replace(
-    /\{\{[<%]\s*ref\s*"?([^"%>}]+)"?\s*[>%]\}\}/g,
-    (_match, target) => renderRef(String(target).trim(), page)
-  );
-
-  output = output.replace(/\{\{[%<][\s\S]*?[>%]\}\}/g, "");
+  output = replaceRefShortcodes(output, (target) => renderRef(target, page));
+  output = stripShortcodes(output);
 
   return output;
 }
@@ -482,9 +480,6 @@ function normalizeResourceDirectory(value?: string) {
 }
 
 function renderRef(target: string, page: KbPage) {
-  const anchorPart = target.split("#")[1];
-  const hash = anchorPart ? `#${slugify(anchorPart)}` : "";
-
   getPages();
   const resolved = refIndex ? resolveRef(target, page, refIndex) : null;
   if (!resolved?.page) {
@@ -492,7 +487,7 @@ function renderRef(target: string, page: KbPage) {
     throw new Error(`${source}: unresolved ref "${target}"`);
   }
 
-  return `${resolved.page.url}${hash}`;
+  return refHref(target, resolved.page);
 }
 
 function parseAttrs(rawAttrs: string) {

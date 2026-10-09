@@ -74,12 +74,14 @@ point to the `youtube` and `gist` shortcodes instead. Code blocks, text inside
 raw HTML, and attributes such as `data-src` are ignored.
 `ref` shortcodes must resolve to exactly one published (non-draft) page; a
 basename that matches several equally close pages is reported as ambiguous and
-needs a path. The build also fails on an unresolved `ref`.
+needs a path. Drafts are not rendered, so their own refs may also point at
+other drafts. The build also fails on an unresolved `ref`.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 The renderer, both checks, and the content graph share one slug, `ref`, and
-heading-anchor resolver (`src/lib/links.mjs`), so an anchor that passes the
-check is the id the page renders, including `-1` suffixes for repeated headings.
+heading-anchor resolver (`src/lib/links.mjs`), and expand `ref` shortcodes in
+headings before deriving ids, so an anchor that passes the check is the id the
+page renders, including `-1` suffixes for repeated headings.
 `notice` bodies are ordinary Markdown, so code blocks and other shortcodes work
 inside them.
 `npm run validate` runs the full local validation gate.

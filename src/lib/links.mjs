@@ -10,6 +10,8 @@ import anchor from "markdown-it-anchor";
  */
 
 const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
+const refShortcode = /\{\{[<%]\s*ref\s*"?([^"%>}]+)"?\s*[>%]\}\}/g;
+const anyShortcode = /\{\{[%<][\s\S]*?[>%]\}\}/g;
 const headerLink = anchor.permalink.headerLink();
 const anchorMarkdown = createMarkdown();
 
@@ -46,11 +48,44 @@ export function createMarkdown() {
 }
 
 /**
- * Collect the heading ids a page renders, plus ids declared in raw HTML.
+ * Replace every `ref` shortcode with the result of `replace(target)`.
  */
-export function collectAnchors(source) {
+export function replaceRefShortcodes(source, replace) {
+  return String(source).replace(refShortcode, (_match, target) => replace(String(target).trim()));
+}
+
+/**
+ * Drop any shortcode left after the specific shortcodes have been expanded.
+ */
+export function stripShortcodes(source) {
+  return String(source).replace(anyShortcode, "");
+}
+
+/**
+ * The URL a `ref` renders as: the target page plus its slugified fragment.
+ */
+export function refHref(target, page) {
+  const fragment = String(target).split("#")[1];
+  return `${page.url}${fragment ? `#${slugify(fragment)}` : ""}`;
+}
+
+/**
+ * Collect the heading ids a page renders, plus ids declared in raw HTML.
+ *
+ * Shortcodes are expanded the way the renderer expands them before parsing, so
+ * a heading containing a `ref` gets the same id here as on the page. Pass the
+ * page and a ref index to resolve refs; an unresolved ref falls back to its
+ * target path (the build fails on those anyway).
+ */
+export function collectAnchors(source, { page, refIndex } = {}) {
   const anchors = new Set();
-  const tokens = anchorMarkdown.parse(String(source), {});
+  const prepared = stripShortcodes(
+    replaceRefShortcodes(source, (target) => {
+      const resolved = refIndex ? resolveRef(target, page, refIndex).page : null;
+      return refHref(target, resolved ?? { url: withSlashes(target.split("#")[0]) });
+    })
+  );
+  const tokens = anchorMarkdown.parse(prepared, {});
 
   for (const token of tokens) {
     if (token.type === "heading_open") {
@@ -165,16 +200,21 @@ function headingPermalink(slug, options, state, index) {
     headerLink(slug, options, state, index);
     return;
   }
+  // A heading with no sluggable text (e.g. only a linked image) has no usable
+  // fragment, so a permalink would just point at "#".
+  if (!slug) return;
 
   const title = children
-    .filter((token) => token.type === "text" || token.type === "code_inline")
+    .filter((token) => ["text", "code_inline", "image"].includes(token.type))
     .map((token) => token.content)
     .join("")
     .trim();
   anchor.permalink.linkInsideHeader({
     class: "heading-permalink",
     symbol: "#",
-    renderAttrs: () => ({ "aria-label": `Permalink to ${title}` })
+    renderAttrs: () => ({
+      "aria-label": title ? `Permalink to ${title}` : "Permalink to this section"
+    })
   })(slug, options, state, index);
 }
 
@@ -199,7 +239,10 @@ function commonPrefix(a, b) {
   return count;
 }
 
-function comparePages(a, b) {
+/**
+ * Order pages by title, then URL; used wherever page lists must be stable.
+ */
+export function comparePages(a, b) {
   return collator.compare(String(a.title ?? ""), String(b.title ?? "")) ||
     collator.compare(String(a.url ?? ""), String(b.url ?? ""));
 }

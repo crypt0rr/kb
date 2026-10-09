@@ -271,13 +271,16 @@ function validateCascadeFields(cascade, file) {
 }
 
 function validateRefsAndShortcodes() {
-  // Refs resolve exactly as the renderer does: drafts are never rendered, so
-  // they are not valid targets.
-  const refIndex = createRefIndex(
+  // Refs on published pages resolve exactly as the renderer does: drafts are
+  // never rendered, so they are not valid targets. Drafts themselves are not
+  // rendered either, so their refs may also point at other drafts.
+  const publishedRefIndex = createRefIndex(
     pages.filter((page) => page.effectiveFrontmatter.draft !== true)
   );
+  const draftRefIndex = createRefIndex(pages);
 
   for (const page of pages) {
+    const refIndex = page.effectiveFrontmatter.draft === true ? draftRefIndex : publishedRefIndex;
     const shortcodes = page.body.matchAll(/\{\{([<%])\s*([a-zA-Z0-9_-]+)([\s\S]*?)([>%])\}\}/g);
     const resourceRegexes = new Map();
 
