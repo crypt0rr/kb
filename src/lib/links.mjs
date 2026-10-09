@@ -35,12 +35,17 @@ export function slash(value) {
 
 /**
  * Create the markdown-it instance used to render pages and to derive anchors.
+ *
+ * Pass `highlight` (see highlight.mjs) to highlight fenced code. Only the page
+ * renderer does; anchor collection and the checks only parse, so they neither
+ * load nor run the highlighter.
  */
-export function createMarkdown() {
+export function createMarkdown({ highlight } = {}) {
   return new MarkdownIt({
     html: true,
     linkify: true,
-    typographer: false
+    typographer: false,
+    ...(highlight ? { highlight } : {})
   }).use(anchor, {
     slugify,
     permalink: headingPermalink

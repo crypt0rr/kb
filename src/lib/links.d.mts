@@ -22,7 +22,9 @@ export type RefResolution<T extends RefPage> = {
 export function slugify(value: unknown): string;
 export function withSlashes(value: string): string;
 export function slash(value: unknown): string;
-export function createMarkdown(): MarkdownIt;
+export function createMarkdown(options?: {
+  highlight?: (code: string, lang: string, attrs: string) => string;
+}): MarkdownIt;
 export function replaceRefShortcodes(source: string, replace: (target: string) => string): string;
 export function stripShortcodes(source: string): string;
 export function refHref(target: string, page: Pick<RefPage, "url">): string;

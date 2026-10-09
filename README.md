@@ -94,6 +94,18 @@ headings before deriving ids, so an anchor that passes the check is the id the
 page renders, including `-1` suffixes for repeated headings.
 `notice` bodies are ordinary Markdown, so code blocks and other shortcodes work
 inside them.
+Fenced code is syntax highlighted at build time with highlight.js
+(`src/lib/highlight.mjs`), so pages ship no highlighting script. Only fences
+labelled with a known language are highlighted (`bash`/`sh`, `shell`,
+`powershell`/`ps1`, `cmd`/`bat`/`batch`, `yaml`, `html`/`xml`, `c`, `cpp`,
+`json`, `python`, `javascript`, `ini`, `sql`, `diff` and their highlight.js
+aliases, case-insensitively); the language is never guessed, so `plain`,
+unlabelled and unknown fences stay plain escaped text. Fences over 20,000
+characters or with a 1,000-character unbroken word run (shellcode, blob dumps)
+also stay plain, because highlighting them would stall the build. The output is `hljs-*` class spans
+styled by `src/styles/global.css`, never inline `style` attributes, which the
+CSP (`style-src 'self'`) would block. The copy button still copies the exact
+fence text.
 `npm run validate` runs the full local validation gate.
 
 `npm test` runs focused parser and content-contract tests. Tests against the
@@ -110,7 +122,9 @@ version.
 `scripts/serve-dist.mjs`, and runs every Playwright spec in `tests/`: the
 Axe smoke suite against representative routes and keyboard interactions,
 `tests/search-filters.spec.mjs` (filter-only search, and tag filter options
-that match the built Pagefind index), plus
+that match the built Pagefind index),
+`tests/code-highlighting.spec.mjs` (highlighted code is themed and the copy
+button copies the original fence text), plus
 `tests/security-headers.spec.mjs`. The `Browser accessibility smoke tests`
 workflow runs the same check on pull requests, pushes to `main`, and manual
 dispatches. For a first local run, install the test browser once with
