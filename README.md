@@ -51,6 +51,13 @@ content path with a segment that starts with `.` (for example
 renders it as a page, copies it, links it from a `resources` listing, or lists
 it in the asset manifest, and `npm run smoke` fails if one appears there.
 
+The search dialog filters by section and by tag; the tag filter lists every
+tag with its page count. With an empty query, a section or tag filter alone
+lists all matching pages (the first 12 are shown with the total count), so the
+dialog doubles as a browser. The query and filters are kept in the URL, and
+opening a link such as `/?tag=Docker` or `/?section=cve` opens search with
+those results. The pure search helpers live in `static/js/kb-search.js`.
+
 The supported angle shortcodes are rendered through the static page pipeline:
 `youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
 `gist` renders as a CSP-safe link to GitHub. The content checker validates the
@@ -98,7 +105,9 @@ a minor or patch difference only prints a warning. CI installs the exact pinned
 version.
 `npm run test:a11y` builds the deployable static site, serves it with
 `scripts/serve-dist.mjs`, and runs every Playwright spec in `tests/`: the
-Axe smoke suite against representative routes and keyboard interactions, plus
+Axe smoke suite against representative routes and keyboard interactions,
+`tests/search-filters.spec.mjs` (filter-only search, and tag filter options
+that match the built Pagefind index), plus
 `tests/security-headers.spec.mjs`. The `Browser accessibility smoke tests`
 workflow runs the same check on pull requests, pushes to `main`, and manual
 dispatches. For a first local run, install the test browser once with
