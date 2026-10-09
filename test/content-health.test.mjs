@@ -144,9 +144,14 @@ test("health summary and ordering are deterministic", () => {
   assert.equal(summary.stale, 2);
 });
 
+test("corpus review date tracks the calendar so future-dated content still fails", () => {
+  assert.equal(corpusAsOf("2026-08-06", new Date("2026-10-09T23:30:00Z")), "2026-10-10");
+  assert.equal(corpusAsOf("2026-08-06", new Date("2020-01-01T00:00:00Z")), "2026-08-06");
+});
+
 test("full corpus ledger contains every publishable page and accurate integrity counts", () => {
   const corpus = describeCorpus();
-  const corpusDate = corpusAsOf(corpus, asOf);
+  const corpusDate = corpusAsOf(asOf);
   const report = createContentHealthReport({ asOf: corpusDate });
   const second = createContentHealthReport({ asOf: corpusDate });
   const { summary } = report;
@@ -162,7 +167,14 @@ test("full corpus ledger contains every publishable page and accurate integrity 
     summary.verified + summary.reviewDue + summary.repairNeeded + summary.contextLight,
     summary.totalPages
   );
-  assert.equal(summary.futureDates, 0);
+  assert.equal(
+    summary.futureDates,
+    0,
+    `future-dated pages: ${report.pages
+      .filter((page) => page.review.futureDate)
+      .map((page) => page.url)
+      .join(", ")}`
+  );
   assert.equal(summary.repairNeeded, 0);
   assert.equal(report.summary.brokenLinks, 0);
   assert.equal(report.summary.missingAnchors, 0);

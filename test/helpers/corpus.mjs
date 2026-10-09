@@ -27,10 +27,13 @@ export function walkMarkdownFiles(directory = contentRoot) {
   return files.sort();
 }
 
+// Mirrors the site's URL rules: section and leaf bundles drop `_index.md` or
+// `index.md` (case-insensitively), and only `_index.md` is the root page.
 export function urlForMarkdownFile(relativeFile) {
   const slug = relativeFile
-    .replace(/(?:^|\/)(?:_index|index)\.md$/, "")
-    .replace(/\.md$/, "");
+    .replace(/^_index\.md$/i, "")
+    .replace(/\/(?:_index|index)\.md$/i, "")
+    .replace(/\.md$/i, "");
   return slug ? `/${slug}/` : "/";
 }
 
@@ -41,13 +44,10 @@ export function describeCorpus(directory = contentRoot) {
     return parseFrontmatter(source, file).data.draft === true;
   });
   const index = buildContentIndex({ contentRoot: directory });
+  // The published set and lastReviewed counts come from the index's effective
+  // (cascaded) frontmatter, so they check consumers of the index rather than
+  // the index itself; draft and cascade rules are covered by fixture tests.
   const published = index.allPages.filter((page) => page.effectiveFrontmatter.draft !== true);
-  const latestDate = published
-    .flatMap((page) => [page.effectiveFrontmatter.date, page.effectiveFrontmatter.lastReviewed])
-    .map((value) => normalizeDate(value))
-    .filter(Boolean)
-    .sort()
-    .at(-1);
 
   return {
     files,
@@ -57,14 +57,15 @@ export function describeCorpus(directory = contentRoot) {
     publishedUrls: published.map((page) => page.url).sort(),
     missingLastReviewed: published.filter(
       (page) => !normalizeDate(page.effectiveFrontmatter.lastReviewed)
-    ).length,
-    latestDate
+    ).length
   };
 }
 
-// Corpus reports use a fixed review date for determinism. Moving it forward to
-// the newest content date keeps a fresh `lastReviewed` from turning into a
-// future-date finding without making the tests depend on the wall clock.
-export function corpusAsOf(corpus, floor) {
-  return corpus.latestDate && corpus.latestDate > floor ? corpus.latestDate : floor;
+// Corpus reports run as of tomorrow (UTC), never before the fixed floor, so a
+// fresh `lastReviewed` written in any time zone is not a future date while a
+// mistyped future date still fails. As time passes such a check can only start
+// passing, never start failing, for unchanged content.
+export function corpusAsOf(floor, now = new Date()) {
+  const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return tomorrow > floor ? tomorrow : floor;
 }

@@ -90,7 +90,7 @@ test("sorts same-date entries deterministically and limits Markdown output", () 
 test("indexes the full publishable content corpus", async () => {
   const corpus = describeCorpus();
   const pages = await collectContentPages();
-  const report = createReviewReport(pages, { asOf: corpusAsOf(corpus, asOf) });
+  const report = createReviewReport(pages, { asOf: corpusAsOf(asOf) });
 
   assert.ok(pages.length > 0);
   assert.deepEqual(pages.map((page) => page.url).sort(), corpus.publishedUrls);
@@ -141,7 +141,7 @@ test("writes a complete JSON corpus report", async () => {
     const jsonFile = path.join(directory, "review.json");
     await run([
       "--as-of",
-      corpusAsOf(corpus, asOf),
+      corpusAsOf(asOf),
       "--output",
       path.join(directory, "review.md"),
       "--json",
