@@ -17,7 +17,7 @@ cascade:
 
 AADInternals is PowerShell module for administering Azure AD and Office 365
 
-For details, please visit <http://o365blog.com/aadinternals>
+For details, please visit <https://aadinternals.com/aadinternals/>
 
 ## Installation
 
@@ -31,7 +31,7 @@ Import-Module AADInternals
 
 ## Usage
 
-Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) on how to use and available commands.
+Please check [o365blog.com - AADInternals](https://aadinternals.com/aadinternals/) on how to use and available commands.
 
 ## Modules
 
@@ -39,6 +39,6 @@ Please check [o365blog.com - AADInternals](https://o365blog.com/aadinternals/) o
 
 ## URL List
 
-- [O365blog.com - AADInternals](https://o365blog.com/aadinternals/)
+- [O365blog.com - AADInternals](https://aadinternals.com/aadinternals/)
 - [Github.co - AADInternals](https://github.com/Gerenios/AADInternals)
 - [Trustedsec.com - AzureAD Kerberos Tickets Pivoting to the Cloud](https://trustedsec.com/blog/azure-ad-kerberos-tickets-pivoting-to-the-cloud)
