@@ -120,7 +120,9 @@ version.
 `scripts/serve-dist.mjs`, and runs every Playwright spec in `tests/`: the
 Axe smoke suite against representative routes and keyboard interactions,
 `tests/search-filters.spec.mjs` (filter-only search, and tag filter options
-that match the built Pagefind index), plus
+that match the built Pagefind index),
+`tests/code-highlighting.spec.mjs` (highlighted code is themed and the copy
+button copies the original fence text), plus
 `tests/security-headers.spec.mjs`. The `Browser accessibility smoke tests`
 workflow runs the same check on pull requests, pushes to `main`, and manual
 dispatches. For a first local run, install the test browser once with
