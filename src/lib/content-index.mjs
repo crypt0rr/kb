@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { isPrivateContentPath } from "./content-paths.mjs";
 import { parseFrontmatter } from "./frontmatter.mjs";
 import { resolveInheritedMetadata } from "./metadata.mjs";
 
@@ -102,8 +103,11 @@ function findDuplicateUrls(pages) {
     .map(([url, files]) => ({ url, files }));
 }
 
+// Dot-segment paths are private, so pages under them are never indexed or
+// rendered; check:content reports them instead.
 function listMarkdown(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (isPrivateContentPath(entry.name)) return [];
     const absolute = path.join(directory, entry.name);
     if (entry.isDirectory()) return listMarkdown(absolute);
     return entry.name.endsWith(".md") ? [absolute] : [];

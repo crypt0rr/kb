@@ -2,6 +2,7 @@ import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
 import {
+  ignoredContentDirectories,
   ignoredContentFiles,
   isIgnoredContentPath,
   isPrivateContentPath
@@ -75,7 +76,7 @@ async function walk(dir) {
   for (const entry of entries) {
     const absolute = path.join(dir, entry.name);
     const relative = slash(path.relative(contentDir, absolute));
-    if (isIgnoredContentPath(relative)) {
+    if (isIgnoredContentPath(relative, { directory: entry.isDirectory() })) {
       continue;
     }
 
@@ -86,7 +87,7 @@ async function walk(dir) {
 
     if (isPrivateContentPath(relative)) {
       errors.push(
-        `content/${relative}: private dot-segment path under content/; the build never publishes it, so remove it from content/ (only ${[...ignoredContentFiles].join(" and ")} are allowed)`
+        `content/${relative}: private dot-segment path under content/; the build never publishes it, so remove it from content/ (only ${[...ignoredContentFiles].join(" and ")} files and the ${[...ignoredContentDirectories].join(", ")} cache are allowed)`
       );
       continue;
     }

@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import MarkdownIt from "markdown-it";
 import { buildContentIndex } from "./content-index.mjs";
+import { isPrivateContentPath } from "./content-paths.mjs";
 
 const markdown = new MarkdownIt({ html: true, linkify: false });
 const collator = new Intl.Collator("en", { sensitivity: "base", numeric: true });
@@ -407,6 +408,7 @@ function collectContentAssets(directory) {
 
 function listFiles(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    if (isPrivateContentPath(entry.name)) return [];
     const absolute = path.join(directory, entry.name);
     if (entry.isDirectory()) return listFiles(absolute);
     return [absolute];
