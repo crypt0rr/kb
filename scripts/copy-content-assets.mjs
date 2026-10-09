@@ -1,18 +1,20 @@
 import { access, cp, mkdir, readdir } from "node:fs/promises";
 import path from "node:path";
+import { isPrivateContentPath } from "../src/lib/content-paths.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
 const distDir = path.join(root, "dist");
-const ignoredFiles = new Set([".DS_Store", ".gitkeep"]);
-const ignoredDirectories = new Set([".rumdl_cache"]);
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
 
   for (const entry of entries) {
     const source = path.join(dir, entry.name);
-    if (ignoredDirectories.has(entry.name)) {
+    const relative = path.relative(contentDir, source);
+
+    // Dot-segment paths (.gitkeep, .DS_Store, caches, secrets) are never published.
+    if (isPrivateContentPath(relative)) {
       continue;
     }
 
@@ -21,11 +23,10 @@ async function walk(dir) {
       continue;
     }
 
-    if (entry.name.endsWith(".md") || ignoredFiles.has(entry.name)) {
+    if (entry.name.endsWith(".md")) {
       continue;
     }
 
-    const relative = path.relative(contentDir, source);
     const target = path.join(distDir, relative);
     await mkdir(path.dirname(target), { recursive: true });
     await cp(source, target);

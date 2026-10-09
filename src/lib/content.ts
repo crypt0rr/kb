@@ -4,6 +4,7 @@ import MarkdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import { buildContentIndex, normalizeWeight } from "./content-index.mjs";
 import { buildContentGraph } from "./content-graph.mjs";
+import { isPrivateContentPath } from "./content-paths.mjs";
 import { normalizeDate } from "./date.mjs";
 import {
   assessPageHealth,
@@ -501,7 +502,7 @@ function renderResources(page: KbPage, attrs: Record<string, string>) {
   const pattern = attrs.pattern ? new RegExp(attrs.pattern) : null;
   const files = fs
     .readdirSync(filesDir, { withFileTypes: true })
-    .filter((entry) => entry.isFile() && entry.name !== ".gitkeep")
+    .filter((entry) => entry.isFile() && !isPrivateContentPath(entry.name))
     .filter((entry) => !pattern || pattern.test(entry.name))
     .sort((a, b) => a.name.localeCompare(b.name));
 

@@ -24,6 +24,7 @@ npm run check:content
 npm run check:links
 npm run check:external-links
 npm run audit:known
+npm run check:outdated
 npm run sysinternals:check
 npm run content:review
 npm run content:graph
@@ -38,7 +39,11 @@ npm run validate
 
 The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
-the Pagefind search index.
+the Pagefind search index. Any content path with a segment that starts with `.`
+(for example `tools/x/files/.env` or `tools/.drafts/notes.md`) is private: the
+build never renders it as a page, copies it, links it from a `resources`
+listing, or lists it in the asset manifest, and `npm run smoke` fails if one
+appears there.
 
 The supported angle shortcodes are rendered through the static page pipeline:
 `youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
@@ -49,13 +54,18 @@ be fixed before publishing.
 `npm run check:content` validates frontmatter, shortcodes, references, and
 downloadable content assets. New files under `content/**/files/` must be
 referenced by a `resources` or `attachments` shortcode unless they are an
-intentional mirror/bulk asset listed in `scripts/content-policy.json`.
+intentional mirror/bulk asset listed in `scripts/content-policy.json`. It also
+fails on any dot-segment file under `content/` other than `.gitkeep` and
+`.DS_Store` files and the git-ignored `.rumdl_cache` lint cache directory, so an
+accidentally committed `.env`, credential file, or dot-directory page fails CI.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
 
 `npm test` runs focused parser and content-contract tests. `npm run doctor`
 checks the Node.js version, required project paths, and local npm availability.
+A different Node.js major version than `.node-version` fails; a minor or patch
+difference only prints a warning. CI installs the exact pinned version.
 `npm run test:a11y` builds the deployable static site, serves it with Astro
 Preview, and runs the browser-level Playwright/Axe smoke suite against
 representative routes and keyboard interactions. The `Browser accessibility
@@ -123,6 +133,11 @@ root and ARM64 files; every replacement is checked against the manifest hash
 before the atomic rename. Manifest refresh downloads temporary copies only; it
 does not modify the mirrored files. The sync workflow skips live directories,
 marker files, and files over the 25MB Cloudflare Pages limit.
+Every upstream listing entry must have a plain file name
+(`[A-Za-z0-9][A-Za-z0-9._-]*`, never `..`) and a same-origin absolute link, or
+the run stops with an error. Requests use HTTPS only and fail after 30 seconds
+without network activity, and a failed download never leaves its temporary
+`.download` file behind.
 The mirror path preserves upstream bytes and line endings so the manifest hashes
 remain reproducible after checkout.
 
@@ -132,6 +147,13 @@ remain reproducible after checkout.
 reported vulnerability. Keep Astro/Vite updated through Renovate and review
 dependency advisories before adding any exception. GitHub Actions are pinned
 to reviewed commit SHAs; Renovate keeps those pins current.
+
+`npm run check:outdated` lists dependency updates allowed by the declared
+ranges (and fails when any exist) plus newer versions outside those ranges. It
+is not part of the build gate, so pull requests do not depend on npm registry
+state. The scheduled `Dependency freshness report` workflow runs it weekly or on
+manual dispatch and writes both lists to the job summary
+(`--summary-file <path>` appends the same Markdown summary locally).
 
 ## Contributing
 

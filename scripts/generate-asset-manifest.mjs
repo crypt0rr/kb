@@ -1,12 +1,11 @@
 import { createHash } from "node:crypto";
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { isPrivateContentPath } from "../src/lib/content-paths.mjs";
 
 const root = process.cwd();
 const contentDir = path.join(root, "content");
 const distDir = path.join(root, "dist");
-const ignoredFiles = new Set([".DS_Store", ".gitkeep"]);
-const ignoredDirectories = new Set([".rumdl_cache"]);
 const entries = [];
 
 await walk(contentDir);
@@ -22,7 +21,10 @@ async function walk(dir) {
 
   for (const item of items) {
     const absolute = path.join(dir, item.name);
-    if (ignoredDirectories.has(item.name)) {
+    const relative = slash(path.relative(contentDir, absolute));
+
+    // Dot-segment paths are private and must not appear in the public manifest.
+    if (isPrivateContentPath(relative)) {
       continue;
     }
 
@@ -31,11 +33,11 @@ async function walk(dir) {
       continue;
     }
 
-    if (item.name.endsWith(".md") || ignoredFiles.has(item.name)) continue;
+    if (item.name.endsWith(".md")) continue;
 
     const bytes = await readFile(absolute);
     entries.push({
-      path: slash(path.relative(contentDir, absolute)),
+      path: relative,
       bytes: bytes.length,
       sha256: createHash("sha256").update(bytes).digest("hex")
     });
