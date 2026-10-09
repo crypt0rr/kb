@@ -20,8 +20,10 @@ const requiredFiles = [
 // never be rendered into public pages or the public search index.
 const maintainerOnlyMarkup = ["health-meta", "<dt>Trust</dt>", 'data-pagefind-filter="health"'];
 // The production CSP (style-src 'self') blocks inline style attributes, so a
-// generated page must not depend on one. Escaped code text never matches.
-const inlineStyleAttribute = /<[a-z][a-z0-9-]*\b[^>]*\sstyle\s*=/i;
+// generated page must not depend on one. The pattern steps over each attribute
+// value, so "style=" inside alt/title/content text or escaped code never matches.
+const inlineStyleAttribute =
+  /<[a-z][a-z0-9-]*(?:\s+[^\s=>"'/]+(?:\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>"']+))?)*\s+style\s*=/i;
 const errors = [];
 
 for (const file of requiredFiles) {

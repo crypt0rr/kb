@@ -115,6 +115,17 @@ for (const route of policyRoutes) {
   });
 }
 
+test("aligned Markdown table columns keep their alignment under the CSP", async ({ page }) => {
+  await page.goto("/stuff/cheatsheets/netmasks/", { waitUntil: "networkidle" });
+
+  for (const alignment of ["left", "center", "right"]) {
+    await expect(page.locator(`.prose td.align-${alignment}`).first()).toHaveCSS(
+      "text-align",
+      alignment
+    );
+  }
+});
+
 test("search loads the Pagefind WASM index under the CSP", async ({ page }) => {
   const problems = trackPolicyProblems(page);
   await page.goto("/", { waitUntil: "networkidle" });
