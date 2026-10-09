@@ -39,7 +39,9 @@ npm run validate
 
 The build renders the Astro site, copies non-Markdown files from `content/`
 into `dist/`, generates an asset manifest with SHA256 hashes, and then builds
-the Pagefind search index.
+the Pagefind search index. Any content path with a segment that starts with `.`
+(for example `tools/x/files/.env`) is private: the build never copies it or
+lists it in the asset manifest, and `npm run smoke` fails if one appears there.
 
 The supported angle shortcodes are rendered through the static page pipeline:
 `youtube` embeds use the privacy-preserving `youtube-nocookie.com` host and
@@ -50,7 +52,9 @@ be fixed before publishing.
 `npm run check:content` validates frontmatter, shortcodes, references, and
 downloadable content assets. New files under `content/**/files/` must be
 referenced by a `resources` or `attachments` shortcode unless they are an
-intentional mirror/bulk asset listed in `scripts/content-policy.json`.
+intentional mirror/bulk asset listed in `scripts/content-policy.json`. It also
+fails on any dot-segment file under `content/` other than `.gitkeep` and
+`.DS_Store`, so an accidentally committed `.env` or credential file fails CI.
 `npm run check:links` validates internal Markdown links, anchors, images, and
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.

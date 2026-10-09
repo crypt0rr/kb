@@ -1,6 +1,11 @@
 import { readdir, readFile, stat } from "node:fs/promises";
 import path from "node:path";
 import { buildContentIndex } from "../src/lib/content-index.mjs";
+import {
+  ignoredContentFiles,
+  isIgnoredContentPath,
+  isPrivateContentPath
+} from "../src/lib/content-paths.mjs";
 import { isValidDateValue } from "../src/lib/date.mjs";
 import { parseCascade } from "../src/lib/metadata.mjs";
 import { isValidYoutubeId, parseGistReference } from "../src/lib/shortcodes.mjs";
@@ -10,8 +15,6 @@ const contentDir = path.join(root, "content");
 const policyFile = path.join(root, "scripts", "content-policy.json");
 const maxBytes = 25 * 1024 * 1024;
 const maxWarnings = Number(process.env.CHECK_CONTENT_MAX_WARNINGS ?? 30);
-const ignoredFiles = new Set([".DS_Store", ".gitkeep"]);
-const ignoredDirectories = new Set([".rumdl_cache"]);
 const reportedExtensions = new Set([
   ".bat",
   ".bin",
@@ -71,7 +74,8 @@ async function walk(dir) {
 
   for (const entry of entries) {
     const absolute = path.join(dir, entry.name);
-    if (ignoredDirectories.has(entry.name)) {
+    const relative = slash(path.relative(contentDir, absolute));
+    if (isIgnoredContentPath(relative)) {
       continue;
     }
 
@@ -80,7 +84,10 @@ async function walk(dir) {
       continue;
     }
 
-    if (ignoredFiles.has(entry.name)) {
+    if (isPrivateContentPath(relative)) {
+      errors.push(
+        `content/${relative}: private dot-segment path under content/; the build never publishes it, so remove it from content/ (only ${[...ignoredContentFiles].join(" and ")} are allowed)`
+      );
       continue;
     }
 

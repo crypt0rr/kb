@@ -1,5 +1,6 @@
 import { readFile, stat } from "node:fs/promises";
 import path from "node:path";
+import { isPrivateContentPath } from "../src/lib/content-paths.mjs";
 
 const root = process.cwd();
 const distDir = path.join(root, "dist");
@@ -84,8 +85,7 @@ async function expectAssetManifest() {
     errors.push("asset-manifest.json: generatedAt must not make builds non-deterministic");
   }
 
-  const privateAsset = manifest.assets.find((asset) => asset.path.startsWith("."));
-  if (privateAsset) {
-    errors.push(`asset-manifest.json: private asset included (${privateAsset.path})`);
+  for (const asset of manifest.assets.filter((item) => isPrivateContentPath(item.path))) {
+    errors.push(`asset-manifest.json: private dot-segment asset included (${asset.path})`);
   }
 }
