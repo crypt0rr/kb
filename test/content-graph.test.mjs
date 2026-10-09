@@ -5,6 +5,7 @@ import path from "node:path";
 import test from "node:test";
 import { buildContentGraph, collectMarkdownTargets } from "../src/lib/content-graph.mjs";
 import { createGraphReport, renderMarkdown } from "../scripts/content-graph.mjs";
+import { describeCorpus } from "./helpers/corpus.mjs";
 
 test("builds deterministic references and reverse edges without treating assets as pages", async () => {
   const contentRoot = await mkdtemp(path.join(os.tmpdir(), "kb-content-graph-"));
@@ -71,12 +72,14 @@ test("builds deterministic references and reverse edges without treating assets 
 });
 
 test("represents the full publishable corpus and resolves every page reference", () => {
+  const corpus = describeCorpus();
   const graph = buildContentGraph();
   const urls = new Set(graph.pages.map((page) => page.url));
 
-  assert.equal(graph.summary.pages, 751);
+  assert.equal(graph.summary.pages, corpus.published.length);
+  assert.deepEqual(graph.pages.map((page) => page.url).sort(), corpus.publishedUrls);
+  assert.equal(urls.size, graph.pages.length);
   assert.equal(graph.unresolved.length, 0);
   assert.ok(graph.summary.referenceCount > 0);
   assert.ok(graph.edges.every((edge) => urls.has(edge.fromUrl) && urls.has(edge.toUrl)));
-  assert.equal(new Set(graph.pages.map((page) => page.url)).size, 751);
 });

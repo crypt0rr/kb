@@ -4,12 +4,32 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { buildContentIndex, normalizeWeight } from "../src/lib/content-index.mjs";
+import { describeCorpus, urlForMarkdownFile } from "./helpers/corpus.mjs";
 
 test("builds the full effective metadata index with provenance", () => {
+  const corpus = describeCorpus();
   const index = buildContentIndex();
 
-  assert.equal(index.pages.length, 751);
-  assert.equal(index.pages.filter((page) => page.effectiveFrontmatter.tags?.length).length, 750);
+  assert.ok(corpus.files.length > 0);
+  assert.deepEqual(index.allPages.map((page) => page.relativeFile).sort(), corpus.files);
+  for (const page of index.allPages) {
+    assert.equal(page.url, urlForMarkdownFile(page.relativeFile), page.relativeFile);
+  }
+  assert.equal(new Set(index.allPages.map((page) => page.url)).size, index.allPages.length);
+
+  assert.deepEqual(index.pages.map((page) => page.url).sort(), corpus.publishedUrls);
+  assert.ok(index.pages.length > 0);
+  for (const file of corpus.explicitDrafts) {
+    assert.equal(index.byUrl.has(urlForMarkdownFile(file)), false, file);
+  }
+
+  const tagged = index.pages.filter((page) => page.effectiveFrontmatter.tags?.length);
+  assert.ok(tagged.length > 0);
+  for (const page of index.pages) {
+    if (page.metadataProvenance.tags?.kind === "cascade") {
+      assert.ok(page.effectiveFrontmatter.tags?.length, page.url);
+    }
+  }
 
   const inherited = index.pages.find(
     (page) => page.metadataProvenance.tags?.kind === "cascade"

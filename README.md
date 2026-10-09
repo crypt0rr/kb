@@ -64,9 +64,11 @@ accidentally committed `.env`, credential file, or dot-directory page fails CI.
 downloadable assets. External links are inventoried without network calls.
 `npm run validate` runs the full local validation gate.
 
-`npm test` runs focused parser and content-contract tests. `npm run smoke`
-checks the built `dist/` output, including that no trust-ledger state appears in
-public pages or `search.json`.
+`npm test` runs focused parser and content-contract tests. Tests against the
+real `content/` tree assert invariants derived from the files and frontmatter
+rather than fixed page counts, so adding a page or a `lastReviewed` date does
+not require test changes. `npm run smoke` checks the built `dist/` output,
+including that no trust-ledger state appears in public pages or `search.json`.
 `npm run doctor` checks the Node.js version, required project paths, and local
 npm availability. A different Node.js major version than `.node-version` fails;
 a minor or patch difference only prints a warning. CI installs the exact pinned

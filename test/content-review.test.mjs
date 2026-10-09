@@ -16,6 +16,7 @@ import {
   normalizeDate,
   subtractMonths
 } from "../src/lib/date.mjs";
+import { corpusAsOf, describeCorpus } from "./helpers/corpus.mjs";
 
 const asOf = "2026-08-02";
 const staleBefore = "2025-08-02";
@@ -87,10 +88,12 @@ test("sorts same-date entries deterministically and limits Markdown output", () 
 });
 
 test("indexes the full publishable content corpus", async () => {
+  const corpus = describeCorpus();
   const pages = await collectContentPages();
-  const report = createReviewReport(pages, { asOf });
+  const report = createReviewReport(pages, { asOf: corpusAsOf(corpus, asOf) });
 
-  assert.equal(pages.length, 751);
+  assert.ok(pages.length > 0);
+  assert.deepEqual(pages.map((page) => page.url).sort(), corpus.publishedUrls);
   assert.equal(report.pages.length, pages.length);
   assert.equal(
     report.summary.needsReview,
@@ -101,9 +104,20 @@ test("indexes the full publishable content corpus", async () => {
     report.pages.filter((page) => page.missingReview).length
   );
   assert.equal(report.summary.totalPages, report.pages.length);
-  assert.equal(new Set(report.pages.map((page) => page.url)).size, 751);
-  assert.equal(pages.filter((page) => page.metadataProvenance.tags?.kind === "cascade").length, 521);
-  assert.equal(report.summary.priorityTiers.high > 0, true);
+  assert.equal(report.summary.missingLastReviewed, corpus.missingLastReviewed);
+  assert.ok(report.summary.needsReview >= report.summary.missingLastReviewed);
+  assert.ok(report.summary.needsReview <= report.summary.totalPages);
+  assert.equal(new Set(report.pages.map((page) => page.url)).size, report.pages.length);
+  assert.equal(
+    pages.filter((page) => page.metadataProvenance.tags?.kind === "cascade").length,
+    corpus.published.filter((page) => page.metadataProvenance.tags?.kind === "cascade").length
+  );
+  assert.ok(pages.some((page) => page.metadataProvenance.tags?.kind === "cascade"));
+  assert.ok(
+    report.pages
+      .filter((page) => page.missingReview)
+      .every((page) => ["critical", "high"].includes(page.priorityTier))
+  );
 });
 
 test("ranks higher-risk sections ahead of equally old pages", () => {
@@ -123,10 +137,11 @@ test("writes a complete JSON corpus report", async () => {
   const directory = await mkdtemp(path.join(os.tmpdir(), "kb-content-review-"));
 
   try {
+    const corpus = describeCorpus();
     const jsonFile = path.join(directory, "review.json");
     await run([
       "--as-of",
-      asOf,
+      corpusAsOf(corpus, asOf),
       "--output",
       path.join(directory, "review.md"),
       "--json",
@@ -134,10 +149,11 @@ test("writes a complete JSON corpus report", async () => {
     ]);
 
     const report = JSON.parse(await readFile(jsonFile, "utf8"));
-    assert.equal(report.pages.length, 751);
-    assert.equal(new Set(report.pages.map((page) => page.url)).size, 751);
-    assert.equal(report.summary.totalPages, 751);
-    assert.equal(report.summary.needsReview, 751);
+    assert.deepEqual(report.pages.map((page) => page.url).sort(), corpus.publishedUrls);
+    assert.equal(report.summary.totalPages, corpus.published.length);
+    assert.equal(report.summary.missingLastReviewed, corpus.missingLastReviewed);
+    assert.ok(report.summary.needsReview >= corpus.missingLastReviewed);
+    assert.ok(report.summary.needsReview <= corpus.published.length);
   } finally {
     await rm(directory, { recursive: true, force: true });
   }
