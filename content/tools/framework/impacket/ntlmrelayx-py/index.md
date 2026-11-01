@@ -270,3 +270,4 @@ SMB         10.10.10.2      OFFSEC/JOHNDO       FALSE           445
 ## URL List
 
 - [Github.com - ntlmrelayx.py](https://github.com/fortra/impacket/blob/master/examples/ntlmrelayx.py)
+- [En.hackita.it - ntlmrelayx: NTLM Relay Attack - Setup and Bypass](https://en.hackita.it/articoli/ntlm-relay/)

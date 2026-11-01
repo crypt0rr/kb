@@ -43,3 +43,4 @@ pipx upgrade NetExec
 ## URL List
 
 - [NetExec.wiki](https://www.netexec.wiki/)
+- [En.hackita.it - NetExec (NXC): Complete Guide to CrackMapExec's Successor](https://en.hackita.it/articoli/netexec/)
