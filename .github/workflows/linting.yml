@@ -33,7 +33,7 @@ jobs:
       - name: Lint content Markdown
         uses: rvben/rumdl@ba563d6780c6119bd526c869a730b492c1ad54e5 # v0.3.5
         with:
-          version: '0.3.2'
+          version: '0.3.5'
           path: 'content/'
           config: '.markdownlint.yml'
           report-type: annotations
@@ -41,7 +41,7 @@ jobs:
       - name: Lint README
         uses: rvben/rumdl@ba563d6780c6119bd526c869a730b492c1ad54e5 # v0.3.5
         with:
-          version: '0.3.2'
+          version: '0.3.5'
           path: 'README.md'
           config: '.markdownlint.yml'
           report-type: annotations

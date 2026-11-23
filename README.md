@@ -304,8 +304,10 @@ the pages:
    the latest `Content freshness review` run (download the
    `content-review-queue` artifact, or run `npm run content:review` locally and
    open `.reports/content-review.md`).
+
 2. Review each page: check that commands, versions, links, and advisories are
    still accurate, and fix what is not.
+
 3. Record the review:
 
    ```plain
@@ -327,6 +329,7 @@ the pages:
    path or page fails, no file is written. `--dry-run` prints the per-file
    summary without writing. Marking a section's `_index.md` reviews only that
    section page, not its descendants.
+
 4. Commit the reviewed pages with their fixes and open a pull request.
 
 After the change is merged, the next weekly `Content freshness review` run (or
