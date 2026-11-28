@@ -1,7 +1,7 @@
 ---
 title : "Fanny"
 # pre : ' '
-description : "Monitor your Mac's fan speed and CPU/GPU temperature from your Notification Center."
+description : "Monitor your Mac's fan speeds and CPU and GPU temperatures from the menu bar, a floating window, and widgets."
 date : 2021-12-20T07:19:59+01:00
 # hidden : true
 # draft : true
@@ -11,15 +11,21 @@ weight : 170
 
 ---
 
-Fanny is a free Notification Center Widget and Menu Bar application to monitor your Macs fans.
+Fanny is a free, open source menu bar app to monitor your Mac's fan speeds and CPU and GPU temperatures. It requires macOS 27 or later on Apple silicon.
 
 - Compact design allowing you to keep an eye on your systems fans and CPU/GPU temperature while not cluttering up your work space.
 - Get information on; current speed, target speed, minimum speed, maximum speed, number of fans, and CPU/GPU temperature.
-- Simply open the Notification Center or Menu Bar application to glance at your Macs fan stats.
+- Glance at your Mac's fan stats from the menu bar menu, a floating window, or WidgetKit widgets (small to extra large). Siri and Shortcuts are supported.
 
 ## Installation
 
-Download newest release from [fannywidget.com](https://fannywidget.com/)
+Download newest release from [Github.com](https://github.com/DanielStormApps/Fanny/releases/latest)
+
+Or install via HomeBrew.
+
+```plain
+brew install --cask fanny
+```
 
 ## Examples
 
@@ -28,5 +34,5 @@ Download newest release from [fannywidget.com](https://fannywidget.com/)
 
 ## URL List
 
-- [Fannywidget.com](https://fannywidget.com/)
+- [Fannywidget.com](https://www.fannywidget.com)
 - [Github.com - Fanny](https://github.com/DanielStormApps/Fanny)
